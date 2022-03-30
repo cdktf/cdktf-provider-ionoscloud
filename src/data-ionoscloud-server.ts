@@ -1,0 +1,952 @@
+// https://www.terraform.io/docs/providers/ionoscloud/d/server
+// generated from terraform resource schema
+
+import { Construct } from 'constructs';
+import * as cdktf from 'cdktf';
+
+// Configuration
+
+export interface DataIonoscloudServerConfig extends cdktf.TerraformMetaArguments {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/d/server#datacenter_id DataIonoscloudServer#datacenter_id}
+  */
+  readonly datacenterId: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/d/server#id DataIonoscloudServer#id}
+  */
+  readonly id?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/d/server#name DataIonoscloudServer#name}
+  */
+  readonly name?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/d/server#template_uuid DataIonoscloudServer#template_uuid}
+  */
+  readonly templateUuid?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/d/server#type DataIonoscloudServer#type}
+  */
+  readonly type?: string;
+  /**
+  * timeouts block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/d/server#timeouts DataIonoscloudServer#timeouts}
+  */
+  readonly timeouts?: DataIonoscloudServerTimeouts;
+}
+export interface DataIonoscloudServerCdroms {
+}
+
+export function dataIonoscloudServerCdromsToTerraform(struct?: DataIonoscloudServerCdroms): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class DataIonoscloudServerCdromsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataIonoscloudServerCdroms | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataIonoscloudServerCdroms | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // cloud_init - computed: true, optional: false, required: false
+  public get cloudInit() {
+    return this.getStringAttribute('cloud_init');
+  }
+
+  // cpu_hot_plug - computed: true, optional: false, required: false
+  public get cpuHotPlug() {
+    return this.getBooleanAttribute('cpu_hot_plug');
+  }
+
+  // cpu_hot_unplug - computed: true, optional: false, required: false
+  public get cpuHotUnplug() {
+    return this.getBooleanAttribute('cpu_hot_unplug');
+  }
+
+  // description - computed: true, optional: false, required: false
+  public get description() {
+    return this.getStringAttribute('description');
+  }
+
+  // disc_scsi_hot_plug - computed: true, optional: false, required: false
+  public get discScsiHotPlug() {
+    return this.getBooleanAttribute('disc_scsi_hot_plug');
+  }
+
+  // disc_scsi_hot_unplug - computed: true, optional: false, required: false
+  public get discScsiHotUnplug() {
+    return this.getBooleanAttribute('disc_scsi_hot_unplug');
+  }
+
+  // disc_virtio_hot_plug - computed: true, optional: false, required: false
+  public get discVirtioHotPlug() {
+    return this.getBooleanAttribute('disc_virtio_hot_plug');
+  }
+
+  // disc_virtio_hot_unplug - computed: true, optional: false, required: false
+  public get discVirtioHotUnplug() {
+    return this.getBooleanAttribute('disc_virtio_hot_unplug');
+  }
+
+  // id - computed: true, optional: false, required: false
+  public get id() {
+    return this.getStringAttribute('id');
+  }
+
+  // image_aliases - computed: true, optional: false, required: false
+  public get imageAliases() {
+    return this.getListAttribute('image_aliases');
+  }
+
+  // image_type - computed: true, optional: false, required: false
+  public get imageType() {
+    return this.getStringAttribute('image_type');
+  }
+
+  // licence_type - computed: true, optional: false, required: false
+  public get licenceType() {
+    return this.getStringAttribute('licence_type');
+  }
+
+  // location - computed: true, optional: false, required: false
+  public get location() {
+    return this.getStringAttribute('location');
+  }
+
+  // name - computed: true, optional: false, required: false
+  public get name() {
+    return this.getStringAttribute('name');
+  }
+
+  // nic_hot_plug - computed: true, optional: false, required: false
+  public get nicHotPlug() {
+    return this.getBooleanAttribute('nic_hot_plug');
+  }
+
+  // nic_hot_unplug - computed: true, optional: false, required: false
+  public get nicHotUnplug() {
+    return this.getBooleanAttribute('nic_hot_unplug');
+  }
+
+  // public - computed: true, optional: false, required: false
+  public get public() {
+    return this.getBooleanAttribute('public');
+  }
+
+  // ram_hot_plug - computed: true, optional: false, required: false
+  public get ramHotPlug() {
+    return this.getBooleanAttribute('ram_hot_plug');
+  }
+
+  // ram_hot_unplug - computed: true, optional: false, required: false
+  public get ramHotUnplug() {
+    return this.getBooleanAttribute('ram_hot_unplug');
+  }
+
+  // size - computed: true, optional: false, required: false
+  public get size() {
+    return this.getNumberAttribute('size');
+  }
+}
+
+export class DataIonoscloudServerCdromsList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataIonoscloudServerCdromsOutputReference {
+    return new DataIonoscloudServerCdromsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface DataIonoscloudServerNicsFirewallRules {
+}
+
+export function dataIonoscloudServerNicsFirewallRulesToTerraform(struct?: DataIonoscloudServerNicsFirewallRules): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class DataIonoscloudServerNicsFirewallRulesOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataIonoscloudServerNicsFirewallRules | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataIonoscloudServerNicsFirewallRules | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // icmp_code - computed: true, optional: false, required: false
+  public get icmpCode() {
+    return this.getNumberAttribute('icmp_code');
+  }
+
+  // icmp_type - computed: true, optional: false, required: false
+  public get icmpType() {
+    return this.getNumberAttribute('icmp_type');
+  }
+
+  // id - computed: true, optional: false, required: false
+  public get id() {
+    return this.getStringAttribute('id');
+  }
+
+  // name - computed: true, optional: false, required: false
+  public get name() {
+    return this.getStringAttribute('name');
+  }
+
+  // port_range_end - computed: true, optional: false, required: false
+  public get portRangeEnd() {
+    return this.getNumberAttribute('port_range_end');
+  }
+
+  // port_range_start - computed: true, optional: false, required: false
+  public get portRangeStart() {
+    return this.getNumberAttribute('port_range_start');
+  }
+
+  // protocol - computed: true, optional: false, required: false
+  public get protocol() {
+    return this.getStringAttribute('protocol');
+  }
+
+  // source_ip - computed: true, optional: false, required: false
+  public get sourceIp() {
+    return this.getStringAttribute('source_ip');
+  }
+
+  // source_mac - computed: true, optional: false, required: false
+  public get sourceMac() {
+    return this.getStringAttribute('source_mac');
+  }
+
+  // target_ip - computed: true, optional: false, required: false
+  public get targetIp() {
+    return this.getStringAttribute('target_ip');
+  }
+
+  // type - computed: true, optional: false, required: false
+  public get type() {
+    return this.getStringAttribute('type');
+  }
+}
+
+export class DataIonoscloudServerNicsFirewallRulesList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataIonoscloudServerNicsFirewallRulesOutputReference {
+    return new DataIonoscloudServerNicsFirewallRulesOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface DataIonoscloudServerNics {
+}
+
+export function dataIonoscloudServerNicsToTerraform(struct?: DataIonoscloudServerNics): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class DataIonoscloudServerNicsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataIonoscloudServerNics | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataIonoscloudServerNics | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // device_number - computed: true, optional: false, required: false
+  public get deviceNumber() {
+    return this.getNumberAttribute('device_number');
+  }
+
+  // dhcp - computed: true, optional: false, required: false
+  public get dhcp() {
+    return this.getBooleanAttribute('dhcp');
+  }
+
+  // firewall_active - computed: true, optional: false, required: false
+  public get firewallActive() {
+    return this.getBooleanAttribute('firewall_active');
+  }
+
+  // firewall_rules - computed: true, optional: false, required: false
+  private _firewallRules = new DataIonoscloudServerNicsFirewallRulesList(this, "firewall_rules", false);
+  public get firewallRules() {
+    return this._firewallRules;
+  }
+
+  // firewall_type - computed: true, optional: false, required: false
+  public get firewallType() {
+    return this.getStringAttribute('firewall_type');
+  }
+
+  // id - computed: true, optional: false, required: false
+  public get id() {
+    return this.getStringAttribute('id');
+  }
+
+  // ips - computed: true, optional: false, required: false
+  public get ips() {
+    return this.getListAttribute('ips');
+  }
+
+  // lan - computed: true, optional: false, required: false
+  public get lan() {
+    return this.getNumberAttribute('lan');
+  }
+
+  // mac - computed: true, optional: false, required: false
+  public get mac() {
+    return this.getStringAttribute('mac');
+  }
+
+  // name - computed: true, optional: false, required: false
+  public get name() {
+    return this.getStringAttribute('name');
+  }
+
+  // pci_slot - computed: true, optional: false, required: false
+  public get pciSlot() {
+    return this.getNumberAttribute('pci_slot');
+  }
+}
+
+export class DataIonoscloudServerNicsList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataIonoscloudServerNicsOutputReference {
+    return new DataIonoscloudServerNicsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface DataIonoscloudServerVolumes {
+}
+
+export function dataIonoscloudServerVolumesToTerraform(struct?: DataIonoscloudServerVolumes): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class DataIonoscloudServerVolumesOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataIonoscloudServerVolumes | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataIonoscloudServerVolumes | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // availability_zone - computed: true, optional: false, required: false
+  public get availabilityZone() {
+    return this.getStringAttribute('availability_zone');
+  }
+
+  // backup_unit_id - computed: true, optional: false, required: false
+  public get backupUnitId() {
+    return this.getStringAttribute('backup_unit_id');
+  }
+
+  // boot_server - computed: true, optional: false, required: false
+  public get bootServer() {
+    return this.getStringAttribute('boot_server');
+  }
+
+  // bus - computed: true, optional: false, required: false
+  public get bus() {
+    return this.getStringAttribute('bus');
+  }
+
+  // cpu_hot_plug - computed: true, optional: false, required: false
+  public get cpuHotPlug() {
+    return this.getBooleanAttribute('cpu_hot_plug');
+  }
+
+  // device_number - computed: true, optional: false, required: false
+  public get deviceNumber() {
+    return this.getNumberAttribute('device_number');
+  }
+
+  // disc_virtio_hot_plug - computed: true, optional: false, required: false
+  public get discVirtioHotPlug() {
+    return this.getBooleanAttribute('disc_virtio_hot_plug');
+  }
+
+  // disc_virtio_hot_unplug - computed: true, optional: false, required: false
+  public get discVirtioHotUnplug() {
+    return this.getBooleanAttribute('disc_virtio_hot_unplug');
+  }
+
+  // id - computed: true, optional: false, required: false
+  public get id() {
+    return this.getStringAttribute('id');
+  }
+
+  // image_name - computed: true, optional: false, required: false
+  public get imageName() {
+    return this.getStringAttribute('image_name');
+  }
+
+  // image_password - computed: true, optional: false, required: false
+  public get imagePassword() {
+    return this.getStringAttribute('image_password');
+  }
+
+  // licence_type - computed: true, optional: false, required: false
+  public get licenceType() {
+    return this.getStringAttribute('licence_type');
+  }
+
+  // name - computed: true, optional: false, required: false
+  public get name() {
+    return this.getStringAttribute('name');
+  }
+
+  // nic_hot_plug - computed: true, optional: false, required: false
+  public get nicHotPlug() {
+    return this.getBooleanAttribute('nic_hot_plug');
+  }
+
+  // nic_hot_unplug - computed: true, optional: false, required: false
+  public get nicHotUnplug() {
+    return this.getBooleanAttribute('nic_hot_unplug');
+  }
+
+  // pci_slot - computed: true, optional: false, required: false
+  public get pciSlot() {
+    return this.getNumberAttribute('pci_slot');
+  }
+
+  // ram_hot_plug - computed: true, optional: false, required: false
+  public get ramHotPlug() {
+    return this.getBooleanAttribute('ram_hot_plug');
+  }
+
+  // size - computed: true, optional: false, required: false
+  public get size() {
+    return this.getNumberAttribute('size');
+  }
+
+  // ssh_keys - computed: true, optional: false, required: false
+  public get sshKeys() {
+    return this.getListAttribute('ssh_keys');
+  }
+
+  // type - computed: true, optional: false, required: false
+  public get type() {
+    return this.getStringAttribute('type');
+  }
+
+  // user_data - computed: true, optional: false, required: false
+  public get userData() {
+    return this.getStringAttribute('user_data');
+  }
+}
+
+export class DataIonoscloudServerVolumesList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataIonoscloudServerVolumesOutputReference {
+    return new DataIonoscloudServerVolumesOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface DataIonoscloudServerTimeouts {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/d/server#create DataIonoscloudServer#create}
+  */
+  readonly create?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/d/server#default DataIonoscloudServer#default}
+  */
+  readonly default?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/d/server#delete DataIonoscloudServer#delete}
+  */
+  readonly delete?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/d/server#update DataIonoscloudServer#update}
+  */
+  readonly update?: string;
+}
+
+export function dataIonoscloudServerTimeoutsToTerraform(struct?: DataIonoscloudServerTimeoutsOutputReference | DataIonoscloudServerTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    create: cdktf.stringToTerraform(struct!.create),
+    default: cdktf.stringToTerraform(struct!.default),
+    delete: cdktf.stringToTerraform(struct!.delete),
+    update: cdktf.stringToTerraform(struct!.update),
+  }
+}
+
+export class DataIonoscloudServerTimeoutsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): DataIonoscloudServerTimeouts | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._create !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.create = this._create;
+    }
+    if (this._default !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.default = this._default;
+    }
+    if (this._delete !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.delete = this._delete;
+    }
+    if (this._update !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.update = this._update;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataIonoscloudServerTimeouts | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._create = undefined;
+      this._default = undefined;
+      this._delete = undefined;
+      this._update = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._create = value.create;
+      this._default = value.default;
+      this._delete = value.delete;
+      this._update = value.update;
+    }
+  }
+
+  // create - computed: false, optional: true, required: false
+  private _create?: string; 
+  public get create() {
+    return this.getStringAttribute('create');
+  }
+  public set create(value: string) {
+    this._create = value;
+  }
+  public resetCreate() {
+    this._create = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get createInput() {
+    return this._create;
+  }
+
+  // default - computed: false, optional: true, required: false
+  private _default?: string; 
+  public get default() {
+    return this.getStringAttribute('default');
+  }
+  public set default(value: string) {
+    this._default = value;
+  }
+  public resetDefault() {
+    this._default = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get defaultInput() {
+    return this._default;
+  }
+
+  // delete - computed: false, optional: true, required: false
+  private _delete?: string; 
+  public get delete() {
+    return this.getStringAttribute('delete');
+  }
+  public set delete(value: string) {
+    this._delete = value;
+  }
+  public resetDelete() {
+    this._delete = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get deleteInput() {
+    return this._delete;
+  }
+
+  // update - computed: false, optional: true, required: false
+  private _update?: string; 
+  public get update() {
+    return this.getStringAttribute('update');
+  }
+  public set update(value: string) {
+    this._update = value;
+  }
+  public resetUpdate() {
+    this._update = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get updateInput() {
+    return this._update;
+  }
+}
+
+/**
+* Represents a {@link https://www.terraform.io/docs/providers/ionoscloud/d/server ionoscloud_server}
+*/
+export class DataIonoscloudServer extends cdktf.TerraformDataSource {
+
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType = "ionoscloud_server";
+
+  // ===========
+  // INITIALIZER
+  // ===========
+
+  /**
+  * Create a new {@link https://www.terraform.io/docs/providers/ionoscloud/d/server ionoscloud_server} Data Source
+  *
+  * @param scope The scope in which to define this construct
+  * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
+  * @param options DataIonoscloudServerConfig
+  */
+  public constructor(scope: Construct, id: string, config: DataIonoscloudServerConfig) {
+    super(scope, id, {
+      terraformResourceType: 'ionoscloud_server',
+      terraformGeneratorMetadata: {
+        providerName: 'ionoscloud',
+        providerVersion: '6.2.0',
+        providerVersionConstraint: '~> 6.2'
+      },
+      provider: config.provider,
+      dependsOn: config.dependsOn,
+      count: config.count,
+      lifecycle: config.lifecycle
+    });
+    this._datacenterId = config.datacenterId;
+    this._id = config.id;
+    this._name = config.name;
+    this._templateUuid = config.templateUuid;
+    this._type = config.type;
+    this._timeouts.internalValue = config.timeouts;
+  }
+
+  // ==========
+  // ATTRIBUTES
+  // ==========
+
+  // availability_zone - computed: true, optional: false, required: false
+  public get availabilityZone() {
+    return this.getStringAttribute('availability_zone');
+  }
+
+  // boot_cdrom - computed: true, optional: false, required: false
+  public get bootCdrom() {
+    return this.getStringAttribute('boot_cdrom');
+  }
+
+  // boot_image - computed: true, optional: false, required: false
+  public get bootImage() {
+    return this.getStringAttribute('boot_image');
+  }
+
+  // boot_volume - computed: true, optional: false, required: false
+  public get bootVolume() {
+    return this.getStringAttribute('boot_volume');
+  }
+
+  // cdroms - computed: true, optional: false, required: false
+  private _cdroms = new DataIonoscloudServerCdromsList(this, "cdroms", false);
+  public get cdroms() {
+    return this._cdroms;
+  }
+
+  // cores - computed: true, optional: false, required: false
+  public get cores() {
+    return this.getNumberAttribute('cores');
+  }
+
+  // cpu_family - computed: true, optional: false, required: false
+  public get cpuFamily() {
+    return this.getStringAttribute('cpu_family');
+  }
+
+  // datacenter_id - computed: false, optional: false, required: true
+  private _datacenterId?: string; 
+  public get datacenterId() {
+    return this.getStringAttribute('datacenter_id');
+  }
+  public set datacenterId(value: string) {
+    this._datacenterId = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get datacenterIdInput() {
+    return this._datacenterId;
+  }
+
+  // id - computed: false, optional: true, required: false
+  private _id?: string; 
+  public get id() {
+    return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
+  }
+
+  // name - computed: false, optional: true, required: false
+  private _name?: string; 
+  public get name() {
+    return this.getStringAttribute('name');
+  }
+  public set name(value: string) {
+    this._name = value;
+  }
+  public resetName() {
+    this._name = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name;
+  }
+
+  // nics - computed: true, optional: false, required: false
+  private _nics = new DataIonoscloudServerNicsList(this, "nics", false);
+  public get nics() {
+    return this._nics;
+  }
+
+  // ram - computed: true, optional: false, required: false
+  public get ram() {
+    return this.getNumberAttribute('ram');
+  }
+
+  // template_uuid - computed: false, optional: true, required: false
+  private _templateUuid?: string; 
+  public get templateUuid() {
+    return this.getStringAttribute('template_uuid');
+  }
+  public set templateUuid(value: string) {
+    this._templateUuid = value;
+  }
+  public resetTemplateUuid() {
+    this._templateUuid = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get templateUuidInput() {
+    return this._templateUuid;
+  }
+
+  // token - computed: true, optional: false, required: false
+  public get token() {
+    return this.getStringAttribute('token');
+  }
+
+  // type - computed: true, optional: true, required: false
+  private _type?: string; 
+  public get type() {
+    return this.getStringAttribute('type');
+  }
+  public set type(value: string) {
+    this._type = value;
+  }
+  public resetType() {
+    this._type = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get typeInput() {
+    return this._type;
+  }
+
+  // vm_state - computed: true, optional: false, required: false
+  public get vmState() {
+    return this.getStringAttribute('vm_state');
+  }
+
+  // volumes - computed: true, optional: false, required: false
+  private _volumes = new DataIonoscloudServerVolumesList(this, "volumes", false);
+  public get volumes() {
+    return this._volumes;
+  }
+
+  // timeouts - computed: false, optional: true, required: false
+  private _timeouts = new DataIonoscloudServerTimeoutsOutputReference(this, "timeouts");
+  public get timeouts() {
+    return this._timeouts;
+  }
+  public putTimeouts(value: DataIonoscloudServerTimeouts) {
+    this._timeouts.internalValue = value;
+  }
+  public resetTimeouts() {
+    this._timeouts.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get timeoutsInput() {
+    return this._timeouts.internalValue;
+  }
+
+  // =========
+  // SYNTHESIS
+  // =========
+
+  protected synthesizeAttributes(): { [name: string]: any } {
+    return {
+      datacenter_id: cdktf.stringToTerraform(this._datacenterId),
+      id: cdktf.stringToTerraform(this._id),
+      name: cdktf.stringToTerraform(this._name),
+      template_uuid: cdktf.stringToTerraform(this._templateUuid),
+      type: cdktf.stringToTerraform(this._type),
+      timeouts: dataIonoscloudServerTimeoutsToTerraform(this._timeouts.internalValue),
+    };
+  }
+}
