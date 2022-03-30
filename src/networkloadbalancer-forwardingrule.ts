@@ -1,0 +1,743 @@
+// https://www.terraform.io/docs/providers/ionoscloud/r/networkloadbalancer_forwardingrule
+// generated from terraform resource schema
+
+import { Construct } from 'constructs';
+import * as cdktf from 'cdktf';
+
+// Configuration
+
+export interface NetworkloadbalancerForwardingruleConfig extends cdktf.TerraformMetaArguments {
+  /**
+  * Algorithm for the balancing.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/networkloadbalancer_forwardingrule#algorithm NetworkloadbalancerForwardingrule#algorithm}
+  */
+  readonly algorithm: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/networkloadbalancer_forwardingrule#datacenter_id NetworkloadbalancerForwardingrule#datacenter_id}
+  */
+  readonly datacenterId: string;
+  /**
+  * Listening IP. (inbound)
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/networkloadbalancer_forwardingrule#listener_ip NetworkloadbalancerForwardingrule#listener_ip}
+  */
+  readonly listenerIp: string;
+  /**
+  * Listening port number. (inbound) (range: 1 to 65535)
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/networkloadbalancer_forwardingrule#listener_port NetworkloadbalancerForwardingrule#listener_port}
+  */
+  readonly listenerPort: number;
+  /**
+  * A name of that Network Load Balancer forwarding rule
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/networkloadbalancer_forwardingrule#name NetworkloadbalancerForwardingrule#name}
+  */
+  readonly name: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/networkloadbalancer_forwardingrule#networkloadbalancer_id NetworkloadbalancerForwardingrule#networkloadbalancer_id}
+  */
+  readonly networkloadbalancerId: string;
+  /**
+  * Protocol of the balancing.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/networkloadbalancer_forwardingrule#protocol NetworkloadbalancerForwardingrule#protocol}
+  */
+  readonly protocol: string;
+  /**
+  * health_check block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/networkloadbalancer_forwardingrule#health_check NetworkloadbalancerForwardingrule#health_check}
+  */
+  readonly healthCheck?: NetworkloadbalancerForwardingruleHealthCheck;
+  /**
+  * targets block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/networkloadbalancer_forwardingrule#targets NetworkloadbalancerForwardingrule#targets}
+  */
+  readonly targets: NetworkloadbalancerForwardingruleTargets[] | cdktf.IResolvable;
+  /**
+  * timeouts block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/networkloadbalancer_forwardingrule#timeouts NetworkloadbalancerForwardingrule#timeouts}
+  */
+  readonly timeouts?: NetworkloadbalancerForwardingruleTimeouts;
+}
+export interface NetworkloadbalancerForwardingruleHealthCheck {
+  /**
+  * ClientTimeout is expressed in milliseconds. This inactivity timeout applies when the client is expected to acknowledge or send data. If unset the default of 50 seconds will be used.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/networkloadbalancer_forwardingrule#client_timeout NetworkloadbalancerForwardingrule#client_timeout}
+  */
+  readonly clientTimeout?: number;
+  /**
+  * It specifies the maximum time (in milliseconds) to wait for a connection attempt to a target VM to succeed. If unset, the default of 5 seconds will be used.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/networkloadbalancer_forwardingrule#connect_timeout NetworkloadbalancerForwardingrule#connect_timeout}
+  */
+  readonly connectTimeout?: number;
+  /**
+  * Retries specifies the number of retries to perform on a target VM after a connection failure. If unset, the default value of 3 will be used.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/networkloadbalancer_forwardingrule#retries NetworkloadbalancerForwardingrule#retries}
+  */
+  readonly retries?: number;
+  /**
+  * TargetTimeout specifies the maximum inactivity time (in milliseconds) on the target VM side. If unset, the default of 50 seconds will be used.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/networkloadbalancer_forwardingrule#target_timeout NetworkloadbalancerForwardingrule#target_timeout}
+  */
+  readonly targetTimeout?: number;
+}
+
+export function networkloadbalancerForwardingruleHealthCheckToTerraform(struct?: NetworkloadbalancerForwardingruleHealthCheckOutputReference | NetworkloadbalancerForwardingruleHealthCheck): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    client_timeout: cdktf.numberToTerraform(struct!.clientTimeout),
+    connect_timeout: cdktf.numberToTerraform(struct!.connectTimeout),
+    retries: cdktf.numberToTerraform(struct!.retries),
+    target_timeout: cdktf.numberToTerraform(struct!.targetTimeout),
+  }
+}
+
+export class NetworkloadbalancerForwardingruleHealthCheckOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): NetworkloadbalancerForwardingruleHealthCheck | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._clientTimeout !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.clientTimeout = this._clientTimeout;
+    }
+    if (this._connectTimeout !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.connectTimeout = this._connectTimeout;
+    }
+    if (this._retries !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.retries = this._retries;
+    }
+    if (this._targetTimeout !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.targetTimeout = this._targetTimeout;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: NetworkloadbalancerForwardingruleHealthCheck | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._clientTimeout = undefined;
+      this._connectTimeout = undefined;
+      this._retries = undefined;
+      this._targetTimeout = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._clientTimeout = value.clientTimeout;
+      this._connectTimeout = value.connectTimeout;
+      this._retries = value.retries;
+      this._targetTimeout = value.targetTimeout;
+    }
+  }
+
+  // client_timeout - computed: true, optional: true, required: false
+  private _clientTimeout?: number; 
+  public get clientTimeout() {
+    return this.getNumberAttribute('client_timeout');
+  }
+  public set clientTimeout(value: number) {
+    this._clientTimeout = value;
+  }
+  public resetClientTimeout() {
+    this._clientTimeout = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get clientTimeoutInput() {
+    return this._clientTimeout;
+  }
+
+  // connect_timeout - computed: true, optional: true, required: false
+  private _connectTimeout?: number; 
+  public get connectTimeout() {
+    return this.getNumberAttribute('connect_timeout');
+  }
+  public set connectTimeout(value: number) {
+    this._connectTimeout = value;
+  }
+  public resetConnectTimeout() {
+    this._connectTimeout = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get connectTimeoutInput() {
+    return this._connectTimeout;
+  }
+
+  // retries - computed: true, optional: true, required: false
+  private _retries?: number; 
+  public get retries() {
+    return this.getNumberAttribute('retries');
+  }
+  public set retries(value: number) {
+    this._retries = value;
+  }
+  public resetRetries() {
+    this._retries = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get retriesInput() {
+    return this._retries;
+  }
+
+  // target_timeout - computed: true, optional: true, required: false
+  private _targetTimeout?: number; 
+  public get targetTimeout() {
+    return this.getNumberAttribute('target_timeout');
+  }
+  public set targetTimeout(value: number) {
+    this._targetTimeout = value;
+  }
+  public resetTargetTimeout() {
+    this._targetTimeout = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get targetTimeoutInput() {
+    return this._targetTimeout;
+  }
+}
+export interface NetworkloadbalancerForwardingruleTargetsHealthCheck {
+  /**
+  * Check specifies whether the target VM's health is checked.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/networkloadbalancer_forwardingrule#check NetworkloadbalancerForwardingrule#check}
+  */
+  readonly check?: boolean | cdktf.IResolvable;
+  /**
+  * CheckInterval determines the duration (in milliseconds) between consecutive health checks. If unspecified a default of 2000 ms is used.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/networkloadbalancer_forwardingrule#check_interval NetworkloadbalancerForwardingrule#check_interval}
+  */
+  readonly checkInterval?: number;
+  /**
+  * Maintenance specifies if a target VM should be marked as down, even if it is not.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/networkloadbalancer_forwardingrule#maintenance NetworkloadbalancerForwardingrule#maintenance}
+  */
+  readonly maintenance?: boolean | cdktf.IResolvable;
+}
+
+export function networkloadbalancerForwardingruleTargetsHealthCheckToTerraform(struct?: NetworkloadbalancerForwardingruleTargetsHealthCheckOutputReference | NetworkloadbalancerForwardingruleTargetsHealthCheck): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    check: cdktf.booleanToTerraform(struct!.check),
+    check_interval: cdktf.numberToTerraform(struct!.checkInterval),
+    maintenance: cdktf.booleanToTerraform(struct!.maintenance),
+  }
+}
+
+export class NetworkloadbalancerForwardingruleTargetsHealthCheckOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): NetworkloadbalancerForwardingruleTargetsHealthCheck | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._check !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.check = this._check;
+    }
+    if (this._checkInterval !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.checkInterval = this._checkInterval;
+    }
+    if (this._maintenance !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.maintenance = this._maintenance;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: NetworkloadbalancerForwardingruleTargetsHealthCheck | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._check = undefined;
+      this._checkInterval = undefined;
+      this._maintenance = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._check = value.check;
+      this._checkInterval = value.checkInterval;
+      this._maintenance = value.maintenance;
+    }
+  }
+
+  // check - computed: true, optional: true, required: false
+  private _check?: boolean | cdktf.IResolvable; 
+  public get check() {
+    return this.getBooleanAttribute('check');
+  }
+  public set check(value: boolean | cdktf.IResolvable) {
+    this._check = value;
+  }
+  public resetCheck() {
+    this._check = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get checkInput() {
+    return this._check;
+  }
+
+  // check_interval - computed: true, optional: true, required: false
+  private _checkInterval?: number; 
+  public get checkInterval() {
+    return this.getNumberAttribute('check_interval');
+  }
+  public set checkInterval(value: number) {
+    this._checkInterval = value;
+  }
+  public resetCheckInterval() {
+    this._checkInterval = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get checkIntervalInput() {
+    return this._checkInterval;
+  }
+
+  // maintenance - computed: true, optional: true, required: false
+  private _maintenance?: boolean | cdktf.IResolvable; 
+  public get maintenance() {
+    return this.getBooleanAttribute('maintenance');
+  }
+  public set maintenance(value: boolean | cdktf.IResolvable) {
+    this._maintenance = value;
+  }
+  public resetMaintenance() {
+    this._maintenance = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get maintenanceInput() {
+    return this._maintenance;
+  }
+}
+export interface NetworkloadbalancerForwardingruleTargets {
+  /**
+  * IP of a balanced target VM
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/networkloadbalancer_forwardingrule#ip NetworkloadbalancerForwardingrule#ip}
+  */
+  readonly ip: string;
+  /**
+  * Port of the balanced target service. (range: 1 to 65535)
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/networkloadbalancer_forwardingrule#port NetworkloadbalancerForwardingrule#port}
+  */
+  readonly port: number;
+  /**
+  * Weight parameter is used to adjust the target VM's weight relative to other target VMs
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/networkloadbalancer_forwardingrule#weight NetworkloadbalancerForwardingrule#weight}
+  */
+  readonly weight: number;
+  /**
+  * health_check block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/networkloadbalancer_forwardingrule#health_check NetworkloadbalancerForwardingrule#health_check}
+  */
+  readonly healthCheck?: NetworkloadbalancerForwardingruleTargetsHealthCheck;
+}
+
+export function networkloadbalancerForwardingruleTargetsToTerraform(struct?: NetworkloadbalancerForwardingruleTargets | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    ip: cdktf.stringToTerraform(struct!.ip),
+    port: cdktf.numberToTerraform(struct!.port),
+    weight: cdktf.numberToTerraform(struct!.weight),
+    health_check: networkloadbalancerForwardingruleTargetsHealthCheckToTerraform(struct!.healthCheck),
+  }
+}
+
+export interface NetworkloadbalancerForwardingruleTimeouts {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/networkloadbalancer_forwardingrule#create NetworkloadbalancerForwardingrule#create}
+  */
+  readonly create?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/networkloadbalancer_forwardingrule#default NetworkloadbalancerForwardingrule#default}
+  */
+  readonly default?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/networkloadbalancer_forwardingrule#delete NetworkloadbalancerForwardingrule#delete}
+  */
+  readonly delete?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/networkloadbalancer_forwardingrule#update NetworkloadbalancerForwardingrule#update}
+  */
+  readonly update?: string;
+}
+
+export function networkloadbalancerForwardingruleTimeoutsToTerraform(struct?: NetworkloadbalancerForwardingruleTimeoutsOutputReference | NetworkloadbalancerForwardingruleTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    create: cdktf.stringToTerraform(struct!.create),
+    default: cdktf.stringToTerraform(struct!.default),
+    delete: cdktf.stringToTerraform(struct!.delete),
+    update: cdktf.stringToTerraform(struct!.update),
+  }
+}
+
+export class NetworkloadbalancerForwardingruleTimeoutsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): NetworkloadbalancerForwardingruleTimeouts | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._create !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.create = this._create;
+    }
+    if (this._default !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.default = this._default;
+    }
+    if (this._delete !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.delete = this._delete;
+    }
+    if (this._update !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.update = this._update;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: NetworkloadbalancerForwardingruleTimeouts | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._create = undefined;
+      this._default = undefined;
+      this._delete = undefined;
+      this._update = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._create = value.create;
+      this._default = value.default;
+      this._delete = value.delete;
+      this._update = value.update;
+    }
+  }
+
+  // create - computed: false, optional: true, required: false
+  private _create?: string; 
+  public get create() {
+    return this.getStringAttribute('create');
+  }
+  public set create(value: string) {
+    this._create = value;
+  }
+  public resetCreate() {
+    this._create = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get createInput() {
+    return this._create;
+  }
+
+  // default - computed: false, optional: true, required: false
+  private _default?: string; 
+  public get default() {
+    return this.getStringAttribute('default');
+  }
+  public set default(value: string) {
+    this._default = value;
+  }
+  public resetDefault() {
+    this._default = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get defaultInput() {
+    return this._default;
+  }
+
+  // delete - computed: false, optional: true, required: false
+  private _delete?: string; 
+  public get delete() {
+    return this.getStringAttribute('delete');
+  }
+  public set delete(value: string) {
+    this._delete = value;
+  }
+  public resetDelete() {
+    this._delete = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get deleteInput() {
+    return this._delete;
+  }
+
+  // update - computed: false, optional: true, required: false
+  private _update?: string; 
+  public get update() {
+    return this.getStringAttribute('update');
+  }
+  public set update(value: string) {
+    this._update = value;
+  }
+  public resetUpdate() {
+    this._update = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get updateInput() {
+    return this._update;
+  }
+}
+
+/**
+* Represents a {@link https://www.terraform.io/docs/providers/ionoscloud/r/networkloadbalancer_forwardingrule ionoscloud_networkloadbalancer_forwardingrule}
+*/
+export class NetworkloadbalancerForwardingrule extends cdktf.TerraformResource {
+
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType = "ionoscloud_networkloadbalancer_forwardingrule";
+
+  // ===========
+  // INITIALIZER
+  // ===========
+
+  /**
+  * Create a new {@link https://www.terraform.io/docs/providers/ionoscloud/r/networkloadbalancer_forwardingrule ionoscloud_networkloadbalancer_forwardingrule} Resource
+  *
+  * @param scope The scope in which to define this construct
+  * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
+  * @param options NetworkloadbalancerForwardingruleConfig
+  */
+  public constructor(scope: Construct, id: string, config: NetworkloadbalancerForwardingruleConfig) {
+    super(scope, id, {
+      terraformResourceType: 'ionoscloud_networkloadbalancer_forwardingrule',
+      terraformGeneratorMetadata: {
+        providerName: 'ionoscloud',
+        providerVersion: '6.2.0',
+        providerVersionConstraint: '~> 6.2'
+      },
+      provider: config.provider,
+      dependsOn: config.dependsOn,
+      count: config.count,
+      lifecycle: config.lifecycle
+    });
+    this._algorithm = config.algorithm;
+    this._datacenterId = config.datacenterId;
+    this._listenerIp = config.listenerIp;
+    this._listenerPort = config.listenerPort;
+    this._name = config.name;
+    this._networkloadbalancerId = config.networkloadbalancerId;
+    this._protocol = config.protocol;
+    this._healthCheck.internalValue = config.healthCheck;
+    this._targets = config.targets;
+    this._timeouts.internalValue = config.timeouts;
+  }
+
+  // ==========
+  // ATTRIBUTES
+  // ==========
+
+  // algorithm - computed: false, optional: false, required: true
+  private _algorithm?: string; 
+  public get algorithm() {
+    return this.getStringAttribute('algorithm');
+  }
+  public set algorithm(value: string) {
+    this._algorithm = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get algorithmInput() {
+    return this._algorithm;
+  }
+
+  // datacenter_id - computed: false, optional: false, required: true
+  private _datacenterId?: string; 
+  public get datacenterId() {
+    return this.getStringAttribute('datacenter_id');
+  }
+  public set datacenterId(value: string) {
+    this._datacenterId = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get datacenterIdInput() {
+    return this._datacenterId;
+  }
+
+  // id - computed: true, optional: true, required: false
+  public get id() {
+    return this.getStringAttribute('id');
+  }
+
+  // listener_ip - computed: false, optional: false, required: true
+  private _listenerIp?: string; 
+  public get listenerIp() {
+    return this.getStringAttribute('listener_ip');
+  }
+  public set listenerIp(value: string) {
+    this._listenerIp = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get listenerIpInput() {
+    return this._listenerIp;
+  }
+
+  // listener_port - computed: false, optional: false, required: true
+  private _listenerPort?: number; 
+  public get listenerPort() {
+    return this.getNumberAttribute('listener_port');
+  }
+  public set listenerPort(value: number) {
+    this._listenerPort = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get listenerPortInput() {
+    return this._listenerPort;
+  }
+
+  // name - computed: false, optional: false, required: true
+  private _name?: string; 
+  public get name() {
+    return this.getStringAttribute('name');
+  }
+  public set name(value: string) {
+    this._name = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name;
+  }
+
+  // networkloadbalancer_id - computed: false, optional: false, required: true
+  private _networkloadbalancerId?: string; 
+  public get networkloadbalancerId() {
+    return this.getStringAttribute('networkloadbalancer_id');
+  }
+  public set networkloadbalancerId(value: string) {
+    this._networkloadbalancerId = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get networkloadbalancerIdInput() {
+    return this._networkloadbalancerId;
+  }
+
+  // protocol - computed: false, optional: false, required: true
+  private _protocol?: string; 
+  public get protocol() {
+    return this.getStringAttribute('protocol');
+  }
+  public set protocol(value: string) {
+    this._protocol = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get protocolInput() {
+    return this._protocol;
+  }
+
+  // health_check - computed: false, optional: true, required: false
+  private _healthCheck = new NetworkloadbalancerForwardingruleHealthCheckOutputReference(this, "health_check");
+  public get healthCheck() {
+    return this._healthCheck;
+  }
+  public putHealthCheck(value: NetworkloadbalancerForwardingruleHealthCheck) {
+    this._healthCheck.internalValue = value;
+  }
+  public resetHealthCheck() {
+    this._healthCheck.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get healthCheckInput() {
+    return this._healthCheck.internalValue;
+  }
+
+  // targets - computed: false, optional: false, required: true
+  private _targets?: NetworkloadbalancerForwardingruleTargets[] | cdktf.IResolvable; 
+  public get targets() {
+    // Getting the computed value is not yet implemented
+    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('targets')));
+  }
+  public set targets(value: NetworkloadbalancerForwardingruleTargets[] | cdktf.IResolvable) {
+    this._targets = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get targetsInput() {
+    return this._targets;
+  }
+
+  // timeouts - computed: false, optional: true, required: false
+  private _timeouts = new NetworkloadbalancerForwardingruleTimeoutsOutputReference(this, "timeouts");
+  public get timeouts() {
+    return this._timeouts;
+  }
+  public putTimeouts(value: NetworkloadbalancerForwardingruleTimeouts) {
+    this._timeouts.internalValue = value;
+  }
+  public resetTimeouts() {
+    this._timeouts.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get timeoutsInput() {
+    return this._timeouts.internalValue;
+  }
+
+  // =========
+  // SYNTHESIS
+  // =========
+
+  protected synthesizeAttributes(): { [name: string]: any } {
+    return {
+      algorithm: cdktf.stringToTerraform(this._algorithm),
+      datacenter_id: cdktf.stringToTerraform(this._datacenterId),
+      listener_ip: cdktf.stringToTerraform(this._listenerIp),
+      listener_port: cdktf.numberToTerraform(this._listenerPort),
+      name: cdktf.stringToTerraform(this._name),
+      networkloadbalancer_id: cdktf.stringToTerraform(this._networkloadbalancerId),
+      protocol: cdktf.stringToTerraform(this._protocol),
+      health_check: networkloadbalancerForwardingruleHealthCheckToTerraform(this._healthCheck.internalValue),
+      targets: cdktf.listMapper(networkloadbalancerForwardingruleTargetsToTerraform)(this._targets),
+      timeouts: networkloadbalancerForwardingruleTimeoutsToTerraform(this._timeouts.internalValue),
+    };
+  }
+}
