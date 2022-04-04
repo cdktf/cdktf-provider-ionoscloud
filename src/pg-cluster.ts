@@ -8,6 +8,12 @@ import * as cdktf from 'cdktf';
 
 export interface PgClusterConfig extends cdktf.TerraformMetaArguments {
   /**
+  * The S3 location where the backups will be stored.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/pg_cluster#backup_location PgCluster#backup_location}
+  */
+  readonly backupLocation?: string;
+  /**
   * The number of CPU cores per replica.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/pg_cluster#cores PgCluster#cores}
@@ -44,7 +50,7 @@ export interface PgClusterConfig extends cdktf.TerraformMetaArguments {
   */
   readonly ram: number;
   /**
-  * The amount of storage per instance in megabytes.
+  * The amount of storage per instance in megabytes. Has to be a multiple of 2048.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/pg_cluster#storage_size PgCluster#storage_size}
   */
@@ -652,7 +658,7 @@ export class PgCluster extends cdktf.TerraformResource {
       terraformResourceType: 'ionoscloud_pg_cluster',
       terraformGeneratorMetadata: {
         providerName: 'ionoscloud',
-        providerVersion: '6.2.0',
+        providerVersion: '6.2.1',
         providerVersionConstraint: '~> 6.2'
       },
       provider: config.provider,
@@ -660,6 +666,7 @@ export class PgCluster extends cdktf.TerraformResource {
       count: config.count,
       lifecycle: config.lifecycle
     });
+    this._backupLocation = config.backupLocation;
     this._cores = config.cores;
     this._displayName = config.displayName;
     this._instances = config.instances;
@@ -679,6 +686,22 @@ export class PgCluster extends cdktf.TerraformResource {
   // ==========
   // ATTRIBUTES
   // ==========
+
+  // backup_location - computed: true, optional: true, required: false
+  private _backupLocation?: string; 
+  public get backupLocation() {
+    return this.getStringAttribute('backup_location');
+  }
+  public set backupLocation(value: string) {
+    this._backupLocation = value;
+  }
+  public resetBackupLocation() {
+    this._backupLocation = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get backupLocationInput() {
+    return this._backupLocation;
+  }
 
   // cores - computed: false, optional: false, required: true
   private _cores?: number; 
@@ -885,6 +908,7 @@ export class PgCluster extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
+      backup_location: cdktf.stringToTerraform(this._backupLocation),
       cores: cdktf.numberToTerraform(this._cores),
       display_name: cdktf.stringToTerraform(this._displayName),
       instances: cdktf.numberToTerraform(this._instances),

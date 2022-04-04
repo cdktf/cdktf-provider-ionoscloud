@@ -8,6 +8,12 @@ import * as cdktf from 'cdktf';
 
 export interface K8SNodePoolConfig extends cdktf.TerraformMetaArguments {
   /**
+  * When set to true, allows the update of immutable fields by destroying and re-creating the node pool
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/k8s_node_pool#allow_replace K8SNodePool#allow_replace}
+  */
+  readonly allowReplace?: boolean | cdktf.IResolvable;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/k8s_node_pool#annotations K8SNodePool#annotations}
   */
   readonly annotations?: { [key: string]: string };
@@ -530,7 +536,7 @@ export class K8SNodePool extends cdktf.TerraformResource {
       terraformResourceType: 'ionoscloud_k8s_node_pool',
       terraformGeneratorMetadata: {
         providerName: 'ionoscloud',
-        providerVersion: '6.2.0',
+        providerVersion: '6.2.1',
         providerVersionConstraint: '~> 6.2'
       },
       provider: config.provider,
@@ -538,6 +544,7 @@ export class K8SNodePool extends cdktf.TerraformResource {
       count: config.count,
       lifecycle: config.lifecycle
     });
+    this._allowReplace = config.allowReplace;
     this._annotations = config.annotations;
     this._availabilityZone = config.availabilityZone;
     this._coresCount = config.coresCount;
@@ -562,6 +569,22 @@ export class K8SNodePool extends cdktf.TerraformResource {
   // ==========
   // ATTRIBUTES
   // ==========
+
+  // allow_replace - computed: false, optional: true, required: false
+  private _allowReplace?: boolean | cdktf.IResolvable; 
+  public get allowReplace() {
+    return this.getBooleanAttribute('allow_replace');
+  }
+  public set allowReplace(value: boolean | cdktf.IResolvable) {
+    this._allowReplace = value;
+  }
+  public resetAllowReplace() {
+    this._allowReplace = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get allowReplaceInput() {
+    return this._allowReplace;
+  }
 
   // annotations - computed: false, optional: true, required: false
   private _annotations?: { [key: string]: string }; 
@@ -846,6 +869,7 @@ export class K8SNodePool extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
+      allow_replace: cdktf.booleanToTerraform(this._allowReplace),
       annotations: cdktf.hashMapper(cdktf.stringToTerraform)(this._annotations),
       availability_zone: cdktf.stringToTerraform(this._availabilityZone),
       cores_count: cdktf.numberToTerraform(this._coresCount),

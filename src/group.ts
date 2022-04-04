@@ -60,6 +60,10 @@ export interface GroupConfig extends cdktf.TerraformMetaArguments {
   */
   readonly s3Privilege?: boolean | cdktf.IResolvable;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/group#user_id Group#user_id}
+  */
+  readonly userId?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/group#user_ids Group#user_ids}
   */
   readonly userIds?: string[];
@@ -337,7 +341,7 @@ export class Group extends cdktf.TerraformResource {
       terraformResourceType: 'ionoscloud_group',
       terraformGeneratorMetadata: {
         providerName: 'ionoscloud',
-        providerVersion: '6.2.0',
+        providerVersion: '6.2.1',
         providerVersionConstraint: '~> 6.2'
       },
       provider: config.provider,
@@ -358,6 +362,7 @@ export class Group extends cdktf.TerraformResource {
     this._name = config.name;
     this._reserveIp = config.reserveIp;
     this._s3Privilege = config.s3Privilege;
+    this._userId = config.userId;
     this._userIds = config.userIds;
     this._timeouts.internalValue = config.timeouts;
   }
@@ -576,6 +581,22 @@ export class Group extends cdktf.TerraformResource {
     return this._s3Privilege;
   }
 
+  // user_id - computed: false, optional: true, required: false
+  private _userId?: string; 
+  public get userId() {
+    return this.getStringAttribute('user_id');
+  }
+  public set userId(value: string) {
+    this._userId = value;
+  }
+  public resetUserId() {
+    this._userId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get userIdInput() {
+    return this._userId;
+  }
+
   // user_ids - computed: false, optional: true, required: false
   private _userIds?: string[]; 
   public get userIds() {
@@ -633,6 +654,7 @@ export class Group extends cdktf.TerraformResource {
       name: cdktf.stringToTerraform(this._name),
       reserve_ip: cdktf.booleanToTerraform(this._reserveIp),
       s3_privilege: cdktf.booleanToTerraform(this._s3Privilege),
+      user_id: cdktf.stringToTerraform(this._userId),
       user_ids: cdktf.listMapper(cdktf.stringToTerraform)(this._userIds),
       timeouts: groupTimeoutsToTerraform(this._timeouts.internalValue),
     };

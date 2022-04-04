@@ -12540,6 +12540,7 @@ Any object.
 | <code><a href="#@cdktf/provider-ionoscloud.DataIonoscloudPgCluster.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.DataIonoscloudPgCluster.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.DataIonoscloudPgCluster.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.DataIonoscloudPgCluster.property.backupLocation">backupLocation</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.DataIonoscloudPgCluster.property.connections">connections</a></code> | <code><a href="#@cdktf/provider-ionoscloud.DataIonoscloudPgClusterConnectionsList">DataIonoscloudPgClusterConnectionsList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.DataIonoscloudPgCluster.property.cores">cores</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.DataIonoscloudPgCluster.property.credentials">credentials</a></code> | <code><a href="#@cdktf/provider-ionoscloud.DataIonoscloudPgClusterCredentialsList">DataIonoscloudPgClusterCredentialsList</a></code> | *No description.* |
@@ -12670,6 +12671,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* cdktf.TerraformProvider
+
+---
+
+##### `backupLocation`<sup>Required</sup> <a name="backupLocation" id="@cdktf/provider-ionoscloud.DataIonoscloudPgCluster.property.backupLocation"></a>
+
+```typescript
+public readonly backupLocation: string;
+```
+
+- *Type:* string
 
 ---
 
@@ -20124,6 +20135,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-ionoscloud.Group.resetReserveIp">resetReserveIp</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.Group.resetS3Privilege">resetS3Privilege</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.Group.resetTimeouts">resetTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.Group.resetUserId">resetUserId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.Group.resetUserIds">resetUserIds</a></code> | *No description.* |
 
 ---
@@ -20402,6 +20414,12 @@ public resetS3Privilege(): void
 public resetTimeouts(): void
 ```
 
+##### `resetUserId` <a name="resetUserId" id="@cdktf/provider-ionoscloud.Group.resetUserId"></a>
+
+```typescript
+public resetUserId(): void
+```
+
 ##### `resetUserIds` <a name="resetUserIds" id="@cdktf/provider-ionoscloud.Group.resetUserIds"></a>
 
 ```typescript
@@ -20480,6 +20498,7 @@ Any object.
 | <code><a href="#@cdktf/provider-ionoscloud.Group.property.reserveIpInput">reserveIpInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.Group.property.s3PrivilegeInput">s3PrivilegeInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.Group.property.timeoutsInput">timeoutsInput</a></code> | <code><a href="#@cdktf/provider-ionoscloud.GroupTimeouts">GroupTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.Group.property.userIdInput">userIdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.Group.property.userIdsInput">userIdsInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.Group.property.accessActivityLog">accessActivityLog</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.Group.property.accessAndManageCertificates">accessAndManageCertificates</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
@@ -20494,6 +20513,7 @@ Any object.
 | <code><a href="#@cdktf/provider-ionoscloud.Group.property.name">name</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.Group.property.reserveIp">reserveIp</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.Group.property.s3Privilege">s3Privilege</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.Group.property.userId">userId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.Group.property.userIds">userIds</a></code> | <code>string[]</code> | *No description.* |
 
 ---
@@ -20780,6 +20800,16 @@ public readonly timeoutsInput: GroupTimeouts;
 
 ---
 
+##### `userIdInput`<sup>Optional</sup> <a name="userIdInput" id="@cdktf/provider-ionoscloud.Group.property.userIdInput"></a>
+
+```typescript
+public readonly userIdInput: string;
+```
+
+- *Type:* string
+
+---
+
 ##### `userIdsInput`<sup>Optional</sup> <a name="userIdsInput" id="@cdktf/provider-ionoscloud.Group.property.userIdsInput"></a>
 
 ```typescript
@@ -20917,6 +20947,16 @@ public readonly s3Privilege: boolean | IResolvable;
 ```
 
 - *Type:* boolean | cdktf.IResolvable
+
+---
+
+##### `userId`<sup>Required</sup> <a name="userId" id="@cdktf/provider-ionoscloud.Group.property.userId"></a>
+
+```typescript
+public readonly userId: string;
+```
+
+- *Type:* string
 
 ---
 
@@ -23351,6 +23391,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-ionoscloud.K8SNodePool.putAutoScaling">putAutoScaling</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.K8SNodePool.putMaintenanceWindow">putMaintenanceWindow</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.K8SNodePool.putTimeouts">putTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.K8SNodePool.resetAllowReplace">resetAllowReplace</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.K8SNodePool.resetAnnotations">resetAnnotations</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.K8SNodePool.resetAutoScaling">resetAutoScaling</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.K8SNodePool.resetGatewayIp">resetGatewayIp</a></code> | *No description.* |
@@ -23582,6 +23623,12 @@ public putTimeouts(value: K8SNodePoolTimeouts): void
 
 ---
 
+##### `resetAllowReplace` <a name="resetAllowReplace" id="@cdktf/provider-ionoscloud.K8SNodePool.resetAllowReplace"></a>
+
+```typescript
+public resetAllowReplace(): void
+```
+
 ##### `resetAnnotations` <a name="resetAnnotations" id="@cdktf/provider-ionoscloud.K8SNodePool.resetAnnotations"></a>
 
 ```typescript
@@ -23689,6 +23736,7 @@ Any object.
 | <code><a href="#@cdktf/provider-ionoscloud.K8SNodePool.property.id">id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.K8SNodePool.property.maintenanceWindow">maintenanceWindow</a></code> | <code><a href="#@cdktf/provider-ionoscloud.K8SNodePoolMaintenanceWindowOutputReference">K8SNodePoolMaintenanceWindowOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.K8SNodePool.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-ionoscloud.K8SNodePoolTimeoutsOutputReference">K8SNodePoolTimeoutsOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.K8SNodePool.property.allowReplaceInput">allowReplaceInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.K8SNodePool.property.annotationsInput">annotationsInput</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.K8SNodePool.property.autoScalingInput">autoScalingInput</a></code> | <code><a href="#@cdktf/provider-ionoscloud.K8SNodePoolAutoScaling">K8SNodePoolAutoScaling</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.K8SNodePool.property.availabilityZoneInput">availabilityZoneInput</a></code> | <code>string</code> | *No description.* |
@@ -23708,6 +23756,7 @@ Any object.
 | <code><a href="#@cdktf/provider-ionoscloud.K8SNodePool.property.storageSizeInput">storageSizeInput</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.K8SNodePool.property.storageTypeInput">storageTypeInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.K8SNodePool.property.timeoutsInput">timeoutsInput</a></code> | <code><a href="#@cdktf/provider-ionoscloud.K8SNodePoolTimeouts">K8SNodePoolTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.K8SNodePool.property.allowReplace">allowReplace</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.K8SNodePool.property.annotations">annotations</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.K8SNodePool.property.availabilityZone">availabilityZone</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.K8SNodePool.property.coresCount">coresCount</a></code> | <code>number</code> | *No description.* |
@@ -23876,6 +23925,16 @@ public readonly timeouts: K8SNodePoolTimeoutsOutputReference;
 ```
 
 - *Type:* <a href="#@cdktf/provider-ionoscloud.K8SNodePoolTimeoutsOutputReference">K8SNodePoolTimeoutsOutputReference</a>
+
+---
+
+##### `allowReplaceInput`<sup>Optional</sup> <a name="allowReplaceInput" id="@cdktf/provider-ionoscloud.K8SNodePool.property.allowReplaceInput"></a>
+
+```typescript
+public readonly allowReplaceInput: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
 
 ---
 
@@ -24066,6 +24125,16 @@ public readonly timeoutsInput: K8SNodePoolTimeouts;
 ```
 
 - *Type:* <a href="#@cdktf/provider-ionoscloud.K8SNodePoolTimeouts">K8SNodePoolTimeouts</a>
+
+---
+
+##### `allowReplace`<sup>Required</sup> <a name="allowReplace" id="@cdktf/provider-ionoscloud.K8SNodePool.property.allowReplace"></a>
+
+```typescript
+public readonly allowReplace: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
 
 ---
 
@@ -28957,6 +29026,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-ionoscloud.PgCluster.putFromBackup">putFromBackup</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.PgCluster.putMaintenanceWindow">putMaintenanceWindow</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.PgCluster.putTimeouts">putTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.PgCluster.resetBackupLocation">resetBackupLocation</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.PgCluster.resetConnections">resetConnections</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.PgCluster.resetFromBackup">resetFromBackup</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.PgCluster.resetMaintenanceWindow">resetMaintenanceWindow</a></code> | *No description.* |
@@ -29208,6 +29278,12 @@ public putTimeouts(value: PgClusterTimeouts): void
 
 ---
 
+##### `resetBackupLocation` <a name="resetBackupLocation" id="@cdktf/provider-ionoscloud.PgCluster.resetBackupLocation"></a>
+
+```typescript
+public resetBackupLocation(): void
+```
+
 ##### `resetConnections` <a name="resetConnections" id="@cdktf/provider-ionoscloud.PgCluster.resetConnections"></a>
 
 ```typescript
@@ -29293,6 +29369,7 @@ Any object.
 | <code><a href="#@cdktf/provider-ionoscloud.PgCluster.property.id">id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.PgCluster.property.maintenanceWindow">maintenanceWindow</a></code> | <code><a href="#@cdktf/provider-ionoscloud.PgClusterMaintenanceWindowOutputReference">PgClusterMaintenanceWindowOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.PgCluster.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-ionoscloud.PgClusterTimeoutsOutputReference">PgClusterTimeoutsOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.PgCluster.property.backupLocationInput">backupLocationInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.PgCluster.property.connectionsInput">connectionsInput</a></code> | <code><a href="#@cdktf/provider-ionoscloud.PgClusterConnections">PgClusterConnections</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.PgCluster.property.coresInput">coresInput</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.PgCluster.property.credentialsInput">credentialsInput</a></code> | <code><a href="#@cdktf/provider-ionoscloud.PgClusterCredentials">PgClusterCredentials</a></code> | *No description.* |
@@ -29307,6 +29384,7 @@ Any object.
 | <code><a href="#@cdktf/provider-ionoscloud.PgCluster.property.storageTypeInput">storageTypeInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.PgCluster.property.synchronizationModeInput">synchronizationModeInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.PgCluster.property.timeoutsInput">timeoutsInput</a></code> | <code><a href="#@cdktf/provider-ionoscloud.PgClusterTimeouts">PgClusterTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.PgCluster.property.backupLocation">backupLocation</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.PgCluster.property.cores">cores</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.PgCluster.property.displayName">displayName</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.PgCluster.property.instances">instances</a></code> | <code>number</code> | *No description.* |
@@ -29491,6 +29569,16 @@ public readonly timeouts: PgClusterTimeoutsOutputReference;
 
 ---
 
+##### `backupLocationInput`<sup>Optional</sup> <a name="backupLocationInput" id="@cdktf/provider-ionoscloud.PgCluster.property.backupLocationInput"></a>
+
+```typescript
+public readonly backupLocationInput: string;
+```
+
+- *Type:* string
+
+---
+
 ##### `connectionsInput`<sup>Optional</sup> <a name="connectionsInput" id="@cdktf/provider-ionoscloud.PgCluster.property.connectionsInput"></a>
 
 ```typescript
@@ -29628,6 +29716,16 @@ public readonly timeoutsInput: PgClusterTimeouts;
 ```
 
 - *Type:* <a href="#@cdktf/provider-ionoscloud.PgClusterTimeouts">PgClusterTimeouts</a>
+
+---
+
+##### `backupLocation`<sup>Required</sup> <a name="backupLocation" id="@cdktf/provider-ionoscloud.PgCluster.property.backupLocation"></a>
+
+```typescript
+public readonly backupLocation: string;
+```
+
+- *Type:* string
 
 ---
 
@@ -41276,6 +41374,7 @@ const groupConfig: GroupConfig = { ... }
 | <code><a href="#@cdktf/provider-ionoscloud.GroupConfig.property.reserveIp">reserveIp</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/group#reserve_ip Group#reserve_ip}. |
 | <code><a href="#@cdktf/provider-ionoscloud.GroupConfig.property.s3Privilege">s3Privilege</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/group#s3_privilege Group#s3_privilege}. |
 | <code><a href="#@cdktf/provider-ionoscloud.GroupConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-ionoscloud.GroupTimeouts">GroupTimeouts</a></code> | timeouts block. |
+| <code><a href="#@cdktf/provider-ionoscloud.GroupConfig.property.userId">userId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/group#user_id Group#user_id}. |
 | <code><a href="#@cdktf/provider-ionoscloud.GroupConfig.property.userIds">userIds</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/group#user_ids Group#user_ids}. |
 
 ---
@@ -41487,6 +41586,18 @@ public readonly timeouts: GroupTimeouts;
 timeouts block.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/group#timeouts Group#timeouts}
+
+---
+
+##### `userId`<sup>Optional</sup> <a name="userId" id="@cdktf/provider-ionoscloud.GroupConfig.property.userId"></a>
+
+```typescript
+public readonly userId: string;
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/group#user_id Group#user_id}.
 
 ---
 
@@ -42503,6 +42614,7 @@ const k8SNodePoolConfig: K8SNodePoolConfig = { ... }
 | <code><a href="#@cdktf/provider-ionoscloud.K8SNodePoolConfig.property.ramSize">ramSize</a></code> | <code>number</code> | The amount of RAM in MB. |
 | <code><a href="#@cdktf/provider-ionoscloud.K8SNodePoolConfig.property.storageSize">storageSize</a></code> | <code>number</code> | The total allocated storage capacity of a node in GB. |
 | <code><a href="#@cdktf/provider-ionoscloud.K8SNodePoolConfig.property.storageType">storageType</a></code> | <code>string</code> | Storage type to use. |
+| <code><a href="#@cdktf/provider-ionoscloud.K8SNodePoolConfig.property.allowReplace">allowReplace</a></code> | <code>boolean \| cdktf.IResolvable</code> | When set to true, allows the update of immutable fields by destroying and re-creating the node pool. |
 | <code><a href="#@cdktf/provider-ionoscloud.K8SNodePoolConfig.property.annotations">annotations</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/k8s_node_pool#annotations K8SNodePool#annotations}. |
 | <code><a href="#@cdktf/provider-ionoscloud.K8SNodePoolConfig.property.autoScaling">autoScaling</a></code> | <code><a href="#@cdktf/provider-ionoscloud.K8SNodePoolAutoScaling">K8SNodePoolAutoScaling</a></code> | auto_scaling block. |
 | <code><a href="#@cdktf/provider-ionoscloud.K8SNodePoolConfig.property.gatewayIp">gatewayIp</a></code> | <code>string</code> | Public IP address for the gateway performing source NAT for the node pool's nodes belonging to a private cluster. |
@@ -42705,6 +42817,20 @@ public readonly storageType: string;
 Storage type to use.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/k8s_node_pool#storage_type K8SNodePool#storage_type}
+
+---
+
+##### `allowReplace`<sup>Optional</sup> <a name="allowReplace" id="@cdktf/provider-ionoscloud.K8SNodePoolConfig.property.allowReplace"></a>
+
+```typescript
+public readonly allowReplace: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
+
+When set to true, allows the update of immutable fields by destroying and re-creating the node pool.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/k8s_node_pool#allow_replace K8SNodePool#allow_replace}
 
 ---
 
@@ -45070,9 +45196,10 @@ const pgClusterConfig: PgClusterConfig = { ... }
 | <code><a href="#@cdktf/provider-ionoscloud.PgClusterConfig.property.location">location</a></code> | <code>string</code> | The physical location where the cluster will be created. |
 | <code><a href="#@cdktf/provider-ionoscloud.PgClusterConfig.property.postgresVersion">postgresVersion</a></code> | <code>string</code> | The PostgreSQL version of your cluster. |
 | <code><a href="#@cdktf/provider-ionoscloud.PgClusterConfig.property.ram">ram</a></code> | <code>number</code> | The amount of memory per instance in megabytes. Has to be a multiple of 1024. |
-| <code><a href="#@cdktf/provider-ionoscloud.PgClusterConfig.property.storageSize">storageSize</a></code> | <code>number</code> | The amount of storage per instance in megabytes. |
+| <code><a href="#@cdktf/provider-ionoscloud.PgClusterConfig.property.storageSize">storageSize</a></code> | <code>number</code> | The amount of storage per instance in megabytes. Has to be a multiple of 2048. |
 | <code><a href="#@cdktf/provider-ionoscloud.PgClusterConfig.property.storageType">storageType</a></code> | <code>string</code> | The storage type used in your cluster. |
 | <code><a href="#@cdktf/provider-ionoscloud.PgClusterConfig.property.synchronizationMode">synchronizationMode</a></code> | <code>string</code> | Represents different modes of replication. |
+| <code><a href="#@cdktf/provider-ionoscloud.PgClusterConfig.property.backupLocation">backupLocation</a></code> | <code>string</code> | The S3 location where the backups will be stored. |
 | <code><a href="#@cdktf/provider-ionoscloud.PgClusterConfig.property.connections">connections</a></code> | <code><a href="#@cdktf/provider-ionoscloud.PgClusterConnections">PgClusterConnections</a></code> | connections block. |
 | <code><a href="#@cdktf/provider-ionoscloud.PgClusterConfig.property.fromBackup">fromBackup</a></code> | <code><a href="#@cdktf/provider-ionoscloud.PgClusterFromBackup">PgClusterFromBackup</a></code> | from_backup block. |
 | <code><a href="#@cdktf/provider-ionoscloud.PgClusterConfig.property.maintenanceWindow">maintenanceWindow</a></code> | <code><a href="#@cdktf/provider-ionoscloud.PgClusterMaintenanceWindow">PgClusterMaintenanceWindow</a></code> | maintenance_window block. |
@@ -45228,7 +45355,7 @@ public readonly storageSize: number;
 
 - *Type:* number
 
-The amount of storage per instance in megabytes.
+The amount of storage per instance in megabytes. Has to be a multiple of 2048.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/pg_cluster#storage_size PgCluster#storage_size}
 
@@ -45259,6 +45386,20 @@ public readonly synchronizationMode: string;
 Represents different modes of replication.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/pg_cluster#synchronization_mode PgCluster#synchronization_mode}
+
+---
+
+##### `backupLocation`<sup>Optional</sup> <a name="backupLocation" id="@cdktf/provider-ionoscloud.PgClusterConfig.property.backupLocation"></a>
+
+```typescript
+public readonly backupLocation: string;
+```
+
+- *Type:* string
+
+The S3 location where the backups will be stored.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/pg_cluster#backup_location PgCluster#backup_location}
 
 ---
 
