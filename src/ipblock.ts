@@ -217,7 +217,7 @@ export class Ipblock extends cdktf.TerraformResource {
       terraformResourceType: 'ionoscloud_ipblock',
       terraformGeneratorMetadata: {
         providerName: 'ionoscloud',
-        providerVersion: '6.2.0',
+        providerVersion: '6.2.1',
         providerVersionConstraint: '~> 6.2'
       },
       provider: config.provider,

@@ -235,7 +235,7 @@ export class Natgateway extends cdktf.TerraformResource {
       terraformResourceType: 'ionoscloud_natgateway',
       terraformGeneratorMetadata: {
         providerName: 'ionoscloud',
-        providerVersion: '6.2.0',
+        providerVersion: '6.2.1',
         providerVersionConstraint: '~> 6.2'
       },
       provider: config.provider,
@@ -288,7 +288,7 @@ export class Natgateway extends cdktf.TerraformResource {
   // public_ips - computed: false, optional: false, required: true
   private _publicIps?: string[]; 
   public get publicIps() {
-    return this.getListAttribute('public_ips');
+    return cdktf.Fn.tolist(this.getListAttribute('public_ips'));
   }
   public set publicIps(value: string[]) {
     this._publicIps = value;

@@ -480,7 +480,7 @@ export class DataIonoscloudPgCluster extends cdktf.TerraformDataSource {
       terraformResourceType: 'ionoscloud_pg_cluster',
       terraformGeneratorMetadata: {
         providerName: 'ionoscloud',
-        providerVersion: '6.2.0',
+        providerVersion: '6.2.1',
         providerVersionConstraint: '~> 6.2'
       },
       provider: config.provider,
@@ -496,6 +496,11 @@ export class DataIonoscloudPgCluster extends cdktf.TerraformDataSource {
   // ==========
   // ATTRIBUTES
   // ==========
+
+  // backup_location - computed: true, optional: false, required: false
+  public get backupLocation() {
+    return this.getStringAttribute('backup_location');
+  }
 
   // connections - computed: true, optional: false, required: false
   private _connections = new DataIonoscloudPgClusterConnectionsList(this, "connections", false);
