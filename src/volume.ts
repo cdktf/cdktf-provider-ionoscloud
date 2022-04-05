@@ -239,7 +239,7 @@ export class Volume extends cdktf.TerraformResource {
       terraformResourceType: 'ionoscloud_volume',
       terraformGeneratorMetadata: {
         providerName: 'ionoscloud',
-        providerVersion: '6.2.1',
+        providerVersion: '6.2.2',
         providerVersionConstraint: '~> 6.2'
       },
       provider: config.provider,
