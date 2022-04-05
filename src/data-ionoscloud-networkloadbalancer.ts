@@ -199,7 +199,7 @@ export class DataIonoscloudNetworkloadbalancer extends cdktf.TerraformDataSource
       terraformResourceType: 'ionoscloud_networkloadbalancer',
       terraformGeneratorMetadata: {
         providerName: 'ionoscloud',
-        providerVersion: '6.2.1',
+        providerVersion: '6.2.2',
         providerVersionConstraint: '~> 6.2'
       },
       provider: config.provider,
