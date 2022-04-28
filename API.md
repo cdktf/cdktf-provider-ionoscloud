@@ -18174,6 +18174,7 @@ Any object.
 | <code><a href="#@cdktf/provider-ionoscloud.DataIonoscloudUser.property.administrator">administrator</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.DataIonoscloudUser.property.firstName">firstName</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.DataIonoscloudUser.property.forceSecAuth">forceSecAuth</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.DataIonoscloudUser.property.groups">groups</a></code> | <code><a href="#@cdktf/provider-ionoscloud.DataIonoscloudUserGroupsList">DataIonoscloudUserGroupsList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.DataIonoscloudUser.property.lastName">lastName</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.DataIonoscloudUser.property.s3CanonicalUserId">s3CanonicalUserId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.DataIonoscloudUser.property.secAuthActive">secAuthActive</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
@@ -18335,6 +18336,16 @@ public readonly forceSecAuth: IResolvable;
 ```
 
 - *Type:* cdktf.IResolvable
+
+---
+
+##### `groups`<sup>Required</sup> <a name="groups" id="@cdktf/provider-ionoscloud.DataIonoscloudUser.property.groups"></a>
+
+```typescript
+public readonly groups: DataIonoscloudUserGroupsList;
+```
+
+- *Type:* <a href="#@cdktf/provider-ionoscloud.DataIonoscloudUserGroupsList">DataIonoscloudUserGroupsList</a>
 
 ---
 
@@ -33346,6 +33357,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-ionoscloud.User.resetActive">resetActive</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.User.resetAdministrator">resetAdministrator</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.User.resetForceSecAuth">resetForceSecAuth</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.User.resetGroupIds">resetGroupIds</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.User.resetTimeouts">resetTimeouts</a></code> | *No description.* |
 
 ---
@@ -33564,6 +33576,12 @@ public resetAdministrator(): void
 public resetForceSecAuth(): void
 ```
 
+##### `resetGroupIds` <a name="resetGroupIds" id="@cdktf/provider-ionoscloud.User.resetGroupIds"></a>
+
+```typescript
+public resetGroupIds(): void
+```
+
 ##### `resetTimeouts` <a name="resetTimeouts" id="@cdktf/provider-ionoscloud.User.resetTimeouts"></a>
 
 ```typescript
@@ -33634,6 +33652,7 @@ Any object.
 | <code><a href="#@cdktf/provider-ionoscloud.User.property.emailInput">emailInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.User.property.firstNameInput">firstNameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.User.property.forceSecAuthInput">forceSecAuthInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.User.property.groupIdsInput">groupIdsInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.User.property.lastNameInput">lastNameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.User.property.passwordInput">passwordInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.User.property.timeoutsInput">timeoutsInput</a></code> | <code><a href="#@cdktf/provider-ionoscloud.UserTimeouts">UserTimeouts</a></code> | *No description.* |
@@ -33642,6 +33661,7 @@ Any object.
 | <code><a href="#@cdktf/provider-ionoscloud.User.property.email">email</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.User.property.firstName">firstName</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.User.property.forceSecAuth">forceSecAuth</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.User.property.groupIds">groupIds</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.User.property.lastName">lastName</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.User.property.password">password</a></code> | <code>string</code> | *No description.* |
 
@@ -33849,6 +33869,16 @@ public readonly forceSecAuthInput: boolean | IResolvable;
 
 ---
 
+##### `groupIdsInput`<sup>Optional</sup> <a name="groupIdsInput" id="@cdktf/provider-ionoscloud.User.property.groupIdsInput"></a>
+
+```typescript
+public readonly groupIdsInput: string[];
+```
+
+- *Type:* string[]
+
+---
+
 ##### `lastNameInput`<sup>Optional</sup> <a name="lastNameInput" id="@cdktf/provider-ionoscloud.User.property.lastNameInput"></a>
 
 ```typescript
@@ -33926,6 +33956,16 @@ public readonly forceSecAuth: boolean | IResolvable;
 ```
 
 - *Type:* boolean | cdktf.IResolvable
+
+---
+
+##### `groupIds`<sup>Required</sup> <a name="groupIds" id="@cdktf/provider-ionoscloud.User.property.groupIds"></a>
+
+```typescript
+public readonly groupIds: string[];
+```
+
+- *Type:* string[]
 
 ---
 
@@ -40775,6 +40815,17 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionos
 
 ---
 
+### DataIonoscloudUserGroups <a name="DataIonoscloudUserGroups" id="@cdktf/provider-ionoscloud.DataIonoscloudUserGroups"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-ionoscloud.DataIonoscloudUserGroups.Initializer"></a>
+
+```typescript
+import { DataIonoscloudUserGroups } from '@cdktf/provider-ionoscloud'
+
+const dataIonoscloudUserGroups: DataIonoscloudUserGroups = { ... }
+```
+
+
 ### DataIonoscloudUserTimeouts <a name="DataIonoscloudUserTimeouts" id="@cdktf/provider-ionoscloud.DataIonoscloudUserTimeouts"></a>
 
 #### Initializer <a name="Initializer" id="@cdktf/provider-ionoscloud.DataIonoscloudUserTimeouts.Initializer"></a>
@@ -46753,7 +46804,6 @@ const serverVolume: ServerVolume = { ... }
 | <code><a href="#@cdktf/provider-ionoscloud.ServerVolume.property.availabilityZone">availabilityZone</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/server#availability_zone Server#availability_zone}. |
 | <code><a href="#@cdktf/provider-ionoscloud.ServerVolume.property.backupUnitId">backupUnitId</a></code> | <code>string</code> | The uuid of the Backup Unit that user has access to. |
 | <code><a href="#@cdktf/provider-ionoscloud.ServerVolume.property.bus">bus</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/server#bus Server#bus}. |
-| <code><a href="#@cdktf/provider-ionoscloud.ServerVolume.property.imageName">imageName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/server#image_name Server#image_name}. |
 | <code><a href="#@cdktf/provider-ionoscloud.ServerVolume.property.imagePassword">imagePassword</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/server#image_password Server#image_password}. |
 | <code><a href="#@cdktf/provider-ionoscloud.ServerVolume.property.licenceType">licenceType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/server#licence_type Server#licence_type}. |
 | <code><a href="#@cdktf/provider-ionoscloud.ServerVolume.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/server#name Server#name}. |
@@ -46812,18 +46862,6 @@ public readonly bus: string;
 - *Type:* string
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/server#bus Server#bus}.
-
----
-
-##### `imageName`<sup>Optional</sup> <a name="imageName" id="@cdktf/provider-ionoscloud.ServerVolume.property.imageName"></a>
-
-```typescript
-public readonly imageName: string;
-```
-
-- *Type:* string
-
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/server#image_name Server#image_name}.
 
 ---
 
@@ -47311,6 +47349,7 @@ const userConfig: UserConfig = { ... }
 | <code><a href="#@cdktf/provider-ionoscloud.UserConfig.property.active">active</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/user#active User#active}. |
 | <code><a href="#@cdktf/provider-ionoscloud.UserConfig.property.administrator">administrator</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/user#administrator User#administrator}. |
 | <code><a href="#@cdktf/provider-ionoscloud.UserConfig.property.forceSecAuth">forceSecAuth</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/user#force_sec_auth User#force_sec_auth}. |
+| <code><a href="#@cdktf/provider-ionoscloud.UserConfig.property.groupIds">groupIds</a></code> | <code>string[]</code> | Ids of the groups that the user is a member of. |
 | <code><a href="#@cdktf/provider-ionoscloud.UserConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-ionoscloud.UserTimeouts">UserTimeouts</a></code> | timeouts block. |
 
 ---
@@ -47436,6 +47475,20 @@ public readonly forceSecAuth: boolean | IResolvable;
 - *Type:* boolean | cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/user#force_sec_auth User#force_sec_auth}.
+
+---
+
+##### `groupIds`<sup>Optional</sup> <a name="groupIds" id="@cdktf/provider-ionoscloud.UserConfig.property.groupIds"></a>
+
+```typescript
+public readonly groupIds: string[];
+```
+
+- *Type:* string[]
+
+Ids of the groups that the user is a member of.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/user#group_ids User#group_ids}
 
 ---
 
@@ -67340,6 +67393,320 @@ public readonly internalValue: DataIonoscloudTemplateTimeouts;
 ---
 
 
+### DataIonoscloudUserGroupsList <a name="DataIonoscloudUserGroupsList" id="@cdktf/provider-ionoscloud.DataIonoscloudUserGroupsList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.DataIonoscloudUserGroupsList.Initializer"></a>
+
+```typescript
+import { DataIonoscloudUserGroupsList } from '@cdktf/provider-ionoscloud'
+
+new DataIonoscloudUserGroupsList(terraformResource: IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-ionoscloud.DataIonoscloudUserGroupsList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-ionoscloud.DataIonoscloudUserGroupsList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-ionoscloud.DataIonoscloudUserGroupsList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-ionoscloud.DataIonoscloudUserGroupsList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-ionoscloud.DataIonoscloudUserGroupsList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktf/provider-ionoscloud.DataIonoscloudUserGroupsList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* boolean
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-ionoscloud.DataIonoscloudUserGroupsList.get">get</a></code> | *No description.* |
+
+---
+
+##### `get` <a name="get" id="@cdktf/provider-ionoscloud.DataIonoscloudUserGroupsList.get"></a>
+
+```typescript
+public get(index: number): DataIonoscloudUserGroupsOutputReference
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktf/provider-ionoscloud.DataIonoscloudUserGroupsList.get.parameter.index"></a>
+
+- *Type:* number
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-ionoscloud.DataIonoscloudUserGroupsList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-ionoscloud.DataIonoscloudUserGroupsList.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+
+### DataIonoscloudUserGroupsOutputReference <a name="DataIonoscloudUserGroupsOutputReference" id="@cdktf/provider-ionoscloud.DataIonoscloudUserGroupsOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.DataIonoscloudUserGroupsOutputReference.Initializer"></a>
+
+```typescript
+import { DataIonoscloudUserGroupsOutputReference } from '@cdktf/provider-ionoscloud'
+
+new DataIonoscloudUserGroupsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-ionoscloud.DataIonoscloudUserGroupsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-ionoscloud.DataIonoscloudUserGroupsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-ionoscloud.DataIonoscloudUserGroupsOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
+| <code><a href="#@cdktf/provider-ionoscloud.DataIonoscloudUserGroupsOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-ionoscloud.DataIonoscloudUserGroupsOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-ionoscloud.DataIonoscloudUserGroupsOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktf/provider-ionoscloud.DataIonoscloudUserGroupsOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* number
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktf/provider-ionoscloud.DataIonoscloudUserGroupsOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* boolean
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-ionoscloud.DataIonoscloudUserGroupsOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.DataIonoscloudUserGroupsOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.DataIonoscloudUserGroupsOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.DataIonoscloudUserGroupsOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.DataIonoscloudUserGroupsOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.DataIonoscloudUserGroupsOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.DataIonoscloudUserGroupsOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.DataIonoscloudUserGroupsOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.DataIonoscloudUserGroupsOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.DataIonoscloudUserGroupsOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+
+---
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-ionoscloud.DataIonoscloudUserGroupsOutputReference.getAnyMapAttribute"></a>
+
+```typescript
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-ionoscloud.DataIonoscloudUserGroupsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-ionoscloud.DataIonoscloudUserGroupsOutputReference.getBooleanAttribute"></a>
+
+```typescript
+public getBooleanAttribute(terraformAttribute: string): IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-ionoscloud.DataIonoscloudUserGroupsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-ionoscloud.DataIonoscloudUserGroupsOutputReference.getBooleanMapAttribute"></a>
+
+```typescript
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-ionoscloud.DataIonoscloudUserGroupsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-ionoscloud.DataIonoscloudUserGroupsOutputReference.getListAttribute"></a>
+
+```typescript
+public getListAttribute(terraformAttribute: string): string[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-ionoscloud.DataIonoscloudUserGroupsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-ionoscloud.DataIonoscloudUserGroupsOutputReference.getNumberAttribute"></a>
+
+```typescript
+public getNumberAttribute(terraformAttribute: string): number
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-ionoscloud.DataIonoscloudUserGroupsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-ionoscloud.DataIonoscloudUserGroupsOutputReference.getNumberListAttribute"></a>
+
+```typescript
+public getNumberListAttribute(terraformAttribute: string): number[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-ionoscloud.DataIonoscloudUserGroupsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-ionoscloud.DataIonoscloudUserGroupsOutputReference.getNumberMapAttribute"></a>
+
+```typescript
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-ionoscloud.DataIonoscloudUserGroupsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-ionoscloud.DataIonoscloudUserGroupsOutputReference.getStringAttribute"></a>
+
+```typescript
+public getStringAttribute(terraformAttribute: string): string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-ionoscloud.DataIonoscloudUserGroupsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-ionoscloud.DataIonoscloudUserGroupsOutputReference.getStringMapAttribute"></a>
+
+```typescript
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-ionoscloud.DataIonoscloudUserGroupsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-ionoscloud.DataIonoscloudUserGroupsOutputReference.interpolationForAttribute"></a>
+
+```typescript
+public interpolationForAttribute(property: string): IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-ionoscloud.DataIonoscloudUserGroupsOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-ionoscloud.DataIonoscloudUserGroupsOutputReference.property.id">id</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.DataIonoscloudUserGroupsOutputReference.property.name">name</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.DataIonoscloudUserGroupsOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-ionoscloud.DataIonoscloudUserGroups">DataIonoscloudUserGroups</a></code> | *No description.* |
+
+---
+
+##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-ionoscloud.DataIonoscloudUserGroupsOutputReference.property.id"></a>
+
+```typescript
+public readonly id: string;
+```
+
+- *Type:* string
+
+---
+
+##### `name`<sup>Required</sup> <a name="name" id="@cdktf/provider-ionoscloud.DataIonoscloudUserGroupsOutputReference.property.name"></a>
+
+```typescript
+public readonly name: string;
+```
+
+- *Type:* string
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-ionoscloud.DataIonoscloudUserGroupsOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: DataIonoscloudUserGroups;
+```
+
+- *Type:* <a href="#@cdktf/provider-ionoscloud.DataIonoscloudUserGroups">DataIonoscloudUserGroups</a>
+
+---
+
+
 ### DataIonoscloudUserTimeoutsOutputReference <a name="DataIonoscloudUserTimeoutsOutputReference" id="@cdktf/provider-ionoscloud.DataIonoscloudUserTimeoutsOutputReference"></a>
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.DataIonoscloudUserTimeoutsOutputReference.Initializer"></a>
@@ -76976,7 +77343,6 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktf/provider-ionoscloud.ServerVolumeOutputReference.resetAvailabilityZone">resetAvailabilityZone</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.ServerVolumeOutputReference.resetBackupUnitId">resetBackupUnitId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.ServerVolumeOutputReference.resetBus">resetBus</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-ionoscloud.ServerVolumeOutputReference.resetImageName">resetImageName</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.ServerVolumeOutputReference.resetImagePassword">resetImagePassword</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.ServerVolumeOutputReference.resetLicenceType">resetLicenceType</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.ServerVolumeOutputReference.resetName">resetName</a></code> | *No description.* |
@@ -77124,12 +77490,6 @@ public resetBackupUnitId(): void
 public resetBus(): void
 ```
 
-##### `resetImageName` <a name="resetImageName" id="@cdktf/provider-ionoscloud.ServerVolumeOutputReference.resetImageName"></a>
-
-```typescript
-public resetImageName(): void
-```
-
 ##### `resetImagePassword` <a name="resetImagePassword" id="@cdktf/provider-ionoscloud.ServerVolumeOutputReference.resetImagePassword"></a>
 
 ```typescript
@@ -77184,7 +77544,6 @@ public resetUserData(): void
 | <code><a href="#@cdktf/provider-ionoscloud.ServerVolumeOutputReference.property.backupUnitIdInput">backupUnitIdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.ServerVolumeOutputReference.property.busInput">busInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.ServerVolumeOutputReference.property.diskTypeInput">diskTypeInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-ionoscloud.ServerVolumeOutputReference.property.imageNameInput">imageNameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.ServerVolumeOutputReference.property.imagePasswordInput">imagePasswordInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.ServerVolumeOutputReference.property.licenceTypeInput">licenceTypeInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.ServerVolumeOutputReference.property.nameInput">nameInput</a></code> | <code>string</code> | *No description.* |
@@ -77195,7 +77554,6 @@ public resetUserData(): void
 | <code><a href="#@cdktf/provider-ionoscloud.ServerVolumeOutputReference.property.backupUnitId">backupUnitId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.ServerVolumeOutputReference.property.bus">bus</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.ServerVolumeOutputReference.property.diskType">diskType</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-ionoscloud.ServerVolumeOutputReference.property.imageName">imageName</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.ServerVolumeOutputReference.property.imagePassword">imagePassword</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.ServerVolumeOutputReference.property.licenceType">licenceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.ServerVolumeOutputReference.property.name">name</a></code> | <code>string</code> | *No description.* |
@@ -77336,16 +77694,6 @@ public readonly diskTypeInput: string;
 
 ---
 
-##### `imageNameInput`<sup>Optional</sup> <a name="imageNameInput" id="@cdktf/provider-ionoscloud.ServerVolumeOutputReference.property.imageNameInput"></a>
-
-```typescript
-public readonly imageNameInput: string;
-```
-
-- *Type:* string
-
----
-
 ##### `imagePasswordInput`<sup>Optional</sup> <a name="imagePasswordInput" id="@cdktf/provider-ionoscloud.ServerVolumeOutputReference.property.imagePasswordInput"></a>
 
 ```typescript
@@ -77440,16 +77788,6 @@ public readonly bus: string;
 
 ```typescript
 public readonly diskType: string;
-```
-
-- *Type:* string
-
----
-
-##### `imageName`<sup>Required</sup> <a name="imageName" id="@cdktf/provider-ionoscloud.ServerVolumeOutputReference.property.imageName"></a>
-
-```typescript
-public readonly imageName: string;
 ```
 
 - *Type:* string
