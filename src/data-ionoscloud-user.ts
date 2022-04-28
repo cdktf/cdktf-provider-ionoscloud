@@ -22,6 +22,75 @@ export interface DataIonoscloudUserConfig extends cdktf.TerraformMetaArguments {
   */
   readonly timeouts?: DataIonoscloudUserTimeouts;
 }
+export interface DataIonoscloudUserGroups {
+}
+
+export function dataIonoscloudUserGroupsToTerraform(struct?: DataIonoscloudUserGroups): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class DataIonoscloudUserGroupsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataIonoscloudUserGroups | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataIonoscloudUserGroups | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // id - computed: true, optional: false, required: false
+  public get id() {
+    return this.getStringAttribute('id');
+  }
+
+  // name - computed: true, optional: false, required: false
+  public get name() {
+    return this.getStringAttribute('name');
+  }
+}
+
+export class DataIonoscloudUserGroupsList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataIonoscloudUserGroupsOutputReference {
+    return new DataIonoscloudUserGroupsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface DataIonoscloudUserTimeouts {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/d/user#create DataIonoscloudUser#create}
@@ -195,7 +264,7 @@ export class DataIonoscloudUser extends cdktf.TerraformDataSource {
       terraformResourceType: 'ionoscloud_user',
       terraformGeneratorMetadata: {
         providerName: 'ionoscloud',
-        providerVersion: '6.2.2',
+        providerVersion: '6.2.3',
         providerVersionConstraint: '~> 6.2'
       },
       provider: config.provider,
@@ -246,6 +315,12 @@ export class DataIonoscloudUser extends cdktf.TerraformDataSource {
   // force_sec_auth - computed: true, optional: false, required: false
   public get forceSecAuth() {
     return this.getBooleanAttribute('force_sec_auth');
+  }
+
+  // groups - computed: true, optional: false, required: false
+  private _groups = new DataIonoscloudUserGroupsList(this, "groups", true);
+  public get groups() {
+    return this._groups;
   }
 
   // id - computed: false, optional: true, required: false

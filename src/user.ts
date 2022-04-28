@@ -28,6 +28,12 @@ export interface UserConfig extends cdktf.TerraformMetaArguments {
   */
   readonly forceSecAuth?: boolean | cdktf.IResolvable;
   /**
+  * Ids of the groups that the user is a member of
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/user#group_ids User#group_ids}
+  */
+  readonly groupIds?: string[];
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/user#last_name User#last_name}
   */
   readonly lastName: string;
@@ -215,7 +221,7 @@ export class User extends cdktf.TerraformResource {
       terraformResourceType: 'ionoscloud_user',
       terraformGeneratorMetadata: {
         providerName: 'ionoscloud',
-        providerVersion: '6.2.2',
+        providerVersion: '6.2.3',
         providerVersionConstraint: '~> 6.2'
       },
       provider: config.provider,
@@ -228,6 +234,7 @@ export class User extends cdktf.TerraformResource {
     this._email = config.email;
     this._firstName = config.firstName;
     this._forceSecAuth = config.forceSecAuth;
+    this._groupIds = config.groupIds;
     this._lastName = config.lastName;
     this._password = config.password;
     this._timeouts.internalValue = config.timeouts;
@@ -311,6 +318,22 @@ export class User extends cdktf.TerraformResource {
     return this._forceSecAuth;
   }
 
+  // group_ids - computed: false, optional: true, required: false
+  private _groupIds?: string[]; 
+  public get groupIds() {
+    return cdktf.Fn.tolist(this.getListAttribute('group_ids'));
+  }
+  public set groupIds(value: string[]) {
+    this._groupIds = value;
+  }
+  public resetGroupIds() {
+    this._groupIds = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get groupIdsInput() {
+    return this._groupIds;
+  }
+
   // id - computed: true, optional: true, required: false
   public get id() {
     return this.getStringAttribute('id');
@@ -379,6 +402,7 @@ export class User extends cdktf.TerraformResource {
       email: cdktf.stringToTerraform(this._email),
       first_name: cdktf.stringToTerraform(this._firstName),
       force_sec_auth: cdktf.booleanToTerraform(this._forceSecAuth),
+      group_ids: cdktf.listMapper(cdktf.stringToTerraform)(this._groupIds),
       last_name: cdktf.stringToTerraform(this._lastName),
       password: cdktf.stringToTerraform(this._password),
       timeouts: userTimeoutsToTerraform(this._timeouts.internalValue),

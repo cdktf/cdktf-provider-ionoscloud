@@ -790,10 +790,6 @@ export interface ServerVolume {
   */
   readonly diskType: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/server#image_name Server#image_name}
-  */
-  readonly imageName?: string;
-  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/server#image_password Server#image_password}
   */
   readonly imagePassword?: string;
@@ -831,7 +827,6 @@ export function serverVolumeToTerraform(struct?: ServerVolumeOutputReference | S
     backup_unit_id: cdktf.stringToTerraform(struct!.backupUnitId),
     bus: cdktf.stringToTerraform(struct!.bus),
     disk_type: cdktf.stringToTerraform(struct!.diskType),
-    image_name: cdktf.stringToTerraform(struct!.imageName),
     image_password: cdktf.stringToTerraform(struct!.imagePassword),
     licence_type: cdktf.stringToTerraform(struct!.licenceType),
     name: cdktf.stringToTerraform(struct!.name),
@@ -871,10 +866,6 @@ export class ServerVolumeOutputReference extends cdktf.ComplexObject {
       hasAnyValues = true;
       internalValueResult.diskType = this._diskType;
     }
-    if (this._imageName !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.imageName = this._imageName;
-    }
     if (this._imagePassword !== undefined) {
       hasAnyValues = true;
       internalValueResult.imagePassword = this._imagePassword;
@@ -909,7 +900,6 @@ export class ServerVolumeOutputReference extends cdktf.ComplexObject {
       this._backupUnitId = undefined;
       this._bus = undefined;
       this._diskType = undefined;
-      this._imageName = undefined;
       this._imagePassword = undefined;
       this._licenceType = undefined;
       this._name = undefined;
@@ -923,7 +913,6 @@ export class ServerVolumeOutputReference extends cdktf.ComplexObject {
       this._backupUnitId = value.backupUnitId;
       this._bus = value.bus;
       this._diskType = value.diskType;
-      this._imageName = value.imageName;
       this._imagePassword = value.imagePassword;
       this._licenceType = value.licenceType;
       this._name = value.name;
@@ -1017,22 +1006,6 @@ export class ServerVolumeOutputReference extends cdktf.ComplexObject {
   // Temporarily expose input value. Use with caution.
   public get diskTypeInput() {
     return this._diskType;
-  }
-
-  // image_name - computed: false, optional: true, required: false
-  private _imageName?: string; 
-  public get imageName() {
-    return this.getStringAttribute('image_name');
-  }
-  public set imageName(value: string) {
-    this._imageName = value;
-  }
-  public resetImageName() {
-    this._imageName = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get imageNameInput() {
-    return this._imageName;
   }
 
   // image_password - computed: false, optional: true, required: false
@@ -1178,7 +1151,7 @@ export class Server extends cdktf.TerraformResource {
       terraformResourceType: 'ionoscloud_server',
       terraformGeneratorMetadata: {
         providerName: 'ionoscloud',
-        providerVersion: '6.2.2',
+        providerVersion: '6.2.3',
         providerVersionConstraint: '~> 6.2'
       },
       provider: config.provider,
@@ -1208,7 +1181,7 @@ export class Server extends cdktf.TerraformResource {
   // ATTRIBUTES
   // ==========
 
-  // availability_zone - computed: false, optional: true, required: false
+  // availability_zone - computed: true, optional: true, required: false
   private _availabilityZone?: string; 
   public get availabilityZone() {
     return this.getStringAttribute('availability_zone');
