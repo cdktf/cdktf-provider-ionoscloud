@@ -1151,7 +1151,7 @@ export class Server extends cdktf.TerraformResource {
       terraformResourceType: 'ionoscloud_server',
       terraformGeneratorMetadata: {
         providerName: 'ionoscloud',
-        providerVersion: '6.2.3',
+        providerVersion: '6.2.4',
         providerVersionConstraint: '~> 6.2'
       },
       provider: config.provider,

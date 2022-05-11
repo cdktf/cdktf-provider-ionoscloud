@@ -268,7 +268,7 @@ export class DataIonoscloudLan extends cdktf.TerraformDataSource {
       terraformResourceType: 'ionoscloud_lan',
       terraformGeneratorMetadata: {
         providerName: 'ionoscloud',
-        providerVersion: '6.2.3',
+        providerVersion: '6.2.4',
         providerVersionConstraint: '~> 6.2'
       },
       provider: config.provider,
