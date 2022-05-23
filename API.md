@@ -6165,7 +6165,6 @@ Any object.
 | <code><a href="#@cdktf/provider-ionoscloud.DataIonoscloudK8SCluster.property.kubeConfig">kubeConfig</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.DataIonoscloudK8SCluster.property.maintenanceWindow">maintenanceWindow</a></code> | <code><a href="#@cdktf/provider-ionoscloud.DataIonoscloudK8SClusterMaintenanceWindowList">DataIonoscloudK8SClusterMaintenanceWindowList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.DataIonoscloudK8SCluster.property.nodePools">nodePools</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-ionoscloud.DataIonoscloudK8SCluster.property.public">public</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.DataIonoscloudK8SCluster.property.s3Buckets">s3Buckets</a></code> | <code><a href="#@cdktf/provider-ionoscloud.DataIonoscloudK8SClusterS3BucketsList">DataIonoscloudK8SClusterS3BucketsList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.DataIonoscloudK8SCluster.property.server">server</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.DataIonoscloudK8SCluster.property.state">state</a></code> | <code>string</code> | *No description.* |
@@ -6368,16 +6367,6 @@ public readonly nodePools: string[];
 ```
 
 - *Type:* string[]
-
----
-
-##### `public`<sup>Required</sup> <a name="public" id="@cdktf/provider-ionoscloud.DataIonoscloudK8SCluster.property.public"></a>
-
-```typescript
-public readonly public: IResolvable;
-```
-
-- *Type:* cdktf.IResolvable
 
 ---
 
@@ -6871,7 +6860,6 @@ Any object.
 | <code><a href="#@cdktf/provider-ionoscloud.DataIonoscloudK8SNodePool.property.coresCount">coresCount</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.DataIonoscloudK8SNodePool.property.cpuFamily">cpuFamily</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.DataIonoscloudK8SNodePool.property.datacenterId">datacenterId</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-ionoscloud.DataIonoscloudK8SNodePool.property.gatewayIp">gatewayIp</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.DataIonoscloudK8SNodePool.property.k8SVersion">k8SVersion</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.DataIonoscloudK8SNodePool.property.lans">lans</a></code> | <code><a href="#@cdktf/provider-ionoscloud.DataIonoscloudK8SNodePoolLansList">DataIonoscloudK8SNodePoolLansList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.DataIonoscloudK8SNodePool.property.maintenanceWindow">maintenanceWindow</a></code> | <code><a href="#@cdktf/provider-ionoscloud.DataIonoscloudK8SNodePoolMaintenanceWindowList">DataIonoscloudK8SNodePoolMaintenanceWindowList</a></code> | *No description.* |
@@ -7058,16 +7046,6 @@ public readonly cpuFamily: string;
 
 ```typescript
 public readonly datacenterId: string;
-```
-
-- *Type:* string
-
----
-
-##### `gatewayIp`<sup>Required</sup> <a name="gatewayIp" id="@cdktf/provider-ionoscloud.DataIonoscloudK8SNodePool.property.gatewayIp"></a>
-
-```typescript
-public readonly gatewayIp: string;
 ```
 
 - *Type:* string
@@ -22703,7 +22681,6 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-ionoscloud.K8SCluster.resetApiSubnetAllowList">resetApiSubnetAllowList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.K8SCluster.resetK8SVersion">resetK8SVersion</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.K8SCluster.resetMaintenanceWindow">resetMaintenanceWindow</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-ionoscloud.K8SCluster.resetPublic">resetPublic</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.K8SCluster.resetS3Buckets">resetS3Buckets</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.K8SCluster.resetTimeouts">resetTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.K8SCluster.resetViableNodePoolVersions">resetViableNodePoolVersions</a></code> | *No description.* |
@@ -22936,12 +22913,6 @@ public resetK8SVersion(): void
 public resetMaintenanceWindow(): void
 ```
 
-##### `resetPublic` <a name="resetPublic" id="@cdktf/provider-ionoscloud.K8SCluster.resetPublic"></a>
-
-```typescript
-public resetPublic(): void
-```
-
 ##### `resetS3Buckets` <a name="resetS3Buckets" id="@cdktf/provider-ionoscloud.K8SCluster.resetS3Buckets"></a>
 
 ```typescript
@@ -23022,14 +22993,12 @@ Any object.
 | <code><a href="#@cdktf/provider-ionoscloud.K8SCluster.property.k8SVersionInput">k8SVersionInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.K8SCluster.property.maintenanceWindowInput">maintenanceWindowInput</a></code> | <code><a href="#@cdktf/provider-ionoscloud.K8SClusterMaintenanceWindow">K8SClusterMaintenanceWindow</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.K8SCluster.property.nameInput">nameInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-ionoscloud.K8SCluster.property.publicInput">publicInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.K8SCluster.property.s3BucketsInput">s3BucketsInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-ionoscloud.K8SClusterS3Buckets">K8SClusterS3Buckets</a>[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.K8SCluster.property.timeoutsInput">timeoutsInput</a></code> | <code><a href="#@cdktf/provider-ionoscloud.K8SClusterTimeouts">K8SClusterTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.K8SCluster.property.viableNodePoolVersionsInput">viableNodePoolVersionsInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.K8SCluster.property.apiSubnetAllowList">apiSubnetAllowList</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.K8SCluster.property.k8SVersion">k8SVersion</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.K8SCluster.property.name">name</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-ionoscloud.K8SCluster.property.public">public</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.K8SCluster.property.s3Buckets">s3Buckets</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-ionoscloud.K8SClusterS3Buckets">K8SClusterS3Buckets</a>[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.K8SCluster.property.viableNodePoolVersions">viableNodePoolVersions</a></code> | <code>string[]</code> | *No description.* |
 
@@ -23217,16 +23186,6 @@ public readonly nameInput: string;
 
 ---
 
-##### `publicInput`<sup>Optional</sup> <a name="publicInput" id="@cdktf/provider-ionoscloud.K8SCluster.property.publicInput"></a>
-
-```typescript
-public readonly publicInput: boolean | IResolvable;
-```
-
-- *Type:* boolean | cdktf.IResolvable
-
----
-
 ##### `s3BucketsInput`<sup>Optional</sup> <a name="s3BucketsInput" id="@cdktf/provider-ionoscloud.K8SCluster.property.s3BucketsInput"></a>
 
 ```typescript
@@ -23284,16 +23243,6 @@ public readonly name: string;
 ```
 
 - *Type:* string
-
----
-
-##### `public`<sup>Required</sup> <a name="public" id="@cdktf/provider-ionoscloud.K8SCluster.property.public"></a>
-
-```typescript
-public readonly public: boolean | IResolvable;
-```
-
-- *Type:* boolean | cdktf.IResolvable
 
 ---
 
@@ -23405,7 +23354,6 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-ionoscloud.K8SNodePool.resetAllowReplace">resetAllowReplace</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.K8SNodePool.resetAnnotations">resetAnnotations</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.K8SNodePool.resetAutoScaling">resetAutoScaling</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-ionoscloud.K8SNodePool.resetGatewayIp">resetGatewayIp</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.K8SNodePool.resetLabels">resetLabels</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.K8SNodePool.resetLans">resetLans</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.K8SNodePool.resetMaintenanceWindow">resetMaintenanceWindow</a></code> | *No description.* |
@@ -23652,12 +23600,6 @@ public resetAnnotations(): void
 public resetAutoScaling(): void
 ```
 
-##### `resetGatewayIp` <a name="resetGatewayIp" id="@cdktf/provider-ionoscloud.K8SNodePool.resetGatewayIp"></a>
-
-```typescript
-public resetGatewayIp(): void
-```
-
 ##### `resetLabels` <a name="resetLabels" id="@cdktf/provider-ionoscloud.K8SNodePool.resetLabels"></a>
 
 ```typescript
@@ -23754,7 +23696,6 @@ Any object.
 | <code><a href="#@cdktf/provider-ionoscloud.K8SNodePool.property.coresCountInput">coresCountInput</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.K8SNodePool.property.cpuFamilyInput">cpuFamilyInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.K8SNodePool.property.datacenterIdInput">datacenterIdInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-ionoscloud.K8SNodePool.property.gatewayIpInput">gatewayIpInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.K8SNodePool.property.k8SClusterIdInput">k8SClusterIdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.K8SNodePool.property.k8SVersionInput">k8SVersionInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.K8SNodePool.property.labelsInput">labelsInput</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
@@ -23773,7 +23714,6 @@ Any object.
 | <code><a href="#@cdktf/provider-ionoscloud.K8SNodePool.property.coresCount">coresCount</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.K8SNodePool.property.cpuFamily">cpuFamily</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.K8SNodePool.property.datacenterId">datacenterId</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-ionoscloud.K8SNodePool.property.gatewayIp">gatewayIp</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.K8SNodePool.property.k8SClusterId">k8SClusterId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.K8SNodePool.property.k8SVersion">k8SVersion</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.K8SNodePool.property.labels">labels</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
@@ -24009,16 +23949,6 @@ public readonly datacenterIdInput: string;
 
 ---
 
-##### `gatewayIpInput`<sup>Optional</sup> <a name="gatewayIpInput" id="@cdktf/provider-ionoscloud.K8SNodePool.property.gatewayIpInput"></a>
-
-```typescript
-public readonly gatewayIpInput: string;
-```
-
-- *Type:* string
-
----
-
 ##### `k8SClusterIdInput`<sup>Optional</sup> <a name="k8SClusterIdInput" id="@cdktf/provider-ionoscloud.K8SNodePool.property.k8SClusterIdInput"></a>
 
 ```typescript
@@ -24193,16 +24123,6 @@ public readonly cpuFamily: string;
 
 ```typescript
 public readonly datacenterId: string;
-```
-
-- *Type:* string
-
----
-
-##### `gatewayIp`<sup>Required</sup> <a name="gatewayIp" id="@cdktf/provider-ionoscloud.K8SNodePool.property.gatewayIp"></a>
-
-```typescript
-public readonly gatewayIp: string;
 ```
 
 - *Type:* string
@@ -42278,7 +42198,6 @@ const k8SClusterConfig: K8SClusterConfig = { ... }
 | <code><a href="#@cdktf/provider-ionoscloud.K8SClusterConfig.property.apiSubnetAllowList">apiSubnetAllowList</a></code> | <code>string[]</code> | Access to the K8s API server is restricted to these CIDRs. |
 | <code><a href="#@cdktf/provider-ionoscloud.K8SClusterConfig.property.k8SVersion">k8SVersion</a></code> | <code>string</code> | The desired kubernetes version. |
 | <code><a href="#@cdktf/provider-ionoscloud.K8SClusterConfig.property.maintenanceWindow">maintenanceWindow</a></code> | <code><a href="#@cdktf/provider-ionoscloud.K8SClusterMaintenanceWindow">K8SClusterMaintenanceWindow</a></code> | maintenance_window block. |
-| <code><a href="#@cdktf/provider-ionoscloud.K8SClusterConfig.property.public">public</a></code> | <code>boolean \| cdktf.IResolvable</code> | The indicator if the cluster is public or private. |
 | <code><a href="#@cdktf/provider-ionoscloud.K8SClusterConfig.property.s3Buckets">s3Buckets</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-ionoscloud.K8SClusterS3Buckets">K8SClusterS3Buckets</a>[]</code> | s3_buckets block. |
 | <code><a href="#@cdktf/provider-ionoscloud.K8SClusterConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-ionoscloud.K8SClusterTimeouts">K8SClusterTimeouts</a></code> | timeouts block. |
 | <code><a href="#@cdktf/provider-ionoscloud.K8SClusterConfig.property.viableNodePoolVersions">viableNodePoolVersions</a></code> | <code>string[]</code> | List of versions that may be used for node pools under this cluster. |
@@ -42380,22 +42299,6 @@ public readonly maintenanceWindow: K8SClusterMaintenanceWindow;
 maintenance_window block.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/k8s_cluster#maintenance_window K8SCluster#maintenance_window}
-
----
-
-##### `public`<sup>Optional</sup> <a name="public" id="@cdktf/provider-ionoscloud.K8SClusterConfig.property.public"></a>
-
-```typescript
-public readonly public: boolean | IResolvable;
-```
-
-- *Type:* boolean | cdktf.IResolvable
-
-The indicator if the cluster is public or private.
-
-Be aware that setting it to false is currently in beta phase.
-
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/k8s_cluster#public K8SCluster#public}
 
 ---
 
@@ -42668,7 +42571,6 @@ const k8SNodePoolConfig: K8SNodePoolConfig = { ... }
 | <code><a href="#@cdktf/provider-ionoscloud.K8SNodePoolConfig.property.allowReplace">allowReplace</a></code> | <code>boolean \| cdktf.IResolvable</code> | When set to true, allows the update of immutable fields by destroying and re-creating the node pool. |
 | <code><a href="#@cdktf/provider-ionoscloud.K8SNodePoolConfig.property.annotations">annotations</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/k8s_node_pool#annotations K8SNodePool#annotations}. |
 | <code><a href="#@cdktf/provider-ionoscloud.K8SNodePoolConfig.property.autoScaling">autoScaling</a></code> | <code><a href="#@cdktf/provider-ionoscloud.K8SNodePoolAutoScaling">K8SNodePoolAutoScaling</a></code> | auto_scaling block. |
-| <code><a href="#@cdktf/provider-ionoscloud.K8SNodePoolConfig.property.gatewayIp">gatewayIp</a></code> | <code>string</code> | Public IP address for the gateway performing source NAT for the node pool's nodes belonging to a private cluster. |
 | <code><a href="#@cdktf/provider-ionoscloud.K8SNodePoolConfig.property.labels">labels</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/k8s_node_pool#labels K8SNodePool#labels}. |
 | <code><a href="#@cdktf/provider-ionoscloud.K8SNodePoolConfig.property.lans">lans</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-ionoscloud.K8SNodePoolLans">K8SNodePoolLans</a>[]</code> | lans block. |
 | <code><a href="#@cdktf/provider-ionoscloud.K8SNodePoolConfig.property.maintenanceWindow">maintenanceWindow</a></code> | <code><a href="#@cdktf/provider-ionoscloud.K8SNodePoolMaintenanceWindow">K8SNodePoolMaintenanceWindow</a></code> | maintenance_window block. |
@@ -42908,22 +42810,6 @@ public readonly autoScaling: K8SNodePoolAutoScaling;
 auto_scaling block.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/k8s_node_pool#auto_scaling K8SNodePool#auto_scaling}
-
----
-
-##### `gatewayIp`<sup>Optional</sup> <a name="gatewayIp" id="@cdktf/provider-ionoscloud.K8SNodePoolConfig.property.gatewayIp"></a>
-
-```typescript
-public readonly gatewayIp: string;
-```
-
-- *Type:* string
-
-Public IP address for the gateway performing source NAT for the node pool's nodes belonging to a private cluster.
-
-Required only if the node pool belongs to a private cluster.
-
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/k8s_node_pool#gateway_ip K8SNodePool#gateway_ip}
 
 ---
 

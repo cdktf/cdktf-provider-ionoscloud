@@ -42,12 +42,6 @@ export interface K8SNodePoolConfig extends cdktf.TerraformMetaArguments {
   */
   readonly datacenterId: string;
   /**
-  * Public IP address for the gateway performing source NAT for the node pool's nodes belonging to a private cluster. Required only if the node pool belongs to a private cluster.
-  * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/k8s_node_pool#gateway_ip K8SNodePool#gateway_ip}
-  */
-  readonly gatewayIp?: string;
-  /**
   * The UUID of an existing kubernetes cluster
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/k8s_node_pool#k8s_cluster_id K8SNodePool#k8s_cluster_id}
@@ -536,7 +530,7 @@ export class K8SNodePool extends cdktf.TerraformResource {
       terraformResourceType: 'ionoscloud_k8s_node_pool',
       terraformGeneratorMetadata: {
         providerName: 'ionoscloud',
-        providerVersion: '6.2.4',
+        providerVersion: '6.2.5',
         providerVersionConstraint: '~> 6.2'
       },
       provider: config.provider,
@@ -550,7 +544,6 @@ export class K8SNodePool extends cdktf.TerraformResource {
     this._coresCount = config.coresCount;
     this._cpuFamily = config.cpuFamily;
     this._datacenterId = config.datacenterId;
-    this._gatewayIp = config.gatewayIp;
     this._k8SClusterId = config.k8SClusterId;
     this._k8SVersion = config.k8SVersion;
     this._labels = config.labels;
@@ -652,22 +645,6 @@ export class K8SNodePool extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get datacenterIdInput() {
     return this._datacenterId;
-  }
-
-  // gateway_ip - computed: false, optional: true, required: false
-  private _gatewayIp?: string; 
-  public get gatewayIp() {
-    return this.getStringAttribute('gateway_ip');
-  }
-  public set gatewayIp(value: string) {
-    this._gatewayIp = value;
-  }
-  public resetGatewayIp() {
-    this._gatewayIp = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get gatewayIpInput() {
-    return this._gatewayIp;
   }
 
   // id - computed: true, optional: true, required: false
@@ -875,7 +852,6 @@ export class K8SNodePool extends cdktf.TerraformResource {
       cores_count: cdktf.numberToTerraform(this._coresCount),
       cpu_family: cdktf.stringToTerraform(this._cpuFamily),
       datacenter_id: cdktf.stringToTerraform(this._datacenterId),
-      gateway_ip: cdktf.stringToTerraform(this._gatewayIp),
       k8s_cluster_id: cdktf.stringToTerraform(this._k8SClusterId),
       k8s_version: cdktf.stringToTerraform(this._k8SVersion),
       labels: cdktf.hashMapper(cdktf.stringToTerraform)(this._labels),

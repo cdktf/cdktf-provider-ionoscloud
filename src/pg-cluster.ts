@@ -658,7 +658,7 @@ export class PgCluster extends cdktf.TerraformResource {
       terraformResourceType: 'ionoscloud_pg_cluster',
       terraformGeneratorMetadata: {
         providerName: 'ionoscloud',
-        providerVersion: '6.2.4',
+        providerVersion: '6.2.5',
         providerVersionConstraint: '~> 6.2'
       },
       provider: config.provider,

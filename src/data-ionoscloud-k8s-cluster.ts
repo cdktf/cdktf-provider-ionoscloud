@@ -627,7 +627,7 @@ export class DataIonoscloudK8SCluster extends cdktf.TerraformDataSource {
       terraformResourceType: 'ionoscloud_k8s_cluster',
       terraformGeneratorMetadata: {
         providerName: 'ionoscloud',
-        providerVersion: '6.2.4',
+        providerVersion: '6.2.5',
         providerVersionConstraint: '~> 6.2'
       },
       provider: config.provider,
@@ -716,11 +716,6 @@ export class DataIonoscloudK8SCluster extends cdktf.TerraformDataSource {
   // node_pools - computed: true, optional: false, required: false
   public get nodePools() {
     return this.getListAttribute('node_pools');
-  }
-
-  // public - computed: true, optional: false, required: false
-  public get public() {
-    return this.getBooleanAttribute('public');
   }
 
   // s3_buckets - computed: true, optional: false, required: false

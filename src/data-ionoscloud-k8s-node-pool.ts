@@ -485,7 +485,7 @@ export class DataIonoscloudK8SNodePool extends cdktf.TerraformDataSource {
       terraformResourceType: 'ionoscloud_k8s_node_pool',
       terraformGeneratorMetadata: {
         providerName: 'ionoscloud',
-        providerVersion: '6.2.4',
+        providerVersion: '6.2.5',
         providerVersionConstraint: '~> 6.2'
       },
       provider: config.provider,
@@ -537,11 +537,6 @@ export class DataIonoscloudK8SNodePool extends cdktf.TerraformDataSource {
   // datacenter_id - computed: true, optional: false, required: false
   public get datacenterId() {
     return this.getStringAttribute('datacenter_id');
-  }
-
-  // gateway_ip - computed: true, optional: false, required: false
-  public get gatewayIp() {
-    return this.getStringAttribute('gateway_ip');
   }
 
   // id - computed: false, optional: true, required: false

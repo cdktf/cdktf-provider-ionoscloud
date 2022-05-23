@@ -203,7 +203,7 @@ export class Ipfailover extends cdktf.TerraformResource {
       terraformResourceType: 'ionoscloud_ipfailover',
       terraformGeneratorMetadata: {
         providerName: 'ionoscloud',
-        providerVersion: '6.2.4',
+        providerVersion: '6.2.5',
         providerVersionConstraint: '~> 6.2'
       },
       provider: config.provider,
