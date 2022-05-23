@@ -26,12 +26,6 @@ export interface K8SClusterConfig extends cdktf.TerraformMetaArguments {
   */
   readonly name: string;
   /**
-  * The indicator if the cluster is public or private. Be aware that setting it to false is currently in beta phase.
-  * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/k8s_cluster#public K8SCluster#public}
-  */
-  readonly public?: boolean | cdktf.IResolvable;
-  /**
   * List of versions that may be used for node pools under this cluster
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/k8s_cluster#viable_node_pool_versions K8SCluster#viable_node_pool_versions}
@@ -338,7 +332,7 @@ export class K8SCluster extends cdktf.TerraformResource {
       terraformResourceType: 'ionoscloud_k8s_cluster',
       terraformGeneratorMetadata: {
         providerName: 'ionoscloud',
-        providerVersion: '6.2.4',
+        providerVersion: '6.2.5',
         providerVersionConstraint: '~> 6.2'
       },
       provider: config.provider,
@@ -349,7 +343,6 @@ export class K8SCluster extends cdktf.TerraformResource {
     this._apiSubnetAllowList = config.apiSubnetAllowList;
     this._k8SVersion = config.k8SVersion;
     this._name = config.name;
-    this._public = config.public;
     this._viableNodePoolVersions = config.viableNodePoolVersions;
     this._maintenanceWindow.internalValue = config.maintenanceWindow;
     this._s3Buckets = config.s3Buckets;
@@ -408,22 +401,6 @@ export class K8SCluster extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get nameInput() {
     return this._name;
-  }
-
-  // public - computed: false, optional: true, required: false
-  private _public?: boolean | cdktf.IResolvable; 
-  public get public() {
-    return this.getBooleanAttribute('public');
-  }
-  public set public(value: boolean | cdktf.IResolvable) {
-    this._public = value;
-  }
-  public resetPublic() {
-    this._public = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get publicInput() {
-    return this._public;
   }
 
   // viable_node_pool_versions - computed: true, optional: true, required: false
@@ -500,7 +477,6 @@ export class K8SCluster extends cdktf.TerraformResource {
       api_subnet_allow_list: cdktf.listMapper(cdktf.stringToTerraform)(this._apiSubnetAllowList),
       k8s_version: cdktf.stringToTerraform(this._k8SVersion),
       name: cdktf.stringToTerraform(this._name),
-      public: cdktf.booleanToTerraform(this._public),
       viable_node_pool_versions: cdktf.listMapper(cdktf.stringToTerraform)(this._viableNodePoolVersions),
       maintenance_window: k8SClusterMaintenanceWindowToTerraform(this._maintenanceWindow.internalValue),
       s3_buckets: cdktf.listMapper(k8SClusterS3BucketsToTerraform)(this._s3Buckets),
