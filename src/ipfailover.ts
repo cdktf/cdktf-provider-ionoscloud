@@ -12,6 +12,13 @@ export interface IpfailoverConfig extends cdktf.TerraformMetaArguments {
   */
   readonly datacenterId: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/ipfailover#id Ipfailover#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/ipfailover#ip Ipfailover#ip}
   */
   readonly ip: string;
@@ -64,6 +71,7 @@ export function ipfailoverTimeoutsToTerraform(struct?: IpfailoverTimeoutsOutputR
 
 export class IpfailoverTimeoutsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -73,7 +81,10 @@ export class IpfailoverTimeoutsOutputReference extends cdktf.ComplexObject {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
-  public get internalValue(): IpfailoverTimeouts | undefined {
+  public get internalValue(): IpfailoverTimeouts | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._create !== undefined) {
@@ -95,16 +106,22 @@ export class IpfailoverTimeoutsOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: IpfailoverTimeouts | undefined) {
+  public set internalValue(value: IpfailoverTimeouts | cdktf.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
+      this.resolvableValue = undefined;
       this._create = undefined;
       this._default = undefined;
       this._delete = undefined;
       this._update = undefined;
     }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
       this._create = value.create;
       this._default = value.default;
       this._delete = value.delete;
@@ -212,6 +229,7 @@ export class Ipfailover extends cdktf.TerraformResource {
       lifecycle: config.lifecycle
     });
     this._datacenterId = config.datacenterId;
+    this._id = config.id;
     this._ip = config.ip;
     this._lanId = config.lanId;
     this._nicuuid = config.nicuuid;
@@ -236,8 +254,19 @@ export class Ipfailover extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // ip - computed: false, optional: false, required: true
@@ -302,6 +331,7 @@ export class Ipfailover extends cdktf.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       datacenter_id: cdktf.stringToTerraform(this._datacenterId),
+      id: cdktf.stringToTerraform(this._id),
       ip: cdktf.stringToTerraform(this._ip),
       lan_id: cdktf.stringToTerraform(this._lanId),
       nicuuid: cdktf.stringToTerraform(this._nicuuid),

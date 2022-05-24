@@ -12,6 +12,13 @@ export interface LanConfig extends cdktf.TerraformMetaArguments {
   */
   readonly datacenterId: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/lan#id Lan#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/lan#name Lan#name}
   */
   readonly name?: string;
@@ -48,6 +55,74 @@ export function lanIpFailoverToTerraform(struct?: LanIpFailover | cdktf.IResolva
   }
 }
 
+export class LanIpFailoverOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): LanIpFailover | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: LanIpFailover | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+    }
+  }
+
+  // ip - computed: true, optional: false, required: false
+  public get ip() {
+    return this.getStringAttribute('ip');
+  }
+
+  // nic_uuid - computed: true, optional: false, required: false
+  public get nicUuid() {
+    return this.getStringAttribute('nic_uuid');
+  }
+}
+
+export class LanIpFailoverList extends cdktf.ComplexList {
+  public internalValue? : LanIpFailover[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): LanIpFailoverOutputReference {
+    return new LanIpFailoverOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface LanTimeouts {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/lan#create Lan#create}
@@ -82,6 +157,7 @@ export function lanTimeoutsToTerraform(struct?: LanTimeoutsOutputReference | Lan
 
 export class LanTimeoutsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -91,7 +167,10 @@ export class LanTimeoutsOutputReference extends cdktf.ComplexObject {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
-  public get internalValue(): LanTimeouts | undefined {
+  public get internalValue(): LanTimeouts | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._create !== undefined) {
@@ -113,16 +192,22 @@ export class LanTimeoutsOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: LanTimeouts | undefined) {
+  public set internalValue(value: LanTimeouts | cdktf.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
+      this.resolvableValue = undefined;
       this._create = undefined;
       this._default = undefined;
       this._delete = undefined;
       this._update = undefined;
     }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
       this._create = value.create;
       this._default = value.default;
       this._delete = value.delete;
@@ -230,10 +315,11 @@ export class Lan extends cdktf.TerraformResource {
       lifecycle: config.lifecycle
     });
     this._datacenterId = config.datacenterId;
+    this._id = config.id;
     this._name = config.name;
     this._pcc = config.pcc;
     this._public = config.public;
-    this._ipFailover = config.ipFailover;
+    this._ipFailover.internalValue = config.ipFailover;
     this._timeouts.internalValue = config.timeouts;
   }
 
@@ -255,8 +341,19 @@ export class Lan extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // name - computed: false, optional: true, required: false
@@ -308,20 +405,19 @@ export class Lan extends cdktf.TerraformResource {
   }
 
   // ip_failover - computed: false, optional: true, required: false
-  private _ipFailover?: LanIpFailover[] | cdktf.IResolvable; 
+  private _ipFailover = new LanIpFailoverList(this, "ip_failover", false);
   public get ipFailover() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('ip_failover');
+    return this._ipFailover;
   }
-  public set ipFailover(value: LanIpFailover[] | cdktf.IResolvable) {
-    this._ipFailover = value;
+  public putIpFailover(value: LanIpFailover[] | cdktf.IResolvable) {
+    this._ipFailover.internalValue = value;
   }
   public resetIpFailover() {
-    this._ipFailover = undefined;
+    this._ipFailover.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get ipFailoverInput() {
-    return this._ipFailover;
+    return this._ipFailover.internalValue;
   }
 
   // timeouts - computed: false, optional: true, required: false
@@ -347,10 +443,11 @@ export class Lan extends cdktf.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       datacenter_id: cdktf.stringToTerraform(this._datacenterId),
+      id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),
       pcc: cdktf.stringToTerraform(this._pcc),
       public: cdktf.booleanToTerraform(this._public),
-      ip_failover: cdktf.listMapper(lanIpFailoverToTerraform)(this._ipFailover),
+      ip_failover: cdktf.listMapper(lanIpFailoverToTerraform)(this._ipFailover.internalValue),
       timeouts: lanTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }

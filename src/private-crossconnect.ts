@@ -14,6 +14,13 @@ export interface PrivateCrossconnectConfig extends cdktf.TerraformMetaArguments 
   */
   readonly description?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/private_crossconnect#id PrivateCrossconnect#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * The desired name for the private cross-connect
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/private_crossconnect#name PrivateCrossconnect#name}
@@ -50,6 +57,79 @@ export function privateCrossconnectConnectableDatacentersToTerraform(struct?: Pr
   }
 }
 
+export class PrivateCrossconnectConnectableDatacentersOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): PrivateCrossconnectConnectableDatacenters | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: PrivateCrossconnectConnectableDatacenters | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+    }
+  }
+
+  // id - computed: true, optional: false, required: false
+  public get id() {
+    return this.getStringAttribute('id');
+  }
+
+  // location - computed: true, optional: false, required: false
+  public get location() {
+    return this.getStringAttribute('location');
+  }
+
+  // name - computed: true, optional: false, required: false
+  public get name() {
+    return this.getStringAttribute('name');
+  }
+}
+
+export class PrivateCrossconnectConnectableDatacentersList extends cdktf.ComplexList {
+  public internalValue? : PrivateCrossconnectConnectableDatacenters[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): PrivateCrossconnectConnectableDatacentersOutputReference {
+    return new PrivateCrossconnectConnectableDatacentersOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface PrivateCrossconnectPeers {
 }
 
@@ -62,6 +142,89 @@ export function privateCrossconnectPeersToTerraform(struct?: PrivateCrossconnect
   }
 }
 
+export class PrivateCrossconnectPeersOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): PrivateCrossconnectPeers | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: PrivateCrossconnectPeers | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+    }
+  }
+
+  // datacenter_id - computed: true, optional: false, required: false
+  public get datacenterId() {
+    return this.getStringAttribute('datacenter_id');
+  }
+
+  // datacenter_name - computed: true, optional: false, required: false
+  public get datacenterName() {
+    return this.getStringAttribute('datacenter_name');
+  }
+
+  // lan_id - computed: true, optional: false, required: false
+  public get lanId() {
+    return this.getStringAttribute('lan_id');
+  }
+
+  // lan_name - computed: true, optional: false, required: false
+  public get lanName() {
+    return this.getStringAttribute('lan_name');
+  }
+
+  // location - computed: true, optional: false, required: false
+  public get location() {
+    return this.getStringAttribute('location');
+  }
+}
+
+export class PrivateCrossconnectPeersList extends cdktf.ComplexList {
+  public internalValue? : PrivateCrossconnectPeers[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): PrivateCrossconnectPeersOutputReference {
+    return new PrivateCrossconnectPeersOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface PrivateCrossconnectTimeouts {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/private_crossconnect#create PrivateCrossconnect#create}
@@ -96,6 +259,7 @@ export function privateCrossconnectTimeoutsToTerraform(struct?: PrivateCrossconn
 
 export class PrivateCrossconnectTimeoutsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -105,7 +269,10 @@ export class PrivateCrossconnectTimeoutsOutputReference extends cdktf.ComplexObj
     super(terraformResource, terraformAttribute, false, 0);
   }
 
-  public get internalValue(): PrivateCrossconnectTimeouts | undefined {
+  public get internalValue(): PrivateCrossconnectTimeouts | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._create !== undefined) {
@@ -127,16 +294,22 @@ export class PrivateCrossconnectTimeoutsOutputReference extends cdktf.ComplexObj
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: PrivateCrossconnectTimeouts | undefined) {
+  public set internalValue(value: PrivateCrossconnectTimeouts | cdktf.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
+      this.resolvableValue = undefined;
       this._create = undefined;
       this._default = undefined;
       this._delete = undefined;
       this._update = undefined;
     }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
       this._create = value.create;
       this._default = value.default;
       this._delete = value.delete;
@@ -244,9 +417,10 @@ export class PrivateCrossconnect extends cdktf.TerraformResource {
       lifecycle: config.lifecycle
     });
     this._description = config.description;
+    this._id = config.id;
     this._name = config.name;
-    this._connectableDatacenters = config.connectableDatacenters;
-    this._peers = config.peers;
+    this._connectableDatacenters.internalValue = config.connectableDatacenters;
+    this._peers.internalValue = config.peers;
     this._timeouts.internalValue = config.timeouts;
   }
 
@@ -271,8 +445,19 @@ export class PrivateCrossconnect extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // name - computed: false, optional: false, required: true
@@ -289,37 +474,35 @@ export class PrivateCrossconnect extends cdktf.TerraformResource {
   }
 
   // connectable_datacenters - computed: false, optional: true, required: false
-  private _connectableDatacenters?: PrivateCrossconnectConnectableDatacenters[] | cdktf.IResolvable; 
+  private _connectableDatacenters = new PrivateCrossconnectConnectableDatacentersList(this, "connectable_datacenters", false);
   public get connectableDatacenters() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('connectable_datacenters');
+    return this._connectableDatacenters;
   }
-  public set connectableDatacenters(value: PrivateCrossconnectConnectableDatacenters[] | cdktf.IResolvable) {
-    this._connectableDatacenters = value;
+  public putConnectableDatacenters(value: PrivateCrossconnectConnectableDatacenters[] | cdktf.IResolvable) {
+    this._connectableDatacenters.internalValue = value;
   }
   public resetConnectableDatacenters() {
-    this._connectableDatacenters = undefined;
+    this._connectableDatacenters.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get connectableDatacentersInput() {
-    return this._connectableDatacenters;
+    return this._connectableDatacenters.internalValue;
   }
 
   // peers - computed: false, optional: true, required: false
-  private _peers?: PrivateCrossconnectPeers[] | cdktf.IResolvable; 
+  private _peers = new PrivateCrossconnectPeersList(this, "peers", false);
   public get peers() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('peers');
+    return this._peers;
   }
-  public set peers(value: PrivateCrossconnectPeers[] | cdktf.IResolvable) {
-    this._peers = value;
+  public putPeers(value: PrivateCrossconnectPeers[] | cdktf.IResolvable) {
+    this._peers.internalValue = value;
   }
   public resetPeers() {
-    this._peers = undefined;
+    this._peers.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get peersInput() {
-    return this._peers;
+    return this._peers.internalValue;
   }
 
   // timeouts - computed: false, optional: true, required: false
@@ -345,9 +528,10 @@ export class PrivateCrossconnect extends cdktf.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       description: cdktf.stringToTerraform(this._description),
+      id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),
-      connectable_datacenters: cdktf.listMapper(privateCrossconnectConnectableDatacentersToTerraform)(this._connectableDatacenters),
-      peers: cdktf.listMapper(privateCrossconnectPeersToTerraform)(this._peers),
+      connectable_datacenters: cdktf.listMapper(privateCrossconnectConnectableDatacentersToTerraform)(this._connectableDatacenters.internalValue),
+      peers: cdktf.listMapper(privateCrossconnectPeersToTerraform)(this._peers.internalValue),
       timeouts: privateCrossconnectTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
