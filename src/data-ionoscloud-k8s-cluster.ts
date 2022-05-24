@@ -9,6 +9,9 @@ import * as cdktf from 'cdktf';
 export interface DataIonoscloudK8SClusterConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/d/k8s_cluster#id DataIonoscloudK8SCluster#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
@@ -63,8 +66,9 @@ export class DataIonoscloudK8SClusterConfigClustersOutputReference extends cdktf
   }
 
   // cluster - computed: true, optional: false, required: false
-  public cluster(key: string): string | cdktf.IResolvable {
-    return new cdktf.StringMap(this, 'cluster').lookup(key);
+  private _cluster = new cdktf.StringMap(this, "cluster");
+  public get cluster() {
+    return this._cluster;
   }
 
   // name - computed: true, optional: false, required: false
@@ -132,8 +136,9 @@ export class DataIonoscloudK8SClusterConfigContextsOutputReference extends cdktf
   }
 
   // context - computed: true, optional: false, required: false
-  public context(key: string): string | cdktf.IResolvable {
-    return new cdktf.StringMap(this, 'context').lookup(key);
+  private _context = new cdktf.StringMap(this, "context");
+  public get context() {
+    return this._context;
   }
 
   // name - computed: true, optional: false, required: false
@@ -206,8 +211,9 @@ export class DataIonoscloudK8SClusterConfigUsersOutputReference extends cdktf.Co
   }
 
   // user - computed: true, optional: false, required: false
-  public user(key: string): string | cdktf.IResolvable {
-    return new cdktf.StringMap(this, 'user').lookup(key);
+  private _user = new cdktf.StringMap(this, "user");
+  public get user() {
+    return this._user;
   }
 }
 
@@ -488,6 +494,7 @@ export function dataIonoscloudK8SClusterTimeoutsToTerraform(struct?: DataIonoscl
 
 export class DataIonoscloudK8SClusterTimeoutsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -497,7 +504,10 @@ export class DataIonoscloudK8SClusterTimeoutsOutputReference extends cdktf.Compl
     super(terraformResource, terraformAttribute, false, 0);
   }
 
-  public get internalValue(): DataIonoscloudK8SClusterTimeouts | undefined {
+  public get internalValue(): DataIonoscloudK8SClusterTimeouts | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._create !== undefined) {
@@ -519,16 +529,22 @@ export class DataIonoscloudK8SClusterTimeoutsOutputReference extends cdktf.Compl
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataIonoscloudK8SClusterTimeouts | undefined) {
+  public set internalValue(value: DataIonoscloudK8SClusterTimeouts | cdktf.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
+      this.resolvableValue = undefined;
       this._create = undefined;
       this._default = undefined;
       this._delete = undefined;
       this._update = undefined;
     }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
       this._create = value.create;
       this._default = value.default;
       this._delete = value.delete;
@@ -735,8 +751,9 @@ export class DataIonoscloudK8SCluster extends cdktf.TerraformDataSource {
   }
 
   // user_tokens - computed: true, optional: false, required: false
-  public userTokens(key: string): string | cdktf.IResolvable {
-    return new cdktf.StringMap(this, 'user_tokens').lookup(key);
+  private _userTokens = new cdktf.StringMap(this, "user_tokens");
+  public get userTokens() {
+    return this._userTokens;
   }
 
   // viable_node_pool_versions - computed: true, optional: false, required: false

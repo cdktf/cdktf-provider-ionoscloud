@@ -42,6 +42,13 @@ export interface K8SNodePoolConfig extends cdktf.TerraformMetaArguments {
   */
   readonly datacenterId: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/k8s_node_pool#id K8SNodePool#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * The UUID of an existing kubernetes cluster
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/k8s_node_pool#k8s_cluster_id K8SNodePool#k8s_cluster_id}
@@ -234,6 +241,102 @@ export function k8SNodePoolLansRoutesToTerraform(struct?: K8SNodePoolLansRoutes 
   }
 }
 
+export class K8SNodePoolLansRoutesOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): K8SNodePoolLansRoutes | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._gatewayIp !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.gatewayIp = this._gatewayIp;
+    }
+    if (this._network !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.network = this._network;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: K8SNodePoolLansRoutes | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._gatewayIp = undefined;
+      this._network = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._gatewayIp = value.gatewayIp;
+      this._network = value.network;
+    }
+  }
+
+  // gateway_ip - computed: false, optional: false, required: true
+  private _gatewayIp?: string; 
+  public get gatewayIp() {
+    return this.getStringAttribute('gateway_ip');
+  }
+  public set gatewayIp(value: string) {
+    this._gatewayIp = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get gatewayIpInput() {
+    return this._gatewayIp;
+  }
+
+  // network - computed: false, optional: false, required: true
+  private _network?: string; 
+  public get network() {
+    return this.getStringAttribute('network');
+  }
+  public set network(value: string) {
+    this._network = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get networkInput() {
+    return this._network;
+  }
+}
+
+export class K8SNodePoolLansRoutesList extends cdktf.ComplexList {
+  public internalValue? : K8SNodePoolLansRoutes[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): K8SNodePoolLansRoutesOutputReference {
+    return new K8SNodePoolLansRoutesOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface K8SNodePoolLans {
   /**
   * Indicates if the Kubernetes Node Pool LAN will reserve an IP using DHCP
@@ -245,6 +348,9 @@ export interface K8SNodePoolLans {
   * The LAN ID of an existing LAN at the related datacenter
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/k8s_node_pool#id K8SNodePool#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id: number;
   /**
@@ -267,6 +373,127 @@ export function k8SNodePoolLansToTerraform(struct?: K8SNodePoolLans | cdktf.IRes
   }
 }
 
+export class K8SNodePoolLansOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): K8SNodePoolLans | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._dhcp !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.dhcp = this._dhcp;
+    }
+    if (this._id !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.id = this._id;
+    }
+    if (this._routes?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.routes = this._routes?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: K8SNodePoolLans | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._dhcp = undefined;
+      this._id = undefined;
+      this._routes.internalValue = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._dhcp = value.dhcp;
+      this._id = value.id;
+      this._routes.internalValue = value.routes;
+    }
+  }
+
+  // dhcp - computed: false, optional: true, required: false
+  private _dhcp?: boolean | cdktf.IResolvable; 
+  public get dhcp() {
+    return this.getBooleanAttribute('dhcp');
+  }
+  public set dhcp(value: boolean | cdktf.IResolvable) {
+    this._dhcp = value;
+  }
+  public resetDhcp() {
+    this._dhcp = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get dhcpInput() {
+    return this._dhcp;
+  }
+
+  // id - computed: false, optional: false, required: true
+  private _id?: number; 
+  public get id() {
+    return this.getNumberAttribute('id');
+  }
+  public set id(value: number) {
+    this._id = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
+  }
+
+  // routes - computed: false, optional: true, required: false
+  private _routes = new K8SNodePoolLansRoutesList(this, "routes", true);
+  public get routes() {
+    return this._routes;
+  }
+  public putRoutes(value: K8SNodePoolLansRoutes[] | cdktf.IResolvable) {
+    this._routes.internalValue = value;
+  }
+  public resetRoutes() {
+    this._routes.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get routesInput() {
+    return this._routes.internalValue;
+  }
+}
+
+export class K8SNodePoolLansList extends cdktf.ComplexList {
+  public internalValue? : K8SNodePoolLans[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): K8SNodePoolLansOutputReference {
+    return new K8SNodePoolLansOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface K8SNodePoolMaintenanceWindow {
   /**
   * Day of the week when maintenance is allowed
@@ -391,6 +618,7 @@ export function k8SNodePoolTimeoutsToTerraform(struct?: K8SNodePoolTimeoutsOutpu
 
 export class K8SNodePoolTimeoutsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -400,7 +628,10 @@ export class K8SNodePoolTimeoutsOutputReference extends cdktf.ComplexObject {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
-  public get internalValue(): K8SNodePoolTimeouts | undefined {
+  public get internalValue(): K8SNodePoolTimeouts | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._create !== undefined) {
@@ -422,16 +653,22 @@ export class K8SNodePoolTimeoutsOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: K8SNodePoolTimeouts | undefined) {
+  public set internalValue(value: K8SNodePoolTimeouts | cdktf.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
+      this.resolvableValue = undefined;
       this._create = undefined;
       this._default = undefined;
       this._delete = undefined;
       this._update = undefined;
     }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
       this._create = value.create;
       this._default = value.default;
       this._delete = value.delete;
@@ -544,6 +781,7 @@ export class K8SNodePool extends cdktf.TerraformResource {
     this._coresCount = config.coresCount;
     this._cpuFamily = config.cpuFamily;
     this._datacenterId = config.datacenterId;
+    this._id = config.id;
     this._k8SClusterId = config.k8SClusterId;
     this._k8SVersion = config.k8SVersion;
     this._labels = config.labels;
@@ -554,7 +792,7 @@ export class K8SNodePool extends cdktf.TerraformResource {
     this._storageSize = config.storageSize;
     this._storageType = config.storageType;
     this._autoScaling.internalValue = config.autoScaling;
-    this._lans = config.lans;
+    this._lans.internalValue = config.lans;
     this._maintenanceWindow.internalValue = config.maintenanceWindow;
     this._timeouts.internalValue = config.timeouts;
   }
@@ -648,8 +886,19 @@ export class K8SNodePool extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // k8s_cluster_id - computed: false, optional: false, required: true
@@ -792,20 +1041,19 @@ export class K8SNodePool extends cdktf.TerraformResource {
   }
 
   // lans - computed: false, optional: true, required: false
-  private _lans?: K8SNodePoolLans[] | cdktf.IResolvable; 
+  private _lans = new K8SNodePoolLansList(this, "lans", true);
   public get lans() {
-    // Getting the computed value is not yet implemented
-    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('lans')));
+    return this._lans;
   }
-  public set lans(value: K8SNodePoolLans[] | cdktf.IResolvable) {
-    this._lans = value;
+  public putLans(value: K8SNodePoolLans[] | cdktf.IResolvable) {
+    this._lans.internalValue = value;
   }
   public resetLans() {
-    this._lans = undefined;
+    this._lans.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get lansInput() {
-    return this._lans;
+    return this._lans.internalValue;
   }
 
   // maintenance_window - computed: false, optional: true, required: false
@@ -852,6 +1100,7 @@ export class K8SNodePool extends cdktf.TerraformResource {
       cores_count: cdktf.numberToTerraform(this._coresCount),
       cpu_family: cdktf.stringToTerraform(this._cpuFamily),
       datacenter_id: cdktf.stringToTerraform(this._datacenterId),
+      id: cdktf.stringToTerraform(this._id),
       k8s_cluster_id: cdktf.stringToTerraform(this._k8SClusterId),
       k8s_version: cdktf.stringToTerraform(this._k8SVersion),
       labels: cdktf.hashMapper(cdktf.stringToTerraform)(this._labels),
@@ -862,7 +1111,7 @@ export class K8SNodePool extends cdktf.TerraformResource {
       storage_size: cdktf.numberToTerraform(this._storageSize),
       storage_type: cdktf.stringToTerraform(this._storageType),
       auto_scaling: k8SNodePoolAutoScalingToTerraform(this._autoScaling.internalValue),
-      lans: cdktf.listMapper(k8SNodePoolLansToTerraform)(this._lans),
+      lans: cdktf.listMapper(k8SNodePoolLansToTerraform)(this._lans.internalValue),
       maintenance_window: k8SNodePoolMaintenanceWindowToTerraform(this._maintenanceWindow.internalValue),
       timeouts: k8SNodePoolTimeoutsToTerraform(this._timeouts.internalValue),
     };

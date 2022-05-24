@@ -8,6 +8,13 @@ import * as cdktf from 'cdktf';
 
 export interface IpblockConfig extends cdktf.TerraformMetaArguments {
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/ipblock#id Ipblock#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/ipblock#location Ipblock#location}
   */
   readonly location: string;
@@ -44,6 +51,109 @@ export function ipblockIpConsumersToTerraform(struct?: IpblockIpConsumers | cdkt
   }
 }
 
+export class IpblockIpConsumersOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): IpblockIpConsumers | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: IpblockIpConsumers | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+    }
+  }
+
+  // datacenter_id - computed: true, optional: false, required: false
+  public get datacenterId() {
+    return this.getStringAttribute('datacenter_id');
+  }
+
+  // datacenter_name - computed: true, optional: false, required: false
+  public get datacenterName() {
+    return this.getStringAttribute('datacenter_name');
+  }
+
+  // ip - computed: true, optional: false, required: false
+  public get ip() {
+    return this.getStringAttribute('ip');
+  }
+
+  // k8s_cluster_uuid - computed: true, optional: false, required: false
+  public get k8SClusterUuid() {
+    return this.getStringAttribute('k8s_cluster_uuid');
+  }
+
+  // k8s_nodepool_uuid - computed: true, optional: false, required: false
+  public get k8SNodepoolUuid() {
+    return this.getStringAttribute('k8s_nodepool_uuid');
+  }
+
+  // mac - computed: true, optional: false, required: false
+  public get mac() {
+    return this.getStringAttribute('mac');
+  }
+
+  // nic_id - computed: true, optional: false, required: false
+  public get nicId() {
+    return this.getStringAttribute('nic_id');
+  }
+
+  // server_id - computed: true, optional: false, required: false
+  public get serverId() {
+    return this.getStringAttribute('server_id');
+  }
+
+  // server_name - computed: true, optional: false, required: false
+  public get serverName() {
+    return this.getStringAttribute('server_name');
+  }
+}
+
+export class IpblockIpConsumersList extends cdktf.ComplexList {
+  public internalValue? : IpblockIpConsumers[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): IpblockIpConsumersOutputReference {
+    return new IpblockIpConsumersOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface IpblockTimeouts {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/ipblock#create Ipblock#create}
@@ -78,6 +188,7 @@ export function ipblockTimeoutsToTerraform(struct?: IpblockTimeoutsOutputReferen
 
 export class IpblockTimeoutsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -87,7 +198,10 @@ export class IpblockTimeoutsOutputReference extends cdktf.ComplexObject {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
-  public get internalValue(): IpblockTimeouts | undefined {
+  public get internalValue(): IpblockTimeouts | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._create !== undefined) {
@@ -109,16 +223,22 @@ export class IpblockTimeoutsOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: IpblockTimeouts | undefined) {
+  public set internalValue(value: IpblockTimeouts | cdktf.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
+      this.resolvableValue = undefined;
       this._create = undefined;
       this._default = undefined;
       this._delete = undefined;
       this._update = undefined;
     }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
       this._create = value.create;
       this._default = value.default;
       this._delete = value.delete;
@@ -225,10 +345,11 @@ export class Ipblock extends cdktf.TerraformResource {
       count: config.count,
       lifecycle: config.lifecycle
     });
+    this._id = config.id;
     this._location = config.location;
     this._name = config.name;
     this._size = config.size;
-    this._ipConsumers = config.ipConsumers;
+    this._ipConsumers.internalValue = config.ipConsumers;
     this._timeouts.internalValue = config.timeouts;
   }
 
@@ -237,8 +358,19 @@ export class Ipblock extends cdktf.TerraformResource {
   // ==========
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // ips - computed: true, optional: false, required: false
@@ -289,20 +421,19 @@ export class Ipblock extends cdktf.TerraformResource {
   }
 
   // ip_consumers - computed: false, optional: true, required: false
-  private _ipConsumers?: IpblockIpConsumers[] | cdktf.IResolvable; 
+  private _ipConsumers = new IpblockIpConsumersList(this, "ip_consumers", false);
   public get ipConsumers() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('ip_consumers');
+    return this._ipConsumers;
   }
-  public set ipConsumers(value: IpblockIpConsumers[] | cdktf.IResolvable) {
-    this._ipConsumers = value;
+  public putIpConsumers(value: IpblockIpConsumers[] | cdktf.IResolvable) {
+    this._ipConsumers.internalValue = value;
   }
   public resetIpConsumers() {
-    this._ipConsumers = undefined;
+    this._ipConsumers.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get ipConsumersInput() {
-    return this._ipConsumers;
+    return this._ipConsumers.internalValue;
   }
 
   // timeouts - computed: false, optional: true, required: false
@@ -327,10 +458,11 @@ export class Ipblock extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
+      id: cdktf.stringToTerraform(this._id),
       location: cdktf.stringToTerraform(this._location),
       name: cdktf.stringToTerraform(this._name),
       size: cdktf.numberToTerraform(this._size),
-      ip_consumers: cdktf.listMapper(ipblockIpConsumersToTerraform)(this._ipConsumers),
+      ip_consumers: cdktf.listMapper(ipblockIpConsumersToTerraform)(this._ipConsumers.internalValue),
       timeouts: ipblockTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }

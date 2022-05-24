@@ -14,6 +14,13 @@ export interface K8SClusterConfig extends cdktf.TerraformMetaArguments {
   */
   readonly apiSubnetAllowList?: string[];
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/k8s_cluster#id K8SCluster#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * The desired kubernetes version
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/k8s_cluster#k8s_version K8SCluster#k8s_version}
@@ -159,6 +166,86 @@ export function k8SClusterS3BucketsToTerraform(struct?: K8SClusterS3Buckets | cd
   }
 }
 
+export class K8SClusterS3BucketsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): K8SClusterS3Buckets | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._name !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.name = this._name;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: K8SClusterS3Buckets | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._name = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._name = value.name;
+    }
+  }
+
+  // name - computed: false, optional: true, required: false
+  private _name?: string; 
+  public get name() {
+    return this.getStringAttribute('name');
+  }
+  public set name(value: string) {
+    this._name = value;
+  }
+  public resetName() {
+    this._name = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name;
+  }
+}
+
+export class K8SClusterS3BucketsList extends cdktf.ComplexList {
+  public internalValue? : K8SClusterS3Buckets[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): K8SClusterS3BucketsOutputReference {
+    return new K8SClusterS3BucketsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface K8SClusterTimeouts {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/k8s_cluster#create K8SCluster#create}
@@ -193,6 +280,7 @@ export function k8SClusterTimeoutsToTerraform(struct?: K8SClusterTimeoutsOutputR
 
 export class K8SClusterTimeoutsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -202,7 +290,10 @@ export class K8SClusterTimeoutsOutputReference extends cdktf.ComplexObject {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
-  public get internalValue(): K8SClusterTimeouts | undefined {
+  public get internalValue(): K8SClusterTimeouts | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._create !== undefined) {
@@ -224,16 +315,22 @@ export class K8SClusterTimeoutsOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: K8SClusterTimeouts | undefined) {
+  public set internalValue(value: K8SClusterTimeouts | cdktf.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
+      this.resolvableValue = undefined;
       this._create = undefined;
       this._default = undefined;
       this._delete = undefined;
       this._update = undefined;
     }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
       this._create = value.create;
       this._default = value.default;
       this._delete = value.delete;
@@ -341,11 +438,12 @@ export class K8SCluster extends cdktf.TerraformResource {
       lifecycle: config.lifecycle
     });
     this._apiSubnetAllowList = config.apiSubnetAllowList;
+    this._id = config.id;
     this._k8SVersion = config.k8SVersion;
     this._name = config.name;
     this._viableNodePoolVersions = config.viableNodePoolVersions;
     this._maintenanceWindow.internalValue = config.maintenanceWindow;
-    this._s3Buckets = config.s3Buckets;
+    this._s3Buckets.internalValue = config.s3Buckets;
     this._timeouts.internalValue = config.timeouts;
   }
 
@@ -370,8 +468,19 @@ export class K8SCluster extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // k8s_version - computed: true, optional: true, required: false
@@ -436,20 +545,19 @@ export class K8SCluster extends cdktf.TerraformResource {
   }
 
   // s3_buckets - computed: false, optional: true, required: false
-  private _s3Buckets?: K8SClusterS3Buckets[] | cdktf.IResolvable; 
+  private _s3Buckets = new K8SClusterS3BucketsList(this, "s3_buckets", false);
   public get s3Buckets() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('s3_buckets');
+    return this._s3Buckets;
   }
-  public set s3Buckets(value: K8SClusterS3Buckets[] | cdktf.IResolvable) {
-    this._s3Buckets = value;
+  public putS3Buckets(value: K8SClusterS3Buckets[] | cdktf.IResolvable) {
+    this._s3Buckets.internalValue = value;
   }
   public resetS3Buckets() {
-    this._s3Buckets = undefined;
+    this._s3Buckets.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get s3BucketsInput() {
-    return this._s3Buckets;
+    return this._s3Buckets.internalValue;
   }
 
   // timeouts - computed: false, optional: true, required: false
@@ -475,11 +583,12 @@ export class K8SCluster extends cdktf.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       api_subnet_allow_list: cdktf.listMapper(cdktf.stringToTerraform)(this._apiSubnetAllowList),
+      id: cdktf.stringToTerraform(this._id),
       k8s_version: cdktf.stringToTerraform(this._k8SVersion),
       name: cdktf.stringToTerraform(this._name),
       viable_node_pool_versions: cdktf.listMapper(cdktf.stringToTerraform)(this._viableNodePoolVersions),
       maintenance_window: k8SClusterMaintenanceWindowToTerraform(this._maintenanceWindow.internalValue),
-      s3_buckets: cdktf.listMapper(k8SClusterS3BucketsToTerraform)(this._s3Buckets),
+      s3_buckets: cdktf.listMapper(k8SClusterS3BucketsToTerraform)(this._s3Buckets.internalValue),
       timeouts: k8SClusterTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }

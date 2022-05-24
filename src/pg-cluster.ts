@@ -26,6 +26,13 @@ export interface PgClusterConfig extends cdktf.TerraformMetaArguments {
   */
   readonly displayName: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/pg_cluster#id PgCluster#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * The total number of instances in the cluster (one master and n-1 standbys)
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/pg_cluster#instances PgCluster#instances}
@@ -519,6 +526,7 @@ export function pgClusterTimeoutsToTerraform(struct?: PgClusterTimeoutsOutputRef
 
 export class PgClusterTimeoutsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -528,7 +536,10 @@ export class PgClusterTimeoutsOutputReference extends cdktf.ComplexObject {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
-  public get internalValue(): PgClusterTimeouts | undefined {
+  public get internalValue(): PgClusterTimeouts | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._create !== undefined) {
@@ -550,16 +561,22 @@ export class PgClusterTimeoutsOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: PgClusterTimeouts | undefined) {
+  public set internalValue(value: PgClusterTimeouts | cdktf.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
+      this.resolvableValue = undefined;
       this._create = undefined;
       this._default = undefined;
       this._delete = undefined;
       this._update = undefined;
     }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
       this._create = value.create;
       this._default = value.default;
       this._delete = value.delete;
@@ -669,6 +686,7 @@ export class PgCluster extends cdktf.TerraformResource {
     this._backupLocation = config.backupLocation;
     this._cores = config.cores;
     this._displayName = config.displayName;
+    this._id = config.id;
     this._instances = config.instances;
     this._location = config.location;
     this._postgresVersion = config.postgresVersion;
@@ -730,8 +748,19 @@ export class PgCluster extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // instances - computed: false, optional: false, required: true
@@ -911,6 +940,7 @@ export class PgCluster extends cdktf.TerraformResource {
       backup_location: cdktf.stringToTerraform(this._backupLocation),
       cores: cdktf.numberToTerraform(this._cores),
       display_name: cdktf.stringToTerraform(this._displayName),
+      id: cdktf.stringToTerraform(this._id),
       instances: cdktf.numberToTerraform(this._instances),
       location: cdktf.stringToTerraform(this._location),
       postgres_version: cdktf.stringToTerraform(this._postgresVersion),

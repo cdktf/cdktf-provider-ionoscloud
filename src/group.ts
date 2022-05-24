@@ -48,6 +48,13 @@ export interface GroupConfig extends cdktf.TerraformMetaArguments {
   */
   readonly createSnapshot?: boolean | cdktf.IResolvable;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/group#id Group#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/group#name Group#name}
   */
   readonly name: string;
@@ -202,6 +209,7 @@ export function groupTimeoutsToTerraform(struct?: GroupTimeoutsOutputReference |
 
 export class GroupTimeoutsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -211,7 +219,10 @@ export class GroupTimeoutsOutputReference extends cdktf.ComplexObject {
     super(terraformResource, terraformAttribute, false, 0);
   }
 
-  public get internalValue(): GroupTimeouts | undefined {
+  public get internalValue(): GroupTimeouts | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._create !== undefined) {
@@ -233,16 +244,22 @@ export class GroupTimeoutsOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: GroupTimeouts | undefined) {
+  public set internalValue(value: GroupTimeouts | cdktf.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
+      this.resolvableValue = undefined;
       this._create = undefined;
       this._default = undefined;
       this._delete = undefined;
       this._update = undefined;
     }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
       this._create = value.create;
       this._default = value.default;
       this._delete = value.delete;
@@ -359,6 +376,7 @@ export class Group extends cdktf.TerraformResource {
     this._createK8SCluster = config.createK8SCluster;
     this._createPcc = config.createPcc;
     this._createSnapshot = config.createSnapshot;
+    this._id = config.id;
     this._name = config.name;
     this._reserveIp = config.reserveIp;
     this._s3Privilege = config.s3Privilege;
@@ -532,8 +550,19 @@ export class Group extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // name - computed: false, optional: false, required: true
@@ -651,6 +680,7 @@ export class Group extends cdktf.TerraformResource {
       create_k8s_cluster: cdktf.booleanToTerraform(this._createK8SCluster),
       create_pcc: cdktf.booleanToTerraform(this._createPcc),
       create_snapshot: cdktf.booleanToTerraform(this._createSnapshot),
+      id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),
       reserve_ip: cdktf.booleanToTerraform(this._reserveIp),
       s3_privilege: cdktf.booleanToTerraform(this._s3Privilege),
