@@ -1,6 +1,7 @@
 {
   "language": "typescript",
   "app": "echo noop",
+  "sendCrashReports": false,
   "terraformProviders": [
     "ionos-cloud/ionoscloud@~> 6.2"
   ],
