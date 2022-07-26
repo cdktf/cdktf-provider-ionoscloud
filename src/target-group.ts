@@ -777,7 +777,10 @@ export class TargetGroup extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._algorithm = config.algorithm;
     this._id = config.id;
@@ -921,7 +924,7 @@ export class TargetGroup extends cdktf.TerraformResource {
       protocol: cdktf.stringToTerraform(this._protocol),
       health_check: targetGroupHealthCheckToTerraform(this._healthCheck.internalValue),
       http_health_check: targetGroupHttpHealthCheckToTerraform(this._httpHealthCheck.internalValue),
-      targets: cdktf.listMapper(targetGroupTargetsToTerraform)(this._targets.internalValue),
+      targets: cdktf.listMapper(targetGroupTargetsToTerraform, true)(this._targets.internalValue),
       timeouts: targetGroupTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }

@@ -716,7 +716,10 @@ export class NetworkloadbalancerForwardingrule extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._algorithm = config.algorithm;
     this._datacenterId = config.datacenterId;
@@ -902,7 +905,7 @@ export class NetworkloadbalancerForwardingrule extends cdktf.TerraformResource {
       networkloadbalancer_id: cdktf.stringToTerraform(this._networkloadbalancerId),
       protocol: cdktf.stringToTerraform(this._protocol),
       health_check: networkloadbalancerForwardingruleHealthCheckToTerraform(this._healthCheck.internalValue),
-      targets: cdktf.listMapper(networkloadbalancerForwardingruleTargetsToTerraform)(this._targets.internalValue),
+      targets: cdktf.listMapper(networkloadbalancerForwardingruleTargetsToTerraform, true)(this._targets.internalValue),
       timeouts: networkloadbalancerForwardingruleTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }

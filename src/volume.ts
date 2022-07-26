@@ -262,7 +262,10 @@ export class Volume extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._availabilityZone = config.availabilityZone;
     this._backupUnitId = config.backupUnitId;
@@ -591,7 +594,7 @@ export class Volume extends cdktf.TerraformResource {
       name: cdktf.stringToTerraform(this._name),
       server_id: cdktf.stringToTerraform(this._serverId),
       size: cdktf.numberToTerraform(this._size),
-      ssh_key_path: cdktf.listMapper(cdktf.stringToTerraform)(this._sshKeyPath),
+      ssh_key_path: cdktf.listMapper(cdktf.stringToTerraform, false)(this._sshKeyPath),
       user_data: cdktf.stringToTerraform(this._userData),
       timeouts: volumeTimeoutsToTerraform(this._timeouts.internalValue),
     };

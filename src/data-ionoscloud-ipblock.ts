@@ -343,7 +343,10 @@ export class DataIonoscloudIpblock extends cdktf.TerraformDataSource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._id = config.id;
     this._location = config.location;
@@ -468,7 +471,7 @@ export class DataIonoscloudIpblock extends cdktf.TerraformDataSource {
       location: cdktf.stringToTerraform(this._location),
       name: cdktf.stringToTerraform(this._name),
       size: cdktf.numberToTerraform(this._size),
-      ip_consumers: cdktf.listMapper(dataIonoscloudIpblockIpConsumersToTerraform)(this._ipConsumers.internalValue),
+      ip_consumers: cdktf.listMapper(dataIonoscloudIpblockIpConsumersToTerraform, true)(this._ipConsumers.internalValue),
       timeouts: dataIonoscloudIpblockTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }

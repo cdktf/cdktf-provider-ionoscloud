@@ -435,7 +435,10 @@ export class K8SCluster extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._apiSubnetAllowList = config.apiSubnetAllowList;
     this._id = config.id;
@@ -582,13 +585,13 @@ export class K8SCluster extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      api_subnet_allow_list: cdktf.listMapper(cdktf.stringToTerraform)(this._apiSubnetAllowList),
+      api_subnet_allow_list: cdktf.listMapper(cdktf.stringToTerraform, false)(this._apiSubnetAllowList),
       id: cdktf.stringToTerraform(this._id),
       k8s_version: cdktf.stringToTerraform(this._k8SVersion),
       name: cdktf.stringToTerraform(this._name),
-      viable_node_pool_versions: cdktf.listMapper(cdktf.stringToTerraform)(this._viableNodePoolVersions),
+      viable_node_pool_versions: cdktf.listMapper(cdktf.stringToTerraform, false)(this._viableNodePoolVersions),
       maintenance_window: k8SClusterMaintenanceWindowToTerraform(this._maintenanceWindow.internalValue),
-      s3_buckets: cdktf.listMapper(k8SClusterS3BucketsToTerraform)(this._s3Buckets.internalValue),
+      s3_buckets: cdktf.listMapper(k8SClusterS3BucketsToTerraform, true)(this._s3Buckets.internalValue),
       timeouts: k8SClusterTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }

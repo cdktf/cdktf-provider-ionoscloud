@@ -67,7 +67,7 @@ export function natgatewayLansToTerraform(struct?: NatgatewayLans | cdktf.IResol
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    gateway_ips: cdktf.listMapper(cdktf.stringToTerraform)(struct!.gatewayIps),
+    gateway_ips: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.gatewayIps),
     id: cdktf.numberToTerraform(struct!.id),
   }
 }
@@ -360,7 +360,10 @@ export class Natgateway extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._datacenterId = config.datacenterId;
     this._id = config.id;
@@ -467,8 +470,8 @@ export class Natgateway extends cdktf.TerraformResource {
       datacenter_id: cdktf.stringToTerraform(this._datacenterId),
       id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),
-      public_ips: cdktf.listMapper(cdktf.stringToTerraform)(this._publicIps),
-      lans: cdktf.listMapper(natgatewayLansToTerraform)(this._lans.internalValue),
+      public_ips: cdktf.listMapper(cdktf.stringToTerraform, false)(this._publicIps),
+      lans: cdktf.listMapper(natgatewayLansToTerraform, true)(this._lans.internalValue),
       timeouts: natgatewayTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }

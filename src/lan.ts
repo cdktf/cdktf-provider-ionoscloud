@@ -312,7 +312,10 @@ export class Lan extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._datacenterId = config.datacenterId;
     this._id = config.id;
@@ -447,7 +450,7 @@ export class Lan extends cdktf.TerraformResource {
       name: cdktf.stringToTerraform(this._name),
       pcc: cdktf.stringToTerraform(this._pcc),
       public: cdktf.booleanToTerraform(this._public),
-      ip_failover: cdktf.listMapper(lanIpFailoverToTerraform)(this._ipFailover.internalValue),
+      ip_failover: cdktf.listMapper(lanIpFailoverToTerraform, true)(this._ipFailover.internalValue),
       timeouts: lanTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }

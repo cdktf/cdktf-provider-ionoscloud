@@ -414,7 +414,10 @@ export class PrivateCrossconnect extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._description = config.description;
     this._id = config.id;
@@ -530,8 +533,8 @@ export class PrivateCrossconnect extends cdktf.TerraformResource {
       description: cdktf.stringToTerraform(this._description),
       id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),
-      connectable_datacenters: cdktf.listMapper(privateCrossconnectConnectableDatacentersToTerraform)(this._connectableDatacenters.internalValue),
-      peers: cdktf.listMapper(privateCrossconnectPeersToTerraform)(this._peers.internalValue),
+      connectable_datacenters: cdktf.listMapper(privateCrossconnectConnectableDatacentersToTerraform, true)(this._connectableDatacenters.internalValue),
+      peers: cdktf.listMapper(privateCrossconnectPeersToTerraform, true)(this._peers.internalValue),
       timeouts: privateCrossconnectTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }

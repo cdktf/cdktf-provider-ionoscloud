@@ -343,7 +343,10 @@ export class Ipblock extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._id = config.id;
     this._location = config.location;
@@ -462,7 +465,7 @@ export class Ipblock extends cdktf.TerraformResource {
       location: cdktf.stringToTerraform(this._location),
       name: cdktf.stringToTerraform(this._name),
       size: cdktf.numberToTerraform(this._size),
-      ip_consumers: cdktf.listMapper(ipblockIpConsumersToTerraform)(this._ipConsumers.internalValue),
+      ip_consumers: cdktf.listMapper(ipblockIpConsumersToTerraform, true)(this._ipConsumers.internalValue),
       timeouts: ipblockTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
