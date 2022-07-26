@@ -244,7 +244,10 @@ export class Networkloadbalancer extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._datacenterId = config.datacenterId;
     this._id = config.id;
@@ -384,8 +387,8 @@ export class Networkloadbalancer extends cdktf.TerraformResource {
     return {
       datacenter_id: cdktf.stringToTerraform(this._datacenterId),
       id: cdktf.stringToTerraform(this._id),
-      ips: cdktf.listMapper(cdktf.stringToTerraform)(this._ips),
-      lb_private_ips: cdktf.listMapper(cdktf.stringToTerraform)(this._lbPrivateIps),
+      ips: cdktf.listMapper(cdktf.stringToTerraform, false)(this._ips),
+      lb_private_ips: cdktf.listMapper(cdktf.stringToTerraform, false)(this._lbPrivateIps),
       listener_lan: cdktf.numberToTerraform(this._listenerLan),
       name: cdktf.stringToTerraform(this._name),
       target_lan: cdktf.numberToTerraform(this._targetLan),

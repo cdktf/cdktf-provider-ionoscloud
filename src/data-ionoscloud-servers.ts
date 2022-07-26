@@ -1032,7 +1032,10 @@ export class DataIonoscloudServers extends cdktf.TerraformDataSource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._datacenterId = config.datacenterId;
     this._id = config.id;
@@ -1116,7 +1119,7 @@ export class DataIonoscloudServers extends cdktf.TerraformDataSource {
     return {
       datacenter_id: cdktf.stringToTerraform(this._datacenterId),
       id: cdktf.stringToTerraform(this._id),
-      filter: cdktf.listMapper(dataIonoscloudServersFilterToTerraform)(this._filter.internalValue),
+      filter: cdktf.listMapper(dataIonoscloudServersFilterToTerraform, true)(this._filter.internalValue),
       timeouts: dataIonoscloudServersTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }

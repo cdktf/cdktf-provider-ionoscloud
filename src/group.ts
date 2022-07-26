@@ -364,7 +364,10 @@ export class Group extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._accessActivityLog = config.accessActivityLog;
     this._accessAndManageCertificates = config.accessAndManageCertificates;
@@ -685,7 +688,7 @@ export class Group extends cdktf.TerraformResource {
       reserve_ip: cdktf.booleanToTerraform(this._reserveIp),
       s3_privilege: cdktf.booleanToTerraform(this._s3Privilege),
       user_id: cdktf.stringToTerraform(this._userId),
-      user_ids: cdktf.listMapper(cdktf.stringToTerraform)(this._userIds),
+      user_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(this._userIds),
       timeouts: groupTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }

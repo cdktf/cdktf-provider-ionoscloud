@@ -242,7 +242,10 @@ export class DataIonoscloudNic extends cdktf.TerraformDataSource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._datacenterId = config.datacenterId;
     this._dhcp = config.dhcp;
@@ -440,7 +443,7 @@ export class DataIonoscloudNic extends cdktf.TerraformDataSource {
       firewall_active: cdktf.booleanToTerraform(this._firewallActive),
       firewall_type: cdktf.stringToTerraform(this._firewallType),
       id: cdktf.stringToTerraform(this._id),
-      ips: cdktf.listMapper(cdktf.stringToTerraform)(this._ips),
+      ips: cdktf.listMapper(cdktf.stringToTerraform, false)(this._ips),
       lan: cdktf.numberToTerraform(this._lan),
       name: cdktf.stringToTerraform(this._name),
       server_id: cdktf.stringToTerraform(this._serverId),

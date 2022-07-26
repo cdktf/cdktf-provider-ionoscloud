@@ -230,7 +230,10 @@ export class Loadbalancer extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._datacenterId = config.datacenterId;
     this._dhcp = config.dhcp;
@@ -359,7 +362,7 @@ export class Loadbalancer extends cdktf.TerraformResource {
       id: cdktf.stringToTerraform(this._id),
       ip: cdktf.stringToTerraform(this._ip),
       name: cdktf.stringToTerraform(this._name),
-      nic_ids: cdktf.listMapper(cdktf.stringToTerraform)(this._nicIds),
+      nic_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(this._nicIds),
       timeouts: loadbalancerTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }

@@ -354,7 +354,7 @@ export function applicationLoadbalancerForwardingruleHttpRulesToTerraform(struct
     status_code: cdktf.numberToTerraform(struct!.statusCode),
     target_group: cdktf.stringToTerraform(struct!.targetGroup),
     type: cdktf.stringToTerraform(struct!.type),
-    conditions: cdktf.listMapper(applicationLoadbalancerForwardingruleHttpRulesConditionsToTerraform)(struct!.conditions),
+    conditions: cdktf.listMapper(applicationLoadbalancerForwardingruleHttpRulesConditionsToTerraform, true)(struct!.conditions),
   }
 }
 
@@ -797,7 +797,10 @@ export class ApplicationLoadbalancerForwardingrule extends cdktf.TerraformResour
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._applicationLoadbalancerId = config.applicationLoadbalancerId;
     this._clientTimeout = config.clientTimeout;
@@ -988,8 +991,8 @@ export class ApplicationLoadbalancerForwardingrule extends cdktf.TerraformResour
       listener_port: cdktf.numberToTerraform(this._listenerPort),
       name: cdktf.stringToTerraform(this._name),
       protocol: cdktf.stringToTerraform(this._protocol),
-      server_certificates: cdktf.listMapper(cdktf.stringToTerraform)(this._serverCertificates),
-      http_rules: cdktf.listMapper(applicationLoadbalancerForwardingruleHttpRulesToTerraform)(this._httpRules.internalValue),
+      server_certificates: cdktf.listMapper(cdktf.stringToTerraform, false)(this._serverCertificates),
+      http_rules: cdktf.listMapper(applicationLoadbalancerForwardingruleHttpRulesToTerraform, true)(this._httpRules.internalValue),
       timeouts: applicationLoadbalancerForwardingruleTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }

@@ -369,7 +369,7 @@ export function k8SNodePoolLansToTerraform(struct?: K8SNodePoolLans | cdktf.IRes
   return {
     dhcp: cdktf.booleanToTerraform(struct!.dhcp),
     id: cdktf.numberToTerraform(struct!.id),
-    routes: cdktf.listMapper(k8SNodePoolLansRoutesToTerraform)(struct!.routes),
+    routes: cdktf.listMapper(k8SNodePoolLansRoutesToTerraform, true)(struct!.routes),
   }
 }
 
@@ -773,7 +773,10 @@ export class K8SNodePool extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._allowReplace = config.allowReplace;
     this._annotations = config.annotations;
@@ -1106,12 +1109,12 @@ export class K8SNodePool extends cdktf.TerraformResource {
       labels: cdktf.hashMapper(cdktf.stringToTerraform)(this._labels),
       name: cdktf.stringToTerraform(this._name),
       node_count: cdktf.numberToTerraform(this._nodeCount),
-      public_ips: cdktf.listMapper(cdktf.stringToTerraform)(this._publicIps),
+      public_ips: cdktf.listMapper(cdktf.stringToTerraform, false)(this._publicIps),
       ram_size: cdktf.numberToTerraform(this._ramSize),
       storage_size: cdktf.numberToTerraform(this._storageSize),
       storage_type: cdktf.stringToTerraform(this._storageType),
       auto_scaling: k8SNodePoolAutoScalingToTerraform(this._autoScaling.internalValue),
-      lans: cdktf.listMapper(k8SNodePoolLansToTerraform)(this._lans.internalValue),
+      lans: cdktf.listMapper(k8SNodePoolLansToTerraform, true)(this._lans.internalValue),
       maintenance_window: k8SNodePoolMaintenanceWindowToTerraform(this._maintenanceWindow.internalValue),
       timeouts: k8SNodePoolTimeoutsToTerraform(this._timeouts.internalValue),
     };

@@ -244,7 +244,10 @@ export class User extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._active = config.active;
     this._administrator = config.administrator;
@@ -431,7 +434,7 @@ export class User extends cdktf.TerraformResource {
       email: cdktf.stringToTerraform(this._email),
       first_name: cdktf.stringToTerraform(this._firstName),
       force_sec_auth: cdktf.booleanToTerraform(this._forceSecAuth),
-      group_ids: cdktf.listMapper(cdktf.stringToTerraform)(this._groupIds),
+      group_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(this._groupIds),
       id: cdktf.stringToTerraform(this._id),
       last_name: cdktf.stringToTerraform(this._lastName),
       password: cdktf.stringToTerraform(this._password),

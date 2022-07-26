@@ -432,7 +432,7 @@ export function serverNicToTerraform(struct?: ServerNicOutputReference | ServerN
     dhcp: cdktf.booleanToTerraform(struct!.dhcp),
     firewall_active: cdktf.booleanToTerraform(struct!.firewallActive),
     firewall_type: cdktf.stringToTerraform(struct!.firewallType),
-    ips: cdktf.listMapper(cdktf.stringToTerraform)(struct!.ips),
+    ips: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.ips),
     lan: cdktf.numberToTerraform(struct!.lan),
     name: cdktf.stringToTerraform(struct!.name),
     firewall: serverNicFirewallToTerraform(struct!.firewall),
@@ -848,7 +848,7 @@ export function serverVolumeToTerraform(struct?: ServerVolumeOutputReference | S
     licence_type: cdktf.stringToTerraform(struct!.licenceType),
     name: cdktf.stringToTerraform(struct!.name),
     size: cdktf.numberToTerraform(struct!.size),
-    ssh_key_path: cdktf.listMapper(cdktf.stringToTerraform)(struct!.sshKeyPath),
+    ssh_key_path: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.sshKeyPath),
     user_data: cdktf.stringToTerraform(struct!.userData),
   }
 }
@@ -1174,7 +1174,10 @@ export class Server extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._availabilityZone = config.availabilityZone;
     this._bootCdrom = config.bootCdrom;
@@ -1496,7 +1499,7 @@ export class Server extends cdktf.TerraformResource {
       image_password: cdktf.stringToTerraform(this._imagePassword),
       name: cdktf.stringToTerraform(this._name),
       ram: cdktf.numberToTerraform(this._ram),
-      ssh_key_path: cdktf.listMapper(cdktf.stringToTerraform)(this._sshKeyPath),
+      ssh_key_path: cdktf.listMapper(cdktf.stringToTerraform, false)(this._sshKeyPath),
       template_uuid: cdktf.stringToTerraform(this._templateUuid),
       type: cdktf.stringToTerraform(this._type),
       nic: serverNicToTerraform(this._nic.internalValue),
