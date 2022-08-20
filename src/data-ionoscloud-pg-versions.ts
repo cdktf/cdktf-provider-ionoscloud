@@ -208,7 +208,7 @@ export class DataIonoscloudPgVersions extends cdktf.TerraformDataSource {
       terraformResourceType: 'ionoscloud_pg_versions',
       terraformGeneratorMetadata: {
         providerName: 'ionoscloud',
-        providerVersion: '6.3.0',
+        providerVersion: '6.3.1',
         providerVersionConstraint: '~> 6.2'
       },
       provider: config.provider,

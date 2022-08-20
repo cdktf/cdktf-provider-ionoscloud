@@ -12,14 +12,20 @@ export interface GroupConfig extends cdktf.TerraformMetaArguments {
   */
   readonly accessActivityLog?: boolean | cdktf.IResolvable;
   /**
+  * Privilege for a group to access and manage certificates.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/group#access_and_manage_certificates Group#access_and_manage_certificates}
   */
   readonly accessAndManageCertificates?: boolean | cdktf.IResolvable;
   /**
+  * Privilege for a group to access and manage monitoring related functionality (access metrics, CRUD on alarms, alarm-actions etc) using Monotoring-as-a-Service (MaaS).
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/group#access_and_manage_monitoring Group#access_and_manage_monitoring}
   */
   readonly accessAndManageMonitoring?: boolean | cdktf.IResolvable;
   /**
+  * Create backup unit privilege.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/group#create_backup_unit Group#create_backup_unit}
   */
   readonly createBackupUnit?: boolean | cdktf.IResolvable;
@@ -28,14 +34,20 @@ export interface GroupConfig extends cdktf.TerraformMetaArguments {
   */
   readonly createDatacenter?: boolean | cdktf.IResolvable;
   /**
+  * Create Flow Logs privilege.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/group#create_flow_log Group#create_flow_log}
   */
   readonly createFlowLog?: boolean | cdktf.IResolvable;
   /**
+  * Create internet access privilege.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/group#create_internet_access Group#create_internet_access}
   */
   readonly createInternetAccess?: boolean | cdktf.IResolvable;
   /**
+  * Create Kubernetes cluster privilege.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/group#create_k8s_cluster Group#create_k8s_cluster}
   */
   readonly createK8SCluster?: boolean | cdktf.IResolvable;
@@ -54,6 +66,12 @@ export interface GroupConfig extends cdktf.TerraformMetaArguments {
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
+  /**
+  * Privilege for a group to manage DBaaS related functionality
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/group#manage_dbaas Group#manage_dbaas}
+  */
+  readonly manageDbaas?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/group#name Group#name}
   */
@@ -358,7 +376,7 @@ export class Group extends cdktf.TerraformResource {
       terraformResourceType: 'ionoscloud_group',
       terraformGeneratorMetadata: {
         providerName: 'ionoscloud',
-        providerVersion: '6.3.0',
+        providerVersion: '6.3.1',
         providerVersionConstraint: '~> 6.2'
       },
       provider: config.provider,
@@ -380,6 +398,7 @@ export class Group extends cdktf.TerraformResource {
     this._createPcc = config.createPcc;
     this._createSnapshot = config.createSnapshot;
     this._id = config.id;
+    this._manageDbaas = config.manageDbaas;
     this._name = config.name;
     this._reserveIp = config.reserveIp;
     this._s3Privilege = config.s3Privilege;
@@ -568,6 +587,22 @@ export class Group extends cdktf.TerraformResource {
     return this._id;
   }
 
+  // manage_dbaas - computed: false, optional: true, required: false
+  private _manageDbaas?: boolean | cdktf.IResolvable; 
+  public get manageDbaas() {
+    return this.getBooleanAttribute('manage_dbaas');
+  }
+  public set manageDbaas(value: boolean | cdktf.IResolvable) {
+    this._manageDbaas = value;
+  }
+  public resetManageDbaas() {
+    this._manageDbaas = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get manageDbaasInput() {
+    return this._manageDbaas;
+  }
+
   // name - computed: false, optional: false, required: true
   private _name?: string; 
   public get name() {
@@ -684,6 +719,7 @@ export class Group extends cdktf.TerraformResource {
       create_pcc: cdktf.booleanToTerraform(this._createPcc),
       create_snapshot: cdktf.booleanToTerraform(this._createSnapshot),
       id: cdktf.stringToTerraform(this._id),
+      manage_dbaas: cdktf.booleanToTerraform(this._manageDbaas),
       name: cdktf.stringToTerraform(this._name),
       reserve_ip: cdktf.booleanToTerraform(this._reserveIp),
       s3_privilege: cdktf.booleanToTerraform(this._s3Privilege),

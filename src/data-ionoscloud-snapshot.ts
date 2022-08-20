@@ -222,7 +222,7 @@ export class DataIonoscloudSnapshot extends cdktf.TerraformDataSource {
       terraformResourceType: 'ionoscloud_snapshot',
       terraformGeneratorMetadata: {
         providerName: 'ionoscloud',
-        providerVersion: '6.3.0',
+        providerVersion: '6.3.1',
         providerVersionConstraint: '~> 6.2'
       },
       provider: config.provider,
@@ -300,7 +300,7 @@ export class DataIonoscloudSnapshot extends cdktf.TerraformDataSource {
     return this.getStringAttribute('licence_type');
   }
 
-  // location - computed: false, optional: true, required: false
+  // location - computed: true, optional: true, required: false
   private _location?: string; 
   public get location() {
     return this.getStringAttribute('location');
@@ -316,7 +316,7 @@ export class DataIonoscloudSnapshot extends cdktf.TerraformDataSource {
     return this._location;
   }
 
-  // name - computed: false, optional: true, required: false
+  // name - computed: true, optional: true, required: false
   private _name?: string; 
   public get name() {
     return this.getStringAttribute('name');
@@ -357,7 +357,7 @@ export class DataIonoscloudSnapshot extends cdktf.TerraformDataSource {
     return this.getBooleanAttribute('sec_auth_protection');
   }
 
-  // size - computed: false, optional: true, required: false
+  // size - computed: true, optional: true, required: false
   private _size?: number; 
   public get size() {
     return this.getNumberAttribute('size');

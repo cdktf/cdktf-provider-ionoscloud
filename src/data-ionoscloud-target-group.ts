@@ -463,7 +463,7 @@ export class DataIonoscloudTargetGroup extends cdktf.TerraformDataSource {
       terraformResourceType: 'ionoscloud_target_group',
       terraformGeneratorMetadata: {
         providerName: 'ionoscloud',
-        providerVersion: '6.3.0',
+        providerVersion: '6.3.1',
         providerVersionConstraint: '~> 6.2'
       },
       provider: config.provider,

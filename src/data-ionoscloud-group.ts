@@ -297,7 +297,7 @@ export class DataIonoscloudGroup extends cdktf.TerraformDataSource {
       terraformResourceType: 'ionoscloud_group',
       terraformGeneratorMetadata: {
         providerName: 'ionoscloud',
-        providerVersion: '6.3.0',
+        providerVersion: '6.3.1',
         providerVersionConstraint: '~> 6.2'
       },
       provider: config.provider,
@@ -322,6 +322,16 @@ export class DataIonoscloudGroup extends cdktf.TerraformDataSource {
     return this.getBooleanAttribute('access_activity_log');
   }
 
+  // access_and_manage_certificates - computed: true, optional: false, required: false
+  public get accessAndManageCertificates() {
+    return this.getBooleanAttribute('access_and_manage_certificates');
+  }
+
+  // access_and_manage_monitoring - computed: true, optional: false, required: false
+  public get accessAndManageMonitoring() {
+    return this.getBooleanAttribute('access_and_manage_monitoring');
+  }
+
   // create_backup_unit - computed: true, optional: false, required: false
   public get createBackupUnit() {
     return this.getBooleanAttribute('create_backup_unit');
@@ -330,6 +340,11 @@ export class DataIonoscloudGroup extends cdktf.TerraformDataSource {
   // create_datacenter - computed: true, optional: false, required: false
   public get createDatacenter() {
     return this.getBooleanAttribute('create_datacenter');
+  }
+
+  // create_flow_log - computed: true, optional: false, required: false
+  public get createFlowLog() {
+    return this.getBooleanAttribute('create_flow_log');
   }
 
   // create_internet_access - computed: true, optional: false, required: false
@@ -366,6 +381,11 @@ export class DataIonoscloudGroup extends cdktf.TerraformDataSource {
   // Temporarily expose input value. Use with caution.
   public get idInput() {
     return this._id;
+  }
+
+  // manage_dbaas - computed: true, optional: false, required: false
+  public get manageDbaas() {
+    return this.getBooleanAttribute('manage_dbaas');
   }
 
   // name - computed: false, optional: true, required: false
