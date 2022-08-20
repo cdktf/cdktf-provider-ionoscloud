@@ -560,6 +560,11 @@ export class ServerNicOutputReference extends cdktf.ComplexObject {
     return this._firewallType;
   }
 
+  // id - computed: true, optional: false, required: false
+  public get id() {
+    return this.getStringAttribute('id');
+  }
+
   // ips - computed: true, optional: true, required: false
   private _ips?: string[]; 
   public get ips() {
@@ -819,6 +824,8 @@ export interface ServerVolume {
   */
   readonly name?: string;
   /**
+  * The size of the volume in GB.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/server#size Server#size}
   */
   readonly size?: number;
@@ -1168,7 +1175,7 @@ export class Server extends cdktf.TerraformResource {
       terraformResourceType: 'ionoscloud_server',
       terraformGeneratorMetadata: {
         providerName: 'ionoscloud',
-        providerVersion: '6.3.0',
+        providerVersion: '6.3.1',
         providerVersionConstraint: '~> 6.2'
       },
       provider: config.provider,

@@ -449,7 +449,7 @@ export class DataIonoscloudNetworkloadbalancerForwardingrule extends cdktf.Terra
       terraformResourceType: 'ionoscloud_networkloadbalancer_forwardingrule',
       terraformGeneratorMetadata: {
         providerName: 'ionoscloud',
-        providerVersion: '6.3.0',
+        providerVersion: '6.3.1',
         providerVersionConstraint: '~> 6.2'
       },
       provider: config.provider,
