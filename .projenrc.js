@@ -1,5 +1,6 @@
 const { CdktfProviderProject } = require("@cdktf/provider-project");
 const project = new CdktfProviderProject({
+  useCustomGithubRunner: false,
   terraformProvider: "ionos-cloud/ionoscloud@~> 6.2",
   cdktfVersion: "^0.12.2",
   constructsVersion: "^10.0.0",
