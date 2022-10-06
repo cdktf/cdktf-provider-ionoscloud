@@ -376,7 +376,7 @@ export class Group extends cdktf.TerraformResource {
       terraformResourceType: 'ionoscloud_group',
       terraformGeneratorMetadata: {
         providerName: 'ionoscloud',
-        providerVersion: '6.3.1',
+        providerVersion: '6.3.2',
         providerVersionConstraint: '~> 6.2'
       },
       provider: config.provider,
