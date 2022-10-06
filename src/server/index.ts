@@ -63,6 +63,8 @@ export interface ServerConfig extends cdktf.TerraformMetaArguments {
   */
   readonly templateUuid?: string;
   /**
+  * server usages: ENTERPRISE or CUBE
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/server#type Server#type}
   */
   readonly type?: string;
@@ -1175,7 +1177,7 @@ export class Server extends cdktf.TerraformResource {
       terraformResourceType: 'ionoscloud_server',
       terraformGeneratorMetadata: {
         providerName: 'ionoscloud',
-        providerVersion: '6.3.1',
+        providerVersion: '6.3.2',
         providerVersionConstraint: '~> 6.2'
       },
       provider: config.provider,
