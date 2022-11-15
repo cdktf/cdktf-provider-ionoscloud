@@ -772,7 +772,7 @@ export class DataIonoscloudServer extends cdktf.TerraformDataSource {
       terraformResourceType: 'ionoscloud_server',
       terraformGeneratorMetadata: {
         providerName: 'ionoscloud',
-        providerVersion: '6.3.2',
+        providerVersion: '6.3.3',
         providerVersionConstraint: '~> 6.2'
       },
       provider: config.provider,

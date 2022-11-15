@@ -216,7 +216,7 @@ export class S3Key extends cdktf.TerraformResource {
       terraformResourceType: 'ionoscloud_s3_key',
       terraformGeneratorMetadata: {
         providerName: 'ionoscloud',
-        providerVersion: '6.3.2',
+        providerVersion: '6.3.3',
         providerVersionConstraint: '~> 6.2'
       },
       provider: config.provider,
