@@ -134,9 +134,24 @@ export class DataIonoscloudPgBackupsClusterBackupsOutputReference extends cdktf.
     return this.getStringAttribute('cluster_id');
   }
 
+  // earliest_recovery_target_time - computed: true, optional: false, required: false
+  public get earliestRecoveryTargetTime() {
+    return this.getStringAttribute('earliest_recovery_target_time');
+  }
+
   // id - computed: true, optional: false, required: false
   public get id() {
     return this.getStringAttribute('id');
+  }
+
+  // is_active - computed: true, optional: false, required: false
+  public get isActive() {
+    return this.getBooleanAttribute('is_active');
+  }
+
+  // location - computed: true, optional: false, required: false
+  public get location() {
+    return this.getStringAttribute('location');
   }
 
   // metadata - computed: true, optional: false, required: false
@@ -145,9 +160,19 @@ export class DataIonoscloudPgBackupsClusterBackupsOutputReference extends cdktf.
     return this._metadata;
   }
 
+  // size - computed: true, optional: false, required: false
+  public get size() {
+    return this.getNumberAttribute('size');
+  }
+
   // type - computed: true, optional: false, required: false
   public get type() {
     return this.getStringAttribute('type');
+  }
+
+  // version - computed: true, optional: false, required: false
+  public get version() {
+    return this.getStringAttribute('version');
   }
 }
 
@@ -352,7 +377,7 @@ export class DataIonoscloudPgBackups extends cdktf.TerraformDataSource {
       terraformResourceType: 'ionoscloud_pg_backups',
       terraformGeneratorMetadata: {
         providerName: 'ionoscloud',
-        providerVersion: '6.3.2',
+        providerVersion: '6.3.3',
         providerVersionConstraint: '~> 6.2'
       },
       provider: config.provider,
