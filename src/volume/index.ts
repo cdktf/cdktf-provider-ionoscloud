@@ -63,6 +63,10 @@ export interface VolumeConfig extends cdktf.TerraformMetaArguments {
   */
   readonly sshKeyPath?: string[];
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/volume#ssh_keys Volume#ssh_keys}
+  */
+  readonly sshKeys?: string[];
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/volume#user_data Volume#user_data}
   */
   readonly userData?: string;
@@ -256,7 +260,7 @@ export class Volume extends cdktf.TerraformResource {
       terraformResourceType: 'ionoscloud_volume',
       terraformGeneratorMetadata: {
         providerName: 'ionoscloud',
-        providerVersion: '6.3.3',
+        providerVersion: '6.3.4',
         providerVersionConstraint: '~> 6.2'
       },
       provider: config.provider,
@@ -280,6 +284,7 @@ export class Volume extends cdktf.TerraformResource {
     this._serverId = config.serverId;
     this._size = config.size;
     this._sshKeyPath = config.sshKeyPath;
+    this._sshKeys = config.sshKeys;
     this._userData = config.userData;
     this._timeouts.internalValue = config.timeouts;
   }
@@ -539,6 +544,22 @@ export class Volume extends cdktf.TerraformResource {
     return this._sshKeyPath;
   }
 
+  // ssh_keys - computed: false, optional: true, required: false
+  private _sshKeys?: string[]; 
+  public get sshKeys() {
+    return this.getListAttribute('ssh_keys');
+  }
+  public set sshKeys(value: string[]) {
+    this._sshKeys = value;
+  }
+  public resetSshKeys() {
+    this._sshKeys = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get sshKeysInput() {
+    return this._sshKeys;
+  }
+
   // sshkey - computed: true, optional: false, required: false
   public get sshkey() {
     return this.getStringAttribute('sshkey');
@@ -595,6 +616,7 @@ export class Volume extends cdktf.TerraformResource {
       server_id: cdktf.stringToTerraform(this._serverId),
       size: cdktf.numberToTerraform(this._size),
       ssh_key_path: cdktf.listMapper(cdktf.stringToTerraform, false)(this._sshKeyPath),
+      ssh_keys: cdktf.listMapper(cdktf.stringToTerraform, false)(this._sshKeys),
       user_data: cdktf.stringToTerraform(this._userData),
       timeouts: volumeTimeoutsToTerraform(this._timeouts.internalValue),
     };

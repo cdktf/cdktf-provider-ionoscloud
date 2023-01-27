@@ -413,7 +413,7 @@ export class DataIonoscloudApplicationLoadbalancerForwardingrule extends cdktf.T
       terraformResourceType: 'ionoscloud_application_loadbalancer_forwardingrule',
       terraformGeneratorMetadata: {
         providerName: 'ionoscloud',
-        providerVersion: '6.3.3',
+        providerVersion: '6.3.4',
         providerVersionConstraint: '~> 6.2'
       },
       provider: config.provider,

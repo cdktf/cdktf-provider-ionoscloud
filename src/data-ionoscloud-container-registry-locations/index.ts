@@ -204,7 +204,7 @@ export class DataIonoscloudContainerRegistryLocations extends cdktf.TerraformDat
       terraformResourceType: 'ionoscloud_container_registry_locations',
       terraformGeneratorMetadata: {
         providerName: 'ionoscloud',
-        providerVersion: '6.3.3',
+        providerVersion: '6.3.4',
         providerVersionConstraint: '~> 6.2'
       },
       provider: config.provider,

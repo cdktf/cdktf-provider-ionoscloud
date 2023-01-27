@@ -59,6 +59,12 @@ export interface ServerConfig extends cdktf.TerraformMetaArguments {
   */
   readonly sshKeyPath?: string[];
   /**
+  * Public SSH keys are set on the image as authorized keys for appropriate SSH login to the instance using the corresponding private key. This field may only be set in creation requests. When reading, it always returns null. SSH keys are only supported if a public Linux image is used for the volume creation.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/server#ssh_keys Server#ssh_keys}
+  */
+  readonly sshKeys?: string[];
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/server#template_uuid Server#template_uuid}
   */
   readonly templateUuid?: string;
@@ -68,6 +74,12 @@ export interface ServerConfig extends cdktf.TerraformMetaArguments {
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/server#type Server#type}
   */
   readonly type?: string;
+  /**
+  * label block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/server#label Server#label}
+  */
+  readonly label?: ServerLabel[] | cdktf.IResolvable;
   /**
   * nic block
   * 
@@ -86,6 +98,124 @@ export interface ServerConfig extends cdktf.TerraformMetaArguments {
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/server#volume Server#volume}
   */
   readonly volume: ServerVolume;
+}
+export interface ServerLabel {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/server#key Server#key}
+  */
+  readonly key: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/server#value Server#value}
+  */
+  readonly value: string;
+}
+
+export function serverLabelToTerraform(struct?: ServerLabel | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    key: cdktf.stringToTerraform(struct!.key),
+    value: cdktf.stringToTerraform(struct!.value),
+  }
+}
+
+export class ServerLabelOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): ServerLabel | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._key !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.key = this._key;
+    }
+    if (this._value !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.value = this._value;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ServerLabel | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._key = undefined;
+      this._value = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._key = value.key;
+      this._value = value.value;
+    }
+  }
+
+  // key - computed: false, optional: false, required: true
+  private _key?: string; 
+  public get key() {
+    return this.getStringAttribute('key');
+  }
+  public set key(value: string) {
+    this._key = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get keyInput() {
+    return this._key;
+  }
+
+  // value - computed: false, optional: false, required: true
+  private _value?: string; 
+  public get value() {
+    return this.getStringAttribute('value');
+  }
+  public set value(value: string) {
+    this._value = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get valueInput() {
+    return this._value;
+  }
+}
+
+export class ServerLabelList extends cdktf.ComplexList {
+  public internalValue? : ServerLabel[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): ServerLabelOutputReference {
+    return new ServerLabelOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
 }
 export interface ServerNicFirewall {
   /**
@@ -832,9 +962,17 @@ export interface ServerVolume {
   */
   readonly size?: number;
   /**
+  * Public SSH keys are set on the image as authorized keys for appropriate SSH login to the instance using the corresponding private key. This field may only be set in creation requests. When reading, it always returns null. SSH keys are only supported if a public Linux image is used for the volume creation.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/server#ssh_key_path Server#ssh_key_path}
   */
   readonly sshKeyPath?: string[];
+  /**
+  * Public SSH keys are set on the image as authorized keys for appropriate SSH login to the instance using the corresponding private key. This field may only be set in creation requests. When reading, it always returns null. SSH keys are only supported if a public Linux image is used for the volume creation.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/server#ssh_keys Server#ssh_keys}
+  */
+  readonly sshKeys?: string[];
   /**
   * The cloud-init configuration for the volume as base64 encoded string. The property is immutable and is only allowed to be set on a new volume creation. It is mandatory to provide either 'public image' or 'imageAlias' that has cloud-init compatibility in conjunction with this property.
   * 
@@ -858,6 +996,7 @@ export function serverVolumeToTerraform(struct?: ServerVolumeOutputReference | S
     name: cdktf.stringToTerraform(struct!.name),
     size: cdktf.numberToTerraform(struct!.size),
     ssh_key_path: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.sshKeyPath),
+    ssh_keys: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.sshKeys),
     user_data: cdktf.stringToTerraform(struct!.userData),
   }
 }
@@ -912,6 +1051,10 @@ export class ServerVolumeOutputReference extends cdktf.ComplexObject {
       hasAnyValues = true;
       internalValueResult.sshKeyPath = this._sshKeyPath;
     }
+    if (this._sshKeys !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.sshKeys = this._sshKeys;
+    }
     if (this._userData !== undefined) {
       hasAnyValues = true;
       internalValueResult.userData = this._userData;
@@ -931,6 +1074,7 @@ export class ServerVolumeOutputReference extends cdktf.ComplexObject {
       this._name = undefined;
       this._size = undefined;
       this._sshKeyPath = undefined;
+      this._sshKeys = undefined;
       this._userData = undefined;
     }
     else {
@@ -944,6 +1088,7 @@ export class ServerVolumeOutputReference extends cdktf.ComplexObject {
       this._name = value.name;
       this._size = value.size;
       this._sshKeyPath = value.sshKeyPath;
+      this._sshKeys = value.sshKeys;
       this._userData = value.userData;
     }
   }
@@ -1134,6 +1279,22 @@ export class ServerVolumeOutputReference extends cdktf.ComplexObject {
     return this._sshKeyPath;
   }
 
+  // ssh_keys - computed: true, optional: true, required: false
+  private _sshKeys?: string[]; 
+  public get sshKeys() {
+    return this.getListAttribute('ssh_keys');
+  }
+  public set sshKeys(value: string[]) {
+    this._sshKeys = value;
+  }
+  public resetSshKeys() {
+    this._sshKeys = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get sshKeysInput() {
+    return this._sshKeys;
+  }
+
   // user_data - computed: true, optional: true, required: false
   private _userData?: string; 
   public get userData() {
@@ -1177,7 +1338,7 @@ export class Server extends cdktf.TerraformResource {
       terraformResourceType: 'ionoscloud_server',
       terraformGeneratorMetadata: {
         providerName: 'ionoscloud',
-        providerVersion: '6.3.3',
+        providerVersion: '6.3.4',
         providerVersionConstraint: '~> 6.2'
       },
       provider: config.provider,
@@ -1200,8 +1361,10 @@ export class Server extends cdktf.TerraformResource {
     this._name = config.name;
     this._ram = config.ram;
     this._sshKeyPath = config.sshKeyPath;
+    this._sshKeys = config.sshKeys;
     this._templateUuid = config.templateUuid;
     this._type = config.type;
+    this._label.internalValue = config.label;
     this._nic.internalValue = config.nic;
     this._timeouts.internalValue = config.timeouts;
     this._volume.internalValue = config.volume;
@@ -1417,6 +1580,22 @@ export class Server extends cdktf.TerraformResource {
     return this._sshKeyPath;
   }
 
+  // ssh_keys - computed: true, optional: true, required: false
+  private _sshKeys?: string[]; 
+  public get sshKeys() {
+    return this.getListAttribute('ssh_keys');
+  }
+  public set sshKeys(value: string[]) {
+    this._sshKeys = value;
+  }
+  public resetSshKeys() {
+    this._sshKeys = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get sshKeysInput() {
+    return this._sshKeys;
+  }
+
   // template_uuid - computed: false, optional: true, required: false
   private _templateUuid?: string; 
   public get templateUuid() {
@@ -1447,6 +1626,22 @@ export class Server extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get typeInput() {
     return this._type;
+  }
+
+  // label - computed: false, optional: true, required: false
+  private _label = new ServerLabelList(this, "label", true);
+  public get label() {
+    return this._label;
+  }
+  public putLabel(value: ServerLabel[] | cdktf.IResolvable) {
+    this._label.internalValue = value;
+  }
+  public resetLabel() {
+    this._label.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get labelInput() {
+    return this._label.internalValue;
   }
 
   // nic - computed: false, optional: false, required: true
@@ -1509,8 +1704,10 @@ export class Server extends cdktf.TerraformResource {
       name: cdktf.stringToTerraform(this._name),
       ram: cdktf.numberToTerraform(this._ram),
       ssh_key_path: cdktf.listMapper(cdktf.stringToTerraform, false)(this._sshKeyPath),
+      ssh_keys: cdktf.listMapper(cdktf.stringToTerraform, false)(this._sshKeys),
       template_uuid: cdktf.stringToTerraform(this._templateUuid),
       type: cdktf.stringToTerraform(this._type),
+      label: cdktf.listMapper(serverLabelToTerraform, true)(this._label.internalValue),
       nic: serverNicToTerraform(this._nic.internalValue),
       timeouts: serverTimeoutsToTerraform(this._timeouts.internalValue),
       volume: serverVolumeToTerraform(this._volume.internalValue),

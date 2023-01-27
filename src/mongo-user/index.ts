@@ -12,12 +12,6 @@ export interface MongoUserConfig extends cdktf.TerraformMetaArguments {
   */
   readonly clusterId: string;
   /**
-  * The user database to use for authentication
-  * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/mongo_user#database MongoUser#database}
-  */
-  readonly database: string;
-  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/mongo_user#id MongoUser#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
@@ -29,8 +23,6 @@ export interface MongoUserConfig extends cdktf.TerraformMetaArguments {
   */
   readonly password: string;
   /**
-  * The user database uses for authentication
-  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/mongo_user#username MongoUser#username}
   */
   readonly username: string;
@@ -356,7 +348,7 @@ export class MongoUser extends cdktf.TerraformResource {
       terraformResourceType: 'ionoscloud_mongo_user',
       terraformGeneratorMetadata: {
         providerName: 'ionoscloud',
-        providerVersion: '6.3.3',
+        providerVersion: '6.3.4',
         providerVersionConstraint: '~> 6.2'
       },
       provider: config.provider,
@@ -368,7 +360,6 @@ export class MongoUser extends cdktf.TerraformResource {
       forEach: config.forEach
     });
     this._clusterId = config.clusterId;
-    this._database = config.database;
     this._id = config.id;
     this._password = config.password;
     this._username = config.username;
@@ -391,19 +382,6 @@ export class MongoUser extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get clusterIdInput() {
     return this._clusterId;
-  }
-
-  // database - computed: false, optional: false, required: true
-  private _database?: string; 
-  public get database() {
-    return this.getStringAttribute('database');
-  }
-  public set database(value: string) {
-    this._database = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get databaseInput() {
-    return this._database;
   }
 
   // id - computed: true, optional: true, required: false
@@ -487,7 +465,6 @@ export class MongoUser extends cdktf.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       cluster_id: cdktf.stringToTerraform(this._clusterId),
-      database: cdktf.stringToTerraform(this._database),
       id: cdktf.stringToTerraform(this._id),
       password: cdktf.stringToTerraform(this._password),
       username: cdktf.stringToTerraform(this._username),

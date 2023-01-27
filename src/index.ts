@@ -51,6 +51,7 @@ export * as dataIonoscloudK8SNodePoolNodes from './data-ionoscloud-k8s-node-pool
 export * as dataIonoscloudLan from './data-ionoscloud-lan';
 export * as dataIonoscloudLocation from './data-ionoscloud-location';
 export * as dataIonoscloudMongoCluster from './data-ionoscloud-mongo-cluster';
+export * as dataIonoscloudMongoTemplate from './data-ionoscloud-mongo-template';
 export * as dataIonoscloudMongoUser from './data-ionoscloud-mongo-user';
 export * as dataIonoscloudNatgateway from './data-ionoscloud-natgateway';
 export * as dataIonoscloudNatgatewayRule from './data-ionoscloud-natgateway-rule';

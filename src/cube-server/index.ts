@@ -20,10 +20,6 @@ export interface CubeServerConfig extends cdktf.TerraformMetaArguments {
   */
   readonly bootImage?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/cube_server#cpu_family CubeServer#cpu_family}
-  */
-  readonly cpuFamily?: string;
-  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/cube_server#datacenter_id CubeServer#datacenter_id}
   */
   readonly datacenterId: string;
@@ -1129,7 +1125,7 @@ export class CubeServer extends cdktf.TerraformResource {
       terraformResourceType: 'ionoscloud_cube_server',
       terraformGeneratorMetadata: {
         providerName: 'ionoscloud',
-        providerVersion: '6.3.3',
+        providerVersion: '6.3.4',
         providerVersionConstraint: '~> 6.2'
       },
       provider: config.provider,
@@ -1143,7 +1139,6 @@ export class CubeServer extends cdktf.TerraformResource {
     this._availabilityZone = config.availabilityZone;
     this._bootCdrom = config.bootCdrom;
     this._bootImage = config.bootImage;
-    this._cpuFamily = config.cpuFamily;
     this._datacenterId = config.datacenterId;
     this._id = config.id;
     this._imageName = config.imageName;
@@ -1211,22 +1206,6 @@ export class CubeServer extends cdktf.TerraformResource {
   // boot_volume - computed: true, optional: false, required: false
   public get bootVolume() {
     return this.getStringAttribute('boot_volume');
-  }
-
-  // cpu_family - computed: true, optional: true, required: false
-  private _cpuFamily?: string; 
-  public get cpuFamily() {
-    return this.getStringAttribute('cpu_family');
-  }
-  public set cpuFamily(value: string) {
-    this._cpuFamily = value;
-  }
-  public resetCpuFamily() {
-    this._cpuFamily = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get cpuFamilyInput() {
-    return this._cpuFamily;
   }
 
   // datacenter_id - computed: false, optional: false, required: true
@@ -1398,7 +1377,6 @@ export class CubeServer extends cdktf.TerraformResource {
       availability_zone: cdktf.stringToTerraform(this._availabilityZone),
       boot_cdrom: cdktf.stringToTerraform(this._bootCdrom),
       boot_image: cdktf.stringToTerraform(this._bootImage),
-      cpu_family: cdktf.stringToTerraform(this._cpuFamily),
       datacenter_id: cdktf.stringToTerraform(this._datacenterId),
       id: cdktf.stringToTerraform(this._id),
       image_name: cdktf.stringToTerraform(this._imageName),
