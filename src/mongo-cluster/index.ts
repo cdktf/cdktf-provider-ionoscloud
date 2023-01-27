@@ -39,7 +39,7 @@ export interface MongoClusterConfig extends cdktf.TerraformMetaArguments {
   */
   readonly mongodbVersion: string;
   /**
-  * The unique ID of the template, which specifies the number of cores, storage size, and memory.
+  * The unique ID of the template, which specifies the number of cores, storage size, and memory. You cannot downgrade to a smaller template or minor edition (e.g. from business to playground).
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/mongo_cluster#template_id MongoCluster#template_id}
   */
@@ -547,7 +547,7 @@ export class MongoCluster extends cdktf.TerraformResource {
       terraformResourceType: 'ionoscloud_mongo_cluster',
       terraformGeneratorMetadata: {
         providerName: 'ionoscloud',
-        providerVersion: '6.3.3',
+        providerVersion: '6.3.4',
         providerVersionConstraint: '~> 6.2'
       },
       provider: config.provider,

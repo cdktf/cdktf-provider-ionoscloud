@@ -425,7 +425,7 @@ export class DataIonoscloudContainerRegistry extends cdktf.TerraformDataSource {
       terraformResourceType: 'ionoscloud_container_registry',
       terraformGeneratorMetadata: {
         providerName: 'ionoscloud',
-        providerVersion: '6.3.3',
+        providerVersion: '6.3.4',
         providerVersionConstraint: '~> 6.2'
       },
       provider: config.provider,

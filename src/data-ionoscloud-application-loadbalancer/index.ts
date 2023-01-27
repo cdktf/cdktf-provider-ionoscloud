@@ -220,7 +220,7 @@ export class DataIonoscloudApplicationLoadbalancer extends cdktf.TerraformDataSo
       terraformResourceType: 'ionoscloud_application_loadbalancer',
       terraformGeneratorMetadata: {
         providerName: 'ionoscloud',
-        providerVersion: '6.3.3',
+        providerVersion: '6.3.4',
         providerVersionConstraint: '~> 6.2'
       },
       provider: config.provider,

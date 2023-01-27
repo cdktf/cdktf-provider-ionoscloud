@@ -69,7 +69,7 @@ export class IonoscloudProvider extends cdktf.TerraformProvider {
       terraformResourceType: 'ionoscloud',
       terraformGeneratorMetadata: {
         providerName: 'ionoscloud',
-        providerVersion: '6.3.3',
+        providerVersion: '6.3.4',
         providerVersionConstraint: '~> 6.2'
       },
       terraformProviderSource: 'ionos-cloud/ionoscloud'

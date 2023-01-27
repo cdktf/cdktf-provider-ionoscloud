@@ -212,7 +212,7 @@ export class DataIonoscloudResource extends cdktf.TerraformDataSource {
       terraformResourceType: 'ionoscloud_resource',
       terraformGeneratorMetadata: {
         providerName: 'ionoscloud',
-        providerVersion: '6.3.3',
+        providerVersion: '6.3.4',
         providerVersionConstraint: '~> 6.2'
       },
       provider: config.provider,

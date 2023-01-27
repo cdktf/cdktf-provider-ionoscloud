@@ -33,12 +33,6 @@ export interface K8SClusterConfig extends cdktf.TerraformMetaArguments {
   */
   readonly name: string;
   /**
-  * List of versions that may be used for node pools under this cluster
-  * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/k8s_cluster#viable_node_pool_versions K8SCluster#viable_node_pool_versions}
-  */
-  readonly viableNodePoolVersions?: string[];
-  /**
   * maintenance_window block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/k8s_cluster#maintenance_window K8SCluster#maintenance_window}
@@ -429,7 +423,7 @@ export class K8SCluster extends cdktf.TerraformResource {
       terraformResourceType: 'ionoscloud_k8s_cluster',
       terraformGeneratorMetadata: {
         providerName: 'ionoscloud',
-        providerVersion: '6.3.3',
+        providerVersion: '6.3.4',
         providerVersionConstraint: '~> 6.2'
       },
       provider: config.provider,
@@ -444,7 +438,6 @@ export class K8SCluster extends cdktf.TerraformResource {
     this._id = config.id;
     this._k8SVersion = config.k8SVersion;
     this._name = config.name;
-    this._viableNodePoolVersions = config.viableNodePoolVersions;
     this._maintenanceWindow.internalValue = config.maintenanceWindow;
     this._s3Buckets.internalValue = config.s3Buckets;
     this._timeouts.internalValue = config.timeouts;
@@ -515,20 +508,9 @@ export class K8SCluster extends cdktf.TerraformResource {
     return this._name;
   }
 
-  // viable_node_pool_versions - computed: true, optional: true, required: false
-  private _viableNodePoolVersions?: string[]; 
+  // viable_node_pool_versions - computed: true, optional: false, required: false
   public get viableNodePoolVersions() {
     return this.getListAttribute('viable_node_pool_versions');
-  }
-  public set viableNodePoolVersions(value: string[]) {
-    this._viableNodePoolVersions = value;
-  }
-  public resetViableNodePoolVersions() {
-    this._viableNodePoolVersions = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get viableNodePoolVersionsInput() {
-    return this._viableNodePoolVersions;
   }
 
   // maintenance_window - computed: false, optional: true, required: false
@@ -589,7 +571,6 @@ export class K8SCluster extends cdktf.TerraformResource {
       id: cdktf.stringToTerraform(this._id),
       k8s_version: cdktf.stringToTerraform(this._k8SVersion),
       name: cdktf.stringToTerraform(this._name),
-      viable_node_pool_versions: cdktf.listMapper(cdktf.stringToTerraform, false)(this._viableNodePoolVersions),
       maintenance_window: k8SClusterMaintenanceWindowToTerraform(this._maintenanceWindow.internalValue),
       s3_buckets: cdktf.listMapper(k8SClusterS3BucketsToTerraform, true)(this._s3Buckets.internalValue),
       timeouts: k8SClusterTimeoutsToTerraform(this._timeouts.internalValue),
