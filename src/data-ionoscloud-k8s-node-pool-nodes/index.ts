@@ -300,7 +300,7 @@ export class DataIonoscloudK8SNodePoolNodes extends cdktf.TerraformDataSource {
       terraformResourceType: 'ionoscloud_k8s_node_pool_nodes',
       terraformGeneratorMetadata: {
         providerName: 'ionoscloud',
-        providerVersion: '6.3.4',
+        providerVersion: '6.3.5',
         providerVersionConstraint: '~> 6.2'
       },
       provider: config.provider,

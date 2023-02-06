@@ -238,7 +238,7 @@ export class User extends cdktf.TerraformResource {
       terraformResourceType: 'ionoscloud_user',
       terraformGeneratorMetadata: {
         providerName: 'ionoscloud',
-        providerVersion: '6.3.4',
+        providerVersion: '6.3.5',
         providerVersionConstraint: '~> 6.2'
       },
       provider: config.provider,
