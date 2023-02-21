@@ -1,0 +1,2402 @@
+# `containerRegistryToken` Submodule <a name="`containerRegistryToken` Submodule" id="@cdktf/provider-ionoscloud.containerRegistryToken"></a>
+
+## Constructs <a name="Constructs" id="Constructs"></a>
+
+### ContainerRegistryToken <a name="ContainerRegistryToken" id="@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryToken"></a>
+
+Represents a {@link https://www.terraform.io/docs/providers/ionoscloud/r/container_registry_token ionoscloud_container_registry_token}.
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryToken.Initializer"></a>
+
+```go
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/containerregistrytoken"
+
+containerregistrytoken.NewContainerRegistryToken(scope Construct, id *string, config ContainerRegistryTokenConfig) ContainerRegistryToken
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryToken.Initializer.parameter.scope">scope</a></code> | <code>github.com/aws/constructs-go/constructs/v10.Construct</code> | The scope in which to define this construct. |
+| <code><a href="#@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryToken.Initializer.parameter.id">id</a></code> | <code>*string</code> | The scoped construct ID. |
+| <code><a href="#@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryToken.Initializer.parameter.config">config</a></code> | <code><a href="#@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryTokenConfig">ContainerRegistryTokenConfig</a></code> | *No description.* |
+
+---
+
+##### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryToken.Initializer.parameter.scope"></a>
+
+- *Type:* github.com/aws/constructs-go/constructs/v10.Construct
+
+The scope in which to define this construct.
+
+---
+
+##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryToken.Initializer.parameter.id"></a>
+
+- *Type:* *string
+
+The scoped construct ID.
+
+Must be unique amongst siblings in the same scope
+
+---
+
+##### `config`<sup>Required</sup> <a name="config" id="@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryToken.Initializer.parameter.config"></a>
+
+- *Type:* <a href="#@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryTokenConfig">ContainerRegistryTokenConfig</a>
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryToken.toString">ToString</a></code> | Returns a string representation of this construct. |
+| <code><a href="#@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryToken.addOverride">AddOverride</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryToken.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
+| <code><a href="#@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryToken.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryToken.toMetadata">ToMetadata</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryToken.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
+| <code><a href="#@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryToken.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryToken.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryToken.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryToken.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryToken.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryToken.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryToken.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryToken.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryToken.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryToken.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryToken.putScopes">PutScopes</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryToken.putTimeouts">PutTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryToken.resetExpiryDate">ResetExpiryDate</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryToken.resetId">ResetId</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryToken.resetSavePasswordToFile">ResetSavePasswordToFile</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryToken.resetScopes">ResetScopes</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryToken.resetStatus">ResetStatus</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryToken.resetTimeouts">ResetTimeouts</a></code> | *No description.* |
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryToken.toString"></a>
+
+```go
+func ToString() *string
+```
+
+Returns a string representation of this construct.
+
+##### `AddOverride` <a name="AddOverride" id="@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryToken.addOverride"></a>
+
+```go
+func AddOverride(path *string, value interface{})
+```
+
+###### `path`<sup>Required</sup> <a name="path" id="@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryToken.addOverride.parameter.path"></a>
+
+- *Type:* *string
+
+---
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryToken.addOverride.parameter.value"></a>
+
+- *Type:* interface{}
+
+---
+
+##### `OverrideLogicalId` <a name="OverrideLogicalId" id="@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryToken.overrideLogicalId"></a>
+
+```go
+func OverrideLogicalId(newLogicalId *string)
+```
+
+Overrides the auto-generated logical ID with a specific ID.
+
+###### `newLogicalId`<sup>Required</sup> <a name="newLogicalId" id="@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryToken.overrideLogicalId.parameter.newLogicalId"></a>
+
+- *Type:* *string
+
+The new logical ID to use for this stack element.
+
+---
+
+##### `ResetOverrideLogicalId` <a name="ResetOverrideLogicalId" id="@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryToken.resetOverrideLogicalId"></a>
+
+```go
+func ResetOverrideLogicalId()
+```
+
+Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryToken.toMetadata"></a>
+
+```go
+func ToMetadata() interface{}
+```
+
+##### `ToTerraform` <a name="ToTerraform" id="@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryToken.toTerraform"></a>
+
+```go
+func ToTerraform() interface{}
+```
+
+Adds this resource to the terraform JSON output.
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryToken.getAnyMapAttribute"></a>
+
+```go
+func GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryToken.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryToken.getBooleanAttribute"></a>
+
+```go
+func GetBooleanAttribute(terraformAttribute *string) IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryToken.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryToken.getBooleanMapAttribute"></a>
+
+```go
+func GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryToken.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryToken.getListAttribute"></a>
+
+```go
+func GetListAttribute(terraformAttribute *string) *[]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryToken.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryToken.getNumberAttribute"></a>
+
+```go
+func GetNumberAttribute(terraformAttribute *string) *f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryToken.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryToken.getNumberListAttribute"></a>
+
+```go
+func GetNumberListAttribute(terraformAttribute *string) *[]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryToken.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryToken.getNumberMapAttribute"></a>
+
+```go
+func GetNumberMapAttribute(terraformAttribute *string) *map[string]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryToken.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryToken.getStringAttribute"></a>
+
+```go
+func GetStringAttribute(terraformAttribute *string) *string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryToken.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryToken.getStringMapAttribute"></a>
+
+```go
+func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryToken.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryToken.interpolationForAttribute"></a>
+
+```go
+func InterpolationForAttribute(terraformAttribute *string) IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryToken.interpolationForAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `PutScopes` <a name="PutScopes" id="@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryToken.putScopes"></a>
+
+```go
+func PutScopes(value interface{})
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryToken.putScopes.parameter.value"></a>
+
+- *Type:* interface{}
+
+---
+
+##### `PutTimeouts` <a name="PutTimeouts" id="@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryToken.putTimeouts"></a>
+
+```go
+func PutTimeouts(value ContainerRegistryTokenTimeouts)
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryToken.putTimeouts.parameter.value"></a>
+
+- *Type:* <a href="#@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryTokenTimeouts">ContainerRegistryTokenTimeouts</a>
+
+---
+
+##### `ResetExpiryDate` <a name="ResetExpiryDate" id="@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryToken.resetExpiryDate"></a>
+
+```go
+func ResetExpiryDate()
+```
+
+##### `ResetId` <a name="ResetId" id="@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryToken.resetId"></a>
+
+```go
+func ResetId()
+```
+
+##### `ResetSavePasswordToFile` <a name="ResetSavePasswordToFile" id="@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryToken.resetSavePasswordToFile"></a>
+
+```go
+func ResetSavePasswordToFile()
+```
+
+##### `ResetScopes` <a name="ResetScopes" id="@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryToken.resetScopes"></a>
+
+```go
+func ResetScopes()
+```
+
+##### `ResetStatus` <a name="ResetStatus" id="@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryToken.resetStatus"></a>
+
+```go
+func ResetStatus()
+```
+
+##### `ResetTimeouts` <a name="ResetTimeouts" id="@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryToken.resetTimeouts"></a>
+
+```go
+func ResetTimeouts()
+```
+
+#### Static Functions <a name="Static Functions" id="Static Functions"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryToken.isConstruct">IsConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryToken.isTerraformElement">IsTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryToken.isTerraformResource">IsTerraformResource</a></code> | *No description.* |
+
+---
+
+##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryToken.isConstruct"></a>
+
+```go
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/containerregistrytoken"
+
+containerregistrytoken.ContainerRegistryToken_IsConstruct(x interface{}) *bool
+```
+
+Checks if `x` is a construct.
+
+Use this method instead of `instanceof` to properly detect `Construct`
+instances, even when the construct library is symlinked.
+
+Explanation: in JavaScript, multiple copies of the `constructs` library on
+disk are seen as independent, completely different libraries. As a
+consequence, the class `Construct` in each copy of the `constructs` library
+is seen as a different class, and an instance of one class will not test as
+`instanceof` the other class. `npm install` will not create installations
+like this, but users may manually symlink construct libraries together or
+use a monorepo tool: in those cases, multiple copies of the `constructs`
+library can be accidentally installed, and `instanceof` will behave
+unpredictably. It is safest to avoid using `instanceof`, and using
+this type-testing method instead.
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryToken.isConstruct.parameter.x"></a>
+
+- *Type:* interface{}
+
+Any object.
+
+---
+
+##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryToken.isTerraformElement"></a>
+
+```go
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/containerregistrytoken"
+
+containerregistrytoken.ContainerRegistryToken_IsTerraformElement(x interface{}) *bool
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryToken.isTerraformElement.parameter.x"></a>
+
+- *Type:* interface{}
+
+---
+
+##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryToken.isTerraformResource"></a>
+
+```go
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/containerregistrytoken"
+
+containerregistrytoken.ContainerRegistryToken_IsTerraformResource(x interface{}) *bool
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryToken.isTerraformResource.parameter.x"></a>
+
+- *Type:* interface{}
+
+---
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryToken.property.node">Node</a></code> | <code>github.com/aws/constructs-go/constructs/v10.Node</code> | The tree node. |
+| <code><a href="#@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryToken.property.cdktfStack">CdktfStack</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformStack</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryToken.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryToken.property.friendlyUniqueId">FriendlyUniqueId</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryToken.property.terraformMetaArguments">TerraformMetaArguments</a></code> | <code>*map[string]interface{}</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryToken.property.terraformResourceType">TerraformResourceType</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryToken.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryToken.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryToken.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryToken.property.dependsOn">DependsOn</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryToken.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryToken.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryToken.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryToken.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryToken.property.credentials">Credentials</a></code> | <code><a href="#@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryTokenCredentialsList">ContainerRegistryTokenCredentialsList</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryToken.property.scopes">Scopes</a></code> | <code><a href="#@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryTokenScopesList">ContainerRegistryTokenScopesList</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryToken.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryTokenTimeoutsOutputReference">ContainerRegistryTokenTimeoutsOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryToken.property.expiryDateInput">ExpiryDateInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryToken.property.idInput">IdInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryToken.property.nameInput">NameInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryToken.property.registryIdInput">RegistryIdInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryToken.property.savePasswordToFileInput">SavePasswordToFileInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryToken.property.scopesInput">ScopesInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryToken.property.statusInput">StatusInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryToken.property.timeoutsInput">TimeoutsInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryToken.property.expiryDate">ExpiryDate</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryToken.property.id">Id</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryToken.property.name">Name</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryToken.property.registryId">RegistryId</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryToken.property.savePasswordToFile">SavePasswordToFile</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryToken.property.status">Status</a></code> | <code>*string</code> | *No description.* |
+
+---
+
+##### `Node`<sup>Required</sup> <a name="Node" id="@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryToken.property.node"></a>
+
+```go
+func Node() Node
+```
+
+- *Type:* github.com/aws/constructs-go/constructs/v10.Node
+
+The tree node.
+
+---
+
+##### `CdktfStack`<sup>Required</sup> <a name="CdktfStack" id="@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryToken.property.cdktfStack"></a>
+
+```go
+func CdktfStack() TerraformStack
+```
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformStack
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryToken.property.fqn"></a>
+
+```go
+func Fqn() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `FriendlyUniqueId`<sup>Required</sup> <a name="FriendlyUniqueId" id="@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryToken.property.friendlyUniqueId"></a>
+
+```go
+func FriendlyUniqueId() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `TerraformMetaArguments`<sup>Required</sup> <a name="TerraformMetaArguments" id="@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryToken.property.terraformMetaArguments"></a>
+
+```go
+func TerraformMetaArguments() *map[string]interface{}
+```
+
+- *Type:* *map[string]interface{}
+
+---
+
+##### `TerraformResourceType`<sup>Required</sup> <a name="TerraformResourceType" id="@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryToken.property.terraformResourceType"></a>
+
+```go
+func TerraformResourceType() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `TerraformGeneratorMetadata`<sup>Optional</sup> <a name="TerraformGeneratorMetadata" id="@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryToken.property.terraformGeneratorMetadata"></a>
+
+```go
+func TerraformGeneratorMetadata() TerraformProviderGeneratorMetadata
+```
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProviderGeneratorMetadata
+
+---
+
+##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryToken.property.connection"></a>
+
+```go
+func Connection() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
+##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryToken.property.count"></a>
+
+```go
+func Count() *f64
+```
+
+- *Type:* *f64
+
+---
+
+##### `DependsOn`<sup>Optional</sup> <a name="DependsOn" id="@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryToken.property.dependsOn"></a>
+
+```go
+func DependsOn() *[]*string
+```
+
+- *Type:* *[]*string
+
+---
+
+##### `ForEach`<sup>Optional</sup> <a name="ForEach" id="@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryToken.property.forEach"></a>
+
+```go
+func ForEach() ITerraformIterator
+```
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator
+
+---
+
+##### `Lifecycle`<sup>Optional</sup> <a name="Lifecycle" id="@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryToken.property.lifecycle"></a>
+
+```go
+func Lifecycle() TerraformResourceLifecycle
+```
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle
+
+---
+
+##### `Provider`<sup>Optional</sup> <a name="Provider" id="@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryToken.property.provider"></a>
+
+```go
+func Provider() TerraformProvider
+```
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider
+
+---
+
+##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryToken.property.provisioners"></a>
+
+```go
+func Provisioners() *[]interface{}
+```
+
+- *Type:* *[]interface{}
+
+---
+
+##### `Credentials`<sup>Required</sup> <a name="Credentials" id="@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryToken.property.credentials"></a>
+
+```go
+func Credentials() ContainerRegistryTokenCredentialsList
+```
+
+- *Type:* <a href="#@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryTokenCredentialsList">ContainerRegistryTokenCredentialsList</a>
+
+---
+
+##### `Scopes`<sup>Required</sup> <a name="Scopes" id="@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryToken.property.scopes"></a>
+
+```go
+func Scopes() ContainerRegistryTokenScopesList
+```
+
+- *Type:* <a href="#@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryTokenScopesList">ContainerRegistryTokenScopesList</a>
+
+---
+
+##### `Timeouts`<sup>Required</sup> <a name="Timeouts" id="@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryToken.property.timeouts"></a>
+
+```go
+func Timeouts() ContainerRegistryTokenTimeoutsOutputReference
+```
+
+- *Type:* <a href="#@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryTokenTimeoutsOutputReference">ContainerRegistryTokenTimeoutsOutputReference</a>
+
+---
+
+##### `ExpiryDateInput`<sup>Optional</sup> <a name="ExpiryDateInput" id="@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryToken.property.expiryDateInput"></a>
+
+```go
+func ExpiryDateInput() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `IdInput`<sup>Optional</sup> <a name="IdInput" id="@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryToken.property.idInput"></a>
+
+```go
+func IdInput() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `NameInput`<sup>Optional</sup> <a name="NameInput" id="@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryToken.property.nameInput"></a>
+
+```go
+func NameInput() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `RegistryIdInput`<sup>Optional</sup> <a name="RegistryIdInput" id="@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryToken.property.registryIdInput"></a>
+
+```go
+func RegistryIdInput() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `SavePasswordToFileInput`<sup>Optional</sup> <a name="SavePasswordToFileInput" id="@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryToken.property.savePasswordToFileInput"></a>
+
+```go
+func SavePasswordToFileInput() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `ScopesInput`<sup>Optional</sup> <a name="ScopesInput" id="@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryToken.property.scopesInput"></a>
+
+```go
+func ScopesInput() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
+##### `StatusInput`<sup>Optional</sup> <a name="StatusInput" id="@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryToken.property.statusInput"></a>
+
+```go
+func StatusInput() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `TimeoutsInput`<sup>Optional</sup> <a name="TimeoutsInput" id="@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryToken.property.timeoutsInput"></a>
+
+```go
+func TimeoutsInput() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
+##### `ExpiryDate`<sup>Required</sup> <a name="ExpiryDate" id="@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryToken.property.expiryDate"></a>
+
+```go
+func ExpiryDate() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `Id`<sup>Required</sup> <a name="Id" id="@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryToken.property.id"></a>
+
+```go
+func Id() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `Name`<sup>Required</sup> <a name="Name" id="@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryToken.property.name"></a>
+
+```go
+func Name() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `RegistryId`<sup>Required</sup> <a name="RegistryId" id="@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryToken.property.registryId"></a>
+
+```go
+func RegistryId() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `SavePasswordToFile`<sup>Required</sup> <a name="SavePasswordToFile" id="@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryToken.property.savePasswordToFile"></a>
+
+```go
+func SavePasswordToFile() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `Status`<sup>Required</sup> <a name="Status" id="@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryToken.property.status"></a>
+
+```go
+func Status() *string
+```
+
+- *Type:* *string
+
+---
+
+#### Constants <a name="Constants" id="Constants"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryToken.property.tfResourceType">TfResourceType</a></code> | <code>*string</code> | *No description.* |
+
+---
+
+##### `TfResourceType`<sup>Required</sup> <a name="TfResourceType" id="@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryToken.property.tfResourceType"></a>
+
+```go
+func TfResourceType() *string
+```
+
+- *Type:* *string
+
+---
+
+## Structs <a name="Structs" id="Structs"></a>
+
+### ContainerRegistryTokenConfig <a name="ContainerRegistryTokenConfig" id="@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryTokenConfig"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryTokenConfig.Initializer"></a>
+
+```go
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/containerregistrytoken"
+
+&containerregistrytoken.ContainerRegistryTokenConfig {
+	Connection: interface{},
+	Count: *f64,
+	DependsOn: *[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable,
+	ForEach: github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator,
+	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
+	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
+	Provisioners: *[]interface{},
+	Name: *string,
+	RegistryId: *string,
+	ExpiryDate: *string,
+	Id: *string,
+	SavePasswordToFile: *string,
+	Scopes: interface{},
+	Status: *string,
+	Timeouts: github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud.containerRegistryToken.ContainerRegistryTokenTimeouts,
+}
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryTokenConfig.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryTokenConfig.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryTokenConfig.property.dependsOn">DependsOn</a></code> | <code>*[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryTokenConfig.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryTokenConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryTokenConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryTokenConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryTokenConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/container_registry_token#name ContainerRegistryToken#name}. |
+| <code><a href="#@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryTokenConfig.property.registryId">RegistryId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/container_registry_token#registry_id ContainerRegistryToken#registry_id}. |
+| <code><a href="#@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryTokenConfig.property.expiryDate">ExpiryDate</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/container_registry_token#expiry_date ContainerRegistryToken#expiry_date}. |
+| <code><a href="#@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryTokenConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/container_registry_token#id ContainerRegistryToken#id}. |
+| <code><a href="#@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryTokenConfig.property.savePasswordToFile">SavePasswordToFile</a></code> | <code>*string</code> | Saves password to file. Only works on create. Takes as argument a file name, or a file path. |
+| <code><a href="#@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryTokenConfig.property.scopes">Scopes</a></code> | <code>interface{}</code> | scopes block. |
+| <code><a href="#@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryTokenConfig.property.status">Status</a></code> | <code>*string</code> | Can be one of enabled, disabled. |
+| <code><a href="#@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryTokenConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryTokenTimeouts">ContainerRegistryTokenTimeouts</a></code> | timeouts block. |
+
+---
+
+##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryTokenConfig.property.connection"></a>
+
+```go
+Connection interface{}
+```
+
+- *Type:* interface{}
+
+---
+
+##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryTokenConfig.property.count"></a>
+
+```go
+Count *f64
+```
+
+- *Type:* *f64
+
+---
+
+##### `DependsOn`<sup>Optional</sup> <a name="DependsOn" id="@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryTokenConfig.property.dependsOn"></a>
+
+```go
+DependsOn *[]ITerraformDependable
+```
+
+- *Type:* *[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable
+
+---
+
+##### `ForEach`<sup>Optional</sup> <a name="ForEach" id="@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryTokenConfig.property.forEach"></a>
+
+```go
+ForEach ITerraformIterator
+```
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator
+
+---
+
+##### `Lifecycle`<sup>Optional</sup> <a name="Lifecycle" id="@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryTokenConfig.property.lifecycle"></a>
+
+```go
+Lifecycle TerraformResourceLifecycle
+```
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle
+
+---
+
+##### `Provider`<sup>Optional</sup> <a name="Provider" id="@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryTokenConfig.property.provider"></a>
+
+```go
+Provider TerraformProvider
+```
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider
+
+---
+
+##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryTokenConfig.property.provisioners"></a>
+
+```go
+Provisioners *[]interface{}
+```
+
+- *Type:* *[]interface{}
+
+---
+
+##### `Name`<sup>Required</sup> <a name="Name" id="@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryTokenConfig.property.name"></a>
+
+```go
+Name *string
+```
+
+- *Type:* *string
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/container_registry_token#name ContainerRegistryToken#name}.
+
+---
+
+##### `RegistryId`<sup>Required</sup> <a name="RegistryId" id="@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryTokenConfig.property.registryId"></a>
+
+```go
+RegistryId *string
+```
+
+- *Type:* *string
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/container_registry_token#registry_id ContainerRegistryToken#registry_id}.
+
+---
+
+##### `ExpiryDate`<sup>Optional</sup> <a name="ExpiryDate" id="@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryTokenConfig.property.expiryDate"></a>
+
+```go
+ExpiryDate *string
+```
+
+- *Type:* *string
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/container_registry_token#expiry_date ContainerRegistryToken#expiry_date}.
+
+---
+
+##### `Id`<sup>Optional</sup> <a name="Id" id="@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryTokenConfig.property.id"></a>
+
+```go
+Id *string
+```
+
+- *Type:* *string
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/container_registry_token#id ContainerRegistryToken#id}.
+
+Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `SavePasswordToFile`<sup>Optional</sup> <a name="SavePasswordToFile" id="@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryTokenConfig.property.savePasswordToFile"></a>
+
+```go
+SavePasswordToFile *string
+```
+
+- *Type:* *string
+
+Saves password to file. Only works on create. Takes as argument a file name, or a file path.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/container_registry_token#save_password_to_file ContainerRegistryToken#save_password_to_file}
+
+---
+
+##### `Scopes`<sup>Optional</sup> <a name="Scopes" id="@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryTokenConfig.property.scopes"></a>
+
+```go
+Scopes interface{}
+```
+
+- *Type:* interface{}
+
+scopes block.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/container_registry_token#scopes ContainerRegistryToken#scopes}
+
+---
+
+##### `Status`<sup>Optional</sup> <a name="Status" id="@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryTokenConfig.property.status"></a>
+
+```go
+Status *string
+```
+
+- *Type:* *string
+
+Can be one of enabled, disabled.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/container_registry_token#status ContainerRegistryToken#status}
+
+---
+
+##### `Timeouts`<sup>Optional</sup> <a name="Timeouts" id="@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryTokenConfig.property.timeouts"></a>
+
+```go
+Timeouts ContainerRegistryTokenTimeouts
+```
+
+- *Type:* <a href="#@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryTokenTimeouts">ContainerRegistryTokenTimeouts</a>
+
+timeouts block.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/container_registry_token#timeouts ContainerRegistryToken#timeouts}
+
+---
+
+### ContainerRegistryTokenCredentials <a name="ContainerRegistryTokenCredentials" id="@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryTokenCredentials"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryTokenCredentials.Initializer"></a>
+
+```go
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/containerregistrytoken"
+
+&containerregistrytoken.ContainerRegistryTokenCredentials {
+
+}
+```
+
+
+### ContainerRegistryTokenScopes <a name="ContainerRegistryTokenScopes" id="@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryTokenScopes"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryTokenScopes.Initializer"></a>
+
+```go
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/containerregistrytoken"
+
+&containerregistrytoken.ContainerRegistryTokenScopes {
+	Actions: *[]*string,
+	Name: *string,
+	Type: *string,
+}
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryTokenScopes.property.actions">Actions</a></code> | <code>*[]*string</code> | Example: ["pull", "push", "delete"]. |
+| <code><a href="#@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryTokenScopes.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/container_registry_token#name ContainerRegistryToken#name}. |
+| <code><a href="#@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryTokenScopes.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/container_registry_token#type ContainerRegistryToken#type}. |
+
+---
+
+##### `Actions`<sup>Required</sup> <a name="Actions" id="@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryTokenScopes.property.actions"></a>
+
+```go
+Actions *[]*string
+```
+
+- *Type:* *[]*string
+
+Example: ["pull", "push", "delete"].
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/container_registry_token#actions ContainerRegistryToken#actions}
+
+---
+
+##### `Name`<sup>Required</sup> <a name="Name" id="@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryTokenScopes.property.name"></a>
+
+```go
+Name *string
+```
+
+- *Type:* *string
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/container_registry_token#name ContainerRegistryToken#name}.
+
+---
+
+##### `Type`<sup>Required</sup> <a name="Type" id="@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryTokenScopes.property.type"></a>
+
+```go
+Type *string
+```
+
+- *Type:* *string
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/container_registry_token#type ContainerRegistryToken#type}.
+
+---
+
+### ContainerRegistryTokenTimeouts <a name="ContainerRegistryTokenTimeouts" id="@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryTokenTimeouts"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryTokenTimeouts.Initializer"></a>
+
+```go
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/containerregistrytoken"
+
+&containerregistrytoken.ContainerRegistryTokenTimeouts {
+	Create: *string,
+	Default: *string,
+	Delete: *string,
+	Update: *string,
+}
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryTokenTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/container_registry_token#create ContainerRegistryToken#create}. |
+| <code><a href="#@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryTokenTimeouts.property.default">Default</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/container_registry_token#default ContainerRegistryToken#default}. |
+| <code><a href="#@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryTokenTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/container_registry_token#delete ContainerRegistryToken#delete}. |
+| <code><a href="#@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryTokenTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/container_registry_token#update ContainerRegistryToken#update}. |
+
+---
+
+##### `Create`<sup>Optional</sup> <a name="Create" id="@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryTokenTimeouts.property.create"></a>
+
+```go
+Create *string
+```
+
+- *Type:* *string
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/container_registry_token#create ContainerRegistryToken#create}.
+
+---
+
+##### `Default`<sup>Optional</sup> <a name="Default" id="@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryTokenTimeouts.property.default"></a>
+
+```go
+Default *string
+```
+
+- *Type:* *string
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/container_registry_token#default ContainerRegistryToken#default}.
+
+---
+
+##### `Delete`<sup>Optional</sup> <a name="Delete" id="@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryTokenTimeouts.property.delete"></a>
+
+```go
+Delete *string
+```
+
+- *Type:* *string
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/container_registry_token#delete ContainerRegistryToken#delete}.
+
+---
+
+##### `Update`<sup>Optional</sup> <a name="Update" id="@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryTokenTimeouts.property.update"></a>
+
+```go
+Update *string
+```
+
+- *Type:* *string
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/container_registry_token#update ContainerRegistryToken#update}.
+
+---
+
+## Classes <a name="Classes" id="Classes"></a>
+
+### ContainerRegistryTokenCredentialsList <a name="ContainerRegistryTokenCredentialsList" id="@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryTokenCredentialsList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryTokenCredentialsList.Initializer"></a>
+
+```go
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/containerregistrytoken"
+
+containerregistrytoken.NewContainerRegistryTokenCredentialsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ContainerRegistryTokenCredentialsList
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryTokenCredentialsList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryTokenCredentialsList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryTokenCredentialsList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>*bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryTokenCredentialsList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryTokenCredentialsList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryTokenCredentialsList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* *bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryTokenCredentialsList.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryTokenCredentialsList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryTokenCredentialsList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryTokenCredentialsList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryTokenCredentialsList.computeFqn"></a>
+
+```go
+func ComputeFqn() *string
+```
+
+##### `Resolve` <a name="Resolve" id="@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryTokenCredentialsList.resolve"></a>
+
+```go
+func Resolve(_context IResolveContext) interface{}
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryTokenCredentialsList.resolve.parameter._context"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryTokenCredentialsList.toString"></a>
+
+```go
+func ToString() *string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `Get` <a name="Get" id="@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryTokenCredentialsList.get"></a>
+
+```go
+func Get(index *f64) ContainerRegistryTokenCredentialsOutputReference
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryTokenCredentialsList.get.parameter.index"></a>
+
+- *Type:* *f64
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryTokenCredentialsList.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryTokenCredentialsList.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryTokenCredentialsList.property.creationStack"></a>
+
+```go
+func CreationStack() *[]*string
+```
+
+- *Type:* *[]*string
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryTokenCredentialsList.property.fqn"></a>
+
+```go
+func Fqn() *string
+```
+
+- *Type:* *string
+
+---
+
+
+### ContainerRegistryTokenCredentialsOutputReference <a name="ContainerRegistryTokenCredentialsOutputReference" id="@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryTokenCredentialsOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryTokenCredentialsOutputReference.Initializer"></a>
+
+```go
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/containerregistrytoken"
+
+containerregistrytoken.NewContainerRegistryTokenCredentialsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ContainerRegistryTokenCredentialsOutputReference
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryTokenCredentialsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryTokenCredentialsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryTokenCredentialsOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>*f64</code> | the index of this item in the list. |
+| <code><a href="#@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryTokenCredentialsOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>*bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryTokenCredentialsOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryTokenCredentialsOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryTokenCredentialsOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* *f64
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryTokenCredentialsOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* *bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryTokenCredentialsOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryTokenCredentialsOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryTokenCredentialsOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryTokenCredentialsOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryTokenCredentialsOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryTokenCredentialsOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryTokenCredentialsOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryTokenCredentialsOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryTokenCredentialsOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryTokenCredentialsOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryTokenCredentialsOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryTokenCredentialsOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryTokenCredentialsOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryTokenCredentialsOutputReference.computeFqn"></a>
+
+```go
+func ComputeFqn() *string
+```
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryTokenCredentialsOutputReference.getAnyMapAttribute"></a>
+
+```go
+func GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryTokenCredentialsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryTokenCredentialsOutputReference.getBooleanAttribute"></a>
+
+```go
+func GetBooleanAttribute(terraformAttribute *string) IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryTokenCredentialsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryTokenCredentialsOutputReference.getBooleanMapAttribute"></a>
+
+```go
+func GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryTokenCredentialsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryTokenCredentialsOutputReference.getListAttribute"></a>
+
+```go
+func GetListAttribute(terraformAttribute *string) *[]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryTokenCredentialsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryTokenCredentialsOutputReference.getNumberAttribute"></a>
+
+```go
+func GetNumberAttribute(terraformAttribute *string) *f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryTokenCredentialsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryTokenCredentialsOutputReference.getNumberListAttribute"></a>
+
+```go
+func GetNumberListAttribute(terraformAttribute *string) *[]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryTokenCredentialsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryTokenCredentialsOutputReference.getNumberMapAttribute"></a>
+
+```go
+func GetNumberMapAttribute(terraformAttribute *string) *map[string]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryTokenCredentialsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryTokenCredentialsOutputReference.getStringAttribute"></a>
+
+```go
+func GetStringAttribute(terraformAttribute *string) *string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryTokenCredentialsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryTokenCredentialsOutputReference.getStringMapAttribute"></a>
+
+```go
+func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryTokenCredentialsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryTokenCredentialsOutputReference.interpolationForAttribute"></a>
+
+```go
+func InterpolationForAttribute(property *string) IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryTokenCredentialsOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* *string
+
+---
+
+##### `Resolve` <a name="Resolve" id="@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryTokenCredentialsOutputReference.resolve"></a>
+
+```go
+func Resolve(_context IResolveContext) interface{}
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryTokenCredentialsOutputReference.resolve.parameter._context"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryTokenCredentialsOutputReference.toString"></a>
+
+```go
+func ToString() *string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryTokenCredentialsOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryTokenCredentialsOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryTokenCredentialsOutputReference.property.password">Password</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryTokenCredentialsOutputReference.property.username">Username</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryTokenCredentialsOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryTokenCredentials">ContainerRegistryTokenCredentials</a></code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryTokenCredentialsOutputReference.property.creationStack"></a>
+
+```go
+func CreationStack() *[]*string
+```
+
+- *Type:* *[]*string
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryTokenCredentialsOutputReference.property.fqn"></a>
+
+```go
+func Fqn() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `Password`<sup>Required</sup> <a name="Password" id="@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryTokenCredentialsOutputReference.property.password"></a>
+
+```go
+func Password() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `Username`<sup>Required</sup> <a name="Username" id="@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryTokenCredentialsOutputReference.property.username"></a>
+
+```go
+func Username() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryTokenCredentialsOutputReference.property.internalValue"></a>
+
+```go
+func InternalValue() ContainerRegistryTokenCredentials
+```
+
+- *Type:* <a href="#@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryTokenCredentials">ContainerRegistryTokenCredentials</a>
+
+---
+
+
+### ContainerRegistryTokenScopesList <a name="ContainerRegistryTokenScopesList" id="@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryTokenScopesList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryTokenScopesList.Initializer"></a>
+
+```go
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/containerregistrytoken"
+
+containerregistrytoken.NewContainerRegistryTokenScopesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ContainerRegistryTokenScopesList
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryTokenScopesList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryTokenScopesList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryTokenScopesList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>*bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryTokenScopesList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryTokenScopesList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryTokenScopesList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* *bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryTokenScopesList.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryTokenScopesList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryTokenScopesList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryTokenScopesList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryTokenScopesList.computeFqn"></a>
+
+```go
+func ComputeFqn() *string
+```
+
+##### `Resolve` <a name="Resolve" id="@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryTokenScopesList.resolve"></a>
+
+```go
+func Resolve(_context IResolveContext) interface{}
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryTokenScopesList.resolve.parameter._context"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryTokenScopesList.toString"></a>
+
+```go
+func ToString() *string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `Get` <a name="Get" id="@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryTokenScopesList.get"></a>
+
+```go
+func Get(index *f64) ContainerRegistryTokenScopesOutputReference
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryTokenScopesList.get.parameter.index"></a>
+
+- *Type:* *f64
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryTokenScopesList.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryTokenScopesList.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryTokenScopesList.property.internalValue">InternalValue</a></code> | <code>interface{}</code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryTokenScopesList.property.creationStack"></a>
+
+```go
+func CreationStack() *[]*string
+```
+
+- *Type:* *[]*string
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryTokenScopesList.property.fqn"></a>
+
+```go
+func Fqn() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryTokenScopesList.property.internalValue"></a>
+
+```go
+func InternalValue() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
+
+### ContainerRegistryTokenScopesOutputReference <a name="ContainerRegistryTokenScopesOutputReference" id="@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryTokenScopesOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryTokenScopesOutputReference.Initializer"></a>
+
+```go
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/containerregistrytoken"
+
+containerregistrytoken.NewContainerRegistryTokenScopesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ContainerRegistryTokenScopesOutputReference
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryTokenScopesOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryTokenScopesOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryTokenScopesOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>*f64</code> | the index of this item in the list. |
+| <code><a href="#@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryTokenScopesOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>*bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryTokenScopesOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryTokenScopesOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryTokenScopesOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* *f64
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryTokenScopesOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* *bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryTokenScopesOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryTokenScopesOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryTokenScopesOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryTokenScopesOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryTokenScopesOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryTokenScopesOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryTokenScopesOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryTokenScopesOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryTokenScopesOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryTokenScopesOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryTokenScopesOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryTokenScopesOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryTokenScopesOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryTokenScopesOutputReference.computeFqn"></a>
+
+```go
+func ComputeFqn() *string
+```
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryTokenScopesOutputReference.getAnyMapAttribute"></a>
+
+```go
+func GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryTokenScopesOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryTokenScopesOutputReference.getBooleanAttribute"></a>
+
+```go
+func GetBooleanAttribute(terraformAttribute *string) IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryTokenScopesOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryTokenScopesOutputReference.getBooleanMapAttribute"></a>
+
+```go
+func GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryTokenScopesOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryTokenScopesOutputReference.getListAttribute"></a>
+
+```go
+func GetListAttribute(terraformAttribute *string) *[]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryTokenScopesOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryTokenScopesOutputReference.getNumberAttribute"></a>
+
+```go
+func GetNumberAttribute(terraformAttribute *string) *f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryTokenScopesOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryTokenScopesOutputReference.getNumberListAttribute"></a>
+
+```go
+func GetNumberListAttribute(terraformAttribute *string) *[]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryTokenScopesOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryTokenScopesOutputReference.getNumberMapAttribute"></a>
+
+```go
+func GetNumberMapAttribute(terraformAttribute *string) *map[string]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryTokenScopesOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryTokenScopesOutputReference.getStringAttribute"></a>
+
+```go
+func GetStringAttribute(terraformAttribute *string) *string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryTokenScopesOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryTokenScopesOutputReference.getStringMapAttribute"></a>
+
+```go
+func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryTokenScopesOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryTokenScopesOutputReference.interpolationForAttribute"></a>
+
+```go
+func InterpolationForAttribute(property *string) IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryTokenScopesOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* *string
+
+---
+
+##### `Resolve` <a name="Resolve" id="@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryTokenScopesOutputReference.resolve"></a>
+
+```go
+func Resolve(_context IResolveContext) interface{}
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryTokenScopesOutputReference.resolve.parameter._context"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryTokenScopesOutputReference.toString"></a>
+
+```go
+func ToString() *string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryTokenScopesOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryTokenScopesOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryTokenScopesOutputReference.property.actionsInput">ActionsInput</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryTokenScopesOutputReference.property.nameInput">NameInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryTokenScopesOutputReference.property.typeInput">TypeInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryTokenScopesOutputReference.property.actions">Actions</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryTokenScopesOutputReference.property.name">Name</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryTokenScopesOutputReference.property.type">Type</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryTokenScopesOutputReference.property.internalValue">InternalValue</a></code> | <code>interface{}</code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryTokenScopesOutputReference.property.creationStack"></a>
+
+```go
+func CreationStack() *[]*string
+```
+
+- *Type:* *[]*string
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryTokenScopesOutputReference.property.fqn"></a>
+
+```go
+func Fqn() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `ActionsInput`<sup>Optional</sup> <a name="ActionsInput" id="@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryTokenScopesOutputReference.property.actionsInput"></a>
+
+```go
+func ActionsInput() *[]*string
+```
+
+- *Type:* *[]*string
+
+---
+
+##### `NameInput`<sup>Optional</sup> <a name="NameInput" id="@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryTokenScopesOutputReference.property.nameInput"></a>
+
+```go
+func NameInput() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `TypeInput`<sup>Optional</sup> <a name="TypeInput" id="@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryTokenScopesOutputReference.property.typeInput"></a>
+
+```go
+func TypeInput() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `Actions`<sup>Required</sup> <a name="Actions" id="@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryTokenScopesOutputReference.property.actions"></a>
+
+```go
+func Actions() *[]*string
+```
+
+- *Type:* *[]*string
+
+---
+
+##### `Name`<sup>Required</sup> <a name="Name" id="@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryTokenScopesOutputReference.property.name"></a>
+
+```go
+func Name() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `Type`<sup>Required</sup> <a name="Type" id="@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryTokenScopesOutputReference.property.type"></a>
+
+```go
+func Type() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryTokenScopesOutputReference.property.internalValue"></a>
+
+```go
+func InternalValue() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
+
+### ContainerRegistryTokenTimeoutsOutputReference <a name="ContainerRegistryTokenTimeoutsOutputReference" id="@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryTokenTimeoutsOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryTokenTimeoutsOutputReference.Initializer"></a>
+
+```go
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/containerregistrytoken"
+
+containerregistrytoken.NewContainerRegistryTokenTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ContainerRegistryTokenTimeoutsOutputReference
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryTokenTimeoutsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryTokenTimeoutsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryTokenTimeoutsOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryTokenTimeoutsOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryTokenTimeoutsOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryTokenTimeoutsOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryTokenTimeoutsOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryTokenTimeoutsOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryTokenTimeoutsOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryTokenTimeoutsOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryTokenTimeoutsOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryTokenTimeoutsOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryTokenTimeoutsOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryTokenTimeoutsOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryTokenTimeoutsOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryTokenTimeoutsOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryTokenTimeoutsOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryTokenTimeoutsOutputReference.resetCreate">ResetCreate</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryTokenTimeoutsOutputReference.resetDefault">ResetDefault</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryTokenTimeoutsOutputReference.resetDelete">ResetDelete</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryTokenTimeoutsOutputReference.resetUpdate">ResetUpdate</a></code> | *No description.* |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryTokenTimeoutsOutputReference.computeFqn"></a>
+
+```go
+func ComputeFqn() *string
+```
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryTokenTimeoutsOutputReference.getAnyMapAttribute"></a>
+
+```go
+func GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryTokenTimeoutsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryTokenTimeoutsOutputReference.getBooleanAttribute"></a>
+
+```go
+func GetBooleanAttribute(terraformAttribute *string) IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryTokenTimeoutsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryTokenTimeoutsOutputReference.getBooleanMapAttribute"></a>
+
+```go
+func GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryTokenTimeoutsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryTokenTimeoutsOutputReference.getListAttribute"></a>
+
+```go
+func GetListAttribute(terraformAttribute *string) *[]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryTokenTimeoutsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryTokenTimeoutsOutputReference.getNumberAttribute"></a>
+
+```go
+func GetNumberAttribute(terraformAttribute *string) *f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryTokenTimeoutsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryTokenTimeoutsOutputReference.getNumberListAttribute"></a>
+
+```go
+func GetNumberListAttribute(terraformAttribute *string) *[]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryTokenTimeoutsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryTokenTimeoutsOutputReference.getNumberMapAttribute"></a>
+
+```go
+func GetNumberMapAttribute(terraformAttribute *string) *map[string]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryTokenTimeoutsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryTokenTimeoutsOutputReference.getStringAttribute"></a>
+
+```go
+func GetStringAttribute(terraformAttribute *string) *string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryTokenTimeoutsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryTokenTimeoutsOutputReference.getStringMapAttribute"></a>
+
+```go
+func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryTokenTimeoutsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryTokenTimeoutsOutputReference.interpolationForAttribute"></a>
+
+```go
+func InterpolationForAttribute(property *string) IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryTokenTimeoutsOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* *string
+
+---
+
+##### `Resolve` <a name="Resolve" id="@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryTokenTimeoutsOutputReference.resolve"></a>
+
+```go
+func Resolve(_context IResolveContext) interface{}
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryTokenTimeoutsOutputReference.resolve.parameter._context"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryTokenTimeoutsOutputReference.toString"></a>
+
+```go
+func ToString() *string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `ResetCreate` <a name="ResetCreate" id="@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryTokenTimeoutsOutputReference.resetCreate"></a>
+
+```go
+func ResetCreate()
+```
+
+##### `ResetDefault` <a name="ResetDefault" id="@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryTokenTimeoutsOutputReference.resetDefault"></a>
+
+```go
+func ResetDefault()
+```
+
+##### `ResetDelete` <a name="ResetDelete" id="@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryTokenTimeoutsOutputReference.resetDelete"></a>
+
+```go
+func ResetDelete()
+```
+
+##### `ResetUpdate` <a name="ResetUpdate" id="@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryTokenTimeoutsOutputReference.resetUpdate"></a>
+
+```go
+func ResetUpdate()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryTokenTimeoutsOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryTokenTimeoutsOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryTokenTimeoutsOutputReference.property.createInput">CreateInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryTokenTimeoutsOutputReference.property.defaultInput">DefaultInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryTokenTimeoutsOutputReference.property.deleteInput">DeleteInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryTokenTimeoutsOutputReference.property.updateInput">UpdateInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryTokenTimeoutsOutputReference.property.create">Create</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryTokenTimeoutsOutputReference.property.default">Default</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryTokenTimeoutsOutputReference.property.delete">Delete</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryTokenTimeoutsOutputReference.property.update">Update</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryTokenTimeoutsOutputReference.property.internalValue">InternalValue</a></code> | <code>interface{}</code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryTokenTimeoutsOutputReference.property.creationStack"></a>
+
+```go
+func CreationStack() *[]*string
+```
+
+- *Type:* *[]*string
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryTokenTimeoutsOutputReference.property.fqn"></a>
+
+```go
+func Fqn() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `CreateInput`<sup>Optional</sup> <a name="CreateInput" id="@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryTokenTimeoutsOutputReference.property.createInput"></a>
+
+```go
+func CreateInput() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `DefaultInput`<sup>Optional</sup> <a name="DefaultInput" id="@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryTokenTimeoutsOutputReference.property.defaultInput"></a>
+
+```go
+func DefaultInput() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `DeleteInput`<sup>Optional</sup> <a name="DeleteInput" id="@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryTokenTimeoutsOutputReference.property.deleteInput"></a>
+
+```go
+func DeleteInput() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `UpdateInput`<sup>Optional</sup> <a name="UpdateInput" id="@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryTokenTimeoutsOutputReference.property.updateInput"></a>
+
+```go
+func UpdateInput() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `Create`<sup>Required</sup> <a name="Create" id="@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryTokenTimeoutsOutputReference.property.create"></a>
+
+```go
+func Create() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `Default`<sup>Required</sup> <a name="Default" id="@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryTokenTimeoutsOutputReference.property.default"></a>
+
+```go
+func Default() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `Delete`<sup>Required</sup> <a name="Delete" id="@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryTokenTimeoutsOutputReference.property.delete"></a>
+
+```go
+func Delete() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `Update`<sup>Required</sup> <a name="Update" id="@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryTokenTimeoutsOutputReference.property.update"></a>
+
+```go
+func Update() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryTokenTimeoutsOutputReference.property.internalValue"></a>
+
+```go
+func InternalValue() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
+
+

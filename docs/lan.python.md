@@ -1,0 +1,2075 @@
+# `lan` Submodule <a name="`lan` Submodule" id="@cdktf/provider-ionoscloud.lan"></a>
+
+## Constructs <a name="Constructs" id="Constructs"></a>
+
+### Lan <a name="Lan" id="@cdktf/provider-ionoscloud.lan.Lan"></a>
+
+Represents a {@link https://www.terraform.io/docs/providers/ionoscloud/r/lan ionoscloud_lan}.
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.lan.Lan.Initializer"></a>
+
+```python
+from cdktf_cdktf_provider_ionoscloud import lan
+
+lan.Lan(
+  scope: Construct,
+  id: str,
+  connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
+  count: typing.Union[int, float] = None,
+  depends_on: typing.List[ITerraformDependable] = None,
+  for_each: ITerraformIterator = None,
+  lifecycle: TerraformResourceLifecycle = None,
+  provider: TerraformProvider = None,
+  provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
+  datacenter_id: str,
+  id: str = None,
+  ip_failover: typing.Union[IResolvable, typing.List[LanIpFailover]] = None,
+  name: str = None,
+  pcc: str = None,
+  public: typing.Union[bool, IResolvable] = None,
+  timeouts: LanTimeouts = None
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-ionoscloud.lan.Lan.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
+| <code><a href="#@cdktf/provider-ionoscloud.lan.Lan.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
+| <code><a href="#@cdktf/provider-ionoscloud.lan.Lan.Initializer.parameter.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.lan.Lan.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.lan.Lan.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.lan.Lan.Initializer.parameter.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.lan.Lan.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.lan.Lan.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.lan.Lan.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.lan.Lan.Initializer.parameter.datacenterId">datacenter_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/lan#datacenter_id Lan#datacenter_id}. |
+| <code><a href="#@cdktf/provider-ionoscloud.lan.Lan.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/lan#id Lan#id}. |
+| <code><a href="#@cdktf/provider-ionoscloud.lan.Lan.Initializer.parameter.ipFailover">ip_failover</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-ionoscloud.lan.LanIpFailover">LanIpFailover</a>]]</code> | ip_failover block. |
+| <code><a href="#@cdktf/provider-ionoscloud.lan.Lan.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/lan#name Lan#name}. |
+| <code><a href="#@cdktf/provider-ionoscloud.lan.Lan.Initializer.parameter.pcc">pcc</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/lan#pcc Lan#pcc}. |
+| <code><a href="#@cdktf/provider-ionoscloud.lan.Lan.Initializer.parameter.public">public</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/lan#public Lan#public}. |
+| <code><a href="#@cdktf/provider-ionoscloud.lan.Lan.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-ionoscloud.lan.LanTimeouts">LanTimeouts</a></code> | timeouts block. |
+
+---
+
+##### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-ionoscloud.lan.Lan.Initializer.parameter.scope"></a>
+
+- *Type:* constructs.Construct
+
+The scope in which to define this construct.
+
+---
+
+##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-ionoscloud.lan.Lan.Initializer.parameter.id"></a>
+
+- *Type:* str
+
+The scoped construct ID.
+
+Must be unique amongst siblings in the same scope
+
+---
+
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-ionoscloud.lan.Lan.Initializer.parameter.connection"></a>
+
+- *Type:* typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]
+
+---
+
+##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-ionoscloud.lan.Lan.Initializer.parameter.count"></a>
+
+- *Type:* typing.Union[int, float]
+
+---
+
+##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktf/provider-ionoscloud.lan.Lan.Initializer.parameter.dependsOn"></a>
+
+- *Type:* typing.List[cdktf.ITerraformDependable]
+
+---
+
+##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktf/provider-ionoscloud.lan.Lan.Initializer.parameter.forEach"></a>
+
+- *Type:* cdktf.ITerraformIterator
+
+---
+
+##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-ionoscloud.lan.Lan.Initializer.parameter.lifecycle"></a>
+
+- *Type:* cdktf.TerraformResourceLifecycle
+
+---
+
+##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-ionoscloud.lan.Lan.Initializer.parameter.provider"></a>
+
+- *Type:* cdktf.TerraformProvider
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-ionoscloud.lan.Lan.Initializer.parameter.provisioners"></a>
+
+- *Type:* typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]
+
+---
+
+##### `datacenter_id`<sup>Required</sup> <a name="datacenter_id" id="@cdktf/provider-ionoscloud.lan.Lan.Initializer.parameter.datacenterId"></a>
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/lan#datacenter_id Lan#datacenter_id}.
+
+---
+
+##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-ionoscloud.lan.Lan.Initializer.parameter.id"></a>
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/lan#id Lan#id}.
+
+Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `ip_failover`<sup>Optional</sup> <a name="ip_failover" id="@cdktf/provider-ionoscloud.lan.Lan.Initializer.parameter.ipFailover"></a>
+
+- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-ionoscloud.lan.LanIpFailover">LanIpFailover</a>]]
+
+ip_failover block.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/lan#ip_failover Lan#ip_failover}
+
+---
+
+##### `name`<sup>Optional</sup> <a name="name" id="@cdktf/provider-ionoscloud.lan.Lan.Initializer.parameter.name"></a>
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/lan#name Lan#name}.
+
+---
+
+##### `pcc`<sup>Optional</sup> <a name="pcc" id="@cdktf/provider-ionoscloud.lan.Lan.Initializer.parameter.pcc"></a>
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/lan#pcc Lan#pcc}.
+
+---
+
+##### `public`<sup>Optional</sup> <a name="public" id="@cdktf/provider-ionoscloud.lan.Lan.Initializer.parameter.public"></a>
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/lan#public Lan#public}.
+
+---
+
+##### `timeouts`<sup>Optional</sup> <a name="timeouts" id="@cdktf/provider-ionoscloud.lan.Lan.Initializer.parameter.timeouts"></a>
+
+- *Type:* <a href="#@cdktf/provider-ionoscloud.lan.LanTimeouts">LanTimeouts</a>
+
+timeouts block.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/lan#timeouts Lan#timeouts}
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-ionoscloud.lan.Lan.toString">to_string</a></code> | Returns a string representation of this construct. |
+| <code><a href="#@cdktf/provider-ionoscloud.lan.Lan.addOverride">add_override</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.lan.Lan.overrideLogicalId">override_logical_id</a></code> | Overrides the auto-generated logical ID with a specific ID. |
+| <code><a href="#@cdktf/provider-ionoscloud.lan.Lan.resetOverrideLogicalId">reset_override_logical_id</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-ionoscloud.lan.Lan.toMetadata">to_metadata</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.lan.Lan.toTerraform">to_terraform</a></code> | Adds this resource to the terraform JSON output. |
+| <code><a href="#@cdktf/provider-ionoscloud.lan.Lan.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.lan.Lan.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.lan.Lan.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.lan.Lan.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.lan.Lan.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.lan.Lan.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.lan.Lan.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.lan.Lan.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.lan.Lan.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.lan.Lan.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.lan.Lan.putIpFailover">put_ip_failover</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.lan.Lan.putTimeouts">put_timeouts</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.lan.Lan.resetId">reset_id</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.lan.Lan.resetIpFailover">reset_ip_failover</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.lan.Lan.resetName">reset_name</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.lan.Lan.resetPcc">reset_pcc</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.lan.Lan.resetPublic">reset_public</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.lan.Lan.resetTimeouts">reset_timeouts</a></code> | *No description.* |
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktf/provider-ionoscloud.lan.Lan.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Returns a string representation of this construct.
+
+##### `add_override` <a name="add_override" id="@cdktf/provider-ionoscloud.lan.Lan.addOverride"></a>
+
+```python
+def add_override(
+  path: str,
+  value: typing.Any
+) -> None
+```
+
+###### `path`<sup>Required</sup> <a name="path" id="@cdktf/provider-ionoscloud.lan.Lan.addOverride.parameter.path"></a>
+
+- *Type:* str
+
+---
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-ionoscloud.lan.Lan.addOverride.parameter.value"></a>
+
+- *Type:* typing.Any
+
+---
+
+##### `override_logical_id` <a name="override_logical_id" id="@cdktf/provider-ionoscloud.lan.Lan.overrideLogicalId"></a>
+
+```python
+def override_logical_id(
+  new_logical_id: str
+) -> None
+```
+
+Overrides the auto-generated logical ID with a specific ID.
+
+###### `new_logical_id`<sup>Required</sup> <a name="new_logical_id" id="@cdktf/provider-ionoscloud.lan.Lan.overrideLogicalId.parameter.newLogicalId"></a>
+
+- *Type:* str
+
+The new logical ID to use for this stack element.
+
+---
+
+##### `reset_override_logical_id` <a name="reset_override_logical_id" id="@cdktf/provider-ionoscloud.lan.Lan.resetOverrideLogicalId"></a>
+
+```python
+def reset_override_logical_id() -> None
+```
+
+Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `to_metadata` <a name="to_metadata" id="@cdktf/provider-ionoscloud.lan.Lan.toMetadata"></a>
+
+```python
+def to_metadata() -> typing.Any
+```
+
+##### `to_terraform` <a name="to_terraform" id="@cdktf/provider-ionoscloud.lan.Lan.toTerraform"></a>
+
+```python
+def to_terraform() -> typing.Any
+```
+
+Adds this resource to the terraform JSON output.
+
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktf/provider-ionoscloud.lan.Lan.getAnyMapAttribute"></a>
+
+```python
+def get_any_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Any]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-ionoscloud.lan.Lan.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktf/provider-ionoscloud.lan.Lan.getBooleanAttribute"></a>
+
+```python
+def get_boolean_attribute(
+  terraform_attribute: str
+) -> IResolvable
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-ionoscloud.lan.Lan.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktf/provider-ionoscloud.lan.Lan.getBooleanMapAttribute"></a>
+
+```python
+def get_boolean_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[bool]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-ionoscloud.lan.Lan.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktf/provider-ionoscloud.lan.Lan.getListAttribute"></a>
+
+```python
+def get_list_attribute(
+  terraform_attribute: str
+) -> typing.List[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-ionoscloud.lan.Lan.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktf/provider-ionoscloud.lan.Lan.getNumberAttribute"></a>
+
+```python
+def get_number_attribute(
+  terraform_attribute: str
+) -> typing.Union[int, float]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-ionoscloud.lan.Lan.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktf/provider-ionoscloud.lan.Lan.getNumberListAttribute"></a>
+
+```python
+def get_number_list_attribute(
+  terraform_attribute: str
+) -> typing.List[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-ionoscloud.lan.Lan.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktf/provider-ionoscloud.lan.Lan.getNumberMapAttribute"></a>
+
+```python
+def get_number_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-ionoscloud.lan.Lan.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktf/provider-ionoscloud.lan.Lan.getStringAttribute"></a>
+
+```python
+def get_string_attribute(
+  terraform_attribute: str
+) -> str
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-ionoscloud.lan.Lan.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktf/provider-ionoscloud.lan.Lan.getStringMapAttribute"></a>
+
+```python
+def get_string_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-ionoscloud.lan.Lan.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktf/provider-ionoscloud.lan.Lan.interpolationForAttribute"></a>
+
+```python
+def interpolation_for_attribute(
+  terraform_attribute: str
+) -> IResolvable
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-ionoscloud.lan.Lan.interpolationForAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `put_ip_failover` <a name="put_ip_failover" id="@cdktf/provider-ionoscloud.lan.Lan.putIpFailover"></a>
+
+```python
+def put_ip_failover(
+  value: typing.Union[IResolvable, typing.List[LanIpFailover]]
+) -> None
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-ionoscloud.lan.Lan.putIpFailover.parameter.value"></a>
+
+- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-ionoscloud.lan.LanIpFailover">LanIpFailover</a>]]
+
+---
+
+##### `put_timeouts` <a name="put_timeouts" id="@cdktf/provider-ionoscloud.lan.Lan.putTimeouts"></a>
+
+```python
+def put_timeouts(
+  create: str = None,
+  default: str = None,
+  delete: str = None,
+  update: str = None
+) -> None
+```
+
+###### `create`<sup>Optional</sup> <a name="create" id="@cdktf/provider-ionoscloud.lan.Lan.putTimeouts.parameter.create"></a>
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/lan#create Lan#create}.
+
+---
+
+###### `default`<sup>Optional</sup> <a name="default" id="@cdktf/provider-ionoscloud.lan.Lan.putTimeouts.parameter.default"></a>
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/lan#default Lan#default}.
+
+---
+
+###### `delete`<sup>Optional</sup> <a name="delete" id="@cdktf/provider-ionoscloud.lan.Lan.putTimeouts.parameter.delete"></a>
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/lan#delete Lan#delete}.
+
+---
+
+###### `update`<sup>Optional</sup> <a name="update" id="@cdktf/provider-ionoscloud.lan.Lan.putTimeouts.parameter.update"></a>
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/lan#update Lan#update}.
+
+---
+
+##### `reset_id` <a name="reset_id" id="@cdktf/provider-ionoscloud.lan.Lan.resetId"></a>
+
+```python
+def reset_id() -> None
+```
+
+##### `reset_ip_failover` <a name="reset_ip_failover" id="@cdktf/provider-ionoscloud.lan.Lan.resetIpFailover"></a>
+
+```python
+def reset_ip_failover() -> None
+```
+
+##### `reset_name` <a name="reset_name" id="@cdktf/provider-ionoscloud.lan.Lan.resetName"></a>
+
+```python
+def reset_name() -> None
+```
+
+##### `reset_pcc` <a name="reset_pcc" id="@cdktf/provider-ionoscloud.lan.Lan.resetPcc"></a>
+
+```python
+def reset_pcc() -> None
+```
+
+##### `reset_public` <a name="reset_public" id="@cdktf/provider-ionoscloud.lan.Lan.resetPublic"></a>
+
+```python
+def reset_public() -> None
+```
+
+##### `reset_timeouts` <a name="reset_timeouts" id="@cdktf/provider-ionoscloud.lan.Lan.resetTimeouts"></a>
+
+```python
+def reset_timeouts() -> None
+```
+
+#### Static Functions <a name="Static Functions" id="Static Functions"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-ionoscloud.lan.Lan.isConstruct">is_construct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktf/provider-ionoscloud.lan.Lan.isTerraformElement">is_terraform_element</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.lan.Lan.isTerraformResource">is_terraform_resource</a></code> | *No description.* |
+
+---
+
+##### `is_construct` <a name="is_construct" id="@cdktf/provider-ionoscloud.lan.Lan.isConstruct"></a>
+
+```python
+from cdktf_cdktf_provider_ionoscloud import lan
+
+lan.Lan.is_construct(
+  x: typing.Any
+)
+```
+
+Checks if `x` is a construct.
+
+Use this method instead of `instanceof` to properly detect `Construct`
+instances, even when the construct library is symlinked.
+
+Explanation: in JavaScript, multiple copies of the `constructs` library on
+disk are seen as independent, completely different libraries. As a
+consequence, the class `Construct` in each copy of the `constructs` library
+is seen as a different class, and an instance of one class will not test as
+`instanceof` the other class. `npm install` will not create installations
+like this, but users may manually symlink construct libraries together or
+use a monorepo tool: in those cases, multiple copies of the `constructs`
+library can be accidentally installed, and `instanceof` will behave
+unpredictably. It is safest to avoid using `instanceof`, and using
+this type-testing method instead.
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-ionoscloud.lan.Lan.isConstruct.parameter.x"></a>
+
+- *Type:* typing.Any
+
+Any object.
+
+---
+
+##### `is_terraform_element` <a name="is_terraform_element" id="@cdktf/provider-ionoscloud.lan.Lan.isTerraformElement"></a>
+
+```python
+from cdktf_cdktf_provider_ionoscloud import lan
+
+lan.Lan.is_terraform_element(
+  x: typing.Any
+)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-ionoscloud.lan.Lan.isTerraformElement.parameter.x"></a>
+
+- *Type:* typing.Any
+
+---
+
+##### `is_terraform_resource` <a name="is_terraform_resource" id="@cdktf/provider-ionoscloud.lan.Lan.isTerraformResource"></a>
+
+```python
+from cdktf_cdktf_provider_ionoscloud import lan
+
+lan.Lan.is_terraform_resource(
+  x: typing.Any
+)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-ionoscloud.lan.Lan.isTerraformResource.parameter.x"></a>
+
+- *Type:* typing.Any
+
+---
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-ionoscloud.lan.Lan.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
+| <code><a href="#@cdktf/provider-ionoscloud.lan.Lan.property.cdktfStack">cdktf_stack</a></code> | <code>cdktf.TerraformStack</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.lan.Lan.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.lan.Lan.property.friendlyUniqueId">friendly_unique_id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.lan.Lan.property.terraformMetaArguments">terraform_meta_arguments</a></code> | <code>typing.Mapping[typing.Any]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.lan.Lan.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.lan.Lan.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.lan.Lan.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.lan.Lan.property.count">count</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.lan.Lan.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.lan.Lan.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.lan.Lan.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.lan.Lan.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.lan.Lan.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.lan.Lan.property.ipFailover">ip_failover</a></code> | <code><a href="#@cdktf/provider-ionoscloud.lan.LanIpFailoverList">LanIpFailoverList</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.lan.Lan.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-ionoscloud.lan.LanTimeoutsOutputReference">LanTimeoutsOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.lan.Lan.property.datacenterIdInput">datacenter_id_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.lan.Lan.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.lan.Lan.property.ipFailoverInput">ip_failover_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-ionoscloud.lan.LanIpFailover">LanIpFailover</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.lan.Lan.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.lan.Lan.property.pccInput">pcc_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.lan.Lan.property.publicInput">public_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.lan.Lan.property.timeoutsInput">timeouts_input</a></code> | <code>typing.Union[<a href="#@cdktf/provider-ionoscloud.lan.LanTimeouts">LanTimeouts</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.lan.Lan.property.datacenterId">datacenter_id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.lan.Lan.property.id">id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.lan.Lan.property.name">name</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.lan.Lan.property.pcc">pcc</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.lan.Lan.property.public">public</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+
+---
+
+##### `node`<sup>Required</sup> <a name="node" id="@cdktf/provider-ionoscloud.lan.Lan.property.node"></a>
+
+```python
+node: Node
+```
+
+- *Type:* constructs.Node
+
+The tree node.
+
+---
+
+##### `cdktf_stack`<sup>Required</sup> <a name="cdktf_stack" id="@cdktf/provider-ionoscloud.lan.Lan.property.cdktfStack"></a>
+
+```python
+cdktf_stack: TerraformStack
+```
+
+- *Type:* cdktf.TerraformStack
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-ionoscloud.lan.Lan.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `friendly_unique_id`<sup>Required</sup> <a name="friendly_unique_id" id="@cdktf/provider-ionoscloud.lan.Lan.property.friendlyUniqueId"></a>
+
+```python
+friendly_unique_id: str
+```
+
+- *Type:* str
+
+---
+
+##### `terraform_meta_arguments`<sup>Required</sup> <a name="terraform_meta_arguments" id="@cdktf/provider-ionoscloud.lan.Lan.property.terraformMetaArguments"></a>
+
+```python
+terraform_meta_arguments: typing.Mapping[typing.Any]
+```
+
+- *Type:* typing.Mapping[typing.Any]
+
+---
+
+##### `terraform_resource_type`<sup>Required</sup> <a name="terraform_resource_type" id="@cdktf/provider-ionoscloud.lan.Lan.property.terraformResourceType"></a>
+
+```python
+terraform_resource_type: str
+```
+
+- *Type:* str
+
+---
+
+##### `terraform_generator_metadata`<sup>Optional</sup> <a name="terraform_generator_metadata" id="@cdktf/provider-ionoscloud.lan.Lan.property.terraformGeneratorMetadata"></a>
+
+```python
+terraform_generator_metadata: TerraformProviderGeneratorMetadata
+```
+
+- *Type:* cdktf.TerraformProviderGeneratorMetadata
+
+---
+
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-ionoscloud.lan.Lan.property.connection"></a>
+
+```python
+connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
+```
+
+- *Type:* typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]
+
+---
+
+##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-ionoscloud.lan.Lan.property.count"></a>
+
+```python
+count: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+---
+
+##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktf/provider-ionoscloud.lan.Lan.property.dependsOn"></a>
+
+```python
+depends_on: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+---
+
+##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktf/provider-ionoscloud.lan.Lan.property.forEach"></a>
+
+```python
+for_each: ITerraformIterator
+```
+
+- *Type:* cdktf.ITerraformIterator
+
+---
+
+##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-ionoscloud.lan.Lan.property.lifecycle"></a>
+
+```python
+lifecycle: TerraformResourceLifecycle
+```
+
+- *Type:* cdktf.TerraformResourceLifecycle
+
+---
+
+##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-ionoscloud.lan.Lan.property.provider"></a>
+
+```python
+provider: TerraformProvider
+```
+
+- *Type:* cdktf.TerraformProvider
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-ionoscloud.lan.Lan.property.provisioners"></a>
+
+```python
+provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]]
+```
+
+- *Type:* typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]
+
+---
+
+##### `ip_failover`<sup>Required</sup> <a name="ip_failover" id="@cdktf/provider-ionoscloud.lan.Lan.property.ipFailover"></a>
+
+```python
+ip_failover: LanIpFailoverList
+```
+
+- *Type:* <a href="#@cdktf/provider-ionoscloud.lan.LanIpFailoverList">LanIpFailoverList</a>
+
+---
+
+##### `timeouts`<sup>Required</sup> <a name="timeouts" id="@cdktf/provider-ionoscloud.lan.Lan.property.timeouts"></a>
+
+```python
+timeouts: LanTimeoutsOutputReference
+```
+
+- *Type:* <a href="#@cdktf/provider-ionoscloud.lan.LanTimeoutsOutputReference">LanTimeoutsOutputReference</a>
+
+---
+
+##### `datacenter_id_input`<sup>Optional</sup> <a name="datacenter_id_input" id="@cdktf/provider-ionoscloud.lan.Lan.property.datacenterIdInput"></a>
+
+```python
+datacenter_id_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `id_input`<sup>Optional</sup> <a name="id_input" id="@cdktf/provider-ionoscloud.lan.Lan.property.idInput"></a>
+
+```python
+id_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `ip_failover_input`<sup>Optional</sup> <a name="ip_failover_input" id="@cdktf/provider-ionoscloud.lan.Lan.property.ipFailoverInput"></a>
+
+```python
+ip_failover_input: typing.Union[IResolvable, typing.List[LanIpFailover]]
+```
+
+- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-ionoscloud.lan.LanIpFailover">LanIpFailover</a>]]
+
+---
+
+##### `name_input`<sup>Optional</sup> <a name="name_input" id="@cdktf/provider-ionoscloud.lan.Lan.property.nameInput"></a>
+
+```python
+name_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `pcc_input`<sup>Optional</sup> <a name="pcc_input" id="@cdktf/provider-ionoscloud.lan.Lan.property.pccInput"></a>
+
+```python
+pcc_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `public_input`<sup>Optional</sup> <a name="public_input" id="@cdktf/provider-ionoscloud.lan.Lan.property.publicInput"></a>
+
+```python
+public_input: typing.Union[bool, IResolvable]
+```
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+---
+
+##### `timeouts_input`<sup>Optional</sup> <a name="timeouts_input" id="@cdktf/provider-ionoscloud.lan.Lan.property.timeoutsInput"></a>
+
+```python
+timeouts_input: typing.Union[LanTimeouts, IResolvable]
+```
+
+- *Type:* typing.Union[<a href="#@cdktf/provider-ionoscloud.lan.LanTimeouts">LanTimeouts</a>, cdktf.IResolvable]
+
+---
+
+##### `datacenter_id`<sup>Required</sup> <a name="datacenter_id" id="@cdktf/provider-ionoscloud.lan.Lan.property.datacenterId"></a>
+
+```python
+datacenter_id: str
+```
+
+- *Type:* str
+
+---
+
+##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-ionoscloud.lan.Lan.property.id"></a>
+
+```python
+id: str
+```
+
+- *Type:* str
+
+---
+
+##### `name`<sup>Required</sup> <a name="name" id="@cdktf/provider-ionoscloud.lan.Lan.property.name"></a>
+
+```python
+name: str
+```
+
+- *Type:* str
+
+---
+
+##### `pcc`<sup>Required</sup> <a name="pcc" id="@cdktf/provider-ionoscloud.lan.Lan.property.pcc"></a>
+
+```python
+pcc: str
+```
+
+- *Type:* str
+
+---
+
+##### `public`<sup>Required</sup> <a name="public" id="@cdktf/provider-ionoscloud.lan.Lan.property.public"></a>
+
+```python
+public: typing.Union[bool, IResolvable]
+```
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+---
+
+#### Constants <a name="Constants" id="Constants"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-ionoscloud.lan.Lan.property.tfResourceType">tfResourceType</a></code> | <code>str</code> | *No description.* |
+
+---
+
+##### `tfResourceType`<sup>Required</sup> <a name="tfResourceType" id="@cdktf/provider-ionoscloud.lan.Lan.property.tfResourceType"></a>
+
+```python
+tfResourceType: str
+```
+
+- *Type:* str
+
+---
+
+## Structs <a name="Structs" id="Structs"></a>
+
+### LanConfig <a name="LanConfig" id="@cdktf/provider-ionoscloud.lan.LanConfig"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-ionoscloud.lan.LanConfig.Initializer"></a>
+
+```python
+from cdktf_cdktf_provider_ionoscloud import lan
+
+lan.LanConfig(
+  connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
+  count: typing.Union[int, float] = None,
+  depends_on: typing.List[ITerraformDependable] = None,
+  for_each: ITerraformIterator = None,
+  lifecycle: TerraformResourceLifecycle = None,
+  provider: TerraformProvider = None,
+  provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
+  datacenter_id: str,
+  id: str = None,
+  ip_failover: typing.Union[IResolvable, typing.List[LanIpFailover]] = None,
+  name: str = None,
+  pcc: str = None,
+  public: typing.Union[bool, IResolvable] = None,
+  timeouts: LanTimeouts = None
+)
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-ionoscloud.lan.LanConfig.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.lan.LanConfig.property.count">count</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.lan.LanConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.lan.LanConfig.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.lan.LanConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.lan.LanConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.lan.LanConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.lan.LanConfig.property.datacenterId">datacenter_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/lan#datacenter_id Lan#datacenter_id}. |
+| <code><a href="#@cdktf/provider-ionoscloud.lan.LanConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/lan#id Lan#id}. |
+| <code><a href="#@cdktf/provider-ionoscloud.lan.LanConfig.property.ipFailover">ip_failover</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-ionoscloud.lan.LanIpFailover">LanIpFailover</a>]]</code> | ip_failover block. |
+| <code><a href="#@cdktf/provider-ionoscloud.lan.LanConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/lan#name Lan#name}. |
+| <code><a href="#@cdktf/provider-ionoscloud.lan.LanConfig.property.pcc">pcc</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/lan#pcc Lan#pcc}. |
+| <code><a href="#@cdktf/provider-ionoscloud.lan.LanConfig.property.public">public</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/lan#public Lan#public}. |
+| <code><a href="#@cdktf/provider-ionoscloud.lan.LanConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-ionoscloud.lan.LanTimeouts">LanTimeouts</a></code> | timeouts block. |
+
+---
+
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-ionoscloud.lan.LanConfig.property.connection"></a>
+
+```python
+connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
+```
+
+- *Type:* typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]
+
+---
+
+##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-ionoscloud.lan.LanConfig.property.count"></a>
+
+```python
+count: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+---
+
+##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktf/provider-ionoscloud.lan.LanConfig.property.dependsOn"></a>
+
+```python
+depends_on: typing.List[ITerraformDependable]
+```
+
+- *Type:* typing.List[cdktf.ITerraformDependable]
+
+---
+
+##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktf/provider-ionoscloud.lan.LanConfig.property.forEach"></a>
+
+```python
+for_each: ITerraformIterator
+```
+
+- *Type:* cdktf.ITerraformIterator
+
+---
+
+##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-ionoscloud.lan.LanConfig.property.lifecycle"></a>
+
+```python
+lifecycle: TerraformResourceLifecycle
+```
+
+- *Type:* cdktf.TerraformResourceLifecycle
+
+---
+
+##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-ionoscloud.lan.LanConfig.property.provider"></a>
+
+```python
+provider: TerraformProvider
+```
+
+- *Type:* cdktf.TerraformProvider
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-ionoscloud.lan.LanConfig.property.provisioners"></a>
+
+```python
+provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]]
+```
+
+- *Type:* typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]
+
+---
+
+##### `datacenter_id`<sup>Required</sup> <a name="datacenter_id" id="@cdktf/provider-ionoscloud.lan.LanConfig.property.datacenterId"></a>
+
+```python
+datacenter_id: str
+```
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/lan#datacenter_id Lan#datacenter_id}.
+
+---
+
+##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-ionoscloud.lan.LanConfig.property.id"></a>
+
+```python
+id: str
+```
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/lan#id Lan#id}.
+
+Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `ip_failover`<sup>Optional</sup> <a name="ip_failover" id="@cdktf/provider-ionoscloud.lan.LanConfig.property.ipFailover"></a>
+
+```python
+ip_failover: typing.Union[IResolvable, typing.List[LanIpFailover]]
+```
+
+- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-ionoscloud.lan.LanIpFailover">LanIpFailover</a>]]
+
+ip_failover block.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/lan#ip_failover Lan#ip_failover}
+
+---
+
+##### `name`<sup>Optional</sup> <a name="name" id="@cdktf/provider-ionoscloud.lan.LanConfig.property.name"></a>
+
+```python
+name: str
+```
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/lan#name Lan#name}.
+
+---
+
+##### `pcc`<sup>Optional</sup> <a name="pcc" id="@cdktf/provider-ionoscloud.lan.LanConfig.property.pcc"></a>
+
+```python
+pcc: str
+```
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/lan#pcc Lan#pcc}.
+
+---
+
+##### `public`<sup>Optional</sup> <a name="public" id="@cdktf/provider-ionoscloud.lan.LanConfig.property.public"></a>
+
+```python
+public: typing.Union[bool, IResolvable]
+```
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/lan#public Lan#public}.
+
+---
+
+##### `timeouts`<sup>Optional</sup> <a name="timeouts" id="@cdktf/provider-ionoscloud.lan.LanConfig.property.timeouts"></a>
+
+```python
+timeouts: LanTimeouts
+```
+
+- *Type:* <a href="#@cdktf/provider-ionoscloud.lan.LanTimeouts">LanTimeouts</a>
+
+timeouts block.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/lan#timeouts Lan#timeouts}
+
+---
+
+### LanIpFailover <a name="LanIpFailover" id="@cdktf/provider-ionoscloud.lan.LanIpFailover"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-ionoscloud.lan.LanIpFailover.Initializer"></a>
+
+```python
+from cdktf_cdktf_provider_ionoscloud import lan
+
+lan.LanIpFailover()
+```
+
+
+### LanTimeouts <a name="LanTimeouts" id="@cdktf/provider-ionoscloud.lan.LanTimeouts"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-ionoscloud.lan.LanTimeouts.Initializer"></a>
+
+```python
+from cdktf_cdktf_provider_ionoscloud import lan
+
+lan.LanTimeouts(
+  create: str = None,
+  default: str = None,
+  delete: str = None,
+  update: str = None
+)
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-ionoscloud.lan.LanTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/lan#create Lan#create}. |
+| <code><a href="#@cdktf/provider-ionoscloud.lan.LanTimeouts.property.default">default</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/lan#default Lan#default}. |
+| <code><a href="#@cdktf/provider-ionoscloud.lan.LanTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/lan#delete Lan#delete}. |
+| <code><a href="#@cdktf/provider-ionoscloud.lan.LanTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/lan#update Lan#update}. |
+
+---
+
+##### `create`<sup>Optional</sup> <a name="create" id="@cdktf/provider-ionoscloud.lan.LanTimeouts.property.create"></a>
+
+```python
+create: str
+```
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/lan#create Lan#create}.
+
+---
+
+##### `default`<sup>Optional</sup> <a name="default" id="@cdktf/provider-ionoscloud.lan.LanTimeouts.property.default"></a>
+
+```python
+default: str
+```
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/lan#default Lan#default}.
+
+---
+
+##### `delete`<sup>Optional</sup> <a name="delete" id="@cdktf/provider-ionoscloud.lan.LanTimeouts.property.delete"></a>
+
+```python
+delete: str
+```
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/lan#delete Lan#delete}.
+
+---
+
+##### `update`<sup>Optional</sup> <a name="update" id="@cdktf/provider-ionoscloud.lan.LanTimeouts.property.update"></a>
+
+```python
+update: str
+```
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/lan#update Lan#update}.
+
+---
+
+## Classes <a name="Classes" id="Classes"></a>
+
+### LanIpFailoverList <a name="LanIpFailoverList" id="@cdktf/provider-ionoscloud.lan.LanIpFailoverList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.lan.LanIpFailoverList.Initializer"></a>
+
+```python
+from cdktf_cdktf_provider_ionoscloud import lan
+
+lan.LanIpFailoverList(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str,
+  wraps_set: bool
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-ionoscloud.lan.LanIpFailoverList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-ionoscloud.lan.LanIpFailoverList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-ionoscloud.lan.LanIpFailoverList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktf/provider-ionoscloud.lan.LanIpFailoverList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-ionoscloud.lan.LanIpFailoverList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wraps_set`<sup>Required</sup> <a name="wraps_set" id="@cdktf/provider-ionoscloud.lan.LanIpFailoverList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-ionoscloud.lan.LanIpFailoverList.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.lan.LanIpFailoverList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-ionoscloud.lan.LanIpFailoverList.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-ionoscloud.lan.LanIpFailoverList.get">get</a></code> | *No description.* |
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktf/provider-ionoscloud.lan.LanIpFailoverList.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `resolve` <a name="resolve" id="@cdktf/provider-ionoscloud.lan.LanIpFailoverList.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-ionoscloud.lan.LanIpFailoverList.resolve.parameter._context"></a>
+
+- *Type:* cdktf.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktf/provider-ionoscloud.lan.LanIpFailoverList.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `get` <a name="get" id="@cdktf/provider-ionoscloud.lan.LanIpFailoverList.get"></a>
+
+```python
+def get(
+  index: typing.Union[int, float]
+) -> LanIpFailoverOutputReference
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktf/provider-ionoscloud.lan.LanIpFailoverList.get.parameter.index"></a>
+
+- *Type:* typing.Union[int, float]
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-ionoscloud.lan.LanIpFailoverList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-ionoscloud.lan.LanIpFailoverList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.lan.LanIpFailoverList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-ionoscloud.lan.LanIpFailover">LanIpFailover</a>]]</code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktf/provider-ionoscloud.lan.LanIpFailoverList.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-ionoscloud.lan.LanIpFailoverList.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-ionoscloud.lan.LanIpFailoverList.property.internalValue"></a>
+
+```python
+internal_value: typing.Union[IResolvable, typing.List[LanIpFailover]]
+```
+
+- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-ionoscloud.lan.LanIpFailover">LanIpFailover</a>]]
+
+---
+
+
+### LanIpFailoverOutputReference <a name="LanIpFailoverOutputReference" id="@cdktf/provider-ionoscloud.lan.LanIpFailoverOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.lan.LanIpFailoverOutputReference.Initializer"></a>
+
+```python
+from cdktf_cdktf_provider_ionoscloud import lan
+
+lan.LanIpFailoverOutputReference(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str,
+  complex_object_index: typing.Union[int, float],
+  complex_object_is_from_set: bool
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-ionoscloud.lan.LanIpFailoverOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-ionoscloud.lan.LanIpFailoverOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-ionoscloud.lan.LanIpFailoverOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
+| <code><a href="#@cdktf/provider-ionoscloud.lan.LanIpFailoverOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktf/provider-ionoscloud.lan.LanIpFailoverOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-ionoscloud.lan.LanIpFailoverOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complex_object_index`<sup>Required</sup> <a name="complex_object_index" id="@cdktf/provider-ionoscloud.lan.LanIpFailoverOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* typing.Union[int, float]
+
+the index of this item in the list.
+
+---
+
+##### `complex_object_is_from_set`<sup>Required</sup> <a name="complex_object_is_from_set" id="@cdktf/provider-ionoscloud.lan.LanIpFailoverOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-ionoscloud.lan.LanIpFailoverOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.lan.LanIpFailoverOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.lan.LanIpFailoverOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.lan.LanIpFailoverOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.lan.LanIpFailoverOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.lan.LanIpFailoverOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.lan.LanIpFailoverOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.lan.LanIpFailoverOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.lan.LanIpFailoverOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.lan.LanIpFailoverOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.lan.LanIpFailoverOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.lan.LanIpFailoverOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-ionoscloud.lan.LanIpFailoverOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktf/provider-ionoscloud.lan.LanIpFailoverOutputReference.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktf/provider-ionoscloud.lan.LanIpFailoverOutputReference.getAnyMapAttribute"></a>
+
+```python
+def get_any_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Any]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-ionoscloud.lan.LanIpFailoverOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktf/provider-ionoscloud.lan.LanIpFailoverOutputReference.getBooleanAttribute"></a>
+
+```python
+def get_boolean_attribute(
+  terraform_attribute: str
+) -> IResolvable
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-ionoscloud.lan.LanIpFailoverOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktf/provider-ionoscloud.lan.LanIpFailoverOutputReference.getBooleanMapAttribute"></a>
+
+```python
+def get_boolean_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[bool]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-ionoscloud.lan.LanIpFailoverOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktf/provider-ionoscloud.lan.LanIpFailoverOutputReference.getListAttribute"></a>
+
+```python
+def get_list_attribute(
+  terraform_attribute: str
+) -> typing.List[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-ionoscloud.lan.LanIpFailoverOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktf/provider-ionoscloud.lan.LanIpFailoverOutputReference.getNumberAttribute"></a>
+
+```python
+def get_number_attribute(
+  terraform_attribute: str
+) -> typing.Union[int, float]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-ionoscloud.lan.LanIpFailoverOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktf/provider-ionoscloud.lan.LanIpFailoverOutputReference.getNumberListAttribute"></a>
+
+```python
+def get_number_list_attribute(
+  terraform_attribute: str
+) -> typing.List[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-ionoscloud.lan.LanIpFailoverOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktf/provider-ionoscloud.lan.LanIpFailoverOutputReference.getNumberMapAttribute"></a>
+
+```python
+def get_number_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-ionoscloud.lan.LanIpFailoverOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktf/provider-ionoscloud.lan.LanIpFailoverOutputReference.getStringAttribute"></a>
+
+```python
+def get_string_attribute(
+  terraform_attribute: str
+) -> str
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-ionoscloud.lan.LanIpFailoverOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktf/provider-ionoscloud.lan.LanIpFailoverOutputReference.getStringMapAttribute"></a>
+
+```python
+def get_string_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-ionoscloud.lan.LanIpFailoverOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktf/provider-ionoscloud.lan.LanIpFailoverOutputReference.interpolationForAttribute"></a>
+
+```python
+def interpolation_for_attribute(
+  property: str
+) -> IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-ionoscloud.lan.LanIpFailoverOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* str
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktf/provider-ionoscloud.lan.LanIpFailoverOutputReference.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-ionoscloud.lan.LanIpFailoverOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktf.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktf/provider-ionoscloud.lan.LanIpFailoverOutputReference.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-ionoscloud.lan.LanIpFailoverOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-ionoscloud.lan.LanIpFailoverOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.lan.LanIpFailoverOutputReference.property.ip">ip</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.lan.LanIpFailoverOutputReference.property.nicUuid">nic_uuid</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.lan.LanIpFailoverOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-ionoscloud.lan.LanIpFailover">LanIpFailover</a>, cdktf.IResolvable]</code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktf/provider-ionoscloud.lan.LanIpFailoverOutputReference.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-ionoscloud.lan.LanIpFailoverOutputReference.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `ip`<sup>Required</sup> <a name="ip" id="@cdktf/provider-ionoscloud.lan.LanIpFailoverOutputReference.property.ip"></a>
+
+```python
+ip: str
+```
+
+- *Type:* str
+
+---
+
+##### `nic_uuid`<sup>Required</sup> <a name="nic_uuid" id="@cdktf/provider-ionoscloud.lan.LanIpFailoverOutputReference.property.nicUuid"></a>
+
+```python
+nic_uuid: str
+```
+
+- *Type:* str
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-ionoscloud.lan.LanIpFailoverOutputReference.property.internalValue"></a>
+
+```python
+internal_value: typing.Union[LanIpFailover, IResolvable]
+```
+
+- *Type:* typing.Union[<a href="#@cdktf/provider-ionoscloud.lan.LanIpFailover">LanIpFailover</a>, cdktf.IResolvable]
+
+---
+
+
+### LanTimeoutsOutputReference <a name="LanTimeoutsOutputReference" id="@cdktf/provider-ionoscloud.lan.LanTimeoutsOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.lan.LanTimeoutsOutputReference.Initializer"></a>
+
+```python
+from cdktf_cdktf_provider_ionoscloud import lan
+
+lan.LanTimeoutsOutputReference(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-ionoscloud.lan.LanTimeoutsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-ionoscloud.lan.LanTimeoutsOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktf/provider-ionoscloud.lan.LanTimeoutsOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-ionoscloud.lan.LanTimeoutsOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-ionoscloud.lan.LanTimeoutsOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.lan.LanTimeoutsOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.lan.LanTimeoutsOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.lan.LanTimeoutsOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.lan.LanTimeoutsOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.lan.LanTimeoutsOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.lan.LanTimeoutsOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.lan.LanTimeoutsOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.lan.LanTimeoutsOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.lan.LanTimeoutsOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.lan.LanTimeoutsOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.lan.LanTimeoutsOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-ionoscloud.lan.LanTimeoutsOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-ionoscloud.lan.LanTimeoutsOutputReference.resetCreate">reset_create</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.lan.LanTimeoutsOutputReference.resetDefault">reset_default</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.lan.LanTimeoutsOutputReference.resetDelete">reset_delete</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.lan.LanTimeoutsOutputReference.resetUpdate">reset_update</a></code> | *No description.* |
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktf/provider-ionoscloud.lan.LanTimeoutsOutputReference.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktf/provider-ionoscloud.lan.LanTimeoutsOutputReference.getAnyMapAttribute"></a>
+
+```python
+def get_any_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Any]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-ionoscloud.lan.LanTimeoutsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktf/provider-ionoscloud.lan.LanTimeoutsOutputReference.getBooleanAttribute"></a>
+
+```python
+def get_boolean_attribute(
+  terraform_attribute: str
+) -> IResolvable
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-ionoscloud.lan.LanTimeoutsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktf/provider-ionoscloud.lan.LanTimeoutsOutputReference.getBooleanMapAttribute"></a>
+
+```python
+def get_boolean_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[bool]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-ionoscloud.lan.LanTimeoutsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktf/provider-ionoscloud.lan.LanTimeoutsOutputReference.getListAttribute"></a>
+
+```python
+def get_list_attribute(
+  terraform_attribute: str
+) -> typing.List[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-ionoscloud.lan.LanTimeoutsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktf/provider-ionoscloud.lan.LanTimeoutsOutputReference.getNumberAttribute"></a>
+
+```python
+def get_number_attribute(
+  terraform_attribute: str
+) -> typing.Union[int, float]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-ionoscloud.lan.LanTimeoutsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktf/provider-ionoscloud.lan.LanTimeoutsOutputReference.getNumberListAttribute"></a>
+
+```python
+def get_number_list_attribute(
+  terraform_attribute: str
+) -> typing.List[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-ionoscloud.lan.LanTimeoutsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktf/provider-ionoscloud.lan.LanTimeoutsOutputReference.getNumberMapAttribute"></a>
+
+```python
+def get_number_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-ionoscloud.lan.LanTimeoutsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktf/provider-ionoscloud.lan.LanTimeoutsOutputReference.getStringAttribute"></a>
+
+```python
+def get_string_attribute(
+  terraform_attribute: str
+) -> str
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-ionoscloud.lan.LanTimeoutsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktf/provider-ionoscloud.lan.LanTimeoutsOutputReference.getStringMapAttribute"></a>
+
+```python
+def get_string_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-ionoscloud.lan.LanTimeoutsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktf/provider-ionoscloud.lan.LanTimeoutsOutputReference.interpolationForAttribute"></a>
+
+```python
+def interpolation_for_attribute(
+  property: str
+) -> IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-ionoscloud.lan.LanTimeoutsOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* str
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktf/provider-ionoscloud.lan.LanTimeoutsOutputReference.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-ionoscloud.lan.LanTimeoutsOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktf.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktf/provider-ionoscloud.lan.LanTimeoutsOutputReference.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `reset_create` <a name="reset_create" id="@cdktf/provider-ionoscloud.lan.LanTimeoutsOutputReference.resetCreate"></a>
+
+```python
+def reset_create() -> None
+```
+
+##### `reset_default` <a name="reset_default" id="@cdktf/provider-ionoscloud.lan.LanTimeoutsOutputReference.resetDefault"></a>
+
+```python
+def reset_default() -> None
+```
+
+##### `reset_delete` <a name="reset_delete" id="@cdktf/provider-ionoscloud.lan.LanTimeoutsOutputReference.resetDelete"></a>
+
+```python
+def reset_delete() -> None
+```
+
+##### `reset_update` <a name="reset_update" id="@cdktf/provider-ionoscloud.lan.LanTimeoutsOutputReference.resetUpdate"></a>
+
+```python
+def reset_update() -> None
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-ionoscloud.lan.LanTimeoutsOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-ionoscloud.lan.LanTimeoutsOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.lan.LanTimeoutsOutputReference.property.createInput">create_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.lan.LanTimeoutsOutputReference.property.defaultInput">default_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.lan.LanTimeoutsOutputReference.property.deleteInput">delete_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.lan.LanTimeoutsOutputReference.property.updateInput">update_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.lan.LanTimeoutsOutputReference.property.create">create</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.lan.LanTimeoutsOutputReference.property.default">default</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.lan.LanTimeoutsOutputReference.property.delete">delete</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.lan.LanTimeoutsOutputReference.property.update">update</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.lan.LanTimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-ionoscloud.lan.LanTimeouts">LanTimeouts</a>, cdktf.IResolvable]</code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktf/provider-ionoscloud.lan.LanTimeoutsOutputReference.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-ionoscloud.lan.LanTimeoutsOutputReference.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `create_input`<sup>Optional</sup> <a name="create_input" id="@cdktf/provider-ionoscloud.lan.LanTimeoutsOutputReference.property.createInput"></a>
+
+```python
+create_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `default_input`<sup>Optional</sup> <a name="default_input" id="@cdktf/provider-ionoscloud.lan.LanTimeoutsOutputReference.property.defaultInput"></a>
+
+```python
+default_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `delete_input`<sup>Optional</sup> <a name="delete_input" id="@cdktf/provider-ionoscloud.lan.LanTimeoutsOutputReference.property.deleteInput"></a>
+
+```python
+delete_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `update_input`<sup>Optional</sup> <a name="update_input" id="@cdktf/provider-ionoscloud.lan.LanTimeoutsOutputReference.property.updateInput"></a>
+
+```python
+update_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `create`<sup>Required</sup> <a name="create" id="@cdktf/provider-ionoscloud.lan.LanTimeoutsOutputReference.property.create"></a>
+
+```python
+create: str
+```
+
+- *Type:* str
+
+---
+
+##### `default`<sup>Required</sup> <a name="default" id="@cdktf/provider-ionoscloud.lan.LanTimeoutsOutputReference.property.default"></a>
+
+```python
+default: str
+```
+
+- *Type:* str
+
+---
+
+##### `delete`<sup>Required</sup> <a name="delete" id="@cdktf/provider-ionoscloud.lan.LanTimeoutsOutputReference.property.delete"></a>
+
+```python
+delete: str
+```
+
+- *Type:* str
+
+---
+
+##### `update`<sup>Required</sup> <a name="update" id="@cdktf/provider-ionoscloud.lan.LanTimeoutsOutputReference.property.update"></a>
+
+```python
+update: str
+```
+
+- *Type:* str
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-ionoscloud.lan.LanTimeoutsOutputReference.property.internalValue"></a>
+
+```python
+internal_value: typing.Union[LanTimeouts, IResolvable]
+```
+
+- *Type:* typing.Union[<a href="#@cdktf/provider-ionoscloud.lan.LanTimeouts">LanTimeouts</a>, cdktf.IResolvable]
+
+---
+
+
+
