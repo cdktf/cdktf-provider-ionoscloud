@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/ionoscloud/d/certifi
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.dataIonoscloudCertificate.DataIonoscloudCertificate.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/dataionoscloudcertificate"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v5/dataionoscloudcertificate"
 
 dataionoscloudcertificate.NewDataIonoscloudCertificate(scope Construct, id *string, config DataIonoscloudCertificateConfig) DataIonoscloudCertificate
 ```
@@ -314,7 +314,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-ionoscloud.dataIonoscloudCertificate.DataIonoscloudCertificate.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/dataionoscloudcertificate"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v5/dataionoscloudcertificate"
 
 dataionoscloudcertificate.DataIonoscloudCertificate_IsConstruct(x interface{}) *bool
 ```
@@ -346,7 +346,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-ionoscloud.dataIonoscloudCertificate.DataIonoscloudCertificate.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/dataionoscloudcertificate"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v5/dataionoscloudcertificate"
 
 dataionoscloudcertificate.DataIonoscloudCertificate_IsTerraformElement(x interface{}) *bool
 ```
@@ -360,7 +360,7 @@ dataionoscloudcertificate.DataIonoscloudCertificate_IsTerraformElement(x interfa
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-ionoscloud.dataIonoscloudCertificate.DataIonoscloudCertificate.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/dataionoscloudcertificate"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v5/dataionoscloudcertificate"
 
 dataionoscloudcertificate.DataIonoscloudCertificate_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -647,7 +647,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-ionoscloud.dataIonoscloudCertificate.DataIonoscloudCertificateConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/dataionoscloudcertificate"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v5/dataionoscloudcertificate"
 
 &dataionoscloudcertificate.DataIonoscloudCertificateConfig {
 	Connection: interface{},
@@ -661,7 +661,7 @@ import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/dataionoscloudc
 	CertificateChain: *string,
 	Id: *string,
 	Name: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud.dataIonoscloudCertificate.DataIonoscloudCertificateTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v5.dataIonoscloudCertificate.DataIonoscloudCertificateTimeouts,
 }
 ```
 
@@ -824,7 +824,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionos
 #### Initializer <a name="Initializer" id="@cdktf/provider-ionoscloud.dataIonoscloudCertificate.DataIonoscloudCertificateTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/dataionoscloudcertificate"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v5/dataionoscloudcertificate"
 
 &dataionoscloudcertificate.DataIonoscloudCertificateTimeouts {
 	Create: *string,
@@ -900,7 +900,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionos
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.dataIonoscloudCertificate.DataIonoscloudCertificateTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/dataionoscloudcertificate"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v5/dataionoscloudcertificate"
 
 dataionoscloudcertificate.NewDataIonoscloudCertificateTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataIonoscloudCertificateTimeoutsOutputReference
 ```
