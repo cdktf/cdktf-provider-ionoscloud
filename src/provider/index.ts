@@ -8,7 +8,7 @@ import * as cdktf from 'cdktf';
 
 export interface IonoscloudProviderConfig {
   /**
-  * IonosCloud REST API URL.
+  * IonosCloud REST API URL. Usually not necessary to be set, SDKs know internally how to route requests to the API.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud#endpoint IonoscloudProvider#endpoint}
   */
@@ -69,7 +69,7 @@ export class IonoscloudProvider extends cdktf.TerraformProvider {
       terraformResourceType: 'ionoscloud',
       terraformGeneratorMetadata: {
         providerName: 'ionoscloud',
-        providerVersion: '6.3.5',
+        providerVersion: '6.3.6',
         providerVersionConstraint: '~> 6.2'
       },
       terraformProviderSource: 'ionos-cloud/ionoscloud'

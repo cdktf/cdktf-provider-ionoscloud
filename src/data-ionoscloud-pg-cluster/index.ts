@@ -493,7 +493,7 @@ export class DataIonoscloudPgCluster extends cdktf.TerraformDataSource {
       terraformResourceType: 'ionoscloud_pg_cluster',
       terraformGeneratorMetadata: {
         providerName: 'ionoscloud',
-        providerVersion: '6.3.5',
+        providerVersion: '6.3.6',
         providerVersionConstraint: '~> 6.2'
       },
       provider: config.provider,
@@ -549,6 +549,11 @@ export class DataIonoscloudPgCluster extends cdktf.TerraformDataSource {
   // Temporarily expose input value. Use with caution.
   public get displayNameInput() {
     return this._displayName;
+  }
+
+  // dns_name - computed: true, optional: false, required: false
+  public get dnsName() {
+    return this.getStringAttribute('dns_name');
   }
 
   // from_backup - computed: true, optional: false, required: false

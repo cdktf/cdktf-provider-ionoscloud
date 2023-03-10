@@ -350,7 +350,7 @@ export class NatgatewayRule extends cdktf.TerraformResource {
       terraformResourceType: 'ionoscloud_natgateway_rule',
       terraformGeneratorMetadata: {
         providerName: 'ionoscloud',
-        providerVersion: '6.3.5',
+        providerVersion: '6.3.6',
         providerVersionConstraint: '~> 6.2'
       },
       provider: config.provider,
