@@ -630,7 +630,11 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionos
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/server#ips Server#ips}.
+Collection of IP addresses assigned to a nic.
+
+Explicitly assigned public IPs need to come from reserved IP blocks, Passing value null or empty array will assign an IP address automatically.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/server#ips Server#ips}
 
 ---
 
@@ -2078,7 +2082,7 @@ server.ServerNic(
 | <code><a href="#@cdktf/provider-ionoscloud.server.ServerNic.property.firewall">firewall</a></code> | <code><a href="#@cdktf/provider-ionoscloud.server.ServerNicFirewall">ServerNicFirewall</a></code> | firewall block. |
 | <code><a href="#@cdktf/provider-ionoscloud.server.ServerNic.property.firewallActive">firewall_active</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/server#firewall_active Server#firewall_active}. |
 | <code><a href="#@cdktf/provider-ionoscloud.server.ServerNic.property.firewallType">firewall_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/server#firewall_type Server#firewall_type}. |
-| <code><a href="#@cdktf/provider-ionoscloud.server.ServerNic.property.ips">ips</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/server#ips Server#ips}. |
+| <code><a href="#@cdktf/provider-ionoscloud.server.ServerNic.property.ips">ips</a></code> | <code>typing.List[str]</code> | Collection of IP addresses assigned to a nic. |
 | <code><a href="#@cdktf/provider-ionoscloud.server.ServerNic.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/server#name Server#name}. |
 
 ---
@@ -2153,7 +2157,11 @@ ips: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/server#ips Server#ips}.
+Collection of IP addresses assigned to a nic.
+
+Explicitly assigned public IPs need to come from reserved IP blocks, Passing value null or empty array will assign an IP address automatically.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/server#ips Server#ips}
 
 ---
 

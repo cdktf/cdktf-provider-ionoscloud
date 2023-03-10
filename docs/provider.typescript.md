@@ -531,6 +531,8 @@ public readonly endpoint: string;
 
 IonosCloud REST API URL.
 
+Usually not necessary to be set, SDKs know internally how to route requests to the API.
+
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud#endpoint IonoscloudProvider#endpoint}
 
 ---

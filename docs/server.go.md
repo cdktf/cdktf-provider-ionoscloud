@@ -1583,7 +1583,7 @@ import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v5/server"
 | <code><a href="#@cdktf/provider-ionoscloud.server.ServerNic.property.firewall">Firewall</a></code> | <code><a href="#@cdktf/provider-ionoscloud.server.ServerNicFirewall">ServerNicFirewall</a></code> | firewall block. |
 | <code><a href="#@cdktf/provider-ionoscloud.server.ServerNic.property.firewallActive">FirewallActive</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/server#firewall_active Server#firewall_active}. |
 | <code><a href="#@cdktf/provider-ionoscloud.server.ServerNic.property.firewallType">FirewallType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/server#firewall_type Server#firewall_type}. |
-| <code><a href="#@cdktf/provider-ionoscloud.server.ServerNic.property.ips">Ips</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/server#ips Server#ips}. |
+| <code><a href="#@cdktf/provider-ionoscloud.server.ServerNic.property.ips">Ips</a></code> | <code>*[]*string</code> | Collection of IP addresses assigned to a nic. |
 | <code><a href="#@cdktf/provider-ionoscloud.server.ServerNic.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/server#name Server#name}. |
 
 ---
@@ -1658,7 +1658,11 @@ Ips *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/server#ips Server#ips}.
+Collection of IP addresses assigned to a nic.
+
+Explicitly assigned public IPs need to come from reserved IP blocks, Passing value null or empty array will assign an IP address automatically.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/server#ips Server#ips}
 
 ---
 

@@ -23,6 +23,10 @@ export interface DataIonoscloudImageConfig extends cdktf.TerraformMetaArguments 
   */
   readonly id?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/d/image#image_alias DataIonoscloudImage#image_alias}
+  */
+  readonly imageAlias?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/d/image#location DataIonoscloudImage#location}
   */
   readonly location?: string;
@@ -228,7 +232,7 @@ export class DataIonoscloudImage extends cdktf.TerraformDataSource {
       terraformResourceType: 'ionoscloud_image',
       terraformGeneratorMetadata: {
         providerName: 'ionoscloud',
-        providerVersion: '6.3.5',
+        providerVersion: '6.3.6',
         providerVersionConstraint: '~> 6.2'
       },
       provider: config.provider,
@@ -242,6 +246,7 @@ export class DataIonoscloudImage extends cdktf.TerraformDataSource {
     this._cloudInit = config.cloudInit;
     this._description = config.description;
     this._id = config.id;
+    this._imageAlias = config.imageAlias;
     this._location = config.location;
     this._name = config.name;
     this._type = config.type;
@@ -331,14 +336,30 @@ export class DataIonoscloudImage extends cdktf.TerraformDataSource {
     return this._id;
   }
 
+  // image_alias - computed: false, optional: true, required: false
+  private _imageAlias?: string; 
+  public get imageAlias() {
+    return this.getStringAttribute('image_alias');
+  }
+  public set imageAlias(value: string) {
+    this._imageAlias = value;
+  }
+  public resetImageAlias() {
+    this._imageAlias = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get imageAliasInput() {
+    return this._imageAlias;
+  }
+
   // image_aliases - computed: true, optional: false, required: false
   public get imageAliases() {
     return this.getListAttribute('image_aliases');
   }
 
-  // license_type - computed: true, optional: false, required: false
-  public get licenseType() {
-    return this.getStringAttribute('license_type');
+  // licence_type - computed: true, optional: false, required: false
+  public get licenceType() {
+    return this.getStringAttribute('licence_type');
   }
 
   // location - computed: false, optional: true, required: false
@@ -460,6 +481,7 @@ export class DataIonoscloudImage extends cdktf.TerraformDataSource {
       cloud_init: cdktf.stringToTerraform(this._cloudInit),
       description: cdktf.stringToTerraform(this._description),
       id: cdktf.stringToTerraform(this._id),
+      image_alias: cdktf.stringToTerraform(this._imageAlias),
       location: cdktf.stringToTerraform(this._location),
       name: cdktf.stringToTerraform(this._name),
       type: cdktf.stringToTerraform(this._type),

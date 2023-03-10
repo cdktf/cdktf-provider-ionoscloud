@@ -222,7 +222,7 @@ export class BackupUnit extends cdktf.TerraformResource {
       terraformResourceType: 'ionoscloud_backup_unit',
       terraformGeneratorMetadata: {
         providerName: 'ionoscloud',
-        providerVersion: '6.3.5',
+        providerVersion: '6.3.6',
         providerVersionConstraint: '~> 6.2'
       },
       provider: config.provider,

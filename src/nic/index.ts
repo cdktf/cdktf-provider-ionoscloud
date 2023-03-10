@@ -31,6 +31,8 @@ export interface NicConfig extends cdktf.TerraformMetaArguments {
   */
   readonly id?: string;
   /**
+  * Collection of IP addresses assigned to a nic. Explicitly assigned public IPs need to come from reserved IP blocks, Passing value null or empty array will assign an IP address automatically.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/nic#ips Nic#ips}
   */
   readonly ips?: string[];
@@ -236,7 +238,7 @@ export class Nic extends cdktf.TerraformResource {
       terraformResourceType: 'ionoscloud_nic',
       terraformGeneratorMetadata: {
         providerName: 'ionoscloud',
-        providerVersion: '6.3.5',
+        providerVersion: '6.3.6',
         providerVersionConstraint: '~> 6.2'
       },
       provider: config.provider,
