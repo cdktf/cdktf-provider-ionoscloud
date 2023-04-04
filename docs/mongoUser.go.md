@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/ionoscloud/r/mongo_u
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.mongoUser.MongoUser.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v5/mongouser"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/mongouser"
 
 mongouser.NewMongoUser(scope Construct, id *string, config MongoUserConfig) MongoUser
 ```
@@ -313,7 +313,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-ionoscloud.mongoUser.MongoUser.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v5/mongouser"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/mongouser"
 
 mongouser.MongoUser_IsConstruct(x interface{}) *bool
 ```
@@ -345,7 +345,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-ionoscloud.mongoUser.MongoUser.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v5/mongouser"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/mongouser"
 
 mongouser.MongoUser_IsTerraformElement(x interface{}) *bool
 ```
@@ -359,7 +359,7 @@ mongouser.MongoUser_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-ionoscloud.mongoUser.MongoUser.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v5/mongouser"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/mongouser"
 
 mongouser.MongoUser_IsTerraformResource(x interface{}) *bool
 ```
@@ -690,7 +690,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-ionoscloud.mongoUser.MongoUserConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v5/mongouser"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/mongouser"
 
 &mongouser.MongoUserConfig {
 	Connection: interface{},
@@ -705,7 +705,7 @@ import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v5/mongouser"
 	Username: *string,
 	Id: *string,
 	Roles: interface{},
-	Timeouts: github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v5.mongoUser.MongoUserTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud.mongoUser.MongoUserTimeouts,
 }
 ```
 
@@ -883,7 +883,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionos
 #### Initializer <a name="Initializer" id="@cdktf/provider-ionoscloud.mongoUser.MongoUserRoles.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v5/mongouser"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/mongouser"
 
 &mongouser.MongoUserRoles {
 	Database: *string,
@@ -931,7 +931,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionos
 #### Initializer <a name="Initializer" id="@cdktf/provider-ionoscloud.mongoUser.MongoUserTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v5/mongouser"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/mongouser"
 
 &mongouser.MongoUserTimeouts {
 	Create: *string,
@@ -1007,7 +1007,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionos
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.mongoUser.MongoUserRolesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v5/mongouser"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/mongouser"
 
 mongouser.NewMongoUserRolesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) MongoUserRolesList
 ```
@@ -1150,7 +1150,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.mongoUser.MongoUserRolesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v5/mongouser"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/mongouser"
 
 mongouser.NewMongoUserRolesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) MongoUserRolesOutputReference
 ```
@@ -1475,7 +1475,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.mongoUser.MongoUserTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v5/mongouser"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/mongouser"
 
 mongouser.NewMongoUserTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MongoUserTimeoutsOutputReference
 ```
