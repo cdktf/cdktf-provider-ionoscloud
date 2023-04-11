@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/ionoscloud/d/mongo_t
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.dataIonoscloudMongoTemplate.DataIonoscloudMongoTemplate.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v5/dataionoscloudmongotemplate"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v6/dataionoscloudmongotemplate"
 
 dataionoscloudmongotemplate.NewDataIonoscloudMongoTemplate(scope Construct, id *string, config DataIonoscloudMongoTemplateConfig) DataIonoscloudMongoTemplate
 ```
@@ -307,7 +307,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-ionoscloud.dataIonoscloudMongoTemplate.DataIonoscloudMongoTemplate.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v5/dataionoscloudmongotemplate"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v6/dataionoscloudmongotemplate"
 
 dataionoscloudmongotemplate.DataIonoscloudMongoTemplate_IsConstruct(x interface{}) *bool
 ```
@@ -339,7 +339,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-ionoscloud.dataIonoscloudMongoTemplate.DataIonoscloudMongoTemplate.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v5/dataionoscloudmongotemplate"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v6/dataionoscloudmongotemplate"
 
 dataionoscloudmongotemplate.DataIonoscloudMongoTemplate_IsTerraformElement(x interface{}) *bool
 ```
@@ -353,7 +353,7 @@ dataionoscloudmongotemplate.DataIonoscloudMongoTemplate_IsTerraformElement(x int
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-ionoscloud.dataIonoscloudMongoTemplate.DataIonoscloudMongoTemplate.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v5/dataionoscloudmongotemplate"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v6/dataionoscloudmongotemplate"
 
 dataionoscloudmongotemplate.DataIonoscloudMongoTemplate_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -662,7 +662,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-ionoscloud.dataIonoscloudMongoTemplate.DataIonoscloudMongoTemplateConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v5/dataionoscloudmongotemplate"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v6/dataionoscloudmongotemplate"
 
 &dataionoscloudmongotemplate.DataIonoscloudMongoTemplateConfig {
 	Connection: interface{},
@@ -675,7 +675,7 @@ import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v5/dataionosclo
 	Id: *string,
 	Name: *string,
 	PartialMatch: interface{},
-	Timeouts: github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v5.dataIonoscloudMongoTemplate.DataIonoscloudMongoTemplateTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v6.dataIonoscloudMongoTemplate.DataIonoscloudMongoTemplateTimeouts,
 }
 ```
 
@@ -831,7 +831,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionos
 #### Initializer <a name="Initializer" id="@cdktf/provider-ionoscloud.dataIonoscloudMongoTemplate.DataIonoscloudMongoTemplateTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v5/dataionoscloudmongotemplate"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v6/dataionoscloudmongotemplate"
 
 &dataionoscloudmongotemplate.DataIonoscloudMongoTemplateTimeouts {
 	Create: *string,
@@ -907,7 +907,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionos
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.dataIonoscloudMongoTemplate.DataIonoscloudMongoTemplateTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v5/dataionoscloudmongotemplate"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v6/dataionoscloudmongotemplate"
 
 dataionoscloudmongotemplate.NewDataIonoscloudMongoTemplateTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataIonoscloudMongoTemplateTimeoutsOutputReference
 ```

@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/ionoscloud/d/snapsho
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.dataIonoscloudSnapshot.DataIonoscloudSnapshot.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v5/dataionoscloudsnapshot"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v6/dataionoscloudsnapshot"
 
 dataionoscloudsnapshot.NewDataIonoscloudSnapshot(scope Construct, id *string, config DataIonoscloudSnapshotConfig) DataIonoscloudSnapshot
 ```
@@ -314,7 +314,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-ionoscloud.dataIonoscloudSnapshot.DataIonoscloudSnapshot.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v5/dataionoscloudsnapshot"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v6/dataionoscloudsnapshot"
 
 dataionoscloudsnapshot.DataIonoscloudSnapshot_IsConstruct(x interface{}) *bool
 ```
@@ -346,7 +346,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-ionoscloud.dataIonoscloudSnapshot.DataIonoscloudSnapshot.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v5/dataionoscloudsnapshot"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v6/dataionoscloudsnapshot"
 
 dataionoscloudsnapshot.DataIonoscloudSnapshot_IsTerraformElement(x interface{}) *bool
 ```
@@ -360,7 +360,7 @@ dataionoscloudsnapshot.DataIonoscloudSnapshot_IsTerraformElement(x interface{}) 
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-ionoscloud.dataIonoscloudSnapshot.DataIonoscloudSnapshot.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v5/dataionoscloudsnapshot"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v6/dataionoscloudsnapshot"
 
 dataionoscloudsnapshot.DataIonoscloudSnapshot_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -790,7 +790,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-ionoscloud.dataIonoscloudSnapshot.DataIonoscloudSnapshotConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v5/dataionoscloudsnapshot"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v6/dataionoscloudsnapshot"
 
 &dataionoscloudsnapshot.DataIonoscloudSnapshotConfig {
 	Connection: interface{},
@@ -804,7 +804,7 @@ import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v5/dataionosclo
 	Location: *string,
 	Name: *string,
 	Size: *f64,
-	Timeouts: github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v5.dataIonoscloudSnapshot.DataIonoscloudSnapshotTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v6.dataIonoscloudSnapshot.DataIonoscloudSnapshotTimeouts,
 }
 ```
 
@@ -973,7 +973,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionos
 #### Initializer <a name="Initializer" id="@cdktf/provider-ionoscloud.dataIonoscloudSnapshot.DataIonoscloudSnapshotTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v5/dataionoscloudsnapshot"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v6/dataionoscloudsnapshot"
 
 &dataionoscloudsnapshot.DataIonoscloudSnapshotTimeouts {
 	Create: *string,
@@ -1049,7 +1049,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionos
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.dataIonoscloudSnapshot.DataIonoscloudSnapshotTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v5/dataionoscloudsnapshot"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v6/dataionoscloudsnapshot"
 
 dataionoscloudsnapshot.NewDataIonoscloudSnapshotTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataIonoscloudSnapshotTimeoutsOutputReference
 ```

@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/ionoscloud/d/s3_key 
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.dataIonoscloudS3Key.DataIonoscloudS3Key.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v5/dataionosclouds3key"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v6/dataionosclouds3key"
 
 dataionosclouds3key.NewDataIonoscloudS3Key(scope Construct, id *string, config DataIonoscloudS3KeyConfig) DataIonoscloudS3Key
 ```
@@ -300,7 +300,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-ionoscloud.dataIonoscloudS3Key.DataIonoscloudS3Key.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v5/dataionosclouds3key"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v6/dataionosclouds3key"
 
 dataionosclouds3key.DataIonoscloudS3Key_IsConstruct(x interface{}) *bool
 ```
@@ -332,7 +332,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-ionoscloud.dataIonoscloudS3Key.DataIonoscloudS3Key.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v5/dataionosclouds3key"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v6/dataionosclouds3key"
 
 dataionosclouds3key.DataIonoscloudS3Key_IsTerraformElement(x interface{}) *bool
 ```
@@ -346,7 +346,7 @@ dataionosclouds3key.DataIonoscloudS3Key_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-ionoscloud.dataIonoscloudS3Key.DataIonoscloudS3Key.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v5/dataionosclouds3key"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v6/dataionosclouds3key"
 
 dataionosclouds3key.DataIonoscloudS3Key_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -622,7 +622,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-ionoscloud.dataIonoscloudS3Key.DataIonoscloudS3KeyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v5/dataionosclouds3key"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v6/dataionosclouds3key"
 
 &dataionosclouds3key.DataIonoscloudS3KeyConfig {
 	Connection: interface{},
@@ -635,7 +635,7 @@ import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v5/dataionosclo
 	UserId: *string,
 	Active: interface{},
 	Id: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v5.dataIonoscloudS3Key.DataIonoscloudS3KeyTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v6.dataIonoscloudS3Key.DataIonoscloudS3KeyTimeouts,
 }
 ```
 
@@ -791,7 +791,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionos
 #### Initializer <a name="Initializer" id="@cdktf/provider-ionoscloud.dataIonoscloudS3Key.DataIonoscloudS3KeyTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v5/dataionosclouds3key"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v6/dataionosclouds3key"
 
 &dataionosclouds3key.DataIonoscloudS3KeyTimeouts {
 	Create: *string,
@@ -867,7 +867,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionos
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.dataIonoscloudS3Key.DataIonoscloudS3KeyTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v5/dataionosclouds3key"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v6/dataionosclouds3key"
 
 dataionosclouds3key.NewDataIonoscloudS3KeyTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataIonoscloudS3KeyTimeoutsOutputReference
 ```
