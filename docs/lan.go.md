@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/ionoscloud/r/lan ion
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.lan.Lan.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v6/lan"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/lan"
 
 lan.NewLan(scope Construct, id *string, config LanConfig) Lan
 ```
@@ -334,7 +334,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-ionoscloud.lan.Lan.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v6/lan"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/lan"
 
 lan.Lan_IsConstruct(x interface{}) *bool
 ```
@@ -366,7 +366,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-ionoscloud.lan.Lan.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v6/lan"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/lan"
 
 lan.Lan_IsTerraformElement(x interface{}) *bool
 ```
@@ -380,7 +380,7 @@ lan.Lan_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-ionoscloud.lan.Lan.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v6/lan"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/lan"
 
 lan.Lan_IsTerraformResource(x interface{}) *bool
 ```
@@ -733,7 +733,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-ionoscloud.lan.LanConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v6/lan"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/lan"
 
 &lan.LanConfig {
 	Connection: interface{},
@@ -749,7 +749,7 @@ import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v6/lan"
 	Name: *string,
 	Pcc: *string,
 	Public: interface{},
-	Timeouts: github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v6.lan.LanTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud.lan.LanTimeouts,
 }
 ```
 
@@ -940,7 +940,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionos
 #### Initializer <a name="Initializer" id="@cdktf/provider-ionoscloud.lan.LanIpFailover.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v6/lan"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/lan"
 
 &lan.LanIpFailover {
 
@@ -953,7 +953,7 @@ import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v6/lan"
 #### Initializer <a name="Initializer" id="@cdktf/provider-ionoscloud.lan.LanTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v6/lan"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/lan"
 
 &lan.LanTimeouts {
 	Create: *string,
@@ -1029,7 +1029,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionos
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.lan.LanIpFailoverList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v6/lan"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/lan"
 
 lan.NewLanIpFailoverList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) LanIpFailoverList
 ```
@@ -1172,7 +1172,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.lan.LanIpFailoverOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v6/lan"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/lan"
 
 lan.NewLanIpFailoverOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) LanIpFailoverOutputReference
 ```
@@ -1461,7 +1461,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.lan.LanTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v6/lan"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/lan"
 
 lan.NewLanTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LanTimeoutsOutputReference
 ```
