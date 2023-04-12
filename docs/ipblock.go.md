@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/ionoscloud/r/ipblock
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.ipblock.Ipblock.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/ipblock"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v6/ipblock"
 
 ipblock.NewIpblock(scope Construct, id *string, config IpblockConfig) Ipblock
 ```
@@ -320,7 +320,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-ionoscloud.ipblock.Ipblock.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/ipblock"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v6/ipblock"
 
 ipblock.Ipblock_IsConstruct(x interface{}) *bool
 ```
@@ -352,7 +352,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-ionoscloud.ipblock.Ipblock.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/ipblock"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v6/ipblock"
 
 ipblock.Ipblock_IsTerraformElement(x interface{}) *bool
 ```
@@ -366,7 +366,7 @@ ipblock.Ipblock_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-ionoscloud.ipblock.Ipblock.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/ipblock"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v6/ipblock"
 
 ipblock.Ipblock_IsTerraformResource(x interface{}) *bool
 ```
@@ -708,7 +708,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-ionoscloud.ipblock.IpblockConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/ipblock"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v6/ipblock"
 
 &ipblock.IpblockConfig {
 	Connection: interface{},
@@ -723,7 +723,7 @@ import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/ipblock"
 	Id: *string,
 	IpConsumers: interface{},
 	Name: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud.ipblock.IpblockTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v6.ipblock.IpblockTimeouts,
 }
 ```
 
@@ -901,7 +901,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionos
 #### Initializer <a name="Initializer" id="@cdktf/provider-ionoscloud.ipblock.IpblockIpConsumers.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/ipblock"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v6/ipblock"
 
 &ipblock.IpblockIpConsumers {
 
@@ -914,7 +914,7 @@ import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/ipblock"
 #### Initializer <a name="Initializer" id="@cdktf/provider-ionoscloud.ipblock.IpblockTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/ipblock"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v6/ipblock"
 
 &ipblock.IpblockTimeouts {
 	Create: *string,
@@ -990,7 +990,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionos
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.ipblock.IpblockIpConsumersList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/ipblock"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v6/ipblock"
 
 ipblock.NewIpblockIpConsumersList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) IpblockIpConsumersList
 ```
@@ -1133,7 +1133,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.ipblock.IpblockIpConsumersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/ipblock"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v6/ipblock"
 
 ipblock.NewIpblockIpConsumersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) IpblockIpConsumersOutputReference
 ```
@@ -1499,7 +1499,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.ipblock.IpblockTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/ipblock"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v6/ipblock"
 
 ipblock.NewIpblockTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) IpblockTimeoutsOutputReference
 ```
