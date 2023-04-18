@@ -1,3 +1,3 @@
 # `ionoscloud_container_registry`
 
-Refer to the Terraform Registory for docs: [`ionoscloud_container_registry`](https://www.terraform.io/docs/providers/ionoscloud/r/container_registry).
+Refer to the Terraform Registory for docs: [`ionoscloud_container_registry`](https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/resources/container_registry).

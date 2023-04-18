@@ -1,6 +1,6 @@
 # `ionoscloud_snapshot`
 
-Refer to the Terraform Registory for docs: [`ionoscloud_snapshot`](https://www.terraform.io/docs/providers/ionoscloud/r/snapshot).
+Refer to the Terraform Registory for docs: [`ionoscloud_snapshot`](https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/resources/snapshot).
 
 # `snapshot` Submodule <a name="`snapshot` Submodule" id="@cdktf/provider-ionoscloud.snapshot"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`ionoscloud_snapshot`](https://www.t
 
 ### Snapshot <a name="Snapshot" id="@cdktf/provider-ionoscloud.snapshot.Snapshot"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/ionoscloud/r/snapshot ionoscloud_snapshot}.
+Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/resources/snapshot ionoscloud_snapshot}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.snapshot.Snapshot.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v6/snapshot"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/snapshot"
 
 snapshot.NewSnapshot(scope Construct, id *string, config SnapshotConfig) Snapshot
 ```
@@ -297,7 +297,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-ionoscloud.snapshot.Snapshot.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v6/snapshot"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/snapshot"
 
 snapshot.Snapshot_IsConstruct(x interface{}) *bool
 ```
@@ -329,7 +329,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-ionoscloud.snapshot.Snapshot.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v6/snapshot"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/snapshot"
 
 snapshot.Snapshot_IsTerraformElement(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ snapshot.Snapshot_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-ionoscloud.snapshot.Snapshot.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v6/snapshot"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/snapshot"
 
 snapshot.Snapshot_IsTerraformResource(x interface{}) *bool
 ```
@@ -366,7 +366,7 @@ snapshot.Snapshot_IsTerraformResource(x interface{}) *bool
 | <code><a href="#@cdktf/provider-ionoscloud.snapshot.Snapshot.property.terraformResourceType">TerraformResourceType</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.snapshot.Snapshot.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.snapshot.Snapshot.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-ionoscloud.snapshot.Snapshot.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.snapshot.Snapshot.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.snapshot.Snapshot.property.dependsOn">DependsOn</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.snapshot.Snapshot.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.snapshot.Snapshot.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -485,10 +485,10 @@ func Connection() interface{}
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-ionoscloud.snapshot.Snapshot.property.count"></a>
 
 ```go
-func Count() *f64
+func Count() interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -817,11 +817,11 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-ionoscloud.snapshot.SnapshotConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v6/snapshot"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/snapshot"
 
 &snapshot.SnapshotConfig {
 	Connection: interface{},
-	Count: *f64,
+	Count: interface{},
 	DependsOn: *[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable,
 	ForEach: github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator,
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
@@ -831,7 +831,7 @@ import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v6/snapshot"
 	Name: *string,
 	VolumeId: *string,
 	Id: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v6.snapshot.SnapshotTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud.snapshot.SnapshotTimeouts,
 }
 ```
 
@@ -840,16 +840,16 @@ import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v6/snapshot"
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-ionoscloud.snapshot.SnapshotConfig.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-ionoscloud.snapshot.SnapshotConfig.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.snapshot.SnapshotConfig.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.snapshot.SnapshotConfig.property.dependsOn">DependsOn</a></code> | <code>*[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.snapshot.SnapshotConfig.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.snapshot.SnapshotConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.snapshot.SnapshotConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.snapshot.SnapshotConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-ionoscloud.snapshot.SnapshotConfig.property.datacenterId">DatacenterId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/snapshot#datacenter_id Snapshot#datacenter_id}. |
+| <code><a href="#@cdktf/provider-ionoscloud.snapshot.SnapshotConfig.property.datacenterId">DatacenterId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/resources/snapshot#datacenter_id Snapshot#datacenter_id}. |
 | <code><a href="#@cdktf/provider-ionoscloud.snapshot.SnapshotConfig.property.name">Name</a></code> | <code>*string</code> | A name of that resource. |
-| <code><a href="#@cdktf/provider-ionoscloud.snapshot.SnapshotConfig.property.volumeId">VolumeId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/snapshot#volume_id Snapshot#volume_id}. |
-| <code><a href="#@cdktf/provider-ionoscloud.snapshot.SnapshotConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/snapshot#id Snapshot#id}. |
+| <code><a href="#@cdktf/provider-ionoscloud.snapshot.SnapshotConfig.property.volumeId">VolumeId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/resources/snapshot#volume_id Snapshot#volume_id}. |
+| <code><a href="#@cdktf/provider-ionoscloud.snapshot.SnapshotConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/resources/snapshot#id Snapshot#id}. |
 | <code><a href="#@cdktf/provider-ionoscloud.snapshot.SnapshotConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-ionoscloud.snapshot.SnapshotTimeouts">SnapshotTimeouts</a></code> | timeouts block. |
 
 ---
@@ -867,10 +867,10 @@ Connection interface{}
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-ionoscloud.snapshot.SnapshotConfig.property.count"></a>
 
 ```go
-Count *f64
+Count interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -932,7 +932,7 @@ DatacenterId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/snapshot#datacenter_id Snapshot#datacenter_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/resources/snapshot#datacenter_id Snapshot#datacenter_id}.
 
 ---
 
@@ -946,7 +946,7 @@ Name *string
 
 A name of that resource.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/snapshot#name Snapshot#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/resources/snapshot#name Snapshot#name}
 
 ---
 
@@ -958,7 +958,7 @@ VolumeId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/snapshot#volume_id Snapshot#volume_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/resources/snapshot#volume_id Snapshot#volume_id}.
 
 ---
 
@@ -970,7 +970,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/snapshot#id Snapshot#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/resources/snapshot#id Snapshot#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -987,7 +987,7 @@ Timeouts SnapshotTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/snapshot#timeouts Snapshot#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/resources/snapshot#timeouts Snapshot#timeouts}
 
 ---
 
@@ -996,7 +996,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionos
 #### Initializer <a name="Initializer" id="@cdktf/provider-ionoscloud.snapshot.SnapshotTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v6/snapshot"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/snapshot"
 
 &snapshot.SnapshotTimeouts {
 	Create: *string,
@@ -1010,10 +1010,10 @@ import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v6/snapshot"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-ionoscloud.snapshot.SnapshotTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/snapshot#create Snapshot#create}. |
-| <code><a href="#@cdktf/provider-ionoscloud.snapshot.SnapshotTimeouts.property.default">Default</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/snapshot#default Snapshot#default}. |
-| <code><a href="#@cdktf/provider-ionoscloud.snapshot.SnapshotTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/snapshot#delete Snapshot#delete}. |
-| <code><a href="#@cdktf/provider-ionoscloud.snapshot.SnapshotTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/snapshot#update Snapshot#update}. |
+| <code><a href="#@cdktf/provider-ionoscloud.snapshot.SnapshotTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/resources/snapshot#create Snapshot#create}. |
+| <code><a href="#@cdktf/provider-ionoscloud.snapshot.SnapshotTimeouts.property.default">Default</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/resources/snapshot#default Snapshot#default}. |
+| <code><a href="#@cdktf/provider-ionoscloud.snapshot.SnapshotTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/resources/snapshot#delete Snapshot#delete}. |
+| <code><a href="#@cdktf/provider-ionoscloud.snapshot.SnapshotTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/resources/snapshot#update Snapshot#update}. |
 
 ---
 
@@ -1025,7 +1025,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/snapshot#create Snapshot#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/resources/snapshot#create Snapshot#create}.
 
 ---
 
@@ -1037,7 +1037,7 @@ Default *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/snapshot#default Snapshot#default}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/resources/snapshot#default Snapshot#default}.
 
 ---
 
@@ -1049,7 +1049,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/snapshot#delete Snapshot#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/resources/snapshot#delete Snapshot#delete}.
 
 ---
 
@@ -1061,7 +1061,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/snapshot#update Snapshot#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/resources/snapshot#update Snapshot#update}.
 
 ---
 
@@ -1072,7 +1072,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionos
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.snapshot.SnapshotTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v6/snapshot"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/snapshot"
 
 snapshot.NewSnapshotTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SnapshotTimeoutsOutputReference
 ```

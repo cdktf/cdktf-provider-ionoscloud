@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/ionoscloud/d/nic
+// https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/data-sources/nic
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,71 +8,71 @@ import * as cdktf from 'cdktf';
 
 export interface DataIonoscloudNicConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/d/nic#datacenter_id DataIonoscloudNic#datacenter_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/data-sources/nic#datacenter_id DataIonoscloudNic#datacenter_id}
   */
   readonly datacenterId: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/d/nic#dhcp DataIonoscloudNic#dhcp}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/data-sources/nic#dhcp DataIonoscloudNic#dhcp}
   */
   readonly dhcp?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/d/nic#firewall_active DataIonoscloudNic#firewall_active}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/data-sources/nic#firewall_active DataIonoscloudNic#firewall_active}
   */
   readonly firewallActive?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/d/nic#firewall_type DataIonoscloudNic#firewall_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/data-sources/nic#firewall_type DataIonoscloudNic#firewall_type}
   */
   readonly firewallType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/d/nic#id DataIonoscloudNic#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/data-sources/nic#id DataIonoscloudNic#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/d/nic#ips DataIonoscloudNic#ips}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/data-sources/nic#ips DataIonoscloudNic#ips}
   */
   readonly ips?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/d/nic#lan DataIonoscloudNic#lan}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/data-sources/nic#lan DataIonoscloudNic#lan}
   */
   readonly lan?: number;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/d/nic#name DataIonoscloudNic#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/data-sources/nic#name DataIonoscloudNic#name}
   */
   readonly name?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/d/nic#server_id DataIonoscloudNic#server_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/data-sources/nic#server_id DataIonoscloudNic#server_id}
   */
   readonly serverId: string;
   /**
   * timeouts block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/d/nic#timeouts DataIonoscloudNic#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/data-sources/nic#timeouts DataIonoscloudNic#timeouts}
   */
   readonly timeouts?: DataIonoscloudNicTimeouts;
 }
 export interface DataIonoscloudNicTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/d/nic#create DataIonoscloudNic#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/data-sources/nic#create DataIonoscloudNic#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/d/nic#default DataIonoscloudNic#default}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/data-sources/nic#default DataIonoscloudNic#default}
   */
   readonly default?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/d/nic#delete DataIonoscloudNic#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/data-sources/nic#delete DataIonoscloudNic#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/d/nic#update DataIonoscloudNic#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/data-sources/nic#update DataIonoscloudNic#update}
   */
   readonly update?: string;
 }
 
-export function dataIonoscloudNicTimeoutsToTerraform(struct?: DataIonoscloudNicTimeoutsOutputReference | DataIonoscloudNicTimeouts | cdktf.IResolvable): any {
+export function dataIonoscloudNicTimeoutsToTerraform(struct?: DataIonoscloudNicTimeouts | cdktf.IResolvable): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -94,7 +94,7 @@ export class DataIonoscloudNicTimeoutsOutputReference extends cdktf.ComplexObjec
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
   public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
-    super(terraformResource, terraformAttribute, false, 0);
+    super(terraformResource, terraformAttribute, false);
   }
 
   public get internalValue(): DataIonoscloudNicTimeouts | cdktf.IResolvable | undefined {
@@ -211,7 +211,7 @@ export class DataIonoscloudNicTimeoutsOutputReference extends cdktf.ComplexObjec
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/ionoscloud/d/nic ionoscloud_nic}
+* Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/data-sources/nic ionoscloud_nic}
 */
 export class DataIonoscloudNic extends cdktf.TerraformDataSource {
 
@@ -225,7 +225,7 @@ export class DataIonoscloudNic extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/ionoscloud/d/nic ionoscloud_nic} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/data-sources/nic ionoscloud_nic} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

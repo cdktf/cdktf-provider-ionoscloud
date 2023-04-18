@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/ionoscloud/d/k8s_cluster
+// https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/data-sources/k8s_cluster
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,20 +8,20 @@ import * as cdktf from 'cdktf';
 
 export interface DataIonoscloudK8SClusterConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/d/k8s_cluster#id DataIonoscloudK8SCluster#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/data-sources/k8s_cluster#id DataIonoscloudK8SCluster#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/d/k8s_cluster#name DataIonoscloudK8SCluster#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/data-sources/k8s_cluster#name DataIonoscloudK8SCluster#name}
   */
   readonly name?: string;
   /**
   * timeouts block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/d/k8s_cluster#timeouts DataIonoscloudK8SCluster#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/data-sources/k8s_cluster#timeouts DataIonoscloudK8SCluster#timeouts}
   */
   readonly timeouts?: DataIonoscloudK8SClusterTimeouts;
 }
@@ -462,24 +462,24 @@ export class DataIonoscloudK8SClusterS3BucketsList extends cdktf.ComplexList {
 }
 export interface DataIonoscloudK8SClusterTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/d/k8s_cluster#create DataIonoscloudK8SCluster#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/data-sources/k8s_cluster#create DataIonoscloudK8SCluster#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/d/k8s_cluster#default DataIonoscloudK8SCluster#default}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/data-sources/k8s_cluster#default DataIonoscloudK8SCluster#default}
   */
   readonly default?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/d/k8s_cluster#delete DataIonoscloudK8SCluster#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/data-sources/k8s_cluster#delete DataIonoscloudK8SCluster#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/d/k8s_cluster#update DataIonoscloudK8SCluster#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/data-sources/k8s_cluster#update DataIonoscloudK8SCluster#update}
   */
   readonly update?: string;
 }
 
-export function dataIonoscloudK8SClusterTimeoutsToTerraform(struct?: DataIonoscloudK8SClusterTimeoutsOutputReference | DataIonoscloudK8SClusterTimeouts | cdktf.IResolvable): any {
+export function dataIonoscloudK8SClusterTimeoutsToTerraform(struct?: DataIonoscloudK8SClusterTimeouts | cdktf.IResolvable): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -501,7 +501,7 @@ export class DataIonoscloudK8SClusterTimeoutsOutputReference extends cdktf.Compl
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
   public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
-    super(terraformResource, terraformAttribute, false, 0);
+    super(terraformResource, terraformAttribute, false);
   }
 
   public get internalValue(): DataIonoscloudK8SClusterTimeouts | cdktf.IResolvable | undefined {
@@ -618,7 +618,7 @@ export class DataIonoscloudK8SClusterTimeoutsOutputReference extends cdktf.Compl
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/ionoscloud/d/k8s_cluster ionoscloud_k8s_cluster}
+* Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/data-sources/k8s_cluster ionoscloud_k8s_cluster}
 */
 export class DataIonoscloudK8SCluster extends cdktf.TerraformDataSource {
 
@@ -632,7 +632,7 @@ export class DataIonoscloudK8SCluster extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/ionoscloud/d/k8s_cluster ionoscloud_k8s_cluster} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/data-sources/k8s_cluster ionoscloud_k8s_cluster} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

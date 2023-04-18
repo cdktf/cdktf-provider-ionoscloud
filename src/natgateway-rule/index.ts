@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/ionoscloud/r/natgateway_rule
+// https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/resources/natgateway_rule
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,11 +8,11 @@ import * as cdktf from 'cdktf';
 
 export interface NatgatewayRuleConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/natgateway_rule#datacenter_id NatgatewayRule#datacenter_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/resources/natgateway_rule#datacenter_id NatgatewayRule#datacenter_id}
   */
   readonly datacenterId: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/natgateway_rule#id NatgatewayRule#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/resources/natgateway_rule#id NatgatewayRule#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -21,53 +21,53 @@ export interface NatgatewayRuleConfig extends cdktf.TerraformMetaArguments {
   /**
   * Name of the NAT gateway rule
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/natgateway_rule#name NatgatewayRule#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/resources/natgateway_rule#name NatgatewayRule#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/natgateway_rule#natgateway_id NatgatewayRule#natgateway_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/resources/natgateway_rule#natgateway_id NatgatewayRule#natgateway_id}
   */
   readonly natgatewayId: string;
   /**
   * Protocol of the NAT gateway rule. Defaults to ALL. If protocol is 'ICMP' then targetPortRange start and end cannot be set.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/natgateway_rule#protocol NatgatewayRule#protocol}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/resources/natgateway_rule#protocol NatgatewayRule#protocol}
   */
   readonly protocol?: string;
   /**
   * Public IP address of the NAT gateway rule. Specifies the address used for masking outgoing packets source address field. Should be one of the customer reserved IP address already configured on the NAT gateway resource
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/natgateway_rule#public_ip NatgatewayRule#public_ip}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/resources/natgateway_rule#public_ip NatgatewayRule#public_ip}
   */
   readonly publicIp: string;
   /**
   * Source subnet of the NAT gateway rule. For SNAT rules it specifies which packets this translation rule applies to based on the packets source IP address.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/natgateway_rule#source_subnet NatgatewayRule#source_subnet}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/resources/natgateway_rule#source_subnet NatgatewayRule#source_subnet}
   */
   readonly sourceSubnet: string;
   /**
   * Target or destination subnet of the NAT gateway rule. For SNAT rules it specifies which packets this translation rule applies to based on the packets destination IP address. If none is provided, rule will match any address.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/natgateway_rule#target_subnet NatgatewayRule#target_subnet}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/resources/natgateway_rule#target_subnet NatgatewayRule#target_subnet}
   */
   readonly targetSubnet?: string;
   /**
   * Type of the NAT gateway rule.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/natgateway_rule#type NatgatewayRule#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/resources/natgateway_rule#type NatgatewayRule#type}
   */
   readonly type?: string;
   /**
   * target_port_range block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/natgateway_rule#target_port_range NatgatewayRule#target_port_range}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/resources/natgateway_rule#target_port_range NatgatewayRule#target_port_range}
   */
   readonly targetPortRange?: NatgatewayRuleTargetPortRange;
   /**
   * timeouts block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/natgateway_rule#timeouts NatgatewayRule#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/resources/natgateway_rule#timeouts NatgatewayRule#timeouts}
   */
   readonly timeouts?: NatgatewayRuleTimeouts;
 }
@@ -75,13 +75,13 @@ export interface NatgatewayRuleTargetPortRange {
   /**
   * Target port range end associated with the NAT gateway rule.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/natgateway_rule#end NatgatewayRule#end}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/resources/natgateway_rule#end NatgatewayRule#end}
   */
   readonly end?: number;
   /**
   * Target port range start associated with the NAT gateway rule.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/natgateway_rule#start NatgatewayRule#start}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/resources/natgateway_rule#start NatgatewayRule#start}
   */
   readonly start?: number;
 }
@@ -169,24 +169,24 @@ export class NatgatewayRuleTargetPortRangeOutputReference extends cdktf.ComplexO
 }
 export interface NatgatewayRuleTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/natgateway_rule#create NatgatewayRule#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/resources/natgateway_rule#create NatgatewayRule#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/natgateway_rule#default NatgatewayRule#default}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/resources/natgateway_rule#default NatgatewayRule#default}
   */
   readonly default?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/natgateway_rule#delete NatgatewayRule#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/resources/natgateway_rule#delete NatgatewayRule#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/natgateway_rule#update NatgatewayRule#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/resources/natgateway_rule#update NatgatewayRule#update}
   */
   readonly update?: string;
 }
 
-export function natgatewayRuleTimeoutsToTerraform(struct?: NatgatewayRuleTimeoutsOutputReference | NatgatewayRuleTimeouts | cdktf.IResolvable): any {
+export function natgatewayRuleTimeoutsToTerraform(struct?: NatgatewayRuleTimeouts | cdktf.IResolvable): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -208,7 +208,7 @@ export class NatgatewayRuleTimeoutsOutputReference extends cdktf.ComplexObject {
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
   public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
-    super(terraformResource, terraformAttribute, false, 0);
+    super(terraformResource, terraformAttribute, false);
   }
 
   public get internalValue(): NatgatewayRuleTimeouts | cdktf.IResolvable | undefined {
@@ -325,7 +325,7 @@ export class NatgatewayRuleTimeoutsOutputReference extends cdktf.ComplexObject {
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/ionoscloud/r/natgateway_rule ionoscloud_natgateway_rule}
+* Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/resources/natgateway_rule ionoscloud_natgateway_rule}
 */
 export class NatgatewayRule extends cdktf.TerraformResource {
 
@@ -339,7 +339,7 @@ export class NatgatewayRule extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/ionoscloud/r/natgateway_rule ionoscloud_natgateway_rule} Resource
+  * Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/resources/natgateway_rule ionoscloud_natgateway_rule} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

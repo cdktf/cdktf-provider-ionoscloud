@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/ionoscloud/r/volume
+// https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/resources/volume
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,95 +8,95 @@ import * as cdktf from 'cdktf';
 
 export interface VolumeConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/volume#availability_zone Volume#availability_zone}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/resources/volume#availability_zone Volume#availability_zone}
   */
   readonly availabilityZone?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/volume#backup_unit_id Volume#backup_unit_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/resources/volume#backup_unit_id Volume#backup_unit_id}
   */
   readonly backupUnitId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/volume#bus Volume#bus}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/resources/volume#bus Volume#bus}
   */
   readonly bus?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/volume#datacenter_id Volume#datacenter_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/resources/volume#datacenter_id Volume#datacenter_id}
   */
   readonly datacenterId: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/volume#disk_type Volume#disk_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/resources/volume#disk_type Volume#disk_type}
   */
   readonly diskType: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/volume#id Volume#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/resources/volume#id Volume#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/volume#image_name Volume#image_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/resources/volume#image_name Volume#image_name}
   */
   readonly imageName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/volume#image_password Volume#image_password}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/resources/volume#image_password Volume#image_password}
   */
   readonly imagePassword?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/volume#licence_type Volume#licence_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/resources/volume#licence_type Volume#licence_type}
   */
   readonly licenceType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/volume#name Volume#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/resources/volume#name Volume#name}
   */
   readonly name?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/volume#server_id Volume#server_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/resources/volume#server_id Volume#server_id}
   */
   readonly serverId: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/volume#size Volume#size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/resources/volume#size Volume#size}
   */
   readonly size: number;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/volume#ssh_key_path Volume#ssh_key_path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/resources/volume#ssh_key_path Volume#ssh_key_path}
   */
   readonly sshKeyPath?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/volume#ssh_keys Volume#ssh_keys}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/resources/volume#ssh_keys Volume#ssh_keys}
   */
   readonly sshKeys?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/volume#user_data Volume#user_data}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/resources/volume#user_data Volume#user_data}
   */
   readonly userData?: string;
   /**
   * timeouts block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/volume#timeouts Volume#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/resources/volume#timeouts Volume#timeouts}
   */
   readonly timeouts?: VolumeTimeouts;
 }
 export interface VolumeTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/volume#create Volume#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/resources/volume#create Volume#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/volume#default Volume#default}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/resources/volume#default Volume#default}
   */
   readonly default?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/volume#delete Volume#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/resources/volume#delete Volume#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/volume#update Volume#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/resources/volume#update Volume#update}
   */
   readonly update?: string;
 }
 
-export function volumeTimeoutsToTerraform(struct?: VolumeTimeoutsOutputReference | VolumeTimeouts | cdktf.IResolvable): any {
+export function volumeTimeoutsToTerraform(struct?: VolumeTimeouts | cdktf.IResolvable): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -118,7 +118,7 @@ export class VolumeTimeoutsOutputReference extends cdktf.ComplexObject {
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
   public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
-    super(terraformResource, terraformAttribute, false, 0);
+    super(terraformResource, terraformAttribute, false);
   }
 
   public get internalValue(): VolumeTimeouts | cdktf.IResolvable | undefined {
@@ -235,7 +235,7 @@ export class VolumeTimeoutsOutputReference extends cdktf.ComplexObject {
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/ionoscloud/r/volume ionoscloud_volume}
+* Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/resources/volume ionoscloud_volume}
 */
 export class Volume extends cdktf.TerraformResource {
 
@@ -249,7 +249,7 @@ export class Volume extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/ionoscloud/r/volume ionoscloud_volume} Resource
+  * Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/resources/volume ionoscloud_volume} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

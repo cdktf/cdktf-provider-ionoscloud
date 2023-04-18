@@ -1,6 +1,6 @@
 # `data_ionoscloud_image`
 
-Refer to the Terraform Registory for docs: [`data_ionoscloud_image`](https://www.terraform.io/docs/providers/ionoscloud/d/image).
+Refer to the Terraform Registory for docs: [`data_ionoscloud_image`](https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/data-sources/image).
 
 # `dataIonoscloudImage` Submodule <a name="`dataIonoscloudImage` Submodule" id="@cdktf/provider-ionoscloud.dataIonoscloudImage"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`data_ionoscloud_image`](https://www
 
 ### DataIonoscloudImage <a name="DataIonoscloudImage" id="@cdktf/provider-ionoscloud.dataIonoscloudImage.DataIonoscloudImage"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/ionoscloud/d/image ionoscloud_image}.
+Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/data-sources/image ionoscloud_image}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.dataIonoscloudImage.DataIonoscloudImage.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v6/dataionoscloudimage"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/dataionoscloudimage"
 
 dataionoscloudimage.NewDataIonoscloudImage(scope Construct, id *string, config DataIonoscloudImageConfig) DataIonoscloudImage
 ```
@@ -346,7 +346,7 @@ func ResetVersion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-ionoscloud.dataIonoscloudImage.DataIonoscloudImage.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v6/dataionoscloudimage"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/dataionoscloudimage"
 
 dataionoscloudimage.DataIonoscloudImage_IsConstruct(x interface{}) *bool
 ```
@@ -378,7 +378,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-ionoscloud.dataIonoscloudImage.DataIonoscloudImage.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v6/dataionoscloudimage"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/dataionoscloudimage"
 
 dataionoscloudimage.DataIonoscloudImage_IsTerraformElement(x interface{}) *bool
 ```
@@ -392,7 +392,7 @@ dataionoscloudimage.DataIonoscloudImage_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-ionoscloud.dataIonoscloudImage.DataIonoscloudImage.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v6/dataionoscloudimage"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/dataionoscloudimage"
 
 dataionoscloudimage.DataIonoscloudImage_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -414,7 +414,7 @@ dataionoscloudimage.DataIonoscloudImage_IsTerraformDataSource(x interface{}) *bo
 | <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudImage.DataIonoscloudImage.property.terraformMetaArguments">TerraformMetaArguments</a></code> | <code>*map[string]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudImage.DataIonoscloudImage.property.terraformResourceType">TerraformResourceType</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudImage.DataIonoscloudImage.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudImage.DataIonoscloudImage.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudImage.DataIonoscloudImage.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudImage.DataIonoscloudImage.property.dependsOn">DependsOn</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudImage.DataIonoscloudImage.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudImage.DataIonoscloudImage.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -529,10 +529,10 @@ func TerraformGeneratorMetadata() TerraformProviderGeneratorMetadata
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-ionoscloud.dataIonoscloudImage.DataIonoscloudImage.property.count"></a>
 
 ```go
-func Count() *f64
+func Count() interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -921,11 +921,11 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-ionoscloud.dataIonoscloudImage.DataIonoscloudImageConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v6/dataionoscloudimage"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/dataionoscloudimage"
 
 &dataionoscloudimage.DataIonoscloudImageConfig {
 	Connection: interface{},
-	Count: *f64,
+	Count: interface{},
 	DependsOn: *[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable,
 	ForEach: github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator,
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
@@ -937,7 +937,7 @@ import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v6/dataionosclo
 	ImageAlias: *string,
 	Location: *string,
 	Name: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v6.dataIonoscloudImage.DataIonoscloudImageTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud.dataIonoscloudImage.DataIonoscloudImageTimeouts,
 	Type: *string,
 	Version: *string,
 }
@@ -948,21 +948,21 @@ import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v6/dataionosclo
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudImage.DataIonoscloudImageConfig.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudImage.DataIonoscloudImageConfig.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudImage.DataIonoscloudImageConfig.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudImage.DataIonoscloudImageConfig.property.dependsOn">DependsOn</a></code> | <code>*[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudImage.DataIonoscloudImageConfig.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudImage.DataIonoscloudImageConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudImage.DataIonoscloudImageConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudImage.DataIonoscloudImageConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudImage.DataIonoscloudImageConfig.property.cloudInit">CloudInit</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/d/image#cloud_init DataIonoscloudImage#cloud_init}. |
-| <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudImage.DataIonoscloudImageConfig.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/d/image#description DataIonoscloudImage#description}. |
-| <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudImage.DataIonoscloudImageConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/d/image#id DataIonoscloudImage#id}. |
-| <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudImage.DataIonoscloudImageConfig.property.imageAlias">ImageAlias</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/d/image#image_alias DataIonoscloudImage#image_alias}. |
-| <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudImage.DataIonoscloudImageConfig.property.location">Location</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/d/image#location DataIonoscloudImage#location}. |
-| <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudImage.DataIonoscloudImageConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/d/image#name DataIonoscloudImage#name}. |
+| <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudImage.DataIonoscloudImageConfig.property.cloudInit">CloudInit</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/data-sources/image#cloud_init DataIonoscloudImage#cloud_init}. |
+| <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudImage.DataIonoscloudImageConfig.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/data-sources/image#description DataIonoscloudImage#description}. |
+| <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudImage.DataIonoscloudImageConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/data-sources/image#id DataIonoscloudImage#id}. |
+| <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudImage.DataIonoscloudImageConfig.property.imageAlias">ImageAlias</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/data-sources/image#image_alias DataIonoscloudImage#image_alias}. |
+| <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudImage.DataIonoscloudImageConfig.property.location">Location</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/data-sources/image#location DataIonoscloudImage#location}. |
+| <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudImage.DataIonoscloudImageConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/data-sources/image#name DataIonoscloudImage#name}. |
 | <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudImage.DataIonoscloudImageConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudImage.DataIonoscloudImageTimeouts">DataIonoscloudImageTimeouts</a></code> | timeouts block. |
-| <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudImage.DataIonoscloudImageConfig.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/d/image#type DataIonoscloudImage#type}. |
-| <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudImage.DataIonoscloudImageConfig.property.version">Version</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/d/image#version DataIonoscloudImage#version}. |
+| <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudImage.DataIonoscloudImageConfig.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/data-sources/image#type DataIonoscloudImage#type}. |
+| <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudImage.DataIonoscloudImageConfig.property.version">Version</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/data-sources/image#version DataIonoscloudImage#version}. |
 
 ---
 
@@ -979,10 +979,10 @@ Connection interface{}
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-ionoscloud.dataIonoscloudImage.DataIonoscloudImageConfig.property.count"></a>
 
 ```go
-Count *f64
+Count interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -1044,7 +1044,7 @@ CloudInit *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/d/image#cloud_init DataIonoscloudImage#cloud_init}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/data-sources/image#cloud_init DataIonoscloudImage#cloud_init}.
 
 ---
 
@@ -1056,7 +1056,7 @@ Description *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/d/image#description DataIonoscloudImage#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/data-sources/image#description DataIonoscloudImage#description}.
 
 ---
 
@@ -1068,7 +1068,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/d/image#id DataIonoscloudImage#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/data-sources/image#id DataIonoscloudImage#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1083,7 +1083,7 @@ ImageAlias *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/d/image#image_alias DataIonoscloudImage#image_alias}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/data-sources/image#image_alias DataIonoscloudImage#image_alias}.
 
 ---
 
@@ -1095,7 +1095,7 @@ Location *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/d/image#location DataIonoscloudImage#location}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/data-sources/image#location DataIonoscloudImage#location}.
 
 ---
 
@@ -1107,7 +1107,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/d/image#name DataIonoscloudImage#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/data-sources/image#name DataIonoscloudImage#name}.
 
 ---
 
@@ -1121,7 +1121,7 @@ Timeouts DataIonoscloudImageTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/d/image#timeouts DataIonoscloudImage#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/data-sources/image#timeouts DataIonoscloudImage#timeouts}
 
 ---
 
@@ -1133,7 +1133,7 @@ Type *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/d/image#type DataIonoscloudImage#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/data-sources/image#type DataIonoscloudImage#type}.
 
 ---
 
@@ -1145,7 +1145,7 @@ Version *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/d/image#version DataIonoscloudImage#version}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/data-sources/image#version DataIonoscloudImage#version}.
 
 ---
 
@@ -1154,7 +1154,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionos
 #### Initializer <a name="Initializer" id="@cdktf/provider-ionoscloud.dataIonoscloudImage.DataIonoscloudImageTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v6/dataionoscloudimage"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/dataionoscloudimage"
 
 &dataionoscloudimage.DataIonoscloudImageTimeouts {
 	Create: *string,
@@ -1168,10 +1168,10 @@ import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v6/dataionosclo
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudImage.DataIonoscloudImageTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/d/image#create DataIonoscloudImage#create}. |
-| <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudImage.DataIonoscloudImageTimeouts.property.default">Default</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/d/image#default DataIonoscloudImage#default}. |
-| <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudImage.DataIonoscloudImageTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/d/image#delete DataIonoscloudImage#delete}. |
-| <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudImage.DataIonoscloudImageTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/d/image#update DataIonoscloudImage#update}. |
+| <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudImage.DataIonoscloudImageTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/data-sources/image#create DataIonoscloudImage#create}. |
+| <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudImage.DataIonoscloudImageTimeouts.property.default">Default</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/data-sources/image#default DataIonoscloudImage#default}. |
+| <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudImage.DataIonoscloudImageTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/data-sources/image#delete DataIonoscloudImage#delete}. |
+| <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudImage.DataIonoscloudImageTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/data-sources/image#update DataIonoscloudImage#update}. |
 
 ---
 
@@ -1183,7 +1183,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/d/image#create DataIonoscloudImage#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/data-sources/image#create DataIonoscloudImage#create}.
 
 ---
 
@@ -1195,7 +1195,7 @@ Default *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/d/image#default DataIonoscloudImage#default}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/data-sources/image#default DataIonoscloudImage#default}.
 
 ---
 
@@ -1207,7 +1207,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/d/image#delete DataIonoscloudImage#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/data-sources/image#delete DataIonoscloudImage#delete}.
 
 ---
 
@@ -1219,7 +1219,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/d/image#update DataIonoscloudImage#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/data-sources/image#update DataIonoscloudImage#update}.
 
 ---
 
@@ -1230,7 +1230,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionos
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.dataIonoscloudImage.DataIonoscloudImageTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v6/dataionoscloudimage"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/dataionoscloudimage"
 
 dataionoscloudimage.NewDataIonoscloudImageTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataIonoscloudImageTimeoutsOutputReference
 ```

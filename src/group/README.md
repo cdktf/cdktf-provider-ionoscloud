@@ -1,3 +1,3 @@
 # `ionoscloud_group`
 
-Refer to the Terraform Registory for docs: [`ionoscloud_group`](https://www.terraform.io/docs/providers/ionoscloud/r/group).
+Refer to the Terraform Registory for docs: [`ionoscloud_group`](https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/resources/group).

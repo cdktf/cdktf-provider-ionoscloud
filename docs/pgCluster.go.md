@@ -1,6 +1,6 @@
 # `ionoscloud_pg_cluster`
 
-Refer to the Terraform Registory for docs: [`ionoscloud_pg_cluster`](https://www.terraform.io/docs/providers/ionoscloud/r/pg_cluster).
+Refer to the Terraform Registory for docs: [`ionoscloud_pg_cluster`](https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/resources/pg_cluster).
 
 # `pgCluster` Submodule <a name="`pgCluster` Submodule" id="@cdktf/provider-ionoscloud.pgCluster"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`ionoscloud_pg_cluster`](https://www
 
 ### PgCluster <a name="PgCluster" id="@cdktf/provider-ionoscloud.pgCluster.PgCluster"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/ionoscloud/r/pg_cluster ionoscloud_pg_cluster}.
+Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/resources/pg_cluster ionoscloud_pg_cluster}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.pgCluster.PgCluster.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v6/pgcluster"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/pgcluster"
 
 pgcluster.NewPgCluster(scope Construct, id *string, config PgClusterConfig) PgCluster
 ```
@@ -377,7 +377,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-ionoscloud.pgCluster.PgCluster.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v6/pgcluster"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/pgcluster"
 
 pgcluster.PgCluster_IsConstruct(x interface{}) *bool
 ```
@@ -409,7 +409,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-ionoscloud.pgCluster.PgCluster.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v6/pgcluster"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/pgcluster"
 
 pgcluster.PgCluster_IsTerraformElement(x interface{}) *bool
 ```
@@ -423,7 +423,7 @@ pgcluster.PgCluster_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-ionoscloud.pgCluster.PgCluster.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v6/pgcluster"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/pgcluster"
 
 pgcluster.PgCluster_IsTerraformResource(x interface{}) *bool
 ```
@@ -446,7 +446,7 @@ pgcluster.PgCluster_IsTerraformResource(x interface{}) *bool
 | <code><a href="#@cdktf/provider-ionoscloud.pgCluster.PgCluster.property.terraformResourceType">TerraformResourceType</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.pgCluster.PgCluster.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.pgCluster.PgCluster.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-ionoscloud.pgCluster.PgCluster.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.pgCluster.PgCluster.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.pgCluster.PgCluster.property.dependsOn">DependsOn</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.pgCluster.PgCluster.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.pgCluster.PgCluster.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -573,10 +573,10 @@ func Connection() interface{}
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-ionoscloud.pgCluster.PgCluster.property.count"></a>
 
 ```go
-func Count() *f64
+func Count() interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -985,18 +985,18 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-ionoscloud.pgCluster.PgClusterConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v6/pgcluster"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/pgcluster"
 
 &pgcluster.PgClusterConfig {
 	Connection: interface{},
-	Count: *f64,
+	Count: interface{},
 	DependsOn: *[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable,
 	ForEach: github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator,
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
 	Cores: *f64,
-	Credentials: github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v6.pgCluster.PgClusterCredentials,
+	Credentials: github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud.pgCluster.PgClusterCredentials,
 	DisplayName: *string,
 	Instances: *f64,
 	Location: *string,
@@ -1006,11 +1006,11 @@ import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v6/pgcluster"
 	StorageType: *string,
 	SynchronizationMode: *string,
 	BackupLocation: *string,
-	Connections: github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v6.pgCluster.PgClusterConnections,
-	FromBackup: github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v6.pgCluster.PgClusterFromBackup,
+	Connections: github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud.pgCluster.PgClusterConnections,
+	FromBackup: github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud.pgCluster.PgClusterFromBackup,
 	Id: *string,
-	MaintenanceWindow: github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v6.pgCluster.PgClusterMaintenanceWindow,
-	Timeouts: github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v6.pgCluster.PgClusterTimeouts,
+	MaintenanceWindow: github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud.pgCluster.PgClusterMaintenanceWindow,
+	Timeouts: github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud.pgCluster.PgClusterTimeouts,
 }
 ```
 
@@ -1019,7 +1019,7 @@ import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v6/pgcluster"
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-ionoscloud.pgCluster.PgClusterConfig.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-ionoscloud.pgCluster.PgClusterConfig.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.pgCluster.PgClusterConfig.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.pgCluster.PgClusterConfig.property.dependsOn">DependsOn</a></code> | <code>*[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.pgCluster.PgClusterConfig.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.pgCluster.PgClusterConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -1038,7 +1038,7 @@ import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v6/pgcluster"
 | <code><a href="#@cdktf/provider-ionoscloud.pgCluster.PgClusterConfig.property.backupLocation">BackupLocation</a></code> | <code>*string</code> | The S3 location where the backups will be stored. |
 | <code><a href="#@cdktf/provider-ionoscloud.pgCluster.PgClusterConfig.property.connections">Connections</a></code> | <code><a href="#@cdktf/provider-ionoscloud.pgCluster.PgClusterConnections">PgClusterConnections</a></code> | connections block. |
 | <code><a href="#@cdktf/provider-ionoscloud.pgCluster.PgClusterConfig.property.fromBackup">FromBackup</a></code> | <code><a href="#@cdktf/provider-ionoscloud.pgCluster.PgClusterFromBackup">PgClusterFromBackup</a></code> | from_backup block. |
-| <code><a href="#@cdktf/provider-ionoscloud.pgCluster.PgClusterConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/pg_cluster#id PgCluster#id}. |
+| <code><a href="#@cdktf/provider-ionoscloud.pgCluster.PgClusterConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/resources/pg_cluster#id PgCluster#id}. |
 | <code><a href="#@cdktf/provider-ionoscloud.pgCluster.PgClusterConfig.property.maintenanceWindow">MaintenanceWindow</a></code> | <code><a href="#@cdktf/provider-ionoscloud.pgCluster.PgClusterMaintenanceWindow">PgClusterMaintenanceWindow</a></code> | maintenance_window block. |
 | <code><a href="#@cdktf/provider-ionoscloud.pgCluster.PgClusterConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-ionoscloud.pgCluster.PgClusterTimeouts">PgClusterTimeouts</a></code> | timeouts block. |
 
@@ -1057,10 +1057,10 @@ Connection interface{}
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-ionoscloud.pgCluster.PgClusterConfig.property.count"></a>
 
 ```go
-Count *f64
+Count interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -1124,7 +1124,7 @@ Cores *f64
 
 The number of CPU cores per replica.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/pg_cluster#cores PgCluster#cores}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/resources/pg_cluster#cores PgCluster#cores}
 
 ---
 
@@ -1138,7 +1138,7 @@ Credentials PgClusterCredentials
 
 credentials block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/pg_cluster#credentials PgCluster#credentials}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/resources/pg_cluster#credentials PgCluster#credentials}
 
 ---
 
@@ -1152,7 +1152,7 @@ DisplayName *string
 
 The friendly name of your cluster.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/pg_cluster#display_name PgCluster#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/resources/pg_cluster#display_name PgCluster#display_name}
 
 ---
 
@@ -1166,7 +1166,7 @@ Instances *f64
 
 The total number of instances in the cluster (one master and n-1 standbys).
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/pg_cluster#instances PgCluster#instances}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/resources/pg_cluster#instances PgCluster#instances}
 
 ---
 
@@ -1182,7 +1182,7 @@ The physical location where the cluster will be created.
 
 This will be where all of your instances live. Property cannot be modified after datacenter creation (disallowed in update requests)
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/pg_cluster#location PgCluster#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/resources/pg_cluster#location PgCluster#location}
 
 ---
 
@@ -1196,7 +1196,7 @@ PostgresVersion *string
 
 The PostgreSQL version of your cluster.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/pg_cluster#postgres_version PgCluster#postgres_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/resources/pg_cluster#postgres_version PgCluster#postgres_version}
 
 ---
 
@@ -1210,7 +1210,7 @@ Ram *f64
 
 The amount of memory per instance in megabytes. Has to be a multiple of 1024.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/pg_cluster#ram PgCluster#ram}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/resources/pg_cluster#ram PgCluster#ram}
 
 ---
 
@@ -1224,7 +1224,7 @@ StorageSize *f64
 
 The amount of storage per instance in megabytes. Has to be a multiple of 2048.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/pg_cluster#storage_size PgCluster#storage_size}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/resources/pg_cluster#storage_size PgCluster#storage_size}
 
 ---
 
@@ -1238,7 +1238,7 @@ StorageType *string
 
 The storage type used in your cluster.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/pg_cluster#storage_type PgCluster#storage_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/resources/pg_cluster#storage_type PgCluster#storage_type}
 
 ---
 
@@ -1252,7 +1252,7 @@ SynchronizationMode *string
 
 Represents different modes of replication.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/pg_cluster#synchronization_mode PgCluster#synchronization_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/resources/pg_cluster#synchronization_mode PgCluster#synchronization_mode}
 
 ---
 
@@ -1266,7 +1266,7 @@ BackupLocation *string
 
 The S3 location where the backups will be stored.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/pg_cluster#backup_location PgCluster#backup_location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/resources/pg_cluster#backup_location PgCluster#backup_location}
 
 ---
 
@@ -1280,7 +1280,7 @@ Connections PgClusterConnections
 
 connections block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/pg_cluster#connections PgCluster#connections}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/resources/pg_cluster#connections PgCluster#connections}
 
 ---
 
@@ -1294,7 +1294,7 @@ FromBackup PgClusterFromBackup
 
 from_backup block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/pg_cluster#from_backup PgCluster#from_backup}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/resources/pg_cluster#from_backup PgCluster#from_backup}
 
 ---
 
@@ -1306,7 +1306,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/pg_cluster#id PgCluster#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/resources/pg_cluster#id PgCluster#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1323,7 +1323,7 @@ MaintenanceWindow PgClusterMaintenanceWindow
 
 maintenance_window block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/pg_cluster#maintenance_window PgCluster#maintenance_window}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/resources/pg_cluster#maintenance_window PgCluster#maintenance_window}
 
 ---
 
@@ -1337,7 +1337,7 @@ Timeouts PgClusterTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/pg_cluster#timeouts PgCluster#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/resources/pg_cluster#timeouts PgCluster#timeouts}
 
 ---
 
@@ -1346,7 +1346,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionos
 #### Initializer <a name="Initializer" id="@cdktf/provider-ionoscloud.pgCluster.PgClusterConnections.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v6/pgcluster"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/pgcluster"
 
 &pgcluster.PgClusterConnections {
 	Cidr: *string,
@@ -1380,7 +1380,7 @@ Note the following unavailable IP ranges:
 10.233.0.0/18
 10.233.114.0/24
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/pg_cluster#cidr PgCluster#cidr}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/resources/pg_cluster#cidr PgCluster#cidr}
 
 ---
 
@@ -1394,7 +1394,7 @@ DatacenterId *string
 
 The datacenter to connect your cluster to.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/pg_cluster#datacenter_id PgCluster#datacenter_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/resources/pg_cluster#datacenter_id PgCluster#datacenter_id}
 
 ---
 
@@ -1408,7 +1408,7 @@ LanId *string
 
 The LAN to connect your cluster to.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/pg_cluster#lan_id PgCluster#lan_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/resources/pg_cluster#lan_id PgCluster#lan_id}
 
 ---
 
@@ -1417,7 +1417,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionos
 #### Initializer <a name="Initializer" id="@cdktf/provider-ionoscloud.pgCluster.PgClusterCredentials.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v6/pgcluster"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/pgcluster"
 
 &pgcluster.PgClusterCredentials {
 	Password: *string,
@@ -1429,7 +1429,7 @@ import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v6/pgcluster"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-ionoscloud.pgCluster.PgClusterCredentials.property.password">Password</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/pg_cluster#password PgCluster#password}. |
+| <code><a href="#@cdktf/provider-ionoscloud.pgCluster.PgClusterCredentials.property.password">Password</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/resources/pg_cluster#password PgCluster#password}. |
 | <code><a href="#@cdktf/provider-ionoscloud.pgCluster.PgClusterCredentials.property.username">Username</a></code> | <code>*string</code> | the username for the initial postgres user. some system usernames are restricted (e.g. "postgres", "admin", "standby"). |
 
 ---
@@ -1442,7 +1442,7 @@ Password *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/pg_cluster#password PgCluster#password}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/resources/pg_cluster#password PgCluster#password}.
 
 ---
 
@@ -1456,7 +1456,7 @@ Username *string
 
 the username for the initial postgres user. some system usernames are restricted (e.g. "postgres", "admin", "standby").
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/pg_cluster#username PgCluster#username}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/resources/pg_cluster#username PgCluster#username}
 
 ---
 
@@ -1465,7 +1465,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionos
 #### Initializer <a name="Initializer" id="@cdktf/provider-ionoscloud.pgCluster.PgClusterFromBackup.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v6/pgcluster"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/pgcluster"
 
 &pgcluster.PgClusterFromBackup {
 	BackupId: *string,
@@ -1492,7 +1492,7 @@ BackupId *string
 
 The unique ID of the backup you want to restore.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/pg_cluster#backup_id PgCluster#backup_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/resources/pg_cluster#backup_id PgCluster#backup_id}
 
 ---
 
@@ -1508,7 +1508,7 @@ If this value is supplied as ISO 8601 timestamp, the backup will be replayed up 
 
 If empty, the backup will be applied completely.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/pg_cluster#recovery_target_time PgCluster#recovery_target_time}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/resources/pg_cluster#recovery_target_time PgCluster#recovery_target_time}
 
 ---
 
@@ -1517,7 +1517,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionos
 #### Initializer <a name="Initializer" id="@cdktf/provider-ionoscloud.pgCluster.PgClusterMaintenanceWindow.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v6/pgcluster"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/pgcluster"
 
 &pgcluster.PgClusterMaintenanceWindow {
 	DayOfTheWeek: *string,
@@ -1529,8 +1529,8 @@ import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v6/pgcluster"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-ionoscloud.pgCluster.PgClusterMaintenanceWindow.property.dayOfTheWeek">DayOfTheWeek</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/pg_cluster#day_of_the_week PgCluster#day_of_the_week}. |
-| <code><a href="#@cdktf/provider-ionoscloud.pgCluster.PgClusterMaintenanceWindow.property.time">Time</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/pg_cluster#time PgCluster#time}. |
+| <code><a href="#@cdktf/provider-ionoscloud.pgCluster.PgClusterMaintenanceWindow.property.dayOfTheWeek">DayOfTheWeek</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/resources/pg_cluster#day_of_the_week PgCluster#day_of_the_week}. |
+| <code><a href="#@cdktf/provider-ionoscloud.pgCluster.PgClusterMaintenanceWindow.property.time">Time</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/resources/pg_cluster#time PgCluster#time}. |
 
 ---
 
@@ -1542,7 +1542,7 @@ DayOfTheWeek *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/pg_cluster#day_of_the_week PgCluster#day_of_the_week}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/resources/pg_cluster#day_of_the_week PgCluster#day_of_the_week}.
 
 ---
 
@@ -1554,7 +1554,7 @@ Time *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/pg_cluster#time PgCluster#time}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/resources/pg_cluster#time PgCluster#time}.
 
 ---
 
@@ -1563,7 +1563,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionos
 #### Initializer <a name="Initializer" id="@cdktf/provider-ionoscloud.pgCluster.PgClusterTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v6/pgcluster"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/pgcluster"
 
 &pgcluster.PgClusterTimeouts {
 	Create: *string,
@@ -1577,10 +1577,10 @@ import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v6/pgcluster"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-ionoscloud.pgCluster.PgClusterTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/pg_cluster#create PgCluster#create}. |
-| <code><a href="#@cdktf/provider-ionoscloud.pgCluster.PgClusterTimeouts.property.default">Default</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/pg_cluster#default PgCluster#default}. |
-| <code><a href="#@cdktf/provider-ionoscloud.pgCluster.PgClusterTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/pg_cluster#delete PgCluster#delete}. |
-| <code><a href="#@cdktf/provider-ionoscloud.pgCluster.PgClusterTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/pg_cluster#update PgCluster#update}. |
+| <code><a href="#@cdktf/provider-ionoscloud.pgCluster.PgClusterTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/resources/pg_cluster#create PgCluster#create}. |
+| <code><a href="#@cdktf/provider-ionoscloud.pgCluster.PgClusterTimeouts.property.default">Default</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/resources/pg_cluster#default PgCluster#default}. |
+| <code><a href="#@cdktf/provider-ionoscloud.pgCluster.PgClusterTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/resources/pg_cluster#delete PgCluster#delete}. |
+| <code><a href="#@cdktf/provider-ionoscloud.pgCluster.PgClusterTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/resources/pg_cluster#update PgCluster#update}. |
 
 ---
 
@@ -1592,7 +1592,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/pg_cluster#create PgCluster#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/resources/pg_cluster#create PgCluster#create}.
 
 ---
 
@@ -1604,7 +1604,7 @@ Default *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/pg_cluster#default PgCluster#default}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/resources/pg_cluster#default PgCluster#default}.
 
 ---
 
@@ -1616,7 +1616,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/pg_cluster#delete PgCluster#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/resources/pg_cluster#delete PgCluster#delete}.
 
 ---
 
@@ -1628,7 +1628,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/pg_cluster#update PgCluster#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/resources/pg_cluster#update PgCluster#update}.
 
 ---
 
@@ -1639,7 +1639,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionos
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.pgCluster.PgClusterConnectionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v6/pgcluster"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/pgcluster"
 
 pgcluster.NewPgClusterConnectionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PgClusterConnectionsOutputReference
 ```
@@ -1954,7 +1954,7 @@ func InternalValue() PgClusterConnections
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.pgCluster.PgClusterCredentialsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v6/pgcluster"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/pgcluster"
 
 pgcluster.NewPgClusterCredentialsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PgClusterCredentialsOutputReference
 ```
@@ -2247,7 +2247,7 @@ func InternalValue() PgClusterCredentials
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.pgCluster.PgClusterFromBackupOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v6/pgcluster"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/pgcluster"
 
 pgcluster.NewPgClusterFromBackupOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PgClusterFromBackupOutputReference
 ```
@@ -2547,7 +2547,7 @@ func InternalValue() PgClusterFromBackup
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.pgCluster.PgClusterMaintenanceWindowOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v6/pgcluster"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/pgcluster"
 
 pgcluster.NewPgClusterMaintenanceWindowOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PgClusterMaintenanceWindowOutputReference
 ```
@@ -2840,7 +2840,7 @@ func InternalValue() PgClusterMaintenanceWindow
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.pgCluster.PgClusterTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v6/pgcluster"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/pgcluster"
 
 pgcluster.NewPgClusterTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PgClusterTimeoutsOutputReference
 ```

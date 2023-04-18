@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/ionoscloud/d/s3_key
+// https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/data-sources/s3_key
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,13 +10,13 @@ export interface DataIonoscloudS3KeyConfig extends cdktf.TerraformMetaArguments 
   /**
   * Whether this key should be active or not.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/d/s3_key#active DataIonoscloudS3Key#active}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/data-sources/s3_key#active DataIonoscloudS3Key#active}
   */
   readonly active?: boolean | cdktf.IResolvable;
   /**
   * Id of the s3 key.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/d/s3_key#id DataIonoscloudS3Key#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/data-sources/s3_key#id DataIonoscloudS3Key#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -25,36 +25,36 @@ export interface DataIonoscloudS3KeyConfig extends cdktf.TerraformMetaArguments 
   /**
   * The ID of the user that owns the key.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/d/s3_key#user_id DataIonoscloudS3Key#user_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/data-sources/s3_key#user_id DataIonoscloudS3Key#user_id}
   */
   readonly userId: string;
   /**
   * timeouts block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/d/s3_key#timeouts DataIonoscloudS3Key#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/data-sources/s3_key#timeouts DataIonoscloudS3Key#timeouts}
   */
   readonly timeouts?: DataIonoscloudS3KeyTimeouts;
 }
 export interface DataIonoscloudS3KeyTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/d/s3_key#create DataIonoscloudS3Key#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/data-sources/s3_key#create DataIonoscloudS3Key#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/d/s3_key#default DataIonoscloudS3Key#default}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/data-sources/s3_key#default DataIonoscloudS3Key#default}
   */
   readonly default?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/d/s3_key#delete DataIonoscloudS3Key#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/data-sources/s3_key#delete DataIonoscloudS3Key#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/d/s3_key#update DataIonoscloudS3Key#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/data-sources/s3_key#update DataIonoscloudS3Key#update}
   */
   readonly update?: string;
 }
 
-export function dataIonoscloudS3KeyTimeoutsToTerraform(struct?: DataIonoscloudS3KeyTimeoutsOutputReference | DataIonoscloudS3KeyTimeouts | cdktf.IResolvable): any {
+export function dataIonoscloudS3KeyTimeoutsToTerraform(struct?: DataIonoscloudS3KeyTimeouts | cdktf.IResolvable): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -76,7 +76,7 @@ export class DataIonoscloudS3KeyTimeoutsOutputReference extends cdktf.ComplexObj
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
   public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
-    super(terraformResource, terraformAttribute, false, 0);
+    super(terraformResource, terraformAttribute, false);
   }
 
   public get internalValue(): DataIonoscloudS3KeyTimeouts | cdktf.IResolvable | undefined {
@@ -193,7 +193,7 @@ export class DataIonoscloudS3KeyTimeoutsOutputReference extends cdktf.ComplexObj
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/ionoscloud/d/s3_key ionoscloud_s3_key}
+* Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/data-sources/s3_key ionoscloud_s3_key}
 */
 export class DataIonoscloudS3Key extends cdktf.TerraformDataSource {
 
@@ -207,7 +207,7 @@ export class DataIonoscloudS3Key extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/ionoscloud/d/s3_key ionoscloud_s3_key} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/data-sources/s3_key ionoscloud_s3_key} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

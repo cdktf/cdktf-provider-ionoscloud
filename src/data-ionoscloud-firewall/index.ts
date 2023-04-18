@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/ionoscloud/d/firewall
+// https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/data-sources/firewall
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,55 +8,55 @@ import * as cdktf from 'cdktf';
 
 export interface DataIonoscloudFirewallConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/d/firewall#datacenter_id DataIonoscloudFirewall#datacenter_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/data-sources/firewall#datacenter_id DataIonoscloudFirewall#datacenter_id}
   */
   readonly datacenterId: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/d/firewall#id DataIonoscloudFirewall#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/data-sources/firewall#id DataIonoscloudFirewall#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/d/firewall#name DataIonoscloudFirewall#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/data-sources/firewall#name DataIonoscloudFirewall#name}
   */
   readonly name?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/d/firewall#nic_id DataIonoscloudFirewall#nic_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/data-sources/firewall#nic_id DataIonoscloudFirewall#nic_id}
   */
   readonly nicId: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/d/firewall#server_id DataIonoscloudFirewall#server_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/data-sources/firewall#server_id DataIonoscloudFirewall#server_id}
   */
   readonly serverId: string;
   /**
   * timeouts block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/d/firewall#timeouts DataIonoscloudFirewall#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/data-sources/firewall#timeouts DataIonoscloudFirewall#timeouts}
   */
   readonly timeouts?: DataIonoscloudFirewallTimeouts;
 }
 export interface DataIonoscloudFirewallTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/d/firewall#create DataIonoscloudFirewall#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/data-sources/firewall#create DataIonoscloudFirewall#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/d/firewall#default DataIonoscloudFirewall#default}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/data-sources/firewall#default DataIonoscloudFirewall#default}
   */
   readonly default?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/d/firewall#delete DataIonoscloudFirewall#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/data-sources/firewall#delete DataIonoscloudFirewall#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/d/firewall#update DataIonoscloudFirewall#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/data-sources/firewall#update DataIonoscloudFirewall#update}
   */
   readonly update?: string;
 }
 
-export function dataIonoscloudFirewallTimeoutsToTerraform(struct?: DataIonoscloudFirewallTimeoutsOutputReference | DataIonoscloudFirewallTimeouts | cdktf.IResolvable): any {
+export function dataIonoscloudFirewallTimeoutsToTerraform(struct?: DataIonoscloudFirewallTimeouts | cdktf.IResolvable): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -78,7 +78,7 @@ export class DataIonoscloudFirewallTimeoutsOutputReference extends cdktf.Complex
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
   public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
-    super(terraformResource, terraformAttribute, false, 0);
+    super(terraformResource, terraformAttribute, false);
   }
 
   public get internalValue(): DataIonoscloudFirewallTimeouts | cdktf.IResolvable | undefined {
@@ -195,7 +195,7 @@ export class DataIonoscloudFirewallTimeoutsOutputReference extends cdktf.Complex
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/ionoscloud/d/firewall ionoscloud_firewall}
+* Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/data-sources/firewall ionoscloud_firewall}
 */
 export class DataIonoscloudFirewall extends cdktf.TerraformDataSource {
 
@@ -209,7 +209,7 @@ export class DataIonoscloudFirewall extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/ionoscloud/d/firewall ionoscloud_firewall} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/data-sources/firewall ionoscloud_firewall} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

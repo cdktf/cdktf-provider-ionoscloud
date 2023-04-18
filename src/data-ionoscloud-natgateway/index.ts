@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/ionoscloud/d/natgateway
+// https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/data-sources/natgateway
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,24 +8,24 @@ import * as cdktf from 'cdktf';
 
 export interface DataIonoscloudNatgatewayConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/d/natgateway#datacenter_id DataIonoscloudNatgateway#datacenter_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/data-sources/natgateway#datacenter_id DataIonoscloudNatgateway#datacenter_id}
   */
   readonly datacenterId: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/d/natgateway#id DataIonoscloudNatgateway#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/data-sources/natgateway#id DataIonoscloudNatgateway#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/d/natgateway#name DataIonoscloudNatgateway#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/data-sources/natgateway#name DataIonoscloudNatgateway#name}
   */
   readonly name?: string;
   /**
   * timeouts block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/d/natgateway#timeouts DataIonoscloudNatgateway#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/data-sources/natgateway#timeouts DataIonoscloudNatgateway#timeouts}
   */
   readonly timeouts?: DataIonoscloudNatgatewayTimeouts;
 }
@@ -100,24 +100,24 @@ export class DataIonoscloudNatgatewayLansList extends cdktf.ComplexList {
 }
 export interface DataIonoscloudNatgatewayTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/d/natgateway#create DataIonoscloudNatgateway#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/data-sources/natgateway#create DataIonoscloudNatgateway#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/d/natgateway#default DataIonoscloudNatgateway#default}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/data-sources/natgateway#default DataIonoscloudNatgateway#default}
   */
   readonly default?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/d/natgateway#delete DataIonoscloudNatgateway#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/data-sources/natgateway#delete DataIonoscloudNatgateway#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/d/natgateway#update DataIonoscloudNatgateway#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/data-sources/natgateway#update DataIonoscloudNatgateway#update}
   */
   readonly update?: string;
 }
 
-export function dataIonoscloudNatgatewayTimeoutsToTerraform(struct?: DataIonoscloudNatgatewayTimeoutsOutputReference | DataIonoscloudNatgatewayTimeouts | cdktf.IResolvable): any {
+export function dataIonoscloudNatgatewayTimeoutsToTerraform(struct?: DataIonoscloudNatgatewayTimeouts | cdktf.IResolvable): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -139,7 +139,7 @@ export class DataIonoscloudNatgatewayTimeoutsOutputReference extends cdktf.Compl
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
   public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
-    super(terraformResource, terraformAttribute, false, 0);
+    super(terraformResource, terraformAttribute, false);
   }
 
   public get internalValue(): DataIonoscloudNatgatewayTimeouts | cdktf.IResolvable | undefined {
@@ -256,7 +256,7 @@ export class DataIonoscloudNatgatewayTimeoutsOutputReference extends cdktf.Compl
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/ionoscloud/d/natgateway ionoscloud_natgateway}
+* Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/data-sources/natgateway ionoscloud_natgateway}
 */
 export class DataIonoscloudNatgateway extends cdktf.TerraformDataSource {
 
@@ -270,7 +270,7 @@ export class DataIonoscloudNatgateway extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/ionoscloud/d/natgateway ionoscloud_natgateway} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/data-sources/natgateway ionoscloud_natgateway} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

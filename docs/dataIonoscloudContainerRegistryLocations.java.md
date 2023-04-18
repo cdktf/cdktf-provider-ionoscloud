@@ -1,6 +1,6 @@
 # `data_ionoscloud_container_registry_locations`
 
-Refer to the Terraform Registory for docs: [`data_ionoscloud_container_registry_locations`](https://www.terraform.io/docs/providers/ionoscloud/d/container_registry_locations).
+Refer to the Terraform Registory for docs: [`data_ionoscloud_container_registry_locations`](https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/data-sources/container_registry_locations).
 
 # `dataIonoscloudContainerRegistryLocations` Submodule <a name="`dataIonoscloudContainerRegistryLocations` Submodule" id="@cdktf/provider-ionoscloud.dataIonoscloudContainerRegistryLocations"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_ionoscloud_container_registry_
 
 ### DataIonoscloudContainerRegistryLocations <a name="DataIonoscloudContainerRegistryLocations" id="@cdktf/provider-ionoscloud.dataIonoscloudContainerRegistryLocations.DataIonoscloudContainerRegistryLocations"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/ionoscloud/d/container_registry_locations ionoscloud_container_registry_locations}.
+Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/data-sources/container_registry_locations ionoscloud_container_registry_locations}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.dataIonoscloudContainerRegistryLocations.DataIonoscloudContainerRegistryLocations.Initializer"></a>
 
@@ -19,6 +19,7 @@ DataIonoscloudContainerRegistryLocations.Builder.create(Construct scope, java.la
 //  .connection(SSHProvisionerConnection)
 //  .connection(WinrmProvisionerConnection)
 //  .count(java.lang.Number)
+//  .count(TerraformCount)
 //  .dependsOn(java.util.List<ITerraformDependable>)
 //  .forEach(ITerraformIterator)
 //  .lifecycle(TerraformResourceLifecycle)
@@ -36,13 +37,13 @@ DataIonoscloudContainerRegistryLocations.Builder.create(Construct scope, java.la
 | <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudContainerRegistryLocations.DataIonoscloudContainerRegistryLocations.Initializer.parameter.scope">scope</a></code> | <code>software.constructs.Construct</code> | The scope in which to define this construct. |
 | <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudContainerRegistryLocations.DataIonoscloudContainerRegistryLocations.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | The scoped construct ID. |
 | <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudContainerRegistryLocations.DataIonoscloudContainerRegistryLocations.Initializer.parameter.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudContainerRegistryLocations.DataIonoscloudContainerRegistryLocations.Initializer.parameter.count">count</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudContainerRegistryLocations.DataIonoscloudContainerRegistryLocations.Initializer.parameter.count">count</a></code> | <code>java.lang.Number OR com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudContainerRegistryLocations.DataIonoscloudContainerRegistryLocations.Initializer.parameter.dependsOn">dependsOn</a></code> | <code>java.util.List<com.hashicorp.cdktf.ITerraformDependable></code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudContainerRegistryLocations.DataIonoscloudContainerRegistryLocations.Initializer.parameter.forEach">forEach</a></code> | <code>com.hashicorp.cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudContainerRegistryLocations.DataIonoscloudContainerRegistryLocations.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudContainerRegistryLocations.DataIonoscloudContainerRegistryLocations.Initializer.parameter.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudContainerRegistryLocations.DataIonoscloudContainerRegistryLocations.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudContainerRegistryLocations.DataIonoscloudContainerRegistryLocations.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/d/container_registry_locations#id DataIonoscloudContainerRegistryLocations#id}. |
+| <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudContainerRegistryLocations.DataIonoscloudContainerRegistryLocations.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/data-sources/container_registry_locations#id DataIonoscloudContainerRegistryLocations#id}. |
 | <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudContainerRegistryLocations.DataIonoscloudContainerRegistryLocations.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudContainerRegistryLocations.DataIonoscloudContainerRegistryLocationsTimeouts">DataIonoscloudContainerRegistryLocationsTimeouts</a></code> | timeouts block. |
 
 ---
@@ -73,7 +74,7 @@ Must be unique amongst siblings in the same scope
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-ionoscloud.dataIonoscloudContainerRegistryLocations.DataIonoscloudContainerRegistryLocations.Initializer.parameter.count"></a>
 
-- *Type:* java.lang.Number
+- *Type:* java.lang.Number OR com.hashicorp.cdktf.TerraformCount
 
 ---
 
@@ -111,7 +112,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/d/container_registry_locations#id DataIonoscloudContainerRegistryLocations#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/data-sources/container_registry_locations#id DataIonoscloudContainerRegistryLocations#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -124,7 +125,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/d/container_registry_locations#timeouts DataIonoscloudContainerRegistryLocations#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/data-sources/container_registry_locations#timeouts DataIonoscloudContainerRegistryLocations#timeouts}
 
 ---
 
@@ -443,7 +444,7 @@ DataIonoscloudContainerRegistryLocations.isTerraformDataSource(java.lang.Object 
 | <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudContainerRegistryLocations.DataIonoscloudContainerRegistryLocations.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>java.util.Map<java.lang.String, java.lang.Object></code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudContainerRegistryLocations.DataIonoscloudContainerRegistryLocations.property.terraformResourceType">terraformResourceType</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudContainerRegistryLocations.DataIonoscloudContainerRegistryLocations.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>com.hashicorp.cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudContainerRegistryLocations.DataIonoscloudContainerRegistryLocations.property.count">count</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudContainerRegistryLocations.DataIonoscloudContainerRegistryLocations.property.count">count</a></code> | <code>java.lang.Number OR com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudContainerRegistryLocations.DataIonoscloudContainerRegistryLocations.property.dependsOn">dependsOn</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudContainerRegistryLocations.DataIonoscloudContainerRegistryLocations.property.forEach">forEach</a></code> | <code>com.hashicorp.cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudContainerRegistryLocations.DataIonoscloudContainerRegistryLocations.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -531,10 +532,10 @@ public TerraformProviderGeneratorMetadata getTerraformGeneratorMetadata();
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-ionoscloud.dataIonoscloudContainerRegistryLocations.DataIonoscloudContainerRegistryLocations.property.count"></a>
 
 ```java
-public java.lang.Number getCount();
+public java.lang.Object getCount();
 ```
 
-- *Type:* java.lang.Number
+- *Type:* java.lang.Number OR com.hashicorp.cdktf.TerraformCount
 
 ---
 
@@ -659,6 +660,7 @@ DataIonoscloudContainerRegistryLocationsConfig.builder()
 //  .connection(SSHProvisionerConnection)
 //  .connection(WinrmProvisionerConnection)
 //  .count(java.lang.Number)
+//  .count(TerraformCount)
 //  .dependsOn(java.util.List<ITerraformDependable>)
 //  .forEach(ITerraformIterator)
 //  .lifecycle(TerraformResourceLifecycle)
@@ -676,13 +678,13 @@ DataIonoscloudContainerRegistryLocationsConfig.builder()
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudContainerRegistryLocations.DataIonoscloudContainerRegistryLocationsConfig.property.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudContainerRegistryLocations.DataIonoscloudContainerRegistryLocationsConfig.property.count">count</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudContainerRegistryLocations.DataIonoscloudContainerRegistryLocationsConfig.property.count">count</a></code> | <code>java.lang.Number OR com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudContainerRegistryLocations.DataIonoscloudContainerRegistryLocationsConfig.property.dependsOn">dependsOn</a></code> | <code>java.util.List<com.hashicorp.cdktf.ITerraformDependable></code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudContainerRegistryLocations.DataIonoscloudContainerRegistryLocationsConfig.property.forEach">forEach</a></code> | <code>com.hashicorp.cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudContainerRegistryLocations.DataIonoscloudContainerRegistryLocationsConfig.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudContainerRegistryLocations.DataIonoscloudContainerRegistryLocationsConfig.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudContainerRegistryLocations.DataIonoscloudContainerRegistryLocationsConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudContainerRegistryLocations.DataIonoscloudContainerRegistryLocationsConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/d/container_registry_locations#id DataIonoscloudContainerRegistryLocations#id}. |
+| <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudContainerRegistryLocations.DataIonoscloudContainerRegistryLocationsConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/data-sources/container_registry_locations#id DataIonoscloudContainerRegistryLocations#id}. |
 | <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudContainerRegistryLocations.DataIonoscloudContainerRegistryLocationsConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudContainerRegistryLocations.DataIonoscloudContainerRegistryLocationsTimeouts">DataIonoscloudContainerRegistryLocationsTimeouts</a></code> | timeouts block. |
 
 ---
@@ -700,10 +702,10 @@ public java.lang.Object getConnection();
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-ionoscloud.dataIonoscloudContainerRegistryLocations.DataIonoscloudContainerRegistryLocationsConfig.property.count"></a>
 
 ```java
-public java.lang.Number getCount();
+public java.lang.Object getCount();
 ```
 
-- *Type:* java.lang.Number
+- *Type:* java.lang.Number OR com.hashicorp.cdktf.TerraformCount
 
 ---
 
@@ -765,7 +767,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/d/container_registry_locations#id DataIonoscloudContainerRegistryLocations#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/data-sources/container_registry_locations#id DataIonoscloudContainerRegistryLocations#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -782,7 +784,7 @@ public DataIonoscloudContainerRegistryLocationsTimeouts getTimeouts();
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/d/container_registry_locations#timeouts DataIonoscloudContainerRegistryLocations#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/data-sources/container_registry_locations#timeouts DataIonoscloudContainerRegistryLocations#timeouts}
 
 ---
 
@@ -805,10 +807,10 @@ DataIonoscloudContainerRegistryLocationsTimeouts.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudContainerRegistryLocations.DataIonoscloudContainerRegistryLocationsTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/d/container_registry_locations#create DataIonoscloudContainerRegistryLocations#create}. |
-| <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudContainerRegistryLocations.DataIonoscloudContainerRegistryLocationsTimeouts.property.default">default</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/d/container_registry_locations#default DataIonoscloudContainerRegistryLocations#default}. |
-| <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudContainerRegistryLocations.DataIonoscloudContainerRegistryLocationsTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/d/container_registry_locations#delete DataIonoscloudContainerRegistryLocations#delete}. |
-| <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudContainerRegistryLocations.DataIonoscloudContainerRegistryLocationsTimeouts.property.update">update</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/d/container_registry_locations#update DataIonoscloudContainerRegistryLocations#update}. |
+| <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudContainerRegistryLocations.DataIonoscloudContainerRegistryLocationsTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/data-sources/container_registry_locations#create DataIonoscloudContainerRegistryLocations#create}. |
+| <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudContainerRegistryLocations.DataIonoscloudContainerRegistryLocationsTimeouts.property.default">default</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/data-sources/container_registry_locations#default DataIonoscloudContainerRegistryLocations#default}. |
+| <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudContainerRegistryLocations.DataIonoscloudContainerRegistryLocationsTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/data-sources/container_registry_locations#delete DataIonoscloudContainerRegistryLocations#delete}. |
+| <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudContainerRegistryLocations.DataIonoscloudContainerRegistryLocationsTimeouts.property.update">update</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/data-sources/container_registry_locations#update DataIonoscloudContainerRegistryLocations#update}. |
 
 ---
 
@@ -820,7 +822,7 @@ public java.lang.String getCreate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/d/container_registry_locations#create DataIonoscloudContainerRegistryLocations#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/data-sources/container_registry_locations#create DataIonoscloudContainerRegistryLocations#create}.
 
 ---
 
@@ -832,7 +834,7 @@ public java.lang.String getDefault();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/d/container_registry_locations#default DataIonoscloudContainerRegistryLocations#default}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/data-sources/container_registry_locations#default DataIonoscloudContainerRegistryLocations#default}.
 
 ---
 
@@ -844,7 +846,7 @@ public java.lang.String getDelete();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/d/container_registry_locations#delete DataIonoscloudContainerRegistryLocations#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/data-sources/container_registry_locations#delete DataIonoscloudContainerRegistryLocations#delete}.
 
 ---
 
@@ -856,7 +858,7 @@ public java.lang.String getUpdate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/d/container_registry_locations#update DataIonoscloudContainerRegistryLocations#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/data-sources/container_registry_locations#update DataIonoscloudContainerRegistryLocations#update}.
 
 ---
 

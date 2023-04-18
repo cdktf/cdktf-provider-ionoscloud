@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/ionoscloud/d/dataplatform_node_pools
+// https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/data-sources/dataplatform_node_pools
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,11 +10,11 @@ export interface DataIonoscloudDataplatformNodePoolsConfig extends cdktf.Terrafo
   /**
   * The UUID of an existing Dataplatform cluster
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/d/dataplatform_node_pools#cluster_id DataIonoscloudDataplatformNodePools#cluster_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/data-sources/dataplatform_node_pools#cluster_id DataIonoscloudDataplatformNodePools#cluster_id}
   */
   readonly clusterId: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/d/dataplatform_node_pools#id DataIonoscloudDataplatformNodePools#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/data-sources/dataplatform_node_pools#id DataIonoscloudDataplatformNodePools#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -23,19 +23,19 @@ export interface DataIonoscloudDataplatformNodePoolsConfig extends cdktf.Terrafo
   /**
   * The name of your node pool.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/d/dataplatform_node_pools#name DataIonoscloudDataplatformNodePools#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/data-sources/dataplatform_node_pools#name DataIonoscloudDataplatformNodePools#name}
   */
   readonly name?: string;
   /**
   * Whether partial matching is allowed or not when using name argument.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/d/dataplatform_node_pools#partial_match DataIonoscloudDataplatformNodePools#partial_match}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/data-sources/dataplatform_node_pools#partial_match DataIonoscloudDataplatformNodePools#partial_match}
   */
   readonly partialMatch?: boolean | cdktf.IResolvable;
   /**
   * timeouts block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/d/dataplatform_node_pools#timeouts DataIonoscloudDataplatformNodePools#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/data-sources/dataplatform_node_pools#timeouts DataIonoscloudDataplatformNodePools#timeouts}
   */
   readonly timeouts?: DataIonoscloudDataplatformNodePoolsTimeouts;
 }
@@ -242,24 +242,24 @@ export class DataIonoscloudDataplatformNodePoolsNodePoolsList extends cdktf.Comp
 }
 export interface DataIonoscloudDataplatformNodePoolsTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/d/dataplatform_node_pools#create DataIonoscloudDataplatformNodePools#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/data-sources/dataplatform_node_pools#create DataIonoscloudDataplatformNodePools#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/d/dataplatform_node_pools#default DataIonoscloudDataplatformNodePools#default}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/data-sources/dataplatform_node_pools#default DataIonoscloudDataplatformNodePools#default}
   */
   readonly default?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/d/dataplatform_node_pools#delete DataIonoscloudDataplatformNodePools#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/data-sources/dataplatform_node_pools#delete DataIonoscloudDataplatformNodePools#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/d/dataplatform_node_pools#update DataIonoscloudDataplatformNodePools#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/data-sources/dataplatform_node_pools#update DataIonoscloudDataplatformNodePools#update}
   */
   readonly update?: string;
 }
 
-export function dataIonoscloudDataplatformNodePoolsTimeoutsToTerraform(struct?: DataIonoscloudDataplatformNodePoolsTimeoutsOutputReference | DataIonoscloudDataplatformNodePoolsTimeouts | cdktf.IResolvable): any {
+export function dataIonoscloudDataplatformNodePoolsTimeoutsToTerraform(struct?: DataIonoscloudDataplatformNodePoolsTimeouts | cdktf.IResolvable): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -281,7 +281,7 @@ export class DataIonoscloudDataplatformNodePoolsTimeoutsOutputReference extends 
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
   public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
-    super(terraformResource, terraformAttribute, false, 0);
+    super(terraformResource, terraformAttribute, false);
   }
 
   public get internalValue(): DataIonoscloudDataplatformNodePoolsTimeouts | cdktf.IResolvable | undefined {
@@ -398,7 +398,7 @@ export class DataIonoscloudDataplatformNodePoolsTimeoutsOutputReference extends 
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/ionoscloud/d/dataplatform_node_pools ionoscloud_dataplatform_node_pools}
+* Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/data-sources/dataplatform_node_pools ionoscloud_dataplatform_node_pools}
 */
 export class DataIonoscloudDataplatformNodePools extends cdktf.TerraformDataSource {
 
@@ -412,7 +412,7 @@ export class DataIonoscloudDataplatformNodePools extends cdktf.TerraformDataSour
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/ionoscloud/d/dataplatform_node_pools ionoscloud_dataplatform_node_pools} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/data-sources/dataplatform_node_pools ionoscloud_dataplatform_node_pools} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

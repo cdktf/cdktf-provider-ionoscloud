@@ -1,6 +1,6 @@
 # `data_ionoscloud_container_registry_locations`
 
-Refer to the Terraform Registory for docs: [`data_ionoscloud_container_registry_locations`](https://www.terraform.io/docs/providers/ionoscloud/d/container_registry_locations).
+Refer to the Terraform Registory for docs: [`data_ionoscloud_container_registry_locations`](https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/data-sources/container_registry_locations).
 
 # `dataIonoscloudContainerRegistryLocations` Submodule <a name="`dataIonoscloudContainerRegistryLocations` Submodule" id="@cdktf/provider-ionoscloud.dataIonoscloudContainerRegistryLocations"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`data_ionoscloud_container_registry_
 
 ### DataIonoscloudContainerRegistryLocations <a name="DataIonoscloudContainerRegistryLocations" id="@cdktf/provider-ionoscloud.dataIonoscloudContainerRegistryLocations.DataIonoscloudContainerRegistryLocations"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/ionoscloud/d/container_registry_locations ionoscloud_container_registry_locations}.
+Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/data-sources/container_registry_locations ionoscloud_container_registry_locations}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.dataIonoscloudContainerRegistryLocations.DataIonoscloudContainerRegistryLocations.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v6/dataionoscloudcontainerregistrylocations"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/dataionoscloudcontainerregistrylocations"
 
 dataionoscloudcontainerregistrylocations.NewDataIonoscloudContainerRegistryLocations(scope Construct, id *string, config DataIonoscloudContainerRegistryLocationsConfig) DataIonoscloudContainerRegistryLocations
 ```
@@ -297,7 +297,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-ionoscloud.dataIonoscloudContainerRegistryLocations.DataIonoscloudContainerRegistryLocations.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v6/dataionoscloudcontainerregistrylocations"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/dataionoscloudcontainerregistrylocations"
 
 dataionoscloudcontainerregistrylocations.DataIonoscloudContainerRegistryLocations_IsConstruct(x interface{}) *bool
 ```
@@ -329,7 +329,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-ionoscloud.dataIonoscloudContainerRegistryLocations.DataIonoscloudContainerRegistryLocations.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v6/dataionoscloudcontainerregistrylocations"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/dataionoscloudcontainerregistrylocations"
 
 dataionoscloudcontainerregistrylocations.DataIonoscloudContainerRegistryLocations_IsTerraformElement(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ dataionoscloudcontainerregistrylocations.DataIonoscloudContainerRegistryLocation
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-ionoscloud.dataIonoscloudContainerRegistryLocations.DataIonoscloudContainerRegistryLocations.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v6/dataionoscloudcontainerregistrylocations"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/dataionoscloudcontainerregistrylocations"
 
 dataionoscloudcontainerregistrylocations.DataIonoscloudContainerRegistryLocations_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -365,7 +365,7 @@ dataionoscloudcontainerregistrylocations.DataIonoscloudContainerRegistryLocation
 | <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudContainerRegistryLocations.DataIonoscloudContainerRegistryLocations.property.terraformMetaArguments">TerraformMetaArguments</a></code> | <code>*map[string]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudContainerRegistryLocations.DataIonoscloudContainerRegistryLocations.property.terraformResourceType">TerraformResourceType</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudContainerRegistryLocations.DataIonoscloudContainerRegistryLocations.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudContainerRegistryLocations.DataIonoscloudContainerRegistryLocations.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudContainerRegistryLocations.DataIonoscloudContainerRegistryLocations.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudContainerRegistryLocations.DataIonoscloudContainerRegistryLocations.property.dependsOn">DependsOn</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudContainerRegistryLocations.DataIonoscloudContainerRegistryLocations.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudContainerRegistryLocations.DataIonoscloudContainerRegistryLocations.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -453,10 +453,10 @@ func TerraformGeneratorMetadata() TerraformProviderGeneratorMetadata
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-ionoscloud.dataIonoscloudContainerRegistryLocations.DataIonoscloudContainerRegistryLocations.property.count"></a>
 
 ```go
-func Count() *f64
+func Count() interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -575,18 +575,18 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-ionoscloud.dataIonoscloudContainerRegistryLocations.DataIonoscloudContainerRegistryLocationsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v6/dataionoscloudcontainerregistrylocations"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/dataionoscloudcontainerregistrylocations"
 
 &dataionoscloudcontainerregistrylocations.DataIonoscloudContainerRegistryLocationsConfig {
 	Connection: interface{},
-	Count: *f64,
+	Count: interface{},
 	DependsOn: *[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable,
 	ForEach: github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator,
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
 	Id: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v6.dataIonoscloudContainerRegistryLocations.DataIonoscloudContainerRegistryLocationsTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud.dataIonoscloudContainerRegistryLocations.DataIonoscloudContainerRegistryLocationsTimeouts,
 }
 ```
 
@@ -595,13 +595,13 @@ import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v6/dataionosclo
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudContainerRegistryLocations.DataIonoscloudContainerRegistryLocationsConfig.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudContainerRegistryLocations.DataIonoscloudContainerRegistryLocationsConfig.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudContainerRegistryLocations.DataIonoscloudContainerRegistryLocationsConfig.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudContainerRegistryLocations.DataIonoscloudContainerRegistryLocationsConfig.property.dependsOn">DependsOn</a></code> | <code>*[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudContainerRegistryLocations.DataIonoscloudContainerRegistryLocationsConfig.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudContainerRegistryLocations.DataIonoscloudContainerRegistryLocationsConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudContainerRegistryLocations.DataIonoscloudContainerRegistryLocationsConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudContainerRegistryLocations.DataIonoscloudContainerRegistryLocationsConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudContainerRegistryLocations.DataIonoscloudContainerRegistryLocationsConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/d/container_registry_locations#id DataIonoscloudContainerRegistryLocations#id}. |
+| <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudContainerRegistryLocations.DataIonoscloudContainerRegistryLocationsConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/data-sources/container_registry_locations#id DataIonoscloudContainerRegistryLocations#id}. |
 | <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudContainerRegistryLocations.DataIonoscloudContainerRegistryLocationsConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudContainerRegistryLocations.DataIonoscloudContainerRegistryLocationsTimeouts">DataIonoscloudContainerRegistryLocationsTimeouts</a></code> | timeouts block. |
 
 ---
@@ -619,10 +619,10 @@ Connection interface{}
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-ionoscloud.dataIonoscloudContainerRegistryLocations.DataIonoscloudContainerRegistryLocationsConfig.property.count"></a>
 
 ```go
-Count *f64
+Count interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -684,7 +684,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/d/container_registry_locations#id DataIonoscloudContainerRegistryLocations#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/data-sources/container_registry_locations#id DataIonoscloudContainerRegistryLocations#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -701,7 +701,7 @@ Timeouts DataIonoscloudContainerRegistryLocationsTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/d/container_registry_locations#timeouts DataIonoscloudContainerRegistryLocations#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/data-sources/container_registry_locations#timeouts DataIonoscloudContainerRegistryLocations#timeouts}
 
 ---
 
@@ -710,7 +710,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionos
 #### Initializer <a name="Initializer" id="@cdktf/provider-ionoscloud.dataIonoscloudContainerRegistryLocations.DataIonoscloudContainerRegistryLocationsTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v6/dataionoscloudcontainerregistrylocations"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/dataionoscloudcontainerregistrylocations"
 
 &dataionoscloudcontainerregistrylocations.DataIonoscloudContainerRegistryLocationsTimeouts {
 	Create: *string,
@@ -724,10 +724,10 @@ import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v6/dataionosclo
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudContainerRegistryLocations.DataIonoscloudContainerRegistryLocationsTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/d/container_registry_locations#create DataIonoscloudContainerRegistryLocations#create}. |
-| <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudContainerRegistryLocations.DataIonoscloudContainerRegistryLocationsTimeouts.property.default">Default</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/d/container_registry_locations#default DataIonoscloudContainerRegistryLocations#default}. |
-| <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudContainerRegistryLocations.DataIonoscloudContainerRegistryLocationsTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/d/container_registry_locations#delete DataIonoscloudContainerRegistryLocations#delete}. |
-| <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudContainerRegistryLocations.DataIonoscloudContainerRegistryLocationsTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/d/container_registry_locations#update DataIonoscloudContainerRegistryLocations#update}. |
+| <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudContainerRegistryLocations.DataIonoscloudContainerRegistryLocationsTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/data-sources/container_registry_locations#create DataIonoscloudContainerRegistryLocations#create}. |
+| <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudContainerRegistryLocations.DataIonoscloudContainerRegistryLocationsTimeouts.property.default">Default</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/data-sources/container_registry_locations#default DataIonoscloudContainerRegistryLocations#default}. |
+| <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudContainerRegistryLocations.DataIonoscloudContainerRegistryLocationsTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/data-sources/container_registry_locations#delete DataIonoscloudContainerRegistryLocations#delete}. |
+| <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudContainerRegistryLocations.DataIonoscloudContainerRegistryLocationsTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/data-sources/container_registry_locations#update DataIonoscloudContainerRegistryLocations#update}. |
 
 ---
 
@@ -739,7 +739,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/d/container_registry_locations#create DataIonoscloudContainerRegistryLocations#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/data-sources/container_registry_locations#create DataIonoscloudContainerRegistryLocations#create}.
 
 ---
 
@@ -751,7 +751,7 @@ Default *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/d/container_registry_locations#default DataIonoscloudContainerRegistryLocations#default}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/data-sources/container_registry_locations#default DataIonoscloudContainerRegistryLocations#default}.
 
 ---
 
@@ -763,7 +763,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/d/container_registry_locations#delete DataIonoscloudContainerRegistryLocations#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/data-sources/container_registry_locations#delete DataIonoscloudContainerRegistryLocations#delete}.
 
 ---
 
@@ -775,7 +775,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/d/container_registry_locations#update DataIonoscloudContainerRegistryLocations#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/data-sources/container_registry_locations#update DataIonoscloudContainerRegistryLocations#update}.
 
 ---
 
@@ -786,7 +786,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionos
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.dataIonoscloudContainerRegistryLocations.DataIonoscloudContainerRegistryLocationsTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v6/dataionoscloudcontainerregistrylocations"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/dataionoscloudcontainerregistrylocations"
 
 dataionoscloudcontainerregistrylocations.NewDataIonoscloudContainerRegistryLocationsTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataIonoscloudContainerRegistryLocationsTimeoutsOutputReference
 ```

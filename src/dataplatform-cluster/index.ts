@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/ionoscloud/r/dataplatform_cluster
+// https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/resources/dataplatform_cluster
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,11 +10,11 @@ export interface DataplatformClusterConfig extends cdktf.TerraformMetaArguments 
   /**
   * The UUID of the virtual data center (VDC) in which the cluster is provisioned
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/dataplatform_cluster#datacenter_id DataplatformCluster#datacenter_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/resources/dataplatform_cluster#datacenter_id DataplatformCluster#datacenter_id}
   */
   readonly datacenterId: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/dataplatform_cluster#id DataplatformCluster#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/resources/dataplatform_cluster#id DataplatformCluster#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -23,37 +23,37 @@ export interface DataplatformClusterConfig extends cdktf.TerraformMetaArguments 
   /**
   * The name of your cluster. Must be 63 characters or less and must be empty or begin and end with an alphanumeric character ([a-z0-9A-Z]). It can contain dashes (-), underscores (_), dots (.), and alphanumerics in-between.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/dataplatform_cluster#name DataplatformCluster#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/resources/dataplatform_cluster#name DataplatformCluster#name}
   */
   readonly name: string;
   /**
   * The version of the Data Platform.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/dataplatform_cluster#version DataplatformCluster#version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/resources/dataplatform_cluster#version DataplatformCluster#version}
   */
   readonly version?: string;
   /**
   * maintenance_window block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/dataplatform_cluster#maintenance_window DataplatformCluster#maintenance_window}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/resources/dataplatform_cluster#maintenance_window DataplatformCluster#maintenance_window}
   */
   readonly maintenanceWindow?: DataplatformClusterMaintenanceWindow[] | cdktf.IResolvable;
   /**
   * timeouts block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/dataplatform_cluster#timeouts DataplatformCluster#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/resources/dataplatform_cluster#timeouts DataplatformCluster#timeouts}
   */
   readonly timeouts?: DataplatformClusterTimeouts;
 }
 export interface DataplatformClusterMaintenanceWindow {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/dataplatform_cluster#day_of_the_week DataplatformCluster#day_of_the_week}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/resources/dataplatform_cluster#day_of_the_week DataplatformCluster#day_of_the_week}
   */
   readonly dayOfTheWeek: string;
   /**
   * Time at which the maintenance should start.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/dataplatform_cluster#time DataplatformCluster#time}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/resources/dataplatform_cluster#time DataplatformCluster#time}
   */
   readonly time: string;
 }
@@ -167,24 +167,24 @@ export class DataplatformClusterMaintenanceWindowList extends cdktf.ComplexList 
 }
 export interface DataplatformClusterTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/dataplatform_cluster#create DataplatformCluster#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/resources/dataplatform_cluster#create DataplatformCluster#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/dataplatform_cluster#default DataplatformCluster#default}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/resources/dataplatform_cluster#default DataplatformCluster#default}
   */
   readonly default?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/dataplatform_cluster#delete DataplatformCluster#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/resources/dataplatform_cluster#delete DataplatformCluster#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/dataplatform_cluster#update DataplatformCluster#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/resources/dataplatform_cluster#update DataplatformCluster#update}
   */
   readonly update?: string;
 }
 
-export function dataplatformClusterTimeoutsToTerraform(struct?: DataplatformClusterTimeoutsOutputReference | DataplatformClusterTimeouts | cdktf.IResolvable): any {
+export function dataplatformClusterTimeoutsToTerraform(struct?: DataplatformClusterTimeouts | cdktf.IResolvable): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -206,7 +206,7 @@ export class DataplatformClusterTimeoutsOutputReference extends cdktf.ComplexObj
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
   public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
-    super(terraformResource, terraformAttribute, false, 0);
+    super(terraformResource, terraformAttribute, false);
   }
 
   public get internalValue(): DataplatformClusterTimeouts | cdktf.IResolvable | undefined {
@@ -323,7 +323,7 @@ export class DataplatformClusterTimeoutsOutputReference extends cdktf.ComplexObj
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/ionoscloud/r/dataplatform_cluster ionoscloud_dataplatform_cluster}
+* Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/resources/dataplatform_cluster ionoscloud_dataplatform_cluster}
 */
 export class DataplatformCluster extends cdktf.TerraformResource {
 
@@ -337,7 +337,7 @@ export class DataplatformCluster extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/ionoscloud/r/dataplatform_cluster ionoscloud_dataplatform_cluster} Resource
+  * Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/resources/dataplatform_cluster ionoscloud_dataplatform_cluster} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

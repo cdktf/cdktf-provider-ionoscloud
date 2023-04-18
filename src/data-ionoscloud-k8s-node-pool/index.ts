@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/ionoscloud/d/k8s_node_pool
+// https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/data-sources/k8s_node_pool
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,7 +8,7 @@ import * as cdktf from 'cdktf';
 
 export interface DataIonoscloudK8SNodePoolConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/d/k8s_node_pool#id DataIonoscloudK8SNodePool#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/data-sources/k8s_node_pool#id DataIonoscloudK8SNodePool#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -17,19 +17,19 @@ export interface DataIonoscloudK8SNodePoolConfig extends cdktf.TerraformMetaArgu
   /**
   * The UUID of an existing kubernetes cluster
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/d/k8s_node_pool#k8s_cluster_id DataIonoscloudK8SNodePool#k8s_cluster_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/data-sources/k8s_node_pool#k8s_cluster_id DataIonoscloudK8SNodePool#k8s_cluster_id}
   */
   readonly k8SClusterId: string;
   /**
   * The desired name for the node pool
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/d/k8s_node_pool#name DataIonoscloudK8SNodePool#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/data-sources/k8s_node_pool#name DataIonoscloudK8SNodePool#name}
   */
   readonly name?: string;
   /**
   * timeouts block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/d/k8s_node_pool#timeouts DataIonoscloudK8SNodePool#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/data-sources/k8s_node_pool#timeouts DataIonoscloudK8SNodePool#timeouts}
   */
   readonly timeouts?: DataIonoscloudK8SNodePoolTimeouts;
 }
@@ -317,24 +317,24 @@ export class DataIonoscloudK8SNodePoolMaintenanceWindowList extends cdktf.Comple
 }
 export interface DataIonoscloudK8SNodePoolTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/d/k8s_node_pool#create DataIonoscloudK8SNodePool#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/data-sources/k8s_node_pool#create DataIonoscloudK8SNodePool#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/d/k8s_node_pool#default DataIonoscloudK8SNodePool#default}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/data-sources/k8s_node_pool#default DataIonoscloudK8SNodePool#default}
   */
   readonly default?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/d/k8s_node_pool#delete DataIonoscloudK8SNodePool#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/data-sources/k8s_node_pool#delete DataIonoscloudK8SNodePool#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/d/k8s_node_pool#update DataIonoscloudK8SNodePool#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/data-sources/k8s_node_pool#update DataIonoscloudK8SNodePool#update}
   */
   readonly update?: string;
 }
 
-export function dataIonoscloudK8SNodePoolTimeoutsToTerraform(struct?: DataIonoscloudK8SNodePoolTimeoutsOutputReference | DataIonoscloudK8SNodePoolTimeouts | cdktf.IResolvable): any {
+export function dataIonoscloudK8SNodePoolTimeoutsToTerraform(struct?: DataIonoscloudK8SNodePoolTimeouts | cdktf.IResolvable): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -356,7 +356,7 @@ export class DataIonoscloudK8SNodePoolTimeoutsOutputReference extends cdktf.Comp
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
   public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
-    super(terraformResource, terraformAttribute, false, 0);
+    super(terraformResource, terraformAttribute, false);
   }
 
   public get internalValue(): DataIonoscloudK8SNodePoolTimeouts | cdktf.IResolvable | undefined {
@@ -473,7 +473,7 @@ export class DataIonoscloudK8SNodePoolTimeoutsOutputReference extends cdktf.Comp
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/ionoscloud/d/k8s_node_pool ionoscloud_k8s_node_pool}
+* Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/data-sources/k8s_node_pool ionoscloud_k8s_node_pool}
 */
 export class DataIonoscloudK8SNodePool extends cdktf.TerraformDataSource {
 
@@ -487,7 +487,7 @@ export class DataIonoscloudK8SNodePool extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/ionoscloud/d/k8s_node_pool ionoscloud_k8s_node_pool} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/data-sources/k8s_node_pool ionoscloud_k8s_node_pool} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
