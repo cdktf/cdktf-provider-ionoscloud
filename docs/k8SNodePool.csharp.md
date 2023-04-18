@@ -1,3 +1,7 @@
+# `ionoscloud_k8s_node_pool`
+
+Refer to the Terraform Registory for docs: [`ionoscloud_k8s_node_pool`](https://www.terraform.io/docs/providers/ionoscloud/r/k8s_node_pool).
+
 # `k8SNodePool` Submodule <a name="`k8SNodePool` Submodule" id="@cdktf/provider-ionoscloud.k8SNodePool"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

@@ -1,3 +1,7 @@
+# `ionoscloud_loadbalancer`
+
+Refer to the Terraform Registory for docs: [`ionoscloud_loadbalancer`](https://www.terraform.io/docs/providers/ionoscloud/r/loadbalancer).
+
 # `loadbalancer` Submodule <a name="`loadbalancer` Submodule" id="@cdktf/provider-ionoscloud.loadbalancer"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

@@ -1,3 +1,7 @@
+# `ionoscloud_application_loadbalancer`
+
+Refer to the Terraform Registory for docs: [`ionoscloud_application_loadbalancer`](https://www.terraform.io/docs/providers/ionoscloud/r/application_loadbalancer).
+
 # `applicationLoadbalancer` Submodule <a name="`applicationLoadbalancer` Submodule" id="@cdktf/provider-ionoscloud.applicationLoadbalancer"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

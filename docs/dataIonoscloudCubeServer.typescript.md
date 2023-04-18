@@ -1,3 +1,7 @@
+# `data_ionoscloud_cube_server`
+
+Refer to the Terraform Registory for docs: [`data_ionoscloud_cube_server`](https://www.terraform.io/docs/providers/ionoscloud/d/cube_server).
+
 # `dataIonoscloudCubeServer` Submodule <a name="`dataIonoscloudCubeServer` Submodule" id="@cdktf/provider-ionoscloud.dataIonoscloudCubeServer"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

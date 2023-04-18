@@ -1,3 +1,7 @@
+# `data_ionoscloud_dataplatform_cluster`
+
+Refer to the Terraform Registory for docs: [`data_ionoscloud_dataplatform_cluster`](https://www.terraform.io/docs/providers/ionoscloud/d/dataplatform_cluster).
+
 # `dataIonoscloudDataplatformCluster` Submodule <a name="`dataIonoscloudDataplatformCluster` Submodule" id="@cdktf/provider-ionoscloud.dataIonoscloudDataplatformCluster"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

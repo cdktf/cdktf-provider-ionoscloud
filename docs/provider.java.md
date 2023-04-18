@@ -1,3 +1,7 @@
+# `provider`
+
+Refer to the Terraform Registory for docs: [`ionoscloud`](https://www.terraform.io/docs/providers/ionoscloud).
+
 # `provider` Submodule <a name="`provider` Submodule" id="@cdktf/provider-ionoscloud.provider"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

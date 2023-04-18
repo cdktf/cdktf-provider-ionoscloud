@@ -1,3 +1,7 @@
+# `ionoscloud_lan`
+
+Refer to the Terraform Registory for docs: [`ionoscloud_lan`](https://www.terraform.io/docs/providers/ionoscloud/r/lan).
+
 # `lan` Submodule <a name="`lan` Submodule" id="@cdktf/provider-ionoscloud.lan"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

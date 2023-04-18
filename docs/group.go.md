@@ -1,3 +1,7 @@
+# `ionoscloud_group`
+
+Refer to the Terraform Registory for docs: [`ionoscloud_group`](https://www.terraform.io/docs/providers/ionoscloud/r/group).
+
 # `group` Submodule <a name="`group` Submodule" id="@cdktf/provider-ionoscloud.group"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

@@ -1,3 +1,7 @@
+# `ionoscloud_mongo_cluster`
+
+Refer to the Terraform Registory for docs: [`ionoscloud_mongo_cluster`](https://www.terraform.io/docs/providers/ionoscloud/r/mongo_cluster).
+
 # `mongoCluster` Submodule <a name="`mongoCluster` Submodule" id="@cdktf/provider-ionoscloud.mongoCluster"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

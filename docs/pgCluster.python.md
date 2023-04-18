@@ -1,3 +1,7 @@
+# `ionoscloud_pg_cluster`
+
+Refer to the Terraform Registory for docs: [`ionoscloud_pg_cluster`](https://www.terraform.io/docs/providers/ionoscloud/r/pg_cluster).
+
 # `pgCluster` Submodule <a name="`pgCluster` Submodule" id="@cdktf/provider-ionoscloud.pgCluster"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
