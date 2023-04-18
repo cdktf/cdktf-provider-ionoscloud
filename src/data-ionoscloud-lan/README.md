@@ -1,3 +1,3 @@
 # `data_ionoscloud_lan`
 
-Refer to the Terraform Registory for docs: [`data_ionoscloud_lan`](https://www.terraform.io/docs/providers/ionoscloud/d/lan).
+Refer to the Terraform Registory for docs: [`data_ionoscloud_lan`](https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/data-sources/lan).

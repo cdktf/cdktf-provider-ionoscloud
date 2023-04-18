@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/ionoscloud/d/snapshot
+// https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/data-sources/snapshot
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,7 +8,7 @@ import * as cdktf from 'cdktf';
 
 export interface DataIonoscloudSnapshotConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/d/snapshot#id DataIonoscloudSnapshot#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/data-sources/snapshot#id DataIonoscloudSnapshot#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -17,48 +17,48 @@ export interface DataIonoscloudSnapshotConfig extends cdktf.TerraformMetaArgumen
   /**
   * Location of that image/snapshot
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/d/snapshot#location DataIonoscloudSnapshot#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/data-sources/snapshot#location DataIonoscloudSnapshot#location}
   */
   readonly location?: string;
   /**
   * A name of that resource
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/d/snapshot#name DataIonoscloudSnapshot#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/data-sources/snapshot#name DataIonoscloudSnapshot#name}
   */
   readonly name?: string;
   /**
   * The size of the image in GB
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/d/snapshot#size DataIonoscloudSnapshot#size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/data-sources/snapshot#size DataIonoscloudSnapshot#size}
   */
   readonly size?: number;
   /**
   * timeouts block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/d/snapshot#timeouts DataIonoscloudSnapshot#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/data-sources/snapshot#timeouts DataIonoscloudSnapshot#timeouts}
   */
   readonly timeouts?: DataIonoscloudSnapshotTimeouts;
 }
 export interface DataIonoscloudSnapshotTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/d/snapshot#create DataIonoscloudSnapshot#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/data-sources/snapshot#create DataIonoscloudSnapshot#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/d/snapshot#default DataIonoscloudSnapshot#default}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/data-sources/snapshot#default DataIonoscloudSnapshot#default}
   */
   readonly default?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/d/snapshot#delete DataIonoscloudSnapshot#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/data-sources/snapshot#delete DataIonoscloudSnapshot#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/d/snapshot#update DataIonoscloudSnapshot#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/data-sources/snapshot#update DataIonoscloudSnapshot#update}
   */
   readonly update?: string;
 }
 
-export function dataIonoscloudSnapshotTimeoutsToTerraform(struct?: DataIonoscloudSnapshotTimeoutsOutputReference | DataIonoscloudSnapshotTimeouts | cdktf.IResolvable): any {
+export function dataIonoscloudSnapshotTimeoutsToTerraform(struct?: DataIonoscloudSnapshotTimeouts | cdktf.IResolvable): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -80,7 +80,7 @@ export class DataIonoscloudSnapshotTimeoutsOutputReference extends cdktf.Complex
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
   public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
-    super(terraformResource, terraformAttribute, false, 0);
+    super(terraformResource, terraformAttribute, false);
   }
 
   public get internalValue(): DataIonoscloudSnapshotTimeouts | cdktf.IResolvable | undefined {
@@ -197,7 +197,7 @@ export class DataIonoscloudSnapshotTimeoutsOutputReference extends cdktf.Complex
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/ionoscloud/d/snapshot ionoscloud_snapshot}
+* Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/data-sources/snapshot ionoscloud_snapshot}
 */
 export class DataIonoscloudSnapshot extends cdktf.TerraformDataSource {
 
@@ -211,7 +211,7 @@ export class DataIonoscloudSnapshot extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/ionoscloud/d/snapshot ionoscloud_snapshot} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/data-sources/snapshot ionoscloud_snapshot} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

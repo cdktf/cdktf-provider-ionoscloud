@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/ionoscloud/d/pg_versions
+// https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/data-sources/pg_versions
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,11 +8,11 @@ import * as cdktf from 'cdktf';
 
 export interface DataIonoscloudPgVersionsConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/d/pg_versions#cluster_id DataIonoscloudPgVersions#cluster_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/data-sources/pg_versions#cluster_id DataIonoscloudPgVersions#cluster_id}
   */
   readonly clusterId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/d/pg_versions#id DataIonoscloudPgVersions#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/data-sources/pg_versions#id DataIonoscloudPgVersions#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -21,30 +21,30 @@ export interface DataIonoscloudPgVersionsConfig extends cdktf.TerraformMetaArgum
   /**
   * timeouts block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/d/pg_versions#timeouts DataIonoscloudPgVersions#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/data-sources/pg_versions#timeouts DataIonoscloudPgVersions#timeouts}
   */
   readonly timeouts?: DataIonoscloudPgVersionsTimeouts;
 }
 export interface DataIonoscloudPgVersionsTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/d/pg_versions#create DataIonoscloudPgVersions#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/data-sources/pg_versions#create DataIonoscloudPgVersions#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/d/pg_versions#default DataIonoscloudPgVersions#default}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/data-sources/pg_versions#default DataIonoscloudPgVersions#default}
   */
   readonly default?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/d/pg_versions#delete DataIonoscloudPgVersions#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/data-sources/pg_versions#delete DataIonoscloudPgVersions#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/d/pg_versions#update DataIonoscloudPgVersions#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/data-sources/pg_versions#update DataIonoscloudPgVersions#update}
   */
   readonly update?: string;
 }
 
-export function dataIonoscloudPgVersionsTimeoutsToTerraform(struct?: DataIonoscloudPgVersionsTimeoutsOutputReference | DataIonoscloudPgVersionsTimeouts | cdktf.IResolvable): any {
+export function dataIonoscloudPgVersionsTimeoutsToTerraform(struct?: DataIonoscloudPgVersionsTimeouts | cdktf.IResolvable): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -66,7 +66,7 @@ export class DataIonoscloudPgVersionsTimeoutsOutputReference extends cdktf.Compl
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
   public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
-    super(terraformResource, terraformAttribute, false, 0);
+    super(terraformResource, terraformAttribute, false);
   }
 
   public get internalValue(): DataIonoscloudPgVersionsTimeouts | cdktf.IResolvable | undefined {
@@ -183,7 +183,7 @@ export class DataIonoscloudPgVersionsTimeoutsOutputReference extends cdktf.Compl
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/ionoscloud/d/pg_versions ionoscloud_pg_versions}
+* Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/data-sources/pg_versions ionoscloud_pg_versions}
 */
 export class DataIonoscloudPgVersions extends cdktf.TerraformDataSource {
 
@@ -197,7 +197,7 @@ export class DataIonoscloudPgVersions extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/ionoscloud/d/pg_versions ionoscloud_pg_versions} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/data-sources/pg_versions ionoscloud_pg_versions} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

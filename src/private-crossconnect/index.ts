@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/ionoscloud/r/private_crossconnect
+// https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/resources/private_crossconnect
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,11 +10,11 @@ export interface PrivateCrossconnectConfig extends cdktf.TerraformMetaArguments 
   /**
   * The desired description for the private cross-connect
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/private_crossconnect#description PrivateCrossconnect#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/resources/private_crossconnect#description PrivateCrossconnect#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/private_crossconnect#id PrivateCrossconnect#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/resources/private_crossconnect#id PrivateCrossconnect#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -23,25 +23,25 @@ export interface PrivateCrossconnectConfig extends cdktf.TerraformMetaArguments 
   /**
   * The desired name for the private cross-connect
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/private_crossconnect#name PrivateCrossconnect#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/resources/private_crossconnect#name PrivateCrossconnect#name}
   */
   readonly name: string;
   /**
   * connectable_datacenters block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/private_crossconnect#connectable_datacenters PrivateCrossconnect#connectable_datacenters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/resources/private_crossconnect#connectable_datacenters PrivateCrossconnect#connectable_datacenters}
   */
   readonly connectableDatacenters?: PrivateCrossconnectConnectableDatacenters[] | cdktf.IResolvable;
   /**
   * peers block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/private_crossconnect#peers PrivateCrossconnect#peers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/resources/private_crossconnect#peers PrivateCrossconnect#peers}
   */
   readonly peers?: PrivateCrossconnectPeers[] | cdktf.IResolvable;
   /**
   * timeouts block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/private_crossconnect#timeouts PrivateCrossconnect#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/resources/private_crossconnect#timeouts PrivateCrossconnect#timeouts}
   */
   readonly timeouts?: PrivateCrossconnectTimeouts;
 }
@@ -227,24 +227,24 @@ export class PrivateCrossconnectPeersList extends cdktf.ComplexList {
 }
 export interface PrivateCrossconnectTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/private_crossconnect#create PrivateCrossconnect#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/resources/private_crossconnect#create PrivateCrossconnect#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/private_crossconnect#default PrivateCrossconnect#default}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/resources/private_crossconnect#default PrivateCrossconnect#default}
   */
   readonly default?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/private_crossconnect#delete PrivateCrossconnect#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/resources/private_crossconnect#delete PrivateCrossconnect#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/private_crossconnect#update PrivateCrossconnect#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/resources/private_crossconnect#update PrivateCrossconnect#update}
   */
   readonly update?: string;
 }
 
-export function privateCrossconnectTimeoutsToTerraform(struct?: PrivateCrossconnectTimeoutsOutputReference | PrivateCrossconnectTimeouts | cdktf.IResolvable): any {
+export function privateCrossconnectTimeoutsToTerraform(struct?: PrivateCrossconnectTimeouts | cdktf.IResolvable): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -266,7 +266,7 @@ export class PrivateCrossconnectTimeoutsOutputReference extends cdktf.ComplexObj
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
   public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
-    super(terraformResource, terraformAttribute, false, 0);
+    super(terraformResource, terraformAttribute, false);
   }
 
   public get internalValue(): PrivateCrossconnectTimeouts | cdktf.IResolvable | undefined {
@@ -383,7 +383,7 @@ export class PrivateCrossconnectTimeoutsOutputReference extends cdktf.ComplexObj
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/ionoscloud/r/private_crossconnect ionoscloud_private_crossconnect}
+* Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/resources/private_crossconnect ionoscloud_private_crossconnect}
 */
 export class PrivateCrossconnect extends cdktf.TerraformResource {
 
@@ -397,7 +397,7 @@ export class PrivateCrossconnect extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/ionoscloud/r/private_crossconnect ionoscloud_private_crossconnect} Resource
+  * Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/resources/private_crossconnect ionoscloud_private_crossconnect} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

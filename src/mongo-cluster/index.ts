@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/ionoscloud/r/mongo_cluster
+// https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/resources/mongo_cluster
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,11 +10,11 @@ export interface MongoClusterConfig extends cdktf.TerraformMetaArguments {
   /**
   * The name of your cluster.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/mongo_cluster#display_name MongoCluster#display_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/resources/mongo_cluster#display_name MongoCluster#display_name}
   */
   readonly displayName: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/mongo_cluster#id MongoCluster#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/resources/mongo_cluster#id MongoCluster#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -23,49 +23,49 @@ export interface MongoClusterConfig extends cdktf.TerraformMetaArguments {
   /**
   * The total number of instances in the cluster (one master and n-1 standbys)
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/mongo_cluster#instances MongoCluster#instances}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/resources/mongo_cluster#instances MongoCluster#instances}
   */
   readonly instances: number;
   /**
   * The physical location where the cluster will be created. This will be where all of your instances live. Property cannot be modified after datacenter creation (disallowed in update requests). Available locations: de/txl, gb/lhr, es/vit
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/mongo_cluster#location MongoCluster#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/resources/mongo_cluster#location MongoCluster#location}
   */
   readonly location: string;
   /**
   * The MongoDB version of your cluster.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/mongo_cluster#mongodb_version MongoCluster#mongodb_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/resources/mongo_cluster#mongodb_version MongoCluster#mongodb_version}
   */
   readonly mongodbVersion: string;
   /**
   * The unique ID of the template, which specifies the number of cores, storage size, and memory. You cannot downgrade to a smaller template or minor edition (e.g. from business to playground).
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/mongo_cluster#template_id MongoCluster#template_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/resources/mongo_cluster#template_id MongoCluster#template_id}
   */
   readonly templateId: string;
   /**
   * connections block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/mongo_cluster#connections MongoCluster#connections}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/resources/mongo_cluster#connections MongoCluster#connections}
   */
   readonly connections: MongoClusterConnections;
   /**
   * credentials block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/mongo_cluster#credentials MongoCluster#credentials}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/resources/mongo_cluster#credentials MongoCluster#credentials}
   */
   readonly credentials: MongoClusterCredentials;
   /**
   * maintenance_window block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/mongo_cluster#maintenance_window MongoCluster#maintenance_window}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/resources/mongo_cluster#maintenance_window MongoCluster#maintenance_window}
   */
   readonly maintenanceWindow?: MongoClusterMaintenanceWindow;
   /**
   * timeouts block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/mongo_cluster#timeouts MongoCluster#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/resources/mongo_cluster#timeouts MongoCluster#timeouts}
   */
   readonly timeouts?: MongoClusterTimeouts;
 }
@@ -78,19 +78,19 @@ export interface MongoClusterConnections {
           10.233.114.0/24 		
  example: [192.168.1.100/24, 192.168.1.101/24]
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/mongo_cluster#cidr_list MongoCluster#cidr_list}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/resources/mongo_cluster#cidr_list MongoCluster#cidr_list}
   */
   readonly cidrList: string[];
   /**
   * The datacenter to connect your cluster to.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/mongo_cluster#datacenter_id MongoCluster#datacenter_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/resources/mongo_cluster#datacenter_id MongoCluster#datacenter_id}
   */
   readonly datacenterId: string;
   /**
   * The LAN to connect your cluster to.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/mongo_cluster#lan_id MongoCluster#lan_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/resources/mongo_cluster#lan_id MongoCluster#lan_id}
   */
   readonly lanId: string;
 }
@@ -192,13 +192,13 @@ export class MongoClusterConnectionsOutputReference extends cdktf.ComplexObject 
 }
 export interface MongoClusterCredentials {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/mongo_cluster#password MongoCluster#password}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/resources/mongo_cluster#password MongoCluster#password}
   */
   readonly password: string;
   /**
   * the username for the initial mongoDB user.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/mongo_cluster#username MongoCluster#username}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/resources/mongo_cluster#username MongoCluster#username}
   */
   readonly username: string;
 }
@@ -280,11 +280,11 @@ export class MongoClusterCredentialsOutputReference extends cdktf.ComplexObject 
 }
 export interface MongoClusterMaintenanceWindow {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/mongo_cluster#day_of_the_week MongoCluster#day_of_the_week}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/resources/mongo_cluster#day_of_the_week MongoCluster#day_of_the_week}
   */
   readonly dayOfTheWeek: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/mongo_cluster#time MongoCluster#time}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/resources/mongo_cluster#time MongoCluster#time}
   */
   readonly time: string;
 }
@@ -366,24 +366,24 @@ export class MongoClusterMaintenanceWindowOutputReference extends cdktf.ComplexO
 }
 export interface MongoClusterTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/mongo_cluster#create MongoCluster#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/resources/mongo_cluster#create MongoCluster#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/mongo_cluster#default MongoCluster#default}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/resources/mongo_cluster#default MongoCluster#default}
   */
   readonly default?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/mongo_cluster#delete MongoCluster#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/resources/mongo_cluster#delete MongoCluster#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/r/mongo_cluster#update MongoCluster#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/resources/mongo_cluster#update MongoCluster#update}
   */
   readonly update?: string;
 }
 
-export function mongoClusterTimeoutsToTerraform(struct?: MongoClusterTimeoutsOutputReference | MongoClusterTimeouts | cdktf.IResolvable): any {
+export function mongoClusterTimeoutsToTerraform(struct?: MongoClusterTimeouts | cdktf.IResolvable): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -405,7 +405,7 @@ export class MongoClusterTimeoutsOutputReference extends cdktf.ComplexObject {
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
   public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
-    super(terraformResource, terraformAttribute, false, 0);
+    super(terraformResource, terraformAttribute, false);
   }
 
   public get internalValue(): MongoClusterTimeouts | cdktf.IResolvable | undefined {
@@ -522,7 +522,7 @@ export class MongoClusterTimeoutsOutputReference extends cdktf.ComplexObject {
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/ionoscloud/r/mongo_cluster ionoscloud_mongo_cluster}
+* Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/resources/mongo_cluster ionoscloud_mongo_cluster}
 */
 export class MongoCluster extends cdktf.TerraformResource {
 
@@ -536,7 +536,7 @@ export class MongoCluster extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/ionoscloud/r/mongo_cluster ionoscloud_mongo_cluster} Resource
+  * Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/resources/mongo_cluster ionoscloud_mongo_cluster} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

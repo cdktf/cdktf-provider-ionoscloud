@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/ionoscloud/d/target_group
+// https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/data-sources/target_group
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,7 +8,7 @@ import * as cdktf from 'cdktf';
 
 export interface DataIonoscloudTargetGroupConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/d/target_group#id DataIonoscloudTargetGroup#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/data-sources/target_group#id DataIonoscloudTargetGroup#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -17,19 +17,19 @@ export interface DataIonoscloudTargetGroupConfig extends cdktf.TerraformMetaArgu
   /**
   * The name of the target group.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/d/target_group#name DataIonoscloudTargetGroup#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/data-sources/target_group#name DataIonoscloudTargetGroup#name}
   */
   readonly name?: string;
   /**
   * Whether partial matching is allowed or not when using name argument.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/d/target_group#partial_match DataIonoscloudTargetGroup#partial_match}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/data-sources/target_group#partial_match DataIonoscloudTargetGroup#partial_match}
   */
   readonly partialMatch?: boolean | cdktf.IResolvable;
   /**
   * timeouts block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/d/target_group#timeouts DataIonoscloudTargetGroup#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/data-sources/target_group#timeouts DataIonoscloudTargetGroup#timeouts}
   */
   readonly timeouts?: DataIonoscloudTargetGroupTimeouts;
 }
@@ -282,24 +282,24 @@ export class DataIonoscloudTargetGroupTargetsList extends cdktf.ComplexList {
 }
 export interface DataIonoscloudTargetGroupTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/d/target_group#create DataIonoscloudTargetGroup#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/data-sources/target_group#create DataIonoscloudTargetGroup#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/d/target_group#default DataIonoscloudTargetGroup#default}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/data-sources/target_group#default DataIonoscloudTargetGroup#default}
   */
   readonly default?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/d/target_group#delete DataIonoscloudTargetGroup#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/data-sources/target_group#delete DataIonoscloudTargetGroup#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/d/target_group#update DataIonoscloudTargetGroup#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/data-sources/target_group#update DataIonoscloudTargetGroup#update}
   */
   readonly update?: string;
 }
 
-export function dataIonoscloudTargetGroupTimeoutsToTerraform(struct?: DataIonoscloudTargetGroupTimeoutsOutputReference | DataIonoscloudTargetGroupTimeouts | cdktf.IResolvable): any {
+export function dataIonoscloudTargetGroupTimeoutsToTerraform(struct?: DataIonoscloudTargetGroupTimeouts | cdktf.IResolvable): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -321,7 +321,7 @@ export class DataIonoscloudTargetGroupTimeoutsOutputReference extends cdktf.Comp
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
   public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
-    super(terraformResource, terraformAttribute, false, 0);
+    super(terraformResource, terraformAttribute, false);
   }
 
   public get internalValue(): DataIonoscloudTargetGroupTimeouts | cdktf.IResolvable | undefined {
@@ -438,7 +438,7 @@ export class DataIonoscloudTargetGroupTimeoutsOutputReference extends cdktf.Comp
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/ionoscloud/d/target_group ionoscloud_target_group}
+* Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/data-sources/target_group ionoscloud_target_group}
 */
 export class DataIonoscloudTargetGroup extends cdktf.TerraformDataSource {
 
@@ -452,7 +452,7 @@ export class DataIonoscloudTargetGroup extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/ionoscloud/d/target_group ionoscloud_target_group} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/data-sources/target_group ionoscloud_target_group} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

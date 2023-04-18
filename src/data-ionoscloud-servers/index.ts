@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/ionoscloud/d/servers
+// https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/data-sources/servers
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,11 +8,11 @@ import * as cdktf from 'cdktf';
 
 export interface DataIonoscloudServersConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/d/servers#datacenter_id DataIonoscloudServers#datacenter_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/data-sources/servers#datacenter_id DataIonoscloudServers#datacenter_id}
   */
   readonly datacenterId: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/d/servers#id DataIonoscloudServers#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/data-sources/servers#id DataIonoscloudServers#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -21,13 +21,13 @@ export interface DataIonoscloudServersConfig extends cdktf.TerraformMetaArgument
   /**
   * filter block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/d/servers#filter DataIonoscloudServers#filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/data-sources/servers#filter DataIonoscloudServers#filter}
   */
   readonly filter: DataIonoscloudServersFilter[] | cdktf.IResolvable;
   /**
   * timeouts block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/d/servers#timeouts DataIonoscloudServers#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/data-sources/servers#timeouts DataIonoscloudServers#timeouts}
   */
   readonly timeouts?: DataIonoscloudServersTimeouts;
 }
@@ -807,11 +807,11 @@ export class DataIonoscloudServersServersList extends cdktf.ComplexList {
 }
 export interface DataIonoscloudServersFilter {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/d/servers#name DataIonoscloudServers#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/data-sources/servers#name DataIonoscloudServers#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/d/servers#value DataIonoscloudServers#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/data-sources/servers#value DataIonoscloudServers#value}
   */
   readonly value: string;
 }
@@ -925,24 +925,24 @@ export class DataIonoscloudServersFilterList extends cdktf.ComplexList {
 }
 export interface DataIonoscloudServersTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/d/servers#create DataIonoscloudServers#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/data-sources/servers#create DataIonoscloudServers#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/d/servers#default DataIonoscloudServers#default}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/data-sources/servers#default DataIonoscloudServers#default}
   */
   readonly default?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/d/servers#delete DataIonoscloudServers#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/data-sources/servers#delete DataIonoscloudServers#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/d/servers#update DataIonoscloudServers#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/data-sources/servers#update DataIonoscloudServers#update}
   */
   readonly update?: string;
 }
 
-export function dataIonoscloudServersTimeoutsToTerraform(struct?: DataIonoscloudServersTimeoutsOutputReference | DataIonoscloudServersTimeouts | cdktf.IResolvable): any {
+export function dataIonoscloudServersTimeoutsToTerraform(struct?: DataIonoscloudServersTimeouts | cdktf.IResolvable): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -964,7 +964,7 @@ export class DataIonoscloudServersTimeoutsOutputReference extends cdktf.ComplexO
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
   public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
-    super(terraformResource, terraformAttribute, false, 0);
+    super(terraformResource, terraformAttribute, false);
   }
 
   public get internalValue(): DataIonoscloudServersTimeouts | cdktf.IResolvable | undefined {
@@ -1081,7 +1081,7 @@ export class DataIonoscloudServersTimeoutsOutputReference extends cdktf.ComplexO
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/ionoscloud/d/servers ionoscloud_servers}
+* Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/data-sources/servers ionoscloud_servers}
 */
 export class DataIonoscloudServers extends cdktf.TerraformDataSource {
 
@@ -1095,7 +1095,7 @@ export class DataIonoscloudServers extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/ionoscloud/d/servers ionoscloud_servers} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/data-sources/servers ionoscloud_servers} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

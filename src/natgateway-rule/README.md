@@ -1,3 +1,3 @@
 # `ionoscloud_natgateway_rule`
 
-Refer to the Terraform Registory for docs: [`ionoscloud_natgateway_rule`](https://www.terraform.io/docs/providers/ionoscloud/r/natgateway_rule).
+Refer to the Terraform Registory for docs: [`ionoscloud_natgateway_rule`](https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/resources/natgateway_rule).

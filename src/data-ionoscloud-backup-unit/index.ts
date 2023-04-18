@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/ionoscloud/d/backup_unit
+// https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/data-sources/backup_unit
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,7 +10,7 @@ export interface DataIonoscloudBackupUnitConfig extends cdktf.TerraformMetaArgum
   /**
   * Id of the backup unit.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/d/backup_unit#id DataIonoscloudBackupUnit#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/data-sources/backup_unit#id DataIonoscloudBackupUnit#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -19,36 +19,36 @@ export interface DataIonoscloudBackupUnitConfig extends cdktf.TerraformMetaArgum
   /**
   * Alphanumeric name you want assigned to the backup unit.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/d/backup_unit#name DataIonoscloudBackupUnit#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/data-sources/backup_unit#name DataIonoscloudBackupUnit#name}
   */
   readonly name?: string;
   /**
   * timeouts block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/d/backup_unit#timeouts DataIonoscloudBackupUnit#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/data-sources/backup_unit#timeouts DataIonoscloudBackupUnit#timeouts}
   */
   readonly timeouts?: DataIonoscloudBackupUnitTimeouts;
 }
 export interface DataIonoscloudBackupUnitTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/d/backup_unit#create DataIonoscloudBackupUnit#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/data-sources/backup_unit#create DataIonoscloudBackupUnit#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/d/backup_unit#default DataIonoscloudBackupUnit#default}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/data-sources/backup_unit#default DataIonoscloudBackupUnit#default}
   */
   readonly default?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/d/backup_unit#delete DataIonoscloudBackupUnit#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/data-sources/backup_unit#delete DataIonoscloudBackupUnit#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/d/backup_unit#update DataIonoscloudBackupUnit#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/data-sources/backup_unit#update DataIonoscloudBackupUnit#update}
   */
   readonly update?: string;
 }
 
-export function dataIonoscloudBackupUnitTimeoutsToTerraform(struct?: DataIonoscloudBackupUnitTimeoutsOutputReference | DataIonoscloudBackupUnitTimeouts | cdktf.IResolvable): any {
+export function dataIonoscloudBackupUnitTimeoutsToTerraform(struct?: DataIonoscloudBackupUnitTimeouts | cdktf.IResolvable): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -70,7 +70,7 @@ export class DataIonoscloudBackupUnitTimeoutsOutputReference extends cdktf.Compl
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
   public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
-    super(terraformResource, terraformAttribute, false, 0);
+    super(terraformResource, terraformAttribute, false);
   }
 
   public get internalValue(): DataIonoscloudBackupUnitTimeouts | cdktf.IResolvable | undefined {
@@ -187,7 +187,7 @@ export class DataIonoscloudBackupUnitTimeoutsOutputReference extends cdktf.Compl
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/ionoscloud/d/backup_unit ionoscloud_backup_unit}
+* Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/data-sources/backup_unit ionoscloud_backup_unit}
 */
 export class DataIonoscloudBackupUnit extends cdktf.TerraformDataSource {
 
@@ -201,7 +201,7 @@ export class DataIonoscloudBackupUnit extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/ionoscloud/d/backup_unit ionoscloud_backup_unit} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/data-sources/backup_unit ionoscloud_backup_unit} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

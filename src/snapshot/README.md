@@ -1,3 +1,3 @@
 # `ionoscloud_snapshot`
 
-Refer to the Terraform Registory for docs: [`ionoscloud_snapshot`](https://www.terraform.io/docs/providers/ionoscloud/r/snapshot).
+Refer to the Terraform Registory for docs: [`ionoscloud_snapshot`](https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/resources/snapshot).

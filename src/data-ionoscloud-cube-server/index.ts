@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/ionoscloud/d/cube_server
+// https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/data-sources/cube_server
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,28 +8,28 @@ import * as cdktf from 'cdktf';
 
 export interface DataIonoscloudCubeServerConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/d/cube_server#datacenter_id DataIonoscloudCubeServer#datacenter_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/data-sources/cube_server#datacenter_id DataIonoscloudCubeServer#datacenter_id}
   */
   readonly datacenterId: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/d/cube_server#id DataIonoscloudCubeServer#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/data-sources/cube_server#id DataIonoscloudCubeServer#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/d/cube_server#name DataIonoscloudCubeServer#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/data-sources/cube_server#name DataIonoscloudCubeServer#name}
   */
   readonly name?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/d/cube_server#template_uuid DataIonoscloudCubeServer#template_uuid}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/data-sources/cube_server#template_uuid DataIonoscloudCubeServer#template_uuid}
   */
   readonly templateUuid?: string;
   /**
   * timeouts block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/d/cube_server#timeouts DataIonoscloudCubeServer#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/data-sources/cube_server#timeouts DataIonoscloudCubeServer#timeouts}
   */
   readonly timeouts?: DataIonoscloudCubeServerTimeouts;
 }
@@ -582,24 +582,24 @@ export class DataIonoscloudCubeServerVolumesList extends cdktf.ComplexList {
 }
 export interface DataIonoscloudCubeServerTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/d/cube_server#create DataIonoscloudCubeServer#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/data-sources/cube_server#create DataIonoscloudCubeServer#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/d/cube_server#default DataIonoscloudCubeServer#default}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/data-sources/cube_server#default DataIonoscloudCubeServer#default}
   */
   readonly default?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/d/cube_server#delete DataIonoscloudCubeServer#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/data-sources/cube_server#delete DataIonoscloudCubeServer#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/ionoscloud/d/cube_server#update DataIonoscloudCubeServer#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/data-sources/cube_server#update DataIonoscloudCubeServer#update}
   */
   readonly update?: string;
 }
 
-export function dataIonoscloudCubeServerTimeoutsToTerraform(struct?: DataIonoscloudCubeServerTimeoutsOutputReference | DataIonoscloudCubeServerTimeouts | cdktf.IResolvable): any {
+export function dataIonoscloudCubeServerTimeoutsToTerraform(struct?: DataIonoscloudCubeServerTimeouts | cdktf.IResolvable): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -621,7 +621,7 @@ export class DataIonoscloudCubeServerTimeoutsOutputReference extends cdktf.Compl
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
   public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
-    super(terraformResource, terraformAttribute, false, 0);
+    super(terraformResource, terraformAttribute, false);
   }
 
   public get internalValue(): DataIonoscloudCubeServerTimeouts | cdktf.IResolvable | undefined {
@@ -738,7 +738,7 @@ export class DataIonoscloudCubeServerTimeoutsOutputReference extends cdktf.Compl
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/ionoscloud/d/cube_server ionoscloud_cube_server}
+* Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/data-sources/cube_server ionoscloud_cube_server}
 */
 export class DataIonoscloudCubeServer extends cdktf.TerraformDataSource {
 
@@ -752,7 +752,7 @@ export class DataIonoscloudCubeServer extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/ionoscloud/d/cube_server ionoscloud_cube_server} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/data-sources/cube_server ionoscloud_cube_server} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
