@@ -1,3 +1,7 @@
+# `ionoscloud_share`
+
+Refer to the Terraform Registory for docs: [`ionoscloud_share`](https://www.terraform.io/docs/providers/ionoscloud/r/share).
+
 # `share` Submodule <a name="`share` Submodule" id="@cdktf/provider-ionoscloud.share"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

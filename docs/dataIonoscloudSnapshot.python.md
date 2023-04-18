@@ -1,3 +1,7 @@
+# `data_ionoscloud_snapshot`
+
+Refer to the Terraform Registory for docs: [`data_ionoscloud_snapshot`](https://www.terraform.io/docs/providers/ionoscloud/d/snapshot).
+
 # `dataIonoscloudSnapshot` Submodule <a name="`dataIonoscloudSnapshot` Submodule" id="@cdktf/provider-ionoscloud.dataIonoscloudSnapshot"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

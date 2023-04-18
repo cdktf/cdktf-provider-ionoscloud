@@ -1,3 +1,7 @@
+# `data_ionoscloud_certificate`
+
+Refer to the Terraform Registory for docs: [`data_ionoscloud_certificate`](https://www.terraform.io/docs/providers/ionoscloud/d/certificate).
+
 # `dataIonoscloudCertificate` Submodule <a name="`dataIonoscloudCertificate` Submodule" id="@cdktf/provider-ionoscloud.dataIonoscloudCertificate"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

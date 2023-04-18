@@ -1,3 +1,7 @@
+# `data_ionoscloud_resource`
+
+Refer to the Terraform Registory for docs: [`data_ionoscloud_resource`](https://www.terraform.io/docs/providers/ionoscloud/d/resource).
+
 # `dataIonoscloudResource` Submodule <a name="`dataIonoscloudResource` Submodule" id="@cdktf/provider-ionoscloud.dataIonoscloudResource"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

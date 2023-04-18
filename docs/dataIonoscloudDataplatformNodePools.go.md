@@ -1,3 +1,7 @@
+# `data_ionoscloud_dataplatform_node_pools`
+
+Refer to the Terraform Registory for docs: [`data_ionoscloud_dataplatform_node_pools`](https://www.terraform.io/docs/providers/ionoscloud/d/dataplatform_node_pools).
+
 # `dataIonoscloudDataplatformNodePools` Submodule <a name="`dataIonoscloudDataplatformNodePools` Submodule" id="@cdktf/provider-ionoscloud.dataIonoscloudDataplatformNodePools"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

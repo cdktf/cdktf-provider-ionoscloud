@@ -1,3 +1,7 @@
+# `data_ionoscloud_container_registry`
+
+Refer to the Terraform Registory for docs: [`data_ionoscloud_container_registry`](https://www.terraform.io/docs/providers/ionoscloud/d/container_registry).
+
 # `dataIonoscloudContainerRegistry` Submodule <a name="`dataIonoscloudContainerRegistry` Submodule" id="@cdktf/provider-ionoscloud.dataIonoscloudContainerRegistry"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

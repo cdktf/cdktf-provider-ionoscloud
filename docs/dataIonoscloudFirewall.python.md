@@ -1,3 +1,7 @@
+# `data_ionoscloud_firewall`
+
+Refer to the Terraform Registory for docs: [`data_ionoscloud_firewall`](https://www.terraform.io/docs/providers/ionoscloud/d/firewall).
+
 # `dataIonoscloudFirewall` Submodule <a name="`dataIonoscloudFirewall` Submodule" id="@cdktf/provider-ionoscloud.dataIonoscloudFirewall"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

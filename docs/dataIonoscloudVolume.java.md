@@ -1,3 +1,7 @@
+# `data_ionoscloud_volume`
+
+Refer to the Terraform Registory for docs: [`data_ionoscloud_volume`](https://www.terraform.io/docs/providers/ionoscloud/d/volume).
+
 # `dataIonoscloudVolume` Submodule <a name="`dataIonoscloudVolume` Submodule" id="@cdktf/provider-ionoscloud.dataIonoscloudVolume"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

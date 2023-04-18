@@ -1,3 +1,7 @@
+# `data_ionoscloud_nic`
+
+Refer to the Terraform Registory for docs: [`data_ionoscloud_nic`](https://www.terraform.io/docs/providers/ionoscloud/d/nic).
+
 # `dataIonoscloudNic` Submodule <a name="`dataIonoscloudNic` Submodule" id="@cdktf/provider-ionoscloud.dataIonoscloudNic"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
