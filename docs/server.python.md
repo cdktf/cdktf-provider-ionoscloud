@@ -1026,7 +1026,7 @@ server.Server.is_terraform_resource(
 | <code><a href="#@cdktf/provider-ionoscloud.server.Server.property.sshKeyPathInput">ssh_key_path_input</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.server.Server.property.sshKeysInput">ssh_keys_input</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.server.Server.property.templateUuidInput">template_uuid_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-ionoscloud.server.Server.property.timeoutsInput">timeouts_input</a></code> | <code>typing.Union[<a href="#@cdktf/provider-ionoscloud.server.ServerTimeouts">ServerTimeouts</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.server.Server.property.timeoutsInput">timeouts_input</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-ionoscloud.server.ServerTimeouts">ServerTimeouts</a>]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.server.Server.property.typeInput">type_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.server.Server.property.volumeInput">volume_input</a></code> | <code><a href="#@cdktf/provider-ionoscloud.server.ServerVolume">ServerVolume</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.server.Server.property.availabilityZone">availability_zone</a></code> | <code>str</code> | *No description.* |
@@ -1442,10 +1442,10 @@ template_uuid_input: str
 ##### `timeouts_input`<sup>Optional</sup> <a name="timeouts_input" id="@cdktf/provider-ionoscloud.server.Server.property.timeoutsInput"></a>
 
 ```python
-timeouts_input: typing.Union[ServerTimeouts, IResolvable]
+timeouts_input: typing.Union[IResolvable, ServerTimeouts]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-ionoscloud.server.ServerTimeouts">ServerTimeouts</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-ionoscloud.server.ServerTimeouts">ServerTimeouts</a>]
 
 ---
 
@@ -3026,7 +3026,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-ionoscloud.server.ServerLabelOutputReference.property.valueInput">value_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.server.ServerLabelOutputReference.property.key">key</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.server.ServerLabelOutputReference.property.value">value</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-ionoscloud.server.ServerLabelOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-ionoscloud.server.ServerLabel">ServerLabel</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.server.ServerLabelOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-ionoscloud.server.ServerLabel">ServerLabel</a>]</code> | *No description.* |
 
 ---
 
@@ -3097,10 +3097,10 @@ value: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-ionoscloud.server.ServerLabelOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[ServerLabel, IResolvable]
+internal_value: typing.Union[IResolvable, ServerLabel]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-ionoscloud.server.ServerLabel">ServerLabel</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-ionoscloud.server.ServerLabel">ServerLabel</a>]
 
 ---
 
@@ -4545,7 +4545,7 @@ def reset_update() -> None
 | <code><a href="#@cdktf/provider-ionoscloud.server.ServerTimeoutsOutputReference.property.default">default</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.server.ServerTimeoutsOutputReference.property.delete">delete</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.server.ServerTimeoutsOutputReference.property.update">update</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-ionoscloud.server.ServerTimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-ionoscloud.server.ServerTimeouts">ServerTimeouts</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.server.ServerTimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-ionoscloud.server.ServerTimeouts">ServerTimeouts</a>]</code> | *No description.* |
 
 ---
 
@@ -4656,10 +4656,10 @@ update: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-ionoscloud.server.ServerTimeoutsOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[ServerTimeouts, IResolvable]
+internal_value: typing.Union[IResolvable, ServerTimeouts]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-ionoscloud.server.ServerTimeouts">ServerTimeouts</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-ionoscloud.server.ServerTimeouts">ServerTimeouts</a>]
 
 ---
 
