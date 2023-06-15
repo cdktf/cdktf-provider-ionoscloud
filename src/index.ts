@@ -14,6 +14,8 @@ export * as cubeServer from './cube-server';
 export * as datacenter from './datacenter';
 export * as dataplatformCluster from './dataplatform-cluster';
 export * as dataplatformNodePool from './dataplatform-node-pool';
+export * as dnsRecord from './dns-record';
+export * as dnsZone from './dns-zone';
 export * as firewall from './firewall';
 export * as group from './group';
 export * as ipblock from './ipblock';
@@ -51,6 +53,8 @@ export * as dataIonoscloudDataplatformCluster from './data-ionoscloud-dataplatfo
 export * as dataIonoscloudDataplatformNodePool from './data-ionoscloud-dataplatform-node-pool';
 export * as dataIonoscloudDataplatformNodePools from './data-ionoscloud-dataplatform-node-pools';
 export * as dataIonoscloudDataplatformVersions from './data-ionoscloud-dataplatform-versions';
+export * as dataIonoscloudDnsRecord from './data-ionoscloud-dns-record';
+export * as dataIonoscloudDnsZone from './data-ionoscloud-dns-zone';
 export * as dataIonoscloudFirewall from './data-ionoscloud-firewall';
 export * as dataIonoscloudGroup from './data-ionoscloud-group';
 export * as dataIonoscloudImage from './data-ionoscloud-image';
