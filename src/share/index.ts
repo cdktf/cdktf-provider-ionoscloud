@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/resources/share
+// https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.0/docs/resources/share
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,50 +8,50 @@ import * as cdktf from 'cdktf';
 
 export interface ShareConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/resources/share#edit_privilege Share#edit_privilege}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.0/docs/resources/share#edit_privilege Share#edit_privilege}
   */
   readonly editPrivilege?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/resources/share#group_id Share#group_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.0/docs/resources/share#group_id Share#group_id}
   */
   readonly groupId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/resources/share#id Share#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.0/docs/resources/share#id Share#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/resources/share#resource_id Share#resource_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.0/docs/resources/share#resource_id Share#resource_id}
   */
   readonly resourceId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/resources/share#share_privilege Share#share_privilege}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.0/docs/resources/share#share_privilege Share#share_privilege}
   */
   readonly sharePrivilege?: boolean | cdktf.IResolvable;
   /**
   * timeouts block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/resources/share#timeouts Share#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.0/docs/resources/share#timeouts Share#timeouts}
   */
   readonly timeouts?: ShareTimeouts;
 }
 export interface ShareTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/resources/share#create Share#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.0/docs/resources/share#create Share#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/resources/share#default Share#default}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.0/docs/resources/share#default Share#default}
   */
   readonly default?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/resources/share#delete Share#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.0/docs/resources/share#delete Share#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/resources/share#update Share#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.0/docs/resources/share#update Share#update}
   */
   readonly update?: string;
 }
@@ -200,7 +195,7 @@ export class ShareTimeoutsOutputReference extends cdktf.ComplexObject {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/resources/share ionoscloud_share}
+* Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.0/docs/resources/share ionoscloud_share}
 */
 export class Share extends cdktf.TerraformResource {
 
@@ -214,7 +209,7 @@ export class Share extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/resources/share ionoscloud_share} Resource
+  * Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.0/docs/resources/share ionoscloud_share} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -225,7 +220,7 @@ export class Share extends cdktf.TerraformResource {
       terraformResourceType: 'ionoscloud_share',
       terraformGeneratorMetadata: {
         providerName: 'ionoscloud',
-        providerVersion: '6.3.6',
+        providerVersion: '6.4.0',
         providerVersionConstraint: '~> 6.2'
       },
       provider: config.provider,

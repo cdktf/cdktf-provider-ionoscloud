@@ -1,6 +1,6 @@
 # `data_ionoscloud_firewall`
 
-Refer to the Terraform Registory for docs: [`data_ionoscloud_firewall`](https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/data-sources/firewall).
+Refer to the Terraform Registory for docs: [`data_ionoscloud_firewall`](https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.0/docs/data-sources/firewall).
 
 # `dataIonoscloudFirewall` Submodule <a name="`dataIonoscloudFirewall` Submodule" id="@cdktf/provider-ionoscloud.dataIonoscloudFirewall"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`data_ionoscloud_firewall`](https://
 
 ### DataIonoscloudFirewall <a name="DataIonoscloudFirewall" id="@cdktf/provider-ionoscloud.dataIonoscloudFirewall.DataIonoscloudFirewall"></a>
 
-Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/data-sources/firewall ionoscloud_firewall}.
+Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.0/docs/data-sources/firewall ionoscloud_firewall}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.dataIonoscloudFirewall.DataIonoscloudFirewall.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v6/dataionoscloudfirewall"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/dataionoscloudfirewall"
 
 dataionoscloudfirewall.NewDataIonoscloudFirewall(scope Construct, id *string, config DataIonoscloudFirewallConfig) DataIonoscloudFirewall
 ```
@@ -304,7 +304,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-ionoscloud.dataIonoscloudFirewall.DataIonoscloudFirewall.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v6/dataionoscloudfirewall"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/dataionoscloudfirewall"
 
 dataionoscloudfirewall.DataIonoscloudFirewall_IsConstruct(x interface{}) *bool
 ```
@@ -336,7 +336,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-ionoscloud.dataIonoscloudFirewall.DataIonoscloudFirewall.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v6/dataionoscloudfirewall"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/dataionoscloudfirewall"
 
 dataionoscloudfirewall.DataIonoscloudFirewall_IsTerraformElement(x interface{}) *bool
 ```
@@ -350,7 +350,7 @@ dataionoscloudfirewall.DataIonoscloudFirewall_IsTerraformElement(x interface{}) 
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-ionoscloud.dataIonoscloudFirewall.DataIonoscloudFirewall.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v6/dataionoscloudfirewall"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/dataionoscloudfirewall"
 
 dataionoscloudfirewall.DataIonoscloudFirewall_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -758,7 +758,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-ionoscloud.dataIonoscloudFirewall.DataIonoscloudFirewallConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v6/dataionoscloudfirewall"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/dataionoscloudfirewall"
 
 &dataionoscloudfirewall.DataIonoscloudFirewallConfig {
 	Connection: interface{},
@@ -773,7 +773,7 @@ import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v6/dataionosclo
 	ServerId: *string,
 	Id: *string,
 	Name: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v6.dataIonoscloudFirewall.DataIonoscloudFirewallTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud.dataIonoscloudFirewall.DataIonoscloudFirewallTimeouts,
 }
 ```
 
@@ -788,11 +788,11 @@ import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v6/dataionosclo
 | <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudFirewall.DataIonoscloudFirewallConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudFirewall.DataIonoscloudFirewallConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudFirewall.DataIonoscloudFirewallConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudFirewall.DataIonoscloudFirewallConfig.property.datacenterId">DatacenterId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/data-sources/firewall#datacenter_id DataIonoscloudFirewall#datacenter_id}. |
-| <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudFirewall.DataIonoscloudFirewallConfig.property.nicId">NicId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/data-sources/firewall#nic_id DataIonoscloudFirewall#nic_id}. |
-| <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudFirewall.DataIonoscloudFirewallConfig.property.serverId">ServerId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/data-sources/firewall#server_id DataIonoscloudFirewall#server_id}. |
-| <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudFirewall.DataIonoscloudFirewallConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/data-sources/firewall#id DataIonoscloudFirewall#id}. |
-| <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudFirewall.DataIonoscloudFirewallConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/data-sources/firewall#name DataIonoscloudFirewall#name}. |
+| <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudFirewall.DataIonoscloudFirewallConfig.property.datacenterId">DatacenterId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.0/docs/data-sources/firewall#datacenter_id DataIonoscloudFirewall#datacenter_id}. |
+| <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudFirewall.DataIonoscloudFirewallConfig.property.nicId">NicId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.0/docs/data-sources/firewall#nic_id DataIonoscloudFirewall#nic_id}. |
+| <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudFirewall.DataIonoscloudFirewallConfig.property.serverId">ServerId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.0/docs/data-sources/firewall#server_id DataIonoscloudFirewall#server_id}. |
+| <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudFirewall.DataIonoscloudFirewallConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.0/docs/data-sources/firewall#id DataIonoscloudFirewall#id}. |
+| <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudFirewall.DataIonoscloudFirewallConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.0/docs/data-sources/firewall#name DataIonoscloudFirewall#name}. |
 | <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudFirewall.DataIonoscloudFirewallConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudFirewall.DataIonoscloudFirewallTimeouts">DataIonoscloudFirewallTimeouts</a></code> | timeouts block. |
 
 ---
@@ -875,7 +875,7 @@ DatacenterId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/data-sources/firewall#datacenter_id DataIonoscloudFirewall#datacenter_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.0/docs/data-sources/firewall#datacenter_id DataIonoscloudFirewall#datacenter_id}.
 
 ---
 
@@ -887,7 +887,7 @@ NicId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/data-sources/firewall#nic_id DataIonoscloudFirewall#nic_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.0/docs/data-sources/firewall#nic_id DataIonoscloudFirewall#nic_id}.
 
 ---
 
@@ -899,7 +899,7 @@ ServerId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/data-sources/firewall#server_id DataIonoscloudFirewall#server_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.0/docs/data-sources/firewall#server_id DataIonoscloudFirewall#server_id}.
 
 ---
 
@@ -911,7 +911,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/data-sources/firewall#id DataIonoscloudFirewall#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.0/docs/data-sources/firewall#id DataIonoscloudFirewall#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -926,7 +926,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/data-sources/firewall#name DataIonoscloudFirewall#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.0/docs/data-sources/firewall#name DataIonoscloudFirewall#name}.
 
 ---
 
@@ -940,7 +940,7 @@ Timeouts DataIonoscloudFirewallTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/data-sources/firewall#timeouts DataIonoscloudFirewall#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.0/docs/data-sources/firewall#timeouts DataIonoscloudFirewall#timeouts}
 
 ---
 
@@ -949,7 +949,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 #### Initializer <a name="Initializer" id="@cdktf/provider-ionoscloud.dataIonoscloudFirewall.DataIonoscloudFirewallTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v6/dataionoscloudfirewall"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/dataionoscloudfirewall"
 
 &dataionoscloudfirewall.DataIonoscloudFirewallTimeouts {
 	Create: *string,
@@ -963,10 +963,10 @@ import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v6/dataionosclo
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudFirewall.DataIonoscloudFirewallTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/data-sources/firewall#create DataIonoscloudFirewall#create}. |
-| <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudFirewall.DataIonoscloudFirewallTimeouts.property.default">Default</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/data-sources/firewall#default DataIonoscloudFirewall#default}. |
-| <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudFirewall.DataIonoscloudFirewallTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/data-sources/firewall#delete DataIonoscloudFirewall#delete}. |
-| <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudFirewall.DataIonoscloudFirewallTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/data-sources/firewall#update DataIonoscloudFirewall#update}. |
+| <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudFirewall.DataIonoscloudFirewallTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.0/docs/data-sources/firewall#create DataIonoscloudFirewall#create}. |
+| <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudFirewall.DataIonoscloudFirewallTimeouts.property.default">Default</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.0/docs/data-sources/firewall#default DataIonoscloudFirewall#default}. |
+| <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudFirewall.DataIonoscloudFirewallTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.0/docs/data-sources/firewall#delete DataIonoscloudFirewall#delete}. |
+| <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudFirewall.DataIonoscloudFirewallTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.0/docs/data-sources/firewall#update DataIonoscloudFirewall#update}. |
 
 ---
 
@@ -978,7 +978,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/data-sources/firewall#create DataIonoscloudFirewall#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.0/docs/data-sources/firewall#create DataIonoscloudFirewall#create}.
 
 ---
 
@@ -990,7 +990,7 @@ Default *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/data-sources/firewall#default DataIonoscloudFirewall#default}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.0/docs/data-sources/firewall#default DataIonoscloudFirewall#default}.
 
 ---
 
@@ -1002,7 +1002,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/data-sources/firewall#delete DataIonoscloudFirewall#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.0/docs/data-sources/firewall#delete DataIonoscloudFirewall#delete}.
 
 ---
 
@@ -1014,7 +1014,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.3.6/docs/data-sources/firewall#update DataIonoscloudFirewall#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.0/docs/data-sources/firewall#update DataIonoscloudFirewall#update}.
 
 ---
 
@@ -1025,7 +1025,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.dataIonoscloudFirewall.DataIonoscloudFirewallTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v6/dataionoscloudfirewall"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/dataionoscloudfirewall"
 
 dataionoscloudfirewall.NewDataIonoscloudFirewallTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataIonoscloudFirewallTimeoutsOutputReference
 ```
