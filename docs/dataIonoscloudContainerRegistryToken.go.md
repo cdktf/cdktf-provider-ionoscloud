@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionosclo
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.dataIonoscloudContainerRegistryToken.DataIonoscloudContainerRegistryToken.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/dataionoscloudcontainerregistrytoken"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v7/dataionoscloudcontainerregistrytoken"
 
 dataionoscloudcontainerregistrytoken.NewDataIonoscloudContainerRegistryToken(scope Construct, id *string, config DataIonoscloudContainerRegistryTokenConfig) DataIonoscloudContainerRegistryToken
 ```
@@ -311,7 +311,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-ionoscloud.dataIonoscloudContainerRegistryToken.DataIonoscloudContainerRegistryToken.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/dataionoscloudcontainerregistrytoken"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v7/dataionoscloudcontainerregistrytoken"
 
 dataionoscloudcontainerregistrytoken.DataIonoscloudContainerRegistryToken_IsConstruct(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-ionoscloud.dataIonoscloudContainerRegistryToken.DataIonoscloudContainerRegistryToken.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/dataionoscloudcontainerregistrytoken"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v7/dataionoscloudcontainerregistrytoken"
 
 dataionoscloudcontainerregistrytoken.DataIonoscloudContainerRegistryToken_IsTerraformElement(x interface{}) *bool
 ```
@@ -357,7 +357,7 @@ dataionoscloudcontainerregistrytoken.DataIonoscloudContainerRegistryToken_IsTerr
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-ionoscloud.dataIonoscloudContainerRegistryToken.DataIonoscloudContainerRegistryToken.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/dataionoscloudcontainerregistrytoken"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v7/dataionoscloudcontainerregistrytoken"
 
 dataionoscloudcontainerregistrytoken.DataIonoscloudContainerRegistryToken_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -688,7 +688,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-ionoscloud.dataIonoscloudContainerRegistryToken.DataIonoscloudContainerRegistryTokenConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/dataionoscloudcontainerregistrytoken"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v7/dataionoscloudcontainerregistrytoken"
 
 &dataionoscloudcontainerregistrytoken.DataIonoscloudContainerRegistryTokenConfig {
 	Connection: interface{},
@@ -702,7 +702,7 @@ import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/dataionoscloudc
 	Id: *string,
 	Name: *string,
 	PartialMatch: interface{},
-	Timeouts: github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud.dataIonoscloudContainerRegistryToken.DataIonoscloudContainerRegistryTokenTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v7.dataIonoscloudContainerRegistryToken.DataIonoscloudContainerRegistryTokenTimeouts,
 }
 ```
 
@@ -867,7 +867,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 #### Initializer <a name="Initializer" id="@cdktf/provider-ionoscloud.dataIonoscloudContainerRegistryToken.DataIonoscloudContainerRegistryTokenCredentials.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/dataionoscloudcontainerregistrytoken"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v7/dataionoscloudcontainerregistrytoken"
 
 &dataionoscloudcontainerregistrytoken.DataIonoscloudContainerRegistryTokenCredentials {
 
@@ -880,7 +880,7 @@ import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/dataionoscloudc
 #### Initializer <a name="Initializer" id="@cdktf/provider-ionoscloud.dataIonoscloudContainerRegistryToken.DataIonoscloudContainerRegistryTokenScopes.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/dataionoscloudcontainerregistrytoken"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v7/dataionoscloudcontainerregistrytoken"
 
 &dataionoscloudcontainerregistrytoken.DataIonoscloudContainerRegistryTokenScopes {
 
@@ -893,7 +893,7 @@ import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/dataionoscloudc
 #### Initializer <a name="Initializer" id="@cdktf/provider-ionoscloud.dataIonoscloudContainerRegistryToken.DataIonoscloudContainerRegistryTokenTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/dataionoscloudcontainerregistrytoken"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v7/dataionoscloudcontainerregistrytoken"
 
 &dataionoscloudcontainerregistrytoken.DataIonoscloudContainerRegistryTokenTimeouts {
 	Create: *string,
@@ -969,7 +969,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.dataIonoscloudContainerRegistryToken.DataIonoscloudContainerRegistryTokenCredentialsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/dataionoscloudcontainerregistrytoken"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v7/dataionoscloudcontainerregistrytoken"
 
 dataionoscloudcontainerregistrytoken.NewDataIonoscloudContainerRegistryTokenCredentialsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataIonoscloudContainerRegistryTokenCredentialsList
 ```
@@ -1101,7 +1101,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.dataIonoscloudContainerRegistryToken.DataIonoscloudContainerRegistryTokenCredentialsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/dataionoscloudcontainerregistrytoken"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v7/dataionoscloudcontainerregistrytoken"
 
 dataionoscloudcontainerregistrytoken.NewDataIonoscloudContainerRegistryTokenCredentialsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataIonoscloudContainerRegistryTokenCredentialsOutputReference
 ```
@@ -1379,7 +1379,7 @@ func InternalValue() DataIonoscloudContainerRegistryTokenCredentials
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.dataIonoscloudContainerRegistryToken.DataIonoscloudContainerRegistryTokenScopesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/dataionoscloudcontainerregistrytoken"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v7/dataionoscloudcontainerregistrytoken"
 
 dataionoscloudcontainerregistrytoken.NewDataIonoscloudContainerRegistryTokenScopesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataIonoscloudContainerRegistryTokenScopesList
 ```
@@ -1511,7 +1511,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.dataIonoscloudContainerRegistryToken.DataIonoscloudContainerRegistryTokenScopesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/dataionoscloudcontainerregistrytoken"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v7/dataionoscloudcontainerregistrytoken"
 
 dataionoscloudcontainerregistrytoken.NewDataIonoscloudContainerRegistryTokenScopesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataIonoscloudContainerRegistryTokenScopesOutputReference
 ```
@@ -1811,7 +1811,7 @@ func InternalValue() DataIonoscloudContainerRegistryTokenScopes
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.dataIonoscloudContainerRegistryToken.DataIonoscloudContainerRegistryTokenTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/dataionoscloudcontainerregistrytoken"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v7/dataionoscloudcontainerregistrytoken"
 
 dataionoscloudcontainerregistrytoken.NewDataIonoscloudContainerRegistryTokenTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataIonoscloudContainerRegistryTokenTimeoutsOutputReference
 ```
