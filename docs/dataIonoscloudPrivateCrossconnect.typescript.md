@@ -390,7 +390,7 @@ dataIonoscloudPrivateCrossconnect.DataIonoscloudPrivateCrossconnect.isTerraformD
 | <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudPrivateCrossconnect.DataIonoscloudPrivateCrossconnect.property.descriptionInput">descriptionInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudPrivateCrossconnect.DataIonoscloudPrivateCrossconnect.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudPrivateCrossconnect.DataIonoscloudPrivateCrossconnect.property.nameInput">nameInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudPrivateCrossconnect.DataIonoscloudPrivateCrossconnect.property.timeoutsInput">timeoutsInput</a></code> | <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudPrivateCrossconnect.DataIonoscloudPrivateCrossconnectTimeouts">DataIonoscloudPrivateCrossconnectTimeouts</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudPrivateCrossconnect.DataIonoscloudPrivateCrossconnect.property.timeoutsInput">timeoutsInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-ionoscloud.dataIonoscloudPrivateCrossconnect.DataIonoscloudPrivateCrossconnectTimeouts">DataIonoscloudPrivateCrossconnectTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudPrivateCrossconnect.DataIonoscloudPrivateCrossconnect.property.description">description</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudPrivateCrossconnect.DataIonoscloudPrivateCrossconnect.property.id">id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudPrivateCrossconnect.DataIonoscloudPrivateCrossconnect.property.name">name</a></code> | <code>string</code> | *No description.* |
@@ -582,10 +582,10 @@ public readonly nameInput: string;
 ##### `timeoutsInput`<sup>Optional</sup> <a name="timeoutsInput" id="@cdktf/provider-ionoscloud.dataIonoscloudPrivateCrossconnect.DataIonoscloudPrivateCrossconnect.property.timeoutsInput"></a>
 
 ```typescript
-public readonly timeoutsInput: DataIonoscloudPrivateCrossconnectTimeouts | IResolvable;
+public readonly timeoutsInput: IResolvable | DataIonoscloudPrivateCrossconnectTimeouts;
 ```
 
-- *Type:* <a href="#@cdktf/provider-ionoscloud.dataIonoscloudPrivateCrossconnect.DataIonoscloudPrivateCrossconnectTimeouts">DataIonoscloudPrivateCrossconnectTimeouts</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-ionoscloud.dataIonoscloudPrivateCrossconnect.DataIonoscloudPrivateCrossconnectTimeouts">DataIonoscloudPrivateCrossconnectTimeouts</a>
 
 ---
 
@@ -2015,7 +2015,7 @@ public resetUpdate(): void
 | <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudPrivateCrossconnect.DataIonoscloudPrivateCrossconnectTimeoutsOutputReference.property.default">default</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudPrivateCrossconnect.DataIonoscloudPrivateCrossconnectTimeoutsOutputReference.property.delete">delete</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudPrivateCrossconnect.DataIonoscloudPrivateCrossconnectTimeoutsOutputReference.property.update">update</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudPrivateCrossconnect.DataIonoscloudPrivateCrossconnectTimeoutsOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudPrivateCrossconnect.DataIonoscloudPrivateCrossconnectTimeouts">DataIonoscloudPrivateCrossconnectTimeouts</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudPrivateCrossconnect.DataIonoscloudPrivateCrossconnectTimeoutsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-ionoscloud.dataIonoscloudPrivateCrossconnect.DataIonoscloudPrivateCrossconnectTimeouts">DataIonoscloudPrivateCrossconnectTimeouts</a></code> | *No description.* |
 
 ---
 
@@ -2126,10 +2126,10 @@ public readonly update: string;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-ionoscloud.dataIonoscloudPrivateCrossconnect.DataIonoscloudPrivateCrossconnectTimeoutsOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: DataIonoscloudPrivateCrossconnectTimeouts | IResolvable;
+public readonly internalValue: IResolvable | DataIonoscloudPrivateCrossconnectTimeouts;
 ```
 
-- *Type:* <a href="#@cdktf/provider-ionoscloud.dataIonoscloudPrivateCrossconnect.DataIonoscloudPrivateCrossconnectTimeouts">DataIonoscloudPrivateCrossconnectTimeouts</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-ionoscloud.dataIonoscloudPrivateCrossconnect.DataIonoscloudPrivateCrossconnectTimeouts">DataIonoscloudPrivateCrossconnectTimeouts</a>
 
 ---
 

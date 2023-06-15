@@ -590,7 +590,7 @@ ipblock.Ipblock.is_terraform_resource(
 | <code><a href="#@cdktf/provider-ionoscloud.ipblock.Ipblock.property.locationInput">location_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.ipblock.Ipblock.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.ipblock.Ipblock.property.sizeInput">size_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-ionoscloud.ipblock.Ipblock.property.timeoutsInput">timeouts_input</a></code> | <code>typing.Union[<a href="#@cdktf/provider-ionoscloud.ipblock.IpblockTimeouts">IpblockTimeouts</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.ipblock.Ipblock.property.timeoutsInput">timeouts_input</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-ionoscloud.ipblock.IpblockTimeouts">IpblockTimeouts</a>]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.ipblock.Ipblock.property.id">id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.ipblock.Ipblock.property.location">location</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.ipblock.Ipblock.property.name">name</a></code> | <code>str</code> | *No description.* |
@@ -823,10 +823,10 @@ size_input: typing.Union[int, float]
 ##### `timeouts_input`<sup>Optional</sup> <a name="timeouts_input" id="@cdktf/provider-ionoscloud.ipblock.Ipblock.property.timeoutsInput"></a>
 
 ```python
-timeouts_input: typing.Union[IpblockTimeouts, IResolvable]
+timeouts_input: typing.Union[IResolvable, IpblockTimeouts]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-ionoscloud.ipblock.IpblockTimeouts">IpblockTimeouts</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-ionoscloud.ipblock.IpblockTimeouts">IpblockTimeouts</a>]
 
 ---
 
@@ -1585,7 +1585,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-ionoscloud.ipblock.IpblockIpConsumersOutputReference.property.nicId">nic_id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.ipblock.IpblockIpConsumersOutputReference.property.serverId">server_id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.ipblock.IpblockIpConsumersOutputReference.property.serverName">server_name</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-ionoscloud.ipblock.IpblockIpConsumersOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-ionoscloud.ipblock.IpblockIpConsumers">IpblockIpConsumers</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.ipblock.IpblockIpConsumersOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-ionoscloud.ipblock.IpblockIpConsumers">IpblockIpConsumers</a>]</code> | *No description.* |
 
 ---
 
@@ -1706,10 +1706,10 @@ server_name: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-ionoscloud.ipblock.IpblockIpConsumersOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IpblockIpConsumers, IResolvable]
+internal_value: typing.Union[IResolvable, IpblockIpConsumers]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-ionoscloud.ipblock.IpblockIpConsumers">IpblockIpConsumers</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-ionoscloud.ipblock.IpblockIpConsumers">IpblockIpConsumers</a>]
 
 ---
 
@@ -1985,7 +1985,7 @@ def reset_update() -> None
 | <code><a href="#@cdktf/provider-ionoscloud.ipblock.IpblockTimeoutsOutputReference.property.default">default</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.ipblock.IpblockTimeoutsOutputReference.property.delete">delete</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.ipblock.IpblockTimeoutsOutputReference.property.update">update</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-ionoscloud.ipblock.IpblockTimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-ionoscloud.ipblock.IpblockTimeouts">IpblockTimeouts</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.ipblock.IpblockTimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-ionoscloud.ipblock.IpblockTimeouts">IpblockTimeouts</a>]</code> | *No description.* |
 
 ---
 
@@ -2096,10 +2096,10 @@ update: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-ionoscloud.ipblock.IpblockTimeoutsOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IpblockTimeouts, IResolvable]
+internal_value: typing.Union[IResolvable, IpblockTimeouts]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-ionoscloud.ipblock.IpblockTimeouts">IpblockTimeouts</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-ionoscloud.ipblock.IpblockTimeouts">IpblockTimeouts</a>]
 
 ---
 

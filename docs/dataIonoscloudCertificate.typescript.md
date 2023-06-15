@@ -396,7 +396,7 @@ dataIonoscloudCertificate.DataIonoscloudCertificate.isTerraformDataSource(x: any
 | <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudCertificate.DataIonoscloudCertificate.property.certificateInput">certificateInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudCertificate.DataIonoscloudCertificate.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudCertificate.DataIonoscloudCertificate.property.nameInput">nameInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudCertificate.DataIonoscloudCertificate.property.timeoutsInput">timeoutsInput</a></code> | <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudCertificate.DataIonoscloudCertificateTimeouts">DataIonoscloudCertificateTimeouts</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudCertificate.DataIonoscloudCertificate.property.timeoutsInput">timeoutsInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-ionoscloud.dataIonoscloudCertificate.DataIonoscloudCertificateTimeouts">DataIonoscloudCertificateTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudCertificate.DataIonoscloudCertificate.property.certificate">certificate</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudCertificate.DataIonoscloudCertificate.property.certificateChain">certificateChain</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudCertificate.DataIonoscloudCertificate.property.id">id</a></code> | <code>string</code> | *No description.* |
@@ -579,10 +579,10 @@ public readonly nameInput: string;
 ##### `timeoutsInput`<sup>Optional</sup> <a name="timeoutsInput" id="@cdktf/provider-ionoscloud.dataIonoscloudCertificate.DataIonoscloudCertificate.property.timeoutsInput"></a>
 
 ```typescript
-public readonly timeoutsInput: DataIonoscloudCertificateTimeouts | IResolvable;
+public readonly timeoutsInput: IResolvable | DataIonoscloudCertificateTimeouts;
 ```
 
-- *Type:* <a href="#@cdktf/provider-ionoscloud.dataIonoscloudCertificate.DataIonoscloudCertificateTimeouts">DataIonoscloudCertificateTimeouts</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-ionoscloud.dataIonoscloudCertificate.DataIonoscloudCertificateTimeouts">DataIonoscloudCertificateTimeouts</a>
 
 ---
 
@@ -1127,7 +1127,7 @@ public resetUpdate(): void
 | <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudCertificate.DataIonoscloudCertificateTimeoutsOutputReference.property.default">default</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudCertificate.DataIonoscloudCertificateTimeoutsOutputReference.property.delete">delete</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudCertificate.DataIonoscloudCertificateTimeoutsOutputReference.property.update">update</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudCertificate.DataIonoscloudCertificateTimeoutsOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudCertificate.DataIonoscloudCertificateTimeouts">DataIonoscloudCertificateTimeouts</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudCertificate.DataIonoscloudCertificateTimeoutsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-ionoscloud.dataIonoscloudCertificate.DataIonoscloudCertificateTimeouts">DataIonoscloudCertificateTimeouts</a></code> | *No description.* |
 
 ---
 
@@ -1238,10 +1238,10 @@ public readonly update: string;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-ionoscloud.dataIonoscloudCertificate.DataIonoscloudCertificateTimeoutsOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: DataIonoscloudCertificateTimeouts | IResolvable;
+public readonly internalValue: IResolvable | DataIonoscloudCertificateTimeouts;
 ```
 
-- *Type:* <a href="#@cdktf/provider-ionoscloud.dataIonoscloudCertificate.DataIonoscloudCertificateTimeouts">DataIonoscloudCertificateTimeouts</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-ionoscloud.dataIonoscloudCertificate.DataIonoscloudCertificateTimeouts">DataIonoscloudCertificateTimeouts</a>
 
 ---
 

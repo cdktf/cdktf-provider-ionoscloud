@@ -487,7 +487,7 @@ S3Key.isTerraformResource(java.lang.Object x)
 | <code><a href="#@cdktf/provider-ionoscloud.s3Key.S3Key.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-ionoscloud.s3Key.S3KeyTimeoutsOutputReference">S3KeyTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.s3Key.S3Key.property.activeInput">activeInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.s3Key.S3Key.property.idInput">idInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-ionoscloud.s3Key.S3Key.property.timeoutsInput">timeoutsInput</a></code> | <code><a href="#@cdktf/provider-ionoscloud.s3Key.S3KeyTimeouts">S3KeyTimeouts</a> OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.s3Key.S3Key.property.timeoutsInput">timeoutsInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-ionoscloud.s3Key.S3KeyTimeouts">S3KeyTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.s3Key.S3Key.property.userIdInput">userIdInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.s3Key.S3Key.property.active">active</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.s3Key.S3Key.property.id">id</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -683,7 +683,7 @@ public java.lang.String getIdInput();
 public java.lang.Object getTimeoutsInput();
 ```
 
-- *Type:* <a href="#@cdktf/provider-ionoscloud.s3Key.S3KeyTimeouts">S3KeyTimeouts</a> OR com.hashicorp.cdktf.IResolvable
+- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-ionoscloud.s3Key.S3KeyTimeouts">S3KeyTimeouts</a>
 
 ---
 
@@ -1241,7 +1241,7 @@ public void resetUpdate()
 | <code><a href="#@cdktf/provider-ionoscloud.s3Key.S3KeyTimeoutsOutputReference.property.default">default</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.s3Key.S3KeyTimeoutsOutputReference.property.delete">delete</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.s3Key.S3KeyTimeoutsOutputReference.property.update">update</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-ionoscloud.s3Key.S3KeyTimeoutsOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-ionoscloud.s3Key.S3KeyTimeouts">S3KeyTimeouts</a> OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.s3Key.S3KeyTimeoutsOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-ionoscloud.s3Key.S3KeyTimeouts">S3KeyTimeouts</a></code> | *No description.* |
 
 ---
 
@@ -1355,7 +1355,7 @@ public java.lang.String getUpdate();
 public java.lang.Object getInternalValue();
 ```
 
-- *Type:* <a href="#@cdktf/provider-ionoscloud.s3Key.S3KeyTimeouts">S3KeyTimeouts</a> OR com.hashicorp.cdktf.IResolvable
+- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-ionoscloud.s3Key.S3KeyTimeouts">S3KeyTimeouts</a>
 
 ---
 

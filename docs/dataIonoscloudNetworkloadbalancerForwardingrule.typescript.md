@@ -388,7 +388,7 @@ dataIonoscloudNetworkloadbalancerForwardingrule.DataIonoscloudNetworkloadbalance
 | <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudNetworkloadbalancerForwardingrule.DataIonoscloudNetworkloadbalancerForwardingrule.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudNetworkloadbalancerForwardingrule.DataIonoscloudNetworkloadbalancerForwardingrule.property.nameInput">nameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudNetworkloadbalancerForwardingrule.DataIonoscloudNetworkloadbalancerForwardingrule.property.networkloadbalancerIdInput">networkloadbalancerIdInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudNetworkloadbalancerForwardingrule.DataIonoscloudNetworkloadbalancerForwardingrule.property.timeoutsInput">timeoutsInput</a></code> | <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudNetworkloadbalancerForwardingrule.DataIonoscloudNetworkloadbalancerForwardingruleTimeouts">DataIonoscloudNetworkloadbalancerForwardingruleTimeouts</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudNetworkloadbalancerForwardingrule.DataIonoscloudNetworkloadbalancerForwardingrule.property.timeoutsInput">timeoutsInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-ionoscloud.dataIonoscloudNetworkloadbalancerForwardingrule.DataIonoscloudNetworkloadbalancerForwardingruleTimeouts">DataIonoscloudNetworkloadbalancerForwardingruleTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudNetworkloadbalancerForwardingrule.DataIonoscloudNetworkloadbalancerForwardingrule.property.datacenterId">datacenterId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudNetworkloadbalancerForwardingrule.DataIonoscloudNetworkloadbalancerForwardingrule.property.id">id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudNetworkloadbalancerForwardingrule.DataIonoscloudNetworkloadbalancerForwardingrule.property.name">name</a></code> | <code>string</code> | *No description.* |
@@ -631,10 +631,10 @@ public readonly networkloadbalancerIdInput: string;
 ##### `timeoutsInput`<sup>Optional</sup> <a name="timeoutsInput" id="@cdktf/provider-ionoscloud.dataIonoscloudNetworkloadbalancerForwardingrule.DataIonoscloudNetworkloadbalancerForwardingrule.property.timeoutsInput"></a>
 
 ```typescript
-public readonly timeoutsInput: DataIonoscloudNetworkloadbalancerForwardingruleTimeouts | IResolvable;
+public readonly timeoutsInput: IResolvable | DataIonoscloudNetworkloadbalancerForwardingruleTimeouts;
 ```
 
-- *Type:* <a href="#@cdktf/provider-ionoscloud.dataIonoscloudNetworkloadbalancerForwardingrule.DataIonoscloudNetworkloadbalancerForwardingruleTimeouts">DataIonoscloudNetworkloadbalancerForwardingruleTimeouts</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-ionoscloud.dataIonoscloudNetworkloadbalancerForwardingrule.DataIonoscloudNetworkloadbalancerForwardingruleTimeouts">DataIonoscloudNetworkloadbalancerForwardingruleTimeouts</a>
 
 ---
 
@@ -2530,7 +2530,7 @@ public resetUpdate(): void
 | <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudNetworkloadbalancerForwardingrule.DataIonoscloudNetworkloadbalancerForwardingruleTimeoutsOutputReference.property.default">default</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudNetworkloadbalancerForwardingrule.DataIonoscloudNetworkloadbalancerForwardingruleTimeoutsOutputReference.property.delete">delete</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudNetworkloadbalancerForwardingrule.DataIonoscloudNetworkloadbalancerForwardingruleTimeoutsOutputReference.property.update">update</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudNetworkloadbalancerForwardingrule.DataIonoscloudNetworkloadbalancerForwardingruleTimeoutsOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudNetworkloadbalancerForwardingrule.DataIonoscloudNetworkloadbalancerForwardingruleTimeouts">DataIonoscloudNetworkloadbalancerForwardingruleTimeouts</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudNetworkloadbalancerForwardingrule.DataIonoscloudNetworkloadbalancerForwardingruleTimeoutsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-ionoscloud.dataIonoscloudNetworkloadbalancerForwardingrule.DataIonoscloudNetworkloadbalancerForwardingruleTimeouts">DataIonoscloudNetworkloadbalancerForwardingruleTimeouts</a></code> | *No description.* |
 
 ---
 
@@ -2641,10 +2641,10 @@ public readonly update: string;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-ionoscloud.dataIonoscloudNetworkloadbalancerForwardingrule.DataIonoscloudNetworkloadbalancerForwardingruleTimeoutsOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: DataIonoscloudNetworkloadbalancerForwardingruleTimeouts | IResolvable;
+public readonly internalValue: IResolvable | DataIonoscloudNetworkloadbalancerForwardingruleTimeouts;
 ```
 
-- *Type:* <a href="#@cdktf/provider-ionoscloud.dataIonoscloudNetworkloadbalancerForwardingrule.DataIonoscloudNetworkloadbalancerForwardingruleTimeouts">DataIonoscloudNetworkloadbalancerForwardingruleTimeouts</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-ionoscloud.dataIonoscloudNetworkloadbalancerForwardingrule.DataIonoscloudNetworkloadbalancerForwardingruleTimeouts">DataIonoscloudNetworkloadbalancerForwardingruleTimeouts</a>
 
 ---
 

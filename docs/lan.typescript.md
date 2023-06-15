@@ -421,7 +421,7 @@ lan.Lan.isTerraformResource(x: any)
 | <code><a href="#@cdktf/provider-ionoscloud.lan.Lan.property.nameInput">nameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.lan.Lan.property.pccInput">pccInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.lan.Lan.property.publicInput">publicInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-ionoscloud.lan.Lan.property.timeoutsInput">timeoutsInput</a></code> | <code><a href="#@cdktf/provider-ionoscloud.lan.LanTimeouts">LanTimeouts</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.lan.Lan.property.timeoutsInput">timeoutsInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-ionoscloud.lan.LanTimeouts">LanTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.lan.Lan.property.datacenterId">datacenterId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.lan.Lan.property.id">id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.lan.Lan.property.name">name</a></code> | <code>string</code> | *No description.* |
@@ -655,10 +655,10 @@ public readonly publicInput: boolean | IResolvable;
 ##### `timeoutsInput`<sup>Optional</sup> <a name="timeoutsInput" id="@cdktf/provider-ionoscloud.lan.Lan.property.timeoutsInput"></a>
 
 ```typescript
-public readonly timeoutsInput: LanTimeouts | IResolvable;
+public readonly timeoutsInput: IResolvable | LanTimeouts;
 ```
 
-- *Type:* <a href="#@cdktf/provider-ionoscloud.lan.LanTimeouts">LanTimeouts</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-ionoscloud.lan.LanTimeouts">LanTimeouts</a>
 
 ---
 
@@ -1379,7 +1379,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-ionoscloud.lan.LanIpFailoverOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.lan.LanIpFailoverOutputReference.property.ip">ip</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.lan.LanIpFailoverOutputReference.property.nicUuid">nicUuid</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-ionoscloud.lan.LanIpFailoverOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-ionoscloud.lan.LanIpFailover">LanIpFailover</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.lan.LanIpFailoverOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-ionoscloud.lan.LanIpFailover">LanIpFailover</a></code> | *No description.* |
 
 ---
 
@@ -1430,10 +1430,10 @@ public readonly nicUuid: string;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-ionoscloud.lan.LanIpFailoverOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: LanIpFailover | IResolvable;
+public readonly internalValue: IResolvable | LanIpFailover;
 ```
 
-- *Type:* <a href="#@cdktf/provider-ionoscloud.lan.LanIpFailover">LanIpFailover</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-ionoscloud.lan.LanIpFailover">LanIpFailover</a>
 
 ---
 
@@ -1684,7 +1684,7 @@ public resetUpdate(): void
 | <code><a href="#@cdktf/provider-ionoscloud.lan.LanTimeoutsOutputReference.property.default">default</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.lan.LanTimeoutsOutputReference.property.delete">delete</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.lan.LanTimeoutsOutputReference.property.update">update</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-ionoscloud.lan.LanTimeoutsOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-ionoscloud.lan.LanTimeouts">LanTimeouts</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.lan.LanTimeoutsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-ionoscloud.lan.LanTimeouts">LanTimeouts</a></code> | *No description.* |
 
 ---
 
@@ -1795,10 +1795,10 @@ public readonly update: string;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-ionoscloud.lan.LanTimeoutsOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: LanTimeouts | IResolvable;
+public readonly internalValue: IResolvable | LanTimeouts;
 ```
 
-- *Type:* <a href="#@cdktf/provider-ionoscloud.lan.LanTimeouts">LanTimeouts</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-ionoscloud.lan.LanTimeouts">LanTimeouts</a>
 
 ---
 

@@ -400,7 +400,7 @@ dataIonoscloudVolume.DataIonoscloudVolume.isTerraformDataSource(x: any)
 | <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudVolume.DataIonoscloudVolume.property.datacenterIdInput">datacenterIdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudVolume.DataIonoscloudVolume.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudVolume.DataIonoscloudVolume.property.nameInput">nameInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudVolume.DataIonoscloudVolume.property.timeoutsInput">timeoutsInput</a></code> | <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudVolume.DataIonoscloudVolumeTimeouts">DataIonoscloudVolumeTimeouts</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudVolume.DataIonoscloudVolume.property.timeoutsInput">timeoutsInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-ionoscloud.dataIonoscloudVolume.DataIonoscloudVolumeTimeouts">DataIonoscloudVolumeTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudVolume.DataIonoscloudVolume.property.datacenterId">datacenterId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudVolume.DataIonoscloudVolume.property.id">id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudVolume.DataIonoscloudVolume.property.name">name</a></code> | <code>string</code> | *No description.* |
@@ -762,10 +762,10 @@ public readonly nameInput: string;
 ##### `timeoutsInput`<sup>Optional</sup> <a name="timeoutsInput" id="@cdktf/provider-ionoscloud.dataIonoscloudVolume.DataIonoscloudVolume.property.timeoutsInput"></a>
 
 ```typescript
-public readonly timeoutsInput: DataIonoscloudVolumeTimeouts | IResolvable;
+public readonly timeoutsInput: IResolvable | DataIonoscloudVolumeTimeouts;
 ```
 
-- *Type:* <a href="#@cdktf/provider-ionoscloud.dataIonoscloudVolume.DataIonoscloudVolumeTimeouts">DataIonoscloudVolumeTimeouts</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-ionoscloud.dataIonoscloudVolume.DataIonoscloudVolumeTimeouts">DataIonoscloudVolumeTimeouts</a>
 
 ---
 
@@ -1287,7 +1287,7 @@ public resetUpdate(): void
 | <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudVolume.DataIonoscloudVolumeTimeoutsOutputReference.property.default">default</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudVolume.DataIonoscloudVolumeTimeoutsOutputReference.property.delete">delete</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudVolume.DataIonoscloudVolumeTimeoutsOutputReference.property.update">update</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudVolume.DataIonoscloudVolumeTimeoutsOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudVolume.DataIonoscloudVolumeTimeouts">DataIonoscloudVolumeTimeouts</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudVolume.DataIonoscloudVolumeTimeoutsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-ionoscloud.dataIonoscloudVolume.DataIonoscloudVolumeTimeouts">DataIonoscloudVolumeTimeouts</a></code> | *No description.* |
 
 ---
 
@@ -1398,10 +1398,10 @@ public readonly update: string;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-ionoscloud.dataIonoscloudVolume.DataIonoscloudVolumeTimeoutsOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: DataIonoscloudVolumeTimeouts | IResolvable;
+public readonly internalValue: IResolvable | DataIonoscloudVolumeTimeouts;
 ```
 
-- *Type:* <a href="#@cdktf/provider-ionoscloud.dataIonoscloudVolume.DataIonoscloudVolumeTimeouts">DataIonoscloudVolumeTimeouts</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-ionoscloud.dataIonoscloudVolume.DataIonoscloudVolumeTimeouts">DataIonoscloudVolumeTimeouts</a>
 
 ---
 

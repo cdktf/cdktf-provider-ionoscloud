@@ -397,7 +397,7 @@ dataIonoscloudTemplate.DataIonoscloudTemplate.isTerraformDataSource(x: any)
 | <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudTemplate.DataIonoscloudTemplate.property.nameInput">nameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudTemplate.DataIonoscloudTemplate.property.ramInput">ramInput</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudTemplate.DataIonoscloudTemplate.property.storageSizeInput">storageSizeInput</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudTemplate.DataIonoscloudTemplate.property.timeoutsInput">timeoutsInput</a></code> | <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudTemplate.DataIonoscloudTemplateTimeouts">DataIonoscloudTemplateTimeouts</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudTemplate.DataIonoscloudTemplate.property.timeoutsInput">timeoutsInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-ionoscloud.dataIonoscloudTemplate.DataIonoscloudTemplateTimeouts">DataIonoscloudTemplateTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudTemplate.DataIonoscloudTemplate.property.cores">cores</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudTemplate.DataIonoscloudTemplate.property.name">name</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudTemplate.DataIonoscloudTemplate.property.ram">ram</a></code> | <code>number</code> | *No description.* |
@@ -590,10 +590,10 @@ public readonly storageSizeInput: number;
 ##### `timeoutsInput`<sup>Optional</sup> <a name="timeoutsInput" id="@cdktf/provider-ionoscloud.dataIonoscloudTemplate.DataIonoscloudTemplate.property.timeoutsInput"></a>
 
 ```typescript
-public readonly timeoutsInput: DataIonoscloudTemplateTimeouts | IResolvable;
+public readonly timeoutsInput: IResolvable | DataIonoscloudTemplateTimeouts;
 ```
 
-- *Type:* <a href="#@cdktf/provider-ionoscloud.dataIonoscloudTemplate.DataIonoscloudTemplateTimeouts">DataIonoscloudTemplateTimeouts</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-ionoscloud.dataIonoscloudTemplate.DataIonoscloudTemplateTimeouts">DataIonoscloudTemplateTimeouts</a>
 
 ---
 
@@ -1135,7 +1135,7 @@ public resetUpdate(): void
 | <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudTemplate.DataIonoscloudTemplateTimeoutsOutputReference.property.default">default</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudTemplate.DataIonoscloudTemplateTimeoutsOutputReference.property.delete">delete</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudTemplate.DataIonoscloudTemplateTimeoutsOutputReference.property.update">update</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudTemplate.DataIonoscloudTemplateTimeoutsOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudTemplate.DataIonoscloudTemplateTimeouts">DataIonoscloudTemplateTimeouts</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudTemplate.DataIonoscloudTemplateTimeoutsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-ionoscloud.dataIonoscloudTemplate.DataIonoscloudTemplateTimeouts">DataIonoscloudTemplateTimeouts</a></code> | *No description.* |
 
 ---
 
@@ -1246,10 +1246,10 @@ public readonly update: string;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-ionoscloud.dataIonoscloudTemplate.DataIonoscloudTemplateTimeoutsOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: DataIonoscloudTemplateTimeouts | IResolvable;
+public readonly internalValue: IResolvable | DataIonoscloudTemplateTimeouts;
 ```
 
-- *Type:* <a href="#@cdktf/provider-ionoscloud.dataIonoscloudTemplate.DataIonoscloudTemplateTimeouts">DataIonoscloudTemplateTimeouts</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-ionoscloud.dataIonoscloudTemplate.DataIonoscloudTemplateTimeouts">DataIonoscloudTemplateTimeouts</a>
 
 ---
 

@@ -546,7 +546,7 @@ dataIonoscloudS3Key.DataIonoscloudS3Key.is_terraform_data_source(
 | <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudS3Key.DataIonoscloudS3Key.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudS3Key.DataIonoscloudS3KeyTimeoutsOutputReference">DataIonoscloudS3KeyTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudS3Key.DataIonoscloudS3Key.property.activeInput">active_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudS3Key.DataIonoscloudS3Key.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudS3Key.DataIonoscloudS3Key.property.timeoutsInput">timeouts_input</a></code> | <code>typing.Union[<a href="#@cdktf/provider-ionoscloud.dataIonoscloudS3Key.DataIonoscloudS3KeyTimeouts">DataIonoscloudS3KeyTimeouts</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudS3Key.DataIonoscloudS3Key.property.timeoutsInput">timeouts_input</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-ionoscloud.dataIonoscloudS3Key.DataIonoscloudS3KeyTimeouts">DataIonoscloudS3KeyTimeouts</a>]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudS3Key.DataIonoscloudS3Key.property.userIdInput">user_id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudS3Key.DataIonoscloudS3Key.property.active">active</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudS3Key.DataIonoscloudS3Key.property.id">id</a></code> | <code>str</code> | *No description.* |
@@ -719,10 +719,10 @@ id_input: str
 ##### `timeouts_input`<sup>Optional</sup> <a name="timeouts_input" id="@cdktf/provider-ionoscloud.dataIonoscloudS3Key.DataIonoscloudS3Key.property.timeoutsInput"></a>
 
 ```python
-timeouts_input: typing.Union[DataIonoscloudS3KeyTimeouts, IResolvable]
+timeouts_input: typing.Union[IResolvable, DataIonoscloudS3KeyTimeouts]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-ionoscloud.dataIonoscloudS3Key.DataIonoscloudS3KeyTimeouts">DataIonoscloudS3KeyTimeouts</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-ionoscloud.dataIonoscloudS3Key.DataIonoscloudS3KeyTimeouts">DataIonoscloudS3KeyTimeouts</a>]
 
 ---
 
@@ -1302,7 +1302,7 @@ def reset_update() -> None
 | <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudS3Key.DataIonoscloudS3KeyTimeoutsOutputReference.property.default">default</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudS3Key.DataIonoscloudS3KeyTimeoutsOutputReference.property.delete">delete</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudS3Key.DataIonoscloudS3KeyTimeoutsOutputReference.property.update">update</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudS3Key.DataIonoscloudS3KeyTimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-ionoscloud.dataIonoscloudS3Key.DataIonoscloudS3KeyTimeouts">DataIonoscloudS3KeyTimeouts</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudS3Key.DataIonoscloudS3KeyTimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-ionoscloud.dataIonoscloudS3Key.DataIonoscloudS3KeyTimeouts">DataIonoscloudS3KeyTimeouts</a>]</code> | *No description.* |
 
 ---
 
@@ -1413,10 +1413,10 @@ update: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-ionoscloud.dataIonoscloudS3Key.DataIonoscloudS3KeyTimeoutsOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[DataIonoscloudS3KeyTimeouts, IResolvable]
+internal_value: typing.Union[IResolvable, DataIonoscloudS3KeyTimeouts]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-ionoscloud.dataIonoscloudS3Key.DataIonoscloudS3KeyTimeouts">DataIonoscloudS3KeyTimeouts</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-ionoscloud.dataIonoscloudS3Key.DataIonoscloudS3KeyTimeouts">DataIonoscloudS3KeyTimeouts</a>]
 
 ---
 

@@ -559,7 +559,7 @@ dataIonoscloudVolume.DataIonoscloudVolume.is_terraform_data_source(
 | <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudVolume.DataIonoscloudVolume.property.datacenterIdInput">datacenter_id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudVolume.DataIonoscloudVolume.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudVolume.DataIonoscloudVolume.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudVolume.DataIonoscloudVolume.property.timeoutsInput">timeouts_input</a></code> | <code>typing.Union[<a href="#@cdktf/provider-ionoscloud.dataIonoscloudVolume.DataIonoscloudVolumeTimeouts">DataIonoscloudVolumeTimeouts</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudVolume.DataIonoscloudVolume.property.timeoutsInput">timeouts_input</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-ionoscloud.dataIonoscloudVolume.DataIonoscloudVolumeTimeouts">DataIonoscloudVolumeTimeouts</a>]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudVolume.DataIonoscloudVolume.property.datacenterId">datacenter_id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudVolume.DataIonoscloudVolume.property.id">id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudVolume.DataIonoscloudVolume.property.name">name</a></code> | <code>str</code> | *No description.* |
@@ -921,10 +921,10 @@ name_input: str
 ##### `timeouts_input`<sup>Optional</sup> <a name="timeouts_input" id="@cdktf/provider-ionoscloud.dataIonoscloudVolume.DataIonoscloudVolume.property.timeoutsInput"></a>
 
 ```python
-timeouts_input: typing.Union[DataIonoscloudVolumeTimeouts, IResolvable]
+timeouts_input: typing.Union[IResolvable, DataIonoscloudVolumeTimeouts]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-ionoscloud.dataIonoscloudVolume.DataIonoscloudVolumeTimeouts">DataIonoscloudVolumeTimeouts</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-ionoscloud.dataIonoscloudVolume.DataIonoscloudVolumeTimeouts">DataIonoscloudVolumeTimeouts</a>]
 
 ---
 
@@ -1488,7 +1488,7 @@ def reset_update() -> None
 | <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudVolume.DataIonoscloudVolumeTimeoutsOutputReference.property.default">default</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudVolume.DataIonoscloudVolumeTimeoutsOutputReference.property.delete">delete</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudVolume.DataIonoscloudVolumeTimeoutsOutputReference.property.update">update</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudVolume.DataIonoscloudVolumeTimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-ionoscloud.dataIonoscloudVolume.DataIonoscloudVolumeTimeouts">DataIonoscloudVolumeTimeouts</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudVolume.DataIonoscloudVolumeTimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-ionoscloud.dataIonoscloudVolume.DataIonoscloudVolumeTimeouts">DataIonoscloudVolumeTimeouts</a>]</code> | *No description.* |
 
 ---
 
@@ -1599,10 +1599,10 @@ update: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-ionoscloud.dataIonoscloudVolume.DataIonoscloudVolumeTimeoutsOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[DataIonoscloudVolumeTimeouts, IResolvable]
+internal_value: typing.Union[IResolvable, DataIonoscloudVolumeTimeouts]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-ionoscloud.dataIonoscloudVolume.DataIonoscloudVolumeTimeouts">DataIonoscloudVolumeTimeouts</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-ionoscloud.dataIonoscloudVolume.DataIonoscloudVolumeTimeouts">DataIonoscloudVolumeTimeouts</a>]
 
 ---
 

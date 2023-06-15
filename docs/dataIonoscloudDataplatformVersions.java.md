@@ -452,7 +452,7 @@ DataIonoscloudDataplatformVersions.isTerraformDataSource(java.lang.Object x)
 | <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudDataplatformVersions.DataIonoscloudDataplatformVersions.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudDataplatformVersions.DataIonoscloudDataplatformVersionsTimeoutsOutputReference">DataIonoscloudDataplatformVersionsTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudDataplatformVersions.DataIonoscloudDataplatformVersions.property.versions">versions</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudDataplatformVersions.DataIonoscloudDataplatformVersions.property.idInput">idInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudDataplatformVersions.DataIonoscloudDataplatformVersions.property.timeoutsInput">timeoutsInput</a></code> | <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudDataplatformVersions.DataIonoscloudDataplatformVersionsTimeouts">DataIonoscloudDataplatformVersionsTimeouts</a> OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudDataplatformVersions.DataIonoscloudDataplatformVersions.property.timeoutsInput">timeoutsInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-ionoscloud.dataIonoscloudDataplatformVersions.DataIonoscloudDataplatformVersionsTimeouts">DataIonoscloudDataplatformVersionsTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudDataplatformVersions.DataIonoscloudDataplatformVersions.property.id">id</a></code> | <code>java.lang.String</code> | *No description.* |
 
 ---
@@ -615,7 +615,7 @@ public java.lang.String getIdInput();
 public java.lang.Object getTimeoutsInput();
 ```
 
-- *Type:* <a href="#@cdktf/provider-ionoscloud.dataIonoscloudDataplatformVersions.DataIonoscloudDataplatformVersionsTimeouts">DataIonoscloudDataplatformVersionsTimeouts</a> OR com.hashicorp.cdktf.IResolvable
+- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-ionoscloud.dataIonoscloudDataplatformVersions.DataIonoscloudDataplatformVersionsTimeouts">DataIonoscloudDataplatformVersionsTimeouts</a>
 
 ---
 
@@ -1110,7 +1110,7 @@ public void resetUpdate()
 | <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudDataplatformVersions.DataIonoscloudDataplatformVersionsTimeoutsOutputReference.property.default">default</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudDataplatformVersions.DataIonoscloudDataplatformVersionsTimeoutsOutputReference.property.delete">delete</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudDataplatformVersions.DataIonoscloudDataplatformVersionsTimeoutsOutputReference.property.update">update</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudDataplatformVersions.DataIonoscloudDataplatformVersionsTimeoutsOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudDataplatformVersions.DataIonoscloudDataplatformVersionsTimeouts">DataIonoscloudDataplatformVersionsTimeouts</a> OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudDataplatformVersions.DataIonoscloudDataplatformVersionsTimeoutsOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-ionoscloud.dataIonoscloudDataplatformVersions.DataIonoscloudDataplatformVersionsTimeouts">DataIonoscloudDataplatformVersionsTimeouts</a></code> | *No description.* |
 
 ---
 
@@ -1224,7 +1224,7 @@ public java.lang.String getUpdate();
 public java.lang.Object getInternalValue();
 ```
 
-- *Type:* <a href="#@cdktf/provider-ionoscloud.dataIonoscloudDataplatformVersions.DataIonoscloudDataplatformVersionsTimeouts">DataIonoscloudDataplatformVersionsTimeouts</a> OR com.hashicorp.cdktf.IResolvable
+- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-ionoscloud.dataIonoscloudDataplatformVersions.DataIonoscloudDataplatformVersionsTimeouts">DataIonoscloudDataplatformVersionsTimeouts</a>
 
 ---
 

@@ -412,7 +412,7 @@ user.User.isTerraformResource(x: any)
 | <code><a href="#@cdktf/provider-ionoscloud.user.User.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.user.User.property.lastNameInput">lastNameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.user.User.property.passwordInput">passwordInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-ionoscloud.user.User.property.timeoutsInput">timeoutsInput</a></code> | <code><a href="#@cdktf/provider-ionoscloud.user.UserTimeouts">UserTimeouts</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.user.User.property.timeoutsInput">timeoutsInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-ionoscloud.user.UserTimeouts">UserTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.user.User.property.active">active</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.user.User.property.administrator">administrator</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.user.User.property.email">email</a></code> | <code>string</code> | *No description.* |
@@ -690,10 +690,10 @@ public readonly passwordInput: string;
 ##### `timeoutsInput`<sup>Optional</sup> <a name="timeoutsInput" id="@cdktf/provider-ionoscloud.user.User.property.timeoutsInput"></a>
 
 ```typescript
-public readonly timeoutsInput: UserTimeouts | IResolvable;
+public readonly timeoutsInput: IResolvable | UserTimeouts;
 ```
 
-- *Type:* <a href="#@cdktf/provider-ionoscloud.user.UserTimeouts">UserTimeouts</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-ionoscloud.user.UserTimeouts">UserTimeouts</a>
 
 ---
 
@@ -1355,7 +1355,7 @@ public resetUpdate(): void
 | <code><a href="#@cdktf/provider-ionoscloud.user.UserTimeoutsOutputReference.property.default">default</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.user.UserTimeoutsOutputReference.property.delete">delete</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.user.UserTimeoutsOutputReference.property.update">update</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-ionoscloud.user.UserTimeoutsOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-ionoscloud.user.UserTimeouts">UserTimeouts</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.user.UserTimeoutsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-ionoscloud.user.UserTimeouts">UserTimeouts</a></code> | *No description.* |
 
 ---
 
@@ -1466,10 +1466,10 @@ public readonly update: string;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-ionoscloud.user.UserTimeoutsOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: UserTimeouts | IResolvable;
+public readonly internalValue: IResolvable | UserTimeouts;
 ```
 
-- *Type:* <a href="#@cdktf/provider-ionoscloud.user.UserTimeouts">UserTimeouts</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-ionoscloud.user.UserTimeouts">UserTimeouts</a>
 
 ---
 

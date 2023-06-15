@@ -392,7 +392,7 @@ natgateway.Natgateway.isTerraformResource(x: any)
 | <code><a href="#@cdktf/provider-ionoscloud.natgateway.Natgateway.property.lansInput">lansInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-ionoscloud.natgateway.NatgatewayLans">NatgatewayLans</a>[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.natgateway.Natgateway.property.nameInput">nameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.natgateway.Natgateway.property.publicIpsInput">publicIpsInput</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-ionoscloud.natgateway.Natgateway.property.timeoutsInput">timeoutsInput</a></code> | <code><a href="#@cdktf/provider-ionoscloud.natgateway.NatgatewayTimeouts">NatgatewayTimeouts</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.natgateway.Natgateway.property.timeoutsInput">timeoutsInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-ionoscloud.natgateway.NatgatewayTimeouts">NatgatewayTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.natgateway.Natgateway.property.datacenterId">datacenterId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.natgateway.Natgateway.property.id">id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.natgateway.Natgateway.property.name">name</a></code> | <code>string</code> | *No description.* |
@@ -615,10 +615,10 @@ public readonly publicIpsInput: string[];
 ##### `timeoutsInput`<sup>Optional</sup> <a name="timeoutsInput" id="@cdktf/provider-ionoscloud.natgateway.Natgateway.property.timeoutsInput"></a>
 
 ```typescript
-public readonly timeoutsInput: NatgatewayTimeouts | IResolvable;
+public readonly timeoutsInput: IResolvable | NatgatewayTimeouts;
 ```
 
-- *Type:* <a href="#@cdktf/provider-ionoscloud.natgateway.NatgatewayTimeouts">NatgatewayTimeouts</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-ionoscloud.natgateway.NatgatewayTimeouts">NatgatewayTimeouts</a>
 
 ---
 
@@ -1370,7 +1370,7 @@ public resetGatewayIps(): void
 | <code><a href="#@cdktf/provider-ionoscloud.natgateway.NatgatewayLansOutputReference.property.idInput">idInput</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.natgateway.NatgatewayLansOutputReference.property.gatewayIps">gatewayIps</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.natgateway.NatgatewayLansOutputReference.property.id">id</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-ionoscloud.natgateway.NatgatewayLansOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-ionoscloud.natgateway.NatgatewayLans">NatgatewayLans</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.natgateway.NatgatewayLansOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-ionoscloud.natgateway.NatgatewayLans">NatgatewayLans</a></code> | *No description.* |
 
 ---
 
@@ -1441,10 +1441,10 @@ public readonly id: number;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-ionoscloud.natgateway.NatgatewayLansOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: NatgatewayLans | IResolvable;
+public readonly internalValue: IResolvable | NatgatewayLans;
 ```
 
-- *Type:* <a href="#@cdktf/provider-ionoscloud.natgateway.NatgatewayLans">NatgatewayLans</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-ionoscloud.natgateway.NatgatewayLans">NatgatewayLans</a>
 
 ---
 
@@ -1695,7 +1695,7 @@ public resetUpdate(): void
 | <code><a href="#@cdktf/provider-ionoscloud.natgateway.NatgatewayTimeoutsOutputReference.property.default">default</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.natgateway.NatgatewayTimeoutsOutputReference.property.delete">delete</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.natgateway.NatgatewayTimeoutsOutputReference.property.update">update</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-ionoscloud.natgateway.NatgatewayTimeoutsOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-ionoscloud.natgateway.NatgatewayTimeouts">NatgatewayTimeouts</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.natgateway.NatgatewayTimeoutsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-ionoscloud.natgateway.NatgatewayTimeouts">NatgatewayTimeouts</a></code> | *No description.* |
 
 ---
 
@@ -1806,10 +1806,10 @@ public readonly update: string;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-ionoscloud.natgateway.NatgatewayTimeoutsOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: NatgatewayTimeouts | IResolvable;
+public readonly internalValue: IResolvable | NatgatewayTimeouts;
 ```
 
-- *Type:* <a href="#@cdktf/provider-ionoscloud.natgateway.NatgatewayTimeouts">NatgatewayTimeouts</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-ionoscloud.natgateway.NatgatewayTimeouts">NatgatewayTimeouts</a>
 
 ---
 

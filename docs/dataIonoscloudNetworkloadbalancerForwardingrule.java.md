@@ -497,7 +497,7 @@ DataIonoscloudNetworkloadbalancerForwardingrule.isTerraformDataSource(java.lang.
 | <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudNetworkloadbalancerForwardingrule.DataIonoscloudNetworkloadbalancerForwardingrule.property.idInput">idInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudNetworkloadbalancerForwardingrule.DataIonoscloudNetworkloadbalancerForwardingrule.property.nameInput">nameInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudNetworkloadbalancerForwardingrule.DataIonoscloudNetworkloadbalancerForwardingrule.property.networkloadbalancerIdInput">networkloadbalancerIdInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudNetworkloadbalancerForwardingrule.DataIonoscloudNetworkloadbalancerForwardingrule.property.timeoutsInput">timeoutsInput</a></code> | <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudNetworkloadbalancerForwardingrule.DataIonoscloudNetworkloadbalancerForwardingruleTimeouts">DataIonoscloudNetworkloadbalancerForwardingruleTimeouts</a> OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudNetworkloadbalancerForwardingrule.DataIonoscloudNetworkloadbalancerForwardingrule.property.timeoutsInput">timeoutsInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-ionoscloud.dataIonoscloudNetworkloadbalancerForwardingrule.DataIonoscloudNetworkloadbalancerForwardingruleTimeouts">DataIonoscloudNetworkloadbalancerForwardingruleTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudNetworkloadbalancerForwardingrule.DataIonoscloudNetworkloadbalancerForwardingrule.property.datacenterId">datacenterId</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudNetworkloadbalancerForwardingrule.DataIonoscloudNetworkloadbalancerForwardingrule.property.id">id</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudNetworkloadbalancerForwardingrule.DataIonoscloudNetworkloadbalancerForwardingrule.property.name">name</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -743,7 +743,7 @@ public java.lang.String getNetworkloadbalancerIdInput();
 public java.lang.Object getTimeoutsInput();
 ```
 
-- *Type:* <a href="#@cdktf/provider-ionoscloud.dataIonoscloudNetworkloadbalancerForwardingrule.DataIonoscloudNetworkloadbalancerForwardingruleTimeouts">DataIonoscloudNetworkloadbalancerForwardingruleTimeouts</a> OR com.hashicorp.cdktf.IResolvable
+- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-ionoscloud.dataIonoscloudNetworkloadbalancerForwardingrule.DataIonoscloudNetworkloadbalancerForwardingruleTimeouts">DataIonoscloudNetworkloadbalancerForwardingruleTimeouts</a>
 
 ---
 
@@ -2664,7 +2664,7 @@ public void resetUpdate()
 | <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudNetworkloadbalancerForwardingrule.DataIonoscloudNetworkloadbalancerForwardingruleTimeoutsOutputReference.property.default">default</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudNetworkloadbalancerForwardingrule.DataIonoscloudNetworkloadbalancerForwardingruleTimeoutsOutputReference.property.delete">delete</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudNetworkloadbalancerForwardingrule.DataIonoscloudNetworkloadbalancerForwardingruleTimeoutsOutputReference.property.update">update</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudNetworkloadbalancerForwardingrule.DataIonoscloudNetworkloadbalancerForwardingruleTimeoutsOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudNetworkloadbalancerForwardingrule.DataIonoscloudNetworkloadbalancerForwardingruleTimeouts">DataIonoscloudNetworkloadbalancerForwardingruleTimeouts</a> OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudNetworkloadbalancerForwardingrule.DataIonoscloudNetworkloadbalancerForwardingruleTimeoutsOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-ionoscloud.dataIonoscloudNetworkloadbalancerForwardingrule.DataIonoscloudNetworkloadbalancerForwardingruleTimeouts">DataIonoscloudNetworkloadbalancerForwardingruleTimeouts</a></code> | *No description.* |
 
 ---
 
@@ -2778,7 +2778,7 @@ public java.lang.String getUpdate();
 public java.lang.Object getInternalValue();
 ```
 
-- *Type:* <a href="#@cdktf/provider-ionoscloud.dataIonoscloudNetworkloadbalancerForwardingrule.DataIonoscloudNetworkloadbalancerForwardingruleTimeouts">DataIonoscloudNetworkloadbalancerForwardingruleTimeouts</a> OR com.hashicorp.cdktf.IResolvable
+- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-ionoscloud.dataIonoscloudNetworkloadbalancerForwardingrule.DataIonoscloudNetworkloadbalancerForwardingruleTimeouts">DataIonoscloudNetworkloadbalancerForwardingruleTimeouts</a>
 
 ---
 

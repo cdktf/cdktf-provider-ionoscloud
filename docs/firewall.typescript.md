@@ -449,7 +449,7 @@ firewall.Firewall.isTerraformResource(x: any)
 | <code><a href="#@cdktf/provider-ionoscloud.firewall.Firewall.property.sourceIpInput">sourceIpInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.firewall.Firewall.property.sourceMacInput">sourceMacInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.firewall.Firewall.property.targetIpInput">targetIpInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-ionoscloud.firewall.Firewall.property.timeoutsInput">timeoutsInput</a></code> | <code><a href="#@cdktf/provider-ionoscloud.firewall.FirewallTimeouts">FirewallTimeouts</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.firewall.Firewall.property.timeoutsInput">timeoutsInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-ionoscloud.firewall.FirewallTimeouts">FirewallTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.firewall.Firewall.property.typeInput">typeInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.firewall.Firewall.property.datacenterId">datacenterId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.firewall.Firewall.property.icmpCode">icmpCode</a></code> | <code>string</code> | *No description.* |
@@ -753,10 +753,10 @@ public readonly targetIpInput: string;
 ##### `timeoutsInput`<sup>Optional</sup> <a name="timeoutsInput" id="@cdktf/provider-ionoscloud.firewall.Firewall.property.timeoutsInput"></a>
 
 ```typescript
-public readonly timeoutsInput: FirewallTimeouts | IResolvable;
+public readonly timeoutsInput: IResolvable | FirewallTimeouts;
 ```
 
-- *Type:* <a href="#@cdktf/provider-ionoscloud.firewall.FirewallTimeouts">FirewallTimeouts</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-ionoscloud.firewall.FirewallTimeouts">FirewallTimeouts</a>
 
 ---
 
@@ -1541,7 +1541,7 @@ public resetUpdate(): void
 | <code><a href="#@cdktf/provider-ionoscloud.firewall.FirewallTimeoutsOutputReference.property.default">default</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.firewall.FirewallTimeoutsOutputReference.property.delete">delete</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.firewall.FirewallTimeoutsOutputReference.property.update">update</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-ionoscloud.firewall.FirewallTimeoutsOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-ionoscloud.firewall.FirewallTimeouts">FirewallTimeouts</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.firewall.FirewallTimeoutsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-ionoscloud.firewall.FirewallTimeouts">FirewallTimeouts</a></code> | *No description.* |
 
 ---
 
@@ -1652,10 +1652,10 @@ public readonly update: string;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-ionoscloud.firewall.FirewallTimeoutsOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: FirewallTimeouts | IResolvable;
+public readonly internalValue: IResolvable | FirewallTimeouts;
 ```
 
-- *Type:* <a href="#@cdktf/provider-ionoscloud.firewall.FirewallTimeouts">FirewallTimeouts</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-ionoscloud.firewall.FirewallTimeouts">FirewallTimeouts</a>
 
 ---
 
