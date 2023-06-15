@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionosclo
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.k8SCluster.K8SCluster.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v6/k8scluster"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v7/k8scluster"
 
 k8scluster.NewK8SCluster(scope Construct, id *string, config K8SClusterConfig) K8SCluster
 ```
@@ -351,7 +351,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-ionoscloud.k8SCluster.K8SCluster.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v6/k8scluster"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v7/k8scluster"
 
 k8scluster.K8SCluster_IsConstruct(x interface{}) *bool
 ```
@@ -383,7 +383,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-ionoscloud.k8SCluster.K8SCluster.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v6/k8scluster"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v7/k8scluster"
 
 k8scluster.K8SCluster_IsTerraformElement(x interface{}) *bool
 ```
@@ -397,7 +397,7 @@ k8scluster.K8SCluster_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-ionoscloud.k8SCluster.K8SCluster.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v6/k8scluster"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v7/k8scluster"
 
 k8scluster.K8SCluster_IsTerraformResource(x interface{}) *bool
 ```
@@ -761,7 +761,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-ionoscloud.k8SCluster.K8SClusterConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v6/k8scluster"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v7/k8scluster"
 
 &k8scluster.K8SClusterConfig {
 	Connection: interface{},
@@ -775,9 +775,9 @@ import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v6/k8scluster"
 	ApiSubnetAllowList: *[]*string,
 	Id: *string,
 	K8SVersion: *string,
-	MaintenanceWindow: github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v6.k8SCluster.K8SClusterMaintenanceWindow,
+	MaintenanceWindow: github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v7.k8SCluster.K8SClusterMaintenanceWindow,
 	S3Buckets: interface{},
-	Timeouts: github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v6.k8SCluster.K8SClusterTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v7.k8SCluster.K8SClusterTimeouts,
 }
 ```
 
@@ -980,7 +980,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 #### Initializer <a name="Initializer" id="@cdktf/provider-ionoscloud.k8SCluster.K8SClusterMaintenanceWindow.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v6/k8scluster"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v7/k8scluster"
 
 &k8scluster.K8SClusterMaintenanceWindow {
 	DayOfTheWeek: *string,
@@ -1030,7 +1030,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 #### Initializer <a name="Initializer" id="@cdktf/provider-ionoscloud.k8SCluster.K8SClusterS3Buckets.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v6/k8scluster"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v7/k8scluster"
 
 &k8scluster.K8SClusterS3Buckets {
 	Name: *string,
@@ -1064,7 +1064,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 #### Initializer <a name="Initializer" id="@cdktf/provider-ionoscloud.k8SCluster.K8SClusterTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v6/k8scluster"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v7/k8scluster"
 
 &k8scluster.K8SClusterTimeouts {
 	Create: *string,
@@ -1140,7 +1140,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.k8SCluster.K8SClusterMaintenanceWindowOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v6/k8scluster"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v7/k8scluster"
 
 k8scluster.NewK8SClusterMaintenanceWindowOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) K8SClusterMaintenanceWindowOutputReference
 ```
@@ -1433,7 +1433,7 @@ func InternalValue() K8SClusterMaintenanceWindow
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.k8SCluster.K8SClusterS3BucketsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v6/k8scluster"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v7/k8scluster"
 
 k8scluster.NewK8SClusterS3BucketsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) K8SClusterS3BucketsList
 ```
@@ -1576,7 +1576,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.k8SCluster.K8SClusterS3BucketsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v6/k8scluster"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v7/k8scluster"
 
 k8scluster.NewK8SClusterS3BucketsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) K8SClusterS3BucketsOutputReference
 ```
@@ -1872,7 +1872,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.k8SCluster.K8SClusterTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v6/k8scluster"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v7/k8scluster"
 
 k8scluster.NewK8SClusterTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) K8SClusterTimeoutsOutputReference
 ```

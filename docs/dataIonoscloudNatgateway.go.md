@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionosclo
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.dataIonoscloudNatgateway.DataIonoscloudNatgateway.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v6/dataionoscloudnatgateway"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v7/dataionoscloudnatgateway"
 
 dataionoscloudnatgateway.NewDataIonoscloudNatgateway(scope Construct, id *string, config DataIonoscloudNatgatewayConfig) DataIonoscloudNatgateway
 ```
@@ -304,7 +304,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-ionoscloud.dataIonoscloudNatgateway.DataIonoscloudNatgateway.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v6/dataionoscloudnatgateway"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v7/dataionoscloudnatgateway"
 
 dataionoscloudnatgateway.DataIonoscloudNatgateway_IsConstruct(x interface{}) *bool
 ```
@@ -336,7 +336,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-ionoscloud.dataIonoscloudNatgateway.DataIonoscloudNatgateway.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v6/dataionoscloudnatgateway"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v7/dataionoscloudnatgateway"
 
 dataionoscloudnatgateway.DataIonoscloudNatgateway_IsTerraformElement(x interface{}) *bool
 ```
@@ -350,7 +350,7 @@ dataionoscloudnatgateway.DataIonoscloudNatgateway_IsTerraformElement(x interface
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-ionoscloud.dataIonoscloudNatgateway.DataIonoscloudNatgateway.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v6/dataionoscloudnatgateway"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v7/dataionoscloudnatgateway"
 
 dataionoscloudnatgateway.DataIonoscloudNatgateway_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -637,7 +637,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-ionoscloud.dataIonoscloudNatgateway.DataIonoscloudNatgatewayConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v6/dataionoscloudnatgateway"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v7/dataionoscloudnatgateway"
 
 &dataionoscloudnatgateway.DataIonoscloudNatgatewayConfig {
 	Connection: interface{},
@@ -650,7 +650,7 @@ import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v6/dataionosclo
 	DatacenterId: *string,
 	Id: *string,
 	Name: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v6.dataIonoscloudNatgateway.DataIonoscloudNatgatewayTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v7.dataIonoscloudNatgateway.DataIonoscloudNatgatewayTimeouts,
 }
 ```
 
@@ -800,7 +800,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 #### Initializer <a name="Initializer" id="@cdktf/provider-ionoscloud.dataIonoscloudNatgateway.DataIonoscloudNatgatewayLans.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v6/dataionoscloudnatgateway"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v7/dataionoscloudnatgateway"
 
 &dataionoscloudnatgateway.DataIonoscloudNatgatewayLans {
 
@@ -813,7 +813,7 @@ import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v6/dataionosclo
 #### Initializer <a name="Initializer" id="@cdktf/provider-ionoscloud.dataIonoscloudNatgateway.DataIonoscloudNatgatewayTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v6/dataionoscloudnatgateway"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v7/dataionoscloudnatgateway"
 
 &dataionoscloudnatgateway.DataIonoscloudNatgatewayTimeouts {
 	Create: *string,
@@ -889,7 +889,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.dataIonoscloudNatgateway.DataIonoscloudNatgatewayLansList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v6/dataionoscloudnatgateway"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v7/dataionoscloudnatgateway"
 
 dataionoscloudnatgateway.NewDataIonoscloudNatgatewayLansList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataIonoscloudNatgatewayLansList
 ```
@@ -1021,7 +1021,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.dataIonoscloudNatgateway.DataIonoscloudNatgatewayLansOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v6/dataionoscloudnatgateway"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v7/dataionoscloudnatgateway"
 
 dataionoscloudnatgateway.NewDataIonoscloudNatgatewayLansOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataIonoscloudNatgatewayLansOutputReference
 ```
@@ -1310,7 +1310,7 @@ func InternalValue() DataIonoscloudNatgatewayLans
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.dataIonoscloudNatgateway.DataIonoscloudNatgatewayTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v6/dataionoscloudnatgateway"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v7/dataionoscloudnatgateway"
 
 dataionoscloudnatgateway.NewDataIonoscloudNatgatewayTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataIonoscloudNatgatewayTimeoutsOutputReference
 ```

@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionosclo
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.dataIonoscloudGroup.DataIonoscloudGroup.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v6/dataionoscloudgroup"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v7/dataionoscloudgroup"
 
 dataionoscloudgroup.NewDataIonoscloudGroup(scope Construct, id *string, config DataIonoscloudGroupConfig) DataIonoscloudGroup
 ```
@@ -304,7 +304,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-ionoscloud.dataIonoscloudGroup.DataIonoscloudGroup.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v6/dataionoscloudgroup"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v7/dataionoscloudgroup"
 
 dataionoscloudgroup.DataIonoscloudGroup_IsConstruct(x interface{}) *bool
 ```
@@ -336,7 +336,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-ionoscloud.dataIonoscloudGroup.DataIonoscloudGroup.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v6/dataionoscloudgroup"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v7/dataionoscloudgroup"
 
 dataionoscloudgroup.DataIonoscloudGroup_IsTerraformElement(x interface{}) *bool
 ```
@@ -350,7 +350,7 @@ dataionoscloudgroup.DataIonoscloudGroup_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-ionoscloud.dataIonoscloudGroup.DataIonoscloudGroup.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v6/dataionoscloudgroup"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v7/dataionoscloudgroup"
 
 dataionoscloudgroup.DataIonoscloudGroup_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -747,7 +747,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-ionoscloud.dataIonoscloudGroup.DataIonoscloudGroupConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v6/dataionoscloudgroup"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v7/dataionoscloudgroup"
 
 &dataionoscloudgroup.DataIonoscloudGroupConfig {
 	Connection: interface{},
@@ -759,7 +759,7 @@ import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v6/dataionosclo
 	Provisioners: *[]interface{},
 	Id: *string,
 	Name: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v6.dataIonoscloudGroup.DataIonoscloudGroupTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v7.dataIonoscloudGroup.DataIonoscloudGroupTimeouts,
 }
 ```
 
@@ -896,7 +896,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 #### Initializer <a name="Initializer" id="@cdktf/provider-ionoscloud.dataIonoscloudGroup.DataIonoscloudGroupTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v6/dataionoscloudgroup"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v7/dataionoscloudgroup"
 
 &dataionoscloudgroup.DataIonoscloudGroupTimeouts {
 	Create: *string,
@@ -970,7 +970,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 #### Initializer <a name="Initializer" id="@cdktf/provider-ionoscloud.dataIonoscloudGroup.DataIonoscloudGroupUsers.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v6/dataionoscloudgroup"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v7/dataionoscloudgroup"
 
 &dataionoscloudgroup.DataIonoscloudGroupUsers {
 
@@ -985,7 +985,7 @@ import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v6/dataionosclo
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.dataIonoscloudGroup.DataIonoscloudGroupTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v6/dataionoscloudgroup"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v7/dataionoscloudgroup"
 
 dataionoscloudgroup.NewDataIonoscloudGroupTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataIonoscloudGroupTimeoutsOutputReference
 ```
@@ -1350,7 +1350,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.dataIonoscloudGroup.DataIonoscloudGroupUsersList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v6/dataionoscloudgroup"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v7/dataionoscloudgroup"
 
 dataionoscloudgroup.NewDataIonoscloudGroupUsersList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataIonoscloudGroupUsersList
 ```
@@ -1482,7 +1482,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.dataIonoscloudGroup.DataIonoscloudGroupUsersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v6/dataionoscloudgroup"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v7/dataionoscloudgroup"
 
 dataionoscloudgroup.NewDataIonoscloudGroupUsersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataIonoscloudGroupUsersOutputReference
 ```
