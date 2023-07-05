@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.2/docs/data-sources/dns_zone
+// https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.3/docs/data-sources/dns_zone
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,7 +10,7 @@ export interface DataIonoscloudDnsZoneConfig extends cdktf.TerraformMetaArgument
   /**
   * The ID of your DNS Zone.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.2/docs/data-sources/dns_zone#id DataIonoscloudDnsZone#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.3/docs/data-sources/dns_zone#id DataIonoscloudDnsZone#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -24,19 +19,19 @@ export interface DataIonoscloudDnsZoneConfig extends cdktf.TerraformMetaArgument
   /**
   * The name of your DNS Zone.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.2/docs/data-sources/dns_zone#name DataIonoscloudDnsZone#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.3/docs/data-sources/dns_zone#name DataIonoscloudDnsZone#name}
   */
   readonly name?: string;
   /**
   * Whether partial matching is allowed or not when using name argument.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.2/docs/data-sources/dns_zone#partial_match DataIonoscloudDnsZone#partial_match}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.3/docs/data-sources/dns_zone#partial_match DataIonoscloudDnsZone#partial_match}
   */
   readonly partialMatch?: boolean | cdktf.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.2/docs/data-sources/dns_zone ionoscloud_dns_zone}
+* Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.3/docs/data-sources/dns_zone ionoscloud_dns_zone}
 */
 export class DataIonoscloudDnsZone extends cdktf.TerraformDataSource {
 
@@ -50,7 +45,7 @@ export class DataIonoscloudDnsZone extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.2/docs/data-sources/dns_zone ionoscloud_dns_zone} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.3/docs/data-sources/dns_zone ionoscloud_dns_zone} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -61,7 +56,7 @@ export class DataIonoscloudDnsZone extends cdktf.TerraformDataSource {
       terraformResourceType: 'ionoscloud_dns_zone',
       terraformGeneratorMetadata: {
         providerName: 'ionoscloud',
-        providerVersion: '6.4.2',
+        providerVersion: '6.4.3',
         providerVersionConstraint: '~> 6.2'
       },
       provider: config.provider,
