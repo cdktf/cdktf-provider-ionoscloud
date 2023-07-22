@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.3/docs/resources/container_registry_token
+// https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.4/docs/resources/container_registry_token
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,46 +8,46 @@ import * as cdktf from 'cdktf';
 
 export interface ContainerRegistryTokenConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.3/docs/resources/container_registry_token#expiry_date ContainerRegistryToken#expiry_date}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.4/docs/resources/container_registry_token#expiry_date ContainerRegistryToken#expiry_date}
   */
   readonly expiryDate?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.3/docs/resources/container_registry_token#id ContainerRegistryToken#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.4/docs/resources/container_registry_token#id ContainerRegistryToken#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.3/docs/resources/container_registry_token#name ContainerRegistryToken#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.4/docs/resources/container_registry_token#name ContainerRegistryToken#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.3/docs/resources/container_registry_token#registry_id ContainerRegistryToken#registry_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.4/docs/resources/container_registry_token#registry_id ContainerRegistryToken#registry_id}
   */
   readonly registryId: string;
   /**
   * Saves password to file. Only works on create. Takes as argument a file name, or a file path
-  * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.3/docs/resources/container_registry_token#save_password_to_file ContainerRegistryToken#save_password_to_file}
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.4/docs/resources/container_registry_token#save_password_to_file ContainerRegistryToken#save_password_to_file}
   */
   readonly savePasswordToFile?: string;
   /**
   * Can be one of enabled, disabled
-  * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.3/docs/resources/container_registry_token#status ContainerRegistryToken#status}
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.4/docs/resources/container_registry_token#status ContainerRegistryToken#status}
   */
   readonly status?: string;
   /**
   * scopes block
-  * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.3/docs/resources/container_registry_token#scopes ContainerRegistryToken#scopes}
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.4/docs/resources/container_registry_token#scopes ContainerRegistryToken#scopes}
   */
   readonly scopes?: ContainerRegistryTokenScopes[] | cdktf.IResolvable;
   /**
   * timeouts block
-  * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.3/docs/resources/container_registry_token#timeouts ContainerRegistryToken#timeouts}
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.4/docs/resources/container_registry_token#timeouts ContainerRegistryToken#timeouts}
   */
   readonly timeouts?: ContainerRegistryTokenTimeouts;
 }
@@ -128,16 +123,16 @@ export class ContainerRegistryTokenCredentialsList extends cdktf.ComplexList {
 export interface ContainerRegistryTokenScopes {
   /**
   * Example: ["pull", "push", "delete"]
-  * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.3/docs/resources/container_registry_token#actions ContainerRegistryToken#actions}
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.4/docs/resources/container_registry_token#actions ContainerRegistryToken#actions}
   */
   readonly actions: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.3/docs/resources/container_registry_token#name ContainerRegistryToken#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.4/docs/resources/container_registry_token#name ContainerRegistryToken#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.3/docs/resources/container_registry_token#type ContainerRegistryToken#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.4/docs/resources/container_registry_token#type ContainerRegistryToken#type}
   */
   readonly type: string;
 }
@@ -271,19 +266,19 @@ export class ContainerRegistryTokenScopesList extends cdktf.ComplexList {
 }
 export interface ContainerRegistryTokenTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.3/docs/resources/container_registry_token#create ContainerRegistryToken#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.4/docs/resources/container_registry_token#create ContainerRegistryToken#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.3/docs/resources/container_registry_token#default ContainerRegistryToken#default}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.4/docs/resources/container_registry_token#default ContainerRegistryToken#default}
   */
   readonly default?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.3/docs/resources/container_registry_token#delete ContainerRegistryToken#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.4/docs/resources/container_registry_token#delete ContainerRegistryToken#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.3/docs/resources/container_registry_token#update ContainerRegistryToken#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.4/docs/resources/container_registry_token#update ContainerRegistryToken#update}
   */
   readonly update?: string;
 }
@@ -427,7 +422,7 @@ export class ContainerRegistryTokenTimeoutsOutputReference extends cdktf.Complex
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.3/docs/resources/container_registry_token ionoscloud_container_registry_token}
+* Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.4/docs/resources/container_registry_token ionoscloud_container_registry_token}
 */
 export class ContainerRegistryToken extends cdktf.TerraformResource {
 
@@ -441,7 +436,7 @@ export class ContainerRegistryToken extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.3/docs/resources/container_registry_token ionoscloud_container_registry_token} Resource
+  * Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.4/docs/resources/container_registry_token ionoscloud_container_registry_token} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -452,7 +447,7 @@ export class ContainerRegistryToken extends cdktf.TerraformResource {
       terraformResourceType: 'ionoscloud_container_registry_token',
       terraformGeneratorMetadata: {
         providerName: 'ionoscloud',
-        providerVersion: '6.4.3',
+        providerVersion: '6.4.4',
         providerVersionConstraint: '~> 6.2'
       },
       provider: config.provider,
