@@ -33,6 +33,8 @@ export * as networkloadbalancer from './networkloadbalancer';
 export * as networkloadbalancerForwardingrule from './networkloadbalancer-forwardingrule';
 export * as nic from './nic';
 export * as pgCluster from './pg-cluster';
+export * as pgDatabase from './pg-database';
+export * as pgUser from './pg-user';
 export * as privateCrossconnect from './private-crossconnect';
 export * as s3Key from './s3-key';
 export * as server from './server';
@@ -77,6 +79,9 @@ export * as dataIonoscloudNetworkloadbalancerForwardingrule from './data-ionoscl
 export * as dataIonoscloudNic from './data-ionoscloud-nic';
 export * as dataIonoscloudPgBackups from './data-ionoscloud-pg-backups';
 export * as dataIonoscloudPgCluster from './data-ionoscloud-pg-cluster';
+export * as dataIonoscloudPgDatabase from './data-ionoscloud-pg-database';
+export * as dataIonoscloudPgDatabases from './data-ionoscloud-pg-databases';
+export * as dataIonoscloudPgUser from './data-ionoscloud-pg-user';
 export * as dataIonoscloudPgVersions from './data-ionoscloud-pg-versions';
 export * as dataIonoscloudPrivateCrossconnect from './data-ionoscloud-private-crossconnect';
 export * as dataIonoscloudResource from './data-ionoscloud-resource';
