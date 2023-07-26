@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionosclo
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.server.Server.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v8/server"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/server"
 
 server.NewServer(scope Construct, id *string, config ServerConfig) Server
 ```
@@ -427,7 +427,7 @@ func ResetType()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-ionoscloud.server.Server.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v8/server"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/server"
 
 server.Server_IsConstruct(x interface{}) *bool
 ```
@@ -459,7 +459,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-ionoscloud.server.Server.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v8/server"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/server"
 
 server.Server_IsTerraformElement(x interface{}) *bool
 ```
@@ -473,7 +473,7 @@ server.Server_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-ionoscloud.server.Server.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v8/server"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/server"
 
 server.Server_IsTerraformResource(x interface{}) *bool
 ```
@@ -1145,7 +1145,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-ionoscloud.server.ServerConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v8/server"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/server"
 
 &server.ServerConfig {
 	Connection: interface{},
@@ -1157,8 +1157,8 @@ import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v8/server"
 	Provisioners: *[]interface{},
 	DatacenterId: *string,
 	Name: *string,
-	Nic: github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v8.server.ServerNic,
-	Volume: github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v8.server.ServerVolume,
+	Nic: github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud.server.ServerNic,
+	Volume: github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud.server.ServerVolume,
 	AvailabilityZone: *string,
 	BootCdrom: *string,
 	BootImage: *string,
@@ -1172,7 +1172,7 @@ import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v8/server"
 	SshKeyPath: *[]*string,
 	SshKeys: *[]*string,
 	TemplateUuid: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v8.server.ServerTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud.server.ServerTimeouts,
 	Type: *string,
 }
 ```
@@ -1534,7 +1534,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 #### Initializer <a name="Initializer" id="@cdktf/provider-ionoscloud.server.ServerLabel.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v8/server"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/server"
 
 &server.ServerLabel {
 	Key: *string,
@@ -1580,12 +1580,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 #### Initializer <a name="Initializer" id="@cdktf/provider-ionoscloud.server.ServerNic.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v8/server"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/server"
 
 &server.ServerNic {
 	Lan: *f64,
 	Dhcp: interface{},
-	Firewall: github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v8.server.ServerNicFirewall,
+	Firewall: github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud.server.ServerNicFirewall,
 	FirewallActive: interface{},
 	FirewallType: *string,
 	Ips: *[]*string,
@@ -1702,7 +1702,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 #### Initializer <a name="Initializer" id="@cdktf/provider-ionoscloud.server.ServerNicFirewall.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v8/server"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/server"
 
 &server.ServerNicFirewall {
 	Protocol: *string,
@@ -1860,7 +1860,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 #### Initializer <a name="Initializer" id="@cdktf/provider-ionoscloud.server.ServerTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v8/server"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/server"
 
 &server.ServerTimeouts {
 	Create: *string,
@@ -1934,7 +1934,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 #### Initializer <a name="Initializer" id="@cdktf/provider-ionoscloud.server.ServerVolume.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v8/server"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/server"
 
 &server.ServerVolume {
 	DiskType: *string,
@@ -2126,7 +2126,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.server.ServerLabelList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v8/server"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/server"
 
 server.NewServerLabelList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ServerLabelList
 ```
@@ -2269,7 +2269,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.server.ServerLabelOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v8/server"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/server"
 
 server.NewServerLabelOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ServerLabelOutputReference
 ```
@@ -2580,7 +2580,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.server.ServerNicFirewallOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v8/server"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/server"
 
 server.NewServerNicFirewallOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ServerNicFirewallOutputReference
 ```
@@ -3112,7 +3112,7 @@ func InternalValue() ServerNicFirewall
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.server.ServerNicOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v8/server"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/server"
 
 server.NewServerNicOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ServerNicOutputReference
 ```
@@ -3614,7 +3614,7 @@ func InternalValue() ServerNic
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.server.ServerTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v8/server"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/server"
 
 server.NewServerTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ServerTimeoutsOutputReference
 ```
@@ -3979,7 +3979,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.server.ServerVolumeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v8/server"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/server"
 
 server.NewServerVolumeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ServerVolumeOutputReference
 ```
