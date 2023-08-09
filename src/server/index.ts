@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.4/docs/resources/server
+// https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.5/docs/resources/server
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,106 +13,110 @@ import * as cdktf from 'cdktf';
 
 export interface ServerConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.4/docs/resources/server#availability_zone Server#availability_zone}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.5/docs/resources/server#availability_zone Server#availability_zone}
   */
   readonly availabilityZone?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.4/docs/resources/server#boot_cdrom Server#boot_cdrom}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.5/docs/resources/server#boot_cdrom Server#boot_cdrom}
   */
   readonly bootCdrom?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.4/docs/resources/server#boot_image Server#boot_image}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.5/docs/resources/server#boot_image Server#boot_image}
   */
   readonly bootImage?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.4/docs/resources/server#cores Server#cores}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.5/docs/resources/server#cores Server#cores}
   */
   readonly cores?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.4/docs/resources/server#cpu_family Server#cpu_family}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.5/docs/resources/server#cpu_family Server#cpu_family}
   */
   readonly cpuFamily?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.4/docs/resources/server#datacenter_id Server#datacenter_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.5/docs/resources/server#datacenter_id Server#datacenter_id}
   */
   readonly datacenterId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.4/docs/resources/server#id Server#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.5/docs/resources/server#firewallrule_ids Server#firewallrule_ids}
+  */
+  readonly firewallruleIds?: string[];
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.5/docs/resources/server#id Server#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.4/docs/resources/server#image_name Server#image_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.5/docs/resources/server#image_name Server#image_name}
   */
   readonly imageName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.4/docs/resources/server#image_password Server#image_password}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.5/docs/resources/server#image_password Server#image_password}
   */
   readonly imagePassword?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.4/docs/resources/server#name Server#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.5/docs/resources/server#name Server#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.4/docs/resources/server#ram Server#ram}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.5/docs/resources/server#ram Server#ram}
   */
   readonly ram?: number;
   /**
   * Immutable List of absolute or relative paths to files containing public SSH key that will be injected into IonosCloud provided Linux images. Does not support `~` expansion to homedir in the given path. Public SSH keys are set on the image as authorized keys for appropriate SSH login to the instance using the corresponding private key. This field may only be set in creation requests. When reading, it always returns null. SSH keys are only supported if a public Linux image is used for the volume creation. This property is immutable.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.4/docs/resources/server#ssh_key_path Server#ssh_key_path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.5/docs/resources/server#ssh_key_path Server#ssh_key_path}
   */
   readonly sshKeyPath?: string[];
   /**
   * Public SSH keys are set on the image as authorized keys for appropriate SSH login to the instance using the corresponding private key. This field may only be set in creation requests. When reading, it always returns null. SSH keys are only supported if a public Linux image is used for the volume creation.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.4/docs/resources/server#ssh_keys Server#ssh_keys}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.5/docs/resources/server#ssh_keys Server#ssh_keys}
   */
   readonly sshKeys?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.4/docs/resources/server#template_uuid Server#template_uuid}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.5/docs/resources/server#template_uuid Server#template_uuid}
   */
   readonly templateUuid?: string;
   /**
   * server usages: ENTERPRISE or CUBE
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.4/docs/resources/server#type Server#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.5/docs/resources/server#type Server#type}
   */
   readonly type?: string;
   /**
   * label block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.4/docs/resources/server#label Server#label}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.5/docs/resources/server#label Server#label}
   */
   readonly label?: ServerLabel[] | cdktf.IResolvable;
   /**
   * nic block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.4/docs/resources/server#nic Server#nic}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.5/docs/resources/server#nic Server#nic}
   */
-  readonly nic: ServerNic;
+  readonly nic?: ServerNic;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.4/docs/resources/server#timeouts Server#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.5/docs/resources/server#timeouts Server#timeouts}
   */
   readonly timeouts?: ServerTimeouts;
   /**
   * volume block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.4/docs/resources/server#volume Server#volume}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.5/docs/resources/server#volume Server#volume}
   */
   readonly volume: ServerVolume;
 }
 export interface ServerLabel {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.4/docs/resources/server#key Server#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.5/docs/resources/server#key Server#key}
   */
   readonly key: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.4/docs/resources/server#value Server#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.5/docs/resources/server#value Server#value}
   */
   readonly value: string;
 }
@@ -226,48 +230,48 @@ export class ServerLabelList extends cdktf.ComplexList {
 }
 export interface ServerNicFirewall {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.4/docs/resources/server#icmp_code Server#icmp_code}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.5/docs/resources/server#icmp_code Server#icmp_code}
   */
   readonly icmpCode?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.4/docs/resources/server#icmp_type Server#icmp_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.5/docs/resources/server#icmp_type Server#icmp_type}
   */
   readonly icmpType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.4/docs/resources/server#name Server#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.5/docs/resources/server#name Server#name}
   */
   readonly name?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.4/docs/resources/server#port_range_end Server#port_range_end}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.5/docs/resources/server#port_range_end Server#port_range_end}
   */
   readonly portRangeEnd?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.4/docs/resources/server#port_range_start Server#port_range_start}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.5/docs/resources/server#port_range_start Server#port_range_start}
   */
   readonly portRangeStart?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.4/docs/resources/server#protocol Server#protocol}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.5/docs/resources/server#protocol Server#protocol}
   */
   readonly protocol: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.4/docs/resources/server#source_ip Server#source_ip}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.5/docs/resources/server#source_ip Server#source_ip}
   */
   readonly sourceIp?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.4/docs/resources/server#source_mac Server#source_mac}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.5/docs/resources/server#source_mac Server#source_mac}
   */
   readonly sourceMac?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.4/docs/resources/server#target_ip Server#target_ip}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.5/docs/resources/server#target_ip Server#target_ip}
   */
   readonly targetIp?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.4/docs/resources/server#type Server#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.5/docs/resources/server#type Server#type}
   */
   readonly type?: string;
 }
 
-export function serverNicFirewallToTerraform(struct?: ServerNicFirewallOutputReference | ServerNicFirewall): any {
+export function serverNicFirewallToTerraform(struct?: ServerNicFirewall | cdktf.IResolvable): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -288,16 +292,22 @@ export function serverNicFirewallToTerraform(struct?: ServerNicFirewallOutputRef
 
 export class ServerNicFirewallOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
-    super(terraformResource, terraformAttribute, false, 0);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ServerNicFirewall | undefined {
+  public get internalValue(): ServerNicFirewall | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._icmpCode !== undefined) {
@@ -343,9 +353,10 @@ export class ServerNicFirewallOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ServerNicFirewall | undefined) {
+  public set internalValue(value: ServerNicFirewall | cdktf.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
+      this.resolvableValue = undefined;
       this._icmpCode = undefined;
       this._icmpType = undefined;
       this._name = undefined;
@@ -357,8 +368,13 @@ export class ServerNicFirewallOutputReference extends cdktf.ComplexObject {
       this._targetIp = undefined;
       this._type = undefined;
     }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
       this._icmpCode = value.icmpCode;
       this._icmpType = value.icmpType;
       this._name = value.name;
@@ -402,6 +418,11 @@ export class ServerNicFirewallOutputReference extends cdktf.ComplexObject {
   // Temporarily expose input value. Use with caution.
   public get icmpTypeInput() {
     return this._icmpType;
+  }
+
+  // id - computed: true, optional: false, required: false
+  public get id() {
+    return this.getStringAttribute('id');
   }
 
   // name - computed: false, optional: true, required: false
@@ -529,39 +550,71 @@ export class ServerNicFirewallOutputReference extends cdktf.ComplexObject {
     return this._type;
   }
 }
+
+export class ServerNicFirewallList extends cdktf.ComplexList {
+  public internalValue? : ServerNicFirewall[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): ServerNicFirewallOutputReference {
+    return new ServerNicFirewallOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface ServerNic {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.4/docs/resources/server#dhcp Server#dhcp}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.5/docs/resources/server#dhcp Server#dhcp}
   */
   readonly dhcp?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.4/docs/resources/server#firewall_active Server#firewall_active}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.5/docs/resources/server#dhcpv6 Server#dhcpv6}
+  */
+  readonly dhcpv6?: boolean | cdktf.IResolvable;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.5/docs/resources/server#firewall_active Server#firewall_active}
   */
   readonly firewallActive?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.4/docs/resources/server#firewall_type Server#firewall_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.5/docs/resources/server#firewall_type Server#firewall_type}
   */
   readonly firewallType?: string;
   /**
   * Collection of IP addresses assigned to a nic. Explicitly assigned public IPs need to come from reserved IP blocks, Passing value null or empty array will assign an IP address automatically.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.4/docs/resources/server#ips Server#ips}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.5/docs/resources/server#ips Server#ips}
   */
   readonly ips?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.4/docs/resources/server#lan Server#lan}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.5/docs/resources/server#ipv6_cidr_block Server#ipv6_cidr_block}
+  */
+  readonly ipv6CidrBlock?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.5/docs/resources/server#ipv6_ips Server#ipv6_ips}
+  */
+  readonly ipv6Ips?: string[];
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.5/docs/resources/server#lan Server#lan}
   */
   readonly lan: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.4/docs/resources/server#name Server#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.5/docs/resources/server#name Server#name}
   */
   readonly name?: string;
   /**
   * firewall block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.4/docs/resources/server#firewall Server#firewall}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.5/docs/resources/server#firewall Server#firewall}
   */
-  readonly firewall?: ServerNicFirewall;
+  readonly firewall?: ServerNicFirewall[] | cdktf.IResolvable;
 }
 
 export function serverNicToTerraform(struct?: ServerNicOutputReference | ServerNic): any {
@@ -571,12 +624,15 @@ export function serverNicToTerraform(struct?: ServerNicOutputReference | ServerN
   }
   return {
     dhcp: cdktf.booleanToTerraform(struct!.dhcp),
+    dhcpv6: cdktf.booleanToTerraform(struct!.dhcpv6),
     firewall_active: cdktf.booleanToTerraform(struct!.firewallActive),
     firewall_type: cdktf.stringToTerraform(struct!.firewallType),
     ips: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.ips),
+    ipv6_cidr_block: cdktf.stringToTerraform(struct!.ipv6CidrBlock),
+    ipv6_ips: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.ipv6Ips),
     lan: cdktf.numberToTerraform(struct!.lan),
     name: cdktf.stringToTerraform(struct!.name),
-    firewall: serverNicFirewallToTerraform(struct!.firewall),
+    firewall: cdktf.listMapper(serverNicFirewallToTerraform, true)(struct!.firewall),
   }
 }
 
@@ -598,6 +654,10 @@ export class ServerNicOutputReference extends cdktf.ComplexObject {
       hasAnyValues = true;
       internalValueResult.dhcp = this._dhcp;
     }
+    if (this._dhcpv6 !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.dhcpv6 = this._dhcpv6;
+    }
     if (this._firewallActive !== undefined) {
       hasAnyValues = true;
       internalValueResult.firewallActive = this._firewallActive;
@@ -609,6 +669,14 @@ export class ServerNicOutputReference extends cdktf.ComplexObject {
     if (this._ips !== undefined) {
       hasAnyValues = true;
       internalValueResult.ips = this._ips;
+    }
+    if (this._ipv6CidrBlock !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.ipv6CidrBlock = this._ipv6CidrBlock;
+    }
+    if (this._ipv6Ips !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.ipv6Ips = this._ipv6Ips;
     }
     if (this._lan !== undefined) {
       hasAnyValues = true;
@@ -629,9 +697,12 @@ export class ServerNicOutputReference extends cdktf.ComplexObject {
     if (value === undefined) {
       this.isEmptyObject = false;
       this._dhcp = undefined;
+      this._dhcpv6 = undefined;
       this._firewallActive = undefined;
       this._firewallType = undefined;
       this._ips = undefined;
+      this._ipv6CidrBlock = undefined;
+      this._ipv6Ips = undefined;
       this._lan = undefined;
       this._name = undefined;
       this._firewall.internalValue = undefined;
@@ -639,9 +710,12 @@ export class ServerNicOutputReference extends cdktf.ComplexObject {
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
       this._dhcp = value.dhcp;
+      this._dhcpv6 = value.dhcpv6;
       this._firewallActive = value.firewallActive;
       this._firewallType = value.firewallType;
       this._ips = value.ips;
+      this._ipv6CidrBlock = value.ipv6CidrBlock;
+      this._ipv6Ips = value.ipv6Ips;
       this._lan = value.lan;
       this._name = value.name;
       this._firewall.internalValue = value.firewall;
@@ -667,6 +741,22 @@ export class ServerNicOutputReference extends cdktf.ComplexObject {
   // Temporarily expose input value. Use with caution.
   public get dhcpInput() {
     return this._dhcp;
+  }
+
+  // dhcpv6 - computed: false, optional: true, required: false
+  private _dhcpv6?: boolean | cdktf.IResolvable; 
+  public get dhcpv6() {
+    return this.getBooleanAttribute('dhcpv6');
+  }
+  public set dhcpv6(value: boolean | cdktf.IResolvable) {
+    this._dhcpv6 = value;
+  }
+  public resetDhcpv6() {
+    this._dhcpv6 = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get dhcpv6Input() {
+    return this._dhcpv6;
   }
 
   // firewall_active - computed: false, optional: true, required: false
@@ -722,6 +812,38 @@ export class ServerNicOutputReference extends cdktf.ComplexObject {
     return this._ips;
   }
 
+  // ipv6_cidr_block - computed: true, optional: true, required: false
+  private _ipv6CidrBlock?: string; 
+  public get ipv6CidrBlock() {
+    return this.getStringAttribute('ipv6_cidr_block');
+  }
+  public set ipv6CidrBlock(value: string) {
+    this._ipv6CidrBlock = value;
+  }
+  public resetIpv6CidrBlock() {
+    this._ipv6CidrBlock = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get ipv6CidrBlockInput() {
+    return this._ipv6CidrBlock;
+  }
+
+  // ipv6_ips - computed: true, optional: true, required: false
+  private _ipv6Ips?: string[]; 
+  public get ipv6Ips() {
+    return this.getListAttribute('ipv6_ips');
+  }
+  public set ipv6Ips(value: string[]) {
+    this._ipv6Ips = value;
+  }
+  public resetIpv6Ips() {
+    this._ipv6Ips = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get ipv6IpsInput() {
+    return this._ipv6Ips;
+  }
+
   // lan - computed: false, optional: false, required: true
   private _lan?: number; 
   public get lan() {
@@ -762,11 +884,11 @@ export class ServerNicOutputReference extends cdktf.ComplexObject {
   }
 
   // firewall - computed: false, optional: true, required: false
-  private _firewall = new ServerNicFirewallOutputReference(this, "firewall");
+  private _firewall = new ServerNicFirewallList(this, "firewall", false);
   public get firewall() {
     return this._firewall;
   }
-  public putFirewall(value: ServerNicFirewall) {
+  public putFirewall(value: ServerNicFirewall[] | cdktf.IResolvable) {
     this._firewall.internalValue = value;
   }
   public resetFirewall() {
@@ -779,19 +901,19 @@ export class ServerNicOutputReference extends cdktf.ComplexObject {
 }
 export interface ServerTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.4/docs/resources/server#create Server#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.5/docs/resources/server#create Server#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.4/docs/resources/server#default Server#default}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.5/docs/resources/server#default Server#default}
   */
   readonly default?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.4/docs/resources/server#delete Server#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.5/docs/resources/server#delete Server#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.4/docs/resources/server#update Server#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.5/docs/resources/server#update Server#update}
   */
   readonly update?: string;
 }
@@ -935,57 +1057,57 @@ export class ServerTimeoutsOutputReference extends cdktf.ComplexObject {
 }
 export interface ServerVolume {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.4/docs/resources/server#availability_zone Server#availability_zone}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.5/docs/resources/server#availability_zone Server#availability_zone}
   */
   readonly availabilityZone?: string;
   /**
   * The uuid of the Backup Unit that user has access to. The property is immutable and is only allowed to be set on a new volume creation. It is mandatory to provide either 'public image' or 'imageAlias' in conjunction with this property.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.4/docs/resources/server#backup_unit_id Server#backup_unit_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.5/docs/resources/server#backup_unit_id Server#backup_unit_id}
   */
   readonly backupUnitId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.4/docs/resources/server#bus Server#bus}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.5/docs/resources/server#bus Server#bus}
   */
   readonly bus?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.4/docs/resources/server#disk_type Server#disk_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.5/docs/resources/server#disk_type Server#disk_type}
   */
   readonly diskType: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.4/docs/resources/server#image_password Server#image_password}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.5/docs/resources/server#image_password Server#image_password}
   */
   readonly imagePassword?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.4/docs/resources/server#licence_type Server#licence_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.5/docs/resources/server#licence_type Server#licence_type}
   */
   readonly licenceType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.4/docs/resources/server#name Server#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.5/docs/resources/server#name Server#name}
   */
   readonly name?: string;
   /**
   * The size of the volume in GB.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.4/docs/resources/server#size Server#size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.5/docs/resources/server#size Server#size}
   */
   readonly size?: number;
   /**
   * Public SSH keys are set on the image as authorized keys for appropriate SSH login to the instance using the corresponding private key. This field may only be set in creation requests. When reading, it always returns null. SSH keys are only supported if a public Linux image is used for the volume creation.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.4/docs/resources/server#ssh_key_path Server#ssh_key_path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.5/docs/resources/server#ssh_key_path Server#ssh_key_path}
   */
   readonly sshKeyPath?: string[];
   /**
   * Public SSH keys are set on the image as authorized keys for appropriate SSH login to the instance using the corresponding private key. This field may only be set in creation requests. When reading, it always returns null. SSH keys are only supported if a public Linux image is used for the volume creation.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.4/docs/resources/server#ssh_keys Server#ssh_keys}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.5/docs/resources/server#ssh_keys Server#ssh_keys}
   */
   readonly sshKeys?: string[];
   /**
   * The cloud-init configuration for the volume as base64 encoded string. The property is immutable and is only allowed to be set on a new volume creation. It is mandatory to provide either 'public image' or 'imageAlias' that has cloud-init compatibility in conjunction with this property.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.4/docs/resources/server#user_data Server#user_data}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.5/docs/resources/server#user_data Server#user_data}
   */
   readonly userData?: string;
 }
@@ -1322,7 +1444,7 @@ export class ServerVolumeOutputReference extends cdktf.ComplexObject {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.4/docs/resources/server ionoscloud_server}
+* Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.5/docs/resources/server ionoscloud_server}
 */
 export class Server extends cdktf.TerraformResource {
 
@@ -1336,7 +1458,7 @@ export class Server extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.4/docs/resources/server ionoscloud_server} Resource
+  * Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.5/docs/resources/server ionoscloud_server} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1347,7 +1469,7 @@ export class Server extends cdktf.TerraformResource {
       terraformResourceType: 'ionoscloud_server',
       terraformGeneratorMetadata: {
         providerName: 'ionoscloud',
-        providerVersion: '6.4.4',
+        providerVersion: '6.4.5',
         providerVersionConstraint: '~> 6.2'
       },
       provider: config.provider,
@@ -1364,6 +1486,7 @@ export class Server extends cdktf.TerraformResource {
     this._cores = config.cores;
     this._cpuFamily = config.cpuFamily;
     this._datacenterId = config.datacenterId;
+    this._firewallruleIds = config.firewallruleIds;
     this._id = config.id;
     this._imageName = config.imageName;
     this._imagePassword = config.imagePassword;
@@ -1484,6 +1607,22 @@ export class Server extends cdktf.TerraformResource {
   // firewallrule_id - computed: true, optional: false, required: false
   public get firewallruleId() {
     return this.getStringAttribute('firewallrule_id');
+  }
+
+  // firewallrule_ids - computed: true, optional: true, required: false
+  private _firewallruleIds?: string[]; 
+  public get firewallruleIds() {
+    return this.getListAttribute('firewallrule_ids');
+  }
+  public set firewallruleIds(value: string[]) {
+    this._firewallruleIds = value;
+  }
+  public resetFirewallruleIds() {
+    this._firewallruleIds = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get firewallruleIdsInput() {
+    return this._firewallruleIds;
   }
 
   // id - computed: true, optional: true, required: false
@@ -1658,13 +1797,16 @@ export class Server extends cdktf.TerraformResource {
     return this._label.internalValue;
   }
 
-  // nic - computed: false, optional: false, required: true
+  // nic - computed: false, optional: true, required: false
   private _nic = new ServerNicOutputReference(this, "nic");
   public get nic() {
     return this._nic;
   }
   public putNic(value: ServerNic) {
     this._nic.internalValue = value;
+  }
+  public resetNic() {
+    this._nic.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get nicInput() {
@@ -1712,6 +1854,7 @@ export class Server extends cdktf.TerraformResource {
       cores: cdktf.numberToTerraform(this._cores),
       cpu_family: cdktf.stringToTerraform(this._cpuFamily),
       datacenter_id: cdktf.stringToTerraform(this._datacenterId),
+      firewallrule_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(this._firewallruleIds),
       id: cdktf.stringToTerraform(this._id),
       image_name: cdktf.stringToTerraform(this._imageName),
       image_password: cdktf.stringToTerraform(this._imagePassword),

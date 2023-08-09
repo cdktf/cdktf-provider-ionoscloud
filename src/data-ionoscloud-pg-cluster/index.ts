@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.4/docs/data-sources/pg_cluster
+// https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.5/docs/data-sources/pg_cluster
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,13 +15,13 @@ export interface DataIonoscloudPgClusterConfig extends cdktf.TerraformMetaArgume
   /**
   * The name of your cluster.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.4/docs/data-sources/pg_cluster#display_name DataIonoscloudPgCluster#display_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.5/docs/data-sources/pg_cluster#display_name DataIonoscloudPgCluster#display_name}
   */
   readonly displayName?: string;
   /**
   * The id of your cluster.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.4/docs/data-sources/pg_cluster#id DataIonoscloudPgCluster#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.5/docs/data-sources/pg_cluster#id DataIonoscloudPgCluster#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -30,7 +30,7 @@ export interface DataIonoscloudPgClusterConfig extends cdktf.TerraformMetaArgume
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.4/docs/data-sources/pg_cluster#timeouts DataIonoscloudPgCluster#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.5/docs/data-sources/pg_cluster#timeouts DataIonoscloudPgCluster#timeouts}
   */
   readonly timeouts?: DataIonoscloudPgClusterTimeouts;
 }
@@ -317,19 +317,19 @@ export class DataIonoscloudPgClusterMaintenanceWindowList extends cdktf.ComplexL
 }
 export interface DataIonoscloudPgClusterTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.4/docs/data-sources/pg_cluster#create DataIonoscloudPgCluster#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.5/docs/data-sources/pg_cluster#create DataIonoscloudPgCluster#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.4/docs/data-sources/pg_cluster#default DataIonoscloudPgCluster#default}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.5/docs/data-sources/pg_cluster#default DataIonoscloudPgCluster#default}
   */
   readonly default?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.4/docs/data-sources/pg_cluster#delete DataIonoscloudPgCluster#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.5/docs/data-sources/pg_cluster#delete DataIonoscloudPgCluster#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.4/docs/data-sources/pg_cluster#update DataIonoscloudPgCluster#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.5/docs/data-sources/pg_cluster#update DataIonoscloudPgCluster#update}
   */
   readonly update?: string;
 }
@@ -473,7 +473,7 @@ export class DataIonoscloudPgClusterTimeoutsOutputReference extends cdktf.Comple
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.4/docs/data-sources/pg_cluster ionoscloud_pg_cluster}
+* Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.5/docs/data-sources/pg_cluster ionoscloud_pg_cluster}
 */
 export class DataIonoscloudPgCluster extends cdktf.TerraformDataSource {
 
@@ -487,7 +487,7 @@ export class DataIonoscloudPgCluster extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.4/docs/data-sources/pg_cluster ionoscloud_pg_cluster} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.5/docs/data-sources/pg_cluster ionoscloud_pg_cluster} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -498,7 +498,7 @@ export class DataIonoscloudPgCluster extends cdktf.TerraformDataSource {
       terraformResourceType: 'ionoscloud_pg_cluster',
       terraformGeneratorMetadata: {
         providerName: 'ionoscloud',
-        providerVersion: '6.4.4',
+        providerVersion: '6.4.5',
         providerVersionConstraint: '~> 6.2'
       },
       provider: config.provider,

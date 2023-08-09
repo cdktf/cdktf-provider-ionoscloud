@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.4/docs/resources/application_loadbalancer
+// https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.5/docs/resources/application_loadbalancer
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,11 +13,11 @@ import * as cdktf from 'cdktf';
 
 export interface ApplicationLoadbalancerConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.4/docs/resources/application_loadbalancer#datacenter_id ApplicationLoadbalancer#datacenter_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.5/docs/resources/application_loadbalancer#datacenter_id ApplicationLoadbalancer#datacenter_id}
   */
   readonly datacenterId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.4/docs/resources/application_loadbalancer#id ApplicationLoadbalancer#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.5/docs/resources/application_loadbalancer#id ApplicationLoadbalancer#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -26,55 +26,55 @@ export interface ApplicationLoadbalancerConfig extends cdktf.TerraformMetaArgume
   /**
   * Collection of the Application Load Balancer IP addresses. (Inbound and outbound) IPs of the listenerLan are customer-reserved public IPs for the public Load Balancers, and private IPs for the private Load Balancers.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.4/docs/resources/application_loadbalancer#ips ApplicationLoadbalancer#ips}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.5/docs/resources/application_loadbalancer#ips ApplicationLoadbalancer#ips}
   */
   readonly ips?: string[];
   /**
   * Collection of private IP addresses with the subnet mask of the Application Load Balancer. IPs must contain valid a subnet mask. If no IP is provided, the system will generate an IP with /24 subnet.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.4/docs/resources/application_loadbalancer#lb_private_ips ApplicationLoadbalancer#lb_private_ips}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.5/docs/resources/application_loadbalancer#lb_private_ips ApplicationLoadbalancer#lb_private_ips}
   */
   readonly lbPrivateIps?: string[];
   /**
   * ID of the listening (inbound) LAN.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.4/docs/resources/application_loadbalancer#listener_lan ApplicationLoadbalancer#listener_lan}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.5/docs/resources/application_loadbalancer#listener_lan ApplicationLoadbalancer#listener_lan}
   */
   readonly listenerLan: number;
   /**
   * The name of the Application Load Balancer.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.4/docs/resources/application_loadbalancer#name ApplicationLoadbalancer#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.5/docs/resources/application_loadbalancer#name ApplicationLoadbalancer#name}
   */
   readonly name: string;
   /**
   * ID of the balanced private target LAN (outbound).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.4/docs/resources/application_loadbalancer#target_lan ApplicationLoadbalancer#target_lan}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.5/docs/resources/application_loadbalancer#target_lan ApplicationLoadbalancer#target_lan}
   */
   readonly targetLan: number;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.4/docs/resources/application_loadbalancer#timeouts ApplicationLoadbalancer#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.5/docs/resources/application_loadbalancer#timeouts ApplicationLoadbalancer#timeouts}
   */
   readonly timeouts?: ApplicationLoadbalancerTimeouts;
 }
 export interface ApplicationLoadbalancerTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.4/docs/resources/application_loadbalancer#create ApplicationLoadbalancer#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.5/docs/resources/application_loadbalancer#create ApplicationLoadbalancer#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.4/docs/resources/application_loadbalancer#default ApplicationLoadbalancer#default}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.5/docs/resources/application_loadbalancer#default ApplicationLoadbalancer#default}
   */
   readonly default?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.4/docs/resources/application_loadbalancer#delete ApplicationLoadbalancer#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.5/docs/resources/application_loadbalancer#delete ApplicationLoadbalancer#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.4/docs/resources/application_loadbalancer#update ApplicationLoadbalancer#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.5/docs/resources/application_loadbalancer#update ApplicationLoadbalancer#update}
   */
   readonly update?: string;
 }
@@ -218,7 +218,7 @@ export class ApplicationLoadbalancerTimeoutsOutputReference extends cdktf.Comple
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.4/docs/resources/application_loadbalancer ionoscloud_application_loadbalancer}
+* Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.5/docs/resources/application_loadbalancer ionoscloud_application_loadbalancer}
 */
 export class ApplicationLoadbalancer extends cdktf.TerraformResource {
 
@@ -232,7 +232,7 @@ export class ApplicationLoadbalancer extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.4/docs/resources/application_loadbalancer ionoscloud_application_loadbalancer} Resource
+  * Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.5/docs/resources/application_loadbalancer ionoscloud_application_loadbalancer} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -243,7 +243,7 @@ export class ApplicationLoadbalancer extends cdktf.TerraformResource {
       terraformResourceType: 'ionoscloud_application_loadbalancer',
       terraformGeneratorMetadata: {
         providerName: 'ionoscloud',
-        providerVersion: '6.4.4',
+        providerVersion: '6.4.5',
         providerVersionConstraint: '~> 6.2'
       },
       provider: config.provider,
