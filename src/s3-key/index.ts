@@ -1,3 +1,8 @@
+/**
+ * Copyright (c) HashiCorp, Inc.
+ * SPDX-License-Identifier: MPL-2.0
+ */
+
 // https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.5/docs/resources/s3_key
 // generated from terraform resource schema
 
