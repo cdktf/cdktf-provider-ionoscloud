@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.4/docs/resources/lan
+// https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.5/docs/resources/lan
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,38 +8,44 @@ import * as cdktf from 'cdktf';
 
 export interface LanConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.4/docs/resources/lan#datacenter_id Lan#datacenter_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.5/docs/resources/lan#datacenter_id Lan#datacenter_id}
   */
   readonly datacenterId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.4/docs/resources/lan#id Lan#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.5/docs/resources/lan#id Lan#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.4/docs/resources/lan#name Lan#name}
+  * IPv6 CIDR block assigned to the LAN. Can be set to 'AUTO' for an automatically assigned address or the address can be explicitly supplied.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.5/docs/resources/lan#ipv6_cidr_block Lan#ipv6_cidr_block}
+  */
+  readonly ipv6CidrBlock?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.5/docs/resources/lan#name Lan#name}
   */
   readonly name?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.4/docs/resources/lan#pcc Lan#pcc}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.5/docs/resources/lan#pcc Lan#pcc}
   */
   readonly pcc?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.4/docs/resources/lan#public Lan#public}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.5/docs/resources/lan#public Lan#public}
   */
   readonly public?: boolean | cdktf.IResolvable;
   /**
   * ip_failover block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.4/docs/resources/lan#ip_failover Lan#ip_failover}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.5/docs/resources/lan#ip_failover Lan#ip_failover}
   */
   readonly ipFailover?: LanIpFailover[] | cdktf.IResolvable;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.4/docs/resources/lan#timeouts Lan#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.5/docs/resources/lan#timeouts Lan#timeouts}
   */
   readonly timeouts?: LanTimeouts;
 }
@@ -130,19 +131,19 @@ export class LanIpFailoverList extends cdktf.ComplexList {
 }
 export interface LanTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.4/docs/resources/lan#create Lan#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.5/docs/resources/lan#create Lan#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.4/docs/resources/lan#default Lan#default}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.5/docs/resources/lan#default Lan#default}
   */
   readonly default?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.4/docs/resources/lan#delete Lan#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.5/docs/resources/lan#delete Lan#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.4/docs/resources/lan#update Lan#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.5/docs/resources/lan#update Lan#update}
   */
   readonly update?: string;
 }
@@ -286,7 +287,7 @@ export class LanTimeoutsOutputReference extends cdktf.ComplexObject {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.4/docs/resources/lan ionoscloud_lan}
+* Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.5/docs/resources/lan ionoscloud_lan}
 */
 export class Lan extends cdktf.TerraformResource {
 
@@ -300,7 +301,7 @@ export class Lan extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.4/docs/resources/lan ionoscloud_lan} Resource
+  * Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.5/docs/resources/lan ionoscloud_lan} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -311,7 +312,7 @@ export class Lan extends cdktf.TerraformResource {
       terraformResourceType: 'ionoscloud_lan',
       terraformGeneratorMetadata: {
         providerName: 'ionoscloud',
-        providerVersion: '6.4.4',
+        providerVersion: '6.4.5',
         providerVersionConstraint: '~> 6.2'
       },
       provider: config.provider,
@@ -324,6 +325,7 @@ export class Lan extends cdktf.TerraformResource {
     });
     this._datacenterId = config.datacenterId;
     this._id = config.id;
+    this._ipv6CidrBlock = config.ipv6CidrBlock;
     this._name = config.name;
     this._pcc = config.pcc;
     this._public = config.public;
@@ -362,6 +364,22 @@ export class Lan extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get idInput() {
     return this._id;
+  }
+
+  // ipv6_cidr_block - computed: true, optional: true, required: false
+  private _ipv6CidrBlock?: string; 
+  public get ipv6CidrBlock() {
+    return this.getStringAttribute('ipv6_cidr_block');
+  }
+  public set ipv6CidrBlock(value: string) {
+    this._ipv6CidrBlock = value;
+  }
+  public resetIpv6CidrBlock() {
+    this._ipv6CidrBlock = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get ipv6CidrBlockInput() {
+    return this._ipv6CidrBlock;
   }
 
   // name - computed: false, optional: true, required: false
@@ -452,6 +470,7 @@ export class Lan extends cdktf.TerraformResource {
     return {
       datacenter_id: cdktf.stringToTerraform(this._datacenterId),
       id: cdktf.stringToTerraform(this._id),
+      ipv6_cidr_block: cdktf.stringToTerraform(this._ipv6CidrBlock),
       name: cdktf.stringToTerraform(this._name),
       pcc: cdktf.stringToTerraform(this._pcc),
       public: cdktf.booleanToTerraform(this._public),

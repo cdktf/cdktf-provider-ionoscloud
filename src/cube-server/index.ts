@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.4/docs/resources/cube_server
+// https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.5/docs/resources/cube_server
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,106 +8,106 @@ import * as cdktf from 'cdktf';
 
 export interface CubeServerConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.4/docs/resources/cube_server#availability_zone CubeServer#availability_zone}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.5/docs/resources/cube_server#availability_zone CubeServer#availability_zone}
   */
   readonly availabilityZone?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.4/docs/resources/cube_server#boot_cdrom CubeServer#boot_cdrom}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.5/docs/resources/cube_server#boot_cdrom CubeServer#boot_cdrom}
   */
   readonly bootCdrom?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.4/docs/resources/cube_server#boot_image CubeServer#boot_image}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.5/docs/resources/cube_server#boot_image CubeServer#boot_image}
   */
   readonly bootImage?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.4/docs/resources/cube_server#datacenter_id CubeServer#datacenter_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.5/docs/resources/cube_server#datacenter_id CubeServer#datacenter_id}
   */
   readonly datacenterId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.4/docs/resources/cube_server#id CubeServer#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.5/docs/resources/cube_server#id CubeServer#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.4/docs/resources/cube_server#image_name CubeServer#image_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.5/docs/resources/cube_server#image_name CubeServer#image_name}
   */
   readonly imageName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.4/docs/resources/cube_server#image_password CubeServer#image_password}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.5/docs/resources/cube_server#image_password CubeServer#image_password}
   */
   readonly imagePassword?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.4/docs/resources/cube_server#name CubeServer#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.5/docs/resources/cube_server#name CubeServer#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.4/docs/resources/cube_server#ssh_key_path CubeServer#ssh_key_path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.5/docs/resources/cube_server#ssh_key_path CubeServer#ssh_key_path}
   */
   readonly sshKeyPath?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.4/docs/resources/cube_server#template_uuid CubeServer#template_uuid}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.5/docs/resources/cube_server#template_uuid CubeServer#template_uuid}
   */
   readonly templateUuid: string;
   /**
   * nic block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.4/docs/resources/cube_server#nic CubeServer#nic}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.5/docs/resources/cube_server#nic CubeServer#nic}
   */
   readonly nic: CubeServerNic;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.4/docs/resources/cube_server#timeouts CubeServer#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.5/docs/resources/cube_server#timeouts CubeServer#timeouts}
   */
   readonly timeouts?: CubeServerTimeouts;
   /**
   * volume block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.4/docs/resources/cube_server#volume CubeServer#volume}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.5/docs/resources/cube_server#volume CubeServer#volume}
   */
   readonly volume: CubeServerVolume;
 }
 export interface CubeServerNicFirewall {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.4/docs/resources/cube_server#icmp_code CubeServer#icmp_code}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.5/docs/resources/cube_server#icmp_code CubeServer#icmp_code}
   */
   readonly icmpCode?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.4/docs/resources/cube_server#icmp_type CubeServer#icmp_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.5/docs/resources/cube_server#icmp_type CubeServer#icmp_type}
   */
   readonly icmpType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.4/docs/resources/cube_server#name CubeServer#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.5/docs/resources/cube_server#name CubeServer#name}
   */
   readonly name?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.4/docs/resources/cube_server#port_range_end CubeServer#port_range_end}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.5/docs/resources/cube_server#port_range_end CubeServer#port_range_end}
   */
   readonly portRangeEnd?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.4/docs/resources/cube_server#port_range_start CubeServer#port_range_start}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.5/docs/resources/cube_server#port_range_start CubeServer#port_range_start}
   */
   readonly portRangeStart?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.4/docs/resources/cube_server#protocol CubeServer#protocol}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.5/docs/resources/cube_server#protocol CubeServer#protocol}
   */
   readonly protocol: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.4/docs/resources/cube_server#source_ip CubeServer#source_ip}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.5/docs/resources/cube_server#source_ip CubeServer#source_ip}
   */
   readonly sourceIp?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.4/docs/resources/cube_server#source_mac CubeServer#source_mac}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.5/docs/resources/cube_server#source_mac CubeServer#source_mac}
   */
   readonly sourceMac?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.4/docs/resources/cube_server#target_ip CubeServer#target_ip}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.5/docs/resources/cube_server#target_ip CubeServer#target_ip}
   */
   readonly targetIp?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.4/docs/resources/cube_server#type CubeServer#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.5/docs/resources/cube_server#type CubeServer#type}
   */
   readonly type?: string;
 }
@@ -381,33 +376,45 @@ export class CubeServerNicFirewallOutputReference extends cdktf.ComplexObject {
 }
 export interface CubeServerNic {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.4/docs/resources/cube_server#dhcp CubeServer#dhcp}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.5/docs/resources/cube_server#dhcp CubeServer#dhcp}
   */
   readonly dhcp?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.4/docs/resources/cube_server#firewall_active CubeServer#firewall_active}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.5/docs/resources/cube_server#dhcpv6 CubeServer#dhcpv6}
+  */
+  readonly dhcpv6?: boolean | cdktf.IResolvable;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.5/docs/resources/cube_server#firewall_active CubeServer#firewall_active}
   */
   readonly firewallActive?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.4/docs/resources/cube_server#firewall_type CubeServer#firewall_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.5/docs/resources/cube_server#firewall_type CubeServer#firewall_type}
   */
   readonly firewallType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.4/docs/resources/cube_server#ips CubeServer#ips}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.5/docs/resources/cube_server#ips CubeServer#ips}
   */
   readonly ips?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.4/docs/resources/cube_server#lan CubeServer#lan}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.5/docs/resources/cube_server#ipv6_cidr_block CubeServer#ipv6_cidr_block}
+  */
+  readonly ipv6CidrBlock?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.5/docs/resources/cube_server#ipv6_ips CubeServer#ipv6_ips}
+  */
+  readonly ipv6Ips?: string[];
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.5/docs/resources/cube_server#lan CubeServer#lan}
   */
   readonly lan: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.4/docs/resources/cube_server#name CubeServer#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.5/docs/resources/cube_server#name CubeServer#name}
   */
   readonly name?: string;
   /**
   * firewall block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.4/docs/resources/cube_server#firewall CubeServer#firewall}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.5/docs/resources/cube_server#firewall CubeServer#firewall}
   */
   readonly firewall?: CubeServerNicFirewall;
 }
@@ -419,9 +426,12 @@ export function cubeServerNicToTerraform(struct?: CubeServerNicOutputReference |
   }
   return {
     dhcp: cdktf.booleanToTerraform(struct!.dhcp),
+    dhcpv6: cdktf.booleanToTerraform(struct!.dhcpv6),
     firewall_active: cdktf.booleanToTerraform(struct!.firewallActive),
     firewall_type: cdktf.stringToTerraform(struct!.firewallType),
     ips: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.ips),
+    ipv6_cidr_block: cdktf.stringToTerraform(struct!.ipv6CidrBlock),
+    ipv6_ips: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.ipv6Ips),
     lan: cdktf.numberToTerraform(struct!.lan),
     name: cdktf.stringToTerraform(struct!.name),
     firewall: cubeServerNicFirewallToTerraform(struct!.firewall),
@@ -446,6 +456,10 @@ export class CubeServerNicOutputReference extends cdktf.ComplexObject {
       hasAnyValues = true;
       internalValueResult.dhcp = this._dhcp;
     }
+    if (this._dhcpv6 !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.dhcpv6 = this._dhcpv6;
+    }
     if (this._firewallActive !== undefined) {
       hasAnyValues = true;
       internalValueResult.firewallActive = this._firewallActive;
@@ -457,6 +471,14 @@ export class CubeServerNicOutputReference extends cdktf.ComplexObject {
     if (this._ips !== undefined) {
       hasAnyValues = true;
       internalValueResult.ips = this._ips;
+    }
+    if (this._ipv6CidrBlock !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.ipv6CidrBlock = this._ipv6CidrBlock;
+    }
+    if (this._ipv6Ips !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.ipv6Ips = this._ipv6Ips;
     }
     if (this._lan !== undefined) {
       hasAnyValues = true;
@@ -477,9 +499,12 @@ export class CubeServerNicOutputReference extends cdktf.ComplexObject {
     if (value === undefined) {
       this.isEmptyObject = false;
       this._dhcp = undefined;
+      this._dhcpv6 = undefined;
       this._firewallActive = undefined;
       this._firewallType = undefined;
       this._ips = undefined;
+      this._ipv6CidrBlock = undefined;
+      this._ipv6Ips = undefined;
       this._lan = undefined;
       this._name = undefined;
       this._firewall.internalValue = undefined;
@@ -487,9 +512,12 @@ export class CubeServerNicOutputReference extends cdktf.ComplexObject {
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
       this._dhcp = value.dhcp;
+      this._dhcpv6 = value.dhcpv6;
       this._firewallActive = value.firewallActive;
       this._firewallType = value.firewallType;
       this._ips = value.ips;
+      this._ipv6CidrBlock = value.ipv6CidrBlock;
+      this._ipv6Ips = value.ipv6Ips;
       this._lan = value.lan;
       this._name = value.name;
       this._firewall.internalValue = value.firewall;
@@ -515,6 +543,22 @@ export class CubeServerNicOutputReference extends cdktf.ComplexObject {
   // Temporarily expose input value. Use with caution.
   public get dhcpInput() {
     return this._dhcp;
+  }
+
+  // dhcpv6 - computed: false, optional: true, required: false
+  private _dhcpv6?: boolean | cdktf.IResolvable; 
+  public get dhcpv6() {
+    return this.getBooleanAttribute('dhcpv6');
+  }
+  public set dhcpv6(value: boolean | cdktf.IResolvable) {
+    this._dhcpv6 = value;
+  }
+  public resetDhcpv6() {
+    this._dhcpv6 = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get dhcpv6Input() {
+    return this._dhcpv6;
   }
 
   // firewall_active - computed: false, optional: true, required: false
@@ -563,6 +607,38 @@ export class CubeServerNicOutputReference extends cdktf.ComplexObject {
   // Temporarily expose input value. Use with caution.
   public get ipsInput() {
     return this._ips;
+  }
+
+  // ipv6_cidr_block - computed: true, optional: true, required: false
+  private _ipv6CidrBlock?: string; 
+  public get ipv6CidrBlock() {
+    return this.getStringAttribute('ipv6_cidr_block');
+  }
+  public set ipv6CidrBlock(value: string) {
+    this._ipv6CidrBlock = value;
+  }
+  public resetIpv6CidrBlock() {
+    this._ipv6CidrBlock = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get ipv6CidrBlockInput() {
+    return this._ipv6CidrBlock;
+  }
+
+  // ipv6_ips - computed: true, optional: true, required: false
+  private _ipv6Ips?: string[]; 
+  public get ipv6Ips() {
+    return this.getListAttribute('ipv6_ips');
+  }
+  public set ipv6Ips(value: string[]) {
+    this._ipv6Ips = value;
+  }
+  public resetIpv6Ips() {
+    this._ipv6Ips = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get ipv6IpsInput() {
+    return this._ipv6Ips;
   }
 
   // lan - computed: false, optional: false, required: true
@@ -622,19 +698,19 @@ export class CubeServerNicOutputReference extends cdktf.ComplexObject {
 }
 export interface CubeServerTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.4/docs/resources/cube_server#create CubeServer#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.5/docs/resources/cube_server#create CubeServer#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.4/docs/resources/cube_server#default CubeServer#default}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.5/docs/resources/cube_server#default CubeServer#default}
   */
   readonly default?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.4/docs/resources/cube_server#delete CubeServer#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.5/docs/resources/cube_server#delete CubeServer#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.4/docs/resources/cube_server#update CubeServer#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.5/docs/resources/cube_server#update CubeServer#update}
   */
   readonly update?: string;
 }
@@ -778,43 +854,43 @@ export class CubeServerTimeoutsOutputReference extends cdktf.ComplexObject {
 }
 export interface CubeServerVolume {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.4/docs/resources/cube_server#availability_zone CubeServer#availability_zone}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.5/docs/resources/cube_server#availability_zone CubeServer#availability_zone}
   */
   readonly availabilityZone?: string;
   /**
   * The uuid of the Backup Unit that user has access to. The property is immutable and is only allowed to be set on a new volume creation. It is mandatory to provide either 'public image' or 'imageAlias' in conjunction with this property.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.4/docs/resources/cube_server#backup_unit_id CubeServer#backup_unit_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.5/docs/resources/cube_server#backup_unit_id CubeServer#backup_unit_id}
   */
   readonly backupUnitId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.4/docs/resources/cube_server#bus CubeServer#bus}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.5/docs/resources/cube_server#bus CubeServer#bus}
   */
   readonly bus?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.4/docs/resources/cube_server#disk_type CubeServer#disk_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.5/docs/resources/cube_server#disk_type CubeServer#disk_type}
   */
   readonly diskType: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.4/docs/resources/cube_server#image_password CubeServer#image_password}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.5/docs/resources/cube_server#image_password CubeServer#image_password}
   */
   readonly imagePassword?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.4/docs/resources/cube_server#licence_type CubeServer#licence_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.5/docs/resources/cube_server#licence_type CubeServer#licence_type}
   */
   readonly licenceType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.4/docs/resources/cube_server#name CubeServer#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.5/docs/resources/cube_server#name CubeServer#name}
   */
   readonly name?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.4/docs/resources/cube_server#ssh_key_path CubeServer#ssh_key_path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.5/docs/resources/cube_server#ssh_key_path CubeServer#ssh_key_path}
   */
   readonly sshKeyPath?: string[];
   /**
   * The cloud-init configuration for the volume as base64 encoded string. The property is immutable and is only allowed to be set on a new volume creation. It is mandatory to provide either 'public image' or 'imageAlias' that has cloud-init compatibility in conjunction with this property.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.4/docs/resources/cube_server#user_data CubeServer#user_data}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.5/docs/resources/cube_server#user_data CubeServer#user_data}
   */
   readonly userData?: string;
 }
@@ -1105,7 +1181,7 @@ export class CubeServerVolumeOutputReference extends cdktf.ComplexObject {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.4/docs/resources/cube_server ionoscloud_cube_server}
+* Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.5/docs/resources/cube_server ionoscloud_cube_server}
 */
 export class CubeServer extends cdktf.TerraformResource {
 
@@ -1119,7 +1195,7 @@ export class CubeServer extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.4/docs/resources/cube_server ionoscloud_cube_server} Resource
+  * Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.5/docs/resources/cube_server ionoscloud_cube_server} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1130,7 +1206,7 @@ export class CubeServer extends cdktf.TerraformResource {
       terraformResourceType: 'ionoscloud_cube_server',
       terraformGeneratorMetadata: {
         providerName: 'ionoscloud',
-        providerVersion: '6.4.4',
+        providerVersion: '6.4.5',
         providerVersionConstraint: '~> 6.2'
       },
       provider: config.provider,

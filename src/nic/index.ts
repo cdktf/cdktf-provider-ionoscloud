@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.4/docs/resources/nic
+// https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.5/docs/resources/nic
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,23 +8,29 @@ import * as cdktf from 'cdktf';
 
 export interface NicConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.4/docs/resources/nic#datacenter_id Nic#datacenter_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.5/docs/resources/nic#datacenter_id Nic#datacenter_id}
   */
   readonly datacenterId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.4/docs/resources/nic#dhcp Nic#dhcp}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.5/docs/resources/nic#dhcp Nic#dhcp}
   */
   readonly dhcp?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.4/docs/resources/nic#firewall_active Nic#firewall_active}
+  * Indicates whether this NIC receives an IPv6 address through DHCP.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.5/docs/resources/nic#dhcpv6 Nic#dhcpv6}
+  */
+  readonly dhcpv6?: boolean | cdktf.IResolvable;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.5/docs/resources/nic#firewall_active Nic#firewall_active}
   */
   readonly firewallActive?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.4/docs/resources/nic#firewall_type Nic#firewall_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.5/docs/resources/nic#firewall_type Nic#firewall_type}
   */
   readonly firewallType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.4/docs/resources/nic#id Nic#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.5/docs/resources/nic#id Nic#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -38,43 +39,55 @@ export interface NicConfig extends cdktf.TerraformMetaArguments {
   /**
   * Collection of IP addresses assigned to a nic. Explicitly assigned public IPs need to come from reserved IP blocks, Passing value null or empty array will assign an IP address automatically.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.4/docs/resources/nic#ips Nic#ips}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.5/docs/resources/nic#ips Nic#ips}
   */
   readonly ips?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.4/docs/resources/nic#lan Nic#lan}
+  * IPv6 CIDR block assigned to the NIC.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.5/docs/resources/nic#ipv6_cidr_block Nic#ipv6_cidr_block}
+  */
+  readonly ipv6CidrBlock?: string;
+  /**
+  * Collection for IPv6 addresses assigned to a nic. Explicitly assigned IPv6 addresses need to come from inside the IPv6 CIDR block assigned to the nic.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.5/docs/resources/nic#ipv6_ips Nic#ipv6_ips}
+  */
+  readonly ipv6Ips?: string[];
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.5/docs/resources/nic#lan Nic#lan}
   */
   readonly lan: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.4/docs/resources/nic#name Nic#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.5/docs/resources/nic#name Nic#name}
   */
   readonly name?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.4/docs/resources/nic#server_id Nic#server_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.5/docs/resources/nic#server_id Nic#server_id}
   */
   readonly serverId: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.4/docs/resources/nic#timeouts Nic#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.5/docs/resources/nic#timeouts Nic#timeouts}
   */
   readonly timeouts?: NicTimeouts;
 }
 export interface NicTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.4/docs/resources/nic#create Nic#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.5/docs/resources/nic#create Nic#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.4/docs/resources/nic#default Nic#default}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.5/docs/resources/nic#default Nic#default}
   */
   readonly default?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.4/docs/resources/nic#delete Nic#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.5/docs/resources/nic#delete Nic#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.4/docs/resources/nic#update Nic#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.5/docs/resources/nic#update Nic#update}
   */
   readonly update?: string;
 }
@@ -218,7 +231,7 @@ export class NicTimeoutsOutputReference extends cdktf.ComplexObject {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.4/docs/resources/nic ionoscloud_nic}
+* Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.5/docs/resources/nic ionoscloud_nic}
 */
 export class Nic extends cdktf.TerraformResource {
 
@@ -232,7 +245,7 @@ export class Nic extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.4/docs/resources/nic ionoscloud_nic} Resource
+  * Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.5/docs/resources/nic ionoscloud_nic} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -243,7 +256,7 @@ export class Nic extends cdktf.TerraformResource {
       terraformResourceType: 'ionoscloud_nic',
       terraformGeneratorMetadata: {
         providerName: 'ionoscloud',
-        providerVersion: '6.4.4',
+        providerVersion: '6.4.5',
         providerVersionConstraint: '~> 6.2'
       },
       provider: config.provider,
@@ -256,10 +269,13 @@ export class Nic extends cdktf.TerraformResource {
     });
     this._datacenterId = config.datacenterId;
     this._dhcp = config.dhcp;
+    this._dhcpv6 = config.dhcpv6;
     this._firewallActive = config.firewallActive;
     this._firewallType = config.firewallType;
     this._id = config.id;
     this._ips = config.ips;
+    this._ipv6CidrBlock = config.ipv6CidrBlock;
+    this._ipv6Ips = config.ipv6Ips;
     this._lan = config.lan;
     this._name = config.name;
     this._serverId = config.serverId;
@@ -302,6 +318,22 @@ export class Nic extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get dhcpInput() {
     return this._dhcp;
+  }
+
+  // dhcpv6 - computed: false, optional: true, required: false
+  private _dhcpv6?: boolean | cdktf.IResolvable; 
+  public get dhcpv6() {
+    return this.getBooleanAttribute('dhcpv6');
+  }
+  public set dhcpv6(value: boolean | cdktf.IResolvable) {
+    this._dhcpv6 = value;
+  }
+  public resetDhcpv6() {
+    this._dhcpv6 = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get dhcpv6Input() {
+    return this._dhcpv6;
   }
 
   // firewall_active - computed: false, optional: true, required: false
@@ -366,6 +398,38 @@ export class Nic extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get ipsInput() {
     return this._ips;
+  }
+
+  // ipv6_cidr_block - computed: true, optional: true, required: false
+  private _ipv6CidrBlock?: string; 
+  public get ipv6CidrBlock() {
+    return this.getStringAttribute('ipv6_cidr_block');
+  }
+  public set ipv6CidrBlock(value: string) {
+    this._ipv6CidrBlock = value;
+  }
+  public resetIpv6CidrBlock() {
+    this._ipv6CidrBlock = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get ipv6CidrBlockInput() {
+    return this._ipv6CidrBlock;
+  }
+
+  // ipv6_ips - computed: true, optional: true, required: false
+  private _ipv6Ips?: string[]; 
+  public get ipv6Ips() {
+    return this.getListAttribute('ipv6_ips');
+  }
+  public set ipv6Ips(value: string[]) {
+    this._ipv6Ips = value;
+  }
+  public resetIpv6Ips() {
+    this._ipv6Ips = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get ipv6IpsInput() {
+    return this._ipv6Ips;
   }
 
   // lan - computed: false, optional: false, required: true
@@ -444,10 +508,13 @@ export class Nic extends cdktf.TerraformResource {
     return {
       datacenter_id: cdktf.stringToTerraform(this._datacenterId),
       dhcp: cdktf.booleanToTerraform(this._dhcp),
+      dhcpv6: cdktf.booleanToTerraform(this._dhcpv6),
       firewall_active: cdktf.booleanToTerraform(this._firewallActive),
       firewall_type: cdktf.stringToTerraform(this._firewallType),
       id: cdktf.stringToTerraform(this._id),
       ips: cdktf.listMapper(cdktf.stringToTerraform, false)(this._ips),
+      ipv6_cidr_block: cdktf.stringToTerraform(this._ipv6CidrBlock),
+      ipv6_ips: cdktf.listMapper(cdktf.stringToTerraform, false)(this._ipv6Ips),
       lan: cdktf.numberToTerraform(this._lan),
       name: cdktf.stringToTerraform(this._name),
       server_id: cdktf.stringToTerraform(this._serverId),

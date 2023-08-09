@@ -1,6 +1,6 @@
 # `ionoscloud_datacenter`
 
-Refer to the Terraform Registory for docs: [`ionoscloud_datacenter`](https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.4/docs/resources/datacenter).
+Refer to the Terraform Registory for docs: [`ionoscloud_datacenter`](https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.5/docs/resources/datacenter).
 
 # `datacenter` Submodule <a name="`datacenter` Submodule" id="@cdktf/provider-ionoscloud.datacenter"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`ionoscloud_datacenter`](https://reg
 
 ### Datacenter <a name="Datacenter" id="@cdktf/provider-ionoscloud.datacenter.Datacenter"></a>
 
-Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.4/docs/resources/datacenter ionoscloud_datacenter}.
+Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.5/docs/resources/datacenter ionoscloud_datacenter}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.datacenter.Datacenter.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v8/datacenter"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/datacenter"
 
 datacenter.NewDatacenter(scope Construct, id *string, config DatacenterConfig) Datacenter
 ```
@@ -311,7 +311,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-ionoscloud.datacenter.Datacenter.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v8/datacenter"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/datacenter"
 
 datacenter.Datacenter_IsConstruct(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-ionoscloud.datacenter.Datacenter.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v8/datacenter"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/datacenter"
 
 datacenter.Datacenter_IsTerraformElement(x interface{}) *bool
 ```
@@ -357,7 +357,7 @@ datacenter.Datacenter_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-ionoscloud.datacenter.Datacenter.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v8/datacenter"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/datacenter"
 
 datacenter.Datacenter_IsTerraformResource(x interface{}) *bool
 ```
@@ -388,6 +388,7 @@ datacenter.Datacenter_IsTerraformResource(x interface{}) *bool
 | <code><a href="#@cdktf/provider-ionoscloud.datacenter.Datacenter.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.datacenter.Datacenter.property.cpuArchitecture">CpuArchitecture</a></code> | <code><a href="#@cdktf/provider-ionoscloud.datacenter.DatacenterCpuArchitectureList">DatacenterCpuArchitectureList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.datacenter.Datacenter.property.features">Features</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.datacenter.Datacenter.property.ipv6CidrBlock">Ipv6CidrBlock</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.datacenter.Datacenter.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-ionoscloud.datacenter.DatacenterTimeoutsOutputReference">DatacenterTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.datacenter.Datacenter.property.version">Version</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.datacenter.Datacenter.property.descriptionInput">DescriptionInput</a></code> | <code>*string</code> | *No description.* |
@@ -566,6 +567,16 @@ func Features() *[]*string
 
 ---
 
+##### `Ipv6CidrBlock`<sup>Required</sup> <a name="Ipv6CidrBlock" id="@cdktf/provider-ionoscloud.datacenter.Datacenter.property.ipv6CidrBlock"></a>
+
+```go
+func Ipv6CidrBlock() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `Timeouts`<sup>Required</sup> <a name="Timeouts" id="@cdktf/provider-ionoscloud.datacenter.Datacenter.property.timeouts"></a>
 
 ```go
@@ -721,7 +732,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-ionoscloud.datacenter.DatacenterConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v8/datacenter"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/datacenter"
 
 &datacenter.DatacenterConfig {
 	Connection: interface{},
@@ -736,7 +747,7 @@ import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v8/datacenter"
 	Description: *string,
 	Id: *string,
 	SecAuthProtection: interface{},
-	Timeouts: github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v8.datacenter.DatacenterTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud.datacenter.DatacenterTimeouts,
 }
 ```
 
@@ -751,11 +762,11 @@ import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v8/datacenter"
 | <code><a href="#@cdktf/provider-ionoscloud.datacenter.DatacenterConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.datacenter.DatacenterConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.datacenter.DatacenterConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-ionoscloud.datacenter.DatacenterConfig.property.location">Location</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.4/docs/resources/datacenter#location Datacenter#location}. |
-| <code><a href="#@cdktf/provider-ionoscloud.datacenter.DatacenterConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.4/docs/resources/datacenter#name Datacenter#name}. |
+| <code><a href="#@cdktf/provider-ionoscloud.datacenter.DatacenterConfig.property.location">Location</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.5/docs/resources/datacenter#location Datacenter#location}. |
+| <code><a href="#@cdktf/provider-ionoscloud.datacenter.DatacenterConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.5/docs/resources/datacenter#name Datacenter#name}. |
 | <code><a href="#@cdktf/provider-ionoscloud.datacenter.DatacenterConfig.property.description">Description</a></code> | <code>*string</code> | A description for the datacenter, e.g. staging, production. |
-| <code><a href="#@cdktf/provider-ionoscloud.datacenter.DatacenterConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.4/docs/resources/datacenter#id Datacenter#id}. |
-| <code><a href="#@cdktf/provider-ionoscloud.datacenter.DatacenterConfig.property.secAuthProtection">SecAuthProtection</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.4/docs/resources/datacenter#sec_auth_protection Datacenter#sec_auth_protection}. |
+| <code><a href="#@cdktf/provider-ionoscloud.datacenter.DatacenterConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.5/docs/resources/datacenter#id Datacenter#id}. |
+| <code><a href="#@cdktf/provider-ionoscloud.datacenter.DatacenterConfig.property.secAuthProtection">SecAuthProtection</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.5/docs/resources/datacenter#sec_auth_protection Datacenter#sec_auth_protection}. |
 | <code><a href="#@cdktf/provider-ionoscloud.datacenter.DatacenterConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-ionoscloud.datacenter.DatacenterTimeouts">DatacenterTimeouts</a></code> | timeouts block. |
 
 ---
@@ -838,7 +849,7 @@ Location *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.4/docs/resources/datacenter#location Datacenter#location}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.5/docs/resources/datacenter#location Datacenter#location}.
 
 ---
 
@@ -850,7 +861,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.4/docs/resources/datacenter#name Datacenter#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.5/docs/resources/datacenter#name Datacenter#name}.
 
 ---
 
@@ -864,7 +875,7 @@ Description *string
 
 A description for the datacenter, e.g. staging, production.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.4/docs/resources/datacenter#description Datacenter#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.5/docs/resources/datacenter#description Datacenter#description}
 
 ---
 
@@ -876,7 +887,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.4/docs/resources/datacenter#id Datacenter#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.5/docs/resources/datacenter#id Datacenter#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -891,7 +902,7 @@ SecAuthProtection interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.4/docs/resources/datacenter#sec_auth_protection Datacenter#sec_auth_protection}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.5/docs/resources/datacenter#sec_auth_protection Datacenter#sec_auth_protection}.
 
 ---
 
@@ -905,7 +916,7 @@ Timeouts DatacenterTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.4/docs/resources/datacenter#timeouts Datacenter#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.5/docs/resources/datacenter#timeouts Datacenter#timeouts}
 
 ---
 
@@ -914,7 +925,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 #### Initializer <a name="Initializer" id="@cdktf/provider-ionoscloud.datacenter.DatacenterCpuArchitecture.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v8/datacenter"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/datacenter"
 
 &datacenter.DatacenterCpuArchitecture {
 
@@ -927,7 +938,7 @@ import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v8/datacenter"
 #### Initializer <a name="Initializer" id="@cdktf/provider-ionoscloud.datacenter.DatacenterTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v8/datacenter"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/datacenter"
 
 &datacenter.DatacenterTimeouts {
 	Create: *string,
@@ -941,10 +952,10 @@ import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v8/datacenter"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-ionoscloud.datacenter.DatacenterTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.4/docs/resources/datacenter#create Datacenter#create}. |
-| <code><a href="#@cdktf/provider-ionoscloud.datacenter.DatacenterTimeouts.property.default">Default</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.4/docs/resources/datacenter#default Datacenter#default}. |
-| <code><a href="#@cdktf/provider-ionoscloud.datacenter.DatacenterTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.4/docs/resources/datacenter#delete Datacenter#delete}. |
-| <code><a href="#@cdktf/provider-ionoscloud.datacenter.DatacenterTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.4/docs/resources/datacenter#update Datacenter#update}. |
+| <code><a href="#@cdktf/provider-ionoscloud.datacenter.DatacenterTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.5/docs/resources/datacenter#create Datacenter#create}. |
+| <code><a href="#@cdktf/provider-ionoscloud.datacenter.DatacenterTimeouts.property.default">Default</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.5/docs/resources/datacenter#default Datacenter#default}. |
+| <code><a href="#@cdktf/provider-ionoscloud.datacenter.DatacenterTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.5/docs/resources/datacenter#delete Datacenter#delete}. |
+| <code><a href="#@cdktf/provider-ionoscloud.datacenter.DatacenterTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.5/docs/resources/datacenter#update Datacenter#update}. |
 
 ---
 
@@ -956,7 +967,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.4/docs/resources/datacenter#create Datacenter#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.5/docs/resources/datacenter#create Datacenter#create}.
 
 ---
 
@@ -968,7 +979,7 @@ Default *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.4/docs/resources/datacenter#default Datacenter#default}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.5/docs/resources/datacenter#default Datacenter#default}.
 
 ---
 
@@ -980,7 +991,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.4/docs/resources/datacenter#delete Datacenter#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.5/docs/resources/datacenter#delete Datacenter#delete}.
 
 ---
 
@@ -992,7 +1003,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.4/docs/resources/datacenter#update Datacenter#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.5/docs/resources/datacenter#update Datacenter#update}.
 
 ---
 
@@ -1003,7 +1014,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.datacenter.DatacenterCpuArchitectureList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v8/datacenter"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/datacenter"
 
 datacenter.NewDatacenterCpuArchitectureList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DatacenterCpuArchitectureList
 ```
@@ -1135,7 +1146,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.datacenter.DatacenterCpuArchitectureOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v8/datacenter"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/datacenter"
 
 datacenter.NewDatacenterCpuArchitectureOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DatacenterCpuArchitectureOutputReference
 ```
@@ -1446,7 +1457,7 @@ func InternalValue() DatacenterCpuArchitecture
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.datacenter.DatacenterTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v8/datacenter"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/datacenter"
 
 datacenter.NewDatacenterTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DatacenterTimeoutsOutputReference
 ```

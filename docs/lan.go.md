@@ -1,6 +1,6 @@
 # `ionoscloud_lan`
 
-Refer to the Terraform Registory for docs: [`ionoscloud_lan`](https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.4/docs/resources/lan).
+Refer to the Terraform Registory for docs: [`ionoscloud_lan`](https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.5/docs/resources/lan).
 
 # `lan` Submodule <a name="`lan` Submodule" id="@cdktf/provider-ionoscloud.lan"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`ionoscloud_lan`](https://registry.t
 
 ### Lan <a name="Lan" id="@cdktf/provider-ionoscloud.lan.Lan"></a>
 
-Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.4/docs/resources/lan ionoscloud_lan}.
+Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.5/docs/resources/lan ionoscloud_lan}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.lan.Lan.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v8/lan"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/lan"
 
 lan.NewLan(scope Construct, id *string, config LanConfig) Lan
 ```
@@ -74,6 +74,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-ionoscloud.lan.Lan.putTimeouts">PutTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.lan.Lan.resetId">ResetId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.lan.Lan.resetIpFailover">ResetIpFailover</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.lan.Lan.resetIpv6CidrBlock">ResetIpv6CidrBlock</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.lan.Lan.resetName">ResetName</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.lan.Lan.resetPcc">ResetPcc</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.lan.Lan.resetPublic">ResetPublic</a></code> | *No description.* |
@@ -301,6 +302,12 @@ func ResetId()
 func ResetIpFailover()
 ```
 
+##### `ResetIpv6CidrBlock` <a name="ResetIpv6CidrBlock" id="@cdktf/provider-ionoscloud.lan.Lan.resetIpv6CidrBlock"></a>
+
+```go
+func ResetIpv6CidrBlock()
+```
+
 ##### `ResetName` <a name="ResetName" id="@cdktf/provider-ionoscloud.lan.Lan.resetName"></a>
 
 ```go
@@ -338,7 +345,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-ionoscloud.lan.Lan.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v8/lan"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/lan"
 
 lan.Lan_IsConstruct(x interface{}) *bool
 ```
@@ -370,7 +377,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-ionoscloud.lan.Lan.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v8/lan"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/lan"
 
 lan.Lan_IsTerraformElement(x interface{}) *bool
 ```
@@ -384,7 +391,7 @@ lan.Lan_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-ionoscloud.lan.Lan.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v8/lan"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/lan"
 
 lan.Lan_IsTerraformResource(x interface{}) *bool
 ```
@@ -418,12 +425,14 @@ lan.Lan_IsTerraformResource(x interface{}) *bool
 | <code><a href="#@cdktf/provider-ionoscloud.lan.Lan.property.datacenterIdInput">DatacenterIdInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.lan.Lan.property.idInput">IdInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.lan.Lan.property.ipFailoverInput">IpFailoverInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.lan.Lan.property.ipv6CidrBlockInput">Ipv6CidrBlockInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.lan.Lan.property.nameInput">NameInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.lan.Lan.property.pccInput">PccInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.lan.Lan.property.publicInput">PublicInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.lan.Lan.property.timeoutsInput">TimeoutsInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.lan.Lan.property.datacenterId">DatacenterId</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.lan.Lan.property.id">Id</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.lan.Lan.property.ipv6CidrBlock">Ipv6CidrBlock</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.lan.Lan.property.name">Name</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.lan.Lan.property.pcc">Pcc</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.lan.Lan.property.public">Public</a></code> | <code>interface{}</code> | *No description.* |
@@ -622,6 +631,16 @@ func IpFailoverInput() interface{}
 
 ---
 
+##### `Ipv6CidrBlockInput`<sup>Optional</sup> <a name="Ipv6CidrBlockInput" id="@cdktf/provider-ionoscloud.lan.Lan.property.ipv6CidrBlockInput"></a>
+
+```go
+func Ipv6CidrBlockInput() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `NameInput`<sup>Optional</sup> <a name="NameInput" id="@cdktf/provider-ionoscloud.lan.Lan.property.nameInput"></a>
 
 ```go
@@ -676,6 +695,16 @@ func DatacenterId() *string
 
 ```go
 func Id() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `Ipv6CidrBlock`<sup>Required</sup> <a name="Ipv6CidrBlock" id="@cdktf/provider-ionoscloud.lan.Lan.property.ipv6CidrBlock"></a>
+
+```go
+func Ipv6CidrBlock() *string
 ```
 
 - *Type:* *string
@@ -737,7 +766,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-ionoscloud.lan.LanConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v8/lan"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/lan"
 
 &lan.LanConfig {
 	Connection: interface{},
@@ -750,10 +779,11 @@ import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v8/lan"
 	DatacenterId: *string,
 	Id: *string,
 	IpFailover: interface{},
+	Ipv6CidrBlock: *string,
 	Name: *string,
 	Pcc: *string,
 	Public: interface{},
-	Timeouts: github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v8.lan.LanTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud.lan.LanTimeouts,
 }
 ```
 
@@ -768,12 +798,13 @@ import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v8/lan"
 | <code><a href="#@cdktf/provider-ionoscloud.lan.LanConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.lan.LanConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.lan.LanConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-ionoscloud.lan.LanConfig.property.datacenterId">DatacenterId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.4/docs/resources/lan#datacenter_id Lan#datacenter_id}. |
-| <code><a href="#@cdktf/provider-ionoscloud.lan.LanConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.4/docs/resources/lan#id Lan#id}. |
+| <code><a href="#@cdktf/provider-ionoscloud.lan.LanConfig.property.datacenterId">DatacenterId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.5/docs/resources/lan#datacenter_id Lan#datacenter_id}. |
+| <code><a href="#@cdktf/provider-ionoscloud.lan.LanConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.5/docs/resources/lan#id Lan#id}. |
 | <code><a href="#@cdktf/provider-ionoscloud.lan.LanConfig.property.ipFailover">IpFailover</a></code> | <code>interface{}</code> | ip_failover block. |
-| <code><a href="#@cdktf/provider-ionoscloud.lan.LanConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.4/docs/resources/lan#name Lan#name}. |
-| <code><a href="#@cdktf/provider-ionoscloud.lan.LanConfig.property.pcc">Pcc</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.4/docs/resources/lan#pcc Lan#pcc}. |
-| <code><a href="#@cdktf/provider-ionoscloud.lan.LanConfig.property.public">Public</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.4/docs/resources/lan#public Lan#public}. |
+| <code><a href="#@cdktf/provider-ionoscloud.lan.LanConfig.property.ipv6CidrBlock">Ipv6CidrBlock</a></code> | <code>*string</code> | IPv6 CIDR block assigned to the LAN. |
+| <code><a href="#@cdktf/provider-ionoscloud.lan.LanConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.5/docs/resources/lan#name Lan#name}. |
+| <code><a href="#@cdktf/provider-ionoscloud.lan.LanConfig.property.pcc">Pcc</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.5/docs/resources/lan#pcc Lan#pcc}. |
+| <code><a href="#@cdktf/provider-ionoscloud.lan.LanConfig.property.public">Public</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.5/docs/resources/lan#public Lan#public}. |
 | <code><a href="#@cdktf/provider-ionoscloud.lan.LanConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-ionoscloud.lan.LanTimeouts">LanTimeouts</a></code> | timeouts block. |
 
 ---
@@ -856,7 +887,7 @@ DatacenterId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.4/docs/resources/lan#datacenter_id Lan#datacenter_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.5/docs/resources/lan#datacenter_id Lan#datacenter_id}.
 
 ---
 
@@ -868,7 +899,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.4/docs/resources/lan#id Lan#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.5/docs/resources/lan#id Lan#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -885,7 +916,23 @@ IpFailover interface{}
 
 ip_failover block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.4/docs/resources/lan#ip_failover Lan#ip_failover}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.5/docs/resources/lan#ip_failover Lan#ip_failover}
+
+---
+
+##### `Ipv6CidrBlock`<sup>Optional</sup> <a name="Ipv6CidrBlock" id="@cdktf/provider-ionoscloud.lan.LanConfig.property.ipv6CidrBlock"></a>
+
+```go
+Ipv6CidrBlock *string
+```
+
+- *Type:* *string
+
+IPv6 CIDR block assigned to the LAN.
+
+Can be set to 'AUTO' for an automatically assigned address or the address can be explicitly supplied.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.5/docs/resources/lan#ipv6_cidr_block Lan#ipv6_cidr_block}
 
 ---
 
@@ -897,7 +944,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.4/docs/resources/lan#name Lan#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.5/docs/resources/lan#name Lan#name}.
 
 ---
 
@@ -909,7 +956,7 @@ Pcc *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.4/docs/resources/lan#pcc Lan#pcc}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.5/docs/resources/lan#pcc Lan#pcc}.
 
 ---
 
@@ -921,7 +968,7 @@ Public interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.4/docs/resources/lan#public Lan#public}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.5/docs/resources/lan#public Lan#public}.
 
 ---
 
@@ -935,7 +982,7 @@ Timeouts LanTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.4/docs/resources/lan#timeouts Lan#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.5/docs/resources/lan#timeouts Lan#timeouts}
 
 ---
 
@@ -944,7 +991,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 #### Initializer <a name="Initializer" id="@cdktf/provider-ionoscloud.lan.LanIpFailover.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v8/lan"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/lan"
 
 &lan.LanIpFailover {
 
@@ -957,7 +1004,7 @@ import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v8/lan"
 #### Initializer <a name="Initializer" id="@cdktf/provider-ionoscloud.lan.LanTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v8/lan"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/lan"
 
 &lan.LanTimeouts {
 	Create: *string,
@@ -971,10 +1018,10 @@ import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v8/lan"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-ionoscloud.lan.LanTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.4/docs/resources/lan#create Lan#create}. |
-| <code><a href="#@cdktf/provider-ionoscloud.lan.LanTimeouts.property.default">Default</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.4/docs/resources/lan#default Lan#default}. |
-| <code><a href="#@cdktf/provider-ionoscloud.lan.LanTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.4/docs/resources/lan#delete Lan#delete}. |
-| <code><a href="#@cdktf/provider-ionoscloud.lan.LanTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.4/docs/resources/lan#update Lan#update}. |
+| <code><a href="#@cdktf/provider-ionoscloud.lan.LanTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.5/docs/resources/lan#create Lan#create}. |
+| <code><a href="#@cdktf/provider-ionoscloud.lan.LanTimeouts.property.default">Default</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.5/docs/resources/lan#default Lan#default}. |
+| <code><a href="#@cdktf/provider-ionoscloud.lan.LanTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.5/docs/resources/lan#delete Lan#delete}. |
+| <code><a href="#@cdktf/provider-ionoscloud.lan.LanTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.5/docs/resources/lan#update Lan#update}. |
 
 ---
 
@@ -986,7 +1033,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.4/docs/resources/lan#create Lan#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.5/docs/resources/lan#create Lan#create}.
 
 ---
 
@@ -998,7 +1045,7 @@ Default *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.4/docs/resources/lan#default Lan#default}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.5/docs/resources/lan#default Lan#default}.
 
 ---
 
@@ -1010,7 +1057,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.4/docs/resources/lan#delete Lan#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.5/docs/resources/lan#delete Lan#delete}.
 
 ---
 
@@ -1022,7 +1069,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.4/docs/resources/lan#update Lan#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.5/docs/resources/lan#update Lan#update}.
 
 ---
 
@@ -1033,7 +1080,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.lan.LanIpFailoverList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v8/lan"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/lan"
 
 lan.NewLanIpFailoverList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) LanIpFailoverList
 ```
@@ -1176,7 +1223,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.lan.LanIpFailoverOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v8/lan"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/lan"
 
 lan.NewLanIpFailoverOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) LanIpFailoverOutputReference
 ```
@@ -1465,7 +1512,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.lan.LanTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v8/lan"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/lan"
 
 lan.NewLanTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LanTimeoutsOutputReference
 ```
