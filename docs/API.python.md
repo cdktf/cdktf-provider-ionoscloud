@@ -58,6 +58,7 @@ The following submodules are available:
 - [dataIonoscloudTargetGroup](./dataIonoscloudTargetGroup.python.md)
 - [dataIonoscloudTemplate](./dataIonoscloudTemplate.python.md)
 - [dataIonoscloudUser](./dataIonoscloudUser.python.md)
+- [dataIonoscloudVcpuServer](./dataIonoscloudVcpuServer.python.md)
 - [dataIonoscloudVolume](./dataIonoscloudVolume.python.md)
 - [datacenter](./datacenter.python.md)
 - [dataplatformCluster](./dataplatformCluster.python.md)
@@ -91,4 +92,5 @@ The following submodules are available:
 - [snapshot](./snapshot.python.md)
 - [targetGroup](./targetGroup.python.md)
 - [user](./user.python.md)
+- [vcpuServer](./vcpuServer.python.md)
 - [volume](./volume.python.md)

@@ -42,6 +42,7 @@ export * as share from './share';
 export * as snapshot from './snapshot';
 export * as targetGroup from './target-group';
 export * as user from './user';
+export * as vcpuServer from './vcpu-server';
 export * as volume from './volume';
 export * as dataIonoscloudApplicationLoadbalancer from './data-ionoscloud-application-loadbalancer';
 export * as dataIonoscloudApplicationLoadbalancerForwardingrule from './data-ionoscloud-application-loadbalancer-forwardingrule';
@@ -93,6 +94,7 @@ export * as dataIonoscloudSnapshot from './data-ionoscloud-snapshot';
 export * as dataIonoscloudTargetGroup from './data-ionoscloud-target-group';
 export * as dataIonoscloudTemplate from './data-ionoscloud-template';
 export * as dataIonoscloudUser from './data-ionoscloud-user';
+export * as dataIonoscloudVcpuServer from './data-ionoscloud-vcpu-server';
 export * as dataIonoscloudVolume from './data-ionoscloud-volume';
 export * as provider from './provider';
 

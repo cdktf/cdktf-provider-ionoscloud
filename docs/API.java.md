@@ -58,6 +58,7 @@ The following submodules are available:
 - [dataIonoscloudTargetGroup](./dataIonoscloudTargetGroup.java.md)
 - [dataIonoscloudTemplate](./dataIonoscloudTemplate.java.md)
 - [dataIonoscloudUser](./dataIonoscloudUser.java.md)
+- [dataIonoscloudVcpuServer](./dataIonoscloudVcpuServer.java.md)
 - [dataIonoscloudVolume](./dataIonoscloudVolume.java.md)
 - [datacenter](./datacenter.java.md)
 - [dataplatformCluster](./dataplatformCluster.java.md)
@@ -91,4 +92,5 @@ The following submodules are available:
 - [snapshot](./snapshot.java.md)
 - [targetGroup](./targetGroup.java.md)
 - [user](./user.java.md)
+- [vcpuServer](./vcpuServer.java.md)
 - [volume](./volume.java.md)
