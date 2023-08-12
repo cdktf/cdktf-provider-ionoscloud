@@ -58,6 +58,7 @@ The following submodules are available:
 - [dataIonoscloudTargetGroup](./dataIonoscloudTargetGroup.typescript.md)
 - [dataIonoscloudTemplate](./dataIonoscloudTemplate.typescript.md)
 - [dataIonoscloudUser](./dataIonoscloudUser.typescript.md)
+- [dataIonoscloudVcpuServer](./dataIonoscloudVcpuServer.typescript.md)
 - [dataIonoscloudVolume](./dataIonoscloudVolume.typescript.md)
 - [datacenter](./datacenter.typescript.md)
 - [dataplatformCluster](./dataplatformCluster.typescript.md)
@@ -91,4 +92,5 @@ The following submodules are available:
 - [snapshot](./snapshot.typescript.md)
 - [targetGroup](./targetGroup.typescript.md)
 - [user](./user.typescript.md)
+- [vcpuServer](./vcpuServer.typescript.md)
 - [volume](./volume.typescript.md)

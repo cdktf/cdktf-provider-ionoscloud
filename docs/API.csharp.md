@@ -58,6 +58,7 @@ The following submodules are available:
 - [dataIonoscloudTargetGroup](./dataIonoscloudTargetGroup.csharp.md)
 - [dataIonoscloudTemplate](./dataIonoscloudTemplate.csharp.md)
 - [dataIonoscloudUser](./dataIonoscloudUser.csharp.md)
+- [dataIonoscloudVcpuServer](./dataIonoscloudVcpuServer.csharp.md)
 - [dataIonoscloudVolume](./dataIonoscloudVolume.csharp.md)
 - [datacenter](./datacenter.csharp.md)
 - [dataplatformCluster](./dataplatformCluster.csharp.md)
@@ -91,4 +92,5 @@ The following submodules are available:
 - [snapshot](./snapshot.csharp.md)
 - [targetGroup](./targetGroup.csharp.md)
 - [user](./user.csharp.md)
+- [vcpuServer](./vcpuServer.csharp.md)
 - [volume](./volume.csharp.md)

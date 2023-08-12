@@ -58,6 +58,7 @@ The following submodules are available:
 - [dataIonoscloudTargetGroup](./dataIonoscloudTargetGroup.go.md)
 - [dataIonoscloudTemplate](./dataIonoscloudTemplate.go.md)
 - [dataIonoscloudUser](./dataIonoscloudUser.go.md)
+- [dataIonoscloudVcpuServer](./dataIonoscloudVcpuServer.go.md)
 - [dataIonoscloudVolume](./dataIonoscloudVolume.go.md)
 - [datacenter](./datacenter.go.md)
 - [dataplatformCluster](./dataplatformCluster.go.md)
@@ -91,4 +92,5 @@ The following submodules are available:
 - [snapshot](./snapshot.go.md)
 - [targetGroup](./targetGroup.go.md)
 - [user](./user.go.md)
+- [vcpuServer](./vcpuServer.go.md)
 - [volume](./volume.go.md)
