@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.6/docs/resources/mongo_cluster
+// https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.7/docs/resources/mongo_cluster
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,89 +8,340 @@ import * as cdktf from 'cdktf';
 
 export interface MongoClusterConfig extends cdktf.TerraformMetaArguments {
   /**
+  * The number of CPU cores per instance.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.7/docs/resources/mongo_cluster#cores MongoCluster#cores}
+  */
+  readonly cores?: number;
+  /**
   * The name of your cluster.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.6/docs/resources/mongo_cluster#display_name MongoCluster#display_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.7/docs/resources/mongo_cluster#display_name MongoCluster#display_name}
   */
   readonly displayName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.6/docs/resources/mongo_cluster#id MongoCluster#id}
+  * The cluster edition. Must be one of: playground, business, enterprise
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.7/docs/resources/mongo_cluster#edition MongoCluster#edition}
+  */
+  readonly edition?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.7/docs/resources/mongo_cluster#id MongoCluster#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * The total number of instances in the cluster (one master and n-1 standbys)
+  * The total number of instances in the cluster (one master and n-1 standbys). Example: 1, 3, 5, 7. For enterprise edition at least 3.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.6/docs/resources/mongo_cluster#instances MongoCluster#instances}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.7/docs/resources/mongo_cluster#instances MongoCluster#instances}
   */
   readonly instances: number;
   /**
-  * The physical location where the cluster will be created. This will be where all of your instances live. Property cannot be modified after datacenter creation (disallowed in update requests). Available locations: de/txl, gb/lhr, es/vit
+  * The physical location where the cluster will be created. This will be where all of your instances live. Property cannot be modified after datacenter creation (disallowed in update requests). Available locations: de/txl, gb/lhr, es/vit. Update forces cluster re-creation.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.6/docs/resources/mongo_cluster#location MongoCluster#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.7/docs/resources/mongo_cluster#location MongoCluster#location}
   */
   readonly location: string;
   /**
-  * The MongoDB version of your cluster.
+  * The MongoDB version of your cluster. Update forces cluster re-creation.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.6/docs/resources/mongo_cluster#mongodb_version MongoCluster#mongodb_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.7/docs/resources/mongo_cluster#mongodb_version MongoCluster#mongodb_version}
   */
   readonly mongodbVersion: string;
   /**
-  * The unique ID of the template, which specifies the number of cores, storage size, and memory. You cannot downgrade to a smaller template or minor edition (e.g. from business to playground).
+  * The amount of memory per instance in megabytes. Multiple of 1024
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.6/docs/resources/mongo_cluster#template_id MongoCluster#template_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.7/docs/resources/mongo_cluster#ram MongoCluster#ram}
   */
-  readonly templateId: string;
+  readonly ram?: number;
+  /**
+  * The total number of shards in the cluster.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.7/docs/resources/mongo_cluster#shards MongoCluster#shards}
+  */
+  readonly shards?: number;
+  /**
+  * The amount of storage per instance in megabytes. At least 5120, at most 2097152
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.7/docs/resources/mongo_cluster#storage_size MongoCluster#storage_size}
+  */
+  readonly storageSize?: number;
+  /**
+  * The storage type. One of : HDD, SSD, SSD Standard, SSD Premium
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.7/docs/resources/mongo_cluster#storage_type MongoCluster#storage_type}
+  */
+  readonly storageType?: string;
+  /**
+  * The unique ID of the template, which specifies the number of cores, storage size, and memory. You cannot downgrade to a smaller template or minor edition (e.g. from business to playground). To get a list of all templates to confirm the changes use the /templates endpoint.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.7/docs/resources/mongo_cluster#template_id MongoCluster#template_id}
+  */
+  readonly templateId?: string;
+  /**
+  * The cluster type, either `replicaset` or `sharded-cluster`
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.7/docs/resources/mongo_cluster#type MongoCluster#type}
+  */
+  readonly type?: string;
+  /**
+  * backup block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.7/docs/resources/mongo_cluster#backup MongoCluster#backup}
+  */
+  readonly backup?: MongoClusterBackup;
+  /**
+  * bi_connector block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.7/docs/resources/mongo_cluster#bi_connector MongoCluster#bi_connector}
+  */
+  readonly biConnector?: MongoClusterBiConnector;
   /**
   * connections block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.6/docs/resources/mongo_cluster#connections MongoCluster#connections}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.7/docs/resources/mongo_cluster#connections MongoCluster#connections}
   */
   readonly connections: MongoClusterConnections;
   /**
   * credentials block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.6/docs/resources/mongo_cluster#credentials MongoCluster#credentials}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.7/docs/resources/mongo_cluster#credentials MongoCluster#credentials}
   */
   readonly credentials: MongoClusterCredentials;
   /**
   * maintenance_window block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.6/docs/resources/mongo_cluster#maintenance_window MongoCluster#maintenance_window}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.7/docs/resources/mongo_cluster#maintenance_window MongoCluster#maintenance_window}
   */
   readonly maintenanceWindow?: MongoClusterMaintenanceWindow;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.6/docs/resources/mongo_cluster#timeouts MongoCluster#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.7/docs/resources/mongo_cluster#timeouts MongoCluster#timeouts}
   */
   readonly timeouts?: MongoClusterTimeouts;
 }
+export interface MongoClusterBackup {
+  /**
+  * The location where the cluster backups will be stored. If not set, the backup is stored in the nearest location of the cluster. Examples: de, eu-sounth-2, eu-central-2
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.7/docs/resources/mongo_cluster#location MongoCluster#location}
+  */
+  readonly location?: string;
+  /**
+  * Number of hours in the past for which a point-in-time snapshot can be created.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.7/docs/resources/mongo_cluster#point_in_time_window_hours MongoCluster#point_in_time_window_hours}
+  */
+  readonly pointInTimeWindowHours?: number;
+  /**
+  * Number of hours between snapshots.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.7/docs/resources/mongo_cluster#snapshot_interval_hours MongoCluster#snapshot_interval_hours}
+  */
+  readonly snapshotIntervalHours?: number;
+}
+
+export function mongoClusterBackupToTerraform(struct?: MongoClusterBackupOutputReference | MongoClusterBackup): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    location: cdktf.stringToTerraform(struct!.location),
+    point_in_time_window_hours: cdktf.numberToTerraform(struct!.pointInTimeWindowHours),
+    snapshot_interval_hours: cdktf.numberToTerraform(struct!.snapshotIntervalHours),
+  }
+}
+
+export class MongoClusterBackupOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): MongoClusterBackup | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._location !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.location = this._location;
+    }
+    if (this._pointInTimeWindowHours !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.pointInTimeWindowHours = this._pointInTimeWindowHours;
+    }
+    if (this._snapshotIntervalHours !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.snapshotIntervalHours = this._snapshotIntervalHours;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: MongoClusterBackup | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._location = undefined;
+      this._pointInTimeWindowHours = undefined;
+      this._snapshotIntervalHours = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._location = value.location;
+      this._pointInTimeWindowHours = value.pointInTimeWindowHours;
+      this._snapshotIntervalHours = value.snapshotIntervalHours;
+    }
+  }
+
+  // location - computed: false, optional: true, required: false
+  private _location?: string; 
+  public get location() {
+    return this.getStringAttribute('location');
+  }
+  public set location(value: string) {
+    this._location = value;
+  }
+  public resetLocation() {
+    this._location = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get locationInput() {
+    return this._location;
+  }
+
+  // point_in_time_window_hours - computed: false, optional: true, required: false
+  private _pointInTimeWindowHours?: number; 
+  public get pointInTimeWindowHours() {
+    return this.getNumberAttribute('point_in_time_window_hours');
+  }
+  public set pointInTimeWindowHours(value: number) {
+    this._pointInTimeWindowHours = value;
+  }
+  public resetPointInTimeWindowHours() {
+    this._pointInTimeWindowHours = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get pointInTimeWindowHoursInput() {
+    return this._pointInTimeWindowHours;
+  }
+
+  // snapshot_interval_hours - computed: false, optional: true, required: false
+  private _snapshotIntervalHours?: number; 
+  public get snapshotIntervalHours() {
+    return this.getNumberAttribute('snapshot_interval_hours');
+  }
+  public set snapshotIntervalHours(value: number) {
+    this._snapshotIntervalHours = value;
+  }
+  public resetSnapshotIntervalHours() {
+    this._snapshotIntervalHours = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get snapshotIntervalHoursInput() {
+    return this._snapshotIntervalHours;
+  }
+}
+export interface MongoClusterBiConnector {
+  /**
+  * Enable or disable the BiConnector.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.7/docs/resources/mongo_cluster#enabled MongoCluster#enabled}
+  */
+  readonly enabled?: boolean | cdktf.IResolvable;
+}
+
+export function mongoClusterBiConnectorToTerraform(struct?: MongoClusterBiConnectorOutputReference | MongoClusterBiConnector): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    enabled: cdktf.booleanToTerraform(struct!.enabled),
+  }
+}
+
+export class MongoClusterBiConnectorOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): MongoClusterBiConnector | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._enabled !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.enabled = this._enabled;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: MongoClusterBiConnector | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._enabled = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._enabled = value.enabled;
+    }
+  }
+
+  // enabled - computed: false, optional: true, required: false
+  private _enabled?: boolean | cdktf.IResolvable; 
+  public get enabled() {
+    return this.getBooleanAttribute('enabled');
+  }
+  public set enabled(value: boolean | cdktf.IResolvable) {
+    this._enabled = value;
+  }
+  public resetEnabled() {
+    this._enabled = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get enabledInput() {
+    return this._enabled;
+  }
+
+  // host - computed: true, optional: false, required: false
+  public get host() {
+    return this.getStringAttribute('host');
+  }
+
+  // port - computed: true, optional: false, required: false
+  public get port() {
+    return this.getStringAttribute('port');
+  }
+}
 export interface MongoClusterConnections {
   /**
-  * The list of IPs and subnet for your cluster.
-          Note the following unavailable IP ranges:
-          10.233.64.0/18
-          10.233.0.0/18
-          10.233.114.0/24 		
- example: [192.168.1.100/24, 192.168.1.101/24]
+  * The list of IPs and subnet for your cluster. Note the following unavailable IP ranges:10.233.64.0/18, 10.233.0.0/18, 10.233.114.0/24. example: [192.168.1.100/24, 192.168.1.101/24]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.6/docs/resources/mongo_cluster#cidr_list MongoCluster#cidr_list}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.7/docs/resources/mongo_cluster#cidr_list MongoCluster#cidr_list}
   */
   readonly cidrList: string[];
   /**
   * The datacenter to connect your cluster to.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.6/docs/resources/mongo_cluster#datacenter_id MongoCluster#datacenter_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.7/docs/resources/mongo_cluster#datacenter_id MongoCluster#datacenter_id}
   */
   readonly datacenterId: string;
   /**
   * The LAN to connect your cluster to.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.6/docs/resources/mongo_cluster#lan_id MongoCluster#lan_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.7/docs/resources/mongo_cluster#lan_id MongoCluster#lan_id}
   */
   readonly lanId: string;
 }
@@ -197,13 +443,13 @@ export class MongoClusterConnectionsOutputReference extends cdktf.ComplexObject 
 }
 export interface MongoClusterCredentials {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.6/docs/resources/mongo_cluster#password MongoCluster#password}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.7/docs/resources/mongo_cluster#password MongoCluster#password}
   */
   readonly password: string;
   /**
   * the username for the initial mongoDB user.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.6/docs/resources/mongo_cluster#username MongoCluster#username}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.7/docs/resources/mongo_cluster#username MongoCluster#username}
   */
   readonly username: string;
 }
@@ -285,11 +531,11 @@ export class MongoClusterCredentialsOutputReference extends cdktf.ComplexObject 
 }
 export interface MongoClusterMaintenanceWindow {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.6/docs/resources/mongo_cluster#day_of_the_week MongoCluster#day_of_the_week}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.7/docs/resources/mongo_cluster#day_of_the_week MongoCluster#day_of_the_week}
   */
   readonly dayOfTheWeek: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.6/docs/resources/mongo_cluster#time MongoCluster#time}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.7/docs/resources/mongo_cluster#time MongoCluster#time}
   */
   readonly time: string;
 }
@@ -371,19 +617,19 @@ export class MongoClusterMaintenanceWindowOutputReference extends cdktf.ComplexO
 }
 export interface MongoClusterTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.6/docs/resources/mongo_cluster#create MongoCluster#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.7/docs/resources/mongo_cluster#create MongoCluster#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.6/docs/resources/mongo_cluster#default MongoCluster#default}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.7/docs/resources/mongo_cluster#default MongoCluster#default}
   */
   readonly default?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.6/docs/resources/mongo_cluster#delete MongoCluster#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.7/docs/resources/mongo_cluster#delete MongoCluster#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.6/docs/resources/mongo_cluster#update MongoCluster#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.7/docs/resources/mongo_cluster#update MongoCluster#update}
   */
   readonly update?: string;
 }
@@ -527,7 +773,7 @@ export class MongoClusterTimeoutsOutputReference extends cdktf.ComplexObject {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.6/docs/resources/mongo_cluster ionoscloud_mongo_cluster}
+* Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.7/docs/resources/mongo_cluster ionoscloud_mongo_cluster}
 */
 export class MongoCluster extends cdktf.TerraformResource {
 
@@ -541,7 +787,7 @@ export class MongoCluster extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.6/docs/resources/mongo_cluster ionoscloud_mongo_cluster} Resource
+  * Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.7/docs/resources/mongo_cluster ionoscloud_mongo_cluster} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -552,7 +798,7 @@ export class MongoCluster extends cdktf.TerraformResource {
       terraformResourceType: 'ionoscloud_mongo_cluster',
       terraformGeneratorMetadata: {
         providerName: 'ionoscloud',
-        providerVersion: '6.4.6',
+        providerVersion: '6.4.7',
         providerVersionConstraint: '~> 6.2'
       },
       provider: config.provider,
@@ -563,12 +809,21 @@ export class MongoCluster extends cdktf.TerraformResource {
       connection: config.connection,
       forEach: config.forEach
     });
+    this._cores = config.cores;
     this._displayName = config.displayName;
+    this._edition = config.edition;
     this._id = config.id;
     this._instances = config.instances;
     this._location = config.location;
     this._mongodbVersion = config.mongodbVersion;
+    this._ram = config.ram;
+    this._shards = config.shards;
+    this._storageSize = config.storageSize;
+    this._storageType = config.storageType;
     this._templateId = config.templateId;
+    this._type = config.type;
+    this._backup.internalValue = config.backup;
+    this._biConnector.internalValue = config.biConnector;
     this._connections.internalValue = config.connections;
     this._credentials.internalValue = config.credentials;
     this._maintenanceWindow.internalValue = config.maintenanceWindow;
@@ -584,6 +839,22 @@ export class MongoCluster extends cdktf.TerraformResource {
     return this.getStringAttribute('connection_string');
   }
 
+  // cores - computed: true, optional: true, required: false
+  private _cores?: number; 
+  public get cores() {
+    return this.getNumberAttribute('cores');
+  }
+  public set cores(value: number) {
+    this._cores = value;
+  }
+  public resetCores() {
+    this._cores = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get coresInput() {
+    return this._cores;
+  }
+
   // display_name - computed: false, optional: false, required: true
   private _displayName?: string; 
   public get displayName() {
@@ -595,6 +866,22 @@ export class MongoCluster extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get displayNameInput() {
     return this._displayName;
+  }
+
+  // edition - computed: true, optional: true, required: false
+  private _edition?: string; 
+  public get edition() {
+    return this.getStringAttribute('edition');
+  }
+  public set edition(value: string) {
+    this._edition = value;
+  }
+  public resetEdition() {
+    this._edition = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get editionInput() {
+    return this._edition;
   }
 
   // id - computed: true, optional: true, required: false
@@ -652,7 +939,71 @@ export class MongoCluster extends cdktf.TerraformResource {
     return this._mongodbVersion;
   }
 
-  // template_id - computed: false, optional: false, required: true
+  // ram - computed: true, optional: true, required: false
+  private _ram?: number; 
+  public get ram() {
+    return this.getNumberAttribute('ram');
+  }
+  public set ram(value: number) {
+    this._ram = value;
+  }
+  public resetRam() {
+    this._ram = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get ramInput() {
+    return this._ram;
+  }
+
+  // shards - computed: false, optional: true, required: false
+  private _shards?: number; 
+  public get shards() {
+    return this.getNumberAttribute('shards');
+  }
+  public set shards(value: number) {
+    this._shards = value;
+  }
+  public resetShards() {
+    this._shards = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get shardsInput() {
+    return this._shards;
+  }
+
+  // storage_size - computed: true, optional: true, required: false
+  private _storageSize?: number; 
+  public get storageSize() {
+    return this.getNumberAttribute('storage_size');
+  }
+  public set storageSize(value: number) {
+    this._storageSize = value;
+  }
+  public resetStorageSize() {
+    this._storageSize = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get storageSizeInput() {
+    return this._storageSize;
+  }
+
+  // storage_type - computed: true, optional: true, required: false
+  private _storageType?: string; 
+  public get storageType() {
+    return this.getStringAttribute('storage_type');
+  }
+  public set storageType(value: string) {
+    this._storageType = value;
+  }
+  public resetStorageType() {
+    this._storageType = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get storageTypeInput() {
+    return this._storageType;
+  }
+
+  // template_id - computed: false, optional: true, required: false
   private _templateId?: string; 
   public get templateId() {
     return this.getStringAttribute('template_id');
@@ -660,9 +1011,60 @@ export class MongoCluster extends cdktf.TerraformResource {
   public set templateId(value: string) {
     this._templateId = value;
   }
+  public resetTemplateId() {
+    this._templateId = undefined;
+  }
   // Temporarily expose input value. Use with caution.
   public get templateIdInput() {
     return this._templateId;
+  }
+
+  // type - computed: true, optional: true, required: false
+  private _type?: string; 
+  public get type() {
+    return this.getStringAttribute('type');
+  }
+  public set type(value: string) {
+    this._type = value;
+  }
+  public resetType() {
+    this._type = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get typeInput() {
+    return this._type;
+  }
+
+  // backup - computed: false, optional: true, required: false
+  private _backup = new MongoClusterBackupOutputReference(this, "backup");
+  public get backup() {
+    return this._backup;
+  }
+  public putBackup(value: MongoClusterBackup) {
+    this._backup.internalValue = value;
+  }
+  public resetBackup() {
+    this._backup.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get backupInput() {
+    return this._backup.internalValue;
+  }
+
+  // bi_connector - computed: false, optional: true, required: false
+  private _biConnector = new MongoClusterBiConnectorOutputReference(this, "bi_connector");
+  public get biConnector() {
+    return this._biConnector;
+  }
+  public putBiConnector(value: MongoClusterBiConnector) {
+    this._biConnector.internalValue = value;
+  }
+  public resetBiConnector() {
+    this._biConnector.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get biConnectorInput() {
+    return this._biConnector.internalValue;
   }
 
   // connections - computed: false, optional: false, required: true
@@ -729,12 +1131,21 @@ export class MongoCluster extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
+      cores: cdktf.numberToTerraform(this._cores),
       display_name: cdktf.stringToTerraform(this._displayName),
+      edition: cdktf.stringToTerraform(this._edition),
       id: cdktf.stringToTerraform(this._id),
       instances: cdktf.numberToTerraform(this._instances),
       location: cdktf.stringToTerraform(this._location),
       mongodb_version: cdktf.stringToTerraform(this._mongodbVersion),
+      ram: cdktf.numberToTerraform(this._ram),
+      shards: cdktf.numberToTerraform(this._shards),
+      storage_size: cdktf.numberToTerraform(this._storageSize),
+      storage_type: cdktf.stringToTerraform(this._storageType),
       template_id: cdktf.stringToTerraform(this._templateId),
+      type: cdktf.stringToTerraform(this._type),
+      backup: mongoClusterBackupToTerraform(this._backup.internalValue),
+      bi_connector: mongoClusterBiConnectorToTerraform(this._biConnector.internalValue),
       connections: mongoClusterConnectionsToTerraform(this._connections.internalValue),
       credentials: mongoClusterCredentialsToTerraform(this._credentials.internalValue),
       maintenance_window: mongoClusterMaintenanceWindowToTerraform(this._maintenanceWindow.internalValue),

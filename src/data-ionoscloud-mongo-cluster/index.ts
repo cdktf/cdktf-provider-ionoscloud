@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.6/docs/data-sources/mongo_cluster
+// https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.7/docs/data-sources/mongo_cluster
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,15 +8,15 @@ import * as cdktf from 'cdktf';
 
 export interface DataIonoscloudMongoClusterConfig extends cdktf.TerraformMetaArguments {
   /**
-  * The friendly name of your cluster.
+  * The friendly name of your cluster
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.6/docs/data-sources/mongo_cluster#display_name DataIonoscloudMongoCluster#display_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.7/docs/data-sources/mongo_cluster#display_name DataIonoscloudMongoCluster#display_name}
   */
   readonly displayName?: string;
   /**
-  * The id of your cluster.
+  * The id of your cluster
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.6/docs/data-sources/mongo_cluster#id DataIonoscloudMongoCluster#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.7/docs/data-sources/mongo_cluster#id DataIonoscloudMongoCluster#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -30,9 +25,147 @@ export interface DataIonoscloudMongoClusterConfig extends cdktf.TerraformMetaArg
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.6/docs/data-sources/mongo_cluster#timeouts DataIonoscloudMongoCluster#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.7/docs/data-sources/mongo_cluster#timeouts DataIonoscloudMongoCluster#timeouts}
   */
   readonly timeouts?: DataIonoscloudMongoClusterTimeouts;
+}
+export interface DataIonoscloudMongoClusterBackup {
+}
+
+export function dataIonoscloudMongoClusterBackupToTerraform(struct?: DataIonoscloudMongoClusterBackup): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class DataIonoscloudMongoClusterBackupOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataIonoscloudMongoClusterBackup | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataIonoscloudMongoClusterBackup | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // location - computed: true, optional: false, required: false
+  public get location() {
+    return this.getStringAttribute('location');
+  }
+}
+
+export class DataIonoscloudMongoClusterBackupList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataIonoscloudMongoClusterBackupOutputReference {
+    return new DataIonoscloudMongoClusterBackupOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface DataIonoscloudMongoClusterBiConnector {
+}
+
+export function dataIonoscloudMongoClusterBiConnectorToTerraform(struct?: DataIonoscloudMongoClusterBiConnector): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class DataIonoscloudMongoClusterBiConnectorOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataIonoscloudMongoClusterBiConnector | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataIonoscloudMongoClusterBiConnector | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // enabled - computed: true, optional: false, required: false
+  public get enabled() {
+    return this.getBooleanAttribute('enabled');
+  }
+
+  // host - computed: true, optional: false, required: false
+  public get host() {
+    return this.getStringAttribute('host');
+  }
+
+  // port - computed: true, optional: false, required: false
+  public get port() {
+    return this.getStringAttribute('port');
+  }
+}
+
+export class DataIonoscloudMongoClusterBiConnectorList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataIonoscloudMongoClusterBiConnectorOutputReference {
+    return new DataIonoscloudMongoClusterBiConnectorOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
 }
 export interface DataIonoscloudMongoClusterConnections {
 }
@@ -179,19 +312,19 @@ export class DataIonoscloudMongoClusterMaintenanceWindowList extends cdktf.Compl
 }
 export interface DataIonoscloudMongoClusterTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.6/docs/data-sources/mongo_cluster#create DataIonoscloudMongoCluster#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.7/docs/data-sources/mongo_cluster#create DataIonoscloudMongoCluster#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.6/docs/data-sources/mongo_cluster#default DataIonoscloudMongoCluster#default}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.7/docs/data-sources/mongo_cluster#default DataIonoscloudMongoCluster#default}
   */
   readonly default?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.6/docs/data-sources/mongo_cluster#delete DataIonoscloudMongoCluster#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.7/docs/data-sources/mongo_cluster#delete DataIonoscloudMongoCluster#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.6/docs/data-sources/mongo_cluster#update DataIonoscloudMongoCluster#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.7/docs/data-sources/mongo_cluster#update DataIonoscloudMongoCluster#update}
   */
   readonly update?: string;
 }
@@ -335,7 +468,7 @@ export class DataIonoscloudMongoClusterTimeoutsOutputReference extends cdktf.Com
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.6/docs/data-sources/mongo_cluster ionoscloud_mongo_cluster}
+* Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.7/docs/data-sources/mongo_cluster ionoscloud_mongo_cluster}
 */
 export class DataIonoscloudMongoCluster extends cdktf.TerraformDataSource {
 
@@ -349,7 +482,7 @@ export class DataIonoscloudMongoCluster extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.6/docs/data-sources/mongo_cluster ionoscloud_mongo_cluster} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.7/docs/data-sources/mongo_cluster ionoscloud_mongo_cluster} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -360,7 +493,7 @@ export class DataIonoscloudMongoCluster extends cdktf.TerraformDataSource {
       terraformResourceType: 'ionoscloud_mongo_cluster',
       terraformGeneratorMetadata: {
         providerName: 'ionoscloud',
-        providerVersion: '6.4.6',
+        providerVersion: '6.4.7',
         providerVersionConstraint: '~> 6.2'
       },
       provider: config.provider,
@@ -380,6 +513,18 @@ export class DataIonoscloudMongoCluster extends cdktf.TerraformDataSource {
   // ATTRIBUTES
   // ==========
 
+  // backup - computed: true, optional: false, required: false
+  private _backup = new DataIonoscloudMongoClusterBackupList(this, "backup", false);
+  public get backup() {
+    return this._backup;
+  }
+
+  // bi_connector - computed: true, optional: false, required: false
+  private _biConnector = new DataIonoscloudMongoClusterBiConnectorList(this, "bi_connector", false);
+  public get biConnector() {
+    return this._biConnector;
+  }
+
   // connection_string - computed: true, optional: false, required: false
   public get connectionString() {
     return this.getStringAttribute('connection_string');
@@ -389,6 +534,11 @@ export class DataIonoscloudMongoCluster extends cdktf.TerraformDataSource {
   private _connections = new DataIonoscloudMongoClusterConnectionsList(this, "connections", false);
   public get connections() {
     return this._connections;
+  }
+
+  // cores - computed: true, optional: false, required: false
+  public get cores() {
+    return this.getNumberAttribute('cores');
   }
 
   // display_name - computed: false, optional: true, required: false
@@ -405,6 +555,11 @@ export class DataIonoscloudMongoCluster extends cdktf.TerraformDataSource {
   // Temporarily expose input value. Use with caution.
   public get displayNameInput() {
     return this._displayName;
+  }
+
+  // edition - computed: true, optional: false, required: false
+  public get edition() {
+    return this.getStringAttribute('edition');
   }
 
   // id - computed: false, optional: true, required: false
@@ -444,9 +599,34 @@ export class DataIonoscloudMongoCluster extends cdktf.TerraformDataSource {
     return this.getStringAttribute('mongodb_version');
   }
 
+  // ram - computed: true, optional: false, required: false
+  public get ram() {
+    return this.getNumberAttribute('ram');
+  }
+
+  // shards - computed: true, optional: false, required: false
+  public get shards() {
+    return this.getNumberAttribute('shards');
+  }
+
+  // storage_size - computed: true, optional: false, required: false
+  public get storageSize() {
+    return this.getNumberAttribute('storage_size');
+  }
+
+  // storage_type - computed: true, optional: false, required: false
+  public get storageType() {
+    return this.getStringAttribute('storage_type');
+  }
+
   // template_id - computed: true, optional: false, required: false
   public get templateId() {
     return this.getStringAttribute('template_id');
+  }
+
+  // type - computed: true, optional: false, required: false
+  public get type() {
+    return this.getStringAttribute('type');
   }
 
   // timeouts - computed: false, optional: true, required: false
