@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.6/docs/data-sources/vcpu_server
+// https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.7/docs/data-sources/vcpu_server
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,24 +13,24 @@ import * as cdktf from 'cdktf';
 
 export interface DataIonoscloudVcpuServerConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.6/docs/data-sources/vcpu_server#datacenter_id DataIonoscloudVcpuServer#datacenter_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.7/docs/data-sources/vcpu_server#datacenter_id DataIonoscloudVcpuServer#datacenter_id}
   */
   readonly datacenterId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.6/docs/data-sources/vcpu_server#id DataIonoscloudVcpuServer#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.7/docs/data-sources/vcpu_server#id DataIonoscloudVcpuServer#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.6/docs/data-sources/vcpu_server#name DataIonoscloudVcpuServer#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.7/docs/data-sources/vcpu_server#name DataIonoscloudVcpuServer#name}
   */
   readonly name?: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.6/docs/data-sources/vcpu_server#timeouts DataIonoscloudVcpuServer#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.7/docs/data-sources/vcpu_server#timeouts DataIonoscloudVcpuServer#timeouts}
   */
   readonly timeouts?: DataIonoscloudVcpuServerTimeouts;
 }
@@ -677,19 +677,19 @@ export class DataIonoscloudVcpuServerVolumesList extends cdktf.ComplexList {
 }
 export interface DataIonoscloudVcpuServerTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.6/docs/data-sources/vcpu_server#create DataIonoscloudVcpuServer#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.7/docs/data-sources/vcpu_server#create DataIonoscloudVcpuServer#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.6/docs/data-sources/vcpu_server#default DataIonoscloudVcpuServer#default}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.7/docs/data-sources/vcpu_server#default DataIonoscloudVcpuServer#default}
   */
   readonly default?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.6/docs/data-sources/vcpu_server#delete DataIonoscloudVcpuServer#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.7/docs/data-sources/vcpu_server#delete DataIonoscloudVcpuServer#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.6/docs/data-sources/vcpu_server#update DataIonoscloudVcpuServer#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.7/docs/data-sources/vcpu_server#update DataIonoscloudVcpuServer#update}
   */
   readonly update?: string;
 }
@@ -833,7 +833,7 @@ export class DataIonoscloudVcpuServerTimeoutsOutputReference extends cdktf.Compl
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.6/docs/data-sources/vcpu_server ionoscloud_vcpu_server}
+* Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.7/docs/data-sources/vcpu_server ionoscloud_vcpu_server}
 */
 export class DataIonoscloudVcpuServer extends cdktf.TerraformDataSource {
 
@@ -847,7 +847,7 @@ export class DataIonoscloudVcpuServer extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.6/docs/data-sources/vcpu_server ionoscloud_vcpu_server} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.7/docs/data-sources/vcpu_server ionoscloud_vcpu_server} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -858,7 +858,7 @@ export class DataIonoscloudVcpuServer extends cdktf.TerraformDataSource {
       terraformResourceType: 'ionoscloud_vcpu_server',
       terraformGeneratorMetadata: {
         providerName: 'ionoscloud',
-        providerVersion: '6.4.6',
+        providerVersion: '6.4.7',
         providerVersionConstraint: '~> 6.2'
       },
       provider: config.provider,
