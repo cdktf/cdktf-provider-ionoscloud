@@ -1,3 +1,3 @@
 # `data_ionoscloud_target_group`
 
-Refer to the Terraform Registory for docs: [`data_ionoscloud_target_group`](https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.7/docs/data-sources/target_group).
+Refer to the Terraform Registory for docs: [`data_ionoscloud_target_group`](https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.8/docs/data-sources/target_group).

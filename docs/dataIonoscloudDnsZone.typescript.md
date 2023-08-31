@@ -1,6 +1,6 @@
 # `data_ionoscloud_dns_zone`
 
-Refer to the Terraform Registory for docs: [`data_ionoscloud_dns_zone`](https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.7/docs/data-sources/dns_zone).
+Refer to the Terraform Registory for docs: [`data_ionoscloud_dns_zone`](https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.8/docs/data-sources/dns_zone).
 
 # `dataIonoscloudDnsZone` Submodule <a name="`dataIonoscloudDnsZone` Submodule" id="@cdktf/provider-ionoscloud.dataIonoscloudDnsZone"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_ionoscloud_dns_zone`](https://
 
 ### DataIonoscloudDnsZone <a name="DataIonoscloudDnsZone" id="@cdktf/provider-ionoscloud.dataIonoscloudDnsZone.DataIonoscloudDnsZone"></a>
 
-Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.7/docs/data-sources/dns_zone ionoscloud_dns_zone}.
+Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.8/docs/data-sources/dns_zone ionoscloud_dns_zone}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.dataIonoscloudDnsZone.DataIonoscloudDnsZone.Initializer"></a>
 
@@ -715,7 +715,7 @@ public readonly id: string;
 
 The ID of your DNS Zone.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.7/docs/data-sources/dns_zone#id DataIonoscloudDnsZone#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.8/docs/data-sources/dns_zone#id DataIonoscloudDnsZone#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -732,7 +732,7 @@ public readonly name: string;
 
 The name of your DNS Zone.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.7/docs/data-sources/dns_zone#name DataIonoscloudDnsZone#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.8/docs/data-sources/dns_zone#name DataIonoscloudDnsZone#name}
 
 ---
 
@@ -746,7 +746,7 @@ public readonly partialMatch: boolean | IResolvable;
 
 Whether partial matching is allowed or not when using name argument.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.7/docs/data-sources/dns_zone#partial_match DataIonoscloudDnsZone#partial_match}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.8/docs/data-sources/dns_zone#partial_match DataIonoscloudDnsZone#partial_match}
 
 ---
 
