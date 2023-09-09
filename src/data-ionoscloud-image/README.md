@@ -1,3 +1,3 @@
 # `data_ionoscloud_image`
 
-Refer to the Terraform Registory for docs: [`data_ionoscloud_image`](https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.8/docs/data-sources/image).
+Refer to the Terraform Registory for docs: [`data_ionoscloud_image`](https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.9/docs/data-sources/image).
