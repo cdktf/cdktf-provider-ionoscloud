@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionosclo
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.dataIonoscloudIpfailover.DataIonoscloudIpfailover.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/dataionoscloudipfailover"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v9/dataionoscloudipfailover"
 
 dataionoscloudipfailover.NewDataIonoscloudIpfailover(scope Construct, id *string, config DataIonoscloudIpfailoverConfig) DataIonoscloudIpfailover
 ```
@@ -311,7 +311,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-ionoscloud.dataIonoscloudIpfailover.DataIonoscloudIpfailover.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/dataionoscloudipfailover"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v9/dataionoscloudipfailover"
 
 dataionoscloudipfailover.DataIonoscloudIpfailover_IsConstruct(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-ionoscloud.dataIonoscloudIpfailover.DataIonoscloudIpfailover.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/dataionoscloudipfailover"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v9/dataionoscloudipfailover"
 
 dataionoscloudipfailover.DataIonoscloudIpfailover_IsTerraformElement(x interface{}) *bool
 ```
@@ -357,7 +357,7 @@ dataionoscloudipfailover.DataIonoscloudIpfailover_IsTerraformElement(x interface
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-ionoscloud.dataIonoscloudIpfailover.DataIonoscloudIpfailover.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/dataionoscloudipfailover"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v9/dataionoscloudipfailover"
 
 dataionoscloudipfailover.DataIonoscloudIpfailover_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -666,7 +666,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-ionoscloud.dataIonoscloudIpfailover.DataIonoscloudIpfailoverConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/dataionoscloudipfailover"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v9/dataionoscloudipfailover"
 
 &dataionoscloudipfailover.DataIonoscloudIpfailoverConfig {
 	Connection: interface{},
@@ -681,7 +681,7 @@ import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/dataionoscloudi
 	Ip: *string,
 	LanId: *string,
 	Nicuuid: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud.dataIonoscloudIpfailover.DataIonoscloudIpfailoverTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v9.dataIonoscloudIpfailover.DataIonoscloudIpfailoverTimeouts,
 }
 ```
 
@@ -857,7 +857,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 #### Initializer <a name="Initializer" id="@cdktf/provider-ionoscloud.dataIonoscloudIpfailover.DataIonoscloudIpfailoverTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/dataionoscloudipfailover"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v9/dataionoscloudipfailover"
 
 &dataionoscloudipfailover.DataIonoscloudIpfailoverTimeouts {
 	Create: *string,
@@ -933,7 +933,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.dataIonoscloudIpfailover.DataIonoscloudIpfailoverTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/dataionoscloudipfailover"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v9/dataionoscloudipfailover"
 
 dataionoscloudipfailover.NewDataIonoscloudIpfailoverTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataIonoscloudIpfailoverTimeoutsOutputReference
 ```
