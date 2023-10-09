@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.9/docs/resources/pg_cluster
 // generated from terraform resource schema
 
@@ -113,10 +108,10 @@ export interface PgClusterConfig extends cdktf.TerraformMetaArguments {
 export interface PgClusterConnections {
   /**
   * The IP and subnet for the database.
-          Note the following unavailable IP ranges:
-          10.233.64.0/18
-          10.233.0.0/18
-          10.233.114.0/24
+  *           Note the following unavailable IP ranges:
+  *           10.233.64.0/18
+  *           10.233.0.0/18
+  *           10.233.114.0/24
   *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.9/docs/resources/pg_cluster#cidr PgCluster#cidr}
   */
