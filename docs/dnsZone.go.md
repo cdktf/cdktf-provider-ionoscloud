@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionosclo
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.dnsZone.DnsZone.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v9/dnszone"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v10/dnszone"
 
 dnszone.NewDnsZone(scope Construct, id *string, config DnsZoneConfig) DnsZone
 ```
@@ -311,7 +311,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-ionoscloud.dnsZone.DnsZone.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v9/dnszone"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v10/dnszone"
 
 dnszone.DnsZone_IsConstruct(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-ionoscloud.dnsZone.DnsZone.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v9/dnszone"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v10/dnszone"
 
 dnszone.DnsZone_IsTerraformElement(x interface{}) *bool
 ```
@@ -357,7 +357,7 @@ dnszone.DnsZone_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-ionoscloud.dnsZone.DnsZone.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v9/dnszone"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v10/dnszone"
 
 dnszone.DnsZone_IsTerraformResource(x interface{}) *bool
 ```
@@ -677,7 +677,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-ionoscloud.dnsZone.DnsZoneConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v9/dnszone"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v10/dnszone"
 
 &dnszone.DnsZoneConfig {
 	Connection: interface{},
@@ -691,7 +691,7 @@ import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v9/dnszone"
 	Description: *string,
 	Enabled: interface{},
 	Id: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v9.dnsZone.DnsZoneTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v10.dnsZone.DnsZoneTimeouts,
 }
 ```
 
@@ -854,7 +854,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 #### Initializer <a name="Initializer" id="@cdktf/provider-ionoscloud.dnsZone.DnsZoneTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v9/dnszone"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v10/dnszone"
 
 &dnszone.DnsZoneTimeouts {
 	Create: *string,
@@ -930,7 +930,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.dnsZone.DnsZoneTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v9/dnszone"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v10/dnszone"
 
 dnszone.NewDnsZoneTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DnsZoneTimeoutsOutputReference
 ```
