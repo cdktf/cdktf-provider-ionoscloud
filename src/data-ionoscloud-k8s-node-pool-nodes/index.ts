@@ -289,6 +289,20 @@ export class DataIonoscloudK8SNodePoolNodes extends cdktf.TerraformDataSource {
   // =================
   public static readonly tfResourceType = "ionoscloud_k8s_node_pool_nodes";
 
+  // ==============
+  // STATIC Methods
+  // ==============
+  /**
+  * Generates CDKTF code for importing a DataIonoscloudK8SNodePoolNodes resource upon running "cdktf plan <stack-name>"
+  * @param scope The scope in which to define this construct
+  * @param importToId The construct id used in the generated config for the DataIonoscloudK8SNodePoolNodes to import
+  * @param importFromId The id of the existing DataIonoscloudK8SNodePoolNodes that should be imported. Refer to the {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.9/docs/data-sources/k8s_node_pool_nodes#import import section} in the documentation of this resource for the id to use
+  * @param provider? Optional instance of the provider where the DataIonoscloudK8SNodePoolNodes to import is found
+  */
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
+        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "ionoscloud_k8s_node_pool_nodes", importId: importFromId, provider });
+      }
+
   // ===========
   // INITIALIZER
   // ===========

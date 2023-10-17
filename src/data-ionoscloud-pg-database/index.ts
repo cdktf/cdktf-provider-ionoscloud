@@ -194,6 +194,20 @@ export class DataIonoscloudPgDatabase extends cdktf.TerraformDataSource {
   // =================
   public static readonly tfResourceType = "ionoscloud_pg_database";
 
+  // ==============
+  // STATIC Methods
+  // ==============
+  /**
+  * Generates CDKTF code for importing a DataIonoscloudPgDatabase resource upon running "cdktf plan <stack-name>"
+  * @param scope The scope in which to define this construct
+  * @param importToId The construct id used in the generated config for the DataIonoscloudPgDatabase to import
+  * @param importFromId The id of the existing DataIonoscloudPgDatabase that should be imported. Refer to the {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.9/docs/data-sources/pg_database#import import section} in the documentation of this resource for the id to use
+  * @param provider? Optional instance of the provider where the DataIonoscloudPgDatabase to import is found
+  */
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
+        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "ionoscloud_pg_database", importId: importFromId, provider });
+      }
+
   // ===========
   // INITIALIZER
   // ===========
