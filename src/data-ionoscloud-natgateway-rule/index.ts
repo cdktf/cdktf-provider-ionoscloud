@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.9/docs/data-sources/natgateway_rule
 // generated from terraform resource schema
 
@@ -273,6 +268,20 @@ export class DataIonoscloudNatgatewayRule extends cdktf.TerraformDataSource {
   // STATIC PROPERTIES
   // =================
   public static readonly tfResourceType = "ionoscloud_natgateway_rule";
+
+  // ==============
+  // STATIC Methods
+  // ==============
+  /**
+  * Generates CDKTF code for importing a DataIonoscloudNatgatewayRule resource upon running "cdktf plan <stack-name>"
+  * @param scope The scope in which to define this construct
+  * @param importToId The construct id used in the generated config for the DataIonoscloudNatgatewayRule to import
+  * @param importFromId The id of the existing DataIonoscloudNatgatewayRule that should be imported. Refer to the {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.9/docs/data-sources/natgateway_rule#import import section} in the documentation of this resource for the id to use
+  * @param provider? Optional instance of the provider where the DataIonoscloudNatgatewayRule to import is found
+  */
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
+        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "ionoscloud_natgateway_rule", importId: importFromId, provider });
+      }
 
   // ===========
   // INITIALIZER

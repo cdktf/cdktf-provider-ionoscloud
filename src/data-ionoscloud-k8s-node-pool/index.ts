@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.9/docs/data-sources/k8s_node_pool
 // generated from terraform resource schema
 
@@ -486,6 +481,20 @@ export class DataIonoscloudK8SNodePool extends cdktf.TerraformDataSource {
   // STATIC PROPERTIES
   // =================
   public static readonly tfResourceType = "ionoscloud_k8s_node_pool";
+
+  // ==============
+  // STATIC Methods
+  // ==============
+  /**
+  * Generates CDKTF code for importing a DataIonoscloudK8SNodePool resource upon running "cdktf plan <stack-name>"
+  * @param scope The scope in which to define this construct
+  * @param importToId The construct id used in the generated config for the DataIonoscloudK8SNodePool to import
+  * @param importFromId The id of the existing DataIonoscloudK8SNodePool that should be imported. Refer to the {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.9/docs/data-sources/k8s_node_pool#import import section} in the documentation of this resource for the id to use
+  * @param provider? Optional instance of the provider where the DataIonoscloudK8SNodePool to import is found
+  */
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
+        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "ionoscloud_k8s_node_pool", importId: importFromId, provider });
+      }
 
   // ===========
   // INITIALIZER
