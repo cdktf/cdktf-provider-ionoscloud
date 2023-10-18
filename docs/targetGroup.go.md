@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionosclo
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.targetGroup.TargetGroup.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v10/targetgroup"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/targetgroup"
 
 targetgroup.NewTargetGroup(scope Construct, id *string, config TargetGroupConfig) TargetGroup
 ```
@@ -412,7 +412,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-ionoscloud.targetGroup.TargetGroup.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v10/targetgroup"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/targetgroup"
 
 targetgroup.TargetGroup_IsConstruct(x interface{}) *bool
 ```
@@ -444,7 +444,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-ionoscloud.targetGroup.TargetGroup.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v10/targetgroup"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/targetgroup"
 
 targetgroup.TargetGroup_IsTerraformElement(x interface{}) *bool
 ```
@@ -458,7 +458,7 @@ targetgroup.TargetGroup_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-ionoscloud.targetGroup.TargetGroup.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v10/targetgroup"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/targetgroup"
 
 targetgroup.TargetGroup_IsTerraformResource(x interface{}) *bool
 ```
@@ -472,7 +472,7 @@ targetgroup.TargetGroup_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-ionoscloud.targetGroup.TargetGroup.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v10/targetgroup"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/targetgroup"
 
 targetgroup.TargetGroup_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -877,7 +877,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-ionoscloud.targetGroup.TargetGroupConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v10/targetgroup"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/targetgroup"
 
 &targetgroup.TargetGroupConfig {
 	Connection: interface{},
@@ -891,10 +891,10 @@ import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v10/targetgroup
 	Name: *string,
 	Protocol: *string,
 	Targets: interface{},
-	HealthCheck: github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v10.targetGroup.TargetGroupHealthCheck,
-	HttpHealthCheck: github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v10.targetGroup.TargetGroupHttpHealthCheck,
+	HealthCheck: github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud.targetGroup.TargetGroupHealthCheck,
+	HttpHealthCheck: github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud.targetGroup.TargetGroupHttpHealthCheck,
 	Id: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v10.targetGroup.TargetGroupTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud.targetGroup.TargetGroupTimeouts,
 }
 ```
 
@@ -1108,7 +1108,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 #### Initializer <a name="Initializer" id="@cdktf/provider-ionoscloud.targetGroup.TargetGroupHealthCheck.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v10/targetgroup"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/targetgroup"
 
 &targetgroup.TargetGroupHealthCheck {
 	CheckInterval: *f64,
@@ -1178,7 +1178,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 #### Initializer <a name="Initializer" id="@cdktf/provider-ionoscloud.targetGroup.TargetGroupHttpHealthCheck.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v10/targetgroup"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/targetgroup"
 
 &targetgroup.TargetGroupHttpHealthCheck {
 	MatchType: *string,
@@ -1286,7 +1286,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 #### Initializer <a name="Initializer" id="@cdktf/provider-ionoscloud.targetGroup.TargetGroupTargets.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v10/targetgroup"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/targetgroup"
 
 &targetgroup.TargetGroupTargets {
 	Ip: *string,
@@ -1388,7 +1388,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 #### Initializer <a name="Initializer" id="@cdktf/provider-ionoscloud.targetGroup.TargetGroupTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v10/targetgroup"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/targetgroup"
 
 &targetgroup.TargetGroupTimeouts {
 	Create: *string,
@@ -1464,7 +1464,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.targetGroup.TargetGroupHealthCheckOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v10/targetgroup"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/targetgroup"
 
 targetgroup.NewTargetGroupHealthCheckOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) TargetGroupHealthCheckOutputReference
 ```
@@ -1800,7 +1800,7 @@ func InternalValue() TargetGroupHealthCheck
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.targetGroup.TargetGroupHttpHealthCheckOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v10/targetgroup"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/targetgroup"
 
 targetgroup.NewTargetGroupHttpHealthCheckOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) TargetGroupHttpHealthCheckOutputReference
 ```
@@ -2209,7 +2209,7 @@ func InternalValue() TargetGroupHttpHealthCheck
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.targetGroup.TargetGroupTargetsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v10/targetgroup"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/targetgroup"
 
 targetgroup.NewTargetGroupTargetsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) TargetGroupTargetsList
 ```
@@ -2352,7 +2352,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.targetGroup.TargetGroupTargetsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v10/targetgroup"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/targetgroup"
 
 targetgroup.NewTargetGroupTargetsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) TargetGroupTargetsOutputReference
 ```
@@ -2743,7 +2743,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.targetGroup.TargetGroupTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v10/targetgroup"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/targetgroup"
 
 targetgroup.NewTargetGroupTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) TargetGroupTimeoutsOutputReference
 ```
