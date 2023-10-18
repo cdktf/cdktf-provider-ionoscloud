@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionosclo
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.privateCrossconnect.PrivateCrossconnect.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v10/privatecrossconnect"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/privatecrossconnect"
 
 privatecrossconnect.NewPrivateCrossconnect(scope Construct, id *string, config PrivateCrossconnectConfig) PrivateCrossconnect
 ```
@@ -406,7 +406,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-ionoscloud.privateCrossconnect.PrivateCrossconnect.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v10/privatecrossconnect"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/privatecrossconnect"
 
 privatecrossconnect.PrivateCrossconnect_IsConstruct(x interface{}) *bool
 ```
@@ -438,7 +438,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-ionoscloud.privateCrossconnect.PrivateCrossconnect.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v10/privatecrossconnect"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/privatecrossconnect"
 
 privatecrossconnect.PrivateCrossconnect_IsTerraformElement(x interface{}) *bool
 ```
@@ -452,7 +452,7 @@ privatecrossconnect.PrivateCrossconnect_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-ionoscloud.privateCrossconnect.PrivateCrossconnect.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v10/privatecrossconnect"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/privatecrossconnect"
 
 privatecrossconnect.PrivateCrossconnect_IsTerraformResource(x interface{}) *bool
 ```
@@ -466,7 +466,7 @@ privatecrossconnect.PrivateCrossconnect_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-ionoscloud.privateCrossconnect.PrivateCrossconnect.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v10/privatecrossconnect"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/privatecrossconnect"
 
 privatecrossconnect.PrivateCrossconnect_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -827,7 +827,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-ionoscloud.privateCrossconnect.PrivateCrossconnectConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v10/privatecrossconnect"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/privatecrossconnect"
 
 &privatecrossconnect.PrivateCrossconnectConfig {
 	Connection: interface{},
@@ -842,7 +842,7 @@ import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v10/privatecros
 	Description: *string,
 	Id: *string,
 	Peers: interface{},
-	Timeouts: github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v10.privateCrossconnect.PrivateCrossconnectTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud.privateCrossconnect.PrivateCrossconnectTimeouts,
 }
 ```
 
@@ -1026,7 +1026,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 #### Initializer <a name="Initializer" id="@cdktf/provider-ionoscloud.privateCrossconnect.PrivateCrossconnectConnectableDatacenters.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v10/privatecrossconnect"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/privatecrossconnect"
 
 &privatecrossconnect.PrivateCrossconnectConnectableDatacenters {
 
@@ -1039,7 +1039,7 @@ import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v10/privatecros
 #### Initializer <a name="Initializer" id="@cdktf/provider-ionoscloud.privateCrossconnect.PrivateCrossconnectPeers.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v10/privatecrossconnect"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/privatecrossconnect"
 
 &privatecrossconnect.PrivateCrossconnectPeers {
 
@@ -1052,7 +1052,7 @@ import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v10/privatecros
 #### Initializer <a name="Initializer" id="@cdktf/provider-ionoscloud.privateCrossconnect.PrivateCrossconnectTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v10/privatecrossconnect"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/privatecrossconnect"
 
 &privatecrossconnect.PrivateCrossconnectTimeouts {
 	Create: *string,
@@ -1128,7 +1128,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.privateCrossconnect.PrivateCrossconnectConnectableDatacentersList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v10/privatecrossconnect"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/privatecrossconnect"
 
 privatecrossconnect.NewPrivateCrossconnectConnectableDatacentersList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) PrivateCrossconnectConnectableDatacentersList
 ```
@@ -1271,7 +1271,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.privateCrossconnect.PrivateCrossconnectConnectableDatacentersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v10/privatecrossconnect"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/privatecrossconnect"
 
 privatecrossconnect.NewPrivateCrossconnectConnectableDatacentersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) PrivateCrossconnectConnectableDatacentersOutputReference
 ```
@@ -1571,7 +1571,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.privateCrossconnect.PrivateCrossconnectPeersList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v10/privatecrossconnect"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/privatecrossconnect"
 
 privatecrossconnect.NewPrivateCrossconnectPeersList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) PrivateCrossconnectPeersList
 ```
@@ -1714,7 +1714,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.privateCrossconnect.PrivateCrossconnectPeersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v10/privatecrossconnect"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/privatecrossconnect"
 
 privatecrossconnect.NewPrivateCrossconnectPeersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) PrivateCrossconnectPeersOutputReference
 ```
@@ -2036,7 +2036,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.privateCrossconnect.PrivateCrossconnectTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v10/privatecrossconnect"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/privatecrossconnect"
 
 privatecrossconnect.NewPrivateCrossconnectTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PrivateCrossconnectTimeoutsOutputReference
 ```
