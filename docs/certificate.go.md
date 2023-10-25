@@ -1,6 +1,6 @@
 # `ionoscloud_certificate`
 
-Refer to the Terraform Registory for docs: [`ionoscloud_certificate`](https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.9/docs/resources/certificate).
+Refer to the Terraform Registory for docs: [`ionoscloud_certificate`](https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.10/docs/resources/certificate).
 
 # `certificate` Submodule <a name="`certificate` Submodule" id="@cdktf/provider-ionoscloud.certificate"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`ionoscloud_certificate`](https://re
 
 ### Certificate <a name="Certificate" id="@cdktf/provider-ionoscloud.certificate.Certificate"></a>
 
-Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.9/docs/resources/certificate ionoscloud_certificate}.
+Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.10/docs/resources/certificate ionoscloud_certificate}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.certificate.Certificate.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v10/certificate"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/certificate"
 
 certificate.NewCertificate(scope Construct, id *string, config CertificateConfig) Certificate
 ```
@@ -366,7 +366,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-ionoscloud.certificate.Certificate.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v10/certificate"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/certificate"
 
 certificate.Certificate_IsConstruct(x interface{}) *bool
 ```
@@ -398,7 +398,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-ionoscloud.certificate.Certificate.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v10/certificate"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/certificate"
 
 certificate.Certificate_IsTerraformElement(x interface{}) *bool
 ```
@@ -412,7 +412,7 @@ certificate.Certificate_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-ionoscloud.certificate.Certificate.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v10/certificate"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/certificate"
 
 certificate.Certificate_IsTerraformResource(x interface{}) *bool
 ```
@@ -426,7 +426,7 @@ certificate.Certificate_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-ionoscloud.certificate.Certificate.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v10/certificate"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/certificate"
 
 certificate.Certificate_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -455,7 +455,7 @@ The construct id used in the generated config for the Certificate to import.
 
 The id of the existing Certificate that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.9/docs/resources/certificate#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.10/docs/resources/certificate#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -787,7 +787,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-ionoscloud.certificate.CertificateConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v10/certificate"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/certificate"
 
 &certificate.CertificateConfig {
 	Connection: interface{},
@@ -802,7 +802,7 @@ import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v10/certificate
 	PrivateKey: *string,
 	CertificateChain: *string,
 	Id: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v10.certificate.CertificateTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud.certificate.CertificateTimeouts,
 }
 ```
 
@@ -821,7 +821,7 @@ import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v10/certificate
 | <code><a href="#@cdktf/provider-ionoscloud.certificate.CertificateConfig.property.name">Name</a></code> | <code>*string</code> | The certificate name. |
 | <code><a href="#@cdktf/provider-ionoscloud.certificate.CertificateConfig.property.privateKey">PrivateKey</a></code> | <code>*string</code> | The private key blob. This attribute is immutable. |
 | <code><a href="#@cdktf/provider-ionoscloud.certificate.CertificateConfig.property.certificateChain">CertificateChain</a></code> | <code>*string</code> | The certificate chain. This attribute is immutable. |
-| <code><a href="#@cdktf/provider-ionoscloud.certificate.CertificateConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.9/docs/resources/certificate#id Certificate#id}. |
+| <code><a href="#@cdktf/provider-ionoscloud.certificate.CertificateConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.10/docs/resources/certificate#id Certificate#id}. |
 | <code><a href="#@cdktf/provider-ionoscloud.certificate.CertificateConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-ionoscloud.certificate.CertificateTimeouts">CertificateTimeouts</a></code> | timeouts block. |
 
 ---
@@ -906,7 +906,7 @@ Certificate *string
 
 The certificate body in PEM format. This attribute is immutable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.9/docs/resources/certificate#certificate Certificate#certificate}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.10/docs/resources/certificate#certificate Certificate#certificate}
 
 ---
 
@@ -920,7 +920,7 @@ Name *string
 
 The certificate name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.9/docs/resources/certificate#name Certificate#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.10/docs/resources/certificate#name Certificate#name}
 
 ---
 
@@ -934,7 +934,7 @@ PrivateKey *string
 
 The private key blob. This attribute is immutable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.9/docs/resources/certificate#private_key Certificate#private_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.10/docs/resources/certificate#private_key Certificate#private_key}
 
 ---
 
@@ -948,7 +948,7 @@ CertificateChain *string
 
 The certificate chain. This attribute is immutable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.9/docs/resources/certificate#certificate_chain Certificate#certificate_chain}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.10/docs/resources/certificate#certificate_chain Certificate#certificate_chain}
 
 ---
 
@@ -960,7 +960,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.9/docs/resources/certificate#id Certificate#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.10/docs/resources/certificate#id Certificate#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -977,7 +977,7 @@ Timeouts CertificateTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.9/docs/resources/certificate#timeouts Certificate#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.10/docs/resources/certificate#timeouts Certificate#timeouts}
 
 ---
 
@@ -986,7 +986,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 #### Initializer <a name="Initializer" id="@cdktf/provider-ionoscloud.certificate.CertificateTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v10/certificate"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/certificate"
 
 &certificate.CertificateTimeouts {
 	Create: *string,
@@ -1000,10 +1000,10 @@ import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v10/certificate
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-ionoscloud.certificate.CertificateTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.9/docs/resources/certificate#create Certificate#create}. |
-| <code><a href="#@cdktf/provider-ionoscloud.certificate.CertificateTimeouts.property.default">Default</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.9/docs/resources/certificate#default Certificate#default}. |
-| <code><a href="#@cdktf/provider-ionoscloud.certificate.CertificateTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.9/docs/resources/certificate#delete Certificate#delete}. |
-| <code><a href="#@cdktf/provider-ionoscloud.certificate.CertificateTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.9/docs/resources/certificate#update Certificate#update}. |
+| <code><a href="#@cdktf/provider-ionoscloud.certificate.CertificateTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.10/docs/resources/certificate#create Certificate#create}. |
+| <code><a href="#@cdktf/provider-ionoscloud.certificate.CertificateTimeouts.property.default">Default</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.10/docs/resources/certificate#default Certificate#default}. |
+| <code><a href="#@cdktf/provider-ionoscloud.certificate.CertificateTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.10/docs/resources/certificate#delete Certificate#delete}. |
+| <code><a href="#@cdktf/provider-ionoscloud.certificate.CertificateTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.10/docs/resources/certificate#update Certificate#update}. |
 
 ---
 
@@ -1015,7 +1015,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.9/docs/resources/certificate#create Certificate#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.10/docs/resources/certificate#create Certificate#create}.
 
 ---
 
@@ -1027,7 +1027,7 @@ Default *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.9/docs/resources/certificate#default Certificate#default}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.10/docs/resources/certificate#default Certificate#default}.
 
 ---
 
@@ -1039,7 +1039,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.9/docs/resources/certificate#delete Certificate#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.10/docs/resources/certificate#delete Certificate#delete}.
 
 ---
 
@@ -1051,7 +1051,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.9/docs/resources/certificate#update Certificate#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.10/docs/resources/certificate#update Certificate#update}.
 
 ---
 
@@ -1062,7 +1062,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.certificate.CertificateTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v10/certificate"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/certificate"
 
 certificate.NewCertificateTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CertificateTimeoutsOutputReference
 ```
