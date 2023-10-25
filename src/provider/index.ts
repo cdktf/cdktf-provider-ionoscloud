@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.9/docs
+// https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.10/docs
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,43 +13,49 @@ import * as cdktf from 'cdktf';
 
 export interface IonoscloudProviderConfig {
   /**
+  * To be set only for reseller accounts. Allows to run terraform on a contract number under a reseller account.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.10/docs#contract_number IonoscloudProvider#contract_number}
+  */
+  readonly contractNumber?: string;
+  /**
   * IonosCloud REST API URL. Usually not necessary to be set, SDKs know internally how to route requests to the API.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.9/docs#endpoint IonoscloudProvider#endpoint}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.10/docs#endpoint IonoscloudProvider#endpoint}
   */
   readonly endpoint?: string;
   /**
   * IonosCloud password for API operations. If token is provided, token is preferred
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.9/docs#password IonoscloudProvider#password}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.10/docs#password IonoscloudProvider#password}
   */
   readonly password?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.9/docs#retries IonoscloudProvider#retries}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.10/docs#retries IonoscloudProvider#retries}
   */
   readonly retries?: number;
   /**
   * IonosCloud bearer token for API operations.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.9/docs#token IonoscloudProvider#token}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.10/docs#token IonoscloudProvider#token}
   */
   readonly token?: string;
   /**
   * IonosCloud username for API operations. If token is provided, token is preferred
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.9/docs#username IonoscloudProvider#username}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.10/docs#username IonoscloudProvider#username}
   */
   readonly username?: string;
   /**
   * Alias name
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.9/docs#alias IonoscloudProvider#alias}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.10/docs#alias IonoscloudProvider#alias}
   */
   readonly alias?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.9/docs ionoscloud}
+* Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.10/docs ionoscloud}
 */
 export class IonoscloudProvider extends cdktf.TerraformProvider {
 
@@ -65,7 +71,7 @@ export class IonoscloudProvider extends cdktf.TerraformProvider {
   * Generates CDKTF code for importing a IonoscloudProvider resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the IonoscloudProvider to import
-  * @param importFromId The id of the existing IonoscloudProvider that should be imported. Refer to the {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.9/docs#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing IonoscloudProvider that should be imported. Refer to the {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.10/docs#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the IonoscloudProvider to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -77,7 +83,7 @@ export class IonoscloudProvider extends cdktf.TerraformProvider {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.9/docs ionoscloud} Resource
+  * Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.10/docs ionoscloud} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -88,11 +94,12 @@ export class IonoscloudProvider extends cdktf.TerraformProvider {
       terraformResourceType: 'ionoscloud',
       terraformGeneratorMetadata: {
         providerName: 'ionoscloud',
-        providerVersion: '6.4.9',
+        providerVersion: '6.4.10',
         providerVersionConstraint: '~> 6.2'
       },
       terraformProviderSource: 'ionos-cloud/ionoscloud'
     });
+    this._contractNumber = config.contractNumber;
     this._endpoint = config.endpoint;
     this._password = config.password;
     this._retries = config.retries;
@@ -104,6 +111,22 @@ export class IonoscloudProvider extends cdktf.TerraformProvider {
   // ==========
   // ATTRIBUTES
   // ==========
+
+  // contract_number - computed: false, optional: true, required: false
+  private _contractNumber?: string; 
+  public get contractNumber() {
+    return this._contractNumber;
+  }
+  public set contractNumber(value: string | undefined) {
+    this._contractNumber = value;
+  }
+  public resetContractNumber() {
+    this._contractNumber = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get contractNumberInput() {
+    return this._contractNumber;
+  }
 
   // endpoint - computed: false, optional: true, required: false
   private _endpoint?: string; 
@@ -207,6 +230,7 @@ export class IonoscloudProvider extends cdktf.TerraformProvider {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
+      contract_number: cdktf.stringToTerraform(this._contractNumber),
       endpoint: cdktf.stringToTerraform(this._endpoint),
       password: cdktf.stringToTerraform(this._password),
       retries: cdktf.numberToTerraform(this._retries),

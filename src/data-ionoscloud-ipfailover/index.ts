@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.9/docs/data-sources/ipfailover
+// https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.10/docs/data-sources/ipfailover
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,50 +13,39 @@ import * as cdktf from 'cdktf';
 
 export interface DataIonoscloudIpfailoverConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.9/docs/data-sources/ipfailover#datacenter_id DataIonoscloudIpfailover#datacenter_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.10/docs/data-sources/ipfailover#datacenter_id DataIonoscloudIpfailover#datacenter_id}
   */
   readonly datacenterId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.9/docs/data-sources/ipfailover#id DataIonoscloudIpfailover#id}
-  *
-  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.10/docs/data-sources/ipfailover#ip DataIonoscloudIpfailover#ip}
   */
-  readonly id: string;
+  readonly ip: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.9/docs/data-sources/ipfailover#ip DataIonoscloudIpfailover#ip}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.10/docs/data-sources/ipfailover#lan_id DataIonoscloudIpfailover#lan_id}
   */
-  readonly ip?: string;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.9/docs/data-sources/ipfailover#lan_id DataIonoscloudIpfailover#lan_id}
-  */
-  readonly lanId?: string;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.9/docs/data-sources/ipfailover#nicuuid DataIonoscloudIpfailover#nicuuid}
-  */
-  readonly nicuuid?: string;
+  readonly lanId: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.9/docs/data-sources/ipfailover#timeouts DataIonoscloudIpfailover#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.10/docs/data-sources/ipfailover#timeouts DataIonoscloudIpfailover#timeouts}
   */
   readonly timeouts?: DataIonoscloudIpfailoverTimeouts;
 }
 export interface DataIonoscloudIpfailoverTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.9/docs/data-sources/ipfailover#create DataIonoscloudIpfailover#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.10/docs/data-sources/ipfailover#create DataIonoscloudIpfailover#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.9/docs/data-sources/ipfailover#default DataIonoscloudIpfailover#default}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.10/docs/data-sources/ipfailover#default DataIonoscloudIpfailover#default}
   */
   readonly default?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.9/docs/data-sources/ipfailover#delete DataIonoscloudIpfailover#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.10/docs/data-sources/ipfailover#delete DataIonoscloudIpfailover#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.9/docs/data-sources/ipfailover#update DataIonoscloudIpfailover#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.10/docs/data-sources/ipfailover#update DataIonoscloudIpfailover#update}
   */
   readonly update?: string;
 }
@@ -200,7 +189,7 @@ export class DataIonoscloudIpfailoverTimeoutsOutputReference extends cdktf.Compl
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.9/docs/data-sources/ipfailover ionoscloud_ipfailover}
+* Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.10/docs/data-sources/ipfailover ionoscloud_ipfailover}
 */
 export class DataIonoscloudIpfailover extends cdktf.TerraformDataSource {
 
@@ -216,7 +205,7 @@ export class DataIonoscloudIpfailover extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataIonoscloudIpfailover resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataIonoscloudIpfailover to import
-  * @param importFromId The id of the existing DataIonoscloudIpfailover that should be imported. Refer to the {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.9/docs/data-sources/ipfailover#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataIonoscloudIpfailover that should be imported. Refer to the {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.10/docs/data-sources/ipfailover#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataIonoscloudIpfailover to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -228,7 +217,7 @@ export class DataIonoscloudIpfailover extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.9/docs/data-sources/ipfailover ionoscloud_ipfailover} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.10/docs/data-sources/ipfailover ionoscloud_ipfailover} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -239,7 +228,7 @@ export class DataIonoscloudIpfailover extends cdktf.TerraformDataSource {
       terraformResourceType: 'ionoscloud_ipfailover',
       terraformGeneratorMetadata: {
         providerName: 'ionoscloud',
-        providerVersion: '6.4.9',
+        providerVersion: '6.4.10',
         providerVersionConstraint: '~> 6.2'
       },
       provider: config.provider,
@@ -251,10 +240,8 @@ export class DataIonoscloudIpfailover extends cdktf.TerraformDataSource {
       forEach: config.forEach
     });
     this._datacenterId = config.datacenterId;
-    this._id = config.id;
     this._ip = config.ip;
     this._lanId = config.lanId;
-    this._nicuuid = config.nicuuid;
     this._timeouts.internalValue = config.timeouts;
   }
 
@@ -275,20 +262,12 @@ export class DataIonoscloudIpfailover extends cdktf.TerraformDataSource {
     return this._datacenterId;
   }
 
-  // id - computed: false, optional: false, required: true
-  private _id?: string; 
+  // id - computed: true, optional: false, required: false
   public get id() {
     return this.getStringAttribute('id');
   }
-  public set id(value: string) {
-    this._id = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get idInput() {
-    return this._id;
-  }
 
-  // ip - computed: false, optional: true, required: false
+  // ip - computed: false, optional: false, required: true
   private _ip?: string; 
   public get ip() {
     return this.getStringAttribute('ip');
@@ -296,15 +275,12 @@ export class DataIonoscloudIpfailover extends cdktf.TerraformDataSource {
   public set ip(value: string) {
     this._ip = value;
   }
-  public resetIp() {
-    this._ip = undefined;
-  }
   // Temporarily expose input value. Use with caution.
   public get ipInput() {
     return this._ip;
   }
 
-  // lan_id - computed: false, optional: true, required: false
+  // lan_id - computed: false, optional: false, required: true
   private _lanId?: string; 
   public get lanId() {
     return this.getStringAttribute('lan_id');
@@ -312,28 +288,14 @@ export class DataIonoscloudIpfailover extends cdktf.TerraformDataSource {
   public set lanId(value: string) {
     this._lanId = value;
   }
-  public resetLanId() {
-    this._lanId = undefined;
-  }
   // Temporarily expose input value. Use with caution.
   public get lanIdInput() {
     return this._lanId;
   }
 
-  // nicuuid - computed: false, optional: true, required: false
-  private _nicuuid?: string; 
+  // nicuuid - computed: true, optional: false, required: false
   public get nicuuid() {
     return this.getStringAttribute('nicuuid');
-  }
-  public set nicuuid(value: string) {
-    this._nicuuid = value;
-  }
-  public resetNicuuid() {
-    this._nicuuid = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get nicuuidInput() {
-    return this._nicuuid;
   }
 
   // timeouts - computed: false, optional: true, required: false
@@ -359,10 +321,8 @@ export class DataIonoscloudIpfailover extends cdktf.TerraformDataSource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       datacenter_id: cdktf.stringToTerraform(this._datacenterId),
-      id: cdktf.stringToTerraform(this._id),
       ip: cdktf.stringToTerraform(this._ip),
       lan_id: cdktf.stringToTerraform(this._lanId),
-      nicuuid: cdktf.stringToTerraform(this._nicuuid),
       timeouts: dataIonoscloudIpfailoverTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }

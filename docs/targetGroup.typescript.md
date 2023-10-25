@@ -1,6 +1,6 @@
 # `ionoscloud_target_group`
 
-Refer to the Terraform Registory for docs: [`ionoscloud_target_group`](https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.9/docs/resources/target_group).
+Refer to the Terraform Registory for docs: [`ionoscloud_target_group`](https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.10/docs/resources/target_group).
 
 # `targetGroup` Submodule <a name="`targetGroup` Submodule" id="@cdktf/provider-ionoscloud.targetGroup"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`ionoscloud_target_group`](https://r
 
 ### TargetGroup <a name="TargetGroup" id="@cdktf/provider-ionoscloud.targetGroup.TargetGroup"></a>
 
-Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.9/docs/resources/target_group ionoscloud_target_group}.
+Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.10/docs/resources/target_group ionoscloud_target_group}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.targetGroup.TargetGroup.Initializer"></a>
 
@@ -501,7 +501,7 @@ The construct id used in the generated config for the TargetGroup to import.
 
 The id of the existing TargetGroup that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.9/docs/resources/target_group#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.10/docs/resources/target_group#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -899,7 +899,7 @@ const targetGroupConfig: targetGroup.TargetGroupConfig = { ... }
 | <code><a href="#@cdktf/provider-ionoscloud.targetGroup.TargetGroupConfig.property.targets">targets</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-ionoscloud.targetGroup.TargetGroupTargets">TargetGroupTargets</a>[]</code> | targets block. |
 | <code><a href="#@cdktf/provider-ionoscloud.targetGroup.TargetGroupConfig.property.healthCheck">healthCheck</a></code> | <code><a href="#@cdktf/provider-ionoscloud.targetGroup.TargetGroupHealthCheck">TargetGroupHealthCheck</a></code> | health_check block. |
 | <code><a href="#@cdktf/provider-ionoscloud.targetGroup.TargetGroupConfig.property.httpHealthCheck">httpHealthCheck</a></code> | <code><a href="#@cdktf/provider-ionoscloud.targetGroup.TargetGroupHttpHealthCheck">TargetGroupHttpHealthCheck</a></code> | http_health_check block. |
-| <code><a href="#@cdktf/provider-ionoscloud.targetGroup.TargetGroupConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.9/docs/resources/target_group#id TargetGroup#id}. |
+| <code><a href="#@cdktf/provider-ionoscloud.targetGroup.TargetGroupConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.10/docs/resources/target_group#id TargetGroup#id}. |
 | <code><a href="#@cdktf/provider-ionoscloud.targetGroup.TargetGroupConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-ionoscloud.targetGroup.TargetGroupTimeouts">TargetGroupTimeouts</a></code> | timeouts block. |
 
 ---
@@ -984,7 +984,7 @@ public readonly algorithm: string;
 
 Balancing algorithm.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.9/docs/resources/target_group#algorithm TargetGroup#algorithm}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.10/docs/resources/target_group#algorithm TargetGroup#algorithm}
 
 ---
 
@@ -998,7 +998,7 @@ public readonly name: string;
 
 The name of the target group.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.9/docs/resources/target_group#name TargetGroup#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.10/docs/resources/target_group#name TargetGroup#name}
 
 ---
 
@@ -1012,7 +1012,7 @@ public readonly protocol: string;
 
 Balancing protocol.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.9/docs/resources/target_group#protocol TargetGroup#protocol}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.10/docs/resources/target_group#protocol TargetGroup#protocol}
 
 ---
 
@@ -1026,7 +1026,7 @@ public readonly targets: IResolvable | TargetGroupTargets[];
 
 targets block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.9/docs/resources/target_group#targets TargetGroup#targets}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.10/docs/resources/target_group#targets TargetGroup#targets}
 
 ---
 
@@ -1040,7 +1040,7 @@ public readonly healthCheck: TargetGroupHealthCheck;
 
 health_check block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.9/docs/resources/target_group#health_check TargetGroup#health_check}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.10/docs/resources/target_group#health_check TargetGroup#health_check}
 
 ---
 
@@ -1054,7 +1054,7 @@ public readonly httpHealthCheck: TargetGroupHttpHealthCheck;
 
 http_health_check block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.9/docs/resources/target_group#http_health_check TargetGroup#http_health_check}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.10/docs/resources/target_group#http_health_check TargetGroup#http_health_check}
 
 ---
 
@@ -1066,7 +1066,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.9/docs/resources/target_group#id TargetGroup#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.10/docs/resources/target_group#id TargetGroup#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1083,7 +1083,7 @@ public readonly timeouts: TargetGroupTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.9/docs/resources/target_group#timeouts TargetGroup#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.10/docs/resources/target_group#timeouts TargetGroup#timeouts}
 
 ---
 
@@ -1117,7 +1117,7 @@ public readonly checkInterval: number;
 
 The interval in milliseconds between consecutive health checks; default is 2000.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.9/docs/resources/target_group#check_interval TargetGroup#check_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.10/docs/resources/target_group#check_interval TargetGroup#check_interval}
 
 ---
 
@@ -1133,7 +1133,7 @@ The maximum time in milliseconds to wait for a target to respond to a check.
 
 For target VMs with 'Check Interval' set, the lesser of the two  values is used once the TCP connection is established.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.9/docs/resources/target_group#check_timeout TargetGroup#check_timeout}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.10/docs/resources/target_group#check_timeout TargetGroup#check_timeout}
 
 ---
 
@@ -1149,7 +1149,7 @@ The maximum number of attempts to reconnect to a target after a connection failu
 
 Valid range is 0 to 65535, and default is three reconnection.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.9/docs/resources/target_group#retries TargetGroup#retries}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.10/docs/resources/target_group#retries TargetGroup#retries}
 
 ---
 
@@ -1167,12 +1167,12 @@ const targetGroupHttpHealthCheck: targetGroup.TargetGroupHttpHealthCheck = { ...
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-ionoscloud.targetGroup.TargetGroupHttpHealthCheck.property.matchType">matchType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.9/docs/resources/target_group#match_type TargetGroup#match_type}. |
+| <code><a href="#@cdktf/provider-ionoscloud.targetGroup.TargetGroupHttpHealthCheck.property.matchType">matchType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.10/docs/resources/target_group#match_type TargetGroup#match_type}. |
 | <code><a href="#@cdktf/provider-ionoscloud.targetGroup.TargetGroupHttpHealthCheck.property.response">response</a></code> | <code>string</code> | The response returned by the request, depending on the match type. |
 | <code><a href="#@cdktf/provider-ionoscloud.targetGroup.TargetGroupHttpHealthCheck.property.method">method</a></code> | <code>string</code> | The method for the HTTP health check. |
-| <code><a href="#@cdktf/provider-ionoscloud.targetGroup.TargetGroupHttpHealthCheck.property.negate">negate</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.9/docs/resources/target_group#negate TargetGroup#negate}. |
+| <code><a href="#@cdktf/provider-ionoscloud.targetGroup.TargetGroupHttpHealthCheck.property.negate">negate</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.10/docs/resources/target_group#negate TargetGroup#negate}. |
 | <code><a href="#@cdktf/provider-ionoscloud.targetGroup.TargetGroupHttpHealthCheck.property.path">path</a></code> | <code>string</code> | The path (destination URL) for the HTTP health check request; the default is /. |
-| <code><a href="#@cdktf/provider-ionoscloud.targetGroup.TargetGroupHttpHealthCheck.property.regex">regex</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.9/docs/resources/target_group#regex TargetGroup#regex}. |
+| <code><a href="#@cdktf/provider-ionoscloud.targetGroup.TargetGroupHttpHealthCheck.property.regex">regex</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.10/docs/resources/target_group#regex TargetGroup#regex}. |
 
 ---
 
@@ -1184,7 +1184,7 @@ public readonly matchType: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.9/docs/resources/target_group#match_type TargetGroup#match_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.10/docs/resources/target_group#match_type TargetGroup#match_type}.
 
 ---
 
@@ -1198,7 +1198,7 @@ public readonly response: string;
 
 The response returned by the request, depending on the match type.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.9/docs/resources/target_group#response TargetGroup#response}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.10/docs/resources/target_group#response TargetGroup#response}
 
 ---
 
@@ -1212,7 +1212,7 @@ public readonly method: string;
 
 The method for the HTTP health check.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.9/docs/resources/target_group#method TargetGroup#method}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.10/docs/resources/target_group#method TargetGroup#method}
 
 ---
 
@@ -1224,7 +1224,7 @@ public readonly negate: boolean | IResolvable;
 
 - *Type:* boolean | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.9/docs/resources/target_group#negate TargetGroup#negate}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.10/docs/resources/target_group#negate TargetGroup#negate}.
 
 ---
 
@@ -1238,7 +1238,7 @@ public readonly path: string;
 
 The path (destination URL) for the HTTP health check request; the default is /.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.9/docs/resources/target_group#path TargetGroup#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.10/docs/resources/target_group#path TargetGroup#path}
 
 ---
 
@@ -1250,7 +1250,7 @@ public readonly regex: boolean | IResolvable;
 
 - *Type:* boolean | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.9/docs/resources/target_group#regex TargetGroup#regex}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.10/docs/resources/target_group#regex TargetGroup#regex}.
 
 ---
 
@@ -1286,7 +1286,7 @@ public readonly ip: string;
 
 The IP of the balanced target VM.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.9/docs/resources/target_group#ip TargetGroup#ip}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.10/docs/resources/target_group#ip TargetGroup#ip}
 
 ---
 
@@ -1300,7 +1300,7 @@ public readonly port: number;
 
 The port of the balanced target service; valid range is 1 to 65535.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.9/docs/resources/target_group#port TargetGroup#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.10/docs/resources/target_group#port TargetGroup#port}
 
 ---
 
@@ -1316,7 +1316,7 @@ Traffic is distributed in proportion to target weight, relative to the combined 
 
 A target with higher weight receives a greater share of traffic. Valid range is 0 to 256 and default is 1; targets with weight of 0 do not participate in load balancing but still accept persistent connections. It is best use values in the middle of the range to leave room for later adjustments.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.9/docs/resources/target_group#weight TargetGroup#weight}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.10/docs/resources/target_group#weight TargetGroup#weight}
 
 ---
 
@@ -1332,7 +1332,7 @@ Makes the target available only if it accepts periodic health check TCP connecti
 
 when turned off, the target is considered always available. The health check only consists of a connection attempt to the address and port of the target. Default is True.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.9/docs/resources/target_group#health_check_enabled TargetGroup#health_check_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.10/docs/resources/target_group#health_check_enabled TargetGroup#health_check_enabled}
 
 ---
 
@@ -1346,7 +1346,7 @@ public readonly maintenanceEnabled: boolean | IResolvable;
 
 Maintenance mode prevents the target from receiving balanced traffic.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.9/docs/resources/target_group#maintenance_enabled TargetGroup#maintenance_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.10/docs/resources/target_group#maintenance_enabled TargetGroup#maintenance_enabled}
 
 ---
 
@@ -1364,10 +1364,10 @@ const targetGroupTimeouts: targetGroup.TargetGroupTimeouts = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-ionoscloud.targetGroup.TargetGroupTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.9/docs/resources/target_group#create TargetGroup#create}. |
-| <code><a href="#@cdktf/provider-ionoscloud.targetGroup.TargetGroupTimeouts.property.default">default</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.9/docs/resources/target_group#default TargetGroup#default}. |
-| <code><a href="#@cdktf/provider-ionoscloud.targetGroup.TargetGroupTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.9/docs/resources/target_group#delete TargetGroup#delete}. |
-| <code><a href="#@cdktf/provider-ionoscloud.targetGroup.TargetGroupTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.9/docs/resources/target_group#update TargetGroup#update}. |
+| <code><a href="#@cdktf/provider-ionoscloud.targetGroup.TargetGroupTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.10/docs/resources/target_group#create TargetGroup#create}. |
+| <code><a href="#@cdktf/provider-ionoscloud.targetGroup.TargetGroupTimeouts.property.default">default</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.10/docs/resources/target_group#default TargetGroup#default}. |
+| <code><a href="#@cdktf/provider-ionoscloud.targetGroup.TargetGroupTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.10/docs/resources/target_group#delete TargetGroup#delete}. |
+| <code><a href="#@cdktf/provider-ionoscloud.targetGroup.TargetGroupTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.10/docs/resources/target_group#update TargetGroup#update}. |
 
 ---
 
@@ -1379,7 +1379,7 @@ public readonly create: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.9/docs/resources/target_group#create TargetGroup#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.10/docs/resources/target_group#create TargetGroup#create}.
 
 ---
 
@@ -1391,7 +1391,7 @@ public readonly default: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.9/docs/resources/target_group#default TargetGroup#default}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.10/docs/resources/target_group#default TargetGroup#default}.
 
 ---
 
@@ -1403,7 +1403,7 @@ public readonly delete: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.9/docs/resources/target_group#delete TargetGroup#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.10/docs/resources/target_group#delete TargetGroup#delete}.
 
 ---
 
@@ -1415,7 +1415,7 @@ public readonly update: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.9/docs/resources/target_group#update TargetGroup#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.10/docs/resources/target_group#update TargetGroup#update}.
 
 ---
 
