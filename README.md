@@ -1,7 +1,9 @@
 
-# Terraform CDK ionoscloud Provider ~> 6.2
+# Terraform CDK ionoscloud Provider tracks ~> 6.2
 
 This repo builds and publishes the Terraform ionoscloud Provider bindings for [CDK for Terraform](https://cdk.tf).
+
+Is based directly on ionoscloud 6.4.10
 
 ## Available Packages
 
@@ -61,7 +63,7 @@ This project is explicitly not tracking the Terraform ionoscloud Provider versio
 These are the upstream dependencies:
 
 - [Terraform CDK](https://cdk.tf)
-- [Terraform ionoscloud Provider](https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.2.0)
+- [Terraform ionoscloud Provider](https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.10)
     - This links to the minimum version being tracked, you can find the latest released version [in our releases](https://github.com/cdktf/cdktf-provider-ionoscloud/releases)
 - [Terraform Engine](https://terraform.io)
 
