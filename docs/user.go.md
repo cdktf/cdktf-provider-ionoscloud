@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionosclo
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.user.User.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/user"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v10/user"
 
 user.NewUser(scope Construct, id *string, config UserConfig) User
 ```
@@ -387,7 +387,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-ionoscloud.user.User.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/user"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v10/user"
 
 user.User_IsConstruct(x interface{}) *bool
 ```
@@ -419,7 +419,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-ionoscloud.user.User.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/user"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v10/user"
 
 user.User_IsTerraformElement(x interface{}) *bool
 ```
@@ -433,7 +433,7 @@ user.User_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-ionoscloud.user.User.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/user"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v10/user"
 
 user.User_IsTerraformResource(x interface{}) *bool
 ```
@@ -447,7 +447,7 @@ user.User_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-ionoscloud.user.User.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/user"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v10/user"
 
 user.User_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -918,7 +918,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-ionoscloud.user.UserConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/user"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v10/user"
 
 &user.UserConfig {
 	Connection: interface{},
@@ -937,7 +937,7 @@ import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/user"
 	ForceSecAuth: interface{},
 	GroupIds: *[]*string,
 	Id: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud.user.UserTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v10.user.UserTimeouts,
 }
 ```
 
@@ -1167,7 +1167,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 #### Initializer <a name="Initializer" id="@cdktf/provider-ionoscloud.user.UserTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/user"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v10/user"
 
 &user.UserTimeouts {
 	Create: *string,
@@ -1243,7 +1243,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.user.UserTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/user"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v10/user"
 
 user.NewUserTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) UserTimeoutsOutputReference
 ```
