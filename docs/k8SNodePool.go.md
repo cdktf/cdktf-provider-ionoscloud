@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionosclo
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.k8SNodePool.K8SNodePool.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v10/k8snodepool"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/k8snodepool"
 
 k8snodepool.NewK8SNodePool(scope Construct, id *string, config K8SNodePoolConfig) K8SNodePool
 ```
@@ -447,7 +447,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-ionoscloud.k8SNodePool.K8SNodePool.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v10/k8snodepool"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/k8snodepool"
 
 k8snodepool.K8SNodePool_IsConstruct(x interface{}) *bool
 ```
@@ -479,7 +479,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-ionoscloud.k8SNodePool.K8SNodePool.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v10/k8snodepool"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/k8snodepool"
 
 k8snodepool.K8SNodePool_IsTerraformElement(x interface{}) *bool
 ```
@@ -493,7 +493,7 @@ k8snodepool.K8SNodePool_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-ionoscloud.k8SNodePool.K8SNodePool.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v10/k8snodepool"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/k8snodepool"
 
 k8snodepool.K8SNodePool_IsTerraformResource(x interface{}) *bool
 ```
@@ -507,7 +507,7 @@ k8snodepool.K8SNodePool_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-ionoscloud.k8SNodePool.K8SNodePool.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v10/k8snodepool"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/k8snodepool"
 
 k8snodepool.K8SNodePool_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1176,7 +1176,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-ionoscloud.k8SNodePool.K8SNodePoolAutoScaling.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v10/k8snodepool"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/k8snodepool"
 
 &k8snodepool.K8SNodePoolAutoScaling {
 	MaxNodeCount: *f64,
@@ -1226,7 +1226,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 #### Initializer <a name="Initializer" id="@cdktf/provider-ionoscloud.k8SNodePool.K8SNodePoolConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v10/k8snodepool"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/k8snodepool"
 
 &k8snodepool.K8SNodePoolConfig {
 	Connection: interface{},
@@ -1249,13 +1249,13 @@ import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v10/k8snodepool
 	StorageType: *string,
 	AllowReplace: interface{},
 	Annotations: *map[string]*string,
-	AutoScaling: github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v10.k8SNodePool.K8SNodePoolAutoScaling,
+	AutoScaling: github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud.k8SNodePool.K8SNodePoolAutoScaling,
 	Id: *string,
 	Labels: *map[string]*string,
 	Lans: interface{},
-	MaintenanceWindow: github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v10.k8SNodePool.K8SNodePoolMaintenanceWindow,
+	MaintenanceWindow: github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud.k8SNodePool.K8SNodePoolMaintenanceWindow,
 	PublicIps: *[]*string,
-	Timeouts: github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v10.k8SNodePool.K8SNodePoolTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud.k8SNodePool.K8SNodePoolTimeouts,
 }
 ```
 
@@ -1647,7 +1647,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 #### Initializer <a name="Initializer" id="@cdktf/provider-ionoscloud.k8SNodePool.K8SNodePoolLans.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v10/k8snodepool"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/k8snodepool"
 
 &k8snodepool.K8SNodePoolLans {
 	Id: *f64,
@@ -1716,7 +1716,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 #### Initializer <a name="Initializer" id="@cdktf/provider-ionoscloud.k8SNodePool.K8SNodePoolLansRoutes.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v10/k8snodepool"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/k8snodepool"
 
 &k8snodepool.K8SNodePoolLansRoutes {
 	GatewayIp: *string,
@@ -1766,7 +1766,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 #### Initializer <a name="Initializer" id="@cdktf/provider-ionoscloud.k8SNodePool.K8SNodePoolMaintenanceWindow.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v10/k8snodepool"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/k8snodepool"
 
 &k8snodepool.K8SNodePoolMaintenanceWindow {
 	DayOfTheWeek: *string,
@@ -1816,7 +1816,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 #### Initializer <a name="Initializer" id="@cdktf/provider-ionoscloud.k8SNodePool.K8SNodePoolTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v10/k8snodepool"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/k8snodepool"
 
 &k8snodepool.K8SNodePoolTimeouts {
 	Create: *string,
@@ -1892,7 +1892,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.k8SNodePool.K8SNodePoolAutoScalingOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v10/k8snodepool"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/k8snodepool"
 
 k8snodepool.NewK8SNodePoolAutoScalingOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) K8SNodePoolAutoScalingOutputReference
 ```
@@ -2185,7 +2185,7 @@ func InternalValue() K8SNodePoolAutoScaling
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.k8SNodePool.K8SNodePoolLansList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v10/k8snodepool"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/k8snodepool"
 
 k8snodepool.NewK8SNodePoolLansList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) K8SNodePoolLansList
 ```
@@ -2328,7 +2328,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.k8SNodePool.K8SNodePoolLansOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v10/k8snodepool"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/k8snodepool"
 
 k8snodepool.NewK8SNodePoolLansOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) K8SNodePoolLansOutputReference
 ```
@@ -2688,7 +2688,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.k8SNodePool.K8SNodePoolLansRoutesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v10/k8snodepool"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/k8snodepool"
 
 k8snodepool.NewK8SNodePoolLansRoutesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) K8SNodePoolLansRoutesList
 ```
@@ -2831,7 +2831,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.k8SNodePool.K8SNodePoolLansRoutesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v10/k8snodepool"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/k8snodepool"
 
 k8snodepool.NewK8SNodePoolLansRoutesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) K8SNodePoolLansRoutesOutputReference
 ```
@@ -3142,7 +3142,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.k8SNodePool.K8SNodePoolMaintenanceWindowOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v10/k8snodepool"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/k8snodepool"
 
 k8snodepool.NewK8SNodePoolMaintenanceWindowOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) K8SNodePoolMaintenanceWindowOutputReference
 ```
@@ -3435,7 +3435,7 @@ func InternalValue() K8SNodePoolMaintenanceWindow
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.k8SNodePool.K8SNodePoolTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v10/k8snodepool"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/k8snodepool"
 
 k8snodepool.NewK8SNodePoolTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) K8SNodePoolTimeoutsOutputReference
 ```
