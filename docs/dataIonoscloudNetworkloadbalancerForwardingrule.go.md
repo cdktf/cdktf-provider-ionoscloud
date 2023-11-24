@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionosclo
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.dataIonoscloudNetworkloadbalancerForwardingrule.DataIonoscloudNetworkloadbalancerForwardingrule.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v10/dataionoscloudnetworkloadbalancerforwardingrule"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/dataionoscloudnetworkloadbalancerforwardingrule"
 
 dataionoscloudnetworkloadbalancerforwardingrule.NewDataIonoscloudNetworkloadbalancerForwardingrule(scope Construct, id *string, config DataIonoscloudNetworkloadbalancerForwardingruleConfig) DataIonoscloudNetworkloadbalancerForwardingrule
 ```
@@ -305,7 +305,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-ionoscloud.dataIonoscloudNetworkloadbalancerForwardingrule.DataIonoscloudNetworkloadbalancerForwardingrule.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v10/dataionoscloudnetworkloadbalancerforwardingrule"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/dataionoscloudnetworkloadbalancerforwardingrule"
 
 dataionoscloudnetworkloadbalancerforwardingrule.DataIonoscloudNetworkloadbalancerForwardingrule_IsConstruct(x interface{}) *bool
 ```
@@ -337,7 +337,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-ionoscloud.dataIonoscloudNetworkloadbalancerForwardingrule.DataIonoscloudNetworkloadbalancerForwardingrule.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v10/dataionoscloudnetworkloadbalancerforwardingrule"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/dataionoscloudnetworkloadbalancerforwardingrule"
 
 dataionoscloudnetworkloadbalancerforwardingrule.DataIonoscloudNetworkloadbalancerForwardingrule_IsTerraformElement(x interface{}) *bool
 ```
@@ -351,7 +351,7 @@ dataionoscloudnetworkloadbalancerforwardingrule.DataIonoscloudNetworkloadbalance
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-ionoscloud.dataIonoscloudNetworkloadbalancerForwardingrule.DataIonoscloudNetworkloadbalancerForwardingrule.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v10/dataionoscloudnetworkloadbalancerforwardingrule"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/dataionoscloudnetworkloadbalancerforwardingrule"
 
 dataionoscloudnetworkloadbalancerforwardingrule.DataIonoscloudNetworkloadbalancerForwardingrule_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -365,7 +365,7 @@ dataionoscloudnetworkloadbalancerforwardingrule.DataIonoscloudNetworkloadbalance
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-ionoscloud.dataIonoscloudNetworkloadbalancerForwardingrule.DataIonoscloudNetworkloadbalancerForwardingrule.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v10/dataionoscloudnetworkloadbalancerforwardingrule"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/dataionoscloudnetworkloadbalancerforwardingrule"
 
 dataionoscloudnetworkloadbalancerforwardingrule.DataIonoscloudNetworkloadbalancerForwardingrule_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -748,7 +748,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-ionoscloud.dataIonoscloudNetworkloadbalancerForwardingrule.DataIonoscloudNetworkloadbalancerForwardingruleConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v10/dataionoscloudnetworkloadbalancerforwardingrule"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/dataionoscloudnetworkloadbalancerforwardingrule"
 
 &dataionoscloudnetworkloadbalancerforwardingrule.DataIonoscloudNetworkloadbalancerForwardingruleConfig {
 	Connection: interface{},
@@ -762,7 +762,7 @@ import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v10/dataionoscl
 	NetworkloadbalancerId: *string,
 	Id: *string,
 	Name: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v10.dataIonoscloudNetworkloadbalancerForwardingrule.DataIonoscloudNetworkloadbalancerForwardingruleTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud.dataIonoscloudNetworkloadbalancerForwardingrule.DataIonoscloudNetworkloadbalancerForwardingruleTimeouts,
 }
 ```
 
@@ -925,7 +925,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 #### Initializer <a name="Initializer" id="@cdktf/provider-ionoscloud.dataIonoscloudNetworkloadbalancerForwardingrule.DataIonoscloudNetworkloadbalancerForwardingruleHealthCheck.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v10/dataionoscloudnetworkloadbalancerforwardingrule"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/dataionoscloudnetworkloadbalancerforwardingrule"
 
 &dataionoscloudnetworkloadbalancerforwardingrule.DataIonoscloudNetworkloadbalancerForwardingruleHealthCheck {
 
@@ -938,7 +938,7 @@ import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v10/dataionoscl
 #### Initializer <a name="Initializer" id="@cdktf/provider-ionoscloud.dataIonoscloudNetworkloadbalancerForwardingrule.DataIonoscloudNetworkloadbalancerForwardingruleTargets.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v10/dataionoscloudnetworkloadbalancerforwardingrule"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/dataionoscloudnetworkloadbalancerforwardingrule"
 
 &dataionoscloudnetworkloadbalancerforwardingrule.DataIonoscloudNetworkloadbalancerForwardingruleTargets {
 
@@ -951,7 +951,7 @@ import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v10/dataionoscl
 #### Initializer <a name="Initializer" id="@cdktf/provider-ionoscloud.dataIonoscloudNetworkloadbalancerForwardingrule.DataIonoscloudNetworkloadbalancerForwardingruleTargetsHealthCheck.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v10/dataionoscloudnetworkloadbalancerforwardingrule"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/dataionoscloudnetworkloadbalancerforwardingrule"
 
 &dataionoscloudnetworkloadbalancerforwardingrule.DataIonoscloudNetworkloadbalancerForwardingruleTargetsHealthCheck {
 
@@ -964,7 +964,7 @@ import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v10/dataionoscl
 #### Initializer <a name="Initializer" id="@cdktf/provider-ionoscloud.dataIonoscloudNetworkloadbalancerForwardingrule.DataIonoscloudNetworkloadbalancerForwardingruleTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v10/dataionoscloudnetworkloadbalancerforwardingrule"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/dataionoscloudnetworkloadbalancerforwardingrule"
 
 &dataionoscloudnetworkloadbalancerforwardingrule.DataIonoscloudNetworkloadbalancerForwardingruleTimeouts {
 	Create: *string,
@@ -1040,7 +1040,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.dataIonoscloudNetworkloadbalancerForwardingrule.DataIonoscloudNetworkloadbalancerForwardingruleHealthCheckList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v10/dataionoscloudnetworkloadbalancerforwardingrule"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/dataionoscloudnetworkloadbalancerforwardingrule"
 
 dataionoscloudnetworkloadbalancerforwardingrule.NewDataIonoscloudNetworkloadbalancerForwardingruleHealthCheckList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataIonoscloudNetworkloadbalancerForwardingruleHealthCheckList
 ```
@@ -1172,7 +1172,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.dataIonoscloudNetworkloadbalancerForwardingrule.DataIonoscloudNetworkloadbalancerForwardingruleHealthCheckOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v10/dataionoscloudnetworkloadbalancerforwardingrule"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/dataionoscloudnetworkloadbalancerforwardingrule"
 
 dataionoscloudnetworkloadbalancerforwardingrule.NewDataIonoscloudNetworkloadbalancerForwardingruleHealthCheckOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataIonoscloudNetworkloadbalancerForwardingruleHealthCheckOutputReference
 ```
@@ -1483,7 +1483,7 @@ func InternalValue() DataIonoscloudNetworkloadbalancerForwardingruleHealthCheck
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.dataIonoscloudNetworkloadbalancerForwardingrule.DataIonoscloudNetworkloadbalancerForwardingruleTargetsHealthCheckList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v10/dataionoscloudnetworkloadbalancerforwardingrule"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/dataionoscloudnetworkloadbalancerforwardingrule"
 
 dataionoscloudnetworkloadbalancerforwardingrule.NewDataIonoscloudNetworkloadbalancerForwardingruleTargetsHealthCheckList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataIonoscloudNetworkloadbalancerForwardingruleTargetsHealthCheckList
 ```
@@ -1615,7 +1615,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.dataIonoscloudNetworkloadbalancerForwardingrule.DataIonoscloudNetworkloadbalancerForwardingruleTargetsHealthCheckOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v10/dataionoscloudnetworkloadbalancerforwardingrule"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/dataionoscloudnetworkloadbalancerforwardingrule"
 
 dataionoscloudnetworkloadbalancerforwardingrule.NewDataIonoscloudNetworkloadbalancerForwardingruleTargetsHealthCheckOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataIonoscloudNetworkloadbalancerForwardingruleTargetsHealthCheckOutputReference
 ```
@@ -1915,7 +1915,7 @@ func InternalValue() DataIonoscloudNetworkloadbalancerForwardingruleTargetsHealt
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.dataIonoscloudNetworkloadbalancerForwardingrule.DataIonoscloudNetworkloadbalancerForwardingruleTargetsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v10/dataionoscloudnetworkloadbalancerforwardingrule"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/dataionoscloudnetworkloadbalancerforwardingrule"
 
 dataionoscloudnetworkloadbalancerforwardingrule.NewDataIonoscloudNetworkloadbalancerForwardingruleTargetsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataIonoscloudNetworkloadbalancerForwardingruleTargetsList
 ```
@@ -2047,7 +2047,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.dataIonoscloudNetworkloadbalancerForwardingrule.DataIonoscloudNetworkloadbalancerForwardingruleTargetsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v10/dataionoscloudnetworkloadbalancerforwardingrule"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/dataionoscloudnetworkloadbalancerforwardingrule"
 
 dataionoscloudnetworkloadbalancerforwardingrule.NewDataIonoscloudNetworkloadbalancerForwardingruleTargetsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataIonoscloudNetworkloadbalancerForwardingruleTargetsOutputReference
 ```
@@ -2358,7 +2358,7 @@ func InternalValue() DataIonoscloudNetworkloadbalancerForwardingruleTargets
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.dataIonoscloudNetworkloadbalancerForwardingrule.DataIonoscloudNetworkloadbalancerForwardingruleTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v10/dataionoscloudnetworkloadbalancerforwardingrule"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/dataionoscloudnetworkloadbalancerforwardingrule"
 
 dataionoscloudnetworkloadbalancerforwardingrule.NewDataIonoscloudNetworkloadbalancerForwardingruleTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataIonoscloudNetworkloadbalancerForwardingruleTimeoutsOutputReference
 ```
