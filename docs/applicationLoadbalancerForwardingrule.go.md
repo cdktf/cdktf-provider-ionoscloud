@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionosclo
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.applicationLoadbalancerForwardingrule.ApplicationLoadbalancerForwardingrule.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/applicationloadbalancerforwardingrule"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v10/applicationloadbalancerforwardingrule"
 
 applicationloadbalancerforwardingrule.NewApplicationLoadbalancerForwardingrule(scope Construct, id *string, config ApplicationLoadbalancerForwardingruleConfig) ApplicationLoadbalancerForwardingrule
 ```
@@ -393,7 +393,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-ionoscloud.applicationLoadbalancerForwardingrule.ApplicationLoadbalancerForwardingrule.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/applicationloadbalancerforwardingrule"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v10/applicationloadbalancerforwardingrule"
 
 applicationloadbalancerforwardingrule.ApplicationLoadbalancerForwardingrule_IsConstruct(x interface{}) *bool
 ```
@@ -425,7 +425,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-ionoscloud.applicationLoadbalancerForwardingrule.ApplicationLoadbalancerForwardingrule.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/applicationloadbalancerforwardingrule"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v10/applicationloadbalancerforwardingrule"
 
 applicationloadbalancerforwardingrule.ApplicationLoadbalancerForwardingrule_IsTerraformElement(x interface{}) *bool
 ```
@@ -439,7 +439,7 @@ applicationloadbalancerforwardingrule.ApplicationLoadbalancerForwardingrule_IsTe
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-ionoscloud.applicationLoadbalancerForwardingrule.ApplicationLoadbalancerForwardingrule.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/applicationloadbalancerforwardingrule"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v10/applicationloadbalancerforwardingrule"
 
 applicationloadbalancerforwardingrule.ApplicationLoadbalancerForwardingrule_IsTerraformResource(x interface{}) *bool
 ```
@@ -453,7 +453,7 @@ applicationloadbalancerforwardingrule.ApplicationLoadbalancerForwardingrule_IsTe
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-ionoscloud.applicationLoadbalancerForwardingrule.ApplicationLoadbalancerForwardingrule.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/applicationloadbalancerforwardingrule"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v10/applicationloadbalancerforwardingrule"
 
 applicationloadbalancerforwardingrule.ApplicationLoadbalancerForwardingrule_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -924,7 +924,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-ionoscloud.applicationLoadbalancerForwardingrule.ApplicationLoadbalancerForwardingruleConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/applicationloadbalancerforwardingrule"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v10/applicationloadbalancerforwardingrule"
 
 &applicationloadbalancerforwardingrule.ApplicationLoadbalancerForwardingruleConfig {
 	Connection: interface{},
@@ -944,7 +944,7 @@ import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/applicationload
 	HttpRules: interface{},
 	Id: *string,
 	ServerCertificates: *[]*string,
-	Timeouts: github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud.applicationLoadbalancerForwardingrule.ApplicationLoadbalancerForwardingruleTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v10.applicationLoadbalancerForwardingrule.ApplicationLoadbalancerForwardingruleTimeouts,
 }
 ```
 
@@ -1201,7 +1201,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 #### Initializer <a name="Initializer" id="@cdktf/provider-ionoscloud.applicationLoadbalancerForwardingrule.ApplicationLoadbalancerForwardingruleHttpRules.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/applicationloadbalancerforwardingrule"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v10/applicationloadbalancerforwardingrule"
 
 &applicationloadbalancerforwardingrule.ApplicationLoadbalancerForwardingruleHttpRules {
 	Name: *string,
@@ -1365,7 +1365,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 #### Initializer <a name="Initializer" id="@cdktf/provider-ionoscloud.applicationLoadbalancerForwardingrule.ApplicationLoadbalancerForwardingruleHttpRulesConditions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/applicationloadbalancerforwardingrule"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v10/applicationloadbalancerforwardingrule"
 
 &applicationloadbalancerforwardingrule.ApplicationLoadbalancerForwardingruleHttpRulesConditions {
 	Type: *string,
@@ -1469,7 +1469,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 #### Initializer <a name="Initializer" id="@cdktf/provider-ionoscloud.applicationLoadbalancerForwardingrule.ApplicationLoadbalancerForwardingruleTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/applicationloadbalancerforwardingrule"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v10/applicationloadbalancerforwardingrule"
 
 &applicationloadbalancerforwardingrule.ApplicationLoadbalancerForwardingruleTimeouts {
 	Create: *string,
@@ -1545,7 +1545,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.applicationLoadbalancerForwardingrule.ApplicationLoadbalancerForwardingruleHttpRulesConditionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/applicationloadbalancerforwardingrule"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v10/applicationloadbalancerforwardingrule"
 
 applicationloadbalancerforwardingrule.NewApplicationLoadbalancerForwardingruleHttpRulesConditionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ApplicationLoadbalancerForwardingruleHttpRulesConditionsList
 ```
@@ -1688,7 +1688,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.applicationLoadbalancerForwardingrule.ApplicationLoadbalancerForwardingruleHttpRulesConditionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/applicationloadbalancerforwardingrule"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v10/applicationloadbalancerforwardingrule"
 
 applicationloadbalancerforwardingrule.NewApplicationLoadbalancerForwardingruleHttpRulesConditionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ApplicationLoadbalancerForwardingruleHttpRulesConditionsOutputReference
 ```
@@ -2093,7 +2093,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.applicationLoadbalancerForwardingrule.ApplicationLoadbalancerForwardingruleHttpRulesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/applicationloadbalancerforwardingrule"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v10/applicationloadbalancerforwardingrule"
 
 applicationloadbalancerforwardingrule.NewApplicationLoadbalancerForwardingruleHttpRulesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ApplicationLoadbalancerForwardingruleHttpRulesList
 ```
@@ -2236,7 +2236,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.applicationLoadbalancerForwardingrule.ApplicationLoadbalancerForwardingruleHttpRulesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/applicationloadbalancerforwardingrule"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v10/applicationloadbalancerforwardingrule"
 
 applicationloadbalancerforwardingrule.NewApplicationLoadbalancerForwardingruleHttpRulesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ApplicationLoadbalancerForwardingruleHttpRulesOutputReference
 ```
@@ -2763,7 +2763,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.applicationLoadbalancerForwardingrule.ApplicationLoadbalancerForwardingruleTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/applicationloadbalancerforwardingrule"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v10/applicationloadbalancerforwardingrule"
 
 applicationloadbalancerforwardingrule.NewApplicationLoadbalancerForwardingruleTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ApplicationLoadbalancerForwardingruleTimeoutsOutputReference
 ```
