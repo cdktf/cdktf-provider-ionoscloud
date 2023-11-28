@@ -1,7 +1,3 @@
-# `data_ionoscloud_location`
-
-Refer to the Terraform Registory for docs: [`data_ionoscloud_location`](https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.10/docs/data-sources/location).
-
 # `dataIonoscloudLocation` Submodule <a name="`dataIonoscloudLocation` Submodule" id="@cdktf/provider-ionoscloud.dataIonoscloudLocation"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

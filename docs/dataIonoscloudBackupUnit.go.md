@@ -1,7 +1,3 @@
-# `data_ionoscloud_backup_unit`
-
-Refer to the Terraform Registory for docs: [`data_ionoscloud_backup_unit`](https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.10/docs/data-sources/backup_unit).
-
 # `dataIonoscloudBackupUnit` Submodule <a name="`dataIonoscloudBackupUnit` Submodule" id="@cdktf/provider-ionoscloud.dataIonoscloudBackupUnit"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

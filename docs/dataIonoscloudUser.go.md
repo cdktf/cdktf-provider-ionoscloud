@@ -1,7 +1,3 @@
-# `data_ionoscloud_user`
-
-Refer to the Terraform Registory for docs: [`data_ionoscloud_user`](https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.10/docs/data-sources/user).
-
 # `dataIonoscloudUser` Submodule <a name="`dataIonoscloudUser` Submodule" id="@cdktf/provider-ionoscloud.dataIonoscloudUser"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

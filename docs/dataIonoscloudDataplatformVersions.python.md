@@ -1,7 +1,3 @@
-# `data_ionoscloud_dataplatform_versions`
-
-Refer to the Terraform Registory for docs: [`data_ionoscloud_dataplatform_versions`](https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.10/docs/data-sources/dataplatform_versions).
-
 # `dataIonoscloudDataplatformVersions` Submodule <a name="`dataIonoscloudDataplatformVersions` Submodule" id="@cdktf/provider-ionoscloud.dataIonoscloudDataplatformVersions"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

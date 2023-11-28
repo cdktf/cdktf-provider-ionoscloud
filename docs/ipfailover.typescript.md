@@ -1,7 +1,3 @@
-# `ionoscloud_ipfailover`
-
-Refer to the Terraform Registory for docs: [`ionoscloud_ipfailover`](https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.10/docs/resources/ipfailover).
-
 # `ipfailover` Submodule <a name="`ipfailover` Submodule" id="@cdktf/provider-ionoscloud.ipfailover"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

@@ -1,7 +1,3 @@
-# `ionoscloud_s3_key`
-
-Refer to the Terraform Registory for docs: [`ionoscloud_s3_key`](https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.10/docs/resources/s3_key).
-
 # `s3Key` Submodule <a name="`s3Key` Submodule" id="@cdktf/provider-ionoscloud.s3Key"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

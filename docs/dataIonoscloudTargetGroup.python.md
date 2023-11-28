@@ -1,7 +1,3 @@
-# `data_ionoscloud_target_group`
-
-Refer to the Terraform Registory for docs: [`data_ionoscloud_target_group`](https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.10/docs/data-sources/target_group).
-
 # `dataIonoscloudTargetGroup` Submodule <a name="`dataIonoscloudTargetGroup` Submodule" id="@cdktf/provider-ionoscloud.dataIonoscloudTargetGroup"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
