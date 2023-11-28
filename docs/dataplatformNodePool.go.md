@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionosclo
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.dataplatformNodePool.DataplatformNodePool.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/dataplatformnodepool"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v10/dataplatformnodepool"
 
 dataplatformnodepool.NewDataplatformNodePool(scope Construct, id *string, config DataplatformNodePoolConfig) DataplatformNodePool
 ```
@@ -431,7 +431,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-ionoscloud.dataplatformNodePool.DataplatformNodePool.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/dataplatformnodepool"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v10/dataplatformnodepool"
 
 dataplatformnodepool.DataplatformNodePool_IsConstruct(x interface{}) *bool
 ```
@@ -463,7 +463,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-ionoscloud.dataplatformNodePool.DataplatformNodePool.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/dataplatformnodepool"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v10/dataplatformnodepool"
 
 dataplatformnodepool.DataplatformNodePool_IsTerraformElement(x interface{}) *bool
 ```
@@ -477,7 +477,7 @@ dataplatformnodepool.DataplatformNodePool_IsTerraformElement(x interface{}) *boo
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-ionoscloud.dataplatformNodePool.DataplatformNodePool.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/dataplatformnodepool"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v10/dataplatformnodepool"
 
 dataplatformnodepool.DataplatformNodePool_IsTerraformResource(x interface{}) *bool
 ```
@@ -491,7 +491,7 @@ dataplatformnodepool.DataplatformNodePool_IsTerraformResource(x interface{}) *bo
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-ionoscloud.dataplatformNodePool.DataplatformNodePool.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/dataplatformnodepool"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v10/dataplatformnodepool"
 
 dataplatformnodepool.DataplatformNodePool_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1050,7 +1050,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-ionoscloud.dataplatformNodePool.DataplatformNodePoolConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/dataplatformnodepool"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v10/dataplatformnodepool"
 
 &dataplatformnodepool.DataplatformNodePoolConfig {
 	Connection: interface{},
@@ -1073,7 +1073,7 @@ import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/dataplatformnod
 	RamSize: *f64,
 	StorageSize: *f64,
 	StorageType: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud.dataplatformNodePool.DataplatformNodePoolTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v10.dataplatformNodePool.DataplatformNodePoolTimeouts,
 }
 ```
 
@@ -1383,7 +1383,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 #### Initializer <a name="Initializer" id="@cdktf/provider-ionoscloud.dataplatformNodePool.DataplatformNodePoolMaintenanceWindow.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/dataplatformnodepool"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v10/dataplatformnodepool"
 
 &dataplatformnodepool.DataplatformNodePoolMaintenanceWindow {
 	DayOfTheWeek: *string,
@@ -1431,7 +1431,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 #### Initializer <a name="Initializer" id="@cdktf/provider-ionoscloud.dataplatformNodePool.DataplatformNodePoolTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/dataplatformnodepool"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v10/dataplatformnodepool"
 
 &dataplatformnodepool.DataplatformNodePoolTimeouts {
 	Create: *string,
@@ -1507,7 +1507,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.dataplatformNodePool.DataplatformNodePoolMaintenanceWindowList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/dataplatformnodepool"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v10/dataplatformnodepool"
 
 dataplatformnodepool.NewDataplatformNodePoolMaintenanceWindowList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataplatformNodePoolMaintenanceWindowList
 ```
@@ -1650,7 +1650,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.dataplatformNodePool.DataplatformNodePoolMaintenanceWindowOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/dataplatformnodepool"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v10/dataplatformnodepool"
 
 dataplatformnodepool.NewDataplatformNodePoolMaintenanceWindowOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataplatformNodePoolMaintenanceWindowOutputReference
 ```
@@ -1961,7 +1961,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.dataplatformNodePool.DataplatformNodePoolTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/dataplatformnodepool"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v10/dataplatformnodepool"
 
 dataplatformnodepool.NewDataplatformNodePoolTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataplatformNodePoolTimeoutsOutputReference
 ```
