@@ -1,7 +1,3 @@
-# `ionoscloud_natgateway_rule`
-
-Refer to the Terraform Registory for docs: [`ionoscloud_natgateway_rule`](https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.10/docs/resources/natgateway_rule).
-
 # `natgatewayRule` Submodule <a name="`natgatewayRule` Submodule" id="@cdktf/provider-ionoscloud.natgatewayRule"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

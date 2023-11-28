@@ -1,7 +1,3 @@
-# `ionoscloud_datacenter`
-
-Refer to the Terraform Registory for docs: [`ionoscloud_datacenter`](https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.10/docs/resources/datacenter).
-
 # `datacenter` Submodule <a name="`datacenter` Submodule" id="@cdktf/provider-ionoscloud.datacenter"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

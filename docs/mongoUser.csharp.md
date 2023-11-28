@@ -1,7 +1,3 @@
-# `ionoscloud_mongo_user`
-
-Refer to the Terraform Registory for docs: [`ionoscloud_mongo_user`](https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.10/docs/resources/mongo_user).
-
 # `mongoUser` Submodule <a name="`mongoUser` Submodule" id="@cdktf/provider-ionoscloud.mongoUser"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

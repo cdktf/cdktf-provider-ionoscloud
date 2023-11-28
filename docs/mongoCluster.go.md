@@ -1,7 +1,3 @@
-# `ionoscloud_mongo_cluster`
-
-Refer to the Terraform Registory for docs: [`ionoscloud_mongo_cluster`](https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.10/docs/resources/mongo_cluster).
-
 # `mongoCluster` Submodule <a name="`mongoCluster` Submodule" id="@cdktf/provider-ionoscloud.mongoCluster"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
@@ -13,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionosclo
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.mongoCluster.MongoCluster.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v10/mongocluster"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/mongocluster"
 
 mongocluster.NewMongoCluster(scope Construct, id *string, config MongoClusterConfig) MongoCluster
 ```
@@ -501,7 +497,7 @@ func ResetType()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-ionoscloud.mongoCluster.MongoCluster.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v10/mongocluster"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/mongocluster"
 
 mongocluster.MongoCluster_IsConstruct(x interface{}) *bool
 ```
@@ -533,7 +529,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-ionoscloud.mongoCluster.MongoCluster.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v10/mongocluster"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/mongocluster"
 
 mongocluster.MongoCluster_IsTerraformElement(x interface{}) *bool
 ```
@@ -547,7 +543,7 @@ mongocluster.MongoCluster_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-ionoscloud.mongoCluster.MongoCluster.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v10/mongocluster"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/mongocluster"
 
 mongocluster.MongoCluster_IsTerraformResource(x interface{}) *bool
 ```
@@ -561,7 +557,7 @@ mongocluster.MongoCluster_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-ionoscloud.mongoCluster.MongoCluster.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v10/mongocluster"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/mongocluster"
 
 mongocluster.MongoCluster_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1219,7 +1215,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-ionoscloud.mongoCluster.MongoClusterBackup.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v10/mongocluster"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/mongocluster"
 
 &mongocluster.MongoClusterBackup {
 	Location: *string,
@@ -1287,7 +1283,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 #### Initializer <a name="Initializer" id="@cdktf/provider-ionoscloud.mongoCluster.MongoClusterBiConnector.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v10/mongocluster"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/mongocluster"
 
 &mongocluster.MongoClusterBiConnector {
 	Enabled: interface{},
@@ -1321,7 +1317,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 #### Initializer <a name="Initializer" id="@cdktf/provider-ionoscloud.mongoCluster.MongoClusterConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v10/mongocluster"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/mongocluster"
 
 &mongocluster.MongoClusterConfig {
 	Connection: interface{},
@@ -1331,24 +1327,24 @@ import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v10/mongocluste
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
-	Connections: github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v10.mongoCluster.MongoClusterConnections,
-	Credentials: github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v10.mongoCluster.MongoClusterCredentials,
+	Connections: github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud.mongoCluster.MongoClusterConnections,
+	Credentials: github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud.mongoCluster.MongoClusterCredentials,
 	DisplayName: *string,
 	Instances: *f64,
 	Location: *string,
 	MongodbVersion: *string,
-	Backup: github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v10.mongoCluster.MongoClusterBackup,
-	BiConnector: github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v10.mongoCluster.MongoClusterBiConnector,
+	Backup: github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud.mongoCluster.MongoClusterBackup,
+	BiConnector: github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud.mongoCluster.MongoClusterBiConnector,
 	Cores: *f64,
 	Edition: *string,
 	Id: *string,
-	MaintenanceWindow: github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v10.mongoCluster.MongoClusterMaintenanceWindow,
+	MaintenanceWindow: github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud.mongoCluster.MongoClusterMaintenanceWindow,
 	Ram: *f64,
 	Shards: *f64,
 	StorageSize: *f64,
 	StorageType: *string,
 	TemplateId: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v10.mongoCluster.MongoClusterTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud.mongoCluster.MongoClusterTimeouts,
 	Type: *string,
 }
 ```
@@ -1734,7 +1730,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 #### Initializer <a name="Initializer" id="@cdktf/provider-ionoscloud.mongoCluster.MongoClusterConnections.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v10/mongocluster"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/mongocluster"
 
 &mongocluster.MongoClusterConnections {
 	CidrList: *[]*string,
@@ -1802,7 +1798,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 #### Initializer <a name="Initializer" id="@cdktf/provider-ionoscloud.mongoCluster.MongoClusterCredentials.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v10/mongocluster"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/mongocluster"
 
 &mongocluster.MongoClusterCredentials {
 	Password: *string,
@@ -1850,7 +1846,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 #### Initializer <a name="Initializer" id="@cdktf/provider-ionoscloud.mongoCluster.MongoClusterMaintenanceWindow.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v10/mongocluster"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/mongocluster"
 
 &mongocluster.MongoClusterMaintenanceWindow {
 	DayOfTheWeek: *string,
@@ -1896,7 +1892,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 #### Initializer <a name="Initializer" id="@cdktf/provider-ionoscloud.mongoCluster.MongoClusterTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v10/mongocluster"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/mongocluster"
 
 &mongocluster.MongoClusterTimeouts {
 	Create: *string,
@@ -1972,7 +1968,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.mongoCluster.MongoClusterBackupOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v10/mongocluster"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/mongocluster"
 
 mongocluster.NewMongoClusterBackupOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MongoClusterBackupOutputReference
 ```
@@ -2308,7 +2304,7 @@ func InternalValue() MongoClusterBackup
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.mongoCluster.MongoClusterBiConnectorOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v10/mongocluster"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/mongocluster"
 
 mongocluster.NewMongoClusterBiConnectorOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MongoClusterBiConnectorOutputReference
 ```
@@ -2608,7 +2604,7 @@ func InternalValue() MongoClusterBiConnector
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.mongoCluster.MongoClusterConnectionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v10/mongocluster"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/mongocluster"
 
 mongocluster.NewMongoClusterConnectionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MongoClusterConnectionsOutputReference
 ```
@@ -2923,7 +2919,7 @@ func InternalValue() MongoClusterConnections
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.mongoCluster.MongoClusterCredentialsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v10/mongocluster"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/mongocluster"
 
 mongocluster.NewMongoClusterCredentialsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MongoClusterCredentialsOutputReference
 ```
@@ -3216,7 +3212,7 @@ func InternalValue() MongoClusterCredentials
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.mongoCluster.MongoClusterMaintenanceWindowOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v10/mongocluster"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/mongocluster"
 
 mongocluster.NewMongoClusterMaintenanceWindowOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MongoClusterMaintenanceWindowOutputReference
 ```
@@ -3509,7 +3505,7 @@ func InternalValue() MongoClusterMaintenanceWindow
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.mongoCluster.MongoClusterTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v10/mongocluster"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/mongocluster"
 
 mongocluster.NewMongoClusterTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MongoClusterTimeoutsOutputReference
 ```

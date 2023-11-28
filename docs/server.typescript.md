@@ -1,7 +1,3 @@
-# `ionoscloud_server`
-
-Refer to the Terraform Registory for docs: [`ionoscloud_server`](https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.10/docs/resources/server).
-
 # `server` Submodule <a name="`server` Submodule" id="@cdktf/provider-ionoscloud.server"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
