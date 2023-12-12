@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionosclo
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.dataIonoscloudDatacenter.DataIonoscloudDatacenter.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/dataionosclouddatacenter"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v10/dataionosclouddatacenter"
 
 dataionosclouddatacenter.NewDataIonoscloudDatacenter(scope Construct, id *string, config DataIonoscloudDatacenterConfig) DataIonoscloudDatacenter
 ```
@@ -308,7 +308,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-ionoscloud.dataIonoscloudDatacenter.DataIonoscloudDatacenter.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/dataionosclouddatacenter"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v10/dataionosclouddatacenter"
 
 dataionosclouddatacenter.DataIonoscloudDatacenter_IsConstruct(x interface{}) *bool
 ```
@@ -340,7 +340,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-ionoscloud.dataIonoscloudDatacenter.DataIonoscloudDatacenter.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/dataionosclouddatacenter"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v10/dataionosclouddatacenter"
 
 dataionosclouddatacenter.DataIonoscloudDatacenter_IsTerraformElement(x interface{}) *bool
 ```
@@ -354,7 +354,7 @@ dataionosclouddatacenter.DataIonoscloudDatacenter_IsTerraformElement(x interface
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-ionoscloud.dataIonoscloudDatacenter.DataIonoscloudDatacenter.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/dataionosclouddatacenter"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v10/dataionosclouddatacenter"
 
 dataionosclouddatacenter.DataIonoscloudDatacenter_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -368,7 +368,7 @@ dataionosclouddatacenter.DataIonoscloudDatacenter_IsTerraformDataSource(x interf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-ionoscloud.dataIonoscloudDatacenter.DataIonoscloudDatacenter.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/dataionosclouddatacenter"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v10/dataionosclouddatacenter"
 
 dataionosclouddatacenter.DataIonoscloudDatacenter_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -729,7 +729,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-ionoscloud.dataIonoscloudDatacenter.DataIonoscloudDatacenterConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/dataionosclouddatacenter"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v10/dataionosclouddatacenter"
 
 &dataionosclouddatacenter.DataIonoscloudDatacenterConfig {
 	Connection: interface{},
@@ -742,7 +742,7 @@ import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/dataionoscloudd
 	Id: *string,
 	Location: *string,
 	Name: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud.dataIonoscloudDatacenter.DataIonoscloudDatacenterTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v10.dataIonoscloudDatacenter.DataIonoscloudDatacenterTimeouts,
 }
 ```
 
@@ -892,7 +892,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 #### Initializer <a name="Initializer" id="@cdktf/provider-ionoscloud.dataIonoscloudDatacenter.DataIonoscloudDatacenterCpuArchitecture.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/dataionosclouddatacenter"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v10/dataionosclouddatacenter"
 
 &dataionosclouddatacenter.DataIonoscloudDatacenterCpuArchitecture {
 
@@ -905,7 +905,7 @@ import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/dataionoscloudd
 #### Initializer <a name="Initializer" id="@cdktf/provider-ionoscloud.dataIonoscloudDatacenter.DataIonoscloudDatacenterTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/dataionosclouddatacenter"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v10/dataionosclouddatacenter"
 
 &dataionosclouddatacenter.DataIonoscloudDatacenterTimeouts {
 	Create: *string,
@@ -981,7 +981,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.dataIonoscloudDatacenter.DataIonoscloudDatacenterCpuArchitectureList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/dataionosclouddatacenter"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v10/dataionosclouddatacenter"
 
 dataionosclouddatacenter.NewDataIonoscloudDatacenterCpuArchitectureList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataIonoscloudDatacenterCpuArchitectureList
 ```
@@ -1113,7 +1113,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.dataIonoscloudDatacenter.DataIonoscloudDatacenterCpuArchitectureOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/dataionosclouddatacenter"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v10/dataionosclouddatacenter"
 
 dataionosclouddatacenter.NewDataIonoscloudDatacenterCpuArchitectureOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataIonoscloudDatacenterCpuArchitectureOutputReference
 ```
@@ -1424,7 +1424,7 @@ func InternalValue() DataIonoscloudDatacenterCpuArchitecture
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.dataIonoscloudDatacenter.DataIonoscloudDatacenterTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/dataionosclouddatacenter"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v10/dataionosclouddatacenter"
 
 dataionosclouddatacenter.NewDataIonoscloudDatacenterTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataIonoscloudDatacenterTimeoutsOutputReference
 ```
