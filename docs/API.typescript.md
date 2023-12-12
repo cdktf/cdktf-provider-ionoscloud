@@ -3,6 +3,7 @@
 The following submodules are available:
 - [applicationLoadbalancer](./applicationLoadbalancer.typescript.md)
 - [applicationLoadbalancerForwardingrule](./applicationLoadbalancerForwardingrule.typescript.md)
+- [autoscalingGroup](./autoscalingGroup.typescript.md)
 - [backupUnit](./backupUnit.typescript.md)
 - [certificate](./certificate.typescript.md)
 - [containerRegistry](./containerRegistry.typescript.md)
@@ -10,6 +11,8 @@ The following submodules are available:
 - [cubeServer](./cubeServer.typescript.md)
 - [dataIonoscloudApplicationLoadbalancer](./dataIonoscloudApplicationLoadbalancer.typescript.md)
 - [dataIonoscloudApplicationLoadbalancerForwardingrule](./dataIonoscloudApplicationLoadbalancerForwardingrule.typescript.md)
+- [dataIonoscloudAutoscalingGroup](./dataIonoscloudAutoscalingGroup.typescript.md)
+- [dataIonoscloudAutoscalingGroupServers](./dataIonoscloudAutoscalingGroupServers.typescript.md)
 - [dataIonoscloudBackupUnit](./dataIonoscloudBackupUnit.typescript.md)
 - [dataIonoscloudCertificate](./dataIonoscloudCertificate.typescript.md)
 - [dataIonoscloudContainerRegistry](./dataIonoscloudContainerRegistry.typescript.md)

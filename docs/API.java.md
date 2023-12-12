@@ -3,6 +3,7 @@
 The following submodules are available:
 - [applicationLoadbalancer](./applicationLoadbalancer.java.md)
 - [applicationLoadbalancerForwardingrule](./applicationLoadbalancerForwardingrule.java.md)
+- [autoscalingGroup](./autoscalingGroup.java.md)
 - [backupUnit](./backupUnit.java.md)
 - [certificate](./certificate.java.md)
 - [containerRegistry](./containerRegistry.java.md)
@@ -10,6 +11,8 @@ The following submodules are available:
 - [cubeServer](./cubeServer.java.md)
 - [dataIonoscloudApplicationLoadbalancer](./dataIonoscloudApplicationLoadbalancer.java.md)
 - [dataIonoscloudApplicationLoadbalancerForwardingrule](./dataIonoscloudApplicationLoadbalancerForwardingrule.java.md)
+- [dataIonoscloudAutoscalingGroup](./dataIonoscloudAutoscalingGroup.java.md)
+- [dataIonoscloudAutoscalingGroupServers](./dataIonoscloudAutoscalingGroupServers.java.md)
 - [dataIonoscloudBackupUnit](./dataIonoscloudBackupUnit.java.md)
 - [dataIonoscloudCertificate](./dataIonoscloudCertificate.java.md)
 - [dataIonoscloudContainerRegistry](./dataIonoscloudContainerRegistry.java.md)

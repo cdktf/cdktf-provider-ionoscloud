@@ -4,7 +4,7 @@
 
 ### Nic <a name="Nic" id="@cdktf/provider-ionoscloud.nic.Nic"></a>
 
-Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.10/docs/resources/nic ionoscloud_nic}.
+Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.11/docs/resources/nic ionoscloud_nic}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.nic.Nic.Initializer"></a>
 
@@ -28,6 +28,7 @@ nic.Nic(
   dhcpv6: typing.Union[bool, IResolvable] = None,
   firewall_active: typing.Union[bool, IResolvable] = None,
   firewall_type: str = None,
+  flowlog: NicFlowlog = None,
   id: str = None,
   ips: typing.List[str] = None,
   ipv6_cidr_block: str = None,
@@ -48,18 +49,19 @@ nic.Nic(
 | <code><a href="#@cdktf/provider-ionoscloud.nic.Nic.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.nic.Nic.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.nic.Nic.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-ionoscloud.nic.Nic.Initializer.parameter.datacenterId">datacenter_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.10/docs/resources/nic#datacenter_id Nic#datacenter_id}. |
-| <code><a href="#@cdktf/provider-ionoscloud.nic.Nic.Initializer.parameter.lan">lan</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.10/docs/resources/nic#lan Nic#lan}. |
-| <code><a href="#@cdktf/provider-ionoscloud.nic.Nic.Initializer.parameter.serverId">server_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.10/docs/resources/nic#server_id Nic#server_id}. |
-| <code><a href="#@cdktf/provider-ionoscloud.nic.Nic.Initializer.parameter.dhcp">dhcp</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.10/docs/resources/nic#dhcp Nic#dhcp}. |
+| <code><a href="#@cdktf/provider-ionoscloud.nic.Nic.Initializer.parameter.datacenterId">datacenter_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.11/docs/resources/nic#datacenter_id Nic#datacenter_id}. |
+| <code><a href="#@cdktf/provider-ionoscloud.nic.Nic.Initializer.parameter.lan">lan</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.11/docs/resources/nic#lan Nic#lan}. |
+| <code><a href="#@cdktf/provider-ionoscloud.nic.Nic.Initializer.parameter.serverId">server_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.11/docs/resources/nic#server_id Nic#server_id}. |
+| <code><a href="#@cdktf/provider-ionoscloud.nic.Nic.Initializer.parameter.dhcp">dhcp</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.11/docs/resources/nic#dhcp Nic#dhcp}. |
 | <code><a href="#@cdktf/provider-ionoscloud.nic.Nic.Initializer.parameter.dhcpv6">dhcpv6</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Indicates whether this NIC receives an IPv6 address through DHCP. |
-| <code><a href="#@cdktf/provider-ionoscloud.nic.Nic.Initializer.parameter.firewallActive">firewall_active</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.10/docs/resources/nic#firewall_active Nic#firewall_active}. |
-| <code><a href="#@cdktf/provider-ionoscloud.nic.Nic.Initializer.parameter.firewallType">firewall_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.10/docs/resources/nic#firewall_type Nic#firewall_type}. |
-| <code><a href="#@cdktf/provider-ionoscloud.nic.Nic.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.10/docs/resources/nic#id Nic#id}. |
+| <code><a href="#@cdktf/provider-ionoscloud.nic.Nic.Initializer.parameter.firewallActive">firewall_active</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.11/docs/resources/nic#firewall_active Nic#firewall_active}. |
+| <code><a href="#@cdktf/provider-ionoscloud.nic.Nic.Initializer.parameter.firewallType">firewall_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.11/docs/resources/nic#firewall_type Nic#firewall_type}. |
+| <code><a href="#@cdktf/provider-ionoscloud.nic.Nic.Initializer.parameter.flowlog">flowlog</a></code> | <code><a href="#@cdktf/provider-ionoscloud.nic.NicFlowlog">NicFlowlog</a></code> | flowlog block. |
+| <code><a href="#@cdktf/provider-ionoscloud.nic.Nic.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.11/docs/resources/nic#id Nic#id}. |
 | <code><a href="#@cdktf/provider-ionoscloud.nic.Nic.Initializer.parameter.ips">ips</a></code> | <code>typing.List[str]</code> | Collection of IP addresses assigned to a nic. |
 | <code><a href="#@cdktf/provider-ionoscloud.nic.Nic.Initializer.parameter.ipv6CidrBlock">ipv6_cidr_block</a></code> | <code>str</code> | IPv6 CIDR block assigned to the NIC. |
 | <code><a href="#@cdktf/provider-ionoscloud.nic.Nic.Initializer.parameter.ipv6Ips">ipv6_ips</a></code> | <code>typing.List[str]</code> | Collection for IPv6 addresses assigned to a nic. |
-| <code><a href="#@cdktf/provider-ionoscloud.nic.Nic.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.10/docs/resources/nic#name Nic#name}. |
+| <code><a href="#@cdktf/provider-ionoscloud.nic.Nic.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.11/docs/resources/nic#name Nic#name}. |
 | <code><a href="#@cdktf/provider-ionoscloud.nic.Nic.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-ionoscloud.nic.NicTimeouts">NicTimeouts</a></code> | timeouts block. |
 
 ---
@@ -128,7 +130,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.10/docs/resources/nic#datacenter_id Nic#datacenter_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.11/docs/resources/nic#datacenter_id Nic#datacenter_id}.
 
 ---
 
@@ -136,7 +138,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.10/docs/resources/nic#lan Nic#lan}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.11/docs/resources/nic#lan Nic#lan}.
 
 ---
 
@@ -144,7 +146,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.10/docs/resources/nic#server_id Nic#server_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.11/docs/resources/nic#server_id Nic#server_id}.
 
 ---
 
@@ -152,7 +154,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.10/docs/resources/nic#dhcp Nic#dhcp}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.11/docs/resources/nic#dhcp Nic#dhcp}.
 
 ---
 
@@ -162,7 +164,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 
 Indicates whether this NIC receives an IPv6 address through DHCP.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.10/docs/resources/nic#dhcpv6 Nic#dhcpv6}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.11/docs/resources/nic#dhcpv6 Nic#dhcpv6}
 
 ---
 
@@ -170,7 +172,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.10/docs/resources/nic#firewall_active Nic#firewall_active}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.11/docs/resources/nic#firewall_active Nic#firewall_active}.
 
 ---
 
@@ -178,7 +180,17 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.10/docs/resources/nic#firewall_type Nic#firewall_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.11/docs/resources/nic#firewall_type Nic#firewall_type}.
+
+---
+
+##### `flowlog`<sup>Optional</sup> <a name="flowlog" id="@cdktf/provider-ionoscloud.nic.Nic.Initializer.parameter.flowlog"></a>
+
+- *Type:* <a href="#@cdktf/provider-ionoscloud.nic.NicFlowlog">NicFlowlog</a>
+
+flowlog block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.11/docs/resources/nic#flowlog Nic#flowlog}
 
 ---
 
@@ -186,7 +198,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.10/docs/resources/nic#id Nic#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.11/docs/resources/nic#id Nic#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -201,7 +213,7 @@ Collection of IP addresses assigned to a nic.
 
 Explicitly assigned public IPs need to come from reserved IP blocks, Passing value null or empty array will assign an IP address automatically.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.10/docs/resources/nic#ips Nic#ips}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.11/docs/resources/nic#ips Nic#ips}
 
 ---
 
@@ -211,7 +223,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 
 IPv6 CIDR block assigned to the NIC.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.10/docs/resources/nic#ipv6_cidr_block Nic#ipv6_cidr_block}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.11/docs/resources/nic#ipv6_cidr_block Nic#ipv6_cidr_block}
 
 ---
 
@@ -223,7 +235,7 @@ Collection for IPv6 addresses assigned to a nic.
 
 Explicitly assigned IPv6 addresses need to come from inside the IPv6 CIDR block assigned to the nic.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.10/docs/resources/nic#ipv6_ips Nic#ipv6_ips}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.11/docs/resources/nic#ipv6_ips Nic#ipv6_ips}
 
 ---
 
@@ -231,7 +243,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.10/docs/resources/nic#name Nic#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.11/docs/resources/nic#name Nic#name}.
 
 ---
 
@@ -241,7 +253,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.10/docs/resources/nic#timeouts Nic#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.11/docs/resources/nic#timeouts Nic#timeouts}
 
 ---
 
@@ -271,11 +283,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 | <code><a href="#@cdktf/provider-ionoscloud.nic.Nic.moveFromId">move_from_id</a></code> | Move the resource corresponding to "id" to this resource. |
 | <code><a href="#@cdktf/provider-ionoscloud.nic.Nic.moveTo">move_to</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-ionoscloud.nic.Nic.moveToId">move_to_id</a></code> | Moves this resource to the resource corresponding to "id". |
+| <code><a href="#@cdktf/provider-ionoscloud.nic.Nic.putFlowlog">put_flowlog</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.nic.Nic.putTimeouts">put_timeouts</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.nic.Nic.resetDhcp">reset_dhcp</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.nic.Nic.resetDhcpv6">reset_dhcpv6</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.nic.Nic.resetFirewallActive">reset_firewall_active</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.nic.Nic.resetFirewallType">reset_firewall_type</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.nic.Nic.resetFlowlog">reset_flowlog</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.nic.Nic.resetId">reset_id</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.nic.Nic.resetIps">reset_ips</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.nic.Nic.resetIpv6CidrBlock">reset_ipv6_cidr_block</a></code> | *No description.* |
@@ -604,6 +618,57 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
+##### `put_flowlog` <a name="put_flowlog" id="@cdktf/provider-ionoscloud.nic.Nic.putFlowlog"></a>
+
+```python
+def put_flowlog(
+  action: str,
+  bucket: str,
+  direction: str,
+  name: str
+) -> None
+```
+
+###### `action`<sup>Required</sup> <a name="action" id="@cdktf/provider-ionoscloud.nic.Nic.putFlowlog.parameter.action"></a>
+
+- *Type:* str
+
+Specifies the traffic direction pattern. Valid values: ACCEPTED, REJECTED, ALL. Immutable, forces re-recreation of the nic resource.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.11/docs/resources/nic#action Nic#action}
+
+---
+
+###### `bucket`<sup>Required</sup> <a name="bucket" id="@cdktf/provider-ionoscloud.nic.Nic.putFlowlog.parameter.bucket"></a>
+
+- *Type:* str
+
+The S3 bucket name of an existing IONOS Cloud S3 bucket. Immutable, forces re-recreation of the nic resource.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.11/docs/resources/nic#bucket Nic#bucket}
+
+---
+
+###### `direction`<sup>Required</sup> <a name="direction" id="@cdktf/provider-ionoscloud.nic.Nic.putFlowlog.parameter.direction"></a>
+
+- *Type:* str
+
+Specifies the traffic direction pattern. Valid values: INGRESS, EGRESS, BIDIRECTIONAL. Immutable, forces re-recreation of the nic resource.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.11/docs/resources/nic#direction Nic#direction}
+
+---
+
+###### `name`<sup>Required</sup> <a name="name" id="@cdktf/provider-ionoscloud.nic.Nic.putFlowlog.parameter.name"></a>
+
+- *Type:* str
+
+The resource name.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.11/docs/resources/nic#name Nic#name}
+
+---
+
 ##### `put_timeouts` <a name="put_timeouts" id="@cdktf/provider-ionoscloud.nic.Nic.putTimeouts"></a>
 
 ```python
@@ -619,7 +684,7 @@ def put_timeouts(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.10/docs/resources/nic#create Nic#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.11/docs/resources/nic#create Nic#create}.
 
 ---
 
@@ -627,7 +692,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.10/docs/resources/nic#default Nic#default}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.11/docs/resources/nic#default Nic#default}.
 
 ---
 
@@ -635,7 +700,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.10/docs/resources/nic#delete Nic#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.11/docs/resources/nic#delete Nic#delete}.
 
 ---
 
@@ -643,7 +708,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.10/docs/resources/nic#update Nic#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.11/docs/resources/nic#update Nic#update}.
 
 ---
 
@@ -669,6 +734,12 @@ def reset_firewall_active() -> None
 
 ```python
 def reset_firewall_type() -> None
+```
+
+##### `reset_flowlog` <a name="reset_flowlog" id="@cdktf/provider-ionoscloud.nic.Nic.resetFlowlog"></a>
+
+```python
+def reset_flowlog() -> None
 ```
 
 ##### `reset_id` <a name="reset_id" id="@cdktf/provider-ionoscloud.nic.Nic.resetId"></a>
@@ -821,7 +892,7 @@ The construct id used in the generated config for the Nic to import.
 
 The id of the existing Nic that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.10/docs/resources/nic#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.11/docs/resources/nic#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -852,6 +923,7 @@ Refer to the {@link https://registry.terraform.io/providers/ionos-cloud/ionosclo
 | <code><a href="#@cdktf/provider-ionoscloud.nic.Nic.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.nic.Nic.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.nic.Nic.property.deviceNumber">device_number</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.nic.Nic.property.flowlog">flowlog</a></code> | <code><a href="#@cdktf/provider-ionoscloud.nic.NicFlowlogOutputReference">NicFlowlogOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.nic.Nic.property.mac">mac</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.nic.Nic.property.pciSlot">pci_slot</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.nic.Nic.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-ionoscloud.nic.NicTimeoutsOutputReference">NicTimeoutsOutputReference</a></code> | *No description.* |
@@ -860,6 +932,7 @@ Refer to the {@link https://registry.terraform.io/providers/ionos-cloud/ionosclo
 | <code><a href="#@cdktf/provider-ionoscloud.nic.Nic.property.dhcpv6Input">dhcpv6_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.nic.Nic.property.firewallActiveInput">firewall_active_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.nic.Nic.property.firewallTypeInput">firewall_type_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.nic.Nic.property.flowlogInput">flowlog_input</a></code> | <code><a href="#@cdktf/provider-ionoscloud.nic.NicFlowlog">NicFlowlog</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.nic.Nic.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.nic.Nic.property.ipsInput">ips_input</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.nic.Nic.property.ipv6CidrBlockInput">ipv6_cidr_block_input</a></code> | <code>str</code> | *No description.* |
@@ -1035,6 +1108,16 @@ device_number: typing.Union[int, float]
 
 ---
 
+##### `flowlog`<sup>Required</sup> <a name="flowlog" id="@cdktf/provider-ionoscloud.nic.Nic.property.flowlog"></a>
+
+```python
+flowlog: NicFlowlogOutputReference
+```
+
+- *Type:* <a href="#@cdktf/provider-ionoscloud.nic.NicFlowlogOutputReference">NicFlowlogOutputReference</a>
+
+---
+
 ##### `mac`<sup>Required</sup> <a name="mac" id="@cdktf/provider-ionoscloud.nic.Nic.property.mac"></a>
 
 ```python
@@ -1112,6 +1195,16 @@ firewall_type_input: str
 ```
 
 - *Type:* str
+
+---
+
+##### `flowlog_input`<sup>Optional</sup> <a name="flowlog_input" id="@cdktf/provider-ionoscloud.nic.Nic.property.flowlogInput"></a>
+
+```python
+flowlog_input: NicFlowlog
+```
+
+- *Type:* <a href="#@cdktf/provider-ionoscloud.nic.NicFlowlog">NicFlowlog</a>
 
 ---
 
@@ -1357,6 +1450,7 @@ nic.NicConfig(
   dhcpv6: typing.Union[bool, IResolvable] = None,
   firewall_active: typing.Union[bool, IResolvable] = None,
   firewall_type: str = None,
+  flowlog: NicFlowlog = None,
   id: str = None,
   ips: typing.List[str] = None,
   ipv6_cidr_block: str = None,
@@ -1377,18 +1471,19 @@ nic.NicConfig(
 | <code><a href="#@cdktf/provider-ionoscloud.nic.NicConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.nic.NicConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.nic.NicConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-ionoscloud.nic.NicConfig.property.datacenterId">datacenter_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.10/docs/resources/nic#datacenter_id Nic#datacenter_id}. |
-| <code><a href="#@cdktf/provider-ionoscloud.nic.NicConfig.property.lan">lan</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.10/docs/resources/nic#lan Nic#lan}. |
-| <code><a href="#@cdktf/provider-ionoscloud.nic.NicConfig.property.serverId">server_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.10/docs/resources/nic#server_id Nic#server_id}. |
-| <code><a href="#@cdktf/provider-ionoscloud.nic.NicConfig.property.dhcp">dhcp</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.10/docs/resources/nic#dhcp Nic#dhcp}. |
+| <code><a href="#@cdktf/provider-ionoscloud.nic.NicConfig.property.datacenterId">datacenter_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.11/docs/resources/nic#datacenter_id Nic#datacenter_id}. |
+| <code><a href="#@cdktf/provider-ionoscloud.nic.NicConfig.property.lan">lan</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.11/docs/resources/nic#lan Nic#lan}. |
+| <code><a href="#@cdktf/provider-ionoscloud.nic.NicConfig.property.serverId">server_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.11/docs/resources/nic#server_id Nic#server_id}. |
+| <code><a href="#@cdktf/provider-ionoscloud.nic.NicConfig.property.dhcp">dhcp</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.11/docs/resources/nic#dhcp Nic#dhcp}. |
 | <code><a href="#@cdktf/provider-ionoscloud.nic.NicConfig.property.dhcpv6">dhcpv6</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Indicates whether this NIC receives an IPv6 address through DHCP. |
-| <code><a href="#@cdktf/provider-ionoscloud.nic.NicConfig.property.firewallActive">firewall_active</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.10/docs/resources/nic#firewall_active Nic#firewall_active}. |
-| <code><a href="#@cdktf/provider-ionoscloud.nic.NicConfig.property.firewallType">firewall_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.10/docs/resources/nic#firewall_type Nic#firewall_type}. |
-| <code><a href="#@cdktf/provider-ionoscloud.nic.NicConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.10/docs/resources/nic#id Nic#id}. |
+| <code><a href="#@cdktf/provider-ionoscloud.nic.NicConfig.property.firewallActive">firewall_active</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.11/docs/resources/nic#firewall_active Nic#firewall_active}. |
+| <code><a href="#@cdktf/provider-ionoscloud.nic.NicConfig.property.firewallType">firewall_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.11/docs/resources/nic#firewall_type Nic#firewall_type}. |
+| <code><a href="#@cdktf/provider-ionoscloud.nic.NicConfig.property.flowlog">flowlog</a></code> | <code><a href="#@cdktf/provider-ionoscloud.nic.NicFlowlog">NicFlowlog</a></code> | flowlog block. |
+| <code><a href="#@cdktf/provider-ionoscloud.nic.NicConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.11/docs/resources/nic#id Nic#id}. |
 | <code><a href="#@cdktf/provider-ionoscloud.nic.NicConfig.property.ips">ips</a></code> | <code>typing.List[str]</code> | Collection of IP addresses assigned to a nic. |
 | <code><a href="#@cdktf/provider-ionoscloud.nic.NicConfig.property.ipv6CidrBlock">ipv6_cidr_block</a></code> | <code>str</code> | IPv6 CIDR block assigned to the NIC. |
 | <code><a href="#@cdktf/provider-ionoscloud.nic.NicConfig.property.ipv6Ips">ipv6_ips</a></code> | <code>typing.List[str]</code> | Collection for IPv6 addresses assigned to a nic. |
-| <code><a href="#@cdktf/provider-ionoscloud.nic.NicConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.10/docs/resources/nic#name Nic#name}. |
+| <code><a href="#@cdktf/provider-ionoscloud.nic.NicConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.11/docs/resources/nic#name Nic#name}. |
 | <code><a href="#@cdktf/provider-ionoscloud.nic.NicConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-ionoscloud.nic.NicTimeouts">NicTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1471,7 +1566,7 @@ datacenter_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.10/docs/resources/nic#datacenter_id Nic#datacenter_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.11/docs/resources/nic#datacenter_id Nic#datacenter_id}.
 
 ---
 
@@ -1483,7 +1578,7 @@ lan: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.10/docs/resources/nic#lan Nic#lan}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.11/docs/resources/nic#lan Nic#lan}.
 
 ---
 
@@ -1495,7 +1590,7 @@ server_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.10/docs/resources/nic#server_id Nic#server_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.11/docs/resources/nic#server_id Nic#server_id}.
 
 ---
 
@@ -1507,7 +1602,7 @@ dhcp: typing.Union[bool, IResolvable]
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.10/docs/resources/nic#dhcp Nic#dhcp}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.11/docs/resources/nic#dhcp Nic#dhcp}.
 
 ---
 
@@ -1521,7 +1616,7 @@ dhcpv6: typing.Union[bool, IResolvable]
 
 Indicates whether this NIC receives an IPv6 address through DHCP.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.10/docs/resources/nic#dhcpv6 Nic#dhcpv6}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.11/docs/resources/nic#dhcpv6 Nic#dhcpv6}
 
 ---
 
@@ -1533,7 +1628,7 @@ firewall_active: typing.Union[bool, IResolvable]
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.10/docs/resources/nic#firewall_active Nic#firewall_active}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.11/docs/resources/nic#firewall_active Nic#firewall_active}.
 
 ---
 
@@ -1545,7 +1640,21 @@ firewall_type: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.10/docs/resources/nic#firewall_type Nic#firewall_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.11/docs/resources/nic#firewall_type Nic#firewall_type}.
+
+---
+
+##### `flowlog`<sup>Optional</sup> <a name="flowlog" id="@cdktf/provider-ionoscloud.nic.NicConfig.property.flowlog"></a>
+
+```python
+flowlog: NicFlowlog
+```
+
+- *Type:* <a href="#@cdktf/provider-ionoscloud.nic.NicFlowlog">NicFlowlog</a>
+
+flowlog block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.11/docs/resources/nic#flowlog Nic#flowlog}
 
 ---
 
@@ -1557,7 +1666,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.10/docs/resources/nic#id Nic#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.11/docs/resources/nic#id Nic#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1576,7 +1685,7 @@ Collection of IP addresses assigned to a nic.
 
 Explicitly assigned public IPs need to come from reserved IP blocks, Passing value null or empty array will assign an IP address automatically.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.10/docs/resources/nic#ips Nic#ips}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.11/docs/resources/nic#ips Nic#ips}
 
 ---
 
@@ -1590,7 +1699,7 @@ ipv6_cidr_block: str
 
 IPv6 CIDR block assigned to the NIC.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.10/docs/resources/nic#ipv6_cidr_block Nic#ipv6_cidr_block}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.11/docs/resources/nic#ipv6_cidr_block Nic#ipv6_cidr_block}
 
 ---
 
@@ -1606,7 +1715,7 @@ Collection for IPv6 addresses assigned to a nic.
 
 Explicitly assigned IPv6 addresses need to come from inside the IPv6 CIDR block assigned to the nic.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.10/docs/resources/nic#ipv6_ips Nic#ipv6_ips}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.11/docs/resources/nic#ipv6_ips Nic#ipv6_ips}
 
 ---
 
@@ -1618,7 +1727,7 @@ name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.10/docs/resources/nic#name Nic#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.11/docs/resources/nic#name Nic#name}.
 
 ---
 
@@ -1632,7 +1741,89 @@ timeouts: NicTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.10/docs/resources/nic#timeouts Nic#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.11/docs/resources/nic#timeouts Nic#timeouts}
+
+---
+
+### NicFlowlog <a name="NicFlowlog" id="@cdktf/provider-ionoscloud.nic.NicFlowlog"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-ionoscloud.nic.NicFlowlog.Initializer"></a>
+
+```python
+from cdktf_cdktf_provider_ionoscloud import nic
+
+nic.NicFlowlog(
+  action: str,
+  bucket: str,
+  direction: str,
+  name: str
+)
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-ionoscloud.nic.NicFlowlog.property.action">action</a></code> | <code>str</code> | Specifies the traffic direction pattern. Valid values: ACCEPTED, REJECTED, ALL. Immutable, forces re-recreation of the nic resource. |
+| <code><a href="#@cdktf/provider-ionoscloud.nic.NicFlowlog.property.bucket">bucket</a></code> | <code>str</code> | The S3 bucket name of an existing IONOS Cloud S3 bucket. Immutable, forces re-recreation of the nic resource. |
+| <code><a href="#@cdktf/provider-ionoscloud.nic.NicFlowlog.property.direction">direction</a></code> | <code>str</code> | Specifies the traffic direction pattern. Valid values: INGRESS, EGRESS, BIDIRECTIONAL. Immutable, forces re-recreation of the nic resource. |
+| <code><a href="#@cdktf/provider-ionoscloud.nic.NicFlowlog.property.name">name</a></code> | <code>str</code> | The resource name. |
+
+---
+
+##### `action`<sup>Required</sup> <a name="action" id="@cdktf/provider-ionoscloud.nic.NicFlowlog.property.action"></a>
+
+```python
+action: str
+```
+
+- *Type:* str
+
+Specifies the traffic direction pattern. Valid values: ACCEPTED, REJECTED, ALL. Immutable, forces re-recreation of the nic resource.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.11/docs/resources/nic#action Nic#action}
+
+---
+
+##### `bucket`<sup>Required</sup> <a name="bucket" id="@cdktf/provider-ionoscloud.nic.NicFlowlog.property.bucket"></a>
+
+```python
+bucket: str
+```
+
+- *Type:* str
+
+The S3 bucket name of an existing IONOS Cloud S3 bucket. Immutable, forces re-recreation of the nic resource.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.11/docs/resources/nic#bucket Nic#bucket}
+
+---
+
+##### `direction`<sup>Required</sup> <a name="direction" id="@cdktf/provider-ionoscloud.nic.NicFlowlog.property.direction"></a>
+
+```python
+direction: str
+```
+
+- *Type:* str
+
+Specifies the traffic direction pattern. Valid values: INGRESS, EGRESS, BIDIRECTIONAL. Immutable, forces re-recreation of the nic resource.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.11/docs/resources/nic#direction Nic#direction}
+
+---
+
+##### `name`<sup>Required</sup> <a name="name" id="@cdktf/provider-ionoscloud.nic.NicFlowlog.property.name"></a>
+
+```python
+name: str
+```
+
+- *Type:* str
+
+The resource name.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.11/docs/resources/nic#name Nic#name}
 
 ---
 
@@ -1655,10 +1846,10 @@ nic.NicTimeouts(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-ionoscloud.nic.NicTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.10/docs/resources/nic#create Nic#create}. |
-| <code><a href="#@cdktf/provider-ionoscloud.nic.NicTimeouts.property.default">default</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.10/docs/resources/nic#default Nic#default}. |
-| <code><a href="#@cdktf/provider-ionoscloud.nic.NicTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.10/docs/resources/nic#delete Nic#delete}. |
-| <code><a href="#@cdktf/provider-ionoscloud.nic.NicTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.10/docs/resources/nic#update Nic#update}. |
+| <code><a href="#@cdktf/provider-ionoscloud.nic.NicTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.11/docs/resources/nic#create Nic#create}. |
+| <code><a href="#@cdktf/provider-ionoscloud.nic.NicTimeouts.property.default">default</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.11/docs/resources/nic#default Nic#default}. |
+| <code><a href="#@cdktf/provider-ionoscloud.nic.NicTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.11/docs/resources/nic#delete Nic#delete}. |
+| <code><a href="#@cdktf/provider-ionoscloud.nic.NicTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.11/docs/resources/nic#update Nic#update}. |
 
 ---
 
@@ -1670,7 +1861,7 @@ create: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.10/docs/resources/nic#create Nic#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.11/docs/resources/nic#create Nic#create}.
 
 ---
 
@@ -1682,7 +1873,7 @@ default: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.10/docs/resources/nic#default Nic#default}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.11/docs/resources/nic#default Nic#default}.
 
 ---
 
@@ -1694,7 +1885,7 @@ delete: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.10/docs/resources/nic#delete Nic#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.11/docs/resources/nic#delete Nic#delete}.
 
 ---
 
@@ -1706,11 +1897,384 @@ update: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.10/docs/resources/nic#update Nic#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.11/docs/resources/nic#update Nic#update}.
 
 ---
 
 ## Classes <a name="Classes" id="Classes"></a>
+
+### NicFlowlogOutputReference <a name="NicFlowlogOutputReference" id="@cdktf/provider-ionoscloud.nic.NicFlowlogOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.nic.NicFlowlogOutputReference.Initializer"></a>
+
+```python
+from cdktf_cdktf_provider_ionoscloud import nic
+
+nic.NicFlowlogOutputReference(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-ionoscloud.nic.NicFlowlogOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-ionoscloud.nic.NicFlowlogOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktf/provider-ionoscloud.nic.NicFlowlogOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-ionoscloud.nic.NicFlowlogOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-ionoscloud.nic.NicFlowlogOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.nic.NicFlowlogOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.nic.NicFlowlogOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.nic.NicFlowlogOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.nic.NicFlowlogOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.nic.NicFlowlogOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.nic.NicFlowlogOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.nic.NicFlowlogOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.nic.NicFlowlogOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.nic.NicFlowlogOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.nic.NicFlowlogOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.nic.NicFlowlogOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-ionoscloud.nic.NicFlowlogOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktf/provider-ionoscloud.nic.NicFlowlogOutputReference.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktf/provider-ionoscloud.nic.NicFlowlogOutputReference.getAnyMapAttribute"></a>
+
+```python
+def get_any_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Any]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-ionoscloud.nic.NicFlowlogOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktf/provider-ionoscloud.nic.NicFlowlogOutputReference.getBooleanAttribute"></a>
+
+```python
+def get_boolean_attribute(
+  terraform_attribute: str
+) -> IResolvable
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-ionoscloud.nic.NicFlowlogOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktf/provider-ionoscloud.nic.NicFlowlogOutputReference.getBooleanMapAttribute"></a>
+
+```python
+def get_boolean_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[bool]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-ionoscloud.nic.NicFlowlogOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktf/provider-ionoscloud.nic.NicFlowlogOutputReference.getListAttribute"></a>
+
+```python
+def get_list_attribute(
+  terraform_attribute: str
+) -> typing.List[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-ionoscloud.nic.NicFlowlogOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktf/provider-ionoscloud.nic.NicFlowlogOutputReference.getNumberAttribute"></a>
+
+```python
+def get_number_attribute(
+  terraform_attribute: str
+) -> typing.Union[int, float]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-ionoscloud.nic.NicFlowlogOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktf/provider-ionoscloud.nic.NicFlowlogOutputReference.getNumberListAttribute"></a>
+
+```python
+def get_number_list_attribute(
+  terraform_attribute: str
+) -> typing.List[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-ionoscloud.nic.NicFlowlogOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktf/provider-ionoscloud.nic.NicFlowlogOutputReference.getNumberMapAttribute"></a>
+
+```python
+def get_number_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-ionoscloud.nic.NicFlowlogOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktf/provider-ionoscloud.nic.NicFlowlogOutputReference.getStringAttribute"></a>
+
+```python
+def get_string_attribute(
+  terraform_attribute: str
+) -> str
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-ionoscloud.nic.NicFlowlogOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktf/provider-ionoscloud.nic.NicFlowlogOutputReference.getStringMapAttribute"></a>
+
+```python
+def get_string_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-ionoscloud.nic.NicFlowlogOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktf/provider-ionoscloud.nic.NicFlowlogOutputReference.interpolationForAttribute"></a>
+
+```python
+def interpolation_for_attribute(
+  property: str
+) -> IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-ionoscloud.nic.NicFlowlogOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* str
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktf/provider-ionoscloud.nic.NicFlowlogOutputReference.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-ionoscloud.nic.NicFlowlogOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktf.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktf/provider-ionoscloud.nic.NicFlowlogOutputReference.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-ionoscloud.nic.NicFlowlogOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-ionoscloud.nic.NicFlowlogOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.nic.NicFlowlogOutputReference.property.id">id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.nic.NicFlowlogOutputReference.property.actionInput">action_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.nic.NicFlowlogOutputReference.property.bucketInput">bucket_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.nic.NicFlowlogOutputReference.property.directionInput">direction_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.nic.NicFlowlogOutputReference.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.nic.NicFlowlogOutputReference.property.action">action</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.nic.NicFlowlogOutputReference.property.bucket">bucket</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.nic.NicFlowlogOutputReference.property.direction">direction</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.nic.NicFlowlogOutputReference.property.name">name</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.nic.NicFlowlogOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktf/provider-ionoscloud.nic.NicFlowlog">NicFlowlog</a></code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktf/provider-ionoscloud.nic.NicFlowlogOutputReference.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-ionoscloud.nic.NicFlowlogOutputReference.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-ionoscloud.nic.NicFlowlogOutputReference.property.id"></a>
+
+```python
+id: str
+```
+
+- *Type:* str
+
+---
+
+##### `action_input`<sup>Optional</sup> <a name="action_input" id="@cdktf/provider-ionoscloud.nic.NicFlowlogOutputReference.property.actionInput"></a>
+
+```python
+action_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `bucket_input`<sup>Optional</sup> <a name="bucket_input" id="@cdktf/provider-ionoscloud.nic.NicFlowlogOutputReference.property.bucketInput"></a>
+
+```python
+bucket_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `direction_input`<sup>Optional</sup> <a name="direction_input" id="@cdktf/provider-ionoscloud.nic.NicFlowlogOutputReference.property.directionInput"></a>
+
+```python
+direction_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `name_input`<sup>Optional</sup> <a name="name_input" id="@cdktf/provider-ionoscloud.nic.NicFlowlogOutputReference.property.nameInput"></a>
+
+```python
+name_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `action`<sup>Required</sup> <a name="action" id="@cdktf/provider-ionoscloud.nic.NicFlowlogOutputReference.property.action"></a>
+
+```python
+action: str
+```
+
+- *Type:* str
+
+---
+
+##### `bucket`<sup>Required</sup> <a name="bucket" id="@cdktf/provider-ionoscloud.nic.NicFlowlogOutputReference.property.bucket"></a>
+
+```python
+bucket: str
+```
+
+- *Type:* str
+
+---
+
+##### `direction`<sup>Required</sup> <a name="direction" id="@cdktf/provider-ionoscloud.nic.NicFlowlogOutputReference.property.direction"></a>
+
+```python
+direction: str
+```
+
+- *Type:* str
+
+---
+
+##### `name`<sup>Required</sup> <a name="name" id="@cdktf/provider-ionoscloud.nic.NicFlowlogOutputReference.property.name"></a>
+
+```python
+name: str
+```
+
+- *Type:* str
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-ionoscloud.nic.NicFlowlogOutputReference.property.internalValue"></a>
+
+```python
+internal_value: NicFlowlog
+```
+
+- *Type:* <a href="#@cdktf/provider-ionoscloud.nic.NicFlowlog">NicFlowlog</a>
+
+---
+
 
 ### NicTimeoutsOutputReference <a name="NicTimeoutsOutputReference" id="@cdktf/provider-ionoscloud.nic.NicTimeoutsOutputReference"></a>
 

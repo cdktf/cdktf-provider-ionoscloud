@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.10/docs/resources/networkloadbalancer_forwardingrule
+// https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.11/docs/resources/networkloadbalancer_forwardingrule
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,15 +15,15 @@ export interface NetworkloadbalancerForwardingruleConfig extends cdktf.Terraform
   /**
   * Algorithm for the balancing.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.10/docs/resources/networkloadbalancer_forwardingrule#algorithm NetworkloadbalancerForwardingrule#algorithm}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.11/docs/resources/networkloadbalancer_forwardingrule#algorithm NetworkloadbalancerForwardingrule#algorithm}
   */
   readonly algorithm: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.10/docs/resources/networkloadbalancer_forwardingrule#datacenter_id NetworkloadbalancerForwardingrule#datacenter_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.11/docs/resources/networkloadbalancer_forwardingrule#datacenter_id NetworkloadbalancerForwardingrule#datacenter_id}
   */
   readonly datacenterId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.10/docs/resources/networkloadbalancer_forwardingrule#id NetworkloadbalancerForwardingrule#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.11/docs/resources/networkloadbalancer_forwardingrule#id NetworkloadbalancerForwardingrule#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -32,47 +32,47 @@ export interface NetworkloadbalancerForwardingruleConfig extends cdktf.Terraform
   /**
   * Listening IP. (inbound)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.10/docs/resources/networkloadbalancer_forwardingrule#listener_ip NetworkloadbalancerForwardingrule#listener_ip}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.11/docs/resources/networkloadbalancer_forwardingrule#listener_ip NetworkloadbalancerForwardingrule#listener_ip}
   */
   readonly listenerIp: string;
   /**
   * Listening port number. (inbound) (range: 1 to 65535)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.10/docs/resources/networkloadbalancer_forwardingrule#listener_port NetworkloadbalancerForwardingrule#listener_port}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.11/docs/resources/networkloadbalancer_forwardingrule#listener_port NetworkloadbalancerForwardingrule#listener_port}
   */
   readonly listenerPort: number;
   /**
   * A name of that Network Load Balancer forwarding rule
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.10/docs/resources/networkloadbalancer_forwardingrule#name NetworkloadbalancerForwardingrule#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.11/docs/resources/networkloadbalancer_forwardingrule#name NetworkloadbalancerForwardingrule#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.10/docs/resources/networkloadbalancer_forwardingrule#networkloadbalancer_id NetworkloadbalancerForwardingrule#networkloadbalancer_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.11/docs/resources/networkloadbalancer_forwardingrule#networkloadbalancer_id NetworkloadbalancerForwardingrule#networkloadbalancer_id}
   */
   readonly networkloadbalancerId: string;
   /**
   * Protocol of the balancing.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.10/docs/resources/networkloadbalancer_forwardingrule#protocol NetworkloadbalancerForwardingrule#protocol}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.11/docs/resources/networkloadbalancer_forwardingrule#protocol NetworkloadbalancerForwardingrule#protocol}
   */
   readonly protocol: string;
   /**
   * health_check block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.10/docs/resources/networkloadbalancer_forwardingrule#health_check NetworkloadbalancerForwardingrule#health_check}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.11/docs/resources/networkloadbalancer_forwardingrule#health_check NetworkloadbalancerForwardingrule#health_check}
   */
   readonly healthCheck?: NetworkloadbalancerForwardingruleHealthCheck;
   /**
   * targets block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.10/docs/resources/networkloadbalancer_forwardingrule#targets NetworkloadbalancerForwardingrule#targets}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.11/docs/resources/networkloadbalancer_forwardingrule#targets NetworkloadbalancerForwardingrule#targets}
   */
   readonly targets: NetworkloadbalancerForwardingruleTargets[] | cdktf.IResolvable;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.10/docs/resources/networkloadbalancer_forwardingrule#timeouts NetworkloadbalancerForwardingrule#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.11/docs/resources/networkloadbalancer_forwardingrule#timeouts NetworkloadbalancerForwardingrule#timeouts}
   */
   readonly timeouts?: NetworkloadbalancerForwardingruleTimeouts;
 }
@@ -80,25 +80,25 @@ export interface NetworkloadbalancerForwardingruleHealthCheck {
   /**
   * ClientTimeout is expressed in milliseconds. This inactivity timeout applies when the client is expected to acknowledge or send data. If unset the default of 50 seconds will be used.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.10/docs/resources/networkloadbalancer_forwardingrule#client_timeout NetworkloadbalancerForwardingrule#client_timeout}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.11/docs/resources/networkloadbalancer_forwardingrule#client_timeout NetworkloadbalancerForwardingrule#client_timeout}
   */
   readonly clientTimeout?: number;
   /**
   * It specifies the maximum time (in milliseconds) to wait for a connection attempt to a target VM to succeed. If unset, the default of 5 seconds will be used.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.10/docs/resources/networkloadbalancer_forwardingrule#connect_timeout NetworkloadbalancerForwardingrule#connect_timeout}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.11/docs/resources/networkloadbalancer_forwardingrule#connect_timeout NetworkloadbalancerForwardingrule#connect_timeout}
   */
   readonly connectTimeout?: number;
   /**
   * Retries specifies the number of retries to perform on a target VM after a connection failure. If unset, the default value of 3 will be used.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.10/docs/resources/networkloadbalancer_forwardingrule#retries NetworkloadbalancerForwardingrule#retries}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.11/docs/resources/networkloadbalancer_forwardingrule#retries NetworkloadbalancerForwardingrule#retries}
   */
   readonly retries?: number;
   /**
   * TargetTimeout specifies the maximum inactivity time (in milliseconds) on the target VM side. If unset, the default of 50 seconds will be used.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.10/docs/resources/networkloadbalancer_forwardingrule#target_timeout NetworkloadbalancerForwardingrule#target_timeout}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.11/docs/resources/networkloadbalancer_forwardingrule#target_timeout NetworkloadbalancerForwardingrule#target_timeout}
   */
   readonly targetTimeout?: number;
 }
@@ -234,19 +234,19 @@ export interface NetworkloadbalancerForwardingruleTargetsHealthCheck {
   /**
   * Check specifies whether the target VM's health is checked.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.10/docs/resources/networkloadbalancer_forwardingrule#check NetworkloadbalancerForwardingrule#check}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.11/docs/resources/networkloadbalancer_forwardingrule#check NetworkloadbalancerForwardingrule#check}
   */
   readonly check?: boolean | cdktf.IResolvable;
   /**
   * CheckInterval determines the duration (in milliseconds) between consecutive health checks. If unspecified a default of 2000 ms is used.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.10/docs/resources/networkloadbalancer_forwardingrule#check_interval NetworkloadbalancerForwardingrule#check_interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.11/docs/resources/networkloadbalancer_forwardingrule#check_interval NetworkloadbalancerForwardingrule#check_interval}
   */
   readonly checkInterval?: number;
   /**
   * Maintenance specifies if a target VM should be marked as down, even if it is not.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.10/docs/resources/networkloadbalancer_forwardingrule#maintenance NetworkloadbalancerForwardingrule#maintenance}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.11/docs/resources/networkloadbalancer_forwardingrule#maintenance NetworkloadbalancerForwardingrule#maintenance}
   */
   readonly maintenance?: boolean | cdktf.IResolvable;
 }
@@ -359,25 +359,31 @@ export interface NetworkloadbalancerForwardingruleTargets {
   /**
   * IP of a balanced target VM
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.10/docs/resources/networkloadbalancer_forwardingrule#ip NetworkloadbalancerForwardingrule#ip}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.11/docs/resources/networkloadbalancer_forwardingrule#ip NetworkloadbalancerForwardingrule#ip}
   */
   readonly ip: string;
   /**
   * Port of the balanced target service. (range: 1 to 65535)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.10/docs/resources/networkloadbalancer_forwardingrule#port NetworkloadbalancerForwardingrule#port}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.11/docs/resources/networkloadbalancer_forwardingrule#port NetworkloadbalancerForwardingrule#port}
   */
   readonly port: number;
   /**
+  * Proxy protocol version
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.11/docs/resources/networkloadbalancer_forwardingrule#proxy_protocol NetworkloadbalancerForwardingrule#proxy_protocol}
+  */
+  readonly proxyProtocol?: string;
+  /**
   * Weight parameter is used to adjust the target VM's weight relative to other target VMs
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.10/docs/resources/networkloadbalancer_forwardingrule#weight NetworkloadbalancerForwardingrule#weight}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.11/docs/resources/networkloadbalancer_forwardingrule#weight NetworkloadbalancerForwardingrule#weight}
   */
   readonly weight: number;
   /**
   * health_check block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.10/docs/resources/networkloadbalancer_forwardingrule#health_check NetworkloadbalancerForwardingrule#health_check}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.11/docs/resources/networkloadbalancer_forwardingrule#health_check NetworkloadbalancerForwardingrule#health_check}
   */
   readonly healthCheck?: NetworkloadbalancerForwardingruleTargetsHealthCheck;
 }
@@ -390,6 +396,7 @@ export function networkloadbalancerForwardingruleTargetsToTerraform(struct?: Net
   return {
     ip: cdktf.stringToTerraform(struct!.ip),
     port: cdktf.numberToTerraform(struct!.port),
+    proxy_protocol: cdktf.stringToTerraform(struct!.proxyProtocol),
     weight: cdktf.numberToTerraform(struct!.weight),
     health_check: networkloadbalancerForwardingruleTargetsHealthCheckToTerraform(struct!.healthCheck),
   }
@@ -423,6 +430,10 @@ export class NetworkloadbalancerForwardingruleTargetsOutputReference extends cdk
       hasAnyValues = true;
       internalValueResult.port = this._port;
     }
+    if (this._proxyProtocol !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.proxyProtocol = this._proxyProtocol;
+    }
     if (this._weight !== undefined) {
       hasAnyValues = true;
       internalValueResult.weight = this._weight;
@@ -440,6 +451,7 @@ export class NetworkloadbalancerForwardingruleTargetsOutputReference extends cdk
       this.resolvableValue = undefined;
       this._ip = undefined;
       this._port = undefined;
+      this._proxyProtocol = undefined;
       this._weight = undefined;
       this._healthCheck.internalValue = undefined;
     }
@@ -452,6 +464,7 @@ export class NetworkloadbalancerForwardingruleTargetsOutputReference extends cdk
       this.resolvableValue = undefined;
       this._ip = value.ip;
       this._port = value.port;
+      this._proxyProtocol = value.proxyProtocol;
       this._weight = value.weight;
       this._healthCheck.internalValue = value.healthCheck;
     }
@@ -481,6 +494,22 @@ export class NetworkloadbalancerForwardingruleTargetsOutputReference extends cdk
   // Temporarily expose input value. Use with caution.
   public get portInput() {
     return this._port;
+  }
+
+  // proxy_protocol - computed: false, optional: true, required: false
+  private _proxyProtocol?: string; 
+  public get proxyProtocol() {
+    return this.getStringAttribute('proxy_protocol');
+  }
+  public set proxyProtocol(value: string) {
+    this._proxyProtocol = value;
+  }
+  public resetProxyProtocol() {
+    this._proxyProtocol = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get proxyProtocolInput() {
+    return this._proxyProtocol;
   }
 
   // weight - computed: false, optional: false, required: true
@@ -534,19 +563,19 @@ export class NetworkloadbalancerForwardingruleTargetsList extends cdktf.ComplexL
 }
 export interface NetworkloadbalancerForwardingruleTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.10/docs/resources/networkloadbalancer_forwardingrule#create NetworkloadbalancerForwardingrule#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.11/docs/resources/networkloadbalancer_forwardingrule#create NetworkloadbalancerForwardingrule#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.10/docs/resources/networkloadbalancer_forwardingrule#default NetworkloadbalancerForwardingrule#default}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.11/docs/resources/networkloadbalancer_forwardingrule#default NetworkloadbalancerForwardingrule#default}
   */
   readonly default?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.10/docs/resources/networkloadbalancer_forwardingrule#delete NetworkloadbalancerForwardingrule#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.11/docs/resources/networkloadbalancer_forwardingrule#delete NetworkloadbalancerForwardingrule#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.10/docs/resources/networkloadbalancer_forwardingrule#update NetworkloadbalancerForwardingrule#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.11/docs/resources/networkloadbalancer_forwardingrule#update NetworkloadbalancerForwardingrule#update}
   */
   readonly update?: string;
 }
@@ -690,7 +719,7 @@ export class NetworkloadbalancerForwardingruleTimeoutsOutputReference extends cd
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.10/docs/resources/networkloadbalancer_forwardingrule ionoscloud_networkloadbalancer_forwardingrule}
+* Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.11/docs/resources/networkloadbalancer_forwardingrule ionoscloud_networkloadbalancer_forwardingrule}
 */
 export class NetworkloadbalancerForwardingrule extends cdktf.TerraformResource {
 
@@ -706,7 +735,7 @@ export class NetworkloadbalancerForwardingrule extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a NetworkloadbalancerForwardingrule resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the NetworkloadbalancerForwardingrule to import
-  * @param importFromId The id of the existing NetworkloadbalancerForwardingrule that should be imported. Refer to the {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.10/docs/resources/networkloadbalancer_forwardingrule#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing NetworkloadbalancerForwardingrule that should be imported. Refer to the {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.11/docs/resources/networkloadbalancer_forwardingrule#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the NetworkloadbalancerForwardingrule to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -718,7 +747,7 @@ export class NetworkloadbalancerForwardingrule extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.10/docs/resources/networkloadbalancer_forwardingrule ionoscloud_networkloadbalancer_forwardingrule} Resource
+  * Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.11/docs/resources/networkloadbalancer_forwardingrule ionoscloud_networkloadbalancer_forwardingrule} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -729,7 +758,7 @@ export class NetworkloadbalancerForwardingrule extends cdktf.TerraformResource {
       terraformResourceType: 'ionoscloud_networkloadbalancer_forwardingrule',
       terraformGeneratorMetadata: {
         providerName: 'ionoscloud',
-        providerVersion: '6.4.10',
+        providerVersion: '6.4.11',
         providerVersionConstraint: '~> 6.2'
       },
       provider: config.provider,

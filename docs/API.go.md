@@ -3,6 +3,7 @@
 The following submodules are available:
 - [applicationLoadbalancer](./applicationLoadbalancer.go.md)
 - [applicationLoadbalancerForwardingrule](./applicationLoadbalancerForwardingrule.go.md)
+- [autoscalingGroup](./autoscalingGroup.go.md)
 - [backupUnit](./backupUnit.go.md)
 - [certificate](./certificate.go.md)
 - [containerRegistry](./containerRegistry.go.md)
@@ -10,6 +11,8 @@ The following submodules are available:
 - [cubeServer](./cubeServer.go.md)
 - [dataIonoscloudApplicationLoadbalancer](./dataIonoscloudApplicationLoadbalancer.go.md)
 - [dataIonoscloudApplicationLoadbalancerForwardingrule](./dataIonoscloudApplicationLoadbalancerForwardingrule.go.md)
+- [dataIonoscloudAutoscalingGroup](./dataIonoscloudAutoscalingGroup.go.md)
+- [dataIonoscloudAutoscalingGroupServers](./dataIonoscloudAutoscalingGroupServers.go.md)
 - [dataIonoscloudBackupUnit](./dataIonoscloudBackupUnit.go.md)
 - [dataIonoscloudCertificate](./dataIonoscloudCertificate.go.md)
 - [dataIonoscloudContainerRegistry](./dataIonoscloudContainerRegistry.go.md)

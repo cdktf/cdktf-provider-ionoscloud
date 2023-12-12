@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.10/docs/data-sources/networkloadbalancer
+// https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.11/docs/data-sources/networkloadbalancer
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,42 +13,126 @@ import * as cdktf from 'cdktf';
 
 export interface DataIonoscloudNetworkloadbalancerConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.10/docs/data-sources/networkloadbalancer#datacenter_id DataIonoscloudNetworkloadbalancer#datacenter_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.11/docs/data-sources/networkloadbalancer#datacenter_id DataIonoscloudNetworkloadbalancer#datacenter_id}
   */
   readonly datacenterId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.10/docs/data-sources/networkloadbalancer#id DataIonoscloudNetworkloadbalancer#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.11/docs/data-sources/networkloadbalancer#id DataIonoscloudNetworkloadbalancer#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.10/docs/data-sources/networkloadbalancer#name DataIonoscloudNetworkloadbalancer#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.11/docs/data-sources/networkloadbalancer#name DataIonoscloudNetworkloadbalancer#name}
   */
   readonly name?: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.10/docs/data-sources/networkloadbalancer#timeouts DataIonoscloudNetworkloadbalancer#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.11/docs/data-sources/networkloadbalancer#timeouts DataIonoscloudNetworkloadbalancer#timeouts}
   */
   readonly timeouts?: DataIonoscloudNetworkloadbalancerTimeouts;
 }
+export interface DataIonoscloudNetworkloadbalancerFlowlog {
+}
+
+export function dataIonoscloudNetworkloadbalancerFlowlogToTerraform(struct?: DataIonoscloudNetworkloadbalancerFlowlog): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class DataIonoscloudNetworkloadbalancerFlowlogOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataIonoscloudNetworkloadbalancerFlowlog | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataIonoscloudNetworkloadbalancerFlowlog | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // action - computed: true, optional: false, required: false
+  public get action() {
+    return this.getStringAttribute('action');
+  }
+
+  // bucket - computed: true, optional: false, required: false
+  public get bucket() {
+    return this.getStringAttribute('bucket');
+  }
+
+  // direction - computed: true, optional: false, required: false
+  public get direction() {
+    return this.getStringAttribute('direction');
+  }
+
+  // id - computed: true, optional: false, required: false
+  public get id() {
+    return this.getStringAttribute('id');
+  }
+
+  // name - computed: true, optional: false, required: false
+  public get name() {
+    return this.getStringAttribute('name');
+  }
+}
+
+export class DataIonoscloudNetworkloadbalancerFlowlogList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataIonoscloudNetworkloadbalancerFlowlogOutputReference {
+    return new DataIonoscloudNetworkloadbalancerFlowlogOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface DataIonoscloudNetworkloadbalancerTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.10/docs/data-sources/networkloadbalancer#create DataIonoscloudNetworkloadbalancer#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.11/docs/data-sources/networkloadbalancer#create DataIonoscloudNetworkloadbalancer#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.10/docs/data-sources/networkloadbalancer#default DataIonoscloudNetworkloadbalancer#default}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.11/docs/data-sources/networkloadbalancer#default DataIonoscloudNetworkloadbalancer#default}
   */
   readonly default?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.10/docs/data-sources/networkloadbalancer#delete DataIonoscloudNetworkloadbalancer#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.11/docs/data-sources/networkloadbalancer#delete DataIonoscloudNetworkloadbalancer#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.10/docs/data-sources/networkloadbalancer#update DataIonoscloudNetworkloadbalancer#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.11/docs/data-sources/networkloadbalancer#update DataIonoscloudNetworkloadbalancer#update}
   */
   readonly update?: string;
 }
@@ -192,7 +276,7 @@ export class DataIonoscloudNetworkloadbalancerTimeoutsOutputReference extends cd
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.10/docs/data-sources/networkloadbalancer ionoscloud_networkloadbalancer}
+* Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.11/docs/data-sources/networkloadbalancer ionoscloud_networkloadbalancer}
 */
 export class DataIonoscloudNetworkloadbalancer extends cdktf.TerraformDataSource {
 
@@ -208,7 +292,7 @@ export class DataIonoscloudNetworkloadbalancer extends cdktf.TerraformDataSource
   * Generates CDKTF code for importing a DataIonoscloudNetworkloadbalancer resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataIonoscloudNetworkloadbalancer to import
-  * @param importFromId The id of the existing DataIonoscloudNetworkloadbalancer that should be imported. Refer to the {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.10/docs/data-sources/networkloadbalancer#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataIonoscloudNetworkloadbalancer that should be imported. Refer to the {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.11/docs/data-sources/networkloadbalancer#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataIonoscloudNetworkloadbalancer to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -220,7 +304,7 @@ export class DataIonoscloudNetworkloadbalancer extends cdktf.TerraformDataSource
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.10/docs/data-sources/networkloadbalancer ionoscloud_networkloadbalancer} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.11/docs/data-sources/networkloadbalancer ionoscloud_networkloadbalancer} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -231,7 +315,7 @@ export class DataIonoscloudNetworkloadbalancer extends cdktf.TerraformDataSource
       terraformResourceType: 'ionoscloud_networkloadbalancer',
       terraformGeneratorMetadata: {
         providerName: 'ionoscloud',
-        providerVersion: '6.4.10',
+        providerVersion: '6.4.11',
         providerVersionConstraint: '~> 6.2'
       },
       provider: config.provider,
@@ -263,6 +347,12 @@ export class DataIonoscloudNetworkloadbalancer extends cdktf.TerraformDataSource
   // Temporarily expose input value. Use with caution.
   public get datacenterIdInput() {
     return this._datacenterId;
+  }
+
+  // flowlog - computed: true, optional: false, required: false
+  private _flowlog = new DataIonoscloudNetworkloadbalancerFlowlogList(this, "flowlog", true);
+  public get flowlog() {
+    return this._flowlog;
   }
 
   // id - computed: false, optional: true, required: false
