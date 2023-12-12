@@ -3,6 +3,7 @@
 The following submodules are available:
 - [applicationLoadbalancer](./applicationLoadbalancer.csharp.md)
 - [applicationLoadbalancerForwardingrule](./applicationLoadbalancerForwardingrule.csharp.md)
+- [autoscalingGroup](./autoscalingGroup.csharp.md)
 - [backupUnit](./backupUnit.csharp.md)
 - [certificate](./certificate.csharp.md)
 - [containerRegistry](./containerRegistry.csharp.md)
@@ -10,6 +11,8 @@ The following submodules are available:
 - [cubeServer](./cubeServer.csharp.md)
 - [dataIonoscloudApplicationLoadbalancer](./dataIonoscloudApplicationLoadbalancer.csharp.md)
 - [dataIonoscloudApplicationLoadbalancerForwardingrule](./dataIonoscloudApplicationLoadbalancerForwardingrule.csharp.md)
+- [dataIonoscloudAutoscalingGroup](./dataIonoscloudAutoscalingGroup.csharp.md)
+- [dataIonoscloudAutoscalingGroupServers](./dataIonoscloudAutoscalingGroupServers.csharp.md)
 - [dataIonoscloudBackupUnit](./dataIonoscloudBackupUnit.csharp.md)
 - [dataIonoscloudCertificate](./dataIonoscloudCertificate.csharp.md)
 - [dataIonoscloudContainerRegistry](./dataIonoscloudContainerRegistry.csharp.md)
