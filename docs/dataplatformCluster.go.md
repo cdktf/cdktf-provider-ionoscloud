@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionosclo
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.dataplatformCluster.DataplatformCluster.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/dataplatformcluster"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v10/dataplatformcluster"
 
 dataplatformcluster.NewDataplatformCluster(scope Construct, id *string, config DataplatformClusterConfig) DataplatformCluster
 ```
@@ -425,7 +425,7 @@ func ResetVersion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-ionoscloud.dataplatformCluster.DataplatformCluster.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/dataplatformcluster"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v10/dataplatformcluster"
 
 dataplatformcluster.DataplatformCluster_IsConstruct(x interface{}) *bool
 ```
@@ -457,7 +457,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-ionoscloud.dataplatformCluster.DataplatformCluster.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/dataplatformcluster"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v10/dataplatformcluster"
 
 dataplatformcluster.DataplatformCluster_IsTerraformElement(x interface{}) *bool
 ```
@@ -471,7 +471,7 @@ dataplatformcluster.DataplatformCluster_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-ionoscloud.dataplatformCluster.DataplatformCluster.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/dataplatformcluster"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v10/dataplatformcluster"
 
 dataplatformcluster.DataplatformCluster_IsTerraformResource(x interface{}) *bool
 ```
@@ -485,7 +485,7 @@ dataplatformcluster.DataplatformCluster_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-ionoscloud.dataplatformCluster.DataplatformCluster.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/dataplatformcluster"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v10/dataplatformcluster"
 
 dataplatformcluster.DataplatformCluster_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -846,7 +846,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-ionoscloud.dataplatformCluster.DataplatformClusterConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/dataplatformcluster"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v10/dataplatformcluster"
 
 &dataplatformcluster.DataplatformClusterConfig {
 	Connection: interface{},
@@ -860,7 +860,7 @@ import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/dataplatformclu
 	Name: *string,
 	Id: *string,
 	MaintenanceWindow: interface{},
-	Timeouts: github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud.dataplatformCluster.DataplatformClusterTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v10.dataplatformCluster.DataplatformClusterTimeouts,
 	Version: *string,
 }
 ```
@@ -1047,7 +1047,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 #### Initializer <a name="Initializer" id="@cdktf/provider-ionoscloud.dataplatformCluster.DataplatformClusterMaintenanceWindow.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/dataplatformcluster"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v10/dataplatformcluster"
 
 &dataplatformcluster.DataplatformClusterMaintenanceWindow {
 	DayOfTheWeek: *string,
@@ -1095,7 +1095,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 #### Initializer <a name="Initializer" id="@cdktf/provider-ionoscloud.dataplatformCluster.DataplatformClusterTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/dataplatformcluster"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v10/dataplatformcluster"
 
 &dataplatformcluster.DataplatformClusterTimeouts {
 	Create: *string,
@@ -1171,7 +1171,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.dataplatformCluster.DataplatformClusterMaintenanceWindowList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/dataplatformcluster"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v10/dataplatformcluster"
 
 dataplatformcluster.NewDataplatformClusterMaintenanceWindowList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataplatformClusterMaintenanceWindowList
 ```
@@ -1314,7 +1314,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.dataplatformCluster.DataplatformClusterMaintenanceWindowOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/dataplatformcluster"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v10/dataplatformcluster"
 
 dataplatformcluster.NewDataplatformClusterMaintenanceWindowOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataplatformClusterMaintenanceWindowOutputReference
 ```
@@ -1625,7 +1625,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.dataplatformCluster.DataplatformClusterTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/dataplatformcluster"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v10/dataplatformcluster"
 
 dataplatformcluster.NewDataplatformClusterTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataplatformClusterTimeoutsOutputReference
 ```
