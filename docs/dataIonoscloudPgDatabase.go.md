@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionosclo
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.dataIonoscloudPgDatabase.DataIonoscloudPgDatabase.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/dataionoscloudpgdatabase"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v10/dataionoscloudpgdatabase"
 
 dataionoscloudpgdatabase.NewDataIonoscloudPgDatabase(scope Construct, id *string, config DataIonoscloudPgDatabaseConfig) DataIonoscloudPgDatabase
 ```
@@ -287,7 +287,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-ionoscloud.dataIonoscloudPgDatabase.DataIonoscloudPgDatabase.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/dataionoscloudpgdatabase"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v10/dataionoscloudpgdatabase"
 
 dataionoscloudpgdatabase.DataIonoscloudPgDatabase_IsConstruct(x interface{}) *bool
 ```
@@ -319,7 +319,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-ionoscloud.dataIonoscloudPgDatabase.DataIonoscloudPgDatabase.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/dataionoscloudpgdatabase"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v10/dataionoscloudpgdatabase"
 
 dataionoscloudpgdatabase.DataIonoscloudPgDatabase_IsTerraformElement(x interface{}) *bool
 ```
@@ -333,7 +333,7 @@ dataionoscloudpgdatabase.DataIonoscloudPgDatabase_IsTerraformElement(x interface
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-ionoscloud.dataIonoscloudPgDatabase.DataIonoscloudPgDatabase.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/dataionoscloudpgdatabase"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v10/dataionoscloudpgdatabase"
 
 dataionoscloudpgdatabase.DataIonoscloudPgDatabase_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -347,7 +347,7 @@ dataionoscloudpgdatabase.DataIonoscloudPgDatabase_IsTerraformDataSource(x interf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-ionoscloud.dataIonoscloudPgDatabase.DataIonoscloudPgDatabase.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/dataionoscloudpgdatabase"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v10/dataionoscloudpgdatabase"
 
 dataionoscloudpgdatabase.DataIonoscloudPgDatabase_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -642,7 +642,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-ionoscloud.dataIonoscloudPgDatabase.DataIonoscloudPgDatabaseConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/dataionoscloudpgdatabase"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v10/dataionoscloudpgdatabase"
 
 &dataionoscloudpgdatabase.DataIonoscloudPgDatabaseConfig {
 	Connection: interface{},
@@ -654,7 +654,7 @@ import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/dataionoscloudp
 	Provisioners: *[]interface{},
 	ClusterId: *string,
 	Name: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud.dataIonoscloudPgDatabase.DataIonoscloudPgDatabaseTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v10.dataIonoscloudPgDatabase.DataIonoscloudPgDatabaseTimeouts,
 }
 ```
 
@@ -788,7 +788,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 #### Initializer <a name="Initializer" id="@cdktf/provider-ionoscloud.dataIonoscloudPgDatabase.DataIonoscloudPgDatabaseTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/dataionoscloudpgdatabase"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v10/dataionoscloudpgdatabase"
 
 &dataionoscloudpgdatabase.DataIonoscloudPgDatabaseTimeouts {
 	Create: *string,
@@ -864,7 +864,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.dataIonoscloudPgDatabase.DataIonoscloudPgDatabaseTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/dataionoscloudpgdatabase"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v10/dataionoscloudpgdatabase"
 
 dataionoscloudpgdatabase.NewDataIonoscloudPgDatabaseTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataIonoscloudPgDatabaseTimeoutsOutputReference
 ```
