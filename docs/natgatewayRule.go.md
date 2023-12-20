@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionosclo
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.natgatewayRule.NatgatewayRule.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/natgatewayrule"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v10/natgatewayrule"
 
 natgatewayrule.NewNatgatewayRule(scope Construct, id *string, config NatgatewayRuleConfig) NatgatewayRule
 ```
@@ -439,7 +439,7 @@ func ResetType()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-ionoscloud.natgatewayRule.NatgatewayRule.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/natgatewayrule"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v10/natgatewayrule"
 
 natgatewayrule.NatgatewayRule_IsConstruct(x interface{}) *bool
 ```
@@ -471,7 +471,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-ionoscloud.natgatewayRule.NatgatewayRule.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/natgatewayrule"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v10/natgatewayrule"
 
 natgatewayrule.NatgatewayRule_IsTerraformElement(x interface{}) *bool
 ```
@@ -485,7 +485,7 @@ natgatewayrule.NatgatewayRule_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-ionoscloud.natgatewayRule.NatgatewayRule.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/natgatewayrule"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v10/natgatewayrule"
 
 natgatewayrule.NatgatewayRule_IsTerraformResource(x interface{}) *bool
 ```
@@ -499,7 +499,7 @@ natgatewayrule.NatgatewayRule_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-ionoscloud.natgatewayRule.NatgatewayRule.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/natgatewayrule"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v10/natgatewayrule"
 
 natgatewayrule.NatgatewayRule_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -970,7 +970,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-ionoscloud.natgatewayRule.NatgatewayRuleConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/natgatewayrule"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v10/natgatewayrule"
 
 &natgatewayrule.NatgatewayRuleConfig {
 	Connection: interface{},
@@ -987,9 +987,9 @@ import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/natgatewayrule"
 	SourceSubnet: *string,
 	Id: *string,
 	Protocol: *string,
-	TargetPortRange: github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud.natgatewayRule.NatgatewayRuleTargetPortRange,
+	TargetPortRange: github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v10.natgatewayRule.NatgatewayRuleTargetPortRange,
 	TargetSubnet: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud.natgatewayRule.NatgatewayRuleTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v10.natgatewayRule.NatgatewayRuleTimeouts,
 	Type: *string,
 }
 ```
@@ -1253,7 +1253,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 #### Initializer <a name="Initializer" id="@cdktf/provider-ionoscloud.natgatewayRule.NatgatewayRuleTargetPortRange.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/natgatewayrule"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v10/natgatewayrule"
 
 &natgatewayrule.NatgatewayRuleTargetPortRange {
 	End: *f64,
@@ -1303,7 +1303,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 #### Initializer <a name="Initializer" id="@cdktf/provider-ionoscloud.natgatewayRule.NatgatewayRuleTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/natgatewayrule"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v10/natgatewayrule"
 
 &natgatewayrule.NatgatewayRuleTimeouts {
 	Create: *string,
@@ -1379,7 +1379,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.natgatewayRule.NatgatewayRuleTargetPortRangeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/natgatewayrule"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v10/natgatewayrule"
 
 natgatewayrule.NewNatgatewayRuleTargetPortRangeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) NatgatewayRuleTargetPortRangeOutputReference
 ```
@@ -1686,7 +1686,7 @@ func InternalValue() NatgatewayRuleTargetPortRange
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.natgatewayRule.NatgatewayRuleTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/natgatewayrule"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v10/natgatewayrule"
 
 natgatewayrule.NewNatgatewayRuleTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) NatgatewayRuleTimeoutsOutputReference
 ```
