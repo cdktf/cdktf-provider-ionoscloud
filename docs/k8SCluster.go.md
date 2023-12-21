@@ -4,12 +4,12 @@
 
 ### K8SCluster <a name="K8SCluster" id="@cdktf/provider-ionoscloud.k8SCluster.K8SCluster"></a>
 
-Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.11/docs/resources/k8s_cluster ionoscloud_k8s_cluster}.
+Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.12/docs/resources/k8s_cluster ionoscloud_k8s_cluster}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.k8SCluster.K8SCluster.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v10/k8scluster"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/k8scluster"
 
 k8scluster.NewK8SCluster(scope Construct, id *string, config K8SClusterConfig) K8SCluster
 ```
@@ -75,10 +75,15 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-ionoscloud.k8SCluster.K8SCluster.putMaintenanceWindow">PutMaintenanceWindow</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.k8SCluster.K8SCluster.putS3Buckets">PutS3Buckets</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.k8SCluster.K8SCluster.putTimeouts">PutTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.k8SCluster.K8SCluster.resetAllowReplace">ResetAllowReplace</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.k8SCluster.K8SCluster.resetApiSubnetAllowList">ResetApiSubnetAllowList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.k8SCluster.K8SCluster.resetId">ResetId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.k8SCluster.K8SCluster.resetK8SVersion">ResetK8SVersion</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.k8SCluster.K8SCluster.resetLocation">ResetLocation</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.k8SCluster.K8SCluster.resetMaintenanceWindow">ResetMaintenanceWindow</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.k8SCluster.K8SCluster.resetNatGatewayIp">ResetNatGatewayIp</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.k8SCluster.K8SCluster.resetNodeSubnet">ResetNodeSubnet</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.k8SCluster.K8SCluster.resetPublic">ResetPublic</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.k8SCluster.K8SCluster.resetS3Buckets">ResetS3Buckets</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.k8SCluster.K8SCluster.resetTimeouts">ResetTimeouts</a></code> | *No description.* |
 
@@ -402,6 +407,12 @@ func PutTimeouts(value K8SClusterTimeouts)
 
 ---
 
+##### `ResetAllowReplace` <a name="ResetAllowReplace" id="@cdktf/provider-ionoscloud.k8SCluster.K8SCluster.resetAllowReplace"></a>
+
+```go
+func ResetAllowReplace()
+```
+
 ##### `ResetApiSubnetAllowList` <a name="ResetApiSubnetAllowList" id="@cdktf/provider-ionoscloud.k8SCluster.K8SCluster.resetApiSubnetAllowList"></a>
 
 ```go
@@ -420,10 +431,34 @@ func ResetId()
 func ResetK8SVersion()
 ```
 
+##### `ResetLocation` <a name="ResetLocation" id="@cdktf/provider-ionoscloud.k8SCluster.K8SCluster.resetLocation"></a>
+
+```go
+func ResetLocation()
+```
+
 ##### `ResetMaintenanceWindow` <a name="ResetMaintenanceWindow" id="@cdktf/provider-ionoscloud.k8SCluster.K8SCluster.resetMaintenanceWindow"></a>
 
 ```go
 func ResetMaintenanceWindow()
+```
+
+##### `ResetNatGatewayIp` <a name="ResetNatGatewayIp" id="@cdktf/provider-ionoscloud.k8SCluster.K8SCluster.resetNatGatewayIp"></a>
+
+```go
+func ResetNatGatewayIp()
+```
+
+##### `ResetNodeSubnet` <a name="ResetNodeSubnet" id="@cdktf/provider-ionoscloud.k8SCluster.K8SCluster.resetNodeSubnet"></a>
+
+```go
+func ResetNodeSubnet()
+```
+
+##### `ResetPublic` <a name="ResetPublic" id="@cdktf/provider-ionoscloud.k8SCluster.K8SCluster.resetPublic"></a>
+
+```go
+func ResetPublic()
 ```
 
 ##### `ResetS3Buckets` <a name="ResetS3Buckets" id="@cdktf/provider-ionoscloud.k8SCluster.K8SCluster.resetS3Buckets"></a>
@@ -452,7 +487,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-ionoscloud.k8SCluster.K8SCluster.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v10/k8scluster"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/k8scluster"
 
 k8scluster.K8SCluster_IsConstruct(x interface{}) *bool
 ```
@@ -484,7 +519,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-ionoscloud.k8SCluster.K8SCluster.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v10/k8scluster"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/k8scluster"
 
 k8scluster.K8SCluster_IsTerraformElement(x interface{}) *bool
 ```
@@ -498,7 +533,7 @@ k8scluster.K8SCluster_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-ionoscloud.k8SCluster.K8SCluster.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v10/k8scluster"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/k8scluster"
 
 k8scluster.K8SCluster_IsTerraformResource(x interface{}) *bool
 ```
@@ -512,7 +547,7 @@ k8scluster.K8SCluster_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-ionoscloud.k8SCluster.K8SCluster.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v10/k8scluster"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/k8scluster"
 
 k8scluster.K8SCluster_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -541,7 +576,7 @@ The construct id used in the generated config for the K8SCluster to import.
 
 The id of the existing K8SCluster that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.11/docs/resources/k8s_cluster#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.12/docs/resources/k8s_cluster#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -575,17 +610,27 @@ Refer to the {@link https://registry.terraform.io/providers/ionos-cloud/ionosclo
 | <code><a href="#@cdktf/provider-ionoscloud.k8SCluster.K8SCluster.property.s3Buckets">S3Buckets</a></code> | <code><a href="#@cdktf/provider-ionoscloud.k8SCluster.K8SClusterS3BucketsList">K8SClusterS3BucketsList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.k8SCluster.K8SCluster.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-ionoscloud.k8SCluster.K8SClusterTimeoutsOutputReference">K8SClusterTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.k8SCluster.K8SCluster.property.viableNodePoolVersions">ViableNodePoolVersions</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.k8SCluster.K8SCluster.property.allowReplaceInput">AllowReplaceInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.k8SCluster.K8SCluster.property.apiSubnetAllowListInput">ApiSubnetAllowListInput</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.k8SCluster.K8SCluster.property.idInput">IdInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.k8SCluster.K8SCluster.property.k8SVersionInput">K8SVersionInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.k8SCluster.K8SCluster.property.locationInput">LocationInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.k8SCluster.K8SCluster.property.maintenanceWindowInput">MaintenanceWindowInput</a></code> | <code><a href="#@cdktf/provider-ionoscloud.k8SCluster.K8SClusterMaintenanceWindow">K8SClusterMaintenanceWindow</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.k8SCluster.K8SCluster.property.nameInput">NameInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.k8SCluster.K8SCluster.property.natGatewayIpInput">NatGatewayIpInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.k8SCluster.K8SCluster.property.nodeSubnetInput">NodeSubnetInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.k8SCluster.K8SCluster.property.publicInput">PublicInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.k8SCluster.K8SCluster.property.s3BucketsInput">S3BucketsInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.k8SCluster.K8SCluster.property.timeoutsInput">TimeoutsInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.k8SCluster.K8SCluster.property.allowReplace">AllowReplace</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.k8SCluster.K8SCluster.property.apiSubnetAllowList">ApiSubnetAllowList</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.k8SCluster.K8SCluster.property.id">Id</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.k8SCluster.K8SCluster.property.k8SVersion">K8SVersion</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.k8SCluster.K8SCluster.property.location">Location</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.k8SCluster.K8SCluster.property.name">Name</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.k8SCluster.K8SCluster.property.natGatewayIp">NatGatewayIp</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.k8SCluster.K8SCluster.property.nodeSubnet">NodeSubnet</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.k8SCluster.K8SCluster.property.public">Public</a></code> | <code>interface{}</code> | *No description.* |
 
 ---
 
@@ -771,6 +816,16 @@ func ViableNodePoolVersions() *[]*string
 
 ---
 
+##### `AllowReplaceInput`<sup>Optional</sup> <a name="AllowReplaceInput" id="@cdktf/provider-ionoscloud.k8SCluster.K8SCluster.property.allowReplaceInput"></a>
+
+```go
+func AllowReplaceInput() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
 ##### `ApiSubnetAllowListInput`<sup>Optional</sup> <a name="ApiSubnetAllowListInput" id="@cdktf/provider-ionoscloud.k8SCluster.K8SCluster.property.apiSubnetAllowListInput"></a>
 
 ```go
@@ -801,6 +856,16 @@ func K8SVersionInput() *string
 
 ---
 
+##### `LocationInput`<sup>Optional</sup> <a name="LocationInput" id="@cdktf/provider-ionoscloud.k8SCluster.K8SCluster.property.locationInput"></a>
+
+```go
+func LocationInput() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `MaintenanceWindowInput`<sup>Optional</sup> <a name="MaintenanceWindowInput" id="@cdktf/provider-ionoscloud.k8SCluster.K8SCluster.property.maintenanceWindowInput"></a>
 
 ```go
@@ -821,6 +886,36 @@ func NameInput() *string
 
 ---
 
+##### `NatGatewayIpInput`<sup>Optional</sup> <a name="NatGatewayIpInput" id="@cdktf/provider-ionoscloud.k8SCluster.K8SCluster.property.natGatewayIpInput"></a>
+
+```go
+func NatGatewayIpInput() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `NodeSubnetInput`<sup>Optional</sup> <a name="NodeSubnetInput" id="@cdktf/provider-ionoscloud.k8SCluster.K8SCluster.property.nodeSubnetInput"></a>
+
+```go
+func NodeSubnetInput() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `PublicInput`<sup>Optional</sup> <a name="PublicInput" id="@cdktf/provider-ionoscloud.k8SCluster.K8SCluster.property.publicInput"></a>
+
+```go
+func PublicInput() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
 ##### `S3BucketsInput`<sup>Optional</sup> <a name="S3BucketsInput" id="@cdktf/provider-ionoscloud.k8SCluster.K8SCluster.property.s3BucketsInput"></a>
 
 ```go
@@ -835,6 +930,16 @@ func S3BucketsInput() interface{}
 
 ```go
 func TimeoutsInput() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
+##### `AllowReplace`<sup>Required</sup> <a name="AllowReplace" id="@cdktf/provider-ionoscloud.k8SCluster.K8SCluster.property.allowReplace"></a>
+
+```go
+func AllowReplace() interface{}
 ```
 
 - *Type:* interface{}
@@ -871,6 +976,16 @@ func K8SVersion() *string
 
 ---
 
+##### `Location`<sup>Required</sup> <a name="Location" id="@cdktf/provider-ionoscloud.k8SCluster.K8SCluster.property.location"></a>
+
+```go
+func Location() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `Name`<sup>Required</sup> <a name="Name" id="@cdktf/provider-ionoscloud.k8SCluster.K8SCluster.property.name"></a>
 
 ```go
@@ -878,6 +993,36 @@ func Name() *string
 ```
 
 - *Type:* *string
+
+---
+
+##### `NatGatewayIp`<sup>Required</sup> <a name="NatGatewayIp" id="@cdktf/provider-ionoscloud.k8SCluster.K8SCluster.property.natGatewayIp"></a>
+
+```go
+func NatGatewayIp() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `NodeSubnet`<sup>Required</sup> <a name="NodeSubnet" id="@cdktf/provider-ionoscloud.k8SCluster.K8SCluster.property.nodeSubnet"></a>
+
+```go
+func NodeSubnet() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `Public`<sup>Required</sup> <a name="Public" id="@cdktf/provider-ionoscloud.k8SCluster.K8SCluster.property.public"></a>
+
+```go
+func Public() interface{}
+```
+
+- *Type:* interface{}
 
 ---
 
@@ -906,7 +1051,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-ionoscloud.k8SCluster.K8SClusterConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v10/k8scluster"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/k8scluster"
 
 &k8scluster.K8SClusterConfig {
 	Connection: interface{},
@@ -917,12 +1062,17 @@ import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v10/k8scluster"
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
 	Name: *string,
+	AllowReplace: interface{},
 	ApiSubnetAllowList: *[]*string,
 	Id: *string,
 	K8SVersion: *string,
-	MaintenanceWindow: github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v10.k8SCluster.K8SClusterMaintenanceWindow,
+	Location: *string,
+	MaintenanceWindow: github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud.k8SCluster.K8SClusterMaintenanceWindow,
+	NatGatewayIp: *string,
+	NodeSubnet: *string,
+	Public: interface{},
 	S3Buckets: interface{},
-	Timeouts: github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v10.k8SCluster.K8SClusterTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud.k8SCluster.K8SClusterTimeouts,
 }
 ```
 
@@ -938,10 +1088,15 @@ import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v10/k8scluster"
 | <code><a href="#@cdktf/provider-ionoscloud.k8SCluster.K8SClusterConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.k8SCluster.K8SClusterConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.k8SCluster.K8SClusterConfig.property.name">Name</a></code> | <code>*string</code> | The desired name for the cluster. |
+| <code><a href="#@cdktf/provider-ionoscloud.k8SCluster.K8SClusterConfig.property.allowReplace">AllowReplace</a></code> | <code>interface{}</code> | When set to true, allows the update of immutable fields by destroying and re-creating the cluster. |
 | <code><a href="#@cdktf/provider-ionoscloud.k8SCluster.K8SClusterConfig.property.apiSubnetAllowList">ApiSubnetAllowList</a></code> | <code>*[]*string</code> | Access to the K8s API server is restricted to these CIDRs. |
-| <code><a href="#@cdktf/provider-ionoscloud.k8SCluster.K8SClusterConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.11/docs/resources/k8s_cluster#id K8SCluster#id}. |
+| <code><a href="#@cdktf/provider-ionoscloud.k8SCluster.K8SClusterConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.12/docs/resources/k8s_cluster#id K8SCluster#id}. |
 | <code><a href="#@cdktf/provider-ionoscloud.k8SCluster.K8SClusterConfig.property.k8SVersion">K8SVersion</a></code> | <code>*string</code> | The desired Kubernetes Version. |
+| <code><a href="#@cdktf/provider-ionoscloud.k8SCluster.K8SClusterConfig.property.location">Location</a></code> | <code>*string</code> | This attribute is mandatory if the cluster is private. |
 | <code><a href="#@cdktf/provider-ionoscloud.k8SCluster.K8SClusterConfig.property.maintenanceWindow">MaintenanceWindow</a></code> | <code><a href="#@cdktf/provider-ionoscloud.k8SCluster.K8SClusterMaintenanceWindow">K8SClusterMaintenanceWindow</a></code> | maintenance_window block. |
+| <code><a href="#@cdktf/provider-ionoscloud.k8SCluster.K8SClusterConfig.property.natGatewayIp">NatGatewayIp</a></code> | <code>*string</code> | The NAT gateway IP of the cluster if the cluster is private. |
+| <code><a href="#@cdktf/provider-ionoscloud.k8SCluster.K8SClusterConfig.property.nodeSubnet">NodeSubnet</a></code> | <code>*string</code> | The node subnet of the cluster, if the cluster is private. |
+| <code><a href="#@cdktf/provider-ionoscloud.k8SCluster.K8SClusterConfig.property.public">Public</a></code> | <code>interface{}</code> | The indicator if the cluster is public or private. |
 | <code><a href="#@cdktf/provider-ionoscloud.k8SCluster.K8SClusterConfig.property.s3Buckets">S3Buckets</a></code> | <code>interface{}</code> | s3_buckets block. |
 | <code><a href="#@cdktf/provider-ionoscloud.k8SCluster.K8SClusterConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-ionoscloud.k8SCluster.K8SClusterTimeouts">K8SClusterTimeouts</a></code> | timeouts block. |
 
@@ -1027,7 +1182,21 @@ Name *string
 
 The desired name for the cluster.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.11/docs/resources/k8s_cluster#name K8SCluster#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.12/docs/resources/k8s_cluster#name K8SCluster#name}
+
+---
+
+##### `AllowReplace`<sup>Optional</sup> <a name="AllowReplace" id="@cdktf/provider-ionoscloud.k8SCluster.K8SClusterConfig.property.allowReplace"></a>
+
+```go
+AllowReplace interface{}
+```
+
+- *Type:* interface{}
+
+When set to true, allows the update of immutable fields by destroying and re-creating the cluster.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.12/docs/resources/k8s_cluster#allow_replace K8SCluster#allow_replace}
 
 ---
 
@@ -1043,7 +1212,7 @@ Access to the K8s API server is restricted to these CIDRs.
 
 Cluster-internal traffic is not affected by this restriction. If no allowlist is specified, access is not restricted. If an IP without subnet mask is provided, the default value will be used: 32 for IPv4 and 128 for IPv6.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.11/docs/resources/k8s_cluster#api_subnet_allow_list K8SCluster#api_subnet_allow_list}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.12/docs/resources/k8s_cluster#api_subnet_allow_list K8SCluster#api_subnet_allow_list}
 
 ---
 
@@ -1055,7 +1224,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.11/docs/resources/k8s_cluster#id K8SCluster#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.12/docs/resources/k8s_cluster#id K8SCluster#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1074,7 +1243,23 @@ The desired Kubernetes Version.
 
 For supported values, please check the API documentation. Downgrades are not supported. The provider will ignore downgrades of patch level.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.11/docs/resources/k8s_cluster#k8s_version K8SCluster#k8s_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.12/docs/resources/k8s_cluster#k8s_version K8SCluster#k8s_version}
+
+---
+
+##### `Location`<sup>Optional</sup> <a name="Location" id="@cdktf/provider-ionoscloud.k8SCluster.K8SClusterConfig.property.location"></a>
+
+```go
+Location *string
+```
+
+- *Type:* *string
+
+This attribute is mandatory if the cluster is private.
+
+The location must be enabled for your contract, or you must have a data center at that location. This attribute is immutable.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.12/docs/resources/k8s_cluster#location K8SCluster#location}
 
 ---
 
@@ -1088,7 +1273,53 @@ MaintenanceWindow K8SClusterMaintenanceWindow
 
 maintenance_window block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.11/docs/resources/k8s_cluster#maintenance_window K8SCluster#maintenance_window}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.12/docs/resources/k8s_cluster#maintenance_window K8SCluster#maintenance_window}
+
+---
+
+##### `NatGatewayIp`<sup>Optional</sup> <a name="NatGatewayIp" id="@cdktf/provider-ionoscloud.k8SCluster.K8SClusterConfig.property.natGatewayIp"></a>
+
+```go
+NatGatewayIp *string
+```
+
+- *Type:* *string
+
+The NAT gateway IP of the cluster if the cluster is private.
+
+This attribute is immutable. Must be a reserved IP in the same location as the cluster's location. This attribute is mandatory if the cluster is private.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.12/docs/resources/k8s_cluster#nat_gateway_ip K8SCluster#nat_gateway_ip}
+
+---
+
+##### `NodeSubnet`<sup>Optional</sup> <a name="NodeSubnet" id="@cdktf/provider-ionoscloud.k8SCluster.K8SClusterConfig.property.nodeSubnet"></a>
+
+```go
+NodeSubnet *string
+```
+
+- *Type:* *string
+
+The node subnet of the cluster, if the cluster is private.
+
+This attribute is optional and immutable. Must be a valid CIDR notation for an IPv4 network prefix of 16 bits length.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.12/docs/resources/k8s_cluster#node_subnet K8SCluster#node_subnet}
+
+---
+
+##### `Public`<sup>Optional</sup> <a name="Public" id="@cdktf/provider-ionoscloud.k8SCluster.K8SClusterConfig.property.public"></a>
+
+```go
+Public interface{}
+```
+
+- *Type:* interface{}
+
+The indicator if the cluster is public or private.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.12/docs/resources/k8s_cluster#public K8SCluster#public}
 
 ---
 
@@ -1102,7 +1333,7 @@ S3Buckets interface{}
 
 s3_buckets block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.11/docs/resources/k8s_cluster#s3_buckets K8SCluster#s3_buckets}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.12/docs/resources/k8s_cluster#s3_buckets K8SCluster#s3_buckets}
 
 ---
 
@@ -1116,7 +1347,7 @@ Timeouts K8SClusterTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.11/docs/resources/k8s_cluster#timeouts K8SCluster#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.12/docs/resources/k8s_cluster#timeouts K8SCluster#timeouts}
 
 ---
 
@@ -1125,7 +1356,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 #### Initializer <a name="Initializer" id="@cdktf/provider-ionoscloud.k8SCluster.K8SClusterMaintenanceWindow.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v10/k8scluster"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/k8scluster"
 
 &k8scluster.K8SClusterMaintenanceWindow {
 	DayOfTheWeek: *string,
@@ -1152,7 +1383,7 @@ DayOfTheWeek *string
 
 Day of the week when maintenance is allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.11/docs/resources/k8s_cluster#day_of_the_week K8SCluster#day_of_the_week}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.12/docs/resources/k8s_cluster#day_of_the_week K8SCluster#day_of_the_week}
 
 ---
 
@@ -1166,7 +1397,7 @@ Time *string
 
 A clock time in the day when maintenance is allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.11/docs/resources/k8s_cluster#time K8SCluster#time}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.12/docs/resources/k8s_cluster#time K8SCluster#time}
 
 ---
 
@@ -1175,7 +1406,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 #### Initializer <a name="Initializer" id="@cdktf/provider-ionoscloud.k8SCluster.K8SClusterS3Buckets.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v10/k8scluster"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/k8scluster"
 
 &k8scluster.K8SClusterS3Buckets {
 	Name: *string,
@@ -1200,7 +1431,7 @@ Name *string
 
 Name of the S3 bucket.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.11/docs/resources/k8s_cluster#name K8SCluster#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.12/docs/resources/k8s_cluster#name K8SCluster#name}
 
 ---
 
@@ -1209,7 +1440,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 #### Initializer <a name="Initializer" id="@cdktf/provider-ionoscloud.k8SCluster.K8SClusterTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v10/k8scluster"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/k8scluster"
 
 &k8scluster.K8SClusterTimeouts {
 	Create: *string,
@@ -1223,10 +1454,10 @@ import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v10/k8scluster"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-ionoscloud.k8SCluster.K8SClusterTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.11/docs/resources/k8s_cluster#create K8SCluster#create}. |
-| <code><a href="#@cdktf/provider-ionoscloud.k8SCluster.K8SClusterTimeouts.property.default">Default</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.11/docs/resources/k8s_cluster#default K8SCluster#default}. |
-| <code><a href="#@cdktf/provider-ionoscloud.k8SCluster.K8SClusterTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.11/docs/resources/k8s_cluster#delete K8SCluster#delete}. |
-| <code><a href="#@cdktf/provider-ionoscloud.k8SCluster.K8SClusterTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.11/docs/resources/k8s_cluster#update K8SCluster#update}. |
+| <code><a href="#@cdktf/provider-ionoscloud.k8SCluster.K8SClusterTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.12/docs/resources/k8s_cluster#create K8SCluster#create}. |
+| <code><a href="#@cdktf/provider-ionoscloud.k8SCluster.K8SClusterTimeouts.property.default">Default</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.12/docs/resources/k8s_cluster#default K8SCluster#default}. |
+| <code><a href="#@cdktf/provider-ionoscloud.k8SCluster.K8SClusterTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.12/docs/resources/k8s_cluster#delete K8SCluster#delete}. |
+| <code><a href="#@cdktf/provider-ionoscloud.k8SCluster.K8SClusterTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.12/docs/resources/k8s_cluster#update K8SCluster#update}. |
 
 ---
 
@@ -1238,7 +1469,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.11/docs/resources/k8s_cluster#create K8SCluster#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.12/docs/resources/k8s_cluster#create K8SCluster#create}.
 
 ---
 
@@ -1250,7 +1481,7 @@ Default *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.11/docs/resources/k8s_cluster#default K8SCluster#default}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.12/docs/resources/k8s_cluster#default K8SCluster#default}.
 
 ---
 
@@ -1262,7 +1493,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.11/docs/resources/k8s_cluster#delete K8SCluster#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.12/docs/resources/k8s_cluster#delete K8SCluster#delete}.
 
 ---
 
@@ -1274,7 +1505,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.11/docs/resources/k8s_cluster#update K8SCluster#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.12/docs/resources/k8s_cluster#update K8SCluster#update}.
 
 ---
 
@@ -1285,7 +1516,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.k8SCluster.K8SClusterMaintenanceWindowOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v10/k8scluster"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/k8scluster"
 
 k8scluster.NewK8SClusterMaintenanceWindowOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) K8SClusterMaintenanceWindowOutputReference
 ```
@@ -1578,7 +1809,7 @@ func InternalValue() K8SClusterMaintenanceWindow
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.k8SCluster.K8SClusterS3BucketsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v10/k8scluster"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/k8scluster"
 
 k8scluster.NewK8SClusterS3BucketsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) K8SClusterS3BucketsList
 ```
@@ -1721,7 +1952,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.k8SCluster.K8SClusterS3BucketsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v10/k8scluster"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/k8scluster"
 
 k8scluster.NewK8SClusterS3BucketsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) K8SClusterS3BucketsOutputReference
 ```
@@ -2017,7 +2248,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.k8SCluster.K8SClusterTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v10/k8scluster"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/k8scluster"
 
 k8scluster.NewK8SClusterTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) K8SClusterTimeoutsOutputReference
 ```

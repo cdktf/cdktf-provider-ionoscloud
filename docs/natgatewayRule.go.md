@@ -4,12 +4,12 @@
 
 ### NatgatewayRule <a name="NatgatewayRule" id="@cdktf/provider-ionoscloud.natgatewayRule.NatgatewayRule"></a>
 
-Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.11/docs/resources/natgateway_rule ionoscloud_natgateway_rule}.
+Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.12/docs/resources/natgateway_rule ionoscloud_natgateway_rule}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.natgatewayRule.NatgatewayRule.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v10/natgatewayrule"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/natgatewayrule"
 
 natgatewayrule.NewNatgatewayRule(scope Construct, id *string, config NatgatewayRuleConfig) NatgatewayRule
 ```
@@ -439,7 +439,7 @@ func ResetType()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-ionoscloud.natgatewayRule.NatgatewayRule.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v10/natgatewayrule"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/natgatewayrule"
 
 natgatewayrule.NatgatewayRule_IsConstruct(x interface{}) *bool
 ```
@@ -471,7 +471,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-ionoscloud.natgatewayRule.NatgatewayRule.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v10/natgatewayrule"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/natgatewayrule"
 
 natgatewayrule.NatgatewayRule_IsTerraformElement(x interface{}) *bool
 ```
@@ -485,7 +485,7 @@ natgatewayrule.NatgatewayRule_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-ionoscloud.natgatewayRule.NatgatewayRule.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v10/natgatewayrule"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/natgatewayrule"
 
 natgatewayrule.NatgatewayRule_IsTerraformResource(x interface{}) *bool
 ```
@@ -499,7 +499,7 @@ natgatewayrule.NatgatewayRule_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-ionoscloud.natgatewayRule.NatgatewayRule.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v10/natgatewayrule"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/natgatewayrule"
 
 natgatewayrule.NatgatewayRule_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -528,7 +528,7 @@ The construct id used in the generated config for the NatgatewayRule to import.
 
 The id of the existing NatgatewayRule that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.11/docs/resources/natgateway_rule#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.12/docs/resources/natgateway_rule#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -970,7 +970,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-ionoscloud.natgatewayRule.NatgatewayRuleConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v10/natgatewayrule"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/natgatewayrule"
 
 &natgatewayrule.NatgatewayRuleConfig {
 	Connection: interface{},
@@ -987,9 +987,9 @@ import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v10/natgatewayr
 	SourceSubnet: *string,
 	Id: *string,
 	Protocol: *string,
-	TargetPortRange: github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v10.natgatewayRule.NatgatewayRuleTargetPortRange,
+	TargetPortRange: github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud.natgatewayRule.NatgatewayRuleTargetPortRange,
 	TargetSubnet: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v10.natgatewayRule.NatgatewayRuleTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud.natgatewayRule.NatgatewayRuleTimeouts,
 	Type: *string,
 }
 ```
@@ -1005,12 +1005,12 @@ import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v10/natgatewayr
 | <code><a href="#@cdktf/provider-ionoscloud.natgatewayRule.NatgatewayRuleConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.natgatewayRule.NatgatewayRuleConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.natgatewayRule.NatgatewayRuleConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-ionoscloud.natgatewayRule.NatgatewayRuleConfig.property.datacenterId">DatacenterId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.11/docs/resources/natgateway_rule#datacenter_id NatgatewayRule#datacenter_id}. |
+| <code><a href="#@cdktf/provider-ionoscloud.natgatewayRule.NatgatewayRuleConfig.property.datacenterId">DatacenterId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.12/docs/resources/natgateway_rule#datacenter_id NatgatewayRule#datacenter_id}. |
 | <code><a href="#@cdktf/provider-ionoscloud.natgatewayRule.NatgatewayRuleConfig.property.name">Name</a></code> | <code>*string</code> | Name of the NAT gateway rule. |
-| <code><a href="#@cdktf/provider-ionoscloud.natgatewayRule.NatgatewayRuleConfig.property.natgatewayId">NatgatewayId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.11/docs/resources/natgateway_rule#natgateway_id NatgatewayRule#natgateway_id}. |
+| <code><a href="#@cdktf/provider-ionoscloud.natgatewayRule.NatgatewayRuleConfig.property.natgatewayId">NatgatewayId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.12/docs/resources/natgateway_rule#natgateway_id NatgatewayRule#natgateway_id}. |
 | <code><a href="#@cdktf/provider-ionoscloud.natgatewayRule.NatgatewayRuleConfig.property.publicIp">PublicIp</a></code> | <code>*string</code> | Public IP address of the NAT gateway rule. |
 | <code><a href="#@cdktf/provider-ionoscloud.natgatewayRule.NatgatewayRuleConfig.property.sourceSubnet">SourceSubnet</a></code> | <code>*string</code> | Source subnet of the NAT gateway rule. |
-| <code><a href="#@cdktf/provider-ionoscloud.natgatewayRule.NatgatewayRuleConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.11/docs/resources/natgateway_rule#id NatgatewayRule#id}. |
+| <code><a href="#@cdktf/provider-ionoscloud.natgatewayRule.NatgatewayRuleConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.12/docs/resources/natgateway_rule#id NatgatewayRule#id}. |
 | <code><a href="#@cdktf/provider-ionoscloud.natgatewayRule.NatgatewayRuleConfig.property.protocol">Protocol</a></code> | <code>*string</code> | Protocol of the NAT gateway rule. |
 | <code><a href="#@cdktf/provider-ionoscloud.natgatewayRule.NatgatewayRuleConfig.property.targetPortRange">TargetPortRange</a></code> | <code><a href="#@cdktf/provider-ionoscloud.natgatewayRule.NatgatewayRuleTargetPortRange">NatgatewayRuleTargetPortRange</a></code> | target_port_range block. |
 | <code><a href="#@cdktf/provider-ionoscloud.natgatewayRule.NatgatewayRuleConfig.property.targetSubnet">TargetSubnet</a></code> | <code>*string</code> | Target or destination subnet of the NAT gateway rule. |
@@ -1097,7 +1097,7 @@ DatacenterId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.11/docs/resources/natgateway_rule#datacenter_id NatgatewayRule#datacenter_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.12/docs/resources/natgateway_rule#datacenter_id NatgatewayRule#datacenter_id}.
 
 ---
 
@@ -1111,7 +1111,7 @@ Name *string
 
 Name of the NAT gateway rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.11/docs/resources/natgateway_rule#name NatgatewayRule#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.12/docs/resources/natgateway_rule#name NatgatewayRule#name}
 
 ---
 
@@ -1123,7 +1123,7 @@ NatgatewayId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.11/docs/resources/natgateway_rule#natgateway_id NatgatewayRule#natgateway_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.12/docs/resources/natgateway_rule#natgateway_id NatgatewayRule#natgateway_id}.
 
 ---
 
@@ -1139,7 +1139,7 @@ Public IP address of the NAT gateway rule.
 
 Specifies the address used for masking outgoing packets source address field. Should be one of the customer reserved IP address already configured on the NAT gateway resource
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.11/docs/resources/natgateway_rule#public_ip NatgatewayRule#public_ip}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.12/docs/resources/natgateway_rule#public_ip NatgatewayRule#public_ip}
 
 ---
 
@@ -1155,7 +1155,7 @@ Source subnet of the NAT gateway rule.
 
 For SNAT rules it specifies which packets this translation rule applies to based on the packets source IP address.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.11/docs/resources/natgateway_rule#source_subnet NatgatewayRule#source_subnet}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.12/docs/resources/natgateway_rule#source_subnet NatgatewayRule#source_subnet}
 
 ---
 
@@ -1167,7 +1167,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.11/docs/resources/natgateway_rule#id NatgatewayRule#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.12/docs/resources/natgateway_rule#id NatgatewayRule#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1186,7 +1186,7 @@ Protocol of the NAT gateway rule.
 
 Defaults to ALL. If protocol is 'ICMP' then targetPortRange start and end cannot be set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.11/docs/resources/natgateway_rule#protocol NatgatewayRule#protocol}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.12/docs/resources/natgateway_rule#protocol NatgatewayRule#protocol}
 
 ---
 
@@ -1200,7 +1200,7 @@ TargetPortRange NatgatewayRuleTargetPortRange
 
 target_port_range block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.11/docs/resources/natgateway_rule#target_port_range NatgatewayRule#target_port_range}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.12/docs/resources/natgateway_rule#target_port_range NatgatewayRule#target_port_range}
 
 ---
 
@@ -1216,7 +1216,7 @@ Target or destination subnet of the NAT gateway rule.
 
 For SNAT rules it specifies which packets this translation rule applies to based on the packets destination IP address. If none is provided, rule will match any address.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.11/docs/resources/natgateway_rule#target_subnet NatgatewayRule#target_subnet}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.12/docs/resources/natgateway_rule#target_subnet NatgatewayRule#target_subnet}
 
 ---
 
@@ -1230,7 +1230,7 @@ Timeouts NatgatewayRuleTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.11/docs/resources/natgateway_rule#timeouts NatgatewayRule#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.12/docs/resources/natgateway_rule#timeouts NatgatewayRule#timeouts}
 
 ---
 
@@ -1244,7 +1244,7 @@ Type *string
 
 Type of the NAT gateway rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.11/docs/resources/natgateway_rule#type NatgatewayRule#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.12/docs/resources/natgateway_rule#type NatgatewayRule#type}
 
 ---
 
@@ -1253,7 +1253,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 #### Initializer <a name="Initializer" id="@cdktf/provider-ionoscloud.natgatewayRule.NatgatewayRuleTargetPortRange.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v10/natgatewayrule"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/natgatewayrule"
 
 &natgatewayrule.NatgatewayRuleTargetPortRange {
 	End: *f64,
@@ -1280,7 +1280,7 @@ End *f64
 
 Target port range end associated with the NAT gateway rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.11/docs/resources/natgateway_rule#end NatgatewayRule#end}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.12/docs/resources/natgateway_rule#end NatgatewayRule#end}
 
 ---
 
@@ -1294,7 +1294,7 @@ Start *f64
 
 Target port range start associated with the NAT gateway rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.11/docs/resources/natgateway_rule#start NatgatewayRule#start}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.12/docs/resources/natgateway_rule#start NatgatewayRule#start}
 
 ---
 
@@ -1303,7 +1303,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 #### Initializer <a name="Initializer" id="@cdktf/provider-ionoscloud.natgatewayRule.NatgatewayRuleTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v10/natgatewayrule"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/natgatewayrule"
 
 &natgatewayrule.NatgatewayRuleTimeouts {
 	Create: *string,
@@ -1317,10 +1317,10 @@ import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v10/natgatewayr
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-ionoscloud.natgatewayRule.NatgatewayRuleTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.11/docs/resources/natgateway_rule#create NatgatewayRule#create}. |
-| <code><a href="#@cdktf/provider-ionoscloud.natgatewayRule.NatgatewayRuleTimeouts.property.default">Default</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.11/docs/resources/natgateway_rule#default NatgatewayRule#default}. |
-| <code><a href="#@cdktf/provider-ionoscloud.natgatewayRule.NatgatewayRuleTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.11/docs/resources/natgateway_rule#delete NatgatewayRule#delete}. |
-| <code><a href="#@cdktf/provider-ionoscloud.natgatewayRule.NatgatewayRuleTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.11/docs/resources/natgateway_rule#update NatgatewayRule#update}. |
+| <code><a href="#@cdktf/provider-ionoscloud.natgatewayRule.NatgatewayRuleTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.12/docs/resources/natgateway_rule#create NatgatewayRule#create}. |
+| <code><a href="#@cdktf/provider-ionoscloud.natgatewayRule.NatgatewayRuleTimeouts.property.default">Default</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.12/docs/resources/natgateway_rule#default NatgatewayRule#default}. |
+| <code><a href="#@cdktf/provider-ionoscloud.natgatewayRule.NatgatewayRuleTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.12/docs/resources/natgateway_rule#delete NatgatewayRule#delete}. |
+| <code><a href="#@cdktf/provider-ionoscloud.natgatewayRule.NatgatewayRuleTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.12/docs/resources/natgateway_rule#update NatgatewayRule#update}. |
 
 ---
 
@@ -1332,7 +1332,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.11/docs/resources/natgateway_rule#create NatgatewayRule#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.12/docs/resources/natgateway_rule#create NatgatewayRule#create}.
 
 ---
 
@@ -1344,7 +1344,7 @@ Default *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.11/docs/resources/natgateway_rule#default NatgatewayRule#default}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.12/docs/resources/natgateway_rule#default NatgatewayRule#default}.
 
 ---
 
@@ -1356,7 +1356,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.11/docs/resources/natgateway_rule#delete NatgatewayRule#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.12/docs/resources/natgateway_rule#delete NatgatewayRule#delete}.
 
 ---
 
@@ -1368,7 +1368,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.11/docs/resources/natgateway_rule#update NatgatewayRule#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.12/docs/resources/natgateway_rule#update NatgatewayRule#update}.
 
 ---
 
@@ -1379,7 +1379,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.natgatewayRule.NatgatewayRuleTargetPortRangeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v10/natgatewayrule"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/natgatewayrule"
 
 natgatewayrule.NewNatgatewayRuleTargetPortRangeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) NatgatewayRuleTargetPortRangeOutputReference
 ```
@@ -1686,7 +1686,7 @@ func InternalValue() NatgatewayRuleTargetPortRange
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.natgatewayRule.NatgatewayRuleTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v10/natgatewayrule"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/natgatewayrule"
 
 natgatewayrule.NewNatgatewayRuleTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) NatgatewayRuleTimeoutsOutputReference
 ```

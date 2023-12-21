@@ -91,6 +91,7 @@ The following submodules are available:
 - [provider](./provider.csharp.md)
 - [s3Key](./s3Key.csharp.md)
 - [server](./server.csharp.md)
+- [serverBootDeviceSelection](./serverBootDeviceSelection.csharp.md)
 - [share](./share.csharp.md)
 - [snapshot](./snapshot.csharp.md)
 - [targetGroup](./targetGroup.csharp.md)

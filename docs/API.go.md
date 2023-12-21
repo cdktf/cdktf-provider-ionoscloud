@@ -91,6 +91,7 @@ The following submodules are available:
 - [provider](./provider.go.md)
 - [s3Key](./s3Key.go.md)
 - [server](./server.go.md)
+- [serverBootDeviceSelection](./serverBootDeviceSelection.go.md)
 - [share](./share.go.md)
 - [snapshot](./snapshot.go.md)
 - [targetGroup](./targetGroup.go.md)
