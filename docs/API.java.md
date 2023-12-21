@@ -91,6 +91,7 @@ The following submodules are available:
 - [provider](./provider.java.md)
 - [s3Key](./s3Key.java.md)
 - [server](./server.java.md)
+- [serverBootDeviceSelection](./serverBootDeviceSelection.java.md)
 - [share](./share.java.md)
 - [snapshot](./snapshot.java.md)
 - [targetGroup](./targetGroup.java.md)

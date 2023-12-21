@@ -39,6 +39,7 @@ export * as pgUser from './pg-user';
 export * as privateCrossconnect from './private-crossconnect';
 export * as s3Key from './s3-key';
 export * as server from './server';
+export * as serverBootDeviceSelection from './server-boot-device-selection';
 export * as share from './share';
 export * as snapshot from './snapshot';
 export * as targetGroup from './target-group';

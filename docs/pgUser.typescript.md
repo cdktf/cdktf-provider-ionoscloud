@@ -4,7 +4,7 @@
 
 ### PgUser <a name="PgUser" id="@cdktf/provider-ionoscloud.pgUser.PgUser"></a>
 
-Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.11/docs/resources/pg_user ionoscloud_pg_user}.
+Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.12/docs/resources/pg_user ionoscloud_pg_user}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.pgUser.PgUser.Initializer"></a>
 
@@ -74,7 +74,6 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-ionoscloud.pgUser.PgUser.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktf/provider-ionoscloud.pgUser.PgUser.putTimeouts">putTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.pgUser.PgUser.resetId">resetId</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-ionoscloud.pgUser.PgUser.resetIsSystemUser">resetIsSystemUser</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.pgUser.PgUser.resetTimeouts">resetTimeouts</a></code> | *No description.* |
 
 ---
@@ -379,12 +378,6 @@ public putTimeouts(value: PgUserTimeouts): void
 public resetId(): void
 ```
 
-##### `resetIsSystemUser` <a name="resetIsSystemUser" id="@cdktf/provider-ionoscloud.pgUser.PgUser.resetIsSystemUser"></a>
-
-```typescript
-public resetIsSystemUser(): void
-```
-
 ##### `resetTimeouts` <a name="resetTimeouts" id="@cdktf/provider-ionoscloud.pgUser.PgUser.resetTimeouts"></a>
 
 ```typescript
@@ -494,7 +487,7 @@ The construct id used in the generated config for the PgUser to import.
 
 The id of the existing PgUser that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.11/docs/resources/pg_user#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.12/docs/resources/pg_user#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -524,16 +517,15 @@ Refer to the {@link https://registry.terraform.io/providers/ionos-cloud/ionosclo
 | <code><a href="#@cdktf/provider-ionoscloud.pgUser.PgUser.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.pgUser.PgUser.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.pgUser.PgUser.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.pgUser.PgUser.property.isSystemUser">isSystemUser</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.pgUser.PgUser.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-ionoscloud.pgUser.PgUserTimeoutsOutputReference">PgUserTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.pgUser.PgUser.property.clusterIdInput">clusterIdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.pgUser.PgUser.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-ionoscloud.pgUser.PgUser.property.isSystemUserInput">isSystemUserInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.pgUser.PgUser.property.passwordInput">passwordInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.pgUser.PgUser.property.timeoutsInput">timeoutsInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-ionoscloud.pgUser.PgUserTimeouts">PgUserTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.pgUser.PgUser.property.usernameInput">usernameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.pgUser.PgUser.property.clusterId">clusterId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.pgUser.PgUser.property.id">id</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-ionoscloud.pgUser.PgUser.property.isSystemUser">isSystemUser</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.pgUser.PgUser.property.password">password</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.pgUser.PgUser.property.username">username</a></code> | <code>string</code> | *No description.* |
 
@@ -681,6 +673,16 @@ public readonly provisioners: FileProvisioner | LocalExecProvisioner | RemoteExe
 
 ---
 
+##### `isSystemUser`<sup>Required</sup> <a name="isSystemUser" id="@cdktf/provider-ionoscloud.pgUser.PgUser.property.isSystemUser"></a>
+
+```typescript
+public readonly isSystemUser: IResolvable;
+```
+
+- *Type:* cdktf.IResolvable
+
+---
+
 ##### `timeouts`<sup>Required</sup> <a name="timeouts" id="@cdktf/provider-ionoscloud.pgUser.PgUser.property.timeouts"></a>
 
 ```typescript
@@ -708,16 +710,6 @@ public readonly idInput: string;
 ```
 
 - *Type:* string
-
----
-
-##### `isSystemUserInput`<sup>Optional</sup> <a name="isSystemUserInput" id="@cdktf/provider-ionoscloud.pgUser.PgUser.property.isSystemUserInput"></a>
-
-```typescript
-public readonly isSystemUserInput: boolean | IResolvable;
-```
-
-- *Type:* boolean | cdktf.IResolvable
 
 ---
 
@@ -768,16 +760,6 @@ public readonly id: string;
 ```
 
 - *Type:* string
-
----
-
-##### `isSystemUser`<sup>Required</sup> <a name="isSystemUser" id="@cdktf/provider-ionoscloud.pgUser.PgUser.property.isSystemUser"></a>
-
-```typescript
-public readonly isSystemUser: boolean | IResolvable;
-```
-
-- *Type:* boolean | cdktf.IResolvable
 
 ---
 
@@ -842,11 +824,10 @@ const pgUserConfig: pgUser.PgUserConfig = { ... }
 | <code><a href="#@cdktf/provider-ionoscloud.pgUser.PgUserConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.pgUser.PgUserConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.pgUser.PgUserConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-ionoscloud.pgUser.PgUserConfig.property.clusterId">clusterId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.11/docs/resources/pg_user#cluster_id PgUser#cluster_id}. |
-| <code><a href="#@cdktf/provider-ionoscloud.pgUser.PgUserConfig.property.password">password</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.11/docs/resources/pg_user#password PgUser#password}. |
-| <code><a href="#@cdktf/provider-ionoscloud.pgUser.PgUserConfig.property.username">username</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.11/docs/resources/pg_user#username PgUser#username}. |
-| <code><a href="#@cdktf/provider-ionoscloud.pgUser.PgUserConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.11/docs/resources/pg_user#id PgUser#id}. |
-| <code><a href="#@cdktf/provider-ionoscloud.pgUser.PgUserConfig.property.isSystemUser">isSystemUser</a></code> | <code>boolean \| cdktf.IResolvable</code> | Describes whether this user is a system user or not. A system user cannot be updated or deleted. |
+| <code><a href="#@cdktf/provider-ionoscloud.pgUser.PgUserConfig.property.clusterId">clusterId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.12/docs/resources/pg_user#cluster_id PgUser#cluster_id}. |
+| <code><a href="#@cdktf/provider-ionoscloud.pgUser.PgUserConfig.property.password">password</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.12/docs/resources/pg_user#password PgUser#password}. |
+| <code><a href="#@cdktf/provider-ionoscloud.pgUser.PgUserConfig.property.username">username</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.12/docs/resources/pg_user#username PgUser#username}. |
+| <code><a href="#@cdktf/provider-ionoscloud.pgUser.PgUserConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.12/docs/resources/pg_user#id PgUser#id}. |
 | <code><a href="#@cdktf/provider-ionoscloud.pgUser.PgUserConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-ionoscloud.pgUser.PgUserTimeouts">PgUserTimeouts</a></code> | timeouts block. |
 
 ---
@@ -929,7 +910,7 @@ public readonly clusterId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.11/docs/resources/pg_user#cluster_id PgUser#cluster_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.12/docs/resources/pg_user#cluster_id PgUser#cluster_id}.
 
 ---
 
@@ -941,7 +922,7 @@ public readonly password: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.11/docs/resources/pg_user#password PgUser#password}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.12/docs/resources/pg_user#password PgUser#password}.
 
 ---
 
@@ -953,7 +934,7 @@ public readonly username: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.11/docs/resources/pg_user#username PgUser#username}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.12/docs/resources/pg_user#username PgUser#username}.
 
 ---
 
@@ -965,24 +946,10 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.11/docs/resources/pg_user#id PgUser#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.12/docs/resources/pg_user#id PgUser#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
-
----
-
-##### `isSystemUser`<sup>Optional</sup> <a name="isSystemUser" id="@cdktf/provider-ionoscloud.pgUser.PgUserConfig.property.isSystemUser"></a>
-
-```typescript
-public readonly isSystemUser: boolean | IResolvable;
-```
-
-- *Type:* boolean | cdktf.IResolvable
-
-Describes whether this user is a system user or not. A system user cannot be updated or deleted.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.11/docs/resources/pg_user#is_system_user PgUser#is_system_user}
 
 ---
 
@@ -996,7 +963,7 @@ public readonly timeouts: PgUserTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.11/docs/resources/pg_user#timeouts PgUser#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.12/docs/resources/pg_user#timeouts PgUser#timeouts}
 
 ---
 
@@ -1014,10 +981,10 @@ const pgUserTimeouts: pgUser.PgUserTimeouts = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-ionoscloud.pgUser.PgUserTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.11/docs/resources/pg_user#create PgUser#create}. |
-| <code><a href="#@cdktf/provider-ionoscloud.pgUser.PgUserTimeouts.property.default">default</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.11/docs/resources/pg_user#default PgUser#default}. |
-| <code><a href="#@cdktf/provider-ionoscloud.pgUser.PgUserTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.11/docs/resources/pg_user#delete PgUser#delete}. |
-| <code><a href="#@cdktf/provider-ionoscloud.pgUser.PgUserTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.11/docs/resources/pg_user#update PgUser#update}. |
+| <code><a href="#@cdktf/provider-ionoscloud.pgUser.PgUserTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.12/docs/resources/pg_user#create PgUser#create}. |
+| <code><a href="#@cdktf/provider-ionoscloud.pgUser.PgUserTimeouts.property.default">default</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.12/docs/resources/pg_user#default PgUser#default}. |
+| <code><a href="#@cdktf/provider-ionoscloud.pgUser.PgUserTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.12/docs/resources/pg_user#delete PgUser#delete}. |
+| <code><a href="#@cdktf/provider-ionoscloud.pgUser.PgUserTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.12/docs/resources/pg_user#update PgUser#update}. |
 
 ---
 
@@ -1029,7 +996,7 @@ public readonly create: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.11/docs/resources/pg_user#create PgUser#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.12/docs/resources/pg_user#create PgUser#create}.
 
 ---
 
@@ -1041,7 +1008,7 @@ public readonly default: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.11/docs/resources/pg_user#default PgUser#default}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.12/docs/resources/pg_user#default PgUser#default}.
 
 ---
 
@@ -1053,7 +1020,7 @@ public readonly delete: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.11/docs/resources/pg_user#delete PgUser#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.12/docs/resources/pg_user#delete PgUser#delete}.
 
 ---
 
@@ -1065,7 +1032,7 @@ public readonly update: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.11/docs/resources/pg_user#update PgUser#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.12/docs/resources/pg_user#update PgUser#update}.
 
 ---
 

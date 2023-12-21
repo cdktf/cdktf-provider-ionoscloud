@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.11/docs/resources/k8s_cluster
+// https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.12/docs/resources/k8s_cluster
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,13 +13,19 @@ import * as cdktf from 'cdktf';
 
 export interface K8SClusterConfig extends cdktf.TerraformMetaArguments {
   /**
+  * When set to true, allows the update of immutable fields by destroying and re-creating the cluster.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.12/docs/resources/k8s_cluster#allow_replace K8SCluster#allow_replace}
+  */
+  readonly allowReplace?: boolean | cdktf.IResolvable;
+  /**
   * Access to the K8s API server is restricted to these CIDRs. Cluster-internal traffic is not affected by this restriction. If no allowlist is specified, access is not restricted. If an IP without subnet mask is provided, the default value will be used: 32 for IPv4 and 128 for IPv6.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.11/docs/resources/k8s_cluster#api_subnet_allow_list K8SCluster#api_subnet_allow_list}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.12/docs/resources/k8s_cluster#api_subnet_allow_list K8SCluster#api_subnet_allow_list}
   */
   readonly apiSubnetAllowList?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.11/docs/resources/k8s_cluster#id K8SCluster#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.12/docs/resources/k8s_cluster#id K8SCluster#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -28,31 +34,55 @@ export interface K8SClusterConfig extends cdktf.TerraformMetaArguments {
   /**
   * The desired Kubernetes Version. For supported values, please check the API documentation. Downgrades are not supported. The provider will ignore downgrades of patch level.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.11/docs/resources/k8s_cluster#k8s_version K8SCluster#k8s_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.12/docs/resources/k8s_cluster#k8s_version K8SCluster#k8s_version}
   */
   readonly k8SVersion?: string;
   /**
+  * This attribute is mandatory if the cluster is private. The location must be enabled for your contract, or you must have a data center at that location. This attribute is immutable.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.12/docs/resources/k8s_cluster#location K8SCluster#location}
+  */
+  readonly location?: string;
+  /**
   * The desired name for the cluster
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.11/docs/resources/k8s_cluster#name K8SCluster#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.12/docs/resources/k8s_cluster#name K8SCluster#name}
   */
   readonly name: string;
   /**
+  * The NAT gateway IP of the cluster if the cluster is private. This attribute is immutable. Must be a reserved IP in the same location as the cluster's location. This attribute is mandatory if the cluster is private.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.12/docs/resources/k8s_cluster#nat_gateway_ip K8SCluster#nat_gateway_ip}
+  */
+  readonly natGatewayIp?: string;
+  /**
+  * The node subnet of the cluster, if the cluster is private. This attribute is optional and immutable. Must be a valid CIDR notation for an IPv4 network prefix of 16 bits length.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.12/docs/resources/k8s_cluster#node_subnet K8SCluster#node_subnet}
+  */
+  readonly nodeSubnet?: string;
+  /**
+  * The indicator if the cluster is public or private.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.12/docs/resources/k8s_cluster#public K8SCluster#public}
+  */
+  readonly public?: boolean | cdktf.IResolvable;
+  /**
   * maintenance_window block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.11/docs/resources/k8s_cluster#maintenance_window K8SCluster#maintenance_window}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.12/docs/resources/k8s_cluster#maintenance_window K8SCluster#maintenance_window}
   */
   readonly maintenanceWindow?: K8SClusterMaintenanceWindow;
   /**
   * s3_buckets block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.11/docs/resources/k8s_cluster#s3_buckets K8SCluster#s3_buckets}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.12/docs/resources/k8s_cluster#s3_buckets K8SCluster#s3_buckets}
   */
   readonly s3Buckets?: K8SClusterS3Buckets[] | cdktf.IResolvable;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.11/docs/resources/k8s_cluster#timeouts K8SCluster#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.12/docs/resources/k8s_cluster#timeouts K8SCluster#timeouts}
   */
   readonly timeouts?: K8SClusterTimeouts;
 }
@@ -60,13 +90,13 @@ export interface K8SClusterMaintenanceWindow {
   /**
   * Day of the week when maintenance is allowed
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.11/docs/resources/k8s_cluster#day_of_the_week K8SCluster#day_of_the_week}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.12/docs/resources/k8s_cluster#day_of_the_week K8SCluster#day_of_the_week}
   */
   readonly dayOfTheWeek: string;
   /**
   * A clock time in the day when maintenance is allowed
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.11/docs/resources/k8s_cluster#time K8SCluster#time}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.12/docs/resources/k8s_cluster#time K8SCluster#time}
   */
   readonly time: string;
 }
@@ -150,7 +180,7 @@ export interface K8SClusterS3Buckets {
   /**
   * Name of the S3 bucket
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.11/docs/resources/k8s_cluster#name K8SCluster#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.12/docs/resources/k8s_cluster#name K8SCluster#name}
   */
   readonly name?: string;
 }
@@ -247,19 +277,19 @@ export class K8SClusterS3BucketsList extends cdktf.ComplexList {
 }
 export interface K8SClusterTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.11/docs/resources/k8s_cluster#create K8SCluster#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.12/docs/resources/k8s_cluster#create K8SCluster#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.11/docs/resources/k8s_cluster#default K8SCluster#default}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.12/docs/resources/k8s_cluster#default K8SCluster#default}
   */
   readonly default?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.11/docs/resources/k8s_cluster#delete K8SCluster#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.12/docs/resources/k8s_cluster#delete K8SCluster#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.11/docs/resources/k8s_cluster#update K8SCluster#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.12/docs/resources/k8s_cluster#update K8SCluster#update}
   */
   readonly update?: string;
 }
@@ -403,7 +433,7 @@ export class K8SClusterTimeoutsOutputReference extends cdktf.ComplexObject {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.11/docs/resources/k8s_cluster ionoscloud_k8s_cluster}
+* Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.12/docs/resources/k8s_cluster ionoscloud_k8s_cluster}
 */
 export class K8SCluster extends cdktf.TerraformResource {
 
@@ -419,7 +449,7 @@ export class K8SCluster extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a K8SCluster resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the K8SCluster to import
-  * @param importFromId The id of the existing K8SCluster that should be imported. Refer to the {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.11/docs/resources/k8s_cluster#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing K8SCluster that should be imported. Refer to the {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.12/docs/resources/k8s_cluster#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the K8SCluster to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -431,7 +461,7 @@ export class K8SCluster extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.11/docs/resources/k8s_cluster ionoscloud_k8s_cluster} Resource
+  * Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.12/docs/resources/k8s_cluster ionoscloud_k8s_cluster} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -442,7 +472,7 @@ export class K8SCluster extends cdktf.TerraformResource {
       terraformResourceType: 'ionoscloud_k8s_cluster',
       terraformGeneratorMetadata: {
         providerName: 'ionoscloud',
-        providerVersion: '6.4.11',
+        providerVersion: '6.4.12',
         providerVersionConstraint: '~> 6.2'
       },
       provider: config.provider,
@@ -453,10 +483,15 @@ export class K8SCluster extends cdktf.TerraformResource {
       connection: config.connection,
       forEach: config.forEach
     });
+    this._allowReplace = config.allowReplace;
     this._apiSubnetAllowList = config.apiSubnetAllowList;
     this._id = config.id;
     this._k8SVersion = config.k8SVersion;
+    this._location = config.location;
     this._name = config.name;
+    this._natGatewayIp = config.natGatewayIp;
+    this._nodeSubnet = config.nodeSubnet;
+    this._public = config.public;
     this._maintenanceWindow.internalValue = config.maintenanceWindow;
     this._s3Buckets.internalValue = config.s3Buckets;
     this._timeouts.internalValue = config.timeouts;
@@ -465,6 +500,22 @@ export class K8SCluster extends cdktf.TerraformResource {
   // ==========
   // ATTRIBUTES
   // ==========
+
+  // allow_replace - computed: false, optional: true, required: false
+  private _allowReplace?: boolean | cdktf.IResolvable; 
+  public get allowReplace() {
+    return this.getBooleanAttribute('allow_replace');
+  }
+  public set allowReplace(value: boolean | cdktf.IResolvable) {
+    this._allowReplace = value;
+  }
+  public resetAllowReplace() {
+    this._allowReplace = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get allowReplaceInput() {
+    return this._allowReplace;
+  }
 
   // api_subnet_allow_list - computed: false, optional: true, required: false
   private _apiSubnetAllowList?: string[]; 
@@ -514,6 +565,22 @@ export class K8SCluster extends cdktf.TerraformResource {
     return this._k8SVersion;
   }
 
+  // location - computed: false, optional: true, required: false
+  private _location?: string; 
+  public get location() {
+    return this.getStringAttribute('location');
+  }
+  public set location(value: string) {
+    this._location = value;
+  }
+  public resetLocation() {
+    this._location = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get locationInput() {
+    return this._location;
+  }
+
   // name - computed: false, optional: false, required: true
   private _name?: string; 
   public get name() {
@@ -525,6 +592,54 @@ export class K8SCluster extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get nameInput() {
     return this._name;
+  }
+
+  // nat_gateway_ip - computed: false, optional: true, required: false
+  private _natGatewayIp?: string; 
+  public get natGatewayIp() {
+    return this.getStringAttribute('nat_gateway_ip');
+  }
+  public set natGatewayIp(value: string) {
+    this._natGatewayIp = value;
+  }
+  public resetNatGatewayIp() {
+    this._natGatewayIp = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get natGatewayIpInput() {
+    return this._natGatewayIp;
+  }
+
+  // node_subnet - computed: true, optional: true, required: false
+  private _nodeSubnet?: string; 
+  public get nodeSubnet() {
+    return this.getStringAttribute('node_subnet');
+  }
+  public set nodeSubnet(value: string) {
+    this._nodeSubnet = value;
+  }
+  public resetNodeSubnet() {
+    this._nodeSubnet = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nodeSubnetInput() {
+    return this._nodeSubnet;
+  }
+
+  // public - computed: false, optional: true, required: false
+  private _public?: boolean | cdktf.IResolvable; 
+  public get public() {
+    return this.getBooleanAttribute('public');
+  }
+  public set public(value: boolean | cdktf.IResolvable) {
+    this._public = value;
+  }
+  public resetPublic() {
+    this._public = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get publicInput() {
+    return this._public;
   }
 
   // viable_node_pool_versions - computed: true, optional: false, required: false
@@ -586,10 +701,15 @@ export class K8SCluster extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
+      allow_replace: cdktf.booleanToTerraform(this._allowReplace),
       api_subnet_allow_list: cdktf.listMapper(cdktf.stringToTerraform, false)(this._apiSubnetAllowList),
       id: cdktf.stringToTerraform(this._id),
       k8s_version: cdktf.stringToTerraform(this._k8SVersion),
+      location: cdktf.stringToTerraform(this._location),
       name: cdktf.stringToTerraform(this._name),
+      nat_gateway_ip: cdktf.stringToTerraform(this._natGatewayIp),
+      node_subnet: cdktf.stringToTerraform(this._nodeSubnet),
+      public: cdktf.booleanToTerraform(this._public),
       maintenance_window: k8SClusterMaintenanceWindowToTerraform(this._maintenanceWindow.internalValue),
       s3_buckets: cdktf.listMapper(k8SClusterS3BucketsToTerraform, true)(this._s3Buckets.internalValue),
       timeouts: k8SClusterTimeoutsToTerraform(this._timeouts.internalValue),

@@ -91,6 +91,7 @@ The following submodules are available:
 - [provider](./provider.python.md)
 - [s3Key](./s3Key.python.md)
 - [server](./server.python.md)
+- [serverBootDeviceSelection](./serverBootDeviceSelection.python.md)
 - [share](./share.python.md)
 - [snapshot](./snapshot.python.md)
 - [targetGroup](./targetGroup.python.md)

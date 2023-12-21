@@ -39,6 +39,7 @@ Object.defineProperty(exports, 'pgUser', { get: function () { return require('./
 Object.defineProperty(exports, 'privateCrossconnect', { get: function () { return require('./private-crossconnect'); } });
 Object.defineProperty(exports, 's3Key', { get: function () { return require('./s3-key'); } });
 Object.defineProperty(exports, 'server', { get: function () { return require('./server'); } });
+Object.defineProperty(exports, 'serverBootDeviceSelection', { get: function () { return require('./server-boot-device-selection'); } });
 Object.defineProperty(exports, 'share', { get: function () { return require('./share'); } });
 Object.defineProperty(exports, 'snapshot', { get: function () { return require('./snapshot'); } });
 Object.defineProperty(exports, 'targetGroup', { get: function () { return require('./target-group'); } });

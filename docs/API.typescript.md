@@ -91,6 +91,7 @@ The following submodules are available:
 - [provider](./provider.typescript.md)
 - [s3Key](./s3Key.typescript.md)
 - [server](./server.typescript.md)
+- [serverBootDeviceSelection](./serverBootDeviceSelection.typescript.md)
 - [share](./share.typescript.md)
 - [snapshot](./snapshot.typescript.md)
 - [targetGroup](./targetGroup.typescript.md)

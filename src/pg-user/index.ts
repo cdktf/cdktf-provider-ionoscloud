@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.11/docs/resources/pg_user
+// https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.12/docs/resources/pg_user
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,52 +13,46 @@ import * as cdktf from 'cdktf';
 
 export interface PgUserConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.11/docs/resources/pg_user#cluster_id PgUser#cluster_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.12/docs/resources/pg_user#cluster_id PgUser#cluster_id}
   */
   readonly clusterId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.11/docs/resources/pg_user#id PgUser#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.12/docs/resources/pg_user#id PgUser#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Describes whether this user is a system user or not. A system user cannot be updated or deleted.
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.11/docs/resources/pg_user#is_system_user PgUser#is_system_user}
-  */
-  readonly isSystemUser?: boolean | cdktf.IResolvable;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.11/docs/resources/pg_user#password PgUser#password}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.12/docs/resources/pg_user#password PgUser#password}
   */
   readonly password: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.11/docs/resources/pg_user#username PgUser#username}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.12/docs/resources/pg_user#username PgUser#username}
   */
   readonly username: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.11/docs/resources/pg_user#timeouts PgUser#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.12/docs/resources/pg_user#timeouts PgUser#timeouts}
   */
   readonly timeouts?: PgUserTimeouts;
 }
 export interface PgUserTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.11/docs/resources/pg_user#create PgUser#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.12/docs/resources/pg_user#create PgUser#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.11/docs/resources/pg_user#default PgUser#default}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.12/docs/resources/pg_user#default PgUser#default}
   */
   readonly default?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.11/docs/resources/pg_user#delete PgUser#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.12/docs/resources/pg_user#delete PgUser#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.11/docs/resources/pg_user#update PgUser#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.12/docs/resources/pg_user#update PgUser#update}
   */
   readonly update?: string;
 }
@@ -202,7 +196,7 @@ export class PgUserTimeoutsOutputReference extends cdktf.ComplexObject {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.11/docs/resources/pg_user ionoscloud_pg_user}
+* Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.12/docs/resources/pg_user ionoscloud_pg_user}
 */
 export class PgUser extends cdktf.TerraformResource {
 
@@ -218,7 +212,7 @@ export class PgUser extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a PgUser resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the PgUser to import
-  * @param importFromId The id of the existing PgUser that should be imported. Refer to the {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.11/docs/resources/pg_user#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing PgUser that should be imported. Refer to the {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.12/docs/resources/pg_user#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the PgUser to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -230,7 +224,7 @@ export class PgUser extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.11/docs/resources/pg_user ionoscloud_pg_user} Resource
+  * Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.12/docs/resources/pg_user ionoscloud_pg_user} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -241,7 +235,7 @@ export class PgUser extends cdktf.TerraformResource {
       terraformResourceType: 'ionoscloud_pg_user',
       terraformGeneratorMetadata: {
         providerName: 'ionoscloud',
-        providerVersion: '6.4.11',
+        providerVersion: '6.4.12',
         providerVersionConstraint: '~> 6.2'
       },
       provider: config.provider,
@@ -254,7 +248,6 @@ export class PgUser extends cdktf.TerraformResource {
     });
     this._clusterId = config.clusterId;
     this._id = config.id;
-    this._isSystemUser = config.isSystemUser;
     this._password = config.password;
     this._username = config.username;
     this._timeouts.internalValue = config.timeouts;
@@ -293,20 +286,9 @@ export class PgUser extends cdktf.TerraformResource {
     return this._id;
   }
 
-  // is_system_user - computed: true, optional: true, required: false
-  private _isSystemUser?: boolean | cdktf.IResolvable; 
+  // is_system_user - computed: true, optional: false, required: false
   public get isSystemUser() {
     return this.getBooleanAttribute('is_system_user');
-  }
-  public set isSystemUser(value: boolean | cdktf.IResolvable) {
-    this._isSystemUser = value;
-  }
-  public resetIsSystemUser() {
-    this._isSystemUser = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get isSystemUserInput() {
-    return this._isSystemUser;
   }
 
   // password - computed: false, optional: false, required: true
@@ -359,7 +341,6 @@ export class PgUser extends cdktf.TerraformResource {
     return {
       cluster_id: cdktf.stringToTerraform(this._clusterId),
       id: cdktf.stringToTerraform(this._id),
-      is_system_user: cdktf.booleanToTerraform(this._isSystemUser),
       password: cdktf.stringToTerraform(this._password),
       username: cdktf.stringToTerraform(this._username),
       timeouts: pgUserTimeoutsToTerraform(this._timeouts.internalValue),
