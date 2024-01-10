@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.12/docs/resources/pg_cluster
 // generated from terraform resource schema
 
@@ -147,6 +142,37 @@ export function pgClusterConnectionsToTerraform(struct?: PgClusterConnectionsOut
   }
 }
 
+
+export function pgClusterConnectionsToHclTerraform(struct?: PgClusterConnectionsOutputReference | PgClusterConnections): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    cidr: {
+      value: cdktf.stringToHclTerraform(struct!.cidr),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    datacenter_id: {
+      value: cdktf.stringToHclTerraform(struct!.datacenterId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    lan_id: {
+      value: cdktf.stringToHclTerraform(struct!.lanId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class PgClusterConnectionsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -254,6 +280,31 @@ export function pgClusterCredentialsToTerraform(struct?: PgClusterCredentialsOut
   }
 }
 
+
+export function pgClusterCredentialsToHclTerraform(struct?: PgClusterCredentialsOutputReference | PgClusterCredentials): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    password: {
+      value: cdktf.stringToHclTerraform(struct!.password),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    username: {
+      value: cdktf.stringToHclTerraform(struct!.username),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class PgClusterCredentialsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -344,6 +395,31 @@ export function pgClusterFromBackupToTerraform(struct?: PgClusterFromBackupOutpu
   }
 }
 
+
+export function pgClusterFromBackupToHclTerraform(struct?: PgClusterFromBackupOutputReference | PgClusterFromBackup): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    backup_id: {
+      value: cdktf.stringToHclTerraform(struct!.backupId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    recovery_target_time: {
+      value: cdktf.stringToHclTerraform(struct!.recoveryTargetTime),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class PgClusterFromBackupOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -431,6 +507,31 @@ export function pgClusterMaintenanceWindowToTerraform(struct?: PgClusterMaintena
     day_of_the_week: cdktf.stringToTerraform(struct!.dayOfTheWeek),
     time: cdktf.stringToTerraform(struct!.time),
   }
+}
+
+
+export function pgClusterMaintenanceWindowToHclTerraform(struct?: PgClusterMaintenanceWindowOutputReference | PgClusterMaintenanceWindow): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    day_of_the_week: {
+      value: cdktf.stringToHclTerraform(struct!.dayOfTheWeek),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    time: {
+      value: cdktf.stringToHclTerraform(struct!.time),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class PgClusterMaintenanceWindowOutputReference extends cdktf.ComplexObject {
@@ -527,6 +628,43 @@ export function pgClusterTimeoutsToTerraform(struct?: PgClusterTimeouts | cdktf.
     delete: cdktf.stringToTerraform(struct!.delete),
     update: cdktf.stringToTerraform(struct!.update),
   }
+}
+
+
+export function pgClusterTimeoutsToHclTerraform(struct?: PgClusterTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    create: {
+      value: cdktf.stringToHclTerraform(struct!.create),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    default: {
+      value: cdktf.stringToHclTerraform(struct!.default),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    delete: {
+      value: cdktf.stringToHclTerraform(struct!.delete),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    update: {
+      value: cdktf.stringToHclTerraform(struct!.update),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class PgClusterTimeoutsOutputReference extends cdktf.ComplexObject {
@@ -981,5 +1119,109 @@ export class PgCluster extends cdktf.TerraformResource {
       maintenance_window: pgClusterMaintenanceWindowToTerraform(this._maintenanceWindow.internalValue),
       timeouts: pgClusterTimeoutsToTerraform(this._timeouts.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      backup_location: {
+        value: cdktf.stringToHclTerraform(this._backupLocation),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      cores: {
+        value: cdktf.numberToHclTerraform(this._cores),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      display_name: {
+        value: cdktf.stringToHclTerraform(this._displayName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      instances: {
+        value: cdktf.numberToHclTerraform(this._instances),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      location: {
+        value: cdktf.stringToHclTerraform(this._location),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      postgres_version: {
+        value: cdktf.stringToHclTerraform(this._postgresVersion),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      ram: {
+        value: cdktf.numberToHclTerraform(this._ram),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      storage_size: {
+        value: cdktf.numberToHclTerraform(this._storageSize),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      storage_type: {
+        value: cdktf.stringToHclTerraform(this._storageType),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      synchronization_mode: {
+        value: cdktf.stringToHclTerraform(this._synchronizationMode),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      connections: {
+        value: pgClusterConnectionsToHclTerraform(this._connections.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "PgClusterConnectionsList",
+      },
+      credentials: {
+        value: pgClusterCredentialsToHclTerraform(this._credentials.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "PgClusterCredentialsList",
+      },
+      from_backup: {
+        value: pgClusterFromBackupToHclTerraform(this._fromBackup.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "PgClusterFromBackupList",
+      },
+      maintenance_window: {
+        value: pgClusterMaintenanceWindowToHclTerraform(this._maintenanceWindow.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "PgClusterMaintenanceWindowList",
+      },
+      timeouts: {
+        value: pgClusterTimeoutsToHclTerraform(this._timeouts.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "PgClusterTimeouts",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.12/docs/resources/k8s_cluster
 // generated from terraform resource schema
 
@@ -112,6 +107,31 @@ export function k8SClusterMaintenanceWindowToTerraform(struct?: K8SClusterMainte
   }
 }
 
+
+export function k8SClusterMaintenanceWindowToHclTerraform(struct?: K8SClusterMaintenanceWindowOutputReference | K8SClusterMaintenanceWindow): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    day_of_the_week: {
+      value: cdktf.stringToHclTerraform(struct!.dayOfTheWeek),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    time: {
+      value: cdktf.stringToHclTerraform(struct!.time),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class K8SClusterMaintenanceWindowOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -193,6 +213,25 @@ export function k8SClusterS3BucketsToTerraform(struct?: K8SClusterS3Buckets | cd
   return {
     name: cdktf.stringToTerraform(struct!.name),
   }
+}
+
+
+export function k8SClusterS3BucketsToHclTerraform(struct?: K8SClusterS3Buckets | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class K8SClusterS3BucketsOutputReference extends cdktf.ComplexObject {
@@ -305,6 +344,43 @@ export function k8SClusterTimeoutsToTerraform(struct?: K8SClusterTimeouts | cdkt
     delete: cdktf.stringToTerraform(struct!.delete),
     update: cdktf.stringToTerraform(struct!.update),
   }
+}
+
+
+export function k8SClusterTimeoutsToHclTerraform(struct?: K8SClusterTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    create: {
+      value: cdktf.stringToHclTerraform(struct!.create),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    default: {
+      value: cdktf.stringToHclTerraform(struct!.default),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    delete: {
+      value: cdktf.stringToHclTerraform(struct!.delete),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    update: {
+      value: cdktf.stringToHclTerraform(struct!.update),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class K8SClusterTimeoutsOutputReference extends cdktf.ComplexObject {
@@ -714,5 +790,85 @@ export class K8SCluster extends cdktf.TerraformResource {
       s3_buckets: cdktf.listMapper(k8SClusterS3BucketsToTerraform, true)(this._s3Buckets.internalValue),
       timeouts: k8SClusterTimeoutsToTerraform(this._timeouts.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      allow_replace: {
+        value: cdktf.booleanToHclTerraform(this._allowReplace),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      api_subnet_allow_list: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._apiSubnetAllowList),
+        isBlock: false,
+        type: "list",
+        storageClassType: "stringList",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      k8s_version: {
+        value: cdktf.stringToHclTerraform(this._k8SVersion),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      location: {
+        value: cdktf.stringToHclTerraform(this._location),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      nat_gateway_ip: {
+        value: cdktf.stringToHclTerraform(this._natGatewayIp),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      node_subnet: {
+        value: cdktf.stringToHclTerraform(this._nodeSubnet),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      public: {
+        value: cdktf.booleanToHclTerraform(this._public),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      maintenance_window: {
+        value: k8SClusterMaintenanceWindowToHclTerraform(this._maintenanceWindow.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "K8SClusterMaintenanceWindowList",
+      },
+      s3_buckets: {
+        value: cdktf.listMapperHcl(k8SClusterS3BucketsToHclTerraform, true)(this._s3Buckets.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "K8SClusterS3BucketsList",
+      },
+      timeouts: {
+        value: k8SClusterTimeoutsToHclTerraform(this._timeouts.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "K8SClusterTimeouts",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

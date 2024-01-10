@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionosclo
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.ipblock.Ipblock.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v10/ipblock"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/ipblock"
 
 ipblock.NewIpblock(scope Construct, id *string, config IpblockConfig) Ipblock
 ```
@@ -54,6 +54,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-ionoscloud.ipblock.Ipblock.addOverride">AddOverride</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.ipblock.Ipblock.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
 | <code><a href="#@cdktf/provider-ionoscloud.ipblock.Ipblock.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-ionoscloud.ipblock.Ipblock.toHclTerraform">ToHclTerraform</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.ipblock.Ipblock.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.ipblock.Ipblock.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-ionoscloud.ipblock.Ipblock.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
@@ -130,6 +131,12 @@ func ResetOverrideLogicalId()
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-ionoscloud.ipblock.Ipblock.toHclTerraform"></a>
+
+```go
+func ToHclTerraform() interface{}
+```
 
 ##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-ionoscloud.ipblock.Ipblock.toMetadata"></a>
 
@@ -425,7 +432,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-ionoscloud.ipblock.Ipblock.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v10/ipblock"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/ipblock"
 
 ipblock.Ipblock_IsConstruct(x interface{}) *bool
 ```
@@ -457,7 +464,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-ionoscloud.ipblock.Ipblock.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v10/ipblock"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/ipblock"
 
 ipblock.Ipblock_IsTerraformElement(x interface{}) *bool
 ```
@@ -471,7 +478,7 @@ ipblock.Ipblock_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-ionoscloud.ipblock.Ipblock.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v10/ipblock"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/ipblock"
 
 ipblock.Ipblock_IsTerraformResource(x interface{}) *bool
 ```
@@ -485,7 +492,7 @@ ipblock.Ipblock_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-ionoscloud.ipblock.Ipblock.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v10/ipblock"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/ipblock"
 
 ipblock.Ipblock_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -857,7 +864,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-ionoscloud.ipblock.IpblockConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v10/ipblock"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/ipblock"
 
 &ipblock.IpblockConfig {
 	Connection: interface{},
@@ -872,7 +879,7 @@ import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v10/ipblock"
 	Id: *string,
 	IpConsumers: interface{},
 	Name: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v10.ipblock.IpblockTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud.ipblock.IpblockTimeouts,
 }
 ```
 
@@ -1050,7 +1057,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 #### Initializer <a name="Initializer" id="@cdktf/provider-ionoscloud.ipblock.IpblockIpConsumers.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v10/ipblock"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/ipblock"
 
 &ipblock.IpblockIpConsumers {
 
@@ -1063,7 +1070,7 @@ import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v10/ipblock"
 #### Initializer <a name="Initializer" id="@cdktf/provider-ionoscloud.ipblock.IpblockTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v10/ipblock"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/ipblock"
 
 &ipblock.IpblockTimeouts {
 	Create: *string,
@@ -1139,7 +1146,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.ipblock.IpblockIpConsumersList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v10/ipblock"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/ipblock"
 
 ipblock.NewIpblockIpConsumersList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) IpblockIpConsumersList
 ```
@@ -1180,10 +1187,27 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
+| <code><a href="#@cdktf/provider-ionoscloud.ipblock.IpblockIpConsumersList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
 | <code><a href="#@cdktf/provider-ionoscloud.ipblock.IpblockIpConsumersList.computeFqn">ComputeFqn</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.ipblock.IpblockIpConsumersList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-ionoscloud.ipblock.IpblockIpConsumersList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-ionoscloud.ipblock.IpblockIpConsumersList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktf/provider-ionoscloud.ipblock.IpblockIpConsumersList.allWithMapKey"></a>
+
+```go
+func AllWithMapKey(mapKeyAttributeName *string) DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktf/provider-ionoscloud.ipblock.IpblockIpConsumersList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* *string
 
 ---
 
@@ -1282,7 +1306,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.ipblock.IpblockIpConsumersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v10/ipblock"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/ipblock"
 
 ipblock.NewIpblockIpConsumersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) IpblockIpConsumersOutputReference
 ```
@@ -1648,7 +1672,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.ipblock.IpblockTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v10/ipblock"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/ipblock"
 
 ipblock.NewIpblockTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) IpblockTimeoutsOutputReference
 ```

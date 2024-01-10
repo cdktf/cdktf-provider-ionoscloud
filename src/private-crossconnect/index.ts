@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.12/docs/resources/private_crossconnect
 // generated from terraform resource schema
 
@@ -60,6 +55,17 @@ export function privateCrossconnectConnectableDatacentersToTerraform(struct?: Pr
   }
   return {
   }
+}
+
+
+export function privateCrossconnectConnectableDatacentersToHclTerraform(struct?: PrivateCrossconnectConnectableDatacenters | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class PrivateCrossconnectConnectableDatacentersOutputReference extends cdktf.ComplexObject {
@@ -145,6 +151,17 @@ export function privateCrossconnectPeersToTerraform(struct?: PrivateCrossconnect
   }
   return {
   }
+}
+
+
+export function privateCrossconnectPeersToHclTerraform(struct?: PrivateCrossconnectPeers | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class PrivateCrossconnectPeersOutputReference extends cdktf.ComplexObject {
@@ -260,6 +277,43 @@ export function privateCrossconnectTimeoutsToTerraform(struct?: PrivateCrossconn
     delete: cdktf.stringToTerraform(struct!.delete),
     update: cdktf.stringToTerraform(struct!.update),
   }
+}
+
+
+export function privateCrossconnectTimeoutsToHclTerraform(struct?: PrivateCrossconnectTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    create: {
+      value: cdktf.stringToHclTerraform(struct!.create),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    default: {
+      value: cdktf.stringToHclTerraform(struct!.default),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    delete: {
+      value: cdktf.stringToHclTerraform(struct!.delete),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    update: {
+      value: cdktf.stringToHclTerraform(struct!.update),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class PrivateCrossconnectTimeoutsOutputReference extends cdktf.ComplexObject {
@@ -556,5 +610,49 @@ export class PrivateCrossconnect extends cdktf.TerraformResource {
       peers: cdktf.listMapper(privateCrossconnectPeersToTerraform, true)(this._peers.internalValue),
       timeouts: privateCrossconnectTimeoutsToTerraform(this._timeouts.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      description: {
+        value: cdktf.stringToHclTerraform(this._description),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      connectable_datacenters: {
+        value: cdktf.listMapperHcl(privateCrossconnectConnectableDatacentersToHclTerraform, true)(this._connectableDatacenters.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "PrivateCrossconnectConnectableDatacentersList",
+      },
+      peers: {
+        value: cdktf.listMapperHcl(privateCrossconnectPeersToHclTerraform, true)(this._peers.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "PrivateCrossconnectPeersList",
+      },
+      timeouts: {
+        value: privateCrossconnectTimeoutsToHclTerraform(this._timeouts.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "PrivateCrossconnectTimeouts",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

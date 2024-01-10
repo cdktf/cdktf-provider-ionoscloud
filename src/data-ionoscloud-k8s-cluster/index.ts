@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.12/docs/data-sources/k8s_cluster
 // generated from terraform resource schema
 
@@ -40,6 +35,17 @@ export function dataIonoscloudK8SClusterConfigClustersToTerraform(struct?: DataI
   }
   return {
   }
+}
+
+
+export function dataIonoscloudK8SClusterConfigClustersToHclTerraform(struct?: DataIonoscloudK8SClusterConfigClusters): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataIonoscloudK8SClusterConfigClustersOutputReference extends cdktf.ComplexObject {
@@ -112,6 +118,17 @@ export function dataIonoscloudK8SClusterConfigContextsToTerraform(struct?: DataI
   }
 }
 
+
+export function dataIonoscloudK8SClusterConfigContextsToHclTerraform(struct?: DataIonoscloudK8SClusterConfigContexts): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class DataIonoscloudK8SClusterConfigContextsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -182,6 +199,17 @@ export function dataIonoscloudK8SClusterConfigUsersToTerraform(struct?: DataIono
   }
 }
 
+
+export function dataIonoscloudK8SClusterConfigUsersToHclTerraform(struct?: DataIonoscloudK8SClusterConfigUsers): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class DataIonoscloudK8SClusterConfigUsersOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -250,6 +278,17 @@ export function dataIonoscloudK8SClusterConfigAToTerraform(struct?: DataIonosclo
   }
   return {
   }
+}
+
+
+export function dataIonoscloudK8SClusterConfigAToHclTerraform(struct?: DataIonoscloudK8SClusterConfigA): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataIonoscloudK8SClusterConfigAOutputReference extends cdktf.ComplexObject {
@@ -344,6 +383,17 @@ export function dataIonoscloudK8SClusterMaintenanceWindowToTerraform(struct?: Da
   }
 }
 
+
+export function dataIonoscloudK8SClusterMaintenanceWindowToHclTerraform(struct?: DataIonoscloudK8SClusterMaintenanceWindow): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class DataIonoscloudK8SClusterMaintenanceWindowOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -411,6 +461,17 @@ export function dataIonoscloudK8SClusterS3BucketsToTerraform(struct?: DataIonosc
   }
   return {
   }
+}
+
+
+export function dataIonoscloudK8SClusterS3BucketsToHclTerraform(struct?: DataIonoscloudK8SClusterS3Buckets): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataIonoscloudK8SClusterS3BucketsOutputReference extends cdktf.ComplexObject {
@@ -495,6 +556,43 @@ export function dataIonoscloudK8SClusterTimeoutsToTerraform(struct?: DataIonoscl
     delete: cdktf.stringToTerraform(struct!.delete),
     update: cdktf.stringToTerraform(struct!.update),
   }
+}
+
+
+export function dataIonoscloudK8SClusterTimeoutsToHclTerraform(struct?: DataIonoscloudK8SClusterTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    create: {
+      value: cdktf.stringToHclTerraform(struct!.create),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    default: {
+      value: cdktf.stringToHclTerraform(struct!.default),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    delete: {
+      value: cdktf.stringToHclTerraform(struct!.delete),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    update: {
+      value: cdktf.stringToHclTerraform(struct!.update),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class DataIonoscloudK8SClusterTimeoutsOutputReference extends cdktf.ComplexObject {
@@ -829,5 +927,31 @@ export class DataIonoscloudK8SCluster extends cdktf.TerraformDataSource {
       name: cdktf.stringToTerraform(this._name),
       timeouts: dataIonoscloudK8SClusterTimeoutsToTerraform(this._timeouts.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      timeouts: {
+        value: dataIonoscloudK8SClusterTimeoutsToHclTerraform(this._timeouts.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "DataIonoscloudK8SClusterTimeouts",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

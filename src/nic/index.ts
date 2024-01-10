@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.12/docs/resources/nic
 // generated from terraform resource schema
 
@@ -122,6 +117,43 @@ export function nicFlowlogToTerraform(struct?: NicFlowlogOutputReference | NicFl
     direction: cdktf.stringToTerraform(struct!.direction),
     name: cdktf.stringToTerraform(struct!.name),
   }
+}
+
+
+export function nicFlowlogToHclTerraform(struct?: NicFlowlogOutputReference | NicFlowlog): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    action: {
+      value: cdktf.stringToHclTerraform(struct!.action),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    bucket: {
+      value: cdktf.stringToHclTerraform(struct!.bucket),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    direction: {
+      value: cdktf.stringToHclTerraform(struct!.direction),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class NicFlowlogOutputReference extends cdktf.ComplexObject {
@@ -261,6 +293,43 @@ export function nicTimeoutsToTerraform(struct?: NicTimeouts | cdktf.IResolvable)
     delete: cdktf.stringToTerraform(struct!.delete),
     update: cdktf.stringToTerraform(struct!.update),
   }
+}
+
+
+export function nicTimeoutsToHclTerraform(struct?: NicTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    create: {
+      value: cdktf.stringToHclTerraform(struct!.create),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    default: {
+      value: cdktf.stringToHclTerraform(struct!.default),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    delete: {
+      value: cdktf.stringToHclTerraform(struct!.delete),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    update: {
+      value: cdktf.stringToHclTerraform(struct!.update),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class NicTimeoutsOutputReference extends cdktf.ComplexObject {
@@ -710,5 +779,97 @@ export class Nic extends cdktf.TerraformResource {
       flowlog: nicFlowlogToTerraform(this._flowlog.internalValue),
       timeouts: nicTimeoutsToTerraform(this._timeouts.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      datacenter_id: {
+        value: cdktf.stringToHclTerraform(this._datacenterId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      dhcp: {
+        value: cdktf.booleanToHclTerraform(this._dhcp),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      dhcpv6: {
+        value: cdktf.booleanToHclTerraform(this._dhcpv6),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      firewall_active: {
+        value: cdktf.booleanToHclTerraform(this._firewallActive),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      firewall_type: {
+        value: cdktf.stringToHclTerraform(this._firewallType),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      ips: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._ips),
+        isBlock: false,
+        type: "list",
+        storageClassType: "stringList",
+      },
+      ipv6_cidr_block: {
+        value: cdktf.stringToHclTerraform(this._ipv6CidrBlock),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      ipv6_ips: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._ipv6Ips),
+        isBlock: false,
+        type: "list",
+        storageClassType: "stringList",
+      },
+      lan: {
+        value: cdktf.numberToHclTerraform(this._lan),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      server_id: {
+        value: cdktf.stringToHclTerraform(this._serverId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      flowlog: {
+        value: nicFlowlogToHclTerraform(this._flowlog.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "NicFlowlogList",
+      },
+      timeouts: {
+        value: nicTimeoutsToHclTerraform(this._timeouts.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "NicTimeouts",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

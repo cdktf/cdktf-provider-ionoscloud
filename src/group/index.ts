@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.12/docs/resources/group
 // generated from terraform resource schema
 
@@ -114,6 +109,17 @@ export function groupUsersToTerraform(struct?: GroupUsers): any {
   }
   return {
   }
+}
+
+
+export function groupUsersToHclTerraform(struct?: GroupUsers): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class GroupUsersOutputReference extends cdktf.ComplexObject {
@@ -228,6 +234,43 @@ export function groupTimeoutsToTerraform(struct?: GroupTimeouts | cdktf.IResolva
     delete: cdktf.stringToTerraform(struct!.delete),
     update: cdktf.stringToTerraform(struct!.update),
   }
+}
+
+
+export function groupTimeoutsToHclTerraform(struct?: GroupTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    create: {
+      value: cdktf.stringToHclTerraform(struct!.create),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    default: {
+      value: cdktf.stringToHclTerraform(struct!.default),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    delete: {
+      value: cdktf.stringToHclTerraform(struct!.delete),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    update: {
+      value: cdktf.stringToHclTerraform(struct!.update),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class GroupTimeoutsOutputReference extends cdktf.ComplexObject {
@@ -746,5 +789,121 @@ export class Group extends cdktf.TerraformResource {
       user_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(this._userIds),
       timeouts: groupTimeoutsToTerraform(this._timeouts.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      access_activity_log: {
+        value: cdktf.booleanToHclTerraform(this._accessActivityLog),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      access_and_manage_certificates: {
+        value: cdktf.booleanToHclTerraform(this._accessAndManageCertificates),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      access_and_manage_monitoring: {
+        value: cdktf.booleanToHclTerraform(this._accessAndManageMonitoring),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      create_backup_unit: {
+        value: cdktf.booleanToHclTerraform(this._createBackupUnit),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      create_datacenter: {
+        value: cdktf.booleanToHclTerraform(this._createDatacenter),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      create_flow_log: {
+        value: cdktf.booleanToHclTerraform(this._createFlowLog),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      create_internet_access: {
+        value: cdktf.booleanToHclTerraform(this._createInternetAccess),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      create_k8s_cluster: {
+        value: cdktf.booleanToHclTerraform(this._createK8SCluster),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      create_pcc: {
+        value: cdktf.booleanToHclTerraform(this._createPcc),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      create_snapshot: {
+        value: cdktf.booleanToHclTerraform(this._createSnapshot),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      manage_dbaas: {
+        value: cdktf.booleanToHclTerraform(this._manageDbaas),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      reserve_ip: {
+        value: cdktf.booleanToHclTerraform(this._reserveIp),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      s3_privilege: {
+        value: cdktf.booleanToHclTerraform(this._s3Privilege),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      user_id: {
+        value: cdktf.stringToHclTerraform(this._userId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      user_ids: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._userIds),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      timeouts: {
+        value: groupTimeoutsToHclTerraform(this._timeouts.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "GroupTimeouts",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

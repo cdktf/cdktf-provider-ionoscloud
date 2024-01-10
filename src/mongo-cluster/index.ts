@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.12/docs/resources/mongo_cluster
 // generated from terraform resource schema
 
@@ -161,6 +156,37 @@ export function mongoClusterBackupToTerraform(struct?: MongoClusterBackupOutputR
   }
 }
 
+
+export function mongoClusterBackupToHclTerraform(struct?: MongoClusterBackupOutputReference | MongoClusterBackup): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    location: {
+      value: cdktf.stringToHclTerraform(struct!.location),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    point_in_time_window_hours: {
+      value: cdktf.numberToHclTerraform(struct!.pointInTimeWindowHours),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    snapshot_interval_hours: {
+      value: cdktf.numberToHclTerraform(struct!.snapshotIntervalHours),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class MongoClusterBackupOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -272,6 +298,25 @@ export function mongoClusterBiConnectorToTerraform(struct?: MongoClusterBiConnec
   }
 }
 
+
+export function mongoClusterBiConnectorToHclTerraform(struct?: MongoClusterBiConnectorOutputReference | MongoClusterBiConnector): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    enabled: {
+      value: cdktf.booleanToHclTerraform(struct!.enabled),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class MongoClusterBiConnectorOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -361,6 +406,37 @@ export function mongoClusterConnectionsToTerraform(struct?: MongoClusterConnecti
     datacenter_id: cdktf.stringToTerraform(struct!.datacenterId),
     lan_id: cdktf.stringToTerraform(struct!.lanId),
   }
+}
+
+
+export function mongoClusterConnectionsToHclTerraform(struct?: MongoClusterConnectionsOutputReference | MongoClusterConnections): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    cidr_list: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.cidrList),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    datacenter_id: {
+      value: cdktf.stringToHclTerraform(struct!.datacenterId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    lan_id: {
+      value: cdktf.stringToHclTerraform(struct!.lanId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class MongoClusterConnectionsOutputReference extends cdktf.ComplexObject {
@@ -470,6 +546,31 @@ export function mongoClusterCredentialsToTerraform(struct?: MongoClusterCredenti
   }
 }
 
+
+export function mongoClusterCredentialsToHclTerraform(struct?: MongoClusterCredentialsOutputReference | MongoClusterCredentials): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    password: {
+      value: cdktf.stringToHclTerraform(struct!.password),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    username: {
+      value: cdktf.stringToHclTerraform(struct!.username),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class MongoClusterCredentialsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -554,6 +655,31 @@ export function mongoClusterMaintenanceWindowToTerraform(struct?: MongoClusterMa
     day_of_the_week: cdktf.stringToTerraform(struct!.dayOfTheWeek),
     time: cdktf.stringToTerraform(struct!.time),
   }
+}
+
+
+export function mongoClusterMaintenanceWindowToHclTerraform(struct?: MongoClusterMaintenanceWindowOutputReference | MongoClusterMaintenanceWindow): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    day_of_the_week: {
+      value: cdktf.stringToHclTerraform(struct!.dayOfTheWeek),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    time: {
+      value: cdktf.stringToHclTerraform(struct!.time),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class MongoClusterMaintenanceWindowOutputReference extends cdktf.ComplexObject {
@@ -650,6 +776,43 @@ export function mongoClusterTimeoutsToTerraform(struct?: MongoClusterTimeouts | 
     delete: cdktf.stringToTerraform(struct!.delete),
     update: cdktf.stringToTerraform(struct!.update),
   }
+}
+
+
+export function mongoClusterTimeoutsToHclTerraform(struct?: MongoClusterTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    create: {
+      value: cdktf.stringToHclTerraform(struct!.create),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    default: {
+      value: cdktf.stringToHclTerraform(struct!.default),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    delete: {
+      value: cdktf.stringToHclTerraform(struct!.delete),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    update: {
+      value: cdktf.stringToHclTerraform(struct!.update),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class MongoClusterTimeoutsOutputReference extends cdktf.ComplexObject {
@@ -1170,5 +1333,127 @@ export class MongoCluster extends cdktf.TerraformResource {
       maintenance_window: mongoClusterMaintenanceWindowToTerraform(this._maintenanceWindow.internalValue),
       timeouts: mongoClusterTimeoutsToTerraform(this._timeouts.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      cores: {
+        value: cdktf.numberToHclTerraform(this._cores),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      display_name: {
+        value: cdktf.stringToHclTerraform(this._displayName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      edition: {
+        value: cdktf.stringToHclTerraform(this._edition),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      instances: {
+        value: cdktf.numberToHclTerraform(this._instances),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      location: {
+        value: cdktf.stringToHclTerraform(this._location),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      mongodb_version: {
+        value: cdktf.stringToHclTerraform(this._mongodbVersion),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      ram: {
+        value: cdktf.numberToHclTerraform(this._ram),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      shards: {
+        value: cdktf.numberToHclTerraform(this._shards),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      storage_size: {
+        value: cdktf.numberToHclTerraform(this._storageSize),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      storage_type: {
+        value: cdktf.stringToHclTerraform(this._storageType),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      template_id: {
+        value: cdktf.stringToHclTerraform(this._templateId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      type: {
+        value: cdktf.stringToHclTerraform(this._type),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      backup: {
+        value: mongoClusterBackupToHclTerraform(this._backup.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "MongoClusterBackupList",
+      },
+      bi_connector: {
+        value: mongoClusterBiConnectorToHclTerraform(this._biConnector.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "MongoClusterBiConnectorList",
+      },
+      connections: {
+        value: mongoClusterConnectionsToHclTerraform(this._connections.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "MongoClusterConnectionsList",
+      },
+      credentials: {
+        value: mongoClusterCredentialsToHclTerraform(this._credentials.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "MongoClusterCredentialsList",
+      },
+      maintenance_window: {
+        value: mongoClusterMaintenanceWindowToHclTerraform(this._maintenanceWindow.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "MongoClusterMaintenanceWindowList",
+      },
+      timeouts: {
+        value: mongoClusterTimeoutsToHclTerraform(this._timeouts.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "MongoClusterTimeouts",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }
