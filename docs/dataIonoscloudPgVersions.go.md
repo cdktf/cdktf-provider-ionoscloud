@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionosclo
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.dataIonoscloudPgVersions.DataIonoscloudPgVersions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v10/dataionoscloudpgversions"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/dataionoscloudpgversions"
 
 dataionoscloudpgversions.NewDataIonoscloudPgVersions(scope Construct, id *string, config DataIonoscloudPgVersionsConfig) DataIonoscloudPgVersions
 ```
@@ -54,6 +54,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudPgVersions.DataIonoscloudPgVersions.addOverride">AddOverride</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudPgVersions.DataIonoscloudPgVersions.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
 | <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudPgVersions.DataIonoscloudPgVersions.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudPgVersions.DataIonoscloudPgVersions.toHclTerraform">ToHclTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudPgVersions.DataIonoscloudPgVersions.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudPgVersions.DataIonoscloudPgVersions.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudPgVersions.DataIonoscloudPgVersions.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
@@ -122,6 +123,14 @@ func ResetOverrideLogicalId()
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-ionoscloud.dataIonoscloudPgVersions.DataIonoscloudPgVersions.toHclTerraform"></a>
+
+```go
+func ToHclTerraform() interface{}
+```
+
+Adds this resource to the terraform JSON output.
 
 ##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-ionoscloud.dataIonoscloudPgVersions.DataIonoscloudPgVersions.toMetadata"></a>
 
@@ -301,7 +310,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-ionoscloud.dataIonoscloudPgVersions.DataIonoscloudPgVersions.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v10/dataionoscloudpgversions"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/dataionoscloudpgversions"
 
 dataionoscloudpgversions.DataIonoscloudPgVersions_IsConstruct(x interface{}) *bool
 ```
@@ -333,7 +342,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-ionoscloud.dataIonoscloudPgVersions.DataIonoscloudPgVersions.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v10/dataionoscloudpgversions"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/dataionoscloudpgversions"
 
 dataionoscloudpgversions.DataIonoscloudPgVersions_IsTerraformElement(x interface{}) *bool
 ```
@@ -347,7 +356,7 @@ dataionoscloudpgversions.DataIonoscloudPgVersions_IsTerraformElement(x interface
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-ionoscloud.dataIonoscloudPgVersions.DataIonoscloudPgVersions.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v10/dataionoscloudpgversions"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/dataionoscloudpgversions"
 
 dataionoscloudpgversions.DataIonoscloudPgVersions_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -361,7 +370,7 @@ dataionoscloudpgversions.DataIonoscloudPgVersions_IsTerraformDataSource(x interf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-ionoscloud.dataIonoscloudPgVersions.DataIonoscloudPgVersions.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v10/dataionoscloudpgversions"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/dataionoscloudpgversions"
 
 dataionoscloudpgversions.DataIonoscloudPgVersions_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -645,7 +654,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-ionoscloud.dataIonoscloudPgVersions.DataIonoscloudPgVersionsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v10/dataionoscloudpgversions"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/dataionoscloudpgversions"
 
 &dataionoscloudpgversions.DataIonoscloudPgVersionsConfig {
 	Connection: interface{},
@@ -657,7 +666,7 @@ import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v10/dataionoscl
 	Provisioners: *[]interface{},
 	ClusterId: *string,
 	Id: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v10.dataIonoscloudPgVersions.DataIonoscloudPgVersionsTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11.dataIonoscloudPgVersions.DataIonoscloudPgVersionsTimeouts,
 }
 ```
 
@@ -794,7 +803,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 #### Initializer <a name="Initializer" id="@cdktf/provider-ionoscloud.dataIonoscloudPgVersions.DataIonoscloudPgVersionsTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v10/dataionoscloudpgversions"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/dataionoscloudpgversions"
 
 &dataionoscloudpgversions.DataIonoscloudPgVersionsTimeouts {
 	Create: *string,
@@ -870,7 +879,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.dataIonoscloudPgVersions.DataIonoscloudPgVersionsTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v10/dataionoscloudpgversions"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/dataionoscloudpgversions"
 
 dataionoscloudpgversions.NewDataIonoscloudPgVersionsTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataIonoscloudPgVersionsTimeoutsOutputReference
 ```

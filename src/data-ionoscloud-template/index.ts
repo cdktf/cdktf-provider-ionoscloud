@@ -67,6 +67,43 @@ export function dataIonoscloudTemplateTimeoutsToTerraform(struct?: DataIonosclou
   }
 }
 
+
+export function dataIonoscloudTemplateTimeoutsToHclTerraform(struct?: DataIonoscloudTemplateTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    create: {
+      value: cdktf.stringToHclTerraform(struct!.create),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    default: {
+      value: cdktf.stringToHclTerraform(struct!.default),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    delete: {
+      value: cdktf.stringToHclTerraform(struct!.delete),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    update: {
+      value: cdktf.stringToHclTerraform(struct!.update),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class DataIonoscloudTemplateTimeoutsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -351,5 +388,43 @@ export class DataIonoscloudTemplate extends cdktf.TerraformDataSource {
       storage_size: cdktf.numberToTerraform(this._storageSize),
       timeouts: dataIonoscloudTemplateTimeoutsToTerraform(this._timeouts.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      cores: {
+        value: cdktf.numberToHclTerraform(this._cores),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      ram: {
+        value: cdktf.numberToHclTerraform(this._ram),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      storage_size: {
+        value: cdktf.numberToHclTerraform(this._storageSize),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      timeouts: {
+        value: dataIonoscloudTemplateTimeoutsToHclTerraform(this._timeouts.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "DataIonoscloudTemplateTimeouts",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

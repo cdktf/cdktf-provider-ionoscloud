@@ -123,6 +123,49 @@ export function applicationLoadbalancerForwardingruleHttpRulesConditionsToTerraf
   }
 }
 
+
+export function applicationLoadbalancerForwardingruleHttpRulesConditionsToHclTerraform(struct?: ApplicationLoadbalancerForwardingruleHttpRulesConditions | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    condition: {
+      value: cdktf.stringToHclTerraform(struct!.condition),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    key: {
+      value: cdktf.stringToHclTerraform(struct!.key),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    negate: {
+      value: cdktf.booleanToHclTerraform(struct!.negate),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    type: {
+      value: cdktf.stringToHclTerraform(struct!.type),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    value: {
+      value: cdktf.stringToHclTerraform(struct!.value),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class ApplicationLoadbalancerForwardingruleHttpRulesConditionsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -361,6 +404,73 @@ export function applicationLoadbalancerForwardingruleHttpRulesToTerraform(struct
     type: cdktf.stringToTerraform(struct!.type),
     conditions: cdktf.listMapper(applicationLoadbalancerForwardingruleHttpRulesConditionsToTerraform, true)(struct!.conditions),
   }
+}
+
+
+export function applicationLoadbalancerForwardingruleHttpRulesToHclTerraform(struct?: ApplicationLoadbalancerForwardingruleHttpRules | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    content_type: {
+      value: cdktf.stringToHclTerraform(struct!.contentType),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    drop_query: {
+      value: cdktf.booleanToHclTerraform(struct!.dropQuery),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    location: {
+      value: cdktf.stringToHclTerraform(struct!.location),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    response_message: {
+      value: cdktf.stringToHclTerraform(struct!.responseMessage),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    status_code: {
+      value: cdktf.numberToHclTerraform(struct!.statusCode),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    target_group: {
+      value: cdktf.stringToHclTerraform(struct!.targetGroup),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    type: {
+      value: cdktf.stringToHclTerraform(struct!.type),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    conditions: {
+      value: cdktf.listMapperHcl(applicationLoadbalancerForwardingruleHttpRulesConditionsToHclTerraform, true)(struct!.conditions),
+      isBlock: true,
+      type: "list",
+      storageClassType: "ApplicationLoadbalancerForwardingruleHttpRulesConditionsList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class ApplicationLoadbalancerForwardingruleHttpRulesOutputReference extends cdktf.ComplexObject {
@@ -643,6 +753,43 @@ export function applicationLoadbalancerForwardingruleTimeoutsToTerraform(struct?
     delete: cdktf.stringToTerraform(struct!.delete),
     update: cdktf.stringToTerraform(struct!.update),
   }
+}
+
+
+export function applicationLoadbalancerForwardingruleTimeoutsToHclTerraform(struct?: ApplicationLoadbalancerForwardingruleTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    create: {
+      value: cdktf.stringToHclTerraform(struct!.create),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    default: {
+      value: cdktf.stringToHclTerraform(struct!.default),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    delete: {
+      value: cdktf.stringToHclTerraform(struct!.delete),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    update: {
+      value: cdktf.stringToHclTerraform(struct!.update),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class ApplicationLoadbalancerForwardingruleTimeoutsOutputReference extends cdktf.ComplexObject {
@@ -1014,5 +1161,79 @@ export class ApplicationLoadbalancerForwardingrule extends cdktf.TerraformResour
       http_rules: cdktf.listMapper(applicationLoadbalancerForwardingruleHttpRulesToTerraform, true)(this._httpRules.internalValue),
       timeouts: applicationLoadbalancerForwardingruleTimeoutsToTerraform(this._timeouts.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      application_loadbalancer_id: {
+        value: cdktf.stringToHclTerraform(this._applicationLoadbalancerId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      client_timeout: {
+        value: cdktf.numberToHclTerraform(this._clientTimeout),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      datacenter_id: {
+        value: cdktf.stringToHclTerraform(this._datacenterId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      listener_ip: {
+        value: cdktf.stringToHclTerraform(this._listenerIp),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      listener_port: {
+        value: cdktf.numberToHclTerraform(this._listenerPort),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      protocol: {
+        value: cdktf.stringToHclTerraform(this._protocol),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      server_certificates: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._serverCertificates),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      http_rules: {
+        value: cdktf.listMapperHcl(applicationLoadbalancerForwardingruleHttpRulesToHclTerraform, true)(this._httpRules.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "ApplicationLoadbalancerForwardingruleHttpRulesList",
+      },
+      timeouts: {
+        value: applicationLoadbalancerForwardingruleTimeoutsToHclTerraform(this._timeouts.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "ApplicationLoadbalancerForwardingruleTimeouts",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

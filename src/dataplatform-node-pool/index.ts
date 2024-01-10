@@ -122,6 +122,31 @@ export function dataplatformNodePoolMaintenanceWindowToTerraform(struct?: Datapl
   }
 }
 
+
+export function dataplatformNodePoolMaintenanceWindowToHclTerraform(struct?: DataplatformNodePoolMaintenanceWindow | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    day_of_the_week: {
+      value: cdktf.stringToHclTerraform(struct!.dayOfTheWeek),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    time: {
+      value: cdktf.stringToHclTerraform(struct!.time),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class DataplatformNodePoolMaintenanceWindowOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -248,6 +273,43 @@ export function dataplatformNodePoolTimeoutsToTerraform(struct?: DataplatformNod
     delete: cdktf.stringToTerraform(struct!.delete),
     update: cdktf.stringToTerraform(struct!.update),
   }
+}
+
+
+export function dataplatformNodePoolTimeoutsToHclTerraform(struct?: DataplatformNodePoolTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    create: {
+      value: cdktf.stringToHclTerraform(struct!.create),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    default: {
+      value: cdktf.stringToHclTerraform(struct!.default),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    delete: {
+      value: cdktf.stringToHclTerraform(struct!.delete),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    update: {
+      value: cdktf.stringToHclTerraform(struct!.update),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class DataplatformNodePoolTimeoutsOutputReference extends cdktf.ComplexObject {
@@ -692,5 +754,97 @@ export class DataplatformNodePool extends cdktf.TerraformResource {
       maintenance_window: cdktf.listMapper(dataplatformNodePoolMaintenanceWindowToTerraform, true)(this._maintenanceWindow.internalValue),
       timeouts: dataplatformNodePoolTimeoutsToTerraform(this._timeouts.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      annotations: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._annotations),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      availability_zone: {
+        value: cdktf.stringToHclTerraform(this._availabilityZone),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      cluster_id: {
+        value: cdktf.stringToHclTerraform(this._clusterId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      cores_count: {
+        value: cdktf.numberToHclTerraform(this._coresCount),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      cpu_family: {
+        value: cdktf.stringToHclTerraform(this._cpuFamily),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      labels: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._labels),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      node_count: {
+        value: cdktf.numberToHclTerraform(this._nodeCount),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      ram_size: {
+        value: cdktf.numberToHclTerraform(this._ramSize),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      storage_size: {
+        value: cdktf.numberToHclTerraform(this._storageSize),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      storage_type: {
+        value: cdktf.stringToHclTerraform(this._storageType),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      maintenance_window: {
+        value: cdktf.listMapperHcl(dataplatformNodePoolMaintenanceWindowToHclTerraform, true)(this._maintenanceWindow.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "DataplatformNodePoolMaintenanceWindowList",
+      },
+      timeouts: {
+        value: dataplatformNodePoolTimeoutsToHclTerraform(this._timeouts.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "DataplatformNodePoolTimeouts",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

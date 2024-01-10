@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionosclo
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.nic.Nic.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v10/nic"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/nic"
 
 nic.NewNic(scope Construct, id *string, config NicConfig) Nic
 ```
@@ -54,6 +54,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-ionoscloud.nic.Nic.addOverride">AddOverride</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.nic.Nic.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
 | <code><a href="#@cdktf/provider-ionoscloud.nic.Nic.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-ionoscloud.nic.Nic.toHclTerraform">ToHclTerraform</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.nic.Nic.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.nic.Nic.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-ionoscloud.nic.Nic.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
@@ -137,6 +138,12 @@ func ResetOverrideLogicalId()
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-ionoscloud.nic.Nic.toHclTerraform"></a>
+
+```go
+func ToHclTerraform() interface{}
+```
 
 ##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-ionoscloud.nic.Nic.toMetadata"></a>
 
@@ -474,7 +481,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-ionoscloud.nic.Nic.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v10/nic"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/nic"
 
 nic.Nic_IsConstruct(x interface{}) *bool
 ```
@@ -506,7 +513,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-ionoscloud.nic.Nic.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v10/nic"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/nic"
 
 nic.Nic_IsTerraformElement(x interface{}) *bool
 ```
@@ -520,7 +527,7 @@ nic.Nic_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-ionoscloud.nic.Nic.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v10/nic"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/nic"
 
 nic.Nic_IsTerraformResource(x interface{}) *bool
 ```
@@ -534,7 +541,7 @@ nic.Nic_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-ionoscloud.nic.Nic.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v10/nic"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/nic"
 
 nic.Nic_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1104,7 +1111,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-ionoscloud.nic.NicConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v10/nic"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/nic"
 
 &nic.NicConfig {
 	Connection: interface{},
@@ -1121,13 +1128,13 @@ import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v10/nic"
 	Dhcpv6: interface{},
 	FirewallActive: interface{},
 	FirewallType: *string,
-	Flowlog: github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v10.nic.NicFlowlog,
+	Flowlog: github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11.nic.NicFlowlog,
 	Id: *string,
 	Ips: *[]*string,
 	Ipv6CidrBlock: *string,
 	Ipv6Ips: *[]*string,
 	Name: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v10.nic.NicTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11.nic.NicTimeouts,
 }
 ```
 
@@ -1421,7 +1428,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 #### Initializer <a name="Initializer" id="@cdktf/provider-ionoscloud.nic.NicFlowlog.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v10/nic"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/nic"
 
 &nic.NicFlowlog {
 	Action: *string,
@@ -1503,7 +1510,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 #### Initializer <a name="Initializer" id="@cdktf/provider-ionoscloud.nic.NicTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v10/nic"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/nic"
 
 &nic.NicTimeouts {
 	Create: *string,
@@ -1579,7 +1586,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.nic.NicFlowlogOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v10/nic"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/nic"
 
 nic.NewNicFlowlogOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) NicFlowlogOutputReference
 ```
@@ -1927,7 +1934,7 @@ func InternalValue() NicFlowlog
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.nic.NicTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v10/nic"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/nic"
 
 nic.NewNicTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) NicTimeoutsOutputReference
 ```

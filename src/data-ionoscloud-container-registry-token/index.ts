@@ -52,6 +52,17 @@ export function dataIonoscloudContainerRegistryTokenCredentialsToTerraform(struc
   }
 }
 
+
+export function dataIonoscloudContainerRegistryTokenCredentialsToHclTerraform(struct?: DataIonoscloudContainerRegistryTokenCredentials): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class DataIonoscloudContainerRegistryTokenCredentialsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -114,6 +125,17 @@ export function dataIonoscloudContainerRegistryTokenScopesToTerraform(struct?: D
   }
   return {
   }
+}
+
+
+export function dataIonoscloudContainerRegistryTokenScopesToHclTerraform(struct?: DataIonoscloudContainerRegistryTokenScopes): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataIonoscloudContainerRegistryTokenScopesOutputReference extends cdktf.ComplexObject {
@@ -208,6 +230,43 @@ export function dataIonoscloudContainerRegistryTokenTimeoutsToTerraform(struct?:
     delete: cdktf.stringToTerraform(struct!.delete),
     update: cdktf.stringToTerraform(struct!.update),
   }
+}
+
+
+export function dataIonoscloudContainerRegistryTokenTimeoutsToHclTerraform(struct?: DataIonoscloudContainerRegistryTokenTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    create: {
+      value: cdktf.stringToHclTerraform(struct!.create),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    default: {
+      value: cdktf.stringToHclTerraform(struct!.default),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    delete: {
+      value: cdktf.stringToHclTerraform(struct!.delete),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    update: {
+      value: cdktf.stringToHclTerraform(struct!.update),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class DataIonoscloudContainerRegistryTokenTimeoutsOutputReference extends cdktf.ComplexObject {
@@ -508,5 +567,43 @@ export class DataIonoscloudContainerRegistryToken extends cdktf.TerraformDataSou
       registry_id: cdktf.stringToTerraform(this._registryId),
       timeouts: dataIonoscloudContainerRegistryTokenTimeoutsToTerraform(this._timeouts.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      partial_match: {
+        value: cdktf.booleanToHclTerraform(this._partialMatch),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      registry_id: {
+        value: cdktf.stringToHclTerraform(this._registryId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      timeouts: {
+        value: dataIonoscloudContainerRegistryTokenTimeoutsToHclTerraform(this._timeouts.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "DataIonoscloudContainerRegistryTokenTimeouts",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

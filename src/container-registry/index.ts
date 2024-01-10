@@ -52,6 +52,17 @@ export function containerRegistryStorageUsageToTerraform(struct?: ContainerRegis
   }
 }
 
+
+export function containerRegistryStorageUsageToHclTerraform(struct?: ContainerRegistryStorageUsage): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class ContainerRegistryStorageUsageOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -131,6 +142,31 @@ export function containerRegistryGarbageCollectionScheduleToTerraform(struct?: C
     days: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.days),
     time: cdktf.stringToTerraform(struct!.time),
   }
+}
+
+
+export function containerRegistryGarbageCollectionScheduleToHclTerraform(struct?: ContainerRegistryGarbageCollectionScheduleOutputReference | ContainerRegistryGarbageCollectionSchedule): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    days: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.days),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    time: {
+      value: cdktf.stringToHclTerraform(struct!.time),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class ContainerRegistryGarbageCollectionScheduleOutputReference extends cdktf.ComplexObject {
@@ -227,6 +263,43 @@ export function containerRegistryTimeoutsToTerraform(struct?: ContainerRegistryT
     delete: cdktf.stringToTerraform(struct!.delete),
     update: cdktf.stringToTerraform(struct!.update),
   }
+}
+
+
+export function containerRegistryTimeoutsToHclTerraform(struct?: ContainerRegistryTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    create: {
+      value: cdktf.stringToHclTerraform(struct!.create),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    default: {
+      value: cdktf.stringToHclTerraform(struct!.default),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    delete: {
+      value: cdktf.stringToHclTerraform(struct!.delete),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    update: {
+      value: cdktf.stringToHclTerraform(struct!.update),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class ContainerRegistryTimeoutsOutputReference extends cdktf.ComplexObject {
@@ -513,5 +586,43 @@ export class ContainerRegistry extends cdktf.TerraformResource {
       garbage_collection_schedule: containerRegistryGarbageCollectionScheduleToTerraform(this._garbageCollectionSchedule.internalValue),
       timeouts: containerRegistryTimeoutsToTerraform(this._timeouts.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      location: {
+        value: cdktf.stringToHclTerraform(this._location),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      garbage_collection_schedule: {
+        value: containerRegistryGarbageCollectionScheduleToHclTerraform(this._garbageCollectionSchedule.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "ContainerRegistryGarbageCollectionScheduleList",
+      },
+      timeouts: {
+        value: containerRegistryTimeoutsToHclTerraform(this._timeouts.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "ContainerRegistryTimeouts",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

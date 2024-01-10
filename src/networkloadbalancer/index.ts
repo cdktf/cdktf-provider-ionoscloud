@@ -106,6 +106,43 @@ export function networkloadbalancerFlowlogToTerraform(struct?: Networkloadbalanc
   }
 }
 
+
+export function networkloadbalancerFlowlogToHclTerraform(struct?: NetworkloadbalancerFlowlogOutputReference | NetworkloadbalancerFlowlog): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    action: {
+      value: cdktf.stringToHclTerraform(struct!.action),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    bucket: {
+      value: cdktf.stringToHclTerraform(struct!.bucket),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    direction: {
+      value: cdktf.stringToHclTerraform(struct!.direction),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    name: {
+      value: cdktf.stringToHclTerraform(struct!.name),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class NetworkloadbalancerFlowlogOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -243,6 +280,43 @@ export function networkloadbalancerTimeoutsToTerraform(struct?: Networkloadbalan
     delete: cdktf.stringToTerraform(struct!.delete),
     update: cdktf.stringToTerraform(struct!.update),
   }
+}
+
+
+export function networkloadbalancerTimeoutsToHclTerraform(struct?: NetworkloadbalancerTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    create: {
+      value: cdktf.stringToHclTerraform(struct!.create),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    default: {
+      value: cdktf.stringToHclTerraform(struct!.default),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    delete: {
+      value: cdktf.stringToHclTerraform(struct!.delete),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    update: {
+      value: cdktf.stringToHclTerraform(struct!.update),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class NetworkloadbalancerTimeoutsOutputReference extends cdktf.ComplexObject {
@@ -584,5 +658,67 @@ export class Networkloadbalancer extends cdktf.TerraformResource {
       flowlog: networkloadbalancerFlowlogToTerraform(this._flowlog.internalValue),
       timeouts: networkloadbalancerTimeoutsToTerraform(this._timeouts.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      datacenter_id: {
+        value: cdktf.stringToHclTerraform(this._datacenterId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      ips: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._ips),
+        isBlock: false,
+        type: "list",
+        storageClassType: "stringList",
+      },
+      lb_private_ips: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._lbPrivateIps),
+        isBlock: false,
+        type: "list",
+        storageClassType: "stringList",
+      },
+      listener_lan: {
+        value: cdktf.numberToHclTerraform(this._listenerLan),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      target_lan: {
+        value: cdktf.numberToHclTerraform(this._targetLan),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      flowlog: {
+        value: networkloadbalancerFlowlogToHclTerraform(this._flowlog.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "NetworkloadbalancerFlowlogList",
+      },
+      timeouts: {
+        value: networkloadbalancerTimeoutsToHclTerraform(this._timeouts.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "NetworkloadbalancerTimeouts",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

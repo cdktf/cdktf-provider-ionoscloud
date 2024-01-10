@@ -95,6 +95,37 @@ export function targetGroupHealthCheckToTerraform(struct?: TargetGroupHealthChec
   }
 }
 
+
+export function targetGroupHealthCheckToHclTerraform(struct?: TargetGroupHealthCheckOutputReference | TargetGroupHealthCheck): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    check_interval: {
+      value: cdktf.numberToHclTerraform(struct!.checkInterval),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    check_timeout: {
+      value: cdktf.numberToHclTerraform(struct!.checkTimeout),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    retries: {
+      value: cdktf.numberToHclTerraform(struct!.retries),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class TargetGroupHealthCheckOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -233,6 +264,55 @@ export function targetGroupHttpHealthCheckToTerraform(struct?: TargetGroupHttpHe
     regex: cdktf.booleanToTerraform(struct!.regex),
     response: cdktf.stringToTerraform(struct!.response),
   }
+}
+
+
+export function targetGroupHttpHealthCheckToHclTerraform(struct?: TargetGroupHttpHealthCheckOutputReference | TargetGroupHttpHealthCheck): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    match_type: {
+      value: cdktf.stringToHclTerraform(struct!.matchType),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    method: {
+      value: cdktf.stringToHclTerraform(struct!.method),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    negate: {
+      value: cdktf.booleanToHclTerraform(struct!.negate),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    path: {
+      value: cdktf.stringToHclTerraform(struct!.path),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    regex: {
+      value: cdktf.booleanToHclTerraform(struct!.regex),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    response: {
+      value: cdktf.stringToHclTerraform(struct!.response),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class TargetGroupHttpHealthCheckOutputReference extends cdktf.ComplexObject {
@@ -439,6 +519,55 @@ export function targetGroupTargetsToTerraform(struct?: TargetGroupTargets | cdkt
     proxy_protocol: cdktf.stringToTerraform(struct!.proxyProtocol),
     weight: cdktf.numberToTerraform(struct!.weight),
   }
+}
+
+
+export function targetGroupTargetsToHclTerraform(struct?: TargetGroupTargets | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    health_check_enabled: {
+      value: cdktf.booleanToHclTerraform(struct!.healthCheckEnabled),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    ip: {
+      value: cdktf.stringToHclTerraform(struct!.ip),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    maintenance_enabled: {
+      value: cdktf.booleanToHclTerraform(struct!.maintenanceEnabled),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    port: {
+      value: cdktf.numberToHclTerraform(struct!.port),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    proxy_protocol: {
+      value: cdktf.stringToHclTerraform(struct!.proxyProtocol),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    weight: {
+      value: cdktf.numberToHclTerraform(struct!.weight),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class TargetGroupTargetsOutputReference extends cdktf.ComplexObject {
@@ -652,6 +781,43 @@ export function targetGroupTimeoutsToTerraform(struct?: TargetGroupTimeouts | cd
     delete: cdktf.stringToTerraform(struct!.delete),
     update: cdktf.stringToTerraform(struct!.update),
   }
+}
+
+
+export function targetGroupTimeoutsToHclTerraform(struct?: TargetGroupTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    create: {
+      value: cdktf.stringToHclTerraform(struct!.create),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    default: {
+      value: cdktf.stringToHclTerraform(struct!.default),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    delete: {
+      value: cdktf.stringToHclTerraform(struct!.delete),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    update: {
+      value: cdktf.stringToHclTerraform(struct!.update),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class TargetGroupTimeoutsOutputReference extends cdktf.ComplexObject {
@@ -975,5 +1141,61 @@ export class TargetGroup extends cdktf.TerraformResource {
       targets: cdktf.listMapper(targetGroupTargetsToTerraform, true)(this._targets.internalValue),
       timeouts: targetGroupTimeoutsToTerraform(this._timeouts.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      algorithm: {
+        value: cdktf.stringToHclTerraform(this._algorithm),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      protocol: {
+        value: cdktf.stringToHclTerraform(this._protocol),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      health_check: {
+        value: targetGroupHealthCheckToHclTerraform(this._healthCheck.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "TargetGroupHealthCheckList",
+      },
+      http_health_check: {
+        value: targetGroupHttpHealthCheckToHclTerraform(this._httpHealthCheck.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "TargetGroupHttpHealthCheckList",
+      },
+      targets: {
+        value: cdktf.listMapperHcl(targetGroupTargetsToHclTerraform, true)(this._targets.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "TargetGroupTargetsList",
+      },
+      timeouts: {
+        value: targetGroupTimeoutsToHclTerraform(this._timeouts.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "TargetGroupTimeouts",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

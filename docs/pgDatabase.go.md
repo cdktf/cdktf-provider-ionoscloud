@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionosclo
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.pgDatabase.PgDatabase.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v10/pgdatabase"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/pgdatabase"
 
 pgdatabase.NewPgDatabase(scope Construct, id *string, config PgDatabaseConfig) PgDatabase
 ```
@@ -54,6 +54,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-ionoscloud.pgDatabase.PgDatabase.addOverride">AddOverride</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.pgDatabase.PgDatabase.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
 | <code><a href="#@cdktf/provider-ionoscloud.pgDatabase.PgDatabase.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-ionoscloud.pgDatabase.PgDatabase.toHclTerraform">ToHclTerraform</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.pgDatabase.PgDatabase.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.pgDatabase.PgDatabase.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-ionoscloud.pgDatabase.PgDatabase.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
@@ -127,6 +128,12 @@ func ResetOverrideLogicalId()
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-ionoscloud.pgDatabase.PgDatabase.toHclTerraform"></a>
+
+```go
+func ToHclTerraform() interface{}
+```
 
 ##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-ionoscloud.pgDatabase.PgDatabase.toMetadata"></a>
 
@@ -398,7 +405,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-ionoscloud.pgDatabase.PgDatabase.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v10/pgdatabase"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/pgdatabase"
 
 pgdatabase.PgDatabase_IsConstruct(x interface{}) *bool
 ```
@@ -430,7 +437,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-ionoscloud.pgDatabase.PgDatabase.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v10/pgdatabase"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/pgdatabase"
 
 pgdatabase.PgDatabase_IsTerraformElement(x interface{}) *bool
 ```
@@ -444,7 +451,7 @@ pgdatabase.PgDatabase_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-ionoscloud.pgDatabase.PgDatabase.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v10/pgdatabase"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/pgdatabase"
 
 pgdatabase.PgDatabase_IsTerraformResource(x interface{}) *bool
 ```
@@ -458,7 +465,7 @@ pgdatabase.PgDatabase_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-ionoscloud.pgDatabase.PgDatabase.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v10/pgdatabase"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/pgdatabase"
 
 pgdatabase.PgDatabase_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -797,7 +804,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-ionoscloud.pgDatabase.PgDatabaseConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v10/pgdatabase"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/pgdatabase"
 
 &pgdatabase.PgDatabaseConfig {
 	Connection: interface{},
@@ -811,7 +818,7 @@ import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v10/pgdatabase"
 	Name: *string,
 	Owner: *string,
 	Id: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v10.pgDatabase.PgDatabaseTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11.pgDatabase.PgDatabaseTimeouts,
 }
 ```
 
@@ -978,7 +985,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 #### Initializer <a name="Initializer" id="@cdktf/provider-ionoscloud.pgDatabase.PgDatabaseTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v10/pgdatabase"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/pgdatabase"
 
 &pgdatabase.PgDatabaseTimeouts {
 	Create: *string,
@@ -1054,7 +1061,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.pgDatabase.PgDatabaseTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v10/pgdatabase"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/pgdatabase"
 
 pgdatabase.NewPgDatabaseTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PgDatabaseTimeoutsOutputReference
 ```

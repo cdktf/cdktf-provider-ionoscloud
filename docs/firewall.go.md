@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionosclo
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.firewall.Firewall.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v10/firewall"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/firewall"
 
 firewall.NewFirewall(scope Construct, id *string, config FirewallConfig) Firewall
 ```
@@ -54,6 +54,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-ionoscloud.firewall.Firewall.addOverride">AddOverride</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.firewall.Firewall.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
 | <code><a href="#@cdktf/provider-ionoscloud.firewall.Firewall.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-ionoscloud.firewall.Firewall.toHclTerraform">ToHclTerraform</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.firewall.Firewall.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.firewall.Firewall.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-ionoscloud.firewall.Firewall.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
@@ -136,6 +137,12 @@ func ResetOverrideLogicalId()
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-ionoscloud.firewall.Firewall.toHclTerraform"></a>
+
+```go
+func ToHclTerraform() interface{}
+```
 
 ##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-ionoscloud.firewall.Firewall.toMetadata"></a>
 
@@ -461,7 +468,7 @@ func ResetType()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-ionoscloud.firewall.Firewall.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v10/firewall"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/firewall"
 
 firewall.Firewall_IsConstruct(x interface{}) *bool
 ```
@@ -493,7 +500,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-ionoscloud.firewall.Firewall.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v10/firewall"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/firewall"
 
 firewall.Firewall_IsTerraformElement(x interface{}) *bool
 ```
@@ -507,7 +514,7 @@ firewall.Firewall_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-ionoscloud.firewall.Firewall.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v10/firewall"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/firewall"
 
 firewall.Firewall_IsTerraformResource(x interface{}) *bool
 ```
@@ -521,7 +528,7 @@ firewall.Firewall_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-ionoscloud.firewall.Firewall.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v10/firewall"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/firewall"
 
 firewall.Firewall_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1080,7 +1087,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-ionoscloud.firewall.FirewallConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v10/firewall"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/firewall"
 
 &firewall.FirewallConfig {
 	Connection: interface{},
@@ -1103,7 +1110,7 @@ import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v10/firewall"
 	SourceIp: *string,
 	SourceMac: *string,
 	TargetIp: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v10.firewall.FirewallTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11.firewall.FirewallTimeouts,
 	Type: *string,
 }
 ```
@@ -1397,7 +1404,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 #### Initializer <a name="Initializer" id="@cdktf/provider-ionoscloud.firewall.FirewallTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v10/firewall"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/firewall"
 
 &firewall.FirewallTimeouts {
 	Create: *string,
@@ -1473,7 +1480,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.firewall.FirewallTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v10/firewall"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/firewall"
 
 firewall.NewFirewallTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) FirewallTimeoutsOutputReference
 ```

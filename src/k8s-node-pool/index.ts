@@ -156,6 +156,31 @@ export function k8SNodePoolAutoScalingToTerraform(struct?: K8SNodePoolAutoScalin
   }
 }
 
+
+export function k8SNodePoolAutoScalingToHclTerraform(struct?: K8SNodePoolAutoScalingOutputReference | K8SNodePoolAutoScaling): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    max_node_count: {
+      value: cdktf.numberToHclTerraform(struct!.maxNodeCount),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    min_node_count: {
+      value: cdktf.numberToHclTerraform(struct!.minNodeCount),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class K8SNodePoolAutoScalingOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -244,6 +269,31 @@ export function k8SNodePoolLansRoutesToTerraform(struct?: K8SNodePoolLansRoutes 
     gateway_ip: cdktf.stringToTerraform(struct!.gatewayIp),
     network: cdktf.stringToTerraform(struct!.network),
   }
+}
+
+
+export function k8SNodePoolLansRoutesToHclTerraform(struct?: K8SNodePoolLansRoutes | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    gateway_ip: {
+      value: cdktf.stringToHclTerraform(struct!.gatewayIp),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    network: {
+      value: cdktf.stringToHclTerraform(struct!.network),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class K8SNodePoolLansRoutesOutputReference extends cdktf.ComplexObject {
@@ -376,6 +426,37 @@ export function k8SNodePoolLansToTerraform(struct?: K8SNodePoolLans | cdktf.IRes
     id: cdktf.numberToTerraform(struct!.id),
     routes: cdktf.listMapper(k8SNodePoolLansRoutesToTerraform, true)(struct!.routes),
   }
+}
+
+
+export function k8SNodePoolLansToHclTerraform(struct?: K8SNodePoolLans | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    dhcp: {
+      value: cdktf.booleanToHclTerraform(struct!.dhcp),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    id: {
+      value: cdktf.numberToHclTerraform(struct!.id),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    routes: {
+      value: cdktf.listMapperHcl(k8SNodePoolLansRoutesToHclTerraform, true)(struct!.routes),
+      isBlock: true,
+      type: "set",
+      storageClassType: "K8SNodePoolLansRoutesList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class K8SNodePoolLansOutputReference extends cdktf.ComplexObject {
@@ -525,6 +606,31 @@ export function k8SNodePoolMaintenanceWindowToTerraform(struct?: K8SNodePoolMain
   }
 }
 
+
+export function k8SNodePoolMaintenanceWindowToHclTerraform(struct?: K8SNodePoolMaintenanceWindowOutputReference | K8SNodePoolMaintenanceWindow): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    day_of_the_week: {
+      value: cdktf.stringToHclTerraform(struct!.dayOfTheWeek),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    time: {
+      value: cdktf.stringToHclTerraform(struct!.time),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class K8SNodePoolMaintenanceWindowOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -619,6 +725,43 @@ export function k8SNodePoolTimeoutsToTerraform(struct?: K8SNodePoolTimeouts | cd
     delete: cdktf.stringToTerraform(struct!.delete),
     update: cdktf.stringToTerraform(struct!.update),
   }
+}
+
+
+export function k8SNodePoolTimeoutsToHclTerraform(struct?: K8SNodePoolTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    create: {
+      value: cdktf.stringToHclTerraform(struct!.create),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    default: {
+      value: cdktf.stringToHclTerraform(struct!.default),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    delete: {
+      value: cdktf.stringToHclTerraform(struct!.delete),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    update: {
+      value: cdktf.stringToHclTerraform(struct!.update),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class K8SNodePoolTimeoutsOutputReference extends cdktf.ComplexObject {
@@ -1137,5 +1280,133 @@ export class K8SNodePool extends cdktf.TerraformResource {
       maintenance_window: k8SNodePoolMaintenanceWindowToTerraform(this._maintenanceWindow.internalValue),
       timeouts: k8SNodePoolTimeoutsToTerraform(this._timeouts.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      allow_replace: {
+        value: cdktf.booleanToHclTerraform(this._allowReplace),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      annotations: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._annotations),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      availability_zone: {
+        value: cdktf.stringToHclTerraform(this._availabilityZone),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      cores_count: {
+        value: cdktf.numberToHclTerraform(this._coresCount),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      cpu_family: {
+        value: cdktf.stringToHclTerraform(this._cpuFamily),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      datacenter_id: {
+        value: cdktf.stringToHclTerraform(this._datacenterId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      k8s_cluster_id: {
+        value: cdktf.stringToHclTerraform(this._k8SClusterId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      k8s_version: {
+        value: cdktf.stringToHclTerraform(this._k8SVersion),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      labels: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._labels),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      node_count: {
+        value: cdktf.numberToHclTerraform(this._nodeCount),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      public_ips: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._publicIps),
+        isBlock: false,
+        type: "list",
+        storageClassType: "stringList",
+      },
+      ram_size: {
+        value: cdktf.numberToHclTerraform(this._ramSize),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      storage_size: {
+        value: cdktf.numberToHclTerraform(this._storageSize),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      storage_type: {
+        value: cdktf.stringToHclTerraform(this._storageType),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      auto_scaling: {
+        value: k8SNodePoolAutoScalingToHclTerraform(this._autoScaling.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "K8SNodePoolAutoScalingList",
+      },
+      lans: {
+        value: cdktf.listMapperHcl(k8SNodePoolLansToHclTerraform, true)(this._lans.internalValue),
+        isBlock: true,
+        type: "set",
+        storageClassType: "K8SNodePoolLansList",
+      },
+      maintenance_window: {
+        value: k8SNodePoolMaintenanceWindowToHclTerraform(this._maintenanceWindow.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "K8SNodePoolMaintenanceWindowList",
+      },
+      timeouts: {
+        value: k8SNodePoolTimeoutsToHclTerraform(this._timeouts.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "K8SNodePoolTimeouts",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

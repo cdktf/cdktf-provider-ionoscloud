@@ -74,6 +74,31 @@ export function dataplatformClusterMaintenanceWindowToTerraform(struct?: Datapla
   }
 }
 
+
+export function dataplatformClusterMaintenanceWindowToHclTerraform(struct?: DataplatformClusterMaintenanceWindow | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    day_of_the_week: {
+      value: cdktf.stringToHclTerraform(struct!.dayOfTheWeek),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    time: {
+      value: cdktf.stringToHclTerraform(struct!.time),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class DataplatformClusterMaintenanceWindowOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -200,6 +225,43 @@ export function dataplatformClusterTimeoutsToTerraform(struct?: DataplatformClus
     delete: cdktf.stringToTerraform(struct!.delete),
     update: cdktf.stringToTerraform(struct!.update),
   }
+}
+
+
+export function dataplatformClusterTimeoutsToHclTerraform(struct?: DataplatformClusterTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    create: {
+      value: cdktf.stringToHclTerraform(struct!.create),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    default: {
+      value: cdktf.stringToHclTerraform(struct!.default),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    delete: {
+      value: cdktf.stringToHclTerraform(struct!.delete),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    update: {
+      value: cdktf.stringToHclTerraform(struct!.update),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class DataplatformClusterTimeoutsOutputReference extends cdktf.ComplexObject {
@@ -493,5 +555,49 @@ export class DataplatformCluster extends cdktf.TerraformResource {
       maintenance_window: cdktf.listMapper(dataplatformClusterMaintenanceWindowToTerraform, true)(this._maintenanceWindow.internalValue),
       timeouts: dataplatformClusterTimeoutsToTerraform(this._timeouts.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      datacenter_id: {
+        value: cdktf.stringToHclTerraform(this._datacenterId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      version: {
+        value: cdktf.stringToHclTerraform(this._version),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      maintenance_window: {
+        value: cdktf.listMapperHcl(dataplatformClusterMaintenanceWindowToHclTerraform, true)(this._maintenanceWindow.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "DataplatformClusterMaintenanceWindowList",
+      },
+      timeouts: {
+        value: dataplatformClusterTimeoutsToHclTerraform(this._timeouts.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "DataplatformClusterTimeouts",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

@@ -77,6 +77,31 @@ export function natgatewayLansToTerraform(struct?: NatgatewayLans | cdktf.IResol
   }
 }
 
+
+export function natgatewayLansToHclTerraform(struct?: NatgatewayLans | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    gateway_ips: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.gatewayIps),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    id: {
+      value: cdktf.numberToHclTerraform(struct!.id),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class NatgatewayLansOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -206,6 +231,43 @@ export function natgatewayTimeoutsToTerraform(struct?: NatgatewayTimeouts | cdkt
     delete: cdktf.stringToTerraform(struct!.delete),
     update: cdktf.stringToTerraform(struct!.update),
   }
+}
+
+
+export function natgatewayTimeoutsToHclTerraform(struct?: NatgatewayTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    create: {
+      value: cdktf.stringToHclTerraform(struct!.create),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    default: {
+      value: cdktf.stringToHclTerraform(struct!.default),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    delete: {
+      value: cdktf.stringToHclTerraform(struct!.delete),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    update: {
+      value: cdktf.stringToHclTerraform(struct!.update),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class NatgatewayTimeoutsOutputReference extends cdktf.ComplexObject {
@@ -493,5 +555,49 @@ export class Natgateway extends cdktf.TerraformResource {
       lans: cdktf.listMapper(natgatewayLansToTerraform, true)(this._lans.internalValue),
       timeouts: natgatewayTimeoutsToTerraform(this._timeouts.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      datacenter_id: {
+        value: cdktf.stringToHclTerraform(this._datacenterId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      public_ips: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._publicIps),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      lans: {
+        value: cdktf.listMapperHcl(natgatewayLansToHclTerraform, true)(this._lans.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "NatgatewayLansList",
+      },
+      timeouts: {
+        value: natgatewayTimeoutsToHclTerraform(this._timeouts.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "NatgatewayTimeouts",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

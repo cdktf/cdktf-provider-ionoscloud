@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionosclo
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.pgUser.PgUser.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v10/pguser"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/pguser"
 
 pguser.NewPgUser(scope Construct, id *string, config PgUserConfig) PgUser
 ```
@@ -54,6 +54,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-ionoscloud.pgUser.PgUser.addOverride">AddOverride</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.pgUser.PgUser.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
 | <code><a href="#@cdktf/provider-ionoscloud.pgUser.PgUser.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-ionoscloud.pgUser.PgUser.toHclTerraform">ToHclTerraform</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.pgUser.PgUser.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.pgUser.PgUser.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-ionoscloud.pgUser.PgUser.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
@@ -127,6 +128,12 @@ func ResetOverrideLogicalId()
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-ionoscloud.pgUser.PgUser.toHclTerraform"></a>
+
+```go
+func ToHclTerraform() interface{}
+```
 
 ##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-ionoscloud.pgUser.PgUser.toMetadata"></a>
 
@@ -398,7 +405,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-ionoscloud.pgUser.PgUser.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v10/pguser"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/pguser"
 
 pguser.PgUser_IsConstruct(x interface{}) *bool
 ```
@@ -430,7 +437,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-ionoscloud.pgUser.PgUser.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v10/pguser"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/pguser"
 
 pguser.PgUser_IsTerraformElement(x interface{}) *bool
 ```
@@ -444,7 +451,7 @@ pguser.PgUser_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-ionoscloud.pgUser.PgUser.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v10/pguser"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/pguser"
 
 pguser.PgUser_IsTerraformResource(x interface{}) *bool
 ```
@@ -458,7 +465,7 @@ pguser.PgUser_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-ionoscloud.pgUser.PgUser.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v10/pguser"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/pguser"
 
 pguser.PgUser_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -808,7 +815,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-ionoscloud.pgUser.PgUserConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v10/pguser"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/pguser"
 
 &pguser.PgUserConfig {
 	Connection: interface{},
@@ -822,7 +829,7 @@ import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v10/pguser"
 	Password: *string,
 	Username: *string,
 	Id: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v10.pgUser.PgUserTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11.pgUser.PgUserTimeouts,
 }
 ```
 
@@ -985,7 +992,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 #### Initializer <a name="Initializer" id="@cdktf/provider-ionoscloud.pgUser.PgUserTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v10/pguser"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/pguser"
 
 &pguser.PgUserTimeouts {
 	Create: *string,
@@ -1061,7 +1068,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.pgUser.PgUserTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v10/pguser"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/pguser"
 
 pguser.NewPgUserTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PgUserTimeoutsOutputReference
 ```

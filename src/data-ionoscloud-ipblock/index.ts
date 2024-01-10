@@ -56,6 +56,17 @@ export function dataIonoscloudIpblockIpConsumersToTerraform(struct?: DataIonoscl
   }
 }
 
+
+export function dataIonoscloudIpblockIpConsumersToHclTerraform(struct?: DataIonoscloudIpblockIpConsumers | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class DataIonoscloudIpblockIpConsumersOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -189,6 +200,43 @@ export function dataIonoscloudIpblockTimeoutsToTerraform(struct?: DataIonoscloud
     delete: cdktf.stringToTerraform(struct!.delete),
     update: cdktf.stringToTerraform(struct!.update),
   }
+}
+
+
+export function dataIonoscloudIpblockTimeoutsToHclTerraform(struct?: DataIonoscloudIpblockTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    create: {
+      value: cdktf.stringToHclTerraform(struct!.create),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    default: {
+      value: cdktf.stringToHclTerraform(struct!.default),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    delete: {
+      value: cdktf.stringToHclTerraform(struct!.delete),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    update: {
+      value: cdktf.stringToHclTerraform(struct!.update),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class DataIonoscloudIpblockTimeoutsOutputReference extends cdktf.ComplexObject {
@@ -493,5 +541,49 @@ export class DataIonoscloudIpblock extends cdktf.TerraformDataSource {
       ip_consumers: cdktf.listMapper(dataIonoscloudIpblockIpConsumersToTerraform, true)(this._ipConsumers.internalValue),
       timeouts: dataIonoscloudIpblockTimeoutsToTerraform(this._timeouts.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      location: {
+        value: cdktf.stringToHclTerraform(this._location),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      size: {
+        value: cdktf.numberToHclTerraform(this._size),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      ip_consumers: {
+        value: cdktf.listMapperHcl(dataIonoscloudIpblockIpConsumersToHclTerraform, true)(this._ipConsumers.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "DataIonoscloudIpblockIpConsumersList",
+      },
+      timeouts: {
+        value: dataIonoscloudIpblockTimeoutsToHclTerraform(this._timeouts.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "DataIonoscloudIpblockTimeouts",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

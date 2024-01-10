@@ -46,6 +46,17 @@ export function dataIonoscloudVcpuServerCdromsToTerraform(struct?: DataIonosclou
   }
 }
 
+
+export function dataIonoscloudVcpuServerCdromsToHclTerraform(struct?: DataIonoscloudVcpuServerCdroms): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class DataIonoscloudVcpuServerCdromsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -205,6 +216,17 @@ export function dataIonoscloudVcpuServerLabelsToTerraform(struct?: DataIonosclou
   }
 }
 
+
+export function dataIonoscloudVcpuServerLabelsToHclTerraform(struct?: DataIonoscloudVcpuServerLabels): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class DataIonoscloudVcpuServerLabelsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -277,6 +299,17 @@ export function dataIonoscloudVcpuServerNicsFirewallRulesToTerraform(struct?: Da
   }
   return {
   }
+}
+
+
+export function dataIonoscloudVcpuServerNicsFirewallRulesToHclTerraform(struct?: DataIonoscloudVcpuServerNicsFirewallRules): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataIonoscloudVcpuServerNicsFirewallRulesOutputReference extends cdktf.ComplexObject {
@@ -391,6 +424,17 @@ export function dataIonoscloudVcpuServerNicsToTerraform(struct?: DataIonoscloudV
   }
   return {
   }
+}
+
+
+export function dataIonoscloudVcpuServerNicsToHclTerraform(struct?: DataIonoscloudVcpuServerNics): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataIonoscloudVcpuServerNicsOutputReference extends cdktf.ComplexObject {
@@ -521,6 +565,17 @@ export function dataIonoscloudVcpuServerVolumesToTerraform(struct?: DataIonosclo
   }
   return {
   }
+}
+
+
+export function dataIonoscloudVcpuServerVolumesToHclTerraform(struct?: DataIonoscloudVcpuServerVolumes): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataIonoscloudVcpuServerVolumesOutputReference extends cdktf.ComplexObject {
@@ -705,6 +760,43 @@ export function dataIonoscloudVcpuServerTimeoutsToTerraform(struct?: DataIonoscl
     delete: cdktf.stringToTerraform(struct!.delete),
     update: cdktf.stringToTerraform(struct!.update),
   }
+}
+
+
+export function dataIonoscloudVcpuServerTimeoutsToHclTerraform(struct?: DataIonoscloudVcpuServerTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    create: {
+      value: cdktf.stringToHclTerraform(struct!.create),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    default: {
+      value: cdktf.stringToHclTerraform(struct!.default),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    delete: {
+      value: cdktf.stringToHclTerraform(struct!.delete),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    update: {
+      value: cdktf.stringToHclTerraform(struct!.update),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class DataIonoscloudVcpuServerTimeoutsOutputReference extends cdktf.ComplexObject {
@@ -1039,5 +1131,37 @@ export class DataIonoscloudVcpuServer extends cdktf.TerraformDataSource {
       name: cdktf.stringToTerraform(this._name),
       timeouts: dataIonoscloudVcpuServerTimeoutsToTerraform(this._timeouts.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      datacenter_id: {
+        value: cdktf.stringToHclTerraform(this._datacenterId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      timeouts: {
+        value: dataIonoscloudVcpuServerTimeoutsToHclTerraform(this._timeouts.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "DataIonoscloudVcpuServerTimeouts",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }
