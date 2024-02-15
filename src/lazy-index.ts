@@ -69,6 +69,7 @@ Object.defineProperty(exports, 'dataIonoscloudImage', { get: function () { retur
 Object.defineProperty(exports, 'dataIonoscloudIpblock', { get: function () { return require('./data-ionoscloud-ipblock'); } });
 Object.defineProperty(exports, 'dataIonoscloudIpfailover', { get: function () { return require('./data-ionoscloud-ipfailover'); } });
 Object.defineProperty(exports, 'dataIonoscloudK8SCluster', { get: function () { return require('./data-ionoscloud-k8s-cluster'); } });
+Object.defineProperty(exports, 'dataIonoscloudK8SClusters', { get: function () { return require('./data-ionoscloud-k8s-clusters'); } });
 Object.defineProperty(exports, 'dataIonoscloudK8SNodePool', { get: function () { return require('./data-ionoscloud-k8s-node-pool'); } });
 Object.defineProperty(exports, 'dataIonoscloudK8SNodePoolNodes', { get: function () { return require('./data-ionoscloud-k8s-node-pool-nodes'); } });
 Object.defineProperty(exports, 'dataIonoscloudLan', { get: function () { return require('./data-ionoscloud-lan'); } });

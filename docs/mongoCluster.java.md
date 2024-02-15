@@ -4,7 +4,7 @@
 
 ### MongoCluster <a name="MongoCluster" id="@cdktf/provider-ionoscloud.mongoCluster.MongoCluster"></a>
 
-Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.12/docs/resources/mongo_cluster ionoscloud_mongo_cluster}.
+Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.13/docs/resources/mongo_cluster ionoscloud_mongo_cluster}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.mongoCluster.MongoCluster.Initializer"></a>
 
@@ -24,7 +24,6 @@ MongoCluster.Builder.create(Construct scope, java.lang.String id)
 //  .provisioners(LocalExecProvisioner)
 //  .provisioners(RemoteExecProvisioner>)
     .connections(MongoClusterConnections)
-    .credentials(MongoClusterCredentials)
     .displayName(java.lang.String)
     .instances(java.lang.Number)
     .location(java.lang.String)
@@ -57,7 +56,6 @@ MongoCluster.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-ionoscloud.mongoCluster.MongoCluster.Initializer.parameter.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.mongoCluster.MongoCluster.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.mongoCluster.MongoCluster.Initializer.parameter.connections">connections</a></code> | <code><a href="#@cdktf/provider-ionoscloud.mongoCluster.MongoClusterConnections">MongoClusterConnections</a></code> | connections block. |
-| <code><a href="#@cdktf/provider-ionoscloud.mongoCluster.MongoCluster.Initializer.parameter.credentials">credentials</a></code> | <code><a href="#@cdktf/provider-ionoscloud.mongoCluster.MongoClusterCredentials">MongoClusterCredentials</a></code> | credentials block. |
 | <code><a href="#@cdktf/provider-ionoscloud.mongoCluster.MongoCluster.Initializer.parameter.displayName">displayName</a></code> | <code>java.lang.String</code> | The name of your cluster. |
 | <code><a href="#@cdktf/provider-ionoscloud.mongoCluster.MongoCluster.Initializer.parameter.instances">instances</a></code> | <code>java.lang.Number</code> | The total number of instances in the cluster (one master and n-1 standbys). |
 | <code><a href="#@cdktf/provider-ionoscloud.mongoCluster.MongoCluster.Initializer.parameter.location">location</a></code> | <code>java.lang.String</code> | The physical location where the cluster will be created. |
@@ -66,7 +64,7 @@ MongoCluster.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-ionoscloud.mongoCluster.MongoCluster.Initializer.parameter.biConnector">biConnector</a></code> | <code><a href="#@cdktf/provider-ionoscloud.mongoCluster.MongoClusterBiConnector">MongoClusterBiConnector</a></code> | bi_connector block. |
 | <code><a href="#@cdktf/provider-ionoscloud.mongoCluster.MongoCluster.Initializer.parameter.cores">cores</a></code> | <code>java.lang.Number</code> | The number of CPU cores per instance. |
 | <code><a href="#@cdktf/provider-ionoscloud.mongoCluster.MongoCluster.Initializer.parameter.edition">edition</a></code> | <code>java.lang.String</code> | The cluster edition. Must be one of: playground, business, enterprise. |
-| <code><a href="#@cdktf/provider-ionoscloud.mongoCluster.MongoCluster.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.12/docs/resources/mongo_cluster#id MongoCluster#id}. |
+| <code><a href="#@cdktf/provider-ionoscloud.mongoCluster.MongoCluster.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.13/docs/resources/mongo_cluster#id MongoCluster#id}. |
 | <code><a href="#@cdktf/provider-ionoscloud.mongoCluster.MongoCluster.Initializer.parameter.maintenanceWindow">maintenanceWindow</a></code> | <code><a href="#@cdktf/provider-ionoscloud.mongoCluster.MongoClusterMaintenanceWindow">MongoClusterMaintenanceWindow</a></code> | maintenance_window block. |
 | <code><a href="#@cdktf/provider-ionoscloud.mongoCluster.MongoCluster.Initializer.parameter.ram">ram</a></code> | <code>java.lang.Number</code> | The amount of memory per instance in megabytes. Multiple of 1024. |
 | <code><a href="#@cdktf/provider-ionoscloud.mongoCluster.MongoCluster.Initializer.parameter.shards">shards</a></code> | <code>java.lang.Number</code> | The total number of shards in the cluster. |
@@ -144,17 +142,7 @@ Must be unique amongst siblings in the same scope
 
 connections block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.12/docs/resources/mongo_cluster#connections MongoCluster#connections}
-
----
-
-##### `credentials`<sup>Required</sup> <a name="credentials" id="@cdktf/provider-ionoscloud.mongoCluster.MongoCluster.Initializer.parameter.credentials"></a>
-
-- *Type:* <a href="#@cdktf/provider-ionoscloud.mongoCluster.MongoClusterCredentials">MongoClusterCredentials</a>
-
-credentials block.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.12/docs/resources/mongo_cluster#credentials MongoCluster#credentials}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.13/docs/resources/mongo_cluster#connections MongoCluster#connections}
 
 ---
 
@@ -164,7 +152,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 
 The name of your cluster.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.12/docs/resources/mongo_cluster#display_name MongoCluster#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.13/docs/resources/mongo_cluster#display_name MongoCluster#display_name}
 
 ---
 
@@ -176,7 +164,7 @@ The total number of instances in the cluster (one master and n-1 standbys).
 
 Example: 1, 3, 5, 7. For enterprise edition at least 3.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.12/docs/resources/mongo_cluster#instances MongoCluster#instances}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.13/docs/resources/mongo_cluster#instances MongoCluster#instances}
 
 ---
 
@@ -188,7 +176,7 @@ The physical location where the cluster will be created.
 
 This will be where all of your instances live. Property cannot be modified after datacenter creation (disallowed in update requests). Available locations: de/txl, gb/lhr, es/vit. Update forces cluster re-creation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.12/docs/resources/mongo_cluster#location MongoCluster#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.13/docs/resources/mongo_cluster#location MongoCluster#location}
 
 ---
 
@@ -198,7 +186,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 
 The MongoDB version of your cluster. Update forces cluster re-creation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.12/docs/resources/mongo_cluster#mongodb_version MongoCluster#mongodb_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.13/docs/resources/mongo_cluster#mongodb_version MongoCluster#mongodb_version}
 
 ---
 
@@ -208,7 +196,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 
 backup block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.12/docs/resources/mongo_cluster#backup MongoCluster#backup}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.13/docs/resources/mongo_cluster#backup MongoCluster#backup}
 
 ---
 
@@ -218,7 +206,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 
 bi_connector block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.12/docs/resources/mongo_cluster#bi_connector MongoCluster#bi_connector}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.13/docs/resources/mongo_cluster#bi_connector MongoCluster#bi_connector}
 
 ---
 
@@ -228,7 +216,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 
 The number of CPU cores per instance.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.12/docs/resources/mongo_cluster#cores MongoCluster#cores}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.13/docs/resources/mongo_cluster#cores MongoCluster#cores}
 
 ---
 
@@ -238,7 +226,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 
 The cluster edition. Must be one of: playground, business, enterprise.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.12/docs/resources/mongo_cluster#edition MongoCluster#edition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.13/docs/resources/mongo_cluster#edition MongoCluster#edition}
 
 ---
 
@@ -246,7 +234,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.12/docs/resources/mongo_cluster#id MongoCluster#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.13/docs/resources/mongo_cluster#id MongoCluster#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -259,7 +247,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 maintenance_window block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.12/docs/resources/mongo_cluster#maintenance_window MongoCluster#maintenance_window}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.13/docs/resources/mongo_cluster#maintenance_window MongoCluster#maintenance_window}
 
 ---
 
@@ -269,7 +257,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 
 The amount of memory per instance in megabytes. Multiple of 1024.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.12/docs/resources/mongo_cluster#ram MongoCluster#ram}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.13/docs/resources/mongo_cluster#ram MongoCluster#ram}
 
 ---
 
@@ -279,7 +267,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 
 The total number of shards in the cluster.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.12/docs/resources/mongo_cluster#shards MongoCluster#shards}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.13/docs/resources/mongo_cluster#shards MongoCluster#shards}
 
 ---
 
@@ -289,7 +277,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 
 The amount of storage per instance in megabytes. At least 5120, at most 2097152.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.12/docs/resources/mongo_cluster#storage_size MongoCluster#storage_size}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.13/docs/resources/mongo_cluster#storage_size MongoCluster#storage_size}
 
 ---
 
@@ -299,7 +287,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 
 The storage type. One of : HDD, SSD, SSD Standard, SSD Premium.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.12/docs/resources/mongo_cluster#storage_type MongoCluster#storage_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.13/docs/resources/mongo_cluster#storage_type MongoCluster#storage_type}
 
 ---
 
@@ -311,7 +299,7 @@ The unique ID of the template, which specifies the number of cores, storage size
 
 You cannot downgrade to a smaller template or minor edition (e.g. from business to playground). To get a list of all templates to confirm the changes use the /templates endpoint.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.12/docs/resources/mongo_cluster#template_id MongoCluster#template_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.13/docs/resources/mongo_cluster#template_id MongoCluster#template_id}
 
 ---
 
@@ -321,7 +309,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.12/docs/resources/mongo_cluster#timeouts MongoCluster#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.13/docs/resources/mongo_cluster#timeouts MongoCluster#timeouts}
 
 ---
 
@@ -331,7 +319,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 
 The cluster type, either `replicaset` or `sharded-cluster`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.12/docs/resources/mongo_cluster#type MongoCluster#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.13/docs/resources/mongo_cluster#type MongoCluster#type}
 
 ---
 
@@ -365,7 +353,6 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 | <code><a href="#@cdktf/provider-ionoscloud.mongoCluster.MongoCluster.putBackup">putBackup</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.mongoCluster.MongoCluster.putBiConnector">putBiConnector</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.mongoCluster.MongoCluster.putConnections">putConnections</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-ionoscloud.mongoCluster.MongoCluster.putCredentials">putCredentials</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.mongoCluster.MongoCluster.putMaintenanceWindow">putMaintenanceWindow</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.mongoCluster.MongoCluster.putTimeouts">putTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.mongoCluster.MongoCluster.resetBackup">resetBackup</a></code> | *No description.* |
@@ -710,18 +697,6 @@ public void putConnections(MongoClusterConnections value)
 
 ---
 
-##### `putCredentials` <a name="putCredentials" id="@cdktf/provider-ionoscloud.mongoCluster.MongoCluster.putCredentials"></a>
-
-```java
-public void putCredentials(MongoClusterCredentials value)
-```
-
-###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-ionoscloud.mongoCluster.MongoCluster.putCredentials.parameter.value"></a>
-
-- *Type:* <a href="#@cdktf/provider-ionoscloud.mongoCluster.MongoClusterCredentials">MongoClusterCredentials</a>
-
----
-
 ##### `putMaintenanceWindow` <a name="putMaintenanceWindow" id="@cdktf/provider-ionoscloud.mongoCluster.MongoCluster.putMaintenanceWindow"></a>
 
 ```java
@@ -927,7 +902,7 @@ The construct id used in the generated config for the MongoCluster to import.
 
 The id of the existing MongoCluster that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.12/docs/resources/mongo_cluster#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.13/docs/resources/mongo_cluster#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -961,14 +936,12 @@ Refer to the {@link https://registry.terraform.io/providers/ionos-cloud/ionosclo
 | <code><a href="#@cdktf/provider-ionoscloud.mongoCluster.MongoCluster.property.biConnector">biConnector</a></code> | <code><a href="#@cdktf/provider-ionoscloud.mongoCluster.MongoClusterBiConnectorOutputReference">MongoClusterBiConnectorOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.mongoCluster.MongoCluster.property.connections">connections</a></code> | <code><a href="#@cdktf/provider-ionoscloud.mongoCluster.MongoClusterConnectionsOutputReference">MongoClusterConnectionsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.mongoCluster.MongoCluster.property.connectionString">connectionString</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-ionoscloud.mongoCluster.MongoCluster.property.credentials">credentials</a></code> | <code><a href="#@cdktf/provider-ionoscloud.mongoCluster.MongoClusterCredentialsOutputReference">MongoClusterCredentialsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.mongoCluster.MongoCluster.property.maintenanceWindow">maintenanceWindow</a></code> | <code><a href="#@cdktf/provider-ionoscloud.mongoCluster.MongoClusterMaintenanceWindowOutputReference">MongoClusterMaintenanceWindowOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.mongoCluster.MongoCluster.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-ionoscloud.mongoCluster.MongoClusterTimeoutsOutputReference">MongoClusterTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.mongoCluster.MongoCluster.property.backupInput">backupInput</a></code> | <code><a href="#@cdktf/provider-ionoscloud.mongoCluster.MongoClusterBackup">MongoClusterBackup</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.mongoCluster.MongoCluster.property.biConnectorInput">biConnectorInput</a></code> | <code><a href="#@cdktf/provider-ionoscloud.mongoCluster.MongoClusterBiConnector">MongoClusterBiConnector</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.mongoCluster.MongoCluster.property.connectionsInput">connectionsInput</a></code> | <code><a href="#@cdktf/provider-ionoscloud.mongoCluster.MongoClusterConnections">MongoClusterConnections</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.mongoCluster.MongoCluster.property.coresInput">coresInput</a></code> | <code>java.lang.Number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-ionoscloud.mongoCluster.MongoCluster.property.credentialsInput">credentialsInput</a></code> | <code><a href="#@cdktf/provider-ionoscloud.mongoCluster.MongoClusterCredentials">MongoClusterCredentials</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.mongoCluster.MongoCluster.property.displayNameInput">displayNameInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.mongoCluster.MongoCluster.property.editionInput">editionInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.mongoCluster.MongoCluster.property.idInput">idInput</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -1181,16 +1154,6 @@ public java.lang.String getConnectionString();
 
 ---
 
-##### `credentials`<sup>Required</sup> <a name="credentials" id="@cdktf/provider-ionoscloud.mongoCluster.MongoCluster.property.credentials"></a>
-
-```java
-public MongoClusterCredentialsOutputReference getCredentials();
-```
-
-- *Type:* <a href="#@cdktf/provider-ionoscloud.mongoCluster.MongoClusterCredentialsOutputReference">MongoClusterCredentialsOutputReference</a>
-
----
-
 ##### `maintenanceWindow`<sup>Required</sup> <a name="maintenanceWindow" id="@cdktf/provider-ionoscloud.mongoCluster.MongoCluster.property.maintenanceWindow"></a>
 
 ```java
@@ -1248,16 +1211,6 @@ public java.lang.Number getCoresInput();
 ```
 
 - *Type:* java.lang.Number
-
----
-
-##### `credentialsInput`<sup>Optional</sup> <a name="credentialsInput" id="@cdktf/provider-ionoscloud.mongoCluster.MongoCluster.property.credentialsInput"></a>
-
-```java
-public MongoClusterCredentials getCredentialsInput();
-```
-
-- *Type:* <a href="#@cdktf/provider-ionoscloud.mongoCluster.MongoClusterCredentials">MongoClusterCredentials</a>
 
 ---
 
@@ -1587,7 +1540,7 @@ The location where the cluster backups will be stored.
 
 If not set, the backup is stored in the nearest location of the cluster. Examples: de, eu-sounth-2, eu-central-2
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.12/docs/resources/mongo_cluster#location MongoCluster#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.13/docs/resources/mongo_cluster#location MongoCluster#location}
 
 ---
 
@@ -1601,7 +1554,7 @@ public java.lang.Number getPointInTimeWindowHours();
 
 Number of hours in the past for which a point-in-time snapshot can be created.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.12/docs/resources/mongo_cluster#point_in_time_window_hours MongoCluster#point_in_time_window_hours}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.13/docs/resources/mongo_cluster#point_in_time_window_hours MongoCluster#point_in_time_window_hours}
 
 ---
 
@@ -1615,7 +1568,7 @@ public java.lang.Number getSnapshotIntervalHours();
 
 Number of hours between snapshots.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.12/docs/resources/mongo_cluster#snapshot_interval_hours MongoCluster#snapshot_interval_hours}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.13/docs/resources/mongo_cluster#snapshot_interval_hours MongoCluster#snapshot_interval_hours}
 
 ---
 
@@ -1650,7 +1603,7 @@ public java.lang.Object getEnabled();
 
 Enable or disable the BiConnector.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.12/docs/resources/mongo_cluster#enabled MongoCluster#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.13/docs/resources/mongo_cluster#enabled MongoCluster#enabled}
 
 ---
 
@@ -1674,7 +1627,6 @@ MongoClusterConfig.builder()
 //  .provisioners(LocalExecProvisioner)
 //  .provisioners(RemoteExecProvisioner>)
     .connections(MongoClusterConnections)
-    .credentials(MongoClusterCredentials)
     .displayName(java.lang.String)
     .instances(java.lang.Number)
     .location(java.lang.String)
@@ -1707,7 +1659,6 @@ MongoClusterConfig.builder()
 | <code><a href="#@cdktf/provider-ionoscloud.mongoCluster.MongoClusterConfig.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.mongoCluster.MongoClusterConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.mongoCluster.MongoClusterConfig.property.connections">connections</a></code> | <code><a href="#@cdktf/provider-ionoscloud.mongoCluster.MongoClusterConnections">MongoClusterConnections</a></code> | connections block. |
-| <code><a href="#@cdktf/provider-ionoscloud.mongoCluster.MongoClusterConfig.property.credentials">credentials</a></code> | <code><a href="#@cdktf/provider-ionoscloud.mongoCluster.MongoClusterCredentials">MongoClusterCredentials</a></code> | credentials block. |
 | <code><a href="#@cdktf/provider-ionoscloud.mongoCluster.MongoClusterConfig.property.displayName">displayName</a></code> | <code>java.lang.String</code> | The name of your cluster. |
 | <code><a href="#@cdktf/provider-ionoscloud.mongoCluster.MongoClusterConfig.property.instances">instances</a></code> | <code>java.lang.Number</code> | The total number of instances in the cluster (one master and n-1 standbys). |
 | <code><a href="#@cdktf/provider-ionoscloud.mongoCluster.MongoClusterConfig.property.location">location</a></code> | <code>java.lang.String</code> | The physical location where the cluster will be created. |
@@ -1716,7 +1667,7 @@ MongoClusterConfig.builder()
 | <code><a href="#@cdktf/provider-ionoscloud.mongoCluster.MongoClusterConfig.property.biConnector">biConnector</a></code> | <code><a href="#@cdktf/provider-ionoscloud.mongoCluster.MongoClusterBiConnector">MongoClusterBiConnector</a></code> | bi_connector block. |
 | <code><a href="#@cdktf/provider-ionoscloud.mongoCluster.MongoClusterConfig.property.cores">cores</a></code> | <code>java.lang.Number</code> | The number of CPU cores per instance. |
 | <code><a href="#@cdktf/provider-ionoscloud.mongoCluster.MongoClusterConfig.property.edition">edition</a></code> | <code>java.lang.String</code> | The cluster edition. Must be one of: playground, business, enterprise. |
-| <code><a href="#@cdktf/provider-ionoscloud.mongoCluster.MongoClusterConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.12/docs/resources/mongo_cluster#id MongoCluster#id}. |
+| <code><a href="#@cdktf/provider-ionoscloud.mongoCluster.MongoClusterConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.13/docs/resources/mongo_cluster#id MongoCluster#id}. |
 | <code><a href="#@cdktf/provider-ionoscloud.mongoCluster.MongoClusterConfig.property.maintenanceWindow">maintenanceWindow</a></code> | <code><a href="#@cdktf/provider-ionoscloud.mongoCluster.MongoClusterMaintenanceWindow">MongoClusterMaintenanceWindow</a></code> | maintenance_window block. |
 | <code><a href="#@cdktf/provider-ionoscloud.mongoCluster.MongoClusterConfig.property.ram">ram</a></code> | <code>java.lang.Number</code> | The amount of memory per instance in megabytes. Multiple of 1024. |
 | <code><a href="#@cdktf/provider-ionoscloud.mongoCluster.MongoClusterConfig.property.shards">shards</a></code> | <code>java.lang.Number</code> | The total number of shards in the cluster. |
@@ -1808,21 +1759,7 @@ public MongoClusterConnections getConnections();
 
 connections block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.12/docs/resources/mongo_cluster#connections MongoCluster#connections}
-
----
-
-##### `credentials`<sup>Required</sup> <a name="credentials" id="@cdktf/provider-ionoscloud.mongoCluster.MongoClusterConfig.property.credentials"></a>
-
-```java
-public MongoClusterCredentials getCredentials();
-```
-
-- *Type:* <a href="#@cdktf/provider-ionoscloud.mongoCluster.MongoClusterCredentials">MongoClusterCredentials</a>
-
-credentials block.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.12/docs/resources/mongo_cluster#credentials MongoCluster#credentials}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.13/docs/resources/mongo_cluster#connections MongoCluster#connections}
 
 ---
 
@@ -1836,7 +1773,7 @@ public java.lang.String getDisplayName();
 
 The name of your cluster.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.12/docs/resources/mongo_cluster#display_name MongoCluster#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.13/docs/resources/mongo_cluster#display_name MongoCluster#display_name}
 
 ---
 
@@ -1852,7 +1789,7 @@ The total number of instances in the cluster (one master and n-1 standbys).
 
 Example: 1, 3, 5, 7. For enterprise edition at least 3.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.12/docs/resources/mongo_cluster#instances MongoCluster#instances}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.13/docs/resources/mongo_cluster#instances MongoCluster#instances}
 
 ---
 
@@ -1868,7 +1805,7 @@ The physical location where the cluster will be created.
 
 This will be where all of your instances live. Property cannot be modified after datacenter creation (disallowed in update requests). Available locations: de/txl, gb/lhr, es/vit. Update forces cluster re-creation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.12/docs/resources/mongo_cluster#location MongoCluster#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.13/docs/resources/mongo_cluster#location MongoCluster#location}
 
 ---
 
@@ -1882,7 +1819,7 @@ public java.lang.String getMongodbVersion();
 
 The MongoDB version of your cluster. Update forces cluster re-creation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.12/docs/resources/mongo_cluster#mongodb_version MongoCluster#mongodb_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.13/docs/resources/mongo_cluster#mongodb_version MongoCluster#mongodb_version}
 
 ---
 
@@ -1896,7 +1833,7 @@ public MongoClusterBackup getBackup();
 
 backup block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.12/docs/resources/mongo_cluster#backup MongoCluster#backup}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.13/docs/resources/mongo_cluster#backup MongoCluster#backup}
 
 ---
 
@@ -1910,7 +1847,7 @@ public MongoClusterBiConnector getBiConnector();
 
 bi_connector block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.12/docs/resources/mongo_cluster#bi_connector MongoCluster#bi_connector}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.13/docs/resources/mongo_cluster#bi_connector MongoCluster#bi_connector}
 
 ---
 
@@ -1924,7 +1861,7 @@ public java.lang.Number getCores();
 
 The number of CPU cores per instance.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.12/docs/resources/mongo_cluster#cores MongoCluster#cores}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.13/docs/resources/mongo_cluster#cores MongoCluster#cores}
 
 ---
 
@@ -1938,7 +1875,7 @@ public java.lang.String getEdition();
 
 The cluster edition. Must be one of: playground, business, enterprise.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.12/docs/resources/mongo_cluster#edition MongoCluster#edition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.13/docs/resources/mongo_cluster#edition MongoCluster#edition}
 
 ---
 
@@ -1950,7 +1887,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.12/docs/resources/mongo_cluster#id MongoCluster#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.13/docs/resources/mongo_cluster#id MongoCluster#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1967,7 +1904,7 @@ public MongoClusterMaintenanceWindow getMaintenanceWindow();
 
 maintenance_window block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.12/docs/resources/mongo_cluster#maintenance_window MongoCluster#maintenance_window}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.13/docs/resources/mongo_cluster#maintenance_window MongoCluster#maintenance_window}
 
 ---
 
@@ -1981,7 +1918,7 @@ public java.lang.Number getRam();
 
 The amount of memory per instance in megabytes. Multiple of 1024.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.12/docs/resources/mongo_cluster#ram MongoCluster#ram}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.13/docs/resources/mongo_cluster#ram MongoCluster#ram}
 
 ---
 
@@ -1995,7 +1932,7 @@ public java.lang.Number getShards();
 
 The total number of shards in the cluster.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.12/docs/resources/mongo_cluster#shards MongoCluster#shards}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.13/docs/resources/mongo_cluster#shards MongoCluster#shards}
 
 ---
 
@@ -2009,7 +1946,7 @@ public java.lang.Number getStorageSize();
 
 The amount of storage per instance in megabytes. At least 5120, at most 2097152.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.12/docs/resources/mongo_cluster#storage_size MongoCluster#storage_size}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.13/docs/resources/mongo_cluster#storage_size MongoCluster#storage_size}
 
 ---
 
@@ -2023,7 +1960,7 @@ public java.lang.String getStorageType();
 
 The storage type. One of : HDD, SSD, SSD Standard, SSD Premium.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.12/docs/resources/mongo_cluster#storage_type MongoCluster#storage_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.13/docs/resources/mongo_cluster#storage_type MongoCluster#storage_type}
 
 ---
 
@@ -2039,7 +1976,7 @@ The unique ID of the template, which specifies the number of cores, storage size
 
 You cannot downgrade to a smaller template or minor edition (e.g. from business to playground). To get a list of all templates to confirm the changes use the /templates endpoint.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.12/docs/resources/mongo_cluster#template_id MongoCluster#template_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.13/docs/resources/mongo_cluster#template_id MongoCluster#template_id}
 
 ---
 
@@ -2053,7 +1990,7 @@ public MongoClusterTimeouts getTimeouts();
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.12/docs/resources/mongo_cluster#timeouts MongoCluster#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.13/docs/resources/mongo_cluster#timeouts MongoCluster#timeouts}
 
 ---
 
@@ -2067,7 +2004,7 @@ public java.lang.String getType();
 
 The cluster type, either `replicaset` or `sharded-cluster`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.12/docs/resources/mongo_cluster#type MongoCluster#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.13/docs/resources/mongo_cluster#type MongoCluster#type}
 
 ---
 
@@ -2107,7 +2044,7 @@ The list of IPs and subnet for your cluster.
 
 Note the following unavailable IP ranges:10.233.64.0/18, 10.233.0.0/18, 10.233.114.0/24. example: [192.168.1.100/24, 192.168.1.101/24]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.12/docs/resources/mongo_cluster#cidr_list MongoCluster#cidr_list}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.13/docs/resources/mongo_cluster#cidr_list MongoCluster#cidr_list}
 
 ---
 
@@ -2121,7 +2058,7 @@ public java.lang.String getDatacenterId();
 
 The datacenter to connect your cluster to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.12/docs/resources/mongo_cluster#datacenter_id MongoCluster#datacenter_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.13/docs/resources/mongo_cluster#datacenter_id MongoCluster#datacenter_id}
 
 ---
 
@@ -2135,55 +2072,7 @@ public java.lang.String getLanId();
 
 The LAN to connect your cluster to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.12/docs/resources/mongo_cluster#lan_id MongoCluster#lan_id}
-
----
-
-### MongoClusterCredentials <a name="MongoClusterCredentials" id="@cdktf/provider-ionoscloud.mongoCluster.MongoClusterCredentials"></a>
-
-#### Initializer <a name="Initializer" id="@cdktf/provider-ionoscloud.mongoCluster.MongoClusterCredentials.Initializer"></a>
-
-```java
-import com.hashicorp.cdktf.providers.ionoscloud.mongo_cluster.MongoClusterCredentials;
-
-MongoClusterCredentials.builder()
-    .password(java.lang.String)
-    .username(java.lang.String)
-    .build();
-```
-
-#### Properties <a name="Properties" id="Properties"></a>
-
-| **Name** | **Type** | **Description** |
-| --- | --- | --- |
-| <code><a href="#@cdktf/provider-ionoscloud.mongoCluster.MongoClusterCredentials.property.password">password</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.12/docs/resources/mongo_cluster#password MongoCluster#password}. |
-| <code><a href="#@cdktf/provider-ionoscloud.mongoCluster.MongoClusterCredentials.property.username">username</a></code> | <code>java.lang.String</code> | the username for the initial mongoDB user. |
-
----
-
-##### `password`<sup>Required</sup> <a name="password" id="@cdktf/provider-ionoscloud.mongoCluster.MongoClusterCredentials.property.password"></a>
-
-```java
-public java.lang.String getPassword();
-```
-
-- *Type:* java.lang.String
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.12/docs/resources/mongo_cluster#password MongoCluster#password}.
-
----
-
-##### `username`<sup>Required</sup> <a name="username" id="@cdktf/provider-ionoscloud.mongoCluster.MongoClusterCredentials.property.username"></a>
-
-```java
-public java.lang.String getUsername();
-```
-
-- *Type:* java.lang.String
-
-the username for the initial mongoDB user.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.12/docs/resources/mongo_cluster#username MongoCluster#username}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.13/docs/resources/mongo_cluster#lan_id MongoCluster#lan_id}
 
 ---
 
@@ -2204,8 +2093,8 @@ MongoClusterMaintenanceWindow.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-ionoscloud.mongoCluster.MongoClusterMaintenanceWindow.property.dayOfTheWeek">dayOfTheWeek</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.12/docs/resources/mongo_cluster#day_of_the_week MongoCluster#day_of_the_week}. |
-| <code><a href="#@cdktf/provider-ionoscloud.mongoCluster.MongoClusterMaintenanceWindow.property.time">time</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.12/docs/resources/mongo_cluster#time MongoCluster#time}. |
+| <code><a href="#@cdktf/provider-ionoscloud.mongoCluster.MongoClusterMaintenanceWindow.property.dayOfTheWeek">dayOfTheWeek</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.13/docs/resources/mongo_cluster#day_of_the_week MongoCluster#day_of_the_week}. |
+| <code><a href="#@cdktf/provider-ionoscloud.mongoCluster.MongoClusterMaintenanceWindow.property.time">time</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.13/docs/resources/mongo_cluster#time MongoCluster#time}. |
 
 ---
 
@@ -2217,7 +2106,7 @@ public java.lang.String getDayOfTheWeek();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.12/docs/resources/mongo_cluster#day_of_the_week MongoCluster#day_of_the_week}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.13/docs/resources/mongo_cluster#day_of_the_week MongoCluster#day_of_the_week}.
 
 ---
 
@@ -2229,7 +2118,7 @@ public java.lang.String getTime();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.12/docs/resources/mongo_cluster#time MongoCluster#time}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.13/docs/resources/mongo_cluster#time MongoCluster#time}.
 
 ---
 
@@ -2252,10 +2141,10 @@ MongoClusterTimeouts.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-ionoscloud.mongoCluster.MongoClusterTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.12/docs/resources/mongo_cluster#create MongoCluster#create}. |
-| <code><a href="#@cdktf/provider-ionoscloud.mongoCluster.MongoClusterTimeouts.property.default">default</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.12/docs/resources/mongo_cluster#default MongoCluster#default}. |
-| <code><a href="#@cdktf/provider-ionoscloud.mongoCluster.MongoClusterTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.12/docs/resources/mongo_cluster#delete MongoCluster#delete}. |
-| <code><a href="#@cdktf/provider-ionoscloud.mongoCluster.MongoClusterTimeouts.property.update">update</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.12/docs/resources/mongo_cluster#update MongoCluster#update}. |
+| <code><a href="#@cdktf/provider-ionoscloud.mongoCluster.MongoClusterTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.13/docs/resources/mongo_cluster#create MongoCluster#create}. |
+| <code><a href="#@cdktf/provider-ionoscloud.mongoCluster.MongoClusterTimeouts.property.default">default</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.13/docs/resources/mongo_cluster#default MongoCluster#default}. |
+| <code><a href="#@cdktf/provider-ionoscloud.mongoCluster.MongoClusterTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.13/docs/resources/mongo_cluster#delete MongoCluster#delete}. |
+| <code><a href="#@cdktf/provider-ionoscloud.mongoCluster.MongoClusterTimeouts.property.update">update</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.13/docs/resources/mongo_cluster#update MongoCluster#update}. |
 
 ---
 
@@ -2267,7 +2156,7 @@ public java.lang.String getCreate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.12/docs/resources/mongo_cluster#create MongoCluster#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.13/docs/resources/mongo_cluster#create MongoCluster#create}.
 
 ---
 
@@ -2279,7 +2168,7 @@ public java.lang.String getDefault();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.12/docs/resources/mongo_cluster#default MongoCluster#default}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.13/docs/resources/mongo_cluster#default MongoCluster#default}.
 
 ---
 
@@ -2291,7 +2180,7 @@ public java.lang.String getDelete();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.12/docs/resources/mongo_cluster#delete MongoCluster#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.13/docs/resources/mongo_cluster#delete MongoCluster#delete}.
 
 ---
 
@@ -2303,7 +2192,7 @@ public java.lang.String getUpdate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.12/docs/resources/mongo_cluster#update MongoCluster#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.13/docs/resources/mongo_cluster#update MongoCluster#update}.
 
 ---
 
@@ -3256,299 +3145,6 @@ public MongoClusterConnections getInternalValue();
 ```
 
 - *Type:* <a href="#@cdktf/provider-ionoscloud.mongoCluster.MongoClusterConnections">MongoClusterConnections</a>
-
----
-
-
-### MongoClusterCredentialsOutputReference <a name="MongoClusterCredentialsOutputReference" id="@cdktf/provider-ionoscloud.mongoCluster.MongoClusterCredentialsOutputReference"></a>
-
-#### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.mongoCluster.MongoClusterCredentialsOutputReference.Initializer"></a>
-
-```java
-import com.hashicorp.cdktf.providers.ionoscloud.mongo_cluster.MongoClusterCredentialsOutputReference;
-
-new MongoClusterCredentialsOutputReference(IInterpolatingParent terraformResource, java.lang.String terraformAttribute);
-```
-
-| **Name** | **Type** | **Description** |
-| --- | --- | --- |
-| <code><a href="#@cdktf/provider-ionoscloud.mongoCluster.MongoClusterCredentialsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>com.hashicorp.cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-ionoscloud.mongoCluster.MongoClusterCredentialsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
-
----
-
-##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-ionoscloud.mongoCluster.MongoClusterCredentialsOutputReference.Initializer.parameter.terraformResource"></a>
-
-- *Type:* com.hashicorp.cdktf.IInterpolatingParent
-
-The parent resource.
-
----
-
-##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-ionoscloud.mongoCluster.MongoClusterCredentialsOutputReference.Initializer.parameter.terraformAttribute"></a>
-
-- *Type:* java.lang.String
-
-The attribute on the parent resource this class is referencing.
-
----
-
-#### Methods <a name="Methods" id="Methods"></a>
-
-| **Name** | **Description** |
-| --- | --- |
-| <code><a href="#@cdktf/provider-ionoscloud.mongoCluster.MongoClusterCredentialsOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-ionoscloud.mongoCluster.MongoClusterCredentialsOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-ionoscloud.mongoCluster.MongoClusterCredentialsOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-ionoscloud.mongoCluster.MongoClusterCredentialsOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-ionoscloud.mongoCluster.MongoClusterCredentialsOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-ionoscloud.mongoCluster.MongoClusterCredentialsOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-ionoscloud.mongoCluster.MongoClusterCredentialsOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-ionoscloud.mongoCluster.MongoClusterCredentialsOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-ionoscloud.mongoCluster.MongoClusterCredentialsOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-ionoscloud.mongoCluster.MongoClusterCredentialsOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-ionoscloud.mongoCluster.MongoClusterCredentialsOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-ionoscloud.mongoCluster.MongoClusterCredentialsOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-ionoscloud.mongoCluster.MongoClusterCredentialsOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
-
----
-
-##### `computeFqn` <a name="computeFqn" id="@cdktf/provider-ionoscloud.mongoCluster.MongoClusterCredentialsOutputReference.computeFqn"></a>
-
-```java
-public java.lang.String computeFqn()
-```
-
-##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-ionoscloud.mongoCluster.MongoClusterCredentialsOutputReference.getAnyMapAttribute"></a>
-
-```java
-public java.util.Map<java.lang.String, java.lang.Object> getAnyMapAttribute(java.lang.String terraformAttribute)
-```
-
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-ionoscloud.mongoCluster.MongoClusterCredentialsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* java.lang.String
-
----
-
-##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-ionoscloud.mongoCluster.MongoClusterCredentialsOutputReference.getBooleanAttribute"></a>
-
-```java
-public IResolvable getBooleanAttribute(java.lang.String terraformAttribute)
-```
-
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-ionoscloud.mongoCluster.MongoClusterCredentialsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* java.lang.String
-
----
-
-##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-ionoscloud.mongoCluster.MongoClusterCredentialsOutputReference.getBooleanMapAttribute"></a>
-
-```java
-public java.util.Map<java.lang.String, java.lang.Boolean> getBooleanMapAttribute(java.lang.String terraformAttribute)
-```
-
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-ionoscloud.mongoCluster.MongoClusterCredentialsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* java.lang.String
-
----
-
-##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-ionoscloud.mongoCluster.MongoClusterCredentialsOutputReference.getListAttribute"></a>
-
-```java
-public java.util.List<java.lang.String> getListAttribute(java.lang.String terraformAttribute)
-```
-
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-ionoscloud.mongoCluster.MongoClusterCredentialsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* java.lang.String
-
----
-
-##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-ionoscloud.mongoCluster.MongoClusterCredentialsOutputReference.getNumberAttribute"></a>
-
-```java
-public java.lang.Number getNumberAttribute(java.lang.String terraformAttribute)
-```
-
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-ionoscloud.mongoCluster.MongoClusterCredentialsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* java.lang.String
-
----
-
-##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-ionoscloud.mongoCluster.MongoClusterCredentialsOutputReference.getNumberListAttribute"></a>
-
-```java
-public java.util.List<java.lang.Number> getNumberListAttribute(java.lang.String terraformAttribute)
-```
-
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-ionoscloud.mongoCluster.MongoClusterCredentialsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* java.lang.String
-
----
-
-##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-ionoscloud.mongoCluster.MongoClusterCredentialsOutputReference.getNumberMapAttribute"></a>
-
-```java
-public java.util.Map<java.lang.String, java.lang.Number> getNumberMapAttribute(java.lang.String terraformAttribute)
-```
-
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-ionoscloud.mongoCluster.MongoClusterCredentialsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* java.lang.String
-
----
-
-##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-ionoscloud.mongoCluster.MongoClusterCredentialsOutputReference.getStringAttribute"></a>
-
-```java
-public java.lang.String getStringAttribute(java.lang.String terraformAttribute)
-```
-
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-ionoscloud.mongoCluster.MongoClusterCredentialsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* java.lang.String
-
----
-
-##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-ionoscloud.mongoCluster.MongoClusterCredentialsOutputReference.getStringMapAttribute"></a>
-
-```java
-public java.util.Map<java.lang.String, java.lang.String> getStringMapAttribute(java.lang.String terraformAttribute)
-```
-
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-ionoscloud.mongoCluster.MongoClusterCredentialsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
-
-- *Type:* java.lang.String
-
----
-
-##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-ionoscloud.mongoCluster.MongoClusterCredentialsOutputReference.interpolationForAttribute"></a>
-
-```java
-public IResolvable interpolationForAttribute(java.lang.String property)
-```
-
-###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-ionoscloud.mongoCluster.MongoClusterCredentialsOutputReference.interpolationForAttribute.parameter.property"></a>
-
-- *Type:* java.lang.String
-
----
-
-##### `resolve` <a name="resolve" id="@cdktf/provider-ionoscloud.mongoCluster.MongoClusterCredentialsOutputReference.resolve"></a>
-
-```java
-public java.lang.Object resolve(IResolveContext _context)
-```
-
-Produce the Token's value at resolution time.
-
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-ionoscloud.mongoCluster.MongoClusterCredentialsOutputReference.resolve.parameter._context"></a>
-
-- *Type:* com.hashicorp.cdktf.IResolveContext
-
----
-
-##### `toString` <a name="toString" id="@cdktf/provider-ionoscloud.mongoCluster.MongoClusterCredentialsOutputReference.toString"></a>
-
-```java
-public java.lang.String toString()
-```
-
-Return a string representation of this resolvable object.
-
-Returns a reversible string representation.
-
-
-#### Properties <a name="Properties" id="Properties"></a>
-
-| **Name** | **Type** | **Description** |
-| --- | --- | --- |
-| <code><a href="#@cdktf/provider-ionoscloud.mongoCluster.MongoClusterCredentialsOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-ionoscloud.mongoCluster.MongoClusterCredentialsOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-ionoscloud.mongoCluster.MongoClusterCredentialsOutputReference.property.passwordInput">passwordInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-ionoscloud.mongoCluster.MongoClusterCredentialsOutputReference.property.usernameInput">usernameInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-ionoscloud.mongoCluster.MongoClusterCredentialsOutputReference.property.password">password</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-ionoscloud.mongoCluster.MongoClusterCredentialsOutputReference.property.username">username</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-ionoscloud.mongoCluster.MongoClusterCredentialsOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-ionoscloud.mongoCluster.MongoClusterCredentials">MongoClusterCredentials</a></code> | *No description.* |
-
----
-
-##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktf/provider-ionoscloud.mongoCluster.MongoClusterCredentialsOutputReference.property.creationStack"></a>
-
-```java
-public java.util.List<java.lang.String> getCreationStack();
-```
-
-- *Type:* java.util.List<java.lang.String>
-
-The creation stack of this resolvable which will be appended to errors thrown during resolution.
-
-If this returns an empty array the stack will not be attached.
-
----
-
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-ionoscloud.mongoCluster.MongoClusterCredentialsOutputReference.property.fqn"></a>
-
-```java
-public java.lang.String getFqn();
-```
-
-- *Type:* java.lang.String
-
----
-
-##### `passwordInput`<sup>Optional</sup> <a name="passwordInput" id="@cdktf/provider-ionoscloud.mongoCluster.MongoClusterCredentialsOutputReference.property.passwordInput"></a>
-
-```java
-public java.lang.String getPasswordInput();
-```
-
-- *Type:* java.lang.String
-
----
-
-##### `usernameInput`<sup>Optional</sup> <a name="usernameInput" id="@cdktf/provider-ionoscloud.mongoCluster.MongoClusterCredentialsOutputReference.property.usernameInput"></a>
-
-```java
-public java.lang.String getUsernameInput();
-```
-
-- *Type:* java.lang.String
-
----
-
-##### `password`<sup>Required</sup> <a name="password" id="@cdktf/provider-ionoscloud.mongoCluster.MongoClusterCredentialsOutputReference.property.password"></a>
-
-```java
-public java.lang.String getPassword();
-```
-
-- *Type:* java.lang.String
-
----
-
-##### `username`<sup>Required</sup> <a name="username" id="@cdktf/provider-ionoscloud.mongoCluster.MongoClusterCredentialsOutputReference.property.username"></a>
-
-```java
-public java.lang.String getUsername();
-```
-
-- *Type:* java.lang.String
-
----
-
-##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-ionoscloud.mongoCluster.MongoClusterCredentialsOutputReference.property.internalValue"></a>
-
-```java
-public MongoClusterCredentials getInternalValue();
-```
-
-- *Type:* <a href="#@cdktf/provider-ionoscloud.mongoCluster.MongoClusterCredentials">MongoClusterCredentials</a>
 
 ---
 

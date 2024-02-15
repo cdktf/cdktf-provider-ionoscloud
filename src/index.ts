@@ -69,6 +69,7 @@ export * as dataIonoscloudImage from './data-ionoscloud-image';
 export * as dataIonoscloudIpblock from './data-ionoscloud-ipblock';
 export * as dataIonoscloudIpfailover from './data-ionoscloud-ipfailover';
 export * as dataIonoscloudK8SCluster from './data-ionoscloud-k8s-cluster';
+export * as dataIonoscloudK8SClusters from './data-ionoscloud-k8s-clusters';
 export * as dataIonoscloudK8SNodePool from './data-ionoscloud-k8s-node-pool';
 export * as dataIonoscloudK8SNodePoolNodes from './data-ionoscloud-k8s-node-pool-nodes';
 export * as dataIonoscloudLan from './data-ionoscloud-lan';

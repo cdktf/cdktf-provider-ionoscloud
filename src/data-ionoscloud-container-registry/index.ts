@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.12/docs/data-sources/container_registry
+// https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.13/docs/data-sources/container_registry
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,32 +13,107 @@ import * as cdktf from 'cdktf';
 
 export interface DataIonoscloudContainerRegistryConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.12/docs/data-sources/container_registry#id DataIonoscloudContainerRegistry#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.13/docs/data-sources/container_registry#id DataIonoscloudContainerRegistry#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.12/docs/data-sources/container_registry#location DataIonoscloudContainerRegistry#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.13/docs/data-sources/container_registry#location DataIonoscloudContainerRegistry#location}
   */
   readonly location?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.12/docs/data-sources/container_registry#name DataIonoscloudContainerRegistry#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.13/docs/data-sources/container_registry#name DataIonoscloudContainerRegistry#name}
   */
   readonly name?: string;
   /**
   * Whether partial matching is allowed or not when using name argument.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.12/docs/data-sources/container_registry#partial_match DataIonoscloudContainerRegistry#partial_match}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.13/docs/data-sources/container_registry#partial_match DataIonoscloudContainerRegistry#partial_match}
   */
   readonly partialMatch?: boolean | cdktf.IResolvable;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.12/docs/data-sources/container_registry#timeouts DataIonoscloudContainerRegistry#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.13/docs/data-sources/container_registry#timeouts DataIonoscloudContainerRegistry#timeouts}
   */
   readonly timeouts?: DataIonoscloudContainerRegistryTimeouts;
+}
+export interface DataIonoscloudContainerRegistryFeatures {
+}
+
+export function dataIonoscloudContainerRegistryFeaturesToTerraform(struct?: DataIonoscloudContainerRegistryFeatures): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+
+export function dataIonoscloudContainerRegistryFeaturesToHclTerraform(struct?: DataIonoscloudContainerRegistryFeatures): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class DataIonoscloudContainerRegistryFeaturesOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataIonoscloudContainerRegistryFeatures | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataIonoscloudContainerRegistryFeatures | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // vulnerability_scanning - computed: true, optional: false, required: false
+  public get vulnerabilityScanning() {
+    return this.getBooleanAttribute('vulnerability_scanning');
+  }
+}
+
+export class DataIonoscloudContainerRegistryFeaturesList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataIonoscloudContainerRegistryFeaturesOutputReference {
+    return new DataIonoscloudContainerRegistryFeaturesOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
 }
 export interface DataIonoscloudContainerRegistryGarbageCollectionSchedule {
 }
@@ -282,19 +357,19 @@ export class DataIonoscloudContainerRegistryStorageUsageList extends cdktf.Compl
 }
 export interface DataIonoscloudContainerRegistryTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.12/docs/data-sources/container_registry#create DataIonoscloudContainerRegistry#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.13/docs/data-sources/container_registry#create DataIonoscloudContainerRegistry#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.12/docs/data-sources/container_registry#default DataIonoscloudContainerRegistry#default}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.13/docs/data-sources/container_registry#default DataIonoscloudContainerRegistry#default}
   */
   readonly default?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.12/docs/data-sources/container_registry#delete DataIonoscloudContainerRegistry#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.13/docs/data-sources/container_registry#delete DataIonoscloudContainerRegistry#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.12/docs/data-sources/container_registry#update DataIonoscloudContainerRegistry#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.13/docs/data-sources/container_registry#update DataIonoscloudContainerRegistry#update}
   */
   readonly update?: string;
 }
@@ -475,7 +550,7 @@ export class DataIonoscloudContainerRegistryTimeoutsOutputReference extends cdkt
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.12/docs/data-sources/container_registry ionoscloud_container_registry}
+* Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.13/docs/data-sources/container_registry ionoscloud_container_registry}
 */
 export class DataIonoscloudContainerRegistry extends cdktf.TerraformDataSource {
 
@@ -491,7 +566,7 @@ export class DataIonoscloudContainerRegistry extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataIonoscloudContainerRegistry resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataIonoscloudContainerRegistry to import
-  * @param importFromId The id of the existing DataIonoscloudContainerRegistry that should be imported. Refer to the {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.12/docs/data-sources/container_registry#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataIonoscloudContainerRegistry that should be imported. Refer to the {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.13/docs/data-sources/container_registry#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataIonoscloudContainerRegistry to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -503,7 +578,7 @@ export class DataIonoscloudContainerRegistry extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.12/docs/data-sources/container_registry ionoscloud_container_registry} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.13/docs/data-sources/container_registry ionoscloud_container_registry} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -514,7 +589,7 @@ export class DataIonoscloudContainerRegistry extends cdktf.TerraformDataSource {
       terraformResourceType: 'ionoscloud_container_registry',
       terraformGeneratorMetadata: {
         providerName: 'ionoscloud',
-        providerVersion: '6.4.12',
+        providerVersion: '6.4.13',
         providerVersionConstraint: '~> 6.2'
       },
       provider: config.provider,
@@ -535,6 +610,12 @@ export class DataIonoscloudContainerRegistry extends cdktf.TerraformDataSource {
   // ==========
   // ATTRIBUTES
   // ==========
+
+  // features - computed: true, optional: false, required: false
+  private _features = new DataIonoscloudContainerRegistryFeaturesList(this, "features", false);
+  public get features() {
+    return this._features;
+  }
 
   // garbage_collection_schedule - computed: true, optional: false, required: false
   private _garbageCollectionSchedule = new DataIonoscloudContainerRegistryGarbageCollectionScheduleList(this, "garbage_collection_schedule", false);

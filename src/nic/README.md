@@ -1,3 +1,3 @@
 # `ionoscloud_nic`
 
-Refer to the Terraform Registry for docs: [`ionoscloud_nic`](https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.12/docs/resources/nic).
+Refer to the Terraform Registry for docs: [`ionoscloud_nic`](https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.13/docs/resources/nic).

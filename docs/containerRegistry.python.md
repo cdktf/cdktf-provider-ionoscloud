@@ -4,7 +4,7 @@
 
 ### ContainerRegistry <a name="ContainerRegistry" id="@cdktf/provider-ionoscloud.containerRegistry.ContainerRegistry"></a>
 
-Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.12/docs/resources/container_registry ionoscloud_container_registry}.
+Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.13/docs/resources/container_registry ionoscloud_container_registry}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.containerRegistry.ContainerRegistry.Initializer"></a>
 
@@ -23,6 +23,7 @@ containerRegistry.ContainerRegistry(
   provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
   location: str,
   name: str,
+  features: ContainerRegistryFeatures = None,
   garbage_collection_schedule: ContainerRegistryGarbageCollectionSchedule = None,
   id: str = None,
   timeouts: ContainerRegistryTimeouts = None
@@ -40,10 +41,11 @@ containerRegistry.ContainerRegistry(
 | <code><a href="#@cdktf/provider-ionoscloud.containerRegistry.ContainerRegistry.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.containerRegistry.ContainerRegistry.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.containerRegistry.ContainerRegistry.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-ionoscloud.containerRegistry.ContainerRegistry.Initializer.parameter.location">location</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.12/docs/resources/container_registry#location ContainerRegistry#location}. |
-| <code><a href="#@cdktf/provider-ionoscloud.containerRegistry.ContainerRegistry.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.12/docs/resources/container_registry#name ContainerRegistry#name}. |
+| <code><a href="#@cdktf/provider-ionoscloud.containerRegistry.ContainerRegistry.Initializer.parameter.location">location</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.13/docs/resources/container_registry#location ContainerRegistry#location}. |
+| <code><a href="#@cdktf/provider-ionoscloud.containerRegistry.ContainerRegistry.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.13/docs/resources/container_registry#name ContainerRegistry#name}. |
+| <code><a href="#@cdktf/provider-ionoscloud.containerRegistry.ContainerRegistry.Initializer.parameter.features">features</a></code> | <code><a href="#@cdktf/provider-ionoscloud.containerRegistry.ContainerRegistryFeatures">ContainerRegistryFeatures</a></code> | features block. |
 | <code><a href="#@cdktf/provider-ionoscloud.containerRegistry.ContainerRegistry.Initializer.parameter.garbageCollectionSchedule">garbage_collection_schedule</a></code> | <code><a href="#@cdktf/provider-ionoscloud.containerRegistry.ContainerRegistryGarbageCollectionSchedule">ContainerRegistryGarbageCollectionSchedule</a></code> | garbage_collection_schedule block. |
-| <code><a href="#@cdktf/provider-ionoscloud.containerRegistry.ContainerRegistry.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.12/docs/resources/container_registry#id ContainerRegistry#id}. |
+| <code><a href="#@cdktf/provider-ionoscloud.containerRegistry.ContainerRegistry.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.13/docs/resources/container_registry#id ContainerRegistry#id}. |
 | <code><a href="#@cdktf/provider-ionoscloud.containerRegistry.ContainerRegistry.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-ionoscloud.containerRegistry.ContainerRegistryTimeouts">ContainerRegistryTimeouts</a></code> | timeouts block. |
 
 ---
@@ -112,7 +114,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.12/docs/resources/container_registry#location ContainerRegistry#location}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.13/docs/resources/container_registry#location ContainerRegistry#location}.
 
 ---
 
@@ -120,7 +122,17 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.12/docs/resources/container_registry#name ContainerRegistry#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.13/docs/resources/container_registry#name ContainerRegistry#name}.
+
+---
+
+##### `features`<sup>Optional</sup> <a name="features" id="@cdktf/provider-ionoscloud.containerRegistry.ContainerRegistry.Initializer.parameter.features"></a>
+
+- *Type:* <a href="#@cdktf/provider-ionoscloud.containerRegistry.ContainerRegistryFeatures">ContainerRegistryFeatures</a>
+
+features block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.13/docs/resources/container_registry#features ContainerRegistry#features}
 
 ---
 
@@ -130,7 +142,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 
 garbage_collection_schedule block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.12/docs/resources/container_registry#garbage_collection_schedule ContainerRegistry#garbage_collection_schedule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.13/docs/resources/container_registry#garbage_collection_schedule ContainerRegistry#garbage_collection_schedule}
 
 ---
 
@@ -138,7 +150,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.12/docs/resources/container_registry#id ContainerRegistry#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.13/docs/resources/container_registry#id ContainerRegistry#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -151,7 +163,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.12/docs/resources/container_registry#timeouts ContainerRegistry#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.13/docs/resources/container_registry#timeouts ContainerRegistry#timeouts}
 
 ---
 
@@ -182,8 +194,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 | <code><a href="#@cdktf/provider-ionoscloud.containerRegistry.ContainerRegistry.moveFromId">move_from_id</a></code> | Move the resource corresponding to "id" to this resource. |
 | <code><a href="#@cdktf/provider-ionoscloud.containerRegistry.ContainerRegistry.moveTo">move_to</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-ionoscloud.containerRegistry.ContainerRegistry.moveToId">move_to_id</a></code> | Moves this resource to the resource corresponding to "id". |
+| <code><a href="#@cdktf/provider-ionoscloud.containerRegistry.ContainerRegistry.putFeatures">put_features</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.containerRegistry.ContainerRegistry.putGarbageCollectionSchedule">put_garbage_collection_schedule</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.containerRegistry.ContainerRegistry.putTimeouts">put_timeouts</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.containerRegistry.ContainerRegistry.resetFeatures">reset_features</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.containerRegistry.ContainerRegistry.resetGarbageCollectionSchedule">reset_garbage_collection_schedule</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.containerRegistry.ContainerRegistry.resetId">reset_id</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.containerRegistry.ContainerRegistry.resetTimeouts">reset_timeouts</a></code> | *No description.* |
@@ -515,6 +529,24 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
+##### `put_features` <a name="put_features" id="@cdktf/provider-ionoscloud.containerRegistry.ContainerRegistry.putFeatures"></a>
+
+```python
+def put_features(
+  vulnerability_scanning: typing.Union[bool, IResolvable] = None
+) -> None
+```
+
+###### `vulnerability_scanning`<sup>Optional</sup> <a name="vulnerability_scanning" id="@cdktf/provider-ionoscloud.containerRegistry.ContainerRegistry.putFeatures.parameter.vulnerabilityScanning"></a>
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+Enables vulnerability scanning for images in the container registry. Note: this feature can incur additional charges.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.13/docs/resources/container_registry#vulnerability_scanning ContainerRegistry#vulnerability_scanning}
+
+---
+
 ##### `put_garbage_collection_schedule` <a name="put_garbage_collection_schedule" id="@cdktf/provider-ionoscloud.containerRegistry.ContainerRegistry.putGarbageCollectionSchedule"></a>
 
 ```python
@@ -528,7 +560,7 @@ def put_garbage_collection_schedule(
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.12/docs/resources/container_registry#days ContainerRegistry#days}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.13/docs/resources/container_registry#days ContainerRegistry#days}.
 
 ---
 
@@ -538,7 +570,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 
 UTC time of day e.g. 01:00:00 - as defined by partial-time - RFC3339.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.12/docs/resources/container_registry#time ContainerRegistry#time}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.13/docs/resources/container_registry#time ContainerRegistry#time}
 
 ---
 
@@ -557,7 +589,7 @@ def put_timeouts(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.12/docs/resources/container_registry#create ContainerRegistry#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.13/docs/resources/container_registry#create ContainerRegistry#create}.
 
 ---
 
@@ -565,7 +597,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.12/docs/resources/container_registry#default ContainerRegistry#default}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.13/docs/resources/container_registry#default ContainerRegistry#default}.
 
 ---
 
@@ -573,7 +605,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.12/docs/resources/container_registry#delete ContainerRegistry#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.13/docs/resources/container_registry#delete ContainerRegistry#delete}.
 
 ---
 
@@ -581,9 +613,15 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.12/docs/resources/container_registry#update ContainerRegistry#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.13/docs/resources/container_registry#update ContainerRegistry#update}.
 
 ---
+
+##### `reset_features` <a name="reset_features" id="@cdktf/provider-ionoscloud.containerRegistry.ContainerRegistry.resetFeatures"></a>
+
+```python
+def reset_features() -> None
+```
 
 ##### `reset_garbage_collection_schedule` <a name="reset_garbage_collection_schedule" id="@cdktf/provider-ionoscloud.containerRegistry.ContainerRegistry.resetGarbageCollectionSchedule"></a>
 
@@ -717,7 +755,7 @@ The construct id used in the generated config for the ContainerRegistry to impor
 
 The id of the existing ContainerRegistry that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.12/docs/resources/container_registry#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.13/docs/resources/container_registry#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -747,10 +785,12 @@ Refer to the {@link https://registry.terraform.io/providers/ionos-cloud/ionosclo
 | <code><a href="#@cdktf/provider-ionoscloud.containerRegistry.ContainerRegistry.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.containerRegistry.ContainerRegistry.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.containerRegistry.ContainerRegistry.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.containerRegistry.ContainerRegistry.property.features">features</a></code> | <code><a href="#@cdktf/provider-ionoscloud.containerRegistry.ContainerRegistryFeaturesOutputReference">ContainerRegistryFeaturesOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.containerRegistry.ContainerRegistry.property.garbageCollectionSchedule">garbage_collection_schedule</a></code> | <code><a href="#@cdktf/provider-ionoscloud.containerRegistry.ContainerRegistryGarbageCollectionScheduleOutputReference">ContainerRegistryGarbageCollectionScheduleOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.containerRegistry.ContainerRegistry.property.hostname">hostname</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.containerRegistry.ContainerRegistry.property.storageUsage">storage_usage</a></code> | <code><a href="#@cdktf/provider-ionoscloud.containerRegistry.ContainerRegistryStorageUsageList">ContainerRegistryStorageUsageList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.containerRegistry.ContainerRegistry.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-ionoscloud.containerRegistry.ContainerRegistryTimeoutsOutputReference">ContainerRegistryTimeoutsOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.containerRegistry.ContainerRegistry.property.featuresInput">features_input</a></code> | <code><a href="#@cdktf/provider-ionoscloud.containerRegistry.ContainerRegistryFeatures">ContainerRegistryFeatures</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.containerRegistry.ContainerRegistry.property.garbageCollectionScheduleInput">garbage_collection_schedule_input</a></code> | <code><a href="#@cdktf/provider-ionoscloud.containerRegistry.ContainerRegistryGarbageCollectionSchedule">ContainerRegistryGarbageCollectionSchedule</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.containerRegistry.ContainerRegistry.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.containerRegistry.ContainerRegistry.property.locationInput">location_input</a></code> | <code>str</code> | *No description.* |
@@ -904,6 +944,16 @@ provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, Re
 
 ---
 
+##### `features`<sup>Required</sup> <a name="features" id="@cdktf/provider-ionoscloud.containerRegistry.ContainerRegistry.property.features"></a>
+
+```python
+features: ContainerRegistryFeaturesOutputReference
+```
+
+- *Type:* <a href="#@cdktf/provider-ionoscloud.containerRegistry.ContainerRegistryFeaturesOutputReference">ContainerRegistryFeaturesOutputReference</a>
+
+---
+
 ##### `garbage_collection_schedule`<sup>Required</sup> <a name="garbage_collection_schedule" id="@cdktf/provider-ionoscloud.containerRegistry.ContainerRegistry.property.garbageCollectionSchedule"></a>
 
 ```python
@@ -941,6 +991,16 @@ timeouts: ContainerRegistryTimeoutsOutputReference
 ```
 
 - *Type:* <a href="#@cdktf/provider-ionoscloud.containerRegistry.ContainerRegistryTimeoutsOutputReference">ContainerRegistryTimeoutsOutputReference</a>
+
+---
+
+##### `features_input`<sup>Optional</sup> <a name="features_input" id="@cdktf/provider-ionoscloud.containerRegistry.ContainerRegistry.property.featuresInput"></a>
+
+```python
+features_input: ContainerRegistryFeatures
+```
+
+- *Type:* <a href="#@cdktf/provider-ionoscloud.containerRegistry.ContainerRegistryFeatures">ContainerRegistryFeatures</a>
 
 ---
 
@@ -1061,6 +1121,7 @@ containerRegistry.ContainerRegistryConfig(
   provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
   location: str,
   name: str,
+  features: ContainerRegistryFeatures = None,
   garbage_collection_schedule: ContainerRegistryGarbageCollectionSchedule = None,
   id: str = None,
   timeouts: ContainerRegistryTimeouts = None
@@ -1078,10 +1139,11 @@ containerRegistry.ContainerRegistryConfig(
 | <code><a href="#@cdktf/provider-ionoscloud.containerRegistry.ContainerRegistryConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.containerRegistry.ContainerRegistryConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.containerRegistry.ContainerRegistryConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-ionoscloud.containerRegistry.ContainerRegistryConfig.property.location">location</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.12/docs/resources/container_registry#location ContainerRegistry#location}. |
-| <code><a href="#@cdktf/provider-ionoscloud.containerRegistry.ContainerRegistryConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.12/docs/resources/container_registry#name ContainerRegistry#name}. |
+| <code><a href="#@cdktf/provider-ionoscloud.containerRegistry.ContainerRegistryConfig.property.location">location</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.13/docs/resources/container_registry#location ContainerRegistry#location}. |
+| <code><a href="#@cdktf/provider-ionoscloud.containerRegistry.ContainerRegistryConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.13/docs/resources/container_registry#name ContainerRegistry#name}. |
+| <code><a href="#@cdktf/provider-ionoscloud.containerRegistry.ContainerRegistryConfig.property.features">features</a></code> | <code><a href="#@cdktf/provider-ionoscloud.containerRegistry.ContainerRegistryFeatures">ContainerRegistryFeatures</a></code> | features block. |
 | <code><a href="#@cdktf/provider-ionoscloud.containerRegistry.ContainerRegistryConfig.property.garbageCollectionSchedule">garbage_collection_schedule</a></code> | <code><a href="#@cdktf/provider-ionoscloud.containerRegistry.ContainerRegistryGarbageCollectionSchedule">ContainerRegistryGarbageCollectionSchedule</a></code> | garbage_collection_schedule block. |
-| <code><a href="#@cdktf/provider-ionoscloud.containerRegistry.ContainerRegistryConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.12/docs/resources/container_registry#id ContainerRegistry#id}. |
+| <code><a href="#@cdktf/provider-ionoscloud.containerRegistry.ContainerRegistryConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.13/docs/resources/container_registry#id ContainerRegistry#id}. |
 | <code><a href="#@cdktf/provider-ionoscloud.containerRegistry.ContainerRegistryConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-ionoscloud.containerRegistry.ContainerRegistryTimeouts">ContainerRegistryTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1164,7 +1226,7 @@ location: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.12/docs/resources/container_registry#location ContainerRegistry#location}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.13/docs/resources/container_registry#location ContainerRegistry#location}.
 
 ---
 
@@ -1176,7 +1238,21 @@ name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.12/docs/resources/container_registry#name ContainerRegistry#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.13/docs/resources/container_registry#name ContainerRegistry#name}.
+
+---
+
+##### `features`<sup>Optional</sup> <a name="features" id="@cdktf/provider-ionoscloud.containerRegistry.ContainerRegistryConfig.property.features"></a>
+
+```python
+features: ContainerRegistryFeatures
+```
+
+- *Type:* <a href="#@cdktf/provider-ionoscloud.containerRegistry.ContainerRegistryFeatures">ContainerRegistryFeatures</a>
+
+features block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.13/docs/resources/container_registry#features ContainerRegistry#features}
 
 ---
 
@@ -1190,7 +1266,7 @@ garbage_collection_schedule: ContainerRegistryGarbageCollectionSchedule
 
 garbage_collection_schedule block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.12/docs/resources/container_registry#garbage_collection_schedule ContainerRegistry#garbage_collection_schedule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.13/docs/resources/container_registry#garbage_collection_schedule ContainerRegistry#garbage_collection_schedule}
 
 ---
 
@@ -1202,7 +1278,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.12/docs/resources/container_registry#id ContainerRegistry#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.13/docs/resources/container_registry#id ContainerRegistry#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1219,7 +1295,41 @@ timeouts: ContainerRegistryTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.12/docs/resources/container_registry#timeouts ContainerRegistry#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.13/docs/resources/container_registry#timeouts ContainerRegistry#timeouts}
+
+---
+
+### ContainerRegistryFeatures <a name="ContainerRegistryFeatures" id="@cdktf/provider-ionoscloud.containerRegistry.ContainerRegistryFeatures"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-ionoscloud.containerRegistry.ContainerRegistryFeatures.Initializer"></a>
+
+```python
+from cdktf_cdktf_provider_ionoscloud import container_registry
+
+containerRegistry.ContainerRegistryFeatures(
+  vulnerability_scanning: typing.Union[bool, IResolvable] = None
+)
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-ionoscloud.containerRegistry.ContainerRegistryFeatures.property.vulnerabilityScanning">vulnerability_scanning</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Enables vulnerability scanning for images in the container registry. Note: this feature can incur additional charges. |
+
+---
+
+##### `vulnerability_scanning`<sup>Optional</sup> <a name="vulnerability_scanning" id="@cdktf/provider-ionoscloud.containerRegistry.ContainerRegistryFeatures.property.vulnerabilityScanning"></a>
+
+```python
+vulnerability_scanning: typing.Union[bool, IResolvable]
+```
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+Enables vulnerability scanning for images in the container registry. Note: this feature can incur additional charges.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.13/docs/resources/container_registry#vulnerability_scanning ContainerRegistry#vulnerability_scanning}
 
 ---
 
@@ -1240,7 +1350,7 @@ containerRegistry.ContainerRegistryGarbageCollectionSchedule(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-ionoscloud.containerRegistry.ContainerRegistryGarbageCollectionSchedule.property.days">days</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.12/docs/resources/container_registry#days ContainerRegistry#days}. |
+| <code><a href="#@cdktf/provider-ionoscloud.containerRegistry.ContainerRegistryGarbageCollectionSchedule.property.days">days</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.13/docs/resources/container_registry#days ContainerRegistry#days}. |
 | <code><a href="#@cdktf/provider-ionoscloud.containerRegistry.ContainerRegistryGarbageCollectionSchedule.property.time">time</a></code> | <code>str</code> | UTC time of day e.g. 01:00:00 - as defined by partial-time - RFC3339. |
 
 ---
@@ -1253,7 +1363,7 @@ days: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.12/docs/resources/container_registry#days ContainerRegistry#days}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.13/docs/resources/container_registry#days ContainerRegistry#days}.
 
 ---
 
@@ -1267,7 +1377,7 @@ time: str
 
 UTC time of day e.g. 01:00:00 - as defined by partial-time - RFC3339.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.12/docs/resources/container_registry#time ContainerRegistry#time}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.13/docs/resources/container_registry#time ContainerRegistry#time}
 
 ---
 
@@ -1301,10 +1411,10 @@ containerRegistry.ContainerRegistryTimeouts(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-ionoscloud.containerRegistry.ContainerRegistryTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.12/docs/resources/container_registry#create ContainerRegistry#create}. |
-| <code><a href="#@cdktf/provider-ionoscloud.containerRegistry.ContainerRegistryTimeouts.property.default">default</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.12/docs/resources/container_registry#default ContainerRegistry#default}. |
-| <code><a href="#@cdktf/provider-ionoscloud.containerRegistry.ContainerRegistryTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.12/docs/resources/container_registry#delete ContainerRegistry#delete}. |
-| <code><a href="#@cdktf/provider-ionoscloud.containerRegistry.ContainerRegistryTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.12/docs/resources/container_registry#update ContainerRegistry#update}. |
+| <code><a href="#@cdktf/provider-ionoscloud.containerRegistry.ContainerRegistryTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.13/docs/resources/container_registry#create ContainerRegistry#create}. |
+| <code><a href="#@cdktf/provider-ionoscloud.containerRegistry.ContainerRegistryTimeouts.property.default">default</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.13/docs/resources/container_registry#default ContainerRegistry#default}. |
+| <code><a href="#@cdktf/provider-ionoscloud.containerRegistry.ContainerRegistryTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.13/docs/resources/container_registry#delete ContainerRegistry#delete}. |
+| <code><a href="#@cdktf/provider-ionoscloud.containerRegistry.ContainerRegistryTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.13/docs/resources/container_registry#update ContainerRegistry#update}. |
 
 ---
 
@@ -1316,7 +1426,7 @@ create: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.12/docs/resources/container_registry#create ContainerRegistry#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.13/docs/resources/container_registry#create ContainerRegistry#create}.
 
 ---
 
@@ -1328,7 +1438,7 @@ default: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.12/docs/resources/container_registry#default ContainerRegistry#default}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.13/docs/resources/container_registry#default ContainerRegistry#default}.
 
 ---
 
@@ -1340,7 +1450,7 @@ delete: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.12/docs/resources/container_registry#delete ContainerRegistry#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.13/docs/resources/container_registry#delete ContainerRegistry#delete}.
 
 ---
 
@@ -1352,11 +1462,314 @@ update: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.12/docs/resources/container_registry#update ContainerRegistry#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.13/docs/resources/container_registry#update ContainerRegistry#update}.
 
 ---
 
 ## Classes <a name="Classes" id="Classes"></a>
+
+### ContainerRegistryFeaturesOutputReference <a name="ContainerRegistryFeaturesOutputReference" id="@cdktf/provider-ionoscloud.containerRegistry.ContainerRegistryFeaturesOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.containerRegistry.ContainerRegistryFeaturesOutputReference.Initializer"></a>
+
+```python
+from cdktf_cdktf_provider_ionoscloud import container_registry
+
+containerRegistry.ContainerRegistryFeaturesOutputReference(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-ionoscloud.containerRegistry.ContainerRegistryFeaturesOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-ionoscloud.containerRegistry.ContainerRegistryFeaturesOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktf/provider-ionoscloud.containerRegistry.ContainerRegistryFeaturesOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-ionoscloud.containerRegistry.ContainerRegistryFeaturesOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-ionoscloud.containerRegistry.ContainerRegistryFeaturesOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.containerRegistry.ContainerRegistryFeaturesOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.containerRegistry.ContainerRegistryFeaturesOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.containerRegistry.ContainerRegistryFeaturesOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.containerRegistry.ContainerRegistryFeaturesOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.containerRegistry.ContainerRegistryFeaturesOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.containerRegistry.ContainerRegistryFeaturesOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.containerRegistry.ContainerRegistryFeaturesOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.containerRegistry.ContainerRegistryFeaturesOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.containerRegistry.ContainerRegistryFeaturesOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.containerRegistry.ContainerRegistryFeaturesOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.containerRegistry.ContainerRegistryFeaturesOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-ionoscloud.containerRegistry.ContainerRegistryFeaturesOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-ionoscloud.containerRegistry.ContainerRegistryFeaturesOutputReference.resetVulnerabilityScanning">reset_vulnerability_scanning</a></code> | *No description.* |
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktf/provider-ionoscloud.containerRegistry.ContainerRegistryFeaturesOutputReference.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktf/provider-ionoscloud.containerRegistry.ContainerRegistryFeaturesOutputReference.getAnyMapAttribute"></a>
+
+```python
+def get_any_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Any]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-ionoscloud.containerRegistry.ContainerRegistryFeaturesOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktf/provider-ionoscloud.containerRegistry.ContainerRegistryFeaturesOutputReference.getBooleanAttribute"></a>
+
+```python
+def get_boolean_attribute(
+  terraform_attribute: str
+) -> IResolvable
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-ionoscloud.containerRegistry.ContainerRegistryFeaturesOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktf/provider-ionoscloud.containerRegistry.ContainerRegistryFeaturesOutputReference.getBooleanMapAttribute"></a>
+
+```python
+def get_boolean_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[bool]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-ionoscloud.containerRegistry.ContainerRegistryFeaturesOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktf/provider-ionoscloud.containerRegistry.ContainerRegistryFeaturesOutputReference.getListAttribute"></a>
+
+```python
+def get_list_attribute(
+  terraform_attribute: str
+) -> typing.List[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-ionoscloud.containerRegistry.ContainerRegistryFeaturesOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktf/provider-ionoscloud.containerRegistry.ContainerRegistryFeaturesOutputReference.getNumberAttribute"></a>
+
+```python
+def get_number_attribute(
+  terraform_attribute: str
+) -> typing.Union[int, float]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-ionoscloud.containerRegistry.ContainerRegistryFeaturesOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktf/provider-ionoscloud.containerRegistry.ContainerRegistryFeaturesOutputReference.getNumberListAttribute"></a>
+
+```python
+def get_number_list_attribute(
+  terraform_attribute: str
+) -> typing.List[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-ionoscloud.containerRegistry.ContainerRegistryFeaturesOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktf/provider-ionoscloud.containerRegistry.ContainerRegistryFeaturesOutputReference.getNumberMapAttribute"></a>
+
+```python
+def get_number_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-ionoscloud.containerRegistry.ContainerRegistryFeaturesOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktf/provider-ionoscloud.containerRegistry.ContainerRegistryFeaturesOutputReference.getStringAttribute"></a>
+
+```python
+def get_string_attribute(
+  terraform_attribute: str
+) -> str
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-ionoscloud.containerRegistry.ContainerRegistryFeaturesOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktf/provider-ionoscloud.containerRegistry.ContainerRegistryFeaturesOutputReference.getStringMapAttribute"></a>
+
+```python
+def get_string_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-ionoscloud.containerRegistry.ContainerRegistryFeaturesOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktf/provider-ionoscloud.containerRegistry.ContainerRegistryFeaturesOutputReference.interpolationForAttribute"></a>
+
+```python
+def interpolation_for_attribute(
+  property: str
+) -> IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-ionoscloud.containerRegistry.ContainerRegistryFeaturesOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* str
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktf/provider-ionoscloud.containerRegistry.ContainerRegistryFeaturesOutputReference.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-ionoscloud.containerRegistry.ContainerRegistryFeaturesOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktf.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktf/provider-ionoscloud.containerRegistry.ContainerRegistryFeaturesOutputReference.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `reset_vulnerability_scanning` <a name="reset_vulnerability_scanning" id="@cdktf/provider-ionoscloud.containerRegistry.ContainerRegistryFeaturesOutputReference.resetVulnerabilityScanning"></a>
+
+```python
+def reset_vulnerability_scanning() -> None
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-ionoscloud.containerRegistry.ContainerRegistryFeaturesOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-ionoscloud.containerRegistry.ContainerRegistryFeaturesOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.containerRegistry.ContainerRegistryFeaturesOutputReference.property.vulnerabilityScanningInput">vulnerability_scanning_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.containerRegistry.ContainerRegistryFeaturesOutputReference.property.vulnerabilityScanning">vulnerability_scanning</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.containerRegistry.ContainerRegistryFeaturesOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktf/provider-ionoscloud.containerRegistry.ContainerRegistryFeatures">ContainerRegistryFeatures</a></code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktf/provider-ionoscloud.containerRegistry.ContainerRegistryFeaturesOutputReference.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-ionoscloud.containerRegistry.ContainerRegistryFeaturesOutputReference.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `vulnerability_scanning_input`<sup>Optional</sup> <a name="vulnerability_scanning_input" id="@cdktf/provider-ionoscloud.containerRegistry.ContainerRegistryFeaturesOutputReference.property.vulnerabilityScanningInput"></a>
+
+```python
+vulnerability_scanning_input: typing.Union[bool, IResolvable]
+```
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+---
+
+##### `vulnerability_scanning`<sup>Required</sup> <a name="vulnerability_scanning" id="@cdktf/provider-ionoscloud.containerRegistry.ContainerRegistryFeaturesOutputReference.property.vulnerabilityScanning"></a>
+
+```python
+vulnerability_scanning: typing.Union[bool, IResolvable]
+```
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-ionoscloud.containerRegistry.ContainerRegistryFeaturesOutputReference.property.internalValue"></a>
+
+```python
+internal_value: ContainerRegistryFeatures
+```
+
+- *Type:* <a href="#@cdktf/provider-ionoscloud.containerRegistry.ContainerRegistryFeatures">ContainerRegistryFeatures</a>
+
+---
+
 
 ### ContainerRegistryGarbageCollectionScheduleOutputReference <a name="ContainerRegistryGarbageCollectionScheduleOutputReference" id="@cdktf/provider-ionoscloud.containerRegistry.ContainerRegistryGarbageCollectionScheduleOutputReference"></a>
 

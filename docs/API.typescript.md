@@ -35,6 +35,7 @@ The following submodules are available:
 - [dataIonoscloudIpblock](./dataIonoscloudIpblock.typescript.md)
 - [dataIonoscloudIpfailover](./dataIonoscloudIpfailover.typescript.md)
 - [dataIonoscloudK8SCluster](./dataIonoscloudK8SCluster.typescript.md)
+- [dataIonoscloudK8SClusters](./dataIonoscloudK8SClusters.typescript.md)
 - [dataIonoscloudK8SNodePool](./dataIonoscloudK8SNodePool.typescript.md)
 - [dataIonoscloudK8SNodePoolNodes](./dataIonoscloudK8SNodePoolNodes.typescript.md)
 - [dataIonoscloudLan](./dataIonoscloudLan.typescript.md)

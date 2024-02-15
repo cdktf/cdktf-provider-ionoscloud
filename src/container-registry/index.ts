@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.12/docs/resources/container_registry
+// https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.13/docs/resources/container_registry
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,30 +13,36 @@ import * as cdktf from 'cdktf';
 
 export interface ContainerRegistryConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.12/docs/resources/container_registry#id ContainerRegistry#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.13/docs/resources/container_registry#id ContainerRegistry#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.12/docs/resources/container_registry#location ContainerRegistry#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.13/docs/resources/container_registry#location ContainerRegistry#location}
   */
   readonly location: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.12/docs/resources/container_registry#name ContainerRegistry#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.13/docs/resources/container_registry#name ContainerRegistry#name}
   */
   readonly name: string;
   /**
+  * features block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.13/docs/resources/container_registry#features ContainerRegistry#features}
+  */
+  readonly features?: ContainerRegistryFeatures;
+  /**
   * garbage_collection_schedule block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.12/docs/resources/container_registry#garbage_collection_schedule ContainerRegistry#garbage_collection_schedule}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.13/docs/resources/container_registry#garbage_collection_schedule ContainerRegistry#garbage_collection_schedule}
   */
   readonly garbageCollectionSchedule?: ContainerRegistryGarbageCollectionSchedule;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.12/docs/resources/container_registry#timeouts ContainerRegistry#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.13/docs/resources/container_registry#timeouts ContainerRegistry#timeouts}
   */
   readonly timeouts?: ContainerRegistryTimeouts;
 }
@@ -120,15 +126,101 @@ export class ContainerRegistryStorageUsageList extends cdktf.ComplexList {
     return new ContainerRegistryStorageUsageOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
+export interface ContainerRegistryFeatures {
+  /**
+  * Enables vulnerability scanning for images in the container registry. Note: this feature can incur additional charges
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.13/docs/resources/container_registry#vulnerability_scanning ContainerRegistry#vulnerability_scanning}
+  */
+  readonly vulnerabilityScanning?: boolean | cdktf.IResolvable;
+}
+
+export function containerRegistryFeaturesToTerraform(struct?: ContainerRegistryFeaturesOutputReference | ContainerRegistryFeatures): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    vulnerability_scanning: cdktf.booleanToTerraform(struct!.vulnerabilityScanning),
+  }
+}
+
+
+export function containerRegistryFeaturesToHclTerraform(struct?: ContainerRegistryFeaturesOutputReference | ContainerRegistryFeatures): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    vulnerability_scanning: {
+      value: cdktf.booleanToHclTerraform(struct!.vulnerabilityScanning),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class ContainerRegistryFeaturesOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): ContainerRegistryFeatures | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._vulnerabilityScanning !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.vulnerabilityScanning = this._vulnerabilityScanning;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ContainerRegistryFeatures | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._vulnerabilityScanning = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._vulnerabilityScanning = value.vulnerabilityScanning;
+    }
+  }
+
+  // vulnerability_scanning - computed: true, optional: true, required: false
+  private _vulnerabilityScanning?: boolean | cdktf.IResolvable; 
+  public get vulnerabilityScanning() {
+    return this.getBooleanAttribute('vulnerability_scanning');
+  }
+  public set vulnerabilityScanning(value: boolean | cdktf.IResolvable) {
+    this._vulnerabilityScanning = value;
+  }
+  public resetVulnerabilityScanning() {
+    this._vulnerabilityScanning = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get vulnerabilityScanningInput() {
+    return this._vulnerabilityScanning;
+  }
+}
 export interface ContainerRegistryGarbageCollectionSchedule {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.12/docs/resources/container_registry#days ContainerRegistry#days}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.13/docs/resources/container_registry#days ContainerRegistry#days}
   */
   readonly days: string[];
   /**
   * UTC time of day e.g. 01:00:00 - as defined by partial-time - RFC3339
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.12/docs/resources/container_registry#time ContainerRegistry#time}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.13/docs/resources/container_registry#time ContainerRegistry#time}
   */
   readonly time: string;
 }
@@ -235,19 +327,19 @@ export class ContainerRegistryGarbageCollectionScheduleOutputReference extends c
 }
 export interface ContainerRegistryTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.12/docs/resources/container_registry#create ContainerRegistry#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.13/docs/resources/container_registry#create ContainerRegistry#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.12/docs/resources/container_registry#default ContainerRegistry#default}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.13/docs/resources/container_registry#default ContainerRegistry#default}
   */
   readonly default?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.12/docs/resources/container_registry#delete ContainerRegistry#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.13/docs/resources/container_registry#delete ContainerRegistry#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.12/docs/resources/container_registry#update ContainerRegistry#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.13/docs/resources/container_registry#update ContainerRegistry#update}
   */
   readonly update?: string;
 }
@@ -428,7 +520,7 @@ export class ContainerRegistryTimeoutsOutputReference extends cdktf.ComplexObjec
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.12/docs/resources/container_registry ionoscloud_container_registry}
+* Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.13/docs/resources/container_registry ionoscloud_container_registry}
 */
 export class ContainerRegistry extends cdktf.TerraformResource {
 
@@ -444,7 +536,7 @@ export class ContainerRegistry extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a ContainerRegistry resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ContainerRegistry to import
-  * @param importFromId The id of the existing ContainerRegistry that should be imported. Refer to the {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.12/docs/resources/container_registry#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ContainerRegistry that should be imported. Refer to the {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.13/docs/resources/container_registry#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ContainerRegistry to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -456,7 +548,7 @@ export class ContainerRegistry extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.12/docs/resources/container_registry ionoscloud_container_registry} Resource
+  * Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.13/docs/resources/container_registry ionoscloud_container_registry} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -467,7 +559,7 @@ export class ContainerRegistry extends cdktf.TerraformResource {
       terraformResourceType: 'ionoscloud_container_registry',
       terraformGeneratorMetadata: {
         providerName: 'ionoscloud',
-        providerVersion: '6.4.12',
+        providerVersion: '6.4.13',
         providerVersionConstraint: '~> 6.2'
       },
       provider: config.provider,
@@ -481,6 +573,7 @@ export class ContainerRegistry extends cdktf.TerraformResource {
     this._id = config.id;
     this._location = config.location;
     this._name = config.name;
+    this._features.internalValue = config.features;
     this._garbageCollectionSchedule.internalValue = config.garbageCollectionSchedule;
     this._timeouts.internalValue = config.timeouts;
   }
@@ -542,6 +635,22 @@ export class ContainerRegistry extends cdktf.TerraformResource {
     return this._storageUsage;
   }
 
+  // features - computed: false, optional: true, required: false
+  private _features = new ContainerRegistryFeaturesOutputReference(this, "features");
+  public get features() {
+    return this._features;
+  }
+  public putFeatures(value: ContainerRegistryFeatures) {
+    this._features.internalValue = value;
+  }
+  public resetFeatures() {
+    this._features.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get featuresInput() {
+    return this._features.internalValue;
+  }
+
   // garbage_collection_schedule - computed: false, optional: true, required: false
   private _garbageCollectionSchedule = new ContainerRegistryGarbageCollectionScheduleOutputReference(this, "garbage_collection_schedule");
   public get garbageCollectionSchedule() {
@@ -583,6 +692,7 @@ export class ContainerRegistry extends cdktf.TerraformResource {
       id: cdktf.stringToTerraform(this._id),
       location: cdktf.stringToTerraform(this._location),
       name: cdktf.stringToTerraform(this._name),
+      features: containerRegistryFeaturesToTerraform(this._features.internalValue),
       garbage_collection_schedule: containerRegistryGarbageCollectionScheduleToTerraform(this._garbageCollectionSchedule.internalValue),
       timeouts: containerRegistryTimeoutsToTerraform(this._timeouts.internalValue),
     };
@@ -607,6 +717,12 @@ export class ContainerRegistry extends cdktf.TerraformResource {
         isBlock: false,
         type: "simple",
         storageClassType: "string",
+      },
+      features: {
+        value: containerRegistryFeaturesToHclTerraform(this._features.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "ContainerRegistryFeaturesList",
       },
       garbage_collection_schedule: {
         value: containerRegistryGarbageCollectionScheduleToHclTerraform(this._garbageCollectionSchedule.internalValue),
