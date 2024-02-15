@@ -35,6 +35,7 @@ The following submodules are available:
 - [dataIonoscloudIpblock](./dataIonoscloudIpblock.python.md)
 - [dataIonoscloudIpfailover](./dataIonoscloudIpfailover.python.md)
 - [dataIonoscloudK8SCluster](./dataIonoscloudK8SCluster.python.md)
+- [dataIonoscloudK8SClusters](./dataIonoscloudK8SClusters.python.md)
 - [dataIonoscloudK8SNodePool](./dataIonoscloudK8SNodePool.python.md)
 - [dataIonoscloudK8SNodePoolNodes](./dataIonoscloudK8SNodePoolNodes.python.md)
 - [dataIonoscloudLan](./dataIonoscloudLan.python.md)

@@ -35,6 +35,7 @@ The following submodules are available:
 - [dataIonoscloudIpblock](./dataIonoscloudIpblock.csharp.md)
 - [dataIonoscloudIpfailover](./dataIonoscloudIpfailover.csharp.md)
 - [dataIonoscloudK8SCluster](./dataIonoscloudK8SCluster.csharp.md)
+- [dataIonoscloudK8SClusters](./dataIonoscloudK8SClusters.csharp.md)
 - [dataIonoscloudK8SNodePool](./dataIonoscloudK8SNodePool.csharp.md)
 - [dataIonoscloudK8SNodePoolNodes](./dataIonoscloudK8SNodePoolNodes.csharp.md)
 - [dataIonoscloudLan](./dataIonoscloudLan.csharp.md)
