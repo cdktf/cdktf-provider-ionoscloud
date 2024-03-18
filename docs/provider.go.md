@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionosclo
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.provider.IonoscloudProvider.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/provider"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/provider"
 
 provider.NewIonoscloudProvider(scope Construct, id *string, config IonoscloudProviderConfig) IonoscloudProvider
 ```
@@ -193,7 +193,7 @@ func ResetUsername()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-ionoscloud.provider.IonoscloudProvider.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/provider"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/provider"
 
 provider.IonoscloudProvider_IsConstruct(x interface{}) *bool
 ```
@@ -225,7 +225,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-ionoscloud.provider.IonoscloudProvider.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/provider"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/provider"
 
 provider.IonoscloudProvider_IsTerraformElement(x interface{}) *bool
 ```
@@ -239,7 +239,7 @@ provider.IonoscloudProvider_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformProvider` <a name="IsTerraformProvider" id="@cdktf/provider-ionoscloud.provider.IonoscloudProvider.isTerraformProvider"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/provider"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/provider"
 
 provider.IonoscloudProvider_IsTerraformProvider(x interface{}) *bool
 ```
@@ -253,7 +253,7 @@ provider.IonoscloudProvider_IsTerraformProvider(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-ionoscloud.provider.IonoscloudProvider.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/provider"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/provider"
 
 provider.IonoscloudProvider_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -570,7 +570,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-ionoscloud.provider.IonoscloudProviderConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/provider"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/provider"
 
 &provider.IonoscloudProviderConfig {
 	Alias: *string,

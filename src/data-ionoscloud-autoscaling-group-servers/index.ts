@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.13/docs/data-sources/autoscaling_group_servers
 // generated from terraform resource schema
 
