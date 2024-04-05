@@ -26,6 +26,7 @@ export * as k8SNodePool from './k8s-node-pool';
 export * as lan from './lan';
 export * as loadbalancer from './loadbalancer';
 export * as loggingPipeline from './logging-pipeline';
+export * as mariadbCluster from './mariadb-cluster';
 export * as mongoCluster from './mongo-cluster';
 export * as mongoUser from './mongo-user';
 export * as natgateway from './natgateway';
@@ -75,6 +76,8 @@ export * as dataIonoscloudK8SNodePoolNodes from './data-ionoscloud-k8s-node-pool
 export * as dataIonoscloudLan from './data-ionoscloud-lan';
 export * as dataIonoscloudLocation from './data-ionoscloud-location';
 export * as dataIonoscloudLoggingPipeline from './data-ionoscloud-logging-pipeline';
+export * as dataIonoscloudMariadbBackups from './data-ionoscloud-mariadb-backups';
+export * as dataIonoscloudMariadbCluster from './data-ionoscloud-mariadb-cluster';
 export * as dataIonoscloudMongoCluster from './data-ionoscloud-mongo-cluster';
 export * as dataIonoscloudMongoTemplate from './data-ionoscloud-mongo-template';
 export * as dataIonoscloudMongoUser from './data-ionoscloud-mongo-user';

@@ -26,6 +26,7 @@ Object.defineProperty(exports, 'k8SNodePool', { get: function () { return requir
 Object.defineProperty(exports, 'lan', { get: function () { return require('./lan'); } });
 Object.defineProperty(exports, 'loadbalancer', { get: function () { return require('./loadbalancer'); } });
 Object.defineProperty(exports, 'loggingPipeline', { get: function () { return require('./logging-pipeline'); } });
+Object.defineProperty(exports, 'mariadbCluster', { get: function () { return require('./mariadb-cluster'); } });
 Object.defineProperty(exports, 'mongoCluster', { get: function () { return require('./mongo-cluster'); } });
 Object.defineProperty(exports, 'mongoUser', { get: function () { return require('./mongo-user'); } });
 Object.defineProperty(exports, 'natgateway', { get: function () { return require('./natgateway'); } });
@@ -75,6 +76,8 @@ Object.defineProperty(exports, 'dataIonoscloudK8SNodePoolNodes', { get: function
 Object.defineProperty(exports, 'dataIonoscloudLan', { get: function () { return require('./data-ionoscloud-lan'); } });
 Object.defineProperty(exports, 'dataIonoscloudLocation', { get: function () { return require('./data-ionoscloud-location'); } });
 Object.defineProperty(exports, 'dataIonoscloudLoggingPipeline', { get: function () { return require('./data-ionoscloud-logging-pipeline'); } });
+Object.defineProperty(exports, 'dataIonoscloudMariadbBackups', { get: function () { return require('./data-ionoscloud-mariadb-backups'); } });
+Object.defineProperty(exports, 'dataIonoscloudMariadbCluster', { get: function () { return require('./data-ionoscloud-mariadb-cluster'); } });
 Object.defineProperty(exports, 'dataIonoscloudMongoCluster', { get: function () { return require('./data-ionoscloud-mongo-cluster'); } });
 Object.defineProperty(exports, 'dataIonoscloudMongoTemplate', { get: function () { return require('./data-ionoscloud-mongo-template'); } });
 Object.defineProperty(exports, 'dataIonoscloudMongoUser', { get: function () { return require('./data-ionoscloud-mongo-user'); } });
