@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.14/docs/resources/dataplatform_cluster
+// https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.15/docs/resources/dataplatform_cluster
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,11 +10,11 @@ export interface DataplatformClusterConfig extends cdktf.TerraformMetaArguments 
   /**
   * The UUID of the virtual data center (VDC) in which the cluster is provisioned
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.14/docs/resources/dataplatform_cluster#datacenter_id DataplatformCluster#datacenter_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.15/docs/resources/dataplatform_cluster#datacenter_id DataplatformCluster#datacenter_id}
   */
   readonly datacenterId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.14/docs/resources/dataplatform_cluster#id DataplatformCluster#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.15/docs/resources/dataplatform_cluster#id DataplatformCluster#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -28,37 +23,375 @@ export interface DataplatformClusterConfig extends cdktf.TerraformMetaArguments 
   /**
   * The name of your cluster. Must be 63 characters or less and must be empty or begin and end with an alphanumeric character ([a-z0-9A-Z]). It can contain dashes (-), underscores (_), dots (.), and alphanumerics in-between.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.14/docs/resources/dataplatform_cluster#name DataplatformCluster#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.15/docs/resources/dataplatform_cluster#name DataplatformCluster#name}
   */
   readonly name: string;
   /**
   * The version of the Data Platform.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.14/docs/resources/dataplatform_cluster#version DataplatformCluster#version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.15/docs/resources/dataplatform_cluster#version DataplatformCluster#version}
   */
   readonly version?: string;
   /**
+  * lans block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.15/docs/resources/dataplatform_cluster#lans DataplatformCluster#lans}
+  */
+  readonly lans?: DataplatformClusterLans[] | cdktf.IResolvable;
+  /**
   * maintenance_window block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.14/docs/resources/dataplatform_cluster#maintenance_window DataplatformCluster#maintenance_window}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.15/docs/resources/dataplatform_cluster#maintenance_window DataplatformCluster#maintenance_window}
   */
   readonly maintenanceWindow?: DataplatformClusterMaintenanceWindow[] | cdktf.IResolvable;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.14/docs/resources/dataplatform_cluster#timeouts DataplatformCluster#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.15/docs/resources/dataplatform_cluster#timeouts DataplatformCluster#timeouts}
   */
   readonly timeouts?: DataplatformClusterTimeouts;
 }
+export interface DataplatformClusterLansRoutes {
+  /**
+  * IPv4 or IPv6 gateway IP for the route
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.15/docs/resources/dataplatform_cluster#gateway DataplatformCluster#gateway}
+  */
+  readonly gateway: string;
+  /**
+  * IPv4 or IPv6 CIDR to be routed via the interface
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.15/docs/resources/dataplatform_cluster#network DataplatformCluster#network}
+  */
+  readonly network: string;
+}
+
+export function dataplatformClusterLansRoutesToTerraform(struct?: DataplatformClusterLansRoutes | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    gateway: cdktf.stringToTerraform(struct!.gateway),
+    network: cdktf.stringToTerraform(struct!.network),
+  }
+}
+
+
+export function dataplatformClusterLansRoutesToHclTerraform(struct?: DataplatformClusterLansRoutes | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    gateway: {
+      value: cdktf.stringToHclTerraform(struct!.gateway),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    network: {
+      value: cdktf.stringToHclTerraform(struct!.network),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class DataplatformClusterLansRoutesOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataplatformClusterLansRoutes | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._gateway !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.gateway = this._gateway;
+    }
+    if (this._network !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.network = this._network;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataplatformClusterLansRoutes | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._gateway = undefined;
+      this._network = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._gateway = value.gateway;
+      this._network = value.network;
+    }
+  }
+
+  // gateway - computed: false, optional: false, required: true
+  private _gateway?: string; 
+  public get gateway() {
+    return this.getStringAttribute('gateway');
+  }
+  public set gateway(value: string) {
+    this._gateway = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get gatewayInput() {
+    return this._gateway;
+  }
+
+  // network - computed: false, optional: false, required: true
+  private _network?: string; 
+  public get network() {
+    return this.getStringAttribute('network');
+  }
+  public set network(value: string) {
+    this._network = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get networkInput() {
+    return this._network;
+  }
+}
+
+export class DataplatformClusterLansRoutesList extends cdktf.ComplexList {
+  public internalValue? : DataplatformClusterLansRoutes[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataplatformClusterLansRoutesOutputReference {
+    return new DataplatformClusterLansRoutesOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface DataplatformClusterLans {
+  /**
+  * Indicates if the Kubernetes node pool LAN will reserve an IP using DHCP. The default value is 'true'
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.15/docs/resources/dataplatform_cluster#dhcp DataplatformCluster#dhcp}
+  */
+  readonly dhcp?: boolean | cdktf.IResolvable;
+  /**
+  * The LAN ID of an existing LAN at the related data center
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.15/docs/resources/dataplatform_cluster#lan_id DataplatformCluster#lan_id}
+  */
+  readonly lanId: string;
+  /**
+  * routes block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.15/docs/resources/dataplatform_cluster#routes DataplatformCluster#routes}
+  */
+  readonly routes?: DataplatformClusterLansRoutes[] | cdktf.IResolvable;
+}
+
+export function dataplatformClusterLansToTerraform(struct?: DataplatformClusterLans | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    dhcp: cdktf.booleanToTerraform(struct!.dhcp),
+    lan_id: cdktf.stringToTerraform(struct!.lanId),
+    routes: cdktf.listMapper(dataplatformClusterLansRoutesToTerraform, true)(struct!.routes),
+  }
+}
+
+
+export function dataplatformClusterLansToHclTerraform(struct?: DataplatformClusterLans | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    dhcp: {
+      value: cdktf.booleanToHclTerraform(struct!.dhcp),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    lan_id: {
+      value: cdktf.stringToHclTerraform(struct!.lanId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    routes: {
+      value: cdktf.listMapperHcl(dataplatformClusterLansRoutesToHclTerraform, true)(struct!.routes),
+      isBlock: true,
+      type: "set",
+      storageClassType: "DataplatformClusterLansRoutesList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class DataplatformClusterLansOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataplatformClusterLans | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._dhcp !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.dhcp = this._dhcp;
+    }
+    if (this._lanId !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.lanId = this._lanId;
+    }
+    if (this._routes?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.routes = this._routes?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataplatformClusterLans | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._dhcp = undefined;
+      this._lanId = undefined;
+      this._routes.internalValue = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._dhcp = value.dhcp;
+      this._lanId = value.lanId;
+      this._routes.internalValue = value.routes;
+    }
+  }
+
+  // dhcp - computed: false, optional: true, required: false
+  private _dhcp?: boolean | cdktf.IResolvable; 
+  public get dhcp() {
+    return this.getBooleanAttribute('dhcp');
+  }
+  public set dhcp(value: boolean | cdktf.IResolvable) {
+    this._dhcp = value;
+  }
+  public resetDhcp() {
+    this._dhcp = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get dhcpInput() {
+    return this._dhcp;
+  }
+
+  // lan_id - computed: false, optional: false, required: true
+  private _lanId?: string; 
+  public get lanId() {
+    return this.getStringAttribute('lan_id');
+  }
+  public set lanId(value: string) {
+    this._lanId = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get lanIdInput() {
+    return this._lanId;
+  }
+
+  // routes - computed: false, optional: true, required: false
+  private _routes = new DataplatformClusterLansRoutesList(this, "routes", true);
+  public get routes() {
+    return this._routes;
+  }
+  public putRoutes(value: DataplatformClusterLansRoutes[] | cdktf.IResolvable) {
+    this._routes.internalValue = value;
+  }
+  public resetRoutes() {
+    this._routes.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get routesInput() {
+    return this._routes.internalValue;
+  }
+}
+
+export class DataplatformClusterLansList extends cdktf.ComplexList {
+  public internalValue? : DataplatformClusterLans[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataplatformClusterLansOutputReference {
+    return new DataplatformClusterLansOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface DataplatformClusterMaintenanceWindow {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.14/docs/resources/dataplatform_cluster#day_of_the_week DataplatformCluster#day_of_the_week}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.15/docs/resources/dataplatform_cluster#day_of_the_week DataplatformCluster#day_of_the_week}
   */
   readonly dayOfTheWeek: string;
   /**
   * Time at which the maintenance should start.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.14/docs/resources/dataplatform_cluster#time DataplatformCluster#time}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.15/docs/resources/dataplatform_cluster#time DataplatformCluster#time}
   */
   readonly time: string;
 }
@@ -197,19 +530,19 @@ export class DataplatformClusterMaintenanceWindowList extends cdktf.ComplexList 
 }
 export interface DataplatformClusterTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.14/docs/resources/dataplatform_cluster#create DataplatformCluster#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.15/docs/resources/dataplatform_cluster#create DataplatformCluster#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.14/docs/resources/dataplatform_cluster#default DataplatformCluster#default}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.15/docs/resources/dataplatform_cluster#default DataplatformCluster#default}
   */
   readonly default?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.14/docs/resources/dataplatform_cluster#delete DataplatformCluster#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.15/docs/resources/dataplatform_cluster#delete DataplatformCluster#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.14/docs/resources/dataplatform_cluster#update DataplatformCluster#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.15/docs/resources/dataplatform_cluster#update DataplatformCluster#update}
   */
   readonly update?: string;
 }
@@ -390,7 +723,7 @@ export class DataplatformClusterTimeoutsOutputReference extends cdktf.ComplexObj
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.14/docs/resources/dataplatform_cluster ionoscloud_dataplatform_cluster}
+* Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.15/docs/resources/dataplatform_cluster ionoscloud_dataplatform_cluster}
 */
 export class DataplatformCluster extends cdktf.TerraformResource {
 
@@ -406,7 +739,7 @@ export class DataplatformCluster extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a DataplatformCluster resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataplatformCluster to import
-  * @param importFromId The id of the existing DataplatformCluster that should be imported. Refer to the {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.14/docs/resources/dataplatform_cluster#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataplatformCluster that should be imported. Refer to the {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.15/docs/resources/dataplatform_cluster#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataplatformCluster to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -418,7 +751,7 @@ export class DataplatformCluster extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.14/docs/resources/dataplatform_cluster ionoscloud_dataplatform_cluster} Resource
+  * Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.15/docs/resources/dataplatform_cluster ionoscloud_dataplatform_cluster} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -429,7 +762,7 @@ export class DataplatformCluster extends cdktf.TerraformResource {
       terraformResourceType: 'ionoscloud_dataplatform_cluster',
       terraformGeneratorMetadata: {
         providerName: 'ionoscloud',
-        providerVersion: '6.4.14',
+        providerVersion: '6.4.15',
         providerVersionConstraint: '~> 6.2'
       },
       provider: config.provider,
@@ -444,6 +777,7 @@ export class DataplatformCluster extends cdktf.TerraformResource {
     this._id = config.id;
     this._name = config.name;
     this._version = config.version;
+    this._lans.internalValue = config.lans;
     this._maintenanceWindow.internalValue = config.maintenanceWindow;
     this._timeouts.internalValue = config.timeouts;
   }
@@ -510,6 +844,22 @@ export class DataplatformCluster extends cdktf.TerraformResource {
     return this._version;
   }
 
+  // lans - computed: false, optional: true, required: false
+  private _lans = new DataplatformClusterLansList(this, "lans", true);
+  public get lans() {
+    return this._lans;
+  }
+  public putLans(value: DataplatformClusterLans[] | cdktf.IResolvable) {
+    this._lans.internalValue = value;
+  }
+  public resetLans() {
+    this._lans.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get lansInput() {
+    return this._lans.internalValue;
+  }
+
   // maintenance_window - computed: false, optional: true, required: false
   private _maintenanceWindow = new DataplatformClusterMaintenanceWindowList(this, "maintenance_window", false);
   public get maintenanceWindow() {
@@ -552,6 +902,7 @@ export class DataplatformCluster extends cdktf.TerraformResource {
       id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),
       version: cdktf.stringToTerraform(this._version),
+      lans: cdktf.listMapper(dataplatformClusterLansToTerraform, true)(this._lans.internalValue),
       maintenance_window: cdktf.listMapper(dataplatformClusterMaintenanceWindowToTerraform, true)(this._maintenanceWindow.internalValue),
       timeouts: dataplatformClusterTimeoutsToTerraform(this._timeouts.internalValue),
     };
@@ -582,6 +933,12 @@ export class DataplatformCluster extends cdktf.TerraformResource {
         isBlock: false,
         type: "simple",
         storageClassType: "string",
+      },
+      lans: {
+        value: cdktf.listMapperHcl(dataplatformClusterLansToHclTerraform, true)(this._lans.internalValue),
+        isBlock: true,
+        type: "set",
+        storageClassType: "DataplatformClusterLansList",
       },
       maintenance_window: {
         value: cdktf.listMapperHcl(dataplatformClusterMaintenanceWindowToHclTerraform, true)(this._maintenanceWindow.internalValue),

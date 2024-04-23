@@ -4,7 +4,7 @@
 
 ### AutoscalingGroup <a name="AutoscalingGroup" id="@cdktf/provider-ionoscloud.autoscalingGroup.AutoscalingGroup"></a>
 
-Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.14/docs/resources/autoscaling_group ionoscloud_autoscaling_group}.
+Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.15/docs/resources/autoscaling_group ionoscloud_autoscaling_group}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.autoscalingGroup.AutoscalingGroup.Initializer"></a>
 
@@ -53,7 +53,7 @@ AutoscalingGroup.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-ionoscloud.autoscalingGroup.AutoscalingGroup.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | User-defined name for the Autoscaling Group. |
 | <code><a href="#@cdktf/provider-ionoscloud.autoscalingGroup.AutoscalingGroup.Initializer.parameter.policy">policy</a></code> | <code><a href="#@cdktf/provider-ionoscloud.autoscalingGroup.AutoscalingGroupPolicy">AutoscalingGroupPolicy</a></code> | policy block. |
 | <code><a href="#@cdktf/provider-ionoscloud.autoscalingGroup.AutoscalingGroup.Initializer.parameter.replicaConfiguration">replicaConfiguration</a></code> | <code><a href="#@cdktf/provider-ionoscloud.autoscalingGroup.AutoscalingGroupReplicaConfiguration">AutoscalingGroupReplicaConfiguration</a></code> | replica_configuration block. |
-| <code><a href="#@cdktf/provider-ionoscloud.autoscalingGroup.AutoscalingGroup.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.14/docs/resources/autoscaling_group#id AutoscalingGroup#id}. |
+| <code><a href="#@cdktf/provider-ionoscloud.autoscalingGroup.AutoscalingGroup.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.15/docs/resources/autoscaling_group#id AutoscalingGroup#id}. |
 | <code><a href="#@cdktf/provider-ionoscloud.autoscalingGroup.AutoscalingGroup.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-ionoscloud.autoscalingGroup.AutoscalingGroupTimeouts">AutoscalingGroupTimeouts</a></code> | timeouts block. |
 
 ---
@@ -124,7 +124,7 @@ Must be unique amongst siblings in the same scope
 
 Unique identifier for the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.14/docs/resources/autoscaling_group#datacenter_id AutoscalingGroup#datacenter_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.15/docs/resources/autoscaling_group#datacenter_id AutoscalingGroup#datacenter_id}
 
 ---
 
@@ -134,7 +134,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 
 Location of the data center.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.14/docs/resources/autoscaling_group#location AutoscalingGroup#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.15/docs/resources/autoscaling_group#location AutoscalingGroup#location}
 
 ---
 
@@ -146,7 +146,7 @@ The maximum value for the number of replicas on a VM Auto Scaling Group.
 
 Must be >= 0 and <= 200. Will be enforced for both automatic and manual changes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.14/docs/resources/autoscaling_group#max_replica_count AutoscalingGroup#max_replica_count}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.15/docs/resources/autoscaling_group#max_replica_count AutoscalingGroup#max_replica_count}
 
 ---
 
@@ -158,7 +158,7 @@ The minimum value for the number of replicas on a VM Auto Scaling Group.
 
 Must be >= 0 and <= 200. Will be enforced for both automatic and manual changes
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.14/docs/resources/autoscaling_group#min_replica_count AutoscalingGroup#min_replica_count}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.15/docs/resources/autoscaling_group#min_replica_count AutoscalingGroup#min_replica_count}
 
 ---
 
@@ -168,7 +168,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 
 User-defined name for the Autoscaling Group.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.14/docs/resources/autoscaling_group#name AutoscalingGroup#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.15/docs/resources/autoscaling_group#name AutoscalingGroup#name}
 
 ---
 
@@ -178,7 +178,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 
 policy block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.14/docs/resources/autoscaling_group#policy AutoscalingGroup#policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.15/docs/resources/autoscaling_group#policy AutoscalingGroup#policy}
 
 ---
 
@@ -188,7 +188,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 
 replica_configuration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.14/docs/resources/autoscaling_group#replica_configuration AutoscalingGroup#replica_configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.15/docs/resources/autoscaling_group#replica_configuration AutoscalingGroup#replica_configuration}
 
 ---
 
@@ -196,7 +196,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.14/docs/resources/autoscaling_group#id AutoscalingGroup#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.15/docs/resources/autoscaling_group#id AutoscalingGroup#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -209,7 +209,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.14/docs/resources/autoscaling_group#timeouts AutoscalingGroup#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.15/docs/resources/autoscaling_group#timeouts AutoscalingGroup#timeouts}
 
 ---
 
@@ -689,7 +689,7 @@ The construct id used in the generated config for the AutoscalingGroup to import
 
 The id of the existing AutoscalingGroup that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.14/docs/resources/autoscaling_group#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.15/docs/resources/autoscaling_group#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1131,7 +1131,7 @@ AutoscalingGroupConfig.builder()
 | <code><a href="#@cdktf/provider-ionoscloud.autoscalingGroup.AutoscalingGroupConfig.property.name">name</a></code> | <code>java.lang.String</code> | User-defined name for the Autoscaling Group. |
 | <code><a href="#@cdktf/provider-ionoscloud.autoscalingGroup.AutoscalingGroupConfig.property.policy">policy</a></code> | <code><a href="#@cdktf/provider-ionoscloud.autoscalingGroup.AutoscalingGroupPolicy">AutoscalingGroupPolicy</a></code> | policy block. |
 | <code><a href="#@cdktf/provider-ionoscloud.autoscalingGroup.AutoscalingGroupConfig.property.replicaConfiguration">replicaConfiguration</a></code> | <code><a href="#@cdktf/provider-ionoscloud.autoscalingGroup.AutoscalingGroupReplicaConfiguration">AutoscalingGroupReplicaConfiguration</a></code> | replica_configuration block. |
-| <code><a href="#@cdktf/provider-ionoscloud.autoscalingGroup.AutoscalingGroupConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.14/docs/resources/autoscaling_group#id AutoscalingGroup#id}. |
+| <code><a href="#@cdktf/provider-ionoscloud.autoscalingGroup.AutoscalingGroupConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.15/docs/resources/autoscaling_group#id AutoscalingGroup#id}. |
 | <code><a href="#@cdktf/provider-ionoscloud.autoscalingGroup.AutoscalingGroupConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-ionoscloud.autoscalingGroup.AutoscalingGroupTimeouts">AutoscalingGroupTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1216,7 +1216,7 @@ public java.lang.String getDatacenterId();
 
 Unique identifier for the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.14/docs/resources/autoscaling_group#datacenter_id AutoscalingGroup#datacenter_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.15/docs/resources/autoscaling_group#datacenter_id AutoscalingGroup#datacenter_id}
 
 ---
 
@@ -1230,7 +1230,7 @@ public java.lang.String getLocation();
 
 Location of the data center.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.14/docs/resources/autoscaling_group#location AutoscalingGroup#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.15/docs/resources/autoscaling_group#location AutoscalingGroup#location}
 
 ---
 
@@ -1246,7 +1246,7 @@ The maximum value for the number of replicas on a VM Auto Scaling Group.
 
 Must be >= 0 and <= 200. Will be enforced for both automatic and manual changes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.14/docs/resources/autoscaling_group#max_replica_count AutoscalingGroup#max_replica_count}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.15/docs/resources/autoscaling_group#max_replica_count AutoscalingGroup#max_replica_count}
 
 ---
 
@@ -1262,7 +1262,7 @@ The minimum value for the number of replicas on a VM Auto Scaling Group.
 
 Must be >= 0 and <= 200. Will be enforced for both automatic and manual changes
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.14/docs/resources/autoscaling_group#min_replica_count AutoscalingGroup#min_replica_count}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.15/docs/resources/autoscaling_group#min_replica_count AutoscalingGroup#min_replica_count}
 
 ---
 
@@ -1276,7 +1276,7 @@ public java.lang.String getName();
 
 User-defined name for the Autoscaling Group.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.14/docs/resources/autoscaling_group#name AutoscalingGroup#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.15/docs/resources/autoscaling_group#name AutoscalingGroup#name}
 
 ---
 
@@ -1290,7 +1290,7 @@ public AutoscalingGroupPolicy getPolicy();
 
 policy block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.14/docs/resources/autoscaling_group#policy AutoscalingGroup#policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.15/docs/resources/autoscaling_group#policy AutoscalingGroup#policy}
 
 ---
 
@@ -1304,7 +1304,7 @@ public AutoscalingGroupReplicaConfiguration getReplicaConfiguration();
 
 replica_configuration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.14/docs/resources/autoscaling_group#replica_configuration AutoscalingGroup#replica_configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.15/docs/resources/autoscaling_group#replica_configuration AutoscalingGroup#replica_configuration}
 
 ---
 
@@ -1316,7 +1316,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.14/docs/resources/autoscaling_group#id AutoscalingGroup#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.15/docs/resources/autoscaling_group#id AutoscalingGroup#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1333,7 +1333,7 @@ public AutoscalingGroupTimeouts getTimeouts();
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.14/docs/resources/autoscaling_group#timeouts AutoscalingGroup#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.15/docs/resources/autoscaling_group#timeouts AutoscalingGroup#timeouts}
 
 ---
 
@@ -1379,7 +1379,7 @@ public java.lang.String getMetric();
 
 The Metric that should trigger the scaling actions. Metric values are checked at fixed intervals.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.14/docs/resources/autoscaling_group#metric AutoscalingGroup#metric}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.15/docs/resources/autoscaling_group#metric AutoscalingGroup#metric}
 
 ---
 
@@ -1393,7 +1393,7 @@ public AutoscalingGroupPolicyScaleInAction getScaleInAction();
 
 scale_in_action block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.14/docs/resources/autoscaling_group#scale_in_action AutoscalingGroup#scale_in_action}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.15/docs/resources/autoscaling_group#scale_in_action AutoscalingGroup#scale_in_action}
 
 ---
 
@@ -1409,7 +1409,7 @@ The upper threshold for the value of the 'metric'.
 
 Used with the 'greater than' (>) operator. A scale-out action is triggered when this value is exceeded, specified by the 'scale_out_action' property. The value must have a lower minimum delta to the 'scale_in_threshold', depending on the metric, to avoid competing for actions simultaneously. If 'properties.policy.unit=TOTAL', a value >= 40 must be chosen.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.14/docs/resources/autoscaling_group#scale_in_threshold AutoscalingGroup#scale_in_threshold}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.15/docs/resources/autoscaling_group#scale_in_threshold AutoscalingGroup#scale_in_threshold}
 
 ---
 
@@ -1423,7 +1423,7 @@ public AutoscalingGroupPolicyScaleOutAction getScaleOutAction();
 
 scale_out_action block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.14/docs/resources/autoscaling_group#scale_out_action AutoscalingGroup#scale_out_action}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.15/docs/resources/autoscaling_group#scale_out_action AutoscalingGroup#scale_out_action}
 
 ---
 
@@ -1439,7 +1439,7 @@ The upper threshold for the value of the 'metric'.
 
 Used with the 'greater than' (>) operator. A scale-out action is triggered when this value is exceeded, specified by the 'scaleOutAction' property. The value must have a lower minimum delta to the 'scaleInThreshold', depending on the metric, to avoid competing for actions simultaneously. If 'properties.policy.unit=TOTAL', a value >= 40 must be chosen.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.14/docs/resources/autoscaling_group#scale_out_threshold AutoscalingGroup#scale_out_threshold}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.15/docs/resources/autoscaling_group#scale_out_threshold AutoscalingGroup#scale_out_threshold}
 
 ---
 
@@ -1453,7 +1453,7 @@ public java.lang.String getUnit();
 
 Units of the applied Metric. Possible values are: PER_HOUR, PER_MINUTE, PER_SECOND, TOTAL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.14/docs/resources/autoscaling_group#unit AutoscalingGroup#unit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.15/docs/resources/autoscaling_group#unit AutoscalingGroup#unit}
 
 ---
 
@@ -1467,7 +1467,7 @@ public java.lang.String getRange();
 
 Specifies the time range for which the samples are to be aggregated. Must be >= 2 minutes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.14/docs/resources/autoscaling_group#range AutoscalingGroup#range}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.15/docs/resources/autoscaling_group#range AutoscalingGroup#range}
 
 ---
 
@@ -1512,7 +1512,7 @@ When 'amountType=ABSOLUTE' specifies the absolute number of VMs that are removed
 
 The value must be between 1 to 10. 'amountType=PERCENTAGE' specifies the percentage value that is applied to the current number of replicas of the VM Auto Scaling Group. The value must be between 1 to 200. At least one VM is always removed. Note that for 'SCALE_IN' operations, volumes are not deleted after the server is deleted.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.14/docs/resources/autoscaling_group#amount AutoscalingGroup#amount}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.15/docs/resources/autoscaling_group#amount AutoscalingGroup#amount}
 
 ---
 
@@ -1526,7 +1526,7 @@ public java.lang.String getAmountType();
 
 The type for the given amount. Possible values are: [ABSOLUTE, PERCENTAGE].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.14/docs/resources/autoscaling_group#amount_type AutoscalingGroup#amount_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.15/docs/resources/autoscaling_group#amount_type AutoscalingGroup#amount_type}
 
 ---
 
@@ -1542,7 +1542,7 @@ If set to 'true', when deleting an replica during scale in, any attached volume 
 
 When set to 'false', all volumes remain in the datacenter and must be deleted manually. Note that every scale-out creates new volumes. When they are not deleted, they will eventually use all of your contracts resource limits. At this point, scaling out would not be possible anymore.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.14/docs/resources/autoscaling_group#delete_volumes AutoscalingGroup#delete_volumes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.15/docs/resources/autoscaling_group#delete_volumes AutoscalingGroup#delete_volumes}
 
 ---
 
@@ -1558,7 +1558,7 @@ The minimum time that elapses after the start of this scaling action until the f
 
 While a scaling action is in progress, no second action is initiated for the same VM Auto Scaling Group. Instead, the metric is re-evaluated after the current scaling action completes (either successfully or with errors). This is currently validated with a minimum value of 2 minutes and a maximum of 24 hours. The default value is 5 minutes if not specified.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.14/docs/resources/autoscaling_group#cooldown_period AutoscalingGroup#cooldown_period}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.15/docs/resources/autoscaling_group#cooldown_period AutoscalingGroup#cooldown_period}
 
 ---
 
@@ -1574,7 +1574,7 @@ The type of termination policy for the VM Auto Scaling Group to follow a specifi
 
 The default termination policy is 'OLDEST_SERVER_FIRST'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.14/docs/resources/autoscaling_group#termination_policy_type AutoscalingGroup#termination_policy_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.15/docs/resources/autoscaling_group#termination_policy_type AutoscalingGroup#termination_policy_type}
 
 ---
 
@@ -1614,7 +1614,7 @@ When 'amountType=ABSOLUTE' specifies the absolute number of VMs that are added.
 
 The value must be between 1 to 10. 'amountType=PERCENTAGE' specifies the percentage value that is applied to the current number of replicas of the VM Auto Scaling Group. The value must be between 1 to 200. At least one VM is always added or removed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.14/docs/resources/autoscaling_group#amount AutoscalingGroup#amount}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.15/docs/resources/autoscaling_group#amount AutoscalingGroup#amount}
 
 ---
 
@@ -1628,7 +1628,7 @@ public java.lang.String getAmountType();
 
 The type for the given amount. Possible values are: [ABSOLUTE, PERCENTAGE].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.14/docs/resources/autoscaling_group#amount_type AutoscalingGroup#amount_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.15/docs/resources/autoscaling_group#amount_type AutoscalingGroup#amount_type}
 
 ---
 
@@ -1644,7 +1644,7 @@ The minimum time that elapses after the start of this scaling action until the f
 
 While a scaling action is in progress, no second action is initiated for the same VM Auto Scaling Group. Instead, the metric is re-evaluated after the current scaling action completes (either successfully or with errors). This is currently validated with a minimum value of 2 minutes and a maximum of 24 hours. The default value is 5 minutes if not specified.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.14/docs/resources/autoscaling_group#cooldown_period AutoscalingGroup#cooldown_period}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.15/docs/resources/autoscaling_group#cooldown_period AutoscalingGroup#cooldown_period}
 
 ---
 
@@ -1690,7 +1690,7 @@ public java.lang.String getAvailabilityZone();
 
 The zone where the VMs are created using this configuration.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.14/docs/resources/autoscaling_group#availability_zone AutoscalingGroup#availability_zone}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.15/docs/resources/autoscaling_group#availability_zone AutoscalingGroup#availability_zone}
 
 ---
 
@@ -1704,7 +1704,7 @@ public java.lang.Number getCores();
 
 The total number of cores for the VMs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.14/docs/resources/autoscaling_group#cores AutoscalingGroup#cores}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.15/docs/resources/autoscaling_group#cores AutoscalingGroup#cores}
 
 ---
 
@@ -1718,7 +1718,7 @@ public java.lang.Number getRam();
 
 The amount of memory for the VMs in MB, e.g. 2048. Size must be specified in multiples of 256 MB with a minimum of 256 MB; however, if you set ramHotPlug to TRUE then you must use a minimum of 1024 MB. If you set the RAM size more than 240GB, then ramHotPlug will be set to FALSE and can not be set to TRUE unless RAM size not set to less than 240GB.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.14/docs/resources/autoscaling_group#ram AutoscalingGroup#ram}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.15/docs/resources/autoscaling_group#ram AutoscalingGroup#ram}
 
 ---
 
@@ -1732,7 +1732,7 @@ public java.lang.String getCpuFamily();
 
 The zone where the VMs are created using this configuration.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.14/docs/resources/autoscaling_group#cpu_family AutoscalingGroup#cpu_family}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.15/docs/resources/autoscaling_group#cpu_family AutoscalingGroup#cpu_family}
 
 ---
 
@@ -1746,7 +1746,7 @@ public java.lang.Object getNic();
 
 nic block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.14/docs/resources/autoscaling_group#nic AutoscalingGroup#nic}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.15/docs/resources/autoscaling_group#nic AutoscalingGroup#nic}
 
 ---
 
@@ -1760,7 +1760,7 @@ public java.lang.Object getVolume();
 
 volume block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.14/docs/resources/autoscaling_group#volume AutoscalingGroup#volume}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.15/docs/resources/autoscaling_group#volume AutoscalingGroup#volume}
 
 ---
 
@@ -1799,7 +1799,7 @@ public java.lang.Number getLan();
 
 Lan ID for this replica Nic.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.14/docs/resources/autoscaling_group#lan AutoscalingGroup#lan}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.15/docs/resources/autoscaling_group#lan AutoscalingGroup#lan}
 
 ---
 
@@ -1813,7 +1813,7 @@ public java.lang.String getName();
 
 Name for this replica NIC.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.14/docs/resources/autoscaling_group#name AutoscalingGroup#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.15/docs/resources/autoscaling_group#name AutoscalingGroup#name}
 
 ---
 
@@ -1829,7 +1829,7 @@ Dhcp flag for this replica Nic.
 
 This is an optional attribute with default value of 'true' if not given in the request payload or given as null.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.14/docs/resources/autoscaling_group#dhcp AutoscalingGroup#dhcp}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.15/docs/resources/autoscaling_group#dhcp AutoscalingGroup#dhcp}
 
 ---
 
@@ -1868,7 +1868,7 @@ AutoscalingGroupReplicaConfigurationVolume.builder()
 | <code><a href="#@cdktf/provider-ionoscloud.autoscalingGroup.AutoscalingGroupReplicaConfigurationVolume.property.image">image</a></code> | <code>java.lang.String</code> | The image installed on the disk. |
 | <code><a href="#@cdktf/provider-ionoscloud.autoscalingGroup.AutoscalingGroupReplicaConfigurationVolume.property.imageAlias">imageAlias</a></code> | <code>java.lang.String</code> | The image installed on the volume. |
 | <code><a href="#@cdktf/provider-ionoscloud.autoscalingGroup.AutoscalingGroupReplicaConfigurationVolume.property.imagePassword">imagePassword</a></code> | <code>java.lang.String</code> | Image password for this replica volume. |
-| <code><a href="#@cdktf/provider-ionoscloud.autoscalingGroup.AutoscalingGroupReplicaConfigurationVolume.property.sshKeys">sshKeys</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.14/docs/resources/autoscaling_group#ssh_keys AutoscalingGroup#ssh_keys}. |
+| <code><a href="#@cdktf/provider-ionoscloud.autoscalingGroup.AutoscalingGroupReplicaConfigurationVolume.property.sshKeys">sshKeys</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.15/docs/resources/autoscaling_group#ssh_keys AutoscalingGroup#ssh_keys}. |
 | <code><a href="#@cdktf/provider-ionoscloud.autoscalingGroup.AutoscalingGroupReplicaConfigurationVolume.property.userData">userData</a></code> | <code>java.lang.String</code> | User-data (Cloud Init) for this replica volume. |
 
 ---
@@ -1887,7 +1887,7 @@ Set to NONE, the volume will not be used as boot volume.
 Set to PRIMARY, the volume will be used as boot volume and set to AUTO will delegate the decision to the provisioning engine to decide whether to use the volume as boot volume.
 Notice that exactly one volume can be set to PRIMARY or all of them set to AUTO.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.14/docs/resources/autoscaling_group#boot_order AutoscalingGroup#boot_order}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.15/docs/resources/autoscaling_group#boot_order AutoscalingGroup#boot_order}
 
 ---
 
@@ -1901,7 +1901,7 @@ public java.lang.String getName();
 
 Name for this replica volume.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.14/docs/resources/autoscaling_group#name AutoscalingGroup#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.15/docs/resources/autoscaling_group#name AutoscalingGroup#name}
 
 ---
 
@@ -1915,7 +1915,7 @@ public java.lang.Number getSize();
 
 User-defined size for this replica volume in GB.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.14/docs/resources/autoscaling_group#size AutoscalingGroup#size}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.15/docs/resources/autoscaling_group#size AutoscalingGroup#size}
 
 ---
 
@@ -1929,7 +1929,7 @@ public java.lang.String getType();
 
 Storage Type for this replica volume. Possible values: SSD, HDD, SSD_STANDARD or SSD_PREMIUM.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.14/docs/resources/autoscaling_group#type AutoscalingGroup#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.15/docs/resources/autoscaling_group#type AutoscalingGroup#type}
 
 ---
 
@@ -1945,7 +1945,7 @@ The uuid of the Backup Unit that user has access to.
 
 The property is immutable and is only allowed to be set on a new volume creation. It is mandatory to provide either 'public image' or 'imageAlias' in conjunction with this property.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.14/docs/resources/autoscaling_group#backup_unit_id AutoscalingGroup#backup_unit_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.15/docs/resources/autoscaling_group#backup_unit_id AutoscalingGroup#backup_unit_id}
 
 ---
 
@@ -1959,7 +1959,7 @@ public java.lang.String getBus();
 
 The bus type of the volume. Default setting is 'VIRTIO'. The bus type 'IDE' is also supported.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.14/docs/resources/autoscaling_group#bus AutoscalingGroup#bus}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.15/docs/resources/autoscaling_group#bus AutoscalingGroup#bus}
 
 ---
 
@@ -1975,7 +1975,7 @@ The image installed on the disk.
 
 Currently, only the UUID of the image is supported. Note that either 'image' or 'imageAlias' must be specified, but not both.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.14/docs/resources/autoscaling_group#image AutoscalingGroup#image}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.15/docs/resources/autoscaling_group#image AutoscalingGroup#image}
 
 ---
 
@@ -1991,7 +1991,7 @@ The image installed on the volume.
 
 Must be an 'imageAlias' as specified via the images API. Note that one of 'image' or 'imageAlias' must be set, but not both.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.14/docs/resources/autoscaling_group#image_alias AutoscalingGroup#image_alias}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.15/docs/resources/autoscaling_group#image_alias AutoscalingGroup#image_alias}
 
 ---
 
@@ -2005,7 +2005,7 @@ public java.lang.String getImagePassword();
 
 Image password for this replica volume.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.14/docs/resources/autoscaling_group#image_password AutoscalingGroup#image_password}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.15/docs/resources/autoscaling_group#image_password AutoscalingGroup#image_password}
 
 ---
 
@@ -2017,7 +2017,7 @@ public java.util.List<java.lang.String> getSshKeys();
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.14/docs/resources/autoscaling_group#ssh_keys AutoscalingGroup#ssh_keys}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.15/docs/resources/autoscaling_group#ssh_keys AutoscalingGroup#ssh_keys}.
 
 ---
 
@@ -2031,7 +2031,7 @@ public java.lang.String getUserData();
 
 User-data (Cloud Init) for this replica volume.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.14/docs/resources/autoscaling_group#user_data AutoscalingGroup#user_data}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.15/docs/resources/autoscaling_group#user_data AutoscalingGroup#user_data}
 
 ---
 
@@ -2054,10 +2054,10 @@ AutoscalingGroupTimeouts.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-ionoscloud.autoscalingGroup.AutoscalingGroupTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.14/docs/resources/autoscaling_group#create AutoscalingGroup#create}. |
-| <code><a href="#@cdktf/provider-ionoscloud.autoscalingGroup.AutoscalingGroupTimeouts.property.default">default</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.14/docs/resources/autoscaling_group#default AutoscalingGroup#default}. |
-| <code><a href="#@cdktf/provider-ionoscloud.autoscalingGroup.AutoscalingGroupTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.14/docs/resources/autoscaling_group#delete AutoscalingGroup#delete}. |
-| <code><a href="#@cdktf/provider-ionoscloud.autoscalingGroup.AutoscalingGroupTimeouts.property.update">update</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.14/docs/resources/autoscaling_group#update AutoscalingGroup#update}. |
+| <code><a href="#@cdktf/provider-ionoscloud.autoscalingGroup.AutoscalingGroupTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.15/docs/resources/autoscaling_group#create AutoscalingGroup#create}. |
+| <code><a href="#@cdktf/provider-ionoscloud.autoscalingGroup.AutoscalingGroupTimeouts.property.default">default</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.15/docs/resources/autoscaling_group#default AutoscalingGroup#default}. |
+| <code><a href="#@cdktf/provider-ionoscloud.autoscalingGroup.AutoscalingGroupTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.15/docs/resources/autoscaling_group#delete AutoscalingGroup#delete}. |
+| <code><a href="#@cdktf/provider-ionoscloud.autoscalingGroup.AutoscalingGroupTimeouts.property.update">update</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.15/docs/resources/autoscaling_group#update AutoscalingGroup#update}. |
 
 ---
 
@@ -2069,7 +2069,7 @@ public java.lang.String getCreate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.14/docs/resources/autoscaling_group#create AutoscalingGroup#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.15/docs/resources/autoscaling_group#create AutoscalingGroup#create}.
 
 ---
 
@@ -2081,7 +2081,7 @@ public java.lang.String getDefault();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.14/docs/resources/autoscaling_group#default AutoscalingGroup#default}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.15/docs/resources/autoscaling_group#default AutoscalingGroup#default}.
 
 ---
 
@@ -2093,7 +2093,7 @@ public java.lang.String getDelete();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.14/docs/resources/autoscaling_group#delete AutoscalingGroup#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.15/docs/resources/autoscaling_group#delete AutoscalingGroup#delete}.
 
 ---
 
@@ -2105,7 +2105,7 @@ public java.lang.String getUpdate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.14/docs/resources/autoscaling_group#update AutoscalingGroup#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.15/docs/resources/autoscaling_group#update AutoscalingGroup#update}.
 
 ---
 
