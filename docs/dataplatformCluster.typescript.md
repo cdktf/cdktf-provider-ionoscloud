@@ -4,7 +4,7 @@
 
 ### DataplatformCluster <a name="DataplatformCluster" id="@cdktf/provider-ionoscloud.dataplatformCluster.DataplatformCluster"></a>
 
-Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.14/docs/resources/dataplatform_cluster ionoscloud_dataplatform_cluster}.
+Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.15/docs/resources/dataplatform_cluster ionoscloud_dataplatform_cluster}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.dataplatformCluster.DataplatformCluster.Initializer"></a>
 
@@ -73,9 +73,11 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-ionoscloud.dataplatformCluster.DataplatformCluster.moveFromId">moveFromId</a></code> | Move the resource corresponding to "id" to this resource. |
 | <code><a href="#@cdktf/provider-ionoscloud.dataplatformCluster.DataplatformCluster.moveTo">moveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-ionoscloud.dataplatformCluster.DataplatformCluster.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
+| <code><a href="#@cdktf/provider-ionoscloud.dataplatformCluster.DataplatformCluster.putLans">putLans</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.dataplatformCluster.DataplatformCluster.putMaintenanceWindow">putMaintenanceWindow</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.dataplatformCluster.DataplatformCluster.putTimeouts">putTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.dataplatformCluster.DataplatformCluster.resetId">resetId</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.dataplatformCluster.DataplatformCluster.resetLans">resetLans</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.dataplatformCluster.DataplatformCluster.resetMaintenanceWindow">resetMaintenanceWindow</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.dataplatformCluster.DataplatformCluster.resetTimeouts">resetTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.dataplatformCluster.DataplatformCluster.resetVersion">resetVersion</a></code> | *No description.* |
@@ -370,6 +372,18 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
+##### `putLans` <a name="putLans" id="@cdktf/provider-ionoscloud.dataplatformCluster.DataplatformCluster.putLans"></a>
+
+```typescript
+public putLans(value: IResolvable | DataplatformClusterLans[]): void
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-ionoscloud.dataplatformCluster.DataplatformCluster.putLans.parameter.value"></a>
+
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-ionoscloud.dataplatformCluster.DataplatformClusterLans">DataplatformClusterLans</a>[]
+
+---
+
 ##### `putMaintenanceWindow` <a name="putMaintenanceWindow" id="@cdktf/provider-ionoscloud.dataplatformCluster.DataplatformCluster.putMaintenanceWindow"></a>
 
 ```typescript
@@ -398,6 +412,12 @@ public putTimeouts(value: DataplatformClusterTimeouts): void
 
 ```typescript
 public resetId(): void
+```
+
+##### `resetLans` <a name="resetLans" id="@cdktf/provider-ionoscloud.dataplatformCluster.DataplatformCluster.resetLans"></a>
+
+```typescript
+public resetLans(): void
 ```
 
 ##### `resetMaintenanceWindow` <a name="resetMaintenanceWindow" id="@cdktf/provider-ionoscloud.dataplatformCluster.DataplatformCluster.resetMaintenanceWindow"></a>
@@ -521,7 +541,7 @@ The construct id used in the generated config for the DataplatformCluster to imp
 
 The id of the existing DataplatformCluster that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.14/docs/resources/dataplatform_cluster#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.15/docs/resources/dataplatform_cluster#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -551,10 +571,12 @@ Refer to the {@link https://registry.terraform.io/providers/ionos-cloud/ionosclo
 | <code><a href="#@cdktf/provider-ionoscloud.dataplatformCluster.DataplatformCluster.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.dataplatformCluster.DataplatformCluster.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.dataplatformCluster.DataplatformCluster.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.dataplatformCluster.DataplatformCluster.property.lans">lans</a></code> | <code><a href="#@cdktf/provider-ionoscloud.dataplatformCluster.DataplatformClusterLansList">DataplatformClusterLansList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.dataplatformCluster.DataplatformCluster.property.maintenanceWindow">maintenanceWindow</a></code> | <code><a href="#@cdktf/provider-ionoscloud.dataplatformCluster.DataplatformClusterMaintenanceWindowList">DataplatformClusterMaintenanceWindowList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.dataplatformCluster.DataplatformCluster.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-ionoscloud.dataplatformCluster.DataplatformClusterTimeoutsOutputReference">DataplatformClusterTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.dataplatformCluster.DataplatformCluster.property.datacenterIdInput">datacenterIdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.dataplatformCluster.DataplatformCluster.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.dataplatformCluster.DataplatformCluster.property.lansInput">lansInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-ionoscloud.dataplatformCluster.DataplatformClusterLans">DataplatformClusterLans</a>[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.dataplatformCluster.DataplatformCluster.property.maintenanceWindowInput">maintenanceWindowInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-ionoscloud.dataplatformCluster.DataplatformClusterMaintenanceWindow">DataplatformClusterMaintenanceWindow</a>[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.dataplatformCluster.DataplatformCluster.property.nameInput">nameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.dataplatformCluster.DataplatformCluster.property.timeoutsInput">timeoutsInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-ionoscloud.dataplatformCluster.DataplatformClusterTimeouts">DataplatformClusterTimeouts</a></code> | *No description.* |
@@ -708,6 +730,16 @@ public readonly provisioners: FileProvisioner | LocalExecProvisioner | RemoteExe
 
 ---
 
+##### `lans`<sup>Required</sup> <a name="lans" id="@cdktf/provider-ionoscloud.dataplatformCluster.DataplatformCluster.property.lans"></a>
+
+```typescript
+public readonly lans: DataplatformClusterLansList;
+```
+
+- *Type:* <a href="#@cdktf/provider-ionoscloud.dataplatformCluster.DataplatformClusterLansList">DataplatformClusterLansList</a>
+
+---
+
 ##### `maintenanceWindow`<sup>Required</sup> <a name="maintenanceWindow" id="@cdktf/provider-ionoscloud.dataplatformCluster.DataplatformCluster.property.maintenanceWindow"></a>
 
 ```typescript
@@ -745,6 +777,16 @@ public readonly idInput: string;
 ```
 
 - *Type:* string
+
+---
+
+##### `lansInput`<sup>Optional</sup> <a name="lansInput" id="@cdktf/provider-ionoscloud.dataplatformCluster.DataplatformCluster.property.lansInput"></a>
+
+```typescript
+public readonly lansInput: IResolvable | DataplatformClusterLans[];
+```
+
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-ionoscloud.dataplatformCluster.DataplatformClusterLans">DataplatformClusterLans</a>[]
 
 ---
 
@@ -871,7 +913,8 @@ const dataplatformClusterConfig: dataplatformCluster.DataplatformClusterConfig =
 | <code><a href="#@cdktf/provider-ionoscloud.dataplatformCluster.DataplatformClusterConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.dataplatformCluster.DataplatformClusterConfig.property.datacenterId">datacenterId</a></code> | <code>string</code> | The UUID of the virtual data center (VDC) in which the cluster is provisioned. |
 | <code><a href="#@cdktf/provider-ionoscloud.dataplatformCluster.DataplatformClusterConfig.property.name">name</a></code> | <code>string</code> | The name of your cluster. |
-| <code><a href="#@cdktf/provider-ionoscloud.dataplatformCluster.DataplatformClusterConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.14/docs/resources/dataplatform_cluster#id DataplatformCluster#id}. |
+| <code><a href="#@cdktf/provider-ionoscloud.dataplatformCluster.DataplatformClusterConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.15/docs/resources/dataplatform_cluster#id DataplatformCluster#id}. |
+| <code><a href="#@cdktf/provider-ionoscloud.dataplatformCluster.DataplatformClusterConfig.property.lans">lans</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-ionoscloud.dataplatformCluster.DataplatformClusterLans">DataplatformClusterLans</a>[]</code> | lans block. |
 | <code><a href="#@cdktf/provider-ionoscloud.dataplatformCluster.DataplatformClusterConfig.property.maintenanceWindow">maintenanceWindow</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-ionoscloud.dataplatformCluster.DataplatformClusterMaintenanceWindow">DataplatformClusterMaintenanceWindow</a>[]</code> | maintenance_window block. |
 | <code><a href="#@cdktf/provider-ionoscloud.dataplatformCluster.DataplatformClusterConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-ionoscloud.dataplatformCluster.DataplatformClusterTimeouts">DataplatformClusterTimeouts</a></code> | timeouts block. |
 | <code><a href="#@cdktf/provider-ionoscloud.dataplatformCluster.DataplatformClusterConfig.property.version">version</a></code> | <code>string</code> | The version of the Data Platform. |
@@ -958,7 +1001,7 @@ public readonly datacenterId: string;
 
 The UUID of the virtual data center (VDC) in which the cluster is provisioned.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.14/docs/resources/dataplatform_cluster#datacenter_id DataplatformCluster#datacenter_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.15/docs/resources/dataplatform_cluster#datacenter_id DataplatformCluster#datacenter_id}
 
 ---
 
@@ -974,7 +1017,7 @@ The name of your cluster.
 
 Must be 63 characters or less and must be empty or begin and end with an alphanumeric character ([a-z0-9A-Z]). It can contain dashes (-), underscores (_), dots (.), and alphanumerics in-between.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.14/docs/resources/dataplatform_cluster#name DataplatformCluster#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.15/docs/resources/dataplatform_cluster#name DataplatformCluster#name}
 
 ---
 
@@ -986,10 +1029,24 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.14/docs/resources/dataplatform_cluster#id DataplatformCluster#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.15/docs/resources/dataplatform_cluster#id DataplatformCluster#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `lans`<sup>Optional</sup> <a name="lans" id="@cdktf/provider-ionoscloud.dataplatformCluster.DataplatformClusterConfig.property.lans"></a>
+
+```typescript
+public readonly lans: IResolvable | DataplatformClusterLans[];
+```
+
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-ionoscloud.dataplatformCluster.DataplatformClusterLans">DataplatformClusterLans</a>[]
+
+lans block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.15/docs/resources/dataplatform_cluster#lans DataplatformCluster#lans}
 
 ---
 
@@ -1003,7 +1060,7 @@ public readonly maintenanceWindow: IResolvable | DataplatformClusterMaintenanceW
 
 maintenance_window block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.14/docs/resources/dataplatform_cluster#maintenance_window DataplatformCluster#maintenance_window}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.15/docs/resources/dataplatform_cluster#maintenance_window DataplatformCluster#maintenance_window}
 
 ---
 
@@ -1017,7 +1074,7 @@ public readonly timeouts: DataplatformClusterTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.14/docs/resources/dataplatform_cluster#timeouts DataplatformCluster#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.15/docs/resources/dataplatform_cluster#timeouts DataplatformCluster#timeouts}
 
 ---
 
@@ -1031,7 +1088,116 @@ public readonly version: string;
 
 The version of the Data Platform.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.14/docs/resources/dataplatform_cluster#version DataplatformCluster#version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.15/docs/resources/dataplatform_cluster#version DataplatformCluster#version}
+
+---
+
+### DataplatformClusterLans <a name="DataplatformClusterLans" id="@cdktf/provider-ionoscloud.dataplatformCluster.DataplatformClusterLans"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-ionoscloud.dataplatformCluster.DataplatformClusterLans.Initializer"></a>
+
+```typescript
+import { dataplatformCluster } from '@cdktf/provider-ionoscloud'
+
+const dataplatformClusterLans: dataplatformCluster.DataplatformClusterLans = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-ionoscloud.dataplatformCluster.DataplatformClusterLans.property.lanId">lanId</a></code> | <code>string</code> | The LAN ID of an existing LAN at the related data center. |
+| <code><a href="#@cdktf/provider-ionoscloud.dataplatformCluster.DataplatformClusterLans.property.dhcp">dhcp</a></code> | <code>boolean \| cdktf.IResolvable</code> | Indicates if the Kubernetes node pool LAN will reserve an IP using DHCP. The default value is 'true'. |
+| <code><a href="#@cdktf/provider-ionoscloud.dataplatformCluster.DataplatformClusterLans.property.routes">routes</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-ionoscloud.dataplatformCluster.DataplatformClusterLansRoutes">DataplatformClusterLansRoutes</a>[]</code> | routes block. |
+
+---
+
+##### `lanId`<sup>Required</sup> <a name="lanId" id="@cdktf/provider-ionoscloud.dataplatformCluster.DataplatformClusterLans.property.lanId"></a>
+
+```typescript
+public readonly lanId: string;
+```
+
+- *Type:* string
+
+The LAN ID of an existing LAN at the related data center.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.15/docs/resources/dataplatform_cluster#lan_id DataplatformCluster#lan_id}
+
+---
+
+##### `dhcp`<sup>Optional</sup> <a name="dhcp" id="@cdktf/provider-ionoscloud.dataplatformCluster.DataplatformClusterLans.property.dhcp"></a>
+
+```typescript
+public readonly dhcp: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
+
+Indicates if the Kubernetes node pool LAN will reserve an IP using DHCP. The default value is 'true'.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.15/docs/resources/dataplatform_cluster#dhcp DataplatformCluster#dhcp}
+
+---
+
+##### `routes`<sup>Optional</sup> <a name="routes" id="@cdktf/provider-ionoscloud.dataplatformCluster.DataplatformClusterLans.property.routes"></a>
+
+```typescript
+public readonly routes: IResolvable | DataplatformClusterLansRoutes[];
+```
+
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-ionoscloud.dataplatformCluster.DataplatformClusterLansRoutes">DataplatformClusterLansRoutes</a>[]
+
+routes block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.15/docs/resources/dataplatform_cluster#routes DataplatformCluster#routes}
+
+---
+
+### DataplatformClusterLansRoutes <a name="DataplatformClusterLansRoutes" id="@cdktf/provider-ionoscloud.dataplatformCluster.DataplatformClusterLansRoutes"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-ionoscloud.dataplatformCluster.DataplatformClusterLansRoutes.Initializer"></a>
+
+```typescript
+import { dataplatformCluster } from '@cdktf/provider-ionoscloud'
+
+const dataplatformClusterLansRoutes: dataplatformCluster.DataplatformClusterLansRoutes = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-ionoscloud.dataplatformCluster.DataplatformClusterLansRoutes.property.gateway">gateway</a></code> | <code>string</code> | IPv4 or IPv6 gateway IP for the route. |
+| <code><a href="#@cdktf/provider-ionoscloud.dataplatformCluster.DataplatformClusterLansRoutes.property.network">network</a></code> | <code>string</code> | IPv4 or IPv6 CIDR to be routed via the interface. |
+
+---
+
+##### `gateway`<sup>Required</sup> <a name="gateway" id="@cdktf/provider-ionoscloud.dataplatformCluster.DataplatformClusterLansRoutes.property.gateway"></a>
+
+```typescript
+public readonly gateway: string;
+```
+
+- *Type:* string
+
+IPv4 or IPv6 gateway IP for the route.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.15/docs/resources/dataplatform_cluster#gateway DataplatformCluster#gateway}
+
+---
+
+##### `network`<sup>Required</sup> <a name="network" id="@cdktf/provider-ionoscloud.dataplatformCluster.DataplatformClusterLansRoutes.property.network"></a>
+
+```typescript
+public readonly network: string;
+```
+
+- *Type:* string
+
+IPv4 or IPv6 CIDR to be routed via the interface.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.15/docs/resources/dataplatform_cluster#network DataplatformCluster#network}
 
 ---
 
@@ -1049,7 +1215,7 @@ const dataplatformClusterMaintenanceWindow: dataplatformCluster.DataplatformClus
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-ionoscloud.dataplatformCluster.DataplatformClusterMaintenanceWindow.property.dayOfTheWeek">dayOfTheWeek</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.14/docs/resources/dataplatform_cluster#day_of_the_week DataplatformCluster#day_of_the_week}. |
+| <code><a href="#@cdktf/provider-ionoscloud.dataplatformCluster.DataplatformClusterMaintenanceWindow.property.dayOfTheWeek">dayOfTheWeek</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.15/docs/resources/dataplatform_cluster#day_of_the_week DataplatformCluster#day_of_the_week}. |
 | <code><a href="#@cdktf/provider-ionoscloud.dataplatformCluster.DataplatformClusterMaintenanceWindow.property.time">time</a></code> | <code>string</code> | Time at which the maintenance should start. |
 
 ---
@@ -1062,7 +1228,7 @@ public readonly dayOfTheWeek: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.14/docs/resources/dataplatform_cluster#day_of_the_week DataplatformCluster#day_of_the_week}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.15/docs/resources/dataplatform_cluster#day_of_the_week DataplatformCluster#day_of_the_week}.
 
 ---
 
@@ -1076,7 +1242,7 @@ public readonly time: string;
 
 Time at which the maintenance should start.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.14/docs/resources/dataplatform_cluster#time DataplatformCluster#time}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.15/docs/resources/dataplatform_cluster#time DataplatformCluster#time}
 
 ---
 
@@ -1094,10 +1260,10 @@ const dataplatformClusterTimeouts: dataplatformCluster.DataplatformClusterTimeou
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-ionoscloud.dataplatformCluster.DataplatformClusterTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.14/docs/resources/dataplatform_cluster#create DataplatformCluster#create}. |
-| <code><a href="#@cdktf/provider-ionoscloud.dataplatformCluster.DataplatformClusterTimeouts.property.default">default</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.14/docs/resources/dataplatform_cluster#default DataplatformCluster#default}. |
-| <code><a href="#@cdktf/provider-ionoscloud.dataplatformCluster.DataplatformClusterTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.14/docs/resources/dataplatform_cluster#delete DataplatformCluster#delete}. |
-| <code><a href="#@cdktf/provider-ionoscloud.dataplatformCluster.DataplatformClusterTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.14/docs/resources/dataplatform_cluster#update DataplatformCluster#update}. |
+| <code><a href="#@cdktf/provider-ionoscloud.dataplatformCluster.DataplatformClusterTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.15/docs/resources/dataplatform_cluster#create DataplatformCluster#create}. |
+| <code><a href="#@cdktf/provider-ionoscloud.dataplatformCluster.DataplatformClusterTimeouts.property.default">default</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.15/docs/resources/dataplatform_cluster#default DataplatformCluster#default}. |
+| <code><a href="#@cdktf/provider-ionoscloud.dataplatformCluster.DataplatformClusterTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.15/docs/resources/dataplatform_cluster#delete DataplatformCluster#delete}. |
+| <code><a href="#@cdktf/provider-ionoscloud.dataplatformCluster.DataplatformClusterTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.15/docs/resources/dataplatform_cluster#update DataplatformCluster#update}. |
 
 ---
 
@@ -1109,7 +1275,7 @@ public readonly create: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.14/docs/resources/dataplatform_cluster#create DataplatformCluster#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.15/docs/resources/dataplatform_cluster#create DataplatformCluster#create}.
 
 ---
 
@@ -1121,7 +1287,7 @@ public readonly default: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.14/docs/resources/dataplatform_cluster#default DataplatformCluster#default}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.15/docs/resources/dataplatform_cluster#default DataplatformCluster#default}.
 
 ---
 
@@ -1133,7 +1299,7 @@ public readonly delete: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.14/docs/resources/dataplatform_cluster#delete DataplatformCluster#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.15/docs/resources/dataplatform_cluster#delete DataplatformCluster#delete}.
 
 ---
 
@@ -1145,11 +1311,1002 @@ public readonly update: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.14/docs/resources/dataplatform_cluster#update DataplatformCluster#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.15/docs/resources/dataplatform_cluster#update DataplatformCluster#update}.
 
 ---
 
 ## Classes <a name="Classes" id="Classes"></a>
+
+### DataplatformClusterLansList <a name="DataplatformClusterLansList" id="@cdktf/provider-ionoscloud.dataplatformCluster.DataplatformClusterLansList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.dataplatformCluster.DataplatformClusterLansList.Initializer"></a>
+
+```typescript
+import { dataplatformCluster } from '@cdktf/provider-ionoscloud'
+
+new dataplatformCluster.DataplatformClusterLansList(terraformResource: IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-ionoscloud.dataplatformCluster.DataplatformClusterLansList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-ionoscloud.dataplatformCluster.DataplatformClusterLansList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-ionoscloud.dataplatformCluster.DataplatformClusterLansList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-ionoscloud.dataplatformCluster.DataplatformClusterLansList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-ionoscloud.dataplatformCluster.DataplatformClusterLansList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktf/provider-ionoscloud.dataplatformCluster.DataplatformClusterLansList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* boolean
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-ionoscloud.dataplatformCluster.DataplatformClusterLansList.allWithMapKey">allWithMapKey</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktf/provider-ionoscloud.dataplatformCluster.DataplatformClusterLansList.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.dataplatformCluster.DataplatformClusterLansList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-ionoscloud.dataplatformCluster.DataplatformClusterLansList.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-ionoscloud.dataplatformCluster.DataplatformClusterLansList.get">get</a></code> | *No description.* |
+
+---
+
+##### `allWithMapKey` <a name="allWithMapKey" id="@cdktf/provider-ionoscloud.dataplatformCluster.DataplatformClusterLansList.allWithMapKey"></a>
+
+```typescript
+public allWithMapKey(mapKeyAttributeName: string): DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktf/provider-ionoscloud.dataplatformCluster.DataplatformClusterLansList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* string
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktf/provider-ionoscloud.dataplatformCluster.DataplatformClusterLansList.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `resolve` <a name="resolve" id="@cdktf/provider-ionoscloud.dataplatformCluster.DataplatformClusterLansList.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-ionoscloud.dataplatformCluster.DataplatformClusterLansList.resolve.parameter._context"></a>
+
+- *Type:* cdktf.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktf/provider-ionoscloud.dataplatformCluster.DataplatformClusterLansList.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `get` <a name="get" id="@cdktf/provider-ionoscloud.dataplatformCluster.DataplatformClusterLansList.get"></a>
+
+```typescript
+public get(index: number): DataplatformClusterLansOutputReference
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktf/provider-ionoscloud.dataplatformCluster.DataplatformClusterLansList.get.parameter.index"></a>
+
+- *Type:* number
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-ionoscloud.dataplatformCluster.DataplatformClusterLansList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-ionoscloud.dataplatformCluster.DataplatformClusterLansList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.dataplatformCluster.DataplatformClusterLansList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-ionoscloud.dataplatformCluster.DataplatformClusterLans">DataplatformClusterLans</a>[]</code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktf/provider-ionoscloud.dataplatformCluster.DataplatformClusterLansList.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-ionoscloud.dataplatformCluster.DataplatformClusterLansList.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-ionoscloud.dataplatformCluster.DataplatformClusterLansList.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: IResolvable | DataplatformClusterLans[];
+```
+
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-ionoscloud.dataplatformCluster.DataplatformClusterLans">DataplatformClusterLans</a>[]
+
+---
+
+
+### DataplatformClusterLansOutputReference <a name="DataplatformClusterLansOutputReference" id="@cdktf/provider-ionoscloud.dataplatformCluster.DataplatformClusterLansOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.dataplatformCluster.DataplatformClusterLansOutputReference.Initializer"></a>
+
+```typescript
+import { dataplatformCluster } from '@cdktf/provider-ionoscloud'
+
+new dataplatformCluster.DataplatformClusterLansOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-ionoscloud.dataplatformCluster.DataplatformClusterLansOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-ionoscloud.dataplatformCluster.DataplatformClusterLansOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-ionoscloud.dataplatformCluster.DataplatformClusterLansOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
+| <code><a href="#@cdktf/provider-ionoscloud.dataplatformCluster.DataplatformClusterLansOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-ionoscloud.dataplatformCluster.DataplatformClusterLansOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-ionoscloud.dataplatformCluster.DataplatformClusterLansOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktf/provider-ionoscloud.dataplatformCluster.DataplatformClusterLansOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* number
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktf/provider-ionoscloud.dataplatformCluster.DataplatformClusterLansOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* boolean
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-ionoscloud.dataplatformCluster.DataplatformClusterLansOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.dataplatformCluster.DataplatformClusterLansOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.dataplatformCluster.DataplatformClusterLansOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.dataplatformCluster.DataplatformClusterLansOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.dataplatformCluster.DataplatformClusterLansOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.dataplatformCluster.DataplatformClusterLansOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.dataplatformCluster.DataplatformClusterLansOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.dataplatformCluster.DataplatformClusterLansOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.dataplatformCluster.DataplatformClusterLansOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.dataplatformCluster.DataplatformClusterLansOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.dataplatformCluster.DataplatformClusterLansOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.dataplatformCluster.DataplatformClusterLansOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-ionoscloud.dataplatformCluster.DataplatformClusterLansOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-ionoscloud.dataplatformCluster.DataplatformClusterLansOutputReference.putRoutes">putRoutes</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.dataplatformCluster.DataplatformClusterLansOutputReference.resetDhcp">resetDhcp</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.dataplatformCluster.DataplatformClusterLansOutputReference.resetRoutes">resetRoutes</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktf/provider-ionoscloud.dataplatformCluster.DataplatformClusterLansOutputReference.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-ionoscloud.dataplatformCluster.DataplatformClusterLansOutputReference.getAnyMapAttribute"></a>
+
+```typescript
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-ionoscloud.dataplatformCluster.DataplatformClusterLansOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-ionoscloud.dataplatformCluster.DataplatformClusterLansOutputReference.getBooleanAttribute"></a>
+
+```typescript
+public getBooleanAttribute(terraformAttribute: string): IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-ionoscloud.dataplatformCluster.DataplatformClusterLansOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-ionoscloud.dataplatformCluster.DataplatformClusterLansOutputReference.getBooleanMapAttribute"></a>
+
+```typescript
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-ionoscloud.dataplatformCluster.DataplatformClusterLansOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-ionoscloud.dataplatformCluster.DataplatformClusterLansOutputReference.getListAttribute"></a>
+
+```typescript
+public getListAttribute(terraformAttribute: string): string[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-ionoscloud.dataplatformCluster.DataplatformClusterLansOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-ionoscloud.dataplatformCluster.DataplatformClusterLansOutputReference.getNumberAttribute"></a>
+
+```typescript
+public getNumberAttribute(terraformAttribute: string): number
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-ionoscloud.dataplatformCluster.DataplatformClusterLansOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-ionoscloud.dataplatformCluster.DataplatformClusterLansOutputReference.getNumberListAttribute"></a>
+
+```typescript
+public getNumberListAttribute(terraformAttribute: string): number[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-ionoscloud.dataplatformCluster.DataplatformClusterLansOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-ionoscloud.dataplatformCluster.DataplatformClusterLansOutputReference.getNumberMapAttribute"></a>
+
+```typescript
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-ionoscloud.dataplatformCluster.DataplatformClusterLansOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-ionoscloud.dataplatformCluster.DataplatformClusterLansOutputReference.getStringAttribute"></a>
+
+```typescript
+public getStringAttribute(terraformAttribute: string): string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-ionoscloud.dataplatformCluster.DataplatformClusterLansOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-ionoscloud.dataplatformCluster.DataplatformClusterLansOutputReference.getStringMapAttribute"></a>
+
+```typescript
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-ionoscloud.dataplatformCluster.DataplatformClusterLansOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-ionoscloud.dataplatformCluster.DataplatformClusterLansOutputReference.interpolationForAttribute"></a>
+
+```typescript
+public interpolationForAttribute(property: string): IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-ionoscloud.dataplatformCluster.DataplatformClusterLansOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktf/provider-ionoscloud.dataplatformCluster.DataplatformClusterLansOutputReference.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-ionoscloud.dataplatformCluster.DataplatformClusterLansOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktf.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktf/provider-ionoscloud.dataplatformCluster.DataplatformClusterLansOutputReference.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `putRoutes` <a name="putRoutes" id="@cdktf/provider-ionoscloud.dataplatformCluster.DataplatformClusterLansOutputReference.putRoutes"></a>
+
+```typescript
+public putRoutes(value: IResolvable | DataplatformClusterLansRoutes[]): void
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-ionoscloud.dataplatformCluster.DataplatformClusterLansOutputReference.putRoutes.parameter.value"></a>
+
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-ionoscloud.dataplatformCluster.DataplatformClusterLansRoutes">DataplatformClusterLansRoutes</a>[]
+
+---
+
+##### `resetDhcp` <a name="resetDhcp" id="@cdktf/provider-ionoscloud.dataplatformCluster.DataplatformClusterLansOutputReference.resetDhcp"></a>
+
+```typescript
+public resetDhcp(): void
+```
+
+##### `resetRoutes` <a name="resetRoutes" id="@cdktf/provider-ionoscloud.dataplatformCluster.DataplatformClusterLansOutputReference.resetRoutes"></a>
+
+```typescript
+public resetRoutes(): void
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-ionoscloud.dataplatformCluster.DataplatformClusterLansOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-ionoscloud.dataplatformCluster.DataplatformClusterLansOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.dataplatformCluster.DataplatformClusterLansOutputReference.property.routes">routes</a></code> | <code><a href="#@cdktf/provider-ionoscloud.dataplatformCluster.DataplatformClusterLansRoutesList">DataplatformClusterLansRoutesList</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.dataplatformCluster.DataplatformClusterLansOutputReference.property.dhcpInput">dhcpInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.dataplatformCluster.DataplatformClusterLansOutputReference.property.lanIdInput">lanIdInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.dataplatformCluster.DataplatformClusterLansOutputReference.property.routesInput">routesInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-ionoscloud.dataplatformCluster.DataplatformClusterLansRoutes">DataplatformClusterLansRoutes</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.dataplatformCluster.DataplatformClusterLansOutputReference.property.dhcp">dhcp</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.dataplatformCluster.DataplatformClusterLansOutputReference.property.lanId">lanId</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.dataplatformCluster.DataplatformClusterLansOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-ionoscloud.dataplatformCluster.DataplatformClusterLans">DataplatformClusterLans</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktf/provider-ionoscloud.dataplatformCluster.DataplatformClusterLansOutputReference.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-ionoscloud.dataplatformCluster.DataplatformClusterLansOutputReference.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `routes`<sup>Required</sup> <a name="routes" id="@cdktf/provider-ionoscloud.dataplatformCluster.DataplatformClusterLansOutputReference.property.routes"></a>
+
+```typescript
+public readonly routes: DataplatformClusterLansRoutesList;
+```
+
+- *Type:* <a href="#@cdktf/provider-ionoscloud.dataplatformCluster.DataplatformClusterLansRoutesList">DataplatformClusterLansRoutesList</a>
+
+---
+
+##### `dhcpInput`<sup>Optional</sup> <a name="dhcpInput" id="@cdktf/provider-ionoscloud.dataplatformCluster.DataplatformClusterLansOutputReference.property.dhcpInput"></a>
+
+```typescript
+public readonly dhcpInput: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
+
+---
+
+##### `lanIdInput`<sup>Optional</sup> <a name="lanIdInput" id="@cdktf/provider-ionoscloud.dataplatformCluster.DataplatformClusterLansOutputReference.property.lanIdInput"></a>
+
+```typescript
+public readonly lanIdInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `routesInput`<sup>Optional</sup> <a name="routesInput" id="@cdktf/provider-ionoscloud.dataplatformCluster.DataplatformClusterLansOutputReference.property.routesInput"></a>
+
+```typescript
+public readonly routesInput: IResolvable | DataplatformClusterLansRoutes[];
+```
+
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-ionoscloud.dataplatformCluster.DataplatformClusterLansRoutes">DataplatformClusterLansRoutes</a>[]
+
+---
+
+##### `dhcp`<sup>Required</sup> <a name="dhcp" id="@cdktf/provider-ionoscloud.dataplatformCluster.DataplatformClusterLansOutputReference.property.dhcp"></a>
+
+```typescript
+public readonly dhcp: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
+
+---
+
+##### `lanId`<sup>Required</sup> <a name="lanId" id="@cdktf/provider-ionoscloud.dataplatformCluster.DataplatformClusterLansOutputReference.property.lanId"></a>
+
+```typescript
+public readonly lanId: string;
+```
+
+- *Type:* string
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-ionoscloud.dataplatformCluster.DataplatformClusterLansOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: IResolvable | DataplatformClusterLans;
+```
+
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-ionoscloud.dataplatformCluster.DataplatformClusterLans">DataplatformClusterLans</a>
+
+---
+
+
+### DataplatformClusterLansRoutesList <a name="DataplatformClusterLansRoutesList" id="@cdktf/provider-ionoscloud.dataplatformCluster.DataplatformClusterLansRoutesList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.dataplatformCluster.DataplatformClusterLansRoutesList.Initializer"></a>
+
+```typescript
+import { dataplatformCluster } from '@cdktf/provider-ionoscloud'
+
+new dataplatformCluster.DataplatformClusterLansRoutesList(terraformResource: IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-ionoscloud.dataplatformCluster.DataplatformClusterLansRoutesList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-ionoscloud.dataplatformCluster.DataplatformClusterLansRoutesList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-ionoscloud.dataplatformCluster.DataplatformClusterLansRoutesList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-ionoscloud.dataplatformCluster.DataplatformClusterLansRoutesList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-ionoscloud.dataplatformCluster.DataplatformClusterLansRoutesList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktf/provider-ionoscloud.dataplatformCluster.DataplatformClusterLansRoutesList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* boolean
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-ionoscloud.dataplatformCluster.DataplatformClusterLansRoutesList.allWithMapKey">allWithMapKey</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktf/provider-ionoscloud.dataplatformCluster.DataplatformClusterLansRoutesList.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.dataplatformCluster.DataplatformClusterLansRoutesList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-ionoscloud.dataplatformCluster.DataplatformClusterLansRoutesList.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-ionoscloud.dataplatformCluster.DataplatformClusterLansRoutesList.get">get</a></code> | *No description.* |
+
+---
+
+##### `allWithMapKey` <a name="allWithMapKey" id="@cdktf/provider-ionoscloud.dataplatformCluster.DataplatformClusterLansRoutesList.allWithMapKey"></a>
+
+```typescript
+public allWithMapKey(mapKeyAttributeName: string): DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktf/provider-ionoscloud.dataplatformCluster.DataplatformClusterLansRoutesList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* string
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktf/provider-ionoscloud.dataplatformCluster.DataplatformClusterLansRoutesList.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `resolve` <a name="resolve" id="@cdktf/provider-ionoscloud.dataplatformCluster.DataplatformClusterLansRoutesList.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-ionoscloud.dataplatformCluster.DataplatformClusterLansRoutesList.resolve.parameter._context"></a>
+
+- *Type:* cdktf.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktf/provider-ionoscloud.dataplatformCluster.DataplatformClusterLansRoutesList.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `get` <a name="get" id="@cdktf/provider-ionoscloud.dataplatformCluster.DataplatformClusterLansRoutesList.get"></a>
+
+```typescript
+public get(index: number): DataplatformClusterLansRoutesOutputReference
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktf/provider-ionoscloud.dataplatformCluster.DataplatformClusterLansRoutesList.get.parameter.index"></a>
+
+- *Type:* number
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-ionoscloud.dataplatformCluster.DataplatformClusterLansRoutesList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-ionoscloud.dataplatformCluster.DataplatformClusterLansRoutesList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.dataplatformCluster.DataplatformClusterLansRoutesList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-ionoscloud.dataplatformCluster.DataplatformClusterLansRoutes">DataplatformClusterLansRoutes</a>[]</code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktf/provider-ionoscloud.dataplatformCluster.DataplatformClusterLansRoutesList.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-ionoscloud.dataplatformCluster.DataplatformClusterLansRoutesList.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-ionoscloud.dataplatformCluster.DataplatformClusterLansRoutesList.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: IResolvable | DataplatformClusterLansRoutes[];
+```
+
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-ionoscloud.dataplatformCluster.DataplatformClusterLansRoutes">DataplatformClusterLansRoutes</a>[]
+
+---
+
+
+### DataplatformClusterLansRoutesOutputReference <a name="DataplatformClusterLansRoutesOutputReference" id="@cdktf/provider-ionoscloud.dataplatformCluster.DataplatformClusterLansRoutesOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.dataplatformCluster.DataplatformClusterLansRoutesOutputReference.Initializer"></a>
+
+```typescript
+import { dataplatformCluster } from '@cdktf/provider-ionoscloud'
+
+new dataplatformCluster.DataplatformClusterLansRoutesOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-ionoscloud.dataplatformCluster.DataplatformClusterLansRoutesOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-ionoscloud.dataplatformCluster.DataplatformClusterLansRoutesOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-ionoscloud.dataplatformCluster.DataplatformClusterLansRoutesOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
+| <code><a href="#@cdktf/provider-ionoscloud.dataplatformCluster.DataplatformClusterLansRoutesOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-ionoscloud.dataplatformCluster.DataplatformClusterLansRoutesOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-ionoscloud.dataplatformCluster.DataplatformClusterLansRoutesOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktf/provider-ionoscloud.dataplatformCluster.DataplatformClusterLansRoutesOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* number
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktf/provider-ionoscloud.dataplatformCluster.DataplatformClusterLansRoutesOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* boolean
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-ionoscloud.dataplatformCluster.DataplatformClusterLansRoutesOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.dataplatformCluster.DataplatformClusterLansRoutesOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.dataplatformCluster.DataplatformClusterLansRoutesOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.dataplatformCluster.DataplatformClusterLansRoutesOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.dataplatformCluster.DataplatformClusterLansRoutesOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.dataplatformCluster.DataplatformClusterLansRoutesOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.dataplatformCluster.DataplatformClusterLansRoutesOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.dataplatformCluster.DataplatformClusterLansRoutesOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.dataplatformCluster.DataplatformClusterLansRoutesOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.dataplatformCluster.DataplatformClusterLansRoutesOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.dataplatformCluster.DataplatformClusterLansRoutesOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.dataplatformCluster.DataplatformClusterLansRoutesOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-ionoscloud.dataplatformCluster.DataplatformClusterLansRoutesOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktf/provider-ionoscloud.dataplatformCluster.DataplatformClusterLansRoutesOutputReference.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-ionoscloud.dataplatformCluster.DataplatformClusterLansRoutesOutputReference.getAnyMapAttribute"></a>
+
+```typescript
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-ionoscloud.dataplatformCluster.DataplatformClusterLansRoutesOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-ionoscloud.dataplatformCluster.DataplatformClusterLansRoutesOutputReference.getBooleanAttribute"></a>
+
+```typescript
+public getBooleanAttribute(terraformAttribute: string): IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-ionoscloud.dataplatformCluster.DataplatformClusterLansRoutesOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-ionoscloud.dataplatformCluster.DataplatformClusterLansRoutesOutputReference.getBooleanMapAttribute"></a>
+
+```typescript
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-ionoscloud.dataplatformCluster.DataplatformClusterLansRoutesOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-ionoscloud.dataplatformCluster.DataplatformClusterLansRoutesOutputReference.getListAttribute"></a>
+
+```typescript
+public getListAttribute(terraformAttribute: string): string[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-ionoscloud.dataplatformCluster.DataplatformClusterLansRoutesOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-ionoscloud.dataplatformCluster.DataplatformClusterLansRoutesOutputReference.getNumberAttribute"></a>
+
+```typescript
+public getNumberAttribute(terraformAttribute: string): number
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-ionoscloud.dataplatformCluster.DataplatformClusterLansRoutesOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-ionoscloud.dataplatformCluster.DataplatformClusterLansRoutesOutputReference.getNumberListAttribute"></a>
+
+```typescript
+public getNumberListAttribute(terraformAttribute: string): number[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-ionoscloud.dataplatformCluster.DataplatformClusterLansRoutesOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-ionoscloud.dataplatformCluster.DataplatformClusterLansRoutesOutputReference.getNumberMapAttribute"></a>
+
+```typescript
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-ionoscloud.dataplatformCluster.DataplatformClusterLansRoutesOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-ionoscloud.dataplatformCluster.DataplatformClusterLansRoutesOutputReference.getStringAttribute"></a>
+
+```typescript
+public getStringAttribute(terraformAttribute: string): string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-ionoscloud.dataplatformCluster.DataplatformClusterLansRoutesOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-ionoscloud.dataplatformCluster.DataplatformClusterLansRoutesOutputReference.getStringMapAttribute"></a>
+
+```typescript
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-ionoscloud.dataplatformCluster.DataplatformClusterLansRoutesOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-ionoscloud.dataplatformCluster.DataplatformClusterLansRoutesOutputReference.interpolationForAttribute"></a>
+
+```typescript
+public interpolationForAttribute(property: string): IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-ionoscloud.dataplatformCluster.DataplatformClusterLansRoutesOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktf/provider-ionoscloud.dataplatformCluster.DataplatformClusterLansRoutesOutputReference.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-ionoscloud.dataplatformCluster.DataplatformClusterLansRoutesOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktf.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktf/provider-ionoscloud.dataplatformCluster.DataplatformClusterLansRoutesOutputReference.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-ionoscloud.dataplatformCluster.DataplatformClusterLansRoutesOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-ionoscloud.dataplatformCluster.DataplatformClusterLansRoutesOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.dataplatformCluster.DataplatformClusterLansRoutesOutputReference.property.gatewayInput">gatewayInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.dataplatformCluster.DataplatformClusterLansRoutesOutputReference.property.networkInput">networkInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.dataplatformCluster.DataplatformClusterLansRoutesOutputReference.property.gateway">gateway</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.dataplatformCluster.DataplatformClusterLansRoutesOutputReference.property.network">network</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.dataplatformCluster.DataplatformClusterLansRoutesOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-ionoscloud.dataplatformCluster.DataplatformClusterLansRoutes">DataplatformClusterLansRoutes</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktf/provider-ionoscloud.dataplatformCluster.DataplatformClusterLansRoutesOutputReference.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-ionoscloud.dataplatformCluster.DataplatformClusterLansRoutesOutputReference.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `gatewayInput`<sup>Optional</sup> <a name="gatewayInput" id="@cdktf/provider-ionoscloud.dataplatformCluster.DataplatformClusterLansRoutesOutputReference.property.gatewayInput"></a>
+
+```typescript
+public readonly gatewayInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `networkInput`<sup>Optional</sup> <a name="networkInput" id="@cdktf/provider-ionoscloud.dataplatformCluster.DataplatformClusterLansRoutesOutputReference.property.networkInput"></a>
+
+```typescript
+public readonly networkInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `gateway`<sup>Required</sup> <a name="gateway" id="@cdktf/provider-ionoscloud.dataplatformCluster.DataplatformClusterLansRoutesOutputReference.property.gateway"></a>
+
+```typescript
+public readonly gateway: string;
+```
+
+- *Type:* string
+
+---
+
+##### `network`<sup>Required</sup> <a name="network" id="@cdktf/provider-ionoscloud.dataplatformCluster.DataplatformClusterLansRoutesOutputReference.property.network"></a>
+
+```typescript
+public readonly network: string;
+```
+
+- *Type:* string
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-ionoscloud.dataplatformCluster.DataplatformClusterLansRoutesOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: IResolvable | DataplatformClusterLansRoutes;
+```
+
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-ionoscloud.dataplatformCluster.DataplatformClusterLansRoutes">DataplatformClusterLansRoutes</a>
+
+---
+
 
 ### DataplatformClusterMaintenanceWindowList <a name="DataplatformClusterMaintenanceWindowList" id="@cdktf/provider-ionoscloud.dataplatformCluster.DataplatformClusterMaintenanceWindowList"></a>
 
