@@ -1,3 +1,3 @@
 # `data_ionoscloud_private_crossconnect`
 
-Refer to the Terraform Registry for docs: [`data_ionoscloud_private_crossconnect`](https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.15/docs/data-sources/private_crossconnect).
+Refer to the Terraform Registry for docs: [`data_ionoscloud_private_crossconnect`](https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.16/docs/data-sources/private_crossconnect).
