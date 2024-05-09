@@ -1,3 +1,3 @@
 # `ionoscloud_container_registry_token`
 
-Refer to the Terraform Registry for docs: [`ionoscloud_container_registry_token`](https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.15/docs/resources/container_registry_token).
+Refer to the Terraform Registry for docs: [`ionoscloud_container_registry_token`](https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.16/docs/resources/container_registry_token).
