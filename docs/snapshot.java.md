@@ -4,7 +4,7 @@
 
 ### Snapshot <a name="Snapshot" id="@cdktf/provider-ionoscloud.snapshot.Snapshot"></a>
 
-Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.16/docs/resources/snapshot ionoscloud_snapshot}.
+Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.17/docs/resources/snapshot ionoscloud_snapshot}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.snapshot.Snapshot.Initializer"></a>
 
@@ -26,7 +26,23 @@ Snapshot.Builder.create(Construct scope, java.lang.String id)
     .datacenterId(java.lang.String)
     .name(java.lang.String)
     .volumeId(java.lang.String)
+//  .cpuHotPlug(java.lang.Boolean)
+//  .cpuHotPlug(IResolvable)
+//  .description(java.lang.String)
+//  .discVirtioHotPlug(java.lang.Boolean)
+//  .discVirtioHotPlug(IResolvable)
+//  .discVirtioHotUnplug(java.lang.Boolean)
+//  .discVirtioHotUnplug(IResolvable)
 //  .id(java.lang.String)
+//  .licenceType(java.lang.String)
+//  .nicHotPlug(java.lang.Boolean)
+//  .nicHotPlug(IResolvable)
+//  .nicHotUnplug(java.lang.Boolean)
+//  .nicHotUnplug(IResolvable)
+//  .ramHotPlug(java.lang.Boolean)
+//  .ramHotPlug(IResolvable)
+//  .secAuthProtection(java.lang.Boolean)
+//  .secAuthProtection(IResolvable)
 //  .timeouts(SnapshotTimeouts)
     .build();
 ```
@@ -42,10 +58,19 @@ Snapshot.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-ionoscloud.snapshot.Snapshot.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.snapshot.Snapshot.Initializer.parameter.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.snapshot.Snapshot.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-ionoscloud.snapshot.Snapshot.Initializer.parameter.datacenterId">datacenterId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.16/docs/resources/snapshot#datacenter_id Snapshot#datacenter_id}. |
+| <code><a href="#@cdktf/provider-ionoscloud.snapshot.Snapshot.Initializer.parameter.datacenterId">datacenterId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.17/docs/resources/snapshot#datacenter_id Snapshot#datacenter_id}. |
 | <code><a href="#@cdktf/provider-ionoscloud.snapshot.Snapshot.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | A name of that resource. |
-| <code><a href="#@cdktf/provider-ionoscloud.snapshot.Snapshot.Initializer.parameter.volumeId">volumeId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.16/docs/resources/snapshot#volume_id Snapshot#volume_id}. |
-| <code><a href="#@cdktf/provider-ionoscloud.snapshot.Snapshot.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.16/docs/resources/snapshot#id Snapshot#id}. |
+| <code><a href="#@cdktf/provider-ionoscloud.snapshot.Snapshot.Initializer.parameter.volumeId">volumeId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.17/docs/resources/snapshot#volume_id Snapshot#volume_id}. |
+| <code><a href="#@cdktf/provider-ionoscloud.snapshot.Snapshot.Initializer.parameter.cpuHotPlug">cpuHotPlug</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.17/docs/resources/snapshot#cpu_hot_plug Snapshot#cpu_hot_plug}. |
+| <code><a href="#@cdktf/provider-ionoscloud.snapshot.Snapshot.Initializer.parameter.description">description</a></code> | <code>java.lang.String</code> | Human readable description. |
+| <code><a href="#@cdktf/provider-ionoscloud.snapshot.Snapshot.Initializer.parameter.discVirtioHotPlug">discVirtioHotPlug</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.17/docs/resources/snapshot#disc_virtio_hot_plug Snapshot#disc_virtio_hot_plug}. |
+| <code><a href="#@cdktf/provider-ionoscloud.snapshot.Snapshot.Initializer.parameter.discVirtioHotUnplug">discVirtioHotUnplug</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.17/docs/resources/snapshot#disc_virtio_hot_unplug Snapshot#disc_virtio_hot_unplug}. |
+| <code><a href="#@cdktf/provider-ionoscloud.snapshot.Snapshot.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.17/docs/resources/snapshot#id Snapshot#id}. |
+| <code><a href="#@cdktf/provider-ionoscloud.snapshot.Snapshot.Initializer.parameter.licenceType">licenceType</a></code> | <code>java.lang.String</code> | OS type of this Snapshot. |
+| <code><a href="#@cdktf/provider-ionoscloud.snapshot.Snapshot.Initializer.parameter.nicHotPlug">nicHotPlug</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.17/docs/resources/snapshot#nic_hot_plug Snapshot#nic_hot_plug}. |
+| <code><a href="#@cdktf/provider-ionoscloud.snapshot.Snapshot.Initializer.parameter.nicHotUnplug">nicHotUnplug</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.17/docs/resources/snapshot#nic_hot_unplug Snapshot#nic_hot_unplug}. |
+| <code><a href="#@cdktf/provider-ionoscloud.snapshot.Snapshot.Initializer.parameter.ramHotPlug">ramHotPlug</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.17/docs/resources/snapshot#ram_hot_plug Snapshot#ram_hot_plug}. |
+| <code><a href="#@cdktf/provider-ionoscloud.snapshot.Snapshot.Initializer.parameter.secAuthProtection">secAuthProtection</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Boolean value representing if the snapshot requires extra protection e.g. two factor protection. |
 | <code><a href="#@cdktf/provider-ionoscloud.snapshot.Snapshot.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-ionoscloud.snapshot.SnapshotTimeouts">SnapshotTimeouts</a></code> | timeouts block. |
 
 ---
@@ -114,7 +139,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.16/docs/resources/snapshot#datacenter_id Snapshot#datacenter_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.17/docs/resources/snapshot#datacenter_id Snapshot#datacenter_id}.
 
 ---
 
@@ -124,7 +149,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 
 A name of that resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.16/docs/resources/snapshot#name Snapshot#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.17/docs/resources/snapshot#name Snapshot#name}
 
 ---
 
@@ -132,7 +157,41 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.16/docs/resources/snapshot#volume_id Snapshot#volume_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.17/docs/resources/snapshot#volume_id Snapshot#volume_id}.
+
+---
+
+##### `cpuHotPlug`<sup>Optional</sup> <a name="cpuHotPlug" id="@cdktf/provider-ionoscloud.snapshot.Snapshot.Initializer.parameter.cpuHotPlug"></a>
+
+- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.17/docs/resources/snapshot#cpu_hot_plug Snapshot#cpu_hot_plug}.
+
+---
+
+##### `description`<sup>Optional</sup> <a name="description" id="@cdktf/provider-ionoscloud.snapshot.Snapshot.Initializer.parameter.description"></a>
+
+- *Type:* java.lang.String
+
+Human readable description.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.17/docs/resources/snapshot#description Snapshot#description}
+
+---
+
+##### `discVirtioHotPlug`<sup>Optional</sup> <a name="discVirtioHotPlug" id="@cdktf/provider-ionoscloud.snapshot.Snapshot.Initializer.parameter.discVirtioHotPlug"></a>
+
+- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.17/docs/resources/snapshot#disc_virtio_hot_plug Snapshot#disc_virtio_hot_plug}.
+
+---
+
+##### `discVirtioHotUnplug`<sup>Optional</sup> <a name="discVirtioHotUnplug" id="@cdktf/provider-ionoscloud.snapshot.Snapshot.Initializer.parameter.discVirtioHotUnplug"></a>
+
+- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.17/docs/resources/snapshot#disc_virtio_hot_unplug Snapshot#disc_virtio_hot_unplug}.
 
 ---
 
@@ -140,10 +199,54 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.16/docs/resources/snapshot#id Snapshot#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.17/docs/resources/snapshot#id Snapshot#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `licenceType`<sup>Optional</sup> <a name="licenceType" id="@cdktf/provider-ionoscloud.snapshot.Snapshot.Initializer.parameter.licenceType"></a>
+
+- *Type:* java.lang.String
+
+OS type of this Snapshot.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.17/docs/resources/snapshot#licence_type Snapshot#licence_type}
+
+---
+
+##### `nicHotPlug`<sup>Optional</sup> <a name="nicHotPlug" id="@cdktf/provider-ionoscloud.snapshot.Snapshot.Initializer.parameter.nicHotPlug"></a>
+
+- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.17/docs/resources/snapshot#nic_hot_plug Snapshot#nic_hot_plug}.
+
+---
+
+##### `nicHotUnplug`<sup>Optional</sup> <a name="nicHotUnplug" id="@cdktf/provider-ionoscloud.snapshot.Snapshot.Initializer.parameter.nicHotUnplug"></a>
+
+- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.17/docs/resources/snapshot#nic_hot_unplug Snapshot#nic_hot_unplug}.
+
+---
+
+##### `ramHotPlug`<sup>Optional</sup> <a name="ramHotPlug" id="@cdktf/provider-ionoscloud.snapshot.Snapshot.Initializer.parameter.ramHotPlug"></a>
+
+- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.17/docs/resources/snapshot#ram_hot_plug Snapshot#ram_hot_plug}.
+
+---
+
+##### `secAuthProtection`<sup>Optional</sup> <a name="secAuthProtection" id="@cdktf/provider-ionoscloud.snapshot.Snapshot.Initializer.parameter.secAuthProtection"></a>
+
+- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+
+Boolean value representing if the snapshot requires extra protection e.g. two factor protection.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.17/docs/resources/snapshot#sec_auth_protection Snapshot#sec_auth_protection}
 
 ---
 
@@ -153,7 +256,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.16/docs/resources/snapshot#timeouts Snapshot#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.17/docs/resources/snapshot#timeouts Snapshot#timeouts}
 
 ---
 
@@ -185,7 +288,16 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 | <code><a href="#@cdktf/provider-ionoscloud.snapshot.Snapshot.moveTo">moveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-ionoscloud.snapshot.Snapshot.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktf/provider-ionoscloud.snapshot.Snapshot.putTimeouts">putTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.snapshot.Snapshot.resetCpuHotPlug">resetCpuHotPlug</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.snapshot.Snapshot.resetDescription">resetDescription</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.snapshot.Snapshot.resetDiscVirtioHotPlug">resetDiscVirtioHotPlug</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.snapshot.Snapshot.resetDiscVirtioHotUnplug">resetDiscVirtioHotUnplug</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.snapshot.Snapshot.resetId">resetId</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.snapshot.Snapshot.resetLicenceType">resetLicenceType</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.snapshot.Snapshot.resetNicHotPlug">resetNicHotPlug</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.snapshot.Snapshot.resetNicHotUnplug">resetNicHotUnplug</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.snapshot.Snapshot.resetRamHotPlug">resetRamHotPlug</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.snapshot.Snapshot.resetSecAuthProtection">resetSecAuthProtection</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.snapshot.Snapshot.resetTimeouts">resetTimeouts</a></code> | *No description.* |
 
 ---
@@ -492,10 +604,64 @@ public void putTimeouts(SnapshotTimeouts value)
 
 ---
 
+##### `resetCpuHotPlug` <a name="resetCpuHotPlug" id="@cdktf/provider-ionoscloud.snapshot.Snapshot.resetCpuHotPlug"></a>
+
+```java
+public void resetCpuHotPlug()
+```
+
+##### `resetDescription` <a name="resetDescription" id="@cdktf/provider-ionoscloud.snapshot.Snapshot.resetDescription"></a>
+
+```java
+public void resetDescription()
+```
+
+##### `resetDiscVirtioHotPlug` <a name="resetDiscVirtioHotPlug" id="@cdktf/provider-ionoscloud.snapshot.Snapshot.resetDiscVirtioHotPlug"></a>
+
+```java
+public void resetDiscVirtioHotPlug()
+```
+
+##### `resetDiscVirtioHotUnplug` <a name="resetDiscVirtioHotUnplug" id="@cdktf/provider-ionoscloud.snapshot.Snapshot.resetDiscVirtioHotUnplug"></a>
+
+```java
+public void resetDiscVirtioHotUnplug()
+```
+
 ##### `resetId` <a name="resetId" id="@cdktf/provider-ionoscloud.snapshot.Snapshot.resetId"></a>
 
 ```java
 public void resetId()
+```
+
+##### `resetLicenceType` <a name="resetLicenceType" id="@cdktf/provider-ionoscloud.snapshot.Snapshot.resetLicenceType"></a>
+
+```java
+public void resetLicenceType()
+```
+
+##### `resetNicHotPlug` <a name="resetNicHotPlug" id="@cdktf/provider-ionoscloud.snapshot.Snapshot.resetNicHotPlug"></a>
+
+```java
+public void resetNicHotPlug()
+```
+
+##### `resetNicHotUnplug` <a name="resetNicHotUnplug" id="@cdktf/provider-ionoscloud.snapshot.Snapshot.resetNicHotUnplug"></a>
+
+```java
+public void resetNicHotUnplug()
+```
+
+##### `resetRamHotPlug` <a name="resetRamHotPlug" id="@cdktf/provider-ionoscloud.snapshot.Snapshot.resetRamHotPlug"></a>
+
+```java
+public void resetRamHotPlug()
+```
+
+##### `resetSecAuthProtection` <a name="resetSecAuthProtection" id="@cdktf/provider-ionoscloud.snapshot.Snapshot.resetSecAuthProtection"></a>
+
+```java
+public void resetSecAuthProtection()
 ```
 
 ##### `resetTimeouts` <a name="resetTimeouts" id="@cdktf/provider-ionoscloud.snapshot.Snapshot.resetTimeouts"></a>
@@ -607,7 +773,7 @@ The construct id used in the generated config for the Snapshot to import.
 
 The id of the existing Snapshot that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.16/docs/resources/snapshot#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.17/docs/resources/snapshot#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -637,30 +803,39 @@ Refer to the {@link https://registry.terraform.io/providers/ionos-cloud/ionosclo
 | <code><a href="#@cdktf/provider-ionoscloud.snapshot.Snapshot.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.snapshot.Snapshot.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.snapshot.Snapshot.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-ionoscloud.snapshot.Snapshot.property.cpuHotPlug">cpuHotPlug</a></code> | <code>com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.snapshot.Snapshot.property.cpuHotUnplug">cpuHotUnplug</a></code> | <code>com.hashicorp.cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-ionoscloud.snapshot.Snapshot.property.description">description</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.snapshot.Snapshot.property.discScsiHotPlug">discScsiHotPlug</a></code> | <code>com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.snapshot.Snapshot.property.discScsiHotUnplug">discScsiHotUnplug</a></code> | <code>com.hashicorp.cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-ionoscloud.snapshot.Snapshot.property.discVirtioHotPlug">discVirtioHotPlug</a></code> | <code>com.hashicorp.cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-ionoscloud.snapshot.Snapshot.property.discVirtioHotUnplug">discVirtioHotUnplug</a></code> | <code>com.hashicorp.cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-ionoscloud.snapshot.Snapshot.property.licenceType">licenceType</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.snapshot.Snapshot.property.location">location</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-ionoscloud.snapshot.Snapshot.property.nicHotPlug">nicHotPlug</a></code> | <code>com.hashicorp.cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-ionoscloud.snapshot.Snapshot.property.nicHotUnplug">nicHotUnplug</a></code> | <code>com.hashicorp.cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-ionoscloud.snapshot.Snapshot.property.ramHotPlug">ramHotPlug</a></code> | <code>com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.snapshot.Snapshot.property.ramHotUnplug">ramHotUnplug</a></code> | <code>com.hashicorp.cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-ionoscloud.snapshot.Snapshot.property.secAuthProtection">secAuthProtection</a></code> | <code>com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.snapshot.Snapshot.property.size">size</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.snapshot.Snapshot.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-ionoscloud.snapshot.SnapshotTimeoutsOutputReference">SnapshotTimeoutsOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.snapshot.Snapshot.property.cpuHotPlugInput">cpuHotPlugInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.snapshot.Snapshot.property.datacenterIdInput">datacenterIdInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.snapshot.Snapshot.property.descriptionInput">descriptionInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.snapshot.Snapshot.property.discVirtioHotPlugInput">discVirtioHotPlugInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.snapshot.Snapshot.property.discVirtioHotUnplugInput">discVirtioHotUnplugInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.snapshot.Snapshot.property.idInput">idInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.snapshot.Snapshot.property.licenceTypeInput">licenceTypeInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.snapshot.Snapshot.property.nameInput">nameInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.snapshot.Snapshot.property.nicHotPlugInput">nicHotPlugInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.snapshot.Snapshot.property.nicHotUnplugInput">nicHotUnplugInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.snapshot.Snapshot.property.ramHotPlugInput">ramHotPlugInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.snapshot.Snapshot.property.secAuthProtectionInput">secAuthProtectionInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.snapshot.Snapshot.property.timeoutsInput">timeoutsInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-ionoscloud.snapshot.SnapshotTimeouts">SnapshotTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.snapshot.Snapshot.property.volumeIdInput">volumeIdInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.snapshot.Snapshot.property.cpuHotPlug">cpuHotPlug</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.snapshot.Snapshot.property.datacenterId">datacenterId</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.snapshot.Snapshot.property.description">description</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.snapshot.Snapshot.property.discVirtioHotPlug">discVirtioHotPlug</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.snapshot.Snapshot.property.discVirtioHotUnplug">discVirtioHotUnplug</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.snapshot.Snapshot.property.id">id</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.snapshot.Snapshot.property.licenceType">licenceType</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.snapshot.Snapshot.property.name">name</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.snapshot.Snapshot.property.nicHotPlug">nicHotPlug</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.snapshot.Snapshot.property.nicHotUnplug">nicHotUnplug</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.snapshot.Snapshot.property.ramHotPlug">ramHotPlug</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.snapshot.Snapshot.property.secAuthProtection">secAuthProtection</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.snapshot.Snapshot.property.volumeId">volumeId</a></code> | <code>java.lang.String</code> | *No description.* |
 
 ---
@@ -807,16 +982,6 @@ public java.lang.Object getProvisioners();
 
 ---
 
-##### `cpuHotPlug`<sup>Required</sup> <a name="cpuHotPlug" id="@cdktf/provider-ionoscloud.snapshot.Snapshot.property.cpuHotPlug"></a>
-
-```java
-public IResolvable getCpuHotPlug();
-```
-
-- *Type:* com.hashicorp.cdktf.IResolvable
-
----
-
 ##### `cpuHotUnplug`<sup>Required</sup> <a name="cpuHotUnplug" id="@cdktf/provider-ionoscloud.snapshot.Snapshot.property.cpuHotUnplug"></a>
 
 ```java
@@ -824,16 +989,6 @@ public IResolvable getCpuHotUnplug();
 ```
 
 - *Type:* com.hashicorp.cdktf.IResolvable
-
----
-
-##### `description`<sup>Required</sup> <a name="description" id="@cdktf/provider-ionoscloud.snapshot.Snapshot.property.description"></a>
-
-```java
-public java.lang.String getDescription();
-```
-
-- *Type:* java.lang.String
 
 ---
 
@@ -857,36 +1012,6 @@ public IResolvable getDiscScsiHotUnplug();
 
 ---
 
-##### `discVirtioHotPlug`<sup>Required</sup> <a name="discVirtioHotPlug" id="@cdktf/provider-ionoscloud.snapshot.Snapshot.property.discVirtioHotPlug"></a>
-
-```java
-public IResolvable getDiscVirtioHotPlug();
-```
-
-- *Type:* com.hashicorp.cdktf.IResolvable
-
----
-
-##### `discVirtioHotUnplug`<sup>Required</sup> <a name="discVirtioHotUnplug" id="@cdktf/provider-ionoscloud.snapshot.Snapshot.property.discVirtioHotUnplug"></a>
-
-```java
-public IResolvable getDiscVirtioHotUnplug();
-```
-
-- *Type:* com.hashicorp.cdktf.IResolvable
-
----
-
-##### `licenceType`<sup>Required</sup> <a name="licenceType" id="@cdktf/provider-ionoscloud.snapshot.Snapshot.property.licenceType"></a>
-
-```java
-public java.lang.String getLicenceType();
-```
-
-- *Type:* java.lang.String
-
----
-
 ##### `location`<sup>Required</sup> <a name="location" id="@cdktf/provider-ionoscloud.snapshot.Snapshot.property.location"></a>
 
 ```java
@@ -897,50 +1022,10 @@ public java.lang.String getLocation();
 
 ---
 
-##### `nicHotPlug`<sup>Required</sup> <a name="nicHotPlug" id="@cdktf/provider-ionoscloud.snapshot.Snapshot.property.nicHotPlug"></a>
-
-```java
-public IResolvable getNicHotPlug();
-```
-
-- *Type:* com.hashicorp.cdktf.IResolvable
-
----
-
-##### `nicHotUnplug`<sup>Required</sup> <a name="nicHotUnplug" id="@cdktf/provider-ionoscloud.snapshot.Snapshot.property.nicHotUnplug"></a>
-
-```java
-public IResolvable getNicHotUnplug();
-```
-
-- *Type:* com.hashicorp.cdktf.IResolvable
-
----
-
-##### `ramHotPlug`<sup>Required</sup> <a name="ramHotPlug" id="@cdktf/provider-ionoscloud.snapshot.Snapshot.property.ramHotPlug"></a>
-
-```java
-public IResolvable getRamHotPlug();
-```
-
-- *Type:* com.hashicorp.cdktf.IResolvable
-
----
-
 ##### `ramHotUnplug`<sup>Required</sup> <a name="ramHotUnplug" id="@cdktf/provider-ionoscloud.snapshot.Snapshot.property.ramHotUnplug"></a>
 
 ```java
 public IResolvable getRamHotUnplug();
-```
-
-- *Type:* com.hashicorp.cdktf.IResolvable
-
----
-
-##### `secAuthProtection`<sup>Required</sup> <a name="secAuthProtection" id="@cdktf/provider-ionoscloud.snapshot.Snapshot.property.secAuthProtection"></a>
-
-```java
-public IResolvable getSecAuthProtection();
 ```
 
 - *Type:* com.hashicorp.cdktf.IResolvable
@@ -967,6 +1052,16 @@ public SnapshotTimeoutsOutputReference getTimeouts();
 
 ---
 
+##### `cpuHotPlugInput`<sup>Optional</sup> <a name="cpuHotPlugInput" id="@cdktf/provider-ionoscloud.snapshot.Snapshot.property.cpuHotPlugInput"></a>
+
+```java
+public java.lang.Object getCpuHotPlugInput();
+```
+
+- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+
+---
+
 ##### `datacenterIdInput`<sup>Optional</sup> <a name="datacenterIdInput" id="@cdktf/provider-ionoscloud.snapshot.Snapshot.property.datacenterIdInput"></a>
 
 ```java
@@ -974,6 +1069,36 @@ public java.lang.String getDatacenterIdInput();
 ```
 
 - *Type:* java.lang.String
+
+---
+
+##### `descriptionInput`<sup>Optional</sup> <a name="descriptionInput" id="@cdktf/provider-ionoscloud.snapshot.Snapshot.property.descriptionInput"></a>
+
+```java
+public java.lang.String getDescriptionInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `discVirtioHotPlugInput`<sup>Optional</sup> <a name="discVirtioHotPlugInput" id="@cdktf/provider-ionoscloud.snapshot.Snapshot.property.discVirtioHotPlugInput"></a>
+
+```java
+public java.lang.Object getDiscVirtioHotPlugInput();
+```
+
+- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+
+---
+
+##### `discVirtioHotUnplugInput`<sup>Optional</sup> <a name="discVirtioHotUnplugInput" id="@cdktf/provider-ionoscloud.snapshot.Snapshot.property.discVirtioHotUnplugInput"></a>
+
+```java
+public java.lang.Object getDiscVirtioHotUnplugInput();
+```
+
+- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -987,6 +1112,16 @@ public java.lang.String getIdInput();
 
 ---
 
+##### `licenceTypeInput`<sup>Optional</sup> <a name="licenceTypeInput" id="@cdktf/provider-ionoscloud.snapshot.Snapshot.property.licenceTypeInput"></a>
+
+```java
+public java.lang.String getLicenceTypeInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
 ##### `nameInput`<sup>Optional</sup> <a name="nameInput" id="@cdktf/provider-ionoscloud.snapshot.Snapshot.property.nameInput"></a>
 
 ```java
@@ -994,6 +1129,46 @@ public java.lang.String getNameInput();
 ```
 
 - *Type:* java.lang.String
+
+---
+
+##### `nicHotPlugInput`<sup>Optional</sup> <a name="nicHotPlugInput" id="@cdktf/provider-ionoscloud.snapshot.Snapshot.property.nicHotPlugInput"></a>
+
+```java
+public java.lang.Object getNicHotPlugInput();
+```
+
+- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+
+---
+
+##### `nicHotUnplugInput`<sup>Optional</sup> <a name="nicHotUnplugInput" id="@cdktf/provider-ionoscloud.snapshot.Snapshot.property.nicHotUnplugInput"></a>
+
+```java
+public java.lang.Object getNicHotUnplugInput();
+```
+
+- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+
+---
+
+##### `ramHotPlugInput`<sup>Optional</sup> <a name="ramHotPlugInput" id="@cdktf/provider-ionoscloud.snapshot.Snapshot.property.ramHotPlugInput"></a>
+
+```java
+public java.lang.Object getRamHotPlugInput();
+```
+
+- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+
+---
+
+##### `secAuthProtectionInput`<sup>Optional</sup> <a name="secAuthProtectionInput" id="@cdktf/provider-ionoscloud.snapshot.Snapshot.property.secAuthProtectionInput"></a>
+
+```java
+public java.lang.Object getSecAuthProtectionInput();
+```
+
+- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -1017,6 +1192,16 @@ public java.lang.String getVolumeIdInput();
 
 ---
 
+##### `cpuHotPlug`<sup>Required</sup> <a name="cpuHotPlug" id="@cdktf/provider-ionoscloud.snapshot.Snapshot.property.cpuHotPlug"></a>
+
+```java
+public java.lang.Object getCpuHotPlug();
+```
+
+- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+
+---
+
 ##### `datacenterId`<sup>Required</sup> <a name="datacenterId" id="@cdktf/provider-ionoscloud.snapshot.Snapshot.property.datacenterId"></a>
 
 ```java
@@ -1024,6 +1209,36 @@ public java.lang.String getDatacenterId();
 ```
 
 - *Type:* java.lang.String
+
+---
+
+##### `description`<sup>Required</sup> <a name="description" id="@cdktf/provider-ionoscloud.snapshot.Snapshot.property.description"></a>
+
+```java
+public java.lang.String getDescription();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `discVirtioHotPlug`<sup>Required</sup> <a name="discVirtioHotPlug" id="@cdktf/provider-ionoscloud.snapshot.Snapshot.property.discVirtioHotPlug"></a>
+
+```java
+public java.lang.Object getDiscVirtioHotPlug();
+```
+
+- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+
+---
+
+##### `discVirtioHotUnplug`<sup>Required</sup> <a name="discVirtioHotUnplug" id="@cdktf/provider-ionoscloud.snapshot.Snapshot.property.discVirtioHotUnplug"></a>
+
+```java
+public java.lang.Object getDiscVirtioHotUnplug();
+```
+
+- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -1037,6 +1252,16 @@ public java.lang.String getId();
 
 ---
 
+##### `licenceType`<sup>Required</sup> <a name="licenceType" id="@cdktf/provider-ionoscloud.snapshot.Snapshot.property.licenceType"></a>
+
+```java
+public java.lang.String getLicenceType();
+```
+
+- *Type:* java.lang.String
+
+---
+
 ##### `name`<sup>Required</sup> <a name="name" id="@cdktf/provider-ionoscloud.snapshot.Snapshot.property.name"></a>
 
 ```java
@@ -1044,6 +1269,46 @@ public java.lang.String getName();
 ```
 
 - *Type:* java.lang.String
+
+---
+
+##### `nicHotPlug`<sup>Required</sup> <a name="nicHotPlug" id="@cdktf/provider-ionoscloud.snapshot.Snapshot.property.nicHotPlug"></a>
+
+```java
+public java.lang.Object getNicHotPlug();
+```
+
+- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+
+---
+
+##### `nicHotUnplug`<sup>Required</sup> <a name="nicHotUnplug" id="@cdktf/provider-ionoscloud.snapshot.Snapshot.property.nicHotUnplug"></a>
+
+```java
+public java.lang.Object getNicHotUnplug();
+```
+
+- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+
+---
+
+##### `ramHotPlug`<sup>Required</sup> <a name="ramHotPlug" id="@cdktf/provider-ionoscloud.snapshot.Snapshot.property.ramHotPlug"></a>
+
+```java
+public java.lang.Object getRamHotPlug();
+```
+
+- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+
+---
+
+##### `secAuthProtection`<sup>Required</sup> <a name="secAuthProtection" id="@cdktf/provider-ionoscloud.snapshot.Snapshot.property.secAuthProtection"></a>
+
+```java
+public java.lang.Object getSecAuthProtection();
+```
+
+- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -1099,7 +1364,23 @@ SnapshotConfig.builder()
     .datacenterId(java.lang.String)
     .name(java.lang.String)
     .volumeId(java.lang.String)
+//  .cpuHotPlug(java.lang.Boolean)
+//  .cpuHotPlug(IResolvable)
+//  .description(java.lang.String)
+//  .discVirtioHotPlug(java.lang.Boolean)
+//  .discVirtioHotPlug(IResolvable)
+//  .discVirtioHotUnplug(java.lang.Boolean)
+//  .discVirtioHotUnplug(IResolvable)
 //  .id(java.lang.String)
+//  .licenceType(java.lang.String)
+//  .nicHotPlug(java.lang.Boolean)
+//  .nicHotPlug(IResolvable)
+//  .nicHotUnplug(java.lang.Boolean)
+//  .nicHotUnplug(IResolvable)
+//  .ramHotPlug(java.lang.Boolean)
+//  .ramHotPlug(IResolvable)
+//  .secAuthProtection(java.lang.Boolean)
+//  .secAuthProtection(IResolvable)
 //  .timeouts(SnapshotTimeouts)
     .build();
 ```
@@ -1115,10 +1396,19 @@ SnapshotConfig.builder()
 | <code><a href="#@cdktf/provider-ionoscloud.snapshot.SnapshotConfig.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.snapshot.SnapshotConfig.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.snapshot.SnapshotConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-ionoscloud.snapshot.SnapshotConfig.property.datacenterId">datacenterId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.16/docs/resources/snapshot#datacenter_id Snapshot#datacenter_id}. |
+| <code><a href="#@cdktf/provider-ionoscloud.snapshot.SnapshotConfig.property.datacenterId">datacenterId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.17/docs/resources/snapshot#datacenter_id Snapshot#datacenter_id}. |
 | <code><a href="#@cdktf/provider-ionoscloud.snapshot.SnapshotConfig.property.name">name</a></code> | <code>java.lang.String</code> | A name of that resource. |
-| <code><a href="#@cdktf/provider-ionoscloud.snapshot.SnapshotConfig.property.volumeId">volumeId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.16/docs/resources/snapshot#volume_id Snapshot#volume_id}. |
-| <code><a href="#@cdktf/provider-ionoscloud.snapshot.SnapshotConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.16/docs/resources/snapshot#id Snapshot#id}. |
+| <code><a href="#@cdktf/provider-ionoscloud.snapshot.SnapshotConfig.property.volumeId">volumeId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.17/docs/resources/snapshot#volume_id Snapshot#volume_id}. |
+| <code><a href="#@cdktf/provider-ionoscloud.snapshot.SnapshotConfig.property.cpuHotPlug">cpuHotPlug</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.17/docs/resources/snapshot#cpu_hot_plug Snapshot#cpu_hot_plug}. |
+| <code><a href="#@cdktf/provider-ionoscloud.snapshot.SnapshotConfig.property.description">description</a></code> | <code>java.lang.String</code> | Human readable description. |
+| <code><a href="#@cdktf/provider-ionoscloud.snapshot.SnapshotConfig.property.discVirtioHotPlug">discVirtioHotPlug</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.17/docs/resources/snapshot#disc_virtio_hot_plug Snapshot#disc_virtio_hot_plug}. |
+| <code><a href="#@cdktf/provider-ionoscloud.snapshot.SnapshotConfig.property.discVirtioHotUnplug">discVirtioHotUnplug</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.17/docs/resources/snapshot#disc_virtio_hot_unplug Snapshot#disc_virtio_hot_unplug}. |
+| <code><a href="#@cdktf/provider-ionoscloud.snapshot.SnapshotConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.17/docs/resources/snapshot#id Snapshot#id}. |
+| <code><a href="#@cdktf/provider-ionoscloud.snapshot.SnapshotConfig.property.licenceType">licenceType</a></code> | <code>java.lang.String</code> | OS type of this Snapshot. |
+| <code><a href="#@cdktf/provider-ionoscloud.snapshot.SnapshotConfig.property.nicHotPlug">nicHotPlug</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.17/docs/resources/snapshot#nic_hot_plug Snapshot#nic_hot_plug}. |
+| <code><a href="#@cdktf/provider-ionoscloud.snapshot.SnapshotConfig.property.nicHotUnplug">nicHotUnplug</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.17/docs/resources/snapshot#nic_hot_unplug Snapshot#nic_hot_unplug}. |
+| <code><a href="#@cdktf/provider-ionoscloud.snapshot.SnapshotConfig.property.ramHotPlug">ramHotPlug</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.17/docs/resources/snapshot#ram_hot_plug Snapshot#ram_hot_plug}. |
+| <code><a href="#@cdktf/provider-ionoscloud.snapshot.SnapshotConfig.property.secAuthProtection">secAuthProtection</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Boolean value representing if the snapshot requires extra protection e.g. two factor protection. |
 | <code><a href="#@cdktf/provider-ionoscloud.snapshot.SnapshotConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-ionoscloud.snapshot.SnapshotTimeouts">SnapshotTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1201,7 +1491,7 @@ public java.lang.String getDatacenterId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.16/docs/resources/snapshot#datacenter_id Snapshot#datacenter_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.17/docs/resources/snapshot#datacenter_id Snapshot#datacenter_id}.
 
 ---
 
@@ -1215,7 +1505,7 @@ public java.lang.String getName();
 
 A name of that resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.16/docs/resources/snapshot#name Snapshot#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.17/docs/resources/snapshot#name Snapshot#name}
 
 ---
 
@@ -1227,7 +1517,57 @@ public java.lang.String getVolumeId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.16/docs/resources/snapshot#volume_id Snapshot#volume_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.17/docs/resources/snapshot#volume_id Snapshot#volume_id}.
+
+---
+
+##### `cpuHotPlug`<sup>Optional</sup> <a name="cpuHotPlug" id="@cdktf/provider-ionoscloud.snapshot.SnapshotConfig.property.cpuHotPlug"></a>
+
+```java
+public java.lang.Object getCpuHotPlug();
+```
+
+- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.17/docs/resources/snapshot#cpu_hot_plug Snapshot#cpu_hot_plug}.
+
+---
+
+##### `description`<sup>Optional</sup> <a name="description" id="@cdktf/provider-ionoscloud.snapshot.SnapshotConfig.property.description"></a>
+
+```java
+public java.lang.String getDescription();
+```
+
+- *Type:* java.lang.String
+
+Human readable description.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.17/docs/resources/snapshot#description Snapshot#description}
+
+---
+
+##### `discVirtioHotPlug`<sup>Optional</sup> <a name="discVirtioHotPlug" id="@cdktf/provider-ionoscloud.snapshot.SnapshotConfig.property.discVirtioHotPlug"></a>
+
+```java
+public java.lang.Object getDiscVirtioHotPlug();
+```
+
+- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.17/docs/resources/snapshot#disc_virtio_hot_plug Snapshot#disc_virtio_hot_plug}.
+
+---
+
+##### `discVirtioHotUnplug`<sup>Optional</sup> <a name="discVirtioHotUnplug" id="@cdktf/provider-ionoscloud.snapshot.SnapshotConfig.property.discVirtioHotUnplug"></a>
+
+```java
+public java.lang.Object getDiscVirtioHotUnplug();
+```
+
+- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.17/docs/resources/snapshot#disc_virtio_hot_unplug Snapshot#disc_virtio_hot_unplug}.
 
 ---
 
@@ -1239,10 +1579,74 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.16/docs/resources/snapshot#id Snapshot#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.17/docs/resources/snapshot#id Snapshot#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `licenceType`<sup>Optional</sup> <a name="licenceType" id="@cdktf/provider-ionoscloud.snapshot.SnapshotConfig.property.licenceType"></a>
+
+```java
+public java.lang.String getLicenceType();
+```
+
+- *Type:* java.lang.String
+
+OS type of this Snapshot.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.17/docs/resources/snapshot#licence_type Snapshot#licence_type}
+
+---
+
+##### `nicHotPlug`<sup>Optional</sup> <a name="nicHotPlug" id="@cdktf/provider-ionoscloud.snapshot.SnapshotConfig.property.nicHotPlug"></a>
+
+```java
+public java.lang.Object getNicHotPlug();
+```
+
+- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.17/docs/resources/snapshot#nic_hot_plug Snapshot#nic_hot_plug}.
+
+---
+
+##### `nicHotUnplug`<sup>Optional</sup> <a name="nicHotUnplug" id="@cdktf/provider-ionoscloud.snapshot.SnapshotConfig.property.nicHotUnplug"></a>
+
+```java
+public java.lang.Object getNicHotUnplug();
+```
+
+- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.17/docs/resources/snapshot#nic_hot_unplug Snapshot#nic_hot_unplug}.
+
+---
+
+##### `ramHotPlug`<sup>Optional</sup> <a name="ramHotPlug" id="@cdktf/provider-ionoscloud.snapshot.SnapshotConfig.property.ramHotPlug"></a>
+
+```java
+public java.lang.Object getRamHotPlug();
+```
+
+- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.17/docs/resources/snapshot#ram_hot_plug Snapshot#ram_hot_plug}.
+
+---
+
+##### `secAuthProtection`<sup>Optional</sup> <a name="secAuthProtection" id="@cdktf/provider-ionoscloud.snapshot.SnapshotConfig.property.secAuthProtection"></a>
+
+```java
+public java.lang.Object getSecAuthProtection();
+```
+
+- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+
+Boolean value representing if the snapshot requires extra protection e.g. two factor protection.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.17/docs/resources/snapshot#sec_auth_protection Snapshot#sec_auth_protection}
 
 ---
 
@@ -1256,7 +1660,7 @@ public SnapshotTimeouts getTimeouts();
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.16/docs/resources/snapshot#timeouts Snapshot#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.17/docs/resources/snapshot#timeouts Snapshot#timeouts}
 
 ---
 
@@ -1279,10 +1683,10 @@ SnapshotTimeouts.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-ionoscloud.snapshot.SnapshotTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.16/docs/resources/snapshot#create Snapshot#create}. |
-| <code><a href="#@cdktf/provider-ionoscloud.snapshot.SnapshotTimeouts.property.default">default</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.16/docs/resources/snapshot#default Snapshot#default}. |
-| <code><a href="#@cdktf/provider-ionoscloud.snapshot.SnapshotTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.16/docs/resources/snapshot#delete Snapshot#delete}. |
-| <code><a href="#@cdktf/provider-ionoscloud.snapshot.SnapshotTimeouts.property.update">update</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.16/docs/resources/snapshot#update Snapshot#update}. |
+| <code><a href="#@cdktf/provider-ionoscloud.snapshot.SnapshotTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.17/docs/resources/snapshot#create Snapshot#create}. |
+| <code><a href="#@cdktf/provider-ionoscloud.snapshot.SnapshotTimeouts.property.default">default</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.17/docs/resources/snapshot#default Snapshot#default}. |
+| <code><a href="#@cdktf/provider-ionoscloud.snapshot.SnapshotTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.17/docs/resources/snapshot#delete Snapshot#delete}. |
+| <code><a href="#@cdktf/provider-ionoscloud.snapshot.SnapshotTimeouts.property.update">update</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.17/docs/resources/snapshot#update Snapshot#update}. |
 
 ---
 
@@ -1294,7 +1698,7 @@ public java.lang.String getCreate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.16/docs/resources/snapshot#create Snapshot#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.17/docs/resources/snapshot#create Snapshot#create}.
 
 ---
 
@@ -1306,7 +1710,7 @@ public java.lang.String getDefault();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.16/docs/resources/snapshot#default Snapshot#default}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.17/docs/resources/snapshot#default Snapshot#default}.
 
 ---
 
@@ -1318,7 +1722,7 @@ public java.lang.String getDelete();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.16/docs/resources/snapshot#delete Snapshot#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.17/docs/resources/snapshot#delete Snapshot#delete}.
 
 ---
 
@@ -1330,7 +1734,7 @@ public java.lang.String getUpdate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.16/docs/resources/snapshot#update Snapshot#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.17/docs/resources/snapshot#update Snapshot#update}.
 
 ---
 
