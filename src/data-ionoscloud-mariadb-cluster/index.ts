@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.16/docs/data-sources/mariadb_cluster
+// https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.17/docs/data-sources/mariadb_cluster
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,18 +15,24 @@ export interface DataIonoscloudMariadbClusterConfig extends cdktf.TerraformMetaA
   /**
   * The friendly name of your cluster.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.16/docs/data-sources/mariadb_cluster#display_name DataIonoscloudMariadbCluster#display_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.17/docs/data-sources/mariadb_cluster#display_name DataIonoscloudMariadbCluster#display_name}
   */
   readonly displayName?: string;
   /**
   * The id of your cluster.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.16/docs/data-sources/mariadb_cluster#id DataIonoscloudMariadbCluster#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.17/docs/data-sources/mariadb_cluster#id DataIonoscloudMariadbCluster#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
+  /**
+  * The cluster location
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.17/docs/data-sources/mariadb_cluster#location DataIonoscloudMariadbCluster#location}
+  */
+  readonly location?: string;
 }
 export interface DataIonoscloudMariadbClusterConnections {
 }
@@ -195,7 +201,7 @@ export class DataIonoscloudMariadbClusterMaintenanceWindowList extends cdktf.Com
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.16/docs/data-sources/mariadb_cluster ionoscloud_mariadb_cluster}
+* Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.17/docs/data-sources/mariadb_cluster ionoscloud_mariadb_cluster}
 */
 export class DataIonoscloudMariadbCluster extends cdktf.TerraformDataSource {
 
@@ -211,7 +217,7 @@ export class DataIonoscloudMariadbCluster extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataIonoscloudMariadbCluster resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataIonoscloudMariadbCluster to import
-  * @param importFromId The id of the existing DataIonoscloudMariadbCluster that should be imported. Refer to the {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.16/docs/data-sources/mariadb_cluster#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataIonoscloudMariadbCluster that should be imported. Refer to the {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.17/docs/data-sources/mariadb_cluster#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataIonoscloudMariadbCluster to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -223,7 +229,7 @@ export class DataIonoscloudMariadbCluster extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.16/docs/data-sources/mariadb_cluster ionoscloud_mariadb_cluster} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.17/docs/data-sources/mariadb_cluster ionoscloud_mariadb_cluster} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -234,7 +240,7 @@ export class DataIonoscloudMariadbCluster extends cdktf.TerraformDataSource {
       terraformResourceType: 'ionoscloud_mariadb_cluster',
       terraformGeneratorMetadata: {
         providerName: 'ionoscloud',
-        providerVersion: '6.4.16',
+        providerVersion: '6.4.17',
         providerVersionConstraint: '~> 6.2'
       },
       provider: config.provider,
@@ -247,6 +253,7 @@ export class DataIonoscloudMariadbCluster extends cdktf.TerraformDataSource {
     });
     this._displayName = config.displayName;
     this._id = config.id;
+    this._location = config.location;
   }
 
   // ==========
@@ -306,6 +313,22 @@ export class DataIonoscloudMariadbCluster extends cdktf.TerraformDataSource {
     return this.getNumberAttribute('instances');
   }
 
+  // location - computed: false, optional: true, required: false
+  private _location?: string; 
+  public get location() {
+    return this.getStringAttribute('location');
+  }
+  public set location(value: string) {
+    this._location = value;
+  }
+  public resetLocation() {
+    this._location = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get locationInput() {
+    return this._location;
+  }
+
   // maintenance_window - computed: true, optional: false, required: false
   private _maintenanceWindow = new DataIonoscloudMariadbClusterMaintenanceWindowList(this, "maintenance_window", false);
   public get maintenanceWindow() {
@@ -335,6 +358,7 @@ export class DataIonoscloudMariadbCluster extends cdktf.TerraformDataSource {
     return {
       display_name: cdktf.stringToTerraform(this._displayName),
       id: cdktf.stringToTerraform(this._id),
+      location: cdktf.stringToTerraform(this._location),
     };
   }
 
@@ -348,6 +372,12 @@ export class DataIonoscloudMariadbCluster extends cdktf.TerraformDataSource {
       },
       id: {
         value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      location: {
+        value: cdktf.stringToHclTerraform(this._location),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

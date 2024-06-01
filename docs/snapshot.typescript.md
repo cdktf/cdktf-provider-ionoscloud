@@ -4,7 +4,7 @@
 
 ### Snapshot <a name="Snapshot" id="@cdktf/provider-ionoscloud.snapshot.Snapshot"></a>
 
-Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.16/docs/resources/snapshot ionoscloud_snapshot}.
+Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.17/docs/resources/snapshot ionoscloud_snapshot}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.snapshot.Snapshot.Initializer"></a>
 
@@ -74,7 +74,16 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-ionoscloud.snapshot.Snapshot.moveTo">moveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-ionoscloud.snapshot.Snapshot.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktf/provider-ionoscloud.snapshot.Snapshot.putTimeouts">putTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.snapshot.Snapshot.resetCpuHotPlug">resetCpuHotPlug</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.snapshot.Snapshot.resetDescription">resetDescription</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.snapshot.Snapshot.resetDiscVirtioHotPlug">resetDiscVirtioHotPlug</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.snapshot.Snapshot.resetDiscVirtioHotUnplug">resetDiscVirtioHotUnplug</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.snapshot.Snapshot.resetId">resetId</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.snapshot.Snapshot.resetLicenceType">resetLicenceType</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.snapshot.Snapshot.resetNicHotPlug">resetNicHotPlug</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.snapshot.Snapshot.resetNicHotUnplug">resetNicHotUnplug</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.snapshot.Snapshot.resetRamHotPlug">resetRamHotPlug</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.snapshot.Snapshot.resetSecAuthProtection">resetSecAuthProtection</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.snapshot.Snapshot.resetTimeouts">resetTimeouts</a></code> | *No description.* |
 
 ---
@@ -379,10 +388,64 @@ public putTimeouts(value: SnapshotTimeouts): void
 
 ---
 
+##### `resetCpuHotPlug` <a name="resetCpuHotPlug" id="@cdktf/provider-ionoscloud.snapshot.Snapshot.resetCpuHotPlug"></a>
+
+```typescript
+public resetCpuHotPlug(): void
+```
+
+##### `resetDescription` <a name="resetDescription" id="@cdktf/provider-ionoscloud.snapshot.Snapshot.resetDescription"></a>
+
+```typescript
+public resetDescription(): void
+```
+
+##### `resetDiscVirtioHotPlug` <a name="resetDiscVirtioHotPlug" id="@cdktf/provider-ionoscloud.snapshot.Snapshot.resetDiscVirtioHotPlug"></a>
+
+```typescript
+public resetDiscVirtioHotPlug(): void
+```
+
+##### `resetDiscVirtioHotUnplug` <a name="resetDiscVirtioHotUnplug" id="@cdktf/provider-ionoscloud.snapshot.Snapshot.resetDiscVirtioHotUnplug"></a>
+
+```typescript
+public resetDiscVirtioHotUnplug(): void
+```
+
 ##### `resetId` <a name="resetId" id="@cdktf/provider-ionoscloud.snapshot.Snapshot.resetId"></a>
 
 ```typescript
 public resetId(): void
+```
+
+##### `resetLicenceType` <a name="resetLicenceType" id="@cdktf/provider-ionoscloud.snapshot.Snapshot.resetLicenceType"></a>
+
+```typescript
+public resetLicenceType(): void
+```
+
+##### `resetNicHotPlug` <a name="resetNicHotPlug" id="@cdktf/provider-ionoscloud.snapshot.Snapshot.resetNicHotPlug"></a>
+
+```typescript
+public resetNicHotPlug(): void
+```
+
+##### `resetNicHotUnplug` <a name="resetNicHotUnplug" id="@cdktf/provider-ionoscloud.snapshot.Snapshot.resetNicHotUnplug"></a>
+
+```typescript
+public resetNicHotUnplug(): void
+```
+
+##### `resetRamHotPlug` <a name="resetRamHotPlug" id="@cdktf/provider-ionoscloud.snapshot.Snapshot.resetRamHotPlug"></a>
+
+```typescript
+public resetRamHotPlug(): void
+```
+
+##### `resetSecAuthProtection` <a name="resetSecAuthProtection" id="@cdktf/provider-ionoscloud.snapshot.Snapshot.resetSecAuthProtection"></a>
+
+```typescript
+public resetSecAuthProtection(): void
 ```
 
 ##### `resetTimeouts` <a name="resetTimeouts" id="@cdktf/provider-ionoscloud.snapshot.Snapshot.resetTimeouts"></a>
@@ -494,7 +557,7 @@ The construct id used in the generated config for the Snapshot to import.
 
 The id of the existing Snapshot that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.16/docs/resources/snapshot#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.17/docs/resources/snapshot#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -524,30 +587,39 @@ Refer to the {@link https://registry.terraform.io/providers/ionos-cloud/ionosclo
 | <code><a href="#@cdktf/provider-ionoscloud.snapshot.Snapshot.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.snapshot.Snapshot.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.snapshot.Snapshot.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-ionoscloud.snapshot.Snapshot.property.cpuHotPlug">cpuHotPlug</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.snapshot.Snapshot.property.cpuHotUnplug">cpuHotUnplug</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-ionoscloud.snapshot.Snapshot.property.description">description</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.snapshot.Snapshot.property.discScsiHotPlug">discScsiHotPlug</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.snapshot.Snapshot.property.discScsiHotUnplug">discScsiHotUnplug</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-ionoscloud.snapshot.Snapshot.property.discVirtioHotPlug">discVirtioHotPlug</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-ionoscloud.snapshot.Snapshot.property.discVirtioHotUnplug">discVirtioHotUnplug</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-ionoscloud.snapshot.Snapshot.property.licenceType">licenceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.snapshot.Snapshot.property.location">location</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-ionoscloud.snapshot.Snapshot.property.nicHotPlug">nicHotPlug</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-ionoscloud.snapshot.Snapshot.property.nicHotUnplug">nicHotUnplug</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-ionoscloud.snapshot.Snapshot.property.ramHotPlug">ramHotPlug</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.snapshot.Snapshot.property.ramHotUnplug">ramHotUnplug</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-ionoscloud.snapshot.Snapshot.property.secAuthProtection">secAuthProtection</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.snapshot.Snapshot.property.size">size</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.snapshot.Snapshot.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-ionoscloud.snapshot.SnapshotTimeoutsOutputReference">SnapshotTimeoutsOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.snapshot.Snapshot.property.cpuHotPlugInput">cpuHotPlugInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.snapshot.Snapshot.property.datacenterIdInput">datacenterIdInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.snapshot.Snapshot.property.descriptionInput">descriptionInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.snapshot.Snapshot.property.discVirtioHotPlugInput">discVirtioHotPlugInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.snapshot.Snapshot.property.discVirtioHotUnplugInput">discVirtioHotUnplugInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.snapshot.Snapshot.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.snapshot.Snapshot.property.licenceTypeInput">licenceTypeInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.snapshot.Snapshot.property.nameInput">nameInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.snapshot.Snapshot.property.nicHotPlugInput">nicHotPlugInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.snapshot.Snapshot.property.nicHotUnplugInput">nicHotUnplugInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.snapshot.Snapshot.property.ramHotPlugInput">ramHotPlugInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.snapshot.Snapshot.property.secAuthProtectionInput">secAuthProtectionInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.snapshot.Snapshot.property.timeoutsInput">timeoutsInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-ionoscloud.snapshot.SnapshotTimeouts">SnapshotTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.snapshot.Snapshot.property.volumeIdInput">volumeIdInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.snapshot.Snapshot.property.cpuHotPlug">cpuHotPlug</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.snapshot.Snapshot.property.datacenterId">datacenterId</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.snapshot.Snapshot.property.description">description</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.snapshot.Snapshot.property.discVirtioHotPlug">discVirtioHotPlug</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.snapshot.Snapshot.property.discVirtioHotUnplug">discVirtioHotUnplug</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.snapshot.Snapshot.property.id">id</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.snapshot.Snapshot.property.licenceType">licenceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.snapshot.Snapshot.property.name">name</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.snapshot.Snapshot.property.nicHotPlug">nicHotPlug</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.snapshot.Snapshot.property.nicHotUnplug">nicHotUnplug</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.snapshot.Snapshot.property.ramHotPlug">ramHotPlug</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.snapshot.Snapshot.property.secAuthProtection">secAuthProtection</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.snapshot.Snapshot.property.volumeId">volumeId</a></code> | <code>string</code> | *No description.* |
 
 ---
@@ -694,16 +766,6 @@ public readonly provisioners: FileProvisioner | LocalExecProvisioner | RemoteExe
 
 ---
 
-##### `cpuHotPlug`<sup>Required</sup> <a name="cpuHotPlug" id="@cdktf/provider-ionoscloud.snapshot.Snapshot.property.cpuHotPlug"></a>
-
-```typescript
-public readonly cpuHotPlug: IResolvable;
-```
-
-- *Type:* cdktf.IResolvable
-
----
-
 ##### `cpuHotUnplug`<sup>Required</sup> <a name="cpuHotUnplug" id="@cdktf/provider-ionoscloud.snapshot.Snapshot.property.cpuHotUnplug"></a>
 
 ```typescript
@@ -711,16 +773,6 @@ public readonly cpuHotUnplug: IResolvable;
 ```
 
 - *Type:* cdktf.IResolvable
-
----
-
-##### `description`<sup>Required</sup> <a name="description" id="@cdktf/provider-ionoscloud.snapshot.Snapshot.property.description"></a>
-
-```typescript
-public readonly description: string;
-```
-
-- *Type:* string
 
 ---
 
@@ -744,36 +796,6 @@ public readonly discScsiHotUnplug: IResolvable;
 
 ---
 
-##### `discVirtioHotPlug`<sup>Required</sup> <a name="discVirtioHotPlug" id="@cdktf/provider-ionoscloud.snapshot.Snapshot.property.discVirtioHotPlug"></a>
-
-```typescript
-public readonly discVirtioHotPlug: IResolvable;
-```
-
-- *Type:* cdktf.IResolvable
-
----
-
-##### `discVirtioHotUnplug`<sup>Required</sup> <a name="discVirtioHotUnplug" id="@cdktf/provider-ionoscloud.snapshot.Snapshot.property.discVirtioHotUnplug"></a>
-
-```typescript
-public readonly discVirtioHotUnplug: IResolvable;
-```
-
-- *Type:* cdktf.IResolvable
-
----
-
-##### `licenceType`<sup>Required</sup> <a name="licenceType" id="@cdktf/provider-ionoscloud.snapshot.Snapshot.property.licenceType"></a>
-
-```typescript
-public readonly licenceType: string;
-```
-
-- *Type:* string
-
----
-
 ##### `location`<sup>Required</sup> <a name="location" id="@cdktf/provider-ionoscloud.snapshot.Snapshot.property.location"></a>
 
 ```typescript
@@ -784,50 +806,10 @@ public readonly location: string;
 
 ---
 
-##### `nicHotPlug`<sup>Required</sup> <a name="nicHotPlug" id="@cdktf/provider-ionoscloud.snapshot.Snapshot.property.nicHotPlug"></a>
-
-```typescript
-public readonly nicHotPlug: IResolvable;
-```
-
-- *Type:* cdktf.IResolvable
-
----
-
-##### `nicHotUnplug`<sup>Required</sup> <a name="nicHotUnplug" id="@cdktf/provider-ionoscloud.snapshot.Snapshot.property.nicHotUnplug"></a>
-
-```typescript
-public readonly nicHotUnplug: IResolvable;
-```
-
-- *Type:* cdktf.IResolvable
-
----
-
-##### `ramHotPlug`<sup>Required</sup> <a name="ramHotPlug" id="@cdktf/provider-ionoscloud.snapshot.Snapshot.property.ramHotPlug"></a>
-
-```typescript
-public readonly ramHotPlug: IResolvable;
-```
-
-- *Type:* cdktf.IResolvable
-
----
-
 ##### `ramHotUnplug`<sup>Required</sup> <a name="ramHotUnplug" id="@cdktf/provider-ionoscloud.snapshot.Snapshot.property.ramHotUnplug"></a>
 
 ```typescript
 public readonly ramHotUnplug: IResolvable;
-```
-
-- *Type:* cdktf.IResolvable
-
----
-
-##### `secAuthProtection`<sup>Required</sup> <a name="secAuthProtection" id="@cdktf/provider-ionoscloud.snapshot.Snapshot.property.secAuthProtection"></a>
-
-```typescript
-public readonly secAuthProtection: IResolvable;
 ```
 
 - *Type:* cdktf.IResolvable
@@ -854,6 +836,16 @@ public readonly timeouts: SnapshotTimeoutsOutputReference;
 
 ---
 
+##### `cpuHotPlugInput`<sup>Optional</sup> <a name="cpuHotPlugInput" id="@cdktf/provider-ionoscloud.snapshot.Snapshot.property.cpuHotPlugInput"></a>
+
+```typescript
+public readonly cpuHotPlugInput: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
+
+---
+
 ##### `datacenterIdInput`<sup>Optional</sup> <a name="datacenterIdInput" id="@cdktf/provider-ionoscloud.snapshot.Snapshot.property.datacenterIdInput"></a>
 
 ```typescript
@@ -861,6 +853,36 @@ public readonly datacenterIdInput: string;
 ```
 
 - *Type:* string
+
+---
+
+##### `descriptionInput`<sup>Optional</sup> <a name="descriptionInput" id="@cdktf/provider-ionoscloud.snapshot.Snapshot.property.descriptionInput"></a>
+
+```typescript
+public readonly descriptionInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `discVirtioHotPlugInput`<sup>Optional</sup> <a name="discVirtioHotPlugInput" id="@cdktf/provider-ionoscloud.snapshot.Snapshot.property.discVirtioHotPlugInput"></a>
+
+```typescript
+public readonly discVirtioHotPlugInput: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
+
+---
+
+##### `discVirtioHotUnplugInput`<sup>Optional</sup> <a name="discVirtioHotUnplugInput" id="@cdktf/provider-ionoscloud.snapshot.Snapshot.property.discVirtioHotUnplugInput"></a>
+
+```typescript
+public readonly discVirtioHotUnplugInput: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
 
 ---
 
@@ -874,6 +896,16 @@ public readonly idInput: string;
 
 ---
 
+##### `licenceTypeInput`<sup>Optional</sup> <a name="licenceTypeInput" id="@cdktf/provider-ionoscloud.snapshot.Snapshot.property.licenceTypeInput"></a>
+
+```typescript
+public readonly licenceTypeInput: string;
+```
+
+- *Type:* string
+
+---
+
 ##### `nameInput`<sup>Optional</sup> <a name="nameInput" id="@cdktf/provider-ionoscloud.snapshot.Snapshot.property.nameInput"></a>
 
 ```typescript
@@ -881,6 +913,46 @@ public readonly nameInput: string;
 ```
 
 - *Type:* string
+
+---
+
+##### `nicHotPlugInput`<sup>Optional</sup> <a name="nicHotPlugInput" id="@cdktf/provider-ionoscloud.snapshot.Snapshot.property.nicHotPlugInput"></a>
+
+```typescript
+public readonly nicHotPlugInput: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
+
+---
+
+##### `nicHotUnplugInput`<sup>Optional</sup> <a name="nicHotUnplugInput" id="@cdktf/provider-ionoscloud.snapshot.Snapshot.property.nicHotUnplugInput"></a>
+
+```typescript
+public readonly nicHotUnplugInput: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
+
+---
+
+##### `ramHotPlugInput`<sup>Optional</sup> <a name="ramHotPlugInput" id="@cdktf/provider-ionoscloud.snapshot.Snapshot.property.ramHotPlugInput"></a>
+
+```typescript
+public readonly ramHotPlugInput: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
+
+---
+
+##### `secAuthProtectionInput`<sup>Optional</sup> <a name="secAuthProtectionInput" id="@cdktf/provider-ionoscloud.snapshot.Snapshot.property.secAuthProtectionInput"></a>
+
+```typescript
+public readonly secAuthProtectionInput: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
 
 ---
 
@@ -904,6 +976,16 @@ public readonly volumeIdInput: string;
 
 ---
 
+##### `cpuHotPlug`<sup>Required</sup> <a name="cpuHotPlug" id="@cdktf/provider-ionoscloud.snapshot.Snapshot.property.cpuHotPlug"></a>
+
+```typescript
+public readonly cpuHotPlug: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
+
+---
+
 ##### `datacenterId`<sup>Required</sup> <a name="datacenterId" id="@cdktf/provider-ionoscloud.snapshot.Snapshot.property.datacenterId"></a>
 
 ```typescript
@@ -911,6 +993,36 @@ public readonly datacenterId: string;
 ```
 
 - *Type:* string
+
+---
+
+##### `description`<sup>Required</sup> <a name="description" id="@cdktf/provider-ionoscloud.snapshot.Snapshot.property.description"></a>
+
+```typescript
+public readonly description: string;
+```
+
+- *Type:* string
+
+---
+
+##### `discVirtioHotPlug`<sup>Required</sup> <a name="discVirtioHotPlug" id="@cdktf/provider-ionoscloud.snapshot.Snapshot.property.discVirtioHotPlug"></a>
+
+```typescript
+public readonly discVirtioHotPlug: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
+
+---
+
+##### `discVirtioHotUnplug`<sup>Required</sup> <a name="discVirtioHotUnplug" id="@cdktf/provider-ionoscloud.snapshot.Snapshot.property.discVirtioHotUnplug"></a>
+
+```typescript
+public readonly discVirtioHotUnplug: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
 
 ---
 
@@ -924,6 +1036,16 @@ public readonly id: string;
 
 ---
 
+##### `licenceType`<sup>Required</sup> <a name="licenceType" id="@cdktf/provider-ionoscloud.snapshot.Snapshot.property.licenceType"></a>
+
+```typescript
+public readonly licenceType: string;
+```
+
+- *Type:* string
+
+---
+
 ##### `name`<sup>Required</sup> <a name="name" id="@cdktf/provider-ionoscloud.snapshot.Snapshot.property.name"></a>
 
 ```typescript
@@ -931,6 +1053,46 @@ public readonly name: string;
 ```
 
 - *Type:* string
+
+---
+
+##### `nicHotPlug`<sup>Required</sup> <a name="nicHotPlug" id="@cdktf/provider-ionoscloud.snapshot.Snapshot.property.nicHotPlug"></a>
+
+```typescript
+public readonly nicHotPlug: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
+
+---
+
+##### `nicHotUnplug`<sup>Required</sup> <a name="nicHotUnplug" id="@cdktf/provider-ionoscloud.snapshot.Snapshot.property.nicHotUnplug"></a>
+
+```typescript
+public readonly nicHotUnplug: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
+
+---
+
+##### `ramHotPlug`<sup>Required</sup> <a name="ramHotPlug" id="@cdktf/provider-ionoscloud.snapshot.Snapshot.property.ramHotPlug"></a>
+
+```typescript
+public readonly ramHotPlug: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
+
+---
+
+##### `secAuthProtection`<sup>Required</sup> <a name="secAuthProtection" id="@cdktf/provider-ionoscloud.snapshot.Snapshot.property.secAuthProtection"></a>
+
+```typescript
+public readonly secAuthProtection: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
 
 ---
 
@@ -985,10 +1147,19 @@ const snapshotConfig: snapshot.SnapshotConfig = { ... }
 | <code><a href="#@cdktf/provider-ionoscloud.snapshot.SnapshotConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.snapshot.SnapshotConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.snapshot.SnapshotConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-ionoscloud.snapshot.SnapshotConfig.property.datacenterId">datacenterId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.16/docs/resources/snapshot#datacenter_id Snapshot#datacenter_id}. |
+| <code><a href="#@cdktf/provider-ionoscloud.snapshot.SnapshotConfig.property.datacenterId">datacenterId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.17/docs/resources/snapshot#datacenter_id Snapshot#datacenter_id}. |
 | <code><a href="#@cdktf/provider-ionoscloud.snapshot.SnapshotConfig.property.name">name</a></code> | <code>string</code> | A name of that resource. |
-| <code><a href="#@cdktf/provider-ionoscloud.snapshot.SnapshotConfig.property.volumeId">volumeId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.16/docs/resources/snapshot#volume_id Snapshot#volume_id}. |
-| <code><a href="#@cdktf/provider-ionoscloud.snapshot.SnapshotConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.16/docs/resources/snapshot#id Snapshot#id}. |
+| <code><a href="#@cdktf/provider-ionoscloud.snapshot.SnapshotConfig.property.volumeId">volumeId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.17/docs/resources/snapshot#volume_id Snapshot#volume_id}. |
+| <code><a href="#@cdktf/provider-ionoscloud.snapshot.SnapshotConfig.property.cpuHotPlug">cpuHotPlug</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.17/docs/resources/snapshot#cpu_hot_plug Snapshot#cpu_hot_plug}. |
+| <code><a href="#@cdktf/provider-ionoscloud.snapshot.SnapshotConfig.property.description">description</a></code> | <code>string</code> | Human readable description. |
+| <code><a href="#@cdktf/provider-ionoscloud.snapshot.SnapshotConfig.property.discVirtioHotPlug">discVirtioHotPlug</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.17/docs/resources/snapshot#disc_virtio_hot_plug Snapshot#disc_virtio_hot_plug}. |
+| <code><a href="#@cdktf/provider-ionoscloud.snapshot.SnapshotConfig.property.discVirtioHotUnplug">discVirtioHotUnplug</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.17/docs/resources/snapshot#disc_virtio_hot_unplug Snapshot#disc_virtio_hot_unplug}. |
+| <code><a href="#@cdktf/provider-ionoscloud.snapshot.SnapshotConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.17/docs/resources/snapshot#id Snapshot#id}. |
+| <code><a href="#@cdktf/provider-ionoscloud.snapshot.SnapshotConfig.property.licenceType">licenceType</a></code> | <code>string</code> | OS type of this Snapshot. |
+| <code><a href="#@cdktf/provider-ionoscloud.snapshot.SnapshotConfig.property.nicHotPlug">nicHotPlug</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.17/docs/resources/snapshot#nic_hot_plug Snapshot#nic_hot_plug}. |
+| <code><a href="#@cdktf/provider-ionoscloud.snapshot.SnapshotConfig.property.nicHotUnplug">nicHotUnplug</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.17/docs/resources/snapshot#nic_hot_unplug Snapshot#nic_hot_unplug}. |
+| <code><a href="#@cdktf/provider-ionoscloud.snapshot.SnapshotConfig.property.ramHotPlug">ramHotPlug</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.17/docs/resources/snapshot#ram_hot_plug Snapshot#ram_hot_plug}. |
+| <code><a href="#@cdktf/provider-ionoscloud.snapshot.SnapshotConfig.property.secAuthProtection">secAuthProtection</a></code> | <code>boolean \| cdktf.IResolvable</code> | Boolean value representing if the snapshot requires extra protection e.g. two factor protection. |
 | <code><a href="#@cdktf/provider-ionoscloud.snapshot.SnapshotConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-ionoscloud.snapshot.SnapshotTimeouts">SnapshotTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1071,7 +1242,7 @@ public readonly datacenterId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.16/docs/resources/snapshot#datacenter_id Snapshot#datacenter_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.17/docs/resources/snapshot#datacenter_id Snapshot#datacenter_id}.
 
 ---
 
@@ -1085,7 +1256,7 @@ public readonly name: string;
 
 A name of that resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.16/docs/resources/snapshot#name Snapshot#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.17/docs/resources/snapshot#name Snapshot#name}
 
 ---
 
@@ -1097,7 +1268,57 @@ public readonly volumeId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.16/docs/resources/snapshot#volume_id Snapshot#volume_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.17/docs/resources/snapshot#volume_id Snapshot#volume_id}.
+
+---
+
+##### `cpuHotPlug`<sup>Optional</sup> <a name="cpuHotPlug" id="@cdktf/provider-ionoscloud.snapshot.SnapshotConfig.property.cpuHotPlug"></a>
+
+```typescript
+public readonly cpuHotPlug: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.17/docs/resources/snapshot#cpu_hot_plug Snapshot#cpu_hot_plug}.
+
+---
+
+##### `description`<sup>Optional</sup> <a name="description" id="@cdktf/provider-ionoscloud.snapshot.SnapshotConfig.property.description"></a>
+
+```typescript
+public readonly description: string;
+```
+
+- *Type:* string
+
+Human readable description.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.17/docs/resources/snapshot#description Snapshot#description}
+
+---
+
+##### `discVirtioHotPlug`<sup>Optional</sup> <a name="discVirtioHotPlug" id="@cdktf/provider-ionoscloud.snapshot.SnapshotConfig.property.discVirtioHotPlug"></a>
+
+```typescript
+public readonly discVirtioHotPlug: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.17/docs/resources/snapshot#disc_virtio_hot_plug Snapshot#disc_virtio_hot_plug}.
+
+---
+
+##### `discVirtioHotUnplug`<sup>Optional</sup> <a name="discVirtioHotUnplug" id="@cdktf/provider-ionoscloud.snapshot.SnapshotConfig.property.discVirtioHotUnplug"></a>
+
+```typescript
+public readonly discVirtioHotUnplug: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.17/docs/resources/snapshot#disc_virtio_hot_unplug Snapshot#disc_virtio_hot_unplug}.
 
 ---
 
@@ -1109,10 +1330,74 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.16/docs/resources/snapshot#id Snapshot#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.17/docs/resources/snapshot#id Snapshot#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `licenceType`<sup>Optional</sup> <a name="licenceType" id="@cdktf/provider-ionoscloud.snapshot.SnapshotConfig.property.licenceType"></a>
+
+```typescript
+public readonly licenceType: string;
+```
+
+- *Type:* string
+
+OS type of this Snapshot.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.17/docs/resources/snapshot#licence_type Snapshot#licence_type}
+
+---
+
+##### `nicHotPlug`<sup>Optional</sup> <a name="nicHotPlug" id="@cdktf/provider-ionoscloud.snapshot.SnapshotConfig.property.nicHotPlug"></a>
+
+```typescript
+public readonly nicHotPlug: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.17/docs/resources/snapshot#nic_hot_plug Snapshot#nic_hot_plug}.
+
+---
+
+##### `nicHotUnplug`<sup>Optional</sup> <a name="nicHotUnplug" id="@cdktf/provider-ionoscloud.snapshot.SnapshotConfig.property.nicHotUnplug"></a>
+
+```typescript
+public readonly nicHotUnplug: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.17/docs/resources/snapshot#nic_hot_unplug Snapshot#nic_hot_unplug}.
+
+---
+
+##### `ramHotPlug`<sup>Optional</sup> <a name="ramHotPlug" id="@cdktf/provider-ionoscloud.snapshot.SnapshotConfig.property.ramHotPlug"></a>
+
+```typescript
+public readonly ramHotPlug: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.17/docs/resources/snapshot#ram_hot_plug Snapshot#ram_hot_plug}.
+
+---
+
+##### `secAuthProtection`<sup>Optional</sup> <a name="secAuthProtection" id="@cdktf/provider-ionoscloud.snapshot.SnapshotConfig.property.secAuthProtection"></a>
+
+```typescript
+public readonly secAuthProtection: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
+
+Boolean value representing if the snapshot requires extra protection e.g. two factor protection.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.17/docs/resources/snapshot#sec_auth_protection Snapshot#sec_auth_protection}
 
 ---
 
@@ -1126,7 +1411,7 @@ public readonly timeouts: SnapshotTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.16/docs/resources/snapshot#timeouts Snapshot#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.17/docs/resources/snapshot#timeouts Snapshot#timeouts}
 
 ---
 
@@ -1144,10 +1429,10 @@ const snapshotTimeouts: snapshot.SnapshotTimeouts = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-ionoscloud.snapshot.SnapshotTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.16/docs/resources/snapshot#create Snapshot#create}. |
-| <code><a href="#@cdktf/provider-ionoscloud.snapshot.SnapshotTimeouts.property.default">default</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.16/docs/resources/snapshot#default Snapshot#default}. |
-| <code><a href="#@cdktf/provider-ionoscloud.snapshot.SnapshotTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.16/docs/resources/snapshot#delete Snapshot#delete}. |
-| <code><a href="#@cdktf/provider-ionoscloud.snapshot.SnapshotTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.16/docs/resources/snapshot#update Snapshot#update}. |
+| <code><a href="#@cdktf/provider-ionoscloud.snapshot.SnapshotTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.17/docs/resources/snapshot#create Snapshot#create}. |
+| <code><a href="#@cdktf/provider-ionoscloud.snapshot.SnapshotTimeouts.property.default">default</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.17/docs/resources/snapshot#default Snapshot#default}. |
+| <code><a href="#@cdktf/provider-ionoscloud.snapshot.SnapshotTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.17/docs/resources/snapshot#delete Snapshot#delete}. |
+| <code><a href="#@cdktf/provider-ionoscloud.snapshot.SnapshotTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.17/docs/resources/snapshot#update Snapshot#update}. |
 
 ---
 
@@ -1159,7 +1444,7 @@ public readonly create: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.16/docs/resources/snapshot#create Snapshot#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.17/docs/resources/snapshot#create Snapshot#create}.
 
 ---
 
@@ -1171,7 +1456,7 @@ public readonly default: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.16/docs/resources/snapshot#default Snapshot#default}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.17/docs/resources/snapshot#default Snapshot#default}.
 
 ---
 
@@ -1183,7 +1468,7 @@ public readonly delete: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.16/docs/resources/snapshot#delete Snapshot#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.17/docs/resources/snapshot#delete Snapshot#delete}.
 
 ---
 
@@ -1195,7 +1480,7 @@ public readonly update: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.16/docs/resources/snapshot#update Snapshot#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.17/docs/resources/snapshot#update Snapshot#update}.
 
 ---
 
