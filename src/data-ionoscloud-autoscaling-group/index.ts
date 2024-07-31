@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.18/docs/data-sources/autoscaling_group
+// https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.19/docs/data-sources/autoscaling_group
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,7 +10,7 @@ export interface DataIonoscloudAutoscalingGroupConfig extends cdktf.TerraformMet
   /**
   * UUID of the Autoscaling Group.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.18/docs/data-sources/autoscaling_group#id DataIonoscloudAutoscalingGroup#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.19/docs/data-sources/autoscaling_group#id DataIonoscloudAutoscalingGroup#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -24,13 +19,13 @@ export interface DataIonoscloudAutoscalingGroupConfig extends cdktf.TerraformMet
   /**
   * User-defined name for the Autoscaling Group.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.18/docs/data-sources/autoscaling_group#name DataIonoscloudAutoscalingGroup#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.19/docs/data-sources/autoscaling_group#name DataIonoscloudAutoscalingGroup#name}
   */
   readonly name?: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.18/docs/data-sources/autoscaling_group#timeouts DataIonoscloudAutoscalingGroup#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.19/docs/data-sources/autoscaling_group#timeouts DataIonoscloudAutoscalingGroup#timeouts}
   */
   readonly timeouts?: DataIonoscloudAutoscalingGroupTimeouts;
 }
@@ -321,6 +316,306 @@ export class DataIonoscloudAutoscalingGroupPolicyList extends cdktf.ComplexList 
     return new DataIonoscloudAutoscalingGroupPolicyOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
+export interface DataIonoscloudAutoscalingGroupReplicaConfigurationNicFirewallRule {
+}
+
+export function dataIonoscloudAutoscalingGroupReplicaConfigurationNicFirewallRuleToTerraform(struct?: DataIonoscloudAutoscalingGroupReplicaConfigurationNicFirewallRule): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+
+export function dataIonoscloudAutoscalingGroupReplicaConfigurationNicFirewallRuleToHclTerraform(struct?: DataIonoscloudAutoscalingGroupReplicaConfigurationNicFirewallRule): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class DataIonoscloudAutoscalingGroupReplicaConfigurationNicFirewallRuleOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataIonoscloudAutoscalingGroupReplicaConfigurationNicFirewallRule | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataIonoscloudAutoscalingGroupReplicaConfigurationNicFirewallRule | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // icmp_code - computed: true, optional: false, required: false
+  public get icmpCode() {
+    return this.getNumberAttribute('icmp_code');
+  }
+
+  // icmp_type - computed: true, optional: false, required: false
+  public get icmpType() {
+    return this.getNumberAttribute('icmp_type');
+  }
+
+  // name - computed: true, optional: false, required: false
+  public get name() {
+    return this.getStringAttribute('name');
+  }
+
+  // port_range_end - computed: true, optional: false, required: false
+  public get portRangeEnd() {
+    return this.getNumberAttribute('port_range_end');
+  }
+
+  // port_range_start - computed: true, optional: false, required: false
+  public get portRangeStart() {
+    return this.getNumberAttribute('port_range_start');
+  }
+
+  // protocol - computed: true, optional: false, required: false
+  public get protocol() {
+    return this.getStringAttribute('protocol');
+  }
+
+  // source_ip - computed: true, optional: false, required: false
+  public get sourceIp() {
+    return this.getStringAttribute('source_ip');
+  }
+
+  // source_mac - computed: true, optional: false, required: false
+  public get sourceMac() {
+    return this.getStringAttribute('source_mac');
+  }
+
+  // target_ip - computed: true, optional: false, required: false
+  public get targetIp() {
+    return this.getStringAttribute('target_ip');
+  }
+
+  // type - computed: true, optional: false, required: false
+  public get type() {
+    return this.getStringAttribute('type');
+  }
+}
+
+export class DataIonoscloudAutoscalingGroupReplicaConfigurationNicFirewallRuleList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataIonoscloudAutoscalingGroupReplicaConfigurationNicFirewallRuleOutputReference {
+    return new DataIonoscloudAutoscalingGroupReplicaConfigurationNicFirewallRuleOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface DataIonoscloudAutoscalingGroupReplicaConfigurationNicFlowLog {
+}
+
+export function dataIonoscloudAutoscalingGroupReplicaConfigurationNicFlowLogToTerraform(struct?: DataIonoscloudAutoscalingGroupReplicaConfigurationNicFlowLog): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+
+export function dataIonoscloudAutoscalingGroupReplicaConfigurationNicFlowLogToHclTerraform(struct?: DataIonoscloudAutoscalingGroupReplicaConfigurationNicFlowLog): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class DataIonoscloudAutoscalingGroupReplicaConfigurationNicFlowLogOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataIonoscloudAutoscalingGroupReplicaConfigurationNicFlowLog | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataIonoscloudAutoscalingGroupReplicaConfigurationNicFlowLog | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // action - computed: true, optional: false, required: false
+  public get action() {
+    return this.getStringAttribute('action');
+  }
+
+  // bucket - computed: true, optional: false, required: false
+  public get bucket() {
+    return this.getStringAttribute('bucket');
+  }
+
+  // direction - computed: true, optional: false, required: false
+  public get direction() {
+    return this.getStringAttribute('direction');
+  }
+
+  // id - computed: true, optional: false, required: false
+  public get id() {
+    return this.getStringAttribute('id');
+  }
+
+  // name - computed: true, optional: false, required: false
+  public get name() {
+    return this.getStringAttribute('name');
+  }
+}
+
+export class DataIonoscloudAutoscalingGroupReplicaConfigurationNicFlowLogList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataIonoscloudAutoscalingGroupReplicaConfigurationNicFlowLogOutputReference {
+    return new DataIonoscloudAutoscalingGroupReplicaConfigurationNicFlowLogOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface DataIonoscloudAutoscalingGroupReplicaConfigurationNicTargetGroup {
+}
+
+export function dataIonoscloudAutoscalingGroupReplicaConfigurationNicTargetGroupToTerraform(struct?: DataIonoscloudAutoscalingGroupReplicaConfigurationNicTargetGroup): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+
+export function dataIonoscloudAutoscalingGroupReplicaConfigurationNicTargetGroupToHclTerraform(struct?: DataIonoscloudAutoscalingGroupReplicaConfigurationNicTargetGroup): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class DataIonoscloudAutoscalingGroupReplicaConfigurationNicTargetGroupOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataIonoscloudAutoscalingGroupReplicaConfigurationNicTargetGroup | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataIonoscloudAutoscalingGroupReplicaConfigurationNicTargetGroup | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // port - computed: true, optional: false, required: false
+  public get port() {
+    return this.getNumberAttribute('port');
+  }
+
+  // target_group_id - computed: true, optional: false, required: false
+  public get targetGroupId() {
+    return this.getStringAttribute('target_group_id');
+  }
+
+  // weight - computed: true, optional: false, required: false
+  public get weight() {
+    return this.getNumberAttribute('weight');
+  }
+}
+
+export class DataIonoscloudAutoscalingGroupReplicaConfigurationNicTargetGroupList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataIonoscloudAutoscalingGroupReplicaConfigurationNicTargetGroupOutputReference {
+    return new DataIonoscloudAutoscalingGroupReplicaConfigurationNicTargetGroupOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface DataIonoscloudAutoscalingGroupReplicaConfigurationNic {
 }
 
@@ -377,6 +672,28 @@ export class DataIonoscloudAutoscalingGroupReplicaConfigurationNicOutputReferenc
     return this.getBooleanAttribute('dhcp');
   }
 
+  // firewall_active - computed: true, optional: false, required: false
+  public get firewallActive() {
+    return this.getBooleanAttribute('firewall_active');
+  }
+
+  // firewall_rule - computed: true, optional: false, required: false
+  private _firewallRule = new DataIonoscloudAutoscalingGroupReplicaConfigurationNicFirewallRuleList(this, "firewall_rule", true);
+  public get firewallRule() {
+    return this._firewallRule;
+  }
+
+  // firewall_type - computed: true, optional: false, required: false
+  public get firewallType() {
+    return this.getStringAttribute('firewall_type');
+  }
+
+  // flow_log - computed: true, optional: false, required: false
+  private _flowLog = new DataIonoscloudAutoscalingGroupReplicaConfigurationNicFlowLogList(this, "flow_log", false);
+  public get flowLog() {
+    return this._flowLog;
+  }
+
   // lan - computed: true, optional: false, required: false
   public get lan() {
     return this.getNumberAttribute('lan');
@@ -385,6 +702,12 @@ export class DataIonoscloudAutoscalingGroupReplicaConfigurationNicOutputReferenc
   // name - computed: true, optional: false, required: false
   public get name() {
     return this.getStringAttribute('name');
+  }
+
+  // target_group - computed: true, optional: false, required: false
+  private _targetGroup = new DataIonoscloudAutoscalingGroupReplicaConfigurationNicTargetGroupList(this, "target_group", false);
+  public get targetGroup() {
+    return this._targetGroup;
   }
 }
 
@@ -625,19 +948,19 @@ export class DataIonoscloudAutoscalingGroupReplicaConfigurationList extends cdkt
 }
 export interface DataIonoscloudAutoscalingGroupTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.18/docs/data-sources/autoscaling_group#create DataIonoscloudAutoscalingGroup#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.19/docs/data-sources/autoscaling_group#create DataIonoscloudAutoscalingGroup#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.18/docs/data-sources/autoscaling_group#default DataIonoscloudAutoscalingGroup#default}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.19/docs/data-sources/autoscaling_group#default DataIonoscloudAutoscalingGroup#default}
   */
   readonly default?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.18/docs/data-sources/autoscaling_group#delete DataIonoscloudAutoscalingGroup#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.19/docs/data-sources/autoscaling_group#delete DataIonoscloudAutoscalingGroup#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.18/docs/data-sources/autoscaling_group#update DataIonoscloudAutoscalingGroup#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.19/docs/data-sources/autoscaling_group#update DataIonoscloudAutoscalingGroup#update}
   */
   readonly update?: string;
 }
@@ -818,7 +1141,7 @@ export class DataIonoscloudAutoscalingGroupTimeoutsOutputReference extends cdktf
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.18/docs/data-sources/autoscaling_group ionoscloud_autoscaling_group}
+* Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.19/docs/data-sources/autoscaling_group ionoscloud_autoscaling_group}
 */
 export class DataIonoscloudAutoscalingGroup extends cdktf.TerraformDataSource {
 
@@ -834,7 +1157,7 @@ export class DataIonoscloudAutoscalingGroup extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataIonoscloudAutoscalingGroup resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataIonoscloudAutoscalingGroup to import
-  * @param importFromId The id of the existing DataIonoscloudAutoscalingGroup that should be imported. Refer to the {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.18/docs/data-sources/autoscaling_group#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataIonoscloudAutoscalingGroup that should be imported. Refer to the {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.19/docs/data-sources/autoscaling_group#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataIonoscloudAutoscalingGroup to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -846,7 +1169,7 @@ export class DataIonoscloudAutoscalingGroup extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.18/docs/data-sources/autoscaling_group ionoscloud_autoscaling_group} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.19/docs/data-sources/autoscaling_group ionoscloud_autoscaling_group} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -857,7 +1180,7 @@ export class DataIonoscloudAutoscalingGroup extends cdktf.TerraformDataSource {
       terraformResourceType: 'ionoscloud_autoscaling_group',
       terraformGeneratorMetadata: {
         providerName: 'ionoscloud',
-        providerVersion: '6.4.18',
+        providerVersion: '6.4.19',
         providerVersionConstraint: '~> 6.2'
       },
       provider: config.provider,
