@@ -1,0 +1,1626 @@
+# `vpnWireguardPeer` Submodule <a name="`vpnWireguardPeer` Submodule" id="@cdktf/provider-ionoscloud.vpnWireguardPeer"></a>
+
+## Constructs <a name="Constructs" id="Constructs"></a>
+
+### VpnWireguardPeer <a name="VpnWireguardPeer" id="@cdktf/provider-ionoscloud.vpnWireguardPeer.VpnWireguardPeer"></a>
+
+Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.0/docs/resources/vpn_wireguard_peer ionoscloud_vpn_wireguard_peer}.
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.vpnWireguardPeer.VpnWireguardPeer.Initializer"></a>
+
+```java
+import com.hashicorp.cdktf.providers.ionoscloud.vpn_wireguard_peer.VpnWireguardPeer;
+
+VpnWireguardPeer.Builder.create(Construct scope, java.lang.String id)
+//  .connection(SSHProvisionerConnection)
+//  .connection(WinrmProvisionerConnection)
+//  .count(java.lang.Number)
+//  .count(TerraformCount)
+//  .dependsOn(java.util.List<ITerraformDependable>)
+//  .forEach(ITerraformIterator)
+//  .lifecycle(TerraformResourceLifecycle)
+//  .provider(TerraformProvider)
+//  .provisioners(java.util.List<FileProvisioner)
+//  .provisioners(LocalExecProvisioner)
+//  .provisioners(RemoteExecProvisioner>)
+    .allowedIps(java.util.List<java.lang.String>)
+    .gatewayId(java.lang.String)
+    .location(java.lang.String)
+    .name(java.lang.String)
+    .publicKey(java.lang.String)
+//  .description(java.lang.String)
+//  .endpoint(VpnWireguardPeerEndpoint)
+//  .id(java.lang.String)
+    .build();
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-ionoscloud.vpnWireguardPeer.VpnWireguardPeer.Initializer.parameter.scope">scope</a></code> | <code>software.constructs.Construct</code> | The scope in which to define this construct. |
+| <code><a href="#@cdktf/provider-ionoscloud.vpnWireguardPeer.VpnWireguardPeer.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | The scoped construct ID. |
+| <code><a href="#@cdktf/provider-ionoscloud.vpnWireguardPeer.VpnWireguardPeer.Initializer.parameter.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.vpnWireguardPeer.VpnWireguardPeer.Initializer.parameter.count">count</a></code> | <code>java.lang.Number OR com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.vpnWireguardPeer.VpnWireguardPeer.Initializer.parameter.dependsOn">dependsOn</a></code> | <code>java.util.List<com.hashicorp.cdktf.ITerraformDependable></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.vpnWireguardPeer.VpnWireguardPeer.Initializer.parameter.forEach">forEach</a></code> | <code>com.hashicorp.cdktf.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.vpnWireguardPeer.VpnWireguardPeer.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.vpnWireguardPeer.VpnWireguardPeer.Initializer.parameter.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.vpnWireguardPeer.VpnWireguardPeer.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.vpnWireguardPeer.VpnWireguardPeer.Initializer.parameter.allowedIps">allowedIps</a></code> | <code>java.util.List<java.lang.String></code> | The subnet CIDRs that are allowed to connect to the WireGuard Gateway. |
+| <code><a href="#@cdktf/provider-ionoscloud.vpnWireguardPeer.VpnWireguardPeer.Initializer.parameter.gatewayId">gatewayId</a></code> | <code>java.lang.String</code> | The ID of the WireGuard Peer that the peer will connect to. |
+| <code><a href="#@cdktf/provider-ionoscloud.vpnWireguardPeer.VpnWireguardPeer.Initializer.parameter.location">location</a></code> | <code>java.lang.String</code> | The location of the WireGuard Peer. Supported locations: de/fra, de/txl. |
+| <code><a href="#@cdktf/provider-ionoscloud.vpnWireguardPeer.VpnWireguardPeer.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | The human readable name of your WireGuard Gateway Peer. |
+| <code><a href="#@cdktf/provider-ionoscloud.vpnWireguardPeer.VpnWireguardPeer.Initializer.parameter.publicKey">publicKey</a></code> | <code>java.lang.String</code> | WireGuard public key of the connecting peer. |
+| <code><a href="#@cdktf/provider-ionoscloud.vpnWireguardPeer.VpnWireguardPeer.Initializer.parameter.description">description</a></code> | <code>java.lang.String</code> | Human readable description of the WireGuard Gateway Peer. |
+| <code><a href="#@cdktf/provider-ionoscloud.vpnWireguardPeer.VpnWireguardPeer.Initializer.parameter.endpoint">endpoint</a></code> | <code><a href="#@cdktf/provider-ionoscloud.vpnWireguardPeer.VpnWireguardPeerEndpoint">VpnWireguardPeerEndpoint</a></code> | endpoint block. |
+| <code><a href="#@cdktf/provider-ionoscloud.vpnWireguardPeer.VpnWireguardPeer.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.0/docs/resources/vpn_wireguard_peer#id VpnWireguardPeer#id}. |
+
+---
+
+##### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-ionoscloud.vpnWireguardPeer.VpnWireguardPeer.Initializer.parameter.scope"></a>
+
+- *Type:* software.constructs.Construct
+
+The scope in which to define this construct.
+
+---
+
+##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-ionoscloud.vpnWireguardPeer.VpnWireguardPeer.Initializer.parameter.id"></a>
+
+- *Type:* java.lang.String
+
+The scoped construct ID.
+
+Must be unique amongst siblings in the same scope
+
+---
+
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-ionoscloud.vpnWireguardPeer.VpnWireguardPeer.Initializer.parameter.connection"></a>
+
+- *Type:* com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection
+
+---
+
+##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-ionoscloud.vpnWireguardPeer.VpnWireguardPeer.Initializer.parameter.count"></a>
+
+- *Type:* java.lang.Number OR com.hashicorp.cdktf.TerraformCount
+
+---
+
+##### `dependsOn`<sup>Optional</sup> <a name="dependsOn" id="@cdktf/provider-ionoscloud.vpnWireguardPeer.VpnWireguardPeer.Initializer.parameter.dependsOn"></a>
+
+- *Type:* java.util.List<com.hashicorp.cdktf.ITerraformDependable>
+
+---
+
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-ionoscloud.vpnWireguardPeer.VpnWireguardPeer.Initializer.parameter.forEach"></a>
+
+- *Type:* com.hashicorp.cdktf.ITerraformIterator
+
+---
+
+##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-ionoscloud.vpnWireguardPeer.VpnWireguardPeer.Initializer.parameter.lifecycle"></a>
+
+- *Type:* com.hashicorp.cdktf.TerraformResourceLifecycle
+
+---
+
+##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-ionoscloud.vpnWireguardPeer.VpnWireguardPeer.Initializer.parameter.provider"></a>
+
+- *Type:* com.hashicorp.cdktf.TerraformProvider
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-ionoscloud.vpnWireguardPeer.VpnWireguardPeer.Initializer.parameter.provisioners"></a>
+
+- *Type:* java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner>
+
+---
+
+##### `allowedIps`<sup>Required</sup> <a name="allowedIps" id="@cdktf/provider-ionoscloud.vpnWireguardPeer.VpnWireguardPeer.Initializer.parameter.allowedIps"></a>
+
+- *Type:* java.util.List<java.lang.String>
+
+The subnet CIDRs that are allowed to connect to the WireGuard Gateway.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.0/docs/resources/vpn_wireguard_peer#allowed_ips VpnWireguardPeer#allowed_ips}
+
+---
+
+##### `gatewayId`<sup>Required</sup> <a name="gatewayId" id="@cdktf/provider-ionoscloud.vpnWireguardPeer.VpnWireguardPeer.Initializer.parameter.gatewayId"></a>
+
+- *Type:* java.lang.String
+
+The ID of the WireGuard Peer that the peer will connect to.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.0/docs/resources/vpn_wireguard_peer#gateway_id VpnWireguardPeer#gateway_id}
+
+---
+
+##### `location`<sup>Required</sup> <a name="location" id="@cdktf/provider-ionoscloud.vpnWireguardPeer.VpnWireguardPeer.Initializer.parameter.location"></a>
+
+- *Type:* java.lang.String
+
+The location of the WireGuard Peer. Supported locations: de/fra, de/txl.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.0/docs/resources/vpn_wireguard_peer#location VpnWireguardPeer#location}
+
+---
+
+##### `name`<sup>Required</sup> <a name="name" id="@cdktf/provider-ionoscloud.vpnWireguardPeer.VpnWireguardPeer.Initializer.parameter.name"></a>
+
+- *Type:* java.lang.String
+
+The human readable name of your WireGuard Gateway Peer.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.0/docs/resources/vpn_wireguard_peer#name VpnWireguardPeer#name}
+
+---
+
+##### `publicKey`<sup>Required</sup> <a name="publicKey" id="@cdktf/provider-ionoscloud.vpnWireguardPeer.VpnWireguardPeer.Initializer.parameter.publicKey"></a>
+
+- *Type:* java.lang.String
+
+WireGuard public key of the connecting peer.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.0/docs/resources/vpn_wireguard_peer#public_key VpnWireguardPeer#public_key}
+
+---
+
+##### `description`<sup>Optional</sup> <a name="description" id="@cdktf/provider-ionoscloud.vpnWireguardPeer.VpnWireguardPeer.Initializer.parameter.description"></a>
+
+- *Type:* java.lang.String
+
+Human readable description of the WireGuard Gateway Peer.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.0/docs/resources/vpn_wireguard_peer#description VpnWireguardPeer#description}
+
+---
+
+##### `endpoint`<sup>Optional</sup> <a name="endpoint" id="@cdktf/provider-ionoscloud.vpnWireguardPeer.VpnWireguardPeer.Initializer.parameter.endpoint"></a>
+
+- *Type:* <a href="#@cdktf/provider-ionoscloud.vpnWireguardPeer.VpnWireguardPeerEndpoint">VpnWireguardPeerEndpoint</a>
+
+endpoint block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.0/docs/resources/vpn_wireguard_peer#endpoint VpnWireguardPeer#endpoint}
+
+---
+
+##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-ionoscloud.vpnWireguardPeer.VpnWireguardPeer.Initializer.parameter.id"></a>
+
+- *Type:* java.lang.String
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.0/docs/resources/vpn_wireguard_peer#id VpnWireguardPeer#id}.
+
+Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-ionoscloud.vpnWireguardPeer.VpnWireguardPeer.toString">toString</a></code> | Returns a string representation of this construct. |
+| <code><a href="#@cdktf/provider-ionoscloud.vpnWireguardPeer.VpnWireguardPeer.addOverride">addOverride</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.vpnWireguardPeer.VpnWireguardPeer.overrideLogicalId">overrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
+| <code><a href="#@cdktf/provider-ionoscloud.vpnWireguardPeer.VpnWireguardPeer.resetOverrideLogicalId">resetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-ionoscloud.vpnWireguardPeer.VpnWireguardPeer.toHclTerraform">toHclTerraform</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.vpnWireguardPeer.VpnWireguardPeer.toMetadata">toMetadata</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.vpnWireguardPeer.VpnWireguardPeer.toTerraform">toTerraform</a></code> | Adds this resource to the terraform JSON output. |
+| <code><a href="#@cdktf/provider-ionoscloud.vpnWireguardPeer.VpnWireguardPeer.addMoveTarget">addMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
+| <code><a href="#@cdktf/provider-ionoscloud.vpnWireguardPeer.VpnWireguardPeer.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.vpnWireguardPeer.VpnWireguardPeer.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.vpnWireguardPeer.VpnWireguardPeer.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.vpnWireguardPeer.VpnWireguardPeer.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.vpnWireguardPeer.VpnWireguardPeer.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.vpnWireguardPeer.VpnWireguardPeer.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.vpnWireguardPeer.VpnWireguardPeer.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.vpnWireguardPeer.VpnWireguardPeer.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.vpnWireguardPeer.VpnWireguardPeer.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.vpnWireguardPeer.VpnWireguardPeer.hasResourceMove">hasResourceMove</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.vpnWireguardPeer.VpnWireguardPeer.importFrom">importFrom</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.vpnWireguardPeer.VpnWireguardPeer.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.vpnWireguardPeer.VpnWireguardPeer.moveFromId">moveFromId</a></code> | Move the resource corresponding to "id" to this resource. |
+| <code><a href="#@cdktf/provider-ionoscloud.vpnWireguardPeer.VpnWireguardPeer.moveTo">moveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
+| <code><a href="#@cdktf/provider-ionoscloud.vpnWireguardPeer.VpnWireguardPeer.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
+| <code><a href="#@cdktf/provider-ionoscloud.vpnWireguardPeer.VpnWireguardPeer.putEndpoint">putEndpoint</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.vpnWireguardPeer.VpnWireguardPeer.resetDescription">resetDescription</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.vpnWireguardPeer.VpnWireguardPeer.resetEndpoint">resetEndpoint</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.vpnWireguardPeer.VpnWireguardPeer.resetId">resetId</a></code> | *No description.* |
+
+---
+
+##### `toString` <a name="toString" id="@cdktf/provider-ionoscloud.vpnWireguardPeer.VpnWireguardPeer.toString"></a>
+
+```java
+public java.lang.String toString()
+```
+
+Returns a string representation of this construct.
+
+##### `addOverride` <a name="addOverride" id="@cdktf/provider-ionoscloud.vpnWireguardPeer.VpnWireguardPeer.addOverride"></a>
+
+```java
+public void addOverride(java.lang.String path, java.lang.Object value)
+```
+
+###### `path`<sup>Required</sup> <a name="path" id="@cdktf/provider-ionoscloud.vpnWireguardPeer.VpnWireguardPeer.addOverride.parameter.path"></a>
+
+- *Type:* java.lang.String
+
+---
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-ionoscloud.vpnWireguardPeer.VpnWireguardPeer.addOverride.parameter.value"></a>
+
+- *Type:* java.lang.Object
+
+---
+
+##### `overrideLogicalId` <a name="overrideLogicalId" id="@cdktf/provider-ionoscloud.vpnWireguardPeer.VpnWireguardPeer.overrideLogicalId"></a>
+
+```java
+public void overrideLogicalId(java.lang.String newLogicalId)
+```
+
+Overrides the auto-generated logical ID with a specific ID.
+
+###### `newLogicalId`<sup>Required</sup> <a name="newLogicalId" id="@cdktf/provider-ionoscloud.vpnWireguardPeer.VpnWireguardPeer.overrideLogicalId.parameter.newLogicalId"></a>
+
+- *Type:* java.lang.String
+
+The new logical ID to use for this stack element.
+
+---
+
+##### `resetOverrideLogicalId` <a name="resetOverrideLogicalId" id="@cdktf/provider-ionoscloud.vpnWireguardPeer.VpnWireguardPeer.resetOverrideLogicalId"></a>
+
+```java
+public void resetOverrideLogicalId()
+```
+
+Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `toHclTerraform` <a name="toHclTerraform" id="@cdktf/provider-ionoscloud.vpnWireguardPeer.VpnWireguardPeer.toHclTerraform"></a>
+
+```java
+public java.lang.Object toHclTerraform()
+```
+
+##### `toMetadata` <a name="toMetadata" id="@cdktf/provider-ionoscloud.vpnWireguardPeer.VpnWireguardPeer.toMetadata"></a>
+
+```java
+public java.lang.Object toMetadata()
+```
+
+##### `toTerraform` <a name="toTerraform" id="@cdktf/provider-ionoscloud.vpnWireguardPeer.VpnWireguardPeer.toTerraform"></a>
+
+```java
+public java.lang.Object toTerraform()
+```
+
+Adds this resource to the terraform JSON output.
+
+##### `addMoveTarget` <a name="addMoveTarget" id="@cdktf/provider-ionoscloud.vpnWireguardPeer.VpnWireguardPeer.addMoveTarget"></a>
+
+```java
+public void addMoveTarget(java.lang.String moveTarget)
+```
+
+Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
+
+###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktf/provider-ionoscloud.vpnWireguardPeer.VpnWireguardPeer.addMoveTarget.parameter.moveTarget"></a>
+
+- *Type:* java.lang.String
+
+The string move target that will correspond to this resource.
+
+---
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-ionoscloud.vpnWireguardPeer.VpnWireguardPeer.getAnyMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Object> getAnyMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-ionoscloud.vpnWireguardPeer.VpnWireguardPeer.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-ionoscloud.vpnWireguardPeer.VpnWireguardPeer.getBooleanAttribute"></a>
+
+```java
+public IResolvable getBooleanAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-ionoscloud.vpnWireguardPeer.VpnWireguardPeer.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-ionoscloud.vpnWireguardPeer.VpnWireguardPeer.getBooleanMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Boolean> getBooleanMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-ionoscloud.vpnWireguardPeer.VpnWireguardPeer.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-ionoscloud.vpnWireguardPeer.VpnWireguardPeer.getListAttribute"></a>
+
+```java
+public java.util.List<java.lang.String> getListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-ionoscloud.vpnWireguardPeer.VpnWireguardPeer.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-ionoscloud.vpnWireguardPeer.VpnWireguardPeer.getNumberAttribute"></a>
+
+```java
+public java.lang.Number getNumberAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-ionoscloud.vpnWireguardPeer.VpnWireguardPeer.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-ionoscloud.vpnWireguardPeer.VpnWireguardPeer.getNumberListAttribute"></a>
+
+```java
+public java.util.List<java.lang.Number> getNumberListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-ionoscloud.vpnWireguardPeer.VpnWireguardPeer.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-ionoscloud.vpnWireguardPeer.VpnWireguardPeer.getNumberMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Number> getNumberMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-ionoscloud.vpnWireguardPeer.VpnWireguardPeer.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-ionoscloud.vpnWireguardPeer.VpnWireguardPeer.getStringAttribute"></a>
+
+```java
+public java.lang.String getStringAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-ionoscloud.vpnWireguardPeer.VpnWireguardPeer.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-ionoscloud.vpnWireguardPeer.VpnWireguardPeer.getStringMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.String> getStringMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-ionoscloud.vpnWireguardPeer.VpnWireguardPeer.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `hasResourceMove` <a name="hasResourceMove" id="@cdktf/provider-ionoscloud.vpnWireguardPeer.VpnWireguardPeer.hasResourceMove"></a>
+
+```java
+public TerraformResourceMoveByTarget OR TerraformResourceMoveById hasResourceMove()
+```
+
+##### `importFrom` <a name="importFrom" id="@cdktf/provider-ionoscloud.vpnWireguardPeer.VpnWireguardPeer.importFrom"></a>
+
+```java
+public void importFrom(java.lang.String id)
+public void importFrom(java.lang.String id, TerraformProvider provider)
+```
+
+###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-ionoscloud.vpnWireguardPeer.VpnWireguardPeer.importFrom.parameter.id"></a>
+
+- *Type:* java.lang.String
+
+---
+
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-ionoscloud.vpnWireguardPeer.VpnWireguardPeer.importFrom.parameter.provider"></a>
+
+- *Type:* com.hashicorp.cdktf.TerraformProvider
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-ionoscloud.vpnWireguardPeer.VpnWireguardPeer.interpolationForAttribute"></a>
+
+```java
+public IResolvable interpolationForAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-ionoscloud.vpnWireguardPeer.VpnWireguardPeer.interpolationForAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `moveFromId` <a name="moveFromId" id="@cdktf/provider-ionoscloud.vpnWireguardPeer.VpnWireguardPeer.moveFromId"></a>
+
+```java
+public void moveFromId(java.lang.String id)
+```
+
+Move the resource corresponding to "id" to this resource.
+
+Note that the resource being moved from must be marked as moved using it's instance function.
+
+###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-ionoscloud.vpnWireguardPeer.VpnWireguardPeer.moveFromId.parameter.id"></a>
+
+- *Type:* java.lang.String
+
+Full id of resource being moved from, e.g. "aws_s3_bucket.example".
+
+---
+
+##### `moveTo` <a name="moveTo" id="@cdktf/provider-ionoscloud.vpnWireguardPeer.VpnWireguardPeer.moveTo"></a>
+
+```java
+public void moveTo(java.lang.String moveTarget)
+public void moveTo(java.lang.String moveTarget, java.lang.String OR java.lang.Number index)
+```
+
+Moves this resource to the target resource given by moveTarget.
+
+###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktf/provider-ionoscloud.vpnWireguardPeer.VpnWireguardPeer.moveTo.parameter.moveTarget"></a>
+
+- *Type:* java.lang.String
+
+The previously set user defined string set by .addMoveTarget() corresponding to the resource to move to.
+
+---
+
+###### `index`<sup>Optional</sup> <a name="index" id="@cdktf/provider-ionoscloud.vpnWireguardPeer.VpnWireguardPeer.moveTo.parameter.index"></a>
+
+- *Type:* java.lang.String OR java.lang.Number
+
+Optional The index corresponding to the key the resource is to appear in the foreach of a resource to move to.
+
+---
+
+##### `moveToId` <a name="moveToId" id="@cdktf/provider-ionoscloud.vpnWireguardPeer.VpnWireguardPeer.moveToId"></a>
+
+```java
+public void moveToId(java.lang.String id)
+```
+
+Moves this resource to the resource corresponding to "id".
+
+###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-ionoscloud.vpnWireguardPeer.VpnWireguardPeer.moveToId.parameter.id"></a>
+
+- *Type:* java.lang.String
+
+Full id of resource to move to, e.g. "aws_s3_bucket.example".
+
+---
+
+##### `putEndpoint` <a name="putEndpoint" id="@cdktf/provider-ionoscloud.vpnWireguardPeer.VpnWireguardPeer.putEndpoint"></a>
+
+```java
+public void putEndpoint(VpnWireguardPeerEndpoint value)
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-ionoscloud.vpnWireguardPeer.VpnWireguardPeer.putEndpoint.parameter.value"></a>
+
+- *Type:* <a href="#@cdktf/provider-ionoscloud.vpnWireguardPeer.VpnWireguardPeerEndpoint">VpnWireguardPeerEndpoint</a>
+
+---
+
+##### `resetDescription` <a name="resetDescription" id="@cdktf/provider-ionoscloud.vpnWireguardPeer.VpnWireguardPeer.resetDescription"></a>
+
+```java
+public void resetDescription()
+```
+
+##### `resetEndpoint` <a name="resetEndpoint" id="@cdktf/provider-ionoscloud.vpnWireguardPeer.VpnWireguardPeer.resetEndpoint"></a>
+
+```java
+public void resetEndpoint()
+```
+
+##### `resetId` <a name="resetId" id="@cdktf/provider-ionoscloud.vpnWireguardPeer.VpnWireguardPeer.resetId"></a>
+
+```java
+public void resetId()
+```
+
+#### Static Functions <a name="Static Functions" id="Static Functions"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-ionoscloud.vpnWireguardPeer.VpnWireguardPeer.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktf/provider-ionoscloud.vpnWireguardPeer.VpnWireguardPeer.isTerraformElement">isTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.vpnWireguardPeer.VpnWireguardPeer.isTerraformResource">isTerraformResource</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.vpnWireguardPeer.VpnWireguardPeer.generateConfigForImport">generateConfigForImport</a></code> | Generates CDKTF code for importing a VpnWireguardPeer resource upon running "cdktf plan <stack-name>". |
+
+---
+
+##### `isConstruct` <a name="isConstruct" id="@cdktf/provider-ionoscloud.vpnWireguardPeer.VpnWireguardPeer.isConstruct"></a>
+
+```java
+import com.hashicorp.cdktf.providers.ionoscloud.vpn_wireguard_peer.VpnWireguardPeer;
+
+VpnWireguardPeer.isConstruct(java.lang.Object x)
+```
+
+Checks if `x` is a construct.
+
+Use this method instead of `instanceof` to properly detect `Construct`
+instances, even when the construct library is symlinked.
+
+Explanation: in JavaScript, multiple copies of the `constructs` library on
+disk are seen as independent, completely different libraries. As a
+consequence, the class `Construct` in each copy of the `constructs` library
+is seen as a different class, and an instance of one class will not test as
+`instanceof` the other class. `npm install` will not create installations
+like this, but users may manually symlink construct libraries together or
+use a monorepo tool: in those cases, multiple copies of the `constructs`
+library can be accidentally installed, and `instanceof` will behave
+unpredictably. It is safest to avoid using `instanceof`, and using
+this type-testing method instead.
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-ionoscloud.vpnWireguardPeer.VpnWireguardPeer.isConstruct.parameter.x"></a>
+
+- *Type:* java.lang.Object
+
+Any object.
+
+---
+
+##### `isTerraformElement` <a name="isTerraformElement" id="@cdktf/provider-ionoscloud.vpnWireguardPeer.VpnWireguardPeer.isTerraformElement"></a>
+
+```java
+import com.hashicorp.cdktf.providers.ionoscloud.vpn_wireguard_peer.VpnWireguardPeer;
+
+VpnWireguardPeer.isTerraformElement(java.lang.Object x)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-ionoscloud.vpnWireguardPeer.VpnWireguardPeer.isTerraformElement.parameter.x"></a>
+
+- *Type:* java.lang.Object
+
+---
+
+##### `isTerraformResource` <a name="isTerraformResource" id="@cdktf/provider-ionoscloud.vpnWireguardPeer.VpnWireguardPeer.isTerraformResource"></a>
+
+```java
+import com.hashicorp.cdktf.providers.ionoscloud.vpn_wireguard_peer.VpnWireguardPeer;
+
+VpnWireguardPeer.isTerraformResource(java.lang.Object x)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-ionoscloud.vpnWireguardPeer.VpnWireguardPeer.isTerraformResource.parameter.x"></a>
+
+- *Type:* java.lang.Object
+
+---
+
+##### `generateConfigForImport` <a name="generateConfigForImport" id="@cdktf/provider-ionoscloud.vpnWireguardPeer.VpnWireguardPeer.generateConfigForImport"></a>
+
+```java
+import com.hashicorp.cdktf.providers.ionoscloud.vpn_wireguard_peer.VpnWireguardPeer;
+
+VpnWireguardPeer.generateConfigForImport(Construct scope, java.lang.String importToId, java.lang.String importFromId),VpnWireguardPeer.generateConfigForImport(Construct scope, java.lang.String importToId, java.lang.String importFromId, TerraformProvider provider)
+```
+
+Generates CDKTF code for importing a VpnWireguardPeer resource upon running "cdktf plan <stack-name>".
+
+###### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-ionoscloud.vpnWireguardPeer.VpnWireguardPeer.generateConfigForImport.parameter.scope"></a>
+
+- *Type:* software.constructs.Construct
+
+The scope in which to define this construct.
+
+---
+
+###### `importToId`<sup>Required</sup> <a name="importToId" id="@cdktf/provider-ionoscloud.vpnWireguardPeer.VpnWireguardPeer.generateConfigForImport.parameter.importToId"></a>
+
+- *Type:* java.lang.String
+
+The construct id used in the generated config for the VpnWireguardPeer to import.
+
+---
+
+###### `importFromId`<sup>Required</sup> <a name="importFromId" id="@cdktf/provider-ionoscloud.vpnWireguardPeer.VpnWireguardPeer.generateConfigForImport.parameter.importFromId"></a>
+
+- *Type:* java.lang.String
+
+The id of the existing VpnWireguardPeer that should be imported.
+
+Refer to the {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.0/docs/resources/vpn_wireguard_peer#import import section} in the documentation of this resource for the id to use
+
+---
+
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-ionoscloud.vpnWireguardPeer.VpnWireguardPeer.generateConfigForImport.parameter.provider"></a>
+
+- *Type:* com.hashicorp.cdktf.TerraformProvider
+
+? Optional instance of the provider where the VpnWireguardPeer to import is found.
+
+---
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-ionoscloud.vpnWireguardPeer.VpnWireguardPeer.property.node">node</a></code> | <code>software.constructs.Node</code> | The tree node. |
+| <code><a href="#@cdktf/provider-ionoscloud.vpnWireguardPeer.VpnWireguardPeer.property.cdktfStack">cdktfStack</a></code> | <code>com.hashicorp.cdktf.TerraformStack</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.vpnWireguardPeer.VpnWireguardPeer.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.vpnWireguardPeer.VpnWireguardPeer.property.friendlyUniqueId">friendlyUniqueId</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.vpnWireguardPeer.VpnWireguardPeer.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>java.util.Map<java.lang.String, java.lang.Object></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.vpnWireguardPeer.VpnWireguardPeer.property.terraformResourceType">terraformResourceType</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.vpnWireguardPeer.VpnWireguardPeer.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>com.hashicorp.cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.vpnWireguardPeer.VpnWireguardPeer.property.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.vpnWireguardPeer.VpnWireguardPeer.property.count">count</a></code> | <code>java.lang.Number OR com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.vpnWireguardPeer.VpnWireguardPeer.property.dependsOn">dependsOn</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.vpnWireguardPeer.VpnWireguardPeer.property.forEach">forEach</a></code> | <code>com.hashicorp.cdktf.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.vpnWireguardPeer.VpnWireguardPeer.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.vpnWireguardPeer.VpnWireguardPeer.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.vpnWireguardPeer.VpnWireguardPeer.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.vpnWireguardPeer.VpnWireguardPeer.property.endpoint">endpoint</a></code> | <code><a href="#@cdktf/provider-ionoscloud.vpnWireguardPeer.VpnWireguardPeerEndpointOutputReference">VpnWireguardPeerEndpointOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.vpnWireguardPeer.VpnWireguardPeer.property.status">status</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.vpnWireguardPeer.VpnWireguardPeer.property.allowedIpsInput">allowedIpsInput</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.vpnWireguardPeer.VpnWireguardPeer.property.descriptionInput">descriptionInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.vpnWireguardPeer.VpnWireguardPeer.property.endpointInput">endpointInput</a></code> | <code><a href="#@cdktf/provider-ionoscloud.vpnWireguardPeer.VpnWireguardPeerEndpoint">VpnWireguardPeerEndpoint</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.vpnWireguardPeer.VpnWireguardPeer.property.gatewayIdInput">gatewayIdInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.vpnWireguardPeer.VpnWireguardPeer.property.idInput">idInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.vpnWireguardPeer.VpnWireguardPeer.property.locationInput">locationInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.vpnWireguardPeer.VpnWireguardPeer.property.nameInput">nameInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.vpnWireguardPeer.VpnWireguardPeer.property.publicKeyInput">publicKeyInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.vpnWireguardPeer.VpnWireguardPeer.property.allowedIps">allowedIps</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.vpnWireguardPeer.VpnWireguardPeer.property.description">description</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.vpnWireguardPeer.VpnWireguardPeer.property.gatewayId">gatewayId</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.vpnWireguardPeer.VpnWireguardPeer.property.id">id</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.vpnWireguardPeer.VpnWireguardPeer.property.location">location</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.vpnWireguardPeer.VpnWireguardPeer.property.name">name</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.vpnWireguardPeer.VpnWireguardPeer.property.publicKey">publicKey</a></code> | <code>java.lang.String</code> | *No description.* |
+
+---
+
+##### `node`<sup>Required</sup> <a name="node" id="@cdktf/provider-ionoscloud.vpnWireguardPeer.VpnWireguardPeer.property.node"></a>
+
+```java
+public Node getNode();
+```
+
+- *Type:* software.constructs.Node
+
+The tree node.
+
+---
+
+##### `cdktfStack`<sup>Required</sup> <a name="cdktfStack" id="@cdktf/provider-ionoscloud.vpnWireguardPeer.VpnWireguardPeer.property.cdktfStack"></a>
+
+```java
+public TerraformStack getCdktfStack();
+```
+
+- *Type:* com.hashicorp.cdktf.TerraformStack
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-ionoscloud.vpnWireguardPeer.VpnWireguardPeer.property.fqn"></a>
+
+```java
+public java.lang.String getFqn();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `friendlyUniqueId`<sup>Required</sup> <a name="friendlyUniqueId" id="@cdktf/provider-ionoscloud.vpnWireguardPeer.VpnWireguardPeer.property.friendlyUniqueId"></a>
+
+```java
+public java.lang.String getFriendlyUniqueId();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `terraformMetaArguments`<sup>Required</sup> <a name="terraformMetaArguments" id="@cdktf/provider-ionoscloud.vpnWireguardPeer.VpnWireguardPeer.property.terraformMetaArguments"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Object> getTerraformMetaArguments();
+```
+
+- *Type:* java.util.Map<java.lang.String, java.lang.Object>
+
+---
+
+##### `terraformResourceType`<sup>Required</sup> <a name="terraformResourceType" id="@cdktf/provider-ionoscloud.vpnWireguardPeer.VpnWireguardPeer.property.terraformResourceType"></a>
+
+```java
+public java.lang.String getTerraformResourceType();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `terraformGeneratorMetadata`<sup>Optional</sup> <a name="terraformGeneratorMetadata" id="@cdktf/provider-ionoscloud.vpnWireguardPeer.VpnWireguardPeer.property.terraformGeneratorMetadata"></a>
+
+```java
+public TerraformProviderGeneratorMetadata getTerraformGeneratorMetadata();
+```
+
+- *Type:* com.hashicorp.cdktf.TerraformProviderGeneratorMetadata
+
+---
+
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-ionoscloud.vpnWireguardPeer.VpnWireguardPeer.property.connection"></a>
+
+```java
+public java.lang.Object getConnection();
+```
+
+- *Type:* com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection
+
+---
+
+##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-ionoscloud.vpnWireguardPeer.VpnWireguardPeer.property.count"></a>
+
+```java
+public java.lang.Object getCount();
+```
+
+- *Type:* java.lang.Number OR com.hashicorp.cdktf.TerraformCount
+
+---
+
+##### `dependsOn`<sup>Optional</sup> <a name="dependsOn" id="@cdktf/provider-ionoscloud.vpnWireguardPeer.VpnWireguardPeer.property.dependsOn"></a>
+
+```java
+public java.util.List<java.lang.String> getDependsOn();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+---
+
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-ionoscloud.vpnWireguardPeer.VpnWireguardPeer.property.forEach"></a>
+
+```java
+public ITerraformIterator getForEach();
+```
+
+- *Type:* com.hashicorp.cdktf.ITerraformIterator
+
+---
+
+##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-ionoscloud.vpnWireguardPeer.VpnWireguardPeer.property.lifecycle"></a>
+
+```java
+public TerraformResourceLifecycle getLifecycle();
+```
+
+- *Type:* com.hashicorp.cdktf.TerraformResourceLifecycle
+
+---
+
+##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-ionoscloud.vpnWireguardPeer.VpnWireguardPeer.property.provider"></a>
+
+```java
+public TerraformProvider getProvider();
+```
+
+- *Type:* com.hashicorp.cdktf.TerraformProvider
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-ionoscloud.vpnWireguardPeer.VpnWireguardPeer.property.provisioners"></a>
+
+```java
+public java.lang.Object getProvisioners();
+```
+
+- *Type:* java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner>
+
+---
+
+##### `endpoint`<sup>Required</sup> <a name="endpoint" id="@cdktf/provider-ionoscloud.vpnWireguardPeer.VpnWireguardPeer.property.endpoint"></a>
+
+```java
+public VpnWireguardPeerEndpointOutputReference getEndpoint();
+```
+
+- *Type:* <a href="#@cdktf/provider-ionoscloud.vpnWireguardPeer.VpnWireguardPeerEndpointOutputReference">VpnWireguardPeerEndpointOutputReference</a>
+
+---
+
+##### `status`<sup>Required</sup> <a name="status" id="@cdktf/provider-ionoscloud.vpnWireguardPeer.VpnWireguardPeer.property.status"></a>
+
+```java
+public java.lang.String getStatus();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `allowedIpsInput`<sup>Optional</sup> <a name="allowedIpsInput" id="@cdktf/provider-ionoscloud.vpnWireguardPeer.VpnWireguardPeer.property.allowedIpsInput"></a>
+
+```java
+public java.util.List<java.lang.String> getAllowedIpsInput();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+---
+
+##### `descriptionInput`<sup>Optional</sup> <a name="descriptionInput" id="@cdktf/provider-ionoscloud.vpnWireguardPeer.VpnWireguardPeer.property.descriptionInput"></a>
+
+```java
+public java.lang.String getDescriptionInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `endpointInput`<sup>Optional</sup> <a name="endpointInput" id="@cdktf/provider-ionoscloud.vpnWireguardPeer.VpnWireguardPeer.property.endpointInput"></a>
+
+```java
+public VpnWireguardPeerEndpoint getEndpointInput();
+```
+
+- *Type:* <a href="#@cdktf/provider-ionoscloud.vpnWireguardPeer.VpnWireguardPeerEndpoint">VpnWireguardPeerEndpoint</a>
+
+---
+
+##### `gatewayIdInput`<sup>Optional</sup> <a name="gatewayIdInput" id="@cdktf/provider-ionoscloud.vpnWireguardPeer.VpnWireguardPeer.property.gatewayIdInput"></a>
+
+```java
+public java.lang.String getGatewayIdInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `idInput`<sup>Optional</sup> <a name="idInput" id="@cdktf/provider-ionoscloud.vpnWireguardPeer.VpnWireguardPeer.property.idInput"></a>
+
+```java
+public java.lang.String getIdInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `locationInput`<sup>Optional</sup> <a name="locationInput" id="@cdktf/provider-ionoscloud.vpnWireguardPeer.VpnWireguardPeer.property.locationInput"></a>
+
+```java
+public java.lang.String getLocationInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `nameInput`<sup>Optional</sup> <a name="nameInput" id="@cdktf/provider-ionoscloud.vpnWireguardPeer.VpnWireguardPeer.property.nameInput"></a>
+
+```java
+public java.lang.String getNameInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `publicKeyInput`<sup>Optional</sup> <a name="publicKeyInput" id="@cdktf/provider-ionoscloud.vpnWireguardPeer.VpnWireguardPeer.property.publicKeyInput"></a>
+
+```java
+public java.lang.String getPublicKeyInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `allowedIps`<sup>Required</sup> <a name="allowedIps" id="@cdktf/provider-ionoscloud.vpnWireguardPeer.VpnWireguardPeer.property.allowedIps"></a>
+
+```java
+public java.util.List<java.lang.String> getAllowedIps();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+---
+
+##### `description`<sup>Required</sup> <a name="description" id="@cdktf/provider-ionoscloud.vpnWireguardPeer.VpnWireguardPeer.property.description"></a>
+
+```java
+public java.lang.String getDescription();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `gatewayId`<sup>Required</sup> <a name="gatewayId" id="@cdktf/provider-ionoscloud.vpnWireguardPeer.VpnWireguardPeer.property.gatewayId"></a>
+
+```java
+public java.lang.String getGatewayId();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-ionoscloud.vpnWireguardPeer.VpnWireguardPeer.property.id"></a>
+
+```java
+public java.lang.String getId();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `location`<sup>Required</sup> <a name="location" id="@cdktf/provider-ionoscloud.vpnWireguardPeer.VpnWireguardPeer.property.location"></a>
+
+```java
+public java.lang.String getLocation();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `name`<sup>Required</sup> <a name="name" id="@cdktf/provider-ionoscloud.vpnWireguardPeer.VpnWireguardPeer.property.name"></a>
+
+```java
+public java.lang.String getName();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `publicKey`<sup>Required</sup> <a name="publicKey" id="@cdktf/provider-ionoscloud.vpnWireguardPeer.VpnWireguardPeer.property.publicKey"></a>
+
+```java
+public java.lang.String getPublicKey();
+```
+
+- *Type:* java.lang.String
+
+---
+
+#### Constants <a name="Constants" id="Constants"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-ionoscloud.vpnWireguardPeer.VpnWireguardPeer.property.tfResourceType">tfResourceType</a></code> | <code>java.lang.String</code> | *No description.* |
+
+---
+
+##### `tfResourceType`<sup>Required</sup> <a name="tfResourceType" id="@cdktf/provider-ionoscloud.vpnWireguardPeer.VpnWireguardPeer.property.tfResourceType"></a>
+
+```java
+public java.lang.String getTfResourceType();
+```
+
+- *Type:* java.lang.String
+
+---
+
+## Structs <a name="Structs" id="Structs"></a>
+
+### VpnWireguardPeerConfig <a name="VpnWireguardPeerConfig" id="@cdktf/provider-ionoscloud.vpnWireguardPeer.VpnWireguardPeerConfig"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-ionoscloud.vpnWireguardPeer.VpnWireguardPeerConfig.Initializer"></a>
+
+```java
+import com.hashicorp.cdktf.providers.ionoscloud.vpn_wireguard_peer.VpnWireguardPeerConfig;
+
+VpnWireguardPeerConfig.builder()
+//  .connection(SSHProvisionerConnection)
+//  .connection(WinrmProvisionerConnection)
+//  .count(java.lang.Number)
+//  .count(TerraformCount)
+//  .dependsOn(java.util.List<ITerraformDependable>)
+//  .forEach(ITerraformIterator)
+//  .lifecycle(TerraformResourceLifecycle)
+//  .provider(TerraformProvider)
+//  .provisioners(java.util.List<FileProvisioner)
+//  .provisioners(LocalExecProvisioner)
+//  .provisioners(RemoteExecProvisioner>)
+    .allowedIps(java.util.List<java.lang.String>)
+    .gatewayId(java.lang.String)
+    .location(java.lang.String)
+    .name(java.lang.String)
+    .publicKey(java.lang.String)
+//  .description(java.lang.String)
+//  .endpoint(VpnWireguardPeerEndpoint)
+//  .id(java.lang.String)
+    .build();
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-ionoscloud.vpnWireguardPeer.VpnWireguardPeerConfig.property.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.vpnWireguardPeer.VpnWireguardPeerConfig.property.count">count</a></code> | <code>java.lang.Number OR com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.vpnWireguardPeer.VpnWireguardPeerConfig.property.dependsOn">dependsOn</a></code> | <code>java.util.List<com.hashicorp.cdktf.ITerraformDependable></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.vpnWireguardPeer.VpnWireguardPeerConfig.property.forEach">forEach</a></code> | <code>com.hashicorp.cdktf.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.vpnWireguardPeer.VpnWireguardPeerConfig.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.vpnWireguardPeer.VpnWireguardPeerConfig.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.vpnWireguardPeer.VpnWireguardPeerConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.vpnWireguardPeer.VpnWireguardPeerConfig.property.allowedIps">allowedIps</a></code> | <code>java.util.List<java.lang.String></code> | The subnet CIDRs that are allowed to connect to the WireGuard Gateway. |
+| <code><a href="#@cdktf/provider-ionoscloud.vpnWireguardPeer.VpnWireguardPeerConfig.property.gatewayId">gatewayId</a></code> | <code>java.lang.String</code> | The ID of the WireGuard Peer that the peer will connect to. |
+| <code><a href="#@cdktf/provider-ionoscloud.vpnWireguardPeer.VpnWireguardPeerConfig.property.location">location</a></code> | <code>java.lang.String</code> | The location of the WireGuard Peer. Supported locations: de/fra, de/txl. |
+| <code><a href="#@cdktf/provider-ionoscloud.vpnWireguardPeer.VpnWireguardPeerConfig.property.name">name</a></code> | <code>java.lang.String</code> | The human readable name of your WireGuard Gateway Peer. |
+| <code><a href="#@cdktf/provider-ionoscloud.vpnWireguardPeer.VpnWireguardPeerConfig.property.publicKey">publicKey</a></code> | <code>java.lang.String</code> | WireGuard public key of the connecting peer. |
+| <code><a href="#@cdktf/provider-ionoscloud.vpnWireguardPeer.VpnWireguardPeerConfig.property.description">description</a></code> | <code>java.lang.String</code> | Human readable description of the WireGuard Gateway Peer. |
+| <code><a href="#@cdktf/provider-ionoscloud.vpnWireguardPeer.VpnWireguardPeerConfig.property.endpoint">endpoint</a></code> | <code><a href="#@cdktf/provider-ionoscloud.vpnWireguardPeer.VpnWireguardPeerEndpoint">VpnWireguardPeerEndpoint</a></code> | endpoint block. |
+| <code><a href="#@cdktf/provider-ionoscloud.vpnWireguardPeer.VpnWireguardPeerConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.0/docs/resources/vpn_wireguard_peer#id VpnWireguardPeer#id}. |
+
+---
+
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-ionoscloud.vpnWireguardPeer.VpnWireguardPeerConfig.property.connection"></a>
+
+```java
+public java.lang.Object getConnection();
+```
+
+- *Type:* com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection
+
+---
+
+##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-ionoscloud.vpnWireguardPeer.VpnWireguardPeerConfig.property.count"></a>
+
+```java
+public java.lang.Object getCount();
+```
+
+- *Type:* java.lang.Number OR com.hashicorp.cdktf.TerraformCount
+
+---
+
+##### `dependsOn`<sup>Optional</sup> <a name="dependsOn" id="@cdktf/provider-ionoscloud.vpnWireguardPeer.VpnWireguardPeerConfig.property.dependsOn"></a>
+
+```java
+public java.util.List<ITerraformDependable> getDependsOn();
+```
+
+- *Type:* java.util.List<com.hashicorp.cdktf.ITerraformDependable>
+
+---
+
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-ionoscloud.vpnWireguardPeer.VpnWireguardPeerConfig.property.forEach"></a>
+
+```java
+public ITerraformIterator getForEach();
+```
+
+- *Type:* com.hashicorp.cdktf.ITerraformIterator
+
+---
+
+##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-ionoscloud.vpnWireguardPeer.VpnWireguardPeerConfig.property.lifecycle"></a>
+
+```java
+public TerraformResourceLifecycle getLifecycle();
+```
+
+- *Type:* com.hashicorp.cdktf.TerraformResourceLifecycle
+
+---
+
+##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-ionoscloud.vpnWireguardPeer.VpnWireguardPeerConfig.property.provider"></a>
+
+```java
+public TerraformProvider getProvider();
+```
+
+- *Type:* com.hashicorp.cdktf.TerraformProvider
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-ionoscloud.vpnWireguardPeer.VpnWireguardPeerConfig.property.provisioners"></a>
+
+```java
+public java.lang.Object getProvisioners();
+```
+
+- *Type:* java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner>
+
+---
+
+##### `allowedIps`<sup>Required</sup> <a name="allowedIps" id="@cdktf/provider-ionoscloud.vpnWireguardPeer.VpnWireguardPeerConfig.property.allowedIps"></a>
+
+```java
+public java.util.List<java.lang.String> getAllowedIps();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+The subnet CIDRs that are allowed to connect to the WireGuard Gateway.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.0/docs/resources/vpn_wireguard_peer#allowed_ips VpnWireguardPeer#allowed_ips}
+
+---
+
+##### `gatewayId`<sup>Required</sup> <a name="gatewayId" id="@cdktf/provider-ionoscloud.vpnWireguardPeer.VpnWireguardPeerConfig.property.gatewayId"></a>
+
+```java
+public java.lang.String getGatewayId();
+```
+
+- *Type:* java.lang.String
+
+The ID of the WireGuard Peer that the peer will connect to.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.0/docs/resources/vpn_wireguard_peer#gateway_id VpnWireguardPeer#gateway_id}
+
+---
+
+##### `location`<sup>Required</sup> <a name="location" id="@cdktf/provider-ionoscloud.vpnWireguardPeer.VpnWireguardPeerConfig.property.location"></a>
+
+```java
+public java.lang.String getLocation();
+```
+
+- *Type:* java.lang.String
+
+The location of the WireGuard Peer. Supported locations: de/fra, de/txl.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.0/docs/resources/vpn_wireguard_peer#location VpnWireguardPeer#location}
+
+---
+
+##### `name`<sup>Required</sup> <a name="name" id="@cdktf/provider-ionoscloud.vpnWireguardPeer.VpnWireguardPeerConfig.property.name"></a>
+
+```java
+public java.lang.String getName();
+```
+
+- *Type:* java.lang.String
+
+The human readable name of your WireGuard Gateway Peer.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.0/docs/resources/vpn_wireguard_peer#name VpnWireguardPeer#name}
+
+---
+
+##### `publicKey`<sup>Required</sup> <a name="publicKey" id="@cdktf/provider-ionoscloud.vpnWireguardPeer.VpnWireguardPeerConfig.property.publicKey"></a>
+
+```java
+public java.lang.String getPublicKey();
+```
+
+- *Type:* java.lang.String
+
+WireGuard public key of the connecting peer.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.0/docs/resources/vpn_wireguard_peer#public_key VpnWireguardPeer#public_key}
+
+---
+
+##### `description`<sup>Optional</sup> <a name="description" id="@cdktf/provider-ionoscloud.vpnWireguardPeer.VpnWireguardPeerConfig.property.description"></a>
+
+```java
+public java.lang.String getDescription();
+```
+
+- *Type:* java.lang.String
+
+Human readable description of the WireGuard Gateway Peer.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.0/docs/resources/vpn_wireguard_peer#description VpnWireguardPeer#description}
+
+---
+
+##### `endpoint`<sup>Optional</sup> <a name="endpoint" id="@cdktf/provider-ionoscloud.vpnWireguardPeer.VpnWireguardPeerConfig.property.endpoint"></a>
+
+```java
+public VpnWireguardPeerEndpoint getEndpoint();
+```
+
+- *Type:* <a href="#@cdktf/provider-ionoscloud.vpnWireguardPeer.VpnWireguardPeerEndpoint">VpnWireguardPeerEndpoint</a>
+
+endpoint block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.0/docs/resources/vpn_wireguard_peer#endpoint VpnWireguardPeer#endpoint}
+
+---
+
+##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-ionoscloud.vpnWireguardPeer.VpnWireguardPeerConfig.property.id"></a>
+
+```java
+public java.lang.String getId();
+```
+
+- *Type:* java.lang.String
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.0/docs/resources/vpn_wireguard_peer#id VpnWireguardPeer#id}.
+
+Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+### VpnWireguardPeerEndpoint <a name="VpnWireguardPeerEndpoint" id="@cdktf/provider-ionoscloud.vpnWireguardPeer.VpnWireguardPeerEndpoint"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-ionoscloud.vpnWireguardPeer.VpnWireguardPeerEndpoint.Initializer"></a>
+
+```java
+import com.hashicorp.cdktf.providers.ionoscloud.vpn_wireguard_peer.VpnWireguardPeerEndpoint;
+
+VpnWireguardPeerEndpoint.builder()
+    .host(java.lang.String)
+//  .port(java.lang.Number)
+    .build();
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-ionoscloud.vpnWireguardPeer.VpnWireguardPeerEndpoint.property.host">host</a></code> | <code>java.lang.String</code> | Hostname or IPV4 address that the WireGuard Server will connect to. |
+| <code><a href="#@cdktf/provider-ionoscloud.vpnWireguardPeer.VpnWireguardPeerEndpoint.property.port">port</a></code> | <code>java.lang.Number</code> | Port that the WireGuard Server will connect to. |
+
+---
+
+##### `host`<sup>Required</sup> <a name="host" id="@cdktf/provider-ionoscloud.vpnWireguardPeer.VpnWireguardPeerEndpoint.property.host"></a>
+
+```java
+public java.lang.String getHost();
+```
+
+- *Type:* java.lang.String
+
+Hostname or IPV4 address that the WireGuard Server will connect to.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.0/docs/resources/vpn_wireguard_peer#host VpnWireguardPeer#host}
+
+---
+
+##### `port`<sup>Optional</sup> <a name="port" id="@cdktf/provider-ionoscloud.vpnWireguardPeer.VpnWireguardPeerEndpoint.property.port"></a>
+
+```java
+public java.lang.Number getPort();
+```
+
+- *Type:* java.lang.Number
+
+Port that the WireGuard Server will connect to.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.0/docs/resources/vpn_wireguard_peer#port VpnWireguardPeer#port}
+
+---
+
+## Classes <a name="Classes" id="Classes"></a>
+
+### VpnWireguardPeerEndpointOutputReference <a name="VpnWireguardPeerEndpointOutputReference" id="@cdktf/provider-ionoscloud.vpnWireguardPeer.VpnWireguardPeerEndpointOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.vpnWireguardPeer.VpnWireguardPeerEndpointOutputReference.Initializer"></a>
+
+```java
+import com.hashicorp.cdktf.providers.ionoscloud.vpn_wireguard_peer.VpnWireguardPeerEndpointOutputReference;
+
+new VpnWireguardPeerEndpointOutputReference(IInterpolatingParent terraformResource, java.lang.String terraformAttribute);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-ionoscloud.vpnWireguardPeer.VpnWireguardPeerEndpointOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>com.hashicorp.cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-ionoscloud.vpnWireguardPeer.VpnWireguardPeerEndpointOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-ionoscloud.vpnWireguardPeer.VpnWireguardPeerEndpointOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* com.hashicorp.cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-ionoscloud.vpnWireguardPeer.VpnWireguardPeerEndpointOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-ionoscloud.vpnWireguardPeer.VpnWireguardPeerEndpointOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.vpnWireguardPeer.VpnWireguardPeerEndpointOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.vpnWireguardPeer.VpnWireguardPeerEndpointOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.vpnWireguardPeer.VpnWireguardPeerEndpointOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.vpnWireguardPeer.VpnWireguardPeerEndpointOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.vpnWireguardPeer.VpnWireguardPeerEndpointOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.vpnWireguardPeer.VpnWireguardPeerEndpointOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.vpnWireguardPeer.VpnWireguardPeerEndpointOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.vpnWireguardPeer.VpnWireguardPeerEndpointOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.vpnWireguardPeer.VpnWireguardPeerEndpointOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.vpnWireguardPeer.VpnWireguardPeerEndpointOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.vpnWireguardPeer.VpnWireguardPeerEndpointOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-ionoscloud.vpnWireguardPeer.VpnWireguardPeerEndpointOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-ionoscloud.vpnWireguardPeer.VpnWireguardPeerEndpointOutputReference.resetPort">resetPort</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktf/provider-ionoscloud.vpnWireguardPeer.VpnWireguardPeerEndpointOutputReference.computeFqn"></a>
+
+```java
+public java.lang.String computeFqn()
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-ionoscloud.vpnWireguardPeer.VpnWireguardPeerEndpointOutputReference.getAnyMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Object> getAnyMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-ionoscloud.vpnWireguardPeer.VpnWireguardPeerEndpointOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-ionoscloud.vpnWireguardPeer.VpnWireguardPeerEndpointOutputReference.getBooleanAttribute"></a>
+
+```java
+public IResolvable getBooleanAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-ionoscloud.vpnWireguardPeer.VpnWireguardPeerEndpointOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-ionoscloud.vpnWireguardPeer.VpnWireguardPeerEndpointOutputReference.getBooleanMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Boolean> getBooleanMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-ionoscloud.vpnWireguardPeer.VpnWireguardPeerEndpointOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-ionoscloud.vpnWireguardPeer.VpnWireguardPeerEndpointOutputReference.getListAttribute"></a>
+
+```java
+public java.util.List<java.lang.String> getListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-ionoscloud.vpnWireguardPeer.VpnWireguardPeerEndpointOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-ionoscloud.vpnWireguardPeer.VpnWireguardPeerEndpointOutputReference.getNumberAttribute"></a>
+
+```java
+public java.lang.Number getNumberAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-ionoscloud.vpnWireguardPeer.VpnWireguardPeerEndpointOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-ionoscloud.vpnWireguardPeer.VpnWireguardPeerEndpointOutputReference.getNumberListAttribute"></a>
+
+```java
+public java.util.List<java.lang.Number> getNumberListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-ionoscloud.vpnWireguardPeer.VpnWireguardPeerEndpointOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-ionoscloud.vpnWireguardPeer.VpnWireguardPeerEndpointOutputReference.getNumberMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Number> getNumberMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-ionoscloud.vpnWireguardPeer.VpnWireguardPeerEndpointOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-ionoscloud.vpnWireguardPeer.VpnWireguardPeerEndpointOutputReference.getStringAttribute"></a>
+
+```java
+public java.lang.String getStringAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-ionoscloud.vpnWireguardPeer.VpnWireguardPeerEndpointOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-ionoscloud.vpnWireguardPeer.VpnWireguardPeerEndpointOutputReference.getStringMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.String> getStringMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-ionoscloud.vpnWireguardPeer.VpnWireguardPeerEndpointOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-ionoscloud.vpnWireguardPeer.VpnWireguardPeerEndpointOutputReference.interpolationForAttribute"></a>
+
+```java
+public IResolvable interpolationForAttribute(java.lang.String property)
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-ionoscloud.vpnWireguardPeer.VpnWireguardPeerEndpointOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktf/provider-ionoscloud.vpnWireguardPeer.VpnWireguardPeerEndpointOutputReference.resolve"></a>
+
+```java
+public java.lang.Object resolve(IResolveContext _context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-ionoscloud.vpnWireguardPeer.VpnWireguardPeerEndpointOutputReference.resolve.parameter._context"></a>
+
+- *Type:* com.hashicorp.cdktf.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktf/provider-ionoscloud.vpnWireguardPeer.VpnWireguardPeerEndpointOutputReference.toString"></a>
+
+```java
+public java.lang.String toString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `resetPort` <a name="resetPort" id="@cdktf/provider-ionoscloud.vpnWireguardPeer.VpnWireguardPeerEndpointOutputReference.resetPort"></a>
+
+```java
+public void resetPort()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-ionoscloud.vpnWireguardPeer.VpnWireguardPeerEndpointOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-ionoscloud.vpnWireguardPeer.VpnWireguardPeerEndpointOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.vpnWireguardPeer.VpnWireguardPeerEndpointOutputReference.property.hostInput">hostInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.vpnWireguardPeer.VpnWireguardPeerEndpointOutputReference.property.portInput">portInput</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.vpnWireguardPeer.VpnWireguardPeerEndpointOutputReference.property.host">host</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.vpnWireguardPeer.VpnWireguardPeerEndpointOutputReference.property.port">port</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.vpnWireguardPeer.VpnWireguardPeerEndpointOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-ionoscloud.vpnWireguardPeer.VpnWireguardPeerEndpoint">VpnWireguardPeerEndpoint</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktf/provider-ionoscloud.vpnWireguardPeer.VpnWireguardPeerEndpointOutputReference.property.creationStack"></a>
+
+```java
+public java.util.List<java.lang.String> getCreationStack();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-ionoscloud.vpnWireguardPeer.VpnWireguardPeerEndpointOutputReference.property.fqn"></a>
+
+```java
+public java.lang.String getFqn();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `hostInput`<sup>Optional</sup> <a name="hostInput" id="@cdktf/provider-ionoscloud.vpnWireguardPeer.VpnWireguardPeerEndpointOutputReference.property.hostInput"></a>
+
+```java
+public java.lang.String getHostInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `portInput`<sup>Optional</sup> <a name="portInput" id="@cdktf/provider-ionoscloud.vpnWireguardPeer.VpnWireguardPeerEndpointOutputReference.property.portInput"></a>
+
+```java
+public java.lang.Number getPortInput();
+```
+
+- *Type:* java.lang.Number
+
+---
+
+##### `host`<sup>Required</sup> <a name="host" id="@cdktf/provider-ionoscloud.vpnWireguardPeer.VpnWireguardPeerEndpointOutputReference.property.host"></a>
+
+```java
+public java.lang.String getHost();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `port`<sup>Required</sup> <a name="port" id="@cdktf/provider-ionoscloud.vpnWireguardPeer.VpnWireguardPeerEndpointOutputReference.property.port"></a>
+
+```java
+public java.lang.Number getPort();
+```
+
+- *Type:* java.lang.Number
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-ionoscloud.vpnWireguardPeer.VpnWireguardPeerEndpointOutputReference.property.internalValue"></a>
+
+```java
+public VpnWireguardPeerEndpoint getInternalValue();
+```
+
+- *Type:* <a href="#@cdktf/provider-ionoscloud.vpnWireguardPeer.VpnWireguardPeerEndpoint">VpnWireguardPeerEndpoint</a>
+
+---
+
+
+

@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.19/docs/resources/application_loadbalancer
+// https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.0/docs/resources/application_loadbalancer
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,11 +13,17 @@ import * as cdktf from 'cdktf';
 
 export interface ApplicationLoadbalancerConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.19/docs/resources/application_loadbalancer#datacenter_id ApplicationLoadbalancer#datacenter_id}
+  * Turn logging on and off for this product. Default value is 'false'.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.0/docs/resources/application_loadbalancer#central_logging ApplicationLoadbalancer#central_logging}
+  */
+  readonly centralLogging?: boolean | cdktf.IResolvable;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.0/docs/resources/application_loadbalancer#datacenter_id ApplicationLoadbalancer#datacenter_id}
   */
   readonly datacenterId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.19/docs/resources/application_loadbalancer#id ApplicationLoadbalancer#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.0/docs/resources/application_loadbalancer#id ApplicationLoadbalancer#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -26,43 +32,49 @@ export interface ApplicationLoadbalancerConfig extends cdktf.TerraformMetaArgume
   /**
   * Collection of the Application Load Balancer IP addresses. (Inbound and outbound) IPs of the listenerLan are customer-reserved public IPs for the public Load Balancers, and private IPs for the private Load Balancers.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.19/docs/resources/application_loadbalancer#ips ApplicationLoadbalancer#ips}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.0/docs/resources/application_loadbalancer#ips ApplicationLoadbalancer#ips}
   */
   readonly ips?: string[];
   /**
   * Collection of private IP addresses with the subnet mask of the Application Load Balancer. IPs must contain valid a subnet mask. If no IP is provided, the system will generate an IP with /24 subnet.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.19/docs/resources/application_loadbalancer#lb_private_ips ApplicationLoadbalancer#lb_private_ips}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.0/docs/resources/application_loadbalancer#lb_private_ips ApplicationLoadbalancer#lb_private_ips}
   */
   readonly lbPrivateIps?: string[];
   /**
   * ID of the listening (inbound) LAN.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.19/docs/resources/application_loadbalancer#listener_lan ApplicationLoadbalancer#listener_lan}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.0/docs/resources/application_loadbalancer#listener_lan ApplicationLoadbalancer#listener_lan}
   */
   readonly listenerLan: number;
   /**
+  * Specifies the format of the logs.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.0/docs/resources/application_loadbalancer#logging_format ApplicationLoadbalancer#logging_format}
+  */
+  readonly loggingFormat?: string;
+  /**
   * The name of the Application Load Balancer.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.19/docs/resources/application_loadbalancer#name ApplicationLoadbalancer#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.0/docs/resources/application_loadbalancer#name ApplicationLoadbalancer#name}
   */
   readonly name: string;
   /**
   * ID of the balanced private target LAN (outbound).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.19/docs/resources/application_loadbalancer#target_lan ApplicationLoadbalancer#target_lan}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.0/docs/resources/application_loadbalancer#target_lan ApplicationLoadbalancer#target_lan}
   */
   readonly targetLan: number;
   /**
   * flowlog block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.19/docs/resources/application_loadbalancer#flowlog ApplicationLoadbalancer#flowlog}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.0/docs/resources/application_loadbalancer#flowlog ApplicationLoadbalancer#flowlog}
   */
   readonly flowlog?: ApplicationLoadbalancerFlowlog;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.19/docs/resources/application_loadbalancer#timeouts ApplicationLoadbalancer#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.0/docs/resources/application_loadbalancer#timeouts ApplicationLoadbalancer#timeouts}
   */
   readonly timeouts?: ApplicationLoadbalancerTimeouts;
 }
@@ -70,25 +82,25 @@ export interface ApplicationLoadbalancerFlowlog {
   /**
   * Specifies the traffic direction pattern. Valid values: ACCEPTED, REJECTED, ALL. Immutable, forces re-recreation of the nic resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.19/docs/resources/application_loadbalancer#action ApplicationLoadbalancer#action}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.0/docs/resources/application_loadbalancer#action ApplicationLoadbalancer#action}
   */
   readonly action: string;
   /**
   * The S3 bucket name of an existing IONOS Cloud S3 bucket. Immutable, forces re-recreation of the nic resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.19/docs/resources/application_loadbalancer#bucket ApplicationLoadbalancer#bucket}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.0/docs/resources/application_loadbalancer#bucket ApplicationLoadbalancer#bucket}
   */
   readonly bucket: string;
   /**
   * Specifies the traffic direction pattern. Valid values: INGRESS, EGRESS, BIDIRECTIONAL. Immutable, forces re-recreation of the nic resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.19/docs/resources/application_loadbalancer#direction ApplicationLoadbalancer#direction}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.0/docs/resources/application_loadbalancer#direction ApplicationLoadbalancer#direction}
   */
   readonly direction: string;
   /**
   * The resource name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.19/docs/resources/application_loadbalancer#name ApplicationLoadbalancer#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.0/docs/resources/application_loadbalancer#name ApplicationLoadbalancer#name}
   */
   readonly name: string;
 }
@@ -252,19 +264,19 @@ export class ApplicationLoadbalancerFlowlogOutputReference extends cdktf.Complex
 }
 export interface ApplicationLoadbalancerTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.19/docs/resources/application_loadbalancer#create ApplicationLoadbalancer#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.0/docs/resources/application_loadbalancer#create ApplicationLoadbalancer#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.19/docs/resources/application_loadbalancer#default ApplicationLoadbalancer#default}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.0/docs/resources/application_loadbalancer#default ApplicationLoadbalancer#default}
   */
   readonly default?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.19/docs/resources/application_loadbalancer#delete ApplicationLoadbalancer#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.0/docs/resources/application_loadbalancer#delete ApplicationLoadbalancer#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.19/docs/resources/application_loadbalancer#update ApplicationLoadbalancer#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.0/docs/resources/application_loadbalancer#update ApplicationLoadbalancer#update}
   */
   readonly update?: string;
 }
@@ -445,7 +457,7 @@ export class ApplicationLoadbalancerTimeoutsOutputReference extends cdktf.Comple
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.19/docs/resources/application_loadbalancer ionoscloud_application_loadbalancer}
+* Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.0/docs/resources/application_loadbalancer ionoscloud_application_loadbalancer}
 */
 export class ApplicationLoadbalancer extends cdktf.TerraformResource {
 
@@ -461,7 +473,7 @@ export class ApplicationLoadbalancer extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a ApplicationLoadbalancer resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ApplicationLoadbalancer to import
-  * @param importFromId The id of the existing ApplicationLoadbalancer that should be imported. Refer to the {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.19/docs/resources/application_loadbalancer#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ApplicationLoadbalancer that should be imported. Refer to the {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.0/docs/resources/application_loadbalancer#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ApplicationLoadbalancer to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -473,7 +485,7 @@ export class ApplicationLoadbalancer extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.4.19/docs/resources/application_loadbalancer ionoscloud_application_loadbalancer} Resource
+  * Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.0/docs/resources/application_loadbalancer ionoscloud_application_loadbalancer} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -484,7 +496,7 @@ export class ApplicationLoadbalancer extends cdktf.TerraformResource {
       terraformResourceType: 'ionoscloud_application_loadbalancer',
       terraformGeneratorMetadata: {
         providerName: 'ionoscloud',
-        providerVersion: '6.4.19',
+        providerVersion: '6.5.0',
         providerVersionConstraint: '~> 6.2'
       },
       provider: config.provider,
@@ -495,11 +507,13 @@ export class ApplicationLoadbalancer extends cdktf.TerraformResource {
       connection: config.connection,
       forEach: config.forEach
     });
+    this._centralLogging = config.centralLogging;
     this._datacenterId = config.datacenterId;
     this._id = config.id;
     this._ips = config.ips;
     this._lbPrivateIps = config.lbPrivateIps;
     this._listenerLan = config.listenerLan;
+    this._loggingFormat = config.loggingFormat;
     this._name = config.name;
     this._targetLan = config.targetLan;
     this._flowlog.internalValue = config.flowlog;
@@ -509,6 +523,22 @@ export class ApplicationLoadbalancer extends cdktf.TerraformResource {
   // ==========
   // ATTRIBUTES
   // ==========
+
+  // central_logging - computed: false, optional: true, required: false
+  private _centralLogging?: boolean | cdktf.IResolvable; 
+  public get centralLogging() {
+    return this.getBooleanAttribute('central_logging');
+  }
+  public set centralLogging(value: boolean | cdktf.IResolvable) {
+    this._centralLogging = value;
+  }
+  public resetCentralLogging() {
+    this._centralLogging = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get centralLoggingInput() {
+    return this._centralLogging;
+  }
 
   // datacenter_id - computed: false, optional: false, required: true
   private _datacenterId?: string; 
@@ -584,6 +614,22 @@ export class ApplicationLoadbalancer extends cdktf.TerraformResource {
     return this._listenerLan;
   }
 
+  // logging_format - computed: false, optional: true, required: false
+  private _loggingFormat?: string; 
+  public get loggingFormat() {
+    return this.getStringAttribute('logging_format');
+  }
+  public set loggingFormat(value: string) {
+    this._loggingFormat = value;
+  }
+  public resetLoggingFormat() {
+    this._loggingFormat = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get loggingFormatInput() {
+    return this._loggingFormat;
+  }
+
   // name - computed: false, optional: false, required: true
   private _name?: string; 
   public get name() {
@@ -648,11 +694,13 @@ export class ApplicationLoadbalancer extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
+      central_logging: cdktf.booleanToTerraform(this._centralLogging),
       datacenter_id: cdktf.stringToTerraform(this._datacenterId),
       id: cdktf.stringToTerraform(this._id),
       ips: cdktf.listMapper(cdktf.stringToTerraform, false)(this._ips),
       lb_private_ips: cdktf.listMapper(cdktf.stringToTerraform, false)(this._lbPrivateIps),
       listener_lan: cdktf.numberToTerraform(this._listenerLan),
+      logging_format: cdktf.stringToTerraform(this._loggingFormat),
       name: cdktf.stringToTerraform(this._name),
       target_lan: cdktf.numberToTerraform(this._targetLan),
       flowlog: applicationLoadbalancerFlowlogToTerraform(this._flowlog.internalValue),
@@ -662,6 +710,12 @@ export class ApplicationLoadbalancer extends cdktf.TerraformResource {
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
+      central_logging: {
+        value: cdktf.booleanToHclTerraform(this._centralLogging),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
       datacenter_id: {
         value: cdktf.stringToHclTerraform(this._datacenterId),
         isBlock: false,
@@ -691,6 +745,12 @@ export class ApplicationLoadbalancer extends cdktf.TerraformResource {
         isBlock: false,
         type: "simple",
         storageClassType: "number",
+      },
+      logging_format: {
+        value: cdktf.stringToHclTerraform(this._loggingFormat),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
       },
       name: {
         value: cdktf.stringToHclTerraform(this._name),
