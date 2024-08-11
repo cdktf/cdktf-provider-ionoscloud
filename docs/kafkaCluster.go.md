@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionosclo
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.kafkaCluster.KafkaCluster.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/kafkacluster"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/kafkacluster"
 
 kafkacluster.NewKafkaCluster(scope Construct, id *string, config KafkaClusterConfig) KafkaCluster
 ```
@@ -411,7 +411,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-ionoscloud.kafkaCluster.KafkaCluster.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/kafkacluster"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/kafkacluster"
 
 kafkacluster.KafkaCluster_IsConstruct(x interface{}) *bool
 ```
@@ -443,7 +443,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-ionoscloud.kafkaCluster.KafkaCluster.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/kafkacluster"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/kafkacluster"
 
 kafkacluster.KafkaCluster_IsTerraformElement(x interface{}) *bool
 ```
@@ -457,7 +457,7 @@ kafkacluster.KafkaCluster_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-ionoscloud.kafkaCluster.KafkaCluster.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/kafkacluster"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/kafkacluster"
 
 kafkacluster.KafkaCluster_IsTerraformResource(x interface{}) *bool
 ```
@@ -471,7 +471,7 @@ kafkacluster.KafkaCluster_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-ionoscloud.kafkaCluster.KafkaCluster.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/kafkacluster"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/kafkacluster"
 
 kafkacluster.KafkaCluster_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -854,7 +854,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-ionoscloud.kafkaCluster.KafkaClusterConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/kafkacluster"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/kafkacluster"
 
 &kafkacluster.KafkaClusterConfig {
 	Connection: interface{},
@@ -864,12 +864,12 @@ import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/kafkacluster"
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
-	Connections: github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud.kafkaCluster.KafkaClusterConnections,
+	Connections: github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11.kafkaCluster.KafkaClusterConnections,
 	Location: *string,
 	Name: *string,
 	Size: *string,
 	Version: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud.kafkaCluster.KafkaClusterTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11.kafkaCluster.KafkaClusterTimeouts,
 }
 ```
 
@@ -1056,7 +1056,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 #### Initializer <a name="Initializer" id="@cdktf/provider-ionoscloud.kafkaCluster.KafkaClusterConnections.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/kafkacluster"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/kafkacluster"
 
 &kafkacluster.KafkaClusterConnections {
 	BrokerAddresses: *[]*string,
@@ -1122,7 +1122,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 #### Initializer <a name="Initializer" id="@cdktf/provider-ionoscloud.kafkaCluster.KafkaClusterTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/kafkacluster"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/kafkacluster"
 
 &kafkacluster.KafkaClusterTimeouts {
 	Create: *string,
@@ -1198,7 +1198,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.kafkaCluster.KafkaClusterConnectionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/kafkacluster"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/kafkacluster"
 
 kafkacluster.NewKafkaClusterConnectionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) KafkaClusterConnectionsOutputReference
 ```
@@ -1513,7 +1513,7 @@ func InternalValue() KafkaClusterConnections
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.kafkaCluster.KafkaClusterTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/kafkacluster"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/kafkacluster"
 
 kafkacluster.NewKafkaClusterTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) KafkaClusterTimeoutsOutputReference
 ```
