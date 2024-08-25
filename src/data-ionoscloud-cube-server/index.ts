@@ -1,3 +1,8 @@
+/**
+ * Copyright (c) HashiCorp, Inc.
+ * SPDX-License-Identifier: MPL-2.0
+ */
+
 // https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.0/docs/data-sources/cube_server
 // generated from terraform resource schema
 
