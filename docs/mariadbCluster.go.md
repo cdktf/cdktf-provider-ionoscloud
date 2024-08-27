@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionosclo
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.mariadbCluster.MariadbCluster.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/mariadbcluster"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/mariadbcluster"
 
 mariadbcluster.NewMariadbCluster(scope Construct, id *string, config MariadbClusterConfig) MariadbCluster
 ```
@@ -458,7 +458,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-ionoscloud.mariadbCluster.MariadbCluster.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/mariadbcluster"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/mariadbcluster"
 
 mariadbcluster.MariadbCluster_IsConstruct(x interface{}) *bool
 ```
@@ -490,7 +490,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-ionoscloud.mariadbCluster.MariadbCluster.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/mariadbcluster"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/mariadbcluster"
 
 mariadbcluster.MariadbCluster_IsTerraformElement(x interface{}) *bool
 ```
@@ -504,7 +504,7 @@ mariadbcluster.MariadbCluster_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-ionoscloud.mariadbCluster.MariadbCluster.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/mariadbcluster"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/mariadbcluster"
 
 mariadbcluster.MariadbCluster_IsTerraformResource(x interface{}) *bool
 ```
@@ -518,7 +518,7 @@ mariadbcluster.MariadbCluster_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-ionoscloud.mariadbCluster.MariadbCluster.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/mariadbcluster"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/mariadbcluster"
 
 mariadbcluster.MariadbCluster_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1022,7 +1022,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-ionoscloud.mariadbCluster.MariadbClusterConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/mariadbcluster"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/mariadbcluster"
 
 &mariadbcluster.MariadbClusterConfig {
 	Connection: interface{},
@@ -1032,9 +1032,9 @@ import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/mariadbclus
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
-	Connections: github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11.mariadbCluster.MariadbClusterConnections,
+	Connections: github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud.mariadbCluster.MariadbClusterConnections,
 	Cores: *f64,
-	Credentials: github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11.mariadbCluster.MariadbClusterCredentials,
+	Credentials: github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud.mariadbCluster.MariadbClusterCredentials,
 	DisplayName: *string,
 	Instances: *f64,
 	MariadbVersion: *string,
@@ -1042,8 +1042,8 @@ import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/mariadbclus
 	StorageSize: *f64,
 	Id: *string,
 	Location: *string,
-	MaintenanceWindow: github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11.mariadbCluster.MariadbClusterMaintenanceWindow,
-	Timeouts: github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11.mariadbCluster.MariadbClusterTimeouts,
+	MaintenanceWindow: github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud.mariadbCluster.MariadbClusterMaintenanceWindow,
+	Timeouts: github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud.mariadbCluster.MariadbClusterTimeouts,
 }
 ```
 
@@ -1317,7 +1317,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 #### Initializer <a name="Initializer" id="@cdktf/provider-ionoscloud.mariadbCluster.MariadbClusterConnections.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/mariadbcluster"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/mariadbcluster"
 
 &mariadbcluster.MariadbClusterConnections {
 	Cidr: *string,
@@ -1383,7 +1383,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 #### Initializer <a name="Initializer" id="@cdktf/provider-ionoscloud.mariadbCluster.MariadbClusterCredentials.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/mariadbcluster"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/mariadbcluster"
 
 &mariadbcluster.MariadbClusterCredentials {
 	Password: *string,
@@ -1433,7 +1433,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 #### Initializer <a name="Initializer" id="@cdktf/provider-ionoscloud.mariadbCluster.MariadbClusterMaintenanceWindow.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/mariadbcluster"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/mariadbcluster"
 
 &mariadbcluster.MariadbClusterMaintenanceWindow {
 	DayOfTheWeek: *string,
@@ -1483,7 +1483,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 #### Initializer <a name="Initializer" id="@cdktf/provider-ionoscloud.mariadbCluster.MariadbClusterTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/mariadbcluster"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/mariadbcluster"
 
 &mariadbcluster.MariadbClusterTimeouts {
 	Create: *string,
@@ -1559,7 +1559,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.mariadbCluster.MariadbClusterConnectionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/mariadbcluster"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/mariadbcluster"
 
 mariadbcluster.NewMariadbClusterConnectionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MariadbClusterConnectionsOutputReference
 ```
@@ -1874,7 +1874,7 @@ func InternalValue() MariadbClusterConnections
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.mariadbCluster.MariadbClusterCredentialsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/mariadbcluster"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/mariadbcluster"
 
 mariadbcluster.NewMariadbClusterCredentialsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MariadbClusterCredentialsOutputReference
 ```
@@ -2167,7 +2167,7 @@ func InternalValue() MariadbClusterCredentials
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.mariadbCluster.MariadbClusterMaintenanceWindowOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/mariadbcluster"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/mariadbcluster"
 
 mariadbcluster.NewMariadbClusterMaintenanceWindowOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MariadbClusterMaintenanceWindowOutputReference
 ```
@@ -2460,7 +2460,7 @@ func InternalValue() MariadbClusterMaintenanceWindow
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.mariadbCluster.MariadbClusterTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/mariadbcluster"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/mariadbcluster"
 
 mariadbcluster.NewMariadbClusterTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MariadbClusterTimeoutsOutputReference
 ```
