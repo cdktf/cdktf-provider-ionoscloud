@@ -4,7 +4,7 @@
 
 ### S3Bucket <a name="S3Bucket" id="@cdktf/provider-ionoscloud.s3Bucket.S3Bucket"></a>
 
-Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.1/docs/resources/s3_bucket ionoscloud_s3_bucket}.
+Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.2/docs/resources/s3_bucket ionoscloud_s3_bucket}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.s3Bucket.S3Bucket.Initializer"></a>
 
@@ -22,7 +22,10 @@ s3Bucket.S3Bucket(
   provider: TerraformProvider = None,
   provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
   name: str,
+  force_destroy: typing.Union[bool, IResolvable] = None,
+  object_lock_enabled: typing.Union[bool, IResolvable] = None,
   region: str = None,
+  tags: typing.Mapping[str] = None,
   timeouts: S3BucketTimeouts = None
 )
 ```
@@ -39,7 +42,10 @@ s3Bucket.S3Bucket(
 | <code><a href="#@cdktf/provider-ionoscloud.s3Bucket.S3Bucket.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.s3Bucket.S3Bucket.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.s3Bucket.S3Bucket.Initializer.parameter.name">name</a></code> | <code>str</code> | The name of the bucket. |
+| <code><a href="#@cdktf/provider-ionoscloud.s3Bucket.S3Bucket.Initializer.parameter.forceDestroy">force_destroy</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Whether all objects should be deleted from the bucket so that the bucket can be destroyed. |
+| <code><a href="#@cdktf/provider-ionoscloud.s3Bucket.S3Bucket.Initializer.parameter.objectLockEnabled">object_lock_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Whether object lock is enabled for the bucket. |
 | <code><a href="#@cdktf/provider-ionoscloud.s3Bucket.S3Bucket.Initializer.parameter.region">region</a></code> | <code>str</code> | The region of the bucket. Defaults to eu-central-3. |
+| <code><a href="#@cdktf/provider-ionoscloud.s3Bucket.S3Bucket.Initializer.parameter.tags">tags</a></code> | <code>typing.Mapping[str]</code> | A mapping of tags to assign to the bucket. |
 | <code><a href="#@cdktf/provider-ionoscloud.s3Bucket.S3Bucket.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-ionoscloud.s3Bucket.S3BucketTimeouts">S3BucketTimeouts</a></code> | timeouts block. |
 
 ---
@@ -112,7 +118,27 @@ The name of the bucket.
 
 It must start and end with a letter or number and contain only lowercase alphanumeric characters, hyphens, periods and underscores.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.1/docs/resources/s3_bucket#name S3Bucket#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.2/docs/resources/s3_bucket#name S3Bucket#name}
+
+---
+
+##### `force_destroy`<sup>Optional</sup> <a name="force_destroy" id="@cdktf/provider-ionoscloud.s3Bucket.S3Bucket.Initializer.parameter.forceDestroy"></a>
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+Whether all objects should be deleted from the bucket so that the bucket can be destroyed.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.2/docs/resources/s3_bucket#force_destroy S3Bucket#force_destroy}
+
+---
+
+##### `object_lock_enabled`<sup>Optional</sup> <a name="object_lock_enabled" id="@cdktf/provider-ionoscloud.s3Bucket.S3Bucket.Initializer.parameter.objectLockEnabled"></a>
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+Whether object lock is enabled for the bucket.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.2/docs/resources/s3_bucket#object_lock_enabled S3Bucket#object_lock_enabled}
 
 ---
 
@@ -122,7 +148,17 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 
 The region of the bucket. Defaults to eu-central-3.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.1/docs/resources/s3_bucket#region S3Bucket#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.2/docs/resources/s3_bucket#region S3Bucket#region}
+
+---
+
+##### `tags`<sup>Optional</sup> <a name="tags" id="@cdktf/provider-ionoscloud.s3Bucket.S3Bucket.Initializer.parameter.tags"></a>
+
+- *Type:* typing.Mapping[str]
+
+A mapping of tags to assign to the bucket.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.2/docs/resources/s3_bucket#tags S3Bucket#tags}
 
 ---
 
@@ -132,7 +168,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.1/docs/resources/s3_bucket#timeouts S3Bucket#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.2/docs/resources/s3_bucket#timeouts S3Bucket#timeouts}
 
 ---
 
@@ -164,7 +200,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 | <code><a href="#@cdktf/provider-ionoscloud.s3Bucket.S3Bucket.moveTo">move_to</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-ionoscloud.s3Bucket.S3Bucket.moveToId">move_to_id</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktf/provider-ionoscloud.s3Bucket.S3Bucket.putTimeouts">put_timeouts</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.s3Bucket.S3Bucket.resetForceDestroy">reset_force_destroy</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.s3Bucket.S3Bucket.resetObjectLockEnabled">reset_object_lock_enabled</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.s3Bucket.S3Bucket.resetRegion">reset_region</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.s3Bucket.S3Bucket.resetTags">reset_tags</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.s3Bucket.S3Bucket.resetTimeouts">reset_timeouts</a></code> | *No description.* |
 
 ---
@@ -511,7 +550,7 @@ def put_timeouts(
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.1/docs/resources/s3_bucket#create S3Bucket#create}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.2/docs/resources/s3_bucket#create S3Bucket#create}
 
 ---
 
@@ -521,7 +560,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours). Setting a timeout for a Delete operation is only applicable if changes are saved into state before the destroy operation occurs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.1/docs/resources/s3_bucket#delete S3Bucket#delete}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.2/docs/resources/s3_bucket#delete S3Bucket#delete}
 
 ---
 
@@ -531,7 +570,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours). Read operations occur during any refresh or planning operation when refresh is enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.1/docs/resources/s3_bucket#read S3Bucket#read}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.2/docs/resources/s3_bucket#read S3Bucket#read}
 
 ---
 
@@ -541,14 +580,32 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.1/docs/resources/s3_bucket#update S3Bucket#update}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.2/docs/resources/s3_bucket#update S3Bucket#update}
 
 ---
+
+##### `reset_force_destroy` <a name="reset_force_destroy" id="@cdktf/provider-ionoscloud.s3Bucket.S3Bucket.resetForceDestroy"></a>
+
+```python
+def reset_force_destroy() -> None
+```
+
+##### `reset_object_lock_enabled` <a name="reset_object_lock_enabled" id="@cdktf/provider-ionoscloud.s3Bucket.S3Bucket.resetObjectLockEnabled"></a>
+
+```python
+def reset_object_lock_enabled() -> None
+```
 
 ##### `reset_region` <a name="reset_region" id="@cdktf/provider-ionoscloud.s3Bucket.S3Bucket.resetRegion"></a>
 
 ```python
 def reset_region() -> None
+```
+
+##### `reset_tags` <a name="reset_tags" id="@cdktf/provider-ionoscloud.s3Bucket.S3Bucket.resetTags"></a>
+
+```python
+def reset_tags() -> None
 ```
 
 ##### `reset_timeouts` <a name="reset_timeouts" id="@cdktf/provider-ionoscloud.s3Bucket.S3Bucket.resetTimeouts"></a>
@@ -671,7 +728,7 @@ The construct id used in the generated config for the S3Bucket to import.
 
 The id of the existing S3Bucket that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.1/docs/resources/s3_bucket#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.2/docs/resources/s3_bucket#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -703,11 +760,17 @@ Refer to the {@link https://registry.terraform.io/providers/ionos-cloud/ionosclo
 | <code><a href="#@cdktf/provider-ionoscloud.s3Bucket.S3Bucket.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.s3Bucket.S3Bucket.property.id">id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.s3Bucket.S3Bucket.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-ionoscloud.s3Bucket.S3BucketTimeoutsOutputReference">S3BucketTimeoutsOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.s3Bucket.S3Bucket.property.forceDestroyInput">force_destroy_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.s3Bucket.S3Bucket.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.s3Bucket.S3Bucket.property.objectLockEnabledInput">object_lock_enabled_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.s3Bucket.S3Bucket.property.regionInput">region_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.s3Bucket.S3Bucket.property.tagsInput">tags_input</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.s3Bucket.S3Bucket.property.timeoutsInput">timeouts_input</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-ionoscloud.s3Bucket.S3BucketTimeouts">S3BucketTimeouts</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.s3Bucket.S3Bucket.property.forceDestroy">force_destroy</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.s3Bucket.S3Bucket.property.name">name</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.s3Bucket.S3Bucket.property.objectLockEnabled">object_lock_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.s3Bucket.S3Bucket.property.region">region</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.s3Bucket.S3Bucket.property.tags">tags</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
 
 ---
 
@@ -873,6 +936,16 @@ timeouts: S3BucketTimeoutsOutputReference
 
 ---
 
+##### `force_destroy_input`<sup>Optional</sup> <a name="force_destroy_input" id="@cdktf/provider-ionoscloud.s3Bucket.S3Bucket.property.forceDestroyInput"></a>
+
+```python
+force_destroy_input: typing.Union[bool, IResolvable]
+```
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+---
+
 ##### `name_input`<sup>Optional</sup> <a name="name_input" id="@cdktf/provider-ionoscloud.s3Bucket.S3Bucket.property.nameInput"></a>
 
 ```python
@@ -880,6 +953,16 @@ name_input: str
 ```
 
 - *Type:* str
+
+---
+
+##### `object_lock_enabled_input`<sup>Optional</sup> <a name="object_lock_enabled_input" id="@cdktf/provider-ionoscloud.s3Bucket.S3Bucket.property.objectLockEnabledInput"></a>
+
+```python
+object_lock_enabled_input: typing.Union[bool, IResolvable]
+```
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
 
 ---
 
@@ -893,6 +976,16 @@ region_input: str
 
 ---
 
+##### `tags_input`<sup>Optional</sup> <a name="tags_input" id="@cdktf/provider-ionoscloud.s3Bucket.S3Bucket.property.tagsInput"></a>
+
+```python
+tags_input: typing.Mapping[str]
+```
+
+- *Type:* typing.Mapping[str]
+
+---
+
 ##### `timeouts_input`<sup>Optional</sup> <a name="timeouts_input" id="@cdktf/provider-ionoscloud.s3Bucket.S3Bucket.property.timeoutsInput"></a>
 
 ```python
@@ -900,6 +993,16 @@ timeouts_input: typing.Union[IResolvable, S3BucketTimeouts]
 ```
 
 - *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-ionoscloud.s3Bucket.S3BucketTimeouts">S3BucketTimeouts</a>]
+
+---
+
+##### `force_destroy`<sup>Required</sup> <a name="force_destroy" id="@cdktf/provider-ionoscloud.s3Bucket.S3Bucket.property.forceDestroy"></a>
+
+```python
+force_destroy: typing.Union[bool, IResolvable]
+```
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
 
 ---
 
@@ -913,6 +1016,16 @@ name: str
 
 ---
 
+##### `object_lock_enabled`<sup>Required</sup> <a name="object_lock_enabled" id="@cdktf/provider-ionoscloud.s3Bucket.S3Bucket.property.objectLockEnabled"></a>
+
+```python
+object_lock_enabled: typing.Union[bool, IResolvable]
+```
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+---
+
 ##### `region`<sup>Required</sup> <a name="region" id="@cdktf/provider-ionoscloud.s3Bucket.S3Bucket.property.region"></a>
 
 ```python
@@ -920,6 +1033,16 @@ region: str
 ```
 
 - *Type:* str
+
+---
+
+##### `tags`<sup>Required</sup> <a name="tags" id="@cdktf/provider-ionoscloud.s3Bucket.S3Bucket.property.tags"></a>
+
+```python
+tags: typing.Mapping[str]
+```
+
+- *Type:* typing.Mapping[str]
 
 ---
 
@@ -959,7 +1082,10 @@ s3Bucket.S3BucketConfig(
   provider: TerraformProvider = None,
   provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
   name: str,
+  force_destroy: typing.Union[bool, IResolvable] = None,
+  object_lock_enabled: typing.Union[bool, IResolvable] = None,
   region: str = None,
+  tags: typing.Mapping[str] = None,
   timeouts: S3BucketTimeouts = None
 )
 ```
@@ -976,7 +1102,10 @@ s3Bucket.S3BucketConfig(
 | <code><a href="#@cdktf/provider-ionoscloud.s3Bucket.S3BucketConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.s3Bucket.S3BucketConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.s3Bucket.S3BucketConfig.property.name">name</a></code> | <code>str</code> | The name of the bucket. |
+| <code><a href="#@cdktf/provider-ionoscloud.s3Bucket.S3BucketConfig.property.forceDestroy">force_destroy</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Whether all objects should be deleted from the bucket so that the bucket can be destroyed. |
+| <code><a href="#@cdktf/provider-ionoscloud.s3Bucket.S3BucketConfig.property.objectLockEnabled">object_lock_enabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Whether object lock is enabled for the bucket. |
 | <code><a href="#@cdktf/provider-ionoscloud.s3Bucket.S3BucketConfig.property.region">region</a></code> | <code>str</code> | The region of the bucket. Defaults to eu-central-3. |
+| <code><a href="#@cdktf/provider-ionoscloud.s3Bucket.S3BucketConfig.property.tags">tags</a></code> | <code>typing.Mapping[str]</code> | A mapping of tags to assign to the bucket. |
 | <code><a href="#@cdktf/provider-ionoscloud.s3Bucket.S3BucketConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-ionoscloud.s3Bucket.S3BucketTimeouts">S3BucketTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1063,7 +1192,35 @@ The name of the bucket.
 
 It must start and end with a letter or number and contain only lowercase alphanumeric characters, hyphens, periods and underscores.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.1/docs/resources/s3_bucket#name S3Bucket#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.2/docs/resources/s3_bucket#name S3Bucket#name}
+
+---
+
+##### `force_destroy`<sup>Optional</sup> <a name="force_destroy" id="@cdktf/provider-ionoscloud.s3Bucket.S3BucketConfig.property.forceDestroy"></a>
+
+```python
+force_destroy: typing.Union[bool, IResolvable]
+```
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+Whether all objects should be deleted from the bucket so that the bucket can be destroyed.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.2/docs/resources/s3_bucket#force_destroy S3Bucket#force_destroy}
+
+---
+
+##### `object_lock_enabled`<sup>Optional</sup> <a name="object_lock_enabled" id="@cdktf/provider-ionoscloud.s3Bucket.S3BucketConfig.property.objectLockEnabled"></a>
+
+```python
+object_lock_enabled: typing.Union[bool, IResolvable]
+```
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+Whether object lock is enabled for the bucket.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.2/docs/resources/s3_bucket#object_lock_enabled S3Bucket#object_lock_enabled}
 
 ---
 
@@ -1077,7 +1234,21 @@ region: str
 
 The region of the bucket. Defaults to eu-central-3.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.1/docs/resources/s3_bucket#region S3Bucket#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.2/docs/resources/s3_bucket#region S3Bucket#region}
+
+---
+
+##### `tags`<sup>Optional</sup> <a name="tags" id="@cdktf/provider-ionoscloud.s3Bucket.S3BucketConfig.property.tags"></a>
+
+```python
+tags: typing.Mapping[str]
+```
+
+- *Type:* typing.Mapping[str]
+
+A mapping of tags to assign to the bucket.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.2/docs/resources/s3_bucket#tags S3Bucket#tags}
 
 ---
 
@@ -1091,7 +1262,7 @@ timeouts: S3BucketTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.1/docs/resources/s3_bucket#timeouts S3Bucket#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.2/docs/resources/s3_bucket#timeouts S3Bucket#timeouts}
 
 ---
 
@@ -1131,7 +1302,7 @@ create: str
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.1/docs/resources/s3_bucket#create S3Bucket#create}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.2/docs/resources/s3_bucket#create S3Bucket#create}
 
 ---
 
@@ -1145,7 +1316,7 @@ delete: str
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours). Setting a timeout for a Delete operation is only applicable if changes are saved into state before the destroy operation occurs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.1/docs/resources/s3_bucket#delete S3Bucket#delete}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.2/docs/resources/s3_bucket#delete S3Bucket#delete}
 
 ---
 
@@ -1159,7 +1330,7 @@ read: str
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours). Read operations occur during any refresh or planning operation when refresh is enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.1/docs/resources/s3_bucket#read S3Bucket#read}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.2/docs/resources/s3_bucket#read S3Bucket#read}
 
 ---
 
@@ -1173,7 +1344,7 @@ update: str
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.1/docs/resources/s3_bucket#update S3Bucket#update}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.2/docs/resources/s3_bucket#update S3Bucket#update}
 
 ---
 
