@@ -4,7 +4,7 @@
 
 ### S3Object <a name="S3Object" id="@cdktf/provider-ionoscloud.s3Object.S3Object"></a>
 
-Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.1/docs/resources/s3_object ionoscloud_s3_object}.
+Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.2/docs/resources/s3_object ionoscloud_s3_object}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.s3Object.S3Object.Initializer"></a>
 
@@ -79,11 +79,13 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-ionoscloud.s3Object.S3Object.resetContentEncoding">ResetContentEncoding</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.s3Object.S3Object.resetContentLanguage">ResetContentLanguage</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.s3Object.S3Object.resetContentType">ResetContentType</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-ionoscloud.s3Object.S3Object.resetEtag">ResetEtag</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.s3Object.S3Object.resetExpires">ResetExpires</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.s3Object.S3Object.resetForceDestroy">ResetForceDestroy</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.s3Object.S3Object.resetMetadata">ResetMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.s3Object.S3Object.resetMfa">ResetMfa</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.s3Object.S3Object.resetObjectLockLegalHold">ResetObjectLockLegalHold</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.s3Object.S3Object.resetObjectLockMode">ResetObjectLockMode</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.s3Object.S3Object.resetObjectLockRetainUntilDate">ResetObjectLockRetainUntilDate</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.s3Object.S3Object.resetRequestPayer">ResetRequestPayer</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.s3Object.S3Object.resetServerSideEncryption">ResetServerSideEncryption</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.s3Object.S3Object.resetServerSideEncryptionContext">ResetServerSideEncryptionContext</a></code> | *No description.* |
@@ -93,7 +95,6 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-ionoscloud.s3Object.S3Object.resetSource">ResetSource</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.s3Object.S3Object.resetStorageClass">ResetStorageClass</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.s3Object.S3Object.resetTags">ResetTags</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-ionoscloud.s3Object.S3Object.resetVersionId">ResetVersionId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.s3Object.S3Object.resetWebsiteRedirect">ResetWebsiteRedirect</a></code> | *No description.* |
 
 ---
@@ -422,12 +423,6 @@ private void ResetContentLanguage()
 private void ResetContentType()
 ```
 
-##### `ResetEtag` <a name="ResetEtag" id="@cdktf/provider-ionoscloud.s3Object.S3Object.resetEtag"></a>
-
-```csharp
-private void ResetEtag()
-```
-
 ##### `ResetExpires` <a name="ResetExpires" id="@cdktf/provider-ionoscloud.s3Object.S3Object.resetExpires"></a>
 
 ```csharp
@@ -450,6 +445,24 @@ private void ResetMetadata()
 
 ```csharp
 private void ResetMfa()
+```
+
+##### `ResetObjectLockLegalHold` <a name="ResetObjectLockLegalHold" id="@cdktf/provider-ionoscloud.s3Object.S3Object.resetObjectLockLegalHold"></a>
+
+```csharp
+private void ResetObjectLockLegalHold()
+```
+
+##### `ResetObjectLockMode` <a name="ResetObjectLockMode" id="@cdktf/provider-ionoscloud.s3Object.S3Object.resetObjectLockMode"></a>
+
+```csharp
+private void ResetObjectLockMode()
+```
+
+##### `ResetObjectLockRetainUntilDate` <a name="ResetObjectLockRetainUntilDate" id="@cdktf/provider-ionoscloud.s3Object.S3Object.resetObjectLockRetainUntilDate"></a>
+
+```csharp
+private void ResetObjectLockRetainUntilDate()
 ```
 
 ##### `ResetRequestPayer` <a name="ResetRequestPayer" id="@cdktf/provider-ionoscloud.s3Object.S3Object.resetRequestPayer"></a>
@@ -504,12 +517,6 @@ private void ResetStorageClass()
 
 ```csharp
 private void ResetTags()
-```
-
-##### `ResetVersionId` <a name="ResetVersionId" id="@cdktf/provider-ionoscloud.s3Object.S3Object.resetVersionId"></a>
-
-```csharp
-private void ResetVersionId()
 ```
 
 ##### `ResetWebsiteRedirect` <a name="ResetWebsiteRedirect" id="@cdktf/provider-ionoscloud.s3Object.S3Object.resetWebsiteRedirect"></a>
@@ -621,7 +628,7 @@ The construct id used in the generated config for the S3Object to import.
 
 The id of the existing S3Object that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.1/docs/resources/s3_object#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.2/docs/resources/s3_object#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -651,6 +658,8 @@ Refer to the {@link https://registry.terraform.io/providers/ionos-cloud/ionosclo
 | <code><a href="#@cdktf/provider-ionoscloud.s3Object.S3Object.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.s3Object.S3Object.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.s3Object.S3Object.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.s3Object.S3Object.property.etag">Etag</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.s3Object.S3Object.property.versionId">VersionId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.s3Object.S3Object.property.bucketInput">BucketInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.s3Object.S3Object.property.cacheControlInput">CacheControlInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.s3Object.S3Object.property.contentDispositionInput">ContentDispositionInput</a></code> | <code>string</code> | *No description.* |
@@ -658,12 +667,14 @@ Refer to the {@link https://registry.terraform.io/providers/ionos-cloud/ionosclo
 | <code><a href="#@cdktf/provider-ionoscloud.s3Object.S3Object.property.contentInput">ContentInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.s3Object.S3Object.property.contentLanguageInput">ContentLanguageInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.s3Object.S3Object.property.contentTypeInput">ContentTypeInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-ionoscloud.s3Object.S3Object.property.etagInput">EtagInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.s3Object.S3Object.property.expiresInput">ExpiresInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.s3Object.S3Object.property.forceDestroyInput">ForceDestroyInput</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.s3Object.S3Object.property.keyInput">KeyInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.s3Object.S3Object.property.metadataInput">MetadataInput</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.s3Object.S3Object.property.mfaInput">MfaInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.s3Object.S3Object.property.objectLockLegalHoldInput">ObjectLockLegalHoldInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.s3Object.S3Object.property.objectLockModeInput">ObjectLockModeInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.s3Object.S3Object.property.objectLockRetainUntilDateInput">ObjectLockRetainUntilDateInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.s3Object.S3Object.property.requestPayerInput">RequestPayerInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.s3Object.S3Object.property.serverSideEncryptionContextInput">ServerSideEncryptionContextInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.s3Object.S3Object.property.serverSideEncryptionCustomerAlgorithmInput">ServerSideEncryptionCustomerAlgorithmInput</a></code> | <code>string</code> | *No description.* |
@@ -673,7 +684,6 @@ Refer to the {@link https://registry.terraform.io/providers/ionos-cloud/ionosclo
 | <code><a href="#@cdktf/provider-ionoscloud.s3Object.S3Object.property.sourceInput">SourceInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.s3Object.S3Object.property.storageClassInput">StorageClassInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.s3Object.S3Object.property.tagsInput">TagsInput</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | *No description.* |
-| <code><a href="#@cdktf/provider-ionoscloud.s3Object.S3Object.property.versionIdInput">VersionIdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.s3Object.S3Object.property.websiteRedirectInput">WebsiteRedirectInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.s3Object.S3Object.property.bucket">Bucket</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.s3Object.S3Object.property.cacheControl">CacheControl</a></code> | <code>string</code> | *No description.* |
@@ -682,12 +692,14 @@ Refer to the {@link https://registry.terraform.io/providers/ionos-cloud/ionosclo
 | <code><a href="#@cdktf/provider-ionoscloud.s3Object.S3Object.property.contentEncoding">ContentEncoding</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.s3Object.S3Object.property.contentLanguage">ContentLanguage</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.s3Object.S3Object.property.contentType">ContentType</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-ionoscloud.s3Object.S3Object.property.etag">Etag</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.s3Object.S3Object.property.expires">Expires</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.s3Object.S3Object.property.forceDestroy">ForceDestroy</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.s3Object.S3Object.property.key">Key</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.s3Object.S3Object.property.metadata">Metadata</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.s3Object.S3Object.property.mfa">Mfa</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.s3Object.S3Object.property.objectLockLegalHold">ObjectLockLegalHold</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.s3Object.S3Object.property.objectLockMode">ObjectLockMode</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.s3Object.S3Object.property.objectLockRetainUntilDate">ObjectLockRetainUntilDate</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.s3Object.S3Object.property.requestPayer">RequestPayer</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.s3Object.S3Object.property.serverSideEncryption">ServerSideEncryption</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.s3Object.S3Object.property.serverSideEncryptionContext">ServerSideEncryptionContext</a></code> | <code>string</code> | *No description.* |
@@ -697,7 +709,6 @@ Refer to the {@link https://registry.terraform.io/providers/ionos-cloud/ionosclo
 | <code><a href="#@cdktf/provider-ionoscloud.s3Object.S3Object.property.source">Source</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.s3Object.S3Object.property.storageClass">StorageClass</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.s3Object.S3Object.property.tags">Tags</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | *No description.* |
-| <code><a href="#@cdktf/provider-ionoscloud.s3Object.S3Object.property.versionId">VersionId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.s3Object.S3Object.property.websiteRedirect">WebsiteRedirect</a></code> | <code>string</code> | *No description.* |
 
 ---
@@ -844,6 +855,26 @@ public object[] Provisioners { get; }
 
 ---
 
+##### `Etag`<sup>Required</sup> <a name="Etag" id="@cdktf/provider-ionoscloud.s3Object.S3Object.property.etag"></a>
+
+```csharp
+public string Etag { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `VersionId`<sup>Required</sup> <a name="VersionId" id="@cdktf/provider-ionoscloud.s3Object.S3Object.property.versionId"></a>
+
+```csharp
+public string VersionId { get; }
+```
+
+- *Type:* string
+
+---
+
 ##### `BucketInput`<sup>Optional</sup> <a name="BucketInput" id="@cdktf/provider-ionoscloud.s3Object.S3Object.property.bucketInput"></a>
 
 ```csharp
@@ -914,16 +945,6 @@ public string ContentTypeInput { get; }
 
 ---
 
-##### `EtagInput`<sup>Optional</sup> <a name="EtagInput" id="@cdktf/provider-ionoscloud.s3Object.S3Object.property.etagInput"></a>
-
-```csharp
-public string EtagInput { get; }
-```
-
-- *Type:* string
-
----
-
 ##### `ExpiresInput`<sup>Optional</sup> <a name="ExpiresInput" id="@cdktf/provider-ionoscloud.s3Object.S3Object.property.expiresInput"></a>
 
 ```csharp
@@ -968,6 +989,36 @@ public System.Collections.Generic.IDictionary<string, string> MetadataInput { ge
 
 ```csharp
 public string MfaInput { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `ObjectLockLegalHoldInput`<sup>Optional</sup> <a name="ObjectLockLegalHoldInput" id="@cdktf/provider-ionoscloud.s3Object.S3Object.property.objectLockLegalHoldInput"></a>
+
+```csharp
+public string ObjectLockLegalHoldInput { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `ObjectLockModeInput`<sup>Optional</sup> <a name="ObjectLockModeInput" id="@cdktf/provider-ionoscloud.s3Object.S3Object.property.objectLockModeInput"></a>
+
+```csharp
+public string ObjectLockModeInput { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `ObjectLockRetainUntilDateInput`<sup>Optional</sup> <a name="ObjectLockRetainUntilDateInput" id="@cdktf/provider-ionoscloud.s3Object.S3Object.property.objectLockRetainUntilDateInput"></a>
+
+```csharp
+public string ObjectLockRetainUntilDateInput { get; }
 ```
 
 - *Type:* string
@@ -1064,16 +1115,6 @@ public System.Collections.Generic.IDictionary<string, string> TagsInput { get; }
 
 ---
 
-##### `VersionIdInput`<sup>Optional</sup> <a name="VersionIdInput" id="@cdktf/provider-ionoscloud.s3Object.S3Object.property.versionIdInput"></a>
-
-```csharp
-public string VersionIdInput { get; }
-```
-
-- *Type:* string
-
----
-
 ##### `WebsiteRedirectInput`<sup>Optional</sup> <a name="WebsiteRedirectInput" id="@cdktf/provider-ionoscloud.s3Object.S3Object.property.websiteRedirectInput"></a>
 
 ```csharp
@@ -1154,16 +1195,6 @@ public string ContentType { get; }
 
 ---
 
-##### `Etag`<sup>Required</sup> <a name="Etag" id="@cdktf/provider-ionoscloud.s3Object.S3Object.property.etag"></a>
-
-```csharp
-public string Etag { get; }
-```
-
-- *Type:* string
-
----
-
 ##### `Expires`<sup>Required</sup> <a name="Expires" id="@cdktf/provider-ionoscloud.s3Object.S3Object.property.expires"></a>
 
 ```csharp
@@ -1208,6 +1239,36 @@ public System.Collections.Generic.IDictionary<string, string> Metadata { get; }
 
 ```csharp
 public string Mfa { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `ObjectLockLegalHold`<sup>Required</sup> <a name="ObjectLockLegalHold" id="@cdktf/provider-ionoscloud.s3Object.S3Object.property.objectLockLegalHold"></a>
+
+```csharp
+public string ObjectLockLegalHold { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `ObjectLockMode`<sup>Required</sup> <a name="ObjectLockMode" id="@cdktf/provider-ionoscloud.s3Object.S3Object.property.objectLockMode"></a>
+
+```csharp
+public string ObjectLockMode { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `ObjectLockRetainUntilDate`<sup>Required</sup> <a name="ObjectLockRetainUntilDate" id="@cdktf/provider-ionoscloud.s3Object.S3Object.property.objectLockRetainUntilDate"></a>
+
+```csharp
+public string ObjectLockRetainUntilDate { get; }
 ```
 
 - *Type:* string
@@ -1304,16 +1365,6 @@ public System.Collections.Generic.IDictionary<string, string> Tags { get; }
 
 ---
 
-##### `VersionId`<sup>Required</sup> <a name="VersionId" id="@cdktf/provider-ionoscloud.s3Object.S3Object.property.versionId"></a>
-
-```csharp
-public string VersionId { get; }
-```
-
-- *Type:* string
-
----
-
 ##### `WebsiteRedirect`<sup>Required</sup> <a name="WebsiteRedirect" id="@cdktf/provider-ionoscloud.s3Object.S3Object.property.websiteRedirect"></a>
 
 ```csharp
@@ -1367,11 +1418,13 @@ new S3ObjectConfig {
     string ContentEncoding = null,
     string ContentLanguage = null,
     string ContentType = null,
-    string Etag = null,
     string Expires = null,
     object ForceDestroy = null,
     System.Collections.Generic.IDictionary<string, string> Metadata = null,
     string Mfa = null,
+    string ObjectLockLegalHold = null,
+    string ObjectLockMode = null,
+    string ObjectLockRetainUntilDate = null,
     string RequestPayer = null,
     string ServerSideEncryption = null,
     string ServerSideEncryptionContext = null,
@@ -1381,7 +1434,6 @@ new S3ObjectConfig {
     string Source = null,
     string StorageClass = null,
     System.Collections.Generic.IDictionary<string, string> Tags = null,
-    string VersionId = null,
     string WebsiteRedirect = null
 };
 ```
@@ -1405,11 +1457,13 @@ new S3ObjectConfig {
 | <code><a href="#@cdktf/provider-ionoscloud.s3Object.S3ObjectConfig.property.contentEncoding">ContentEncoding</a></code> | <code>string</code> | Specifies what content encodings have been applied to the object and thus what decoding mechanisms must be applied to obtain the media-type referenced by the Content-Type header field. |
 | <code><a href="#@cdktf/provider-ionoscloud.s3Object.S3ObjectConfig.property.contentLanguage">ContentLanguage</a></code> | <code>string</code> | The natural language or languages of the intended audience for the object. |
 | <code><a href="#@cdktf/provider-ionoscloud.s3Object.S3ObjectConfig.property.contentType">ContentType</a></code> | <code>string</code> | A standard MIME type describing the format of the contents. |
-| <code><a href="#@cdktf/provider-ionoscloud.s3Object.S3ObjectConfig.property.etag">Etag</a></code> | <code>string</code> | An entity tag (ETag) is an opaque identifier assigned by a web server to a specific version of a resource found at a URL. |
 | <code><a href="#@cdktf/provider-ionoscloud.s3Object.S3ObjectConfig.property.expires">Expires</a></code> | <code>string</code> | The date and time at which the object is no longer cacheable. |
 | <code><a href="#@cdktf/provider-ionoscloud.s3Object.S3ObjectConfig.property.forceDestroy">ForceDestroy</a></code> | <code>object</code> | Specifies whether to delete the object even if it has a governance-type Object Lock in place. |
 | <code><a href="#@cdktf/provider-ionoscloud.s3Object.S3ObjectConfig.property.metadata">Metadata</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | A map of metadata to store with the object in IONOS S3 Object Storage. |
 | <code><a href="#@cdktf/provider-ionoscloud.s3Object.S3ObjectConfig.property.mfa">Mfa</a></code> | <code>string</code> | The concatenation of the authentication device's serial number, a space, and the value that is displayed on your authentication device. |
+| <code><a href="#@cdktf/provider-ionoscloud.s3Object.S3ObjectConfig.property.objectLockLegalHold">ObjectLockLegalHold</a></code> | <code>string</code> | Specifies whether a legal hold will be applied to this object. |
+| <code><a href="#@cdktf/provider-ionoscloud.s3Object.S3ObjectConfig.property.objectLockMode">ObjectLockMode</a></code> | <code>string</code> | Confirms that the requester knows that they will be charged for the request. |
+| <code><a href="#@cdktf/provider-ionoscloud.s3Object.S3ObjectConfig.property.objectLockRetainUntilDate">ObjectLockRetainUntilDate</a></code> | <code>string</code> | The date and time when you want this object's Object Lock to expire. |
 | <code><a href="#@cdktf/provider-ionoscloud.s3Object.S3ObjectConfig.property.requestPayer">RequestPayer</a></code> | <code>string</code> | Confirms that the requester knows that they will be charged for the request. |
 | <code><a href="#@cdktf/provider-ionoscloud.s3Object.S3ObjectConfig.property.serverSideEncryption">ServerSideEncryption</a></code> | <code>string</code> | The server-side encryption algorithm used when storing this object in IONOS S3 Object Storage (AES256). |
 | <code><a href="#@cdktf/provider-ionoscloud.s3Object.S3ObjectConfig.property.serverSideEncryptionContext">ServerSideEncryptionContext</a></code> | <code>string</code> | Specifies the IONOS S3 Object Storage Encryption Context to use for object encryption. |
@@ -1419,7 +1473,6 @@ new S3ObjectConfig {
 | <code><a href="#@cdktf/provider-ionoscloud.s3Object.S3ObjectConfig.property.source">Source</a></code> | <code>string</code> | The path to the file to upload. |
 | <code><a href="#@cdktf/provider-ionoscloud.s3Object.S3ObjectConfig.property.storageClass">StorageClass</a></code> | <code>string</code> | The storage class of the object. Valid value is 'STANDARD'. |
 | <code><a href="#@cdktf/provider-ionoscloud.s3Object.S3ObjectConfig.property.tags">Tags</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | The tag-set for the object. |
-| <code><a href="#@cdktf/provider-ionoscloud.s3Object.S3ObjectConfig.property.versionId">VersionId</a></code> | <code>string</code> | The version of the object. |
 | <code><a href="#@cdktf/provider-ionoscloud.s3Object.S3ObjectConfig.property.websiteRedirect">WebsiteRedirect</a></code> | <code>string</code> | If the bucket is configured as a website, redirects requests for this object to another object in the same bucket or to an external URL. |
 
 ---
@@ -1504,7 +1557,7 @@ public string Bucket { get; set; }
 
 The name of the bucket.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.1/docs/resources/s3_object#bucket S3Object#bucket}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.2/docs/resources/s3_object#bucket S3Object#bucket}
 
 ---
 
@@ -1518,7 +1571,7 @@ public string Key { get; set; }
 
 The key of the object.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.1/docs/resources/s3_object#key S3Object#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.2/docs/resources/s3_object#key S3Object#key}
 
 ---
 
@@ -1532,7 +1585,7 @@ public string CacheControl { get; set; }
 
 Can be used to specify caching behavior along the request/reply chain.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.1/docs/resources/s3_object#cache_control S3Object#cache_control}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.2/docs/resources/s3_object#cache_control S3Object#cache_control}
 
 ---
 
@@ -1546,7 +1599,7 @@ public string Content { get; set; }
 
 The utf-8 content of the object.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.1/docs/resources/s3_object#content S3Object#content}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.2/docs/resources/s3_object#content S3Object#content}
 
 ---
 
@@ -1560,7 +1613,7 @@ public string ContentDisposition { get; set; }
 
 Specifies presentational information for the object.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.1/docs/resources/s3_object#content_disposition S3Object#content_disposition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.2/docs/resources/s3_object#content_disposition S3Object#content_disposition}
 
 ---
 
@@ -1574,7 +1627,7 @@ public string ContentEncoding { get; set; }
 
 Specifies what content encodings have been applied to the object and thus what decoding mechanisms must be applied to obtain the media-type referenced by the Content-Type header field.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.1/docs/resources/s3_object#content_encoding S3Object#content_encoding}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.2/docs/resources/s3_object#content_encoding S3Object#content_encoding}
 
 ---
 
@@ -1588,7 +1641,7 @@ public string ContentLanguage { get; set; }
 
 The natural language or languages of the intended audience for the object.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.1/docs/resources/s3_object#content_language S3Object#content_language}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.2/docs/resources/s3_object#content_language S3Object#content_language}
 
 ---
 
@@ -1602,21 +1655,7 @@ public string ContentType { get; set; }
 
 A standard MIME type describing the format of the contents.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.1/docs/resources/s3_object#content_type S3Object#content_type}
-
----
-
-##### `Etag`<sup>Optional</sup> <a name="Etag" id="@cdktf/provider-ionoscloud.s3Object.S3ObjectConfig.property.etag"></a>
-
-```csharp
-public string Etag { get; set; }
-```
-
-- *Type:* string
-
-An entity tag (ETag) is an opaque identifier assigned by a web server to a specific version of a resource found at a URL.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.1/docs/resources/s3_object#etag S3Object#etag}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.2/docs/resources/s3_object#content_type S3Object#content_type}
 
 ---
 
@@ -1630,7 +1669,7 @@ public string Expires { get; set; }
 
 The date and time at which the object is no longer cacheable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.1/docs/resources/s3_object#expires S3Object#expires}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.2/docs/resources/s3_object#expires S3Object#expires}
 
 ---
 
@@ -1646,7 +1685,7 @@ Specifies whether to delete the object even if it has a governance-type Object L
 
 You must explicitly pass a value of true for this parameter to delete the object.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.1/docs/resources/s3_object#force_destroy S3Object#force_destroy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.2/docs/resources/s3_object#force_destroy S3Object#force_destroy}
 
 ---
 
@@ -1660,7 +1699,7 @@ public System.Collections.Generic.IDictionary<string, string> Metadata { get; se
 
 A map of metadata to store with the object in IONOS S3 Object Storage.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.1/docs/resources/s3_object#metadata S3Object#metadata}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.2/docs/resources/s3_object#metadata S3Object#metadata}
 
 ---
 
@@ -1676,7 +1715,53 @@ The concatenation of the authentication device's serial number, a space, and the
 
 Required to permanently delete a versioned object if versioning is configured with MFA Delete enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.1/docs/resources/s3_object#mfa S3Object#mfa}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.2/docs/resources/s3_object#mfa S3Object#mfa}
+
+---
+
+##### `ObjectLockLegalHold`<sup>Optional</sup> <a name="ObjectLockLegalHold" id="@cdktf/provider-ionoscloud.s3Object.S3ObjectConfig.property.objectLockLegalHold"></a>
+
+```csharp
+public string ObjectLockLegalHold { get; set; }
+```
+
+- *Type:* string
+
+Specifies whether a legal hold will be applied to this object.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.2/docs/resources/s3_object#object_lock_legal_hold S3Object#object_lock_legal_hold}
+
+---
+
+##### `ObjectLockMode`<sup>Optional</sup> <a name="ObjectLockMode" id="@cdktf/provider-ionoscloud.s3Object.S3ObjectConfig.property.objectLockMode"></a>
+
+```csharp
+public string ObjectLockMode { get; set; }
+```
+
+- *Type:* string
+
+Confirms that the requester knows that they will be charged for the request.
+
+Bucket owners need not specify this parameter in their requests.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.2/docs/resources/s3_object#object_lock_mode S3Object#object_lock_mode}
+
+---
+
+##### `ObjectLockRetainUntilDate`<sup>Optional</sup> <a name="ObjectLockRetainUntilDate" id="@cdktf/provider-ionoscloud.s3Object.S3ObjectConfig.property.objectLockRetainUntilDate"></a>
+
+```csharp
+public string ObjectLockRetainUntilDate { get; set; }
+```
+
+- *Type:* string
+
+The date and time when you want this object's Object Lock to expire.
+
+Must be formatted as a timestamp parameter.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.2/docs/resources/s3_object#object_lock_retain_until_date S3Object#object_lock_retain_until_date}
 
 ---
 
@@ -1692,7 +1777,7 @@ Confirms that the requester knows that they will be charged for the request.
 
 Bucket owners need not specify this parameter in their requests.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.1/docs/resources/s3_object#request_payer S3Object#request_payer}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.2/docs/resources/s3_object#request_payer S3Object#request_payer}
 
 ---
 
@@ -1706,7 +1791,7 @@ public string ServerSideEncryption { get; set; }
 
 The server-side encryption algorithm used when storing this object in IONOS S3 Object Storage (AES256).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.1/docs/resources/s3_object#server_side_encryption S3Object#server_side_encryption}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.2/docs/resources/s3_object#server_side_encryption S3Object#server_side_encryption}
 
 ---
 
@@ -1722,7 +1807,7 @@ Specifies the IONOS S3 Object Storage Encryption Context to use for object encry
 
 The value of this header is a base64-encoded UTF-8 string holding JSON with the encryption context key-value pairs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.1/docs/resources/s3_object#server_side_encryption_context S3Object#server_side_encryption_context}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.2/docs/resources/s3_object#server_side_encryption_context S3Object#server_side_encryption_context}
 
 ---
 
@@ -1736,7 +1821,7 @@ public string ServerSideEncryptionCustomerAlgorithm { get; set; }
 
 Specifies the algorithm to use to when encrypting the object (e.g., AES256).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.1/docs/resources/s3_object#server_side_encryption_customer_algorithm S3Object#server_side_encryption_customer_algorithm}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.2/docs/resources/s3_object#server_side_encryption_customer_algorithm S3Object#server_side_encryption_customer_algorithm}
 
 ---
 
@@ -1750,7 +1835,7 @@ public string ServerSideEncryptionCustomerKey { get; set; }
 
 Specifies the 256-bit, base64-encoded encryption key to use to encrypt and decrypt your data.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.1/docs/resources/s3_object#server_side_encryption_customer_key S3Object#server_side_encryption_customer_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.2/docs/resources/s3_object#server_side_encryption_customer_key S3Object#server_side_encryption_customer_key}
 
 ---
 
@@ -1766,7 +1851,7 @@ Specifies the 128-bit MD5 digest of the encryption key according to RFC 1321.
 
 IONOS S3 Object Storage uses this header for a message integrity check  to ensure that the encryption key was transmitted without error
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.1/docs/resources/s3_object#server_side_encryption_customer_key_md5 S3Object#server_side_encryption_customer_key_md5}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.2/docs/resources/s3_object#server_side_encryption_customer_key_md5 S3Object#server_side_encryption_customer_key_md5}
 
 ---
 
@@ -1780,7 +1865,7 @@ public string Source { get; set; }
 
 The path to the file to upload.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.1/docs/resources/s3_object#source S3Object#source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.2/docs/resources/s3_object#source S3Object#source}
 
 ---
 
@@ -1794,7 +1879,7 @@ public string StorageClass { get; set; }
 
 The storage class of the object. Valid value is 'STANDARD'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.1/docs/resources/s3_object#storage_class S3Object#storage_class}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.2/docs/resources/s3_object#storage_class S3Object#storage_class}
 
 ---
 
@@ -1808,21 +1893,7 @@ public System.Collections.Generic.IDictionary<string, string> Tags { get; set; }
 
 The tag-set for the object.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.1/docs/resources/s3_object#tags S3Object#tags}
-
----
-
-##### `VersionId`<sup>Optional</sup> <a name="VersionId" id="@cdktf/provider-ionoscloud.s3Object.S3ObjectConfig.property.versionId"></a>
-
-```csharp
-public string VersionId { get; set; }
-```
-
-- *Type:* string
-
-The version of the object.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.1/docs/resources/s3_object#version_id S3Object#version_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.2/docs/resources/s3_object#tags S3Object#tags}
 
 ---
 
@@ -1838,7 +1909,7 @@ If the bucket is configured as a website, redirects requests for this object to 
 
 IONOS S3 Object Storage stores the value of this header in the object metadata
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.1/docs/resources/s3_object#website_redirect S3Object#website_redirect}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.2/docs/resources/s3_object#website_redirect S3Object#website_redirect}
 
 ---
 

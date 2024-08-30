@@ -4,12 +4,12 @@
 
 ### DataIonoscloudPgDatabase <a name="DataIonoscloudPgDatabase" id="@cdktf/provider-ionoscloud.dataIonoscloudPgDatabase.DataIonoscloudPgDatabase"></a>
 
-Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.1/docs/data-sources/pg_database ionoscloud_pg_database}.
+Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.2/docs/data-sources/pg_database ionoscloud_pg_database}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.dataIonoscloudPgDatabase.DataIonoscloudPgDatabase.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/dataionoscloudpgdatabase"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/dataionoscloudpgdatabase"
 
 dataionoscloudpgdatabase.NewDataIonoscloudPgDatabase(scope Construct, id *string, config DataIonoscloudPgDatabaseConfig) DataIonoscloudPgDatabase
 ```
@@ -296,7 +296,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-ionoscloud.dataIonoscloudPgDatabase.DataIonoscloudPgDatabase.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/dataionoscloudpgdatabase"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/dataionoscloudpgdatabase"
 
 dataionoscloudpgdatabase.DataIonoscloudPgDatabase_IsConstruct(x interface{}) *bool
 ```
@@ -328,7 +328,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-ionoscloud.dataIonoscloudPgDatabase.DataIonoscloudPgDatabase.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/dataionoscloudpgdatabase"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/dataionoscloudpgdatabase"
 
 dataionoscloudpgdatabase.DataIonoscloudPgDatabase_IsTerraformElement(x interface{}) *bool
 ```
@@ -342,7 +342,7 @@ dataionoscloudpgdatabase.DataIonoscloudPgDatabase_IsTerraformElement(x interface
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-ionoscloud.dataIonoscloudPgDatabase.DataIonoscloudPgDatabase.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/dataionoscloudpgdatabase"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/dataionoscloudpgdatabase"
 
 dataionoscloudpgdatabase.DataIonoscloudPgDatabase_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -356,7 +356,7 @@ dataionoscloudpgdatabase.DataIonoscloudPgDatabase_IsTerraformDataSource(x interf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-ionoscloud.dataIonoscloudPgDatabase.DataIonoscloudPgDatabase.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/dataionoscloudpgdatabase"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/dataionoscloudpgdatabase"
 
 dataionoscloudpgdatabase.DataIonoscloudPgDatabase_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -385,7 +385,7 @@ The construct id used in the generated config for the DataIonoscloudPgDatabase t
 
 The id of the existing DataIonoscloudPgDatabase that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.1/docs/data-sources/pg_database#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.2/docs/data-sources/pg_database#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -651,7 +651,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-ionoscloud.dataIonoscloudPgDatabase.DataIonoscloudPgDatabaseConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/dataionoscloudpgdatabase"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/dataionoscloudpgdatabase"
 
 &dataionoscloudpgdatabase.DataIonoscloudPgDatabaseConfig {
 	Connection: interface{},
@@ -663,7 +663,7 @@ import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/dataionoscl
 	Provisioners: *[]interface{},
 	ClusterId: *string,
 	Name: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11.dataIonoscloudPgDatabase.DataIonoscloudPgDatabaseTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud.dataIonoscloudPgDatabase.DataIonoscloudPgDatabaseTimeouts,
 }
 ```
 
@@ -678,8 +678,8 @@ import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/dataionoscl
 | <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudPgDatabase.DataIonoscloudPgDatabaseConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudPgDatabase.DataIonoscloudPgDatabaseConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudPgDatabase.DataIonoscloudPgDatabaseConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudPgDatabase.DataIonoscloudPgDatabaseConfig.property.clusterId">ClusterId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.1/docs/data-sources/pg_database#cluster_id DataIonoscloudPgDatabase#cluster_id}. |
-| <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudPgDatabase.DataIonoscloudPgDatabaseConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.1/docs/data-sources/pg_database#name DataIonoscloudPgDatabase#name}. |
+| <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudPgDatabase.DataIonoscloudPgDatabaseConfig.property.clusterId">ClusterId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.2/docs/data-sources/pg_database#cluster_id DataIonoscloudPgDatabase#cluster_id}. |
+| <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudPgDatabase.DataIonoscloudPgDatabaseConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.2/docs/data-sources/pg_database#name DataIonoscloudPgDatabase#name}. |
 | <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudPgDatabase.DataIonoscloudPgDatabaseConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudPgDatabase.DataIonoscloudPgDatabaseTimeouts">DataIonoscloudPgDatabaseTimeouts</a></code> | timeouts block. |
 
 ---
@@ -762,7 +762,7 @@ ClusterId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.1/docs/data-sources/pg_database#cluster_id DataIonoscloudPgDatabase#cluster_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.2/docs/data-sources/pg_database#cluster_id DataIonoscloudPgDatabase#cluster_id}.
 
 ---
 
@@ -774,7 +774,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.1/docs/data-sources/pg_database#name DataIonoscloudPgDatabase#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.2/docs/data-sources/pg_database#name DataIonoscloudPgDatabase#name}.
 
 ---
 
@@ -788,7 +788,7 @@ Timeouts DataIonoscloudPgDatabaseTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.1/docs/data-sources/pg_database#timeouts DataIonoscloudPgDatabase#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.2/docs/data-sources/pg_database#timeouts DataIonoscloudPgDatabase#timeouts}
 
 ---
 
@@ -797,7 +797,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 #### Initializer <a name="Initializer" id="@cdktf/provider-ionoscloud.dataIonoscloudPgDatabase.DataIonoscloudPgDatabaseTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/dataionoscloudpgdatabase"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/dataionoscloudpgdatabase"
 
 &dataionoscloudpgdatabase.DataIonoscloudPgDatabaseTimeouts {
 	Create: *string,
@@ -811,10 +811,10 @@ import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/dataionoscl
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudPgDatabase.DataIonoscloudPgDatabaseTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.1/docs/data-sources/pg_database#create DataIonoscloudPgDatabase#create}. |
-| <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudPgDatabase.DataIonoscloudPgDatabaseTimeouts.property.default">Default</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.1/docs/data-sources/pg_database#default DataIonoscloudPgDatabase#default}. |
-| <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudPgDatabase.DataIonoscloudPgDatabaseTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.1/docs/data-sources/pg_database#delete DataIonoscloudPgDatabase#delete}. |
-| <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudPgDatabase.DataIonoscloudPgDatabaseTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.1/docs/data-sources/pg_database#update DataIonoscloudPgDatabase#update}. |
+| <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudPgDatabase.DataIonoscloudPgDatabaseTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.2/docs/data-sources/pg_database#create DataIonoscloudPgDatabase#create}. |
+| <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudPgDatabase.DataIonoscloudPgDatabaseTimeouts.property.default">Default</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.2/docs/data-sources/pg_database#default DataIonoscloudPgDatabase#default}. |
+| <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudPgDatabase.DataIonoscloudPgDatabaseTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.2/docs/data-sources/pg_database#delete DataIonoscloudPgDatabase#delete}. |
+| <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudPgDatabase.DataIonoscloudPgDatabaseTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.2/docs/data-sources/pg_database#update DataIonoscloudPgDatabase#update}. |
 
 ---
 
@@ -826,7 +826,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.1/docs/data-sources/pg_database#create DataIonoscloudPgDatabase#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.2/docs/data-sources/pg_database#create DataIonoscloudPgDatabase#create}.
 
 ---
 
@@ -838,7 +838,7 @@ Default *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.1/docs/data-sources/pg_database#default DataIonoscloudPgDatabase#default}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.2/docs/data-sources/pg_database#default DataIonoscloudPgDatabase#default}.
 
 ---
 
@@ -850,7 +850,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.1/docs/data-sources/pg_database#delete DataIonoscloudPgDatabase#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.2/docs/data-sources/pg_database#delete DataIonoscloudPgDatabase#delete}.
 
 ---
 
@@ -862,7 +862,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.1/docs/data-sources/pg_database#update DataIonoscloudPgDatabase#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.2/docs/data-sources/pg_database#update DataIonoscloudPgDatabase#update}.
 
 ---
 
@@ -873,7 +873,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.dataIonoscloudPgDatabase.DataIonoscloudPgDatabaseTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/dataionoscloudpgdatabase"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/dataionoscloudpgdatabase"
 
 dataionoscloudpgdatabase.NewDataIonoscloudPgDatabaseTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataIonoscloudPgDatabaseTimeoutsOutputReference
 ```

@@ -4,12 +4,12 @@
 
 ### DataIonoscloudApigateway <a name="DataIonoscloudApigateway" id="@cdktf/provider-ionoscloud.dataIonoscloudApigateway.DataIonoscloudApigateway"></a>
 
-Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.1/docs/data-sources/apigateway ionoscloud_apigateway}.
+Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.2/docs/data-sources/apigateway ionoscloud_apigateway}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.dataIonoscloudApigateway.DataIonoscloudApigateway.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/dataionoscloudapigateway"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/dataionoscloudapigateway"
 
 dataionoscloudapigateway.NewDataIonoscloudApigateway(scope Construct, id *string, config DataIonoscloudApigatewayConfig) DataIonoscloudApigateway
 ```
@@ -297,7 +297,7 @@ func ResetPartialMatch()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-ionoscloud.dataIonoscloudApigateway.DataIonoscloudApigateway.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/dataionoscloudapigateway"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/dataionoscloudapigateway"
 
 dataionoscloudapigateway.DataIonoscloudApigateway_IsConstruct(x interface{}) *bool
 ```
@@ -329,7 +329,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-ionoscloud.dataIonoscloudApigateway.DataIonoscloudApigateway.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/dataionoscloudapigateway"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/dataionoscloudapigateway"
 
 dataionoscloudapigateway.DataIonoscloudApigateway_IsTerraformElement(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ dataionoscloudapigateway.DataIonoscloudApigateway_IsTerraformElement(x interface
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-ionoscloud.dataIonoscloudApigateway.DataIonoscloudApigateway.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/dataionoscloudapigateway"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/dataionoscloudapigateway"
 
 dataionoscloudapigateway.DataIonoscloudApigateway_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -357,7 +357,7 @@ dataionoscloudapigateway.DataIonoscloudApigateway_IsTerraformDataSource(x interf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-ionoscloud.dataIonoscloudApigateway.DataIonoscloudApigateway.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/dataionoscloudapigateway"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/dataionoscloudapigateway"
 
 dataionoscloudapigateway.DataIonoscloudApigateway_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -386,7 +386,7 @@ The construct id used in the generated config for the DataIonoscloudApigateway t
 
 The id of the existing DataIonoscloudApigateway that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.1/docs/data-sources/apigateway#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.2/docs/data-sources/apigateway#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -674,7 +674,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-ionoscloud.dataIonoscloudApigateway.DataIonoscloudApigatewayConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/dataionoscloudapigateway"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/dataionoscloudapigateway"
 
 &dataionoscloudapigateway.DataIonoscloudApigatewayConfig {
 	Connection: interface{},
@@ -787,7 +787,7 @@ Id *string
 
 The ID (UUID) of the API Gateway.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.1/docs/data-sources/apigateway#id DataIonoscloudApigateway#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.2/docs/data-sources/apigateway#id DataIonoscloudApigateway#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -804,7 +804,7 @@ Name *string
 
 The name of the API Gateway.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.1/docs/data-sources/apigateway#name DataIonoscloudApigateway#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.2/docs/data-sources/apigateway#name DataIonoscloudApigateway#name}
 
 ---
 
@@ -818,7 +818,7 @@ PartialMatch interface{}
 
 Whether partial matching is allowed or not when using the name filter.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.1/docs/data-sources/apigateway#partial_match DataIonoscloudApigateway#partial_match}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.2/docs/data-sources/apigateway#partial_match DataIonoscloudApigateway#partial_match}
 
 ---
 
@@ -827,7 +827,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 #### Initializer <a name="Initializer" id="@cdktf/provider-ionoscloud.dataIonoscloudApigateway.DataIonoscloudApigatewayCustomDomains.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/dataionoscloudapigateway"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/dataionoscloudapigateway"
 
 &dataionoscloudapigateway.DataIonoscloudApigatewayCustomDomains {
 
@@ -842,7 +842,7 @@ import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/dataionoscl
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.dataIonoscloudApigateway.DataIonoscloudApigatewayCustomDomainsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/dataionoscloudapigateway"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/dataionoscloudapigateway"
 
 dataionoscloudapigateway.NewDataIonoscloudApigatewayCustomDomainsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataIonoscloudApigatewayCustomDomainsList
 ```
@@ -991,7 +991,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.dataIonoscloudApigateway.DataIonoscloudApigatewayCustomDomainsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/dataionoscloudapigateway"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/dataionoscloudapigateway"
 
 dataionoscloudapigateway.NewDataIonoscloudApigatewayCustomDomainsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataIonoscloudApigatewayCustomDomainsOutputReference
 ```
