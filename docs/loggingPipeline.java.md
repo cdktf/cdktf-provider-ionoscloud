@@ -4,7 +4,7 @@
 
 ### LoggingPipeline <a name="LoggingPipeline" id="@cdktf/provider-ionoscloud.loggingPipeline.LoggingPipeline"></a>
 
-Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.2/docs/resources/logging_pipeline ionoscloud_logging_pipeline}.
+Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.3/docs/resources/logging_pipeline ionoscloud_logging_pipeline}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.loggingPipeline.LoggingPipeline.Initializer"></a>
 
@@ -23,11 +23,11 @@ LoggingPipeline.Builder.create(Construct scope, java.lang.String id)
 //  .provisioners(java.util.List<FileProvisioner)
 //  .provisioners(LocalExecProvisioner)
 //  .provisioners(RemoteExecProvisioner>)
-    .location(java.lang.String)
     .log(IResolvable)
     .log(java.util.List<LoggingPipelineLog>)
     .name(java.lang.String)
 //  .id(java.lang.String)
+//  .location(java.lang.String)
 //  .timeouts(LoggingPipelineTimeouts)
     .build();
 ```
@@ -43,10 +43,10 @@ LoggingPipeline.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-ionoscloud.loggingPipeline.LoggingPipeline.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.loggingPipeline.LoggingPipeline.Initializer.parameter.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.loggingPipeline.LoggingPipeline.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-ionoscloud.loggingPipeline.LoggingPipeline.Initializer.parameter.location">location</a></code> | <code>java.lang.String</code> | The location of your logging pipeline. Default: de/txl. Supported locations: de/fra, de/txl, es/vit, gb/lhr, fr/par. |
 | <code><a href="#@cdktf/provider-ionoscloud.loggingPipeline.LoggingPipeline.Initializer.parameter.log">log</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-ionoscloud.loggingPipeline.LoggingPipelineLog">LoggingPipelineLog</a>></code> | log block. |
-| <code><a href="#@cdktf/provider-ionoscloud.loggingPipeline.LoggingPipeline.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.2/docs/resources/logging_pipeline#name LoggingPipeline#name}. |
-| <code><a href="#@cdktf/provider-ionoscloud.loggingPipeline.LoggingPipeline.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.2/docs/resources/logging_pipeline#id LoggingPipeline#id}. |
+| <code><a href="#@cdktf/provider-ionoscloud.loggingPipeline.LoggingPipeline.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.3/docs/resources/logging_pipeline#name LoggingPipeline#name}. |
+| <code><a href="#@cdktf/provider-ionoscloud.loggingPipeline.LoggingPipeline.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.3/docs/resources/logging_pipeline#id LoggingPipeline#id}. |
+| <code><a href="#@cdktf/provider-ionoscloud.loggingPipeline.LoggingPipeline.Initializer.parameter.location">location</a></code> | <code>java.lang.String</code> | The location of your logging pipeline. Default: de/txl. Supported locations: de/fra, de/txl, es/vit, gb/lhr, fr/par. |
 | <code><a href="#@cdktf/provider-ionoscloud.loggingPipeline.LoggingPipeline.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-ionoscloud.loggingPipeline.LoggingPipelineTimeouts">LoggingPipelineTimeouts</a></code> | timeouts block. |
 
 ---
@@ -111,23 +111,13 @@ Must be unique amongst siblings in the same scope
 
 ---
 
-##### `location`<sup>Required</sup> <a name="location" id="@cdktf/provider-ionoscloud.loggingPipeline.LoggingPipeline.Initializer.parameter.location"></a>
-
-- *Type:* java.lang.String
-
-The location of your logging pipeline. Default: de/txl. Supported locations: de/fra, de/txl, es/vit, gb/lhr, fr/par.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.2/docs/resources/logging_pipeline#location LoggingPipeline#location}
-
----
-
 ##### `log`<sup>Required</sup> <a name="log" id="@cdktf/provider-ionoscloud.loggingPipeline.LoggingPipeline.Initializer.parameter.log"></a>
 
 - *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-ionoscloud.loggingPipeline.LoggingPipelineLog">LoggingPipelineLog</a>>
 
 log block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.2/docs/resources/logging_pipeline#log LoggingPipeline#log}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.3/docs/resources/logging_pipeline#log LoggingPipeline#log}
 
 ---
 
@@ -135,7 +125,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.2/docs/resources/logging_pipeline#name LoggingPipeline#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.3/docs/resources/logging_pipeline#name LoggingPipeline#name}.
 
 ---
 
@@ -143,10 +133,20 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.2/docs/resources/logging_pipeline#id LoggingPipeline#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.3/docs/resources/logging_pipeline#id LoggingPipeline#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `location`<sup>Optional</sup> <a name="location" id="@cdktf/provider-ionoscloud.loggingPipeline.LoggingPipeline.Initializer.parameter.location"></a>
+
+- *Type:* java.lang.String
+
+The location of your logging pipeline. Default: de/txl. Supported locations: de/fra, de/txl, es/vit, gb/lhr, fr/par.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.3/docs/resources/logging_pipeline#location LoggingPipeline#location}
 
 ---
 
@@ -156,7 +156,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.2/docs/resources/logging_pipeline#timeouts LoggingPipeline#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.3/docs/resources/logging_pipeline#timeouts LoggingPipeline#timeouts}
 
 ---
 
@@ -190,6 +190,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 | <code><a href="#@cdktf/provider-ionoscloud.loggingPipeline.LoggingPipeline.putLog">putLog</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.loggingPipeline.LoggingPipeline.putTimeouts">putTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.loggingPipeline.LoggingPipeline.resetId">resetId</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.loggingPipeline.LoggingPipeline.resetLocation">resetLocation</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.loggingPipeline.LoggingPipeline.resetTimeouts">resetTimeouts</a></code> | *No description.* |
 
 ---
@@ -514,6 +515,12 @@ public void putTimeouts(LoggingPipelineTimeouts value)
 public void resetId()
 ```
 
+##### `resetLocation` <a name="resetLocation" id="@cdktf/provider-ionoscloud.loggingPipeline.LoggingPipeline.resetLocation"></a>
+
+```java
+public void resetLocation()
+```
+
 ##### `resetTimeouts` <a name="resetTimeouts" id="@cdktf/provider-ionoscloud.loggingPipeline.LoggingPipeline.resetTimeouts"></a>
 
 ```java
@@ -623,7 +630,7 @@ The construct id used in the generated config for the LoggingPipeline to import.
 
 The id of the existing LoggingPipeline that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.2/docs/resources/logging_pipeline#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.3/docs/resources/logging_pipeline#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -958,11 +965,11 @@ LoggingPipelineConfig.builder()
 //  .provisioners(java.util.List<FileProvisioner)
 //  .provisioners(LocalExecProvisioner)
 //  .provisioners(RemoteExecProvisioner>)
-    .location(java.lang.String)
     .log(IResolvable)
     .log(java.util.List<LoggingPipelineLog>)
     .name(java.lang.String)
 //  .id(java.lang.String)
+//  .location(java.lang.String)
 //  .timeouts(LoggingPipelineTimeouts)
     .build();
 ```
@@ -978,10 +985,10 @@ LoggingPipelineConfig.builder()
 | <code><a href="#@cdktf/provider-ionoscloud.loggingPipeline.LoggingPipelineConfig.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.loggingPipeline.LoggingPipelineConfig.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.loggingPipeline.LoggingPipelineConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-ionoscloud.loggingPipeline.LoggingPipelineConfig.property.location">location</a></code> | <code>java.lang.String</code> | The location of your logging pipeline. Default: de/txl. Supported locations: de/fra, de/txl, es/vit, gb/lhr, fr/par. |
 | <code><a href="#@cdktf/provider-ionoscloud.loggingPipeline.LoggingPipelineConfig.property.log">log</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-ionoscloud.loggingPipeline.LoggingPipelineLog">LoggingPipelineLog</a>></code> | log block. |
-| <code><a href="#@cdktf/provider-ionoscloud.loggingPipeline.LoggingPipelineConfig.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.2/docs/resources/logging_pipeline#name LoggingPipeline#name}. |
-| <code><a href="#@cdktf/provider-ionoscloud.loggingPipeline.LoggingPipelineConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.2/docs/resources/logging_pipeline#id LoggingPipeline#id}. |
+| <code><a href="#@cdktf/provider-ionoscloud.loggingPipeline.LoggingPipelineConfig.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.3/docs/resources/logging_pipeline#name LoggingPipeline#name}. |
+| <code><a href="#@cdktf/provider-ionoscloud.loggingPipeline.LoggingPipelineConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.3/docs/resources/logging_pipeline#id LoggingPipeline#id}. |
+| <code><a href="#@cdktf/provider-ionoscloud.loggingPipeline.LoggingPipelineConfig.property.location">location</a></code> | <code>java.lang.String</code> | The location of your logging pipeline. Default: de/txl. Supported locations: de/fra, de/txl, es/vit, gb/lhr, fr/par. |
 | <code><a href="#@cdktf/provider-ionoscloud.loggingPipeline.LoggingPipelineConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-ionoscloud.loggingPipeline.LoggingPipelineTimeouts">LoggingPipelineTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1056,20 +1063,6 @@ public java.lang.Object getProvisioners();
 
 ---
 
-##### `location`<sup>Required</sup> <a name="location" id="@cdktf/provider-ionoscloud.loggingPipeline.LoggingPipelineConfig.property.location"></a>
-
-```java
-public java.lang.String getLocation();
-```
-
-- *Type:* java.lang.String
-
-The location of your logging pipeline. Default: de/txl. Supported locations: de/fra, de/txl, es/vit, gb/lhr, fr/par.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.2/docs/resources/logging_pipeline#location LoggingPipeline#location}
-
----
-
 ##### `log`<sup>Required</sup> <a name="log" id="@cdktf/provider-ionoscloud.loggingPipeline.LoggingPipelineConfig.property.log"></a>
 
 ```java
@@ -1080,7 +1073,7 @@ public java.lang.Object getLog();
 
 log block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.2/docs/resources/logging_pipeline#log LoggingPipeline#log}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.3/docs/resources/logging_pipeline#log LoggingPipeline#log}
 
 ---
 
@@ -1092,7 +1085,7 @@ public java.lang.String getName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.2/docs/resources/logging_pipeline#name LoggingPipeline#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.3/docs/resources/logging_pipeline#name LoggingPipeline#name}.
 
 ---
 
@@ -1104,10 +1097,24 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.2/docs/resources/logging_pipeline#id LoggingPipeline#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.3/docs/resources/logging_pipeline#id LoggingPipeline#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `location`<sup>Optional</sup> <a name="location" id="@cdktf/provider-ionoscloud.loggingPipeline.LoggingPipelineConfig.property.location"></a>
+
+```java
+public java.lang.String getLocation();
+```
+
+- *Type:* java.lang.String
+
+The location of your logging pipeline. Default: de/txl. Supported locations: de/fra, de/txl, es/vit, gb/lhr, fr/par.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.3/docs/resources/logging_pipeline#location LoggingPipeline#location}
 
 ---
 
@@ -1121,7 +1128,7 @@ public LoggingPipelineTimeouts getTimeouts();
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.2/docs/resources/logging_pipeline#timeouts LoggingPipeline#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.3/docs/resources/logging_pipeline#timeouts LoggingPipeline#timeouts}
 
 ---
 
@@ -1162,7 +1169,7 @@ public java.lang.String getProtocol();
 
 Protocol to use as intake. Possible values are: http, tcp.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.2/docs/resources/logging_pipeline#protocol LoggingPipeline#protocol}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.3/docs/resources/logging_pipeline#protocol LoggingPipeline#protocol}
 
 ---
 
@@ -1176,7 +1183,7 @@ public java.lang.String getSource();
 
 The source parser to be used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.2/docs/resources/logging_pipeline#source LoggingPipeline#source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.3/docs/resources/logging_pipeline#source LoggingPipeline#source}
 
 ---
 
@@ -1190,7 +1197,7 @@ public java.lang.String getTag();
 
 The tag is used to distinguish different pipelines. Must be unique amongst the pipeline's array items.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.2/docs/resources/logging_pipeline#tag LoggingPipeline#tag}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.3/docs/resources/logging_pipeline#tag LoggingPipeline#tag}
 
 ---
 
@@ -1204,7 +1211,7 @@ public java.lang.Object getDestinations();
 
 destinations block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.2/docs/resources/logging_pipeline#destinations LoggingPipeline#destinations}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.3/docs/resources/logging_pipeline#destinations LoggingPipeline#destinations}
 
 ---
 
@@ -1226,7 +1233,7 @@ LoggingPipelineLogDestinations.builder()
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-ionoscloud.loggingPipeline.LoggingPipelineLogDestinations.property.retentionInDays">retentionInDays</a></code> | <code>java.lang.Number</code> | Defines the number of days a log record should be kept in loki. |
-| <code><a href="#@cdktf/provider-ionoscloud.loggingPipeline.LoggingPipelineLogDestinations.property.type">type</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.2/docs/resources/logging_pipeline#type LoggingPipeline#type}. |
+| <code><a href="#@cdktf/provider-ionoscloud.loggingPipeline.LoggingPipelineLogDestinations.property.type">type</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.3/docs/resources/logging_pipeline#type LoggingPipeline#type}. |
 
 ---
 
@@ -1242,7 +1249,7 @@ Defines the number of days a log record should be kept in loki.
 
 Works with loki destination type only. Possible values are: 7, 14, 30.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.2/docs/resources/logging_pipeline#retention_in_days LoggingPipeline#retention_in_days}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.3/docs/resources/logging_pipeline#retention_in_days LoggingPipeline#retention_in_days}
 
 ---
 
@@ -1254,7 +1261,7 @@ public java.lang.String getType();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.2/docs/resources/logging_pipeline#type LoggingPipeline#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.3/docs/resources/logging_pipeline#type LoggingPipeline#type}.
 
 ---
 
@@ -1277,10 +1284,10 @@ LoggingPipelineTimeouts.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-ionoscloud.loggingPipeline.LoggingPipelineTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.2/docs/resources/logging_pipeline#create LoggingPipeline#create}. |
-| <code><a href="#@cdktf/provider-ionoscloud.loggingPipeline.LoggingPipelineTimeouts.property.default">default</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.2/docs/resources/logging_pipeline#default LoggingPipeline#default}. |
-| <code><a href="#@cdktf/provider-ionoscloud.loggingPipeline.LoggingPipelineTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.2/docs/resources/logging_pipeline#delete LoggingPipeline#delete}. |
-| <code><a href="#@cdktf/provider-ionoscloud.loggingPipeline.LoggingPipelineTimeouts.property.update">update</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.2/docs/resources/logging_pipeline#update LoggingPipeline#update}. |
+| <code><a href="#@cdktf/provider-ionoscloud.loggingPipeline.LoggingPipelineTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.3/docs/resources/logging_pipeline#create LoggingPipeline#create}. |
+| <code><a href="#@cdktf/provider-ionoscloud.loggingPipeline.LoggingPipelineTimeouts.property.default">default</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.3/docs/resources/logging_pipeline#default LoggingPipeline#default}. |
+| <code><a href="#@cdktf/provider-ionoscloud.loggingPipeline.LoggingPipelineTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.3/docs/resources/logging_pipeline#delete LoggingPipeline#delete}. |
+| <code><a href="#@cdktf/provider-ionoscloud.loggingPipeline.LoggingPipelineTimeouts.property.update">update</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.3/docs/resources/logging_pipeline#update LoggingPipeline#update}. |
 
 ---
 
@@ -1292,7 +1299,7 @@ public java.lang.String getCreate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.2/docs/resources/logging_pipeline#create LoggingPipeline#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.3/docs/resources/logging_pipeline#create LoggingPipeline#create}.
 
 ---
 
@@ -1304,7 +1311,7 @@ public java.lang.String getDefault();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.2/docs/resources/logging_pipeline#default LoggingPipeline#default}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.3/docs/resources/logging_pipeline#default LoggingPipeline#default}.
 
 ---
 
@@ -1316,7 +1323,7 @@ public java.lang.String getDelete();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.2/docs/resources/logging_pipeline#delete LoggingPipeline#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.3/docs/resources/logging_pipeline#delete LoggingPipeline#delete}.
 
 ---
 
@@ -1328,7 +1335,7 @@ public java.lang.String getUpdate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.2/docs/resources/logging_pipeline#update LoggingPipeline#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.3/docs/resources/logging_pipeline#update LoggingPipeline#update}.
 
 ---
 
