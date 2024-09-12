@@ -4,7 +4,7 @@
 
 ### DataIonoscloudS3BucketPolicy <a name="DataIonoscloudS3BucketPolicy" id="@cdktf/provider-ionoscloud.dataIonoscloudS3BucketPolicy.DataIonoscloudS3BucketPolicy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.3/docs/data-sources/s3_bucket_policy ionoscloud_s3_bucket_policy}.
+Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.4/docs/data-sources/s3_bucket_policy ionoscloud_s3_bucket_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.dataIonoscloudS3BucketPolicy.DataIonoscloudS3BucketPolicy.Initializer"></a>
 
@@ -365,7 +365,7 @@ The construct id used in the generated config for the DataIonoscloudS3BucketPoli
 
 The id of the existing DataIonoscloudS3BucketPolicy that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.3/docs/data-sources/s3_bucket_policy#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.4/docs/data-sources/s3_bucket_policy#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -685,7 +685,7 @@ public string Bucket { get; set; }
 
 The name of the bucket.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.3/docs/data-sources/s3_bucket_policy#bucket DataIonoscloudS3BucketPolicy#bucket}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.4/docs/data-sources/s3_bucket_policy#bucket DataIonoscloudS3BucketPolicy#bucket}
 
 ---
 

@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.3/docs/data-sources/vpn_wireguard_gateway
+// https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.4/docs/data-sources/vpn_wireguard_gateway
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,13 +8,13 @@ import * as cdktf from 'cdktf';
 
 export interface DataIonoscloudVpnWireguardGatewayConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.3/docs/data-sources/vpn_wireguard_gateway#description DataIonoscloudVpnWireguardGateway#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.4/docs/data-sources/vpn_wireguard_gateway#description DataIonoscloudVpnWireguardGateway#description}
   */
   readonly description?: string;
   /**
   * The ID of the WireGuard Gateway
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.3/docs/data-sources/vpn_wireguard_gateway#id DataIonoscloudVpnWireguardGateway#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.4/docs/data-sources/vpn_wireguard_gateway#id DataIonoscloudVpnWireguardGateway#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -28,11 +23,11 @@ export interface DataIonoscloudVpnWireguardGatewayConfig extends cdktf.Terraform
   /**
   * The location of the WireGuard Gateway. Supported locations: de/fra, de/txl
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.3/docs/data-sources/vpn_wireguard_gateway#location DataIonoscloudVpnWireguardGateway#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.4/docs/data-sources/vpn_wireguard_gateway#location DataIonoscloudVpnWireguardGateway#location}
   */
   readonly location: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.3/docs/data-sources/vpn_wireguard_gateway#name DataIonoscloudVpnWireguardGateway#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.4/docs/data-sources/vpn_wireguard_gateway#name DataIonoscloudVpnWireguardGateway#name}
   */
   readonly name?: string;
 }
@@ -128,7 +123,7 @@ export class DataIonoscloudVpnWireguardGatewayConnectionsList extends cdktf.Comp
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.3/docs/data-sources/vpn_wireguard_gateway ionoscloud_vpn_wireguard_gateway}
+* Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.4/docs/data-sources/vpn_wireguard_gateway ionoscloud_vpn_wireguard_gateway}
 */
 export class DataIonoscloudVpnWireguardGateway extends cdktf.TerraformDataSource {
 
@@ -144,7 +139,7 @@ export class DataIonoscloudVpnWireguardGateway extends cdktf.TerraformDataSource
   * Generates CDKTF code for importing a DataIonoscloudVpnWireguardGateway resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataIonoscloudVpnWireguardGateway to import
-  * @param importFromId The id of the existing DataIonoscloudVpnWireguardGateway that should be imported. Refer to the {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.3/docs/data-sources/vpn_wireguard_gateway#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataIonoscloudVpnWireguardGateway that should be imported. Refer to the {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.4/docs/data-sources/vpn_wireguard_gateway#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataIonoscloudVpnWireguardGateway to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -156,7 +151,7 @@ export class DataIonoscloudVpnWireguardGateway extends cdktf.TerraformDataSource
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.3/docs/data-sources/vpn_wireguard_gateway ionoscloud_vpn_wireguard_gateway} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.4/docs/data-sources/vpn_wireguard_gateway ionoscloud_vpn_wireguard_gateway} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -167,7 +162,7 @@ export class DataIonoscloudVpnWireguardGateway extends cdktf.TerraformDataSource
       terraformResourceType: 'ionoscloud_vpn_wireguard_gateway',
       terraformGeneratorMetadata: {
         providerName: 'ionoscloud',
-        providerVersion: '6.5.3',
+        providerVersion: '6.5.4',
         providerVersionConstraint: '~> 6.2'
       },
       provider: config.provider,
