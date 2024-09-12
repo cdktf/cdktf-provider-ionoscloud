@@ -4,7 +4,7 @@
 
 ### DataIonoscloudS3Object <a name="DataIonoscloudS3Object" id="@cdktf/provider-ionoscloud.dataIonoscloudS3Object.DataIonoscloudS3Object"></a>
 
-Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.3/docs/data-sources/s3_object ionoscloud_s3_object}.
+Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.4/docs/data-sources/s3_object ionoscloud_s3_object}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.dataIonoscloudS3Object.DataIonoscloudS3Object.Initializer"></a>
 
@@ -379,7 +379,7 @@ The construct id used in the generated config for the DataIonoscloudS3Object to 
 
 The id of the existing DataIonoscloudS3Object that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.3/docs/data-sources/s3_object#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.4/docs/data-sources/s3_object#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -915,10 +915,10 @@ new DataIonoscloudS3ObjectConfig {
 | <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudS3Object.DataIonoscloudS3ObjectConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudS3Object.DataIonoscloudS3ObjectConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudS3Object.DataIonoscloudS3ObjectConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudS3Object.DataIonoscloudS3ObjectConfig.property.bucket">Bucket</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.3/docs/data-sources/s3_object#bucket DataIonoscloudS3Object#bucket}. |
-| <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudS3Object.DataIonoscloudS3ObjectConfig.property.key">Key</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.3/docs/data-sources/s3_object#key DataIonoscloudS3Object#key}. |
-| <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudS3Object.DataIonoscloudS3ObjectConfig.property.range">Range</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.3/docs/data-sources/s3_object#range DataIonoscloudS3Object#range}. |
-| <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudS3Object.DataIonoscloudS3ObjectConfig.property.versionId">VersionId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.3/docs/data-sources/s3_object#version_id DataIonoscloudS3Object#version_id}. |
+| <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudS3Object.DataIonoscloudS3ObjectConfig.property.bucket">Bucket</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.4/docs/data-sources/s3_object#bucket DataIonoscloudS3Object#bucket}. |
+| <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudS3Object.DataIonoscloudS3ObjectConfig.property.key">Key</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.4/docs/data-sources/s3_object#key DataIonoscloudS3Object#key}. |
+| <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudS3Object.DataIonoscloudS3ObjectConfig.property.range">Range</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.4/docs/data-sources/s3_object#range DataIonoscloudS3Object#range}. |
+| <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudS3Object.DataIonoscloudS3ObjectConfig.property.versionId">VersionId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.4/docs/data-sources/s3_object#version_id DataIonoscloudS3Object#version_id}. |
 
 ---
 
@@ -1000,7 +1000,7 @@ public string Bucket { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.3/docs/data-sources/s3_object#bucket DataIonoscloudS3Object#bucket}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.4/docs/data-sources/s3_object#bucket DataIonoscloudS3Object#bucket}.
 
 ---
 
@@ -1012,7 +1012,7 @@ public string Key { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.3/docs/data-sources/s3_object#key DataIonoscloudS3Object#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.4/docs/data-sources/s3_object#key DataIonoscloudS3Object#key}.
 
 ---
 
@@ -1024,7 +1024,7 @@ public string Range { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.3/docs/data-sources/s3_object#range DataIonoscloudS3Object#range}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.4/docs/data-sources/s3_object#range DataIonoscloudS3Object#range}.
 
 ---
 
@@ -1036,7 +1036,7 @@ public string VersionId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.3/docs/data-sources/s3_object#version_id DataIonoscloudS3Object#version_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.4/docs/data-sources/s3_object#version_id DataIonoscloudS3Object#version_id}.
 
 ---
 
