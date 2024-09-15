@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionosclo
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.vcpuServer.VcpuServer.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/vcpuserver"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/vcpuserver"
 
 vcpuserver.NewVcpuServer(scope Construct, id *string, config VcpuServerConfig) VcpuServer
 ```
@@ -514,7 +514,7 @@ func ResetVmState()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-ionoscloud.vcpuServer.VcpuServer.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/vcpuserver"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/vcpuserver"
 
 vcpuserver.VcpuServer_IsConstruct(x interface{}) *bool
 ```
@@ -546,7 +546,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-ionoscloud.vcpuServer.VcpuServer.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/vcpuserver"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/vcpuserver"
 
 vcpuserver.VcpuServer_IsTerraformElement(x interface{}) *bool
 ```
@@ -560,7 +560,7 @@ vcpuserver.VcpuServer_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-ionoscloud.vcpuServer.VcpuServer.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/vcpuserver"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/vcpuserver"
 
 vcpuserver.VcpuServer_IsTerraformResource(x interface{}) *bool
 ```
@@ -574,7 +574,7 @@ vcpuserver.VcpuServer_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-ionoscloud.vcpuServer.VcpuServer.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/vcpuserver"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/vcpuserver"
 
 vcpuserver.VcpuServer_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1254,7 +1254,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-ionoscloud.vcpuServer.VcpuServerConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/vcpuserver"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/vcpuserver"
 
 &vcpuserver.VcpuServerConfig {
 	Connection: interface{},
@@ -1268,7 +1268,7 @@ import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/vcpuserver"
 	DatacenterId: *string,
 	Name: *string,
 	Ram: *f64,
-	Volume: github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11.vcpuServer.VcpuServerVolume,
+	Volume: github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud.vcpuServer.VcpuServerVolume,
 	AvailabilityZone: *string,
 	BootCdrom: *string,
 	BootImage: *string,
@@ -1277,9 +1277,9 @@ import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/vcpuserver"
 	ImageName: *string,
 	ImagePassword: *string,
 	Label: interface{},
-	Nic: github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11.vcpuServer.VcpuServerNic,
+	Nic: github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud.vcpuServer.VcpuServerNic,
 	SshKeys: *[]*string,
-	Timeouts: github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11.vcpuServer.VcpuServerTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud.vcpuServer.VcpuServerTimeouts,
 	VmState: *string,
 }
 ```
@@ -1615,7 +1615,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 #### Initializer <a name="Initializer" id="@cdktf/provider-ionoscloud.vcpuServer.VcpuServerLabel.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/vcpuserver"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/vcpuserver"
 
 &vcpuserver.VcpuServerLabel {
 	Key: *string,
@@ -1661,7 +1661,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 #### Initializer <a name="Initializer" id="@cdktf/provider-ionoscloud.vcpuServer.VcpuServerNic.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/vcpuserver"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/vcpuserver"
 
 &vcpuserver.VcpuServerNic {
 	Lan: *f64,
@@ -1825,7 +1825,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 #### Initializer <a name="Initializer" id="@cdktf/provider-ionoscloud.vcpuServer.VcpuServerNicFirewall.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/vcpuserver"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/vcpuserver"
 
 &vcpuserver.VcpuServerNicFirewall {
 	Protocol: *string,
@@ -1983,7 +1983,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 #### Initializer <a name="Initializer" id="@cdktf/provider-ionoscloud.vcpuServer.VcpuServerTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/vcpuserver"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/vcpuserver"
 
 &vcpuserver.VcpuServerTimeouts {
 	Create: *string,
@@ -2057,7 +2057,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 #### Initializer <a name="Initializer" id="@cdktf/provider-ionoscloud.vcpuServer.VcpuServerVolume.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/vcpuserver"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/vcpuserver"
 
 &vcpuserver.VcpuServerVolume {
 	DiskType: *string,
@@ -2199,7 +2199,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.vcpuServer.VcpuServerLabelList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/vcpuserver"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/vcpuserver"
 
 vcpuserver.NewVcpuServerLabelList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) VcpuServerLabelList
 ```
@@ -2359,7 +2359,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.vcpuServer.VcpuServerLabelOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/vcpuserver"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/vcpuserver"
 
 vcpuserver.NewVcpuServerLabelOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) VcpuServerLabelOutputReference
 ```
@@ -2670,7 +2670,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.vcpuServer.VcpuServerNicFirewallList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/vcpuserver"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/vcpuserver"
 
 vcpuserver.NewVcpuServerNicFirewallList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) VcpuServerNicFirewallList
 ```
@@ -2830,7 +2830,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.vcpuServer.VcpuServerNicFirewallOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/vcpuserver"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/vcpuserver"
 
 vcpuserver.NewVcpuServerNicFirewallOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) VcpuServerNicFirewallOutputReference
 ```
@@ -3391,7 +3391,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.vcpuServer.VcpuServerNicOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/vcpuserver"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/vcpuserver"
 
 vcpuserver.NewVcpuServerNicOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VcpuServerNicOutputReference
 ```
@@ -3980,7 +3980,7 @@ func InternalValue() VcpuServerNic
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.vcpuServer.VcpuServerTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/vcpuserver"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/vcpuserver"
 
 vcpuserver.NewVcpuServerTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VcpuServerTimeoutsOutputReference
 ```
@@ -4345,7 +4345,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.vcpuServer.VcpuServerVolumeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/vcpuserver"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/vcpuserver"
 
 vcpuserver.NewVcpuServerVolumeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VcpuServerVolumeOutputReference
 ```
