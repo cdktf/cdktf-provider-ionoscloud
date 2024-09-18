@@ -4,7 +4,7 @@
 
 ### Snapshot <a name="Snapshot" id="@cdktf/provider-ionoscloud.snapshot.Snapshot"></a>
 
-Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.4/docs/resources/snapshot ionoscloud_snapshot}.
+Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.5/docs/resources/snapshot ionoscloud_snapshot}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.snapshot.Snapshot.Initializer"></a>
 
@@ -49,18 +49,18 @@ snapshot.Snapshot(
 | <code><a href="#@cdktf/provider-ionoscloud.snapshot.Snapshot.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.snapshot.Snapshot.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.snapshot.Snapshot.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-ionoscloud.snapshot.Snapshot.Initializer.parameter.datacenterId">datacenter_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.4/docs/resources/snapshot#datacenter_id Snapshot#datacenter_id}. |
+| <code><a href="#@cdktf/provider-ionoscloud.snapshot.Snapshot.Initializer.parameter.datacenterId">datacenter_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.5/docs/resources/snapshot#datacenter_id Snapshot#datacenter_id}. |
 | <code><a href="#@cdktf/provider-ionoscloud.snapshot.Snapshot.Initializer.parameter.name">name</a></code> | <code>str</code> | A name of that resource. |
-| <code><a href="#@cdktf/provider-ionoscloud.snapshot.Snapshot.Initializer.parameter.volumeId">volume_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.4/docs/resources/snapshot#volume_id Snapshot#volume_id}. |
-| <code><a href="#@cdktf/provider-ionoscloud.snapshot.Snapshot.Initializer.parameter.cpuHotPlug">cpu_hot_plug</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.4/docs/resources/snapshot#cpu_hot_plug Snapshot#cpu_hot_plug}. |
+| <code><a href="#@cdktf/provider-ionoscloud.snapshot.Snapshot.Initializer.parameter.volumeId">volume_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.5/docs/resources/snapshot#volume_id Snapshot#volume_id}. |
+| <code><a href="#@cdktf/provider-ionoscloud.snapshot.Snapshot.Initializer.parameter.cpuHotPlug">cpu_hot_plug</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.5/docs/resources/snapshot#cpu_hot_plug Snapshot#cpu_hot_plug}. |
 | <code><a href="#@cdktf/provider-ionoscloud.snapshot.Snapshot.Initializer.parameter.description">description</a></code> | <code>str</code> | Human readable description. |
-| <code><a href="#@cdktf/provider-ionoscloud.snapshot.Snapshot.Initializer.parameter.discVirtioHotPlug">disc_virtio_hot_plug</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.4/docs/resources/snapshot#disc_virtio_hot_plug Snapshot#disc_virtio_hot_plug}. |
-| <code><a href="#@cdktf/provider-ionoscloud.snapshot.Snapshot.Initializer.parameter.discVirtioHotUnplug">disc_virtio_hot_unplug</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.4/docs/resources/snapshot#disc_virtio_hot_unplug Snapshot#disc_virtio_hot_unplug}. |
-| <code><a href="#@cdktf/provider-ionoscloud.snapshot.Snapshot.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.4/docs/resources/snapshot#id Snapshot#id}. |
+| <code><a href="#@cdktf/provider-ionoscloud.snapshot.Snapshot.Initializer.parameter.discVirtioHotPlug">disc_virtio_hot_plug</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.5/docs/resources/snapshot#disc_virtio_hot_plug Snapshot#disc_virtio_hot_plug}. |
+| <code><a href="#@cdktf/provider-ionoscloud.snapshot.Snapshot.Initializer.parameter.discVirtioHotUnplug">disc_virtio_hot_unplug</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.5/docs/resources/snapshot#disc_virtio_hot_unplug Snapshot#disc_virtio_hot_unplug}. |
+| <code><a href="#@cdktf/provider-ionoscloud.snapshot.Snapshot.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.5/docs/resources/snapshot#id Snapshot#id}. |
 | <code><a href="#@cdktf/provider-ionoscloud.snapshot.Snapshot.Initializer.parameter.licenceType">licence_type</a></code> | <code>str</code> | OS type of this Snapshot. |
-| <code><a href="#@cdktf/provider-ionoscloud.snapshot.Snapshot.Initializer.parameter.nicHotPlug">nic_hot_plug</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.4/docs/resources/snapshot#nic_hot_plug Snapshot#nic_hot_plug}. |
-| <code><a href="#@cdktf/provider-ionoscloud.snapshot.Snapshot.Initializer.parameter.nicHotUnplug">nic_hot_unplug</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.4/docs/resources/snapshot#nic_hot_unplug Snapshot#nic_hot_unplug}. |
-| <code><a href="#@cdktf/provider-ionoscloud.snapshot.Snapshot.Initializer.parameter.ramHotPlug">ram_hot_plug</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.4/docs/resources/snapshot#ram_hot_plug Snapshot#ram_hot_plug}. |
+| <code><a href="#@cdktf/provider-ionoscloud.snapshot.Snapshot.Initializer.parameter.nicHotPlug">nic_hot_plug</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.5/docs/resources/snapshot#nic_hot_plug Snapshot#nic_hot_plug}. |
+| <code><a href="#@cdktf/provider-ionoscloud.snapshot.Snapshot.Initializer.parameter.nicHotUnplug">nic_hot_unplug</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.5/docs/resources/snapshot#nic_hot_unplug Snapshot#nic_hot_unplug}. |
+| <code><a href="#@cdktf/provider-ionoscloud.snapshot.Snapshot.Initializer.parameter.ramHotPlug">ram_hot_plug</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.5/docs/resources/snapshot#ram_hot_plug Snapshot#ram_hot_plug}. |
 | <code><a href="#@cdktf/provider-ionoscloud.snapshot.Snapshot.Initializer.parameter.secAuthProtection">sec_auth_protection</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Boolean value representing if the snapshot requires extra protection e.g. two factor protection. |
 | <code><a href="#@cdktf/provider-ionoscloud.snapshot.Snapshot.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-ionoscloud.snapshot.SnapshotTimeouts">SnapshotTimeouts</a></code> | timeouts block. |
 
@@ -130,7 +130,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.4/docs/resources/snapshot#datacenter_id Snapshot#datacenter_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.5/docs/resources/snapshot#datacenter_id Snapshot#datacenter_id}.
 
 ---
 
@@ -140,7 +140,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 
 A name of that resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.4/docs/resources/snapshot#name Snapshot#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.5/docs/resources/snapshot#name Snapshot#name}
 
 ---
 
@@ -148,7 +148,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.4/docs/resources/snapshot#volume_id Snapshot#volume_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.5/docs/resources/snapshot#volume_id Snapshot#volume_id}.
 
 ---
 
@@ -156,7 +156,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.4/docs/resources/snapshot#cpu_hot_plug Snapshot#cpu_hot_plug}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.5/docs/resources/snapshot#cpu_hot_plug Snapshot#cpu_hot_plug}.
 
 ---
 
@@ -166,7 +166,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 
 Human readable description.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.4/docs/resources/snapshot#description Snapshot#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.5/docs/resources/snapshot#description Snapshot#description}
 
 ---
 
@@ -174,7 +174,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.4/docs/resources/snapshot#disc_virtio_hot_plug Snapshot#disc_virtio_hot_plug}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.5/docs/resources/snapshot#disc_virtio_hot_plug Snapshot#disc_virtio_hot_plug}.
 
 ---
 
@@ -182,7 +182,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.4/docs/resources/snapshot#disc_virtio_hot_unplug Snapshot#disc_virtio_hot_unplug}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.5/docs/resources/snapshot#disc_virtio_hot_unplug Snapshot#disc_virtio_hot_unplug}.
 
 ---
 
@@ -190,7 +190,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.4/docs/resources/snapshot#id Snapshot#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.5/docs/resources/snapshot#id Snapshot#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -203,7 +203,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 OS type of this Snapshot.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.4/docs/resources/snapshot#licence_type Snapshot#licence_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.5/docs/resources/snapshot#licence_type Snapshot#licence_type}
 
 ---
 
@@ -211,7 +211,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.4/docs/resources/snapshot#nic_hot_plug Snapshot#nic_hot_plug}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.5/docs/resources/snapshot#nic_hot_plug Snapshot#nic_hot_plug}.
 
 ---
 
@@ -219,7 +219,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.4/docs/resources/snapshot#nic_hot_unplug Snapshot#nic_hot_unplug}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.5/docs/resources/snapshot#nic_hot_unplug Snapshot#nic_hot_unplug}.
 
 ---
 
@@ -227,7 +227,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.4/docs/resources/snapshot#ram_hot_plug Snapshot#ram_hot_plug}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.5/docs/resources/snapshot#ram_hot_plug Snapshot#ram_hot_plug}.
 
 ---
 
@@ -237,7 +237,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 
 Boolean value representing if the snapshot requires extra protection e.g. two factor protection.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.4/docs/resources/snapshot#sec_auth_protection Snapshot#sec_auth_protection}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.5/docs/resources/snapshot#sec_auth_protection Snapshot#sec_auth_protection}
 
 ---
 
@@ -247,7 +247,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.4/docs/resources/snapshot#timeouts Snapshot#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.5/docs/resources/snapshot#timeouts Snapshot#timeouts}
 
 ---
 
@@ -633,7 +633,7 @@ def put_timeouts(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.4/docs/resources/snapshot#create Snapshot#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.5/docs/resources/snapshot#create Snapshot#create}.
 
 ---
 
@@ -641,7 +641,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.4/docs/resources/snapshot#default Snapshot#default}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.5/docs/resources/snapshot#default Snapshot#default}.
 
 ---
 
@@ -649,7 +649,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.4/docs/resources/snapshot#delete Snapshot#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.5/docs/resources/snapshot#delete Snapshot#delete}.
 
 ---
 
@@ -657,7 +657,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.4/docs/resources/snapshot#update Snapshot#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.5/docs/resources/snapshot#update Snapshot#update}.
 
 ---
 
@@ -841,7 +841,7 @@ The construct id used in the generated config for the Snapshot to import.
 
 The id of the existing Snapshot that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.4/docs/resources/snapshot#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.5/docs/resources/snapshot#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1453,18 +1453,18 @@ snapshot.SnapshotConfig(
 | <code><a href="#@cdktf/provider-ionoscloud.snapshot.SnapshotConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.snapshot.SnapshotConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.snapshot.SnapshotConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-ionoscloud.snapshot.SnapshotConfig.property.datacenterId">datacenter_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.4/docs/resources/snapshot#datacenter_id Snapshot#datacenter_id}. |
+| <code><a href="#@cdktf/provider-ionoscloud.snapshot.SnapshotConfig.property.datacenterId">datacenter_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.5/docs/resources/snapshot#datacenter_id Snapshot#datacenter_id}. |
 | <code><a href="#@cdktf/provider-ionoscloud.snapshot.SnapshotConfig.property.name">name</a></code> | <code>str</code> | A name of that resource. |
-| <code><a href="#@cdktf/provider-ionoscloud.snapshot.SnapshotConfig.property.volumeId">volume_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.4/docs/resources/snapshot#volume_id Snapshot#volume_id}. |
-| <code><a href="#@cdktf/provider-ionoscloud.snapshot.SnapshotConfig.property.cpuHotPlug">cpu_hot_plug</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.4/docs/resources/snapshot#cpu_hot_plug Snapshot#cpu_hot_plug}. |
+| <code><a href="#@cdktf/provider-ionoscloud.snapshot.SnapshotConfig.property.volumeId">volume_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.5/docs/resources/snapshot#volume_id Snapshot#volume_id}. |
+| <code><a href="#@cdktf/provider-ionoscloud.snapshot.SnapshotConfig.property.cpuHotPlug">cpu_hot_plug</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.5/docs/resources/snapshot#cpu_hot_plug Snapshot#cpu_hot_plug}. |
 | <code><a href="#@cdktf/provider-ionoscloud.snapshot.SnapshotConfig.property.description">description</a></code> | <code>str</code> | Human readable description. |
-| <code><a href="#@cdktf/provider-ionoscloud.snapshot.SnapshotConfig.property.discVirtioHotPlug">disc_virtio_hot_plug</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.4/docs/resources/snapshot#disc_virtio_hot_plug Snapshot#disc_virtio_hot_plug}. |
-| <code><a href="#@cdktf/provider-ionoscloud.snapshot.SnapshotConfig.property.discVirtioHotUnplug">disc_virtio_hot_unplug</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.4/docs/resources/snapshot#disc_virtio_hot_unplug Snapshot#disc_virtio_hot_unplug}. |
-| <code><a href="#@cdktf/provider-ionoscloud.snapshot.SnapshotConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.4/docs/resources/snapshot#id Snapshot#id}. |
+| <code><a href="#@cdktf/provider-ionoscloud.snapshot.SnapshotConfig.property.discVirtioHotPlug">disc_virtio_hot_plug</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.5/docs/resources/snapshot#disc_virtio_hot_plug Snapshot#disc_virtio_hot_plug}. |
+| <code><a href="#@cdktf/provider-ionoscloud.snapshot.SnapshotConfig.property.discVirtioHotUnplug">disc_virtio_hot_unplug</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.5/docs/resources/snapshot#disc_virtio_hot_unplug Snapshot#disc_virtio_hot_unplug}. |
+| <code><a href="#@cdktf/provider-ionoscloud.snapshot.SnapshotConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.5/docs/resources/snapshot#id Snapshot#id}. |
 | <code><a href="#@cdktf/provider-ionoscloud.snapshot.SnapshotConfig.property.licenceType">licence_type</a></code> | <code>str</code> | OS type of this Snapshot. |
-| <code><a href="#@cdktf/provider-ionoscloud.snapshot.SnapshotConfig.property.nicHotPlug">nic_hot_plug</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.4/docs/resources/snapshot#nic_hot_plug Snapshot#nic_hot_plug}. |
-| <code><a href="#@cdktf/provider-ionoscloud.snapshot.SnapshotConfig.property.nicHotUnplug">nic_hot_unplug</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.4/docs/resources/snapshot#nic_hot_unplug Snapshot#nic_hot_unplug}. |
-| <code><a href="#@cdktf/provider-ionoscloud.snapshot.SnapshotConfig.property.ramHotPlug">ram_hot_plug</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.4/docs/resources/snapshot#ram_hot_plug Snapshot#ram_hot_plug}. |
+| <code><a href="#@cdktf/provider-ionoscloud.snapshot.SnapshotConfig.property.nicHotPlug">nic_hot_plug</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.5/docs/resources/snapshot#nic_hot_plug Snapshot#nic_hot_plug}. |
+| <code><a href="#@cdktf/provider-ionoscloud.snapshot.SnapshotConfig.property.nicHotUnplug">nic_hot_unplug</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.5/docs/resources/snapshot#nic_hot_unplug Snapshot#nic_hot_unplug}. |
+| <code><a href="#@cdktf/provider-ionoscloud.snapshot.SnapshotConfig.property.ramHotPlug">ram_hot_plug</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.5/docs/resources/snapshot#ram_hot_plug Snapshot#ram_hot_plug}. |
 | <code><a href="#@cdktf/provider-ionoscloud.snapshot.SnapshotConfig.property.secAuthProtection">sec_auth_protection</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Boolean value representing if the snapshot requires extra protection e.g. two factor protection. |
 | <code><a href="#@cdktf/provider-ionoscloud.snapshot.SnapshotConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-ionoscloud.snapshot.SnapshotTimeouts">SnapshotTimeouts</a></code> | timeouts block. |
 
@@ -1548,7 +1548,7 @@ datacenter_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.4/docs/resources/snapshot#datacenter_id Snapshot#datacenter_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.5/docs/resources/snapshot#datacenter_id Snapshot#datacenter_id}.
 
 ---
 
@@ -1562,7 +1562,7 @@ name: str
 
 A name of that resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.4/docs/resources/snapshot#name Snapshot#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.5/docs/resources/snapshot#name Snapshot#name}
 
 ---
 
@@ -1574,7 +1574,7 @@ volume_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.4/docs/resources/snapshot#volume_id Snapshot#volume_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.5/docs/resources/snapshot#volume_id Snapshot#volume_id}.
 
 ---
 
@@ -1586,7 +1586,7 @@ cpu_hot_plug: typing.Union[bool, IResolvable]
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.4/docs/resources/snapshot#cpu_hot_plug Snapshot#cpu_hot_plug}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.5/docs/resources/snapshot#cpu_hot_plug Snapshot#cpu_hot_plug}.
 
 ---
 
@@ -1600,7 +1600,7 @@ description: str
 
 Human readable description.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.4/docs/resources/snapshot#description Snapshot#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.5/docs/resources/snapshot#description Snapshot#description}
 
 ---
 
@@ -1612,7 +1612,7 @@ disc_virtio_hot_plug: typing.Union[bool, IResolvable]
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.4/docs/resources/snapshot#disc_virtio_hot_plug Snapshot#disc_virtio_hot_plug}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.5/docs/resources/snapshot#disc_virtio_hot_plug Snapshot#disc_virtio_hot_plug}.
 
 ---
 
@@ -1624,7 +1624,7 @@ disc_virtio_hot_unplug: typing.Union[bool, IResolvable]
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.4/docs/resources/snapshot#disc_virtio_hot_unplug Snapshot#disc_virtio_hot_unplug}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.5/docs/resources/snapshot#disc_virtio_hot_unplug Snapshot#disc_virtio_hot_unplug}.
 
 ---
 
@@ -1636,7 +1636,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.4/docs/resources/snapshot#id Snapshot#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.5/docs/resources/snapshot#id Snapshot#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1653,7 +1653,7 @@ licence_type: str
 
 OS type of this Snapshot.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.4/docs/resources/snapshot#licence_type Snapshot#licence_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.5/docs/resources/snapshot#licence_type Snapshot#licence_type}
 
 ---
 
@@ -1665,7 +1665,7 @@ nic_hot_plug: typing.Union[bool, IResolvable]
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.4/docs/resources/snapshot#nic_hot_plug Snapshot#nic_hot_plug}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.5/docs/resources/snapshot#nic_hot_plug Snapshot#nic_hot_plug}.
 
 ---
 
@@ -1677,7 +1677,7 @@ nic_hot_unplug: typing.Union[bool, IResolvable]
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.4/docs/resources/snapshot#nic_hot_unplug Snapshot#nic_hot_unplug}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.5/docs/resources/snapshot#nic_hot_unplug Snapshot#nic_hot_unplug}.
 
 ---
 
@@ -1689,7 +1689,7 @@ ram_hot_plug: typing.Union[bool, IResolvable]
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.4/docs/resources/snapshot#ram_hot_plug Snapshot#ram_hot_plug}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.5/docs/resources/snapshot#ram_hot_plug Snapshot#ram_hot_plug}.
 
 ---
 
@@ -1703,7 +1703,7 @@ sec_auth_protection: typing.Union[bool, IResolvable]
 
 Boolean value representing if the snapshot requires extra protection e.g. two factor protection.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.4/docs/resources/snapshot#sec_auth_protection Snapshot#sec_auth_protection}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.5/docs/resources/snapshot#sec_auth_protection Snapshot#sec_auth_protection}
 
 ---
 
@@ -1717,7 +1717,7 @@ timeouts: SnapshotTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.4/docs/resources/snapshot#timeouts Snapshot#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.5/docs/resources/snapshot#timeouts Snapshot#timeouts}
 
 ---
 
@@ -1740,10 +1740,10 @@ snapshot.SnapshotTimeouts(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-ionoscloud.snapshot.SnapshotTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.4/docs/resources/snapshot#create Snapshot#create}. |
-| <code><a href="#@cdktf/provider-ionoscloud.snapshot.SnapshotTimeouts.property.default">default</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.4/docs/resources/snapshot#default Snapshot#default}. |
-| <code><a href="#@cdktf/provider-ionoscloud.snapshot.SnapshotTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.4/docs/resources/snapshot#delete Snapshot#delete}. |
-| <code><a href="#@cdktf/provider-ionoscloud.snapshot.SnapshotTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.4/docs/resources/snapshot#update Snapshot#update}. |
+| <code><a href="#@cdktf/provider-ionoscloud.snapshot.SnapshotTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.5/docs/resources/snapshot#create Snapshot#create}. |
+| <code><a href="#@cdktf/provider-ionoscloud.snapshot.SnapshotTimeouts.property.default">default</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.5/docs/resources/snapshot#default Snapshot#default}. |
+| <code><a href="#@cdktf/provider-ionoscloud.snapshot.SnapshotTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.5/docs/resources/snapshot#delete Snapshot#delete}. |
+| <code><a href="#@cdktf/provider-ionoscloud.snapshot.SnapshotTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.5/docs/resources/snapshot#update Snapshot#update}. |
 
 ---
 
@@ -1755,7 +1755,7 @@ create: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.4/docs/resources/snapshot#create Snapshot#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.5/docs/resources/snapshot#create Snapshot#create}.
 
 ---
 
@@ -1767,7 +1767,7 @@ default: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.4/docs/resources/snapshot#default Snapshot#default}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.5/docs/resources/snapshot#default Snapshot#default}.
 
 ---
 
@@ -1779,7 +1779,7 @@ delete: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.4/docs/resources/snapshot#delete Snapshot#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.5/docs/resources/snapshot#delete Snapshot#delete}.
 
 ---
 
@@ -1791,7 +1791,7 @@ update: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.4/docs/resources/snapshot#update Snapshot#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.5/docs/resources/snapshot#update Snapshot#update}.
 
 ---
 

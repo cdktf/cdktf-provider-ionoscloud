@@ -4,12 +4,12 @@
 
 ### S3BucketObjectLockConfiguration <a name="S3BucketObjectLockConfiguration" id="@cdktf/provider-ionoscloud.s3BucketObjectLockConfiguration.S3BucketObjectLockConfiguration"></a>
 
-Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.4/docs/resources/s3_bucket_object_lock_configuration ionoscloud_s3_bucket_object_lock_configuration}.
+Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.5/docs/resources/s3_bucket_object_lock_configuration ionoscloud_s3_bucket_object_lock_configuration}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.s3BucketObjectLockConfiguration.S3BucketObjectLockConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/s3bucketobjectlockconfiguration"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/s3bucketobjectlockconfiguration"
 
 s3bucketobjectlockconfiguration.NewS3BucketObjectLockConfiguration(scope Construct, id *string, config S3BucketObjectLockConfigurationConfig) S3BucketObjectLockConfiguration
 ```
@@ -405,7 +405,7 @@ func ResetRule()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-ionoscloud.s3BucketObjectLockConfiguration.S3BucketObjectLockConfiguration.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/s3bucketobjectlockconfiguration"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/s3bucketobjectlockconfiguration"
 
 s3bucketobjectlockconfiguration.S3BucketObjectLockConfiguration_IsConstruct(x interface{}) *bool
 ```
@@ -437,7 +437,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-ionoscloud.s3BucketObjectLockConfiguration.S3BucketObjectLockConfiguration.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/s3bucketobjectlockconfiguration"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/s3bucketobjectlockconfiguration"
 
 s3bucketobjectlockconfiguration.S3BucketObjectLockConfiguration_IsTerraformElement(x interface{}) *bool
 ```
@@ -451,7 +451,7 @@ s3bucketobjectlockconfiguration.S3BucketObjectLockConfiguration_IsTerraformEleme
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-ionoscloud.s3BucketObjectLockConfiguration.S3BucketObjectLockConfiguration.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/s3bucketobjectlockconfiguration"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/s3bucketobjectlockconfiguration"
 
 s3bucketobjectlockconfiguration.S3BucketObjectLockConfiguration_IsTerraformResource(x interface{}) *bool
 ```
@@ -465,7 +465,7 @@ s3bucketobjectlockconfiguration.S3BucketObjectLockConfiguration_IsTerraformResou
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-ionoscloud.s3BucketObjectLockConfiguration.S3BucketObjectLockConfiguration.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/s3bucketobjectlockconfiguration"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/s3bucketobjectlockconfiguration"
 
 s3bucketobjectlockconfiguration.S3BucketObjectLockConfiguration_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -494,7 +494,7 @@ The construct id used in the generated config for the S3BucketObjectLockConfigur
 
 The id of the existing S3BucketObjectLockConfiguration that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.4/docs/resources/s3_bucket_object_lock_configuration#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.5/docs/resources/s3_bucket_object_lock_configuration#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -760,7 +760,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-ionoscloud.s3BucketObjectLockConfiguration.S3BucketObjectLockConfigurationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/s3bucketobjectlockconfiguration"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/s3bucketobjectlockconfiguration"
 
 &s3bucketobjectlockconfiguration.S3BucketObjectLockConfigurationConfig {
 	Connection: interface{},
@@ -772,7 +772,7 @@ import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/s3bucketobj
 	Provisioners: *[]interface{},
 	Bucket: *string,
 	ObjectLockEnabled: *string,
-	Rule: github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11.s3BucketObjectLockConfiguration.S3BucketObjectLockConfigurationRule,
+	Rule: github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud.s3BucketObjectLockConfiguration.S3BucketObjectLockConfigurationRule,
 }
 ```
 
@@ -873,7 +873,7 @@ Bucket *string
 
 The name of the bucket.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.4/docs/resources/s3_bucket_object_lock_configuration#bucket S3BucketObjectLockConfiguration#bucket}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.5/docs/resources/s3_bucket_object_lock_configuration#bucket S3BucketObjectLockConfiguration#bucket}
 
 ---
 
@@ -887,7 +887,7 @@ ObjectLockEnabled *string
 
 Specifies whether Object Lock is enabled for the bucket.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.4/docs/resources/s3_bucket_object_lock_configuration#object_lock_enabled S3BucketObjectLockConfiguration#object_lock_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.5/docs/resources/s3_bucket_object_lock_configuration#object_lock_enabled S3BucketObjectLockConfiguration#object_lock_enabled}
 
 ---
 
@@ -901,7 +901,7 @@ Rule S3BucketObjectLockConfigurationRule
 
 rule block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.4/docs/resources/s3_bucket_object_lock_configuration#rule S3BucketObjectLockConfiguration#rule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.5/docs/resources/s3_bucket_object_lock_configuration#rule S3BucketObjectLockConfiguration#rule}
 
 ---
 
@@ -910,10 +910,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 #### Initializer <a name="Initializer" id="@cdktf/provider-ionoscloud.s3BucketObjectLockConfiguration.S3BucketObjectLockConfigurationRule.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/s3bucketobjectlockconfiguration"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/s3bucketobjectlockconfiguration"
 
 &s3bucketobjectlockconfiguration.S3BucketObjectLockConfigurationRule {
-	DefaultRetention: github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11.s3BucketObjectLockConfiguration.S3BucketObjectLockConfigurationRuleDefaultRetention,
+	DefaultRetention: github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud.s3BucketObjectLockConfiguration.S3BucketObjectLockConfigurationRuleDefaultRetention,
 }
 ```
 
@@ -935,7 +935,7 @@ DefaultRetention S3BucketObjectLockConfigurationRuleDefaultRetention
 
 default_retention block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.4/docs/resources/s3_bucket_object_lock_configuration#default_retention S3BucketObjectLockConfiguration#default_retention}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.5/docs/resources/s3_bucket_object_lock_configuration#default_retention S3BucketObjectLockConfiguration#default_retention}
 
 ---
 
@@ -944,7 +944,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 #### Initializer <a name="Initializer" id="@cdktf/provider-ionoscloud.s3BucketObjectLockConfiguration.S3BucketObjectLockConfigurationRuleDefaultRetention.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/s3bucketobjectlockconfiguration"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/s3bucketobjectlockconfiguration"
 
 &s3bucketobjectlockconfiguration.S3BucketObjectLockConfigurationRuleDefaultRetention {
 	Days: *f64,
@@ -957,9 +957,9 @@ import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/s3bucketobj
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-ionoscloud.s3BucketObjectLockConfiguration.S3BucketObjectLockConfigurationRuleDefaultRetention.property.days">Days</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.4/docs/resources/s3_bucket_object_lock_configuration#days S3BucketObjectLockConfiguration#days}. |
-| <code><a href="#@cdktf/provider-ionoscloud.s3BucketObjectLockConfiguration.S3BucketObjectLockConfigurationRuleDefaultRetention.property.mode">Mode</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.4/docs/resources/s3_bucket_object_lock_configuration#mode S3BucketObjectLockConfiguration#mode}. |
-| <code><a href="#@cdktf/provider-ionoscloud.s3BucketObjectLockConfiguration.S3BucketObjectLockConfigurationRuleDefaultRetention.property.years">Years</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.4/docs/resources/s3_bucket_object_lock_configuration#years S3BucketObjectLockConfiguration#years}. |
+| <code><a href="#@cdktf/provider-ionoscloud.s3BucketObjectLockConfiguration.S3BucketObjectLockConfigurationRuleDefaultRetention.property.days">Days</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.5/docs/resources/s3_bucket_object_lock_configuration#days S3BucketObjectLockConfiguration#days}. |
+| <code><a href="#@cdktf/provider-ionoscloud.s3BucketObjectLockConfiguration.S3BucketObjectLockConfigurationRuleDefaultRetention.property.mode">Mode</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.5/docs/resources/s3_bucket_object_lock_configuration#mode S3BucketObjectLockConfiguration#mode}. |
+| <code><a href="#@cdktf/provider-ionoscloud.s3BucketObjectLockConfiguration.S3BucketObjectLockConfigurationRuleDefaultRetention.property.years">Years</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.5/docs/resources/s3_bucket_object_lock_configuration#years S3BucketObjectLockConfiguration#years}. |
 
 ---
 
@@ -971,7 +971,7 @@ Days *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.4/docs/resources/s3_bucket_object_lock_configuration#days S3BucketObjectLockConfiguration#days}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.5/docs/resources/s3_bucket_object_lock_configuration#days S3BucketObjectLockConfiguration#days}.
 
 ---
 
@@ -983,7 +983,7 @@ Mode *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.4/docs/resources/s3_bucket_object_lock_configuration#mode S3BucketObjectLockConfiguration#mode}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.5/docs/resources/s3_bucket_object_lock_configuration#mode S3BucketObjectLockConfiguration#mode}.
 
 ---
 
@@ -995,7 +995,7 @@ Years *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.4/docs/resources/s3_bucket_object_lock_configuration#years S3BucketObjectLockConfiguration#years}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.5/docs/resources/s3_bucket_object_lock_configuration#years S3BucketObjectLockConfiguration#years}.
 
 ---
 
@@ -1006,7 +1006,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.s3BucketObjectLockConfiguration.S3BucketObjectLockConfigurationRuleDefaultRetentionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/s3bucketobjectlockconfiguration"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/s3bucketobjectlockconfiguration"
 
 s3bucketobjectlockconfiguration.NewS3BucketObjectLockConfigurationRuleDefaultRetentionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) S3BucketObjectLockConfigurationRuleDefaultRetentionOutputReference
 ```
@@ -1342,7 +1342,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.s3BucketObjectLockConfiguration.S3BucketObjectLockConfigurationRuleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/s3bucketobjectlockconfiguration"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/s3bucketobjectlockconfiguration"
 
 s3bucketobjectlockconfiguration.NewS3BucketObjectLockConfigurationRuleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) S3BucketObjectLockConfigurationRuleOutputReference
 ```
