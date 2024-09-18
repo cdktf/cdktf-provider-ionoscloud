@@ -4,7 +4,7 @@
 
 ### S3BucketWebsiteConfiguration <a name="S3BucketWebsiteConfiguration" id="@cdktf/provider-ionoscloud.s3BucketWebsiteConfiguration.S3BucketWebsiteConfiguration"></a>
 
-Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.4/docs/resources/s3_bucket_website_configuration ionoscloud_s3_bucket_website_configuration}.
+Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.5/docs/resources/s3_bucket_website_configuration ionoscloud_s3_bucket_website_configuration}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.s3BucketWebsiteConfiguration.S3BucketWebsiteConfiguration.Initializer"></a>
 
@@ -77,6 +77,8 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-ionoscloud.s3BucketWebsiteConfiguration.S3BucketWebsiteConfiguration.putIndexDocument">putIndexDocument</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.s3BucketWebsiteConfiguration.S3BucketWebsiteConfiguration.putRedirectAllRequestsTo">putRedirectAllRequestsTo</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.s3BucketWebsiteConfiguration.S3BucketWebsiteConfiguration.putRoutingRule">putRoutingRule</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.s3BucketWebsiteConfiguration.S3BucketWebsiteConfiguration.resetErrorDocument">resetErrorDocument</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.s3BucketWebsiteConfiguration.S3BucketWebsiteConfiguration.resetIndexDocument">resetIndexDocument</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.s3BucketWebsiteConfiguration.S3BucketWebsiteConfiguration.resetRedirectAllRequestsTo">resetRedirectAllRequestsTo</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.s3BucketWebsiteConfiguration.S3BucketWebsiteConfiguration.resetRoutingRule">resetRoutingRule</a></code> | *No description.* |
 
@@ -418,6 +420,18 @@ public putRoutingRule(value: IResolvable | S3BucketWebsiteConfigurationRoutingRu
 
 ---
 
+##### `resetErrorDocument` <a name="resetErrorDocument" id="@cdktf/provider-ionoscloud.s3BucketWebsiteConfiguration.S3BucketWebsiteConfiguration.resetErrorDocument"></a>
+
+```typescript
+public resetErrorDocument(): void
+```
+
+##### `resetIndexDocument` <a name="resetIndexDocument" id="@cdktf/provider-ionoscloud.s3BucketWebsiteConfiguration.S3BucketWebsiteConfiguration.resetIndexDocument"></a>
+
+```typescript
+public resetIndexDocument(): void
+```
+
 ##### `resetRedirectAllRequestsTo` <a name="resetRedirectAllRequestsTo" id="@cdktf/provider-ionoscloud.s3BucketWebsiteConfiguration.S3BucketWebsiteConfiguration.resetRedirectAllRequestsTo"></a>
 
 ```typescript
@@ -533,7 +547,7 @@ The construct id used in the generated config for the S3BucketWebsiteConfigurati
 
 The id of the existing S3BucketWebsiteConfiguration that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.4/docs/resources/s3_bucket_website_configuration#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.5/docs/resources/s3_bucket_website_configuration#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -947,11 +961,11 @@ public readonly bucket: string;
 
 The name of the bucket.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.4/docs/resources/s3_bucket_website_configuration#bucket S3BucketWebsiteConfiguration#bucket}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.5/docs/resources/s3_bucket_website_configuration#bucket S3BucketWebsiteConfiguration#bucket}
 
 ---
 
-##### `errorDocument`<sup>Required</sup> <a name="errorDocument" id="@cdktf/provider-ionoscloud.s3BucketWebsiteConfiguration.S3BucketWebsiteConfigurationConfig.property.errorDocument"></a>
+##### `errorDocument`<sup>Optional</sup> <a name="errorDocument" id="@cdktf/provider-ionoscloud.s3BucketWebsiteConfiguration.S3BucketWebsiteConfigurationConfig.property.errorDocument"></a>
 
 ```typescript
 public readonly errorDocument: S3BucketWebsiteConfigurationErrorDocument;
@@ -961,11 +975,11 @@ public readonly errorDocument: S3BucketWebsiteConfigurationErrorDocument;
 
 error_document block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.4/docs/resources/s3_bucket_website_configuration#error_document S3BucketWebsiteConfiguration#error_document}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.5/docs/resources/s3_bucket_website_configuration#error_document S3BucketWebsiteConfiguration#error_document}
 
 ---
 
-##### `indexDocument`<sup>Required</sup> <a name="indexDocument" id="@cdktf/provider-ionoscloud.s3BucketWebsiteConfiguration.S3BucketWebsiteConfigurationConfig.property.indexDocument"></a>
+##### `indexDocument`<sup>Optional</sup> <a name="indexDocument" id="@cdktf/provider-ionoscloud.s3BucketWebsiteConfiguration.S3BucketWebsiteConfigurationConfig.property.indexDocument"></a>
 
 ```typescript
 public readonly indexDocument: S3BucketWebsiteConfigurationIndexDocument;
@@ -975,7 +989,7 @@ public readonly indexDocument: S3BucketWebsiteConfigurationIndexDocument;
 
 index_document block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.4/docs/resources/s3_bucket_website_configuration#index_document S3BucketWebsiteConfiguration#index_document}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.5/docs/resources/s3_bucket_website_configuration#index_document S3BucketWebsiteConfiguration#index_document}
 
 ---
 
@@ -989,7 +1003,7 @@ public readonly redirectAllRequestsTo: S3BucketWebsiteConfigurationRedirectAllRe
 
 redirect_all_requests_to block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.4/docs/resources/s3_bucket_website_configuration#redirect_all_requests_to S3BucketWebsiteConfiguration#redirect_all_requests_to}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.5/docs/resources/s3_bucket_website_configuration#redirect_all_requests_to S3BucketWebsiteConfiguration#redirect_all_requests_to}
 
 ---
 
@@ -1003,7 +1017,7 @@ public readonly routingRule: IResolvable | S3BucketWebsiteConfigurationRoutingRu
 
 routing_rule block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.4/docs/resources/s3_bucket_website_configuration#routing_rule S3BucketWebsiteConfiguration#routing_rule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.5/docs/resources/s3_bucket_website_configuration#routing_rule S3BucketWebsiteConfiguration#routing_rule}
 
 ---
 
@@ -1025,7 +1039,7 @@ const s3BucketWebsiteConfigurationErrorDocument: s3BucketWebsiteConfiguration.S3
 
 ---
 
-##### `key`<sup>Required</sup> <a name="key" id="@cdktf/provider-ionoscloud.s3BucketWebsiteConfiguration.S3BucketWebsiteConfigurationErrorDocument.property.key"></a>
+##### `key`<sup>Optional</sup> <a name="key" id="@cdktf/provider-ionoscloud.s3BucketWebsiteConfiguration.S3BucketWebsiteConfigurationErrorDocument.property.key"></a>
 
 ```typescript
 public readonly key: string;
@@ -1035,7 +1049,7 @@ public readonly key: string;
 
 The object key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.4/docs/resources/s3_bucket_website_configuration#key S3BucketWebsiteConfiguration#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.5/docs/resources/s3_bucket_website_configuration#key S3BucketWebsiteConfiguration#key}
 
 ---
 
@@ -1057,7 +1071,7 @@ const s3BucketWebsiteConfigurationIndexDocument: s3BucketWebsiteConfiguration.S3
 
 ---
 
-##### `suffix`<sup>Required</sup> <a name="suffix" id="@cdktf/provider-ionoscloud.s3BucketWebsiteConfiguration.S3BucketWebsiteConfigurationIndexDocument.property.suffix"></a>
+##### `suffix`<sup>Optional</sup> <a name="suffix" id="@cdktf/provider-ionoscloud.s3BucketWebsiteConfiguration.S3BucketWebsiteConfigurationIndexDocument.property.suffix"></a>
 
 ```typescript
 public readonly suffix: string;
@@ -1067,7 +1081,7 @@ public readonly suffix: string;
 
 A suffix that is appended to a request that is for a directory on the website endpoint (for example, if the suffix is index.html and you make a request to samplebucket/images/ the data that is returned will be for the object with the key name images/index.html) The suffix must not be empty and must not include a slash character. Replacement must be made for object keys containing special characters (such as carriage returns) when using XML requests.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.4/docs/resources/s3_bucket_website_configuration#suffix S3BucketWebsiteConfiguration#suffix}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.5/docs/resources/s3_bucket_website_configuration#suffix S3BucketWebsiteConfiguration#suffix}
 
 ---
 
@@ -1100,7 +1114,7 @@ public readonly hostName: string;
 
 The host name to use in the redirect request.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.4/docs/resources/s3_bucket_website_configuration#host_name S3BucketWebsiteConfiguration#host_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.5/docs/resources/s3_bucket_website_configuration#host_name S3BucketWebsiteConfiguration#host_name}
 
 ---
 
@@ -1114,7 +1128,7 @@ public readonly protocol: string;
 
 Protocol to use when redirecting requests. The default is the protocol that is used in the original request.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.4/docs/resources/s3_bucket_website_configuration#protocol S3BucketWebsiteConfiguration#protocol}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.5/docs/resources/s3_bucket_website_configuration#protocol S3BucketWebsiteConfiguration#protocol}
 
 ---
 
@@ -1147,7 +1161,7 @@ public readonly condition: S3BucketWebsiteConfigurationRoutingRuleCondition;
 
 condition block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.4/docs/resources/s3_bucket_website_configuration#condition S3BucketWebsiteConfiguration#condition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.5/docs/resources/s3_bucket_website_configuration#condition S3BucketWebsiteConfiguration#condition}
 
 ---
 
@@ -1161,7 +1175,7 @@ public readonly redirect: S3BucketWebsiteConfigurationRoutingRuleRedirect;
 
 redirect block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.4/docs/resources/s3_bucket_website_configuration#redirect S3BucketWebsiteConfiguration#redirect}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.5/docs/resources/s3_bucket_website_configuration#redirect S3BucketWebsiteConfiguration#redirect}
 
 ---
 
@@ -1196,7 +1210,7 @@ The HTTP error code when the redirect is applied.
 
 In the event of an error, if the error code equals this value, then the specified redirect is applied. Required when parent element Condition is specified and sibling KeyPrefixEquals is not specified. If both are specified, then both must be true for the redirect to be applied
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.4/docs/resources/s3_bucket_website_configuration#http_error_code_returned_equals S3BucketWebsiteConfiguration#http_error_code_returned_equals}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.5/docs/resources/s3_bucket_website_configuration#http_error_code_returned_equals S3BucketWebsiteConfiguration#http_error_code_returned_equals}
 
 ---
 
@@ -1212,7 +1226,7 @@ The object key name prefix when the redirect is applied.
 
 For example, to redirect requests for `ExamplePage.html`, the key prefix will be `ExamplePage.html`. To redirect request for all pages with the prefix `docs/`, the key prefix will be `/docs`, which identifies all objects in the `docs/` folder. Required when the parent element `Condition` is specified and sibling `HTTPErrorCodeReturnedEquals` is not specified. If both conditions are specified, both must be true for the redirect to be applied. Replacement must be made for object keys containing special characters (such as carriage returns) when using XML requests.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.4/docs/resources/s3_bucket_website_configuration#key_prefix_equals S3BucketWebsiteConfiguration#key_prefix_equals}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.5/docs/resources/s3_bucket_website_configuration#key_prefix_equals S3BucketWebsiteConfiguration#key_prefix_equals}
 
 ---
 
@@ -1248,7 +1262,7 @@ public readonly hostName: string;
 
 The host name to use in the redirect request.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.4/docs/resources/s3_bucket_website_configuration#host_name S3BucketWebsiteConfiguration#host_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.5/docs/resources/s3_bucket_website_configuration#host_name S3BucketWebsiteConfiguration#host_name}
 
 ---
 
@@ -1262,7 +1276,7 @@ public readonly httpRedirectCode: string;
 
 The HTTP redirect code to use on the response.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.4/docs/resources/s3_bucket_website_configuration#http_redirect_code S3BucketWebsiteConfiguration#http_redirect_code}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.5/docs/resources/s3_bucket_website_configuration#http_redirect_code S3BucketWebsiteConfiguration#http_redirect_code}
 
 ---
 
@@ -1276,7 +1290,7 @@ public readonly protocol: string;
 
 The protocol to use in the redirect request.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.4/docs/resources/s3_bucket_website_configuration#protocol S3BucketWebsiteConfiguration#protocol}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.5/docs/resources/s3_bucket_website_configuration#protocol S3BucketWebsiteConfiguration#protocol}
 
 ---
 
@@ -1292,7 +1306,7 @@ The object key prefix to use in the redirect request.
 
 For example, to redirect requests for all pages with prefix `docs/` (objects in the `docs/` folder) to `documents/`, you can set a condition block with `KeyPrefixEquals` set to `docs/` and in the Redirect set `ReplaceKeyPrefixWith` to `/documents`. Not required if one of the siblings is present. Can be present only if `ReplaceKeyWith` is not provided.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.4/docs/resources/s3_bucket_website_configuration#replace_key_prefix_with S3BucketWebsiteConfiguration#replace_key_prefix_with}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.5/docs/resources/s3_bucket_website_configuration#replace_key_prefix_with S3BucketWebsiteConfiguration#replace_key_prefix_with}
 
 ---
 
@@ -1308,7 +1322,7 @@ The specific object key to use in the redirect request.
 
 For example, redirect request to error.html. Not required if one of the siblings is present. Can be present only if ReplaceKeyPrefixWith is not provided. Replacement must be made for object keys containing special characters (such as carriage returns) when using XML requests.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.4/docs/resources/s3_bucket_website_configuration#replace_key_with S3BucketWebsiteConfiguration#replace_key_with}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.5/docs/resources/s3_bucket_website_configuration#replace_key_with S3BucketWebsiteConfiguration#replace_key_with}
 
 ---
 
@@ -1364,6 +1378,7 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktf/provider-ionoscloud.s3BucketWebsiteConfiguration.S3BucketWebsiteConfigurationErrorDocumentOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.s3BucketWebsiteConfiguration.S3BucketWebsiteConfigurationErrorDocumentOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-ionoscloud.s3BucketWebsiteConfiguration.S3BucketWebsiteConfigurationErrorDocumentOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-ionoscloud.s3BucketWebsiteConfiguration.S3BucketWebsiteConfigurationErrorDocumentOutputReference.resetKey">resetKey</a></code> | *No description.* |
 
 ---
 
@@ -1517,6 +1532,12 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
+##### `resetKey` <a name="resetKey" id="@cdktf/provider-ionoscloud.s3BucketWebsiteConfiguration.S3BucketWebsiteConfigurationErrorDocumentOutputReference.resetKey"></a>
+
+```typescript
+public resetKey(): void
+```
+
 
 #### Properties <a name="Properties" id="Properties"></a>
 
@@ -1635,6 +1656,7 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktf/provider-ionoscloud.s3BucketWebsiteConfiguration.S3BucketWebsiteConfigurationIndexDocumentOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.s3BucketWebsiteConfiguration.S3BucketWebsiteConfigurationIndexDocumentOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-ionoscloud.s3BucketWebsiteConfiguration.S3BucketWebsiteConfigurationIndexDocumentOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-ionoscloud.s3BucketWebsiteConfiguration.S3BucketWebsiteConfigurationIndexDocumentOutputReference.resetSuffix">resetSuffix</a></code> | *No description.* |
 
 ---
 
@@ -1787,6 +1809,12 @@ public toString(): string
 Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
+
+##### `resetSuffix` <a name="resetSuffix" id="@cdktf/provider-ionoscloud.s3BucketWebsiteConfiguration.S3BucketWebsiteConfigurationIndexDocumentOutputReference.resetSuffix"></a>
+
+```typescript
+public resetSuffix(): void
+```
 
 
 #### Properties <a name="Properties" id="Properties"></a>

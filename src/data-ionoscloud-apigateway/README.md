@@ -1,3 +1,3 @@
 # `data_ionoscloud_apigateway`
 
-Refer to the Terraform Registry for docs: [`data_ionoscloud_apigateway`](https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.4/docs/data-sources/apigateway).
+Refer to the Terraform Registry for docs: [`data_ionoscloud_apigateway`](https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.5/docs/data-sources/apigateway).

@@ -4,7 +4,7 @@
 
 ### KafkaCluster <a name="KafkaCluster" id="@cdktf/provider-ionoscloud.kafkaCluster.KafkaCluster"></a>
 
-Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.4/docs/resources/kafka_cluster ionoscloud_kafka_cluster}.
+Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.5/docs/resources/kafka_cluster ionoscloud_kafka_cluster}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.kafkaCluster.KafkaCluster.Initializer"></a>
 
@@ -500,7 +500,7 @@ The construct id used in the generated config for the KafkaCluster to import.
 
 The id of the existing KafkaCluster that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.4/docs/resources/kafka_cluster#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.5/docs/resources/kafka_cluster#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -973,7 +973,7 @@ public KafkaClusterConnections Connections { get; set; }
 
 connections block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.4/docs/resources/kafka_cluster#connections KafkaCluster#connections}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.5/docs/resources/kafka_cluster#connections KafkaCluster#connections}
 
 ---
 
@@ -987,7 +987,7 @@ public string Location { get; set; }
 
 The location of your Kafka Cluster. Supported locations: de/fra, de/txl, es/vit, gb/lhr, us/ewr, us/las, us/mci, fr/par.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.4/docs/resources/kafka_cluster#location KafkaCluster#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.5/docs/resources/kafka_cluster#location KafkaCluster#location}
 
 ---
 
@@ -1003,7 +1003,7 @@ The name of your Kafka Cluster.
 
 Must be 63 characters or less and must begin and end with an alphanumeric character (`[a-z0-9A-Z]`) with dashes (`-`), underscores (`_`), dots (`.`), and alphanumerics between.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.4/docs/resources/kafka_cluster#name KafkaCluster#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.5/docs/resources/kafka_cluster#name KafkaCluster#name}
 
 ---
 
@@ -1019,7 +1019,7 @@ The size of your Kafka Cluster.
 
 The size of the Kafka Cluster is given in T-shirt sizes. Valid values are: XS, S
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.4/docs/resources/kafka_cluster#size KafkaCluster#size}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.5/docs/resources/kafka_cluster#size KafkaCluster#size}
 
 ---
 
@@ -1033,7 +1033,7 @@ public string Version { get; set; }
 
 The desired Kafka Version. Supported version: 3.7.0.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.4/docs/resources/kafka_cluster#version KafkaCluster#version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.5/docs/resources/kafka_cluster#version KafkaCluster#version}
 
 ---
 
@@ -1047,7 +1047,7 @@ public KafkaClusterTimeouts Timeouts { get; set; }
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.4/docs/resources/kafka_cluster#timeouts KafkaCluster#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.5/docs/resources/kafka_cluster#timeouts KafkaCluster#timeouts}
 
 ---
 
@@ -1085,7 +1085,7 @@ public string[] BrokerAddresses { get; set; }
 
 The broker addresses of the Kafka Cluster. Can be empty, but must be present.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.4/docs/resources/kafka_cluster#broker_addresses KafkaCluster#broker_addresses}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.5/docs/resources/kafka_cluster#broker_addresses KafkaCluster#broker_addresses}
 
 ---
 
@@ -1099,7 +1099,7 @@ public string DatacenterId { get; set; }
 
 The datacenter to connect your Kafka Cluster to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.4/docs/resources/kafka_cluster#datacenter_id KafkaCluster#datacenter_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.5/docs/resources/kafka_cluster#datacenter_id KafkaCluster#datacenter_id}
 
 ---
 
@@ -1113,7 +1113,7 @@ public string LanId { get; set; }
 
 The numeric LAN ID to connect your Kafka Cluster to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.4/docs/resources/kafka_cluster#lan_id KafkaCluster#lan_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.5/docs/resources/kafka_cluster#lan_id KafkaCluster#lan_id}
 
 ---
 
@@ -1136,10 +1136,10 @@ new KafkaClusterTimeouts {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-ionoscloud.kafkaCluster.KafkaClusterTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.4/docs/resources/kafka_cluster#create KafkaCluster#create}. |
-| <code><a href="#@cdktf/provider-ionoscloud.kafkaCluster.KafkaClusterTimeouts.property.default">Default</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.4/docs/resources/kafka_cluster#default KafkaCluster#default}. |
-| <code><a href="#@cdktf/provider-ionoscloud.kafkaCluster.KafkaClusterTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.4/docs/resources/kafka_cluster#delete KafkaCluster#delete}. |
-| <code><a href="#@cdktf/provider-ionoscloud.kafkaCluster.KafkaClusterTimeouts.property.update">Update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.4/docs/resources/kafka_cluster#update KafkaCluster#update}. |
+| <code><a href="#@cdktf/provider-ionoscloud.kafkaCluster.KafkaClusterTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.5/docs/resources/kafka_cluster#create KafkaCluster#create}. |
+| <code><a href="#@cdktf/provider-ionoscloud.kafkaCluster.KafkaClusterTimeouts.property.default">Default</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.5/docs/resources/kafka_cluster#default KafkaCluster#default}. |
+| <code><a href="#@cdktf/provider-ionoscloud.kafkaCluster.KafkaClusterTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.5/docs/resources/kafka_cluster#delete KafkaCluster#delete}. |
+| <code><a href="#@cdktf/provider-ionoscloud.kafkaCluster.KafkaClusterTimeouts.property.update">Update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.5/docs/resources/kafka_cluster#update KafkaCluster#update}. |
 
 ---
 
@@ -1151,7 +1151,7 @@ public string Create { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.4/docs/resources/kafka_cluster#create KafkaCluster#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.5/docs/resources/kafka_cluster#create KafkaCluster#create}.
 
 ---
 
@@ -1163,7 +1163,7 @@ public string Default { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.4/docs/resources/kafka_cluster#default KafkaCluster#default}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.5/docs/resources/kafka_cluster#default KafkaCluster#default}.
 
 ---
 
@@ -1175,7 +1175,7 @@ public string Delete { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.4/docs/resources/kafka_cluster#delete KafkaCluster#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.5/docs/resources/kafka_cluster#delete KafkaCluster#delete}.
 
 ---
 
@@ -1187,7 +1187,7 @@ public string Update { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.4/docs/resources/kafka_cluster#update KafkaCluster#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.5/docs/resources/kafka_cluster#update KafkaCluster#update}.
 
 ---
 

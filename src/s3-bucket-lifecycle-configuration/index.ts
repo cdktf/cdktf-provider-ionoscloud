@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.4/docs/resources/s3_bucket_lifecycle_configuration
+// https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.5/docs/resources/s3_bucket_lifecycle_configuration
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,13 +15,13 @@ export interface S3BucketLifecycleConfigurationConfig extends cdktf.TerraformMet
   /**
   * The name of the S3 bucket.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.4/docs/resources/s3_bucket_lifecycle_configuration#bucket S3BucketLifecycleConfiguration#bucket}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.5/docs/resources/s3_bucket_lifecycle_configuration#bucket S3BucketLifecycleConfiguration#bucket}
   */
   readonly bucket: string;
   /**
   * rule block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.4/docs/resources/s3_bucket_lifecycle_configuration#rule S3BucketLifecycleConfiguration#rule}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.5/docs/resources/s3_bucket_lifecycle_configuration#rule S3BucketLifecycleConfiguration#rule}
   */
   readonly rule?: S3BucketLifecycleConfigurationRule[] | cdktf.IResolvable;
 }
@@ -29,9 +29,9 @@ export interface S3BucketLifecycleConfigurationRuleAbortIncompleteMultipartUploa
   /**
   * Specifies the number of days after which IONOS S3 Object Storage aborts an incomplete multipart upload.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.4/docs/resources/s3_bucket_lifecycle_configuration#days_after_initiation S3BucketLifecycleConfiguration#days_after_initiation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.5/docs/resources/s3_bucket_lifecycle_configuration#days_after_initiation S3BucketLifecycleConfiguration#days_after_initiation}
   */
-  readonly daysAfterInitiation: number;
+  readonly daysAfterInitiation?: number;
 }
 
 export function s3BucketLifecycleConfigurationRuleAbortIncompleteMultipartUploadToTerraform(struct?: S3BucketLifecycleConfigurationRuleAbortIncompleteMultipartUpload | cdktf.IResolvable): any {
@@ -105,13 +105,16 @@ export class S3BucketLifecycleConfigurationRuleAbortIncompleteMultipartUploadOut
     }
   }
 
-  // days_after_initiation - computed: false, optional: false, required: true
+  // days_after_initiation - computed: false, optional: true, required: false
   private _daysAfterInitiation?: number; 
   public get daysAfterInitiation() {
     return this.getNumberAttribute('days_after_initiation');
   }
   public set daysAfterInitiation(value: number) {
     this._daysAfterInitiation = value;
+  }
+  public resetDaysAfterInitiation() {
+    this._daysAfterInitiation = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get daysAfterInitiationInput() {
@@ -122,19 +125,19 @@ export interface S3BucketLifecycleConfigurationRuleExpiration {
   /**
   * Specifies the date when the object expires. Required if 'days' is not specified.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.4/docs/resources/s3_bucket_lifecycle_configuration#date S3BucketLifecycleConfiguration#date}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.5/docs/resources/s3_bucket_lifecycle_configuration#date S3BucketLifecycleConfiguration#date}
   */
   readonly date?: string;
   /**
   * Specifies the number of days after object creation when the object expires. Required if 'date' is not specified.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.4/docs/resources/s3_bucket_lifecycle_configuration#days S3BucketLifecycleConfiguration#days}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.5/docs/resources/s3_bucket_lifecycle_configuration#days S3BucketLifecycleConfiguration#days}
   */
   readonly days?: number;
   /**
   * Indicates whether IONOS S3 Object Storage will remove a delete marker with no noncurrent versions. If set to true, the delete marker will be expired; if set to false the policy takes no operation. This cannot be specified with Days or Date in a Lifecycle Expiration Policy.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.4/docs/resources/s3_bucket_lifecycle_configuration#expired_object_delete_marker S3BucketLifecycleConfiguration#expired_object_delete_marker}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.5/docs/resources/s3_bucket_lifecycle_configuration#expired_object_delete_marker S3BucketLifecycleConfiguration#expired_object_delete_marker}
   */
   readonly expiredObjectDeleteMarker?: boolean | cdktf.IResolvable;
 }
@@ -288,9 +291,9 @@ export interface S3BucketLifecycleConfigurationRuleNoncurrentVersionExpiration {
   /**
   * Specifies the number of days an object is noncurrent before Amazon S3 can perform the associated action.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.4/docs/resources/s3_bucket_lifecycle_configuration#noncurrent_days S3BucketLifecycleConfiguration#noncurrent_days}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.5/docs/resources/s3_bucket_lifecycle_configuration#noncurrent_days S3BucketLifecycleConfiguration#noncurrent_days}
   */
-  readonly noncurrentDays: number;
+  readonly noncurrentDays?: number;
 }
 
 export function s3BucketLifecycleConfigurationRuleNoncurrentVersionExpirationToTerraform(struct?: S3BucketLifecycleConfigurationRuleNoncurrentVersionExpiration | cdktf.IResolvable): any {
@@ -364,13 +367,16 @@ export class S3BucketLifecycleConfigurationRuleNoncurrentVersionExpirationOutput
     }
   }
 
-  // noncurrent_days - computed: false, optional: false, required: true
+  // noncurrent_days - computed: false, optional: true, required: false
   private _noncurrentDays?: number; 
   public get noncurrentDays() {
     return this.getNumberAttribute('noncurrent_days');
   }
   public set noncurrentDays(value: number) {
     this._noncurrentDays = value;
+  }
+  public resetNoncurrentDays() {
+    this._noncurrentDays = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get noncurrentDaysInput() {
@@ -381,7 +387,7 @@ export interface S3BucketLifecycleConfigurationRule {
   /**
   * Unique identifier for the rule.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.4/docs/resources/s3_bucket_lifecycle_configuration#id S3BucketLifecycleConfiguration#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.5/docs/resources/s3_bucket_lifecycle_configuration#id S3BucketLifecycleConfiguration#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -390,33 +396,33 @@ export interface S3BucketLifecycleConfigurationRule {
   /**
   * Object key prefix identifying one or more objects to which the rule applies.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.4/docs/resources/s3_bucket_lifecycle_configuration#prefix S3BucketLifecycleConfiguration#prefix}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.5/docs/resources/s3_bucket_lifecycle_configuration#prefix S3BucketLifecycleConfiguration#prefix}
   */
   readonly prefix: string;
   /**
   * Whether the rule is currently being applied. Valid values: Enabled or Disabled.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.4/docs/resources/s3_bucket_lifecycle_configuration#status S3BucketLifecycleConfiguration#status}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.5/docs/resources/s3_bucket_lifecycle_configuration#status S3BucketLifecycleConfiguration#status}
   */
   readonly status: string;
   /**
   * abort_incomplete_multipart_upload block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.4/docs/resources/s3_bucket_lifecycle_configuration#abort_incomplete_multipart_upload S3BucketLifecycleConfiguration#abort_incomplete_multipart_upload}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.5/docs/resources/s3_bucket_lifecycle_configuration#abort_incomplete_multipart_upload S3BucketLifecycleConfiguration#abort_incomplete_multipart_upload}
   */
-  readonly abortIncompleteMultipartUpload: S3BucketLifecycleConfigurationRuleAbortIncompleteMultipartUpload;
+  readonly abortIncompleteMultipartUpload?: S3BucketLifecycleConfigurationRuleAbortIncompleteMultipartUpload;
   /**
   * expiration block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.4/docs/resources/s3_bucket_lifecycle_configuration#expiration S3BucketLifecycleConfiguration#expiration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.5/docs/resources/s3_bucket_lifecycle_configuration#expiration S3BucketLifecycleConfiguration#expiration}
   */
   readonly expiration?: S3BucketLifecycleConfigurationRuleExpiration;
   /**
   * noncurrent_version_expiration block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.4/docs/resources/s3_bucket_lifecycle_configuration#noncurrent_version_expiration S3BucketLifecycleConfiguration#noncurrent_version_expiration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.5/docs/resources/s3_bucket_lifecycle_configuration#noncurrent_version_expiration S3BucketLifecycleConfiguration#noncurrent_version_expiration}
   */
-  readonly noncurrentVersionExpiration: S3BucketLifecycleConfigurationRuleNoncurrentVersionExpiration;
+  readonly noncurrentVersionExpiration?: S3BucketLifecycleConfigurationRuleNoncurrentVersionExpiration;
 }
 
 export function s3BucketLifecycleConfigurationRuleToTerraform(struct?: S3BucketLifecycleConfigurationRule | cdktf.IResolvable): any {
@@ -599,13 +605,16 @@ export class S3BucketLifecycleConfigurationRuleOutputReference extends cdktf.Com
     return this._status;
   }
 
-  // abort_incomplete_multipart_upload - computed: false, optional: false, required: true
+  // abort_incomplete_multipart_upload - computed: false, optional: true, required: false
   private _abortIncompleteMultipartUpload = new S3BucketLifecycleConfigurationRuleAbortIncompleteMultipartUploadOutputReference(this, "abort_incomplete_multipart_upload");
   public get abortIncompleteMultipartUpload() {
     return this._abortIncompleteMultipartUpload;
   }
   public putAbortIncompleteMultipartUpload(value: S3BucketLifecycleConfigurationRuleAbortIncompleteMultipartUpload) {
     this._abortIncompleteMultipartUpload.internalValue = value;
+  }
+  public resetAbortIncompleteMultipartUpload() {
+    this._abortIncompleteMultipartUpload.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get abortIncompleteMultipartUploadInput() {
@@ -628,13 +637,16 @@ export class S3BucketLifecycleConfigurationRuleOutputReference extends cdktf.Com
     return this._expiration.internalValue;
   }
 
-  // noncurrent_version_expiration - computed: false, optional: false, required: true
+  // noncurrent_version_expiration - computed: false, optional: true, required: false
   private _noncurrentVersionExpiration = new S3BucketLifecycleConfigurationRuleNoncurrentVersionExpirationOutputReference(this, "noncurrent_version_expiration");
   public get noncurrentVersionExpiration() {
     return this._noncurrentVersionExpiration;
   }
   public putNoncurrentVersionExpiration(value: S3BucketLifecycleConfigurationRuleNoncurrentVersionExpiration) {
     this._noncurrentVersionExpiration.internalValue = value;
+  }
+  public resetNoncurrentVersionExpiration() {
+    this._noncurrentVersionExpiration.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get noncurrentVersionExpirationInput() {
@@ -663,7 +675,7 @@ export class S3BucketLifecycleConfigurationRuleList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.4/docs/resources/s3_bucket_lifecycle_configuration ionoscloud_s3_bucket_lifecycle_configuration}
+* Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.5/docs/resources/s3_bucket_lifecycle_configuration ionoscloud_s3_bucket_lifecycle_configuration}
 */
 export class S3BucketLifecycleConfiguration extends cdktf.TerraformResource {
 
@@ -679,7 +691,7 @@ export class S3BucketLifecycleConfiguration extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a S3BucketLifecycleConfiguration resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the S3BucketLifecycleConfiguration to import
-  * @param importFromId The id of the existing S3BucketLifecycleConfiguration that should be imported. Refer to the {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.4/docs/resources/s3_bucket_lifecycle_configuration#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing S3BucketLifecycleConfiguration that should be imported. Refer to the {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.5/docs/resources/s3_bucket_lifecycle_configuration#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the S3BucketLifecycleConfiguration to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -691,7 +703,7 @@ export class S3BucketLifecycleConfiguration extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.4/docs/resources/s3_bucket_lifecycle_configuration ionoscloud_s3_bucket_lifecycle_configuration} Resource
+  * Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.5/docs/resources/s3_bucket_lifecycle_configuration ionoscloud_s3_bucket_lifecycle_configuration} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -702,7 +714,7 @@ export class S3BucketLifecycleConfiguration extends cdktf.TerraformResource {
       terraformResourceType: 'ionoscloud_s3_bucket_lifecycle_configuration',
       terraformGeneratorMetadata: {
         providerName: 'ionoscloud',
-        providerVersion: '6.5.4',
+        providerVersion: '6.5.5',
         providerVersionConstraint: '~> 6.2'
       },
       provider: config.provider,

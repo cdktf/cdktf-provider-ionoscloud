@@ -4,7 +4,7 @@
 
 ### S3BucketLifecycleConfiguration <a name="S3BucketLifecycleConfiguration" id="@cdktf/provider-ionoscloud.s3BucketLifecycleConfiguration.S3BucketLifecycleConfiguration"></a>
 
-Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.4/docs/resources/s3_bucket_lifecycle_configuration ionoscloud_s3_bucket_lifecycle_configuration}.
+Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.5/docs/resources/s3_bucket_lifecycle_configuration ionoscloud_s3_bucket_lifecycle_configuration}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.s3BucketLifecycleConfiguration.S3BucketLifecycleConfiguration.Initializer"></a>
 
@@ -108,7 +108,7 @@ Must be unique amongst siblings in the same scope
 
 The name of the S3 bucket.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.4/docs/resources/s3_bucket_lifecycle_configuration#bucket S3BucketLifecycleConfiguration#bucket}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.5/docs/resources/s3_bucket_lifecycle_configuration#bucket S3BucketLifecycleConfiguration#bucket}
 
 ---
 
@@ -118,7 +118,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 
 rule block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.4/docs/resources/s3_bucket_lifecycle_configuration#rule S3BucketLifecycleConfiguration#rule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.5/docs/resources/s3_bucket_lifecycle_configuration#rule S3BucketLifecycleConfiguration#rule}
 
 ---
 
@@ -613,7 +613,7 @@ The construct id used in the generated config for the S3BucketLifecycleConfigura
 
 The id of the existing S3BucketLifecycleConfiguration that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.4/docs/resources/s3_bucket_lifecycle_configuration#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.5/docs/resources/s3_bucket_lifecycle_configuration#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -968,7 +968,7 @@ bucket: str
 
 The name of the S3 bucket.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.4/docs/resources/s3_bucket_lifecycle_configuration#bucket S3BucketLifecycleConfiguration#bucket}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.5/docs/resources/s3_bucket_lifecycle_configuration#bucket S3BucketLifecycleConfiguration#bucket}
 
 ---
 
@@ -982,7 +982,7 @@ rule: typing.Union[IResolvable, typing.List[S3BucketLifecycleConfigurationRule]]
 
 rule block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.4/docs/resources/s3_bucket_lifecycle_configuration#rule S3BucketLifecycleConfiguration#rule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.5/docs/resources/s3_bucket_lifecycle_configuration#rule S3BucketLifecycleConfiguration#rule}
 
 ---
 
@@ -994,12 +994,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 from cdktf_cdktf_provider_ionoscloud import s3_bucket_lifecycle_configuration
 
 s3BucketLifecycleConfiguration.S3BucketLifecycleConfigurationRule(
-  abort_incomplete_multipart_upload: S3BucketLifecycleConfigurationRuleAbortIncompleteMultipartUpload,
-  noncurrent_version_expiration: S3BucketLifecycleConfigurationRuleNoncurrentVersionExpiration,
   prefix: str,
   status: str,
+  abort_incomplete_multipart_upload: S3BucketLifecycleConfigurationRuleAbortIncompleteMultipartUpload = None,
   expiration: S3BucketLifecycleConfigurationRuleExpiration = None,
-  id: str = None
+  id: str = None,
+  noncurrent_version_expiration: S3BucketLifecycleConfigurationRuleNoncurrentVersionExpiration = None
 )
 ```
 
@@ -1007,40 +1007,12 @@ s3BucketLifecycleConfiguration.S3BucketLifecycleConfigurationRule(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-ionoscloud.s3BucketLifecycleConfiguration.S3BucketLifecycleConfigurationRule.property.abortIncompleteMultipartUpload">abort_incomplete_multipart_upload</a></code> | <code><a href="#@cdktf/provider-ionoscloud.s3BucketLifecycleConfiguration.S3BucketLifecycleConfigurationRuleAbortIncompleteMultipartUpload">S3BucketLifecycleConfigurationRuleAbortIncompleteMultipartUpload</a></code> | abort_incomplete_multipart_upload block. |
-| <code><a href="#@cdktf/provider-ionoscloud.s3BucketLifecycleConfiguration.S3BucketLifecycleConfigurationRule.property.noncurrentVersionExpiration">noncurrent_version_expiration</a></code> | <code><a href="#@cdktf/provider-ionoscloud.s3BucketLifecycleConfiguration.S3BucketLifecycleConfigurationRuleNoncurrentVersionExpiration">S3BucketLifecycleConfigurationRuleNoncurrentVersionExpiration</a></code> | noncurrent_version_expiration block. |
 | <code><a href="#@cdktf/provider-ionoscloud.s3BucketLifecycleConfiguration.S3BucketLifecycleConfigurationRule.property.prefix">prefix</a></code> | <code>str</code> | Object key prefix identifying one or more objects to which the rule applies. |
 | <code><a href="#@cdktf/provider-ionoscloud.s3BucketLifecycleConfiguration.S3BucketLifecycleConfigurationRule.property.status">status</a></code> | <code>str</code> | Whether the rule is currently being applied. Valid values: Enabled or Disabled. |
+| <code><a href="#@cdktf/provider-ionoscloud.s3BucketLifecycleConfiguration.S3BucketLifecycleConfigurationRule.property.abortIncompleteMultipartUpload">abort_incomplete_multipart_upload</a></code> | <code><a href="#@cdktf/provider-ionoscloud.s3BucketLifecycleConfiguration.S3BucketLifecycleConfigurationRuleAbortIncompleteMultipartUpload">S3BucketLifecycleConfigurationRuleAbortIncompleteMultipartUpload</a></code> | abort_incomplete_multipart_upload block. |
 | <code><a href="#@cdktf/provider-ionoscloud.s3BucketLifecycleConfiguration.S3BucketLifecycleConfigurationRule.property.expiration">expiration</a></code> | <code><a href="#@cdktf/provider-ionoscloud.s3BucketLifecycleConfiguration.S3BucketLifecycleConfigurationRuleExpiration">S3BucketLifecycleConfigurationRuleExpiration</a></code> | expiration block. |
 | <code><a href="#@cdktf/provider-ionoscloud.s3BucketLifecycleConfiguration.S3BucketLifecycleConfigurationRule.property.id">id</a></code> | <code>str</code> | Unique identifier for the rule. |
-
----
-
-##### `abort_incomplete_multipart_upload`<sup>Required</sup> <a name="abort_incomplete_multipart_upload" id="@cdktf/provider-ionoscloud.s3BucketLifecycleConfiguration.S3BucketLifecycleConfigurationRule.property.abortIncompleteMultipartUpload"></a>
-
-```python
-abort_incomplete_multipart_upload: S3BucketLifecycleConfigurationRuleAbortIncompleteMultipartUpload
-```
-
-- *Type:* <a href="#@cdktf/provider-ionoscloud.s3BucketLifecycleConfiguration.S3BucketLifecycleConfigurationRuleAbortIncompleteMultipartUpload">S3BucketLifecycleConfigurationRuleAbortIncompleteMultipartUpload</a>
-
-abort_incomplete_multipart_upload block.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.4/docs/resources/s3_bucket_lifecycle_configuration#abort_incomplete_multipart_upload S3BucketLifecycleConfiguration#abort_incomplete_multipart_upload}
-
----
-
-##### `noncurrent_version_expiration`<sup>Required</sup> <a name="noncurrent_version_expiration" id="@cdktf/provider-ionoscloud.s3BucketLifecycleConfiguration.S3BucketLifecycleConfigurationRule.property.noncurrentVersionExpiration"></a>
-
-```python
-noncurrent_version_expiration: S3BucketLifecycleConfigurationRuleNoncurrentVersionExpiration
-```
-
-- *Type:* <a href="#@cdktf/provider-ionoscloud.s3BucketLifecycleConfiguration.S3BucketLifecycleConfigurationRuleNoncurrentVersionExpiration">S3BucketLifecycleConfigurationRuleNoncurrentVersionExpiration</a>
-
-noncurrent_version_expiration block.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.4/docs/resources/s3_bucket_lifecycle_configuration#noncurrent_version_expiration S3BucketLifecycleConfiguration#noncurrent_version_expiration}
+| <code><a href="#@cdktf/provider-ionoscloud.s3BucketLifecycleConfiguration.S3BucketLifecycleConfigurationRule.property.noncurrentVersionExpiration">noncurrent_version_expiration</a></code> | <code><a href="#@cdktf/provider-ionoscloud.s3BucketLifecycleConfiguration.S3BucketLifecycleConfigurationRuleNoncurrentVersionExpiration">S3BucketLifecycleConfigurationRuleNoncurrentVersionExpiration</a></code> | noncurrent_version_expiration block. |
 
 ---
 
@@ -1054,7 +1026,7 @@ prefix: str
 
 Object key prefix identifying one or more objects to which the rule applies.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.4/docs/resources/s3_bucket_lifecycle_configuration#prefix S3BucketLifecycleConfiguration#prefix}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.5/docs/resources/s3_bucket_lifecycle_configuration#prefix S3BucketLifecycleConfiguration#prefix}
 
 ---
 
@@ -1068,7 +1040,21 @@ status: str
 
 Whether the rule is currently being applied. Valid values: Enabled or Disabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.4/docs/resources/s3_bucket_lifecycle_configuration#status S3BucketLifecycleConfiguration#status}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.5/docs/resources/s3_bucket_lifecycle_configuration#status S3BucketLifecycleConfiguration#status}
+
+---
+
+##### `abort_incomplete_multipart_upload`<sup>Optional</sup> <a name="abort_incomplete_multipart_upload" id="@cdktf/provider-ionoscloud.s3BucketLifecycleConfiguration.S3BucketLifecycleConfigurationRule.property.abortIncompleteMultipartUpload"></a>
+
+```python
+abort_incomplete_multipart_upload: S3BucketLifecycleConfigurationRuleAbortIncompleteMultipartUpload
+```
+
+- *Type:* <a href="#@cdktf/provider-ionoscloud.s3BucketLifecycleConfiguration.S3BucketLifecycleConfigurationRuleAbortIncompleteMultipartUpload">S3BucketLifecycleConfigurationRuleAbortIncompleteMultipartUpload</a>
+
+abort_incomplete_multipart_upload block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.5/docs/resources/s3_bucket_lifecycle_configuration#abort_incomplete_multipart_upload S3BucketLifecycleConfiguration#abort_incomplete_multipart_upload}
 
 ---
 
@@ -1082,7 +1068,7 @@ expiration: S3BucketLifecycleConfigurationRuleExpiration
 
 expiration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.4/docs/resources/s3_bucket_lifecycle_configuration#expiration S3BucketLifecycleConfiguration#expiration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.5/docs/resources/s3_bucket_lifecycle_configuration#expiration S3BucketLifecycleConfiguration#expiration}
 
 ---
 
@@ -1096,10 +1082,24 @@ id: str
 
 Unique identifier for the rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.4/docs/resources/s3_bucket_lifecycle_configuration#id S3BucketLifecycleConfiguration#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.5/docs/resources/s3_bucket_lifecycle_configuration#id S3BucketLifecycleConfiguration#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `noncurrent_version_expiration`<sup>Optional</sup> <a name="noncurrent_version_expiration" id="@cdktf/provider-ionoscloud.s3BucketLifecycleConfiguration.S3BucketLifecycleConfigurationRule.property.noncurrentVersionExpiration"></a>
+
+```python
+noncurrent_version_expiration: S3BucketLifecycleConfigurationRuleNoncurrentVersionExpiration
+```
+
+- *Type:* <a href="#@cdktf/provider-ionoscloud.s3BucketLifecycleConfiguration.S3BucketLifecycleConfigurationRuleNoncurrentVersionExpiration">S3BucketLifecycleConfigurationRuleNoncurrentVersionExpiration</a>
+
+noncurrent_version_expiration block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.5/docs/resources/s3_bucket_lifecycle_configuration#noncurrent_version_expiration S3BucketLifecycleConfiguration#noncurrent_version_expiration}
 
 ---
 
@@ -1111,7 +1111,7 @@ If you experience problems setting this value it might not be settable. Please t
 from cdktf_cdktf_provider_ionoscloud import s3_bucket_lifecycle_configuration
 
 s3BucketLifecycleConfiguration.S3BucketLifecycleConfigurationRuleAbortIncompleteMultipartUpload(
-  days_after_initiation: typing.Union[int, float]
+  days_after_initiation: typing.Union[int, float] = None
 )
 ```
 
@@ -1123,7 +1123,7 @@ s3BucketLifecycleConfiguration.S3BucketLifecycleConfigurationRuleAbortIncomplete
 
 ---
 
-##### `days_after_initiation`<sup>Required</sup> <a name="days_after_initiation" id="@cdktf/provider-ionoscloud.s3BucketLifecycleConfiguration.S3BucketLifecycleConfigurationRuleAbortIncompleteMultipartUpload.property.daysAfterInitiation"></a>
+##### `days_after_initiation`<sup>Optional</sup> <a name="days_after_initiation" id="@cdktf/provider-ionoscloud.s3BucketLifecycleConfiguration.S3BucketLifecycleConfigurationRuleAbortIncompleteMultipartUpload.property.daysAfterInitiation"></a>
 
 ```python
 days_after_initiation: typing.Union[int, float]
@@ -1133,7 +1133,7 @@ days_after_initiation: typing.Union[int, float]
 
 Specifies the number of days after which IONOS S3 Object Storage aborts an incomplete multipart upload.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.4/docs/resources/s3_bucket_lifecycle_configuration#days_after_initiation S3BucketLifecycleConfiguration#days_after_initiation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.5/docs/resources/s3_bucket_lifecycle_configuration#days_after_initiation S3BucketLifecycleConfiguration#days_after_initiation}
 
 ---
 
@@ -1171,7 +1171,7 @@ date: str
 
 Specifies the date when the object expires. Required if 'days' is not specified.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.4/docs/resources/s3_bucket_lifecycle_configuration#date S3BucketLifecycleConfiguration#date}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.5/docs/resources/s3_bucket_lifecycle_configuration#date S3BucketLifecycleConfiguration#date}
 
 ---
 
@@ -1185,7 +1185,7 @@ days: typing.Union[int, float]
 
 Specifies the number of days after object creation when the object expires. Required if 'date' is not specified.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.4/docs/resources/s3_bucket_lifecycle_configuration#days S3BucketLifecycleConfiguration#days}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.5/docs/resources/s3_bucket_lifecycle_configuration#days S3BucketLifecycleConfiguration#days}
 
 ---
 
@@ -1201,7 +1201,7 @@ Indicates whether IONOS S3 Object Storage will remove a delete marker with no no
 
 If set to true, the delete marker will be expired; if set to false the policy takes no operation. This cannot be specified with Days or Date in a Lifecycle Expiration Policy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.4/docs/resources/s3_bucket_lifecycle_configuration#expired_object_delete_marker S3BucketLifecycleConfiguration#expired_object_delete_marker}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.5/docs/resources/s3_bucket_lifecycle_configuration#expired_object_delete_marker S3BucketLifecycleConfiguration#expired_object_delete_marker}
 
 ---
 
@@ -1213,7 +1213,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 from cdktf_cdktf_provider_ionoscloud import s3_bucket_lifecycle_configuration
 
 s3BucketLifecycleConfiguration.S3BucketLifecycleConfigurationRuleNoncurrentVersionExpiration(
-  noncurrent_days: typing.Union[int, float]
+  noncurrent_days: typing.Union[int, float] = None
 )
 ```
 
@@ -1225,7 +1225,7 @@ s3BucketLifecycleConfiguration.S3BucketLifecycleConfigurationRuleNoncurrentVersi
 
 ---
 
-##### `noncurrent_days`<sup>Required</sup> <a name="noncurrent_days" id="@cdktf/provider-ionoscloud.s3BucketLifecycleConfiguration.S3BucketLifecycleConfigurationRuleNoncurrentVersionExpiration.property.noncurrentDays"></a>
+##### `noncurrent_days`<sup>Optional</sup> <a name="noncurrent_days" id="@cdktf/provider-ionoscloud.s3BucketLifecycleConfiguration.S3BucketLifecycleConfigurationRuleNoncurrentVersionExpiration.property.noncurrentDays"></a>
 
 ```python
 noncurrent_days: typing.Union[int, float]
@@ -1235,7 +1235,7 @@ noncurrent_days: typing.Union[int, float]
 
 Specifies the number of days an object is noncurrent before Amazon S3 can perform the associated action.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.4/docs/resources/s3_bucket_lifecycle_configuration#noncurrent_days S3BucketLifecycleConfiguration#noncurrent_days}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.5/docs/resources/s3_bucket_lifecycle_configuration#noncurrent_days S3BucketLifecycleConfiguration#noncurrent_days}
 
 ---
 
@@ -1294,6 +1294,7 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktf/provider-ionoscloud.s3BucketLifecycleConfiguration.S3BucketLifecycleConfigurationRuleAbortIncompleteMultipartUploadOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.s3BucketLifecycleConfiguration.S3BucketLifecycleConfigurationRuleAbortIncompleteMultipartUploadOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-ionoscloud.s3BucketLifecycleConfiguration.S3BucketLifecycleConfigurationRuleAbortIncompleteMultipartUploadOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-ionoscloud.s3BucketLifecycleConfiguration.S3BucketLifecycleConfigurationRuleAbortIncompleteMultipartUploadOutputReference.resetDaysAfterInitiation">reset_days_after_initiation</a></code> | *No description.* |
 
 ---
 
@@ -1468,6 +1469,12 @@ def to_string() -> str
 Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
+
+##### `reset_days_after_initiation` <a name="reset_days_after_initiation" id="@cdktf/provider-ionoscloud.s3BucketLifecycleConfiguration.S3BucketLifecycleConfigurationRuleAbortIncompleteMultipartUploadOutputReference.resetDaysAfterInitiation"></a>
+
+```python
+def reset_days_after_initiation() -> None
+```
 
 
 #### Properties <a name="Properties" id="Properties"></a>
@@ -2121,6 +2128,7 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktf/provider-ionoscloud.s3BucketLifecycleConfiguration.S3BucketLifecycleConfigurationRuleNoncurrentVersionExpirationOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.s3BucketLifecycleConfiguration.S3BucketLifecycleConfigurationRuleNoncurrentVersionExpirationOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-ionoscloud.s3BucketLifecycleConfiguration.S3BucketLifecycleConfigurationRuleNoncurrentVersionExpirationOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-ionoscloud.s3BucketLifecycleConfiguration.S3BucketLifecycleConfigurationRuleNoncurrentVersionExpirationOutputReference.resetNoncurrentDays">reset_noncurrent_days</a></code> | *No description.* |
 
 ---
 
@@ -2296,6 +2304,12 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
+##### `reset_noncurrent_days` <a name="reset_noncurrent_days" id="@cdktf/provider-ionoscloud.s3BucketLifecycleConfiguration.S3BucketLifecycleConfigurationRuleNoncurrentVersionExpirationOutputReference.resetNoncurrentDays"></a>
+
+```python
+def reset_noncurrent_days() -> None
+```
+
 
 #### Properties <a name="Properties" id="Properties"></a>
 
@@ -2440,8 +2454,10 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 | <code><a href="#@cdktf/provider-ionoscloud.s3BucketLifecycleConfiguration.S3BucketLifecycleConfigurationRuleOutputReference.putAbortIncompleteMultipartUpload">put_abort_incomplete_multipart_upload</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.s3BucketLifecycleConfiguration.S3BucketLifecycleConfigurationRuleOutputReference.putExpiration">put_expiration</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.s3BucketLifecycleConfiguration.S3BucketLifecycleConfigurationRuleOutputReference.putNoncurrentVersionExpiration">put_noncurrent_version_expiration</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.s3BucketLifecycleConfiguration.S3BucketLifecycleConfigurationRuleOutputReference.resetAbortIncompleteMultipartUpload">reset_abort_incomplete_multipart_upload</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.s3BucketLifecycleConfiguration.S3BucketLifecycleConfigurationRuleOutputReference.resetExpiration">reset_expiration</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.s3BucketLifecycleConfiguration.S3BucketLifecycleConfigurationRuleOutputReference.resetId">reset_id</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.s3BucketLifecycleConfiguration.S3BucketLifecycleConfigurationRuleOutputReference.resetNoncurrentVersionExpiration">reset_noncurrent_version_expiration</a></code> | *No description.* |
 
 ---
 
@@ -2621,17 +2637,17 @@ Returns a reversible string representation.
 
 ```python
 def put_abort_incomplete_multipart_upload(
-  days_after_initiation: typing.Union[int, float]
+  days_after_initiation: typing.Union[int, float] = None
 ) -> None
 ```
 
-###### `days_after_initiation`<sup>Required</sup> <a name="days_after_initiation" id="@cdktf/provider-ionoscloud.s3BucketLifecycleConfiguration.S3BucketLifecycleConfigurationRuleOutputReference.putAbortIncompleteMultipartUpload.parameter.daysAfterInitiation"></a>
+###### `days_after_initiation`<sup>Optional</sup> <a name="days_after_initiation" id="@cdktf/provider-ionoscloud.s3BucketLifecycleConfiguration.S3BucketLifecycleConfigurationRuleOutputReference.putAbortIncompleteMultipartUpload.parameter.daysAfterInitiation"></a>
 
 - *Type:* typing.Union[int, float]
 
 Specifies the number of days after which IONOS S3 Object Storage aborts an incomplete multipart upload.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.4/docs/resources/s3_bucket_lifecycle_configuration#days_after_initiation S3BucketLifecycleConfiguration#days_after_initiation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.5/docs/resources/s3_bucket_lifecycle_configuration#days_after_initiation S3BucketLifecycleConfiguration#days_after_initiation}
 
 ---
 
@@ -2651,7 +2667,7 @@ def put_expiration(
 
 Specifies the date when the object expires. Required if 'days' is not specified.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.4/docs/resources/s3_bucket_lifecycle_configuration#date S3BucketLifecycleConfiguration#date}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.5/docs/resources/s3_bucket_lifecycle_configuration#date S3BucketLifecycleConfiguration#date}
 
 ---
 
@@ -2661,7 +2677,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 
 Specifies the number of days after object creation when the object expires. Required if 'date' is not specified.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.4/docs/resources/s3_bucket_lifecycle_configuration#days S3BucketLifecycleConfiguration#days}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.5/docs/resources/s3_bucket_lifecycle_configuration#days S3BucketLifecycleConfiguration#days}
 
 ---
 
@@ -2673,7 +2689,7 @@ Indicates whether IONOS S3 Object Storage will remove a delete marker with no no
 
 If set to true, the delete marker will be expired; if set to false the policy takes no operation. This cannot be specified with Days or Date in a Lifecycle Expiration Policy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.4/docs/resources/s3_bucket_lifecycle_configuration#expired_object_delete_marker S3BucketLifecycleConfiguration#expired_object_delete_marker}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.5/docs/resources/s3_bucket_lifecycle_configuration#expired_object_delete_marker S3BucketLifecycleConfiguration#expired_object_delete_marker}
 
 ---
 
@@ -2681,19 +2697,25 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 
 ```python
 def put_noncurrent_version_expiration(
-  noncurrent_days: typing.Union[int, float]
+  noncurrent_days: typing.Union[int, float] = None
 ) -> None
 ```
 
-###### `noncurrent_days`<sup>Required</sup> <a name="noncurrent_days" id="@cdktf/provider-ionoscloud.s3BucketLifecycleConfiguration.S3BucketLifecycleConfigurationRuleOutputReference.putNoncurrentVersionExpiration.parameter.noncurrentDays"></a>
+###### `noncurrent_days`<sup>Optional</sup> <a name="noncurrent_days" id="@cdktf/provider-ionoscloud.s3BucketLifecycleConfiguration.S3BucketLifecycleConfigurationRuleOutputReference.putNoncurrentVersionExpiration.parameter.noncurrentDays"></a>
 
 - *Type:* typing.Union[int, float]
 
 Specifies the number of days an object is noncurrent before Amazon S3 can perform the associated action.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.4/docs/resources/s3_bucket_lifecycle_configuration#noncurrent_days S3BucketLifecycleConfiguration#noncurrent_days}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.5/docs/resources/s3_bucket_lifecycle_configuration#noncurrent_days S3BucketLifecycleConfiguration#noncurrent_days}
 
 ---
+
+##### `reset_abort_incomplete_multipart_upload` <a name="reset_abort_incomplete_multipart_upload" id="@cdktf/provider-ionoscloud.s3BucketLifecycleConfiguration.S3BucketLifecycleConfigurationRuleOutputReference.resetAbortIncompleteMultipartUpload"></a>
+
+```python
+def reset_abort_incomplete_multipart_upload() -> None
+```
 
 ##### `reset_expiration` <a name="reset_expiration" id="@cdktf/provider-ionoscloud.s3BucketLifecycleConfiguration.S3BucketLifecycleConfigurationRuleOutputReference.resetExpiration"></a>
 
@@ -2705,6 +2727,12 @@ def reset_expiration() -> None
 
 ```python
 def reset_id() -> None
+```
+
+##### `reset_noncurrent_version_expiration` <a name="reset_noncurrent_version_expiration" id="@cdktf/provider-ionoscloud.s3BucketLifecycleConfiguration.S3BucketLifecycleConfigurationRuleOutputReference.resetNoncurrentVersionExpiration"></a>
+
+```python
+def reset_noncurrent_version_expiration() -> None
 ```
 
 
