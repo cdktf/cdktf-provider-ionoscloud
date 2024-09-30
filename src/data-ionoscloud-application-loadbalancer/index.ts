@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.5/docs/data-sources/application_loadbalancer
+// https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.6/docs/data-sources/application_loadbalancer
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,11 +13,11 @@ import * as cdktf from 'cdktf';
 
 export interface DataIonoscloudApplicationLoadbalancerConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.5/docs/data-sources/application_loadbalancer#datacenter_id DataIonoscloudApplicationLoadbalancer#datacenter_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.6/docs/data-sources/application_loadbalancer#datacenter_id DataIonoscloudApplicationLoadbalancer#datacenter_id}
   */
   readonly datacenterId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.5/docs/data-sources/application_loadbalancer#id DataIonoscloudApplicationLoadbalancer#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.6/docs/data-sources/application_loadbalancer#id DataIonoscloudApplicationLoadbalancer#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -26,19 +26,19 @@ export interface DataIonoscloudApplicationLoadbalancerConfig extends cdktf.Terra
   /**
   * The name of the Application Load Balancer.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.5/docs/data-sources/application_loadbalancer#name DataIonoscloudApplicationLoadbalancer#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.6/docs/data-sources/application_loadbalancer#name DataIonoscloudApplicationLoadbalancer#name}
   */
   readonly name?: string;
   /**
   * Whether partial matching is allowed or not when using name argument.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.5/docs/data-sources/application_loadbalancer#partial_match DataIonoscloudApplicationLoadbalancer#partial_match}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.6/docs/data-sources/application_loadbalancer#partial_match DataIonoscloudApplicationLoadbalancer#partial_match}
   */
   readonly partialMatch?: boolean | cdktf.IResolvable;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.5/docs/data-sources/application_loadbalancer#timeouts DataIonoscloudApplicationLoadbalancer#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.6/docs/data-sources/application_loadbalancer#timeouts DataIonoscloudApplicationLoadbalancer#timeouts}
   */
   readonly timeouts?: DataIonoscloudApplicationLoadbalancerTimeouts;
 }
@@ -139,19 +139,19 @@ export class DataIonoscloudApplicationLoadbalancerFlowlogList extends cdktf.Comp
 }
 export interface DataIonoscloudApplicationLoadbalancerTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.5/docs/data-sources/application_loadbalancer#create DataIonoscloudApplicationLoadbalancer#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.6/docs/data-sources/application_loadbalancer#create DataIonoscloudApplicationLoadbalancer#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.5/docs/data-sources/application_loadbalancer#default DataIonoscloudApplicationLoadbalancer#default}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.6/docs/data-sources/application_loadbalancer#default DataIonoscloudApplicationLoadbalancer#default}
   */
   readonly default?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.5/docs/data-sources/application_loadbalancer#delete DataIonoscloudApplicationLoadbalancer#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.6/docs/data-sources/application_loadbalancer#delete DataIonoscloudApplicationLoadbalancer#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.5/docs/data-sources/application_loadbalancer#update DataIonoscloudApplicationLoadbalancer#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.6/docs/data-sources/application_loadbalancer#update DataIonoscloudApplicationLoadbalancer#update}
   */
   readonly update?: string;
 }
@@ -332,7 +332,7 @@ export class DataIonoscloudApplicationLoadbalancerTimeoutsOutputReference extend
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.5/docs/data-sources/application_loadbalancer ionoscloud_application_loadbalancer}
+* Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.6/docs/data-sources/application_loadbalancer ionoscloud_application_loadbalancer}
 */
 export class DataIonoscloudApplicationLoadbalancer extends cdktf.TerraformDataSource {
 
@@ -348,7 +348,7 @@ export class DataIonoscloudApplicationLoadbalancer extends cdktf.TerraformDataSo
   * Generates CDKTF code for importing a DataIonoscloudApplicationLoadbalancer resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataIonoscloudApplicationLoadbalancer to import
-  * @param importFromId The id of the existing DataIonoscloudApplicationLoadbalancer that should be imported. Refer to the {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.5/docs/data-sources/application_loadbalancer#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataIonoscloudApplicationLoadbalancer that should be imported. Refer to the {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.6/docs/data-sources/application_loadbalancer#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataIonoscloudApplicationLoadbalancer to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -360,7 +360,7 @@ export class DataIonoscloudApplicationLoadbalancer extends cdktf.TerraformDataSo
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.5/docs/data-sources/application_loadbalancer ionoscloud_application_loadbalancer} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.6/docs/data-sources/application_loadbalancer ionoscloud_application_loadbalancer} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -371,7 +371,7 @@ export class DataIonoscloudApplicationLoadbalancer extends cdktf.TerraformDataSo
       terraformResourceType: 'ionoscloud_application_loadbalancer',
       terraformGeneratorMetadata: {
         providerName: 'ionoscloud',
-        providerVersion: '6.5.5',
+        providerVersion: '6.5.6',
         providerVersionConstraint: '~> 6.2'
       },
       provider: config.provider,

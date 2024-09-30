@@ -4,7 +4,7 @@
 
 ### PgCluster <a name="PgCluster" id="@cdktf/provider-ionoscloud.pgCluster.PgCluster"></a>
 
-Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.5/docs/resources/pg_cluster ionoscloud_pg_cluster}.
+Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.6/docs/resources/pg_cluster ionoscloud_pg_cluster}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.pgCluster.PgCluster.Initializer"></a>
 
@@ -73,12 +73,14 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-ionoscloud.pgCluster.PgCluster.moveFromId">MoveFromId</a></code> | Move the resource corresponding to "id" to this resource. |
 | <code><a href="#@cdktf/provider-ionoscloud.pgCluster.PgCluster.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-ionoscloud.pgCluster.PgCluster.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
+| <code><a href="#@cdktf/provider-ionoscloud.pgCluster.PgCluster.putConnectionPooler">PutConnectionPooler</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.pgCluster.PgCluster.putConnections">PutConnections</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.pgCluster.PgCluster.putCredentials">PutCredentials</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.pgCluster.PgCluster.putFromBackup">PutFromBackup</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.pgCluster.PgCluster.putMaintenanceWindow">PutMaintenanceWindow</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.pgCluster.PgCluster.putTimeouts">PutTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.pgCluster.PgCluster.resetBackupLocation">ResetBackupLocation</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.pgCluster.PgCluster.resetConnectionPooler">ResetConnectionPooler</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.pgCluster.PgCluster.resetConnections">ResetConnections</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.pgCluster.PgCluster.resetFromBackup">ResetFromBackup</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.pgCluster.PgCluster.resetId">ResetId</a></code> | *No description.* |
@@ -375,6 +377,18 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
+##### `PutConnectionPooler` <a name="PutConnectionPooler" id="@cdktf/provider-ionoscloud.pgCluster.PgCluster.putConnectionPooler"></a>
+
+```csharp
+private void PutConnectionPooler(PgClusterConnectionPooler Value)
+```
+
+###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-ionoscloud.pgCluster.PgCluster.putConnectionPooler.parameter.value"></a>
+
+- *Type:* <a href="#@cdktf/provider-ionoscloud.pgCluster.PgClusterConnectionPooler">PgClusterConnectionPooler</a>
+
+---
+
 ##### `PutConnections` <a name="PutConnections" id="@cdktf/provider-ionoscloud.pgCluster.PgCluster.putConnections"></a>
 
 ```csharp
@@ -439,6 +453,12 @@ private void PutTimeouts(PgClusterTimeouts Value)
 
 ```csharp
 private void ResetBackupLocation()
+```
+
+##### `ResetConnectionPooler` <a name="ResetConnectionPooler" id="@cdktf/provider-ionoscloud.pgCluster.PgCluster.resetConnectionPooler"></a>
+
+```csharp
+private void ResetConnectionPooler()
 ```
 
 ##### `ResetConnections` <a name="ResetConnections" id="@cdktf/provider-ionoscloud.pgCluster.PgCluster.resetConnections"></a>
@@ -574,7 +594,7 @@ The construct id used in the generated config for the PgCluster to import.
 
 The id of the existing PgCluster that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.5/docs/resources/pg_cluster#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.6/docs/resources/pg_cluster#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -604,6 +624,7 @@ Refer to the {@link https://registry.terraform.io/providers/ionos-cloud/ionosclo
 | <code><a href="#@cdktf/provider-ionoscloud.pgCluster.PgCluster.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.pgCluster.PgCluster.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.pgCluster.PgCluster.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.pgCluster.PgCluster.property.connectionPooler">ConnectionPooler</a></code> | <code><a href="#@cdktf/provider-ionoscloud.pgCluster.PgClusterConnectionPoolerOutputReference">PgClusterConnectionPoolerOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.pgCluster.PgCluster.property.connections">Connections</a></code> | <code><a href="#@cdktf/provider-ionoscloud.pgCluster.PgClusterConnectionsOutputReference">PgClusterConnectionsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.pgCluster.PgCluster.property.credentials">Credentials</a></code> | <code><a href="#@cdktf/provider-ionoscloud.pgCluster.PgClusterCredentialsOutputReference">PgClusterCredentialsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.pgCluster.PgCluster.property.dnsName">DnsName</a></code> | <code>string</code> | *No description.* |
@@ -611,6 +632,7 @@ Refer to the {@link https://registry.terraform.io/providers/ionos-cloud/ionosclo
 | <code><a href="#@cdktf/provider-ionoscloud.pgCluster.PgCluster.property.maintenanceWindow">MaintenanceWindow</a></code> | <code><a href="#@cdktf/provider-ionoscloud.pgCluster.PgClusterMaintenanceWindowOutputReference">PgClusterMaintenanceWindowOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.pgCluster.PgCluster.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-ionoscloud.pgCluster.PgClusterTimeoutsOutputReference">PgClusterTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.pgCluster.PgCluster.property.backupLocationInput">BackupLocationInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.pgCluster.PgCluster.property.connectionPoolerInput">ConnectionPoolerInput</a></code> | <code><a href="#@cdktf/provider-ionoscloud.pgCluster.PgClusterConnectionPooler">PgClusterConnectionPooler</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.pgCluster.PgCluster.property.connectionsInput">ConnectionsInput</a></code> | <code><a href="#@cdktf/provider-ionoscloud.pgCluster.PgClusterConnections">PgClusterConnections</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.pgCluster.PgCluster.property.coresInput">CoresInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.pgCluster.PgCluster.property.credentialsInput">CredentialsInput</a></code> | <code><a href="#@cdktf/provider-ionoscloud.pgCluster.PgClusterCredentials">PgClusterCredentials</a></code> | *No description.* |
@@ -782,6 +804,16 @@ public object[] Provisioners { get; }
 
 ---
 
+##### `ConnectionPooler`<sup>Required</sup> <a name="ConnectionPooler" id="@cdktf/provider-ionoscloud.pgCluster.PgCluster.property.connectionPooler"></a>
+
+```csharp
+public PgClusterConnectionPoolerOutputReference ConnectionPooler { get; }
+```
+
+- *Type:* <a href="#@cdktf/provider-ionoscloud.pgCluster.PgClusterConnectionPoolerOutputReference">PgClusterConnectionPoolerOutputReference</a>
+
+---
+
 ##### `Connections`<sup>Required</sup> <a name="Connections" id="@cdktf/provider-ionoscloud.pgCluster.PgCluster.property.connections"></a>
 
 ```csharp
@@ -849,6 +881,16 @@ public string BackupLocationInput { get; }
 ```
 
 - *Type:* string
+
+---
+
+##### `ConnectionPoolerInput`<sup>Optional</sup> <a name="ConnectionPoolerInput" id="@cdktf/provider-ionoscloud.pgCluster.PgCluster.property.connectionPoolerInput"></a>
+
+```csharp
+public PgClusterConnectionPooler ConnectionPoolerInput { get; }
+```
+
+- *Type:* <a href="#@cdktf/provider-ionoscloud.pgCluster.PgClusterConnectionPooler">PgClusterConnectionPooler</a>
 
 ---
 
@@ -1158,6 +1200,7 @@ new PgClusterConfig {
     string StorageType,
     string SynchronizationMode,
     string BackupLocation = null,
+    PgClusterConnectionPooler ConnectionPooler = null,
     PgClusterConnections Connections = null,
     PgClusterFromBackup FromBackup = null,
     string Id = null,
@@ -1188,9 +1231,10 @@ new PgClusterConfig {
 | <code><a href="#@cdktf/provider-ionoscloud.pgCluster.PgClusterConfig.property.storageType">StorageType</a></code> | <code>string</code> | The storage type used in your cluster. |
 | <code><a href="#@cdktf/provider-ionoscloud.pgCluster.PgClusterConfig.property.synchronizationMode">SynchronizationMode</a></code> | <code>string</code> | Represents different modes of replication. |
 | <code><a href="#@cdktf/provider-ionoscloud.pgCluster.PgClusterConfig.property.backupLocation">BackupLocation</a></code> | <code>string</code> | The S3 location where the backups will be stored. |
+| <code><a href="#@cdktf/provider-ionoscloud.pgCluster.PgClusterConfig.property.connectionPooler">ConnectionPooler</a></code> | <code><a href="#@cdktf/provider-ionoscloud.pgCluster.PgClusterConnectionPooler">PgClusterConnectionPooler</a></code> | connection_pooler block. |
 | <code><a href="#@cdktf/provider-ionoscloud.pgCluster.PgClusterConfig.property.connections">Connections</a></code> | <code><a href="#@cdktf/provider-ionoscloud.pgCluster.PgClusterConnections">PgClusterConnections</a></code> | connections block. |
 | <code><a href="#@cdktf/provider-ionoscloud.pgCluster.PgClusterConfig.property.fromBackup">FromBackup</a></code> | <code><a href="#@cdktf/provider-ionoscloud.pgCluster.PgClusterFromBackup">PgClusterFromBackup</a></code> | from_backup block. |
-| <code><a href="#@cdktf/provider-ionoscloud.pgCluster.PgClusterConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.5/docs/resources/pg_cluster#id PgCluster#id}. |
+| <code><a href="#@cdktf/provider-ionoscloud.pgCluster.PgClusterConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.6/docs/resources/pg_cluster#id PgCluster#id}. |
 | <code><a href="#@cdktf/provider-ionoscloud.pgCluster.PgClusterConfig.property.maintenanceWindow">MaintenanceWindow</a></code> | <code><a href="#@cdktf/provider-ionoscloud.pgCluster.PgClusterMaintenanceWindow">PgClusterMaintenanceWindow</a></code> | maintenance_window block. |
 | <code><a href="#@cdktf/provider-ionoscloud.pgCluster.PgClusterConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-ionoscloud.pgCluster.PgClusterTimeouts">PgClusterTimeouts</a></code> | timeouts block. |
 
@@ -1276,7 +1320,7 @@ public double Cores { get; set; }
 
 The number of CPU cores per replica.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.5/docs/resources/pg_cluster#cores PgCluster#cores}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.6/docs/resources/pg_cluster#cores PgCluster#cores}
 
 ---
 
@@ -1290,7 +1334,7 @@ public PgClusterCredentials Credentials { get; set; }
 
 credentials block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.5/docs/resources/pg_cluster#credentials PgCluster#credentials}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.6/docs/resources/pg_cluster#credentials PgCluster#credentials}
 
 ---
 
@@ -1304,7 +1348,7 @@ public string DisplayName { get; set; }
 
 The friendly name of your cluster.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.5/docs/resources/pg_cluster#display_name PgCluster#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.6/docs/resources/pg_cluster#display_name PgCluster#display_name}
 
 ---
 
@@ -1318,7 +1362,7 @@ public double Instances { get; set; }
 
 The total number of instances in the cluster (one master and n-1 standbys).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.5/docs/resources/pg_cluster#instances PgCluster#instances}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.6/docs/resources/pg_cluster#instances PgCluster#instances}
 
 ---
 
@@ -1334,7 +1378,7 @@ The physical location where the cluster will be created.
 
 This will be where all of your instances live. Property cannot be modified after datacenter creation (disallowed in update requests)
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.5/docs/resources/pg_cluster#location PgCluster#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.6/docs/resources/pg_cluster#location PgCluster#location}
 
 ---
 
@@ -1348,7 +1392,7 @@ public string PostgresVersion { get; set; }
 
 The PostgreSQL version of your cluster.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.5/docs/resources/pg_cluster#postgres_version PgCluster#postgres_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.6/docs/resources/pg_cluster#postgres_version PgCluster#postgres_version}
 
 ---
 
@@ -1362,7 +1406,7 @@ public double Ram { get; set; }
 
 The amount of memory per instance in megabytes. Has to be a multiple of 1024.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.5/docs/resources/pg_cluster#ram PgCluster#ram}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.6/docs/resources/pg_cluster#ram PgCluster#ram}
 
 ---
 
@@ -1376,7 +1420,7 @@ public double StorageSize { get; set; }
 
 The amount of storage per instance in megabytes. Has to be a multiple of 2048.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.5/docs/resources/pg_cluster#storage_size PgCluster#storage_size}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.6/docs/resources/pg_cluster#storage_size PgCluster#storage_size}
 
 ---
 
@@ -1390,7 +1434,7 @@ public string StorageType { get; set; }
 
 The storage type used in your cluster.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.5/docs/resources/pg_cluster#storage_type PgCluster#storage_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.6/docs/resources/pg_cluster#storage_type PgCluster#storage_type}
 
 ---
 
@@ -1404,7 +1448,7 @@ public string SynchronizationMode { get; set; }
 
 Represents different modes of replication.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.5/docs/resources/pg_cluster#synchronization_mode PgCluster#synchronization_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.6/docs/resources/pg_cluster#synchronization_mode PgCluster#synchronization_mode}
 
 ---
 
@@ -1418,7 +1462,21 @@ public string BackupLocation { get; set; }
 
 The S3 location where the backups will be stored.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.5/docs/resources/pg_cluster#backup_location PgCluster#backup_location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.6/docs/resources/pg_cluster#backup_location PgCluster#backup_location}
+
+---
+
+##### `ConnectionPooler`<sup>Optional</sup> <a name="ConnectionPooler" id="@cdktf/provider-ionoscloud.pgCluster.PgClusterConfig.property.connectionPooler"></a>
+
+```csharp
+public PgClusterConnectionPooler ConnectionPooler { get; set; }
+```
+
+- *Type:* <a href="#@cdktf/provider-ionoscloud.pgCluster.PgClusterConnectionPooler">PgClusterConnectionPooler</a>
+
+connection_pooler block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.6/docs/resources/pg_cluster#connection_pooler PgCluster#connection_pooler}
 
 ---
 
@@ -1432,7 +1490,7 @@ public PgClusterConnections Connections { get; set; }
 
 connections block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.5/docs/resources/pg_cluster#connections PgCluster#connections}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.6/docs/resources/pg_cluster#connections PgCluster#connections}
 
 ---
 
@@ -1446,7 +1504,7 @@ public PgClusterFromBackup FromBackup { get; set; }
 
 from_backup block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.5/docs/resources/pg_cluster#from_backup PgCluster#from_backup}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.6/docs/resources/pg_cluster#from_backup PgCluster#from_backup}
 
 ---
 
@@ -1458,7 +1516,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.5/docs/resources/pg_cluster#id PgCluster#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.6/docs/resources/pg_cluster#id PgCluster#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1475,7 +1533,7 @@ public PgClusterMaintenanceWindow MaintenanceWindow { get; set; }
 
 maintenance_window block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.5/docs/resources/pg_cluster#maintenance_window PgCluster#maintenance_window}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.6/docs/resources/pg_cluster#maintenance_window PgCluster#maintenance_window}
 
 ---
 
@@ -1489,7 +1547,55 @@ public PgClusterTimeouts Timeouts { get; set; }
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.5/docs/resources/pg_cluster#timeouts PgCluster#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.6/docs/resources/pg_cluster#timeouts PgCluster#timeouts}
+
+---
+
+### PgClusterConnectionPooler <a name="PgClusterConnectionPooler" id="@cdktf/provider-ionoscloud.pgCluster.PgClusterConnectionPooler"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-ionoscloud.pgCluster.PgClusterConnectionPooler.Initializer"></a>
+
+```csharp
+using HashiCorp.Cdktf.Providers.Ionoscloud;
+
+new PgClusterConnectionPooler {
+    object Enabled,
+    string PoolMode
+};
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-ionoscloud.pgCluster.PgClusterConnectionPooler.property.enabled">Enabled</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.6/docs/resources/pg_cluster#enabled PgCluster#enabled}. |
+| <code><a href="#@cdktf/provider-ionoscloud.pgCluster.PgClusterConnectionPooler.property.poolMode">PoolMode</a></code> | <code>string</code> | Represents different modes of connection pooling for the connection pooler. |
+
+---
+
+##### `Enabled`<sup>Required</sup> <a name="Enabled" id="@cdktf/provider-ionoscloud.pgCluster.PgClusterConnectionPooler.property.enabled"></a>
+
+```csharp
+public object Enabled { get; set; }
+```
+
+- *Type:* object
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.6/docs/resources/pg_cluster#enabled PgCluster#enabled}.
+
+---
+
+##### `PoolMode`<sup>Required</sup> <a name="PoolMode" id="@cdktf/provider-ionoscloud.pgCluster.PgClusterConnectionPooler.property.poolMode"></a>
+
+```csharp
+public string PoolMode { get; set; }
+```
+
+- *Type:* string
+
+Represents different modes of connection pooling for the connection pooler.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.6/docs/resources/pg_cluster#pool_mode PgCluster#pool_mode}
 
 ---
 
@@ -1532,7 +1638,7 @@ Note the following unavailable IP ranges:
 10.233.0.0/18
 10.233.114.0/24
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.5/docs/resources/pg_cluster#cidr PgCluster#cidr}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.6/docs/resources/pg_cluster#cidr PgCluster#cidr}
 
 ---
 
@@ -1546,7 +1652,7 @@ public string DatacenterId { get; set; }
 
 The datacenter to connect your cluster to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.5/docs/resources/pg_cluster#datacenter_id PgCluster#datacenter_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.6/docs/resources/pg_cluster#datacenter_id PgCluster#datacenter_id}
 
 ---
 
@@ -1560,7 +1666,7 @@ public string LanId { get; set; }
 
 The LAN to connect your cluster to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.5/docs/resources/pg_cluster#lan_id PgCluster#lan_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.6/docs/resources/pg_cluster#lan_id PgCluster#lan_id}
 
 ---
 
@@ -1581,7 +1687,7 @@ new PgClusterCredentials {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-ionoscloud.pgCluster.PgClusterCredentials.property.password">Password</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.5/docs/resources/pg_cluster#password PgCluster#password}. |
+| <code><a href="#@cdktf/provider-ionoscloud.pgCluster.PgClusterCredentials.property.password">Password</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.6/docs/resources/pg_cluster#password PgCluster#password}. |
 | <code><a href="#@cdktf/provider-ionoscloud.pgCluster.PgClusterCredentials.property.username">Username</a></code> | <code>string</code> | the username for the initial postgres user. some system usernames are restricted (e.g. "postgres", "admin", "standby"). |
 
 ---
@@ -1594,7 +1700,7 @@ public string Password { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.5/docs/resources/pg_cluster#password PgCluster#password}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.6/docs/resources/pg_cluster#password PgCluster#password}.
 
 ---
 
@@ -1608,7 +1714,7 @@ public string Username { get; set; }
 
 the username for the initial postgres user. some system usernames are restricted (e.g. "postgres", "admin", "standby").
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.5/docs/resources/pg_cluster#username PgCluster#username}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.6/docs/resources/pg_cluster#username PgCluster#username}
 
 ---
 
@@ -1644,7 +1750,7 @@ public string BackupId { get; set; }
 
 The unique ID of the backup you want to restore.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.5/docs/resources/pg_cluster#backup_id PgCluster#backup_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.6/docs/resources/pg_cluster#backup_id PgCluster#backup_id}
 
 ---
 
@@ -1660,7 +1766,7 @@ If this value is supplied as ISO 8601 timestamp, the backup will be replayed up 
 
 If empty, the backup will be applied completely.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.5/docs/resources/pg_cluster#recovery_target_time PgCluster#recovery_target_time}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.6/docs/resources/pg_cluster#recovery_target_time PgCluster#recovery_target_time}
 
 ---
 
@@ -1681,8 +1787,8 @@ new PgClusterMaintenanceWindow {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-ionoscloud.pgCluster.PgClusterMaintenanceWindow.property.dayOfTheWeek">DayOfTheWeek</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.5/docs/resources/pg_cluster#day_of_the_week PgCluster#day_of_the_week}. |
-| <code><a href="#@cdktf/provider-ionoscloud.pgCluster.PgClusterMaintenanceWindow.property.time">Time</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.5/docs/resources/pg_cluster#time PgCluster#time}. |
+| <code><a href="#@cdktf/provider-ionoscloud.pgCluster.PgClusterMaintenanceWindow.property.dayOfTheWeek">DayOfTheWeek</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.6/docs/resources/pg_cluster#day_of_the_week PgCluster#day_of_the_week}. |
+| <code><a href="#@cdktf/provider-ionoscloud.pgCluster.PgClusterMaintenanceWindow.property.time">Time</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.6/docs/resources/pg_cluster#time PgCluster#time}. |
 
 ---
 
@@ -1694,7 +1800,7 @@ public string DayOfTheWeek { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.5/docs/resources/pg_cluster#day_of_the_week PgCluster#day_of_the_week}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.6/docs/resources/pg_cluster#day_of_the_week PgCluster#day_of_the_week}.
 
 ---
 
@@ -1706,7 +1812,7 @@ public string Time { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.5/docs/resources/pg_cluster#time PgCluster#time}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.6/docs/resources/pg_cluster#time PgCluster#time}.
 
 ---
 
@@ -1729,10 +1835,10 @@ new PgClusterTimeouts {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-ionoscloud.pgCluster.PgClusterTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.5/docs/resources/pg_cluster#create PgCluster#create}. |
-| <code><a href="#@cdktf/provider-ionoscloud.pgCluster.PgClusterTimeouts.property.default">Default</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.5/docs/resources/pg_cluster#default PgCluster#default}. |
-| <code><a href="#@cdktf/provider-ionoscloud.pgCluster.PgClusterTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.5/docs/resources/pg_cluster#delete PgCluster#delete}. |
-| <code><a href="#@cdktf/provider-ionoscloud.pgCluster.PgClusterTimeouts.property.update">Update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.5/docs/resources/pg_cluster#update PgCluster#update}. |
+| <code><a href="#@cdktf/provider-ionoscloud.pgCluster.PgClusterTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.6/docs/resources/pg_cluster#create PgCluster#create}. |
+| <code><a href="#@cdktf/provider-ionoscloud.pgCluster.PgClusterTimeouts.property.default">Default</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.6/docs/resources/pg_cluster#default PgCluster#default}. |
+| <code><a href="#@cdktf/provider-ionoscloud.pgCluster.PgClusterTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.6/docs/resources/pg_cluster#delete PgCluster#delete}. |
+| <code><a href="#@cdktf/provider-ionoscloud.pgCluster.PgClusterTimeouts.property.update">Update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.6/docs/resources/pg_cluster#update PgCluster#update}. |
 
 ---
 
@@ -1744,7 +1850,7 @@ public string Create { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.5/docs/resources/pg_cluster#create PgCluster#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.6/docs/resources/pg_cluster#create PgCluster#create}.
 
 ---
 
@@ -1756,7 +1862,7 @@ public string Default { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.5/docs/resources/pg_cluster#default PgCluster#default}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.6/docs/resources/pg_cluster#default PgCluster#default}.
 
 ---
 
@@ -1768,7 +1874,7 @@ public string Delete { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.5/docs/resources/pg_cluster#delete PgCluster#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.6/docs/resources/pg_cluster#delete PgCluster#delete}.
 
 ---
 
@@ -1780,11 +1886,304 @@ public string Update { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.5/docs/resources/pg_cluster#update PgCluster#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.6/docs/resources/pg_cluster#update PgCluster#update}.
 
 ---
 
 ## Classes <a name="Classes" id="Classes"></a>
+
+### PgClusterConnectionPoolerOutputReference <a name="PgClusterConnectionPoolerOutputReference" id="@cdktf/provider-ionoscloud.pgCluster.PgClusterConnectionPoolerOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.pgCluster.PgClusterConnectionPoolerOutputReference.Initializer"></a>
+
+```csharp
+using HashiCorp.Cdktf.Providers.Ionoscloud;
+
+new PgClusterConnectionPoolerOutputReference(IInterpolatingParent TerraformResource, string TerraformAttribute);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-ionoscloud.pgCluster.PgClusterConnectionPoolerOutputReference.Initializer.parameter.terraformResource">TerraformResource</a></code> | <code>HashiCorp.Cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-ionoscloud.pgCluster.PgClusterConnectionPoolerOutputReference.Initializer.parameter.terraformAttribute">TerraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `TerraformResource`<sup>Required</sup> <a name="TerraformResource" id="@cdktf/provider-ionoscloud.pgCluster.PgClusterConnectionPoolerOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* HashiCorp.Cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-ionoscloud.pgCluster.PgClusterConnectionPoolerOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-ionoscloud.pgCluster.PgClusterConnectionPoolerOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.pgCluster.PgClusterConnectionPoolerOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.pgCluster.PgClusterConnectionPoolerOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.pgCluster.PgClusterConnectionPoolerOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.pgCluster.PgClusterConnectionPoolerOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.pgCluster.PgClusterConnectionPoolerOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.pgCluster.PgClusterConnectionPoolerOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.pgCluster.PgClusterConnectionPoolerOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.pgCluster.PgClusterConnectionPoolerOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.pgCluster.PgClusterConnectionPoolerOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.pgCluster.PgClusterConnectionPoolerOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.pgCluster.PgClusterConnectionPoolerOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-ionoscloud.pgCluster.PgClusterConnectionPoolerOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktf/provider-ionoscloud.pgCluster.PgClusterConnectionPoolerOutputReference.computeFqn"></a>
+
+```csharp
+private string ComputeFqn()
+```
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktf/provider-ionoscloud.pgCluster.PgClusterConnectionPoolerOutputReference.getAnyMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, object> GetAnyMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-ionoscloud.pgCluster.PgClusterConnectionPoolerOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktf/provider-ionoscloud.pgCluster.PgClusterConnectionPoolerOutputReference.getBooleanAttribute"></a>
+
+```csharp
+private IResolvable GetBooleanAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-ionoscloud.pgCluster.PgClusterConnectionPoolerOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktf/provider-ionoscloud.pgCluster.PgClusterConnectionPoolerOutputReference.getBooleanMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, bool> GetBooleanMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-ionoscloud.pgCluster.PgClusterConnectionPoolerOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktf/provider-ionoscloud.pgCluster.PgClusterConnectionPoolerOutputReference.getListAttribute"></a>
+
+```csharp
+private string[] GetListAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-ionoscloud.pgCluster.PgClusterConnectionPoolerOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktf/provider-ionoscloud.pgCluster.PgClusterConnectionPoolerOutputReference.getNumberAttribute"></a>
+
+```csharp
+private double GetNumberAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-ionoscloud.pgCluster.PgClusterConnectionPoolerOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktf/provider-ionoscloud.pgCluster.PgClusterConnectionPoolerOutputReference.getNumberListAttribute"></a>
+
+```csharp
+private double[] GetNumberListAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-ionoscloud.pgCluster.PgClusterConnectionPoolerOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktf/provider-ionoscloud.pgCluster.PgClusterConnectionPoolerOutputReference.getNumberMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, double> GetNumberMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-ionoscloud.pgCluster.PgClusterConnectionPoolerOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktf/provider-ionoscloud.pgCluster.PgClusterConnectionPoolerOutputReference.getStringAttribute"></a>
+
+```csharp
+private string GetStringAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-ionoscloud.pgCluster.PgClusterConnectionPoolerOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktf/provider-ionoscloud.pgCluster.PgClusterConnectionPoolerOutputReference.getStringMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, string> GetStringMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-ionoscloud.pgCluster.PgClusterConnectionPoolerOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktf/provider-ionoscloud.pgCluster.PgClusterConnectionPoolerOutputReference.interpolationForAttribute"></a>
+
+```csharp
+private IResolvable InterpolationForAttribute(string Property)
+```
+
+###### `Property`<sup>Required</sup> <a name="Property" id="@cdktf/provider-ionoscloud.pgCluster.PgClusterConnectionPoolerOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `Resolve` <a name="Resolve" id="@cdktf/provider-ionoscloud.pgCluster.PgClusterConnectionPoolerOutputReference.resolve"></a>
+
+```csharp
+private object Resolve(IResolveContext Context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `Context`<sup>Required</sup> <a name="Context" id="@cdktf/provider-ionoscloud.pgCluster.PgClusterConnectionPoolerOutputReference.resolve.parameter._context"></a>
+
+- *Type:* HashiCorp.Cdktf.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktf/provider-ionoscloud.pgCluster.PgClusterConnectionPoolerOutputReference.toString"></a>
+
+```csharp
+private string ToString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-ionoscloud.pgCluster.PgClusterConnectionPoolerOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-ionoscloud.pgCluster.PgClusterConnectionPoolerOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.pgCluster.PgClusterConnectionPoolerOutputReference.property.enabledInput">EnabledInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.pgCluster.PgClusterConnectionPoolerOutputReference.property.poolModeInput">PoolModeInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.pgCluster.PgClusterConnectionPoolerOutputReference.property.enabled">Enabled</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.pgCluster.PgClusterConnectionPoolerOutputReference.property.poolMode">PoolMode</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.pgCluster.PgClusterConnectionPoolerOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktf/provider-ionoscloud.pgCluster.PgClusterConnectionPooler">PgClusterConnectionPooler</a></code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktf/provider-ionoscloud.pgCluster.PgClusterConnectionPoolerOutputReference.property.creationStack"></a>
+
+```csharp
+public string[] CreationStack { get; }
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktf/provider-ionoscloud.pgCluster.PgClusterConnectionPoolerOutputReference.property.fqn"></a>
+
+```csharp
+public string Fqn { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `EnabledInput`<sup>Optional</sup> <a name="EnabledInput" id="@cdktf/provider-ionoscloud.pgCluster.PgClusterConnectionPoolerOutputReference.property.enabledInput"></a>
+
+```csharp
+public object EnabledInput { get; }
+```
+
+- *Type:* object
+
+---
+
+##### `PoolModeInput`<sup>Optional</sup> <a name="PoolModeInput" id="@cdktf/provider-ionoscloud.pgCluster.PgClusterConnectionPoolerOutputReference.property.poolModeInput"></a>
+
+```csharp
+public string PoolModeInput { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `Enabled`<sup>Required</sup> <a name="Enabled" id="@cdktf/provider-ionoscloud.pgCluster.PgClusterConnectionPoolerOutputReference.property.enabled"></a>
+
+```csharp
+public object Enabled { get; }
+```
+
+- *Type:* object
+
+---
+
+##### `PoolMode`<sup>Required</sup> <a name="PoolMode" id="@cdktf/provider-ionoscloud.pgCluster.PgClusterConnectionPoolerOutputReference.property.poolMode"></a>
+
+```csharp
+public string PoolMode { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-ionoscloud.pgCluster.PgClusterConnectionPoolerOutputReference.property.internalValue"></a>
+
+```csharp
+public PgClusterConnectionPooler InternalValue { get; }
+```
+
+- *Type:* <a href="#@cdktf/provider-ionoscloud.pgCluster.PgClusterConnectionPooler">PgClusterConnectionPooler</a>
+
+---
+
 
 ### PgClusterConnectionsOutputReference <a name="PgClusterConnectionsOutputReference" id="@cdktf/provider-ionoscloud.pgCluster.PgClusterConnectionsOutputReference"></a>
 
