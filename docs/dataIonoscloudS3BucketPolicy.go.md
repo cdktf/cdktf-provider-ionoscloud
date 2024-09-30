@@ -4,12 +4,12 @@
 
 ### DataIonoscloudS3BucketPolicy <a name="DataIonoscloudS3BucketPolicy" id="@cdktf/provider-ionoscloud.dataIonoscloudS3BucketPolicy.DataIonoscloudS3BucketPolicy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.5/docs/data-sources/s3_bucket_policy ionoscloud_s3_bucket_policy}.
+Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.6/docs/data-sources/s3_bucket_policy ionoscloud_s3_bucket_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.dataIonoscloudS3BucketPolicy.DataIonoscloudS3BucketPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/dataionosclouds3bucketpolicy"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/dataionosclouds3bucketpolicy"
 
 dataionosclouds3bucketpolicy.NewDataIonoscloudS3BucketPolicy(scope Construct, id *string, config DataIonoscloudS3BucketPolicyConfig) DataIonoscloudS3BucketPolicy
 ```
@@ -276,7 +276,7 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-ionoscloud.dataIonoscloudS3BucketPolicy.DataIonoscloudS3BucketPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/dataionosclouds3bucketpolicy"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/dataionosclouds3bucketpolicy"
 
 dataionosclouds3bucketpolicy.DataIonoscloudS3BucketPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -308,7 +308,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-ionoscloud.dataIonoscloudS3BucketPolicy.DataIonoscloudS3BucketPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/dataionosclouds3bucketpolicy"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/dataionosclouds3bucketpolicy"
 
 dataionosclouds3bucketpolicy.DataIonoscloudS3BucketPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -322,7 +322,7 @@ dataionosclouds3bucketpolicy.DataIonoscloudS3BucketPolicy_IsTerraformElement(x i
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-ionoscloud.dataIonoscloudS3BucketPolicy.DataIonoscloudS3BucketPolicy.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/dataionosclouds3bucketpolicy"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/dataionosclouds3bucketpolicy"
 
 dataionosclouds3bucketpolicy.DataIonoscloudS3BucketPolicy_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -336,7 +336,7 @@ dataionosclouds3bucketpolicy.DataIonoscloudS3BucketPolicy_IsTerraformDataSource(
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-ionoscloud.dataIonoscloudS3BucketPolicy.DataIonoscloudS3BucketPolicy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/dataionosclouds3bucketpolicy"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/dataionosclouds3bucketpolicy"
 
 dataionosclouds3bucketpolicy.DataIonoscloudS3BucketPolicy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -365,7 +365,7 @@ The construct id used in the generated config for the DataIonoscloudS3BucketPoli
 
 The id of the existing DataIonoscloudS3BucketPolicy that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.5/docs/data-sources/s3_bucket_policy#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.6/docs/data-sources/s3_bucket_policy#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -576,7 +576,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-ionoscloud.dataIonoscloudS3BucketPolicy.DataIonoscloudS3BucketPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/dataionosclouds3bucketpolicy"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/dataionosclouds3bucketpolicy"
 
 &dataionosclouds3bucketpolicy.DataIonoscloudS3BucketPolicyConfig {
 	Connection: interface{},
@@ -685,7 +685,7 @@ Bucket *string
 
 The name of the bucket.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.5/docs/data-sources/s3_bucket_policy#bucket DataIonoscloudS3BucketPolicy#bucket}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.6/docs/data-sources/s3_bucket_policy#bucket DataIonoscloudS3BucketPolicy#bucket}
 
 ---
 
