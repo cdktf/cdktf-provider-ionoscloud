@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionosclo
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.networkloadbalancer.Networkloadbalancer.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/networkloadbalancer"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/networkloadbalancer"
 
 networkloadbalancer.NewNetworkloadbalancer(scope Construct, id *string, config NetworkloadbalancerConfig) Networkloadbalancer
 ```
@@ -453,7 +453,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-ionoscloud.networkloadbalancer.Networkloadbalancer.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/networkloadbalancer"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/networkloadbalancer"
 
 networkloadbalancer.Networkloadbalancer_IsConstruct(x interface{}) *bool
 ```
@@ -485,7 +485,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-ionoscloud.networkloadbalancer.Networkloadbalancer.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/networkloadbalancer"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/networkloadbalancer"
 
 networkloadbalancer.Networkloadbalancer_IsTerraformElement(x interface{}) *bool
 ```
@@ -499,7 +499,7 @@ networkloadbalancer.Networkloadbalancer_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-ionoscloud.networkloadbalancer.Networkloadbalancer.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/networkloadbalancer"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/networkloadbalancer"
 
 networkloadbalancer.Networkloadbalancer_IsTerraformResource(x interface{}) *bool
 ```
@@ -513,7 +513,7 @@ networkloadbalancer.Networkloadbalancer_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-ionoscloud.networkloadbalancer.Networkloadbalancer.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/networkloadbalancer"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/networkloadbalancer"
 
 networkloadbalancer.Networkloadbalancer_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -984,7 +984,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-ionoscloud.networkloadbalancer.NetworkloadbalancerConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/networkloadbalancer"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/networkloadbalancer"
 
 &networkloadbalancer.NetworkloadbalancerConfig {
 	Connection: interface{},
@@ -999,12 +999,12 @@ import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/networkloadbala
 	Name: *string,
 	TargetLan: *f64,
 	CentralLogging: interface{},
-	Flowlog: github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud.networkloadbalancer.NetworkloadbalancerFlowlog,
+	Flowlog: github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11.networkloadbalancer.NetworkloadbalancerFlowlog,
 	Id: *string,
 	Ips: *[]*string,
 	LbPrivateIps: *[]*string,
 	LoggingFormat: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud.networkloadbalancer.NetworkloadbalancerTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11.networkloadbalancer.NetworkloadbalancerTimeouts,
 }
 ```
 
@@ -1265,7 +1265,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 #### Initializer <a name="Initializer" id="@cdktf/provider-ionoscloud.networkloadbalancer.NetworkloadbalancerFlowlog.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/networkloadbalancer"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/networkloadbalancer"
 
 &networkloadbalancer.NetworkloadbalancerFlowlog {
 	Action: *string,
@@ -1347,7 +1347,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 #### Initializer <a name="Initializer" id="@cdktf/provider-ionoscloud.networkloadbalancer.NetworkloadbalancerTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/networkloadbalancer"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/networkloadbalancer"
 
 &networkloadbalancer.NetworkloadbalancerTimeouts {
 	Create: *string,
@@ -1423,7 +1423,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.networkloadbalancer.NetworkloadbalancerFlowlogOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/networkloadbalancer"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/networkloadbalancer"
 
 networkloadbalancer.NewNetworkloadbalancerFlowlogOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) NetworkloadbalancerFlowlogOutputReference
 ```
@@ -1771,7 +1771,7 @@ func InternalValue() NetworkloadbalancerFlowlog
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.networkloadbalancer.NetworkloadbalancerTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/networkloadbalancer"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/networkloadbalancer"
 
 networkloadbalancer.NewNetworkloadbalancerTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) NetworkloadbalancerTimeoutsOutputReference
 ```
