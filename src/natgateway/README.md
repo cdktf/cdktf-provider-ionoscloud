@@ -1,3 +1,3 @@
 # `ionoscloud_natgateway`
 
-Refer to the Terraform Registry for docs: [`ionoscloud_natgateway`](https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.7/docs/resources/natgateway).
+Refer to the Terraform Registry for docs: [`ionoscloud_natgateway`](https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.8/docs/resources/natgateway).

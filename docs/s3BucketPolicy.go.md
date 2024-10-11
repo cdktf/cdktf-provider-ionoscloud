@@ -4,12 +4,12 @@
 
 ### S3BucketPolicy <a name="S3BucketPolicy" id="@cdktf/provider-ionoscloud.s3BucketPolicy.S3BucketPolicy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.7/docs/resources/s3_bucket_policy ionoscloud_s3_bucket_policy}.
+Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.8/docs/resources/s3_bucket_policy ionoscloud_s3_bucket_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.s3BucketPolicy.S3BucketPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/s3bucketpolicy"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/s3bucketpolicy"
 
 s3bucketpolicy.NewS3BucketPolicy(scope Construct, id *string, config S3BucketPolicyConfig) S3BucketPolicy
 ```
@@ -378,7 +378,7 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-ionoscloud.s3BucketPolicy.S3BucketPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/s3bucketpolicy"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/s3bucketpolicy"
 
 s3bucketpolicy.S3BucketPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -410,7 +410,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-ionoscloud.s3BucketPolicy.S3BucketPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/s3bucketpolicy"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/s3bucketpolicy"
 
 s3bucketpolicy.S3BucketPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -424,7 +424,7 @@ s3bucketpolicy.S3BucketPolicy_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-ionoscloud.s3BucketPolicy.S3BucketPolicy.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/s3bucketpolicy"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/s3bucketpolicy"
 
 s3bucketpolicy.S3BucketPolicy_IsTerraformResource(x interface{}) *bool
 ```
@@ -438,7 +438,7 @@ s3bucketpolicy.S3BucketPolicy_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-ionoscloud.s3BucketPolicy.S3BucketPolicy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/s3bucketpolicy"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/s3bucketpolicy"
 
 s3bucketpolicy.S3BucketPolicy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -467,7 +467,7 @@ The construct id used in the generated config for the S3BucketPolicy to import.
 
 The id of the existing S3BucketPolicy that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.7/docs/resources/s3_bucket_policy#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.8/docs/resources/s3_bucket_policy#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -711,7 +711,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-ionoscloud.s3BucketPolicy.S3BucketPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/s3bucketpolicy"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/s3bucketpolicy"
 
 &s3bucketpolicy.S3BucketPolicyConfig {
 	Connection: interface{},
@@ -822,7 +822,7 @@ Bucket *string
 
 Name of the S3 bucket to which this policy will be applied.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.7/docs/resources/s3_bucket_policy#bucket S3BucketPolicy#bucket}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.8/docs/resources/s3_bucket_policy#bucket S3BucketPolicy#bucket}
 
 ---
 
@@ -836,7 +836,7 @@ Policy *string
 
 Text of the policy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.7/docs/resources/s3_bucket_policy#policy S3BucketPolicy#policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.8/docs/resources/s3_bucket_policy#policy S3BucketPolicy#policy}
 
 ---
 
