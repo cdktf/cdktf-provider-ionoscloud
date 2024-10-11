@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionosclo
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.autoCertificateProvider.AutoCertificateProvider.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/autocertificateprovider"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/autocertificateprovider"
 
 autocertificateprovider.NewAutoCertificateProvider(scope Construct, id *string, config AutoCertificateProviderConfig) AutoCertificateProvider
 ```
@@ -425,7 +425,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-ionoscloud.autoCertificateProvider.AutoCertificateProvider.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/autocertificateprovider"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/autocertificateprovider"
 
 autocertificateprovider.AutoCertificateProvider_IsConstruct(x interface{}) *bool
 ```
@@ -457,7 +457,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-ionoscloud.autoCertificateProvider.AutoCertificateProvider.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/autocertificateprovider"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/autocertificateprovider"
 
 autocertificateprovider.AutoCertificateProvider_IsTerraformElement(x interface{}) *bool
 ```
@@ -471,7 +471,7 @@ autocertificateprovider.AutoCertificateProvider_IsTerraformElement(x interface{}
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-ionoscloud.autoCertificateProvider.AutoCertificateProvider.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/autocertificateprovider"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/autocertificateprovider"
 
 autocertificateprovider.AutoCertificateProvider_IsTerraformResource(x interface{}) *bool
 ```
@@ -485,7 +485,7 @@ autocertificateprovider.AutoCertificateProvider_IsTerraformResource(x interface{
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-ionoscloud.autoCertificateProvider.AutoCertificateProvider.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/autocertificateprovider"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/autocertificateprovider"
 
 autocertificateprovider.AutoCertificateProvider_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -868,7 +868,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-ionoscloud.autoCertificateProvider.AutoCertificateProviderConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/autocertificateprovider"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/autocertificateprovider"
 
 &autocertificateprovider.AutoCertificateProviderConfig {
 	Connection: interface{},
@@ -882,9 +882,9 @@ import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/autocertificate
 	Location: *string,
 	Name: *string,
 	Server: *string,
-	ExternalAccountBinding: github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud.autoCertificateProvider.AutoCertificateProviderExternalAccountBinding,
+	ExternalAccountBinding: github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11.autoCertificateProvider.AutoCertificateProviderExternalAccountBinding,
 	Id: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud.autoCertificateProvider.AutoCertificateProviderTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11.autoCertificateProvider.AutoCertificateProviderTimeouts,
 }
 ```
 
@@ -1083,7 +1083,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 #### Initializer <a name="Initializer" id="@cdktf/provider-ionoscloud.autoCertificateProvider.AutoCertificateProviderExternalAccountBinding.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/autocertificateprovider"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/autocertificateprovider"
 
 &autocertificateprovider.AutoCertificateProviderExternalAccountBinding {
 	KeyId: *string,
@@ -1133,7 +1133,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 #### Initializer <a name="Initializer" id="@cdktf/provider-ionoscloud.autoCertificateProvider.AutoCertificateProviderTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/autocertificateprovider"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/autocertificateprovider"
 
 &autocertificateprovider.AutoCertificateProviderTimeouts {
 	Create: *string,
@@ -1209,7 +1209,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.autoCertificateProvider.AutoCertificateProviderExternalAccountBindingOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/autocertificateprovider"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/autocertificateprovider"
 
 autocertificateprovider.NewAutoCertificateProviderExternalAccountBindingOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AutoCertificateProviderExternalAccountBindingOutputReference
 ```
@@ -1502,7 +1502,7 @@ func InternalValue() AutoCertificateProviderExternalAccountBinding
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.autoCertificateProvider.AutoCertificateProviderTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/autocertificateprovider"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/autocertificateprovider"
 
 autocertificateprovider.NewAutoCertificateProviderTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AutoCertificateProviderTimeoutsOutputReference
 ```
