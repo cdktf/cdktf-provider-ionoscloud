@@ -1,3 +1,8 @@
+/**
+ * Copyright (c) HashiCorp, Inc.
+ * SPDX-License-Identifier: MPL-2.0
+ */
+
 // https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.9/docs/resources/kafka_cluster
 // generated from terraform resource schema
 
