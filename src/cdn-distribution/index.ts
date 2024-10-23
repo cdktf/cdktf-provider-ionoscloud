@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.8/docs/resources/cdn_distribution
+// https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.9/docs/resources/cdn_distribution
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,17 +15,17 @@ export interface CdnDistributionConfig extends cdktf.TerraformMetaArguments {
   /**
   * The ID of the certificate to use for the distribution.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.8/docs/resources/cdn_distribution#certificate_id CdnDistribution#certificate_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.9/docs/resources/cdn_distribution#certificate_id CdnDistribution#certificate_id}
   */
   readonly certificateId?: string;
   /**
   * The domain of the distribution.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.8/docs/resources/cdn_distribution#domain CdnDistribution#domain}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.9/docs/resources/cdn_distribution#domain CdnDistribution#domain}
   */
   readonly domain: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.8/docs/resources/cdn_distribution#id CdnDistribution#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.9/docs/resources/cdn_distribution#id CdnDistribution#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -34,23 +34,23 @@ export interface CdnDistributionConfig extends cdktf.TerraformMetaArguments {
   /**
   * routing_rules block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.8/docs/resources/cdn_distribution#routing_rules CdnDistribution#routing_rules}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.9/docs/resources/cdn_distribution#routing_rules CdnDistribution#routing_rules}
   */
   readonly routingRules: CdnDistributionRoutingRules[] | cdktf.IResolvable;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.8/docs/resources/cdn_distribution#timeouts CdnDistribution#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.9/docs/resources/cdn_distribution#timeouts CdnDistribution#timeouts}
   */
   readonly timeouts?: CdnDistributionTimeouts;
 }
 export interface CdnDistributionRoutingRulesUpstreamGeoRestrictions {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.8/docs/resources/cdn_distribution#allow_list CdnDistribution#allow_list}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.9/docs/resources/cdn_distribution#allow_list CdnDistribution#allow_list}
   */
   readonly allowList?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.8/docs/resources/cdn_distribution#block_list CdnDistribution#block_list}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.9/docs/resources/cdn_distribution#block_list CdnDistribution#block_list}
   */
   readonly blockList?: string[];
 }
@@ -165,31 +165,37 @@ export interface CdnDistributionRoutingRulesUpstream {
   /**
   * Enable or disable caching. If enabled, the CDN will cache the responses from the upstream host. Subsequent requests for the same resource will be served from the cache.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.8/docs/resources/cdn_distribution#caching CdnDistribution#caching}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.9/docs/resources/cdn_distribution#caching CdnDistribution#caching}
   */
   readonly caching: boolean | cdktf.IResolvable;
   /**
   * The upstream host that handles the requests if not already cached. This host will be protected by the WAF if the option is enabled.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.8/docs/resources/cdn_distribution#host CdnDistribution#host}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.9/docs/resources/cdn_distribution#host CdnDistribution#host}
   */
   readonly host: string;
   /**
   * Rate limit class that will be applied to limit the number of incoming requests per IP.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.8/docs/resources/cdn_distribution#rate_limit_class CdnDistribution#rate_limit_class}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.9/docs/resources/cdn_distribution#rate_limit_class CdnDistribution#rate_limit_class}
   */
   readonly rateLimitClass: string;
   /**
+  * The SNI (Server Name Indication) mode of the upstream host. It supports two modes: 'distribution' and 'origin', for more information about these modes please check the resource docs.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.9/docs/resources/cdn_distribution#sni_mode CdnDistribution#sni_mode}
+  */
+  readonly sniMode: string;
+  /**
   * Enable or disable WAF to protect the upstream host.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.8/docs/resources/cdn_distribution#waf CdnDistribution#waf}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.9/docs/resources/cdn_distribution#waf CdnDistribution#waf}
   */
   readonly waf: boolean | cdktf.IResolvable;
   /**
   * geo_restrictions block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.8/docs/resources/cdn_distribution#geo_restrictions CdnDistribution#geo_restrictions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.9/docs/resources/cdn_distribution#geo_restrictions CdnDistribution#geo_restrictions}
   */
   readonly geoRestrictions?: CdnDistributionRoutingRulesUpstreamGeoRestrictions;
 }
@@ -203,6 +209,7 @@ export function cdnDistributionRoutingRulesUpstreamToTerraform(struct?: CdnDistr
     caching: cdktf.booleanToTerraform(struct!.caching),
     host: cdktf.stringToTerraform(struct!.host),
     rate_limit_class: cdktf.stringToTerraform(struct!.rateLimitClass),
+    sni_mode: cdktf.stringToTerraform(struct!.sniMode),
     waf: cdktf.booleanToTerraform(struct!.waf),
     geo_restrictions: cdnDistributionRoutingRulesUpstreamGeoRestrictionsToTerraform(struct!.geoRestrictions),
   }
@@ -229,6 +236,12 @@ export function cdnDistributionRoutingRulesUpstreamToHclTerraform(struct?: CdnDi
     },
     rate_limit_class: {
       value: cdktf.stringToHclTerraform(struct!.rateLimitClass),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    sni_mode: {
+      value: cdktf.stringToHclTerraform(struct!.sniMode),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -277,6 +290,10 @@ export class CdnDistributionRoutingRulesUpstreamOutputReference extends cdktf.Co
       hasAnyValues = true;
       internalValueResult.rateLimitClass = this._rateLimitClass;
     }
+    if (this._sniMode !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.sniMode = this._sniMode;
+    }
     if (this._waf !== undefined) {
       hasAnyValues = true;
       internalValueResult.waf = this._waf;
@@ -294,6 +311,7 @@ export class CdnDistributionRoutingRulesUpstreamOutputReference extends cdktf.Co
       this._caching = undefined;
       this._host = undefined;
       this._rateLimitClass = undefined;
+      this._sniMode = undefined;
       this._waf = undefined;
       this._geoRestrictions.internalValue = undefined;
     }
@@ -302,6 +320,7 @@ export class CdnDistributionRoutingRulesUpstreamOutputReference extends cdktf.Co
       this._caching = value.caching;
       this._host = value.host;
       this._rateLimitClass = value.rateLimitClass;
+      this._sniMode = value.sniMode;
       this._waf = value.waf;
       this._geoRestrictions.internalValue = value.geoRestrictions;
     }
@@ -346,6 +365,19 @@ export class CdnDistributionRoutingRulesUpstreamOutputReference extends cdktf.Co
     return this._rateLimitClass;
   }
 
+  // sni_mode - computed: false, optional: false, required: true
+  private _sniMode?: string; 
+  public get sniMode() {
+    return this.getStringAttribute('sni_mode');
+  }
+  public set sniMode(value: string) {
+    this._sniMode = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get sniModeInput() {
+    return this._sniMode;
+  }
+
   // waf - computed: false, optional: false, required: true
   private _waf?: boolean | cdktf.IResolvable; 
   public get waf() {
@@ -379,19 +411,19 @@ export interface CdnDistributionRoutingRules {
   /**
   * The prefix of the routing rule.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.8/docs/resources/cdn_distribution#prefix CdnDistribution#prefix}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.9/docs/resources/cdn_distribution#prefix CdnDistribution#prefix}
   */
   readonly prefix: string;
   /**
   * The scheme of the routing rule.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.8/docs/resources/cdn_distribution#scheme CdnDistribution#scheme}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.9/docs/resources/cdn_distribution#scheme CdnDistribution#scheme}
   */
   readonly scheme: string;
   /**
   * upstream block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.8/docs/resources/cdn_distribution#upstream CdnDistribution#upstream}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.9/docs/resources/cdn_distribution#upstream CdnDistribution#upstream}
   */
   readonly upstream: CdnDistributionRoutingRulesUpstream;
 }
@@ -556,19 +588,19 @@ export class CdnDistributionRoutingRulesList extends cdktf.ComplexList {
 }
 export interface CdnDistributionTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.8/docs/resources/cdn_distribution#create CdnDistribution#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.9/docs/resources/cdn_distribution#create CdnDistribution#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.8/docs/resources/cdn_distribution#default CdnDistribution#default}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.9/docs/resources/cdn_distribution#default CdnDistribution#default}
   */
   readonly default?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.8/docs/resources/cdn_distribution#delete CdnDistribution#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.9/docs/resources/cdn_distribution#delete CdnDistribution#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.8/docs/resources/cdn_distribution#update CdnDistribution#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.9/docs/resources/cdn_distribution#update CdnDistribution#update}
   */
   readonly update?: string;
 }
@@ -749,7 +781,7 @@ export class CdnDistributionTimeoutsOutputReference extends cdktf.ComplexObject 
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.8/docs/resources/cdn_distribution ionoscloud_cdn_distribution}
+* Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.9/docs/resources/cdn_distribution ionoscloud_cdn_distribution}
 */
 export class CdnDistribution extends cdktf.TerraformResource {
 
@@ -765,7 +797,7 @@ export class CdnDistribution extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a CdnDistribution resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the CdnDistribution to import
-  * @param importFromId The id of the existing CdnDistribution that should be imported. Refer to the {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.8/docs/resources/cdn_distribution#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing CdnDistribution that should be imported. Refer to the {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.9/docs/resources/cdn_distribution#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the CdnDistribution to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -777,7 +809,7 @@ export class CdnDistribution extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.8/docs/resources/cdn_distribution ionoscloud_cdn_distribution} Resource
+  * Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.9/docs/resources/cdn_distribution ionoscloud_cdn_distribution} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -788,7 +820,7 @@ export class CdnDistribution extends cdktf.TerraformResource {
       terraformResourceType: 'ionoscloud_cdn_distribution',
       terraformGeneratorMetadata: {
         providerName: 'ionoscloud',
-        providerVersion: '6.5.8',
+        providerVersion: '6.5.9',
         providerVersionConstraint: '~> 6.2'
       },
       provider: config.provider,
