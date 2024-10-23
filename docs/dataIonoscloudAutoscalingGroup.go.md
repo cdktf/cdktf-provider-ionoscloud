@@ -4,12 +4,12 @@
 
 ### DataIonoscloudAutoscalingGroup <a name="DataIonoscloudAutoscalingGroup" id="@cdktf/provider-ionoscloud.dataIonoscloudAutoscalingGroup.DataIonoscloudAutoscalingGroup"></a>
 
-Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.8/docs/data-sources/autoscaling_group ionoscloud_autoscaling_group}.
+Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.9/docs/data-sources/autoscaling_group ionoscloud_autoscaling_group}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.dataIonoscloudAutoscalingGroup.DataIonoscloudAutoscalingGroup.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/dataionoscloudautoscalinggroup"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/dataionoscloudautoscalinggroup"
 
 dataionoscloudautoscalinggroup.NewDataIonoscloudAutoscalingGroup(scope Construct, id *string, config DataIonoscloudAutoscalingGroupConfig) DataIonoscloudAutoscalingGroup
 ```
@@ -310,7 +310,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-ionoscloud.dataIonoscloudAutoscalingGroup.DataIonoscloudAutoscalingGroup.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/dataionoscloudautoscalinggroup"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/dataionoscloudautoscalinggroup"
 
 dataionoscloudautoscalinggroup.DataIonoscloudAutoscalingGroup_IsConstruct(x interface{}) *bool
 ```
@@ -342,7 +342,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-ionoscloud.dataIonoscloudAutoscalingGroup.DataIonoscloudAutoscalingGroup.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/dataionoscloudautoscalinggroup"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/dataionoscloudautoscalinggroup"
 
 dataionoscloudautoscalinggroup.DataIonoscloudAutoscalingGroup_IsTerraformElement(x interface{}) *bool
 ```
@@ -356,7 +356,7 @@ dataionoscloudautoscalinggroup.DataIonoscloudAutoscalingGroup_IsTerraformElement
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-ionoscloud.dataIonoscloudAutoscalingGroup.DataIonoscloudAutoscalingGroup.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/dataionoscloudautoscalinggroup"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/dataionoscloudautoscalinggroup"
 
 dataionoscloudautoscalinggroup.DataIonoscloudAutoscalingGroup_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -370,7 +370,7 @@ dataionoscloudautoscalinggroup.DataIonoscloudAutoscalingGroup_IsTerraformDataSou
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-ionoscloud.dataIonoscloudAutoscalingGroup.DataIonoscloudAutoscalingGroup.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/dataionoscloudautoscalinggroup"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/dataionoscloudautoscalinggroup"
 
 dataionoscloudautoscalinggroup.DataIonoscloudAutoscalingGroup_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -399,7 +399,7 @@ The construct id used in the generated config for the DataIonoscloudAutoscalingG
 
 The id of the existing DataIonoscloudAutoscalingGroup that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.8/docs/data-sources/autoscaling_group#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.9/docs/data-sources/autoscaling_group#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -720,7 +720,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-ionoscloud.dataIonoscloudAutoscalingGroup.DataIonoscloudAutoscalingGroupConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/dataionoscloudautoscalinggroup"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/dataionoscloudautoscalinggroup"
 
 &dataionoscloudautoscalinggroup.DataIonoscloudAutoscalingGroupConfig {
 	Connection: interface{},
@@ -732,7 +732,7 @@ import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/dataionoscl
 	Provisioners: *[]interface{},
 	Id: *string,
 	Name: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11.dataIonoscloudAutoscalingGroup.DataIonoscloudAutoscalingGroupTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud.dataIonoscloudAutoscalingGroup.DataIonoscloudAutoscalingGroupTimeouts,
 }
 ```
 
@@ -833,7 +833,7 @@ Id *string
 
 UUID of the Autoscaling Group.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.8/docs/data-sources/autoscaling_group#id DataIonoscloudAutoscalingGroup#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.9/docs/data-sources/autoscaling_group#id DataIonoscloudAutoscalingGroup#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -850,7 +850,7 @@ Name *string
 
 User-defined name for the Autoscaling Group.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.8/docs/data-sources/autoscaling_group#name DataIonoscloudAutoscalingGroup#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.9/docs/data-sources/autoscaling_group#name DataIonoscloudAutoscalingGroup#name}
 
 ---
 
@@ -864,7 +864,7 @@ Timeouts DataIonoscloudAutoscalingGroupTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.8/docs/data-sources/autoscaling_group#timeouts DataIonoscloudAutoscalingGroup#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.9/docs/data-sources/autoscaling_group#timeouts DataIonoscloudAutoscalingGroup#timeouts}
 
 ---
 
@@ -873,7 +873,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 #### Initializer <a name="Initializer" id="@cdktf/provider-ionoscloud.dataIonoscloudAutoscalingGroup.DataIonoscloudAutoscalingGroupPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/dataionoscloudautoscalinggroup"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/dataionoscloudautoscalinggroup"
 
 &dataionoscloudautoscalinggroup.DataIonoscloudAutoscalingGroupPolicy {
 
@@ -886,7 +886,7 @@ import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/dataionoscl
 #### Initializer <a name="Initializer" id="@cdktf/provider-ionoscloud.dataIonoscloudAutoscalingGroup.DataIonoscloudAutoscalingGroupPolicyScaleInAction.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/dataionoscloudautoscalinggroup"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/dataionoscloudautoscalinggroup"
 
 &dataionoscloudautoscalinggroup.DataIonoscloudAutoscalingGroupPolicyScaleInAction {
 
@@ -899,7 +899,7 @@ import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/dataionoscl
 #### Initializer <a name="Initializer" id="@cdktf/provider-ionoscloud.dataIonoscloudAutoscalingGroup.DataIonoscloudAutoscalingGroupPolicyScaleOutAction.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/dataionoscloudautoscalinggroup"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/dataionoscloudautoscalinggroup"
 
 &dataionoscloudautoscalinggroup.DataIonoscloudAutoscalingGroupPolicyScaleOutAction {
 
@@ -912,7 +912,7 @@ import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/dataionoscl
 #### Initializer <a name="Initializer" id="@cdktf/provider-ionoscloud.dataIonoscloudAutoscalingGroup.DataIonoscloudAutoscalingGroupReplicaConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/dataionoscloudautoscalinggroup"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/dataionoscloudautoscalinggroup"
 
 &dataionoscloudautoscalinggroup.DataIonoscloudAutoscalingGroupReplicaConfiguration {
 
@@ -925,7 +925,7 @@ import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/dataionoscl
 #### Initializer <a name="Initializer" id="@cdktf/provider-ionoscloud.dataIonoscloudAutoscalingGroup.DataIonoscloudAutoscalingGroupReplicaConfigurationNic.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/dataionoscloudautoscalinggroup"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/dataionoscloudautoscalinggroup"
 
 &dataionoscloudautoscalinggroup.DataIonoscloudAutoscalingGroupReplicaConfigurationNic {
 
@@ -938,7 +938,7 @@ import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/dataionoscl
 #### Initializer <a name="Initializer" id="@cdktf/provider-ionoscloud.dataIonoscloudAutoscalingGroup.DataIonoscloudAutoscalingGroupReplicaConfigurationNicFirewallRule.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/dataionoscloudautoscalinggroup"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/dataionoscloudautoscalinggroup"
 
 &dataionoscloudautoscalinggroup.DataIonoscloudAutoscalingGroupReplicaConfigurationNicFirewallRule {
 
@@ -951,7 +951,7 @@ import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/dataionoscl
 #### Initializer <a name="Initializer" id="@cdktf/provider-ionoscloud.dataIonoscloudAutoscalingGroup.DataIonoscloudAutoscalingGroupReplicaConfigurationNicFlowLog.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/dataionoscloudautoscalinggroup"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/dataionoscloudautoscalinggroup"
 
 &dataionoscloudautoscalinggroup.DataIonoscloudAutoscalingGroupReplicaConfigurationNicFlowLog {
 
@@ -964,7 +964,7 @@ import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/dataionoscl
 #### Initializer <a name="Initializer" id="@cdktf/provider-ionoscloud.dataIonoscloudAutoscalingGroup.DataIonoscloudAutoscalingGroupReplicaConfigurationNicTargetGroup.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/dataionoscloudautoscalinggroup"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/dataionoscloudautoscalinggroup"
 
 &dataionoscloudautoscalinggroup.DataIonoscloudAutoscalingGroupReplicaConfigurationNicTargetGroup {
 
@@ -977,7 +977,7 @@ import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/dataionoscl
 #### Initializer <a name="Initializer" id="@cdktf/provider-ionoscloud.dataIonoscloudAutoscalingGroup.DataIonoscloudAutoscalingGroupReplicaConfigurationVolume.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/dataionoscloudautoscalinggroup"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/dataionoscloudautoscalinggroup"
 
 &dataionoscloudautoscalinggroup.DataIonoscloudAutoscalingGroupReplicaConfigurationVolume {
 
@@ -990,7 +990,7 @@ import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/dataionoscl
 #### Initializer <a name="Initializer" id="@cdktf/provider-ionoscloud.dataIonoscloudAutoscalingGroup.DataIonoscloudAutoscalingGroupTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/dataionoscloudautoscalinggroup"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/dataionoscloudautoscalinggroup"
 
 &dataionoscloudautoscalinggroup.DataIonoscloudAutoscalingGroupTimeouts {
 	Create: *string,
@@ -1004,10 +1004,10 @@ import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/dataionoscl
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudAutoscalingGroup.DataIonoscloudAutoscalingGroupTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.8/docs/data-sources/autoscaling_group#create DataIonoscloudAutoscalingGroup#create}. |
-| <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudAutoscalingGroup.DataIonoscloudAutoscalingGroupTimeouts.property.default">Default</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.8/docs/data-sources/autoscaling_group#default DataIonoscloudAutoscalingGroup#default}. |
-| <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudAutoscalingGroup.DataIonoscloudAutoscalingGroupTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.8/docs/data-sources/autoscaling_group#delete DataIonoscloudAutoscalingGroup#delete}. |
-| <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudAutoscalingGroup.DataIonoscloudAutoscalingGroupTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.8/docs/data-sources/autoscaling_group#update DataIonoscloudAutoscalingGroup#update}. |
+| <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudAutoscalingGroup.DataIonoscloudAutoscalingGroupTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.9/docs/data-sources/autoscaling_group#create DataIonoscloudAutoscalingGroup#create}. |
+| <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudAutoscalingGroup.DataIonoscloudAutoscalingGroupTimeouts.property.default">Default</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.9/docs/data-sources/autoscaling_group#default DataIonoscloudAutoscalingGroup#default}. |
+| <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudAutoscalingGroup.DataIonoscloudAutoscalingGroupTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.9/docs/data-sources/autoscaling_group#delete DataIonoscloudAutoscalingGroup#delete}. |
+| <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudAutoscalingGroup.DataIonoscloudAutoscalingGroupTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.9/docs/data-sources/autoscaling_group#update DataIonoscloudAutoscalingGroup#update}. |
 
 ---
 
@@ -1019,7 +1019,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.8/docs/data-sources/autoscaling_group#create DataIonoscloudAutoscalingGroup#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.9/docs/data-sources/autoscaling_group#create DataIonoscloudAutoscalingGroup#create}.
 
 ---
 
@@ -1031,7 +1031,7 @@ Default *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.8/docs/data-sources/autoscaling_group#default DataIonoscloudAutoscalingGroup#default}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.9/docs/data-sources/autoscaling_group#default DataIonoscloudAutoscalingGroup#default}.
 
 ---
 
@@ -1043,7 +1043,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.8/docs/data-sources/autoscaling_group#delete DataIonoscloudAutoscalingGroup#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.9/docs/data-sources/autoscaling_group#delete DataIonoscloudAutoscalingGroup#delete}.
 
 ---
 
@@ -1055,7 +1055,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.8/docs/data-sources/autoscaling_group#update DataIonoscloudAutoscalingGroup#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.9/docs/data-sources/autoscaling_group#update DataIonoscloudAutoscalingGroup#update}.
 
 ---
 
@@ -1066,7 +1066,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.dataIonoscloudAutoscalingGroup.DataIonoscloudAutoscalingGroupPolicyList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/dataionoscloudautoscalinggroup"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/dataionoscloudautoscalinggroup"
 
 dataionoscloudautoscalinggroup.NewDataIonoscloudAutoscalingGroupPolicyList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataIonoscloudAutoscalingGroupPolicyList
 ```
@@ -1215,7 +1215,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.dataIonoscloudAutoscalingGroup.DataIonoscloudAutoscalingGroupPolicyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/dataionoscloudautoscalinggroup"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/dataionoscloudautoscalinggroup"
 
 dataionoscloudautoscalinggroup.NewDataIonoscloudAutoscalingGroupPolicyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataIonoscloudAutoscalingGroupPolicyOutputReference
 ```
@@ -1559,7 +1559,7 @@ func InternalValue() DataIonoscloudAutoscalingGroupPolicy
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.dataIonoscloudAutoscalingGroup.DataIonoscloudAutoscalingGroupPolicyScaleInActionList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/dataionoscloudautoscalinggroup"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/dataionoscloudautoscalinggroup"
 
 dataionoscloudautoscalinggroup.NewDataIonoscloudAutoscalingGroupPolicyScaleInActionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataIonoscloudAutoscalingGroupPolicyScaleInActionList
 ```
@@ -1708,7 +1708,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.dataIonoscloudAutoscalingGroup.DataIonoscloudAutoscalingGroupPolicyScaleInActionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/dataionoscloudautoscalinggroup"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/dataionoscloudautoscalinggroup"
 
 dataionoscloudautoscalinggroup.NewDataIonoscloudAutoscalingGroupPolicyScaleInActionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataIonoscloudAutoscalingGroupPolicyScaleInActionOutputReference
 ```
@@ -2030,7 +2030,7 @@ func InternalValue() DataIonoscloudAutoscalingGroupPolicyScaleInAction
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.dataIonoscloudAutoscalingGroup.DataIonoscloudAutoscalingGroupPolicyScaleOutActionList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/dataionoscloudautoscalinggroup"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/dataionoscloudautoscalinggroup"
 
 dataionoscloudautoscalinggroup.NewDataIonoscloudAutoscalingGroupPolicyScaleOutActionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataIonoscloudAutoscalingGroupPolicyScaleOutActionList
 ```
@@ -2179,7 +2179,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.dataIonoscloudAutoscalingGroup.DataIonoscloudAutoscalingGroupPolicyScaleOutActionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/dataionoscloudautoscalinggroup"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/dataionoscloudautoscalinggroup"
 
 dataionoscloudautoscalinggroup.NewDataIonoscloudAutoscalingGroupPolicyScaleOutActionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataIonoscloudAutoscalingGroupPolicyScaleOutActionOutputReference
 ```
@@ -2479,7 +2479,7 @@ func InternalValue() DataIonoscloudAutoscalingGroupPolicyScaleOutAction
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.dataIonoscloudAutoscalingGroup.DataIonoscloudAutoscalingGroupReplicaConfigurationList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/dataionoscloudautoscalinggroup"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/dataionoscloudautoscalinggroup"
 
 dataionoscloudautoscalinggroup.NewDataIonoscloudAutoscalingGroupReplicaConfigurationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataIonoscloudAutoscalingGroupReplicaConfigurationList
 ```
@@ -2628,7 +2628,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.dataIonoscloudAutoscalingGroup.DataIonoscloudAutoscalingGroupReplicaConfigurationNicFirewallRuleList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/dataionoscloudautoscalinggroup"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/dataionoscloudautoscalinggroup"
 
 dataionoscloudautoscalinggroup.NewDataIonoscloudAutoscalingGroupReplicaConfigurationNicFirewallRuleList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataIonoscloudAutoscalingGroupReplicaConfigurationNicFirewallRuleList
 ```
@@ -2777,7 +2777,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.dataIonoscloudAutoscalingGroup.DataIonoscloudAutoscalingGroupReplicaConfigurationNicFirewallRuleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/dataionoscloudautoscalinggroup"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/dataionoscloudautoscalinggroup"
 
 dataionoscloudautoscalinggroup.NewDataIonoscloudAutoscalingGroupReplicaConfigurationNicFirewallRuleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataIonoscloudAutoscalingGroupReplicaConfigurationNicFirewallRuleOutputReference
 ```
@@ -3154,7 +3154,7 @@ func InternalValue() DataIonoscloudAutoscalingGroupReplicaConfigurationNicFirewa
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.dataIonoscloudAutoscalingGroup.DataIonoscloudAutoscalingGroupReplicaConfigurationNicFlowLogList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/dataionoscloudautoscalinggroup"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/dataionoscloudautoscalinggroup"
 
 dataionoscloudautoscalinggroup.NewDataIonoscloudAutoscalingGroupReplicaConfigurationNicFlowLogList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataIonoscloudAutoscalingGroupReplicaConfigurationNicFlowLogList
 ```
@@ -3303,7 +3303,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.dataIonoscloudAutoscalingGroup.DataIonoscloudAutoscalingGroupReplicaConfigurationNicFlowLogOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/dataionoscloudautoscalinggroup"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/dataionoscloudautoscalinggroup"
 
 dataionoscloudautoscalinggroup.NewDataIonoscloudAutoscalingGroupReplicaConfigurationNicFlowLogOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataIonoscloudAutoscalingGroupReplicaConfigurationNicFlowLogOutputReference
 ```
@@ -3625,7 +3625,7 @@ func InternalValue() DataIonoscloudAutoscalingGroupReplicaConfigurationNicFlowLo
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.dataIonoscloudAutoscalingGroup.DataIonoscloudAutoscalingGroupReplicaConfigurationNicList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/dataionoscloudautoscalinggroup"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/dataionoscloudautoscalinggroup"
 
 dataionoscloudautoscalinggroup.NewDataIonoscloudAutoscalingGroupReplicaConfigurationNicList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataIonoscloudAutoscalingGroupReplicaConfigurationNicList
 ```
@@ -3774,7 +3774,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.dataIonoscloudAutoscalingGroup.DataIonoscloudAutoscalingGroupReplicaConfigurationNicOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/dataionoscloudautoscalinggroup"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/dataionoscloudautoscalinggroup"
 
 dataionoscloudautoscalinggroup.NewDataIonoscloudAutoscalingGroupReplicaConfigurationNicOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataIonoscloudAutoscalingGroupReplicaConfigurationNicOutputReference
 ```
@@ -4129,7 +4129,7 @@ func InternalValue() DataIonoscloudAutoscalingGroupReplicaConfigurationNic
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.dataIonoscloudAutoscalingGroup.DataIonoscloudAutoscalingGroupReplicaConfigurationNicTargetGroupList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/dataionoscloudautoscalinggroup"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/dataionoscloudautoscalinggroup"
 
 dataionoscloudautoscalinggroup.NewDataIonoscloudAutoscalingGroupReplicaConfigurationNicTargetGroupList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataIonoscloudAutoscalingGroupReplicaConfigurationNicTargetGroupList
 ```
@@ -4278,7 +4278,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.dataIonoscloudAutoscalingGroup.DataIonoscloudAutoscalingGroupReplicaConfigurationNicTargetGroupOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/dataionoscloudautoscalinggroup"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/dataionoscloudautoscalinggroup"
 
 dataionoscloudautoscalinggroup.NewDataIonoscloudAutoscalingGroupReplicaConfigurationNicTargetGroupOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataIonoscloudAutoscalingGroupReplicaConfigurationNicTargetGroupOutputReference
 ```
@@ -4578,7 +4578,7 @@ func InternalValue() DataIonoscloudAutoscalingGroupReplicaConfigurationNicTarget
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.dataIonoscloudAutoscalingGroup.DataIonoscloudAutoscalingGroupReplicaConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/dataionoscloudautoscalinggroup"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/dataionoscloudautoscalinggroup"
 
 dataionoscloudautoscalinggroup.NewDataIonoscloudAutoscalingGroupReplicaConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataIonoscloudAutoscalingGroupReplicaConfigurationOutputReference
 ```
@@ -4911,7 +4911,7 @@ func InternalValue() DataIonoscloudAutoscalingGroupReplicaConfiguration
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.dataIonoscloudAutoscalingGroup.DataIonoscloudAutoscalingGroupReplicaConfigurationVolumeList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/dataionoscloudautoscalinggroup"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/dataionoscloudautoscalinggroup"
 
 dataionoscloudautoscalinggroup.NewDataIonoscloudAutoscalingGroupReplicaConfigurationVolumeList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataIonoscloudAutoscalingGroupReplicaConfigurationVolumeList
 ```
@@ -5060,7 +5060,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.dataIonoscloudAutoscalingGroup.DataIonoscloudAutoscalingGroupReplicaConfigurationVolumeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/dataionoscloudautoscalinggroup"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/dataionoscloudautoscalinggroup"
 
 dataionoscloudautoscalinggroup.NewDataIonoscloudAutoscalingGroupReplicaConfigurationVolumeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataIonoscloudAutoscalingGroupReplicaConfigurationVolumeOutputReference
 ```
@@ -5426,7 +5426,7 @@ func InternalValue() DataIonoscloudAutoscalingGroupReplicaConfigurationVolume
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.dataIonoscloudAutoscalingGroup.DataIonoscloudAutoscalingGroupTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/dataionoscloudautoscalinggroup"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/dataionoscloudautoscalinggroup"
 
 dataionoscloudautoscalinggroup.NewDataIonoscloudAutoscalingGroupTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataIonoscloudAutoscalingGroupTimeoutsOutputReference
 ```

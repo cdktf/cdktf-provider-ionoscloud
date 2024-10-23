@@ -4,12 +4,12 @@
 
 ### S3BucketServerSideEncryptionConfiguration <a name="S3BucketServerSideEncryptionConfiguration" id="@cdktf/provider-ionoscloud.s3BucketServerSideEncryptionConfiguration.S3BucketServerSideEncryptionConfiguration"></a>
 
-Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.8/docs/resources/s3_bucket_server_side_encryption_configuration ionoscloud_s3_bucket_server_side_encryption_configuration}.
+Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.9/docs/resources/s3_bucket_server_side_encryption_configuration ionoscloud_s3_bucket_server_side_encryption_configuration}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.s3BucketServerSideEncryptionConfiguration.S3BucketServerSideEncryptionConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/s3bucketserversideencryptionconfiguration"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/s3bucketserversideencryptionconfiguration"
 
 s3bucketserversideencryptionconfiguration.NewS3BucketServerSideEncryptionConfiguration(scope Construct, id *string, config S3BucketServerSideEncryptionConfigurationConfig) S3BucketServerSideEncryptionConfiguration
 ```
@@ -398,7 +398,7 @@ func ResetRule()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-ionoscloud.s3BucketServerSideEncryptionConfiguration.S3BucketServerSideEncryptionConfiguration.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/s3bucketserversideencryptionconfiguration"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/s3bucketserversideencryptionconfiguration"
 
 s3bucketserversideencryptionconfiguration.S3BucketServerSideEncryptionConfiguration_IsConstruct(x interface{}) *bool
 ```
@@ -430,7 +430,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-ionoscloud.s3BucketServerSideEncryptionConfiguration.S3BucketServerSideEncryptionConfiguration.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/s3bucketserversideencryptionconfiguration"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/s3bucketserversideencryptionconfiguration"
 
 s3bucketserversideencryptionconfiguration.S3BucketServerSideEncryptionConfiguration_IsTerraformElement(x interface{}) *bool
 ```
@@ -444,7 +444,7 @@ s3bucketserversideencryptionconfiguration.S3BucketServerSideEncryptionConfigurat
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-ionoscloud.s3BucketServerSideEncryptionConfiguration.S3BucketServerSideEncryptionConfiguration.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/s3bucketserversideencryptionconfiguration"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/s3bucketserversideencryptionconfiguration"
 
 s3bucketserversideencryptionconfiguration.S3BucketServerSideEncryptionConfiguration_IsTerraformResource(x interface{}) *bool
 ```
@@ -458,7 +458,7 @@ s3bucketserversideencryptionconfiguration.S3BucketServerSideEncryptionConfigurat
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-ionoscloud.s3BucketServerSideEncryptionConfiguration.S3BucketServerSideEncryptionConfiguration.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/s3bucketserversideencryptionconfiguration"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/s3bucketserversideencryptionconfiguration"
 
 s3bucketserversideencryptionconfiguration.S3BucketServerSideEncryptionConfiguration_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -487,7 +487,7 @@ The construct id used in the generated config for the S3BucketServerSideEncrypti
 
 The id of the existing S3BucketServerSideEncryptionConfiguration that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.8/docs/resources/s3_bucket_server_side_encryption_configuration#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.9/docs/resources/s3_bucket_server_side_encryption_configuration#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -731,7 +731,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-ionoscloud.s3BucketServerSideEncryptionConfiguration.S3BucketServerSideEncryptionConfigurationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/s3bucketserversideencryptionconfiguration"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/s3bucketserversideencryptionconfiguration"
 
 &s3bucketserversideencryptionconfiguration.S3BucketServerSideEncryptionConfigurationConfig {
 	Connection: interface{},
@@ -842,7 +842,7 @@ Bucket *string
 
 The name of the bucket.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.8/docs/resources/s3_bucket_server_side_encryption_configuration#bucket S3BucketServerSideEncryptionConfiguration#bucket}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.9/docs/resources/s3_bucket_server_side_encryption_configuration#bucket S3BucketServerSideEncryptionConfiguration#bucket}
 
 ---
 
@@ -856,7 +856,7 @@ Rule interface{}
 
 rule block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.8/docs/resources/s3_bucket_server_side_encryption_configuration#rule S3BucketServerSideEncryptionConfiguration#rule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.9/docs/resources/s3_bucket_server_side_encryption_configuration#rule S3BucketServerSideEncryptionConfiguration#rule}
 
 ---
 
@@ -865,10 +865,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 #### Initializer <a name="Initializer" id="@cdktf/provider-ionoscloud.s3BucketServerSideEncryptionConfiguration.S3BucketServerSideEncryptionConfigurationRule.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/s3bucketserversideencryptionconfiguration"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/s3bucketserversideencryptionconfiguration"
 
 &s3bucketserversideencryptionconfiguration.S3BucketServerSideEncryptionConfigurationRule {
-	ApplyServerSideEncryptionByDefault: github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11.s3BucketServerSideEncryptionConfiguration.S3BucketServerSideEncryptionConfigurationRuleApplyServerSideEncryptionByDefault,
+	ApplyServerSideEncryptionByDefault: github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud.s3BucketServerSideEncryptionConfiguration.S3BucketServerSideEncryptionConfigurationRuleApplyServerSideEncryptionByDefault,
 }
 ```
 
@@ -890,7 +890,7 @@ ApplyServerSideEncryptionByDefault S3BucketServerSideEncryptionConfigurationRule
 
 apply_server_side_encryption_by_default block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.8/docs/resources/s3_bucket_server_side_encryption_configuration#apply_server_side_encryption_by_default S3BucketServerSideEncryptionConfiguration#apply_server_side_encryption_by_default}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.9/docs/resources/s3_bucket_server_side_encryption_configuration#apply_server_side_encryption_by_default S3BucketServerSideEncryptionConfiguration#apply_server_side_encryption_by_default}
 
 ---
 
@@ -899,7 +899,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 #### Initializer <a name="Initializer" id="@cdktf/provider-ionoscloud.s3BucketServerSideEncryptionConfiguration.S3BucketServerSideEncryptionConfigurationRuleApplyServerSideEncryptionByDefault.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/s3bucketserversideencryptionconfiguration"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/s3bucketserversideencryptionconfiguration"
 
 &s3bucketserversideencryptionconfiguration.S3BucketServerSideEncryptionConfigurationRuleApplyServerSideEncryptionByDefault {
 	SseAlgorithm: *string,
@@ -924,7 +924,7 @@ SseAlgorithm *string
 
 Server-side encryption algorithm to use. Valid values are 'AES256'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.8/docs/resources/s3_bucket_server_side_encryption_configuration#sse_algorithm S3BucketServerSideEncryptionConfiguration#sse_algorithm}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.9/docs/resources/s3_bucket_server_side_encryption_configuration#sse_algorithm S3BucketServerSideEncryptionConfiguration#sse_algorithm}
 
 ---
 
@@ -935,7 +935,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.s3BucketServerSideEncryptionConfiguration.S3BucketServerSideEncryptionConfigurationRuleApplyServerSideEncryptionByDefaultOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/s3bucketserversideencryptionconfiguration"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/s3bucketserversideencryptionconfiguration"
 
 s3bucketserversideencryptionconfiguration.NewS3BucketServerSideEncryptionConfigurationRuleApplyServerSideEncryptionByDefaultOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) S3BucketServerSideEncryptionConfigurationRuleApplyServerSideEncryptionByDefaultOutputReference
 ```
@@ -1206,7 +1206,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.s3BucketServerSideEncryptionConfiguration.S3BucketServerSideEncryptionConfigurationRuleList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/s3bucketserversideencryptionconfiguration"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/s3bucketserversideencryptionconfiguration"
 
 s3bucketserversideencryptionconfiguration.NewS3BucketServerSideEncryptionConfigurationRuleList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) S3BucketServerSideEncryptionConfigurationRuleList
 ```
@@ -1366,7 +1366,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.s3BucketServerSideEncryptionConfiguration.S3BucketServerSideEncryptionConfigurationRuleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/s3bucketserversideencryptionconfiguration"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/s3bucketserversideencryptionconfiguration"
 
 s3bucketserversideencryptionconfiguration.NewS3BucketServerSideEncryptionConfigurationRuleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) S3BucketServerSideEncryptionConfigurationRuleOutputReference
 ```

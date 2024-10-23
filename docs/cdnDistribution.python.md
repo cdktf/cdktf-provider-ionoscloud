@@ -4,7 +4,7 @@
 
 ### CdnDistribution <a name="CdnDistribution" id="@cdktf/provider-ionoscloud.cdnDistribution.CdnDistribution"></a>
 
-Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.8/docs/resources/cdn_distribution ionoscloud_cdn_distribution}.
+Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.9/docs/resources/cdn_distribution ionoscloud_cdn_distribution}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.cdnDistribution.CdnDistribution.Initializer"></a>
 
@@ -43,7 +43,7 @@ cdnDistribution.CdnDistribution(
 | <code><a href="#@cdktf/provider-ionoscloud.cdnDistribution.CdnDistribution.Initializer.parameter.domain">domain</a></code> | <code>str</code> | The domain of the distribution. |
 | <code><a href="#@cdktf/provider-ionoscloud.cdnDistribution.CdnDistribution.Initializer.parameter.routingRules">routing_rules</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-ionoscloud.cdnDistribution.CdnDistributionRoutingRules">CdnDistributionRoutingRules</a>]]</code> | routing_rules block. |
 | <code><a href="#@cdktf/provider-ionoscloud.cdnDistribution.CdnDistribution.Initializer.parameter.certificateId">certificate_id</a></code> | <code>str</code> | The ID of the certificate to use for the distribution. |
-| <code><a href="#@cdktf/provider-ionoscloud.cdnDistribution.CdnDistribution.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.8/docs/resources/cdn_distribution#id CdnDistribution#id}. |
+| <code><a href="#@cdktf/provider-ionoscloud.cdnDistribution.CdnDistribution.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.9/docs/resources/cdn_distribution#id CdnDistribution#id}. |
 | <code><a href="#@cdktf/provider-ionoscloud.cdnDistribution.CdnDistribution.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-ionoscloud.cdnDistribution.CdnDistributionTimeouts">CdnDistributionTimeouts</a></code> | timeouts block. |
 
 ---
@@ -114,7 +114,7 @@ Must be unique amongst siblings in the same scope
 
 The domain of the distribution.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.8/docs/resources/cdn_distribution#domain CdnDistribution#domain}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.9/docs/resources/cdn_distribution#domain CdnDistribution#domain}
 
 ---
 
@@ -124,7 +124,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 
 routing_rules block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.8/docs/resources/cdn_distribution#routing_rules CdnDistribution#routing_rules}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.9/docs/resources/cdn_distribution#routing_rules CdnDistribution#routing_rules}
 
 ---
 
@@ -134,7 +134,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 
 The ID of the certificate to use for the distribution.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.8/docs/resources/cdn_distribution#certificate_id CdnDistribution#certificate_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.9/docs/resources/cdn_distribution#certificate_id CdnDistribution#certificate_id}
 
 ---
 
@@ -142,7 +142,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.8/docs/resources/cdn_distribution#id CdnDistribution#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.9/docs/resources/cdn_distribution#id CdnDistribution#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -155,7 +155,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.8/docs/resources/cdn_distribution#timeouts CdnDistribution#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.9/docs/resources/cdn_distribution#timeouts CdnDistribution#timeouts}
 
 ---
 
@@ -548,7 +548,7 @@ def put_timeouts(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.8/docs/resources/cdn_distribution#create CdnDistribution#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.9/docs/resources/cdn_distribution#create CdnDistribution#create}.
 
 ---
 
@@ -556,7 +556,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.8/docs/resources/cdn_distribution#default CdnDistribution#default}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.9/docs/resources/cdn_distribution#default CdnDistribution#default}.
 
 ---
 
@@ -564,7 +564,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.8/docs/resources/cdn_distribution#delete CdnDistribution#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.9/docs/resources/cdn_distribution#delete CdnDistribution#delete}.
 
 ---
 
@@ -572,7 +572,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.8/docs/resources/cdn_distribution#update CdnDistribution#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.9/docs/resources/cdn_distribution#update CdnDistribution#update}.
 
 ---
 
@@ -708,7 +708,7 @@ The construct id used in the generated config for the CdnDistribution to import.
 
 The id of the existing CdnDistribution that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.8/docs/resources/cdn_distribution#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.9/docs/resources/cdn_distribution#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1083,7 +1083,7 @@ cdnDistribution.CdnDistributionConfig(
 | <code><a href="#@cdktf/provider-ionoscloud.cdnDistribution.CdnDistributionConfig.property.domain">domain</a></code> | <code>str</code> | The domain of the distribution. |
 | <code><a href="#@cdktf/provider-ionoscloud.cdnDistribution.CdnDistributionConfig.property.routingRules">routing_rules</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-ionoscloud.cdnDistribution.CdnDistributionRoutingRules">CdnDistributionRoutingRules</a>]]</code> | routing_rules block. |
 | <code><a href="#@cdktf/provider-ionoscloud.cdnDistribution.CdnDistributionConfig.property.certificateId">certificate_id</a></code> | <code>str</code> | The ID of the certificate to use for the distribution. |
-| <code><a href="#@cdktf/provider-ionoscloud.cdnDistribution.CdnDistributionConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.8/docs/resources/cdn_distribution#id CdnDistribution#id}. |
+| <code><a href="#@cdktf/provider-ionoscloud.cdnDistribution.CdnDistributionConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.9/docs/resources/cdn_distribution#id CdnDistribution#id}. |
 | <code><a href="#@cdktf/provider-ionoscloud.cdnDistribution.CdnDistributionConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-ionoscloud.cdnDistribution.CdnDistributionTimeouts">CdnDistributionTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1168,7 +1168,7 @@ domain: str
 
 The domain of the distribution.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.8/docs/resources/cdn_distribution#domain CdnDistribution#domain}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.9/docs/resources/cdn_distribution#domain CdnDistribution#domain}
 
 ---
 
@@ -1182,7 +1182,7 @@ routing_rules: typing.Union[IResolvable, typing.List[CdnDistributionRoutingRules
 
 routing_rules block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.8/docs/resources/cdn_distribution#routing_rules CdnDistribution#routing_rules}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.9/docs/resources/cdn_distribution#routing_rules CdnDistribution#routing_rules}
 
 ---
 
@@ -1196,7 +1196,7 @@ certificate_id: str
 
 The ID of the certificate to use for the distribution.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.8/docs/resources/cdn_distribution#certificate_id CdnDistribution#certificate_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.9/docs/resources/cdn_distribution#certificate_id CdnDistribution#certificate_id}
 
 ---
 
@@ -1208,7 +1208,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.8/docs/resources/cdn_distribution#id CdnDistribution#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.9/docs/resources/cdn_distribution#id CdnDistribution#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1225,7 +1225,7 @@ timeouts: CdnDistributionTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.8/docs/resources/cdn_distribution#timeouts CdnDistribution#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.9/docs/resources/cdn_distribution#timeouts CdnDistribution#timeouts}
 
 ---
 
@@ -1263,7 +1263,7 @@ prefix: str
 
 The prefix of the routing rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.8/docs/resources/cdn_distribution#prefix CdnDistribution#prefix}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.9/docs/resources/cdn_distribution#prefix CdnDistribution#prefix}
 
 ---
 
@@ -1277,7 +1277,7 @@ scheme: str
 
 The scheme of the routing rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.8/docs/resources/cdn_distribution#scheme CdnDistribution#scheme}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.9/docs/resources/cdn_distribution#scheme CdnDistribution#scheme}
 
 ---
 
@@ -1291,7 +1291,7 @@ upstream: CdnDistributionRoutingRulesUpstream
 
 upstream block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.8/docs/resources/cdn_distribution#upstream CdnDistribution#upstream}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.9/docs/resources/cdn_distribution#upstream CdnDistribution#upstream}
 
 ---
 
@@ -1306,6 +1306,7 @@ cdnDistribution.CdnDistributionRoutingRulesUpstream(
   caching: typing.Union[bool, IResolvable],
   host: str,
   rate_limit_class: str,
+  sni_mode: str,
   waf: typing.Union[bool, IResolvable],
   geo_restrictions: CdnDistributionRoutingRulesUpstreamGeoRestrictions = None
 )
@@ -1318,6 +1319,7 @@ cdnDistribution.CdnDistributionRoutingRulesUpstream(
 | <code><a href="#@cdktf/provider-ionoscloud.cdnDistribution.CdnDistributionRoutingRulesUpstream.property.caching">caching</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Enable or disable caching. |
 | <code><a href="#@cdktf/provider-ionoscloud.cdnDistribution.CdnDistributionRoutingRulesUpstream.property.host">host</a></code> | <code>str</code> | The upstream host that handles the requests if not already cached. |
 | <code><a href="#@cdktf/provider-ionoscloud.cdnDistribution.CdnDistributionRoutingRulesUpstream.property.rateLimitClass">rate_limit_class</a></code> | <code>str</code> | Rate limit class that will be applied to limit the number of incoming requests per IP. |
+| <code><a href="#@cdktf/provider-ionoscloud.cdnDistribution.CdnDistributionRoutingRulesUpstream.property.sniMode">sni_mode</a></code> | <code>str</code> | The SNI (Server Name Indication) mode of the upstream host. |
 | <code><a href="#@cdktf/provider-ionoscloud.cdnDistribution.CdnDistributionRoutingRulesUpstream.property.waf">waf</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Enable or disable WAF to protect the upstream host. |
 | <code><a href="#@cdktf/provider-ionoscloud.cdnDistribution.CdnDistributionRoutingRulesUpstream.property.geoRestrictions">geo_restrictions</a></code> | <code><a href="#@cdktf/provider-ionoscloud.cdnDistribution.CdnDistributionRoutingRulesUpstreamGeoRestrictions">CdnDistributionRoutingRulesUpstreamGeoRestrictions</a></code> | geo_restrictions block. |
 
@@ -1335,7 +1337,7 @@ Enable or disable caching.
 
 If enabled, the CDN will cache the responses from the upstream host. Subsequent requests for the same resource will be served from the cache.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.8/docs/resources/cdn_distribution#caching CdnDistribution#caching}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.9/docs/resources/cdn_distribution#caching CdnDistribution#caching}
 
 ---
 
@@ -1351,7 +1353,7 @@ The upstream host that handles the requests if not already cached.
 
 This host will be protected by the WAF if the option is enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.8/docs/resources/cdn_distribution#host CdnDistribution#host}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.9/docs/resources/cdn_distribution#host CdnDistribution#host}
 
 ---
 
@@ -1365,7 +1367,23 @@ rate_limit_class: str
 
 Rate limit class that will be applied to limit the number of incoming requests per IP.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.8/docs/resources/cdn_distribution#rate_limit_class CdnDistribution#rate_limit_class}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.9/docs/resources/cdn_distribution#rate_limit_class CdnDistribution#rate_limit_class}
+
+---
+
+##### `sni_mode`<sup>Required</sup> <a name="sni_mode" id="@cdktf/provider-ionoscloud.cdnDistribution.CdnDistributionRoutingRulesUpstream.property.sniMode"></a>
+
+```python
+sni_mode: str
+```
+
+- *Type:* str
+
+The SNI (Server Name Indication) mode of the upstream host.
+
+It supports two modes: 'distribution' and 'origin', for more information about these modes please check the resource docs.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.9/docs/resources/cdn_distribution#sni_mode CdnDistribution#sni_mode}
 
 ---
 
@@ -1379,7 +1397,7 @@ waf: typing.Union[bool, IResolvable]
 
 Enable or disable WAF to protect the upstream host.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.8/docs/resources/cdn_distribution#waf CdnDistribution#waf}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.9/docs/resources/cdn_distribution#waf CdnDistribution#waf}
 
 ---
 
@@ -1393,7 +1411,7 @@ geo_restrictions: CdnDistributionRoutingRulesUpstreamGeoRestrictions
 
 geo_restrictions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.8/docs/resources/cdn_distribution#geo_restrictions CdnDistribution#geo_restrictions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.9/docs/resources/cdn_distribution#geo_restrictions CdnDistribution#geo_restrictions}
 
 ---
 
@@ -1414,8 +1432,8 @@ cdnDistribution.CdnDistributionRoutingRulesUpstreamGeoRestrictions(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-ionoscloud.cdnDistribution.CdnDistributionRoutingRulesUpstreamGeoRestrictions.property.allowList">allow_list</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.8/docs/resources/cdn_distribution#allow_list CdnDistribution#allow_list}. |
-| <code><a href="#@cdktf/provider-ionoscloud.cdnDistribution.CdnDistributionRoutingRulesUpstreamGeoRestrictions.property.blockList">block_list</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.8/docs/resources/cdn_distribution#block_list CdnDistribution#block_list}. |
+| <code><a href="#@cdktf/provider-ionoscloud.cdnDistribution.CdnDistributionRoutingRulesUpstreamGeoRestrictions.property.allowList">allow_list</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.9/docs/resources/cdn_distribution#allow_list CdnDistribution#allow_list}. |
+| <code><a href="#@cdktf/provider-ionoscloud.cdnDistribution.CdnDistributionRoutingRulesUpstreamGeoRestrictions.property.blockList">block_list</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.9/docs/resources/cdn_distribution#block_list CdnDistribution#block_list}. |
 
 ---
 
@@ -1427,7 +1445,7 @@ allow_list: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.8/docs/resources/cdn_distribution#allow_list CdnDistribution#allow_list}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.9/docs/resources/cdn_distribution#allow_list CdnDistribution#allow_list}.
 
 ---
 
@@ -1439,7 +1457,7 @@ block_list: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.8/docs/resources/cdn_distribution#block_list CdnDistribution#block_list}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.9/docs/resources/cdn_distribution#block_list CdnDistribution#block_list}.
 
 ---
 
@@ -1462,10 +1480,10 @@ cdnDistribution.CdnDistributionTimeouts(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-ionoscloud.cdnDistribution.CdnDistributionTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.8/docs/resources/cdn_distribution#create CdnDistribution#create}. |
-| <code><a href="#@cdktf/provider-ionoscloud.cdnDistribution.CdnDistributionTimeouts.property.default">default</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.8/docs/resources/cdn_distribution#default CdnDistribution#default}. |
-| <code><a href="#@cdktf/provider-ionoscloud.cdnDistribution.CdnDistributionTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.8/docs/resources/cdn_distribution#delete CdnDistribution#delete}. |
-| <code><a href="#@cdktf/provider-ionoscloud.cdnDistribution.CdnDistributionTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.8/docs/resources/cdn_distribution#update CdnDistribution#update}. |
+| <code><a href="#@cdktf/provider-ionoscloud.cdnDistribution.CdnDistributionTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.9/docs/resources/cdn_distribution#create CdnDistribution#create}. |
+| <code><a href="#@cdktf/provider-ionoscloud.cdnDistribution.CdnDistributionTimeouts.property.default">default</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.9/docs/resources/cdn_distribution#default CdnDistribution#default}. |
+| <code><a href="#@cdktf/provider-ionoscloud.cdnDistribution.CdnDistributionTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.9/docs/resources/cdn_distribution#delete CdnDistribution#delete}. |
+| <code><a href="#@cdktf/provider-ionoscloud.cdnDistribution.CdnDistributionTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.9/docs/resources/cdn_distribution#update CdnDistribution#update}. |
 
 ---
 
@@ -1477,7 +1495,7 @@ create: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.8/docs/resources/cdn_distribution#create CdnDistribution#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.9/docs/resources/cdn_distribution#create CdnDistribution#create}.
 
 ---
 
@@ -1489,7 +1507,7 @@ default: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.8/docs/resources/cdn_distribution#default CdnDistribution#default}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.9/docs/resources/cdn_distribution#default CdnDistribution#default}.
 
 ---
 
@@ -1501,7 +1519,7 @@ delete: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.8/docs/resources/cdn_distribution#delete CdnDistribution#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.9/docs/resources/cdn_distribution#delete CdnDistribution#delete}.
 
 ---
 
@@ -1513,7 +1531,7 @@ update: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.8/docs/resources/cdn_distribution#update CdnDistribution#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.9/docs/resources/cdn_distribution#update CdnDistribution#update}.
 
 ---
 
@@ -1945,6 +1963,7 @@ def put_upstream(
   caching: typing.Union[bool, IResolvable],
   host: str,
   rate_limit_class: str,
+  sni_mode: str,
   waf: typing.Union[bool, IResolvable],
   geo_restrictions: CdnDistributionRoutingRulesUpstreamGeoRestrictions = None
 ) -> None
@@ -1958,7 +1977,7 @@ Enable or disable caching.
 
 If enabled, the CDN will cache the responses from the upstream host. Subsequent requests for the same resource will be served from the cache.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.8/docs/resources/cdn_distribution#caching CdnDistribution#caching}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.9/docs/resources/cdn_distribution#caching CdnDistribution#caching}
 
 ---
 
@@ -1970,7 +1989,7 @@ The upstream host that handles the requests if not already cached.
 
 This host will be protected by the WAF if the option is enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.8/docs/resources/cdn_distribution#host CdnDistribution#host}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.9/docs/resources/cdn_distribution#host CdnDistribution#host}
 
 ---
 
@@ -1980,7 +1999,19 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 
 Rate limit class that will be applied to limit the number of incoming requests per IP.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.8/docs/resources/cdn_distribution#rate_limit_class CdnDistribution#rate_limit_class}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.9/docs/resources/cdn_distribution#rate_limit_class CdnDistribution#rate_limit_class}
+
+---
+
+###### `sni_mode`<sup>Required</sup> <a name="sni_mode" id="@cdktf/provider-ionoscloud.cdnDistribution.CdnDistributionRoutingRulesOutputReference.putUpstream.parameter.sniMode"></a>
+
+- *Type:* str
+
+The SNI (Server Name Indication) mode of the upstream host.
+
+It supports two modes: 'distribution' and 'origin', for more information about these modes please check the resource docs.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.9/docs/resources/cdn_distribution#sni_mode CdnDistribution#sni_mode}
 
 ---
 
@@ -1990,7 +2021,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 
 Enable or disable WAF to protect the upstream host.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.8/docs/resources/cdn_distribution#waf CdnDistribution#waf}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.9/docs/resources/cdn_distribution#waf CdnDistribution#waf}
 
 ---
 
@@ -2000,7 +2031,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 
 geo_restrictions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.8/docs/resources/cdn_distribution#geo_restrictions CdnDistribution#geo_restrictions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.9/docs/resources/cdn_distribution#geo_restrictions CdnDistribution#geo_restrictions}
 
 ---
 
@@ -2691,7 +2722,7 @@ def put_geo_restrictions(
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.8/docs/resources/cdn_distribution#allow_list CdnDistribution#allow_list}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.9/docs/resources/cdn_distribution#allow_list CdnDistribution#allow_list}.
 
 ---
 
@@ -2699,7 +2730,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.8/docs/resources/cdn_distribution#block_list CdnDistribution#block_list}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.9/docs/resources/cdn_distribution#block_list CdnDistribution#block_list}.
 
 ---
 
@@ -2721,10 +2752,12 @@ def reset_geo_restrictions() -> None
 | <code><a href="#@cdktf/provider-ionoscloud.cdnDistribution.CdnDistributionRoutingRulesUpstreamOutputReference.property.geoRestrictionsInput">geo_restrictions_input</a></code> | <code><a href="#@cdktf/provider-ionoscloud.cdnDistribution.CdnDistributionRoutingRulesUpstreamGeoRestrictions">CdnDistributionRoutingRulesUpstreamGeoRestrictions</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.cdnDistribution.CdnDistributionRoutingRulesUpstreamOutputReference.property.hostInput">host_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.cdnDistribution.CdnDistributionRoutingRulesUpstreamOutputReference.property.rateLimitClassInput">rate_limit_class_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.cdnDistribution.CdnDistributionRoutingRulesUpstreamOutputReference.property.sniModeInput">sni_mode_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.cdnDistribution.CdnDistributionRoutingRulesUpstreamOutputReference.property.wafInput">waf_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.cdnDistribution.CdnDistributionRoutingRulesUpstreamOutputReference.property.caching">caching</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.cdnDistribution.CdnDistributionRoutingRulesUpstreamOutputReference.property.host">host</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.cdnDistribution.CdnDistributionRoutingRulesUpstreamOutputReference.property.rateLimitClass">rate_limit_class</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.cdnDistribution.CdnDistributionRoutingRulesUpstreamOutputReference.property.sniMode">sni_mode</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.cdnDistribution.CdnDistributionRoutingRulesUpstreamOutputReference.property.waf">waf</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.cdnDistribution.CdnDistributionRoutingRulesUpstreamOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktf/provider-ionoscloud.cdnDistribution.CdnDistributionRoutingRulesUpstream">CdnDistributionRoutingRulesUpstream</a></code> | *No description.* |
 
@@ -2804,6 +2837,16 @@ rate_limit_class_input: str
 
 ---
 
+##### `sni_mode_input`<sup>Optional</sup> <a name="sni_mode_input" id="@cdktf/provider-ionoscloud.cdnDistribution.CdnDistributionRoutingRulesUpstreamOutputReference.property.sniModeInput"></a>
+
+```python
+sni_mode_input: str
+```
+
+- *Type:* str
+
+---
+
 ##### `waf_input`<sup>Optional</sup> <a name="waf_input" id="@cdktf/provider-ionoscloud.cdnDistribution.CdnDistributionRoutingRulesUpstreamOutputReference.property.wafInput"></a>
 
 ```python
@@ -2838,6 +2881,16 @@ host: str
 
 ```python
 rate_limit_class: str
+```
+
+- *Type:* str
+
+---
+
+##### `sni_mode`<sup>Required</sup> <a name="sni_mode" id="@cdktf/provider-ionoscloud.cdnDistribution.CdnDistributionRoutingRulesUpstreamOutputReference.property.sniMode"></a>
+
+```python
+sni_mode: str
 ```
 
 - *Type:* str
