@@ -4,7 +4,7 @@
 
 ### InmemorydbReplicaset <a name="InmemorydbReplicaset" id="@cdktf/provider-ionoscloud.inmemorydbReplicaset.InmemorydbReplicaset"></a>
 
-Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.9/docs/resources/inmemorydb_replicaset ionoscloud_inmemorydb_replicaset}.
+Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.0/docs/resources/inmemorydb_replicaset ionoscloud_inmemorydb_replicaset}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.inmemorydbReplicaset.InmemorydbReplicaset.Initializer"></a>
 
@@ -560,7 +560,7 @@ The construct id used in the generated config for the InmemorydbReplicaset to im
 
 The id of the existing InmemorydbReplicaset that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.9/docs/resources/inmemorydb_replicaset#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.0/docs/resources/inmemorydb_replicaset#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1103,7 +1103,7 @@ new InmemorydbReplicasetConfig {
 | <code><a href="#@cdktf/provider-ionoscloud.inmemorydbReplicaset.InmemorydbReplicasetConfig.property.replicas">Replicas</a></code> | <code>double</code> | The total number of replicas in the replica set (one active and n-1 passive). |
 | <code><a href="#@cdktf/provider-ionoscloud.inmemorydbReplicaset.InmemorydbReplicasetConfig.property.resources">Resources</a></code> | <code><a href="#@cdktf/provider-ionoscloud.inmemorydbReplicaset.InmemorydbReplicasetResources">InmemorydbReplicasetResources</a></code> | resources block. |
 | <code><a href="#@cdktf/provider-ionoscloud.inmemorydbReplicaset.InmemorydbReplicasetConfig.property.version">Version</a></code> | <code>string</code> | The InMemoryDB version of your replica set. |
-| <code><a href="#@cdktf/provider-ionoscloud.inmemorydbReplicaset.InmemorydbReplicasetConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.9/docs/resources/inmemorydb_replicaset#id InmemorydbReplicaset#id}. |
+| <code><a href="#@cdktf/provider-ionoscloud.inmemorydbReplicaset.InmemorydbReplicasetConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.0/docs/resources/inmemorydb_replicaset#id InmemorydbReplicaset#id}. |
 | <code><a href="#@cdktf/provider-ionoscloud.inmemorydbReplicaset.InmemorydbReplicasetConfig.property.initialSnapshotId">InitialSnapshotId</a></code> | <code>string</code> | The ID of a snapshot to restore the replica set from. |
 | <code><a href="#@cdktf/provider-ionoscloud.inmemorydbReplicaset.InmemorydbReplicasetConfig.property.maintenanceWindow">MaintenanceWindow</a></code> | <code><a href="#@cdktf/provider-ionoscloud.inmemorydbReplicaset.InmemorydbReplicasetMaintenanceWindow">InmemorydbReplicasetMaintenanceWindow</a></code> | maintenance_window block. |
 | <code><a href="#@cdktf/provider-ionoscloud.inmemorydbReplicaset.InmemorydbReplicasetConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-ionoscloud.inmemorydbReplicaset.InmemorydbReplicasetTimeouts">InmemorydbReplicasetTimeouts</a></code> | timeouts block. |
@@ -1190,7 +1190,7 @@ public InmemorydbReplicasetConnections Connections { get; set; }
 
 connections block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.9/docs/resources/inmemorydb_replicaset#connections InmemorydbReplicaset#connections}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.0/docs/resources/inmemorydb_replicaset#connections InmemorydbReplicaset#connections}
 
 ---
 
@@ -1204,7 +1204,7 @@ public InmemorydbReplicasetCredentials Credentials { get; set; }
 
 credentials block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.9/docs/resources/inmemorydb_replicaset#credentials InmemorydbReplicaset#credentials}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.0/docs/resources/inmemorydb_replicaset#credentials InmemorydbReplicaset#credentials}
 
 ---
 
@@ -1218,7 +1218,7 @@ public string DisplayName { get; set; }
 
 The human readable name of your replica set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.9/docs/resources/inmemorydb_replicaset#display_name InmemorydbReplicaset#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.0/docs/resources/inmemorydb_replicaset#display_name InmemorydbReplicaset#display_name}
 
 ---
 
@@ -1232,7 +1232,7 @@ public string EvictionPolicy { get; set; }
 
 The eviction policy for the replica set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.9/docs/resources/inmemorydb_replicaset#eviction_policy InmemorydbReplicaset#eviction_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.0/docs/resources/inmemorydb_replicaset#eviction_policy InmemorydbReplicaset#eviction_policy}
 
 ---
 
@@ -1246,7 +1246,7 @@ public string Location { get; set; }
 
 The replica set location.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.9/docs/resources/inmemorydb_replicaset#location InmemorydbReplicaset#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.0/docs/resources/inmemorydb_replicaset#location InmemorydbReplicaset#location}
 
 ---
 
@@ -1260,7 +1260,7 @@ public string PersistenceMode { get; set; }
 
 Specifies How and If data is persisted.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.9/docs/resources/inmemorydb_replicaset#persistence_mode InmemorydbReplicaset#persistence_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.0/docs/resources/inmemorydb_replicaset#persistence_mode InmemorydbReplicaset#persistence_mode}
 
 ---
 
@@ -1276,7 +1276,7 @@ The total number of replicas in the replica set (one active and n-1 passive).
 
 In case of a standalone instance, the value is 1. In all other cases, the value is > 1. The replicas will not be available as read replicas, they are only standby for a failure of the active instance.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.9/docs/resources/inmemorydb_replicaset#replicas InmemorydbReplicaset#replicas}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.0/docs/resources/inmemorydb_replicaset#replicas InmemorydbReplicaset#replicas}
 
 ---
 
@@ -1290,7 +1290,7 @@ public InmemorydbReplicasetResources Resources { get; set; }
 
 resources block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.9/docs/resources/inmemorydb_replicaset#resources InmemorydbReplicaset#resources}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.0/docs/resources/inmemorydb_replicaset#resources InmemorydbReplicaset#resources}
 
 ---
 
@@ -1304,7 +1304,7 @@ public string Version { get; set; }
 
 The InMemoryDB version of your replica set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.9/docs/resources/inmemorydb_replicaset#version InmemorydbReplicaset#version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.0/docs/resources/inmemorydb_replicaset#version InmemorydbReplicaset#version}
 
 ---
 
@@ -1316,7 +1316,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.9/docs/resources/inmemorydb_replicaset#id InmemorydbReplicaset#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.0/docs/resources/inmemorydb_replicaset#id InmemorydbReplicaset#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1335,7 +1335,7 @@ The ID of a snapshot to restore the replica set from.
 
 If set, the replica set will be created from the snapshot.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.9/docs/resources/inmemorydb_replicaset#initial_snapshot_id InmemorydbReplicaset#initial_snapshot_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.0/docs/resources/inmemorydb_replicaset#initial_snapshot_id InmemorydbReplicaset#initial_snapshot_id}
 
 ---
 
@@ -1349,7 +1349,7 @@ public InmemorydbReplicasetMaintenanceWindow MaintenanceWindow { get; set; }
 
 maintenance_window block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.9/docs/resources/inmemorydb_replicaset#maintenance_window InmemorydbReplicaset#maintenance_window}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.0/docs/resources/inmemorydb_replicaset#maintenance_window InmemorydbReplicaset#maintenance_window}
 
 ---
 
@@ -1363,7 +1363,7 @@ public InmemorydbReplicasetTimeouts Timeouts { get; set; }
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.9/docs/resources/inmemorydb_replicaset#timeouts InmemorydbReplicaset#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.0/docs/resources/inmemorydb_replicaset#timeouts InmemorydbReplicaset#timeouts}
 
 ---
 
@@ -1401,7 +1401,7 @@ public string Cidr { get; set; }
 
 The IP and subnet for your instance. Note the following unavailable IP ranges: 10.233.64.0/18, 10.233.0.0/18, 10.233.114.0/24.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.9/docs/resources/inmemorydb_replicaset#cidr InmemorydbReplicaset#cidr}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.0/docs/resources/inmemorydb_replicaset#cidr InmemorydbReplicaset#cidr}
 
 ---
 
@@ -1415,7 +1415,7 @@ public string DatacenterId { get; set; }
 
 The datacenter to connect your instance to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.9/docs/resources/inmemorydb_replicaset#datacenter_id InmemorydbReplicaset#datacenter_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.0/docs/resources/inmemorydb_replicaset#datacenter_id InmemorydbReplicaset#datacenter_id}
 
 ---
 
@@ -1429,7 +1429,7 @@ public string LanId { get; set; }
 
 The numeric LAN ID to connect your instance to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.9/docs/resources/inmemorydb_replicaset#lan_id InmemorydbReplicaset#lan_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.0/docs/resources/inmemorydb_replicaset#lan_id InmemorydbReplicaset#lan_id}
 
 ---
 
@@ -1467,7 +1467,7 @@ public string Username { get; set; }
 
 The username for the initial InMemoryDB user. Some system usernames are restricted (e.g. 'admin', 'standby').
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.9/docs/resources/inmemorydb_replicaset#username InmemorydbReplicaset#username}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.0/docs/resources/inmemorydb_replicaset#username InmemorydbReplicaset#username}
 
 ---
 
@@ -1481,7 +1481,7 @@ public InmemorydbReplicasetCredentialsHashedPassword HashedPassword { get; set; 
 
 hashed_password block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.9/docs/resources/inmemorydb_replicaset#hashed_password InmemorydbReplicaset#hashed_password}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.0/docs/resources/inmemorydb_replicaset#hashed_password InmemorydbReplicaset#hashed_password}
 
 ---
 
@@ -1495,7 +1495,7 @@ public string PlainTextPassword { get; set; }
 
 The password for a InMemoryDB user.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.9/docs/resources/inmemorydb_replicaset#plain_text_password InmemorydbReplicaset#plain_text_password}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.0/docs/resources/inmemorydb_replicaset#plain_text_password InmemorydbReplicaset#plain_text_password}
 
 ---
 
@@ -1516,8 +1516,8 @@ new InmemorydbReplicasetCredentialsHashedPassword {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-ionoscloud.inmemorydbReplicaset.InmemorydbReplicasetCredentialsHashedPassword.property.algorithm">Algorithm</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.9/docs/resources/inmemorydb_replicaset#algorithm InmemorydbReplicaset#algorithm}. |
-| <code><a href="#@cdktf/provider-ionoscloud.inmemorydbReplicaset.InmemorydbReplicasetCredentialsHashedPassword.property.hash">Hash</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.9/docs/resources/inmemorydb_replicaset#hash InmemorydbReplicaset#hash}. |
+| <code><a href="#@cdktf/provider-ionoscloud.inmemorydbReplicaset.InmemorydbReplicasetCredentialsHashedPassword.property.algorithm">Algorithm</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.0/docs/resources/inmemorydb_replicaset#algorithm InmemorydbReplicaset#algorithm}. |
+| <code><a href="#@cdktf/provider-ionoscloud.inmemorydbReplicaset.InmemorydbReplicasetCredentialsHashedPassword.property.hash">Hash</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.0/docs/resources/inmemorydb_replicaset#hash InmemorydbReplicaset#hash}. |
 
 ---
 
@@ -1529,7 +1529,7 @@ public string Algorithm { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.9/docs/resources/inmemorydb_replicaset#algorithm InmemorydbReplicaset#algorithm}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.0/docs/resources/inmemorydb_replicaset#algorithm InmemorydbReplicaset#algorithm}.
 
 ---
 
@@ -1541,7 +1541,7 @@ public string Hash { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.9/docs/resources/inmemorydb_replicaset#hash InmemorydbReplicaset#hash}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.0/docs/resources/inmemorydb_replicaset#hash InmemorydbReplicaset#hash}.
 
 ---
 
@@ -1577,7 +1577,7 @@ public string DayOfTheWeek { get; set; }
 
 The name of the week day.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.9/docs/resources/inmemorydb_replicaset#day_of_the_week InmemorydbReplicaset#day_of_the_week}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.0/docs/resources/inmemorydb_replicaset#day_of_the_week InmemorydbReplicaset#day_of_the_week}
 
 ---
 
@@ -1591,7 +1591,7 @@ public string Time { get; set; }
 
 Start of the maintenance window in UTC time.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.9/docs/resources/inmemorydb_replicaset#time InmemorydbReplicaset#time}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.0/docs/resources/inmemorydb_replicaset#time InmemorydbReplicaset#time}
 
 ---
 
@@ -1627,7 +1627,7 @@ public double Cores { get; set; }
 
 The number of CPU cores per instance.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.9/docs/resources/inmemorydb_replicaset#cores InmemorydbReplicaset#cores}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.0/docs/resources/inmemorydb_replicaset#cores InmemorydbReplicaset#cores}
 
 ---
 
@@ -1641,7 +1641,7 @@ public double Ram { get; set; }
 
 The amount of memory per instance in gigabytes (GB).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.9/docs/resources/inmemorydb_replicaset#ram InmemorydbReplicaset#ram}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.0/docs/resources/inmemorydb_replicaset#ram InmemorydbReplicaset#ram}
 
 ---
 
@@ -1664,10 +1664,10 @@ new InmemorydbReplicasetTimeouts {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-ionoscloud.inmemorydbReplicaset.InmemorydbReplicasetTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.9/docs/resources/inmemorydb_replicaset#create InmemorydbReplicaset#create}. |
-| <code><a href="#@cdktf/provider-ionoscloud.inmemorydbReplicaset.InmemorydbReplicasetTimeouts.property.default">Default</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.9/docs/resources/inmemorydb_replicaset#default InmemorydbReplicaset#default}. |
-| <code><a href="#@cdktf/provider-ionoscloud.inmemorydbReplicaset.InmemorydbReplicasetTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.9/docs/resources/inmemorydb_replicaset#delete InmemorydbReplicaset#delete}. |
-| <code><a href="#@cdktf/provider-ionoscloud.inmemorydbReplicaset.InmemorydbReplicasetTimeouts.property.update">Update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.9/docs/resources/inmemorydb_replicaset#update InmemorydbReplicaset#update}. |
+| <code><a href="#@cdktf/provider-ionoscloud.inmemorydbReplicaset.InmemorydbReplicasetTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.0/docs/resources/inmemorydb_replicaset#create InmemorydbReplicaset#create}. |
+| <code><a href="#@cdktf/provider-ionoscloud.inmemorydbReplicaset.InmemorydbReplicasetTimeouts.property.default">Default</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.0/docs/resources/inmemorydb_replicaset#default InmemorydbReplicaset#default}. |
+| <code><a href="#@cdktf/provider-ionoscloud.inmemorydbReplicaset.InmemorydbReplicasetTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.0/docs/resources/inmemorydb_replicaset#delete InmemorydbReplicaset#delete}. |
+| <code><a href="#@cdktf/provider-ionoscloud.inmemorydbReplicaset.InmemorydbReplicasetTimeouts.property.update">Update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.0/docs/resources/inmemorydb_replicaset#update InmemorydbReplicaset#update}. |
 
 ---
 
@@ -1679,7 +1679,7 @@ public string Create { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.9/docs/resources/inmemorydb_replicaset#create InmemorydbReplicaset#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.0/docs/resources/inmemorydb_replicaset#create InmemorydbReplicaset#create}.
 
 ---
 
@@ -1691,7 +1691,7 @@ public string Default { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.9/docs/resources/inmemorydb_replicaset#default InmemorydbReplicaset#default}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.0/docs/resources/inmemorydb_replicaset#default InmemorydbReplicaset#default}.
 
 ---
 
@@ -1703,7 +1703,7 @@ public string Delete { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.9/docs/resources/inmemorydb_replicaset#delete InmemorydbReplicaset#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.0/docs/resources/inmemorydb_replicaset#delete InmemorydbReplicaset#delete}.
 
 ---
 
@@ -1715,7 +1715,7 @@ public string Update { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.9/docs/resources/inmemorydb_replicaset#update InmemorydbReplicaset#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.0/docs/resources/inmemorydb_replicaset#update InmemorydbReplicaset#update}.
 
 ---
 

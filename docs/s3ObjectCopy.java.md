@@ -4,7 +4,7 @@
 
 ### S3ObjectCopy <a name="S3ObjectCopy" id="@cdktf/provider-ionoscloud.s3ObjectCopy.S3ObjectCopy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.9/docs/resources/s3_object_copy ionoscloud_s3_object_copy}.
+Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.0/docs/resources/s3_object_copy ionoscloud_s3_object_copy}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.s3ObjectCopy.S3ObjectCopy.Initializer"></a>
 
@@ -82,12 +82,12 @@ S3ObjectCopy.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-ionoscloud.s3ObjectCopy.S3ObjectCopy.Initializer.parameter.copyIfUnmodifiedSince">copyIfUnmodifiedSince</a></code> | <code>java.lang.String</code> | Copies the object if it hasn't been modified since the specified time. |
 | <code><a href="#@cdktf/provider-ionoscloud.s3ObjectCopy.S3ObjectCopy.Initializer.parameter.expires">expires</a></code> | <code>java.lang.String</code> | The date and time at which the object copy is no longer cacheable. |
 | <code><a href="#@cdktf/provider-ionoscloud.s3ObjectCopy.S3ObjectCopy.Initializer.parameter.forceDestroy">forceDestroy</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Specifies whether to delete the object copy even if it has a governance-type Object Copy Lock in place. |
-| <code><a href="#@cdktf/provider-ionoscloud.s3ObjectCopy.S3ObjectCopy.Initializer.parameter.metadata">metadata</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | A map of metadata to store with the object copy in IONOS S3 Object Copy Storage. |
+| <code><a href="#@cdktf/provider-ionoscloud.s3ObjectCopy.S3ObjectCopy.Initializer.parameter.metadata">metadata</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | A map of metadata to store with the object copy in IONOS Object Storage Object Copy Storage. |
 | <code><a href="#@cdktf/provider-ionoscloud.s3ObjectCopy.S3ObjectCopy.Initializer.parameter.metadataDirective">metadataDirective</a></code> | <code>java.lang.String</code> | Specifies whether the metadata is copied from the source object or replaced with metadata provided in the request. |
 | <code><a href="#@cdktf/provider-ionoscloud.s3ObjectCopy.S3ObjectCopy.Initializer.parameter.objectLockLegalHold">objectLockLegalHold</a></code> | <code>java.lang.String</code> | Specifies whether a legal hold will be applied to this object copy. |
 | <code><a href="#@cdktf/provider-ionoscloud.s3ObjectCopy.S3ObjectCopy.Initializer.parameter.objectLockMode">objectLockMode</a></code> | <code>java.lang.String</code> | Confirms that the requester knows that they will be charged for the request. |
 | <code><a href="#@cdktf/provider-ionoscloud.s3ObjectCopy.S3ObjectCopy.Initializer.parameter.objectLockRetainUntilDate">objectLockRetainUntilDate</a></code> | <code>java.lang.String</code> | The date and time when you want this object copy's Object Copy Lock to expire. |
-| <code><a href="#@cdktf/provider-ionoscloud.s3ObjectCopy.S3ObjectCopy.Initializer.parameter.serverSideEncryption">serverSideEncryption</a></code> | <code>java.lang.String</code> | The server-side encryption algorithm used when storing this object copy in IONOS S3 Object Copy Storage (AES256). |
+| <code><a href="#@cdktf/provider-ionoscloud.s3ObjectCopy.S3ObjectCopy.Initializer.parameter.serverSideEncryption">serverSideEncryption</a></code> | <code>java.lang.String</code> | The server-side encryption algorithm used when storing this object copy in IONOS Object Storage Object Copy Storage (AES256). |
 | <code><a href="#@cdktf/provider-ionoscloud.s3ObjectCopy.S3ObjectCopy.Initializer.parameter.serverSideEncryptionCustomerAlgorithm">serverSideEncryptionCustomerAlgorithm</a></code> | <code>java.lang.String</code> | Specifies the algorithm to use to when encrypting the object copy (e.g., AES256). |
 | <code><a href="#@cdktf/provider-ionoscloud.s3ObjectCopy.S3ObjectCopy.Initializer.parameter.serverSideEncryptionCustomerKey">serverSideEncryptionCustomerKey</a></code> | <code>java.lang.String</code> | Specifies the 256-bit, base64-encoded encryption key to use to encrypt and decrypt your data. |
 | <code><a href="#@cdktf/provider-ionoscloud.s3ObjectCopy.S3ObjectCopy.Initializer.parameter.serverSideEncryptionCustomerKeyMd5">serverSideEncryptionCustomerKeyMd5</a></code> | <code>java.lang.String</code> | Specifies the 128-bit MD5 digest of the encryption key according to RFC 1321. |
@@ -167,7 +167,7 @@ Must be unique amongst siblings in the same scope
 
 The name of the bucket.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.9/docs/resources/s3_object_copy#bucket S3ObjectCopy#bucket}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.0/docs/resources/s3_object_copy#bucket S3ObjectCopy#bucket}
 
 ---
 
@@ -177,7 +177,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 
 The key of the object copy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.9/docs/resources/s3_object_copy#key S3ObjectCopy#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.0/docs/resources/s3_object_copy#key S3ObjectCopy#key}
 
 ---
 
@@ -187,7 +187,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 
 The key of the source object.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.9/docs/resources/s3_object_copy#source S3ObjectCopy#source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.0/docs/resources/s3_object_copy#source S3ObjectCopy#source}
 
 ---
 
@@ -197,7 +197,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 
 Can be used to specify caching behavior along the request/reply chain.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.9/docs/resources/s3_object_copy#cache_control S3ObjectCopy#cache_control}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.0/docs/resources/s3_object_copy#cache_control S3ObjectCopy#cache_control}
 
 ---
 
@@ -207,7 +207,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 
 Specifies presentational information for the object copy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.9/docs/resources/s3_object_copy#content_disposition S3ObjectCopy#content_disposition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.0/docs/resources/s3_object_copy#content_disposition S3ObjectCopy#content_disposition}
 
 ---
 
@@ -217,7 +217,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 
 Specifies what content encodings have been applied to the object copy and thus what decoding mechanisms must be applied to obtain the media-type referenced by the Content-Type header field.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.9/docs/resources/s3_object_copy#content_encoding S3ObjectCopy#content_encoding}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.0/docs/resources/s3_object_copy#content_encoding S3ObjectCopy#content_encoding}
 
 ---
 
@@ -227,7 +227,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 
 The natural language or languages of the intended audience for the object copy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.9/docs/resources/s3_object_copy#content_language S3ObjectCopy#content_language}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.0/docs/resources/s3_object_copy#content_language S3ObjectCopy#content_language}
 
 ---
 
@@ -237,7 +237,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 
 A standard MIME type describing the format of the contents.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.9/docs/resources/s3_object_copy#content_type S3ObjectCopy#content_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.0/docs/resources/s3_object_copy#content_type S3ObjectCopy#content_type}
 
 ---
 
@@ -247,7 +247,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 
 Copies the object if its entity tag (ETag) matches the specified tag.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.9/docs/resources/s3_object_copy#copy_if_match S3ObjectCopy#copy_if_match}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.0/docs/resources/s3_object_copy#copy_if_match S3ObjectCopy#copy_if_match}
 
 ---
 
@@ -257,7 +257,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 
 Copies the object if it has been modified since the specified time.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.9/docs/resources/s3_object_copy#copy_if_modified_since S3ObjectCopy#copy_if_modified_since}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.0/docs/resources/s3_object_copy#copy_if_modified_since S3ObjectCopy#copy_if_modified_since}
 
 ---
 
@@ -267,7 +267,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 
 Copies the object if its entity tag (ETag) is different than the specified ETag.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.9/docs/resources/s3_object_copy#copy_if_none_match S3ObjectCopy#copy_if_none_match}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.0/docs/resources/s3_object_copy#copy_if_none_match S3ObjectCopy#copy_if_none_match}
 
 ---
 
@@ -277,7 +277,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 
 Copies the object if it hasn't been modified since the specified time.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.9/docs/resources/s3_object_copy#copy_if_unmodified_since S3ObjectCopy#copy_if_unmodified_since}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.0/docs/resources/s3_object_copy#copy_if_unmodified_since S3ObjectCopy#copy_if_unmodified_since}
 
 ---
 
@@ -287,7 +287,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 
 The date and time at which the object copy is no longer cacheable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.9/docs/resources/s3_object_copy#expires S3ObjectCopy#expires}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.0/docs/resources/s3_object_copy#expires S3ObjectCopy#expires}
 
 ---
 
@@ -299,7 +299,7 @@ Specifies whether to delete the object copy even if it has a governance-type Obj
 
 You must explicitly pass a value of true for this parameter to delete the object copy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.9/docs/resources/s3_object_copy#force_destroy S3ObjectCopy#force_destroy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.0/docs/resources/s3_object_copy#force_destroy S3ObjectCopy#force_destroy}
 
 ---
 
@@ -307,9 +307,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 
 - *Type:* java.util.Map<java.lang.String, java.lang.String>
 
-A map of metadata to store with the object copy in IONOS S3 Object Copy Storage.
+A map of metadata to store with the object copy in IONOS Object Storage Object Copy Storage.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.9/docs/resources/s3_object_copy#metadata S3ObjectCopy#metadata}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.0/docs/resources/s3_object_copy#metadata S3ObjectCopy#metadata}
 
 ---
 
@@ -319,7 +319,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 
 Specifies whether the metadata is copied from the source object or replaced with metadata provided in the request.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.9/docs/resources/s3_object_copy#metadata_directive S3ObjectCopy#metadata_directive}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.0/docs/resources/s3_object_copy#metadata_directive S3ObjectCopy#metadata_directive}
 
 ---
 
@@ -329,7 +329,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 
 Specifies whether a legal hold will be applied to this object copy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.9/docs/resources/s3_object_copy#object_lock_legal_hold S3ObjectCopy#object_lock_legal_hold}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.0/docs/resources/s3_object_copy#object_lock_legal_hold S3ObjectCopy#object_lock_legal_hold}
 
 ---
 
@@ -341,7 +341,7 @@ Confirms that the requester knows that they will be charged for the request.
 
 Bucket owners need not specify this parameter in their requests.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.9/docs/resources/s3_object_copy#object_lock_mode S3ObjectCopy#object_lock_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.0/docs/resources/s3_object_copy#object_lock_mode S3ObjectCopy#object_lock_mode}
 
 ---
 
@@ -353,7 +353,7 @@ The date and time when you want this object copy's Object Copy Lock to expire.
 
 Must be formatted as a timestamp parameter.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.9/docs/resources/s3_object_copy#object_lock_retain_until_date S3ObjectCopy#object_lock_retain_until_date}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.0/docs/resources/s3_object_copy#object_lock_retain_until_date S3ObjectCopy#object_lock_retain_until_date}
 
 ---
 
@@ -361,9 +361,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 
 - *Type:* java.lang.String
 
-The server-side encryption algorithm used when storing this object copy in IONOS S3 Object Copy Storage (AES256).
+The server-side encryption algorithm used when storing this object copy in IONOS Object Storage Object Copy Storage (AES256).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.9/docs/resources/s3_object_copy#server_side_encryption S3ObjectCopy#server_side_encryption}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.0/docs/resources/s3_object_copy#server_side_encryption S3ObjectCopy#server_side_encryption}
 
 ---
 
@@ -373,7 +373,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 
 Specifies the algorithm to use to when encrypting the object copy (e.g., AES256).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.9/docs/resources/s3_object_copy#server_side_encryption_customer_algorithm S3ObjectCopy#server_side_encryption_customer_algorithm}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.0/docs/resources/s3_object_copy#server_side_encryption_customer_algorithm S3ObjectCopy#server_side_encryption_customer_algorithm}
 
 ---
 
@@ -383,7 +383,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 
 Specifies the 256-bit, base64-encoded encryption key to use to encrypt and decrypt your data.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.9/docs/resources/s3_object_copy#server_side_encryption_customer_key S3ObjectCopy#server_side_encryption_customer_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.0/docs/resources/s3_object_copy#server_side_encryption_customer_key S3ObjectCopy#server_side_encryption_customer_key}
 
 ---
 
@@ -393,9 +393,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 
 Specifies the 128-bit MD5 digest of the encryption key according to RFC 1321.
 
-IONOS S3 Object Copy Storage uses this header for a message integrity check  to ensure that the encryption key was transmitted without error
+IONOS Object Storage Object Copy Storage uses this header for a message integrity check  to ensure that the encryption key was transmitted without error
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.9/docs/resources/s3_object_copy#server_side_encryption_customer_key_md5 S3ObjectCopy#server_side_encryption_customer_key_md5}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.0/docs/resources/s3_object_copy#server_side_encryption_customer_key_md5 S3ObjectCopy#server_side_encryption_customer_key_md5}
 
 ---
 
@@ -405,7 +405,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 
 Specifies the algorithm to use to when decrypting the source object (e.g., AES256).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.9/docs/resources/s3_object_copy#source_customer_algorithm S3ObjectCopy#source_customer_algorithm}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.0/docs/resources/s3_object_copy#source_customer_algorithm S3ObjectCopy#source_customer_algorithm}
 
 ---
 
@@ -415,7 +415,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 
 Specifies the 256-bit, base64-encoded encryption key to use to decrypt the source object.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.9/docs/resources/s3_object_copy#source_customer_key S3ObjectCopy#source_customer_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.0/docs/resources/s3_object_copy#source_customer_key S3ObjectCopy#source_customer_key}
 
 ---
 
@@ -425,9 +425,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 
 Specifies the 128-bit MD5 digest of the encryption key according to RFC 1321.
 
-IONOS S3 Object Copy Storage uses this header for a message integrity check  to ensure that the encryption key was transmitted without error
+IONOS Object Storage Object Copy Storage uses this header for a message integrity check  to ensure that the encryption key was transmitted without error
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.9/docs/resources/s3_object_copy#source_customer_key_md5 S3ObjectCopy#source_customer_key_md5}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.0/docs/resources/s3_object_copy#source_customer_key_md5 S3ObjectCopy#source_customer_key_md5}
 
 ---
 
@@ -437,7 +437,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 
 The storage class of the object copy. Valid value is 'STANDARD'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.9/docs/resources/s3_object_copy#storage_class S3ObjectCopy#storage_class}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.0/docs/resources/s3_object_copy#storage_class S3ObjectCopy#storage_class}
 
 ---
 
@@ -447,7 +447,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 
 Specifies whether the object copy tag-set is copied from the source object or replaced with tag-set provided in the request.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.9/docs/resources/s3_object_copy#tagging_directive S3ObjectCopy#tagging_directive}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.0/docs/resources/s3_object_copy#tagging_directive S3ObjectCopy#tagging_directive}
 
 ---
 
@@ -457,7 +457,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 
 The tag-set for the object copy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.9/docs/resources/s3_object_copy#tags S3ObjectCopy#tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.0/docs/resources/s3_object_copy#tags S3ObjectCopy#tags}
 
 ---
 
@@ -467,9 +467,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 
 If the bucket is configured as a website, redirects requests for this object copy to another object copy in the same bucket or to an external URL.
 
-IONOS S3 Object Copy Storage stores the value of this header in the object copy metadata
+IONOS Object Storage Object Copy Storage stores the value of this header in the object copy metadata
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.9/docs/resources/s3_object_copy#website_redirect S3ObjectCopy#website_redirect}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.0/docs/resources/s3_object_copy#website_redirect S3ObjectCopy#website_redirect}
 
 ---
 
@@ -1085,7 +1085,7 @@ The construct id used in the generated config for the S3ObjectCopy to import.
 
 The id of the existing S3ObjectCopy that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.9/docs/resources/s3_object_copy#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.0/docs/resources/s3_object_copy#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -2051,12 +2051,12 @@ S3ObjectCopyConfig.builder()
 | <code><a href="#@cdktf/provider-ionoscloud.s3ObjectCopy.S3ObjectCopyConfig.property.copyIfUnmodifiedSince">copyIfUnmodifiedSince</a></code> | <code>java.lang.String</code> | Copies the object if it hasn't been modified since the specified time. |
 | <code><a href="#@cdktf/provider-ionoscloud.s3ObjectCopy.S3ObjectCopyConfig.property.expires">expires</a></code> | <code>java.lang.String</code> | The date and time at which the object copy is no longer cacheable. |
 | <code><a href="#@cdktf/provider-ionoscloud.s3ObjectCopy.S3ObjectCopyConfig.property.forceDestroy">forceDestroy</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Specifies whether to delete the object copy even if it has a governance-type Object Copy Lock in place. |
-| <code><a href="#@cdktf/provider-ionoscloud.s3ObjectCopy.S3ObjectCopyConfig.property.metadata">metadata</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | A map of metadata to store with the object copy in IONOS S3 Object Copy Storage. |
+| <code><a href="#@cdktf/provider-ionoscloud.s3ObjectCopy.S3ObjectCopyConfig.property.metadata">metadata</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | A map of metadata to store with the object copy in IONOS Object Storage Object Copy Storage. |
 | <code><a href="#@cdktf/provider-ionoscloud.s3ObjectCopy.S3ObjectCopyConfig.property.metadataDirective">metadataDirective</a></code> | <code>java.lang.String</code> | Specifies whether the metadata is copied from the source object or replaced with metadata provided in the request. |
 | <code><a href="#@cdktf/provider-ionoscloud.s3ObjectCopy.S3ObjectCopyConfig.property.objectLockLegalHold">objectLockLegalHold</a></code> | <code>java.lang.String</code> | Specifies whether a legal hold will be applied to this object copy. |
 | <code><a href="#@cdktf/provider-ionoscloud.s3ObjectCopy.S3ObjectCopyConfig.property.objectLockMode">objectLockMode</a></code> | <code>java.lang.String</code> | Confirms that the requester knows that they will be charged for the request. |
 | <code><a href="#@cdktf/provider-ionoscloud.s3ObjectCopy.S3ObjectCopyConfig.property.objectLockRetainUntilDate">objectLockRetainUntilDate</a></code> | <code>java.lang.String</code> | The date and time when you want this object copy's Object Copy Lock to expire. |
-| <code><a href="#@cdktf/provider-ionoscloud.s3ObjectCopy.S3ObjectCopyConfig.property.serverSideEncryption">serverSideEncryption</a></code> | <code>java.lang.String</code> | The server-side encryption algorithm used when storing this object copy in IONOS S3 Object Copy Storage (AES256). |
+| <code><a href="#@cdktf/provider-ionoscloud.s3ObjectCopy.S3ObjectCopyConfig.property.serverSideEncryption">serverSideEncryption</a></code> | <code>java.lang.String</code> | The server-side encryption algorithm used when storing this object copy in IONOS Object Storage Object Copy Storage (AES256). |
 | <code><a href="#@cdktf/provider-ionoscloud.s3ObjectCopy.S3ObjectCopyConfig.property.serverSideEncryptionCustomerAlgorithm">serverSideEncryptionCustomerAlgorithm</a></code> | <code>java.lang.String</code> | Specifies the algorithm to use to when encrypting the object copy (e.g., AES256). |
 | <code><a href="#@cdktf/provider-ionoscloud.s3ObjectCopy.S3ObjectCopyConfig.property.serverSideEncryptionCustomerKey">serverSideEncryptionCustomerKey</a></code> | <code>java.lang.String</code> | Specifies the 256-bit, base64-encoded encryption key to use to encrypt and decrypt your data. |
 | <code><a href="#@cdktf/provider-ionoscloud.s3ObjectCopy.S3ObjectCopyConfig.property.serverSideEncryptionCustomerKeyMd5">serverSideEncryptionCustomerKeyMd5</a></code> | <code>java.lang.String</code> | Specifies the 128-bit MD5 digest of the encryption key according to RFC 1321. |
@@ -2150,7 +2150,7 @@ public java.lang.String getBucket();
 
 The name of the bucket.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.9/docs/resources/s3_object_copy#bucket S3ObjectCopy#bucket}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.0/docs/resources/s3_object_copy#bucket S3ObjectCopy#bucket}
 
 ---
 
@@ -2164,7 +2164,7 @@ public java.lang.String getKey();
 
 The key of the object copy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.9/docs/resources/s3_object_copy#key S3ObjectCopy#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.0/docs/resources/s3_object_copy#key S3ObjectCopy#key}
 
 ---
 
@@ -2178,7 +2178,7 @@ public java.lang.String getSource();
 
 The key of the source object.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.9/docs/resources/s3_object_copy#source S3ObjectCopy#source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.0/docs/resources/s3_object_copy#source S3ObjectCopy#source}
 
 ---
 
@@ -2192,7 +2192,7 @@ public java.lang.String getCacheControl();
 
 Can be used to specify caching behavior along the request/reply chain.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.9/docs/resources/s3_object_copy#cache_control S3ObjectCopy#cache_control}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.0/docs/resources/s3_object_copy#cache_control S3ObjectCopy#cache_control}
 
 ---
 
@@ -2206,7 +2206,7 @@ public java.lang.String getContentDisposition();
 
 Specifies presentational information for the object copy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.9/docs/resources/s3_object_copy#content_disposition S3ObjectCopy#content_disposition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.0/docs/resources/s3_object_copy#content_disposition S3ObjectCopy#content_disposition}
 
 ---
 
@@ -2220,7 +2220,7 @@ public java.lang.String getContentEncoding();
 
 Specifies what content encodings have been applied to the object copy and thus what decoding mechanisms must be applied to obtain the media-type referenced by the Content-Type header field.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.9/docs/resources/s3_object_copy#content_encoding S3ObjectCopy#content_encoding}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.0/docs/resources/s3_object_copy#content_encoding S3ObjectCopy#content_encoding}
 
 ---
 
@@ -2234,7 +2234,7 @@ public java.lang.String getContentLanguage();
 
 The natural language or languages of the intended audience for the object copy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.9/docs/resources/s3_object_copy#content_language S3ObjectCopy#content_language}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.0/docs/resources/s3_object_copy#content_language S3ObjectCopy#content_language}
 
 ---
 
@@ -2248,7 +2248,7 @@ public java.lang.String getContentType();
 
 A standard MIME type describing the format of the contents.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.9/docs/resources/s3_object_copy#content_type S3ObjectCopy#content_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.0/docs/resources/s3_object_copy#content_type S3ObjectCopy#content_type}
 
 ---
 
@@ -2262,7 +2262,7 @@ public java.lang.String getCopyIfMatch();
 
 Copies the object if its entity tag (ETag) matches the specified tag.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.9/docs/resources/s3_object_copy#copy_if_match S3ObjectCopy#copy_if_match}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.0/docs/resources/s3_object_copy#copy_if_match S3ObjectCopy#copy_if_match}
 
 ---
 
@@ -2276,7 +2276,7 @@ public java.lang.String getCopyIfModifiedSince();
 
 Copies the object if it has been modified since the specified time.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.9/docs/resources/s3_object_copy#copy_if_modified_since S3ObjectCopy#copy_if_modified_since}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.0/docs/resources/s3_object_copy#copy_if_modified_since S3ObjectCopy#copy_if_modified_since}
 
 ---
 
@@ -2290,7 +2290,7 @@ public java.lang.String getCopyIfNoneMatch();
 
 Copies the object if its entity tag (ETag) is different than the specified ETag.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.9/docs/resources/s3_object_copy#copy_if_none_match S3ObjectCopy#copy_if_none_match}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.0/docs/resources/s3_object_copy#copy_if_none_match S3ObjectCopy#copy_if_none_match}
 
 ---
 
@@ -2304,7 +2304,7 @@ public java.lang.String getCopyIfUnmodifiedSince();
 
 Copies the object if it hasn't been modified since the specified time.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.9/docs/resources/s3_object_copy#copy_if_unmodified_since S3ObjectCopy#copy_if_unmodified_since}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.0/docs/resources/s3_object_copy#copy_if_unmodified_since S3ObjectCopy#copy_if_unmodified_since}
 
 ---
 
@@ -2318,7 +2318,7 @@ public java.lang.String getExpires();
 
 The date and time at which the object copy is no longer cacheable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.9/docs/resources/s3_object_copy#expires S3ObjectCopy#expires}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.0/docs/resources/s3_object_copy#expires S3ObjectCopy#expires}
 
 ---
 
@@ -2334,7 +2334,7 @@ Specifies whether to delete the object copy even if it has a governance-type Obj
 
 You must explicitly pass a value of true for this parameter to delete the object copy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.9/docs/resources/s3_object_copy#force_destroy S3ObjectCopy#force_destroy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.0/docs/resources/s3_object_copy#force_destroy S3ObjectCopy#force_destroy}
 
 ---
 
@@ -2346,9 +2346,9 @@ public java.util.Map<java.lang.String, java.lang.String> getMetadata();
 
 - *Type:* java.util.Map<java.lang.String, java.lang.String>
 
-A map of metadata to store with the object copy in IONOS S3 Object Copy Storage.
+A map of metadata to store with the object copy in IONOS Object Storage Object Copy Storage.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.9/docs/resources/s3_object_copy#metadata S3ObjectCopy#metadata}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.0/docs/resources/s3_object_copy#metadata S3ObjectCopy#metadata}
 
 ---
 
@@ -2362,7 +2362,7 @@ public java.lang.String getMetadataDirective();
 
 Specifies whether the metadata is copied from the source object or replaced with metadata provided in the request.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.9/docs/resources/s3_object_copy#metadata_directive S3ObjectCopy#metadata_directive}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.0/docs/resources/s3_object_copy#metadata_directive S3ObjectCopy#metadata_directive}
 
 ---
 
@@ -2376,7 +2376,7 @@ public java.lang.String getObjectLockLegalHold();
 
 Specifies whether a legal hold will be applied to this object copy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.9/docs/resources/s3_object_copy#object_lock_legal_hold S3ObjectCopy#object_lock_legal_hold}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.0/docs/resources/s3_object_copy#object_lock_legal_hold S3ObjectCopy#object_lock_legal_hold}
 
 ---
 
@@ -2392,7 +2392,7 @@ Confirms that the requester knows that they will be charged for the request.
 
 Bucket owners need not specify this parameter in their requests.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.9/docs/resources/s3_object_copy#object_lock_mode S3ObjectCopy#object_lock_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.0/docs/resources/s3_object_copy#object_lock_mode S3ObjectCopy#object_lock_mode}
 
 ---
 
@@ -2408,7 +2408,7 @@ The date and time when you want this object copy's Object Copy Lock to expire.
 
 Must be formatted as a timestamp parameter.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.9/docs/resources/s3_object_copy#object_lock_retain_until_date S3ObjectCopy#object_lock_retain_until_date}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.0/docs/resources/s3_object_copy#object_lock_retain_until_date S3ObjectCopy#object_lock_retain_until_date}
 
 ---
 
@@ -2420,9 +2420,9 @@ public java.lang.String getServerSideEncryption();
 
 - *Type:* java.lang.String
 
-The server-side encryption algorithm used when storing this object copy in IONOS S3 Object Copy Storage (AES256).
+The server-side encryption algorithm used when storing this object copy in IONOS Object Storage Object Copy Storage (AES256).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.9/docs/resources/s3_object_copy#server_side_encryption S3ObjectCopy#server_side_encryption}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.0/docs/resources/s3_object_copy#server_side_encryption S3ObjectCopy#server_side_encryption}
 
 ---
 
@@ -2436,7 +2436,7 @@ public java.lang.String getServerSideEncryptionCustomerAlgorithm();
 
 Specifies the algorithm to use to when encrypting the object copy (e.g., AES256).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.9/docs/resources/s3_object_copy#server_side_encryption_customer_algorithm S3ObjectCopy#server_side_encryption_customer_algorithm}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.0/docs/resources/s3_object_copy#server_side_encryption_customer_algorithm S3ObjectCopy#server_side_encryption_customer_algorithm}
 
 ---
 
@@ -2450,7 +2450,7 @@ public java.lang.String getServerSideEncryptionCustomerKey();
 
 Specifies the 256-bit, base64-encoded encryption key to use to encrypt and decrypt your data.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.9/docs/resources/s3_object_copy#server_side_encryption_customer_key S3ObjectCopy#server_side_encryption_customer_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.0/docs/resources/s3_object_copy#server_side_encryption_customer_key S3ObjectCopy#server_side_encryption_customer_key}
 
 ---
 
@@ -2464,9 +2464,9 @@ public java.lang.String getServerSideEncryptionCustomerKeyMd5();
 
 Specifies the 128-bit MD5 digest of the encryption key according to RFC 1321.
 
-IONOS S3 Object Copy Storage uses this header for a message integrity check  to ensure that the encryption key was transmitted without error
+IONOS Object Storage Object Copy Storage uses this header for a message integrity check  to ensure that the encryption key was transmitted without error
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.9/docs/resources/s3_object_copy#server_side_encryption_customer_key_md5 S3ObjectCopy#server_side_encryption_customer_key_md5}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.0/docs/resources/s3_object_copy#server_side_encryption_customer_key_md5 S3ObjectCopy#server_side_encryption_customer_key_md5}
 
 ---
 
@@ -2480,7 +2480,7 @@ public java.lang.String getSourceCustomerAlgorithm();
 
 Specifies the algorithm to use to when decrypting the source object (e.g., AES256).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.9/docs/resources/s3_object_copy#source_customer_algorithm S3ObjectCopy#source_customer_algorithm}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.0/docs/resources/s3_object_copy#source_customer_algorithm S3ObjectCopy#source_customer_algorithm}
 
 ---
 
@@ -2494,7 +2494,7 @@ public java.lang.String getSourceCustomerKey();
 
 Specifies the 256-bit, base64-encoded encryption key to use to decrypt the source object.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.9/docs/resources/s3_object_copy#source_customer_key S3ObjectCopy#source_customer_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.0/docs/resources/s3_object_copy#source_customer_key S3ObjectCopy#source_customer_key}
 
 ---
 
@@ -2508,9 +2508,9 @@ public java.lang.String getSourceCustomerKeyMd5();
 
 Specifies the 128-bit MD5 digest of the encryption key according to RFC 1321.
 
-IONOS S3 Object Copy Storage uses this header for a message integrity check  to ensure that the encryption key was transmitted without error
+IONOS Object Storage Object Copy Storage uses this header for a message integrity check  to ensure that the encryption key was transmitted without error
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.9/docs/resources/s3_object_copy#source_customer_key_md5 S3ObjectCopy#source_customer_key_md5}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.0/docs/resources/s3_object_copy#source_customer_key_md5 S3ObjectCopy#source_customer_key_md5}
 
 ---
 
@@ -2524,7 +2524,7 @@ public java.lang.String getStorageClass();
 
 The storage class of the object copy. Valid value is 'STANDARD'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.9/docs/resources/s3_object_copy#storage_class S3ObjectCopy#storage_class}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.0/docs/resources/s3_object_copy#storage_class S3ObjectCopy#storage_class}
 
 ---
 
@@ -2538,7 +2538,7 @@ public java.lang.String getTaggingDirective();
 
 Specifies whether the object copy tag-set is copied from the source object or replaced with tag-set provided in the request.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.9/docs/resources/s3_object_copy#tagging_directive S3ObjectCopy#tagging_directive}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.0/docs/resources/s3_object_copy#tagging_directive S3ObjectCopy#tagging_directive}
 
 ---
 
@@ -2552,7 +2552,7 @@ public java.util.Map<java.lang.String, java.lang.String> getTags();
 
 The tag-set for the object copy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.9/docs/resources/s3_object_copy#tags S3ObjectCopy#tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.0/docs/resources/s3_object_copy#tags S3ObjectCopy#tags}
 
 ---
 
@@ -2566,9 +2566,9 @@ public java.lang.String getWebsiteRedirect();
 
 If the bucket is configured as a website, redirects requests for this object copy to another object copy in the same bucket or to an external URL.
 
-IONOS S3 Object Copy Storage stores the value of this header in the object copy metadata
+IONOS Object Storage Object Copy Storage stores the value of this header in the object copy metadata
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.9/docs/resources/s3_object_copy#website_redirect S3ObjectCopy#website_redirect}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.0/docs/resources/s3_object_copy#website_redirect S3ObjectCopy#website_redirect}
 
 ---
 
