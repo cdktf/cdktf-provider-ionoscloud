@@ -4,7 +4,7 @@
 
 ### DataIonoscloudAutoCertificateProvider <a name="DataIonoscloudAutoCertificateProvider" id="@cdktf/provider-ionoscloud.dataIonoscloudAutoCertificateProvider.DataIonoscloudAutoCertificateProvider"></a>
 
-Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.9/docs/data-sources/auto_certificate_provider ionoscloud_auto_certificate_provider}.
+Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.0/docs/data-sources/auto_certificate_provider ionoscloud_auto_certificate_provider}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.dataIonoscloudAutoCertificateProvider.DataIonoscloudAutoCertificateProvider.Initializer"></a>
 
@@ -114,7 +114,7 @@ Must be unique amongst siblings in the same scope
 
 The location of the auto-certificate provider.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.9/docs/data-sources/auto_certificate_provider#location DataIonoscloudAutoCertificateProvider#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.0/docs/data-sources/auto_certificate_provider#location DataIonoscloudAutoCertificateProvider#location}
 
 ---
 
@@ -124,7 +124,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 
 The ID of the auto-certificate provider.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.9/docs/data-sources/auto_certificate_provider#id DataIonoscloudAutoCertificateProvider#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.0/docs/data-sources/auto_certificate_provider#id DataIonoscloudAutoCertificateProvider#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -137,7 +137,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 The name of the auto-certificate provider.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.9/docs/data-sources/auto_certificate_provider#name DataIonoscloudAutoCertificateProvider#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.0/docs/data-sources/auto_certificate_provider#name DataIonoscloudAutoCertificateProvider#name}
 
 ---
 
@@ -147,7 +147,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.9/docs/data-sources/auto_certificate_provider#timeouts DataIonoscloudAutoCertificateProvider#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.0/docs/data-sources/auto_certificate_provider#timeouts DataIonoscloudAutoCertificateProvider#timeouts}
 
 ---
 
@@ -504,7 +504,7 @@ The construct id used in the generated config for the DataIonoscloudAutoCertific
 
 The id of the existing DataIonoscloudAutoCertificateProvider that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.9/docs/data-sources/auto_certificate_provider#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.0/docs/data-sources/auto_certificate_provider#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -922,7 +922,7 @@ public java.lang.String getLocation();
 
 The location of the auto-certificate provider.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.9/docs/data-sources/auto_certificate_provider#location DataIonoscloudAutoCertificateProvider#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.0/docs/data-sources/auto_certificate_provider#location DataIonoscloudAutoCertificateProvider#location}
 
 ---
 
@@ -936,7 +936,7 @@ public java.lang.String getId();
 
 The ID of the auto-certificate provider.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.9/docs/data-sources/auto_certificate_provider#id DataIonoscloudAutoCertificateProvider#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.0/docs/data-sources/auto_certificate_provider#id DataIonoscloudAutoCertificateProvider#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -953,7 +953,7 @@ public java.lang.String getName();
 
 The name of the auto-certificate provider.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.9/docs/data-sources/auto_certificate_provider#name DataIonoscloudAutoCertificateProvider#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.0/docs/data-sources/auto_certificate_provider#name DataIonoscloudAutoCertificateProvider#name}
 
 ---
 
@@ -967,7 +967,7 @@ public DataIonoscloudAutoCertificateProviderTimeouts getTimeouts();
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.9/docs/data-sources/auto_certificate_provider#timeouts DataIonoscloudAutoCertificateProvider#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.0/docs/data-sources/auto_certificate_provider#timeouts DataIonoscloudAutoCertificateProvider#timeouts}
 
 ---
 
@@ -1002,10 +1002,10 @@ DataIonoscloudAutoCertificateProviderTimeouts.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudAutoCertificateProvider.DataIonoscloudAutoCertificateProviderTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.9/docs/data-sources/auto_certificate_provider#create DataIonoscloudAutoCertificateProvider#create}. |
-| <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudAutoCertificateProvider.DataIonoscloudAutoCertificateProviderTimeouts.property.default">default</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.9/docs/data-sources/auto_certificate_provider#default DataIonoscloudAutoCertificateProvider#default}. |
-| <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudAutoCertificateProvider.DataIonoscloudAutoCertificateProviderTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.9/docs/data-sources/auto_certificate_provider#delete DataIonoscloudAutoCertificateProvider#delete}. |
-| <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudAutoCertificateProvider.DataIonoscloudAutoCertificateProviderTimeouts.property.update">update</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.9/docs/data-sources/auto_certificate_provider#update DataIonoscloudAutoCertificateProvider#update}. |
+| <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudAutoCertificateProvider.DataIonoscloudAutoCertificateProviderTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.0/docs/data-sources/auto_certificate_provider#create DataIonoscloudAutoCertificateProvider#create}. |
+| <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudAutoCertificateProvider.DataIonoscloudAutoCertificateProviderTimeouts.property.default">default</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.0/docs/data-sources/auto_certificate_provider#default DataIonoscloudAutoCertificateProvider#default}. |
+| <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudAutoCertificateProvider.DataIonoscloudAutoCertificateProviderTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.0/docs/data-sources/auto_certificate_provider#delete DataIonoscloudAutoCertificateProvider#delete}. |
+| <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudAutoCertificateProvider.DataIonoscloudAutoCertificateProviderTimeouts.property.update">update</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.0/docs/data-sources/auto_certificate_provider#update DataIonoscloudAutoCertificateProvider#update}. |
 
 ---
 
@@ -1017,7 +1017,7 @@ public java.lang.String getCreate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.9/docs/data-sources/auto_certificate_provider#create DataIonoscloudAutoCertificateProvider#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.0/docs/data-sources/auto_certificate_provider#create DataIonoscloudAutoCertificateProvider#create}.
 
 ---
 
@@ -1029,7 +1029,7 @@ public java.lang.String getDefault();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.9/docs/data-sources/auto_certificate_provider#default DataIonoscloudAutoCertificateProvider#default}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.0/docs/data-sources/auto_certificate_provider#default DataIonoscloudAutoCertificateProvider#default}.
 
 ---
 
@@ -1041,7 +1041,7 @@ public java.lang.String getDelete();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.9/docs/data-sources/auto_certificate_provider#delete DataIonoscloudAutoCertificateProvider#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.0/docs/data-sources/auto_certificate_provider#delete DataIonoscloudAutoCertificateProvider#delete}.
 
 ---
 
@@ -1053,7 +1053,7 @@ public java.lang.String getUpdate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.9/docs/data-sources/auto_certificate_provider#update DataIonoscloudAutoCertificateProvider#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.0/docs/data-sources/auto_certificate_provider#update DataIonoscloudAutoCertificateProvider#update}.
 
 ---
 

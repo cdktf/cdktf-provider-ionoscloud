@@ -1,3 +1,3 @@
 # `ionoscloud_pg_user`
 
-Refer to the Terraform Registry for docs: [`ionoscloud_pg_user`](https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.9/docs/resources/pg_user).
+Refer to the Terraform Registry for docs: [`ionoscloud_pg_user`](https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.0/docs/resources/pg_user).

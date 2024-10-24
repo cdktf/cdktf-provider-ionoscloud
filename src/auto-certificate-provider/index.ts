@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.9/docs/resources/auto_certificate_provider
+// https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.0/docs/resources/auto_certificate_provider
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,11 +15,11 @@ export interface AutoCertificateProviderConfig extends cdktf.TerraformMetaArgume
   /**
   * The email address of the certificate requester
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.9/docs/resources/auto_certificate_provider#email AutoCertificateProvider#email}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.0/docs/resources/auto_certificate_provider#email AutoCertificateProvider#email}
   */
   readonly email: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.9/docs/resources/auto_certificate_provider#id AutoCertificateProvider#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.0/docs/resources/auto_certificate_provider#id AutoCertificateProvider#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -28,31 +28,31 @@ export interface AutoCertificateProviderConfig extends cdktf.TerraformMetaArgume
   /**
   * The location of the certificate provider
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.9/docs/resources/auto_certificate_provider#location AutoCertificateProvider#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.0/docs/resources/auto_certificate_provider#location AutoCertificateProvider#location}
   */
   readonly location: string;
   /**
   * The name of the certificate provider
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.9/docs/resources/auto_certificate_provider#name AutoCertificateProvider#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.0/docs/resources/auto_certificate_provider#name AutoCertificateProvider#name}
   */
   readonly name: string;
   /**
   * The URL of the certificate provider
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.9/docs/resources/auto_certificate_provider#server AutoCertificateProvider#server}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.0/docs/resources/auto_certificate_provider#server AutoCertificateProvider#server}
   */
   readonly server: string;
   /**
   * external_account_binding block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.9/docs/resources/auto_certificate_provider#external_account_binding AutoCertificateProvider#external_account_binding}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.0/docs/resources/auto_certificate_provider#external_account_binding AutoCertificateProvider#external_account_binding}
   */
   readonly externalAccountBinding?: AutoCertificateProviderExternalAccountBinding;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.9/docs/resources/auto_certificate_provider#timeouts AutoCertificateProvider#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.0/docs/resources/auto_certificate_provider#timeouts AutoCertificateProvider#timeouts}
   */
   readonly timeouts?: AutoCertificateProviderTimeouts;
 }
@@ -60,13 +60,13 @@ export interface AutoCertificateProviderExternalAccountBinding {
   /**
   * The key ID of the external account binding
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.9/docs/resources/auto_certificate_provider#key_id AutoCertificateProvider#key_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.0/docs/resources/auto_certificate_provider#key_id AutoCertificateProvider#key_id}
   */
   readonly keyId: string;
   /**
   * The secret of the external account binding
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.9/docs/resources/auto_certificate_provider#key_secret AutoCertificateProvider#key_secret}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.0/docs/resources/auto_certificate_provider#key_secret AutoCertificateProvider#key_secret}
   */
   readonly keySecret: string;
 }
@@ -173,19 +173,19 @@ export class AutoCertificateProviderExternalAccountBindingOutputReference extend
 }
 export interface AutoCertificateProviderTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.9/docs/resources/auto_certificate_provider#create AutoCertificateProvider#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.0/docs/resources/auto_certificate_provider#create AutoCertificateProvider#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.9/docs/resources/auto_certificate_provider#default AutoCertificateProvider#default}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.0/docs/resources/auto_certificate_provider#default AutoCertificateProvider#default}
   */
   readonly default?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.9/docs/resources/auto_certificate_provider#delete AutoCertificateProvider#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.0/docs/resources/auto_certificate_provider#delete AutoCertificateProvider#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.9/docs/resources/auto_certificate_provider#update AutoCertificateProvider#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.0/docs/resources/auto_certificate_provider#update AutoCertificateProvider#update}
   */
   readonly update?: string;
 }
@@ -366,7 +366,7 @@ export class AutoCertificateProviderTimeoutsOutputReference extends cdktf.Comple
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.9/docs/resources/auto_certificate_provider ionoscloud_auto_certificate_provider}
+* Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.0/docs/resources/auto_certificate_provider ionoscloud_auto_certificate_provider}
 */
 export class AutoCertificateProvider extends cdktf.TerraformResource {
 
@@ -382,7 +382,7 @@ export class AutoCertificateProvider extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a AutoCertificateProvider resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the AutoCertificateProvider to import
-  * @param importFromId The id of the existing AutoCertificateProvider that should be imported. Refer to the {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.9/docs/resources/auto_certificate_provider#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing AutoCertificateProvider that should be imported. Refer to the {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.0/docs/resources/auto_certificate_provider#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the AutoCertificateProvider to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -394,7 +394,7 @@ export class AutoCertificateProvider extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.9/docs/resources/auto_certificate_provider ionoscloud_auto_certificate_provider} Resource
+  * Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.0/docs/resources/auto_certificate_provider ionoscloud_auto_certificate_provider} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -405,7 +405,7 @@ export class AutoCertificateProvider extends cdktf.TerraformResource {
       terraformResourceType: 'ionoscloud_auto_certificate_provider',
       terraformGeneratorMetadata: {
         providerName: 'ionoscloud',
-        providerVersion: '6.5.9',
+        providerVersion: '6.6.0',
         providerVersionConstraint: '~> 6.2'
       },
       provider: config.provider,

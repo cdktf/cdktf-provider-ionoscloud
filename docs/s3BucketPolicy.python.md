@@ -4,7 +4,7 @@
 
 ### S3BucketPolicy <a name="S3BucketPolicy" id="@cdktf/provider-ionoscloud.s3BucketPolicy.S3BucketPolicy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.9/docs/resources/s3_bucket_policy ionoscloud_s3_bucket_policy}.
+Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.0/docs/resources/s3_bucket_policy ionoscloud_s3_bucket_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.s3BucketPolicy.S3BucketPolicy.Initializer"></a>
 
@@ -37,7 +37,7 @@ s3BucketPolicy.S3BucketPolicy(
 | <code><a href="#@cdktf/provider-ionoscloud.s3BucketPolicy.S3BucketPolicy.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.s3BucketPolicy.S3BucketPolicy.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.s3BucketPolicy.S3BucketPolicy.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-ionoscloud.s3BucketPolicy.S3BucketPolicy.Initializer.parameter.bucket">bucket</a></code> | <code>str</code> | Name of the S3 bucket to which this policy will be applied. |
+| <code><a href="#@cdktf/provider-ionoscloud.s3BucketPolicy.S3BucketPolicy.Initializer.parameter.bucket">bucket</a></code> | <code>str</code> | Name of the bucket to which this policy will be applied. |
 | <code><a href="#@cdktf/provider-ionoscloud.s3BucketPolicy.S3BucketPolicy.Initializer.parameter.policy">policy</a></code> | <code>str</code> | Text of the policy. |
 
 ---
@@ -106,9 +106,9 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Name of the S3 bucket to which this policy will be applied.
+Name of the bucket to which this policy will be applied.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.9/docs/resources/s3_bucket_policy#bucket S3BucketPolicy#bucket}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.0/docs/resources/s3_bucket_policy#bucket S3BucketPolicy#bucket}
 
 ---
 
@@ -118,7 +118,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 
 Text of the policy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.9/docs/resources/s3_bucket_policy#policy S3BucketPolicy#policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.0/docs/resources/s3_bucket_policy#policy S3BucketPolicy#policy}
 
 ---
 
@@ -591,7 +591,7 @@ The construct id used in the generated config for the S3BucketPolicy to import.
 
 The id of the existing S3BucketPolicy that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.9/docs/resources/s3_bucket_policy#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.0/docs/resources/s3_bucket_policy#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -861,7 +861,7 @@ s3BucketPolicy.S3BucketPolicyConfig(
 | <code><a href="#@cdktf/provider-ionoscloud.s3BucketPolicy.S3BucketPolicyConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.s3BucketPolicy.S3BucketPolicyConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.s3BucketPolicy.S3BucketPolicyConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-ionoscloud.s3BucketPolicy.S3BucketPolicyConfig.property.bucket">bucket</a></code> | <code>str</code> | Name of the S3 bucket to which this policy will be applied. |
+| <code><a href="#@cdktf/provider-ionoscloud.s3BucketPolicy.S3BucketPolicyConfig.property.bucket">bucket</a></code> | <code>str</code> | Name of the bucket to which this policy will be applied. |
 | <code><a href="#@cdktf/provider-ionoscloud.s3BucketPolicy.S3BucketPolicyConfig.property.policy">policy</a></code> | <code>str</code> | Text of the policy. |
 
 ---
@@ -944,9 +944,9 @@ bucket: str
 
 - *Type:* str
 
-Name of the S3 bucket to which this policy will be applied.
+Name of the bucket to which this policy will be applied.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.9/docs/resources/s3_bucket_policy#bucket S3BucketPolicy#bucket}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.0/docs/resources/s3_bucket_policy#bucket S3BucketPolicy#bucket}
 
 ---
 
@@ -960,7 +960,7 @@ policy: str
 
 Text of the policy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.9/docs/resources/s3_bucket_policy#policy S3BucketPolicy#policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.0/docs/resources/s3_bucket_policy#policy S3BucketPolicy#policy}
 
 ---
 

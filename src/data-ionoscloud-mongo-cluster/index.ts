@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.9/docs/data-sources/mongo_cluster
+// https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.0/docs/data-sources/mongo_cluster
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,13 +15,13 @@ export interface DataIonoscloudMongoClusterConfig extends cdktf.TerraformMetaArg
   /**
   * The friendly name of your cluster
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.9/docs/data-sources/mongo_cluster#display_name DataIonoscloudMongoCluster#display_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.0/docs/data-sources/mongo_cluster#display_name DataIonoscloudMongoCluster#display_name}
   */
   readonly displayName?: string;
   /**
   * The id of your cluster
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.9/docs/data-sources/mongo_cluster#id DataIonoscloudMongoCluster#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.0/docs/data-sources/mongo_cluster#id DataIonoscloudMongoCluster#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -30,7 +30,7 @@ export interface DataIonoscloudMongoClusterConfig extends cdktf.TerraformMetaArg
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.9/docs/data-sources/mongo_cluster#timeouts DataIonoscloudMongoCluster#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.0/docs/data-sources/mongo_cluster#timeouts DataIonoscloudMongoCluster#timeouts}
   */
   readonly timeouts?: DataIonoscloudMongoClusterTimeouts;
 }
@@ -361,19 +361,19 @@ export class DataIonoscloudMongoClusterMaintenanceWindowList extends cdktf.Compl
 }
 export interface DataIonoscloudMongoClusterTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.9/docs/data-sources/mongo_cluster#create DataIonoscloudMongoCluster#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.0/docs/data-sources/mongo_cluster#create DataIonoscloudMongoCluster#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.9/docs/data-sources/mongo_cluster#default DataIonoscloudMongoCluster#default}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.0/docs/data-sources/mongo_cluster#default DataIonoscloudMongoCluster#default}
   */
   readonly default?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.9/docs/data-sources/mongo_cluster#delete DataIonoscloudMongoCluster#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.0/docs/data-sources/mongo_cluster#delete DataIonoscloudMongoCluster#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.9/docs/data-sources/mongo_cluster#update DataIonoscloudMongoCluster#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.0/docs/data-sources/mongo_cluster#update DataIonoscloudMongoCluster#update}
   */
   readonly update?: string;
 }
@@ -554,7 +554,7 @@ export class DataIonoscloudMongoClusterTimeoutsOutputReference extends cdktf.Com
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.9/docs/data-sources/mongo_cluster ionoscloud_mongo_cluster}
+* Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.0/docs/data-sources/mongo_cluster ionoscloud_mongo_cluster}
 */
 export class DataIonoscloudMongoCluster extends cdktf.TerraformDataSource {
 
@@ -570,7 +570,7 @@ export class DataIonoscloudMongoCluster extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataIonoscloudMongoCluster resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataIonoscloudMongoCluster to import
-  * @param importFromId The id of the existing DataIonoscloudMongoCluster that should be imported. Refer to the {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.9/docs/data-sources/mongo_cluster#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataIonoscloudMongoCluster that should be imported. Refer to the {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.0/docs/data-sources/mongo_cluster#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataIonoscloudMongoCluster to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -582,7 +582,7 @@ export class DataIonoscloudMongoCluster extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.5.9/docs/data-sources/mongo_cluster ionoscloud_mongo_cluster} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.0/docs/data-sources/mongo_cluster ionoscloud_mongo_cluster} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -593,7 +593,7 @@ export class DataIonoscloudMongoCluster extends cdktf.TerraformDataSource {
       terraformResourceType: 'ionoscloud_mongo_cluster',
       terraformGeneratorMetadata: {
         providerName: 'ionoscloud',
-        providerVersion: '6.5.9',
+        providerVersion: '6.6.0',
         providerVersionConstraint: '~> 6.2'
       },
       provider: config.provider,
