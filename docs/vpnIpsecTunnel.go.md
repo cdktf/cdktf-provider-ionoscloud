@@ -4,12 +4,12 @@
 
 ### VpnIpsecTunnel <a name="VpnIpsecTunnel" id="@cdktf/provider-ionoscloud.vpnIpsecTunnel.VpnIpsecTunnel"></a>
 
-Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.0/docs/resources/vpn_ipsec_tunnel ionoscloud_vpn_ipsec_tunnel}.
+Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.1/docs/resources/vpn_ipsec_tunnel ionoscloud_vpn_ipsec_tunnel}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.vpnIpsecTunnel.VpnIpsecTunnel.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/vpnipsectunnel"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/vpnipsectunnel"
 
 vpnipsectunnel.NewVpnIpsecTunnel(scope Construct, id *string, config VpnIpsecTunnelConfig) VpnIpsecTunnel
 ```
@@ -451,7 +451,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-ionoscloud.vpnIpsecTunnel.VpnIpsecTunnel.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/vpnipsectunnel"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/vpnipsectunnel"
 
 vpnipsectunnel.VpnIpsecTunnel_IsConstruct(x interface{}) *bool
 ```
@@ -483,7 +483,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-ionoscloud.vpnIpsecTunnel.VpnIpsecTunnel.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/vpnipsectunnel"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/vpnipsectunnel"
 
 vpnipsectunnel.VpnIpsecTunnel_IsTerraformElement(x interface{}) *bool
 ```
@@ -497,7 +497,7 @@ vpnipsectunnel.VpnIpsecTunnel_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-ionoscloud.vpnIpsecTunnel.VpnIpsecTunnel.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/vpnipsectunnel"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/vpnipsectunnel"
 
 vpnipsectunnel.VpnIpsecTunnel_IsTerraformResource(x interface{}) *bool
 ```
@@ -511,7 +511,7 @@ vpnipsectunnel.VpnIpsecTunnel_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-ionoscloud.vpnIpsecTunnel.VpnIpsecTunnel.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/vpnipsectunnel"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/vpnipsectunnel"
 
 vpnipsectunnel.VpnIpsecTunnel_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -540,7 +540,7 @@ The construct id used in the generated config for the VpnIpsecTunnel to import.
 
 The id of the existing VpnIpsecTunnel that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.0/docs/resources/vpn_ipsec_tunnel#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.1/docs/resources/vpn_ipsec_tunnel#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1004,7 +1004,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-ionoscloud.vpnIpsecTunnel.VpnIpsecTunnelAuth.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/vpnipsectunnel"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/vpnipsectunnel"
 
 &vpnipsectunnel.VpnIpsecTunnelAuth {
 	Method: *string,
@@ -1031,7 +1031,7 @@ Method *string
 
 The Authentication Method to use for IPSec Authentication.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.0/docs/resources/vpn_ipsec_tunnel#method VpnIpsecTunnel#method}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.1/docs/resources/vpn_ipsec_tunnel#method VpnIpsecTunnel#method}
 
 ---
 
@@ -1045,7 +1045,7 @@ PskKey *string
 
 The Pre-Shared Key to use for IPSec Authentication. Note: Required if method is PSK.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.0/docs/resources/vpn_ipsec_tunnel#psk_key VpnIpsecTunnel#psk_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.1/docs/resources/vpn_ipsec_tunnel#psk_key VpnIpsecTunnel#psk_key}
 
 ---
 
@@ -1054,7 +1054,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 #### Initializer <a name="Initializer" id="@cdktf/provider-ionoscloud.vpnIpsecTunnel.VpnIpsecTunnelConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/vpnipsectunnel"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/vpnipsectunnel"
 
 &vpnipsectunnel.VpnIpsecTunnelConfig {
 	Connection: interface{},
@@ -1064,18 +1064,18 @@ import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/vpnipsectun
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
-	Auth: github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11.vpnIpsecTunnel.VpnIpsecTunnelAuth,
+	Auth: github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud.vpnIpsecTunnel.VpnIpsecTunnelAuth,
 	CloudNetworkCidrs: *[]*string,
 	Esp: interface{},
 	GatewayId: *string,
-	Ike: github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11.vpnIpsecTunnel.VpnIpsecTunnelIke,
+	Ike: github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud.vpnIpsecTunnel.VpnIpsecTunnelIke,
 	Location: *string,
 	Name: *string,
 	PeerNetworkCidrs: *[]*string,
 	RemoteHost: *string,
 	Description: *string,
 	Id: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11.vpnIpsecTunnel.VpnIpsecTunnelTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud.vpnIpsecTunnel.VpnIpsecTunnelTimeouts,
 }
 ```
 
@@ -1100,7 +1100,7 @@ import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/vpnipsectun
 | <code><a href="#@cdktf/provider-ionoscloud.vpnIpsecTunnel.VpnIpsecTunnelConfig.property.peerNetworkCidrs">PeerNetworkCidrs</a></code> | <code>*[]*string</code> | The network CIDRs on the "Right" side that are allowed to connect to the IPSec tunnel. |
 | <code><a href="#@cdktf/provider-ionoscloud.vpnIpsecTunnel.VpnIpsecTunnelConfig.property.remoteHost">RemoteHost</a></code> | <code>*string</code> | The remote peer host fully qualified domain name or public IPV4 IP to connect to. |
 | <code><a href="#@cdktf/provider-ionoscloud.vpnIpsecTunnel.VpnIpsecTunnelConfig.property.description">Description</a></code> | <code>*string</code> | The human-readable description of your IPSec Gateway Tunnel. |
-| <code><a href="#@cdktf/provider-ionoscloud.vpnIpsecTunnel.VpnIpsecTunnelConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.0/docs/resources/vpn_ipsec_tunnel#id VpnIpsecTunnel#id}. |
+| <code><a href="#@cdktf/provider-ionoscloud.vpnIpsecTunnel.VpnIpsecTunnelConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.1/docs/resources/vpn_ipsec_tunnel#id VpnIpsecTunnel#id}. |
 | <code><a href="#@cdktf/provider-ionoscloud.vpnIpsecTunnel.VpnIpsecTunnelConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-ionoscloud.vpnIpsecTunnel.VpnIpsecTunnelTimeouts">VpnIpsecTunnelTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1185,7 +1185,7 @@ Auth VpnIpsecTunnelAuth
 
 auth block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.0/docs/resources/vpn_ipsec_tunnel#auth VpnIpsecTunnel#auth}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.1/docs/resources/vpn_ipsec_tunnel#auth VpnIpsecTunnel#auth}
 
 ---
 
@@ -1199,7 +1199,7 @@ CloudNetworkCidrs *[]*string
 
 The network CIDRs on the "Left" side that are allowed to connect to the IPSec tunnel, i.e. the CIDRs within your IONOS Cloud LAN. Specify "0.0.0.0/0" or "::/0" for all addresses.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.0/docs/resources/vpn_ipsec_tunnel#cloud_network_cidrs VpnIpsecTunnel#cloud_network_cidrs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.1/docs/resources/vpn_ipsec_tunnel#cloud_network_cidrs VpnIpsecTunnel#cloud_network_cidrs}
 
 ---
 
@@ -1213,7 +1213,7 @@ Esp interface{}
 
 esp block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.0/docs/resources/vpn_ipsec_tunnel#esp VpnIpsecTunnel#esp}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.1/docs/resources/vpn_ipsec_tunnel#esp VpnIpsecTunnel#esp}
 
 ---
 
@@ -1227,7 +1227,7 @@ GatewayId *string
 
 The ID of the IPSec Gateway that the tunnel belongs to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.0/docs/resources/vpn_ipsec_tunnel#gateway_id VpnIpsecTunnel#gateway_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.1/docs/resources/vpn_ipsec_tunnel#gateway_id VpnIpsecTunnel#gateway_id}
 
 ---
 
@@ -1241,7 +1241,7 @@ Ike VpnIpsecTunnelIke
 
 ike block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.0/docs/resources/vpn_ipsec_tunnel#ike VpnIpsecTunnel#ike}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.1/docs/resources/vpn_ipsec_tunnel#ike VpnIpsecTunnel#ike}
 
 ---
 
@@ -1255,7 +1255,7 @@ Location *string
 
 The location of the IPSec Gateway Tunnel. Supported locations: de/fra, de/txl.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.0/docs/resources/vpn_ipsec_tunnel#location VpnIpsecTunnel#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.1/docs/resources/vpn_ipsec_tunnel#location VpnIpsecTunnel#location}
 
 ---
 
@@ -1269,7 +1269,7 @@ Name *string
 
 The human-readable name of your IPSec Gateway Tunnel.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.0/docs/resources/vpn_ipsec_tunnel#name VpnIpsecTunnel#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.1/docs/resources/vpn_ipsec_tunnel#name VpnIpsecTunnel#name}
 
 ---
 
@@ -1285,7 +1285,7 @@ The network CIDRs on the "Right" side that are allowed to connect to the IPSec t
 
 Specify "0.0.0.0/0" or "::/0" for all addresses.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.0/docs/resources/vpn_ipsec_tunnel#peer_network_cidrs VpnIpsecTunnel#peer_network_cidrs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.1/docs/resources/vpn_ipsec_tunnel#peer_network_cidrs VpnIpsecTunnel#peer_network_cidrs}
 
 ---
 
@@ -1299,7 +1299,7 @@ RemoteHost *string
 
 The remote peer host fully qualified domain name or public IPV4 IP to connect to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.0/docs/resources/vpn_ipsec_tunnel#remote_host VpnIpsecTunnel#remote_host}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.1/docs/resources/vpn_ipsec_tunnel#remote_host VpnIpsecTunnel#remote_host}
 
 ---
 
@@ -1313,7 +1313,7 @@ Description *string
 
 The human-readable description of your IPSec Gateway Tunnel.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.0/docs/resources/vpn_ipsec_tunnel#description VpnIpsecTunnel#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.1/docs/resources/vpn_ipsec_tunnel#description VpnIpsecTunnel#description}
 
 ---
 
@@ -1325,7 +1325,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.0/docs/resources/vpn_ipsec_tunnel#id VpnIpsecTunnel#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.1/docs/resources/vpn_ipsec_tunnel#id VpnIpsecTunnel#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1342,7 +1342,7 @@ Timeouts VpnIpsecTunnelTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.0/docs/resources/vpn_ipsec_tunnel#timeouts VpnIpsecTunnel#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.1/docs/resources/vpn_ipsec_tunnel#timeouts VpnIpsecTunnel#timeouts}
 
 ---
 
@@ -1351,7 +1351,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 #### Initializer <a name="Initializer" id="@cdktf/provider-ionoscloud.vpnIpsecTunnel.VpnIpsecTunnelEsp.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/vpnipsectunnel"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/vpnipsectunnel"
 
 &vpnipsectunnel.VpnIpsecTunnelEsp {
 	DiffieHellmanGroup: *string,
@@ -1382,7 +1382,7 @@ DiffieHellmanGroup *string
 
 The Diffie-Hellman Group to use for IPSec Encryption.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.0/docs/resources/vpn_ipsec_tunnel#diffie_hellman_group VpnIpsecTunnel#diffie_hellman_group}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.1/docs/resources/vpn_ipsec_tunnel#diffie_hellman_group VpnIpsecTunnel#diffie_hellman_group}
 
 ---
 
@@ -1396,7 +1396,7 @@ EncryptionAlgorithm *string
 
 The encryption algorithm to use for IPSec Encryption.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.0/docs/resources/vpn_ipsec_tunnel#encryption_algorithm VpnIpsecTunnel#encryption_algorithm}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.1/docs/resources/vpn_ipsec_tunnel#encryption_algorithm VpnIpsecTunnel#encryption_algorithm}
 
 ---
 
@@ -1410,7 +1410,7 @@ IntegrityAlgorithm *string
 
 The integrity algorithm to use for IPSec Encryption.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.0/docs/resources/vpn_ipsec_tunnel#integrity_algorithm VpnIpsecTunnel#integrity_algorithm}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.1/docs/resources/vpn_ipsec_tunnel#integrity_algorithm VpnIpsecTunnel#integrity_algorithm}
 
 ---
 
@@ -1424,7 +1424,7 @@ Lifetime *f64
 
 The phase lifetime in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.0/docs/resources/vpn_ipsec_tunnel#lifetime VpnIpsecTunnel#lifetime}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.1/docs/resources/vpn_ipsec_tunnel#lifetime VpnIpsecTunnel#lifetime}
 
 ---
 
@@ -1433,7 +1433,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 #### Initializer <a name="Initializer" id="@cdktf/provider-ionoscloud.vpnIpsecTunnel.VpnIpsecTunnelIke.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/vpnipsectunnel"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/vpnipsectunnel"
 
 &vpnipsectunnel.VpnIpsecTunnelIke {
 	DiffieHellmanGroup: *string,
@@ -1464,7 +1464,7 @@ DiffieHellmanGroup *string
 
 The Diffie-Hellman Group to use for IPSec Encryption.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.0/docs/resources/vpn_ipsec_tunnel#diffie_hellman_group VpnIpsecTunnel#diffie_hellman_group}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.1/docs/resources/vpn_ipsec_tunnel#diffie_hellman_group VpnIpsecTunnel#diffie_hellman_group}
 
 ---
 
@@ -1478,7 +1478,7 @@ EncryptionAlgorithm *string
 
 The encryption algorithm to use for IPSec Encryption.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.0/docs/resources/vpn_ipsec_tunnel#encryption_algorithm VpnIpsecTunnel#encryption_algorithm}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.1/docs/resources/vpn_ipsec_tunnel#encryption_algorithm VpnIpsecTunnel#encryption_algorithm}
 
 ---
 
@@ -1492,7 +1492,7 @@ IntegrityAlgorithm *string
 
 The integrity algorithm to use for IPSec Encryption.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.0/docs/resources/vpn_ipsec_tunnel#integrity_algorithm VpnIpsecTunnel#integrity_algorithm}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.1/docs/resources/vpn_ipsec_tunnel#integrity_algorithm VpnIpsecTunnel#integrity_algorithm}
 
 ---
 
@@ -1506,7 +1506,7 @@ Lifetime *f64
 
 The phase lifetime in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.0/docs/resources/vpn_ipsec_tunnel#lifetime VpnIpsecTunnel#lifetime}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.1/docs/resources/vpn_ipsec_tunnel#lifetime VpnIpsecTunnel#lifetime}
 
 ---
 
@@ -1515,7 +1515,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 #### Initializer <a name="Initializer" id="@cdktf/provider-ionoscloud.vpnIpsecTunnel.VpnIpsecTunnelTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/vpnipsectunnel"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/vpnipsectunnel"
 
 &vpnipsectunnel.VpnIpsecTunnelTimeouts {
 	Create: *string,
@@ -1529,10 +1529,10 @@ import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/vpnipsectun
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-ionoscloud.vpnIpsecTunnel.VpnIpsecTunnelTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.0/docs/resources/vpn_ipsec_tunnel#create VpnIpsecTunnel#create}. |
-| <code><a href="#@cdktf/provider-ionoscloud.vpnIpsecTunnel.VpnIpsecTunnelTimeouts.property.default">Default</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.0/docs/resources/vpn_ipsec_tunnel#default VpnIpsecTunnel#default}. |
-| <code><a href="#@cdktf/provider-ionoscloud.vpnIpsecTunnel.VpnIpsecTunnelTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.0/docs/resources/vpn_ipsec_tunnel#delete VpnIpsecTunnel#delete}. |
-| <code><a href="#@cdktf/provider-ionoscloud.vpnIpsecTunnel.VpnIpsecTunnelTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.0/docs/resources/vpn_ipsec_tunnel#update VpnIpsecTunnel#update}. |
+| <code><a href="#@cdktf/provider-ionoscloud.vpnIpsecTunnel.VpnIpsecTunnelTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.1/docs/resources/vpn_ipsec_tunnel#create VpnIpsecTunnel#create}. |
+| <code><a href="#@cdktf/provider-ionoscloud.vpnIpsecTunnel.VpnIpsecTunnelTimeouts.property.default">Default</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.1/docs/resources/vpn_ipsec_tunnel#default VpnIpsecTunnel#default}. |
+| <code><a href="#@cdktf/provider-ionoscloud.vpnIpsecTunnel.VpnIpsecTunnelTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.1/docs/resources/vpn_ipsec_tunnel#delete VpnIpsecTunnel#delete}. |
+| <code><a href="#@cdktf/provider-ionoscloud.vpnIpsecTunnel.VpnIpsecTunnelTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.1/docs/resources/vpn_ipsec_tunnel#update VpnIpsecTunnel#update}. |
 
 ---
 
@@ -1544,7 +1544,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.0/docs/resources/vpn_ipsec_tunnel#create VpnIpsecTunnel#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.1/docs/resources/vpn_ipsec_tunnel#create VpnIpsecTunnel#create}.
 
 ---
 
@@ -1556,7 +1556,7 @@ Default *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.0/docs/resources/vpn_ipsec_tunnel#default VpnIpsecTunnel#default}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.1/docs/resources/vpn_ipsec_tunnel#default VpnIpsecTunnel#default}.
 
 ---
 
@@ -1568,7 +1568,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.0/docs/resources/vpn_ipsec_tunnel#delete VpnIpsecTunnel#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.1/docs/resources/vpn_ipsec_tunnel#delete VpnIpsecTunnel#delete}.
 
 ---
 
@@ -1580,7 +1580,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.0/docs/resources/vpn_ipsec_tunnel#update VpnIpsecTunnel#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.1/docs/resources/vpn_ipsec_tunnel#update VpnIpsecTunnel#update}.
 
 ---
 
@@ -1591,7 +1591,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.vpnIpsecTunnel.VpnIpsecTunnelAuthOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/vpnipsectunnel"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/vpnipsectunnel"
 
 vpnipsectunnel.NewVpnIpsecTunnelAuthOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VpnIpsecTunnelAuthOutputReference
 ```
@@ -1898,7 +1898,7 @@ func InternalValue() VpnIpsecTunnelAuth
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.vpnIpsecTunnel.VpnIpsecTunnelEspList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/vpnipsectunnel"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/vpnipsectunnel"
 
 vpnipsectunnel.NewVpnIpsecTunnelEspList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) VpnIpsecTunnelEspList
 ```
@@ -2058,7 +2058,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.vpnIpsecTunnel.VpnIpsecTunnelEspOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/vpnipsectunnel"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/vpnipsectunnel"
 
 vpnipsectunnel.NewVpnIpsecTunnelEspOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) VpnIpsecTunnelEspOutputReference
 ```
@@ -2441,7 +2441,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.vpnIpsecTunnel.VpnIpsecTunnelIkeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/vpnipsectunnel"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/vpnipsectunnel"
 
 vpnipsectunnel.NewVpnIpsecTunnelIkeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VpnIpsecTunnelIkeOutputReference
 ```
@@ -2806,7 +2806,7 @@ func InternalValue() VpnIpsecTunnelIke
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.vpnIpsecTunnel.VpnIpsecTunnelTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/vpnipsectunnel"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/vpnipsectunnel"
 
 vpnipsectunnel.NewVpnIpsecTunnelTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VpnIpsecTunnelTimeoutsOutputReference
 ```

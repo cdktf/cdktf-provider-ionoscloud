@@ -4,12 +4,12 @@
 
 ### S3BucketWebsiteConfiguration <a name="S3BucketWebsiteConfiguration" id="@cdktf/provider-ionoscloud.s3BucketWebsiteConfiguration.S3BucketWebsiteConfiguration"></a>
 
-Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.0/docs/resources/s3_bucket_website_configuration ionoscloud_s3_bucket_website_configuration}.
+Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.1/docs/resources/s3_bucket_website_configuration ionoscloud_s3_bucket_website_configuration}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.s3BucketWebsiteConfiguration.S3BucketWebsiteConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/s3bucketwebsiteconfiguration"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/s3bucketwebsiteconfiguration"
 
 s3bucketwebsiteconfiguration.NewS3BucketWebsiteConfiguration(scope Construct, id *string, config S3BucketWebsiteConfigurationConfig) S3BucketWebsiteConfiguration
 ```
@@ -458,7 +458,7 @@ func ResetRoutingRule()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-ionoscloud.s3BucketWebsiteConfiguration.S3BucketWebsiteConfiguration.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/s3bucketwebsiteconfiguration"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/s3bucketwebsiteconfiguration"
 
 s3bucketwebsiteconfiguration.S3BucketWebsiteConfiguration_IsConstruct(x interface{}) *bool
 ```
@@ -490,7 +490,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-ionoscloud.s3BucketWebsiteConfiguration.S3BucketWebsiteConfiguration.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/s3bucketwebsiteconfiguration"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/s3bucketwebsiteconfiguration"
 
 s3bucketwebsiteconfiguration.S3BucketWebsiteConfiguration_IsTerraformElement(x interface{}) *bool
 ```
@@ -504,7 +504,7 @@ s3bucketwebsiteconfiguration.S3BucketWebsiteConfiguration_IsTerraformElement(x i
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-ionoscloud.s3BucketWebsiteConfiguration.S3BucketWebsiteConfiguration.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/s3bucketwebsiteconfiguration"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/s3bucketwebsiteconfiguration"
 
 s3bucketwebsiteconfiguration.S3BucketWebsiteConfiguration_IsTerraformResource(x interface{}) *bool
 ```
@@ -518,7 +518,7 @@ s3bucketwebsiteconfiguration.S3BucketWebsiteConfiguration_IsTerraformResource(x 
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-ionoscloud.s3BucketWebsiteConfiguration.S3BucketWebsiteConfiguration.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/s3bucketwebsiteconfiguration"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/s3bucketwebsiteconfiguration"
 
 s3bucketwebsiteconfiguration.S3BucketWebsiteConfiguration_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -547,7 +547,7 @@ The construct id used in the generated config for the S3BucketWebsiteConfigurati
 
 The id of the existing S3BucketWebsiteConfiguration that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.0/docs/resources/s3_bucket_website_configuration#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.1/docs/resources/s3_bucket_website_configuration#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -857,7 +857,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-ionoscloud.s3BucketWebsiteConfiguration.S3BucketWebsiteConfigurationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/s3bucketwebsiteconfiguration"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/s3bucketwebsiteconfiguration"
 
 &s3bucketwebsiteconfiguration.S3BucketWebsiteConfigurationConfig {
 	Connection: interface{},
@@ -868,9 +868,9 @@ import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/s3bucketweb
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
 	Bucket: *string,
-	ErrorDocument: github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11.s3BucketWebsiteConfiguration.S3BucketWebsiteConfigurationErrorDocument,
-	IndexDocument: github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11.s3BucketWebsiteConfiguration.S3BucketWebsiteConfigurationIndexDocument,
-	RedirectAllRequestsTo: github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11.s3BucketWebsiteConfiguration.S3BucketWebsiteConfigurationRedirectAllRequestsTo,
+	ErrorDocument: github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud.s3BucketWebsiteConfiguration.S3BucketWebsiteConfigurationErrorDocument,
+	IndexDocument: github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud.s3BucketWebsiteConfiguration.S3BucketWebsiteConfigurationIndexDocument,
+	RedirectAllRequestsTo: github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud.s3BucketWebsiteConfiguration.S3BucketWebsiteConfigurationRedirectAllRequestsTo,
 	RoutingRule: interface{},
 }
 ```
@@ -974,7 +974,7 @@ Bucket *string
 
 The name of the bucket.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.0/docs/resources/s3_bucket_website_configuration#bucket S3BucketWebsiteConfiguration#bucket}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.1/docs/resources/s3_bucket_website_configuration#bucket S3BucketWebsiteConfiguration#bucket}
 
 ---
 
@@ -988,7 +988,7 @@ ErrorDocument S3BucketWebsiteConfigurationErrorDocument
 
 error_document block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.0/docs/resources/s3_bucket_website_configuration#error_document S3BucketWebsiteConfiguration#error_document}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.1/docs/resources/s3_bucket_website_configuration#error_document S3BucketWebsiteConfiguration#error_document}
 
 ---
 
@@ -1002,7 +1002,7 @@ IndexDocument S3BucketWebsiteConfigurationIndexDocument
 
 index_document block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.0/docs/resources/s3_bucket_website_configuration#index_document S3BucketWebsiteConfiguration#index_document}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.1/docs/resources/s3_bucket_website_configuration#index_document S3BucketWebsiteConfiguration#index_document}
 
 ---
 
@@ -1016,7 +1016,7 @@ RedirectAllRequestsTo S3BucketWebsiteConfigurationRedirectAllRequestsTo
 
 redirect_all_requests_to block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.0/docs/resources/s3_bucket_website_configuration#redirect_all_requests_to S3BucketWebsiteConfiguration#redirect_all_requests_to}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.1/docs/resources/s3_bucket_website_configuration#redirect_all_requests_to S3BucketWebsiteConfiguration#redirect_all_requests_to}
 
 ---
 
@@ -1030,7 +1030,7 @@ RoutingRule interface{}
 
 routing_rule block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.0/docs/resources/s3_bucket_website_configuration#routing_rule S3BucketWebsiteConfiguration#routing_rule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.1/docs/resources/s3_bucket_website_configuration#routing_rule S3BucketWebsiteConfiguration#routing_rule}
 
 ---
 
@@ -1039,7 +1039,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 #### Initializer <a name="Initializer" id="@cdktf/provider-ionoscloud.s3BucketWebsiteConfiguration.S3BucketWebsiteConfigurationErrorDocument.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/s3bucketwebsiteconfiguration"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/s3bucketwebsiteconfiguration"
 
 &s3bucketwebsiteconfiguration.S3BucketWebsiteConfigurationErrorDocument {
 	Key: *string,
@@ -1064,7 +1064,7 @@ Key *string
 
 The object key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.0/docs/resources/s3_bucket_website_configuration#key S3BucketWebsiteConfiguration#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.1/docs/resources/s3_bucket_website_configuration#key S3BucketWebsiteConfiguration#key}
 
 ---
 
@@ -1073,7 +1073,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 #### Initializer <a name="Initializer" id="@cdktf/provider-ionoscloud.s3BucketWebsiteConfiguration.S3BucketWebsiteConfigurationIndexDocument.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/s3bucketwebsiteconfiguration"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/s3bucketwebsiteconfiguration"
 
 &s3bucketwebsiteconfiguration.S3BucketWebsiteConfigurationIndexDocument {
 	Suffix: *string,
@@ -1098,7 +1098,7 @@ Suffix *string
 
 A suffix that is appended to a request that is for a directory on the website endpoint (for example, if the suffix is index.html and you make a request to samplebucket/images/ the data that is returned will be for the object with the key name images/index.html) The suffix must not be empty and must not include a slash character. Replacement must be made for object keys containing special characters (such as carriage returns) when using XML requests.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.0/docs/resources/s3_bucket_website_configuration#suffix S3BucketWebsiteConfiguration#suffix}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.1/docs/resources/s3_bucket_website_configuration#suffix S3BucketWebsiteConfiguration#suffix}
 
 ---
 
@@ -1107,7 +1107,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 #### Initializer <a name="Initializer" id="@cdktf/provider-ionoscloud.s3BucketWebsiteConfiguration.S3BucketWebsiteConfigurationRedirectAllRequestsTo.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/s3bucketwebsiteconfiguration"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/s3bucketwebsiteconfiguration"
 
 &s3bucketwebsiteconfiguration.S3BucketWebsiteConfigurationRedirectAllRequestsTo {
 	HostName: *string,
@@ -1134,7 +1134,7 @@ HostName *string
 
 The host name to use in the redirect request.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.0/docs/resources/s3_bucket_website_configuration#host_name S3BucketWebsiteConfiguration#host_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.1/docs/resources/s3_bucket_website_configuration#host_name S3BucketWebsiteConfiguration#host_name}
 
 ---
 
@@ -1148,7 +1148,7 @@ Protocol *string
 
 Protocol to use when redirecting requests. The default is the protocol that is used in the original request.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.0/docs/resources/s3_bucket_website_configuration#protocol S3BucketWebsiteConfiguration#protocol}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.1/docs/resources/s3_bucket_website_configuration#protocol S3BucketWebsiteConfiguration#protocol}
 
 ---
 
@@ -1157,11 +1157,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 #### Initializer <a name="Initializer" id="@cdktf/provider-ionoscloud.s3BucketWebsiteConfiguration.S3BucketWebsiteConfigurationRoutingRule.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/s3bucketwebsiteconfiguration"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/s3bucketwebsiteconfiguration"
 
 &s3bucketwebsiteconfiguration.S3BucketWebsiteConfigurationRoutingRule {
-	Condition: github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11.s3BucketWebsiteConfiguration.S3BucketWebsiteConfigurationRoutingRuleCondition,
-	Redirect: github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11.s3BucketWebsiteConfiguration.S3BucketWebsiteConfigurationRoutingRuleRedirect,
+	Condition: github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud.s3BucketWebsiteConfiguration.S3BucketWebsiteConfigurationRoutingRuleCondition,
+	Redirect: github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud.s3BucketWebsiteConfiguration.S3BucketWebsiteConfigurationRoutingRuleRedirect,
 }
 ```
 
@@ -1184,7 +1184,7 @@ Condition S3BucketWebsiteConfigurationRoutingRuleCondition
 
 condition block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.0/docs/resources/s3_bucket_website_configuration#condition S3BucketWebsiteConfiguration#condition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.1/docs/resources/s3_bucket_website_configuration#condition S3BucketWebsiteConfiguration#condition}
 
 ---
 
@@ -1198,7 +1198,7 @@ Redirect S3BucketWebsiteConfigurationRoutingRuleRedirect
 
 redirect block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.0/docs/resources/s3_bucket_website_configuration#redirect S3BucketWebsiteConfiguration#redirect}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.1/docs/resources/s3_bucket_website_configuration#redirect S3BucketWebsiteConfiguration#redirect}
 
 ---
 
@@ -1207,7 +1207,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 #### Initializer <a name="Initializer" id="@cdktf/provider-ionoscloud.s3BucketWebsiteConfiguration.S3BucketWebsiteConfigurationRoutingRuleCondition.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/s3bucketwebsiteconfiguration"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/s3bucketwebsiteconfiguration"
 
 &s3bucketwebsiteconfiguration.S3BucketWebsiteConfigurationRoutingRuleCondition {
 	HttpErrorCodeReturnedEquals: *string,
@@ -1236,7 +1236,7 @@ The HTTP error code when the redirect is applied.
 
 In the event of an error, if the error code equals this value, then the specified redirect is applied. Required when parent element Condition is specified and sibling KeyPrefixEquals is not specified. If both are specified, then both must be true for the redirect to be applied
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.0/docs/resources/s3_bucket_website_configuration#http_error_code_returned_equals S3BucketWebsiteConfiguration#http_error_code_returned_equals}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.1/docs/resources/s3_bucket_website_configuration#http_error_code_returned_equals S3BucketWebsiteConfiguration#http_error_code_returned_equals}
 
 ---
 
@@ -1252,7 +1252,7 @@ The object key name prefix when the redirect is applied.
 
 For example, to redirect requests for `ExamplePage.html`, the key prefix will be `ExamplePage.html`. To redirect request for all pages with the prefix `docs/`, the key prefix will be `/docs`, which identifies all objects in the `docs/` folder. Required when the parent element `Condition` is specified and sibling `HTTPErrorCodeReturnedEquals` is not specified. If both conditions are specified, both must be true for the redirect to be applied. Replacement must be made for object keys containing special characters (such as carriage returns) when using XML requests.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.0/docs/resources/s3_bucket_website_configuration#key_prefix_equals S3BucketWebsiteConfiguration#key_prefix_equals}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.1/docs/resources/s3_bucket_website_configuration#key_prefix_equals S3BucketWebsiteConfiguration#key_prefix_equals}
 
 ---
 
@@ -1261,7 +1261,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 #### Initializer <a name="Initializer" id="@cdktf/provider-ionoscloud.s3BucketWebsiteConfiguration.S3BucketWebsiteConfigurationRoutingRuleRedirect.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/s3bucketwebsiteconfiguration"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/s3bucketwebsiteconfiguration"
 
 &s3bucketwebsiteconfiguration.S3BucketWebsiteConfigurationRoutingRuleRedirect {
 	HostName: *string,
@@ -1294,7 +1294,7 @@ HostName *string
 
 The host name to use in the redirect request.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.0/docs/resources/s3_bucket_website_configuration#host_name S3BucketWebsiteConfiguration#host_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.1/docs/resources/s3_bucket_website_configuration#host_name S3BucketWebsiteConfiguration#host_name}
 
 ---
 
@@ -1308,7 +1308,7 @@ HttpRedirectCode *string
 
 The HTTP redirect code to use on the response.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.0/docs/resources/s3_bucket_website_configuration#http_redirect_code S3BucketWebsiteConfiguration#http_redirect_code}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.1/docs/resources/s3_bucket_website_configuration#http_redirect_code S3BucketWebsiteConfiguration#http_redirect_code}
 
 ---
 
@@ -1322,7 +1322,7 @@ Protocol *string
 
 The protocol to use in the redirect request.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.0/docs/resources/s3_bucket_website_configuration#protocol S3BucketWebsiteConfiguration#protocol}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.1/docs/resources/s3_bucket_website_configuration#protocol S3BucketWebsiteConfiguration#protocol}
 
 ---
 
@@ -1338,7 +1338,7 @@ The object key prefix to use in the redirect request.
 
 For example, to redirect requests for all pages with prefix `docs/` (objects in the `docs/` folder) to `documents/`, you can set a condition block with `KeyPrefixEquals` set to `docs/` and in the Redirect set `ReplaceKeyPrefixWith` to `/documents`. Not required if one of the siblings is present. Can be present only if `ReplaceKeyWith` is not provided.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.0/docs/resources/s3_bucket_website_configuration#replace_key_prefix_with S3BucketWebsiteConfiguration#replace_key_prefix_with}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.1/docs/resources/s3_bucket_website_configuration#replace_key_prefix_with S3BucketWebsiteConfiguration#replace_key_prefix_with}
 
 ---
 
@@ -1354,7 +1354,7 @@ The specific object key to use in the redirect request.
 
 For example, redirect request to error.html. Not required if one of the siblings is present. Can be present only if ReplaceKeyPrefixWith is not provided. Replacement must be made for object keys containing special characters (such as carriage returns) when using XML requests.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.0/docs/resources/s3_bucket_website_configuration#replace_key_with S3BucketWebsiteConfiguration#replace_key_with}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.1/docs/resources/s3_bucket_website_configuration#replace_key_with S3BucketWebsiteConfiguration#replace_key_with}
 
 ---
 
@@ -1365,7 +1365,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.s3BucketWebsiteConfiguration.S3BucketWebsiteConfigurationErrorDocumentOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/s3bucketwebsiteconfiguration"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/s3bucketwebsiteconfiguration"
 
 s3bucketwebsiteconfiguration.NewS3BucketWebsiteConfigurationErrorDocumentOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) S3BucketWebsiteConfigurationErrorDocumentOutputReference
 ```
@@ -1643,7 +1643,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.s3BucketWebsiteConfiguration.S3BucketWebsiteConfigurationIndexDocumentOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/s3bucketwebsiteconfiguration"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/s3bucketwebsiteconfiguration"
 
 s3bucketwebsiteconfiguration.NewS3BucketWebsiteConfigurationIndexDocumentOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) S3BucketWebsiteConfigurationIndexDocumentOutputReference
 ```
@@ -1921,7 +1921,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.s3BucketWebsiteConfiguration.S3BucketWebsiteConfigurationRedirectAllRequestsToOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/s3bucketwebsiteconfiguration"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/s3bucketwebsiteconfiguration"
 
 s3bucketwebsiteconfiguration.NewS3BucketWebsiteConfigurationRedirectAllRequestsToOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) S3BucketWebsiteConfigurationRedirectAllRequestsToOutputReference
 ```
@@ -2228,7 +2228,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.s3BucketWebsiteConfiguration.S3BucketWebsiteConfigurationRoutingRuleConditionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/s3bucketwebsiteconfiguration"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/s3bucketwebsiteconfiguration"
 
 s3bucketwebsiteconfiguration.NewS3BucketWebsiteConfigurationRoutingRuleConditionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) S3BucketWebsiteConfigurationRoutingRuleConditionOutputReference
 ```
@@ -2535,7 +2535,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.s3BucketWebsiteConfiguration.S3BucketWebsiteConfigurationRoutingRuleList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/s3bucketwebsiteconfiguration"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/s3bucketwebsiteconfiguration"
 
 s3bucketwebsiteconfiguration.NewS3BucketWebsiteConfigurationRoutingRuleList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) S3BucketWebsiteConfigurationRoutingRuleList
 ```
@@ -2695,7 +2695,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.s3BucketWebsiteConfiguration.S3BucketWebsiteConfigurationRoutingRuleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/s3bucketwebsiteconfiguration"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/s3bucketwebsiteconfiguration"
 
 s3bucketwebsiteconfiguration.NewS3BucketWebsiteConfigurationRoutingRuleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) S3BucketWebsiteConfigurationRoutingRuleOutputReference
 ```
@@ -3046,7 +3046,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.s3BucketWebsiteConfiguration.S3BucketWebsiteConfigurationRoutingRuleRedirectOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/s3bucketwebsiteconfiguration"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/s3bucketwebsiteconfiguration"
 
 s3bucketwebsiteconfiguration.NewS3BucketWebsiteConfigurationRoutingRuleRedirectOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) S3BucketWebsiteConfigurationRoutingRuleRedirectOutputReference
 ```
