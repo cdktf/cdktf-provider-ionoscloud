@@ -4,7 +4,7 @@
 
 ### Firewall <a name="Firewall" id="@cdktf/provider-ionoscloud.firewall.Firewall"></a>
 
-Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.0/docs/resources/firewall ionoscloud_firewall}.
+Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.1/docs/resources/firewall ionoscloud_firewall}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.firewall.Firewall.Initializer"></a>
 
@@ -557,7 +557,7 @@ The construct id used in the generated config for the Firewall to import.
 
 The id of the existing Firewall that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.0/docs/resources/firewall#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.1/docs/resources/firewall#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1126,21 +1126,21 @@ new FirewallConfig {
 | <code><a href="#@cdktf/provider-ionoscloud.firewall.FirewallConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.firewall.FirewallConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.firewall.FirewallConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-ionoscloud.firewall.FirewallConfig.property.datacenterId">DatacenterId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.0/docs/resources/firewall#datacenter_id Firewall#datacenter_id}. |
-| <code><a href="#@cdktf/provider-ionoscloud.firewall.FirewallConfig.property.nicId">NicId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.0/docs/resources/firewall#nic_id Firewall#nic_id}. |
-| <code><a href="#@cdktf/provider-ionoscloud.firewall.FirewallConfig.property.protocol">Protocol</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.0/docs/resources/firewall#protocol Firewall#protocol}. |
-| <code><a href="#@cdktf/provider-ionoscloud.firewall.FirewallConfig.property.serverId">ServerId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.0/docs/resources/firewall#server_id Firewall#server_id}. |
-| <code><a href="#@cdktf/provider-ionoscloud.firewall.FirewallConfig.property.icmpCode">IcmpCode</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.0/docs/resources/firewall#icmp_code Firewall#icmp_code}. |
-| <code><a href="#@cdktf/provider-ionoscloud.firewall.FirewallConfig.property.icmpType">IcmpType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.0/docs/resources/firewall#icmp_type Firewall#icmp_type}. |
-| <code><a href="#@cdktf/provider-ionoscloud.firewall.FirewallConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.0/docs/resources/firewall#id Firewall#id}. |
-| <code><a href="#@cdktf/provider-ionoscloud.firewall.FirewallConfig.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.0/docs/resources/firewall#name Firewall#name}. |
-| <code><a href="#@cdktf/provider-ionoscloud.firewall.FirewallConfig.property.portRangeEnd">PortRangeEnd</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.0/docs/resources/firewall#port_range_end Firewall#port_range_end}. |
-| <code><a href="#@cdktf/provider-ionoscloud.firewall.FirewallConfig.property.portRangeStart">PortRangeStart</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.0/docs/resources/firewall#port_range_start Firewall#port_range_start}. |
-| <code><a href="#@cdktf/provider-ionoscloud.firewall.FirewallConfig.property.sourceIp">SourceIp</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.0/docs/resources/firewall#source_ip Firewall#source_ip}. |
-| <code><a href="#@cdktf/provider-ionoscloud.firewall.FirewallConfig.property.sourceMac">SourceMac</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.0/docs/resources/firewall#source_mac Firewall#source_mac}. |
-| <code><a href="#@cdktf/provider-ionoscloud.firewall.FirewallConfig.property.targetIp">TargetIp</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.0/docs/resources/firewall#target_ip Firewall#target_ip}. |
+| <code><a href="#@cdktf/provider-ionoscloud.firewall.FirewallConfig.property.datacenterId">DatacenterId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.1/docs/resources/firewall#datacenter_id Firewall#datacenter_id}. |
+| <code><a href="#@cdktf/provider-ionoscloud.firewall.FirewallConfig.property.nicId">NicId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.1/docs/resources/firewall#nic_id Firewall#nic_id}. |
+| <code><a href="#@cdktf/provider-ionoscloud.firewall.FirewallConfig.property.protocol">Protocol</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.1/docs/resources/firewall#protocol Firewall#protocol}. |
+| <code><a href="#@cdktf/provider-ionoscloud.firewall.FirewallConfig.property.serverId">ServerId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.1/docs/resources/firewall#server_id Firewall#server_id}. |
+| <code><a href="#@cdktf/provider-ionoscloud.firewall.FirewallConfig.property.icmpCode">IcmpCode</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.1/docs/resources/firewall#icmp_code Firewall#icmp_code}. |
+| <code><a href="#@cdktf/provider-ionoscloud.firewall.FirewallConfig.property.icmpType">IcmpType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.1/docs/resources/firewall#icmp_type Firewall#icmp_type}. |
+| <code><a href="#@cdktf/provider-ionoscloud.firewall.FirewallConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.1/docs/resources/firewall#id Firewall#id}. |
+| <code><a href="#@cdktf/provider-ionoscloud.firewall.FirewallConfig.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.1/docs/resources/firewall#name Firewall#name}. |
+| <code><a href="#@cdktf/provider-ionoscloud.firewall.FirewallConfig.property.portRangeEnd">PortRangeEnd</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.1/docs/resources/firewall#port_range_end Firewall#port_range_end}. |
+| <code><a href="#@cdktf/provider-ionoscloud.firewall.FirewallConfig.property.portRangeStart">PortRangeStart</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.1/docs/resources/firewall#port_range_start Firewall#port_range_start}. |
+| <code><a href="#@cdktf/provider-ionoscloud.firewall.FirewallConfig.property.sourceIp">SourceIp</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.1/docs/resources/firewall#source_ip Firewall#source_ip}. |
+| <code><a href="#@cdktf/provider-ionoscloud.firewall.FirewallConfig.property.sourceMac">SourceMac</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.1/docs/resources/firewall#source_mac Firewall#source_mac}. |
+| <code><a href="#@cdktf/provider-ionoscloud.firewall.FirewallConfig.property.targetIp">TargetIp</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.1/docs/resources/firewall#target_ip Firewall#target_ip}. |
 | <code><a href="#@cdktf/provider-ionoscloud.firewall.FirewallConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-ionoscloud.firewall.FirewallTimeouts">FirewallTimeouts</a></code> | timeouts block. |
-| <code><a href="#@cdktf/provider-ionoscloud.firewall.FirewallConfig.property.type">Type</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.0/docs/resources/firewall#type Firewall#type}. |
+| <code><a href="#@cdktf/provider-ionoscloud.firewall.FirewallConfig.property.type">Type</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.1/docs/resources/firewall#type Firewall#type}. |
 
 ---
 
@@ -1222,7 +1222,7 @@ public string DatacenterId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.0/docs/resources/firewall#datacenter_id Firewall#datacenter_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.1/docs/resources/firewall#datacenter_id Firewall#datacenter_id}.
 
 ---
 
@@ -1234,7 +1234,7 @@ public string NicId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.0/docs/resources/firewall#nic_id Firewall#nic_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.1/docs/resources/firewall#nic_id Firewall#nic_id}.
 
 ---
 
@@ -1246,7 +1246,7 @@ public string Protocol { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.0/docs/resources/firewall#protocol Firewall#protocol}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.1/docs/resources/firewall#protocol Firewall#protocol}.
 
 ---
 
@@ -1258,7 +1258,7 @@ public string ServerId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.0/docs/resources/firewall#server_id Firewall#server_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.1/docs/resources/firewall#server_id Firewall#server_id}.
 
 ---
 
@@ -1270,7 +1270,7 @@ public string IcmpCode { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.0/docs/resources/firewall#icmp_code Firewall#icmp_code}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.1/docs/resources/firewall#icmp_code Firewall#icmp_code}.
 
 ---
 
@@ -1282,7 +1282,7 @@ public string IcmpType { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.0/docs/resources/firewall#icmp_type Firewall#icmp_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.1/docs/resources/firewall#icmp_type Firewall#icmp_type}.
 
 ---
 
@@ -1294,7 +1294,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.0/docs/resources/firewall#id Firewall#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.1/docs/resources/firewall#id Firewall#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1309,7 +1309,7 @@ public string Name { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.0/docs/resources/firewall#name Firewall#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.1/docs/resources/firewall#name Firewall#name}.
 
 ---
 
@@ -1321,7 +1321,7 @@ public double PortRangeEnd { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.0/docs/resources/firewall#port_range_end Firewall#port_range_end}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.1/docs/resources/firewall#port_range_end Firewall#port_range_end}.
 
 ---
 
@@ -1333,7 +1333,7 @@ public double PortRangeStart { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.0/docs/resources/firewall#port_range_start Firewall#port_range_start}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.1/docs/resources/firewall#port_range_start Firewall#port_range_start}.
 
 ---
 
@@ -1345,7 +1345,7 @@ public string SourceIp { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.0/docs/resources/firewall#source_ip Firewall#source_ip}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.1/docs/resources/firewall#source_ip Firewall#source_ip}.
 
 ---
 
@@ -1357,7 +1357,7 @@ public string SourceMac { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.0/docs/resources/firewall#source_mac Firewall#source_mac}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.1/docs/resources/firewall#source_mac Firewall#source_mac}.
 
 ---
 
@@ -1369,7 +1369,7 @@ public string TargetIp { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.0/docs/resources/firewall#target_ip Firewall#target_ip}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.1/docs/resources/firewall#target_ip Firewall#target_ip}.
 
 ---
 
@@ -1383,7 +1383,7 @@ public FirewallTimeouts Timeouts { get; set; }
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.0/docs/resources/firewall#timeouts Firewall#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.1/docs/resources/firewall#timeouts Firewall#timeouts}
 
 ---
 
@@ -1395,7 +1395,7 @@ public string Type { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.0/docs/resources/firewall#type Firewall#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.1/docs/resources/firewall#type Firewall#type}.
 
 ---
 
@@ -1418,10 +1418,10 @@ new FirewallTimeouts {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-ionoscloud.firewall.FirewallTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.0/docs/resources/firewall#create Firewall#create}. |
-| <code><a href="#@cdktf/provider-ionoscloud.firewall.FirewallTimeouts.property.default">Default</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.0/docs/resources/firewall#default Firewall#default}. |
-| <code><a href="#@cdktf/provider-ionoscloud.firewall.FirewallTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.0/docs/resources/firewall#delete Firewall#delete}. |
-| <code><a href="#@cdktf/provider-ionoscloud.firewall.FirewallTimeouts.property.update">Update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.0/docs/resources/firewall#update Firewall#update}. |
+| <code><a href="#@cdktf/provider-ionoscloud.firewall.FirewallTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.1/docs/resources/firewall#create Firewall#create}. |
+| <code><a href="#@cdktf/provider-ionoscloud.firewall.FirewallTimeouts.property.default">Default</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.1/docs/resources/firewall#default Firewall#default}. |
+| <code><a href="#@cdktf/provider-ionoscloud.firewall.FirewallTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.1/docs/resources/firewall#delete Firewall#delete}. |
+| <code><a href="#@cdktf/provider-ionoscloud.firewall.FirewallTimeouts.property.update">Update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.1/docs/resources/firewall#update Firewall#update}. |
 
 ---
 
@@ -1433,7 +1433,7 @@ public string Create { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.0/docs/resources/firewall#create Firewall#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.1/docs/resources/firewall#create Firewall#create}.
 
 ---
 
@@ -1445,7 +1445,7 @@ public string Default { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.0/docs/resources/firewall#default Firewall#default}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.1/docs/resources/firewall#default Firewall#default}.
 
 ---
 
@@ -1457,7 +1457,7 @@ public string Delete { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.0/docs/resources/firewall#delete Firewall#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.1/docs/resources/firewall#delete Firewall#delete}.
 
 ---
 
@@ -1469,7 +1469,7 @@ public string Update { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.0/docs/resources/firewall#update Firewall#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.1/docs/resources/firewall#update Firewall#update}.
 
 ---
 

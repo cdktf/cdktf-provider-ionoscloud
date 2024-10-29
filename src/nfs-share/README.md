@@ -1,3 +1,3 @@
 # `ionoscloud_nfs_share`
 
-Refer to the Terraform Registry for docs: [`ionoscloud_nfs_share`](https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.0/docs/resources/nfs_share).
+Refer to the Terraform Registry for docs: [`ionoscloud_nfs_share`](https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.1/docs/resources/nfs_share).

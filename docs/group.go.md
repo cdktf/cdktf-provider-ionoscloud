@@ -4,7 +4,7 @@
 
 ### Group <a name="Group" id="@cdktf/provider-ionoscloud.group.Group"></a>
 
-Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.0/docs/resources/group ionoscloud_group}.
+Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.1/docs/resources/group ionoscloud_group}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.group.Group.Initializer"></a>
 
@@ -599,7 +599,7 @@ The construct id used in the generated config for the Group to import.
 
 The id of the existing Group that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.0/docs/resources/group#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.1/docs/resources/group#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1248,24 +1248,24 @@ import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/group"
 | <code><a href="#@cdktf/provider-ionoscloud.group.GroupConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.group.GroupConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.group.GroupConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-ionoscloud.group.GroupConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.0/docs/resources/group#name Group#name}. |
-| <code><a href="#@cdktf/provider-ionoscloud.group.GroupConfig.property.accessActivityLog">AccessActivityLog</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.0/docs/resources/group#access_activity_log Group#access_activity_log}. |
+| <code><a href="#@cdktf/provider-ionoscloud.group.GroupConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.1/docs/resources/group#name Group#name}. |
+| <code><a href="#@cdktf/provider-ionoscloud.group.GroupConfig.property.accessActivityLog">AccessActivityLog</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.1/docs/resources/group#access_activity_log Group#access_activity_log}. |
 | <code><a href="#@cdktf/provider-ionoscloud.group.GroupConfig.property.accessAndManageCertificates">AccessAndManageCertificates</a></code> | <code>interface{}</code> | Privilege for a group to access and manage certificates. |
 | <code><a href="#@cdktf/provider-ionoscloud.group.GroupConfig.property.accessAndManageMonitoring">AccessAndManageMonitoring</a></code> | <code>interface{}</code> | Privilege for a group to access and manage monitoring related functionality (access metrics, CRUD on alarms, alarm-actions etc) using Monotoring-as-a-Service (MaaS). |
 | <code><a href="#@cdktf/provider-ionoscloud.group.GroupConfig.property.createBackupUnit">CreateBackupUnit</a></code> | <code>interface{}</code> | Create backup unit privilege. |
-| <code><a href="#@cdktf/provider-ionoscloud.group.GroupConfig.property.createDatacenter">CreateDatacenter</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.0/docs/resources/group#create_datacenter Group#create_datacenter}. |
+| <code><a href="#@cdktf/provider-ionoscloud.group.GroupConfig.property.createDatacenter">CreateDatacenter</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.1/docs/resources/group#create_datacenter Group#create_datacenter}. |
 | <code><a href="#@cdktf/provider-ionoscloud.group.GroupConfig.property.createFlowLog">CreateFlowLog</a></code> | <code>interface{}</code> | Create Flow Logs privilege. |
 | <code><a href="#@cdktf/provider-ionoscloud.group.GroupConfig.property.createInternetAccess">CreateInternetAccess</a></code> | <code>interface{}</code> | Create internet access privilege. |
 | <code><a href="#@cdktf/provider-ionoscloud.group.GroupConfig.property.createK8SCluster">CreateK8SCluster</a></code> | <code>interface{}</code> | Create Kubernetes cluster privilege. |
-| <code><a href="#@cdktf/provider-ionoscloud.group.GroupConfig.property.createPcc">CreatePcc</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.0/docs/resources/group#create_pcc Group#create_pcc}. |
-| <code><a href="#@cdktf/provider-ionoscloud.group.GroupConfig.property.createSnapshot">CreateSnapshot</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.0/docs/resources/group#create_snapshot Group#create_snapshot}. |
-| <code><a href="#@cdktf/provider-ionoscloud.group.GroupConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.0/docs/resources/group#id Group#id}. |
+| <code><a href="#@cdktf/provider-ionoscloud.group.GroupConfig.property.createPcc">CreatePcc</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.1/docs/resources/group#create_pcc Group#create_pcc}. |
+| <code><a href="#@cdktf/provider-ionoscloud.group.GroupConfig.property.createSnapshot">CreateSnapshot</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.1/docs/resources/group#create_snapshot Group#create_snapshot}. |
+| <code><a href="#@cdktf/provider-ionoscloud.group.GroupConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.1/docs/resources/group#id Group#id}. |
 | <code><a href="#@cdktf/provider-ionoscloud.group.GroupConfig.property.manageDbaas">ManageDbaas</a></code> | <code>interface{}</code> | Privilege for a group to manage DBaaS related functionality. |
-| <code><a href="#@cdktf/provider-ionoscloud.group.GroupConfig.property.reserveIp">ReserveIp</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.0/docs/resources/group#reserve_ip Group#reserve_ip}. |
-| <code><a href="#@cdktf/provider-ionoscloud.group.GroupConfig.property.s3Privilege">S3Privilege</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.0/docs/resources/group#s3_privilege Group#s3_privilege}. |
+| <code><a href="#@cdktf/provider-ionoscloud.group.GroupConfig.property.reserveIp">ReserveIp</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.1/docs/resources/group#reserve_ip Group#reserve_ip}. |
+| <code><a href="#@cdktf/provider-ionoscloud.group.GroupConfig.property.s3Privilege">S3Privilege</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.1/docs/resources/group#s3_privilege Group#s3_privilege}. |
 | <code><a href="#@cdktf/provider-ionoscloud.group.GroupConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-ionoscloud.group.GroupTimeouts">GroupTimeouts</a></code> | timeouts block. |
-| <code><a href="#@cdktf/provider-ionoscloud.group.GroupConfig.property.userId">UserId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.0/docs/resources/group#user_id Group#user_id}. |
-| <code><a href="#@cdktf/provider-ionoscloud.group.GroupConfig.property.userIds">UserIds</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.0/docs/resources/group#user_ids Group#user_ids}. |
+| <code><a href="#@cdktf/provider-ionoscloud.group.GroupConfig.property.userId">UserId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.1/docs/resources/group#user_id Group#user_id}. |
+| <code><a href="#@cdktf/provider-ionoscloud.group.GroupConfig.property.userIds">UserIds</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.1/docs/resources/group#user_ids Group#user_ids}. |
 
 ---
 
@@ -1347,7 +1347,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.0/docs/resources/group#name Group#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.1/docs/resources/group#name Group#name}.
 
 ---
 
@@ -1359,7 +1359,7 @@ AccessActivityLog interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.0/docs/resources/group#access_activity_log Group#access_activity_log}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.1/docs/resources/group#access_activity_log Group#access_activity_log}.
 
 ---
 
@@ -1373,7 +1373,7 @@ AccessAndManageCertificates interface{}
 
 Privilege for a group to access and manage certificates.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.0/docs/resources/group#access_and_manage_certificates Group#access_and_manage_certificates}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.1/docs/resources/group#access_and_manage_certificates Group#access_and_manage_certificates}
 
 ---
 
@@ -1387,7 +1387,7 @@ AccessAndManageMonitoring interface{}
 
 Privilege for a group to access and manage monitoring related functionality (access metrics, CRUD on alarms, alarm-actions etc) using Monotoring-as-a-Service (MaaS).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.0/docs/resources/group#access_and_manage_monitoring Group#access_and_manage_monitoring}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.1/docs/resources/group#access_and_manage_monitoring Group#access_and_manage_monitoring}
 
 ---
 
@@ -1401,7 +1401,7 @@ CreateBackupUnit interface{}
 
 Create backup unit privilege.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.0/docs/resources/group#create_backup_unit Group#create_backup_unit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.1/docs/resources/group#create_backup_unit Group#create_backup_unit}
 
 ---
 
@@ -1413,7 +1413,7 @@ CreateDatacenter interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.0/docs/resources/group#create_datacenter Group#create_datacenter}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.1/docs/resources/group#create_datacenter Group#create_datacenter}.
 
 ---
 
@@ -1427,7 +1427,7 @@ CreateFlowLog interface{}
 
 Create Flow Logs privilege.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.0/docs/resources/group#create_flow_log Group#create_flow_log}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.1/docs/resources/group#create_flow_log Group#create_flow_log}
 
 ---
 
@@ -1441,7 +1441,7 @@ CreateInternetAccess interface{}
 
 Create internet access privilege.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.0/docs/resources/group#create_internet_access Group#create_internet_access}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.1/docs/resources/group#create_internet_access Group#create_internet_access}
 
 ---
 
@@ -1455,7 +1455,7 @@ CreateK8SCluster interface{}
 
 Create Kubernetes cluster privilege.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.0/docs/resources/group#create_k8s_cluster Group#create_k8s_cluster}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.1/docs/resources/group#create_k8s_cluster Group#create_k8s_cluster}
 
 ---
 
@@ -1467,7 +1467,7 @@ CreatePcc interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.0/docs/resources/group#create_pcc Group#create_pcc}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.1/docs/resources/group#create_pcc Group#create_pcc}.
 
 ---
 
@@ -1479,7 +1479,7 @@ CreateSnapshot interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.0/docs/resources/group#create_snapshot Group#create_snapshot}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.1/docs/resources/group#create_snapshot Group#create_snapshot}.
 
 ---
 
@@ -1491,7 +1491,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.0/docs/resources/group#id Group#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.1/docs/resources/group#id Group#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1508,7 +1508,7 @@ ManageDbaas interface{}
 
 Privilege for a group to manage DBaaS related functionality.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.0/docs/resources/group#manage_dbaas Group#manage_dbaas}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.1/docs/resources/group#manage_dbaas Group#manage_dbaas}
 
 ---
 
@@ -1520,7 +1520,7 @@ ReserveIp interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.0/docs/resources/group#reserve_ip Group#reserve_ip}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.1/docs/resources/group#reserve_ip Group#reserve_ip}.
 
 ---
 
@@ -1532,7 +1532,7 @@ S3Privilege interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.0/docs/resources/group#s3_privilege Group#s3_privilege}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.1/docs/resources/group#s3_privilege Group#s3_privilege}.
 
 ---
 
@@ -1546,7 +1546,7 @@ Timeouts GroupTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.0/docs/resources/group#timeouts Group#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.1/docs/resources/group#timeouts Group#timeouts}
 
 ---
 
@@ -1558,7 +1558,7 @@ UserId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.0/docs/resources/group#user_id Group#user_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.1/docs/resources/group#user_id Group#user_id}.
 
 ---
 
@@ -1570,7 +1570,7 @@ UserIds *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.0/docs/resources/group#user_ids Group#user_ids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.1/docs/resources/group#user_ids Group#user_ids}.
 
 ---
 
@@ -1593,10 +1593,10 @@ import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/group"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-ionoscloud.group.GroupTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.0/docs/resources/group#create Group#create}. |
-| <code><a href="#@cdktf/provider-ionoscloud.group.GroupTimeouts.property.default">Default</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.0/docs/resources/group#default Group#default}. |
-| <code><a href="#@cdktf/provider-ionoscloud.group.GroupTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.0/docs/resources/group#delete Group#delete}. |
-| <code><a href="#@cdktf/provider-ionoscloud.group.GroupTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.0/docs/resources/group#update Group#update}. |
+| <code><a href="#@cdktf/provider-ionoscloud.group.GroupTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.1/docs/resources/group#create Group#create}. |
+| <code><a href="#@cdktf/provider-ionoscloud.group.GroupTimeouts.property.default">Default</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.1/docs/resources/group#default Group#default}. |
+| <code><a href="#@cdktf/provider-ionoscloud.group.GroupTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.1/docs/resources/group#delete Group#delete}. |
+| <code><a href="#@cdktf/provider-ionoscloud.group.GroupTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.1/docs/resources/group#update Group#update}. |
 
 ---
 
@@ -1608,7 +1608,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.0/docs/resources/group#create Group#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.1/docs/resources/group#create Group#create}.
 
 ---
 
@@ -1620,7 +1620,7 @@ Default *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.0/docs/resources/group#default Group#default}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.1/docs/resources/group#default Group#default}.
 
 ---
 
@@ -1632,7 +1632,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.0/docs/resources/group#delete Group#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.1/docs/resources/group#delete Group#delete}.
 
 ---
 
@@ -1644,7 +1644,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.0/docs/resources/group#update Group#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.1/docs/resources/group#update Group#update}.
 
 ---
 
