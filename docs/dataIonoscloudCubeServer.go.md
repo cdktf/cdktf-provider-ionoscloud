@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionosclo
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.dataIonoscloudCubeServer.DataIonoscloudCubeServer.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/dataionoscloudcubeserver"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/dataionoscloudcubeserver"
 
 dataionoscloudcubeserver.NewDataIonoscloudCubeServer(scope Construct, id *string, config DataIonoscloudCubeServerConfig) DataIonoscloudCubeServer
 ```
@@ -317,7 +317,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-ionoscloud.dataIonoscloudCubeServer.DataIonoscloudCubeServer.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/dataionoscloudcubeserver"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/dataionoscloudcubeserver"
 
 dataionoscloudcubeserver.DataIonoscloudCubeServer_IsConstruct(x interface{}) *bool
 ```
@@ -349,7 +349,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-ionoscloud.dataIonoscloudCubeServer.DataIonoscloudCubeServer.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/dataionoscloudcubeserver"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/dataionoscloudcubeserver"
 
 dataionoscloudcubeserver.DataIonoscloudCubeServer_IsTerraformElement(x interface{}) *bool
 ```
@@ -363,7 +363,7 @@ dataionoscloudcubeserver.DataIonoscloudCubeServer_IsTerraformElement(x interface
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-ionoscloud.dataIonoscloudCubeServer.DataIonoscloudCubeServer.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/dataionoscloudcubeserver"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/dataionoscloudcubeserver"
 
 dataionoscloudcubeserver.DataIonoscloudCubeServer_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -377,7 +377,7 @@ dataionoscloudcubeserver.DataIonoscloudCubeServer_IsTerraformDataSource(x interf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-ionoscloud.dataIonoscloudCubeServer.DataIonoscloudCubeServer.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/dataionoscloudcubeserver"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/dataionoscloudcubeserver"
 
 dataionoscloudcubeserver.DataIonoscloudCubeServer_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -837,7 +837,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-ionoscloud.dataIonoscloudCubeServer.DataIonoscloudCubeServerCdroms.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/dataionoscloudcubeserver"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/dataionoscloudcubeserver"
 
 &dataionoscloudcubeserver.DataIonoscloudCubeServerCdroms {
 
@@ -850,7 +850,7 @@ import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/dataionoscloudc
 #### Initializer <a name="Initializer" id="@cdktf/provider-ionoscloud.dataIonoscloudCubeServer.DataIonoscloudCubeServerConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/dataionoscloudcubeserver"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/dataionoscloudcubeserver"
 
 &dataionoscloudcubeserver.DataIonoscloudCubeServerConfig {
 	Connection: interface{},
@@ -864,7 +864,7 @@ import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/dataionoscloudc
 	Id: *string,
 	Name: *string,
 	TemplateUuid: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud.dataIonoscloudCubeServer.DataIonoscloudCubeServerTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11.dataIonoscloudCubeServer.DataIonoscloudCubeServerTimeouts,
 }
 ```
 
@@ -1027,7 +1027,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 #### Initializer <a name="Initializer" id="@cdktf/provider-ionoscloud.dataIonoscloudCubeServer.DataIonoscloudCubeServerNics.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/dataionoscloudcubeserver"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/dataionoscloudcubeserver"
 
 &dataionoscloudcubeserver.DataIonoscloudCubeServerNics {
 
@@ -1040,7 +1040,7 @@ import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/dataionoscloudc
 #### Initializer <a name="Initializer" id="@cdktf/provider-ionoscloud.dataIonoscloudCubeServer.DataIonoscloudCubeServerNicsFirewallRules.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/dataionoscloudcubeserver"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/dataionoscloudcubeserver"
 
 &dataionoscloudcubeserver.DataIonoscloudCubeServerNicsFirewallRules {
 
@@ -1053,7 +1053,7 @@ import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/dataionoscloudc
 #### Initializer <a name="Initializer" id="@cdktf/provider-ionoscloud.dataIonoscloudCubeServer.DataIonoscloudCubeServerTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/dataionoscloudcubeserver"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/dataionoscloudcubeserver"
 
 &dataionoscloudcubeserver.DataIonoscloudCubeServerTimeouts {
 	Create: *string,
@@ -1127,7 +1127,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 #### Initializer <a name="Initializer" id="@cdktf/provider-ionoscloud.dataIonoscloudCubeServer.DataIonoscloudCubeServerVolumes.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/dataionoscloudcubeserver"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/dataionoscloudcubeserver"
 
 &dataionoscloudcubeserver.DataIonoscloudCubeServerVolumes {
 
@@ -1142,7 +1142,7 @@ import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/dataionoscloudc
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.dataIonoscloudCubeServer.DataIonoscloudCubeServerCdromsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/dataionoscloudcubeserver"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/dataionoscloudcubeserver"
 
 dataionoscloudcubeserver.NewDataIonoscloudCubeServerCdromsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataIonoscloudCubeServerCdromsList
 ```
@@ -1291,7 +1291,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.dataIonoscloudCubeServer.DataIonoscloudCubeServerCdromsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/dataionoscloudcubeserver"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/dataionoscloudcubeserver"
 
 dataionoscloudcubeserver.NewDataIonoscloudCubeServerCdromsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataIonoscloudCubeServerCdromsOutputReference
 ```
@@ -1778,7 +1778,7 @@ func InternalValue() DataIonoscloudCubeServerCdroms
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.dataIonoscloudCubeServer.DataIonoscloudCubeServerNicsFirewallRulesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/dataionoscloudcubeserver"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/dataionoscloudcubeserver"
 
 dataionoscloudcubeserver.NewDataIonoscloudCubeServerNicsFirewallRulesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataIonoscloudCubeServerNicsFirewallRulesList
 ```
@@ -1927,7 +1927,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.dataIonoscloudCubeServer.DataIonoscloudCubeServerNicsFirewallRulesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/dataionoscloudcubeserver"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/dataionoscloudcubeserver"
 
 dataionoscloudcubeserver.NewDataIonoscloudCubeServerNicsFirewallRulesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataIonoscloudCubeServerNicsFirewallRulesOutputReference
 ```
@@ -2315,7 +2315,7 @@ func InternalValue() DataIonoscloudCubeServerNicsFirewallRules
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.dataIonoscloudCubeServer.DataIonoscloudCubeServerNicsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/dataionoscloudcubeserver"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/dataionoscloudcubeserver"
 
 dataionoscloudcubeserver.NewDataIonoscloudCubeServerNicsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataIonoscloudCubeServerNicsList
 ```
@@ -2464,7 +2464,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.dataIonoscloudCubeServer.DataIonoscloudCubeServerNicsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/dataionoscloudcubeserver"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/dataionoscloudcubeserver"
 
 dataionoscloudcubeserver.NewDataIonoscloudCubeServerNicsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataIonoscloudCubeServerNicsOutputReference
 ```
@@ -2885,7 +2885,7 @@ func InternalValue() DataIonoscloudCubeServerNics
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.dataIonoscloudCubeServer.DataIonoscloudCubeServerTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/dataionoscloudcubeserver"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/dataionoscloudcubeserver"
 
 dataionoscloudcubeserver.NewDataIonoscloudCubeServerTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataIonoscloudCubeServerTimeoutsOutputReference
 ```
@@ -3250,7 +3250,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.dataIonoscloudCubeServer.DataIonoscloudCubeServerVolumesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/dataionoscloudcubeserver"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/dataionoscloudcubeserver"
 
 dataionoscloudcubeserver.NewDataIonoscloudCubeServerVolumesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataIonoscloudCubeServerVolumesList
 ```
@@ -3399,7 +3399,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.dataIonoscloudCubeServer.DataIonoscloudCubeServerVolumesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/dataionoscloudcubeserver"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/dataionoscloudcubeserver"
 
 dataionoscloudcubeserver.NewDataIonoscloudCubeServerVolumesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataIonoscloudCubeServerVolumesOutputReference
 ```
