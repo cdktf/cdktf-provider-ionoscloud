@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionosclo
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.pgCluster.PgCluster.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/pgcluster"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/pgcluster"
 
 pgcluster.NewPgCluster(scope Construct, id *string, config PgClusterConfig) PgCluster
 ```
@@ -505,7 +505,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-ionoscloud.pgCluster.PgCluster.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/pgcluster"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/pgcluster"
 
 pgcluster.PgCluster_IsConstruct(x interface{}) *bool
 ```
@@ -537,7 +537,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-ionoscloud.pgCluster.PgCluster.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/pgcluster"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/pgcluster"
 
 pgcluster.PgCluster_IsTerraformElement(x interface{}) *bool
 ```
@@ -551,7 +551,7 @@ pgcluster.PgCluster_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-ionoscloud.pgCluster.PgCluster.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/pgcluster"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/pgcluster"
 
 pgcluster.PgCluster_IsTerraformResource(x interface{}) *bool
 ```
@@ -565,7 +565,7 @@ pgcluster.PgCluster_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-ionoscloud.pgCluster.PgCluster.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/pgcluster"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/pgcluster"
 
 pgcluster.PgCluster_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1179,7 +1179,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-ionoscloud.pgCluster.PgClusterConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/pgcluster"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/pgcluster"
 
 &pgcluster.PgClusterConfig {
 	Connection: interface{},
@@ -1190,7 +1190,7 @@ import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/pgcluster"
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
 	Cores: *f64,
-	Credentials: github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11.pgCluster.PgClusterCredentials,
+	Credentials: github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud.pgCluster.PgClusterCredentials,
 	DisplayName: *string,
 	Instances: *f64,
 	Location: *string,
@@ -1200,12 +1200,12 @@ import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/pgcluster"
 	StorageType: *string,
 	SynchronizationMode: *string,
 	BackupLocation: *string,
-	ConnectionPooler: github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11.pgCluster.PgClusterConnectionPooler,
-	Connections: github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11.pgCluster.PgClusterConnections,
-	FromBackup: github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11.pgCluster.PgClusterFromBackup,
+	ConnectionPooler: github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud.pgCluster.PgClusterConnectionPooler,
+	Connections: github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud.pgCluster.PgClusterConnections,
+	FromBackup: github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud.pgCluster.PgClusterFromBackup,
 	Id: *string,
-	MaintenanceWindow: github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11.pgCluster.PgClusterMaintenanceWindow,
-	Timeouts: github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11.pgCluster.PgClusterTimeouts,
+	MaintenanceWindow: github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud.pgCluster.PgClusterMaintenanceWindow,
+	Timeouts: github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud.pgCluster.PgClusterTimeouts,
 }
 ```
 
@@ -1556,7 +1556,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 #### Initializer <a name="Initializer" id="@cdktf/provider-ionoscloud.pgCluster.PgClusterConnectionPooler.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/pgcluster"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/pgcluster"
 
 &pgcluster.PgClusterConnectionPooler {
 	Enabled: interface{},
@@ -1604,7 +1604,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 #### Initializer <a name="Initializer" id="@cdktf/provider-ionoscloud.pgCluster.PgClusterConnections.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/pgcluster"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/pgcluster"
 
 &pgcluster.PgClusterConnections {
 	Cidr: *string,
@@ -1675,7 +1675,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 #### Initializer <a name="Initializer" id="@cdktf/provider-ionoscloud.pgCluster.PgClusterCredentials.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/pgcluster"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/pgcluster"
 
 &pgcluster.PgClusterCredentials {
 	Password: *string,
@@ -1723,7 +1723,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 #### Initializer <a name="Initializer" id="@cdktf/provider-ionoscloud.pgCluster.PgClusterFromBackup.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/pgcluster"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/pgcluster"
 
 &pgcluster.PgClusterFromBackup {
 	BackupId: *string,
@@ -1775,7 +1775,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 #### Initializer <a name="Initializer" id="@cdktf/provider-ionoscloud.pgCluster.PgClusterMaintenanceWindow.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/pgcluster"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/pgcluster"
 
 &pgcluster.PgClusterMaintenanceWindow {
 	DayOfTheWeek: *string,
@@ -1821,7 +1821,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 #### Initializer <a name="Initializer" id="@cdktf/provider-ionoscloud.pgCluster.PgClusterTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/pgcluster"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/pgcluster"
 
 &pgcluster.PgClusterTimeouts {
 	Create: *string,
@@ -1897,7 +1897,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.pgCluster.PgClusterConnectionPoolerOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/pgcluster"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/pgcluster"
 
 pgcluster.NewPgClusterConnectionPoolerOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PgClusterConnectionPoolerOutputReference
 ```
@@ -2190,7 +2190,7 @@ func InternalValue() PgClusterConnectionPooler
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.pgCluster.PgClusterConnectionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/pgcluster"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/pgcluster"
 
 pgcluster.NewPgClusterConnectionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PgClusterConnectionsOutputReference
 ```
@@ -2505,7 +2505,7 @@ func InternalValue() PgClusterConnections
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.pgCluster.PgClusterCredentialsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/pgcluster"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/pgcluster"
 
 pgcluster.NewPgClusterCredentialsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PgClusterCredentialsOutputReference
 ```
@@ -2798,7 +2798,7 @@ func InternalValue() PgClusterCredentials
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.pgCluster.PgClusterFromBackupOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/pgcluster"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/pgcluster"
 
 pgcluster.NewPgClusterFromBackupOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PgClusterFromBackupOutputReference
 ```
@@ -3098,7 +3098,7 @@ func InternalValue() PgClusterFromBackup
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.pgCluster.PgClusterMaintenanceWindowOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/pgcluster"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/pgcluster"
 
 pgcluster.NewPgClusterMaintenanceWindowOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PgClusterMaintenanceWindowOutputReference
 ```
@@ -3391,7 +3391,7 @@ func InternalValue() PgClusterMaintenanceWindow
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.pgCluster.PgClusterTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/pgcluster"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/pgcluster"
 
 pgcluster.NewPgClusterTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PgClusterTimeoutsOutputReference
 ```

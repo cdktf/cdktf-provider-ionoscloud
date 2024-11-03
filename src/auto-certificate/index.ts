@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.1/docs/resources/auto_certificate
 // generated from terraform resource schema
 
