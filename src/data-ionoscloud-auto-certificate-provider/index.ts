@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.1/docs/data-sources/auto_certificate_provider
+// https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.2/docs/data-sources/auto_certificate_provider
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,7 +10,7 @@ export interface DataIonoscloudAutoCertificateProviderConfig extends cdktf.Terra
   /**
   * The ID of the auto-certificate provider
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.1/docs/data-sources/auto_certificate_provider#id DataIonoscloudAutoCertificateProvider#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.2/docs/data-sources/auto_certificate_provider#id DataIonoscloudAutoCertificateProvider#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -24,19 +19,19 @@ export interface DataIonoscloudAutoCertificateProviderConfig extends cdktf.Terra
   /**
   * The location of the auto-certificate provider
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.1/docs/data-sources/auto_certificate_provider#location DataIonoscloudAutoCertificateProvider#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.2/docs/data-sources/auto_certificate_provider#location DataIonoscloudAutoCertificateProvider#location}
   */
-  readonly location: string;
+  readonly location?: string;
   /**
   * The name of the auto-certificate provider
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.1/docs/data-sources/auto_certificate_provider#name DataIonoscloudAutoCertificateProvider#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.2/docs/data-sources/auto_certificate_provider#name DataIonoscloudAutoCertificateProvider#name}
   */
   readonly name?: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.1/docs/data-sources/auto_certificate_provider#timeouts DataIonoscloudAutoCertificateProvider#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.2/docs/data-sources/auto_certificate_provider#timeouts DataIonoscloudAutoCertificateProvider#timeouts}
   */
   readonly timeouts?: DataIonoscloudAutoCertificateProviderTimeouts;
 }
@@ -117,19 +112,19 @@ export class DataIonoscloudAutoCertificateProviderExternalAccountBindingList ext
 }
 export interface DataIonoscloudAutoCertificateProviderTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.1/docs/data-sources/auto_certificate_provider#create DataIonoscloudAutoCertificateProvider#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.2/docs/data-sources/auto_certificate_provider#create DataIonoscloudAutoCertificateProvider#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.1/docs/data-sources/auto_certificate_provider#default DataIonoscloudAutoCertificateProvider#default}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.2/docs/data-sources/auto_certificate_provider#default DataIonoscloudAutoCertificateProvider#default}
   */
   readonly default?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.1/docs/data-sources/auto_certificate_provider#delete DataIonoscloudAutoCertificateProvider#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.2/docs/data-sources/auto_certificate_provider#delete DataIonoscloudAutoCertificateProvider#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.1/docs/data-sources/auto_certificate_provider#update DataIonoscloudAutoCertificateProvider#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.2/docs/data-sources/auto_certificate_provider#update DataIonoscloudAutoCertificateProvider#update}
   */
   readonly update?: string;
 }
@@ -310,7 +305,7 @@ export class DataIonoscloudAutoCertificateProviderTimeoutsOutputReference extend
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.1/docs/data-sources/auto_certificate_provider ionoscloud_auto_certificate_provider}
+* Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.2/docs/data-sources/auto_certificate_provider ionoscloud_auto_certificate_provider}
 */
 export class DataIonoscloudAutoCertificateProvider extends cdktf.TerraformDataSource {
 
@@ -326,7 +321,7 @@ export class DataIonoscloudAutoCertificateProvider extends cdktf.TerraformDataSo
   * Generates CDKTF code for importing a DataIonoscloudAutoCertificateProvider resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataIonoscloudAutoCertificateProvider to import
-  * @param importFromId The id of the existing DataIonoscloudAutoCertificateProvider that should be imported. Refer to the {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.1/docs/data-sources/auto_certificate_provider#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataIonoscloudAutoCertificateProvider that should be imported. Refer to the {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.2/docs/data-sources/auto_certificate_provider#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataIonoscloudAutoCertificateProvider to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -338,18 +333,18 @@ export class DataIonoscloudAutoCertificateProvider extends cdktf.TerraformDataSo
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.1/docs/data-sources/auto_certificate_provider ionoscloud_auto_certificate_provider} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.2/docs/data-sources/auto_certificate_provider ionoscloud_auto_certificate_provider} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
-  * @param options DataIonoscloudAutoCertificateProviderConfig
+  * @param options DataIonoscloudAutoCertificateProviderConfig = {}
   */
-  public constructor(scope: Construct, id: string, config: DataIonoscloudAutoCertificateProviderConfig) {
+  public constructor(scope: Construct, id: string, config: DataIonoscloudAutoCertificateProviderConfig = {}) {
     super(scope, id, {
       terraformResourceType: 'ionoscloud_auto_certificate_provider',
       terraformGeneratorMetadata: {
         providerName: 'ionoscloud',
-        providerVersion: '6.6.1',
+        providerVersion: '6.6.2',
         providerVersionConstraint: '~> 6.2'
       },
       provider: config.provider,
@@ -397,13 +392,16 @@ export class DataIonoscloudAutoCertificateProvider extends cdktf.TerraformDataSo
     return this._id;
   }
 
-  // location - computed: false, optional: false, required: true
+  // location - computed: false, optional: true, required: false
   private _location?: string; 
   public get location() {
     return this.getStringAttribute('location');
   }
   public set location(value: string) {
     this._location = value;
+  }
+  public resetLocation() {
+    this._location = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get locationInput() {
