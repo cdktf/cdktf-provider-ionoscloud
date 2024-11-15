@@ -18,6 +18,7 @@ export * as containerRegistry from './container-registry';
 export * as containerRegistryToken from './container-registry-token';
 export * as cubeServer from './cube-server';
 export * as datacenter from './datacenter';
+export * as datacenterNsgSelection from './datacenter-nsg-selection';
 export * as dataplatformCluster from './dataplatform-cluster';
 export * as dataplatformNodePool from './dataplatform-node-pool';
 export * as dnsRecord from './dns-record';
@@ -44,6 +45,8 @@ export * as networkloadbalancerForwardingrule from './networkloadbalancer-forwar
 export * as nfsCluster from './nfs-cluster';
 export * as nfsShare from './nfs-share';
 export * as nic from './nic';
+export * as nsg from './nsg';
+export * as nsgFirewallrule from './nsg-firewallrule';
 export * as pgCluster from './pg-cluster';
 export * as pgDatabase from './pg-database';
 export * as pgUser from './pg-user';
@@ -122,6 +125,7 @@ export * as dataIonoscloudNetworkloadbalancerForwardingrule from './data-ionoscl
 export * as dataIonoscloudNfsCluster from './data-ionoscloud-nfs-cluster';
 export * as dataIonoscloudNfsShare from './data-ionoscloud-nfs-share';
 export * as dataIonoscloudNic from './data-ionoscloud-nic';
+export * as dataIonoscloudNsg from './data-ionoscloud-nsg';
 export * as dataIonoscloudPgBackups from './data-ionoscloud-pg-backups';
 export * as dataIonoscloudPgCluster from './data-ionoscloud-pg-cluster';
 export * as dataIonoscloudPgDatabase from './data-ionoscloud-pg-database';

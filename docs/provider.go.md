@@ -4,7 +4,7 @@
 
 ### IonoscloudProvider <a name="IonoscloudProvider" id="@cdktf/provider-ionoscloud.provider.IonoscloudProvider"></a>
 
-Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.1/docs ionoscloud}.
+Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.2/docs ionoscloud}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.provider.IonoscloudProvider.Initializer"></a>
 
@@ -60,6 +60,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-ionoscloud.provider.IonoscloudProvider.resetAlias">ResetAlias</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.provider.IonoscloudProvider.resetContractNumber">ResetContractNumber</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.provider.IonoscloudProvider.resetEndpoint">ResetEndpoint</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.provider.IonoscloudProvider.resetInsecure">ResetInsecure</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.provider.IonoscloudProvider.resetPassword">ResetPassword</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.provider.IonoscloudProvider.resetRetries">ResetRetries</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.provider.IonoscloudProvider.resetS3AccessKey">ResetS3AccessKey</a></code> | *No description.* |
@@ -156,6 +157,12 @@ func ResetContractNumber()
 
 ```go
 func ResetEndpoint()
+```
+
+##### `ResetInsecure` <a name="ResetInsecure" id="@cdktf/provider-ionoscloud.provider.IonoscloudProvider.resetInsecure"></a>
+
+```go
+func ResetInsecure()
 ```
 
 ##### `ResetPassword` <a name="ResetPassword" id="@cdktf/provider-ionoscloud.provider.IonoscloudProvider.resetPassword"></a>
@@ -303,7 +310,7 @@ The construct id used in the generated config for the IonoscloudProvider to impo
 
 The id of the existing IonoscloudProvider that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.1/docs#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.2/docs#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -331,6 +338,7 @@ Refer to the {@link https://registry.terraform.io/providers/ionos-cloud/ionosclo
 | <code><a href="#@cdktf/provider-ionoscloud.provider.IonoscloudProvider.property.aliasInput">AliasInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.provider.IonoscloudProvider.property.contractNumberInput">ContractNumberInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.provider.IonoscloudProvider.property.endpointInput">EndpointInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.provider.IonoscloudProvider.property.insecureInput">InsecureInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.provider.IonoscloudProvider.property.passwordInput">PasswordInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.provider.IonoscloudProvider.property.retriesInput">RetriesInput</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.provider.IonoscloudProvider.property.s3AccessKeyInput">S3AccessKeyInput</a></code> | <code>*string</code> | *No description.* |
@@ -340,6 +348,7 @@ Refer to the {@link https://registry.terraform.io/providers/ionos-cloud/ionosclo
 | <code><a href="#@cdktf/provider-ionoscloud.provider.IonoscloudProvider.property.usernameInput">UsernameInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.provider.IonoscloudProvider.property.contractNumber">ContractNumber</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.provider.IonoscloudProvider.property.endpoint">Endpoint</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.provider.IonoscloudProvider.property.insecure">Insecure</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.provider.IonoscloudProvider.property.password">Password</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.provider.IonoscloudProvider.property.retries">Retries</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.provider.IonoscloudProvider.property.s3AccessKey">S3AccessKey</a></code> | <code>*string</code> | *No description.* |
@@ -472,6 +481,16 @@ func EndpointInput() *string
 
 ---
 
+##### `InsecureInput`<sup>Optional</sup> <a name="InsecureInput" id="@cdktf/provider-ionoscloud.provider.IonoscloudProvider.property.insecureInput"></a>
+
+```go
+func InsecureInput() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
 ##### `PasswordInput`<sup>Optional</sup> <a name="PasswordInput" id="@cdktf/provider-ionoscloud.provider.IonoscloudProvider.property.passwordInput"></a>
 
 ```go
@@ -559,6 +578,16 @@ func Endpoint() *string
 ```
 
 - *Type:* *string
+
+---
+
+##### `Insecure`<sup>Optional</sup> <a name="Insecure" id="@cdktf/provider-ionoscloud.provider.IonoscloudProvider.property.insecure"></a>
+
+```go
+func Insecure() interface{}
+```
+
+- *Type:* interface{}
 
 ---
 
@@ -663,6 +692,7 @@ import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/provider"
 	Alias: *string,
 	ContractNumber: *string,
 	Endpoint: *string,
+	Insecure: interface{},
 	Password: *string,
 	Retries: *f64,
 	S3AccessKey: *string,
@@ -680,8 +710,9 @@ import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/provider"
 | <code><a href="#@cdktf/provider-ionoscloud.provider.IonoscloudProviderConfig.property.alias">Alias</a></code> | <code>*string</code> | Alias name. |
 | <code><a href="#@cdktf/provider-ionoscloud.provider.IonoscloudProviderConfig.property.contractNumber">ContractNumber</a></code> | <code>*string</code> | To be set only for reseller accounts. Allows to run terraform on a contract number under a reseller account. |
 | <code><a href="#@cdktf/provider-ionoscloud.provider.IonoscloudProviderConfig.property.endpoint">Endpoint</a></code> | <code>*string</code> | IonosCloud REST API URL. |
+| <code><a href="#@cdktf/provider-ionoscloud.provider.IonoscloudProviderConfig.property.insecure">Insecure</a></code> | <code>interface{}</code> | This field is to be set only for testing purposes. |
 | <code><a href="#@cdktf/provider-ionoscloud.provider.IonoscloudProviderConfig.property.password">Password</a></code> | <code>*string</code> | IonosCloud password for API operations. If token is provided, token is preferred. |
-| <code><a href="#@cdktf/provider-ionoscloud.provider.IonoscloudProviderConfig.property.retries">Retries</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.1/docs#retries IonoscloudProvider#retries}. |
+| <code><a href="#@cdktf/provider-ionoscloud.provider.IonoscloudProviderConfig.property.retries">Retries</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.2/docs#retries IonoscloudProvider#retries}. |
 | <code><a href="#@cdktf/provider-ionoscloud.provider.IonoscloudProviderConfig.property.s3AccessKey">S3AccessKey</a></code> | <code>*string</code> | Access key for IONOS Object Storage operations. |
 | <code><a href="#@cdktf/provider-ionoscloud.provider.IonoscloudProviderConfig.property.s3Region">S3Region</a></code> | <code>*string</code> | Region for IONOS Object Storage operations. |
 | <code><a href="#@cdktf/provider-ionoscloud.provider.IonoscloudProviderConfig.property.s3SecretKey">S3SecretKey</a></code> | <code>*string</code> | Secret key for IONOS Object Storage operations. |
@@ -700,7 +731,7 @@ Alias *string
 
 Alias name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.1/docs#alias IonoscloudProvider#alias}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.2/docs#alias IonoscloudProvider#alias}
 
 ---
 
@@ -714,7 +745,7 @@ ContractNumber *string
 
 To be set only for reseller accounts. Allows to run terraform on a contract number under a reseller account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.1/docs#contract_number IonoscloudProvider#contract_number}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.2/docs#contract_number IonoscloudProvider#contract_number}
 
 ---
 
@@ -730,7 +761,23 @@ IonosCloud REST API URL.
 
 Usually not necessary to be set, SDKs know internally how to route requests to the API.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.1/docs#endpoint IonoscloudProvider#endpoint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.2/docs#endpoint IonoscloudProvider#endpoint}
+
+---
+
+##### `Insecure`<sup>Optional</sup> <a name="Insecure" id="@cdktf/provider-ionoscloud.provider.IonoscloudProviderConfig.property.insecure"></a>
+
+```go
+Insecure interface{}
+```
+
+- *Type:* interface{}
+
+This field is to be set only for testing purposes.
+
+It is not recommended to set this field in production environments.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.2/docs#insecure IonoscloudProvider#insecure}
 
 ---
 
@@ -744,7 +791,7 @@ Password *string
 
 IonosCloud password for API operations. If token is provided, token is preferred.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.1/docs#password IonoscloudProvider#password}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.2/docs#password IonoscloudProvider#password}
 
 ---
 
@@ -756,7 +803,7 @@ Retries *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.1/docs#retries IonoscloudProvider#retries}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.2/docs#retries IonoscloudProvider#retries}.
 
 ---
 
@@ -770,7 +817,7 @@ S3AccessKey *string
 
 Access key for IONOS Object Storage operations.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.1/docs#s3_access_key IonoscloudProvider#s3_access_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.2/docs#s3_access_key IonoscloudProvider#s3_access_key}
 
 ---
 
@@ -784,7 +831,7 @@ S3Region *string
 
 Region for IONOS Object Storage operations.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.1/docs#s3_region IonoscloudProvider#s3_region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.2/docs#s3_region IonoscloudProvider#s3_region}
 
 ---
 
@@ -798,7 +845,7 @@ S3SecretKey *string
 
 Secret key for IONOS Object Storage operations.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.1/docs#s3_secret_key IonoscloudProvider#s3_secret_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.2/docs#s3_secret_key IonoscloudProvider#s3_secret_key}
 
 ---
 
@@ -812,7 +859,7 @@ Token *string
 
 IonosCloud bearer token for API operations.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.1/docs#token IonoscloudProvider#token}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.2/docs#token IonoscloudProvider#token}
 
 ---
 
@@ -826,7 +873,7 @@ Username *string
 
 IonosCloud username for API operations. If token is provided, token is preferred.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.1/docs#username IonoscloudProvider#username}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.2/docs#username IonoscloudProvider#username}
 
 ---
 

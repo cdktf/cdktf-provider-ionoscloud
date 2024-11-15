@@ -4,7 +4,7 @@
 
 ### KafkaClusterTopic <a name="KafkaClusterTopic" id="@cdktf/provider-ionoscloud.kafkaClusterTopic.KafkaClusterTopic"></a>
 
-Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.1/docs/resources/kafka_cluster_topic ionoscloud_kafka_cluster_topic}.
+Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.2/docs/resources/kafka_cluster_topic ionoscloud_kafka_cluster_topic}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.kafkaClusterTopic.KafkaClusterTopic.Initializer"></a>
 
@@ -24,8 +24,8 @@ KafkaClusterTopic.Builder.create(Construct scope, java.lang.String id)
 //  .provisioners(LocalExecProvisioner)
 //  .provisioners(RemoteExecProvisioner>)
     .clusterId(java.lang.String)
-    .location(java.lang.String)
     .name(java.lang.String)
+//  .location(java.lang.String)
 //  .numberOfPartitions(java.lang.Number)
 //  .replicationFactor(java.lang.Number)
 //  .retentionTime(java.lang.Number)
@@ -46,8 +46,8 @@ KafkaClusterTopic.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-ionoscloud.kafkaClusterTopic.KafkaClusterTopic.Initializer.parameter.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.kafkaClusterTopic.KafkaClusterTopic.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.kafkaClusterTopic.KafkaClusterTopic.Initializer.parameter.clusterId">clusterId</a></code> | <code>java.lang.String</code> | The ID of the Kafka Cluster to which the topic belongs. |
-| <code><a href="#@cdktf/provider-ionoscloud.kafkaClusterTopic.KafkaClusterTopic.Initializer.parameter.location">location</a></code> | <code>java.lang.String</code> | The location of your Kafka Cluster Topic. Supported locations: de/fra, de/txl. |
 | <code><a href="#@cdktf/provider-ionoscloud.kafkaClusterTopic.KafkaClusterTopic.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | The name of your Kafka Cluster Topic. |
+| <code><a href="#@cdktf/provider-ionoscloud.kafkaClusterTopic.KafkaClusterTopic.Initializer.parameter.location">location</a></code> | <code>java.lang.String</code> | The location of your Kafka Cluster Topic. Supported locations: de/fra, de/txl. |
 | <code><a href="#@cdktf/provider-ionoscloud.kafkaClusterTopic.KafkaClusterTopic.Initializer.parameter.numberOfPartitions">numberOfPartitions</a></code> | <code>java.lang.Number</code> | The number of partitions of the topic. |
 | <code><a href="#@cdktf/provider-ionoscloud.kafkaClusterTopic.KafkaClusterTopic.Initializer.parameter.replicationFactor">replicationFactor</a></code> | <code>java.lang.Number</code> | The number of replicas of the topic. |
 | <code><a href="#@cdktf/provider-ionoscloud.kafkaClusterTopic.KafkaClusterTopic.Initializer.parameter.retentionTime">retentionTime</a></code> | <code>java.lang.Number</code> | This configuration controls the maximum time we will retain a log before we will discard old log segments to free up space. |
@@ -122,17 +122,7 @@ Must be unique amongst siblings in the same scope
 
 The ID of the Kafka Cluster to which the topic belongs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.1/docs/resources/kafka_cluster_topic#cluster_id KafkaClusterTopic#cluster_id}
-
----
-
-##### `location`<sup>Required</sup> <a name="location" id="@cdktf/provider-ionoscloud.kafkaClusterTopic.KafkaClusterTopic.Initializer.parameter.location"></a>
-
-- *Type:* java.lang.String
-
-The location of your Kafka Cluster Topic. Supported locations: de/fra, de/txl.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.1/docs/resources/kafka_cluster_topic#location KafkaClusterTopic#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.2/docs/resources/kafka_cluster_topic#cluster_id KafkaClusterTopic#cluster_id}
 
 ---
 
@@ -144,7 +134,17 @@ The name of your Kafka Cluster Topic.
 
 Must be 63 characters or less and must begin and end with an alphanumeric character (`[a-z0-9A-Z]`) with dashes (`-`), underscores (`_`), dots (`.`), and alphanumerics between.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.1/docs/resources/kafka_cluster_topic#name KafkaClusterTopic#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.2/docs/resources/kafka_cluster_topic#name KafkaClusterTopic#name}
+
+---
+
+##### `location`<sup>Optional</sup> <a name="location" id="@cdktf/provider-ionoscloud.kafkaClusterTopic.KafkaClusterTopic.Initializer.parameter.location"></a>
+
+- *Type:* java.lang.String
+
+The location of your Kafka Cluster Topic. Supported locations: de/fra, de/txl.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.2/docs/resources/kafka_cluster_topic#location KafkaClusterTopic#location}
 
 ---
 
@@ -156,7 +156,7 @@ The number of partitions of the topic.
 
 Partitions allow for parallel processing of messages. The partition count must be greater than or equal to the replication factor.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.1/docs/resources/kafka_cluster_topic#number_of_partitions KafkaClusterTopic#number_of_partitions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.2/docs/resources/kafka_cluster_topic#number_of_partitions KafkaClusterTopic#number_of_partitions}
 
 ---
 
@@ -168,7 +168,7 @@ The number of replicas of the topic.
 
 The replication factor determines how many copies of the topic are stored on different brokers. The replication factor must be less than or equal to the number of brokers in the Kafka Cluster.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.1/docs/resources/kafka_cluster_topic#replication_factor KafkaClusterTopic#replication_factor}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.2/docs/resources/kafka_cluster_topic#replication_factor KafkaClusterTopic#replication_factor}
 
 ---
 
@@ -180,7 +180,7 @@ This configuration controls the maximum time we will retain a log before we will
 
 This represents an SLA on how soon consumers must read their data. If set to -1, no time limit is applied.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.1/docs/resources/kafka_cluster_topic#retention_time KafkaClusterTopic#retention_time}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.2/docs/resources/kafka_cluster_topic#retention_time KafkaClusterTopic#retention_time}
 
 ---
 
@@ -192,7 +192,7 @@ This configuration controls the segment file size for the log.
 
 Retention and cleaning is always done a file at a time so a larger segment size means fewer files but less granular control over retention.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.1/docs/resources/kafka_cluster_topic#segment_bytes KafkaClusterTopic#segment_bytes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.2/docs/resources/kafka_cluster_topic#segment_bytes KafkaClusterTopic#segment_bytes}
 
 ---
 
@@ -202,7 +202,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.1/docs/resources/kafka_cluster_topic#timeouts KafkaClusterTopic#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.2/docs/resources/kafka_cluster_topic#timeouts KafkaClusterTopic#timeouts}
 
 ---
 
@@ -234,6 +234,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 | <code><a href="#@cdktf/provider-ionoscloud.kafkaClusterTopic.KafkaClusterTopic.moveTo">moveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-ionoscloud.kafkaClusterTopic.KafkaClusterTopic.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktf/provider-ionoscloud.kafkaClusterTopic.KafkaClusterTopic.putTimeouts">putTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.kafkaClusterTopic.KafkaClusterTopic.resetLocation">resetLocation</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.kafkaClusterTopic.KafkaClusterTopic.resetNumberOfPartitions">resetNumberOfPartitions</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.kafkaClusterTopic.KafkaClusterTopic.resetReplicationFactor">resetReplicationFactor</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.kafkaClusterTopic.KafkaClusterTopic.resetRetentionTime">resetRetentionTime</a></code> | *No description.* |
@@ -544,6 +545,12 @@ public void putTimeouts(KafkaClusterTopicTimeouts value)
 
 ---
 
+##### `resetLocation` <a name="resetLocation" id="@cdktf/provider-ionoscloud.kafkaClusterTopic.KafkaClusterTopic.resetLocation"></a>
+
+```java
+public void resetLocation()
+```
+
 ##### `resetNumberOfPartitions` <a name="resetNumberOfPartitions" id="@cdktf/provider-ionoscloud.kafkaClusterTopic.KafkaClusterTopic.resetNumberOfPartitions"></a>
 
 ```java
@@ -677,7 +684,7 @@ The construct id used in the generated config for the KafkaClusterTopic to impor
 
 The id of the existing KafkaClusterTopic that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.1/docs/resources/kafka_cluster_topic#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.2/docs/resources/kafka_cluster_topic#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1079,8 +1086,8 @@ KafkaClusterTopicConfig.builder()
 //  .provisioners(LocalExecProvisioner)
 //  .provisioners(RemoteExecProvisioner>)
     .clusterId(java.lang.String)
-    .location(java.lang.String)
     .name(java.lang.String)
+//  .location(java.lang.String)
 //  .numberOfPartitions(java.lang.Number)
 //  .replicationFactor(java.lang.Number)
 //  .retentionTime(java.lang.Number)
@@ -1101,8 +1108,8 @@ KafkaClusterTopicConfig.builder()
 | <code><a href="#@cdktf/provider-ionoscloud.kafkaClusterTopic.KafkaClusterTopicConfig.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.kafkaClusterTopic.KafkaClusterTopicConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.kafkaClusterTopic.KafkaClusterTopicConfig.property.clusterId">clusterId</a></code> | <code>java.lang.String</code> | The ID of the Kafka Cluster to which the topic belongs. |
-| <code><a href="#@cdktf/provider-ionoscloud.kafkaClusterTopic.KafkaClusterTopicConfig.property.location">location</a></code> | <code>java.lang.String</code> | The location of your Kafka Cluster Topic. Supported locations: de/fra, de/txl. |
 | <code><a href="#@cdktf/provider-ionoscloud.kafkaClusterTopic.KafkaClusterTopicConfig.property.name">name</a></code> | <code>java.lang.String</code> | The name of your Kafka Cluster Topic. |
+| <code><a href="#@cdktf/provider-ionoscloud.kafkaClusterTopic.KafkaClusterTopicConfig.property.location">location</a></code> | <code>java.lang.String</code> | The location of your Kafka Cluster Topic. Supported locations: de/fra, de/txl. |
 | <code><a href="#@cdktf/provider-ionoscloud.kafkaClusterTopic.KafkaClusterTopicConfig.property.numberOfPartitions">numberOfPartitions</a></code> | <code>java.lang.Number</code> | The number of partitions of the topic. |
 | <code><a href="#@cdktf/provider-ionoscloud.kafkaClusterTopic.KafkaClusterTopicConfig.property.replicationFactor">replicationFactor</a></code> | <code>java.lang.Number</code> | The number of replicas of the topic. |
 | <code><a href="#@cdktf/provider-ionoscloud.kafkaClusterTopic.KafkaClusterTopicConfig.property.retentionTime">retentionTime</a></code> | <code>java.lang.Number</code> | This configuration controls the maximum time we will retain a log before we will discard old log segments to free up space. |
@@ -1191,21 +1198,7 @@ public java.lang.String getClusterId();
 
 The ID of the Kafka Cluster to which the topic belongs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.1/docs/resources/kafka_cluster_topic#cluster_id KafkaClusterTopic#cluster_id}
-
----
-
-##### `location`<sup>Required</sup> <a name="location" id="@cdktf/provider-ionoscloud.kafkaClusterTopic.KafkaClusterTopicConfig.property.location"></a>
-
-```java
-public java.lang.String getLocation();
-```
-
-- *Type:* java.lang.String
-
-The location of your Kafka Cluster Topic. Supported locations: de/fra, de/txl.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.1/docs/resources/kafka_cluster_topic#location KafkaClusterTopic#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.2/docs/resources/kafka_cluster_topic#cluster_id KafkaClusterTopic#cluster_id}
 
 ---
 
@@ -1221,7 +1214,21 @@ The name of your Kafka Cluster Topic.
 
 Must be 63 characters or less and must begin and end with an alphanumeric character (`[a-z0-9A-Z]`) with dashes (`-`), underscores (`_`), dots (`.`), and alphanumerics between.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.1/docs/resources/kafka_cluster_topic#name KafkaClusterTopic#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.2/docs/resources/kafka_cluster_topic#name KafkaClusterTopic#name}
+
+---
+
+##### `location`<sup>Optional</sup> <a name="location" id="@cdktf/provider-ionoscloud.kafkaClusterTopic.KafkaClusterTopicConfig.property.location"></a>
+
+```java
+public java.lang.String getLocation();
+```
+
+- *Type:* java.lang.String
+
+The location of your Kafka Cluster Topic. Supported locations: de/fra, de/txl.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.2/docs/resources/kafka_cluster_topic#location KafkaClusterTopic#location}
 
 ---
 
@@ -1237,7 +1244,7 @@ The number of partitions of the topic.
 
 Partitions allow for parallel processing of messages. The partition count must be greater than or equal to the replication factor.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.1/docs/resources/kafka_cluster_topic#number_of_partitions KafkaClusterTopic#number_of_partitions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.2/docs/resources/kafka_cluster_topic#number_of_partitions KafkaClusterTopic#number_of_partitions}
 
 ---
 
@@ -1253,7 +1260,7 @@ The number of replicas of the topic.
 
 The replication factor determines how many copies of the topic are stored on different brokers. The replication factor must be less than or equal to the number of brokers in the Kafka Cluster.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.1/docs/resources/kafka_cluster_topic#replication_factor KafkaClusterTopic#replication_factor}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.2/docs/resources/kafka_cluster_topic#replication_factor KafkaClusterTopic#replication_factor}
 
 ---
 
@@ -1269,7 +1276,7 @@ This configuration controls the maximum time we will retain a log before we will
 
 This represents an SLA on how soon consumers must read their data. If set to -1, no time limit is applied.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.1/docs/resources/kafka_cluster_topic#retention_time KafkaClusterTopic#retention_time}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.2/docs/resources/kafka_cluster_topic#retention_time KafkaClusterTopic#retention_time}
 
 ---
 
@@ -1285,7 +1292,7 @@ This configuration controls the segment file size for the log.
 
 Retention and cleaning is always done a file at a time so a larger segment size means fewer files but less granular control over retention.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.1/docs/resources/kafka_cluster_topic#segment_bytes KafkaClusterTopic#segment_bytes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.2/docs/resources/kafka_cluster_topic#segment_bytes KafkaClusterTopic#segment_bytes}
 
 ---
 
@@ -1299,7 +1306,7 @@ public KafkaClusterTopicTimeouts getTimeouts();
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.1/docs/resources/kafka_cluster_topic#timeouts KafkaClusterTopic#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.2/docs/resources/kafka_cluster_topic#timeouts KafkaClusterTopic#timeouts}
 
 ---
 
@@ -1322,10 +1329,10 @@ KafkaClusterTopicTimeouts.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-ionoscloud.kafkaClusterTopic.KafkaClusterTopicTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.1/docs/resources/kafka_cluster_topic#create KafkaClusterTopic#create}. |
-| <code><a href="#@cdktf/provider-ionoscloud.kafkaClusterTopic.KafkaClusterTopicTimeouts.property.default">default</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.1/docs/resources/kafka_cluster_topic#default KafkaClusterTopic#default}. |
-| <code><a href="#@cdktf/provider-ionoscloud.kafkaClusterTopic.KafkaClusterTopicTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.1/docs/resources/kafka_cluster_topic#delete KafkaClusterTopic#delete}. |
-| <code><a href="#@cdktf/provider-ionoscloud.kafkaClusterTopic.KafkaClusterTopicTimeouts.property.update">update</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.1/docs/resources/kafka_cluster_topic#update KafkaClusterTopic#update}. |
+| <code><a href="#@cdktf/provider-ionoscloud.kafkaClusterTopic.KafkaClusterTopicTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.2/docs/resources/kafka_cluster_topic#create KafkaClusterTopic#create}. |
+| <code><a href="#@cdktf/provider-ionoscloud.kafkaClusterTopic.KafkaClusterTopicTimeouts.property.default">default</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.2/docs/resources/kafka_cluster_topic#default KafkaClusterTopic#default}. |
+| <code><a href="#@cdktf/provider-ionoscloud.kafkaClusterTopic.KafkaClusterTopicTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.2/docs/resources/kafka_cluster_topic#delete KafkaClusterTopic#delete}. |
+| <code><a href="#@cdktf/provider-ionoscloud.kafkaClusterTopic.KafkaClusterTopicTimeouts.property.update">update</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.2/docs/resources/kafka_cluster_topic#update KafkaClusterTopic#update}. |
 
 ---
 
@@ -1337,7 +1344,7 @@ public java.lang.String getCreate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.1/docs/resources/kafka_cluster_topic#create KafkaClusterTopic#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.2/docs/resources/kafka_cluster_topic#create KafkaClusterTopic#create}.
 
 ---
 
@@ -1349,7 +1356,7 @@ public java.lang.String getDefault();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.1/docs/resources/kafka_cluster_topic#default KafkaClusterTopic#default}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.2/docs/resources/kafka_cluster_topic#default KafkaClusterTopic#default}.
 
 ---
 
@@ -1361,7 +1368,7 @@ public java.lang.String getDelete();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.1/docs/resources/kafka_cluster_topic#delete KafkaClusterTopic#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.2/docs/resources/kafka_cluster_topic#delete KafkaClusterTopic#delete}.
 
 ---
 
@@ -1373,7 +1380,7 @@ public java.lang.String getUpdate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.1/docs/resources/kafka_cluster_topic#update KafkaClusterTopic#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.2/docs/resources/kafka_cluster_topic#update KafkaClusterTopic#update}.
 
 ---
 

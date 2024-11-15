@@ -4,7 +4,7 @@
 
 ### DataIonoscloudNfsShare <a name="DataIonoscloudNfsShare" id="@cdktf/provider-ionoscloud.dataIonoscloudNfsShare.DataIonoscloudNfsShare"></a>
 
-Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.1/docs/data-sources/nfs_share ionoscloud_nfs_share}.
+Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.2/docs/data-sources/nfs_share ionoscloud_nfs_share}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.dataIonoscloudNfsShare.DataIonoscloudNfsShare.Initializer"></a>
 
@@ -71,6 +71,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudNfsShare.DataIonoscloudNfsShare.resetClientGroups">ResetClientGroups</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudNfsShare.DataIonoscloudNfsShare.resetGid">ResetGid</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudNfsShare.DataIonoscloudNfsShare.resetId">ResetId</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudNfsShare.DataIonoscloudNfsShare.resetLocation">ResetLocation</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudNfsShare.DataIonoscloudNfsShare.resetName">ResetName</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudNfsShare.DataIonoscloudNfsShare.resetPartialMatch">ResetPartialMatch</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudNfsShare.DataIonoscloudNfsShare.resetQuota">ResetQuota</a></code> | *No description.* |
@@ -300,6 +301,12 @@ func ResetGid()
 func ResetId()
 ```
 
+##### `ResetLocation` <a name="ResetLocation" id="@cdktf/provider-ionoscloud.dataIonoscloudNfsShare.DataIonoscloudNfsShare.resetLocation"></a>
+
+```go
+func ResetLocation()
+```
+
 ##### `ResetName` <a name="ResetName" id="@cdktf/provider-ionoscloud.dataIonoscloudNfsShare.DataIonoscloudNfsShare.resetName"></a>
 
 ```go
@@ -427,7 +434,7 @@ The construct id used in the generated config for the DataIonoscloudNfsShare to 
 
 The id of the existing DataIonoscloudNfsShare that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.1/docs/data-sources/nfs_share#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.2/docs/data-sources/nfs_share#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -845,7 +852,7 @@ Description *string
 
 Optional description for the clients groups.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.1/docs/data-sources/nfs_share#description DataIonoscloudNfsShare#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.2/docs/data-sources/nfs_share#description DataIonoscloudNfsShare#description}
 
 ---
 
@@ -861,7 +868,7 @@ A singular host allowed to connect to the share.
 
 The host can be specified as IP address and can be either IPv4 or IPv6.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.1/docs/data-sources/nfs_share#hosts DataIonoscloudNfsShare#hosts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.2/docs/data-sources/nfs_share#hosts DataIonoscloudNfsShare#hosts}
 
 ---
 
@@ -877,7 +884,7 @@ The allowed host or network to which the export is being shared.
 
 The IP address can be either IPv4 or IPv6 and has to be given with CIDR notation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.1/docs/data-sources/nfs_share#ip_networks DataIonoscloudNfsShare#ip_networks}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.2/docs/data-sources/nfs_share#ip_networks DataIonoscloudNfsShare#ip_networks}
 
 ---
 
@@ -891,7 +898,7 @@ Nfs interface{}
 
 nfs block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.1/docs/data-sources/nfs_share#nfs DataIonoscloudNfsShare#nfs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.2/docs/data-sources/nfs_share#nfs DataIonoscloudNfsShare#nfs}
 
 ---
 
@@ -927,7 +934,7 @@ The squash mode for the export.
 
 The squash mode can be: none - No squash mode. no mapping, root-anonymous - Map root user to anonymous uid, all-anonymous - Map all users to anonymous uid.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.1/docs/data-sources/nfs_share#squash DataIonoscloudNfsShare#squash}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.2/docs/data-sources/nfs_share#squash DataIonoscloudNfsShare#squash}
 
 ---
 
@@ -947,10 +954,10 @@ import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/dataionoscl
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
 	ClusterId: *string,
-	Location: *string,
 	ClientGroups: interface{},
 	Gid: *f64,
 	Id: *string,
+	Location: *string,
 	Name: *string,
 	PartialMatch: interface{},
 	Quota: *f64,
@@ -970,10 +977,10 @@ import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/dataionoscl
 | <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudNfsShare.DataIonoscloudNfsShareConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudNfsShare.DataIonoscloudNfsShareConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudNfsShare.DataIonoscloudNfsShareConfig.property.clusterId">ClusterId</a></code> | <code>*string</code> | The ID of the Network File Storage Cluster. |
-| <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudNfsShare.DataIonoscloudNfsShareConfig.property.location">Location</a></code> | <code>*string</code> | The location of the Network File Storage Cluster. Available locations: 'de/fra, 'de/txl'. |
 | <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudNfsShare.DataIonoscloudNfsShareConfig.property.clientGroups">ClientGroups</a></code> | <code>interface{}</code> | client_groups block. |
 | <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudNfsShare.DataIonoscloudNfsShareConfig.property.gid">Gid</a></code> | <code>*f64</code> | The group ID that will own the exported directory. If not set, **anonymous** (`512`) will be used. |
 | <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudNfsShare.DataIonoscloudNfsShareConfig.property.id">Id</a></code> | <code>*string</code> | The ID of the Network File Storage Share. |
+| <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudNfsShare.DataIonoscloudNfsShareConfig.property.location">Location</a></code> | <code>*string</code> | The location of the Network File Storage Cluster. Available locations: 'de/fra, 'de/txl'. |
 | <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudNfsShare.DataIonoscloudNfsShareConfig.property.name">Name</a></code> | <code>*string</code> | The name of the Network File Storage Share. |
 | <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudNfsShare.DataIonoscloudNfsShareConfig.property.partialMatch">PartialMatch</a></code> | <code>interface{}</code> | Whether partial matching is allowed or not when using the name filter. |
 | <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudNfsShare.DataIonoscloudNfsShareConfig.property.quota">Quota</a></code> | <code>*f64</code> | The quota in MiB for the export. |
@@ -1061,21 +1068,7 @@ ClusterId *string
 
 The ID of the Network File Storage Cluster.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.1/docs/data-sources/nfs_share#cluster_id DataIonoscloudNfsShare#cluster_id}
-
----
-
-##### `Location`<sup>Required</sup> <a name="Location" id="@cdktf/provider-ionoscloud.dataIonoscloudNfsShare.DataIonoscloudNfsShareConfig.property.location"></a>
-
-```go
-Location *string
-```
-
-- *Type:* *string
-
-The location of the Network File Storage Cluster. Available locations: 'de/fra, 'de/txl'.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.1/docs/data-sources/nfs_share#location DataIonoscloudNfsShare#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.2/docs/data-sources/nfs_share#cluster_id DataIonoscloudNfsShare#cluster_id}
 
 ---
 
@@ -1089,7 +1082,7 @@ ClientGroups interface{}
 
 client_groups block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.1/docs/data-sources/nfs_share#client_groups DataIonoscloudNfsShare#client_groups}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.2/docs/data-sources/nfs_share#client_groups DataIonoscloudNfsShare#client_groups}
 
 ---
 
@@ -1103,7 +1096,7 @@ Gid *f64
 
 The group ID that will own the exported directory. If not set, **anonymous** (`512`) will be used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.1/docs/data-sources/nfs_share#gid DataIonoscloudNfsShare#gid}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.2/docs/data-sources/nfs_share#gid DataIonoscloudNfsShare#gid}
 
 ---
 
@@ -1117,10 +1110,24 @@ Id *string
 
 The ID of the Network File Storage Share.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.1/docs/data-sources/nfs_share#id DataIonoscloudNfsShare#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.2/docs/data-sources/nfs_share#id DataIonoscloudNfsShare#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `Location`<sup>Optional</sup> <a name="Location" id="@cdktf/provider-ionoscloud.dataIonoscloudNfsShare.DataIonoscloudNfsShareConfig.property.location"></a>
+
+```go
+Location *string
+```
+
+- *Type:* *string
+
+The location of the Network File Storage Cluster. Available locations: 'de/fra, 'de/txl'.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.2/docs/data-sources/nfs_share#location DataIonoscloudNfsShare#location}
 
 ---
 
@@ -1134,7 +1141,7 @@ Name *string
 
 The name of the Network File Storage Share.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.1/docs/data-sources/nfs_share#name DataIonoscloudNfsShare#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.2/docs/data-sources/nfs_share#name DataIonoscloudNfsShare#name}
 
 ---
 
@@ -1148,7 +1155,7 @@ PartialMatch interface{}
 
 Whether partial matching is allowed or not when using the name filter.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.1/docs/data-sources/nfs_share#partial_match DataIonoscloudNfsShare#partial_match}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.2/docs/data-sources/nfs_share#partial_match DataIonoscloudNfsShare#partial_match}
 
 ---
 
@@ -1164,7 +1171,7 @@ The quota in MiB for the export.
 
 The quota can restrict the amount of data that can be stored within the export. The quota can be disabled using `0`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.1/docs/data-sources/nfs_share#quota DataIonoscloudNfsShare#quota}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.2/docs/data-sources/nfs_share#quota DataIonoscloudNfsShare#quota}
 
 ---
 
@@ -1178,7 +1185,7 @@ Uid *f64
 
 The user ID that will own the exported directory. If not set, **anonymous** (`512`) will be used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.1/docs/data-sources/nfs_share#uid DataIonoscloudNfsShare#uid}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.2/docs/data-sources/nfs_share#uid DataIonoscloudNfsShare#uid}
 
 ---
 
