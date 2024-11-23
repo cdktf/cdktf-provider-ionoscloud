@@ -4,7 +4,7 @@
 
 ### K8SNodePool <a name="K8SNodePool" id="@cdktf/provider-ionoscloud.k8SNodePool.K8SNodePool"></a>
 
-Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.2/docs/resources/k8s_node_pool ionoscloud_k8s_node_pool}.
+Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.3/docs/resources/k8s_node_pool ionoscloud_k8s_node_pool}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.k8SNodePool.K8SNodePool.Initializer"></a>
 
@@ -582,7 +582,7 @@ The construct id used in the generated config for the K8SNodePool to import.
 
 The id of the existing K8SNodePool that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.2/docs/resources/k8s_node_pool#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.3/docs/resources/k8s_node_pool#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1246,7 +1246,7 @@ public readonly maxNodeCount: number;
 
 The maximum number of worker nodes that the node pool can scale to. Should be greater than min_node_count.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.2/docs/resources/k8s_node_pool#max_node_count K8SNodePool#max_node_count}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.3/docs/resources/k8s_node_pool#max_node_count K8SNodePool#max_node_count}
 
 ---
 
@@ -1260,7 +1260,7 @@ public readonly minNodeCount: number;
 
 The minimum number of worker nodes the node pool can scale down to. Should be less than max_node_count.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.2/docs/resources/k8s_node_pool#min_node_count K8SNodePool#min_node_count}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.3/docs/resources/k8s_node_pool#min_node_count K8SNodePool#min_node_count}
 
 ---
 
@@ -1297,10 +1297,10 @@ const k8SNodePoolConfig: k8SNodePool.K8SNodePoolConfig = { ... }
 | <code><a href="#@cdktf/provider-ionoscloud.k8SNodePool.K8SNodePoolConfig.property.storageSize">storageSize</a></code> | <code>number</code> | The total allocated storage capacity of a node in GB. |
 | <code><a href="#@cdktf/provider-ionoscloud.k8SNodePool.K8SNodePoolConfig.property.storageType">storageType</a></code> | <code>string</code> | Storage type to use. |
 | <code><a href="#@cdktf/provider-ionoscloud.k8SNodePool.K8SNodePoolConfig.property.allowReplace">allowReplace</a></code> | <code>boolean \| cdktf.IResolvable</code> | When set to true, allows the update of immutable fields by destroying and re-creating the node pool. |
-| <code><a href="#@cdktf/provider-ionoscloud.k8SNodePool.K8SNodePoolConfig.property.annotations">annotations</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.2/docs/resources/k8s_node_pool#annotations K8SNodePool#annotations}. |
+| <code><a href="#@cdktf/provider-ionoscloud.k8SNodePool.K8SNodePoolConfig.property.annotations">annotations</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.3/docs/resources/k8s_node_pool#annotations K8SNodePool#annotations}. |
 | <code><a href="#@cdktf/provider-ionoscloud.k8SNodePool.K8SNodePoolConfig.property.autoScaling">autoScaling</a></code> | <code><a href="#@cdktf/provider-ionoscloud.k8SNodePool.K8SNodePoolAutoScaling">K8SNodePoolAutoScaling</a></code> | auto_scaling block. |
-| <code><a href="#@cdktf/provider-ionoscloud.k8SNodePool.K8SNodePoolConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.2/docs/resources/k8s_node_pool#id K8SNodePool#id}. |
-| <code><a href="#@cdktf/provider-ionoscloud.k8SNodePool.K8SNodePoolConfig.property.labels">labels</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.2/docs/resources/k8s_node_pool#labels K8SNodePool#labels}. |
+| <code><a href="#@cdktf/provider-ionoscloud.k8SNodePool.K8SNodePoolConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.3/docs/resources/k8s_node_pool#id K8SNodePool#id}. |
+| <code><a href="#@cdktf/provider-ionoscloud.k8SNodePool.K8SNodePoolConfig.property.labels">labels</a></code> | <code>{[ key: string ]: string}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.3/docs/resources/k8s_node_pool#labels K8SNodePool#labels}. |
 | <code><a href="#@cdktf/provider-ionoscloud.k8SNodePool.K8SNodePoolConfig.property.lans">lans</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-ionoscloud.k8SNodePool.K8SNodePoolLans">K8SNodePoolLans</a>[]</code> | lans block. |
 | <code><a href="#@cdktf/provider-ionoscloud.k8SNodePool.K8SNodePoolConfig.property.maintenanceWindow">maintenanceWindow</a></code> | <code><a href="#@cdktf/provider-ionoscloud.k8SNodePool.K8SNodePoolMaintenanceWindow">K8SNodePoolMaintenanceWindow</a></code> | maintenance_window block. |
 | <code><a href="#@cdktf/provider-ionoscloud.k8SNodePool.K8SNodePoolConfig.property.publicIps">publicIps</a></code> | <code>string[]</code> | A list of fixed IPs. Cannot be set on private clusters. |
@@ -1388,7 +1388,7 @@ public readonly availabilityZone: string;
 
 The compute availability zone in which the nodes should exist.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.2/docs/resources/k8s_node_pool#availability_zone K8SNodePool#availability_zone}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.3/docs/resources/k8s_node_pool#availability_zone K8SNodePool#availability_zone}
 
 ---
 
@@ -1402,7 +1402,7 @@ public readonly coresCount: number;
 
 CPU cores count.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.2/docs/resources/k8s_node_pool#cores_count K8SNodePool#cores_count}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.3/docs/resources/k8s_node_pool#cores_count K8SNodePool#cores_count}
 
 ---
 
@@ -1416,7 +1416,7 @@ public readonly cpuFamily: string;
 
 CPU Family.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.2/docs/resources/k8s_node_pool#cpu_family K8SNodePool#cpu_family}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.3/docs/resources/k8s_node_pool#cpu_family K8SNodePool#cpu_family}
 
 ---
 
@@ -1430,7 +1430,7 @@ public readonly datacenterId: string;
 
 The UUID of the VDC.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.2/docs/resources/k8s_node_pool#datacenter_id K8SNodePool#datacenter_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.3/docs/resources/k8s_node_pool#datacenter_id K8SNodePool#datacenter_id}
 
 ---
 
@@ -1444,7 +1444,7 @@ public readonly k8SClusterId: string;
 
 The UUID of an existing kubernetes cluster.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.2/docs/resources/k8s_node_pool#k8s_cluster_id K8SNodePool#k8s_cluster_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.3/docs/resources/k8s_node_pool#k8s_cluster_id K8SNodePool#k8s_cluster_id}
 
 ---
 
@@ -1460,7 +1460,7 @@ The desired Kubernetes Version.
 
 For supported values, please check the API documentation. Downgrades are not supported. The provider will ignore downgrades of patch level.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.2/docs/resources/k8s_node_pool#k8s_version K8SNodePool#k8s_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.3/docs/resources/k8s_node_pool#k8s_version K8SNodePool#k8s_version}
 
 ---
 
@@ -1474,7 +1474,7 @@ public readonly name: string;
 
 The desired name for the node pool.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.2/docs/resources/k8s_node_pool#name K8SNodePool#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.3/docs/resources/k8s_node_pool#name K8SNodePool#name}
 
 ---
 
@@ -1488,7 +1488,7 @@ public readonly nodeCount: number;
 
 The number of nodes in this node pool.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.2/docs/resources/k8s_node_pool#node_count K8SNodePool#node_count}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.3/docs/resources/k8s_node_pool#node_count K8SNodePool#node_count}
 
 ---
 
@@ -1502,7 +1502,7 @@ public readonly ramSize: number;
 
 The amount of RAM in MB.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.2/docs/resources/k8s_node_pool#ram_size K8SNodePool#ram_size}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.3/docs/resources/k8s_node_pool#ram_size K8SNodePool#ram_size}
 
 ---
 
@@ -1516,7 +1516,7 @@ public readonly storageSize: number;
 
 The total allocated storage capacity of a node in GB.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.2/docs/resources/k8s_node_pool#storage_size K8SNodePool#storage_size}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.3/docs/resources/k8s_node_pool#storage_size K8SNodePool#storage_size}
 
 ---
 
@@ -1530,7 +1530,7 @@ public readonly storageType: string;
 
 Storage type to use.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.2/docs/resources/k8s_node_pool#storage_type K8SNodePool#storage_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.3/docs/resources/k8s_node_pool#storage_type K8SNodePool#storage_type}
 
 ---
 
@@ -1544,7 +1544,7 @@ public readonly allowReplace: boolean | IResolvable;
 
 When set to true, allows the update of immutable fields by destroying and re-creating the node pool.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.2/docs/resources/k8s_node_pool#allow_replace K8SNodePool#allow_replace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.3/docs/resources/k8s_node_pool#allow_replace K8SNodePool#allow_replace}
 
 ---
 
@@ -1556,7 +1556,7 @@ public readonly annotations: {[ key: string ]: string};
 
 - *Type:* {[ key: string ]: string}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.2/docs/resources/k8s_node_pool#annotations K8SNodePool#annotations}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.3/docs/resources/k8s_node_pool#annotations K8SNodePool#annotations}.
 
 ---
 
@@ -1570,7 +1570,7 @@ public readonly autoScaling: K8SNodePoolAutoScaling;
 
 auto_scaling block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.2/docs/resources/k8s_node_pool#auto_scaling K8SNodePool#auto_scaling}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.3/docs/resources/k8s_node_pool#auto_scaling K8SNodePool#auto_scaling}
 
 ---
 
@@ -1582,7 +1582,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.2/docs/resources/k8s_node_pool#id K8SNodePool#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.3/docs/resources/k8s_node_pool#id K8SNodePool#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1597,7 +1597,7 @@ public readonly labels: {[ key: string ]: string};
 
 - *Type:* {[ key: string ]: string}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.2/docs/resources/k8s_node_pool#labels K8SNodePool#labels}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.3/docs/resources/k8s_node_pool#labels K8SNodePool#labels}.
 
 ---
 
@@ -1611,7 +1611,7 @@ public readonly lans: IResolvable | K8SNodePoolLans[];
 
 lans block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.2/docs/resources/k8s_node_pool#lans K8SNodePool#lans}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.3/docs/resources/k8s_node_pool#lans K8SNodePool#lans}
 
 ---
 
@@ -1625,7 +1625,7 @@ public readonly maintenanceWindow: K8SNodePoolMaintenanceWindow;
 
 maintenance_window block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.2/docs/resources/k8s_node_pool#maintenance_window K8SNodePool#maintenance_window}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.3/docs/resources/k8s_node_pool#maintenance_window K8SNodePool#maintenance_window}
 
 ---
 
@@ -1639,7 +1639,7 @@ public readonly publicIps: string[];
 
 A list of fixed IPs. Cannot be set on private clusters.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.2/docs/resources/k8s_node_pool#public_ips K8SNodePool#public_ips}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.3/docs/resources/k8s_node_pool#public_ips K8SNodePool#public_ips}
 
 ---
 
@@ -1653,7 +1653,7 @@ public readonly timeouts: K8SNodePoolTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.2/docs/resources/k8s_node_pool#timeouts K8SNodePool#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.3/docs/resources/k8s_node_pool#timeouts K8SNodePool#timeouts}
 
 ---
 
@@ -1687,7 +1687,7 @@ public readonly id: number;
 
 The LAN ID of an existing LAN at the related datacenter.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.2/docs/resources/k8s_node_pool#id K8SNodePool#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.3/docs/resources/k8s_node_pool#id K8SNodePool#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1704,7 +1704,7 @@ public readonly dhcp: boolean | IResolvable;
 
 Indicates if the Kubernetes Node Pool LAN will reserve an IP using DHCP.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.2/docs/resources/k8s_node_pool#dhcp K8SNodePool#dhcp}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.3/docs/resources/k8s_node_pool#dhcp K8SNodePool#dhcp}
 
 ---
 
@@ -1718,7 +1718,7 @@ public readonly routes: IResolvable | K8SNodePoolLansRoutes[];
 
 routes block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.2/docs/resources/k8s_node_pool#routes K8SNodePool#routes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.3/docs/resources/k8s_node_pool#routes K8SNodePool#routes}
 
 ---
 
@@ -1751,7 +1751,7 @@ public readonly gatewayIp: string;
 
 IPv4 or IPv6 Gateway IP for the route.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.2/docs/resources/k8s_node_pool#gateway_ip K8SNodePool#gateway_ip}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.3/docs/resources/k8s_node_pool#gateway_ip K8SNodePool#gateway_ip}
 
 ---
 
@@ -1765,7 +1765,7 @@ public readonly network: string;
 
 IPv4 or IPv6 CIDR to be routed via the interface.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.2/docs/resources/k8s_node_pool#network K8SNodePool#network}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.3/docs/resources/k8s_node_pool#network K8SNodePool#network}
 
 ---
 
@@ -1798,7 +1798,7 @@ public readonly dayOfTheWeek: string;
 
 Day of the week when maintenance is allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.2/docs/resources/k8s_node_pool#day_of_the_week K8SNodePool#day_of_the_week}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.3/docs/resources/k8s_node_pool#day_of_the_week K8SNodePool#day_of_the_week}
 
 ---
 
@@ -1812,7 +1812,7 @@ public readonly time: string;
 
 A clock time in the day when maintenance is allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.2/docs/resources/k8s_node_pool#time K8SNodePool#time}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.3/docs/resources/k8s_node_pool#time K8SNodePool#time}
 
 ---
 
@@ -1830,10 +1830,10 @@ const k8SNodePoolTimeouts: k8SNodePool.K8SNodePoolTimeouts = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-ionoscloud.k8SNodePool.K8SNodePoolTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.2/docs/resources/k8s_node_pool#create K8SNodePool#create}. |
-| <code><a href="#@cdktf/provider-ionoscloud.k8SNodePool.K8SNodePoolTimeouts.property.default">default</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.2/docs/resources/k8s_node_pool#default K8SNodePool#default}. |
-| <code><a href="#@cdktf/provider-ionoscloud.k8SNodePool.K8SNodePoolTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.2/docs/resources/k8s_node_pool#delete K8SNodePool#delete}. |
-| <code><a href="#@cdktf/provider-ionoscloud.k8SNodePool.K8SNodePoolTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.2/docs/resources/k8s_node_pool#update K8SNodePool#update}. |
+| <code><a href="#@cdktf/provider-ionoscloud.k8SNodePool.K8SNodePoolTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.3/docs/resources/k8s_node_pool#create K8SNodePool#create}. |
+| <code><a href="#@cdktf/provider-ionoscloud.k8SNodePool.K8SNodePoolTimeouts.property.default">default</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.3/docs/resources/k8s_node_pool#default K8SNodePool#default}. |
+| <code><a href="#@cdktf/provider-ionoscloud.k8SNodePool.K8SNodePoolTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.3/docs/resources/k8s_node_pool#delete K8SNodePool#delete}. |
+| <code><a href="#@cdktf/provider-ionoscloud.k8SNodePool.K8SNodePoolTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.3/docs/resources/k8s_node_pool#update K8SNodePool#update}. |
 
 ---
 
@@ -1845,7 +1845,7 @@ public readonly create: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.2/docs/resources/k8s_node_pool#create K8SNodePool#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.3/docs/resources/k8s_node_pool#create K8SNodePool#create}.
 
 ---
 
@@ -1857,7 +1857,7 @@ public readonly default: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.2/docs/resources/k8s_node_pool#default K8SNodePool#default}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.3/docs/resources/k8s_node_pool#default K8SNodePool#default}.
 
 ---
 
@@ -1869,7 +1869,7 @@ public readonly delete: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.2/docs/resources/k8s_node_pool#delete K8SNodePool#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.3/docs/resources/k8s_node_pool#delete K8SNodePool#delete}.
 
 ---
 
@@ -1881,7 +1881,7 @@ public readonly update: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.2/docs/resources/k8s_node_pool#update K8SNodePool#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.3/docs/resources/k8s_node_pool#update K8SNodePool#update}.
 
 ---
 

@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.2/docs/data-sources/template
+// https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.3/docs/data-sources/template
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,43 +13,43 @@ import * as cdktf from 'cdktf';
 
 export interface DataIonoscloudTemplateConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.2/docs/data-sources/template#cores DataIonoscloudTemplate#cores}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.3/docs/data-sources/template#cores DataIonoscloudTemplate#cores}
   */
   readonly cores?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.2/docs/data-sources/template#name DataIonoscloudTemplate#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.3/docs/data-sources/template#name DataIonoscloudTemplate#name}
   */
   readonly name?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.2/docs/data-sources/template#ram DataIonoscloudTemplate#ram}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.3/docs/data-sources/template#ram DataIonoscloudTemplate#ram}
   */
   readonly ram?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.2/docs/data-sources/template#storage_size DataIonoscloudTemplate#storage_size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.3/docs/data-sources/template#storage_size DataIonoscloudTemplate#storage_size}
   */
   readonly storageSize?: number;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.2/docs/data-sources/template#timeouts DataIonoscloudTemplate#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.3/docs/data-sources/template#timeouts DataIonoscloudTemplate#timeouts}
   */
   readonly timeouts?: DataIonoscloudTemplateTimeouts;
 }
 export interface DataIonoscloudTemplateTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.2/docs/data-sources/template#create DataIonoscloudTemplate#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.3/docs/data-sources/template#create DataIonoscloudTemplate#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.2/docs/data-sources/template#default DataIonoscloudTemplate#default}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.3/docs/data-sources/template#default DataIonoscloudTemplate#default}
   */
   readonly default?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.2/docs/data-sources/template#delete DataIonoscloudTemplate#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.3/docs/data-sources/template#delete DataIonoscloudTemplate#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.2/docs/data-sources/template#update DataIonoscloudTemplate#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.3/docs/data-sources/template#update DataIonoscloudTemplate#update}
   */
   readonly update?: string;
 }
@@ -230,7 +230,7 @@ export class DataIonoscloudTemplateTimeoutsOutputReference extends cdktf.Complex
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.2/docs/data-sources/template ionoscloud_template}
+* Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.3/docs/data-sources/template ionoscloud_template}
 */
 export class DataIonoscloudTemplate extends cdktf.TerraformDataSource {
 
@@ -246,7 +246,7 @@ export class DataIonoscloudTemplate extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataIonoscloudTemplate resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataIonoscloudTemplate to import
-  * @param importFromId The id of the existing DataIonoscloudTemplate that should be imported. Refer to the {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.2/docs/data-sources/template#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataIonoscloudTemplate that should be imported. Refer to the {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.3/docs/data-sources/template#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataIonoscloudTemplate to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -258,7 +258,7 @@ export class DataIonoscloudTemplate extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.2/docs/data-sources/template ionoscloud_template} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.3/docs/data-sources/template ionoscloud_template} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -269,7 +269,7 @@ export class DataIonoscloudTemplate extends cdktf.TerraformDataSource {
       terraformResourceType: 'ionoscloud_template',
       terraformGeneratorMetadata: {
         providerName: 'ionoscloud',
-        providerVersion: '6.6.2',
+        providerVersion: '6.6.3',
         providerVersionConstraint: '~> 6.2'
       },
       provider: config.provider,

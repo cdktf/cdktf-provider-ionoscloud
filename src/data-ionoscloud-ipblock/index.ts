@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.2/docs/data-sources/ipblock
+// https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.3/docs/data-sources/ipblock
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,41 +13,35 @@ import * as cdktf from 'cdktf';
 
 export interface DataIonoscloudIpblockConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.2/docs/data-sources/ipblock#id DataIonoscloudIpblock#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.3/docs/data-sources/ipblock#id DataIonoscloudIpblock#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.2/docs/data-sources/ipblock#location DataIonoscloudIpblock#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.3/docs/data-sources/ipblock#location DataIonoscloudIpblock#location}
   */
   readonly location?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.2/docs/data-sources/ipblock#name DataIonoscloudIpblock#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.3/docs/data-sources/ipblock#name DataIonoscloudIpblock#name}
   */
   readonly name?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.2/docs/data-sources/ipblock#size DataIonoscloudIpblock#size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.3/docs/data-sources/ipblock#size DataIonoscloudIpblock#size}
   */
   readonly size?: number;
   /**
-  * ip_consumers block
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.2/docs/data-sources/ipblock#ip_consumers DataIonoscloudIpblock#ip_consumers}
-  */
-  readonly ipConsumers?: DataIonoscloudIpblockIpConsumers[] | cdktf.IResolvable;
-  /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.2/docs/data-sources/ipblock#timeouts DataIonoscloudIpblock#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.3/docs/data-sources/ipblock#timeouts DataIonoscloudIpblock#timeouts}
   */
   readonly timeouts?: DataIonoscloudIpblockTimeouts;
 }
 export interface DataIonoscloudIpblockIpConsumers {
 }
 
-export function dataIonoscloudIpblockIpConsumersToTerraform(struct?: DataIonoscloudIpblockIpConsumers | cdktf.IResolvable): any {
+export function dataIonoscloudIpblockIpConsumersToTerraform(struct?: DataIonoscloudIpblockIpConsumers): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -57,7 +51,7 @@ export function dataIonoscloudIpblockIpConsumersToTerraform(struct?: DataIonoscl
 }
 
 
-export function dataIonoscloudIpblockIpConsumersToHclTerraform(struct?: DataIonoscloudIpblockIpConsumers | cdktf.IResolvable): any {
+export function dataIonoscloudIpblockIpConsumersToHclTerraform(struct?: DataIonoscloudIpblockIpConsumers): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -69,7 +63,6 @@ export function dataIonoscloudIpblockIpConsumersToHclTerraform(struct?: DataIono
 
 export class DataIonoscloudIpblockIpConsumersOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -81,27 +74,18 @@ export class DataIonoscloudIpblockIpConsumersOutputReference extends cdktf.Compl
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DataIonoscloudIpblockIpConsumers | cdktf.IResolvable | undefined {
-    if (this.resolvableValue) {
-      return this.resolvableValue;
-    }
+  public get internalValue(): DataIonoscloudIpblockIpConsumers | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataIonoscloudIpblockIpConsumers | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataIonoscloudIpblockIpConsumers | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
-      this.resolvableValue = undefined;
-    }
-    else if (cdktf.Tokenization.isResolvable(value)) {
-      this.isEmptyObject = false;
-      this.resolvableValue = value;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
-      this.resolvableValue = undefined;
     }
   }
 
@@ -152,7 +136,6 @@ export class DataIonoscloudIpblockIpConsumersOutputReference extends cdktf.Compl
 }
 
 export class DataIonoscloudIpblockIpConsumersList extends cdktf.ComplexList {
-  public internalValue? : DataIonoscloudIpblockIpConsumers[] | cdktf.IResolvable
 
   /**
   * @param terraformResource The parent resource
@@ -172,19 +155,19 @@ export class DataIonoscloudIpblockIpConsumersList extends cdktf.ComplexList {
 }
 export interface DataIonoscloudIpblockTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.2/docs/data-sources/ipblock#create DataIonoscloudIpblock#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.3/docs/data-sources/ipblock#create DataIonoscloudIpblock#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.2/docs/data-sources/ipblock#default DataIonoscloudIpblock#default}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.3/docs/data-sources/ipblock#default DataIonoscloudIpblock#default}
   */
   readonly default?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.2/docs/data-sources/ipblock#delete DataIonoscloudIpblock#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.3/docs/data-sources/ipblock#delete DataIonoscloudIpblock#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.2/docs/data-sources/ipblock#update DataIonoscloudIpblock#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.3/docs/data-sources/ipblock#update DataIonoscloudIpblock#update}
   */
   readonly update?: string;
 }
@@ -365,7 +348,7 @@ export class DataIonoscloudIpblockTimeoutsOutputReference extends cdktf.ComplexO
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.2/docs/data-sources/ipblock ionoscloud_ipblock}
+* Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.3/docs/data-sources/ipblock ionoscloud_ipblock}
 */
 export class DataIonoscloudIpblock extends cdktf.TerraformDataSource {
 
@@ -381,7 +364,7 @@ export class DataIonoscloudIpblock extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataIonoscloudIpblock resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataIonoscloudIpblock to import
-  * @param importFromId The id of the existing DataIonoscloudIpblock that should be imported. Refer to the {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.2/docs/data-sources/ipblock#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataIonoscloudIpblock that should be imported. Refer to the {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.3/docs/data-sources/ipblock#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataIonoscloudIpblock to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -393,7 +376,7 @@ export class DataIonoscloudIpblock extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.2/docs/data-sources/ipblock ionoscloud_ipblock} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.3/docs/data-sources/ipblock ionoscloud_ipblock} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -404,7 +387,7 @@ export class DataIonoscloudIpblock extends cdktf.TerraformDataSource {
       terraformResourceType: 'ionoscloud_ipblock',
       terraformGeneratorMetadata: {
         providerName: 'ionoscloud',
-        providerVersion: '6.6.2',
+        providerVersion: '6.6.3',
         providerVersionConstraint: '~> 6.2'
       },
       provider: config.provider,
@@ -419,7 +402,6 @@ export class DataIonoscloudIpblock extends cdktf.TerraformDataSource {
     this._location = config.location;
     this._name = config.name;
     this._size = config.size;
-    this._ipConsumers.internalValue = config.ipConsumers;
     this._timeouts.internalValue = config.timeouts;
   }
 
@@ -427,7 +409,7 @@ export class DataIonoscloudIpblock extends cdktf.TerraformDataSource {
   // ATTRIBUTES
   // ==========
 
-  // id - computed: false, optional: true, required: false
+  // id - computed: true, optional: true, required: false
   private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
@@ -443,12 +425,18 @@ export class DataIonoscloudIpblock extends cdktf.TerraformDataSource {
     return this._id;
   }
 
+  // ip_consumers - computed: true, optional: false, required: false
+  private _ipConsumers = new DataIonoscloudIpblockIpConsumersList(this, "ip_consumers", false);
+  public get ipConsumers() {
+    return this._ipConsumers;
+  }
+
   // ips - computed: true, optional: false, required: false
   public get ips() {
     return this.getListAttribute('ips');
   }
 
-  // location - computed: false, optional: true, required: false
+  // location - computed: true, optional: true, required: false
   private _location?: string; 
   public get location() {
     return this.getStringAttribute('location');
@@ -464,7 +452,7 @@ export class DataIonoscloudIpblock extends cdktf.TerraformDataSource {
     return this._location;
   }
 
-  // name - computed: false, optional: true, required: false
+  // name - computed: true, optional: true, required: false
   private _name?: string; 
   public get name() {
     return this.getStringAttribute('name');
@@ -480,7 +468,7 @@ export class DataIonoscloudIpblock extends cdktf.TerraformDataSource {
     return this._name;
   }
 
-  // size - computed: false, optional: true, required: false
+  // size - computed: true, optional: true, required: false
   private _size?: number; 
   public get size() {
     return this.getNumberAttribute('size');
@@ -494,22 +482,6 @@ export class DataIonoscloudIpblock extends cdktf.TerraformDataSource {
   // Temporarily expose input value. Use with caution.
   public get sizeInput() {
     return this._size;
-  }
-
-  // ip_consumers - computed: false, optional: true, required: false
-  private _ipConsumers = new DataIonoscloudIpblockIpConsumersList(this, "ip_consumers", false);
-  public get ipConsumers() {
-    return this._ipConsumers;
-  }
-  public putIpConsumers(value: DataIonoscloudIpblockIpConsumers[] | cdktf.IResolvable) {
-    this._ipConsumers.internalValue = value;
-  }
-  public resetIpConsumers() {
-    this._ipConsumers.internalValue = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get ipConsumersInput() {
-    return this._ipConsumers.internalValue;
   }
 
   // timeouts - computed: false, optional: true, required: false
@@ -538,7 +510,6 @@ export class DataIonoscloudIpblock extends cdktf.TerraformDataSource {
       location: cdktf.stringToTerraform(this._location),
       name: cdktf.stringToTerraform(this._name),
       size: cdktf.numberToTerraform(this._size),
-      ip_consumers: cdktf.listMapper(dataIonoscloudIpblockIpConsumersToTerraform, true)(this._ipConsumers.internalValue),
       timeouts: dataIonoscloudIpblockTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -568,12 +539,6 @@ export class DataIonoscloudIpblock extends cdktf.TerraformDataSource {
         isBlock: false,
         type: "simple",
         storageClassType: "number",
-      },
-      ip_consumers: {
-        value: cdktf.listMapperHcl(dataIonoscloudIpblockIpConsumersToHclTerraform, true)(this._ipConsumers.internalValue),
-        isBlock: true,
-        type: "list",
-        storageClassType: "DataIonoscloudIpblockIpConsumersList",
       },
       timeouts: {
         value: dataIonoscloudIpblockTimeoutsToHclTerraform(this._timeouts.internalValue),
