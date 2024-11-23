@@ -4,12 +4,12 @@
 
 ### DataIonoscloudKafkaCluster <a name="DataIonoscloudKafkaCluster" id="@cdktf/provider-ionoscloud.dataIonoscloudKafkaCluster.DataIonoscloudKafkaCluster"></a>
 
-Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.2/docs/data-sources/kafka_cluster ionoscloud_kafka_cluster}.
+Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.3/docs/data-sources/kafka_cluster ionoscloud_kafka_cluster}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.dataIonoscloudKafkaCluster.DataIonoscloudKafkaCluster.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/dataionoscloudkafkacluster"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/dataionoscloudkafkacluster"
 
 dataionoscloudkafkacluster.NewDataIonoscloudKafkaCluster(scope Construct, id *string, config DataIonoscloudKafkaClusterConfig) DataIonoscloudKafkaCluster
 ```
@@ -297,7 +297,7 @@ func ResetPartialMatch()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-ionoscloud.dataIonoscloudKafkaCluster.DataIonoscloudKafkaCluster.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/dataionoscloudkafkacluster"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/dataionoscloudkafkacluster"
 
 dataionoscloudkafkacluster.DataIonoscloudKafkaCluster_IsConstruct(x interface{}) *bool
 ```
@@ -329,7 +329,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-ionoscloud.dataIonoscloudKafkaCluster.DataIonoscloudKafkaCluster.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/dataionoscloudkafkacluster"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/dataionoscloudkafkacluster"
 
 dataionoscloudkafkacluster.DataIonoscloudKafkaCluster_IsTerraformElement(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ dataionoscloudkafkacluster.DataIonoscloudKafkaCluster_IsTerraformElement(x inter
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-ionoscloud.dataIonoscloudKafkaCluster.DataIonoscloudKafkaCluster.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/dataionoscloudkafkacluster"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/dataionoscloudkafkacluster"
 
 dataionoscloudkafkacluster.DataIonoscloudKafkaCluster_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -357,7 +357,7 @@ dataionoscloudkafkacluster.DataIonoscloudKafkaCluster_IsTerraformDataSource(x in
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-ionoscloud.dataIonoscloudKafkaCluster.DataIonoscloudKafkaCluster.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/dataionoscloudkafkacluster"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/dataionoscloudkafkacluster"
 
 dataionoscloudkafkacluster.DataIonoscloudKafkaCluster_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -386,7 +386,7 @@ The construct id used in the generated config for the DataIonoscloudKafkaCluster
 
 The id of the existing DataIonoscloudKafkaCluster that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.2/docs/data-sources/kafka_cluster#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.3/docs/data-sources/kafka_cluster#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -696,7 +696,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-ionoscloud.dataIonoscloudKafkaCluster.DataIonoscloudKafkaClusterConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/dataionoscloudkafkacluster"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/dataionoscloudkafkacluster"
 
 &dataionoscloudkafkacluster.DataIonoscloudKafkaClusterConfig {
 	Connection: interface{},
@@ -811,7 +811,7 @@ Location *string
 
 The location of your Kafka Cluster. Supported locations: de/fra, de/txl.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.2/docs/data-sources/kafka_cluster#location DataIonoscloudKafkaCluster#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.3/docs/data-sources/kafka_cluster#location DataIonoscloudKafkaCluster#location}
 
 ---
 
@@ -825,7 +825,7 @@ Id *string
 
 The ID of the Kafka Cluster.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.2/docs/data-sources/kafka_cluster#id DataIonoscloudKafkaCluster#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.3/docs/data-sources/kafka_cluster#id DataIonoscloudKafkaCluster#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -842,7 +842,7 @@ Name *string
 
 The name of the Kafka Cluster.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.2/docs/data-sources/kafka_cluster#name DataIonoscloudKafkaCluster#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.3/docs/data-sources/kafka_cluster#name DataIonoscloudKafkaCluster#name}
 
 ---
 
@@ -856,7 +856,7 @@ PartialMatch interface{}
 
 Whether partial matching is allowed or not when using the name filter.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.2/docs/data-sources/kafka_cluster#partial_match DataIonoscloudKafkaCluster#partial_match}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.3/docs/data-sources/kafka_cluster#partial_match DataIonoscloudKafkaCluster#partial_match}
 
 ---
 
@@ -865,7 +865,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 #### Initializer <a name="Initializer" id="@cdktf/provider-ionoscloud.dataIonoscloudKafkaCluster.DataIonoscloudKafkaClusterConnections.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/dataionoscloudkafkacluster"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/dataionoscloudkafkacluster"
 
 &dataionoscloudkafkacluster.DataIonoscloudKafkaClusterConnections {
 
@@ -880,7 +880,7 @@ import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/dataionoscl
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.dataIonoscloudKafkaCluster.DataIonoscloudKafkaClusterConnectionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/dataionoscloudkafkacluster"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/dataionoscloudkafkacluster"
 
 dataionoscloudkafkacluster.NewDataIonoscloudKafkaClusterConnectionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataIonoscloudKafkaClusterConnectionsList
 ```
@@ -1029,7 +1029,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.dataIonoscloudKafkaCluster.DataIonoscloudKafkaClusterConnectionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/dataionoscloudkafkacluster"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/dataionoscloudkafkacluster"
 
 dataionoscloudkafkacluster.NewDataIonoscloudKafkaClusterConnectionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataIonoscloudKafkaClusterConnectionsOutputReference
 ```

@@ -4,12 +4,12 @@
 
 ### DataIonoscloudS3Key <a name="DataIonoscloudS3Key" id="@cdktf/provider-ionoscloud.dataIonoscloudS3Key.DataIonoscloudS3Key"></a>
 
-Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.2/docs/data-sources/s3_key ionoscloud_s3_key}.
+Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.3/docs/data-sources/s3_key ionoscloud_s3_key}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.dataIonoscloudS3Key.DataIonoscloudS3Key.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/dataionosclouds3key"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/dataionosclouds3key"
 
 dataionosclouds3key.NewDataIonoscloudS3Key(scope Construct, id *string, config DataIonoscloudS3KeyConfig) DataIonoscloudS3Key
 ```
@@ -68,8 +68,6 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudS3Key.DataIonoscloudS3Key.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudS3Key.DataIonoscloudS3Key.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudS3Key.DataIonoscloudS3Key.putTimeouts">PutTimeouts</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudS3Key.DataIonoscloudS3Key.resetActive">ResetActive</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudS3Key.DataIonoscloudS3Key.resetId">ResetId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudS3Key.DataIonoscloudS3Key.resetTimeouts">ResetTimeouts</a></code> | *No description.* |
 
 ---
@@ -278,18 +276,6 @@ func PutTimeouts(value DataIonoscloudS3KeyTimeouts)
 
 ---
 
-##### `ResetActive` <a name="ResetActive" id="@cdktf/provider-ionoscloud.dataIonoscloudS3Key.DataIonoscloudS3Key.resetActive"></a>
-
-```go
-func ResetActive()
-```
-
-##### `ResetId` <a name="ResetId" id="@cdktf/provider-ionoscloud.dataIonoscloudS3Key.DataIonoscloudS3Key.resetId"></a>
-
-```go
-func ResetId()
-```
-
 ##### `ResetTimeouts` <a name="ResetTimeouts" id="@cdktf/provider-ionoscloud.dataIonoscloudS3Key.DataIonoscloudS3Key.resetTimeouts"></a>
 
 ```go
@@ -310,7 +296,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-ionoscloud.dataIonoscloudS3Key.DataIonoscloudS3Key.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/dataionosclouds3key"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/dataionosclouds3key"
 
 dataionosclouds3key.DataIonoscloudS3Key_IsConstruct(x interface{}) *bool
 ```
@@ -342,7 +328,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-ionoscloud.dataIonoscloudS3Key.DataIonoscloudS3Key.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/dataionosclouds3key"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/dataionosclouds3key"
 
 dataionosclouds3key.DataIonoscloudS3Key_IsTerraformElement(x interface{}) *bool
 ```
@@ -356,7 +342,7 @@ dataionosclouds3key.DataIonoscloudS3Key_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-ionoscloud.dataIonoscloudS3Key.DataIonoscloudS3Key.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/dataionosclouds3key"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/dataionosclouds3key"
 
 dataionosclouds3key.DataIonoscloudS3Key_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -370,7 +356,7 @@ dataionosclouds3key.DataIonoscloudS3Key_IsTerraformDataSource(x interface{}) *bo
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-ionoscloud.dataIonoscloudS3Key.DataIonoscloudS3Key.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/dataionosclouds3key"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/dataionosclouds3key"
 
 dataionosclouds3key.DataIonoscloudS3Key_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -399,7 +385,7 @@ The construct id used in the generated config for the DataIonoscloudS3Key to imp
 
 The id of the existing DataIonoscloudS3Key that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.2/docs/data-sources/s3_key#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.3/docs/data-sources/s3_key#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -427,13 +413,12 @@ Refer to the {@link https://registry.terraform.io/providers/ionos-cloud/ionosclo
 | <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudS3Key.DataIonoscloudS3Key.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudS3Key.DataIonoscloudS3Key.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudS3Key.DataIonoscloudS3Key.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudS3Key.DataIonoscloudS3Key.property.active">Active</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudS3Key.DataIonoscloudS3Key.property.secretKey">SecretKey</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudS3Key.DataIonoscloudS3Key.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudS3Key.DataIonoscloudS3KeyTimeoutsOutputReference">DataIonoscloudS3KeyTimeoutsOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudS3Key.DataIonoscloudS3Key.property.activeInput">ActiveInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudS3Key.DataIonoscloudS3Key.property.idInput">IdInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudS3Key.DataIonoscloudS3Key.property.timeoutsInput">TimeoutsInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudS3Key.DataIonoscloudS3Key.property.userIdInput">UserIdInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudS3Key.DataIonoscloudS3Key.property.active">Active</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudS3Key.DataIonoscloudS3Key.property.id">Id</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudS3Key.DataIonoscloudS3Key.property.userId">UserId</a></code> | <code>*string</code> | *No description.* |
 
@@ -561,6 +546,16 @@ func Provider() TerraformProvider
 
 ---
 
+##### `Active`<sup>Required</sup> <a name="Active" id="@cdktf/provider-ionoscloud.dataIonoscloudS3Key.DataIonoscloudS3Key.property.active"></a>
+
+```go
+func Active() IResolvable
+```
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IResolvable
+
+---
+
 ##### `SecretKey`<sup>Required</sup> <a name="SecretKey" id="@cdktf/provider-ionoscloud.dataIonoscloudS3Key.DataIonoscloudS3Key.property.secretKey"></a>
 
 ```go
@@ -578,16 +573,6 @@ func Timeouts() DataIonoscloudS3KeyTimeoutsOutputReference
 ```
 
 - *Type:* <a href="#@cdktf/provider-ionoscloud.dataIonoscloudS3Key.DataIonoscloudS3KeyTimeoutsOutputReference">DataIonoscloudS3KeyTimeoutsOutputReference</a>
-
----
-
-##### `ActiveInput`<sup>Optional</sup> <a name="ActiveInput" id="@cdktf/provider-ionoscloud.dataIonoscloudS3Key.DataIonoscloudS3Key.property.activeInput"></a>
-
-```go
-func ActiveInput() interface{}
-```
-
-- *Type:* interface{}
 
 ---
 
@@ -618,16 +603,6 @@ func UserIdInput() *string
 ```
 
 - *Type:* *string
-
----
-
-##### `Active`<sup>Required</sup> <a name="Active" id="@cdktf/provider-ionoscloud.dataIonoscloudS3Key.DataIonoscloudS3Key.property.active"></a>
-
-```go
-func Active() interface{}
-```
-
-- *Type:* interface{}
 
 ---
 
@@ -676,7 +651,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-ionoscloud.dataIonoscloudS3Key.DataIonoscloudS3KeyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/dataionosclouds3key"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/dataionosclouds3key"
 
 &dataionosclouds3key.DataIonoscloudS3KeyConfig {
 	Connection: interface{},
@@ -686,10 +661,9 @@ import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/dataionoscl
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
-	UserId: *string,
-	Active: interface{},
 	Id: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11.dataIonoscloudS3Key.DataIonoscloudS3KeyTimeouts,
+	UserId: *string,
+	Timeouts: github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud.dataIonoscloudS3Key.DataIonoscloudS3KeyTimeouts,
 }
 ```
 
@@ -704,9 +678,8 @@ import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/dataionoscl
 | <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudS3Key.DataIonoscloudS3KeyConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudS3Key.DataIonoscloudS3KeyConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudS3Key.DataIonoscloudS3KeyConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudS3Key.DataIonoscloudS3KeyConfig.property.userId">UserId</a></code> | <code>*string</code> | The ID of the user that owns the key. |
-| <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudS3Key.DataIonoscloudS3KeyConfig.property.active">Active</a></code> | <code>interface{}</code> | Whether this key should be active or not. |
 | <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudS3Key.DataIonoscloudS3KeyConfig.property.id">Id</a></code> | <code>*string</code> | Id of the key. |
+| <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudS3Key.DataIonoscloudS3KeyConfig.property.userId">UserId</a></code> | <code>*string</code> | The ID of the user that owns the key. |
 | <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudS3Key.DataIonoscloudS3KeyConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudS3Key.DataIonoscloudS3KeyTimeouts">DataIonoscloudS3KeyTimeouts</a></code> | timeouts block. |
 
 ---
@@ -781,6 +754,23 @@ Provisioners *[]interface{}
 
 ---
 
+##### `Id`<sup>Required</sup> <a name="Id" id="@cdktf/provider-ionoscloud.dataIonoscloudS3Key.DataIonoscloudS3KeyConfig.property.id"></a>
+
+```go
+Id *string
+```
+
+- *Type:* *string
+
+Id of the key.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.3/docs/data-sources/s3_key#id DataIonoscloudS3Key#id}
+
+Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
 ##### `UserId`<sup>Required</sup> <a name="UserId" id="@cdktf/provider-ionoscloud.dataIonoscloudS3Key.DataIonoscloudS3KeyConfig.property.userId"></a>
 
 ```go
@@ -791,38 +781,7 @@ UserId *string
 
 The ID of the user that owns the key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.2/docs/data-sources/s3_key#user_id DataIonoscloudS3Key#user_id}
-
----
-
-##### `Active`<sup>Optional</sup> <a name="Active" id="@cdktf/provider-ionoscloud.dataIonoscloudS3Key.DataIonoscloudS3KeyConfig.property.active"></a>
-
-```go
-Active interface{}
-```
-
-- *Type:* interface{}
-
-Whether this key should be active or not.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.2/docs/data-sources/s3_key#active DataIonoscloudS3Key#active}
-
----
-
-##### `Id`<sup>Optional</sup> <a name="Id" id="@cdktf/provider-ionoscloud.dataIonoscloudS3Key.DataIonoscloudS3KeyConfig.property.id"></a>
-
-```go
-Id *string
-```
-
-- *Type:* *string
-
-Id of the key.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.2/docs/data-sources/s3_key#id DataIonoscloudS3Key#id}
-
-Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.3/docs/data-sources/s3_key#user_id DataIonoscloudS3Key#user_id}
 
 ---
 
@@ -836,7 +795,7 @@ Timeouts DataIonoscloudS3KeyTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.2/docs/data-sources/s3_key#timeouts DataIonoscloudS3Key#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.3/docs/data-sources/s3_key#timeouts DataIonoscloudS3Key#timeouts}
 
 ---
 
@@ -845,7 +804,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 #### Initializer <a name="Initializer" id="@cdktf/provider-ionoscloud.dataIonoscloudS3Key.DataIonoscloudS3KeyTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/dataionosclouds3key"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/dataionosclouds3key"
 
 &dataionosclouds3key.DataIonoscloudS3KeyTimeouts {
 	Create: *string,
@@ -859,10 +818,10 @@ import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/dataionoscl
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudS3Key.DataIonoscloudS3KeyTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.2/docs/data-sources/s3_key#create DataIonoscloudS3Key#create}. |
-| <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudS3Key.DataIonoscloudS3KeyTimeouts.property.default">Default</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.2/docs/data-sources/s3_key#default DataIonoscloudS3Key#default}. |
-| <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudS3Key.DataIonoscloudS3KeyTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.2/docs/data-sources/s3_key#delete DataIonoscloudS3Key#delete}. |
-| <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudS3Key.DataIonoscloudS3KeyTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.2/docs/data-sources/s3_key#update DataIonoscloudS3Key#update}. |
+| <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudS3Key.DataIonoscloudS3KeyTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.3/docs/data-sources/s3_key#create DataIonoscloudS3Key#create}. |
+| <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudS3Key.DataIonoscloudS3KeyTimeouts.property.default">Default</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.3/docs/data-sources/s3_key#default DataIonoscloudS3Key#default}. |
+| <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudS3Key.DataIonoscloudS3KeyTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.3/docs/data-sources/s3_key#delete DataIonoscloudS3Key#delete}. |
+| <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudS3Key.DataIonoscloudS3KeyTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.3/docs/data-sources/s3_key#update DataIonoscloudS3Key#update}. |
 
 ---
 
@@ -874,7 +833,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.2/docs/data-sources/s3_key#create DataIonoscloudS3Key#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.3/docs/data-sources/s3_key#create DataIonoscloudS3Key#create}.
 
 ---
 
@@ -886,7 +845,7 @@ Default *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.2/docs/data-sources/s3_key#default DataIonoscloudS3Key#default}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.3/docs/data-sources/s3_key#default DataIonoscloudS3Key#default}.
 
 ---
 
@@ -898,7 +857,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.2/docs/data-sources/s3_key#delete DataIonoscloudS3Key#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.3/docs/data-sources/s3_key#delete DataIonoscloudS3Key#delete}.
 
 ---
 
@@ -910,7 +869,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.2/docs/data-sources/s3_key#update DataIonoscloudS3Key#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.3/docs/data-sources/s3_key#update DataIonoscloudS3Key#update}.
 
 ---
 
@@ -921,7 +880,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.dataIonoscloudS3Key.DataIonoscloudS3KeyTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/dataionosclouds3key"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/dataionosclouds3key"
 
 dataionosclouds3key.NewDataIonoscloudS3KeyTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataIonoscloudS3KeyTimeoutsOutputReference
 ```

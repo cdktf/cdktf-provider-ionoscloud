@@ -4,12 +4,12 @@
 
 ### CubeServer <a name="CubeServer" id="@cdktf/provider-ionoscloud.cubeServer.CubeServer"></a>
 
-Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.2/docs/resources/cube_server ionoscloud_cube_server}.
+Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.3/docs/resources/cube_server ionoscloud_cube_server}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.cubeServer.CubeServer.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/cubeserver"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/cubeserver"
 
 cubeserver.NewCubeServer(scope Construct, id *string, config CubeServerConfig) CubeServer
 ```
@@ -76,6 +76,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-ionoscloud.cubeServer.CubeServer.putNic">PutNic</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.cubeServer.CubeServer.putTimeouts">PutTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.cubeServer.CubeServer.putVolume">PutVolume</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.cubeServer.CubeServer.resetAllowReplace">ResetAllowReplace</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.cubeServer.CubeServer.resetAvailabilityZone">ResetAvailabilityZone</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.cubeServer.CubeServer.resetBootCdrom">ResetBootCdrom</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.cubeServer.CubeServer.resetBootImage">ResetBootImage</a></code> | *No description.* |
@@ -414,6 +415,12 @@ func PutVolume(value CubeServerVolume)
 
 ---
 
+##### `ResetAllowReplace` <a name="ResetAllowReplace" id="@cdktf/provider-ionoscloud.cubeServer.CubeServer.resetAllowReplace"></a>
+
+```go
+func ResetAllowReplace()
+```
+
 ##### `ResetAvailabilityZone` <a name="ResetAvailabilityZone" id="@cdktf/provider-ionoscloud.cubeServer.CubeServer.resetAvailabilityZone"></a>
 
 ```go
@@ -494,7 +501,7 @@ func ResetVmState()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-ionoscloud.cubeServer.CubeServer.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/cubeserver"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/cubeserver"
 
 cubeserver.CubeServer_IsConstruct(x interface{}) *bool
 ```
@@ -526,7 +533,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-ionoscloud.cubeServer.CubeServer.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/cubeserver"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/cubeserver"
 
 cubeserver.CubeServer_IsTerraformElement(x interface{}) *bool
 ```
@@ -540,7 +547,7 @@ cubeserver.CubeServer_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-ionoscloud.cubeServer.CubeServer.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/cubeserver"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/cubeserver"
 
 cubeserver.CubeServer_IsTerraformResource(x interface{}) *bool
 ```
@@ -554,7 +561,7 @@ cubeserver.CubeServer_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-ionoscloud.cubeServer.CubeServer.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/cubeserver"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/cubeserver"
 
 cubeserver.CubeServer_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -583,7 +590,7 @@ The construct id used in the generated config for the CubeServer to import.
 
 The id of the existing CubeServer that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.2/docs/resources/cube_server#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.3/docs/resources/cube_server#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -621,6 +628,7 @@ Refer to the {@link https://registry.terraform.io/providers/ionos-cloud/ionosclo
 | <code><a href="#@cdktf/provider-ionoscloud.cubeServer.CubeServer.property.primaryNic">PrimaryNic</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.cubeServer.CubeServer.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-ionoscloud.cubeServer.CubeServerTimeoutsOutputReference">CubeServerTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.cubeServer.CubeServer.property.volume">Volume</a></code> | <code><a href="#@cdktf/provider-ionoscloud.cubeServer.CubeServerVolumeOutputReference">CubeServerVolumeOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.cubeServer.CubeServer.property.allowReplaceInput">AllowReplaceInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.cubeServer.CubeServer.property.availabilityZoneInput">AvailabilityZoneInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.cubeServer.CubeServer.property.bootCdromInput">BootCdromInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.cubeServer.CubeServer.property.bootImageInput">BootImageInput</a></code> | <code>*string</code> | *No description.* |
@@ -637,6 +645,7 @@ Refer to the {@link https://registry.terraform.io/providers/ionos-cloud/ionosclo
 | <code><a href="#@cdktf/provider-ionoscloud.cubeServer.CubeServer.property.timeoutsInput">TimeoutsInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.cubeServer.CubeServer.property.vmStateInput">VmStateInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.cubeServer.CubeServer.property.volumeInput">VolumeInput</a></code> | <code><a href="#@cdktf/provider-ionoscloud.cubeServer.CubeServerVolume">CubeServerVolume</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.cubeServer.CubeServer.property.allowReplace">AllowReplace</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.cubeServer.CubeServer.property.availabilityZone">AvailabilityZone</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.cubeServer.CubeServer.property.bootCdrom">BootCdrom</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.cubeServer.CubeServer.property.bootImage">BootImage</a></code> | <code>*string</code> | *No description.* |
@@ -875,6 +884,16 @@ func Volume() CubeServerVolumeOutputReference
 
 ---
 
+##### `AllowReplaceInput`<sup>Optional</sup> <a name="AllowReplaceInput" id="@cdktf/provider-ionoscloud.cubeServer.CubeServer.property.allowReplaceInput"></a>
+
+```go
+func AllowReplaceInput() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
 ##### `AvailabilityZoneInput`<sup>Optional</sup> <a name="AvailabilityZoneInput" id="@cdktf/provider-ionoscloud.cubeServer.CubeServer.property.availabilityZoneInput"></a>
 
 ```go
@@ -1035,6 +1054,16 @@ func VolumeInput() CubeServerVolume
 
 ---
 
+##### `AllowReplace`<sup>Required</sup> <a name="AllowReplace" id="@cdktf/provider-ionoscloud.cubeServer.CubeServer.property.allowReplace"></a>
+
+```go
+func AllowReplace() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
 ##### `AvailabilityZone`<sup>Required</sup> <a name="AvailabilityZone" id="@cdktf/provider-ionoscloud.cubeServer.CubeServer.property.availabilityZone"></a>
 
 ```go
@@ -1190,7 +1219,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-ionoscloud.cubeServer.CubeServerConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/cubeserver"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/cubeserver"
 
 &cubeserver.CubeServerConfig {
 	Connection: interface{},
@@ -1202,9 +1231,10 @@ import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/cubeserver"
 	Provisioners: *[]interface{},
 	DatacenterId: *string,
 	Name: *string,
-	Nic: github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11.cubeServer.CubeServerNic,
+	Nic: github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud.cubeServer.CubeServerNic,
 	TemplateUuid: *string,
-	Volume: github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11.cubeServer.CubeServerVolume,
+	Volume: github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud.cubeServer.CubeServerVolume,
+	AllowReplace: interface{},
 	AvailabilityZone: *string,
 	BootCdrom: *string,
 	BootImage: *string,
@@ -1214,7 +1244,7 @@ import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/cubeserver"
 	ImagePassword: *string,
 	SecurityGroupsIds: *[]*string,
 	SshKeyPath: *[]*string,
-	Timeouts: github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11.cubeServer.CubeServerTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud.cubeServer.CubeServerTimeouts,
 	VmState: *string,
 }
 ```
@@ -1230,20 +1260,21 @@ import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/cubeserver"
 | <code><a href="#@cdktf/provider-ionoscloud.cubeServer.CubeServerConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.cubeServer.CubeServerConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.cubeServer.CubeServerConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-ionoscloud.cubeServer.CubeServerConfig.property.datacenterId">DatacenterId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.2/docs/resources/cube_server#datacenter_id CubeServer#datacenter_id}. |
-| <code><a href="#@cdktf/provider-ionoscloud.cubeServer.CubeServerConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.2/docs/resources/cube_server#name CubeServer#name}. |
+| <code><a href="#@cdktf/provider-ionoscloud.cubeServer.CubeServerConfig.property.datacenterId">DatacenterId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.3/docs/resources/cube_server#datacenter_id CubeServer#datacenter_id}. |
+| <code><a href="#@cdktf/provider-ionoscloud.cubeServer.CubeServerConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.3/docs/resources/cube_server#name CubeServer#name}. |
 | <code><a href="#@cdktf/provider-ionoscloud.cubeServer.CubeServerConfig.property.nic">Nic</a></code> | <code><a href="#@cdktf/provider-ionoscloud.cubeServer.CubeServerNic">CubeServerNic</a></code> | nic block. |
-| <code><a href="#@cdktf/provider-ionoscloud.cubeServer.CubeServerConfig.property.templateUuid">TemplateUuid</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.2/docs/resources/cube_server#template_uuid CubeServer#template_uuid}. |
+| <code><a href="#@cdktf/provider-ionoscloud.cubeServer.CubeServerConfig.property.templateUuid">TemplateUuid</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.3/docs/resources/cube_server#template_uuid CubeServer#template_uuid}. |
 | <code><a href="#@cdktf/provider-ionoscloud.cubeServer.CubeServerConfig.property.volume">Volume</a></code> | <code><a href="#@cdktf/provider-ionoscloud.cubeServer.CubeServerVolume">CubeServerVolume</a></code> | volume block. |
-| <code><a href="#@cdktf/provider-ionoscloud.cubeServer.CubeServerConfig.property.availabilityZone">AvailabilityZone</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.2/docs/resources/cube_server#availability_zone CubeServer#availability_zone}. |
-| <code><a href="#@cdktf/provider-ionoscloud.cubeServer.CubeServerConfig.property.bootCdrom">BootCdrom</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.2/docs/resources/cube_server#boot_cdrom CubeServer#boot_cdrom}. |
-| <code><a href="#@cdktf/provider-ionoscloud.cubeServer.CubeServerConfig.property.bootImage">BootImage</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.2/docs/resources/cube_server#boot_image CubeServer#boot_image}. |
+| <code><a href="#@cdktf/provider-ionoscloud.cubeServer.CubeServerConfig.property.allowReplace">AllowReplace</a></code> | <code>interface{}</code> | When set to true, allows the update of immutable fields by destroying and re-creating the resource. |
+| <code><a href="#@cdktf/provider-ionoscloud.cubeServer.CubeServerConfig.property.availabilityZone">AvailabilityZone</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.3/docs/resources/cube_server#availability_zone CubeServer#availability_zone}. |
+| <code><a href="#@cdktf/provider-ionoscloud.cubeServer.CubeServerConfig.property.bootCdrom">BootCdrom</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.3/docs/resources/cube_server#boot_cdrom CubeServer#boot_cdrom}. |
+| <code><a href="#@cdktf/provider-ionoscloud.cubeServer.CubeServerConfig.property.bootImage">BootImage</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.3/docs/resources/cube_server#boot_image CubeServer#boot_image}. |
 | <code><a href="#@cdktf/provider-ionoscloud.cubeServer.CubeServerConfig.property.hostname">Hostname</a></code> | <code>*string</code> | The hostname of the resource. |
-| <code><a href="#@cdktf/provider-ionoscloud.cubeServer.CubeServerConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.2/docs/resources/cube_server#id CubeServer#id}. |
-| <code><a href="#@cdktf/provider-ionoscloud.cubeServer.CubeServerConfig.property.imageName">ImageName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.2/docs/resources/cube_server#image_name CubeServer#image_name}. |
-| <code><a href="#@cdktf/provider-ionoscloud.cubeServer.CubeServerConfig.property.imagePassword">ImagePassword</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.2/docs/resources/cube_server#image_password CubeServer#image_password}. |
+| <code><a href="#@cdktf/provider-ionoscloud.cubeServer.CubeServerConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.3/docs/resources/cube_server#id CubeServer#id}. |
+| <code><a href="#@cdktf/provider-ionoscloud.cubeServer.CubeServerConfig.property.imageName">ImageName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.3/docs/resources/cube_server#image_name CubeServer#image_name}. |
+| <code><a href="#@cdktf/provider-ionoscloud.cubeServer.CubeServerConfig.property.imagePassword">ImagePassword</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.3/docs/resources/cube_server#image_password CubeServer#image_password}. |
 | <code><a href="#@cdktf/provider-ionoscloud.cubeServer.CubeServerConfig.property.securityGroupsIds">SecurityGroupsIds</a></code> | <code>*[]*string</code> | The list of Security Group IDs for the server. |
-| <code><a href="#@cdktf/provider-ionoscloud.cubeServer.CubeServerConfig.property.sshKeyPath">SshKeyPath</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.2/docs/resources/cube_server#ssh_key_path CubeServer#ssh_key_path}. |
+| <code><a href="#@cdktf/provider-ionoscloud.cubeServer.CubeServerConfig.property.sshKeyPath">SshKeyPath</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.3/docs/resources/cube_server#ssh_key_path CubeServer#ssh_key_path}. |
 | <code><a href="#@cdktf/provider-ionoscloud.cubeServer.CubeServerConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-ionoscloud.cubeServer.CubeServerTimeouts">CubeServerTimeouts</a></code> | timeouts block. |
 | <code><a href="#@cdktf/provider-ionoscloud.cubeServer.CubeServerConfig.property.vmState">VmState</a></code> | <code>*string</code> | Sets the power state of the cube server. Possible values: `RUNNING` or `SUSPENDED`. |
 
@@ -1327,7 +1358,7 @@ DatacenterId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.2/docs/resources/cube_server#datacenter_id CubeServer#datacenter_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.3/docs/resources/cube_server#datacenter_id CubeServer#datacenter_id}.
 
 ---
 
@@ -1339,7 +1370,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.2/docs/resources/cube_server#name CubeServer#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.3/docs/resources/cube_server#name CubeServer#name}.
 
 ---
 
@@ -1353,7 +1384,7 @@ Nic CubeServerNic
 
 nic block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.2/docs/resources/cube_server#nic CubeServer#nic}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.3/docs/resources/cube_server#nic CubeServer#nic}
 
 ---
 
@@ -1365,7 +1396,7 @@ TemplateUuid *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.2/docs/resources/cube_server#template_uuid CubeServer#template_uuid}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.3/docs/resources/cube_server#template_uuid CubeServer#template_uuid}.
 
 ---
 
@@ -1379,7 +1410,21 @@ Volume CubeServerVolume
 
 volume block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.2/docs/resources/cube_server#volume CubeServer#volume}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.3/docs/resources/cube_server#volume CubeServer#volume}
+
+---
+
+##### `AllowReplace`<sup>Optional</sup> <a name="AllowReplace" id="@cdktf/provider-ionoscloud.cubeServer.CubeServerConfig.property.allowReplace"></a>
+
+```go
+AllowReplace interface{}
+```
+
+- *Type:* interface{}
+
+When set to true, allows the update of immutable fields by destroying and re-creating the resource.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.3/docs/resources/cube_server#allow_replace CubeServer#allow_replace}
 
 ---
 
@@ -1391,7 +1436,7 @@ AvailabilityZone *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.2/docs/resources/cube_server#availability_zone CubeServer#availability_zone}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.3/docs/resources/cube_server#availability_zone CubeServer#availability_zone}.
 
 ---
 
@@ -1403,7 +1448,7 @@ BootCdrom *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.2/docs/resources/cube_server#boot_cdrom CubeServer#boot_cdrom}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.3/docs/resources/cube_server#boot_cdrom CubeServer#boot_cdrom}.
 
 ---
 
@@ -1415,7 +1460,7 @@ BootImage *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.2/docs/resources/cube_server#boot_image CubeServer#boot_image}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.3/docs/resources/cube_server#boot_image CubeServer#boot_image}.
 
 ---
 
@@ -1431,7 +1476,7 @@ The hostname of the resource.
 
 Allowed characters are a-z, 0-9 and - (minus). Hostname should not start with minus and should not be longer than 63 characters. If no value provided explicitly, it will be populated with the name of the server
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.2/docs/resources/cube_server#hostname CubeServer#hostname}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.3/docs/resources/cube_server#hostname CubeServer#hostname}
 
 ---
 
@@ -1443,7 +1488,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.2/docs/resources/cube_server#id CubeServer#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.3/docs/resources/cube_server#id CubeServer#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1458,7 +1503,7 @@ ImageName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.2/docs/resources/cube_server#image_name CubeServer#image_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.3/docs/resources/cube_server#image_name CubeServer#image_name}.
 
 ---
 
@@ -1470,7 +1515,7 @@ ImagePassword *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.2/docs/resources/cube_server#image_password CubeServer#image_password}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.3/docs/resources/cube_server#image_password CubeServer#image_password}.
 
 ---
 
@@ -1484,7 +1529,7 @@ SecurityGroupsIds *[]*string
 
 The list of Security Group IDs for the server.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.2/docs/resources/cube_server#security_groups_ids CubeServer#security_groups_ids}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.3/docs/resources/cube_server#security_groups_ids CubeServer#security_groups_ids}
 
 ---
 
@@ -1496,7 +1541,7 @@ SshKeyPath *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.2/docs/resources/cube_server#ssh_key_path CubeServer#ssh_key_path}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.3/docs/resources/cube_server#ssh_key_path CubeServer#ssh_key_path}.
 
 ---
 
@@ -1510,7 +1555,7 @@ Timeouts CubeServerTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.2/docs/resources/cube_server#timeouts CubeServer#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.3/docs/resources/cube_server#timeouts CubeServer#timeouts}
 
 ---
 
@@ -1524,7 +1569,7 @@ VmState *string
 
 Sets the power state of the cube server. Possible values: `RUNNING` or `SUSPENDED`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.2/docs/resources/cube_server#vm_state CubeServer#vm_state}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.3/docs/resources/cube_server#vm_state CubeServer#vm_state}
 
 ---
 
@@ -1533,13 +1578,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 #### Initializer <a name="Initializer" id="@cdktf/provider-ionoscloud.cubeServer.CubeServerNic.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/cubeserver"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/cubeserver"
 
 &cubeserver.CubeServerNic {
 	Lan: *f64,
 	Dhcp: interface{},
 	Dhcpv6: interface{},
-	Firewall: github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11.cubeServer.CubeServerNicFirewall,
+	Firewall: github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud.cubeServer.CubeServerNicFirewall,
 	FirewallActive: interface{},
 	FirewallType: *string,
 	Ips: *[]*string,
@@ -1554,16 +1599,16 @@ import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/cubeserver"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-ionoscloud.cubeServer.CubeServerNic.property.lan">Lan</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.2/docs/resources/cube_server#lan CubeServer#lan}. |
-| <code><a href="#@cdktf/provider-ionoscloud.cubeServer.CubeServerNic.property.dhcp">Dhcp</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.2/docs/resources/cube_server#dhcp CubeServer#dhcp}. |
+| <code><a href="#@cdktf/provider-ionoscloud.cubeServer.CubeServerNic.property.lan">Lan</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.3/docs/resources/cube_server#lan CubeServer#lan}. |
+| <code><a href="#@cdktf/provider-ionoscloud.cubeServer.CubeServerNic.property.dhcp">Dhcp</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.3/docs/resources/cube_server#dhcp CubeServer#dhcp}. |
 | <code><a href="#@cdktf/provider-ionoscloud.cubeServer.CubeServerNic.property.dhcpv6">Dhcpv6</a></code> | <code>interface{}</code> | Indicates whether this NIC receives an IPv6 address through DHCP. |
 | <code><a href="#@cdktf/provider-ionoscloud.cubeServer.CubeServerNic.property.firewall">Firewall</a></code> | <code><a href="#@cdktf/provider-ionoscloud.cubeServer.CubeServerNicFirewall">CubeServerNicFirewall</a></code> | firewall block. |
-| <code><a href="#@cdktf/provider-ionoscloud.cubeServer.CubeServerNic.property.firewallActive">FirewallActive</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.2/docs/resources/cube_server#firewall_active CubeServer#firewall_active}. |
-| <code><a href="#@cdktf/provider-ionoscloud.cubeServer.CubeServerNic.property.firewallType">FirewallType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.2/docs/resources/cube_server#firewall_type CubeServer#firewall_type}. |
-| <code><a href="#@cdktf/provider-ionoscloud.cubeServer.CubeServerNic.property.ips">Ips</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.2/docs/resources/cube_server#ips CubeServer#ips}. |
+| <code><a href="#@cdktf/provider-ionoscloud.cubeServer.CubeServerNic.property.firewallActive">FirewallActive</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.3/docs/resources/cube_server#firewall_active CubeServer#firewall_active}. |
+| <code><a href="#@cdktf/provider-ionoscloud.cubeServer.CubeServerNic.property.firewallType">FirewallType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.3/docs/resources/cube_server#firewall_type CubeServer#firewall_type}. |
+| <code><a href="#@cdktf/provider-ionoscloud.cubeServer.CubeServerNic.property.ips">Ips</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.3/docs/resources/cube_server#ips CubeServer#ips}. |
 | <code><a href="#@cdktf/provider-ionoscloud.cubeServer.CubeServerNic.property.ipv6CidrBlock">Ipv6CidrBlock</a></code> | <code>*string</code> | IPv6 CIDR block assigned to the NIC. |
 | <code><a href="#@cdktf/provider-ionoscloud.cubeServer.CubeServerNic.property.ipv6Ips">Ipv6Ips</a></code> | <code>*[]*string</code> | Collection for IPv6 addresses assigned to a nic. |
-| <code><a href="#@cdktf/provider-ionoscloud.cubeServer.CubeServerNic.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.2/docs/resources/cube_server#name CubeServer#name}. |
+| <code><a href="#@cdktf/provider-ionoscloud.cubeServer.CubeServerNic.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.3/docs/resources/cube_server#name CubeServer#name}. |
 | <code><a href="#@cdktf/provider-ionoscloud.cubeServer.CubeServerNic.property.securityGroupsIds">SecurityGroupsIds</a></code> | <code>*[]*string</code> | The list of Security Group IDs for the NIC. |
 
 ---
@@ -1576,7 +1621,7 @@ Lan *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.2/docs/resources/cube_server#lan CubeServer#lan}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.3/docs/resources/cube_server#lan CubeServer#lan}.
 
 ---
 
@@ -1588,7 +1633,7 @@ Dhcp interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.2/docs/resources/cube_server#dhcp CubeServer#dhcp}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.3/docs/resources/cube_server#dhcp CubeServer#dhcp}.
 
 ---
 
@@ -1602,7 +1647,7 @@ Dhcpv6 interface{}
 
 Indicates whether this NIC receives an IPv6 address through DHCP.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.2/docs/resources/cube_server#dhcpv6 CubeServer#dhcpv6}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.3/docs/resources/cube_server#dhcpv6 CubeServer#dhcpv6}
 
 ---
 
@@ -1616,7 +1661,7 @@ Firewall CubeServerNicFirewall
 
 firewall block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.2/docs/resources/cube_server#firewall CubeServer#firewall}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.3/docs/resources/cube_server#firewall CubeServer#firewall}
 
 ---
 
@@ -1628,7 +1673,7 @@ FirewallActive interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.2/docs/resources/cube_server#firewall_active CubeServer#firewall_active}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.3/docs/resources/cube_server#firewall_active CubeServer#firewall_active}.
 
 ---
 
@@ -1640,7 +1685,7 @@ FirewallType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.2/docs/resources/cube_server#firewall_type CubeServer#firewall_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.3/docs/resources/cube_server#firewall_type CubeServer#firewall_type}.
 
 ---
 
@@ -1652,7 +1697,7 @@ Ips *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.2/docs/resources/cube_server#ips CubeServer#ips}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.3/docs/resources/cube_server#ips CubeServer#ips}.
 
 ---
 
@@ -1666,7 +1711,7 @@ Ipv6CidrBlock *string
 
 IPv6 CIDR block assigned to the NIC.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.2/docs/resources/cube_server#ipv6_cidr_block CubeServer#ipv6_cidr_block}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.3/docs/resources/cube_server#ipv6_cidr_block CubeServer#ipv6_cidr_block}
 
 ---
 
@@ -1682,7 +1727,7 @@ Collection for IPv6 addresses assigned to a nic.
 
 Explicitly assigned IPv6 addresses need to come from inside the IPv6 CIDR block assigned to the nic.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.2/docs/resources/cube_server#ipv6_ips CubeServer#ipv6_ips}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.3/docs/resources/cube_server#ipv6_ips CubeServer#ipv6_ips}
 
 ---
 
@@ -1694,7 +1739,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.2/docs/resources/cube_server#name CubeServer#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.3/docs/resources/cube_server#name CubeServer#name}.
 
 ---
 
@@ -1708,7 +1753,7 @@ SecurityGroupsIds *[]*string
 
 The list of Security Group IDs for the NIC.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.2/docs/resources/cube_server#security_groups_ids CubeServer#security_groups_ids}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.3/docs/resources/cube_server#security_groups_ids CubeServer#security_groups_ids}
 
 ---
 
@@ -1717,7 +1762,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 #### Initializer <a name="Initializer" id="@cdktf/provider-ionoscloud.cubeServer.CubeServerNicFirewall.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/cubeserver"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/cubeserver"
 
 &cubeserver.CubeServerNicFirewall {
 	Protocol: *string,
@@ -1737,16 +1782,16 @@ import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/cubeserver"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-ionoscloud.cubeServer.CubeServerNicFirewall.property.protocol">Protocol</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.2/docs/resources/cube_server#protocol CubeServer#protocol}. |
-| <code><a href="#@cdktf/provider-ionoscloud.cubeServer.CubeServerNicFirewall.property.icmpCode">IcmpCode</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.2/docs/resources/cube_server#icmp_code CubeServer#icmp_code}. |
-| <code><a href="#@cdktf/provider-ionoscloud.cubeServer.CubeServerNicFirewall.property.icmpType">IcmpType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.2/docs/resources/cube_server#icmp_type CubeServer#icmp_type}. |
-| <code><a href="#@cdktf/provider-ionoscloud.cubeServer.CubeServerNicFirewall.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.2/docs/resources/cube_server#name CubeServer#name}. |
-| <code><a href="#@cdktf/provider-ionoscloud.cubeServer.CubeServerNicFirewall.property.portRangeEnd">PortRangeEnd</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.2/docs/resources/cube_server#port_range_end CubeServer#port_range_end}. |
-| <code><a href="#@cdktf/provider-ionoscloud.cubeServer.CubeServerNicFirewall.property.portRangeStart">PortRangeStart</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.2/docs/resources/cube_server#port_range_start CubeServer#port_range_start}. |
-| <code><a href="#@cdktf/provider-ionoscloud.cubeServer.CubeServerNicFirewall.property.sourceIp">SourceIp</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.2/docs/resources/cube_server#source_ip CubeServer#source_ip}. |
-| <code><a href="#@cdktf/provider-ionoscloud.cubeServer.CubeServerNicFirewall.property.sourceMac">SourceMac</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.2/docs/resources/cube_server#source_mac CubeServer#source_mac}. |
-| <code><a href="#@cdktf/provider-ionoscloud.cubeServer.CubeServerNicFirewall.property.targetIp">TargetIp</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.2/docs/resources/cube_server#target_ip CubeServer#target_ip}. |
-| <code><a href="#@cdktf/provider-ionoscloud.cubeServer.CubeServerNicFirewall.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.2/docs/resources/cube_server#type CubeServer#type}. |
+| <code><a href="#@cdktf/provider-ionoscloud.cubeServer.CubeServerNicFirewall.property.protocol">Protocol</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.3/docs/resources/cube_server#protocol CubeServer#protocol}. |
+| <code><a href="#@cdktf/provider-ionoscloud.cubeServer.CubeServerNicFirewall.property.icmpCode">IcmpCode</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.3/docs/resources/cube_server#icmp_code CubeServer#icmp_code}. |
+| <code><a href="#@cdktf/provider-ionoscloud.cubeServer.CubeServerNicFirewall.property.icmpType">IcmpType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.3/docs/resources/cube_server#icmp_type CubeServer#icmp_type}. |
+| <code><a href="#@cdktf/provider-ionoscloud.cubeServer.CubeServerNicFirewall.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.3/docs/resources/cube_server#name CubeServer#name}. |
+| <code><a href="#@cdktf/provider-ionoscloud.cubeServer.CubeServerNicFirewall.property.portRangeEnd">PortRangeEnd</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.3/docs/resources/cube_server#port_range_end CubeServer#port_range_end}. |
+| <code><a href="#@cdktf/provider-ionoscloud.cubeServer.CubeServerNicFirewall.property.portRangeStart">PortRangeStart</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.3/docs/resources/cube_server#port_range_start CubeServer#port_range_start}. |
+| <code><a href="#@cdktf/provider-ionoscloud.cubeServer.CubeServerNicFirewall.property.sourceIp">SourceIp</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.3/docs/resources/cube_server#source_ip CubeServer#source_ip}. |
+| <code><a href="#@cdktf/provider-ionoscloud.cubeServer.CubeServerNicFirewall.property.sourceMac">SourceMac</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.3/docs/resources/cube_server#source_mac CubeServer#source_mac}. |
+| <code><a href="#@cdktf/provider-ionoscloud.cubeServer.CubeServerNicFirewall.property.targetIp">TargetIp</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.3/docs/resources/cube_server#target_ip CubeServer#target_ip}. |
+| <code><a href="#@cdktf/provider-ionoscloud.cubeServer.CubeServerNicFirewall.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.3/docs/resources/cube_server#type CubeServer#type}. |
 
 ---
 
@@ -1758,7 +1803,7 @@ Protocol *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.2/docs/resources/cube_server#protocol CubeServer#protocol}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.3/docs/resources/cube_server#protocol CubeServer#protocol}.
 
 ---
 
@@ -1770,7 +1815,7 @@ IcmpCode *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.2/docs/resources/cube_server#icmp_code CubeServer#icmp_code}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.3/docs/resources/cube_server#icmp_code CubeServer#icmp_code}.
 
 ---
 
@@ -1782,7 +1827,7 @@ IcmpType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.2/docs/resources/cube_server#icmp_type CubeServer#icmp_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.3/docs/resources/cube_server#icmp_type CubeServer#icmp_type}.
 
 ---
 
@@ -1794,7 +1839,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.2/docs/resources/cube_server#name CubeServer#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.3/docs/resources/cube_server#name CubeServer#name}.
 
 ---
 
@@ -1806,7 +1851,7 @@ PortRangeEnd *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.2/docs/resources/cube_server#port_range_end CubeServer#port_range_end}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.3/docs/resources/cube_server#port_range_end CubeServer#port_range_end}.
 
 ---
 
@@ -1818,7 +1863,7 @@ PortRangeStart *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.2/docs/resources/cube_server#port_range_start CubeServer#port_range_start}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.3/docs/resources/cube_server#port_range_start CubeServer#port_range_start}.
 
 ---
 
@@ -1830,7 +1875,7 @@ SourceIp *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.2/docs/resources/cube_server#source_ip CubeServer#source_ip}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.3/docs/resources/cube_server#source_ip CubeServer#source_ip}.
 
 ---
 
@@ -1842,7 +1887,7 @@ SourceMac *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.2/docs/resources/cube_server#source_mac CubeServer#source_mac}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.3/docs/resources/cube_server#source_mac CubeServer#source_mac}.
 
 ---
 
@@ -1854,7 +1899,7 @@ TargetIp *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.2/docs/resources/cube_server#target_ip CubeServer#target_ip}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.3/docs/resources/cube_server#target_ip CubeServer#target_ip}.
 
 ---
 
@@ -1866,7 +1911,7 @@ Type *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.2/docs/resources/cube_server#type CubeServer#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.3/docs/resources/cube_server#type CubeServer#type}.
 
 ---
 
@@ -1875,7 +1920,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 #### Initializer <a name="Initializer" id="@cdktf/provider-ionoscloud.cubeServer.CubeServerTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/cubeserver"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/cubeserver"
 
 &cubeserver.CubeServerTimeouts {
 	Create: *string,
@@ -1889,10 +1934,10 @@ import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/cubeserver"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-ionoscloud.cubeServer.CubeServerTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.2/docs/resources/cube_server#create CubeServer#create}. |
-| <code><a href="#@cdktf/provider-ionoscloud.cubeServer.CubeServerTimeouts.property.default">Default</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.2/docs/resources/cube_server#default CubeServer#default}. |
-| <code><a href="#@cdktf/provider-ionoscloud.cubeServer.CubeServerTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.2/docs/resources/cube_server#delete CubeServer#delete}. |
-| <code><a href="#@cdktf/provider-ionoscloud.cubeServer.CubeServerTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.2/docs/resources/cube_server#update CubeServer#update}. |
+| <code><a href="#@cdktf/provider-ionoscloud.cubeServer.CubeServerTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.3/docs/resources/cube_server#create CubeServer#create}. |
+| <code><a href="#@cdktf/provider-ionoscloud.cubeServer.CubeServerTimeouts.property.default">Default</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.3/docs/resources/cube_server#default CubeServer#default}. |
+| <code><a href="#@cdktf/provider-ionoscloud.cubeServer.CubeServerTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.3/docs/resources/cube_server#delete CubeServer#delete}. |
+| <code><a href="#@cdktf/provider-ionoscloud.cubeServer.CubeServerTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.3/docs/resources/cube_server#update CubeServer#update}. |
 
 ---
 
@@ -1904,7 +1949,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.2/docs/resources/cube_server#create CubeServer#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.3/docs/resources/cube_server#create CubeServer#create}.
 
 ---
 
@@ -1916,7 +1961,7 @@ Default *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.2/docs/resources/cube_server#default CubeServer#default}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.3/docs/resources/cube_server#default CubeServer#default}.
 
 ---
 
@@ -1928,7 +1973,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.2/docs/resources/cube_server#delete CubeServer#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.3/docs/resources/cube_server#delete CubeServer#delete}.
 
 ---
 
@@ -1940,7 +1985,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.2/docs/resources/cube_server#update CubeServer#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.3/docs/resources/cube_server#update CubeServer#update}.
 
 ---
 
@@ -1949,7 +1994,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 #### Initializer <a name="Initializer" id="@cdktf/provider-ionoscloud.cubeServer.CubeServerVolume.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/cubeserver"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/cubeserver"
 
 &cubeserver.CubeServerVolume {
 	DiskType: *string,
@@ -1968,14 +2013,14 @@ import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/cubeserver"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-ionoscloud.cubeServer.CubeServerVolume.property.diskType">DiskType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.2/docs/resources/cube_server#disk_type CubeServer#disk_type}. |
-| <code><a href="#@cdktf/provider-ionoscloud.cubeServer.CubeServerVolume.property.availabilityZone">AvailabilityZone</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.2/docs/resources/cube_server#availability_zone CubeServer#availability_zone}. |
+| <code><a href="#@cdktf/provider-ionoscloud.cubeServer.CubeServerVolume.property.diskType">DiskType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.3/docs/resources/cube_server#disk_type CubeServer#disk_type}. |
+| <code><a href="#@cdktf/provider-ionoscloud.cubeServer.CubeServerVolume.property.availabilityZone">AvailabilityZone</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.3/docs/resources/cube_server#availability_zone CubeServer#availability_zone}. |
 | <code><a href="#@cdktf/provider-ionoscloud.cubeServer.CubeServerVolume.property.backupUnitId">BackupUnitId</a></code> | <code>*string</code> | The uuid of the Backup Unit that user has access to. |
-| <code><a href="#@cdktf/provider-ionoscloud.cubeServer.CubeServerVolume.property.bus">Bus</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.2/docs/resources/cube_server#bus CubeServer#bus}. |
-| <code><a href="#@cdktf/provider-ionoscloud.cubeServer.CubeServerVolume.property.imagePassword">ImagePassword</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.2/docs/resources/cube_server#image_password CubeServer#image_password}. |
-| <code><a href="#@cdktf/provider-ionoscloud.cubeServer.CubeServerVolume.property.licenceType">LicenceType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.2/docs/resources/cube_server#licence_type CubeServer#licence_type}. |
-| <code><a href="#@cdktf/provider-ionoscloud.cubeServer.CubeServerVolume.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.2/docs/resources/cube_server#name CubeServer#name}. |
-| <code><a href="#@cdktf/provider-ionoscloud.cubeServer.CubeServerVolume.property.sshKeyPath">SshKeyPath</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.2/docs/resources/cube_server#ssh_key_path CubeServer#ssh_key_path}. |
+| <code><a href="#@cdktf/provider-ionoscloud.cubeServer.CubeServerVolume.property.bus">Bus</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.3/docs/resources/cube_server#bus CubeServer#bus}. |
+| <code><a href="#@cdktf/provider-ionoscloud.cubeServer.CubeServerVolume.property.imagePassword">ImagePassword</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.3/docs/resources/cube_server#image_password CubeServer#image_password}. |
+| <code><a href="#@cdktf/provider-ionoscloud.cubeServer.CubeServerVolume.property.licenceType">LicenceType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.3/docs/resources/cube_server#licence_type CubeServer#licence_type}. |
+| <code><a href="#@cdktf/provider-ionoscloud.cubeServer.CubeServerVolume.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.3/docs/resources/cube_server#name CubeServer#name}. |
+| <code><a href="#@cdktf/provider-ionoscloud.cubeServer.CubeServerVolume.property.sshKeyPath">SshKeyPath</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.3/docs/resources/cube_server#ssh_key_path CubeServer#ssh_key_path}. |
 | <code><a href="#@cdktf/provider-ionoscloud.cubeServer.CubeServerVolume.property.userData">UserData</a></code> | <code>*string</code> | The cloud-init configuration for the volume as base64 encoded string. |
 
 ---
@@ -1988,7 +2033,7 @@ DiskType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.2/docs/resources/cube_server#disk_type CubeServer#disk_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.3/docs/resources/cube_server#disk_type CubeServer#disk_type}.
 
 ---
 
@@ -2000,7 +2045,7 @@ AvailabilityZone *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.2/docs/resources/cube_server#availability_zone CubeServer#availability_zone}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.3/docs/resources/cube_server#availability_zone CubeServer#availability_zone}.
 
 ---
 
@@ -2016,7 +2061,7 @@ The uuid of the Backup Unit that user has access to.
 
 The property is immutable and is only allowed to be set on a new volume creation. It is mandatory to provide either 'public image' or 'imageAlias' in conjunction with this property.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.2/docs/resources/cube_server#backup_unit_id CubeServer#backup_unit_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.3/docs/resources/cube_server#backup_unit_id CubeServer#backup_unit_id}
 
 ---
 
@@ -2028,7 +2073,7 @@ Bus *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.2/docs/resources/cube_server#bus CubeServer#bus}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.3/docs/resources/cube_server#bus CubeServer#bus}.
 
 ---
 
@@ -2040,7 +2085,7 @@ ImagePassword *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.2/docs/resources/cube_server#image_password CubeServer#image_password}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.3/docs/resources/cube_server#image_password CubeServer#image_password}.
 
 ---
 
@@ -2052,7 +2097,7 @@ LicenceType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.2/docs/resources/cube_server#licence_type CubeServer#licence_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.3/docs/resources/cube_server#licence_type CubeServer#licence_type}.
 
 ---
 
@@ -2064,7 +2109,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.2/docs/resources/cube_server#name CubeServer#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.3/docs/resources/cube_server#name CubeServer#name}.
 
 ---
 
@@ -2076,7 +2121,7 @@ SshKeyPath *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.2/docs/resources/cube_server#ssh_key_path CubeServer#ssh_key_path}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.3/docs/resources/cube_server#ssh_key_path CubeServer#ssh_key_path}.
 
 ---
 
@@ -2092,7 +2137,7 @@ The cloud-init configuration for the volume as base64 encoded string.
 
 The property is immutable and is only allowed to be set on a new volume creation. It is mandatory to provide either 'public image' or 'imageAlias' that has cloud-init compatibility in conjunction with this property.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.2/docs/resources/cube_server#user_data CubeServer#user_data}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.3/docs/resources/cube_server#user_data CubeServer#user_data}
 
 ---
 
@@ -2103,7 +2148,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.cubeServer.CubeServerNicFirewallOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/cubeserver"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/cubeserver"
 
 cubeserver.NewCubeServerNicFirewallOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CubeServerNicFirewallOutputReference
 ```
@@ -2635,7 +2680,7 @@ func InternalValue() CubeServerNicFirewall
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.cubeServer.CubeServerNicOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/cubeserver"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/cubeserver"
 
 cubeserver.NewCubeServerNicOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CubeServerNicOutputReference
 ```
@@ -3242,7 +3287,7 @@ func InternalValue() CubeServerNic
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.cubeServer.CubeServerTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/cubeserver"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/cubeserver"
 
 cubeserver.NewCubeServerTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CubeServerTimeoutsOutputReference
 ```
@@ -3607,7 +3652,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.cubeServer.CubeServerVolumeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/cubeserver"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/cubeserver"
 
 cubeserver.NewCubeServerVolumeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CubeServerVolumeOutputReference
 ```
