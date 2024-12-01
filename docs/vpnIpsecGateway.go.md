@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionosclo
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.vpnIpsecGateway.VpnIpsecGateway.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/vpnipsecgateway"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/vpnipsecgateway"
 
 vpnipsecgateway.NewVpnIpsecGateway(scope Construct, id *string, config VpnIpsecGatewayConfig) VpnIpsecGateway
 ```
@@ -432,7 +432,7 @@ func ResetVersion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-ionoscloud.vpnIpsecGateway.VpnIpsecGateway.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/vpnipsecgateway"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/vpnipsecgateway"
 
 vpnipsecgateway.VpnIpsecGateway_IsConstruct(x interface{}) *bool
 ```
@@ -464,7 +464,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-ionoscloud.vpnIpsecGateway.VpnIpsecGateway.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/vpnipsecgateway"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/vpnipsecgateway"
 
 vpnipsecgateway.VpnIpsecGateway_IsTerraformElement(x interface{}) *bool
 ```
@@ -478,7 +478,7 @@ vpnipsecgateway.VpnIpsecGateway_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-ionoscloud.vpnIpsecGateway.VpnIpsecGateway.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/vpnipsecgateway"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/vpnipsecgateway"
 
 vpnipsecgateway.VpnIpsecGateway_IsTerraformResource(x interface{}) *bool
 ```
@@ -492,7 +492,7 @@ vpnipsecgateway.VpnIpsecGateway_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-ionoscloud.vpnIpsecGateway.VpnIpsecGateway.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/vpnipsecgateway"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/vpnipsecgateway"
 
 vpnipsecgateway.VpnIpsecGateway_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -897,7 +897,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-ionoscloud.vpnIpsecGateway.VpnIpsecGatewayConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/vpnipsecgateway"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/vpnipsecgateway"
 
 &vpnipsecgateway.VpnIpsecGatewayConfig {
 	Connection: interface{},
@@ -913,7 +913,7 @@ import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/vpnipsecgateway
 	Name: *string,
 	Description: *string,
 	Id: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud.vpnIpsecGateway.VpnIpsecGatewayTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11.vpnIpsecGateway.VpnIpsecGatewayTimeouts,
 	Version: *string,
 }
 ```
@@ -1130,7 +1130,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 #### Initializer <a name="Initializer" id="@cdktf/provider-ionoscloud.vpnIpsecGateway.VpnIpsecGatewayConnections.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/vpnipsecgateway"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/vpnipsecgateway"
 
 &vpnipsecgateway.VpnIpsecGatewayConnections {
 	DatacenterId: *string,
@@ -1216,7 +1216,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 #### Initializer <a name="Initializer" id="@cdktf/provider-ionoscloud.vpnIpsecGateway.VpnIpsecGatewayTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/vpnipsecgateway"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/vpnipsecgateway"
 
 &vpnipsecgateway.VpnIpsecGatewayTimeouts {
 	Create: *string,
@@ -1292,7 +1292,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.vpnIpsecGateway.VpnIpsecGatewayConnectionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/vpnipsecgateway"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/vpnipsecgateway"
 
 vpnipsecgateway.NewVpnIpsecGatewayConnectionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) VpnIpsecGatewayConnectionsList
 ```
@@ -1452,7 +1452,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.vpnIpsecGateway.VpnIpsecGatewayConnectionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/vpnipsecgateway"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/vpnipsecgateway"
 
 vpnipsecgateway.NewVpnIpsecGatewayConnectionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) VpnIpsecGatewayConnectionsOutputReference
 ```
@@ -1814,7 +1814,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.vpnIpsecGateway.VpnIpsecGatewayTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/vpnipsecgateway"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/vpnipsecgateway"
 
 vpnipsecgateway.NewVpnIpsecGatewayTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VpnIpsecGatewayTimeoutsOutputReference
 ```
