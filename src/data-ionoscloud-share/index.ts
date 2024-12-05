@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.3/docs/data-sources/share
+// https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.5/docs/data-sources/share
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,50 +8,35 @@ import * as cdktf from 'cdktf';
 
 export interface DataIonoscloudShareConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.3/docs/data-sources/share#edit_privilege DataIonoscloudShare#edit_privilege}
-  */
-  readonly editPrivilege?: boolean | cdktf.IResolvable;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.3/docs/data-sources/share#group_id DataIonoscloudShare#group_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.5/docs/data-sources/share#group_id DataIonoscloudShare#group_id}
   */
   readonly groupId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.3/docs/data-sources/share#id DataIonoscloudShare#id}
-  *
-  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
-  */
-  readonly id: string;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.3/docs/data-sources/share#resource_id DataIonoscloudShare#resource_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.5/docs/data-sources/share#resource_id DataIonoscloudShare#resource_id}
   */
   readonly resourceId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.3/docs/data-sources/share#share_privilege DataIonoscloudShare#share_privilege}
-  */
-  readonly sharePrivilege?: boolean | cdktf.IResolvable;
-  /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.3/docs/data-sources/share#timeouts DataIonoscloudShare#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.5/docs/data-sources/share#timeouts DataIonoscloudShare#timeouts}
   */
   readonly timeouts?: DataIonoscloudShareTimeouts;
 }
 export interface DataIonoscloudShareTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.3/docs/data-sources/share#create DataIonoscloudShare#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.5/docs/data-sources/share#create DataIonoscloudShare#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.3/docs/data-sources/share#default DataIonoscloudShare#default}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.5/docs/data-sources/share#default DataIonoscloudShare#default}
   */
   readonly default?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.3/docs/data-sources/share#delete DataIonoscloudShare#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.5/docs/data-sources/share#delete DataIonoscloudShare#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.3/docs/data-sources/share#update DataIonoscloudShare#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.5/docs/data-sources/share#update DataIonoscloudShare#update}
   */
   readonly update?: string;
 }
@@ -237,7 +217,7 @@ export class DataIonoscloudShareTimeoutsOutputReference extends cdktf.ComplexObj
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.3/docs/data-sources/share ionoscloud_share}
+* Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.5/docs/data-sources/share ionoscloud_share}
 */
 export class DataIonoscloudShare extends cdktf.TerraformDataSource {
 
@@ -253,7 +233,7 @@ export class DataIonoscloudShare extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataIonoscloudShare resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataIonoscloudShare to import
-  * @param importFromId The id of the existing DataIonoscloudShare that should be imported. Refer to the {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.3/docs/data-sources/share#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataIonoscloudShare that should be imported. Refer to the {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.5/docs/data-sources/share#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataIonoscloudShare to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -265,7 +245,7 @@ export class DataIonoscloudShare extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.3/docs/data-sources/share ionoscloud_share} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.5/docs/data-sources/share ionoscloud_share} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -276,7 +256,7 @@ export class DataIonoscloudShare extends cdktf.TerraformDataSource {
       terraformResourceType: 'ionoscloud_share',
       terraformGeneratorMetadata: {
         providerName: 'ionoscloud',
-        providerVersion: '6.6.3',
+        providerVersion: '6.6.5',
         providerVersionConstraint: '~> 6.2'
       },
       provider: config.provider,
@@ -287,11 +267,8 @@ export class DataIonoscloudShare extends cdktf.TerraformDataSource {
       connection: config.connection,
       forEach: config.forEach
     });
-    this._editPrivilege = config.editPrivilege;
     this._groupId = config.groupId;
-    this._id = config.id;
     this._resourceId = config.resourceId;
-    this._sharePrivilege = config.sharePrivilege;
     this._timeouts.internalValue = config.timeouts;
   }
 
@@ -299,20 +276,9 @@ export class DataIonoscloudShare extends cdktf.TerraformDataSource {
   // ATTRIBUTES
   // ==========
 
-  // edit_privilege - computed: false, optional: true, required: false
-  private _editPrivilege?: boolean | cdktf.IResolvable; 
+  // edit_privilege - computed: true, optional: false, required: false
   public get editPrivilege() {
     return this.getBooleanAttribute('edit_privilege');
-  }
-  public set editPrivilege(value: boolean | cdktf.IResolvable) {
-    this._editPrivilege = value;
-  }
-  public resetEditPrivilege() {
-    this._editPrivilege = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get editPrivilegeInput() {
-    return this._editPrivilege;
   }
 
   // group_id - computed: false, optional: false, required: true
@@ -328,17 +294,9 @@ export class DataIonoscloudShare extends cdktf.TerraformDataSource {
     return this._groupId;
   }
 
-  // id - computed: false, optional: false, required: true
-  private _id?: string; 
+  // id - computed: true, optional: false, required: false
   public get id() {
     return this.getStringAttribute('id');
-  }
-  public set id(value: string) {
-    this._id = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get idInput() {
-    return this._id;
   }
 
   // resource_id - computed: false, optional: false, required: true
@@ -354,20 +312,9 @@ export class DataIonoscloudShare extends cdktf.TerraformDataSource {
     return this._resourceId;
   }
 
-  // share_privilege - computed: false, optional: true, required: false
-  private _sharePrivilege?: boolean | cdktf.IResolvable; 
+  // share_privilege - computed: true, optional: false, required: false
   public get sharePrivilege() {
     return this.getBooleanAttribute('share_privilege');
-  }
-  public set sharePrivilege(value: boolean | cdktf.IResolvable) {
-    this._sharePrivilege = value;
-  }
-  public resetSharePrivilege() {
-    this._sharePrivilege = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get sharePrivilegeInput() {
-    return this._sharePrivilege;
   }
 
   // timeouts - computed: false, optional: true, required: false
@@ -392,31 +339,16 @@ export class DataIonoscloudShare extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      edit_privilege: cdktf.booleanToTerraform(this._editPrivilege),
       group_id: cdktf.stringToTerraform(this._groupId),
-      id: cdktf.stringToTerraform(this._id),
       resource_id: cdktf.stringToTerraform(this._resourceId),
-      share_privilege: cdktf.booleanToTerraform(this._sharePrivilege),
       timeouts: dataIonoscloudShareTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
-      edit_privilege: {
-        value: cdktf.booleanToHclTerraform(this._editPrivilege),
-        isBlock: false,
-        type: "simple",
-        storageClassType: "boolean",
-      },
       group_id: {
         value: cdktf.stringToHclTerraform(this._groupId),
-        isBlock: false,
-        type: "simple",
-        storageClassType: "string",
-      },
-      id: {
-        value: cdktf.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
@@ -426,12 +358,6 @@ export class DataIonoscloudShare extends cdktf.TerraformDataSource {
         isBlock: false,
         type: "simple",
         storageClassType: "string",
-      },
-      share_privilege: {
-        value: cdktf.booleanToHclTerraform(this._sharePrivilege),
-        isBlock: false,
-        type: "simple",
-        storageClassType: "boolean",
       },
       timeouts: {
         value: dataIonoscloudShareTimeoutsToHclTerraform(this._timeouts.internalValue),

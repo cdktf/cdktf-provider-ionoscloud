@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.3/docs/data-sources/nic
+// https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.5/docs/data-sources/nic
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,60 +8,28 @@ import * as cdktf from 'cdktf';
 
 export interface DataIonoscloudNicConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.3/docs/data-sources/nic#datacenter_id DataIonoscloudNic#datacenter_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.5/docs/data-sources/nic#datacenter_id DataIonoscloudNic#datacenter_id}
   */
   readonly datacenterId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.3/docs/data-sources/nic#dhcp DataIonoscloudNic#dhcp}
-  */
-  readonly dhcp?: boolean | cdktf.IResolvable;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.3/docs/data-sources/nic#dhcpv6 DataIonoscloudNic#dhcpv6}
-  */
-  readonly dhcpv6?: boolean | cdktf.IResolvable;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.3/docs/data-sources/nic#firewall_active DataIonoscloudNic#firewall_active}
-  */
-  readonly firewallActive?: boolean | cdktf.IResolvable;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.3/docs/data-sources/nic#firewall_type DataIonoscloudNic#firewall_type}
-  */
-  readonly firewallType?: string;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.3/docs/data-sources/nic#id DataIonoscloudNic#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.5/docs/data-sources/nic#id DataIonoscloudNic#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.3/docs/data-sources/nic#ips DataIonoscloudNic#ips}
-  */
-  readonly ips?: string[];
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.3/docs/data-sources/nic#ipv6_cidr_block DataIonoscloudNic#ipv6_cidr_block}
-  */
-  readonly ipv6CidrBlock?: string;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.3/docs/data-sources/nic#ipv6_ips DataIonoscloudNic#ipv6_ips}
-  */
-  readonly ipv6Ips?: string[];
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.3/docs/data-sources/nic#lan DataIonoscloudNic#lan}
-  */
-  readonly lan?: number;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.3/docs/data-sources/nic#name DataIonoscloudNic#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.5/docs/data-sources/nic#name DataIonoscloudNic#name}
   */
   readonly name?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.3/docs/data-sources/nic#server_id DataIonoscloudNic#server_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.5/docs/data-sources/nic#server_id DataIonoscloudNic#server_id}
   */
   readonly serverId: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.3/docs/data-sources/nic#timeouts DataIonoscloudNic#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.5/docs/data-sources/nic#timeouts DataIonoscloudNic#timeouts}
   */
   readonly timeouts?: DataIonoscloudNicTimeouts;
 }
@@ -167,19 +130,19 @@ export class DataIonoscloudNicFlowlogList extends cdktf.ComplexList {
 }
 export interface DataIonoscloudNicTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.3/docs/data-sources/nic#create DataIonoscloudNic#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.5/docs/data-sources/nic#create DataIonoscloudNic#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.3/docs/data-sources/nic#default DataIonoscloudNic#default}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.5/docs/data-sources/nic#default DataIonoscloudNic#default}
   */
   readonly default?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.3/docs/data-sources/nic#delete DataIonoscloudNic#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.5/docs/data-sources/nic#delete DataIonoscloudNic#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.3/docs/data-sources/nic#update DataIonoscloudNic#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.5/docs/data-sources/nic#update DataIonoscloudNic#update}
   */
   readonly update?: string;
 }
@@ -360,7 +323,7 @@ export class DataIonoscloudNicTimeoutsOutputReference extends cdktf.ComplexObjec
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.3/docs/data-sources/nic ionoscloud_nic}
+* Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.5/docs/data-sources/nic ionoscloud_nic}
 */
 export class DataIonoscloudNic extends cdktf.TerraformDataSource {
 
@@ -376,7 +339,7 @@ export class DataIonoscloudNic extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataIonoscloudNic resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataIonoscloudNic to import
-  * @param importFromId The id of the existing DataIonoscloudNic that should be imported. Refer to the {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.3/docs/data-sources/nic#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataIonoscloudNic that should be imported. Refer to the {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.5/docs/data-sources/nic#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataIonoscloudNic to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -388,7 +351,7 @@ export class DataIonoscloudNic extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.3/docs/data-sources/nic ionoscloud_nic} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.5/docs/data-sources/nic ionoscloud_nic} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -399,7 +362,7 @@ export class DataIonoscloudNic extends cdktf.TerraformDataSource {
       terraformResourceType: 'ionoscloud_nic',
       terraformGeneratorMetadata: {
         providerName: 'ionoscloud',
-        providerVersion: '6.6.3',
+        providerVersion: '6.6.5',
         providerVersionConstraint: '~> 6.2'
       },
       provider: config.provider,
@@ -411,15 +374,7 @@ export class DataIonoscloudNic extends cdktf.TerraformDataSource {
       forEach: config.forEach
     });
     this._datacenterId = config.datacenterId;
-    this._dhcp = config.dhcp;
-    this._dhcpv6 = config.dhcpv6;
-    this._firewallActive = config.firewallActive;
-    this._firewallType = config.firewallType;
     this._id = config.id;
-    this._ips = config.ips;
-    this._ipv6CidrBlock = config.ipv6CidrBlock;
-    this._ipv6Ips = config.ipv6Ips;
-    this._lan = config.lan;
     this._name = config.name;
     this._serverId = config.serverId;
     this._timeouts.internalValue = config.timeouts;
@@ -447,68 +402,24 @@ export class DataIonoscloudNic extends cdktf.TerraformDataSource {
     return this.getNumberAttribute('device_number');
   }
 
-  // dhcp - computed: false, optional: true, required: false
-  private _dhcp?: boolean | cdktf.IResolvable; 
+  // dhcp - computed: true, optional: false, required: false
   public get dhcp() {
     return this.getBooleanAttribute('dhcp');
   }
-  public set dhcp(value: boolean | cdktf.IResolvable) {
-    this._dhcp = value;
-  }
-  public resetDhcp() {
-    this._dhcp = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get dhcpInput() {
-    return this._dhcp;
-  }
 
-  // dhcpv6 - computed: false, optional: true, required: false
-  private _dhcpv6?: boolean | cdktf.IResolvable; 
+  // dhcpv6 - computed: true, optional: false, required: false
   public get dhcpv6() {
     return this.getBooleanAttribute('dhcpv6');
   }
-  public set dhcpv6(value: boolean | cdktf.IResolvable) {
-    this._dhcpv6 = value;
-  }
-  public resetDhcpv6() {
-    this._dhcpv6 = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get dhcpv6Input() {
-    return this._dhcpv6;
-  }
 
-  // firewall_active - computed: false, optional: true, required: false
-  private _firewallActive?: boolean | cdktf.IResolvable; 
+  // firewall_active - computed: true, optional: false, required: false
   public get firewallActive() {
     return this.getBooleanAttribute('firewall_active');
   }
-  public set firewallActive(value: boolean | cdktf.IResolvable) {
-    this._firewallActive = value;
-  }
-  public resetFirewallActive() {
-    this._firewallActive = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get firewallActiveInput() {
-    return this._firewallActive;
-  }
 
-  // firewall_type - computed: true, optional: true, required: false
-  private _firewallType?: string; 
+  // firewall_type - computed: true, optional: false, required: false
   public get firewallType() {
     return this.getStringAttribute('firewall_type');
-  }
-  public set firewallType(value: string) {
-    this._firewallType = value;
-  }
-  public resetFirewallType() {
-    this._firewallType = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get firewallTypeInput() {
-    return this._firewallType;
   }
 
   // flowlog - computed: true, optional: false, required: false
@@ -533,68 +444,24 @@ export class DataIonoscloudNic extends cdktf.TerraformDataSource {
     return this._id;
   }
 
-  // ips - computed: true, optional: true, required: false
-  private _ips?: string[]; 
+  // ips - computed: true, optional: false, required: false
   public get ips() {
     return this.getListAttribute('ips');
   }
-  public set ips(value: string[]) {
-    this._ips = value;
-  }
-  public resetIps() {
-    this._ips = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get ipsInput() {
-    return this._ips;
-  }
 
-  // ipv6_cidr_block - computed: true, optional: true, required: false
-  private _ipv6CidrBlock?: string; 
+  // ipv6_cidr_block - computed: true, optional: false, required: false
   public get ipv6CidrBlock() {
     return this.getStringAttribute('ipv6_cidr_block');
   }
-  public set ipv6CidrBlock(value: string) {
-    this._ipv6CidrBlock = value;
-  }
-  public resetIpv6CidrBlock() {
-    this._ipv6CidrBlock = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get ipv6CidrBlockInput() {
-    return this._ipv6CidrBlock;
-  }
 
-  // ipv6_ips - computed: true, optional: true, required: false
-  private _ipv6Ips?: string[]; 
+  // ipv6_ips - computed: true, optional: false, required: false
   public get ipv6Ips() {
     return this.getListAttribute('ipv6_ips');
   }
-  public set ipv6Ips(value: string[]) {
-    this._ipv6Ips = value;
-  }
-  public resetIpv6Ips() {
-    this._ipv6Ips = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get ipv6IpsInput() {
-    return this._ipv6Ips;
-  }
 
-  // lan - computed: false, optional: true, required: false
-  private _lan?: number; 
+  // lan - computed: true, optional: false, required: false
   public get lan() {
     return this.getNumberAttribute('lan');
-  }
-  public set lan(value: number) {
-    this._lan = value;
-  }
-  public resetLan() {
-    this._lan = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get lanInput() {
-    return this._lan;
   }
 
   // mac - computed: true, optional: false, required: false
@@ -664,15 +531,7 @@ export class DataIonoscloudNic extends cdktf.TerraformDataSource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       datacenter_id: cdktf.stringToTerraform(this._datacenterId),
-      dhcp: cdktf.booleanToTerraform(this._dhcp),
-      dhcpv6: cdktf.booleanToTerraform(this._dhcpv6),
-      firewall_active: cdktf.booleanToTerraform(this._firewallActive),
-      firewall_type: cdktf.stringToTerraform(this._firewallType),
       id: cdktf.stringToTerraform(this._id),
-      ips: cdktf.listMapper(cdktf.stringToTerraform, false)(this._ips),
-      ipv6_cidr_block: cdktf.stringToTerraform(this._ipv6CidrBlock),
-      ipv6_ips: cdktf.listMapper(cdktf.stringToTerraform, false)(this._ipv6Ips),
-      lan: cdktf.numberToTerraform(this._lan),
       name: cdktf.stringToTerraform(this._name),
       server_id: cdktf.stringToTerraform(this._serverId),
       timeouts: dataIonoscloudNicTimeoutsToTerraform(this._timeouts.internalValue),
@@ -687,59 +546,11 @@ export class DataIonoscloudNic extends cdktf.TerraformDataSource {
         type: "simple",
         storageClassType: "string",
       },
-      dhcp: {
-        value: cdktf.booleanToHclTerraform(this._dhcp),
-        isBlock: false,
-        type: "simple",
-        storageClassType: "boolean",
-      },
-      dhcpv6: {
-        value: cdktf.booleanToHclTerraform(this._dhcpv6),
-        isBlock: false,
-        type: "simple",
-        storageClassType: "boolean",
-      },
-      firewall_active: {
-        value: cdktf.booleanToHclTerraform(this._firewallActive),
-        isBlock: false,
-        type: "simple",
-        storageClassType: "boolean",
-      },
-      firewall_type: {
-        value: cdktf.stringToHclTerraform(this._firewallType),
-        isBlock: false,
-        type: "simple",
-        storageClassType: "string",
-      },
       id: {
         value: cdktf.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
-      },
-      ips: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._ips),
-        isBlock: false,
-        type: "list",
-        storageClassType: "stringList",
-      },
-      ipv6_cidr_block: {
-        value: cdktf.stringToHclTerraform(this._ipv6CidrBlock),
-        isBlock: false,
-        type: "simple",
-        storageClassType: "string",
-      },
-      ipv6_ips: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._ipv6Ips),
-        isBlock: false,
-        type: "list",
-        storageClassType: "stringList",
-      },
-      lan: {
-        value: cdktf.numberToHclTerraform(this._lan),
-        isBlock: false,
-        type: "simple",
-        storageClassType: "number",
       },
       name: {
         value: cdktf.stringToHclTerraform(this._name),
