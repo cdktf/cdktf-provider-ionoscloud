@@ -1,3 +1,3 @@
 # `data_ionoscloud_inmemorydb_snapshot`
 
-Refer to the Terraform Registry for docs: [`data_ionoscloud_inmemorydb_snapshot`](https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.5/docs/data-sources/inmemorydb_snapshot).
+Refer to the Terraform Registry for docs: [`data_ionoscloud_inmemorydb_snapshot`](https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.6/docs/data-sources/inmemorydb_snapshot).
