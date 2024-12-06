@@ -4,12 +4,12 @@
 
 ### DataIonoscloudObjectStorageRegion <a name="DataIonoscloudObjectStorageRegion" id="@cdktf/provider-ionoscloud.dataIonoscloudObjectStorageRegion.DataIonoscloudObjectStorageRegion"></a>
 
-Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.5/docs/data-sources/object_storage_region ionoscloud_object_storage_region}.
+Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.6/docs/data-sources/object_storage_region ionoscloud_object_storage_region}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.dataIonoscloudObjectStorageRegion.DataIonoscloudObjectStorageRegion.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/dataionoscloudobjectstorageregion"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/dataionoscloudobjectstorageregion"
 
 dataionoscloudobjectstorageregion.NewDataIonoscloudObjectStorageRegion(scope Construct, id *string, config DataIonoscloudObjectStorageRegionConfig) DataIonoscloudObjectStorageRegion
 ```
@@ -276,7 +276,7 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-ionoscloud.dataIonoscloudObjectStorageRegion.DataIonoscloudObjectStorageRegion.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/dataionoscloudobjectstorageregion"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/dataionoscloudobjectstorageregion"
 
 dataionoscloudobjectstorageregion.DataIonoscloudObjectStorageRegion_IsConstruct(x interface{}) *bool
 ```
@@ -308,7 +308,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-ionoscloud.dataIonoscloudObjectStorageRegion.DataIonoscloudObjectStorageRegion.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/dataionoscloudobjectstorageregion"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/dataionoscloudobjectstorageregion"
 
 dataionoscloudobjectstorageregion.DataIonoscloudObjectStorageRegion_IsTerraformElement(x interface{}) *bool
 ```
@@ -322,7 +322,7 @@ dataionoscloudobjectstorageregion.DataIonoscloudObjectStorageRegion_IsTerraformE
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-ionoscloud.dataIonoscloudObjectStorageRegion.DataIonoscloudObjectStorageRegion.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/dataionoscloudobjectstorageregion"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/dataionoscloudobjectstorageregion"
 
 dataionoscloudobjectstorageregion.DataIonoscloudObjectStorageRegion_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -336,7 +336,7 @@ dataionoscloudobjectstorageregion.DataIonoscloudObjectStorageRegion_IsTerraformD
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-ionoscloud.dataIonoscloudObjectStorageRegion.DataIonoscloudObjectStorageRegion.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/dataionoscloudobjectstorageregion"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/dataionoscloudobjectstorageregion"
 
 dataionoscloudobjectstorageregion.DataIonoscloudObjectStorageRegion_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -365,7 +365,7 @@ The construct id used in the generated config for the DataIonoscloudObjectStorag
 
 The id of the existing DataIonoscloudObjectStorageRegion that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.5/docs/data-sources/object_storage_region#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.6/docs/data-sources/object_storage_region#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -631,7 +631,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-ionoscloud.dataIonoscloudObjectStorageRegion.DataIonoscloudObjectStorageRegionCapability.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/dataionoscloudobjectstorageregion"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/dataionoscloudobjectstorageregion"
 
 &dataionoscloudobjectstorageregion.DataIonoscloudObjectStorageRegionCapability {
 
@@ -644,7 +644,7 @@ import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/dataionoscl
 #### Initializer <a name="Initializer" id="@cdktf/provider-ionoscloud.dataIonoscloudObjectStorageRegion.DataIonoscloudObjectStorageRegionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/dataionoscloudobjectstorageregion"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/dataionoscloudobjectstorageregion"
 
 &dataionoscloudobjectstorageregion.DataIonoscloudObjectStorageRegionConfig {
 	Connection: interface{},
@@ -753,7 +753,7 @@ Id *string
 
 The id of the region.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.5/docs/data-sources/object_storage_region#id DataIonoscloudObjectStorageRegion#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.6/docs/data-sources/object_storage_region#id DataIonoscloudObjectStorageRegion#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -767,7 +767,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.dataIonoscloudObjectStorageRegion.DataIonoscloudObjectStorageRegionCapabilityOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/dataionoscloudobjectstorageregion"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/dataionoscloudobjectstorageregion"
 
 dataionoscloudobjectstorageregion.NewDataIonoscloudObjectStorageRegionCapabilityOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataIonoscloudObjectStorageRegionCapabilityOutputReference
 ```

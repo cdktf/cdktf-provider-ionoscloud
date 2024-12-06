@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.5/docs/resources/vpn_ipsec_gateway
+// https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.6/docs/resources/vpn_ipsec_gateway
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,50 +10,62 @@ export interface VpnIpsecGatewayConfig extends cdktf.TerraformMetaArguments {
   /**
   * The human-readable description of your IPSec Gateway.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.5/docs/resources/vpn_ipsec_gateway#description VpnIpsecGateway#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.6/docs/resources/vpn_ipsec_gateway#description VpnIpsecGateway#description}
   */
   readonly description?: string;
   /**
   * Public IP address to be assigned to the gateway. Note: This must be an IP address in the same datacenter as the connections.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.5/docs/resources/vpn_ipsec_gateway#gateway_ip VpnIpsecGateway#gateway_ip}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.6/docs/resources/vpn_ipsec_gateway#gateway_ip VpnIpsecGateway#gateway_ip}
   */
   readonly gatewayIp: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.5/docs/resources/vpn_ipsec_gateway#id VpnIpsecGateway#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.6/docs/resources/vpn_ipsec_gateway#id VpnIpsecGateway#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * The location of the IPSec Gateway. Supported locations: de/fra, de/txl
+  * The location of the IPSec Gateway. Supported locations: de/fra, de/txl, es/vit, gb/bhx, gb/lhr, us/ewr, us/las, us/mci, fr/par
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.5/docs/resources/vpn_ipsec_gateway#location VpnIpsecGateway#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.6/docs/resources/vpn_ipsec_gateway#location VpnIpsecGateway#location}
   */
-  readonly location: string;
+  readonly location?: string;
   /**
   * The human readable name of your IPSecGateway.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.5/docs/resources/vpn_ipsec_gateway#name VpnIpsecGateway#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.6/docs/resources/vpn_ipsec_gateway#name VpnIpsecGateway#name}
   */
   readonly name: string;
   /**
+  * Gateway performance options. See the documentation for the available options
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.6/docs/resources/vpn_ipsec_gateway#tier VpnIpsecGateway#tier}
+  */
+  readonly tier?: string;
+  /**
   * The IKE version that is permitted for the VPN tunnels.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.5/docs/resources/vpn_ipsec_gateway#version VpnIpsecGateway#version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.6/docs/resources/vpn_ipsec_gateway#version VpnIpsecGateway#version}
   */
   readonly version?: string;
   /**
   * connections block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.5/docs/resources/vpn_ipsec_gateway#connections VpnIpsecGateway#connections}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.6/docs/resources/vpn_ipsec_gateway#connections VpnIpsecGateway#connections}
   */
   readonly connections: VpnIpsecGatewayConnections[] | cdktf.IResolvable;
   /**
+  * maintenance_window block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.6/docs/resources/vpn_ipsec_gateway#maintenance_window VpnIpsecGateway#maintenance_window}
+  */
+  readonly maintenanceWindow?: VpnIpsecGatewayMaintenanceWindow;
+  /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.5/docs/resources/vpn_ipsec_gateway#timeouts VpnIpsecGateway#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.6/docs/resources/vpn_ipsec_gateway#timeouts VpnIpsecGateway#timeouts}
   */
   readonly timeouts?: VpnIpsecGatewayTimeouts;
 }
@@ -66,25 +73,25 @@ export interface VpnIpsecGatewayConnections {
   /**
   * The datacenter to connect your VPN Gateway to.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.5/docs/resources/vpn_ipsec_gateway#datacenter_id VpnIpsecGateway#datacenter_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.6/docs/resources/vpn_ipsec_gateway#datacenter_id VpnIpsecGateway#datacenter_id}
   */
   readonly datacenterId: string;
   /**
   * Describes the private ipv4 subnet in your LAN that should be accessible by the VPN Gateway. Note: this should be the subnet already assigned to the LAN
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.5/docs/resources/vpn_ipsec_gateway#ipv4_cidr VpnIpsecGateway#ipv4_cidr}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.6/docs/resources/vpn_ipsec_gateway#ipv4_cidr VpnIpsecGateway#ipv4_cidr}
   */
   readonly ipv4Cidr: string;
   /**
   * Describes the ipv6 subnet in your LAN that should be accessible by the VPN Gateway. Note: this should be the subnet already assigned to the LAN
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.5/docs/resources/vpn_ipsec_gateway#ipv6_cidr VpnIpsecGateway#ipv6_cidr}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.6/docs/resources/vpn_ipsec_gateway#ipv6_cidr VpnIpsecGateway#ipv6_cidr}
   */
   readonly ipv6Cidr?: string;
   /**
   * The numeric LAN ID to connect your VPN Gateway to.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.5/docs/resources/vpn_ipsec_gateway#lan_id VpnIpsecGateway#lan_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.6/docs/resources/vpn_ipsec_gateway#lan_id VpnIpsecGateway#lan_id}
   */
   readonly lanId: string;
 }
@@ -276,21 +283,136 @@ export class VpnIpsecGatewayConnectionsList extends cdktf.ComplexList {
     return new VpnIpsecGatewayConnectionsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
+export interface VpnIpsecGatewayMaintenanceWindow {
+  /**
+  * The name of the week day
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.6/docs/resources/vpn_ipsec_gateway#day_of_the_week VpnIpsecGateway#day_of_the_week}
+  */
+  readonly dayOfTheWeek: string;
+  /**
+  * Start of the maintenance window in UTC time.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.6/docs/resources/vpn_ipsec_gateway#time VpnIpsecGateway#time}
+  */
+  readonly time: string;
+}
+
+export function vpnIpsecGatewayMaintenanceWindowToTerraform(struct?: VpnIpsecGatewayMaintenanceWindowOutputReference | VpnIpsecGatewayMaintenanceWindow): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    day_of_the_week: cdktf.stringToTerraform(struct!.dayOfTheWeek),
+    time: cdktf.stringToTerraform(struct!.time),
+  }
+}
+
+
+export function vpnIpsecGatewayMaintenanceWindowToHclTerraform(struct?: VpnIpsecGatewayMaintenanceWindowOutputReference | VpnIpsecGatewayMaintenanceWindow): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    day_of_the_week: {
+      value: cdktf.stringToHclTerraform(struct!.dayOfTheWeek),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    time: {
+      value: cdktf.stringToHclTerraform(struct!.time),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class VpnIpsecGatewayMaintenanceWindowOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): VpnIpsecGatewayMaintenanceWindow | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._dayOfTheWeek !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.dayOfTheWeek = this._dayOfTheWeek;
+    }
+    if (this._time !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.time = this._time;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: VpnIpsecGatewayMaintenanceWindow | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._dayOfTheWeek = undefined;
+      this._time = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._dayOfTheWeek = value.dayOfTheWeek;
+      this._time = value.time;
+    }
+  }
+
+  // day_of_the_week - computed: false, optional: false, required: true
+  private _dayOfTheWeek?: string; 
+  public get dayOfTheWeek() {
+    return this.getStringAttribute('day_of_the_week');
+  }
+  public set dayOfTheWeek(value: string) {
+    this._dayOfTheWeek = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get dayOfTheWeekInput() {
+    return this._dayOfTheWeek;
+  }
+
+  // time - computed: false, optional: false, required: true
+  private _time?: string; 
+  public get time() {
+    return this.getStringAttribute('time');
+  }
+  public set time(value: string) {
+    this._time = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get timeInput() {
+    return this._time;
+  }
+}
 export interface VpnIpsecGatewayTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.5/docs/resources/vpn_ipsec_gateway#create VpnIpsecGateway#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.6/docs/resources/vpn_ipsec_gateway#create VpnIpsecGateway#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.5/docs/resources/vpn_ipsec_gateway#default VpnIpsecGateway#default}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.6/docs/resources/vpn_ipsec_gateway#default VpnIpsecGateway#default}
   */
   readonly default?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.5/docs/resources/vpn_ipsec_gateway#delete VpnIpsecGateway#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.6/docs/resources/vpn_ipsec_gateway#delete VpnIpsecGateway#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.5/docs/resources/vpn_ipsec_gateway#update VpnIpsecGateway#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.6/docs/resources/vpn_ipsec_gateway#update VpnIpsecGateway#update}
   */
   readonly update?: string;
 }
@@ -471,7 +593,7 @@ export class VpnIpsecGatewayTimeoutsOutputReference extends cdktf.ComplexObject 
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.5/docs/resources/vpn_ipsec_gateway ionoscloud_vpn_ipsec_gateway}
+* Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.6/docs/resources/vpn_ipsec_gateway ionoscloud_vpn_ipsec_gateway}
 */
 export class VpnIpsecGateway extends cdktf.TerraformResource {
 
@@ -487,7 +609,7 @@ export class VpnIpsecGateway extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a VpnIpsecGateway resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the VpnIpsecGateway to import
-  * @param importFromId The id of the existing VpnIpsecGateway that should be imported. Refer to the {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.5/docs/resources/vpn_ipsec_gateway#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing VpnIpsecGateway that should be imported. Refer to the {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.6/docs/resources/vpn_ipsec_gateway#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the VpnIpsecGateway to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -499,7 +621,7 @@ export class VpnIpsecGateway extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.5/docs/resources/vpn_ipsec_gateway ionoscloud_vpn_ipsec_gateway} Resource
+  * Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.6/docs/resources/vpn_ipsec_gateway ionoscloud_vpn_ipsec_gateway} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -510,7 +632,7 @@ export class VpnIpsecGateway extends cdktf.TerraformResource {
       terraformResourceType: 'ionoscloud_vpn_ipsec_gateway',
       terraformGeneratorMetadata: {
         providerName: 'ionoscloud',
-        providerVersion: '6.6.5',
+        providerVersion: '6.6.6',
         providerVersionConstraint: '~> 6.2'
       },
       provider: config.provider,
@@ -526,8 +648,10 @@ export class VpnIpsecGateway extends cdktf.TerraformResource {
     this._id = config.id;
     this._location = config.location;
     this._name = config.name;
+    this._tier = config.tier;
     this._version = config.version;
     this._connections.internalValue = config.connections;
+    this._maintenanceWindow.internalValue = config.maintenanceWindow;
     this._timeouts.internalValue = config.timeouts;
   }
 
@@ -580,13 +704,16 @@ export class VpnIpsecGateway extends cdktf.TerraformResource {
     return this._id;
   }
 
-  // location - computed: false, optional: false, required: true
+  // location - computed: false, optional: true, required: false
   private _location?: string; 
   public get location() {
     return this.getStringAttribute('location');
   }
   public set location(value: string) {
     this._location = value;
+  }
+  public resetLocation() {
+    this._location = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get locationInput() {
@@ -604,6 +731,22 @@ export class VpnIpsecGateway extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get nameInput() {
     return this._name;
+  }
+
+  // tier - computed: false, optional: true, required: false
+  private _tier?: string; 
+  public get tier() {
+    return this.getStringAttribute('tier');
+  }
+  public set tier(value: string) {
+    this._tier = value;
+  }
+  public resetTier() {
+    this._tier = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tierInput() {
+    return this._tier;
   }
 
   // version - computed: false, optional: true, required: false
@@ -635,6 +778,22 @@ export class VpnIpsecGateway extends cdktf.TerraformResource {
     return this._connections.internalValue;
   }
 
+  // maintenance_window - computed: false, optional: true, required: false
+  private _maintenanceWindow = new VpnIpsecGatewayMaintenanceWindowOutputReference(this, "maintenance_window");
+  public get maintenanceWindow() {
+    return this._maintenanceWindow;
+  }
+  public putMaintenanceWindow(value: VpnIpsecGatewayMaintenanceWindow) {
+    this._maintenanceWindow.internalValue = value;
+  }
+  public resetMaintenanceWindow() {
+    this._maintenanceWindow.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get maintenanceWindowInput() {
+    return this._maintenanceWindow.internalValue;
+  }
+
   // timeouts - computed: false, optional: true, required: false
   private _timeouts = new VpnIpsecGatewayTimeoutsOutputReference(this, "timeouts");
   public get timeouts() {
@@ -662,8 +821,10 @@ export class VpnIpsecGateway extends cdktf.TerraformResource {
       id: cdktf.stringToTerraform(this._id),
       location: cdktf.stringToTerraform(this._location),
       name: cdktf.stringToTerraform(this._name),
+      tier: cdktf.stringToTerraform(this._tier),
       version: cdktf.stringToTerraform(this._version),
       connections: cdktf.listMapper(vpnIpsecGatewayConnectionsToTerraform, true)(this._connections.internalValue),
+      maintenance_window: vpnIpsecGatewayMaintenanceWindowToTerraform(this._maintenanceWindow.internalValue),
       timeouts: vpnIpsecGatewayTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -700,6 +861,12 @@ export class VpnIpsecGateway extends cdktf.TerraformResource {
         type: "simple",
         storageClassType: "string",
       },
+      tier: {
+        value: cdktf.stringToHclTerraform(this._tier),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
       version: {
         value: cdktf.stringToHclTerraform(this._version),
         isBlock: false,
@@ -711,6 +878,12 @@ export class VpnIpsecGateway extends cdktf.TerraformResource {
         isBlock: true,
         type: "list",
         storageClassType: "VpnIpsecGatewayConnectionsList",
+      },
+      maintenance_window: {
+        value: vpnIpsecGatewayMaintenanceWindowToHclTerraform(this._maintenanceWindow.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "VpnIpsecGatewayMaintenanceWindowList",
       },
       timeouts: {
         value: vpnIpsecGatewayTimeoutsToHclTerraform(this._timeouts.internalValue),

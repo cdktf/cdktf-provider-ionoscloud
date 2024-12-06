@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.5/docs/resources/vpn_wireguard_gateway
+// https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.6/docs/resources/vpn_wireguard_gateway
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,15 +8,15 @@ import * as cdktf from 'cdktf';
 
 export interface VpnWireguardGatewayConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.5/docs/resources/vpn_wireguard_gateway#description VpnWireguardGateway#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.6/docs/resources/vpn_wireguard_gateway#description VpnWireguardGateway#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.5/docs/resources/vpn_wireguard_gateway#gateway_ip VpnWireguardGateway#gateway_ip}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.6/docs/resources/vpn_wireguard_gateway#gateway_ip VpnWireguardGateway#gateway_ip}
   */
   readonly gatewayIp: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.5/docs/resources/vpn_wireguard_gateway#id VpnWireguardGateway#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.6/docs/resources/vpn_wireguard_gateway#id VpnWireguardGateway#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -31,64 +26,76 @@ export interface VpnWireguardGatewayConfig extends cdktf.TerraformMetaArguments 
   * The IPV4 address (with CIDR mask) to be assigned to the WireGuard interface. 
   * 							 __Note__: either interfaceIPv4CIDR or interfaceIPv6CIDR is __required__.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.5/docs/resources/vpn_wireguard_gateway#interface_ipv4_cidr VpnWireguardGateway#interface_ipv4_cidr}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.6/docs/resources/vpn_wireguard_gateway#interface_ipv4_cidr VpnWireguardGateway#interface_ipv4_cidr}
   */
   readonly interfaceIpv4Cidr?: string;
   /**
   * The IPV6 address (with CIDR mask) to be assigned to the WireGuard interface.
   * 							 __Note__: either interfaceIPv6CIDR or interfaceIPv4CIDR is __required__.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.5/docs/resources/vpn_wireguard_gateway#interface_ipv6_cidr VpnWireguardGateway#interface_ipv6_cidr}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.6/docs/resources/vpn_wireguard_gateway#interface_ipv6_cidr VpnWireguardGateway#interface_ipv6_cidr}
   */
   readonly interfaceIpv6Cidr?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.5/docs/resources/vpn_wireguard_gateway#listen_port VpnWireguardGateway#listen_port}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.6/docs/resources/vpn_wireguard_gateway#listen_port VpnWireguardGateway#listen_port}
   */
   readonly listenPort?: number;
   /**
-  * The location of the WireGuard Gateway. Supported locations: de/fra, de/txl
+  * The location of the WireGuard Gateway. Supported locations: de/fra, de/txl, es/vit, gb/bhx, gb/lhr, us/ewr, us/las, us/mci, fr/par
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.5/docs/resources/vpn_wireguard_gateway#location VpnWireguardGateway#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.6/docs/resources/vpn_wireguard_gateway#location VpnWireguardGateway#location}
   */
   readonly location?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.5/docs/resources/vpn_wireguard_gateway#name VpnWireguardGateway#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.6/docs/resources/vpn_wireguard_gateway#name VpnWireguardGateway#name}
   */
   readonly name: string;
   /**
   * PrivateKey used for WireGuard Server
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.5/docs/resources/vpn_wireguard_gateway#private_key VpnWireguardGateway#private_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.6/docs/resources/vpn_wireguard_gateway#private_key VpnWireguardGateway#private_key}
   */
   readonly privateKey: string;
   /**
+  * Gateway performance options. See the documentation for the available options
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.6/docs/resources/vpn_wireguard_gateway#tier VpnWireguardGateway#tier}
+  */
+  readonly tier?: string;
+  /**
   * connections block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.5/docs/resources/vpn_wireguard_gateway#connections VpnWireguardGateway#connections}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.6/docs/resources/vpn_wireguard_gateway#connections VpnWireguardGateway#connections}
   */
   readonly connections: VpnWireguardGatewayConnections[] | cdktf.IResolvable;
   /**
+  * maintenance_window block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.6/docs/resources/vpn_wireguard_gateway#maintenance_window VpnWireguardGateway#maintenance_window}
+  */
+  readonly maintenanceWindow?: VpnWireguardGatewayMaintenanceWindow;
+  /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.5/docs/resources/vpn_wireguard_gateway#timeouts VpnWireguardGateway#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.6/docs/resources/vpn_wireguard_gateway#timeouts VpnWireguardGateway#timeouts}
   */
   readonly timeouts?: VpnWireguardGatewayTimeouts;
 }
 export interface VpnWireguardGatewayConnections {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.5/docs/resources/vpn_wireguard_gateway#datacenter_id VpnWireguardGateway#datacenter_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.6/docs/resources/vpn_wireguard_gateway#datacenter_id VpnWireguardGateway#datacenter_id}
   */
   readonly datacenterId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.5/docs/resources/vpn_wireguard_gateway#ipv4_cidr VpnWireguardGateway#ipv4_cidr}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.6/docs/resources/vpn_wireguard_gateway#ipv4_cidr VpnWireguardGateway#ipv4_cidr}
   */
   readonly ipv4Cidr?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.5/docs/resources/vpn_wireguard_gateway#ipv6_cidr VpnWireguardGateway#ipv6_cidr}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.6/docs/resources/vpn_wireguard_gateway#ipv6_cidr VpnWireguardGateway#ipv6_cidr}
   */
   readonly ipv6Cidr?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.5/docs/resources/vpn_wireguard_gateway#lan_id VpnWireguardGateway#lan_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.6/docs/resources/vpn_wireguard_gateway#lan_id VpnWireguardGateway#lan_id}
   */
   readonly lanId: string;
 }
@@ -283,21 +290,136 @@ export class VpnWireguardGatewayConnectionsList extends cdktf.ComplexList {
     return new VpnWireguardGatewayConnectionsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
+export interface VpnWireguardGatewayMaintenanceWindow {
+  /**
+  * The name of the week day
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.6/docs/resources/vpn_wireguard_gateway#day_of_the_week VpnWireguardGateway#day_of_the_week}
+  */
+  readonly dayOfTheWeek: string;
+  /**
+  * Start of the maintenance window in UTC time.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.6/docs/resources/vpn_wireguard_gateway#time VpnWireguardGateway#time}
+  */
+  readonly time: string;
+}
+
+export function vpnWireguardGatewayMaintenanceWindowToTerraform(struct?: VpnWireguardGatewayMaintenanceWindowOutputReference | VpnWireguardGatewayMaintenanceWindow): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    day_of_the_week: cdktf.stringToTerraform(struct!.dayOfTheWeek),
+    time: cdktf.stringToTerraform(struct!.time),
+  }
+}
+
+
+export function vpnWireguardGatewayMaintenanceWindowToHclTerraform(struct?: VpnWireguardGatewayMaintenanceWindowOutputReference | VpnWireguardGatewayMaintenanceWindow): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    day_of_the_week: {
+      value: cdktf.stringToHclTerraform(struct!.dayOfTheWeek),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    time: {
+      value: cdktf.stringToHclTerraform(struct!.time),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class VpnWireguardGatewayMaintenanceWindowOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): VpnWireguardGatewayMaintenanceWindow | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._dayOfTheWeek !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.dayOfTheWeek = this._dayOfTheWeek;
+    }
+    if (this._time !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.time = this._time;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: VpnWireguardGatewayMaintenanceWindow | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._dayOfTheWeek = undefined;
+      this._time = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._dayOfTheWeek = value.dayOfTheWeek;
+      this._time = value.time;
+    }
+  }
+
+  // day_of_the_week - computed: false, optional: false, required: true
+  private _dayOfTheWeek?: string; 
+  public get dayOfTheWeek() {
+    return this.getStringAttribute('day_of_the_week');
+  }
+  public set dayOfTheWeek(value: string) {
+    this._dayOfTheWeek = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get dayOfTheWeekInput() {
+    return this._dayOfTheWeek;
+  }
+
+  // time - computed: false, optional: false, required: true
+  private _time?: string; 
+  public get time() {
+    return this.getStringAttribute('time');
+  }
+  public set time(value: string) {
+    this._time = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get timeInput() {
+    return this._time;
+  }
+}
 export interface VpnWireguardGatewayTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.5/docs/resources/vpn_wireguard_gateway#create VpnWireguardGateway#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.6/docs/resources/vpn_wireguard_gateway#create VpnWireguardGateway#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.5/docs/resources/vpn_wireguard_gateway#default VpnWireguardGateway#default}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.6/docs/resources/vpn_wireguard_gateway#default VpnWireguardGateway#default}
   */
   readonly default?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.5/docs/resources/vpn_wireguard_gateway#delete VpnWireguardGateway#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.6/docs/resources/vpn_wireguard_gateway#delete VpnWireguardGateway#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.5/docs/resources/vpn_wireguard_gateway#update VpnWireguardGateway#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.6/docs/resources/vpn_wireguard_gateway#update VpnWireguardGateway#update}
   */
   readonly update?: string;
 }
@@ -478,7 +600,7 @@ export class VpnWireguardGatewayTimeoutsOutputReference extends cdktf.ComplexObj
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.5/docs/resources/vpn_wireguard_gateway ionoscloud_vpn_wireguard_gateway}
+* Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.6/docs/resources/vpn_wireguard_gateway ionoscloud_vpn_wireguard_gateway}
 */
 export class VpnWireguardGateway extends cdktf.TerraformResource {
 
@@ -494,7 +616,7 @@ export class VpnWireguardGateway extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a VpnWireguardGateway resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the VpnWireguardGateway to import
-  * @param importFromId The id of the existing VpnWireguardGateway that should be imported. Refer to the {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.5/docs/resources/vpn_wireguard_gateway#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing VpnWireguardGateway that should be imported. Refer to the {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.6/docs/resources/vpn_wireguard_gateway#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the VpnWireguardGateway to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -506,7 +628,7 @@ export class VpnWireguardGateway extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.5/docs/resources/vpn_wireguard_gateway ionoscloud_vpn_wireguard_gateway} Resource
+  * Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.6/docs/resources/vpn_wireguard_gateway ionoscloud_vpn_wireguard_gateway} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -517,7 +639,7 @@ export class VpnWireguardGateway extends cdktf.TerraformResource {
       terraformResourceType: 'ionoscloud_vpn_wireguard_gateway',
       terraformGeneratorMetadata: {
         providerName: 'ionoscloud',
-        providerVersion: '6.6.5',
+        providerVersion: '6.6.6',
         providerVersionConstraint: '~> 6.2'
       },
       provider: config.provider,
@@ -537,7 +659,9 @@ export class VpnWireguardGateway extends cdktf.TerraformResource {
     this._location = config.location;
     this._name = config.name;
     this._privateKey = config.privateKey;
+    this._tier = config.tier;
     this._connections.internalValue = config.connections;
+    this._maintenanceWindow.internalValue = config.maintenanceWindow;
     this._timeouts.internalValue = config.timeouts;
   }
 
@@ -690,6 +814,22 @@ export class VpnWireguardGateway extends cdktf.TerraformResource {
     return this.getStringAttribute('status');
   }
 
+  // tier - computed: false, optional: true, required: false
+  private _tier?: string; 
+  public get tier() {
+    return this.getStringAttribute('tier');
+  }
+  public set tier(value: string) {
+    this._tier = value;
+  }
+  public resetTier() {
+    this._tier = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tierInput() {
+    return this._tier;
+  }
+
   // connections - computed: false, optional: false, required: true
   private _connections = new VpnWireguardGatewayConnectionsList(this, "connections", false);
   public get connections() {
@@ -701,6 +841,22 @@ export class VpnWireguardGateway extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get connectionsInput() {
     return this._connections.internalValue;
+  }
+
+  // maintenance_window - computed: false, optional: true, required: false
+  private _maintenanceWindow = new VpnWireguardGatewayMaintenanceWindowOutputReference(this, "maintenance_window");
+  public get maintenanceWindow() {
+    return this._maintenanceWindow;
+  }
+  public putMaintenanceWindow(value: VpnWireguardGatewayMaintenanceWindow) {
+    this._maintenanceWindow.internalValue = value;
+  }
+  public resetMaintenanceWindow() {
+    this._maintenanceWindow.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get maintenanceWindowInput() {
+    return this._maintenanceWindow.internalValue;
   }
 
   // timeouts - computed: false, optional: true, required: false
@@ -734,7 +890,9 @@ export class VpnWireguardGateway extends cdktf.TerraformResource {
       location: cdktf.stringToTerraform(this._location),
       name: cdktf.stringToTerraform(this._name),
       private_key: cdktf.stringToTerraform(this._privateKey),
+      tier: cdktf.stringToTerraform(this._tier),
       connections: cdktf.listMapper(vpnWireguardGatewayConnectionsToTerraform, true)(this._connections.internalValue),
+      maintenance_window: vpnWireguardGatewayMaintenanceWindowToTerraform(this._maintenanceWindow.internalValue),
       timeouts: vpnWireguardGatewayTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -795,11 +953,23 @@ export class VpnWireguardGateway extends cdktf.TerraformResource {
         type: "simple",
         storageClassType: "string",
       },
+      tier: {
+        value: cdktf.stringToHclTerraform(this._tier),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
       connections: {
         value: cdktf.listMapperHcl(vpnWireguardGatewayConnectionsToHclTerraform, true)(this._connections.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "VpnWireguardGatewayConnectionsList",
+      },
+      maintenance_window: {
+        value: vpnWireguardGatewayMaintenanceWindowToHclTerraform(this._maintenanceWindow.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "VpnWireguardGatewayMaintenanceWindowList",
       },
       timeouts: {
         value: vpnWireguardGatewayTimeoutsToHclTerraform(this._timeouts.internalValue),
