@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.6/docs/data-sources/mariadb_backups
 // generated from terraform resource schema
 
