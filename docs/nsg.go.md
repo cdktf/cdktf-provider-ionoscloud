@@ -4,12 +4,12 @@
 
 ### Nsg <a name="Nsg" id="@cdktf/provider-ionoscloud.nsg.Nsg"></a>
 
-Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.6/docs/resources/nsg ionoscloud_nsg}.
+Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.7/docs/resources/nsg ionoscloud_nsg}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.nsg.Nsg.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/nsg"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/nsg"
 
 nsg.NewNsg(scope Construct, id *string, config NsgConfig) Nsg
 ```
@@ -405,7 +405,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-ionoscloud.nsg.Nsg.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/nsg"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/nsg"
 
 nsg.Nsg_IsConstruct(x interface{}) *bool
 ```
@@ -437,7 +437,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-ionoscloud.nsg.Nsg.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/nsg"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/nsg"
 
 nsg.Nsg_IsTerraformElement(x interface{}) *bool
 ```
@@ -451,7 +451,7 @@ nsg.Nsg_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-ionoscloud.nsg.Nsg.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/nsg"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/nsg"
 
 nsg.Nsg_IsTerraformResource(x interface{}) *bool
 ```
@@ -465,7 +465,7 @@ nsg.Nsg_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-ionoscloud.nsg.Nsg.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/nsg"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/nsg"
 
 nsg.Nsg_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -494,7 +494,7 @@ The construct id used in the generated config for the Nsg to import.
 
 The id of the existing Nsg that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.6/docs/resources/nsg#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.7/docs/resources/nsg#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -815,7 +815,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-ionoscloud.nsg.NsgConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/nsg"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/nsg"
 
 &nsg.NsgConfig {
 	Connection: interface{},
@@ -829,7 +829,7 @@ import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/nsg"
 	Description: *string,
 	Name: *string,
 	Id: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11.nsg.NsgTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud.nsg.NsgTimeouts,
 }
 ```
 
@@ -844,10 +844,10 @@ import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/nsg"
 | <code><a href="#@cdktf/provider-ionoscloud.nsg.NsgConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.nsg.NsgConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.nsg.NsgConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-ionoscloud.nsg.NsgConfig.property.datacenterId">DatacenterId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.6/docs/resources/nsg#datacenter_id Nsg#datacenter_id}. |
-| <code><a href="#@cdktf/provider-ionoscloud.nsg.NsgConfig.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.6/docs/resources/nsg#description Nsg#description}. |
-| <code><a href="#@cdktf/provider-ionoscloud.nsg.NsgConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.6/docs/resources/nsg#name Nsg#name}. |
-| <code><a href="#@cdktf/provider-ionoscloud.nsg.NsgConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.6/docs/resources/nsg#id Nsg#id}. |
+| <code><a href="#@cdktf/provider-ionoscloud.nsg.NsgConfig.property.datacenterId">DatacenterId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.7/docs/resources/nsg#datacenter_id Nsg#datacenter_id}. |
+| <code><a href="#@cdktf/provider-ionoscloud.nsg.NsgConfig.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.7/docs/resources/nsg#description Nsg#description}. |
+| <code><a href="#@cdktf/provider-ionoscloud.nsg.NsgConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.7/docs/resources/nsg#name Nsg#name}. |
+| <code><a href="#@cdktf/provider-ionoscloud.nsg.NsgConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.7/docs/resources/nsg#id Nsg#id}. |
 | <code><a href="#@cdktf/provider-ionoscloud.nsg.NsgConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-ionoscloud.nsg.NsgTimeouts">NsgTimeouts</a></code> | timeouts block. |
 
 ---
@@ -930,7 +930,7 @@ DatacenterId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.6/docs/resources/nsg#datacenter_id Nsg#datacenter_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.7/docs/resources/nsg#datacenter_id Nsg#datacenter_id}.
 
 ---
 
@@ -942,7 +942,7 @@ Description *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.6/docs/resources/nsg#description Nsg#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.7/docs/resources/nsg#description Nsg#description}.
 
 ---
 
@@ -954,7 +954,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.6/docs/resources/nsg#name Nsg#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.7/docs/resources/nsg#name Nsg#name}.
 
 ---
 
@@ -966,7 +966,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.6/docs/resources/nsg#id Nsg#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.7/docs/resources/nsg#id Nsg#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -983,7 +983,7 @@ Timeouts NsgTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.6/docs/resources/nsg#timeouts Nsg#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.7/docs/resources/nsg#timeouts Nsg#timeouts}
 
 ---
 
@@ -992,7 +992,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 #### Initializer <a name="Initializer" id="@cdktf/provider-ionoscloud.nsg.NsgTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/nsg"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/nsg"
 
 &nsg.NsgTimeouts {
 	Create: *string,
@@ -1006,10 +1006,10 @@ import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/nsg"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-ionoscloud.nsg.NsgTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.6/docs/resources/nsg#create Nsg#create}. |
-| <code><a href="#@cdktf/provider-ionoscloud.nsg.NsgTimeouts.property.default">Default</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.6/docs/resources/nsg#default Nsg#default}. |
-| <code><a href="#@cdktf/provider-ionoscloud.nsg.NsgTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.6/docs/resources/nsg#delete Nsg#delete}. |
-| <code><a href="#@cdktf/provider-ionoscloud.nsg.NsgTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.6/docs/resources/nsg#update Nsg#update}. |
+| <code><a href="#@cdktf/provider-ionoscloud.nsg.NsgTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.7/docs/resources/nsg#create Nsg#create}. |
+| <code><a href="#@cdktf/provider-ionoscloud.nsg.NsgTimeouts.property.default">Default</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.7/docs/resources/nsg#default Nsg#default}. |
+| <code><a href="#@cdktf/provider-ionoscloud.nsg.NsgTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.7/docs/resources/nsg#delete Nsg#delete}. |
+| <code><a href="#@cdktf/provider-ionoscloud.nsg.NsgTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.7/docs/resources/nsg#update Nsg#update}. |
 
 ---
 
@@ -1021,7 +1021,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.6/docs/resources/nsg#create Nsg#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.7/docs/resources/nsg#create Nsg#create}.
 
 ---
 
@@ -1033,7 +1033,7 @@ Default *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.6/docs/resources/nsg#default Nsg#default}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.7/docs/resources/nsg#default Nsg#default}.
 
 ---
 
@@ -1045,7 +1045,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.6/docs/resources/nsg#delete Nsg#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.7/docs/resources/nsg#delete Nsg#delete}.
 
 ---
 
@@ -1057,7 +1057,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.6/docs/resources/nsg#update Nsg#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.7/docs/resources/nsg#update Nsg#update}.
 
 ---
 
@@ -1068,7 +1068,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.nsg.NsgTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/nsg"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/nsg"
 
 nsg.NewNsgTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) NsgTimeoutsOutputReference
 ```

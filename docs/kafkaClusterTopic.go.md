@@ -4,12 +4,12 @@
 
 ### KafkaClusterTopic <a name="KafkaClusterTopic" id="@cdktf/provider-ionoscloud.kafkaClusterTopic.KafkaClusterTopic"></a>
 
-Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.6/docs/resources/kafka_cluster_topic ionoscloud_kafka_cluster_topic}.
+Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.7/docs/resources/kafka_cluster_topic ionoscloud_kafka_cluster_topic}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.kafkaClusterTopic.KafkaClusterTopic.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/kafkaclustertopic"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/kafkaclustertopic"
 
 kafkaclustertopic.NewKafkaClusterTopic(scope Construct, id *string, config KafkaClusterTopicConfig) KafkaClusterTopic
 ```
@@ -433,7 +433,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-ionoscloud.kafkaClusterTopic.KafkaClusterTopic.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/kafkaclustertopic"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/kafkaclustertopic"
 
 kafkaclustertopic.KafkaClusterTopic_IsConstruct(x interface{}) *bool
 ```
@@ -465,7 +465,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-ionoscloud.kafkaClusterTopic.KafkaClusterTopic.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/kafkaclustertopic"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/kafkaclustertopic"
 
 kafkaclustertopic.KafkaClusterTopic_IsTerraformElement(x interface{}) *bool
 ```
@@ -479,7 +479,7 @@ kafkaclustertopic.KafkaClusterTopic_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-ionoscloud.kafkaClusterTopic.KafkaClusterTopic.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/kafkaclustertopic"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/kafkaclustertopic"
 
 kafkaclustertopic.KafkaClusterTopic_IsTerraformResource(x interface{}) *bool
 ```
@@ -493,7 +493,7 @@ kafkaclustertopic.KafkaClusterTopic_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-ionoscloud.kafkaClusterTopic.KafkaClusterTopic.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/kafkaclustertopic"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/kafkaclustertopic"
 
 kafkaclustertopic.KafkaClusterTopic_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -522,7 +522,7 @@ The construct id used in the generated config for the KafkaClusterTopic to impor
 
 The id of the existing KafkaClusterTopic that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.6/docs/resources/kafka_cluster_topic#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.7/docs/resources/kafka_cluster_topic#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -909,7 +909,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-ionoscloud.kafkaClusterTopic.KafkaClusterTopicConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/kafkaclustertopic"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/kafkaclustertopic"
 
 &kafkaclustertopic.KafkaClusterTopicConfig {
 	Connection: interface{},
@@ -926,7 +926,7 @@ import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/kafkacluste
 	ReplicationFactor: *f64,
 	RetentionTime: *f64,
 	SegmentBytes: *f64,
-	Timeouts: github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11.kafkaClusterTopic.KafkaClusterTopicTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud.kafkaClusterTopic.KafkaClusterTopicTimeouts,
 }
 ```
 
@@ -1032,7 +1032,7 @@ ClusterId *string
 
 The ID of the Kafka Cluster to which the topic belongs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.6/docs/resources/kafka_cluster_topic#cluster_id KafkaClusterTopic#cluster_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.7/docs/resources/kafka_cluster_topic#cluster_id KafkaClusterTopic#cluster_id}
 
 ---
 
@@ -1048,7 +1048,7 @@ The name of your Kafka Cluster Topic.
 
 Must be 63 characters or less and must begin and end with an alphanumeric character (`[a-z0-9A-Z]`) with dashes (`-`), underscores (`_`), dots (`.`), and alphanumerics between.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.6/docs/resources/kafka_cluster_topic#name KafkaClusterTopic#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.7/docs/resources/kafka_cluster_topic#name KafkaClusterTopic#name}
 
 ---
 
@@ -1062,7 +1062,7 @@ Location *string
 
 The location of your Kafka Cluster Topic. Supported locations: de/fra, de/txl.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.6/docs/resources/kafka_cluster_topic#location KafkaClusterTopic#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.7/docs/resources/kafka_cluster_topic#location KafkaClusterTopic#location}
 
 ---
 
@@ -1078,7 +1078,7 @@ The number of partitions of the topic.
 
 Partitions allow for parallel processing of messages. The partition count must be greater than or equal to the replication factor.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.6/docs/resources/kafka_cluster_topic#number_of_partitions KafkaClusterTopic#number_of_partitions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.7/docs/resources/kafka_cluster_topic#number_of_partitions KafkaClusterTopic#number_of_partitions}
 
 ---
 
@@ -1094,7 +1094,7 @@ The number of replicas of the topic.
 
 The replication factor determines how many copies of the topic are stored on different brokers. The replication factor must be less than or equal to the number of brokers in the Kafka Cluster.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.6/docs/resources/kafka_cluster_topic#replication_factor KafkaClusterTopic#replication_factor}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.7/docs/resources/kafka_cluster_topic#replication_factor KafkaClusterTopic#replication_factor}
 
 ---
 
@@ -1110,7 +1110,7 @@ This configuration controls the maximum time we will retain a log before we will
 
 This represents an SLA on how soon consumers must read their data. If set to -1, no time limit is applied.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.6/docs/resources/kafka_cluster_topic#retention_time KafkaClusterTopic#retention_time}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.7/docs/resources/kafka_cluster_topic#retention_time KafkaClusterTopic#retention_time}
 
 ---
 
@@ -1126,7 +1126,7 @@ This configuration controls the segment file size for the log.
 
 Retention and cleaning is always done a file at a time so a larger segment size means fewer files but less granular control over retention.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.6/docs/resources/kafka_cluster_topic#segment_bytes KafkaClusterTopic#segment_bytes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.7/docs/resources/kafka_cluster_topic#segment_bytes KafkaClusterTopic#segment_bytes}
 
 ---
 
@@ -1140,7 +1140,7 @@ Timeouts KafkaClusterTopicTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.6/docs/resources/kafka_cluster_topic#timeouts KafkaClusterTopic#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.7/docs/resources/kafka_cluster_topic#timeouts KafkaClusterTopic#timeouts}
 
 ---
 
@@ -1149,7 +1149,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 #### Initializer <a name="Initializer" id="@cdktf/provider-ionoscloud.kafkaClusterTopic.KafkaClusterTopicTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/kafkaclustertopic"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/kafkaclustertopic"
 
 &kafkaclustertopic.KafkaClusterTopicTimeouts {
 	Create: *string,
@@ -1163,10 +1163,10 @@ import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/kafkacluste
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-ionoscloud.kafkaClusterTopic.KafkaClusterTopicTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.6/docs/resources/kafka_cluster_topic#create KafkaClusterTopic#create}. |
-| <code><a href="#@cdktf/provider-ionoscloud.kafkaClusterTopic.KafkaClusterTopicTimeouts.property.default">Default</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.6/docs/resources/kafka_cluster_topic#default KafkaClusterTopic#default}. |
-| <code><a href="#@cdktf/provider-ionoscloud.kafkaClusterTopic.KafkaClusterTopicTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.6/docs/resources/kafka_cluster_topic#delete KafkaClusterTopic#delete}. |
-| <code><a href="#@cdktf/provider-ionoscloud.kafkaClusterTopic.KafkaClusterTopicTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.6/docs/resources/kafka_cluster_topic#update KafkaClusterTopic#update}. |
+| <code><a href="#@cdktf/provider-ionoscloud.kafkaClusterTopic.KafkaClusterTopicTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.7/docs/resources/kafka_cluster_topic#create KafkaClusterTopic#create}. |
+| <code><a href="#@cdktf/provider-ionoscloud.kafkaClusterTopic.KafkaClusterTopicTimeouts.property.default">Default</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.7/docs/resources/kafka_cluster_topic#default KafkaClusterTopic#default}. |
+| <code><a href="#@cdktf/provider-ionoscloud.kafkaClusterTopic.KafkaClusterTopicTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.7/docs/resources/kafka_cluster_topic#delete KafkaClusterTopic#delete}. |
+| <code><a href="#@cdktf/provider-ionoscloud.kafkaClusterTopic.KafkaClusterTopicTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.7/docs/resources/kafka_cluster_topic#update KafkaClusterTopic#update}. |
 
 ---
 
@@ -1178,7 +1178,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.6/docs/resources/kafka_cluster_topic#create KafkaClusterTopic#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.7/docs/resources/kafka_cluster_topic#create KafkaClusterTopic#create}.
 
 ---
 
@@ -1190,7 +1190,7 @@ Default *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.6/docs/resources/kafka_cluster_topic#default KafkaClusterTopic#default}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.7/docs/resources/kafka_cluster_topic#default KafkaClusterTopic#default}.
 
 ---
 
@@ -1202,7 +1202,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.6/docs/resources/kafka_cluster_topic#delete KafkaClusterTopic#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.7/docs/resources/kafka_cluster_topic#delete KafkaClusterTopic#delete}.
 
 ---
 
@@ -1214,7 +1214,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.6/docs/resources/kafka_cluster_topic#update KafkaClusterTopic#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.7/docs/resources/kafka_cluster_topic#update KafkaClusterTopic#update}.
 
 ---
 
@@ -1225,7 +1225,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.kafkaClusterTopic.KafkaClusterTopicTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/kafkaclustertopic"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/kafkaclustertopic"
 
 kafkaclustertopic.NewKafkaClusterTopicTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) KafkaClusterTopicTimeoutsOutputReference
 ```
