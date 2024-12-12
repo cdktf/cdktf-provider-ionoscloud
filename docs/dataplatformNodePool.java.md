@@ -4,7 +4,7 @@
 
 ### DataplatformNodePool <a name="DataplatformNodePool" id="@cdktf/provider-ionoscloud.dataplatformNodePool.DataplatformNodePool"></a>
 
-Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.7/docs/resources/dataplatform_node_pool ionoscloud_dataplatform_node_pool}.
+Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.8/docs/resources/dataplatform_node_pool ionoscloud_dataplatform_node_pool}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.dataplatformNodePool.DataplatformNodePool.Initializer"></a>
 
@@ -27,6 +27,7 @@ DataplatformNodePool.Builder.create(Construct scope, java.lang.String id)
     .name(java.lang.String)
     .nodeCount(java.lang.Number)
 //  .annotations(java.util.Map<java.lang.String, java.lang.String>)
+//  .autoScaling(DataplatformNodePoolAutoScaling)
 //  .availabilityZone(java.lang.String)
 //  .coresCount(java.lang.Number)
 //  .cpuFamily(java.lang.String)
@@ -56,10 +57,11 @@ DataplatformNodePool.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-ionoscloud.dataplatformNodePool.DataplatformNodePool.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | The name of your node pool. |
 | <code><a href="#@cdktf/provider-ionoscloud.dataplatformNodePool.DataplatformNodePool.Initializer.parameter.nodeCount">nodeCount</a></code> | <code>java.lang.Number</code> | The number of nodes that make up the node pool. |
 | <code><a href="#@cdktf/provider-ionoscloud.dataplatformNodePool.DataplatformNodePool.Initializer.parameter.annotations">annotations</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Key-value pairs attached to node pool resource as [Kubernetes annotations](https://kubernetes.io/docs/concepts/overview/working-with-objects/annotations/). |
+| <code><a href="#@cdktf/provider-ionoscloud.dataplatformNodePool.DataplatformNodePool.Initializer.parameter.autoScaling">autoScaling</a></code> | <code><a href="#@cdktf/provider-ionoscloud.dataplatformNodePool.DataplatformNodePoolAutoScaling">DataplatformNodePoolAutoScaling</a></code> | auto_scaling block. |
 | <code><a href="#@cdktf/provider-ionoscloud.dataplatformNodePool.DataplatformNodePool.Initializer.parameter.availabilityZone">availabilityZone</a></code> | <code>java.lang.String</code> | The availability zone of the virtual datacenter region where the node pool resources should be provisioned. |
 | <code><a href="#@cdktf/provider-ionoscloud.dataplatformNodePool.DataplatformNodePool.Initializer.parameter.coresCount">coresCount</a></code> | <code>java.lang.Number</code> | The number of CPU cores per node. |
 | <code><a href="#@cdktf/provider-ionoscloud.dataplatformNodePool.DataplatformNodePool.Initializer.parameter.cpuFamily">cpuFamily</a></code> | <code>java.lang.String</code> | A valid CPU family name or `AUTO` if the platform shall choose the best fitting option. |
-| <code><a href="#@cdktf/provider-ionoscloud.dataplatformNodePool.DataplatformNodePool.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.7/docs/resources/dataplatform_node_pool#id DataplatformNodePool#id}. |
+| <code><a href="#@cdktf/provider-ionoscloud.dataplatformNodePool.DataplatformNodePool.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.8/docs/resources/dataplatform_node_pool#id DataplatformNodePool#id}. |
 | <code><a href="#@cdktf/provider-ionoscloud.dataplatformNodePool.DataplatformNodePool.Initializer.parameter.labels">labels</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Key-value pairs attached to the node pool resource as [Kubernetes labels](https://kubernetes.io/docs/concepts/overview/working-with-objects/labels/). |
 | <code><a href="#@cdktf/provider-ionoscloud.dataplatformNodePool.DataplatformNodePool.Initializer.parameter.maintenanceWindow">maintenanceWindow</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-ionoscloud.dataplatformNodePool.DataplatformNodePoolMaintenanceWindow">DataplatformNodePoolMaintenanceWindow</a>></code> | maintenance_window block. |
 | <code><a href="#@cdktf/provider-ionoscloud.dataplatformNodePool.DataplatformNodePool.Initializer.parameter.ramSize">ramSize</a></code> | <code>java.lang.Number</code> | The RAM size for one node in MB. |
@@ -135,7 +137,7 @@ Must be unique amongst siblings in the same scope
 
 The UUID of an existing Dataplatform cluster.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.7/docs/resources/dataplatform_node_pool#cluster_id DataplatformNodePool#cluster_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.8/docs/resources/dataplatform_node_pool#cluster_id DataplatformNodePool#cluster_id}
 
 ---
 
@@ -147,7 +149,7 @@ The name of your node pool.
 
 Must be 63 characters or less and must be empty or begin and end with an alphanumeric character ([a-z0-9A-Z]). It can contain dashes (-), underscores (_), dots (.), and alphanumerics in-between.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.7/docs/resources/dataplatform_node_pool#name DataplatformNodePool#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.8/docs/resources/dataplatform_node_pool#name DataplatformNodePool#name}
 
 ---
 
@@ -157,7 +159,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 
 The number of nodes that make up the node pool.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.7/docs/resources/dataplatform_node_pool#node_count DataplatformNodePool#node_count}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.8/docs/resources/dataplatform_node_pool#node_count DataplatformNodePool#node_count}
 
 ---
 
@@ -167,7 +169,17 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 
 Key-value pairs attached to node pool resource as [Kubernetes annotations](https://kubernetes.io/docs/concepts/overview/working-with-objects/annotations/).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.7/docs/resources/dataplatform_node_pool#annotations DataplatformNodePool#annotations}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.8/docs/resources/dataplatform_node_pool#annotations DataplatformNodePool#annotations}
+
+---
+
+##### `autoScaling`<sup>Optional</sup> <a name="autoScaling" id="@cdktf/provider-ionoscloud.dataplatformNodePool.DataplatformNodePool.Initializer.parameter.autoScaling"></a>
+
+- *Type:* <a href="#@cdktf/provider-ionoscloud.dataplatformNodePool.DataplatformNodePoolAutoScaling">DataplatformNodePoolAutoScaling</a>
+
+auto_scaling block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.8/docs/resources/dataplatform_node_pool#auto_scaling DataplatformNodePool#auto_scaling}
 
 ---
 
@@ -177,7 +189,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 
 The availability zone of the virtual datacenter region where the node pool resources should be provisioned.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.7/docs/resources/dataplatform_node_pool#availability_zone DataplatformNodePool#availability_zone}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.8/docs/resources/dataplatform_node_pool#availability_zone DataplatformNodePool#availability_zone}
 
 ---
 
@@ -187,7 +199,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 
 The number of CPU cores per node.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.7/docs/resources/dataplatform_node_pool#cores_count DataplatformNodePool#cores_count}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.8/docs/resources/dataplatform_node_pool#cores_count DataplatformNodePool#cores_count}
 
 ---
 
@@ -199,7 +211,7 @@ A valid CPU family name or `AUTO` if the platform shall choose the best fitting 
 
 Available CPU architectures can be retrieved from the datacenter resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.7/docs/resources/dataplatform_node_pool#cpu_family DataplatformNodePool#cpu_family}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.8/docs/resources/dataplatform_node_pool#cpu_family DataplatformNodePool#cpu_family}
 
 ---
 
@@ -207,7 +219,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.7/docs/resources/dataplatform_node_pool#id DataplatformNodePool#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.8/docs/resources/dataplatform_node_pool#id DataplatformNodePool#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -220,7 +232,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 Key-value pairs attached to the node pool resource as [Kubernetes labels](https://kubernetes.io/docs/concepts/overview/working-with-objects/labels/).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.7/docs/resources/dataplatform_node_pool#labels DataplatformNodePool#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.8/docs/resources/dataplatform_node_pool#labels DataplatformNodePool#labels}
 
 ---
 
@@ -230,7 +242,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 
 maintenance_window block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.7/docs/resources/dataplatform_node_pool#maintenance_window DataplatformNodePool#maintenance_window}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.8/docs/resources/dataplatform_node_pool#maintenance_window DataplatformNodePool#maintenance_window}
 
 ---
 
@@ -242,7 +254,7 @@ The RAM size for one node in MB.
 
 Must be set in multiples of 1024 MB, with a minimum size is of 2048 MB.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.7/docs/resources/dataplatform_node_pool#ram_size DataplatformNodePool#ram_size}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.8/docs/resources/dataplatform_node_pool#ram_size DataplatformNodePool#ram_size}
 
 ---
 
@@ -252,7 +264,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 
 The size of the volume in GB. The size must be greater than 10GB.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.7/docs/resources/dataplatform_node_pool#storage_size DataplatformNodePool#storage_size}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.8/docs/resources/dataplatform_node_pool#storage_size DataplatformNodePool#storage_size}
 
 ---
 
@@ -262,7 +274,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 
 The type of hardware for the volume.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.7/docs/resources/dataplatform_node_pool#storage_type DataplatformNodePool#storage_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.8/docs/resources/dataplatform_node_pool#storage_type DataplatformNodePool#storage_type}
 
 ---
 
@@ -272,7 +284,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.7/docs/resources/dataplatform_node_pool#timeouts DataplatformNodePool#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.8/docs/resources/dataplatform_node_pool#timeouts DataplatformNodePool#timeouts}
 
 ---
 
@@ -303,9 +315,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 | <code><a href="#@cdktf/provider-ionoscloud.dataplatformNodePool.DataplatformNodePool.moveFromId">moveFromId</a></code> | Move the resource corresponding to "id" to this resource. |
 | <code><a href="#@cdktf/provider-ionoscloud.dataplatformNodePool.DataplatformNodePool.moveTo">moveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-ionoscloud.dataplatformNodePool.DataplatformNodePool.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
+| <code><a href="#@cdktf/provider-ionoscloud.dataplatformNodePool.DataplatformNodePool.putAutoScaling">putAutoScaling</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.dataplatformNodePool.DataplatformNodePool.putMaintenanceWindow">putMaintenanceWindow</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.dataplatformNodePool.DataplatformNodePool.putTimeouts">putTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.dataplatformNodePool.DataplatformNodePool.resetAnnotations">resetAnnotations</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.dataplatformNodePool.DataplatformNodePool.resetAutoScaling">resetAutoScaling</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.dataplatformNodePool.DataplatformNodePool.resetAvailabilityZone">resetAvailabilityZone</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.dataplatformNodePool.DataplatformNodePool.resetCoresCount">resetCoresCount</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.dataplatformNodePool.DataplatformNodePool.resetCpuFamily">resetCpuFamily</a></code> | *No description.* |
@@ -609,6 +623,18 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
+##### `putAutoScaling` <a name="putAutoScaling" id="@cdktf/provider-ionoscloud.dataplatformNodePool.DataplatformNodePool.putAutoScaling"></a>
+
+```java
+public void putAutoScaling(DataplatformNodePoolAutoScaling value)
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-ionoscloud.dataplatformNodePool.DataplatformNodePool.putAutoScaling.parameter.value"></a>
+
+- *Type:* <a href="#@cdktf/provider-ionoscloud.dataplatformNodePool.DataplatformNodePoolAutoScaling">DataplatformNodePoolAutoScaling</a>
+
+---
+
 ##### `putMaintenanceWindow` <a name="putMaintenanceWindow" id="@cdktf/provider-ionoscloud.dataplatformNodePool.DataplatformNodePool.putMaintenanceWindow"></a>
 
 ```java
@@ -637,6 +663,12 @@ public void putTimeouts(DataplatformNodePoolTimeouts value)
 
 ```java
 public void resetAnnotations()
+```
+
+##### `resetAutoScaling` <a name="resetAutoScaling" id="@cdktf/provider-ionoscloud.dataplatformNodePool.DataplatformNodePool.resetAutoScaling"></a>
+
+```java
+public void resetAutoScaling()
 ```
 
 ##### `resetAvailabilityZone` <a name="resetAvailabilityZone" id="@cdktf/provider-ionoscloud.dataplatformNodePool.DataplatformNodePool.resetAvailabilityZone"></a>
@@ -802,7 +834,7 @@ The construct id used in the generated config for the DataplatformNodePool to im
 
 The id of the existing DataplatformNodePool that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.7/docs/resources/dataplatform_node_pool#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.8/docs/resources/dataplatform_node_pool#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -832,11 +864,13 @@ Refer to the {@link https://registry.terraform.io/providers/ionos-cloud/ionosclo
 | <code><a href="#@cdktf/provider-ionoscloud.dataplatformNodePool.DataplatformNodePool.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.dataplatformNodePool.DataplatformNodePool.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.dataplatformNodePool.DataplatformNodePool.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.dataplatformNodePool.DataplatformNodePool.property.autoScaling">autoScaling</a></code> | <code><a href="#@cdktf/provider-ionoscloud.dataplatformNodePool.DataplatformNodePoolAutoScalingOutputReference">DataplatformNodePoolAutoScalingOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.dataplatformNodePool.DataplatformNodePool.property.datacenterId">datacenterId</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.dataplatformNodePool.DataplatformNodePool.property.maintenanceWindow">maintenanceWindow</a></code> | <code><a href="#@cdktf/provider-ionoscloud.dataplatformNodePool.DataplatformNodePoolMaintenanceWindowList">DataplatformNodePoolMaintenanceWindowList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.dataplatformNodePool.DataplatformNodePool.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-ionoscloud.dataplatformNodePool.DataplatformNodePoolTimeoutsOutputReference">DataplatformNodePoolTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.dataplatformNodePool.DataplatformNodePool.property.version">version</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.dataplatformNodePool.DataplatformNodePool.property.annotationsInput">annotationsInput</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.dataplatformNodePool.DataplatformNodePool.property.autoScalingInput">autoScalingInput</a></code> | <code><a href="#@cdktf/provider-ionoscloud.dataplatformNodePool.DataplatformNodePoolAutoScaling">DataplatformNodePoolAutoScaling</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.dataplatformNodePool.DataplatformNodePool.property.availabilityZoneInput">availabilityZoneInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.dataplatformNodePool.DataplatformNodePool.property.clusterIdInput">clusterIdInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.dataplatformNodePool.DataplatformNodePool.property.coresCountInput">coresCountInput</a></code> | <code>java.lang.Number</code> | *No description.* |
@@ -1007,6 +1041,16 @@ public java.lang.Object getProvisioners();
 
 ---
 
+##### `autoScaling`<sup>Required</sup> <a name="autoScaling" id="@cdktf/provider-ionoscloud.dataplatformNodePool.DataplatformNodePool.property.autoScaling"></a>
+
+```java
+public DataplatformNodePoolAutoScalingOutputReference getAutoScaling();
+```
+
+- *Type:* <a href="#@cdktf/provider-ionoscloud.dataplatformNodePool.DataplatformNodePoolAutoScalingOutputReference">DataplatformNodePoolAutoScalingOutputReference</a>
+
+---
+
 ##### `datacenterId`<sup>Required</sup> <a name="datacenterId" id="@cdktf/provider-ionoscloud.dataplatformNodePool.DataplatformNodePool.property.datacenterId"></a>
 
 ```java
@@ -1054,6 +1098,16 @@ public java.util.Map<java.lang.String, java.lang.String> getAnnotationsInput();
 ```
 
 - *Type:* java.util.Map<java.lang.String, java.lang.String>
+
+---
+
+##### `autoScalingInput`<sup>Optional</sup> <a name="autoScalingInput" id="@cdktf/provider-ionoscloud.dataplatformNodePool.DataplatformNodePool.property.autoScalingInput"></a>
+
+```java
+public DataplatformNodePoolAutoScaling getAutoScalingInput();
+```
+
+- *Type:* <a href="#@cdktf/provider-ionoscloud.dataplatformNodePool.DataplatformNodePoolAutoScaling">DataplatformNodePoolAutoScaling</a>
 
 ---
 
@@ -1327,6 +1381,56 @@ public java.lang.String getTfResourceType();
 
 ## Structs <a name="Structs" id="Structs"></a>
 
+### DataplatformNodePoolAutoScaling <a name="DataplatformNodePoolAutoScaling" id="@cdktf/provider-ionoscloud.dataplatformNodePool.DataplatformNodePoolAutoScaling"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-ionoscloud.dataplatformNodePool.DataplatformNodePoolAutoScaling.Initializer"></a>
+
+```java
+import com.hashicorp.cdktf.providers.ionoscloud.dataplatform_node_pool.DataplatformNodePoolAutoScaling;
+
+DataplatformNodePoolAutoScaling.builder()
+    .maxNodeCount(java.lang.Number)
+    .minNodeCount(java.lang.Number)
+    .build();
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-ionoscloud.dataplatformNodePool.DataplatformNodePoolAutoScaling.property.maxNodeCount">maxNodeCount</a></code> | <code>java.lang.Number</code> | The maximum number of worker nodes that the node pool can scale to. Should be greater than min_node_count. |
+| <code><a href="#@cdktf/provider-ionoscloud.dataplatformNodePool.DataplatformNodePoolAutoScaling.property.minNodeCount">minNodeCount</a></code> | <code>java.lang.Number</code> | The minimum number of worker nodes the node pool can scale down to. Should be less than max_node_count. |
+
+---
+
+##### `maxNodeCount`<sup>Required</sup> <a name="maxNodeCount" id="@cdktf/provider-ionoscloud.dataplatformNodePool.DataplatformNodePoolAutoScaling.property.maxNodeCount"></a>
+
+```java
+public java.lang.Number getMaxNodeCount();
+```
+
+- *Type:* java.lang.Number
+
+The maximum number of worker nodes that the node pool can scale to. Should be greater than min_node_count.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.8/docs/resources/dataplatform_node_pool#max_node_count DataplatformNodePool#max_node_count}
+
+---
+
+##### `minNodeCount`<sup>Required</sup> <a name="minNodeCount" id="@cdktf/provider-ionoscloud.dataplatformNodePool.DataplatformNodePoolAutoScaling.property.minNodeCount"></a>
+
+```java
+public java.lang.Number getMinNodeCount();
+```
+
+- *Type:* java.lang.Number
+
+The minimum number of worker nodes the node pool can scale down to. Should be less than max_node_count.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.8/docs/resources/dataplatform_node_pool#min_node_count DataplatformNodePool#min_node_count}
+
+---
+
 ### DataplatformNodePoolConfig <a name="DataplatformNodePoolConfig" id="@cdktf/provider-ionoscloud.dataplatformNodePool.DataplatformNodePoolConfig"></a>
 
 #### Initializer <a name="Initializer" id="@cdktf/provider-ionoscloud.dataplatformNodePool.DataplatformNodePoolConfig.Initializer"></a>
@@ -1350,6 +1454,7 @@ DataplatformNodePoolConfig.builder()
     .name(java.lang.String)
     .nodeCount(java.lang.Number)
 //  .annotations(java.util.Map<java.lang.String, java.lang.String>)
+//  .autoScaling(DataplatformNodePoolAutoScaling)
 //  .availabilityZone(java.lang.String)
 //  .coresCount(java.lang.Number)
 //  .cpuFamily(java.lang.String)
@@ -1379,10 +1484,11 @@ DataplatformNodePoolConfig.builder()
 | <code><a href="#@cdktf/provider-ionoscloud.dataplatformNodePool.DataplatformNodePoolConfig.property.name">name</a></code> | <code>java.lang.String</code> | The name of your node pool. |
 | <code><a href="#@cdktf/provider-ionoscloud.dataplatformNodePool.DataplatformNodePoolConfig.property.nodeCount">nodeCount</a></code> | <code>java.lang.Number</code> | The number of nodes that make up the node pool. |
 | <code><a href="#@cdktf/provider-ionoscloud.dataplatformNodePool.DataplatformNodePoolConfig.property.annotations">annotations</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Key-value pairs attached to node pool resource as [Kubernetes annotations](https://kubernetes.io/docs/concepts/overview/working-with-objects/annotations/). |
+| <code><a href="#@cdktf/provider-ionoscloud.dataplatformNodePool.DataplatformNodePoolConfig.property.autoScaling">autoScaling</a></code> | <code><a href="#@cdktf/provider-ionoscloud.dataplatformNodePool.DataplatformNodePoolAutoScaling">DataplatformNodePoolAutoScaling</a></code> | auto_scaling block. |
 | <code><a href="#@cdktf/provider-ionoscloud.dataplatformNodePool.DataplatformNodePoolConfig.property.availabilityZone">availabilityZone</a></code> | <code>java.lang.String</code> | The availability zone of the virtual datacenter region where the node pool resources should be provisioned. |
 | <code><a href="#@cdktf/provider-ionoscloud.dataplatformNodePool.DataplatformNodePoolConfig.property.coresCount">coresCount</a></code> | <code>java.lang.Number</code> | The number of CPU cores per node. |
 | <code><a href="#@cdktf/provider-ionoscloud.dataplatformNodePool.DataplatformNodePoolConfig.property.cpuFamily">cpuFamily</a></code> | <code>java.lang.String</code> | A valid CPU family name or `AUTO` if the platform shall choose the best fitting option. |
-| <code><a href="#@cdktf/provider-ionoscloud.dataplatformNodePool.DataplatformNodePoolConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.7/docs/resources/dataplatform_node_pool#id DataplatformNodePool#id}. |
+| <code><a href="#@cdktf/provider-ionoscloud.dataplatformNodePool.DataplatformNodePoolConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.8/docs/resources/dataplatform_node_pool#id DataplatformNodePool#id}. |
 | <code><a href="#@cdktf/provider-ionoscloud.dataplatformNodePool.DataplatformNodePoolConfig.property.labels">labels</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Key-value pairs attached to the node pool resource as [Kubernetes labels](https://kubernetes.io/docs/concepts/overview/working-with-objects/labels/). |
 | <code><a href="#@cdktf/provider-ionoscloud.dataplatformNodePool.DataplatformNodePoolConfig.property.maintenanceWindow">maintenanceWindow</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-ionoscloud.dataplatformNodePool.DataplatformNodePoolMaintenanceWindow">DataplatformNodePoolMaintenanceWindow</a>></code> | maintenance_window block. |
 | <code><a href="#@cdktf/provider-ionoscloud.dataplatformNodePool.DataplatformNodePoolConfig.property.ramSize">ramSize</a></code> | <code>java.lang.Number</code> | The RAM size for one node in MB. |
@@ -1472,7 +1578,7 @@ public java.lang.String getClusterId();
 
 The UUID of an existing Dataplatform cluster.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.7/docs/resources/dataplatform_node_pool#cluster_id DataplatformNodePool#cluster_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.8/docs/resources/dataplatform_node_pool#cluster_id DataplatformNodePool#cluster_id}
 
 ---
 
@@ -1488,7 +1594,7 @@ The name of your node pool.
 
 Must be 63 characters or less and must be empty or begin and end with an alphanumeric character ([a-z0-9A-Z]). It can contain dashes (-), underscores (_), dots (.), and alphanumerics in-between.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.7/docs/resources/dataplatform_node_pool#name DataplatformNodePool#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.8/docs/resources/dataplatform_node_pool#name DataplatformNodePool#name}
 
 ---
 
@@ -1502,7 +1608,7 @@ public java.lang.Number getNodeCount();
 
 The number of nodes that make up the node pool.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.7/docs/resources/dataplatform_node_pool#node_count DataplatformNodePool#node_count}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.8/docs/resources/dataplatform_node_pool#node_count DataplatformNodePool#node_count}
 
 ---
 
@@ -1516,7 +1622,21 @@ public java.util.Map<java.lang.String, java.lang.String> getAnnotations();
 
 Key-value pairs attached to node pool resource as [Kubernetes annotations](https://kubernetes.io/docs/concepts/overview/working-with-objects/annotations/).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.7/docs/resources/dataplatform_node_pool#annotations DataplatformNodePool#annotations}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.8/docs/resources/dataplatform_node_pool#annotations DataplatformNodePool#annotations}
+
+---
+
+##### `autoScaling`<sup>Optional</sup> <a name="autoScaling" id="@cdktf/provider-ionoscloud.dataplatformNodePool.DataplatformNodePoolConfig.property.autoScaling"></a>
+
+```java
+public DataplatformNodePoolAutoScaling getAutoScaling();
+```
+
+- *Type:* <a href="#@cdktf/provider-ionoscloud.dataplatformNodePool.DataplatformNodePoolAutoScaling">DataplatformNodePoolAutoScaling</a>
+
+auto_scaling block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.8/docs/resources/dataplatform_node_pool#auto_scaling DataplatformNodePool#auto_scaling}
 
 ---
 
@@ -1530,7 +1650,7 @@ public java.lang.String getAvailabilityZone();
 
 The availability zone of the virtual datacenter region where the node pool resources should be provisioned.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.7/docs/resources/dataplatform_node_pool#availability_zone DataplatformNodePool#availability_zone}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.8/docs/resources/dataplatform_node_pool#availability_zone DataplatformNodePool#availability_zone}
 
 ---
 
@@ -1544,7 +1664,7 @@ public java.lang.Number getCoresCount();
 
 The number of CPU cores per node.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.7/docs/resources/dataplatform_node_pool#cores_count DataplatformNodePool#cores_count}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.8/docs/resources/dataplatform_node_pool#cores_count DataplatformNodePool#cores_count}
 
 ---
 
@@ -1560,7 +1680,7 @@ A valid CPU family name or `AUTO` if the platform shall choose the best fitting 
 
 Available CPU architectures can be retrieved from the datacenter resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.7/docs/resources/dataplatform_node_pool#cpu_family DataplatformNodePool#cpu_family}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.8/docs/resources/dataplatform_node_pool#cpu_family DataplatformNodePool#cpu_family}
 
 ---
 
@@ -1572,7 +1692,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.7/docs/resources/dataplatform_node_pool#id DataplatformNodePool#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.8/docs/resources/dataplatform_node_pool#id DataplatformNodePool#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1589,7 +1709,7 @@ public java.util.Map<java.lang.String, java.lang.String> getLabels();
 
 Key-value pairs attached to the node pool resource as [Kubernetes labels](https://kubernetes.io/docs/concepts/overview/working-with-objects/labels/).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.7/docs/resources/dataplatform_node_pool#labels DataplatformNodePool#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.8/docs/resources/dataplatform_node_pool#labels DataplatformNodePool#labels}
 
 ---
 
@@ -1603,7 +1723,7 @@ public java.lang.Object getMaintenanceWindow();
 
 maintenance_window block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.7/docs/resources/dataplatform_node_pool#maintenance_window DataplatformNodePool#maintenance_window}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.8/docs/resources/dataplatform_node_pool#maintenance_window DataplatformNodePool#maintenance_window}
 
 ---
 
@@ -1619,7 +1739,7 @@ The RAM size for one node in MB.
 
 Must be set in multiples of 1024 MB, with a minimum size is of 2048 MB.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.7/docs/resources/dataplatform_node_pool#ram_size DataplatformNodePool#ram_size}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.8/docs/resources/dataplatform_node_pool#ram_size DataplatformNodePool#ram_size}
 
 ---
 
@@ -1633,7 +1753,7 @@ public java.lang.Number getStorageSize();
 
 The size of the volume in GB. The size must be greater than 10GB.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.7/docs/resources/dataplatform_node_pool#storage_size DataplatformNodePool#storage_size}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.8/docs/resources/dataplatform_node_pool#storage_size DataplatformNodePool#storage_size}
 
 ---
 
@@ -1647,7 +1767,7 @@ public java.lang.String getStorageType();
 
 The type of hardware for the volume.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.7/docs/resources/dataplatform_node_pool#storage_type DataplatformNodePool#storage_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.8/docs/resources/dataplatform_node_pool#storage_type DataplatformNodePool#storage_type}
 
 ---
 
@@ -1661,7 +1781,7 @@ public DataplatformNodePoolTimeouts getTimeouts();
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.7/docs/resources/dataplatform_node_pool#timeouts DataplatformNodePool#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.8/docs/resources/dataplatform_node_pool#timeouts DataplatformNodePool#timeouts}
 
 ---
 
@@ -1682,7 +1802,7 @@ DataplatformNodePoolMaintenanceWindow.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-ionoscloud.dataplatformNodePool.DataplatformNodePoolMaintenanceWindow.property.dayOfTheWeek">dayOfTheWeek</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.7/docs/resources/dataplatform_node_pool#day_of_the_week DataplatformNodePool#day_of_the_week}. |
+| <code><a href="#@cdktf/provider-ionoscloud.dataplatformNodePool.DataplatformNodePoolMaintenanceWindow.property.dayOfTheWeek">dayOfTheWeek</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.8/docs/resources/dataplatform_node_pool#day_of_the_week DataplatformNodePool#day_of_the_week}. |
 | <code><a href="#@cdktf/provider-ionoscloud.dataplatformNodePool.DataplatformNodePoolMaintenanceWindow.property.time">time</a></code> | <code>java.lang.String</code> | Time at which the maintenance should start. |
 
 ---
@@ -1695,7 +1815,7 @@ public java.lang.String getDayOfTheWeek();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.7/docs/resources/dataplatform_node_pool#day_of_the_week DataplatformNodePool#day_of_the_week}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.8/docs/resources/dataplatform_node_pool#day_of_the_week DataplatformNodePool#day_of_the_week}.
 
 ---
 
@@ -1709,7 +1829,7 @@ public java.lang.String getTime();
 
 Time at which the maintenance should start.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.7/docs/resources/dataplatform_node_pool#time DataplatformNodePool#time}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.8/docs/resources/dataplatform_node_pool#time DataplatformNodePool#time}
 
 ---
 
@@ -1732,10 +1852,10 @@ DataplatformNodePoolTimeouts.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-ionoscloud.dataplatformNodePool.DataplatformNodePoolTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.7/docs/resources/dataplatform_node_pool#create DataplatformNodePool#create}. |
-| <code><a href="#@cdktf/provider-ionoscloud.dataplatformNodePool.DataplatformNodePoolTimeouts.property.default">default</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.7/docs/resources/dataplatform_node_pool#default DataplatformNodePool#default}. |
-| <code><a href="#@cdktf/provider-ionoscloud.dataplatformNodePool.DataplatformNodePoolTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.7/docs/resources/dataplatform_node_pool#delete DataplatformNodePool#delete}. |
-| <code><a href="#@cdktf/provider-ionoscloud.dataplatformNodePool.DataplatformNodePoolTimeouts.property.update">update</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.7/docs/resources/dataplatform_node_pool#update DataplatformNodePool#update}. |
+| <code><a href="#@cdktf/provider-ionoscloud.dataplatformNodePool.DataplatformNodePoolTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.8/docs/resources/dataplatform_node_pool#create DataplatformNodePool#create}. |
+| <code><a href="#@cdktf/provider-ionoscloud.dataplatformNodePool.DataplatformNodePoolTimeouts.property.default">default</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.8/docs/resources/dataplatform_node_pool#default DataplatformNodePool#default}. |
+| <code><a href="#@cdktf/provider-ionoscloud.dataplatformNodePool.DataplatformNodePoolTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.8/docs/resources/dataplatform_node_pool#delete DataplatformNodePool#delete}. |
+| <code><a href="#@cdktf/provider-ionoscloud.dataplatformNodePool.DataplatformNodePoolTimeouts.property.update">update</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.8/docs/resources/dataplatform_node_pool#update DataplatformNodePool#update}. |
 
 ---
 
@@ -1747,7 +1867,7 @@ public java.lang.String getCreate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.7/docs/resources/dataplatform_node_pool#create DataplatformNodePool#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.8/docs/resources/dataplatform_node_pool#create DataplatformNodePool#create}.
 
 ---
 
@@ -1759,7 +1879,7 @@ public java.lang.String getDefault();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.7/docs/resources/dataplatform_node_pool#default DataplatformNodePool#default}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.8/docs/resources/dataplatform_node_pool#default DataplatformNodePool#default}.
 
 ---
 
@@ -1771,7 +1891,7 @@ public java.lang.String getDelete();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.7/docs/resources/dataplatform_node_pool#delete DataplatformNodePool#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.8/docs/resources/dataplatform_node_pool#delete DataplatformNodePool#delete}.
 
 ---
 
@@ -1783,11 +1903,304 @@ public java.lang.String getUpdate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.7/docs/resources/dataplatform_node_pool#update DataplatformNodePool#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.8/docs/resources/dataplatform_node_pool#update DataplatformNodePool#update}.
 
 ---
 
 ## Classes <a name="Classes" id="Classes"></a>
+
+### DataplatformNodePoolAutoScalingOutputReference <a name="DataplatformNodePoolAutoScalingOutputReference" id="@cdktf/provider-ionoscloud.dataplatformNodePool.DataplatformNodePoolAutoScalingOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.dataplatformNodePool.DataplatformNodePoolAutoScalingOutputReference.Initializer"></a>
+
+```java
+import com.hashicorp.cdktf.providers.ionoscloud.dataplatform_node_pool.DataplatformNodePoolAutoScalingOutputReference;
+
+new DataplatformNodePoolAutoScalingOutputReference(IInterpolatingParent terraformResource, java.lang.String terraformAttribute);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-ionoscloud.dataplatformNodePool.DataplatformNodePoolAutoScalingOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>com.hashicorp.cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-ionoscloud.dataplatformNodePool.DataplatformNodePoolAutoScalingOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-ionoscloud.dataplatformNodePool.DataplatformNodePoolAutoScalingOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* com.hashicorp.cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-ionoscloud.dataplatformNodePool.DataplatformNodePoolAutoScalingOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-ionoscloud.dataplatformNodePool.DataplatformNodePoolAutoScalingOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.dataplatformNodePool.DataplatformNodePoolAutoScalingOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.dataplatformNodePool.DataplatformNodePoolAutoScalingOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.dataplatformNodePool.DataplatformNodePoolAutoScalingOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.dataplatformNodePool.DataplatformNodePoolAutoScalingOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.dataplatformNodePool.DataplatformNodePoolAutoScalingOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.dataplatformNodePool.DataplatformNodePoolAutoScalingOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.dataplatformNodePool.DataplatformNodePoolAutoScalingOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.dataplatformNodePool.DataplatformNodePoolAutoScalingOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.dataplatformNodePool.DataplatformNodePoolAutoScalingOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.dataplatformNodePool.DataplatformNodePoolAutoScalingOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.dataplatformNodePool.DataplatformNodePoolAutoScalingOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-ionoscloud.dataplatformNodePool.DataplatformNodePoolAutoScalingOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktf/provider-ionoscloud.dataplatformNodePool.DataplatformNodePoolAutoScalingOutputReference.computeFqn"></a>
+
+```java
+public java.lang.String computeFqn()
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-ionoscloud.dataplatformNodePool.DataplatformNodePoolAutoScalingOutputReference.getAnyMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Object> getAnyMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-ionoscloud.dataplatformNodePool.DataplatformNodePoolAutoScalingOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-ionoscloud.dataplatformNodePool.DataplatformNodePoolAutoScalingOutputReference.getBooleanAttribute"></a>
+
+```java
+public IResolvable getBooleanAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-ionoscloud.dataplatformNodePool.DataplatformNodePoolAutoScalingOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-ionoscloud.dataplatformNodePool.DataplatformNodePoolAutoScalingOutputReference.getBooleanMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Boolean> getBooleanMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-ionoscloud.dataplatformNodePool.DataplatformNodePoolAutoScalingOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-ionoscloud.dataplatformNodePool.DataplatformNodePoolAutoScalingOutputReference.getListAttribute"></a>
+
+```java
+public java.util.List<java.lang.String> getListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-ionoscloud.dataplatformNodePool.DataplatformNodePoolAutoScalingOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-ionoscloud.dataplatformNodePool.DataplatformNodePoolAutoScalingOutputReference.getNumberAttribute"></a>
+
+```java
+public java.lang.Number getNumberAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-ionoscloud.dataplatformNodePool.DataplatformNodePoolAutoScalingOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-ionoscloud.dataplatformNodePool.DataplatformNodePoolAutoScalingOutputReference.getNumberListAttribute"></a>
+
+```java
+public java.util.List<java.lang.Number> getNumberListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-ionoscloud.dataplatformNodePool.DataplatformNodePoolAutoScalingOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-ionoscloud.dataplatformNodePool.DataplatformNodePoolAutoScalingOutputReference.getNumberMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Number> getNumberMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-ionoscloud.dataplatformNodePool.DataplatformNodePoolAutoScalingOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-ionoscloud.dataplatformNodePool.DataplatformNodePoolAutoScalingOutputReference.getStringAttribute"></a>
+
+```java
+public java.lang.String getStringAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-ionoscloud.dataplatformNodePool.DataplatformNodePoolAutoScalingOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-ionoscloud.dataplatformNodePool.DataplatformNodePoolAutoScalingOutputReference.getStringMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.String> getStringMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-ionoscloud.dataplatformNodePool.DataplatformNodePoolAutoScalingOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-ionoscloud.dataplatformNodePool.DataplatformNodePoolAutoScalingOutputReference.interpolationForAttribute"></a>
+
+```java
+public IResolvable interpolationForAttribute(java.lang.String property)
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-ionoscloud.dataplatformNodePool.DataplatformNodePoolAutoScalingOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktf/provider-ionoscloud.dataplatformNodePool.DataplatformNodePoolAutoScalingOutputReference.resolve"></a>
+
+```java
+public java.lang.Object resolve(IResolveContext _context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-ionoscloud.dataplatformNodePool.DataplatformNodePoolAutoScalingOutputReference.resolve.parameter._context"></a>
+
+- *Type:* com.hashicorp.cdktf.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktf/provider-ionoscloud.dataplatformNodePool.DataplatformNodePoolAutoScalingOutputReference.toString"></a>
+
+```java
+public java.lang.String toString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-ionoscloud.dataplatformNodePool.DataplatformNodePoolAutoScalingOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-ionoscloud.dataplatformNodePool.DataplatformNodePoolAutoScalingOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.dataplatformNodePool.DataplatformNodePoolAutoScalingOutputReference.property.maxNodeCountInput">maxNodeCountInput</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.dataplatformNodePool.DataplatformNodePoolAutoScalingOutputReference.property.minNodeCountInput">minNodeCountInput</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.dataplatformNodePool.DataplatformNodePoolAutoScalingOutputReference.property.maxNodeCount">maxNodeCount</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.dataplatformNodePool.DataplatformNodePoolAutoScalingOutputReference.property.minNodeCount">minNodeCount</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.dataplatformNodePool.DataplatformNodePoolAutoScalingOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-ionoscloud.dataplatformNodePool.DataplatformNodePoolAutoScaling">DataplatformNodePoolAutoScaling</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktf/provider-ionoscloud.dataplatformNodePool.DataplatformNodePoolAutoScalingOutputReference.property.creationStack"></a>
+
+```java
+public java.util.List<java.lang.String> getCreationStack();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-ionoscloud.dataplatformNodePool.DataplatformNodePoolAutoScalingOutputReference.property.fqn"></a>
+
+```java
+public java.lang.String getFqn();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `maxNodeCountInput`<sup>Optional</sup> <a name="maxNodeCountInput" id="@cdktf/provider-ionoscloud.dataplatformNodePool.DataplatformNodePoolAutoScalingOutputReference.property.maxNodeCountInput"></a>
+
+```java
+public java.lang.Number getMaxNodeCountInput();
+```
+
+- *Type:* java.lang.Number
+
+---
+
+##### `minNodeCountInput`<sup>Optional</sup> <a name="minNodeCountInput" id="@cdktf/provider-ionoscloud.dataplatformNodePool.DataplatformNodePoolAutoScalingOutputReference.property.minNodeCountInput"></a>
+
+```java
+public java.lang.Number getMinNodeCountInput();
+```
+
+- *Type:* java.lang.Number
+
+---
+
+##### `maxNodeCount`<sup>Required</sup> <a name="maxNodeCount" id="@cdktf/provider-ionoscloud.dataplatformNodePool.DataplatformNodePoolAutoScalingOutputReference.property.maxNodeCount"></a>
+
+```java
+public java.lang.Number getMaxNodeCount();
+```
+
+- *Type:* java.lang.Number
+
+---
+
+##### `minNodeCount`<sup>Required</sup> <a name="minNodeCount" id="@cdktf/provider-ionoscloud.dataplatformNodePool.DataplatformNodePoolAutoScalingOutputReference.property.minNodeCount"></a>
+
+```java
+public java.lang.Number getMinNodeCount();
+```
+
+- *Type:* java.lang.Number
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-ionoscloud.dataplatformNodePool.DataplatformNodePoolAutoScalingOutputReference.property.internalValue"></a>
+
+```java
+public DataplatformNodePoolAutoScaling getInternalValue();
+```
+
+- *Type:* <a href="#@cdktf/provider-ionoscloud.dataplatformNodePool.DataplatformNodePoolAutoScaling">DataplatformNodePoolAutoScaling</a>
+
+---
+
 
 ### DataplatformNodePoolMaintenanceWindowList <a name="DataplatformNodePoolMaintenanceWindowList" id="@cdktf/provider-ionoscloud.dataplatformNodePool.DataplatformNodePoolMaintenanceWindowList"></a>
 

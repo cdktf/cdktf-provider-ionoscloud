@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.7/docs/resources/dataplatform_node_pool
+// https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.8/docs/resources/dataplatform_node_pool
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,35 +15,35 @@ export interface DataplatformNodePoolConfig extends cdktf.TerraformMetaArguments
   /**
   * Key-value pairs attached to node pool resource as [Kubernetes annotations](https://kubernetes.io/docs/concepts/overview/working-with-objects/annotations/)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.7/docs/resources/dataplatform_node_pool#annotations DataplatformNodePool#annotations}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.8/docs/resources/dataplatform_node_pool#annotations DataplatformNodePool#annotations}
   */
   readonly annotations?: { [key: string]: string };
   /**
   * The availability zone of the virtual datacenter region where the node pool resources should be provisioned.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.7/docs/resources/dataplatform_node_pool#availability_zone DataplatformNodePool#availability_zone}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.8/docs/resources/dataplatform_node_pool#availability_zone DataplatformNodePool#availability_zone}
   */
   readonly availabilityZone?: string;
   /**
   * The UUID of an existing Dataplatform cluster.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.7/docs/resources/dataplatform_node_pool#cluster_id DataplatformNodePool#cluster_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.8/docs/resources/dataplatform_node_pool#cluster_id DataplatformNodePool#cluster_id}
   */
   readonly clusterId: string;
   /**
   * The number of CPU cores per node.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.7/docs/resources/dataplatform_node_pool#cores_count DataplatformNodePool#cores_count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.8/docs/resources/dataplatform_node_pool#cores_count DataplatformNodePool#cores_count}
   */
   readonly coresCount?: number;
   /**
   * A valid CPU family name or `AUTO` if the platform shall choose the best fitting option. Available CPU architectures can be retrieved from the datacenter resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.7/docs/resources/dataplatform_node_pool#cpu_family DataplatformNodePool#cpu_family}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.8/docs/resources/dataplatform_node_pool#cpu_family DataplatformNodePool#cpu_family}
   */
   readonly cpuFamily?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.7/docs/resources/dataplatform_node_pool#id DataplatformNodePool#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.8/docs/resources/dataplatform_node_pool#id DataplatformNodePool#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -52,61 +52,182 @@ export interface DataplatformNodePoolConfig extends cdktf.TerraformMetaArguments
   /**
   * Key-value pairs attached to the node pool resource as [Kubernetes labels](https://kubernetes.io/docs/concepts/overview/working-with-objects/labels/)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.7/docs/resources/dataplatform_node_pool#labels DataplatformNodePool#labels}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.8/docs/resources/dataplatform_node_pool#labels DataplatformNodePool#labels}
   */
   readonly labels?: { [key: string]: string };
   /**
   * The name of your node pool. Must be 63 characters or less and must be empty or begin and end with an alphanumeric character ([a-z0-9A-Z]). It can contain dashes (-), underscores (_), dots (.), and alphanumerics in-between.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.7/docs/resources/dataplatform_node_pool#name DataplatformNodePool#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.8/docs/resources/dataplatform_node_pool#name DataplatformNodePool#name}
   */
   readonly name: string;
   /**
   * The number of nodes that make up the node pool.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.7/docs/resources/dataplatform_node_pool#node_count DataplatformNodePool#node_count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.8/docs/resources/dataplatform_node_pool#node_count DataplatformNodePool#node_count}
   */
   readonly nodeCount: number;
   /**
   * The RAM size for one node in MB. Must be set in multiples of 1024 MB, with a minimum size is of 2048 MB.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.7/docs/resources/dataplatform_node_pool#ram_size DataplatformNodePool#ram_size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.8/docs/resources/dataplatform_node_pool#ram_size DataplatformNodePool#ram_size}
   */
   readonly ramSize?: number;
   /**
   * The size of the volume in GB. The size must be greater than 10GB.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.7/docs/resources/dataplatform_node_pool#storage_size DataplatformNodePool#storage_size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.8/docs/resources/dataplatform_node_pool#storage_size DataplatformNodePool#storage_size}
   */
   readonly storageSize?: number;
   /**
   * The type of hardware for the volume.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.7/docs/resources/dataplatform_node_pool#storage_type DataplatformNodePool#storage_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.8/docs/resources/dataplatform_node_pool#storage_type DataplatformNodePool#storage_type}
   */
   readonly storageType?: string;
   /**
+  * auto_scaling block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.8/docs/resources/dataplatform_node_pool#auto_scaling DataplatformNodePool#auto_scaling}
+  */
+  readonly autoScaling?: DataplatformNodePoolAutoScaling;
+  /**
   * maintenance_window block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.7/docs/resources/dataplatform_node_pool#maintenance_window DataplatformNodePool#maintenance_window}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.8/docs/resources/dataplatform_node_pool#maintenance_window DataplatformNodePool#maintenance_window}
   */
   readonly maintenanceWindow?: DataplatformNodePoolMaintenanceWindow[] | cdktf.IResolvable;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.7/docs/resources/dataplatform_node_pool#timeouts DataplatformNodePool#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.8/docs/resources/dataplatform_node_pool#timeouts DataplatformNodePool#timeouts}
   */
   readonly timeouts?: DataplatformNodePoolTimeouts;
 }
+export interface DataplatformNodePoolAutoScaling {
+  /**
+  * The maximum number of worker nodes that the node pool can scale to. Should be greater than min_node_count
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.8/docs/resources/dataplatform_node_pool#max_node_count DataplatformNodePool#max_node_count}
+  */
+  readonly maxNodeCount: number;
+  /**
+  * The minimum number of worker nodes the node pool can scale down to. Should be less than max_node_count
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.8/docs/resources/dataplatform_node_pool#min_node_count DataplatformNodePool#min_node_count}
+  */
+  readonly minNodeCount: number;
+}
+
+export function dataplatformNodePoolAutoScalingToTerraform(struct?: DataplatformNodePoolAutoScalingOutputReference | DataplatformNodePoolAutoScaling): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    max_node_count: cdktf.numberToTerraform(struct!.maxNodeCount),
+    min_node_count: cdktf.numberToTerraform(struct!.minNodeCount),
+  }
+}
+
+
+export function dataplatformNodePoolAutoScalingToHclTerraform(struct?: DataplatformNodePoolAutoScalingOutputReference | DataplatformNodePoolAutoScaling): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    max_node_count: {
+      value: cdktf.numberToHclTerraform(struct!.maxNodeCount),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    min_node_count: {
+      value: cdktf.numberToHclTerraform(struct!.minNodeCount),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class DataplatformNodePoolAutoScalingOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): DataplatformNodePoolAutoScaling | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._maxNodeCount !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.maxNodeCount = this._maxNodeCount;
+    }
+    if (this._minNodeCount !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.minNodeCount = this._minNodeCount;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataplatformNodePoolAutoScaling | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._maxNodeCount = undefined;
+      this._minNodeCount = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._maxNodeCount = value.maxNodeCount;
+      this._minNodeCount = value.minNodeCount;
+    }
+  }
+
+  // max_node_count - computed: false, optional: false, required: true
+  private _maxNodeCount?: number; 
+  public get maxNodeCount() {
+    return this.getNumberAttribute('max_node_count');
+  }
+  public set maxNodeCount(value: number) {
+    this._maxNodeCount = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get maxNodeCountInput() {
+    return this._maxNodeCount;
+  }
+
+  // min_node_count - computed: false, optional: false, required: true
+  private _minNodeCount?: number; 
+  public get minNodeCount() {
+    return this.getNumberAttribute('min_node_count');
+  }
+  public set minNodeCount(value: number) {
+    this._minNodeCount = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get minNodeCountInput() {
+    return this._minNodeCount;
+  }
+}
 export interface DataplatformNodePoolMaintenanceWindow {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.7/docs/resources/dataplatform_node_pool#day_of_the_week DataplatformNodePool#day_of_the_week}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.8/docs/resources/dataplatform_node_pool#day_of_the_week DataplatformNodePool#day_of_the_week}
   */
   readonly dayOfTheWeek: string;
   /**
   * Time at which the maintenance should start.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.7/docs/resources/dataplatform_node_pool#time DataplatformNodePool#time}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.8/docs/resources/dataplatform_node_pool#time DataplatformNodePool#time}
   */
   readonly time: string;
 }
@@ -245,19 +366,19 @@ export class DataplatformNodePoolMaintenanceWindowList extends cdktf.ComplexList
 }
 export interface DataplatformNodePoolTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.7/docs/resources/dataplatform_node_pool#create DataplatformNodePool#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.8/docs/resources/dataplatform_node_pool#create DataplatformNodePool#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.7/docs/resources/dataplatform_node_pool#default DataplatformNodePool#default}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.8/docs/resources/dataplatform_node_pool#default DataplatformNodePool#default}
   */
   readonly default?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.7/docs/resources/dataplatform_node_pool#delete DataplatformNodePool#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.8/docs/resources/dataplatform_node_pool#delete DataplatformNodePool#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.7/docs/resources/dataplatform_node_pool#update DataplatformNodePool#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.8/docs/resources/dataplatform_node_pool#update DataplatformNodePool#update}
   */
   readonly update?: string;
 }
@@ -438,7 +559,7 @@ export class DataplatformNodePoolTimeoutsOutputReference extends cdktf.ComplexOb
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.7/docs/resources/dataplatform_node_pool ionoscloud_dataplatform_node_pool}
+* Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.8/docs/resources/dataplatform_node_pool ionoscloud_dataplatform_node_pool}
 */
 export class DataplatformNodePool extends cdktf.TerraformResource {
 
@@ -454,7 +575,7 @@ export class DataplatformNodePool extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a DataplatformNodePool resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataplatformNodePool to import
-  * @param importFromId The id of the existing DataplatformNodePool that should be imported. Refer to the {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.7/docs/resources/dataplatform_node_pool#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataplatformNodePool that should be imported. Refer to the {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.8/docs/resources/dataplatform_node_pool#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataplatformNodePool to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -466,7 +587,7 @@ export class DataplatformNodePool extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.7/docs/resources/dataplatform_node_pool ionoscloud_dataplatform_node_pool} Resource
+  * Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.8/docs/resources/dataplatform_node_pool ionoscloud_dataplatform_node_pool} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -477,7 +598,7 @@ export class DataplatformNodePool extends cdktf.TerraformResource {
       terraformResourceType: 'ionoscloud_dataplatform_node_pool',
       terraformGeneratorMetadata: {
         providerName: 'ionoscloud',
-        providerVersion: '6.6.7',
+        providerVersion: '6.6.8',
         providerVersionConstraint: '~> 6.2'
       },
       provider: config.provider,
@@ -500,6 +621,7 @@ export class DataplatformNodePool extends cdktf.TerraformResource {
     this._ramSize = config.ramSize;
     this._storageSize = config.storageSize;
     this._storageType = config.storageType;
+    this._autoScaling.internalValue = config.autoScaling;
     this._maintenanceWindow.internalValue = config.maintenanceWindow;
     this._timeouts.internalValue = config.timeouts;
   }
@@ -701,6 +823,22 @@ export class DataplatformNodePool extends cdktf.TerraformResource {
     return this.getStringAttribute('version');
   }
 
+  // auto_scaling - computed: false, optional: true, required: false
+  private _autoScaling = new DataplatformNodePoolAutoScalingOutputReference(this, "auto_scaling");
+  public get autoScaling() {
+    return this._autoScaling;
+  }
+  public putAutoScaling(value: DataplatformNodePoolAutoScaling) {
+    this._autoScaling.internalValue = value;
+  }
+  public resetAutoScaling() {
+    this._autoScaling.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get autoScalingInput() {
+    return this._autoScaling.internalValue;
+  }
+
   // maintenance_window - computed: false, optional: true, required: false
   private _maintenanceWindow = new DataplatformNodePoolMaintenanceWindowList(this, "maintenance_window", false);
   public get maintenanceWindow() {
@@ -751,6 +889,7 @@ export class DataplatformNodePool extends cdktf.TerraformResource {
       ram_size: cdktf.numberToTerraform(this._ramSize),
       storage_size: cdktf.numberToTerraform(this._storageSize),
       storage_type: cdktf.stringToTerraform(this._storageType),
+      auto_scaling: dataplatformNodePoolAutoScalingToTerraform(this._autoScaling.internalValue),
       maintenance_window: cdktf.listMapper(dataplatformNodePoolMaintenanceWindowToTerraform, true)(this._maintenanceWindow.internalValue),
       timeouts: dataplatformNodePoolTimeoutsToTerraform(this._timeouts.internalValue),
     };
@@ -829,6 +968,12 @@ export class DataplatformNodePool extends cdktf.TerraformResource {
         isBlock: false,
         type: "simple",
         storageClassType: "string",
+      },
+      auto_scaling: {
+        value: dataplatformNodePoolAutoScalingToHclTerraform(this._autoScaling.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "DataplatformNodePoolAutoScalingList",
       },
       maintenance_window: {
         value: cdktf.listMapperHcl(dataplatformNodePoolMaintenanceWindowToHclTerraform, true)(this._maintenanceWindow.internalValue),

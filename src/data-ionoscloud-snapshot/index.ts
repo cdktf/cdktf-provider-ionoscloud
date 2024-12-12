@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.7/docs/data-sources/snapshot
+// https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.8/docs/data-sources/snapshot
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,7 +13,7 @@ import * as cdktf from 'cdktf';
 
 export interface DataIonoscloudSnapshotConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.7/docs/data-sources/snapshot#id DataIonoscloudSnapshot#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.8/docs/data-sources/snapshot#id DataIonoscloudSnapshot#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -22,43 +22,43 @@ export interface DataIonoscloudSnapshotConfig extends cdktf.TerraformMetaArgumen
   /**
   * Location of that image/snapshot
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.7/docs/data-sources/snapshot#location DataIonoscloudSnapshot#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.8/docs/data-sources/snapshot#location DataIonoscloudSnapshot#location}
   */
   readonly location?: string;
   /**
   * A name of that resource
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.7/docs/data-sources/snapshot#name DataIonoscloudSnapshot#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.8/docs/data-sources/snapshot#name DataIonoscloudSnapshot#name}
   */
   readonly name?: string;
   /**
   * The size of the image in GB
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.7/docs/data-sources/snapshot#size DataIonoscloudSnapshot#size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.8/docs/data-sources/snapshot#size DataIonoscloudSnapshot#size}
   */
   readonly size?: number;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.7/docs/data-sources/snapshot#timeouts DataIonoscloudSnapshot#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.8/docs/data-sources/snapshot#timeouts DataIonoscloudSnapshot#timeouts}
   */
   readonly timeouts?: DataIonoscloudSnapshotTimeouts;
 }
 export interface DataIonoscloudSnapshotTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.7/docs/data-sources/snapshot#create DataIonoscloudSnapshot#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.8/docs/data-sources/snapshot#create DataIonoscloudSnapshot#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.7/docs/data-sources/snapshot#default DataIonoscloudSnapshot#default}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.8/docs/data-sources/snapshot#default DataIonoscloudSnapshot#default}
   */
   readonly default?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.7/docs/data-sources/snapshot#delete DataIonoscloudSnapshot#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.8/docs/data-sources/snapshot#delete DataIonoscloudSnapshot#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.7/docs/data-sources/snapshot#update DataIonoscloudSnapshot#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.8/docs/data-sources/snapshot#update DataIonoscloudSnapshot#update}
   */
   readonly update?: string;
 }
@@ -239,7 +239,7 @@ export class DataIonoscloudSnapshotTimeoutsOutputReference extends cdktf.Complex
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.7/docs/data-sources/snapshot ionoscloud_snapshot}
+* Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.8/docs/data-sources/snapshot ionoscloud_snapshot}
 */
 export class DataIonoscloudSnapshot extends cdktf.TerraformDataSource {
 
@@ -255,7 +255,7 @@ export class DataIonoscloudSnapshot extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataIonoscloudSnapshot resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataIonoscloudSnapshot to import
-  * @param importFromId The id of the existing DataIonoscloudSnapshot that should be imported. Refer to the {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.7/docs/data-sources/snapshot#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataIonoscloudSnapshot that should be imported. Refer to the {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.8/docs/data-sources/snapshot#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataIonoscloudSnapshot to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -267,7 +267,7 @@ export class DataIonoscloudSnapshot extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.7/docs/data-sources/snapshot ionoscloud_snapshot} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.8/docs/data-sources/snapshot ionoscloud_snapshot} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -278,7 +278,7 @@ export class DataIonoscloudSnapshot extends cdktf.TerraformDataSource {
       terraformResourceType: 'ionoscloud_snapshot',
       terraformGeneratorMetadata: {
         providerName: 'ionoscloud',
-        providerVersion: '6.6.7',
+        providerVersion: '6.6.8',
         providerVersionConstraint: '~> 6.2'
       },
       provider: config.provider,
