@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.7/docs/data-sources/dataplatform_node_pool
+// https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.8/docs/data-sources/dataplatform_node_pool
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,11 +10,11 @@ export interface DataIonoscloudDataplatformNodePoolConfig extends cdktf.Terrafor
   /**
   * The UUID of an existing Dataplatform cluster
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.7/docs/data-sources/dataplatform_node_pool#cluster_id DataIonoscloudDataplatformNodePool#cluster_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.8/docs/data-sources/dataplatform_node_pool#cluster_id DataIonoscloudDataplatformNodePool#cluster_id}
   */
   readonly clusterId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.7/docs/data-sources/dataplatform_node_pool#id DataIonoscloudDataplatformNodePool#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.8/docs/data-sources/dataplatform_node_pool#id DataIonoscloudDataplatformNodePool#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -28,21 +23,101 @@ export interface DataIonoscloudDataplatformNodePoolConfig extends cdktf.Terrafor
   /**
   * The name of your node pool.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.7/docs/data-sources/dataplatform_node_pool#name DataIonoscloudDataplatformNodePool#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.8/docs/data-sources/dataplatform_node_pool#name DataIonoscloudDataplatformNodePool#name}
   */
   readonly name?: string;
   /**
   * Whether partial matching is allowed or not when using name argument.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.7/docs/data-sources/dataplatform_node_pool#partial_match DataIonoscloudDataplatformNodePool#partial_match}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.8/docs/data-sources/dataplatform_node_pool#partial_match DataIonoscloudDataplatformNodePool#partial_match}
   */
   readonly partialMatch?: boolean | cdktf.IResolvable;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.7/docs/data-sources/dataplatform_node_pool#timeouts DataIonoscloudDataplatformNodePool#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.8/docs/data-sources/dataplatform_node_pool#timeouts DataIonoscloudDataplatformNodePool#timeouts}
   */
   readonly timeouts?: DataIonoscloudDataplatformNodePoolTimeouts;
+}
+export interface DataIonoscloudDataplatformNodePoolAutoScaling {
+}
+
+export function dataIonoscloudDataplatformNodePoolAutoScalingToTerraform(struct?: DataIonoscloudDataplatformNodePoolAutoScaling): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+
+export function dataIonoscloudDataplatformNodePoolAutoScalingToHclTerraform(struct?: DataIonoscloudDataplatformNodePoolAutoScaling): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class DataIonoscloudDataplatformNodePoolAutoScalingOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataIonoscloudDataplatformNodePoolAutoScaling | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataIonoscloudDataplatformNodePoolAutoScaling | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // max_node_count - computed: true, optional: false, required: false
+  public get maxNodeCount() {
+    return this.getNumberAttribute('max_node_count');
+  }
+
+  // min_node_count - computed: true, optional: false, required: false
+  public get minNodeCount() {
+    return this.getNumberAttribute('min_node_count');
+  }
+}
+
+export class DataIonoscloudDataplatformNodePoolAutoScalingList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataIonoscloudDataplatformNodePoolAutoScalingOutputReference {
+    return new DataIonoscloudDataplatformNodePoolAutoScalingOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
 }
 export interface DataIonoscloudDataplatformNodePoolMaintenanceWindow {
 }
@@ -126,19 +201,19 @@ export class DataIonoscloudDataplatformNodePoolMaintenanceWindowList extends cdk
 }
 export interface DataIonoscloudDataplatformNodePoolTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.7/docs/data-sources/dataplatform_node_pool#create DataIonoscloudDataplatformNodePool#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.8/docs/data-sources/dataplatform_node_pool#create DataIonoscloudDataplatformNodePool#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.7/docs/data-sources/dataplatform_node_pool#default DataIonoscloudDataplatformNodePool#default}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.8/docs/data-sources/dataplatform_node_pool#default DataIonoscloudDataplatformNodePool#default}
   */
   readonly default?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.7/docs/data-sources/dataplatform_node_pool#delete DataIonoscloudDataplatformNodePool#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.8/docs/data-sources/dataplatform_node_pool#delete DataIonoscloudDataplatformNodePool#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.7/docs/data-sources/dataplatform_node_pool#update DataIonoscloudDataplatformNodePool#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.8/docs/data-sources/dataplatform_node_pool#update DataIonoscloudDataplatformNodePool#update}
   */
   readonly update?: string;
 }
@@ -319,7 +394,7 @@ export class DataIonoscloudDataplatformNodePoolTimeoutsOutputReference extends c
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.7/docs/data-sources/dataplatform_node_pool ionoscloud_dataplatform_node_pool}
+* Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.8/docs/data-sources/dataplatform_node_pool ionoscloud_dataplatform_node_pool}
 */
 export class DataIonoscloudDataplatformNodePool extends cdktf.TerraformDataSource {
 
@@ -335,7 +410,7 @@ export class DataIonoscloudDataplatformNodePool extends cdktf.TerraformDataSourc
   * Generates CDKTF code for importing a DataIonoscloudDataplatformNodePool resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataIonoscloudDataplatformNodePool to import
-  * @param importFromId The id of the existing DataIonoscloudDataplatformNodePool that should be imported. Refer to the {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.7/docs/data-sources/dataplatform_node_pool#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataIonoscloudDataplatformNodePool that should be imported. Refer to the {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.8/docs/data-sources/dataplatform_node_pool#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataIonoscloudDataplatformNodePool to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -347,7 +422,7 @@ export class DataIonoscloudDataplatformNodePool extends cdktf.TerraformDataSourc
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.7/docs/data-sources/dataplatform_node_pool ionoscloud_dataplatform_node_pool} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.8/docs/data-sources/dataplatform_node_pool ionoscloud_dataplatform_node_pool} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -358,7 +433,7 @@ export class DataIonoscloudDataplatformNodePool extends cdktf.TerraformDataSourc
       terraformResourceType: 'ionoscloud_dataplatform_node_pool',
       terraformGeneratorMetadata: {
         providerName: 'ionoscloud',
-        providerVersion: '6.6.7',
+        providerVersion: '6.6.8',
         providerVersionConstraint: '~> 6.2'
       },
       provider: config.provider,
@@ -384,6 +459,12 @@ export class DataIonoscloudDataplatformNodePool extends cdktf.TerraformDataSourc
   private _annotations = new cdktf.StringMap(this, "annotations");
   public get annotations() {
     return this._annotations;
+  }
+
+  // auto_scaling - computed: true, optional: false, required: false
+  private _autoScaling = new DataIonoscloudDataplatformNodePoolAutoScalingList(this, "auto_scaling", false);
+  public get autoScaling() {
+    return this._autoScaling;
   }
 
   // availability_zone - computed: true, optional: false, required: false

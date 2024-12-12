@@ -4,7 +4,7 @@
 
 ### DataIonoscloudApigatewayRoute <a name="DataIonoscloudApigatewayRoute" id="@cdktf/provider-ionoscloud.dataIonoscloudApigatewayRoute.DataIonoscloudApigatewayRoute"></a>
 
-Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.7/docs/data-sources/apigateway_route ionoscloud_apigateway_route}.
+Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.8/docs/data-sources/apigateway_route ionoscloud_apigateway_route}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.dataIonoscloudApigatewayRoute.DataIonoscloudApigatewayRoute.Initializer"></a>
 
@@ -115,7 +115,7 @@ Must be unique amongst siblings in the same scope
 
 The ID of the API Gateway that the route belongs to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.7/docs/data-sources/apigateway_route#gateway_id DataIonoscloudApigatewayRoute#gateway_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.8/docs/data-sources/apigateway_route#gateway_id DataIonoscloudApigatewayRoute#gateway_id}
 
 ---
 
@@ -125,7 +125,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 
 The ID (UUID) of the API Gateway Route.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.7/docs/data-sources/apigateway_route#id DataIonoscloudApigatewayRoute#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.8/docs/data-sources/apigateway_route#id DataIonoscloudApigatewayRoute#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -138,7 +138,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 The name of the API Gateway Route.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.7/docs/data-sources/apigateway_route#name DataIonoscloudApigatewayRoute#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.8/docs/data-sources/apigateway_route#name DataIonoscloudApigatewayRoute#name}
 
 ---
 
@@ -148,7 +148,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 
 Whether partial matching is allowed or not when using the name filter.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.7/docs/data-sources/apigateway_route#partial_match DataIonoscloudApigatewayRoute#partial_match}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.8/docs/data-sources/apigateway_route#partial_match DataIonoscloudApigatewayRoute#partial_match}
 
 ---
 
@@ -492,7 +492,7 @@ The construct id used in the generated config for the DataIonoscloudApigatewayRo
 
 The id of the existing DataIonoscloudApigatewayRoute that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.7/docs/data-sources/apigateway_route#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.8/docs/data-sources/apigateway_route#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -933,7 +933,7 @@ public java.lang.String getGatewayId();
 
 The ID of the API Gateway that the route belongs to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.7/docs/data-sources/apigateway_route#gateway_id DataIonoscloudApigatewayRoute#gateway_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.8/docs/data-sources/apigateway_route#gateway_id DataIonoscloudApigatewayRoute#gateway_id}
 
 ---
 
@@ -947,7 +947,7 @@ public java.lang.String getId();
 
 The ID (UUID) of the API Gateway Route.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.7/docs/data-sources/apigateway_route#id DataIonoscloudApigatewayRoute#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.8/docs/data-sources/apigateway_route#id DataIonoscloudApigatewayRoute#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -964,7 +964,7 @@ public java.lang.String getName();
 
 The name of the API Gateway Route.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.7/docs/data-sources/apigateway_route#name DataIonoscloudApigatewayRoute#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.8/docs/data-sources/apigateway_route#name DataIonoscloudApigatewayRoute#name}
 
 ---
 
@@ -978,7 +978,7 @@ public java.lang.Object getPartialMatch();
 
 Whether partial matching is allowed or not when using the name filter.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.7/docs/data-sources/apigateway_route#partial_match DataIonoscloudApigatewayRoute#partial_match}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.8/docs/data-sources/apigateway_route#partial_match DataIonoscloudApigatewayRoute#partial_match}
 
 ---
 
