@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionosclo
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.s3BucketCorsConfiguration.S3BucketCorsConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/s3bucketcorsconfiguration"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/s3bucketcorsconfiguration"
 
 s3bucketcorsconfiguration.NewS3BucketCorsConfiguration(scope Construct, id *string, config S3BucketCorsConfigurationConfig) S3BucketCorsConfiguration
 ```
@@ -398,7 +398,7 @@ func ResetCorsRule()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-ionoscloud.s3BucketCorsConfiguration.S3BucketCorsConfiguration.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/s3bucketcorsconfiguration"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/s3bucketcorsconfiguration"
 
 s3bucketcorsconfiguration.S3BucketCorsConfiguration_IsConstruct(x interface{}) *bool
 ```
@@ -430,7 +430,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-ionoscloud.s3BucketCorsConfiguration.S3BucketCorsConfiguration.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/s3bucketcorsconfiguration"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/s3bucketcorsconfiguration"
 
 s3bucketcorsconfiguration.S3BucketCorsConfiguration_IsTerraformElement(x interface{}) *bool
 ```
@@ -444,7 +444,7 @@ s3bucketcorsconfiguration.S3BucketCorsConfiguration_IsTerraformElement(x interfa
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-ionoscloud.s3BucketCorsConfiguration.S3BucketCorsConfiguration.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/s3bucketcorsconfiguration"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/s3bucketcorsconfiguration"
 
 s3bucketcorsconfiguration.S3BucketCorsConfiguration_IsTerraformResource(x interface{}) *bool
 ```
@@ -458,7 +458,7 @@ s3bucketcorsconfiguration.S3BucketCorsConfiguration_IsTerraformResource(x interf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-ionoscloud.s3BucketCorsConfiguration.S3BucketCorsConfiguration.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/s3bucketcorsconfiguration"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/s3bucketcorsconfiguration"
 
 s3bucketcorsconfiguration.S3BucketCorsConfiguration_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -731,7 +731,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-ionoscloud.s3BucketCorsConfiguration.S3BucketCorsConfigurationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/s3bucketcorsconfiguration"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/s3bucketcorsconfiguration"
 
 &s3bucketcorsconfiguration.S3BucketCorsConfigurationConfig {
 	Connection: interface{},
@@ -865,7 +865,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 #### Initializer <a name="Initializer" id="@cdktf/provider-ionoscloud.s3BucketCorsConfiguration.S3BucketCorsConfigurationCorsRule.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/s3bucketcorsconfiguration"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/s3bucketcorsconfiguration"
 
 &s3bucketcorsconfiguration.S3BucketCorsConfigurationCorsRule {
 	AllowedMethods: *[]*string,
@@ -984,7 +984,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.s3BucketCorsConfiguration.S3BucketCorsConfigurationCorsRuleList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/s3bucketcorsconfiguration"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/s3bucketcorsconfiguration"
 
 s3bucketcorsconfiguration.NewS3BucketCorsConfigurationCorsRuleList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) S3BucketCorsConfigurationCorsRuleList
 ```
@@ -1144,7 +1144,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.s3BucketCorsConfiguration.S3BucketCorsConfigurationCorsRuleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/s3bucketcorsconfiguration"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/s3bucketcorsconfiguration"
 
 s3bucketcorsconfiguration.NewS3BucketCorsConfigurationCorsRuleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) S3BucketCorsConfigurationCorsRuleOutputReference
 ```
