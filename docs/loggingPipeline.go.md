@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionosclo
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.loggingPipeline.LoggingPipeline.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/loggingpipeline"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/loggingpipeline"
 
 loggingpipeline.NewLoggingPipeline(scope Construct, id *string, config LoggingPipelineConfig) LoggingPipeline
 ```
@@ -425,7 +425,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-ionoscloud.loggingPipeline.LoggingPipeline.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/loggingpipeline"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/loggingpipeline"
 
 loggingpipeline.LoggingPipeline_IsConstruct(x interface{}) *bool
 ```
@@ -457,7 +457,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-ionoscloud.loggingPipeline.LoggingPipeline.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/loggingpipeline"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/loggingpipeline"
 
 loggingpipeline.LoggingPipeline_IsTerraformElement(x interface{}) *bool
 ```
@@ -471,7 +471,7 @@ loggingpipeline.LoggingPipeline_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-ionoscloud.loggingPipeline.LoggingPipeline.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/loggingpipeline"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/loggingpipeline"
 
 loggingpipeline.LoggingPipeline_IsTerraformResource(x interface{}) *bool
 ```
@@ -485,7 +485,7 @@ loggingpipeline.LoggingPipeline_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-ionoscloud.loggingPipeline.LoggingPipeline.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/loggingpipeline"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/loggingpipeline"
 
 loggingpipeline.LoggingPipeline_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -835,7 +835,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-ionoscloud.loggingPipeline.LoggingPipelineConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/loggingpipeline"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/loggingpipeline"
 
 &loggingpipeline.LoggingPipelineConfig {
 	Connection: interface{},
@@ -849,7 +849,7 @@ import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/loggingpipeline
 	Name: *string,
 	Id: *string,
 	Location: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud.loggingPipeline.LoggingPipelineTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11.loggingPipeline.LoggingPipelineTimeouts,
 }
 ```
 
@@ -1016,7 +1016,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 #### Initializer <a name="Initializer" id="@cdktf/provider-ionoscloud.loggingPipeline.LoggingPipelineLog.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/loggingpipeline"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/loggingpipeline"
 
 &loggingpipeline.LoggingPipelineLog {
 	Protocol: *string,
@@ -1098,7 +1098,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 #### Initializer <a name="Initializer" id="@cdktf/provider-ionoscloud.loggingPipeline.LoggingPipelineLogDestinations.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/loggingpipeline"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/loggingpipeline"
 
 &loggingpipeline.LoggingPipelineLogDestinations {
 	RetentionInDays: *f64,
@@ -1148,7 +1148,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 #### Initializer <a name="Initializer" id="@cdktf/provider-ionoscloud.loggingPipeline.LoggingPipelineTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/loggingpipeline"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/loggingpipeline"
 
 &loggingpipeline.LoggingPipelineTimeouts {
 	Create: *string,
@@ -1224,7 +1224,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.loggingPipeline.LoggingPipelineLogDestinationsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/loggingpipeline"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/loggingpipeline"
 
 loggingpipeline.NewLoggingPipelineLogDestinationsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) LoggingPipelineLogDestinationsList
 ```
@@ -1384,7 +1384,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.loggingPipeline.LoggingPipelineLogDestinationsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/loggingpipeline"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/loggingpipeline"
 
 loggingpipeline.NewLoggingPipelineLogDestinationsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) LoggingPipelineLogDestinationsOutputReference
 ```
@@ -1709,7 +1709,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.loggingPipeline.LoggingPipelineLogList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/loggingpipeline"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/loggingpipeline"
 
 loggingpipeline.NewLoggingPipelineLogList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) LoggingPipelineLogList
 ```
@@ -1869,7 +1869,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.loggingPipeline.LoggingPipelineLogOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/loggingpipeline"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/loggingpipeline"
 
 loggingpipeline.NewLoggingPipelineLogOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) LoggingPipelineLogOutputReference
 ```
@@ -2255,7 +2255,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.loggingPipeline.LoggingPipelineTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/loggingpipeline"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/loggingpipeline"
 
 loggingpipeline.NewLoggingPipelineTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LoggingPipelineTimeoutsOutputReference
 ```
