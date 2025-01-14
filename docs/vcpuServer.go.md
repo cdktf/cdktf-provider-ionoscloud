@@ -4,12 +4,12 @@
 
 ### VcpuServer <a name="VcpuServer" id="@cdktf/provider-ionoscloud.vcpuServer.VcpuServer"></a>
 
-Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.8/docs/resources/vcpu_server ionoscloud_vcpu_server}.
+Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.9/docs/resources/vcpu_server ionoscloud_vcpu_server}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.vcpuServer.VcpuServer.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/vcpuserver"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/vcpuserver"
 
 vcpuserver.NewVcpuServer(scope Construct, id *string, config VcpuServerConfig) VcpuServer
 ```
@@ -528,7 +528,7 @@ func ResetVmState()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-ionoscloud.vcpuServer.VcpuServer.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/vcpuserver"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/vcpuserver"
 
 vcpuserver.VcpuServer_IsConstruct(x interface{}) *bool
 ```
@@ -560,7 +560,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-ionoscloud.vcpuServer.VcpuServer.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/vcpuserver"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/vcpuserver"
 
 vcpuserver.VcpuServer_IsTerraformElement(x interface{}) *bool
 ```
@@ -574,7 +574,7 @@ vcpuserver.VcpuServer_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-ionoscloud.vcpuServer.VcpuServer.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/vcpuserver"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/vcpuserver"
 
 vcpuserver.VcpuServer_IsTerraformResource(x interface{}) *bool
 ```
@@ -588,7 +588,7 @@ vcpuserver.VcpuServer_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-ionoscloud.vcpuServer.VcpuServer.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/vcpuserver"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/vcpuserver"
 
 vcpuserver.VcpuServer_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -617,7 +617,7 @@ The construct id used in the generated config for the VcpuServer to import.
 
 The id of the existing VcpuServer that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.8/docs/resources/vcpu_server#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.9/docs/resources/vcpu_server#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1312,7 +1312,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-ionoscloud.vcpuServer.VcpuServerConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/vcpuserver"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/vcpuserver"
 
 &vcpuserver.VcpuServerConfig {
 	Connection: interface{},
@@ -1326,7 +1326,7 @@ import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/vcpuserver"
 	DatacenterId: *string,
 	Name: *string,
 	Ram: *f64,
-	Volume: github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11.vcpuServer.VcpuServerVolume,
+	Volume: github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud.vcpuServer.VcpuServerVolume,
 	AvailabilityZone: *string,
 	BootCdrom: *string,
 	BootImage: *string,
@@ -1336,10 +1336,10 @@ import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/vcpuserver"
 	ImageName: *string,
 	ImagePassword: *string,
 	Label: interface{},
-	Nic: github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11.vcpuServer.VcpuServerNic,
+	Nic: github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud.vcpuServer.VcpuServerNic,
 	SecurityGroupsIds: *[]*string,
 	SshKeys: *[]*string,
-	Timeouts: github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11.vcpuServer.VcpuServerTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud.vcpuServer.VcpuServerTimeouts,
 	VmState: *string,
 }
 ```
@@ -1355,19 +1355,19 @@ import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/vcpuserver"
 | <code><a href="#@cdktf/provider-ionoscloud.vcpuServer.VcpuServerConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.vcpuServer.VcpuServerConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.vcpuServer.VcpuServerConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-ionoscloud.vcpuServer.VcpuServerConfig.property.cores">Cores</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.8/docs/resources/vcpu_server#cores VcpuServer#cores}. |
-| <code><a href="#@cdktf/provider-ionoscloud.vcpuServer.VcpuServerConfig.property.datacenterId">DatacenterId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.8/docs/resources/vcpu_server#datacenter_id VcpuServer#datacenter_id}. |
-| <code><a href="#@cdktf/provider-ionoscloud.vcpuServer.VcpuServerConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.8/docs/resources/vcpu_server#name VcpuServer#name}. |
-| <code><a href="#@cdktf/provider-ionoscloud.vcpuServer.VcpuServerConfig.property.ram">Ram</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.8/docs/resources/vcpu_server#ram VcpuServer#ram}. |
+| <code><a href="#@cdktf/provider-ionoscloud.vcpuServer.VcpuServerConfig.property.cores">Cores</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.9/docs/resources/vcpu_server#cores VcpuServer#cores}. |
+| <code><a href="#@cdktf/provider-ionoscloud.vcpuServer.VcpuServerConfig.property.datacenterId">DatacenterId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.9/docs/resources/vcpu_server#datacenter_id VcpuServer#datacenter_id}. |
+| <code><a href="#@cdktf/provider-ionoscloud.vcpuServer.VcpuServerConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.9/docs/resources/vcpu_server#name VcpuServer#name}. |
+| <code><a href="#@cdktf/provider-ionoscloud.vcpuServer.VcpuServerConfig.property.ram">Ram</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.9/docs/resources/vcpu_server#ram VcpuServer#ram}. |
 | <code><a href="#@cdktf/provider-ionoscloud.vcpuServer.VcpuServerConfig.property.volume">Volume</a></code> | <code><a href="#@cdktf/provider-ionoscloud.vcpuServer.VcpuServerVolume">VcpuServerVolume</a></code> | volume block. |
-| <code><a href="#@cdktf/provider-ionoscloud.vcpuServer.VcpuServerConfig.property.availabilityZone">AvailabilityZone</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.8/docs/resources/vcpu_server#availability_zone VcpuServer#availability_zone}. |
+| <code><a href="#@cdktf/provider-ionoscloud.vcpuServer.VcpuServerConfig.property.availabilityZone">AvailabilityZone</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.9/docs/resources/vcpu_server#availability_zone VcpuServer#availability_zone}. |
 | <code><a href="#@cdktf/provider-ionoscloud.vcpuServer.VcpuServerConfig.property.bootCdrom">BootCdrom</a></code> | <code>*string</code> | The associated boot drive, if any. |
-| <code><a href="#@cdktf/provider-ionoscloud.vcpuServer.VcpuServerConfig.property.bootImage">BootImage</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.8/docs/resources/vcpu_server#boot_image VcpuServer#boot_image}. |
-| <code><a href="#@cdktf/provider-ionoscloud.vcpuServer.VcpuServerConfig.property.firewallruleIds">FirewallruleIds</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.8/docs/resources/vcpu_server#firewallrule_ids VcpuServer#firewallrule_ids}. |
+| <code><a href="#@cdktf/provider-ionoscloud.vcpuServer.VcpuServerConfig.property.bootImage">BootImage</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.9/docs/resources/vcpu_server#boot_image VcpuServer#boot_image}. |
+| <code><a href="#@cdktf/provider-ionoscloud.vcpuServer.VcpuServerConfig.property.firewallruleIds">FirewallruleIds</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.9/docs/resources/vcpu_server#firewallrule_ids VcpuServer#firewallrule_ids}. |
 | <code><a href="#@cdktf/provider-ionoscloud.vcpuServer.VcpuServerConfig.property.hostname">Hostname</a></code> | <code>*string</code> | The hostname of the resource. |
-| <code><a href="#@cdktf/provider-ionoscloud.vcpuServer.VcpuServerConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.8/docs/resources/vcpu_server#id VcpuServer#id}. |
-| <code><a href="#@cdktf/provider-ionoscloud.vcpuServer.VcpuServerConfig.property.imageName">ImageName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.8/docs/resources/vcpu_server#image_name VcpuServer#image_name}. |
-| <code><a href="#@cdktf/provider-ionoscloud.vcpuServer.VcpuServerConfig.property.imagePassword">ImagePassword</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.8/docs/resources/vcpu_server#image_password VcpuServer#image_password}. |
+| <code><a href="#@cdktf/provider-ionoscloud.vcpuServer.VcpuServerConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.9/docs/resources/vcpu_server#id VcpuServer#id}. |
+| <code><a href="#@cdktf/provider-ionoscloud.vcpuServer.VcpuServerConfig.property.imageName">ImageName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.9/docs/resources/vcpu_server#image_name VcpuServer#image_name}. |
+| <code><a href="#@cdktf/provider-ionoscloud.vcpuServer.VcpuServerConfig.property.imagePassword">ImagePassword</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.9/docs/resources/vcpu_server#image_password VcpuServer#image_password}. |
 | <code><a href="#@cdktf/provider-ionoscloud.vcpuServer.VcpuServerConfig.property.label">Label</a></code> | <code>interface{}</code> | label block. |
 | <code><a href="#@cdktf/provider-ionoscloud.vcpuServer.VcpuServerConfig.property.nic">Nic</a></code> | <code><a href="#@cdktf/provider-ionoscloud.vcpuServer.VcpuServerNic">VcpuServerNic</a></code> | nic block. |
 | <code><a href="#@cdktf/provider-ionoscloud.vcpuServer.VcpuServerConfig.property.securityGroupsIds">SecurityGroupsIds</a></code> | <code>*[]*string</code> | The list of Security Group IDs for the server. |
@@ -1455,7 +1455,7 @@ Cores *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.8/docs/resources/vcpu_server#cores VcpuServer#cores}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.9/docs/resources/vcpu_server#cores VcpuServer#cores}.
 
 ---
 
@@ -1467,7 +1467,7 @@ DatacenterId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.8/docs/resources/vcpu_server#datacenter_id VcpuServer#datacenter_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.9/docs/resources/vcpu_server#datacenter_id VcpuServer#datacenter_id}.
 
 ---
 
@@ -1479,7 +1479,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.8/docs/resources/vcpu_server#name VcpuServer#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.9/docs/resources/vcpu_server#name VcpuServer#name}.
 
 ---
 
@@ -1491,7 +1491,7 @@ Ram *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.8/docs/resources/vcpu_server#ram VcpuServer#ram}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.9/docs/resources/vcpu_server#ram VcpuServer#ram}.
 
 ---
 
@@ -1505,7 +1505,7 @@ Volume VcpuServerVolume
 
 volume block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.8/docs/resources/vcpu_server#volume VcpuServer#volume}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.9/docs/resources/vcpu_server#volume VcpuServer#volume}
 
 ---
 
@@ -1517,7 +1517,7 @@ AvailabilityZone *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.8/docs/resources/vcpu_server#availability_zone VcpuServer#availability_zone}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.9/docs/resources/vcpu_server#availability_zone VcpuServer#availability_zone}.
 
 ---
 
@@ -1533,7 +1533,7 @@ The associated boot drive, if any.
 
 Must be the UUID of a bootable CDROM image that can be retrieved using the ionoscloud_image data source.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.8/docs/resources/vcpu_server#boot_cdrom VcpuServer#boot_cdrom}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.9/docs/resources/vcpu_server#boot_cdrom VcpuServer#boot_cdrom}
 
 ---
 
@@ -1545,7 +1545,7 @@ BootImage *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.8/docs/resources/vcpu_server#boot_image VcpuServer#boot_image}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.9/docs/resources/vcpu_server#boot_image VcpuServer#boot_image}.
 
 ---
 
@@ -1557,7 +1557,7 @@ FirewallruleIds *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.8/docs/resources/vcpu_server#firewallrule_ids VcpuServer#firewallrule_ids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.9/docs/resources/vcpu_server#firewallrule_ids VcpuServer#firewallrule_ids}.
 
 ---
 
@@ -1573,7 +1573,7 @@ The hostname of the resource.
 
 Allowed characters are a-z, 0-9 and - (minus). Hostname should not start with minus and should not be longer than 63 characters. If no value provided explicitly, it will be populated with the name of the server
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.8/docs/resources/vcpu_server#hostname VcpuServer#hostname}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.9/docs/resources/vcpu_server#hostname VcpuServer#hostname}
 
 ---
 
@@ -1585,7 +1585,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.8/docs/resources/vcpu_server#id VcpuServer#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.9/docs/resources/vcpu_server#id VcpuServer#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1600,7 +1600,7 @@ ImageName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.8/docs/resources/vcpu_server#image_name VcpuServer#image_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.9/docs/resources/vcpu_server#image_name VcpuServer#image_name}.
 
 ---
 
@@ -1612,7 +1612,7 @@ ImagePassword *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.8/docs/resources/vcpu_server#image_password VcpuServer#image_password}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.9/docs/resources/vcpu_server#image_password VcpuServer#image_password}.
 
 ---
 
@@ -1626,7 +1626,7 @@ Label interface{}
 
 label block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.8/docs/resources/vcpu_server#label VcpuServer#label}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.9/docs/resources/vcpu_server#label VcpuServer#label}
 
 ---
 
@@ -1640,7 +1640,7 @@ Nic VcpuServerNic
 
 nic block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.8/docs/resources/vcpu_server#nic VcpuServer#nic}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.9/docs/resources/vcpu_server#nic VcpuServer#nic}
 
 ---
 
@@ -1654,7 +1654,7 @@ SecurityGroupsIds *[]*string
 
 The list of Security Group IDs for the server.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.8/docs/resources/vcpu_server#security_groups_ids VcpuServer#security_groups_ids}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.9/docs/resources/vcpu_server#security_groups_ids VcpuServer#security_groups_ids}
 
 ---
 
@@ -1670,7 +1670,7 @@ Public SSH keys are set on the image as authorized keys for appropriate SSH logi
 
 This field may only be set in creation requests. When reading, it always returns null. SSH keys are only supported if a public Linux image is used for the volume creation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.8/docs/resources/vcpu_server#ssh_keys VcpuServer#ssh_keys}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.9/docs/resources/vcpu_server#ssh_keys VcpuServer#ssh_keys}
 
 ---
 
@@ -1684,7 +1684,7 @@ Timeouts VcpuServerTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.8/docs/resources/vcpu_server#timeouts VcpuServer#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.9/docs/resources/vcpu_server#timeouts VcpuServer#timeouts}
 
 ---
 
@@ -1698,7 +1698,7 @@ VmState *string
 
 Sets the power state of the vcpu server. Possible values: `RUNNING` or `SHUTOFF`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.8/docs/resources/vcpu_server#vm_state VcpuServer#vm_state}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.9/docs/resources/vcpu_server#vm_state VcpuServer#vm_state}
 
 ---
 
@@ -1707,7 +1707,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 #### Initializer <a name="Initializer" id="@cdktf/provider-ionoscloud.vcpuServer.VcpuServerLabel.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/vcpuserver"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/vcpuserver"
 
 &vcpuserver.VcpuServerLabel {
 	Key: *string,
@@ -1719,8 +1719,8 @@ import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/vcpuserver"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-ionoscloud.vcpuServer.VcpuServerLabel.property.key">Key</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.8/docs/resources/vcpu_server#key VcpuServer#key}. |
-| <code><a href="#@cdktf/provider-ionoscloud.vcpuServer.VcpuServerLabel.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.8/docs/resources/vcpu_server#value VcpuServer#value}. |
+| <code><a href="#@cdktf/provider-ionoscloud.vcpuServer.VcpuServerLabel.property.key">Key</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.9/docs/resources/vcpu_server#key VcpuServer#key}. |
+| <code><a href="#@cdktf/provider-ionoscloud.vcpuServer.VcpuServerLabel.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.9/docs/resources/vcpu_server#value VcpuServer#value}. |
 
 ---
 
@@ -1732,7 +1732,7 @@ Key *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.8/docs/resources/vcpu_server#key VcpuServer#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.9/docs/resources/vcpu_server#key VcpuServer#key}.
 
 ---
 
@@ -1744,7 +1744,7 @@ Value *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.8/docs/resources/vcpu_server#value VcpuServer#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.9/docs/resources/vcpu_server#value VcpuServer#value}.
 
 ---
 
@@ -1753,7 +1753,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 #### Initializer <a name="Initializer" id="@cdktf/provider-ionoscloud.vcpuServer.VcpuServerNic.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/vcpuserver"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/vcpuserver"
 
 &vcpuserver.VcpuServerNic {
 	Lan: *f64,
@@ -1775,17 +1775,17 @@ import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/vcpuserver"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-ionoscloud.vcpuServer.VcpuServerNic.property.lan">Lan</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.8/docs/resources/vcpu_server#lan VcpuServer#lan}. |
-| <code><a href="#@cdktf/provider-ionoscloud.vcpuServer.VcpuServerNic.property.dhcp">Dhcp</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.8/docs/resources/vcpu_server#dhcp VcpuServer#dhcp}. |
-| <code><a href="#@cdktf/provider-ionoscloud.vcpuServer.VcpuServerNic.property.dhcpv6">Dhcpv6</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.8/docs/resources/vcpu_server#dhcpv6 VcpuServer#dhcpv6}. |
+| <code><a href="#@cdktf/provider-ionoscloud.vcpuServer.VcpuServerNic.property.lan">Lan</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.9/docs/resources/vcpu_server#lan VcpuServer#lan}. |
+| <code><a href="#@cdktf/provider-ionoscloud.vcpuServer.VcpuServerNic.property.dhcp">Dhcp</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.9/docs/resources/vcpu_server#dhcp VcpuServer#dhcp}. |
+| <code><a href="#@cdktf/provider-ionoscloud.vcpuServer.VcpuServerNic.property.dhcpv6">Dhcpv6</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.9/docs/resources/vcpu_server#dhcpv6 VcpuServer#dhcpv6}. |
 | <code><a href="#@cdktf/provider-ionoscloud.vcpuServer.VcpuServerNic.property.firewall">Firewall</a></code> | <code>interface{}</code> | firewall block. |
-| <code><a href="#@cdktf/provider-ionoscloud.vcpuServer.VcpuServerNic.property.firewallActive">FirewallActive</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.8/docs/resources/vcpu_server#firewall_active VcpuServer#firewall_active}. |
-| <code><a href="#@cdktf/provider-ionoscloud.vcpuServer.VcpuServerNic.property.firewallType">FirewallType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.8/docs/resources/vcpu_server#firewall_type VcpuServer#firewall_type}. |
+| <code><a href="#@cdktf/provider-ionoscloud.vcpuServer.VcpuServerNic.property.firewallActive">FirewallActive</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.9/docs/resources/vcpu_server#firewall_active VcpuServer#firewall_active}. |
+| <code><a href="#@cdktf/provider-ionoscloud.vcpuServer.VcpuServerNic.property.firewallType">FirewallType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.9/docs/resources/vcpu_server#firewall_type VcpuServer#firewall_type}. |
 | <code><a href="#@cdktf/provider-ionoscloud.vcpuServer.VcpuServerNic.property.ips">Ips</a></code> | <code>*[]*string</code> | Collection of IP addresses assigned to a nic. |
-| <code><a href="#@cdktf/provider-ionoscloud.vcpuServer.VcpuServerNic.property.ipv6CidrBlock">Ipv6CidrBlock</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.8/docs/resources/vcpu_server#ipv6_cidr_block VcpuServer#ipv6_cidr_block}. |
-| <code><a href="#@cdktf/provider-ionoscloud.vcpuServer.VcpuServerNic.property.ipv6Ips">Ipv6Ips</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.8/docs/resources/vcpu_server#ipv6_ips VcpuServer#ipv6_ips}. |
-| <code><a href="#@cdktf/provider-ionoscloud.vcpuServer.VcpuServerNic.property.mac">Mac</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.8/docs/resources/vcpu_server#mac VcpuServer#mac}. |
-| <code><a href="#@cdktf/provider-ionoscloud.vcpuServer.VcpuServerNic.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.8/docs/resources/vcpu_server#name VcpuServer#name}. |
+| <code><a href="#@cdktf/provider-ionoscloud.vcpuServer.VcpuServerNic.property.ipv6CidrBlock">Ipv6CidrBlock</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.9/docs/resources/vcpu_server#ipv6_cidr_block VcpuServer#ipv6_cidr_block}. |
+| <code><a href="#@cdktf/provider-ionoscloud.vcpuServer.VcpuServerNic.property.ipv6Ips">Ipv6Ips</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.9/docs/resources/vcpu_server#ipv6_ips VcpuServer#ipv6_ips}. |
+| <code><a href="#@cdktf/provider-ionoscloud.vcpuServer.VcpuServerNic.property.mac">Mac</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.9/docs/resources/vcpu_server#mac VcpuServer#mac}. |
+| <code><a href="#@cdktf/provider-ionoscloud.vcpuServer.VcpuServerNic.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.9/docs/resources/vcpu_server#name VcpuServer#name}. |
 | <code><a href="#@cdktf/provider-ionoscloud.vcpuServer.VcpuServerNic.property.securityGroupsIds">SecurityGroupsIds</a></code> | <code>*[]*string</code> | The list of Security Group IDs for the NIC. |
 
 ---
@@ -1798,7 +1798,7 @@ Lan *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.8/docs/resources/vcpu_server#lan VcpuServer#lan}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.9/docs/resources/vcpu_server#lan VcpuServer#lan}.
 
 ---
 
@@ -1810,7 +1810,7 @@ Dhcp interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.8/docs/resources/vcpu_server#dhcp VcpuServer#dhcp}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.9/docs/resources/vcpu_server#dhcp VcpuServer#dhcp}.
 
 ---
 
@@ -1822,7 +1822,7 @@ Dhcpv6 interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.8/docs/resources/vcpu_server#dhcpv6 VcpuServer#dhcpv6}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.9/docs/resources/vcpu_server#dhcpv6 VcpuServer#dhcpv6}.
 
 ---
 
@@ -1836,7 +1836,7 @@ Firewall interface{}
 
 firewall block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.8/docs/resources/vcpu_server#firewall VcpuServer#firewall}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.9/docs/resources/vcpu_server#firewall VcpuServer#firewall}
 
 ---
 
@@ -1848,7 +1848,7 @@ FirewallActive interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.8/docs/resources/vcpu_server#firewall_active VcpuServer#firewall_active}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.9/docs/resources/vcpu_server#firewall_active VcpuServer#firewall_active}.
 
 ---
 
@@ -1860,7 +1860,7 @@ FirewallType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.8/docs/resources/vcpu_server#firewall_type VcpuServer#firewall_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.9/docs/resources/vcpu_server#firewall_type VcpuServer#firewall_type}.
 
 ---
 
@@ -1876,7 +1876,7 @@ Collection of IP addresses assigned to a nic.
 
 Explicitly assigned public IPs need to come from reserved IP blocks, Passing value null or empty array will assign an IP address automatically.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.8/docs/resources/vcpu_server#ips VcpuServer#ips}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.9/docs/resources/vcpu_server#ips VcpuServer#ips}
 
 ---
 
@@ -1888,7 +1888,7 @@ Ipv6CidrBlock *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.8/docs/resources/vcpu_server#ipv6_cidr_block VcpuServer#ipv6_cidr_block}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.9/docs/resources/vcpu_server#ipv6_cidr_block VcpuServer#ipv6_cidr_block}.
 
 ---
 
@@ -1900,7 +1900,7 @@ Ipv6Ips *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.8/docs/resources/vcpu_server#ipv6_ips VcpuServer#ipv6_ips}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.9/docs/resources/vcpu_server#ipv6_ips VcpuServer#ipv6_ips}.
 
 ---
 
@@ -1912,7 +1912,7 @@ Mac *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.8/docs/resources/vcpu_server#mac VcpuServer#mac}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.9/docs/resources/vcpu_server#mac VcpuServer#mac}.
 
 ---
 
@@ -1924,7 +1924,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.8/docs/resources/vcpu_server#name VcpuServer#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.9/docs/resources/vcpu_server#name VcpuServer#name}.
 
 ---
 
@@ -1938,7 +1938,7 @@ SecurityGroupsIds *[]*string
 
 The list of Security Group IDs for the NIC.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.8/docs/resources/vcpu_server#security_groups_ids VcpuServer#security_groups_ids}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.9/docs/resources/vcpu_server#security_groups_ids VcpuServer#security_groups_ids}
 
 ---
 
@@ -1947,7 +1947,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 #### Initializer <a name="Initializer" id="@cdktf/provider-ionoscloud.vcpuServer.VcpuServerNicFirewall.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/vcpuserver"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/vcpuserver"
 
 &vcpuserver.VcpuServerNicFirewall {
 	Protocol: *string,
@@ -1967,16 +1967,16 @@ import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/vcpuserver"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-ionoscloud.vcpuServer.VcpuServerNicFirewall.property.protocol">Protocol</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.8/docs/resources/vcpu_server#protocol VcpuServer#protocol}. |
-| <code><a href="#@cdktf/provider-ionoscloud.vcpuServer.VcpuServerNicFirewall.property.icmpCode">IcmpCode</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.8/docs/resources/vcpu_server#icmp_code VcpuServer#icmp_code}. |
-| <code><a href="#@cdktf/provider-ionoscloud.vcpuServer.VcpuServerNicFirewall.property.icmpType">IcmpType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.8/docs/resources/vcpu_server#icmp_type VcpuServer#icmp_type}. |
-| <code><a href="#@cdktf/provider-ionoscloud.vcpuServer.VcpuServerNicFirewall.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.8/docs/resources/vcpu_server#name VcpuServer#name}. |
-| <code><a href="#@cdktf/provider-ionoscloud.vcpuServer.VcpuServerNicFirewall.property.portRangeEnd">PortRangeEnd</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.8/docs/resources/vcpu_server#port_range_end VcpuServer#port_range_end}. |
-| <code><a href="#@cdktf/provider-ionoscloud.vcpuServer.VcpuServerNicFirewall.property.portRangeStart">PortRangeStart</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.8/docs/resources/vcpu_server#port_range_start VcpuServer#port_range_start}. |
-| <code><a href="#@cdktf/provider-ionoscloud.vcpuServer.VcpuServerNicFirewall.property.sourceIp">SourceIp</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.8/docs/resources/vcpu_server#source_ip VcpuServer#source_ip}. |
-| <code><a href="#@cdktf/provider-ionoscloud.vcpuServer.VcpuServerNicFirewall.property.sourceMac">SourceMac</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.8/docs/resources/vcpu_server#source_mac VcpuServer#source_mac}. |
-| <code><a href="#@cdktf/provider-ionoscloud.vcpuServer.VcpuServerNicFirewall.property.targetIp">TargetIp</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.8/docs/resources/vcpu_server#target_ip VcpuServer#target_ip}. |
-| <code><a href="#@cdktf/provider-ionoscloud.vcpuServer.VcpuServerNicFirewall.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.8/docs/resources/vcpu_server#type VcpuServer#type}. |
+| <code><a href="#@cdktf/provider-ionoscloud.vcpuServer.VcpuServerNicFirewall.property.protocol">Protocol</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.9/docs/resources/vcpu_server#protocol VcpuServer#protocol}. |
+| <code><a href="#@cdktf/provider-ionoscloud.vcpuServer.VcpuServerNicFirewall.property.icmpCode">IcmpCode</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.9/docs/resources/vcpu_server#icmp_code VcpuServer#icmp_code}. |
+| <code><a href="#@cdktf/provider-ionoscloud.vcpuServer.VcpuServerNicFirewall.property.icmpType">IcmpType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.9/docs/resources/vcpu_server#icmp_type VcpuServer#icmp_type}. |
+| <code><a href="#@cdktf/provider-ionoscloud.vcpuServer.VcpuServerNicFirewall.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.9/docs/resources/vcpu_server#name VcpuServer#name}. |
+| <code><a href="#@cdktf/provider-ionoscloud.vcpuServer.VcpuServerNicFirewall.property.portRangeEnd">PortRangeEnd</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.9/docs/resources/vcpu_server#port_range_end VcpuServer#port_range_end}. |
+| <code><a href="#@cdktf/provider-ionoscloud.vcpuServer.VcpuServerNicFirewall.property.portRangeStart">PortRangeStart</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.9/docs/resources/vcpu_server#port_range_start VcpuServer#port_range_start}. |
+| <code><a href="#@cdktf/provider-ionoscloud.vcpuServer.VcpuServerNicFirewall.property.sourceIp">SourceIp</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.9/docs/resources/vcpu_server#source_ip VcpuServer#source_ip}. |
+| <code><a href="#@cdktf/provider-ionoscloud.vcpuServer.VcpuServerNicFirewall.property.sourceMac">SourceMac</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.9/docs/resources/vcpu_server#source_mac VcpuServer#source_mac}. |
+| <code><a href="#@cdktf/provider-ionoscloud.vcpuServer.VcpuServerNicFirewall.property.targetIp">TargetIp</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.9/docs/resources/vcpu_server#target_ip VcpuServer#target_ip}. |
+| <code><a href="#@cdktf/provider-ionoscloud.vcpuServer.VcpuServerNicFirewall.property.type">Type</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.9/docs/resources/vcpu_server#type VcpuServer#type}. |
 
 ---
 
@@ -1988,7 +1988,7 @@ Protocol *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.8/docs/resources/vcpu_server#protocol VcpuServer#protocol}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.9/docs/resources/vcpu_server#protocol VcpuServer#protocol}.
 
 ---
 
@@ -2000,7 +2000,7 @@ IcmpCode *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.8/docs/resources/vcpu_server#icmp_code VcpuServer#icmp_code}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.9/docs/resources/vcpu_server#icmp_code VcpuServer#icmp_code}.
 
 ---
 
@@ -2012,7 +2012,7 @@ IcmpType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.8/docs/resources/vcpu_server#icmp_type VcpuServer#icmp_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.9/docs/resources/vcpu_server#icmp_type VcpuServer#icmp_type}.
 
 ---
 
@@ -2024,7 +2024,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.8/docs/resources/vcpu_server#name VcpuServer#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.9/docs/resources/vcpu_server#name VcpuServer#name}.
 
 ---
 
@@ -2036,7 +2036,7 @@ PortRangeEnd *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.8/docs/resources/vcpu_server#port_range_end VcpuServer#port_range_end}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.9/docs/resources/vcpu_server#port_range_end VcpuServer#port_range_end}.
 
 ---
 
@@ -2048,7 +2048,7 @@ PortRangeStart *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.8/docs/resources/vcpu_server#port_range_start VcpuServer#port_range_start}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.9/docs/resources/vcpu_server#port_range_start VcpuServer#port_range_start}.
 
 ---
 
@@ -2060,7 +2060,7 @@ SourceIp *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.8/docs/resources/vcpu_server#source_ip VcpuServer#source_ip}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.9/docs/resources/vcpu_server#source_ip VcpuServer#source_ip}.
 
 ---
 
@@ -2072,7 +2072,7 @@ SourceMac *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.8/docs/resources/vcpu_server#source_mac VcpuServer#source_mac}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.9/docs/resources/vcpu_server#source_mac VcpuServer#source_mac}.
 
 ---
 
@@ -2084,7 +2084,7 @@ TargetIp *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.8/docs/resources/vcpu_server#target_ip VcpuServer#target_ip}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.9/docs/resources/vcpu_server#target_ip VcpuServer#target_ip}.
 
 ---
 
@@ -2096,7 +2096,7 @@ Type *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.8/docs/resources/vcpu_server#type VcpuServer#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.9/docs/resources/vcpu_server#type VcpuServer#type}.
 
 ---
 
@@ -2105,7 +2105,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 #### Initializer <a name="Initializer" id="@cdktf/provider-ionoscloud.vcpuServer.VcpuServerTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/vcpuserver"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/vcpuserver"
 
 &vcpuserver.VcpuServerTimeouts {
 	Create: *string,
@@ -2119,10 +2119,10 @@ import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/vcpuserver"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-ionoscloud.vcpuServer.VcpuServerTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.8/docs/resources/vcpu_server#create VcpuServer#create}. |
-| <code><a href="#@cdktf/provider-ionoscloud.vcpuServer.VcpuServerTimeouts.property.default">Default</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.8/docs/resources/vcpu_server#default VcpuServer#default}. |
-| <code><a href="#@cdktf/provider-ionoscloud.vcpuServer.VcpuServerTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.8/docs/resources/vcpu_server#delete VcpuServer#delete}. |
-| <code><a href="#@cdktf/provider-ionoscloud.vcpuServer.VcpuServerTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.8/docs/resources/vcpu_server#update VcpuServer#update}. |
+| <code><a href="#@cdktf/provider-ionoscloud.vcpuServer.VcpuServerTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.9/docs/resources/vcpu_server#create VcpuServer#create}. |
+| <code><a href="#@cdktf/provider-ionoscloud.vcpuServer.VcpuServerTimeouts.property.default">Default</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.9/docs/resources/vcpu_server#default VcpuServer#default}. |
+| <code><a href="#@cdktf/provider-ionoscloud.vcpuServer.VcpuServerTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.9/docs/resources/vcpu_server#delete VcpuServer#delete}. |
+| <code><a href="#@cdktf/provider-ionoscloud.vcpuServer.VcpuServerTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.9/docs/resources/vcpu_server#update VcpuServer#update}. |
 
 ---
 
@@ -2134,7 +2134,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.8/docs/resources/vcpu_server#create VcpuServer#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.9/docs/resources/vcpu_server#create VcpuServer#create}.
 
 ---
 
@@ -2146,7 +2146,7 @@ Default *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.8/docs/resources/vcpu_server#default VcpuServer#default}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.9/docs/resources/vcpu_server#default VcpuServer#default}.
 
 ---
 
@@ -2158,7 +2158,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.8/docs/resources/vcpu_server#delete VcpuServer#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.9/docs/resources/vcpu_server#delete VcpuServer#delete}.
 
 ---
 
@@ -2170,7 +2170,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.8/docs/resources/vcpu_server#update VcpuServer#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.9/docs/resources/vcpu_server#update VcpuServer#update}.
 
 ---
 
@@ -2179,7 +2179,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 #### Initializer <a name="Initializer" id="@cdktf/provider-ionoscloud.vcpuServer.VcpuServerVolume.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/vcpuserver"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/vcpuserver"
 
 &vcpuserver.VcpuServerVolume {
 	DiskType: *string,
@@ -2197,12 +2197,12 @@ import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/vcpuserver"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-ionoscloud.vcpuServer.VcpuServerVolume.property.diskType">DiskType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.8/docs/resources/vcpu_server#disk_type VcpuServer#disk_type}. |
-| <code><a href="#@cdktf/provider-ionoscloud.vcpuServer.VcpuServerVolume.property.availabilityZone">AvailabilityZone</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.8/docs/resources/vcpu_server#availability_zone VcpuServer#availability_zone}. |
+| <code><a href="#@cdktf/provider-ionoscloud.vcpuServer.VcpuServerVolume.property.diskType">DiskType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.9/docs/resources/vcpu_server#disk_type VcpuServer#disk_type}. |
+| <code><a href="#@cdktf/provider-ionoscloud.vcpuServer.VcpuServerVolume.property.availabilityZone">AvailabilityZone</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.9/docs/resources/vcpu_server#availability_zone VcpuServer#availability_zone}. |
 | <code><a href="#@cdktf/provider-ionoscloud.vcpuServer.VcpuServerVolume.property.backupUnitId">BackupUnitId</a></code> | <code>*string</code> | The uuid of the Backup Unit that user has access to. |
-| <code><a href="#@cdktf/provider-ionoscloud.vcpuServer.VcpuServerVolume.property.bus">Bus</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.8/docs/resources/vcpu_server#bus VcpuServer#bus}. |
-| <code><a href="#@cdktf/provider-ionoscloud.vcpuServer.VcpuServerVolume.property.licenceType">LicenceType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.8/docs/resources/vcpu_server#licence_type VcpuServer#licence_type}. |
-| <code><a href="#@cdktf/provider-ionoscloud.vcpuServer.VcpuServerVolume.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.8/docs/resources/vcpu_server#name VcpuServer#name}. |
+| <code><a href="#@cdktf/provider-ionoscloud.vcpuServer.VcpuServerVolume.property.bus">Bus</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.9/docs/resources/vcpu_server#bus VcpuServer#bus}. |
+| <code><a href="#@cdktf/provider-ionoscloud.vcpuServer.VcpuServerVolume.property.licenceType">LicenceType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.9/docs/resources/vcpu_server#licence_type VcpuServer#licence_type}. |
+| <code><a href="#@cdktf/provider-ionoscloud.vcpuServer.VcpuServerVolume.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.9/docs/resources/vcpu_server#name VcpuServer#name}. |
 | <code><a href="#@cdktf/provider-ionoscloud.vcpuServer.VcpuServerVolume.property.size">Size</a></code> | <code>*f64</code> | The size of the volume in GB. |
 | <code><a href="#@cdktf/provider-ionoscloud.vcpuServer.VcpuServerVolume.property.userData">UserData</a></code> | <code>*string</code> | The cloud-init configuration for the volume as base64 encoded string. |
 
@@ -2216,7 +2216,7 @@ DiskType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.8/docs/resources/vcpu_server#disk_type VcpuServer#disk_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.9/docs/resources/vcpu_server#disk_type VcpuServer#disk_type}.
 
 ---
 
@@ -2228,7 +2228,7 @@ AvailabilityZone *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.8/docs/resources/vcpu_server#availability_zone VcpuServer#availability_zone}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.9/docs/resources/vcpu_server#availability_zone VcpuServer#availability_zone}.
 
 ---
 
@@ -2244,7 +2244,7 @@ The uuid of the Backup Unit that user has access to.
 
 The property is immutable and is only allowed to be set on a new volume creation. It is mandatory to provide either 'public image' or 'imageAlias' in conjunction with this property.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.8/docs/resources/vcpu_server#backup_unit_id VcpuServer#backup_unit_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.9/docs/resources/vcpu_server#backup_unit_id VcpuServer#backup_unit_id}
 
 ---
 
@@ -2256,7 +2256,7 @@ Bus *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.8/docs/resources/vcpu_server#bus VcpuServer#bus}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.9/docs/resources/vcpu_server#bus VcpuServer#bus}.
 
 ---
 
@@ -2268,7 +2268,7 @@ LicenceType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.8/docs/resources/vcpu_server#licence_type VcpuServer#licence_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.9/docs/resources/vcpu_server#licence_type VcpuServer#licence_type}.
 
 ---
 
@@ -2280,7 +2280,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.8/docs/resources/vcpu_server#name VcpuServer#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.9/docs/resources/vcpu_server#name VcpuServer#name}.
 
 ---
 
@@ -2294,7 +2294,7 @@ Size *f64
 
 The size of the volume in GB.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.8/docs/resources/vcpu_server#size VcpuServer#size}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.9/docs/resources/vcpu_server#size VcpuServer#size}
 
 ---
 
@@ -2310,7 +2310,7 @@ The cloud-init configuration for the volume as base64 encoded string.
 
 The property is immutable and is only allowed to be set on a new volume creation. It is mandatory to provide either 'public image' or 'imageAlias' that has cloud-init compatibility in conjunction with this property.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.8/docs/resources/vcpu_server#user_data VcpuServer#user_data}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.9/docs/resources/vcpu_server#user_data VcpuServer#user_data}
 
 ---
 
@@ -2321,7 +2321,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.vcpuServer.VcpuServerLabelList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/vcpuserver"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/vcpuserver"
 
 vcpuserver.NewVcpuServerLabelList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) VcpuServerLabelList
 ```
@@ -2481,7 +2481,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.vcpuServer.VcpuServerLabelOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/vcpuserver"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/vcpuserver"
 
 vcpuserver.NewVcpuServerLabelOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) VcpuServerLabelOutputReference
 ```
@@ -2792,7 +2792,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.vcpuServer.VcpuServerNicFirewallList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/vcpuserver"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/vcpuserver"
 
 vcpuserver.NewVcpuServerNicFirewallList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) VcpuServerNicFirewallList
 ```
@@ -2952,7 +2952,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.vcpuServer.VcpuServerNicFirewallOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/vcpuserver"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/vcpuserver"
 
 vcpuserver.NewVcpuServerNicFirewallOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) VcpuServerNicFirewallOutputReference
 ```
@@ -3513,7 +3513,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.vcpuServer.VcpuServerNicOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/vcpuserver"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/vcpuserver"
 
 vcpuserver.NewVcpuServerNicOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VcpuServerNicOutputReference
 ```
@@ -4149,7 +4149,7 @@ func InternalValue() VcpuServerNic
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.vcpuServer.VcpuServerTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/vcpuserver"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/vcpuserver"
 
 vcpuserver.NewVcpuServerTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VcpuServerTimeoutsOutputReference
 ```
@@ -4514,7 +4514,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.vcpuServer.VcpuServerVolumeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/vcpuserver"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/vcpuserver"
 
 vcpuserver.NewVcpuServerVolumeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VcpuServerVolumeOutputReference
 ```
