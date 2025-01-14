@@ -4,7 +4,7 @@
 
 ### S3BucketPolicy <a name="S3BucketPolicy" id="@cdktf/provider-ionoscloud.s3BucketPolicy.S3BucketPolicy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.8/docs/resources/s3_bucket_policy ionoscloud_s3_bucket_policy}.
+Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.9/docs/resources/s3_bucket_policy ionoscloud_s3_bucket_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.s3BucketPolicy.S3BucketPolicy.Initializer"></a>
 
@@ -110,7 +110,7 @@ Must be unique amongst siblings in the same scope
 
 Name of the bucket to which this policy will be applied.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.8/docs/resources/s3_bucket_policy#bucket S3BucketPolicy#bucket}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.9/docs/resources/s3_bucket_policy#bucket S3BucketPolicy#bucket}
 
 ---
 
@@ -120,7 +120,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 
 Text of the policy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.8/docs/resources/s3_bucket_policy#policy S3BucketPolicy#policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.9/docs/resources/s3_bucket_policy#policy S3BucketPolicy#policy}
 
 ---
 
@@ -547,7 +547,7 @@ The construct id used in the generated config for the S3BucketPolicy to import.
 
 The id of the existing S3BucketPolicy that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.8/docs/resources/s3_bucket_policy#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.9/docs/resources/s3_bucket_policy#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -906,7 +906,7 @@ public java.lang.String getBucket();
 
 Name of the bucket to which this policy will be applied.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.8/docs/resources/s3_bucket_policy#bucket S3BucketPolicy#bucket}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.9/docs/resources/s3_bucket_policy#bucket S3BucketPolicy#bucket}
 
 ---
 
@@ -920,7 +920,7 @@ public java.lang.String getPolicy();
 
 Text of the policy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.8/docs/resources/s3_bucket_policy#policy S3BucketPolicy#policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.9/docs/resources/s3_bucket_policy#policy S3BucketPolicy#policy}
 
 ---
 

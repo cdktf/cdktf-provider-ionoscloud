@@ -38,6 +38,7 @@ export * as loggingPipeline from './logging-pipeline';
 export * as mariadbCluster from './mariadb-cluster';
 export * as mongoCluster from './mongo-cluster';
 export * as mongoUser from './mongo-user';
+export * as monitoringPipeline from './monitoring-pipeline';
 export * as natgateway from './natgateway';
 export * as natgatewayRule from './natgateway-rule';
 export * as networkloadbalancer from './networkloadbalancer';
@@ -119,6 +120,7 @@ export * as dataIonoscloudMariadbCluster from './data-ionoscloud-mariadb-cluster
 export * as dataIonoscloudMongoCluster from './data-ionoscloud-mongo-cluster';
 export * as dataIonoscloudMongoTemplate from './data-ionoscloud-mongo-template';
 export * as dataIonoscloudMongoUser from './data-ionoscloud-mongo-user';
+export * as dataIonoscloudMonitoringPipeline from './data-ionoscloud-monitoring-pipeline';
 export * as dataIonoscloudNatgateway from './data-ionoscloud-natgateway';
 export * as dataIonoscloudNatgatewayRule from './data-ionoscloud-natgateway-rule';
 export * as dataIonoscloudNetworkloadbalancer from './data-ionoscloud-networkloadbalancer';
