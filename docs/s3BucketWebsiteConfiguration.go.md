@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionosclo
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.s3BucketWebsiteConfiguration.S3BucketWebsiteConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/s3bucketwebsiteconfiguration"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/s3bucketwebsiteconfiguration"
 
 s3bucketwebsiteconfiguration.NewS3BucketWebsiteConfiguration(scope Construct, id *string, config S3BucketWebsiteConfigurationConfig) S3BucketWebsiteConfiguration
 ```
@@ -458,7 +458,7 @@ func ResetRoutingRule()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-ionoscloud.s3BucketWebsiteConfiguration.S3BucketWebsiteConfiguration.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/s3bucketwebsiteconfiguration"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/s3bucketwebsiteconfiguration"
 
 s3bucketwebsiteconfiguration.S3BucketWebsiteConfiguration_IsConstruct(x interface{}) *bool
 ```
@@ -490,7 +490,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-ionoscloud.s3BucketWebsiteConfiguration.S3BucketWebsiteConfiguration.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/s3bucketwebsiteconfiguration"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/s3bucketwebsiteconfiguration"
 
 s3bucketwebsiteconfiguration.S3BucketWebsiteConfiguration_IsTerraformElement(x interface{}) *bool
 ```
@@ -504,7 +504,7 @@ s3bucketwebsiteconfiguration.S3BucketWebsiteConfiguration_IsTerraformElement(x i
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-ionoscloud.s3BucketWebsiteConfiguration.S3BucketWebsiteConfiguration.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/s3bucketwebsiteconfiguration"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/s3bucketwebsiteconfiguration"
 
 s3bucketwebsiteconfiguration.S3BucketWebsiteConfiguration_IsTerraformResource(x interface{}) *bool
 ```
@@ -518,7 +518,7 @@ s3bucketwebsiteconfiguration.S3BucketWebsiteConfiguration_IsTerraformResource(x 
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-ionoscloud.s3BucketWebsiteConfiguration.S3BucketWebsiteConfiguration.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/s3bucketwebsiteconfiguration"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/s3bucketwebsiteconfiguration"
 
 s3bucketwebsiteconfiguration.S3BucketWebsiteConfiguration_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -857,7 +857,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-ionoscloud.s3BucketWebsiteConfiguration.S3BucketWebsiteConfigurationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/s3bucketwebsiteconfiguration"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/s3bucketwebsiteconfiguration"
 
 &s3bucketwebsiteconfiguration.S3BucketWebsiteConfigurationConfig {
 	Connection: interface{},
@@ -868,9 +868,9 @@ import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/s3bucketwebsite
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
 	Bucket: *string,
-	ErrorDocument: github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud.s3BucketWebsiteConfiguration.S3BucketWebsiteConfigurationErrorDocument,
-	IndexDocument: github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud.s3BucketWebsiteConfiguration.S3BucketWebsiteConfigurationIndexDocument,
-	RedirectAllRequestsTo: github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud.s3BucketWebsiteConfiguration.S3BucketWebsiteConfigurationRedirectAllRequestsTo,
+	ErrorDocument: github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11.s3BucketWebsiteConfiguration.S3BucketWebsiteConfigurationErrorDocument,
+	IndexDocument: github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11.s3BucketWebsiteConfiguration.S3BucketWebsiteConfigurationIndexDocument,
+	RedirectAllRequestsTo: github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11.s3BucketWebsiteConfiguration.S3BucketWebsiteConfigurationRedirectAllRequestsTo,
 	RoutingRule: interface{},
 }
 ```
@@ -1039,7 +1039,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 #### Initializer <a name="Initializer" id="@cdktf/provider-ionoscloud.s3BucketWebsiteConfiguration.S3BucketWebsiteConfigurationErrorDocument.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/s3bucketwebsiteconfiguration"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/s3bucketwebsiteconfiguration"
 
 &s3bucketwebsiteconfiguration.S3BucketWebsiteConfigurationErrorDocument {
 	Key: *string,
@@ -1073,7 +1073,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 #### Initializer <a name="Initializer" id="@cdktf/provider-ionoscloud.s3BucketWebsiteConfiguration.S3BucketWebsiteConfigurationIndexDocument.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/s3bucketwebsiteconfiguration"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/s3bucketwebsiteconfiguration"
 
 &s3bucketwebsiteconfiguration.S3BucketWebsiteConfigurationIndexDocument {
 	Suffix: *string,
@@ -1107,7 +1107,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 #### Initializer <a name="Initializer" id="@cdktf/provider-ionoscloud.s3BucketWebsiteConfiguration.S3BucketWebsiteConfigurationRedirectAllRequestsTo.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/s3bucketwebsiteconfiguration"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/s3bucketwebsiteconfiguration"
 
 &s3bucketwebsiteconfiguration.S3BucketWebsiteConfigurationRedirectAllRequestsTo {
 	HostName: *string,
@@ -1157,11 +1157,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 #### Initializer <a name="Initializer" id="@cdktf/provider-ionoscloud.s3BucketWebsiteConfiguration.S3BucketWebsiteConfigurationRoutingRule.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/s3bucketwebsiteconfiguration"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/s3bucketwebsiteconfiguration"
 
 &s3bucketwebsiteconfiguration.S3BucketWebsiteConfigurationRoutingRule {
-	Condition: github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud.s3BucketWebsiteConfiguration.S3BucketWebsiteConfigurationRoutingRuleCondition,
-	Redirect: github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud.s3BucketWebsiteConfiguration.S3BucketWebsiteConfigurationRoutingRuleRedirect,
+	Condition: github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11.s3BucketWebsiteConfiguration.S3BucketWebsiteConfigurationRoutingRuleCondition,
+	Redirect: github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11.s3BucketWebsiteConfiguration.S3BucketWebsiteConfigurationRoutingRuleRedirect,
 }
 ```
 
@@ -1207,7 +1207,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 #### Initializer <a name="Initializer" id="@cdktf/provider-ionoscloud.s3BucketWebsiteConfiguration.S3BucketWebsiteConfigurationRoutingRuleCondition.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/s3bucketwebsiteconfiguration"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/s3bucketwebsiteconfiguration"
 
 &s3bucketwebsiteconfiguration.S3BucketWebsiteConfigurationRoutingRuleCondition {
 	HttpErrorCodeReturnedEquals: *string,
@@ -1261,7 +1261,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 #### Initializer <a name="Initializer" id="@cdktf/provider-ionoscloud.s3BucketWebsiteConfiguration.S3BucketWebsiteConfigurationRoutingRuleRedirect.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/s3bucketwebsiteconfiguration"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/s3bucketwebsiteconfiguration"
 
 &s3bucketwebsiteconfiguration.S3BucketWebsiteConfigurationRoutingRuleRedirect {
 	HostName: *string,
@@ -1365,7 +1365,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.s3BucketWebsiteConfiguration.S3BucketWebsiteConfigurationErrorDocumentOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/s3bucketwebsiteconfiguration"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/s3bucketwebsiteconfiguration"
 
 s3bucketwebsiteconfiguration.NewS3BucketWebsiteConfigurationErrorDocumentOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) S3BucketWebsiteConfigurationErrorDocumentOutputReference
 ```
@@ -1643,7 +1643,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.s3BucketWebsiteConfiguration.S3BucketWebsiteConfigurationIndexDocumentOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/s3bucketwebsiteconfiguration"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/s3bucketwebsiteconfiguration"
 
 s3bucketwebsiteconfiguration.NewS3BucketWebsiteConfigurationIndexDocumentOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) S3BucketWebsiteConfigurationIndexDocumentOutputReference
 ```
@@ -1921,7 +1921,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.s3BucketWebsiteConfiguration.S3BucketWebsiteConfigurationRedirectAllRequestsToOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/s3bucketwebsiteconfiguration"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/s3bucketwebsiteconfiguration"
 
 s3bucketwebsiteconfiguration.NewS3BucketWebsiteConfigurationRedirectAllRequestsToOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) S3BucketWebsiteConfigurationRedirectAllRequestsToOutputReference
 ```
@@ -2228,7 +2228,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.s3BucketWebsiteConfiguration.S3BucketWebsiteConfigurationRoutingRuleConditionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/s3bucketwebsiteconfiguration"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/s3bucketwebsiteconfiguration"
 
 s3bucketwebsiteconfiguration.NewS3BucketWebsiteConfigurationRoutingRuleConditionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) S3BucketWebsiteConfigurationRoutingRuleConditionOutputReference
 ```
@@ -2535,7 +2535,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.s3BucketWebsiteConfiguration.S3BucketWebsiteConfigurationRoutingRuleList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/s3bucketwebsiteconfiguration"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/s3bucketwebsiteconfiguration"
 
 s3bucketwebsiteconfiguration.NewS3BucketWebsiteConfigurationRoutingRuleList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) S3BucketWebsiteConfigurationRoutingRuleList
 ```
@@ -2695,7 +2695,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.s3BucketWebsiteConfiguration.S3BucketWebsiteConfigurationRoutingRuleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/s3bucketwebsiteconfiguration"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/s3bucketwebsiteconfiguration"
 
 s3bucketwebsiteconfiguration.NewS3BucketWebsiteConfigurationRoutingRuleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) S3BucketWebsiteConfigurationRoutingRuleOutputReference
 ```
@@ -3046,7 +3046,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.s3BucketWebsiteConfiguration.S3BucketWebsiteConfigurationRoutingRuleRedirectOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/s3bucketwebsiteconfiguration"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/s3bucketwebsiteconfiguration"
 
 s3bucketwebsiteconfiguration.NewS3BucketWebsiteConfigurationRoutingRuleRedirectOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) S3BucketWebsiteConfigurationRoutingRuleRedirectOutputReference
 ```
