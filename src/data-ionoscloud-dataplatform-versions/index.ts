@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.9/docs/data-sources/dataplatform_versions
+// https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.0/docs/data-sources/dataplatform_versions
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,7 +13,7 @@ import * as cdktf from 'cdktf';
 
 export interface DataIonoscloudDataplatformVersionsConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.9/docs/data-sources/dataplatform_versions#id DataIonoscloudDataplatformVersions#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.0/docs/data-sources/dataplatform_versions#id DataIonoscloudDataplatformVersions#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -22,25 +22,25 @@ export interface DataIonoscloudDataplatformVersionsConfig extends cdktf.Terrafor
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.9/docs/data-sources/dataplatform_versions#timeouts DataIonoscloudDataplatformVersions#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.0/docs/data-sources/dataplatform_versions#timeouts DataIonoscloudDataplatformVersions#timeouts}
   */
   readonly timeouts?: DataIonoscloudDataplatformVersionsTimeouts;
 }
 export interface DataIonoscloudDataplatformVersionsTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.9/docs/data-sources/dataplatform_versions#create DataIonoscloudDataplatformVersions#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.0/docs/data-sources/dataplatform_versions#create DataIonoscloudDataplatformVersions#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.9/docs/data-sources/dataplatform_versions#default DataIonoscloudDataplatformVersions#default}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.0/docs/data-sources/dataplatform_versions#default DataIonoscloudDataplatformVersions#default}
   */
   readonly default?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.9/docs/data-sources/dataplatform_versions#delete DataIonoscloudDataplatformVersions#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.0/docs/data-sources/dataplatform_versions#delete DataIonoscloudDataplatformVersions#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.9/docs/data-sources/dataplatform_versions#update DataIonoscloudDataplatformVersions#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.0/docs/data-sources/dataplatform_versions#update DataIonoscloudDataplatformVersions#update}
   */
   readonly update?: string;
 }
@@ -221,7 +221,7 @@ export class DataIonoscloudDataplatformVersionsTimeoutsOutputReference extends c
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.9/docs/data-sources/dataplatform_versions ionoscloud_dataplatform_versions}
+* Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.0/docs/data-sources/dataplatform_versions ionoscloud_dataplatform_versions}
 */
 export class DataIonoscloudDataplatformVersions extends cdktf.TerraformDataSource {
 
@@ -237,7 +237,7 @@ export class DataIonoscloudDataplatformVersions extends cdktf.TerraformDataSourc
   * Generates CDKTF code for importing a DataIonoscloudDataplatformVersions resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataIonoscloudDataplatformVersions to import
-  * @param importFromId The id of the existing DataIonoscloudDataplatformVersions that should be imported. Refer to the {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.9/docs/data-sources/dataplatform_versions#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataIonoscloudDataplatformVersions that should be imported. Refer to the {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.0/docs/data-sources/dataplatform_versions#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataIonoscloudDataplatformVersions to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -249,7 +249,7 @@ export class DataIonoscloudDataplatformVersions extends cdktf.TerraformDataSourc
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.9/docs/data-sources/dataplatform_versions ionoscloud_dataplatform_versions} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.0/docs/data-sources/dataplatform_versions ionoscloud_dataplatform_versions} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -260,7 +260,7 @@ export class DataIonoscloudDataplatformVersions extends cdktf.TerraformDataSourc
       terraformResourceType: 'ionoscloud_dataplatform_versions',
       terraformGeneratorMetadata: {
         providerName: 'ionoscloud',
-        providerVersion: '6.6.9',
+        providerVersion: '6.7.0',
         providerVersionConstraint: '~> 6.2'
       },
       provider: config.provider,
