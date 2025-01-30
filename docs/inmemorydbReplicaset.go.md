@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionosclo
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.inmemorydbReplicaset.InmemorydbReplicaset.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/inmemorydbreplicaset"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/inmemorydbreplicaset"
 
 inmemorydbreplicaset.NewInmemorydbReplicaset(scope Construct, id *string, config InmemorydbReplicasetConfig) InmemorydbReplicaset
 ```
@@ -478,7 +478,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-ionoscloud.inmemorydbReplicaset.InmemorydbReplicaset.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/inmemorydbreplicaset"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/inmemorydbreplicaset"
 
 inmemorydbreplicaset.InmemorydbReplicaset_IsConstruct(x interface{}) *bool
 ```
@@ -510,7 +510,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-ionoscloud.inmemorydbReplicaset.InmemorydbReplicaset.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/inmemorydbreplicaset"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/inmemorydbreplicaset"
 
 inmemorydbreplicaset.InmemorydbReplicaset_IsTerraformElement(x interface{}) *bool
 ```
@@ -524,7 +524,7 @@ inmemorydbreplicaset.InmemorydbReplicaset_IsTerraformElement(x interface{}) *boo
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-ionoscloud.inmemorydbReplicaset.InmemorydbReplicaset.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/inmemorydbreplicaset"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/inmemorydbreplicaset"
 
 inmemorydbreplicaset.InmemorydbReplicaset_IsTerraformResource(x interface{}) *bool
 ```
@@ -538,7 +538,7 @@ inmemorydbreplicaset.InmemorydbReplicaset_IsTerraformResource(x interface{}) *bo
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-ionoscloud.inmemorydbReplicaset.InmemorydbReplicaset.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/inmemorydbreplicaset"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/inmemorydbreplicaset"
 
 inmemorydbreplicaset.InmemorydbReplicaset_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1064,7 +1064,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-ionoscloud.inmemorydbReplicaset.InmemorydbReplicasetConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/inmemorydbreplicaset"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/inmemorydbreplicaset"
 
 &inmemorydbreplicaset.InmemorydbReplicasetConfig {
 	Connection: interface{},
@@ -1074,19 +1074,19 @@ import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/inmemorydbr
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
-	Connections: github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11.inmemorydbReplicaset.InmemorydbReplicasetConnections,
-	Credentials: github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11.inmemorydbReplicaset.InmemorydbReplicasetCredentials,
+	Connections: github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud.inmemorydbReplicaset.InmemorydbReplicasetConnections,
+	Credentials: github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud.inmemorydbReplicaset.InmemorydbReplicasetCredentials,
 	DisplayName: *string,
 	EvictionPolicy: *string,
 	PersistenceMode: *string,
 	Replicas: *f64,
-	Resources: github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11.inmemorydbReplicaset.InmemorydbReplicasetResources,
+	Resources: github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud.inmemorydbReplicaset.InmemorydbReplicasetResources,
 	Version: *string,
 	Id: *string,
 	InitialSnapshotId: *string,
 	Location: *string,
-	MaintenanceWindow: github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11.inmemorydbReplicaset.InmemorydbReplicasetMaintenanceWindow,
-	Timeouts: github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11.inmemorydbReplicaset.InmemorydbReplicasetTimeouts,
+	MaintenanceWindow: github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud.inmemorydbReplicaset.InmemorydbReplicasetMaintenanceWindow,
+	Timeouts: github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud.inmemorydbReplicaset.InmemorydbReplicasetTimeouts,
 }
 ```
 
@@ -1379,7 +1379,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 #### Initializer <a name="Initializer" id="@cdktf/provider-ionoscloud.inmemorydbReplicaset.InmemorydbReplicasetConnections.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/inmemorydbreplicaset"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/inmemorydbreplicaset"
 
 &inmemorydbreplicaset.InmemorydbReplicasetConnections {
 	Cidr: *string,
@@ -1445,11 +1445,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 #### Initializer <a name="Initializer" id="@cdktf/provider-ionoscloud.inmemorydbReplicaset.InmemorydbReplicasetCredentials.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/inmemorydbreplicaset"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/inmemorydbreplicaset"
 
 &inmemorydbreplicaset.InmemorydbReplicasetCredentials {
 	Username: *string,
-	HashedPassword: github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11.inmemorydbReplicaset.InmemorydbReplicasetCredentialsHashedPassword,
+	HashedPassword: github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud.inmemorydbReplicaset.InmemorydbReplicasetCredentialsHashedPassword,
 	PlainTextPassword: *string,
 }
 ```
@@ -1511,7 +1511,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 #### Initializer <a name="Initializer" id="@cdktf/provider-ionoscloud.inmemorydbReplicaset.InmemorydbReplicasetCredentialsHashedPassword.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/inmemorydbreplicaset"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/inmemorydbreplicaset"
 
 &inmemorydbreplicaset.InmemorydbReplicasetCredentialsHashedPassword {
 	Algorithm: *string,
@@ -1557,7 +1557,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 #### Initializer <a name="Initializer" id="@cdktf/provider-ionoscloud.inmemorydbReplicaset.InmemorydbReplicasetMaintenanceWindow.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/inmemorydbreplicaset"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/inmemorydbreplicaset"
 
 &inmemorydbreplicaset.InmemorydbReplicasetMaintenanceWindow {
 	DayOfTheWeek: *string,
@@ -1607,7 +1607,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 #### Initializer <a name="Initializer" id="@cdktf/provider-ionoscloud.inmemorydbReplicaset.InmemorydbReplicasetResources.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/inmemorydbreplicaset"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/inmemorydbreplicaset"
 
 &inmemorydbreplicaset.InmemorydbReplicasetResources {
 	Cores: *f64,
@@ -1657,7 +1657,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 #### Initializer <a name="Initializer" id="@cdktf/provider-ionoscloud.inmemorydbReplicaset.InmemorydbReplicasetTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/inmemorydbreplicaset"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/inmemorydbreplicaset"
 
 &inmemorydbreplicaset.InmemorydbReplicasetTimeouts {
 	Create: *string,
@@ -1733,7 +1733,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.inmemorydbReplicaset.InmemorydbReplicasetConnectionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/inmemorydbreplicaset"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/inmemorydbreplicaset"
 
 inmemorydbreplicaset.NewInmemorydbReplicasetConnectionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) InmemorydbReplicasetConnectionsOutputReference
 ```
@@ -2048,7 +2048,7 @@ func InternalValue() InmemorydbReplicasetConnections
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.inmemorydbReplicaset.InmemorydbReplicasetCredentialsHashedPasswordOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/inmemorydbreplicaset"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/inmemorydbreplicaset"
 
 inmemorydbreplicaset.NewInmemorydbReplicasetCredentialsHashedPasswordOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) InmemorydbReplicasetCredentialsHashedPasswordOutputReference
 ```
@@ -2341,7 +2341,7 @@ func InternalValue() InmemorydbReplicasetCredentialsHashedPassword
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.inmemorydbReplicaset.InmemorydbReplicasetCredentialsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/inmemorydbreplicaset"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/inmemorydbreplicaset"
 
 inmemorydbreplicaset.NewInmemorydbReplicasetCredentialsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) InmemorydbReplicasetCredentialsOutputReference
 ```
@@ -2683,7 +2683,7 @@ func InternalValue() InmemorydbReplicasetCredentials
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.inmemorydbReplicaset.InmemorydbReplicasetMaintenanceWindowOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/inmemorydbreplicaset"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/inmemorydbreplicaset"
 
 inmemorydbreplicaset.NewInmemorydbReplicasetMaintenanceWindowOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) InmemorydbReplicasetMaintenanceWindowOutputReference
 ```
@@ -2976,7 +2976,7 @@ func InternalValue() InmemorydbReplicasetMaintenanceWindow
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.inmemorydbReplicaset.InmemorydbReplicasetResourcesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/inmemorydbreplicaset"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/inmemorydbreplicaset"
 
 inmemorydbreplicaset.NewInmemorydbReplicasetResourcesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) InmemorydbReplicasetResourcesOutputReference
 ```
@@ -3280,7 +3280,7 @@ func InternalValue() InmemorydbReplicasetResources
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.inmemorydbReplicaset.InmemorydbReplicasetTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/inmemorydbreplicaset"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/inmemorydbreplicaset"
 
 inmemorydbreplicaset.NewInmemorydbReplicasetTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) InmemorydbReplicasetTimeoutsOutputReference
 ```

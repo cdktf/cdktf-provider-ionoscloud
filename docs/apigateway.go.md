@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionosclo
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.apigateway.Apigateway.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/apigateway"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/apigateway"
 
 apigateway.NewApigateway(scope Construct, id *string, config ApigatewayConfig) Apigateway
 ```
@@ -432,7 +432,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-ionoscloud.apigateway.Apigateway.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/apigateway"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/apigateway"
 
 apigateway.Apigateway_IsConstruct(x interface{}) *bool
 ```
@@ -464,7 +464,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-ionoscloud.apigateway.Apigateway.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/apigateway"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/apigateway"
 
 apigateway.Apigateway_IsTerraformElement(x interface{}) *bool
 ```
@@ -478,7 +478,7 @@ apigateway.Apigateway_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-ionoscloud.apigateway.Apigateway.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/apigateway"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/apigateway"
 
 apigateway.Apigateway_IsTerraformResource(x interface{}) *bool
 ```
@@ -492,7 +492,7 @@ apigateway.Apigateway_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-ionoscloud.apigateway.Apigateway.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/apigateway"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/apigateway"
 
 apigateway.Apigateway_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -853,7 +853,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-ionoscloud.apigateway.ApigatewayConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/apigateway"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/apigateway"
 
 &apigateway.ApigatewayConfig {
 	Connection: interface{},
@@ -867,7 +867,7 @@ import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/apigateway"
 	CustomDomains: interface{},
 	Logs: interface{},
 	Metrics: interface{},
-	Timeouts: github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11.apigateway.ApigatewayTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud.apigateway.ApigatewayTimeouts,
 }
 ```
 
@@ -1035,7 +1035,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 #### Initializer <a name="Initializer" id="@cdktf/provider-ionoscloud.apigateway.ApigatewayCustomDomains.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/apigateway"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/apigateway"
 
 &apigateway.ApigatewayCustomDomains {
 	Name: *string,
@@ -1085,7 +1085,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 #### Initializer <a name="Initializer" id="@cdktf/provider-ionoscloud.apigateway.ApigatewayTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/apigateway"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/apigateway"
 
 &apigateway.ApigatewayTimeouts {
 	Create: *string,
@@ -1161,7 +1161,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.apigateway.ApigatewayCustomDomainsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/apigateway"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/apigateway"
 
 apigateway.NewApigatewayCustomDomainsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ApigatewayCustomDomainsList
 ```
@@ -1321,7 +1321,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.apigateway.ApigatewayCustomDomainsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/apigateway"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/apigateway"
 
 apigateway.NewApigatewayCustomDomainsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ApigatewayCustomDomainsOutputReference
 ```
@@ -1639,7 +1639,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.apigateway.ApigatewayTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/apigateway"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/apigateway"
 
 apigateway.NewApigatewayTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ApigatewayTimeoutsOutputReference
 ```
