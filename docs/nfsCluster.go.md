@@ -4,12 +4,12 @@
 
 ### NfsCluster <a name="NfsCluster" id="@cdktf/provider-ionoscloud.nfsCluster.NfsCluster"></a>
 
-Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.9/docs/resources/nfs_cluster ionoscloud_nfs_cluster}.
+Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.0/docs/resources/nfs_cluster ionoscloud_nfs_cluster}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.nfsCluster.NfsCluster.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/nfscluster"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/nfscluster"
 
 nfscluster.NewNfsCluster(scope Construct, id *string, config NfsClusterConfig) NfsCluster
 ```
@@ -438,7 +438,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-ionoscloud.nfsCluster.NfsCluster.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/nfscluster"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/nfscluster"
 
 nfscluster.NfsCluster_IsConstruct(x interface{}) *bool
 ```
@@ -470,7 +470,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-ionoscloud.nfsCluster.NfsCluster.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/nfscluster"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/nfscluster"
 
 nfscluster.NfsCluster_IsTerraformElement(x interface{}) *bool
 ```
@@ -484,7 +484,7 @@ nfscluster.NfsCluster_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-ionoscloud.nfsCluster.NfsCluster.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/nfscluster"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/nfscluster"
 
 nfscluster.NfsCluster_IsTerraformResource(x interface{}) *bool
 ```
@@ -498,7 +498,7 @@ nfscluster.NfsCluster_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-ionoscloud.nfsCluster.NfsCluster.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/nfscluster"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/nfscluster"
 
 nfscluster.NfsCluster_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -527,7 +527,7 @@ The construct id used in the generated config for the NfsCluster to import.
 
 The id of the existing NfsCluster that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.9/docs/resources/nfs_cluster#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.0/docs/resources/nfs_cluster#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -870,7 +870,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-ionoscloud.nfsCluster.NfsClusterConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/nfscluster"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/nfscluster"
 
 &nfscluster.NfsClusterConfig {
 	Connection: interface{},
@@ -880,12 +880,12 @@ import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/nfscluster"
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
-	Connections: github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11.nfsCluster.NfsClusterConnections,
+	Connections: github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud.nfsCluster.NfsClusterConnections,
 	Name: *string,
 	Size: *f64,
 	Location: *string,
-	Nfs: github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11.nfsCluster.NfsClusterNfs,
-	Timeouts: github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11.nfsCluster.NfsClusterTimeouts,
+	Nfs: github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud.nfsCluster.NfsClusterNfs,
+	Timeouts: github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud.nfsCluster.NfsClusterTimeouts,
 }
 ```
 
@@ -903,7 +903,7 @@ import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/nfscluster"
 | <code><a href="#@cdktf/provider-ionoscloud.nfsCluster.NfsClusterConfig.property.connections">Connections</a></code> | <code><a href="#@cdktf/provider-ionoscloud.nfsCluster.NfsClusterConnections">NfsClusterConnections</a></code> | connections block. |
 | <code><a href="#@cdktf/provider-ionoscloud.nfsCluster.NfsClusterConfig.property.name">Name</a></code> | <code>*string</code> | The name of the Network File Storage Cluster. |
 | <code><a href="#@cdktf/provider-ionoscloud.nfsCluster.NfsClusterConfig.property.size">Size</a></code> | <code>*f64</code> | The size of the Network File Storage Cluster. Minimum size is 2. |
-| <code><a href="#@cdktf/provider-ionoscloud.nfsCluster.NfsClusterConfig.property.location">Location</a></code> | <code>*string</code> | The location of the Network File Storage Cluster. Available locations: 'de/fra, 'de/txl'. |
+| <code><a href="#@cdktf/provider-ionoscloud.nfsCluster.NfsClusterConfig.property.location">Location</a></code> | <code>*string</code> | The location of the Network File Storage Cluster. Available locations: 'de/fra, 'de/txl, 'fr-par, 'gb-lhr, 'es/vit, 'us/las, 'us/ewr, 'us/mci'. |
 | <code><a href="#@cdktf/provider-ionoscloud.nfsCluster.NfsClusterConfig.property.nfs">Nfs</a></code> | <code><a href="#@cdktf/provider-ionoscloud.nfsCluster.NfsClusterNfs">NfsClusterNfs</a></code> | nfs block. |
 | <code><a href="#@cdktf/provider-ionoscloud.nfsCluster.NfsClusterConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-ionoscloud.nfsCluster.NfsClusterTimeouts">NfsClusterTimeouts</a></code> | timeouts block. |
 
@@ -989,7 +989,7 @@ Connections NfsClusterConnections
 
 connections block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.9/docs/resources/nfs_cluster#connections NfsCluster#connections}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.0/docs/resources/nfs_cluster#connections NfsCluster#connections}
 
 ---
 
@@ -1003,7 +1003,7 @@ Name *string
 
 The name of the Network File Storage Cluster.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.9/docs/resources/nfs_cluster#name NfsCluster#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.0/docs/resources/nfs_cluster#name NfsCluster#name}
 
 ---
 
@@ -1017,7 +1017,7 @@ Size *f64
 
 The size of the Network File Storage Cluster. Minimum size is 2.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.9/docs/resources/nfs_cluster#size NfsCluster#size}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.0/docs/resources/nfs_cluster#size NfsCluster#size}
 
 ---
 
@@ -1029,9 +1029,9 @@ Location *string
 
 - *Type:* *string
 
-The location of the Network File Storage Cluster. Available locations: 'de/fra, 'de/txl'.
+The location of the Network File Storage Cluster. Available locations: 'de/fra, 'de/txl, 'fr-par, 'gb-lhr, 'es/vit, 'us/las, 'us/ewr, 'us/mci'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.9/docs/resources/nfs_cluster#location NfsCluster#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.0/docs/resources/nfs_cluster#location NfsCluster#location}
 
 ---
 
@@ -1045,7 +1045,7 @@ Nfs NfsClusterNfs
 
 nfs block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.9/docs/resources/nfs_cluster#nfs NfsCluster#nfs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.0/docs/resources/nfs_cluster#nfs NfsCluster#nfs}
 
 ---
 
@@ -1059,7 +1059,7 @@ Timeouts NfsClusterTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.9/docs/resources/nfs_cluster#timeouts NfsCluster#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.0/docs/resources/nfs_cluster#timeouts NfsCluster#timeouts}
 
 ---
 
@@ -1068,7 +1068,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 #### Initializer <a name="Initializer" id="@cdktf/provider-ionoscloud.nfsCluster.NfsClusterConnections.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/nfscluster"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/nfscluster"
 
 &nfscluster.NfsClusterConnections {
 	DatacenterId: *string,
@@ -1097,7 +1097,7 @@ DatacenterId *string
 
 The datacenter to connect your instance to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.9/docs/resources/nfs_cluster#datacenter_id NfsCluster#datacenter_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.0/docs/resources/nfs_cluster#datacenter_id NfsCluster#datacenter_id}
 
 ---
 
@@ -1111,7 +1111,7 @@ IpAddress *string
 
 The IP address and subnet for your instance.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.9/docs/resources/nfs_cluster#ip_address NfsCluster#ip_address}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.0/docs/resources/nfs_cluster#ip_address NfsCluster#ip_address}
 
 ---
 
@@ -1125,7 +1125,7 @@ Lan *string
 
 The numeric LAN ID to connect your instance to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.9/docs/resources/nfs_cluster#lan NfsCluster#lan}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.0/docs/resources/nfs_cluster#lan NfsCluster#lan}
 
 ---
 
@@ -1134,7 +1134,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 #### Initializer <a name="Initializer" id="@cdktf/provider-ionoscloud.nfsCluster.NfsClusterNfs.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/nfscluster"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/nfscluster"
 
 &nfscluster.NfsClusterNfs {
 	MinVersion: *string,
@@ -1159,7 +1159,7 @@ MinVersion *string
 
 The minimum Network File Storage version.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.9/docs/resources/nfs_cluster#min_version NfsCluster#min_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.0/docs/resources/nfs_cluster#min_version NfsCluster#min_version}
 
 ---
 
@@ -1168,7 +1168,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 #### Initializer <a name="Initializer" id="@cdktf/provider-ionoscloud.nfsCluster.NfsClusterTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/nfscluster"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/nfscluster"
 
 &nfscluster.NfsClusterTimeouts {
 	Create: *string,
@@ -1182,10 +1182,10 @@ import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/nfscluster"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-ionoscloud.nfsCluster.NfsClusterTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.9/docs/resources/nfs_cluster#create NfsCluster#create}. |
-| <code><a href="#@cdktf/provider-ionoscloud.nfsCluster.NfsClusterTimeouts.property.default">Default</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.9/docs/resources/nfs_cluster#default NfsCluster#default}. |
-| <code><a href="#@cdktf/provider-ionoscloud.nfsCluster.NfsClusterTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.9/docs/resources/nfs_cluster#delete NfsCluster#delete}. |
-| <code><a href="#@cdktf/provider-ionoscloud.nfsCluster.NfsClusterTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.9/docs/resources/nfs_cluster#update NfsCluster#update}. |
+| <code><a href="#@cdktf/provider-ionoscloud.nfsCluster.NfsClusterTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.0/docs/resources/nfs_cluster#create NfsCluster#create}. |
+| <code><a href="#@cdktf/provider-ionoscloud.nfsCluster.NfsClusterTimeouts.property.default">Default</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.0/docs/resources/nfs_cluster#default NfsCluster#default}. |
+| <code><a href="#@cdktf/provider-ionoscloud.nfsCluster.NfsClusterTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.0/docs/resources/nfs_cluster#delete NfsCluster#delete}. |
+| <code><a href="#@cdktf/provider-ionoscloud.nfsCluster.NfsClusterTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.0/docs/resources/nfs_cluster#update NfsCluster#update}. |
 
 ---
 
@@ -1197,7 +1197,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.9/docs/resources/nfs_cluster#create NfsCluster#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.0/docs/resources/nfs_cluster#create NfsCluster#create}.
 
 ---
 
@@ -1209,7 +1209,7 @@ Default *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.9/docs/resources/nfs_cluster#default NfsCluster#default}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.0/docs/resources/nfs_cluster#default NfsCluster#default}.
 
 ---
 
@@ -1221,7 +1221,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.9/docs/resources/nfs_cluster#delete NfsCluster#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.0/docs/resources/nfs_cluster#delete NfsCluster#delete}.
 
 ---
 
@@ -1233,7 +1233,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.9/docs/resources/nfs_cluster#update NfsCluster#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.0/docs/resources/nfs_cluster#update NfsCluster#update}.
 
 ---
 
@@ -1244,7 +1244,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.nfsCluster.NfsClusterConnectionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/nfscluster"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/nfscluster"
 
 nfscluster.NewNfsClusterConnectionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) NfsClusterConnectionsOutputReference
 ```
@@ -1559,7 +1559,7 @@ func InternalValue() NfsClusterConnections
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.nfsCluster.NfsClusterNfsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/nfscluster"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/nfscluster"
 
 nfscluster.NewNfsClusterNfsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) NfsClusterNfsOutputReference
 ```
@@ -1837,7 +1837,7 @@ func InternalValue() NfsClusterNfs
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.nfsCluster.NfsClusterTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/nfscluster"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/nfscluster"
 
 nfscluster.NewNfsClusterTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) NfsClusterTimeoutsOutputReference
 ```

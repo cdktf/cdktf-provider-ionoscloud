@@ -4,7 +4,7 @@
 
 ### AutoCertificate <a name="AutoCertificate" id="@cdktf/provider-ionoscloud.autoCertificate.AutoCertificate"></a>
 
-Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.9/docs/resources/auto_certificate ionoscloud_auto_certificate}.
+Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.0/docs/resources/auto_certificate ionoscloud_auto_certificate}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.autoCertificate.AutoCertificate.Initializer"></a>
 
@@ -75,7 +75,6 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-ionoscloud.autoCertificate.AutoCertificate.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktf/provider-ionoscloud.autoCertificate.AutoCertificate.putTimeouts">PutTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.autoCertificate.AutoCertificate.resetId">ResetId</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-ionoscloud.autoCertificate.AutoCertificate.resetName">ResetName</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.autoCertificate.AutoCertificate.resetSubjectAlternativeNames">ResetSubjectAlternativeNames</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.autoCertificate.AutoCertificate.resetTimeouts">ResetTimeouts</a></code> | *No description.* |
 
@@ -387,12 +386,6 @@ private void PutTimeouts(AutoCertificateTimeouts Value)
 private void ResetId()
 ```
 
-##### `ResetName` <a name="ResetName" id="@cdktf/provider-ionoscloud.autoCertificate.AutoCertificate.resetName"></a>
-
-```csharp
-private void ResetName()
-```
-
 ##### `ResetSubjectAlternativeNames` <a name="ResetSubjectAlternativeNames" id="@cdktf/provider-ionoscloud.autoCertificate.AutoCertificate.resetSubjectAlternativeNames"></a>
 
 ```csharp
@@ -508,7 +501,7 @@ The construct id used in the generated config for the AutoCertificate to import.
 
 The id of the existing AutoCertificate that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.9/docs/resources/auto_certificate#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.0/docs/resources/auto_certificate#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -908,9 +901,9 @@ new AutoCertificateConfig {
     string CommonName,
     string KeyAlgorithm,
     string Location,
+    string Name,
     string ProviderId,
     string Id = null,
-    string Name = null,
     string[] SubjectAlternativeNames = null,
     AutoCertificateTimeouts Timeouts = null
 };
@@ -930,9 +923,9 @@ new AutoCertificateConfig {
 | <code><a href="#@cdktf/provider-ionoscloud.autoCertificate.AutoCertificateConfig.property.commonName">CommonName</a></code> | <code>string</code> | The common name (DNS) of the certificate to issue. |
 | <code><a href="#@cdktf/provider-ionoscloud.autoCertificate.AutoCertificateConfig.property.keyAlgorithm">KeyAlgorithm</a></code> | <code>string</code> | The key algorithm used to generate the certificate. |
 | <code><a href="#@cdktf/provider-ionoscloud.autoCertificate.AutoCertificateConfig.property.location">Location</a></code> | <code>string</code> | The location of the auto-certificate. |
-| <code><a href="#@cdktf/provider-ionoscloud.autoCertificate.AutoCertificateConfig.property.providerId">ProviderId</a></code> | <code>string</code> | The certificate provider used to issue the certificates. |
-| <code><a href="#@cdktf/provider-ionoscloud.autoCertificate.AutoCertificateConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.9/docs/resources/auto_certificate#id AutoCertificate#id}. |
 | <code><a href="#@cdktf/provider-ionoscloud.autoCertificate.AutoCertificateConfig.property.name">Name</a></code> | <code>string</code> | A certificate name used for management purposes. |
+| <code><a href="#@cdktf/provider-ionoscloud.autoCertificate.AutoCertificateConfig.property.providerId">ProviderId</a></code> | <code>string</code> | The certificate provider used to issue the certificates. |
+| <code><a href="#@cdktf/provider-ionoscloud.autoCertificate.AutoCertificateConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.0/docs/resources/auto_certificate#id AutoCertificate#id}. |
 | <code><a href="#@cdktf/provider-ionoscloud.autoCertificate.AutoCertificateConfig.property.subjectAlternativeNames">SubjectAlternativeNames</a></code> | <code>string[]</code> | Optional additional names to be added to the issued certificate. |
 | <code><a href="#@cdktf/provider-ionoscloud.autoCertificate.AutoCertificateConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-ionoscloud.autoCertificate.AutoCertificateTimeouts">AutoCertificateTimeouts</a></code> | timeouts block. |
 
@@ -1020,7 +1013,7 @@ The common name (DNS) of the certificate to issue.
 
 The common name needs to be part of a zone in IONOS Cloud DNS
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.9/docs/resources/auto_certificate#common_name AutoCertificate#common_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.0/docs/resources/auto_certificate#common_name AutoCertificate#common_name}
 
 ---
 
@@ -1034,7 +1027,7 @@ public string KeyAlgorithm { get; set; }
 
 The key algorithm used to generate the certificate.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.9/docs/resources/auto_certificate#key_algorithm AutoCertificate#key_algorithm}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.0/docs/resources/auto_certificate#key_algorithm AutoCertificate#key_algorithm}
 
 ---
 
@@ -1048,7 +1041,21 @@ public string Location { get; set; }
 
 The location of the auto-certificate.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.9/docs/resources/auto_certificate#location AutoCertificate#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.0/docs/resources/auto_certificate#location AutoCertificate#location}
+
+---
+
+##### `Name`<sup>Required</sup> <a name="Name" id="@cdktf/provider-ionoscloud.autoCertificate.AutoCertificateConfig.property.name"></a>
+
+```csharp
+public string Name { get; set; }
+```
+
+- *Type:* string
+
+A certificate name used for management purposes.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.0/docs/resources/auto_certificate#name AutoCertificate#name}
 
 ---
 
@@ -1062,7 +1069,7 @@ public string ProviderId { get; set; }
 
 The certificate provider used to issue the certificates.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.9/docs/resources/auto_certificate#provider_id AutoCertificate#provider_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.0/docs/resources/auto_certificate#provider_id AutoCertificate#provider_id}
 
 ---
 
@@ -1074,24 +1081,10 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.9/docs/resources/auto_certificate#id AutoCertificate#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.0/docs/resources/auto_certificate#id AutoCertificate#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
-
----
-
-##### `Name`<sup>Optional</sup> <a name="Name" id="@cdktf/provider-ionoscloud.autoCertificate.AutoCertificateConfig.property.name"></a>
-
-```csharp
-public string Name { get; set; }
-```
-
-- *Type:* string
-
-A certificate name used for management purposes.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.9/docs/resources/auto_certificate#name AutoCertificate#name}
 
 ---
 
@@ -1107,7 +1100,7 @@ Optional additional names to be added to the issued certificate.
 
 The additional names needs to be part of a zone in IONOS Cloud DNS
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.9/docs/resources/auto_certificate#subject_alternative_names AutoCertificate#subject_alternative_names}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.0/docs/resources/auto_certificate#subject_alternative_names AutoCertificate#subject_alternative_names}
 
 ---
 
@@ -1121,7 +1114,7 @@ public AutoCertificateTimeouts Timeouts { get; set; }
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.9/docs/resources/auto_certificate#timeouts AutoCertificate#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.0/docs/resources/auto_certificate#timeouts AutoCertificate#timeouts}
 
 ---
 
@@ -1144,10 +1137,10 @@ new AutoCertificateTimeouts {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-ionoscloud.autoCertificate.AutoCertificateTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.9/docs/resources/auto_certificate#create AutoCertificate#create}. |
-| <code><a href="#@cdktf/provider-ionoscloud.autoCertificate.AutoCertificateTimeouts.property.default">Default</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.9/docs/resources/auto_certificate#default AutoCertificate#default}. |
-| <code><a href="#@cdktf/provider-ionoscloud.autoCertificate.AutoCertificateTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.9/docs/resources/auto_certificate#delete AutoCertificate#delete}. |
-| <code><a href="#@cdktf/provider-ionoscloud.autoCertificate.AutoCertificateTimeouts.property.update">Update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.9/docs/resources/auto_certificate#update AutoCertificate#update}. |
+| <code><a href="#@cdktf/provider-ionoscloud.autoCertificate.AutoCertificateTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.0/docs/resources/auto_certificate#create AutoCertificate#create}. |
+| <code><a href="#@cdktf/provider-ionoscloud.autoCertificate.AutoCertificateTimeouts.property.default">Default</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.0/docs/resources/auto_certificate#default AutoCertificate#default}. |
+| <code><a href="#@cdktf/provider-ionoscloud.autoCertificate.AutoCertificateTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.0/docs/resources/auto_certificate#delete AutoCertificate#delete}. |
+| <code><a href="#@cdktf/provider-ionoscloud.autoCertificate.AutoCertificateTimeouts.property.update">Update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.0/docs/resources/auto_certificate#update AutoCertificate#update}. |
 
 ---
 
@@ -1159,7 +1152,7 @@ public string Create { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.9/docs/resources/auto_certificate#create AutoCertificate#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.0/docs/resources/auto_certificate#create AutoCertificate#create}.
 
 ---
 
@@ -1171,7 +1164,7 @@ public string Default { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.9/docs/resources/auto_certificate#default AutoCertificate#default}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.0/docs/resources/auto_certificate#default AutoCertificate#default}.
 
 ---
 
@@ -1183,7 +1176,7 @@ public string Delete { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.9/docs/resources/auto_certificate#delete AutoCertificate#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.0/docs/resources/auto_certificate#delete AutoCertificate#delete}.
 
 ---
 
@@ -1195,7 +1188,7 @@ public string Update { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.6.9/docs/resources/auto_certificate#update AutoCertificate#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.0/docs/resources/auto_certificate#update AutoCertificate#update}.
 
 ---
 
