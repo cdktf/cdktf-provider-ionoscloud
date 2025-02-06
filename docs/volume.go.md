@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionosclo
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.volume.Volume.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/volume"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/volume"
 
 volume.NewVolume(scope Construct, id *string, config VolumeConfig) Volume
 ```
@@ -475,7 +475,7 @@ func ResetUserData()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-ionoscloud.volume.Volume.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/volume"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/volume"
 
 volume.Volume_IsConstruct(x interface{}) *bool
 ```
@@ -507,7 +507,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-ionoscloud.volume.Volume.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/volume"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/volume"
 
 volume.Volume_IsTerraformElement(x interface{}) *bool
 ```
@@ -521,7 +521,7 @@ volume.Volume_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-ionoscloud.volume.Volume.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/volume"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/volume"
 
 volume.Volume_IsTerraformResource(x interface{}) *bool
 ```
@@ -535,7 +535,7 @@ volume.Volume_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-ionoscloud.volume.Volume.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/volume"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/volume"
 
 volume.Volume_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1248,7 +1248,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-ionoscloud.volume.VolumeConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/volume"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/volume"
 
 &volume.VolumeConfig {
 	Connection: interface{},
@@ -1272,7 +1272,7 @@ import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/volume"
 	Name: *string,
 	SshKeyPath: *[]*string,
 	SshKeys: *[]*string,
-	Timeouts: github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud.volume.VolumeTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11.volume.VolumeTimeouts,
 	UserData: *string,
 }
 ```
@@ -1579,7 +1579,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 #### Initializer <a name="Initializer" id="@cdktf/provider-ionoscloud.volume.VolumeTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/volume"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/volume"
 
 &volume.VolumeTimeouts {
 	Create: *string,
@@ -1655,7 +1655,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.volume.VolumeTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/volume"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/volume"
 
 volume.NewVolumeTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VolumeTimeoutsOutputReference
 ```
