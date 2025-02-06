@@ -4,12 +4,12 @@
 
 ### MonitoringPipeline <a name="MonitoringPipeline" id="@cdktf/provider-ionoscloud.monitoringPipeline.MonitoringPipeline"></a>
 
-Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.0/docs/resources/monitoring_pipeline ionoscloud_monitoring_pipeline}.
+Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.1/docs/resources/monitoring_pipeline ionoscloud_monitoring_pipeline}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.monitoringPipeline.MonitoringPipeline.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/monitoringpipeline"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/monitoringpipeline"
 
 monitoringpipeline.NewMonitoringPipeline(scope Construct, id *string, config MonitoringPipelineConfig) MonitoringPipeline
 ```
@@ -405,7 +405,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-ionoscloud.monitoringPipeline.MonitoringPipeline.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/monitoringpipeline"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/monitoringpipeline"
 
 monitoringpipeline.MonitoringPipeline_IsConstruct(x interface{}) *bool
 ```
@@ -437,7 +437,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-ionoscloud.monitoringPipeline.MonitoringPipeline.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/monitoringpipeline"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/monitoringpipeline"
 
 monitoringpipeline.MonitoringPipeline_IsTerraformElement(x interface{}) *bool
 ```
@@ -451,7 +451,7 @@ monitoringpipeline.MonitoringPipeline_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-ionoscloud.monitoringPipeline.MonitoringPipeline.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/monitoringpipeline"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/monitoringpipeline"
 
 monitoringpipeline.MonitoringPipeline_IsTerraformResource(x interface{}) *bool
 ```
@@ -465,7 +465,7 @@ monitoringpipeline.MonitoringPipeline_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-ionoscloud.monitoringPipeline.MonitoringPipeline.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/monitoringpipeline"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/monitoringpipeline"
 
 monitoringpipeline.MonitoringPipeline_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -494,7 +494,7 @@ The construct id used in the generated config for the MonitoringPipeline to impo
 
 The id of the existing MonitoringPipeline that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.0/docs/resources/monitoring_pipeline#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.1/docs/resources/monitoring_pipeline#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -804,7 +804,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-ionoscloud.monitoringPipeline.MonitoringPipelineConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/monitoringpipeline"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/monitoringpipeline"
 
 &monitoringpipeline.MonitoringPipelineConfig {
 	Connection: interface{},
@@ -816,7 +816,7 @@ import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/monitoringp
 	Provisioners: *[]interface{},
 	Name: *string,
 	Location: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11.monitoringPipeline.MonitoringPipelineTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud.monitoringPipeline.MonitoringPipelineTimeouts,
 }
 ```
 
@@ -917,7 +917,7 @@ Name *string
 
 The name of the pipeline.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.0/docs/resources/monitoring_pipeline#name MonitoringPipeline#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.1/docs/resources/monitoring_pipeline#name MonitoringPipeline#name}
 
 ---
 
@@ -931,7 +931,7 @@ Location *string
 
 The location of the pipeline.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.0/docs/resources/monitoring_pipeline#location MonitoringPipeline#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.1/docs/resources/monitoring_pipeline#location MonitoringPipeline#location}
 
 ---
 
@@ -945,7 +945,7 @@ Timeouts MonitoringPipelineTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.0/docs/resources/monitoring_pipeline#timeouts MonitoringPipeline#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.1/docs/resources/monitoring_pipeline#timeouts MonitoringPipeline#timeouts}
 
 ---
 
@@ -954,7 +954,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 #### Initializer <a name="Initializer" id="@cdktf/provider-ionoscloud.monitoringPipeline.MonitoringPipelineTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/monitoringpipeline"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/monitoringpipeline"
 
 &monitoringpipeline.MonitoringPipelineTimeouts {
 	Create: *string,
@@ -985,7 +985,7 @@ Create *string
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.0/docs/resources/monitoring_pipeline#create MonitoringPipeline#create}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.1/docs/resources/monitoring_pipeline#create MonitoringPipeline#create}
 
 ---
 
@@ -999,7 +999,7 @@ Delete *string
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours). Setting a timeout for a Delete operation is only applicable if changes are saved into state before the destroy operation occurs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.0/docs/resources/monitoring_pipeline#delete MonitoringPipeline#delete}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.1/docs/resources/monitoring_pipeline#delete MonitoringPipeline#delete}
 
 ---
 
@@ -1013,7 +1013,7 @@ Read *string
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours). Read operations occur during any refresh or planning operation when refresh is enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.0/docs/resources/monitoring_pipeline#read MonitoringPipeline#read}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.1/docs/resources/monitoring_pipeline#read MonitoringPipeline#read}
 
 ---
 
@@ -1027,7 +1027,7 @@ Update *string
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.0/docs/resources/monitoring_pipeline#update MonitoringPipeline#update}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.1/docs/resources/monitoring_pipeline#update MonitoringPipeline#update}
 
 ---
 
@@ -1038,7 +1038,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.monitoringPipeline.MonitoringPipelineTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/monitoringpipeline"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/monitoringpipeline"
 
 monitoringpipeline.NewMonitoringPipelineTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MonitoringPipelineTimeoutsOutputReference
 ```

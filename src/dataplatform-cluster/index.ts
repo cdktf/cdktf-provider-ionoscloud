@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.0/docs/resources/dataplatform_cluster
+// https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.1/docs/resources/dataplatform_cluster
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,11 +10,11 @@ export interface DataplatformClusterConfig extends cdktf.TerraformMetaArguments 
   /**
   * The UUID of the virtual data center (VDC) in which the cluster is provisioned
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.0/docs/resources/dataplatform_cluster#datacenter_id DataplatformCluster#datacenter_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.1/docs/resources/dataplatform_cluster#datacenter_id DataplatformCluster#datacenter_id}
   */
   readonly datacenterId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.0/docs/resources/dataplatform_cluster#id DataplatformCluster#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.1/docs/resources/dataplatform_cluster#id DataplatformCluster#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -28,31 +23,31 @@ export interface DataplatformClusterConfig extends cdktf.TerraformMetaArguments 
   /**
   * The name of your cluster. Must be 63 characters or less and must be empty or begin and end with an alphanumeric character ([a-z0-9A-Z]). It can contain dashes (-), underscores (_), dots (.), and alphanumerics in-between.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.0/docs/resources/dataplatform_cluster#name DataplatformCluster#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.1/docs/resources/dataplatform_cluster#name DataplatformCluster#name}
   */
   readonly name: string;
   /**
   * The version of the Data Platform.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.0/docs/resources/dataplatform_cluster#version DataplatformCluster#version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.1/docs/resources/dataplatform_cluster#version DataplatformCluster#version}
   */
   readonly version?: string;
   /**
   * lans block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.0/docs/resources/dataplatform_cluster#lans DataplatformCluster#lans}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.1/docs/resources/dataplatform_cluster#lans DataplatformCluster#lans}
   */
   readonly lans?: DataplatformClusterLans[] | cdktf.IResolvable;
   /**
   * maintenance_window block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.0/docs/resources/dataplatform_cluster#maintenance_window DataplatformCluster#maintenance_window}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.1/docs/resources/dataplatform_cluster#maintenance_window DataplatformCluster#maintenance_window}
   */
   readonly maintenanceWindow?: DataplatformClusterMaintenanceWindow[] | cdktf.IResolvable;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.0/docs/resources/dataplatform_cluster#timeouts DataplatformCluster#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.1/docs/resources/dataplatform_cluster#timeouts DataplatformCluster#timeouts}
   */
   readonly timeouts?: DataplatformClusterTimeouts;
 }
@@ -60,13 +55,13 @@ export interface DataplatformClusterLansRoutes {
   /**
   * IPv4 or IPv6 gateway IP for the route
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.0/docs/resources/dataplatform_cluster#gateway DataplatformCluster#gateway}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.1/docs/resources/dataplatform_cluster#gateway DataplatformCluster#gateway}
   */
   readonly gateway: string;
   /**
   * IPv4 or IPv6 CIDR to be routed via the interface
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.0/docs/resources/dataplatform_cluster#network DataplatformCluster#network}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.1/docs/resources/dataplatform_cluster#network DataplatformCluster#network}
   */
   readonly network: string;
 }
@@ -207,19 +202,19 @@ export interface DataplatformClusterLans {
   /**
   * Indicates if the Kubernetes node pool LAN will reserve an IP using DHCP. The default value is 'true'
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.0/docs/resources/dataplatform_cluster#dhcp DataplatformCluster#dhcp}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.1/docs/resources/dataplatform_cluster#dhcp DataplatformCluster#dhcp}
   */
   readonly dhcp?: boolean | cdktf.IResolvable;
   /**
   * The LAN ID of an existing LAN at the related data center
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.0/docs/resources/dataplatform_cluster#lan_id DataplatformCluster#lan_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.1/docs/resources/dataplatform_cluster#lan_id DataplatformCluster#lan_id}
   */
   readonly lanId: string;
   /**
   * routes block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.0/docs/resources/dataplatform_cluster#routes DataplatformCluster#routes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.1/docs/resources/dataplatform_cluster#routes DataplatformCluster#routes}
   */
   readonly routes?: DataplatformClusterLansRoutes[] | cdktf.IResolvable;
 }
@@ -390,13 +385,13 @@ export class DataplatformClusterLansList extends cdktf.ComplexList {
 }
 export interface DataplatformClusterMaintenanceWindow {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.0/docs/resources/dataplatform_cluster#day_of_the_week DataplatformCluster#day_of_the_week}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.1/docs/resources/dataplatform_cluster#day_of_the_week DataplatformCluster#day_of_the_week}
   */
   readonly dayOfTheWeek: string;
   /**
   * Time at which the maintenance should start.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.0/docs/resources/dataplatform_cluster#time DataplatformCluster#time}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.1/docs/resources/dataplatform_cluster#time DataplatformCluster#time}
   */
   readonly time: string;
 }
@@ -535,19 +530,19 @@ export class DataplatformClusterMaintenanceWindowList extends cdktf.ComplexList 
 }
 export interface DataplatformClusterTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.0/docs/resources/dataplatform_cluster#create DataplatformCluster#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.1/docs/resources/dataplatform_cluster#create DataplatformCluster#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.0/docs/resources/dataplatform_cluster#default DataplatformCluster#default}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.1/docs/resources/dataplatform_cluster#default DataplatformCluster#default}
   */
   readonly default?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.0/docs/resources/dataplatform_cluster#delete DataplatformCluster#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.1/docs/resources/dataplatform_cluster#delete DataplatformCluster#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.0/docs/resources/dataplatform_cluster#update DataplatformCluster#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.1/docs/resources/dataplatform_cluster#update DataplatformCluster#update}
   */
   readonly update?: string;
 }
@@ -728,7 +723,7 @@ export class DataplatformClusterTimeoutsOutputReference extends cdktf.ComplexObj
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.0/docs/resources/dataplatform_cluster ionoscloud_dataplatform_cluster}
+* Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.1/docs/resources/dataplatform_cluster ionoscloud_dataplatform_cluster}
 */
 export class DataplatformCluster extends cdktf.TerraformResource {
 
@@ -744,7 +739,7 @@ export class DataplatformCluster extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a DataplatformCluster resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataplatformCluster to import
-  * @param importFromId The id of the existing DataplatformCluster that should be imported. Refer to the {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.0/docs/resources/dataplatform_cluster#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataplatformCluster that should be imported. Refer to the {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.1/docs/resources/dataplatform_cluster#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataplatformCluster to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -756,7 +751,7 @@ export class DataplatformCluster extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.0/docs/resources/dataplatform_cluster ionoscloud_dataplatform_cluster} Resource
+  * Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.1/docs/resources/dataplatform_cluster ionoscloud_dataplatform_cluster} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -767,7 +762,7 @@ export class DataplatformCluster extends cdktf.TerraformResource {
       terraformResourceType: 'ionoscloud_dataplatform_cluster',
       terraformGeneratorMetadata: {
         providerName: 'ionoscloud',
-        providerVersion: '6.7.0',
+        providerVersion: '6.7.1',
         providerVersionConstraint: '~> 6.2'
       },
       provider: config.provider,

@@ -1,3 +1,3 @@
 # `ionoscloud_pg_cluster`
 
-Refer to the Terraform Registry for docs: [`ionoscloud_pg_cluster`](https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.0/docs/resources/pg_cluster).
+Refer to the Terraform Registry for docs: [`ionoscloud_pg_cluster`](https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.1/docs/resources/pg_cluster).
