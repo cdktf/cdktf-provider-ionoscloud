@@ -1,3 +1,8 @@
+/**
+ * Copyright (c) HashiCorp, Inc.
+ * SPDX-License-Identifier: MPL-2.0
+ */
+
 // https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.1/docs/data-sources/inmemorydb_replicaset
 // generated from terraform resource schema
 
