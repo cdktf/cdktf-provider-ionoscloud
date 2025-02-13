@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.1/docs/data-sources/group
+// https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.2/docs/data-sources/group
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,20 +8,20 @@ import * as cdktf from 'cdktf';
 
 export interface DataIonoscloudGroupConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.1/docs/data-sources/group#id DataIonoscloudGroup#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.2/docs/data-sources/group#id DataIonoscloudGroup#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.1/docs/data-sources/group#name DataIonoscloudGroup#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.2/docs/data-sources/group#name DataIonoscloudGroup#name}
   */
   readonly name?: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.1/docs/data-sources/group#timeouts DataIonoscloudGroup#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.2/docs/data-sources/group#timeouts DataIonoscloudGroup#timeouts}
   */
   readonly timeouts?: DataIonoscloudGroupTimeouts;
 }
@@ -132,19 +127,19 @@ export class DataIonoscloudGroupUsersList extends cdktf.ComplexList {
 }
 export interface DataIonoscloudGroupTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.1/docs/data-sources/group#create DataIonoscloudGroup#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.2/docs/data-sources/group#create DataIonoscloudGroup#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.1/docs/data-sources/group#default DataIonoscloudGroup#default}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.2/docs/data-sources/group#default DataIonoscloudGroup#default}
   */
   readonly default?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.1/docs/data-sources/group#delete DataIonoscloudGroup#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.2/docs/data-sources/group#delete DataIonoscloudGroup#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.1/docs/data-sources/group#update DataIonoscloudGroup#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.2/docs/data-sources/group#update DataIonoscloudGroup#update}
   */
   readonly update?: string;
 }
@@ -325,7 +320,7 @@ export class DataIonoscloudGroupTimeoutsOutputReference extends cdktf.ComplexObj
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.1/docs/data-sources/group ionoscloud_group}
+* Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.2/docs/data-sources/group ionoscloud_group}
 */
 export class DataIonoscloudGroup extends cdktf.TerraformDataSource {
 
@@ -341,7 +336,7 @@ export class DataIonoscloudGroup extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataIonoscloudGroup resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataIonoscloudGroup to import
-  * @param importFromId The id of the existing DataIonoscloudGroup that should be imported. Refer to the {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.1/docs/data-sources/group#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataIonoscloudGroup that should be imported. Refer to the {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.2/docs/data-sources/group#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataIonoscloudGroup to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -353,7 +348,7 @@ export class DataIonoscloudGroup extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.1/docs/data-sources/group ionoscloud_group} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.2/docs/data-sources/group ionoscloud_group} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -364,7 +359,7 @@ export class DataIonoscloudGroup extends cdktf.TerraformDataSource {
       terraformResourceType: 'ionoscloud_group',
       terraformGeneratorMetadata: {
         providerName: 'ionoscloud',
-        providerVersion: '6.7.1',
+        providerVersion: '6.7.2',
         providerVersionConstraint: '~> 6.2'
       },
       provider: config.provider,
@@ -389,14 +384,59 @@ export class DataIonoscloudGroup extends cdktf.TerraformDataSource {
     return this.getBooleanAttribute('access_activity_log');
   }
 
+  // access_and_manage_ai_model_hub - computed: true, optional: false, required: false
+  public get accessAndManageAiModelHub() {
+    return this.getBooleanAttribute('access_and_manage_ai_model_hub');
+  }
+
+  // access_and_manage_api_gateway - computed: true, optional: false, required: false
+  public get accessAndManageApiGateway() {
+    return this.getBooleanAttribute('access_and_manage_api_gateway');
+  }
+
+  // access_and_manage_cdn - computed: true, optional: false, required: false
+  public get accessAndManageCdn() {
+    return this.getBooleanAttribute('access_and_manage_cdn');
+  }
+
   // access_and_manage_certificates - computed: true, optional: false, required: false
   public get accessAndManageCertificates() {
     return this.getBooleanAttribute('access_and_manage_certificates');
   }
 
+  // access_and_manage_dns - computed: true, optional: false, required: false
+  public get accessAndManageDns() {
+    return this.getBooleanAttribute('access_and_manage_dns');
+  }
+
+  // access_and_manage_iam_resources - computed: true, optional: false, required: false
+  public get accessAndManageIamResources() {
+    return this.getBooleanAttribute('access_and_manage_iam_resources');
+  }
+
+  // access_and_manage_kaas - computed: true, optional: false, required: false
+  public get accessAndManageKaas() {
+    return this.getBooleanAttribute('access_and_manage_kaas');
+  }
+
+  // access_and_manage_logging - computed: true, optional: false, required: false
+  public get accessAndManageLogging() {
+    return this.getBooleanAttribute('access_and_manage_logging');
+  }
+
   // access_and_manage_monitoring - computed: true, optional: false, required: false
   public get accessAndManageMonitoring() {
     return this.getBooleanAttribute('access_and_manage_monitoring');
+  }
+
+  // access_and_manage_network_file_storage - computed: true, optional: false, required: false
+  public get accessAndManageNetworkFileStorage() {
+    return this.getBooleanAttribute('access_and_manage_network_file_storage');
+  }
+
+  // access_and_manage_vpn - computed: true, optional: false, required: false
+  public get accessAndManageVpn() {
+    return this.getBooleanAttribute('access_and_manage_vpn');
   }
 
   // create_backup_unit - computed: true, optional: false, required: false
@@ -422,6 +462,11 @@ export class DataIonoscloudGroup extends cdktf.TerraformDataSource {
   // create_k8s_cluster - computed: true, optional: false, required: false
   public get createK8SCluster() {
     return this.getBooleanAttribute('create_k8s_cluster');
+  }
+
+  // create_network_security_groups - computed: true, optional: false, required: false
+  public get createNetworkSecurityGroups() {
+    return this.getBooleanAttribute('create_network_security_groups');
   }
 
   // create_pcc - computed: true, optional: false, required: false
@@ -450,9 +495,19 @@ export class DataIonoscloudGroup extends cdktf.TerraformDataSource {
     return this._id;
   }
 
+  // manage_dataplatform - computed: true, optional: false, required: false
+  public get manageDataplatform() {
+    return this.getBooleanAttribute('manage_dataplatform');
+  }
+
   // manage_dbaas - computed: true, optional: false, required: false
   public get manageDbaas() {
     return this.getBooleanAttribute('manage_dbaas');
+  }
+
+  // manage_registry - computed: true, optional: false, required: false
+  public get manageRegistry() {
+    return this.getBooleanAttribute('manage_registry');
   }
 
   // name - computed: true, optional: true, required: false

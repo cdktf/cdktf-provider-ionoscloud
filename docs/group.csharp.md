@@ -4,7 +4,7 @@
 
 ### Group <a name="Group" id="@cdktf/provider-ionoscloud.group.Group"></a>
 
-Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.1/docs/resources/group ionoscloud_group}.
+Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.2/docs/resources/group ionoscloud_group}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.group.Group.Initializer"></a>
 
@@ -75,17 +75,29 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-ionoscloud.group.Group.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktf/provider-ionoscloud.group.Group.putTimeouts">PutTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.group.Group.resetAccessActivityLog">ResetAccessActivityLog</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.group.Group.resetAccessAndManageAiModelHub">ResetAccessAndManageAiModelHub</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.group.Group.resetAccessAndManageApiGateway">ResetAccessAndManageApiGateway</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.group.Group.resetAccessAndManageCdn">ResetAccessAndManageCdn</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.group.Group.resetAccessAndManageCertificates">ResetAccessAndManageCertificates</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.group.Group.resetAccessAndManageDns">ResetAccessAndManageDns</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.group.Group.resetAccessAndManageIamResources">ResetAccessAndManageIamResources</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.group.Group.resetAccessAndManageKaas">ResetAccessAndManageKaas</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.group.Group.resetAccessAndManageLogging">ResetAccessAndManageLogging</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.group.Group.resetAccessAndManageMonitoring">ResetAccessAndManageMonitoring</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.group.Group.resetAccessAndManageNetworkFileStorage">ResetAccessAndManageNetworkFileStorage</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.group.Group.resetAccessAndManageVpn">ResetAccessAndManageVpn</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.group.Group.resetCreateBackupUnit">ResetCreateBackupUnit</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.group.Group.resetCreateDatacenter">ResetCreateDatacenter</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.group.Group.resetCreateFlowLog">ResetCreateFlowLog</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.group.Group.resetCreateInternetAccess">ResetCreateInternetAccess</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.group.Group.resetCreateK8SCluster">ResetCreateK8SCluster</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.group.Group.resetCreateNetworkSecurityGroups">ResetCreateNetworkSecurityGroups</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.group.Group.resetCreatePcc">ResetCreatePcc</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.group.Group.resetCreateSnapshot">ResetCreateSnapshot</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.group.Group.resetId">ResetId</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.group.Group.resetManageDataplatform">ResetManageDataplatform</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.group.Group.resetManageDbaas">ResetManageDbaas</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.group.Group.resetManageRegistry">ResetManageRegistry</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.group.Group.resetReserveIp">ResetReserveIp</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.group.Group.resetS3Privilege">ResetS3Privilege</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.group.Group.resetTimeouts">ResetTimeouts</a></code> | *No description.* |
@@ -400,16 +412,70 @@ private void PutTimeouts(GroupTimeouts Value)
 private void ResetAccessActivityLog()
 ```
 
+##### `ResetAccessAndManageAiModelHub` <a name="ResetAccessAndManageAiModelHub" id="@cdktf/provider-ionoscloud.group.Group.resetAccessAndManageAiModelHub"></a>
+
+```csharp
+private void ResetAccessAndManageAiModelHub()
+```
+
+##### `ResetAccessAndManageApiGateway` <a name="ResetAccessAndManageApiGateway" id="@cdktf/provider-ionoscloud.group.Group.resetAccessAndManageApiGateway"></a>
+
+```csharp
+private void ResetAccessAndManageApiGateway()
+```
+
+##### `ResetAccessAndManageCdn` <a name="ResetAccessAndManageCdn" id="@cdktf/provider-ionoscloud.group.Group.resetAccessAndManageCdn"></a>
+
+```csharp
+private void ResetAccessAndManageCdn()
+```
+
 ##### `ResetAccessAndManageCertificates` <a name="ResetAccessAndManageCertificates" id="@cdktf/provider-ionoscloud.group.Group.resetAccessAndManageCertificates"></a>
 
 ```csharp
 private void ResetAccessAndManageCertificates()
 ```
 
+##### `ResetAccessAndManageDns` <a name="ResetAccessAndManageDns" id="@cdktf/provider-ionoscloud.group.Group.resetAccessAndManageDns"></a>
+
+```csharp
+private void ResetAccessAndManageDns()
+```
+
+##### `ResetAccessAndManageIamResources` <a name="ResetAccessAndManageIamResources" id="@cdktf/provider-ionoscloud.group.Group.resetAccessAndManageIamResources"></a>
+
+```csharp
+private void ResetAccessAndManageIamResources()
+```
+
+##### `ResetAccessAndManageKaas` <a name="ResetAccessAndManageKaas" id="@cdktf/provider-ionoscloud.group.Group.resetAccessAndManageKaas"></a>
+
+```csharp
+private void ResetAccessAndManageKaas()
+```
+
+##### `ResetAccessAndManageLogging` <a name="ResetAccessAndManageLogging" id="@cdktf/provider-ionoscloud.group.Group.resetAccessAndManageLogging"></a>
+
+```csharp
+private void ResetAccessAndManageLogging()
+```
+
 ##### `ResetAccessAndManageMonitoring` <a name="ResetAccessAndManageMonitoring" id="@cdktf/provider-ionoscloud.group.Group.resetAccessAndManageMonitoring"></a>
 
 ```csharp
 private void ResetAccessAndManageMonitoring()
+```
+
+##### `ResetAccessAndManageNetworkFileStorage` <a name="ResetAccessAndManageNetworkFileStorage" id="@cdktf/provider-ionoscloud.group.Group.resetAccessAndManageNetworkFileStorage"></a>
+
+```csharp
+private void ResetAccessAndManageNetworkFileStorage()
+```
+
+##### `ResetAccessAndManageVpn` <a name="ResetAccessAndManageVpn" id="@cdktf/provider-ionoscloud.group.Group.resetAccessAndManageVpn"></a>
+
+```csharp
+private void ResetAccessAndManageVpn()
 ```
 
 ##### `ResetCreateBackupUnit` <a name="ResetCreateBackupUnit" id="@cdktf/provider-ionoscloud.group.Group.resetCreateBackupUnit"></a>
@@ -442,6 +508,12 @@ private void ResetCreateInternetAccess()
 private void ResetCreateK8SCluster()
 ```
 
+##### `ResetCreateNetworkSecurityGroups` <a name="ResetCreateNetworkSecurityGroups" id="@cdktf/provider-ionoscloud.group.Group.resetCreateNetworkSecurityGroups"></a>
+
+```csharp
+private void ResetCreateNetworkSecurityGroups()
+```
+
 ##### `ResetCreatePcc` <a name="ResetCreatePcc" id="@cdktf/provider-ionoscloud.group.Group.resetCreatePcc"></a>
 
 ```csharp
@@ -460,10 +532,22 @@ private void ResetCreateSnapshot()
 private void ResetId()
 ```
 
+##### `ResetManageDataplatform` <a name="ResetManageDataplatform" id="@cdktf/provider-ionoscloud.group.Group.resetManageDataplatform"></a>
+
+```csharp
+private void ResetManageDataplatform()
+```
+
 ##### `ResetManageDbaas` <a name="ResetManageDbaas" id="@cdktf/provider-ionoscloud.group.Group.resetManageDbaas"></a>
 
 ```csharp
 private void ResetManageDbaas()
+```
+
+##### `ResetManageRegistry` <a name="ResetManageRegistry" id="@cdktf/provider-ionoscloud.group.Group.resetManageRegistry"></a>
+
+```csharp
+private void ResetManageRegistry()
 ```
 
 ##### `ResetReserveIp` <a name="ResetReserveIp" id="@cdktf/provider-ionoscloud.group.Group.resetReserveIp"></a>
@@ -599,7 +683,7 @@ The construct id used in the generated config for the Group to import.
 
 The id of the existing Group that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.1/docs/resources/group#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.2/docs/resources/group#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -632,17 +716,29 @@ Refer to the {@link https://registry.terraform.io/providers/ionos-cloud/ionosclo
 | <code><a href="#@cdktf/provider-ionoscloud.group.Group.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-ionoscloud.group.GroupTimeoutsOutputReference">GroupTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.group.Group.property.users">Users</a></code> | <code><a href="#@cdktf/provider-ionoscloud.group.GroupUsersList">GroupUsersList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.group.Group.property.accessActivityLogInput">AccessActivityLogInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.group.Group.property.accessAndManageAiModelHubInput">AccessAndManageAiModelHubInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.group.Group.property.accessAndManageApiGatewayInput">AccessAndManageApiGatewayInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.group.Group.property.accessAndManageCdnInput">AccessAndManageCdnInput</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.group.Group.property.accessAndManageCertificatesInput">AccessAndManageCertificatesInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.group.Group.property.accessAndManageDnsInput">AccessAndManageDnsInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.group.Group.property.accessAndManageIamResourcesInput">AccessAndManageIamResourcesInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.group.Group.property.accessAndManageKaasInput">AccessAndManageKaasInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.group.Group.property.accessAndManageLoggingInput">AccessAndManageLoggingInput</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.group.Group.property.accessAndManageMonitoringInput">AccessAndManageMonitoringInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.group.Group.property.accessAndManageNetworkFileStorageInput">AccessAndManageNetworkFileStorageInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.group.Group.property.accessAndManageVpnInput">AccessAndManageVpnInput</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.group.Group.property.createBackupUnitInput">CreateBackupUnitInput</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.group.Group.property.createDatacenterInput">CreateDatacenterInput</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.group.Group.property.createFlowLogInput">CreateFlowLogInput</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.group.Group.property.createInternetAccessInput">CreateInternetAccessInput</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.group.Group.property.createK8SClusterInput">CreateK8SClusterInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.group.Group.property.createNetworkSecurityGroupsInput">CreateNetworkSecurityGroupsInput</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.group.Group.property.createPccInput">CreatePccInput</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.group.Group.property.createSnapshotInput">CreateSnapshotInput</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.group.Group.property.idInput">IdInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.group.Group.property.manageDataplatformInput">ManageDataplatformInput</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.group.Group.property.manageDbaasInput">ManageDbaasInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.group.Group.property.manageRegistryInput">ManageRegistryInput</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.group.Group.property.nameInput">NameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.group.Group.property.reserveIpInput">ReserveIpInput</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.group.Group.property.s3PrivilegeInput">S3PrivilegeInput</a></code> | <code>object</code> | *No description.* |
@@ -650,17 +746,29 @@ Refer to the {@link https://registry.terraform.io/providers/ionos-cloud/ionosclo
 | <code><a href="#@cdktf/provider-ionoscloud.group.Group.property.userIdInput">UserIdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.group.Group.property.userIdsInput">UserIdsInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.group.Group.property.accessActivityLog">AccessActivityLog</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.group.Group.property.accessAndManageAiModelHub">AccessAndManageAiModelHub</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.group.Group.property.accessAndManageApiGateway">AccessAndManageApiGateway</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.group.Group.property.accessAndManageCdn">AccessAndManageCdn</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.group.Group.property.accessAndManageCertificates">AccessAndManageCertificates</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.group.Group.property.accessAndManageDns">AccessAndManageDns</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.group.Group.property.accessAndManageIamResources">AccessAndManageIamResources</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.group.Group.property.accessAndManageKaas">AccessAndManageKaas</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.group.Group.property.accessAndManageLogging">AccessAndManageLogging</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.group.Group.property.accessAndManageMonitoring">AccessAndManageMonitoring</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.group.Group.property.accessAndManageNetworkFileStorage">AccessAndManageNetworkFileStorage</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.group.Group.property.accessAndManageVpn">AccessAndManageVpn</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.group.Group.property.createBackupUnit">CreateBackupUnit</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.group.Group.property.createDatacenter">CreateDatacenter</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.group.Group.property.createFlowLog">CreateFlowLog</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.group.Group.property.createInternetAccess">CreateInternetAccess</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.group.Group.property.createK8SCluster">CreateK8SCluster</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.group.Group.property.createNetworkSecurityGroups">CreateNetworkSecurityGroups</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.group.Group.property.createPcc">CreatePcc</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.group.Group.property.createSnapshot">CreateSnapshot</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.group.Group.property.id">Id</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.group.Group.property.manageDataplatform">ManageDataplatform</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.group.Group.property.manageDbaas">ManageDbaas</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.group.Group.property.manageRegistry">ManageRegistry</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.group.Group.property.name">Name</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.group.Group.property.reserveIp">ReserveIp</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.group.Group.property.s3Privilege">S3Privilege</a></code> | <code>object</code> | *No description.* |
@@ -841,6 +949,36 @@ public object AccessActivityLogInput { get; }
 
 ---
 
+##### `AccessAndManageAiModelHubInput`<sup>Optional</sup> <a name="AccessAndManageAiModelHubInput" id="@cdktf/provider-ionoscloud.group.Group.property.accessAndManageAiModelHubInput"></a>
+
+```csharp
+public object AccessAndManageAiModelHubInput { get; }
+```
+
+- *Type:* object
+
+---
+
+##### `AccessAndManageApiGatewayInput`<sup>Optional</sup> <a name="AccessAndManageApiGatewayInput" id="@cdktf/provider-ionoscloud.group.Group.property.accessAndManageApiGatewayInput"></a>
+
+```csharp
+public object AccessAndManageApiGatewayInput { get; }
+```
+
+- *Type:* object
+
+---
+
+##### `AccessAndManageCdnInput`<sup>Optional</sup> <a name="AccessAndManageCdnInput" id="@cdktf/provider-ionoscloud.group.Group.property.accessAndManageCdnInput"></a>
+
+```csharp
+public object AccessAndManageCdnInput { get; }
+```
+
+- *Type:* object
+
+---
+
 ##### `AccessAndManageCertificatesInput`<sup>Optional</sup> <a name="AccessAndManageCertificatesInput" id="@cdktf/provider-ionoscloud.group.Group.property.accessAndManageCertificatesInput"></a>
 
 ```csharp
@@ -851,10 +989,70 @@ public object AccessAndManageCertificatesInput { get; }
 
 ---
 
+##### `AccessAndManageDnsInput`<sup>Optional</sup> <a name="AccessAndManageDnsInput" id="@cdktf/provider-ionoscloud.group.Group.property.accessAndManageDnsInput"></a>
+
+```csharp
+public object AccessAndManageDnsInput { get; }
+```
+
+- *Type:* object
+
+---
+
+##### `AccessAndManageIamResourcesInput`<sup>Optional</sup> <a name="AccessAndManageIamResourcesInput" id="@cdktf/provider-ionoscloud.group.Group.property.accessAndManageIamResourcesInput"></a>
+
+```csharp
+public object AccessAndManageIamResourcesInput { get; }
+```
+
+- *Type:* object
+
+---
+
+##### `AccessAndManageKaasInput`<sup>Optional</sup> <a name="AccessAndManageKaasInput" id="@cdktf/provider-ionoscloud.group.Group.property.accessAndManageKaasInput"></a>
+
+```csharp
+public object AccessAndManageKaasInput { get; }
+```
+
+- *Type:* object
+
+---
+
+##### `AccessAndManageLoggingInput`<sup>Optional</sup> <a name="AccessAndManageLoggingInput" id="@cdktf/provider-ionoscloud.group.Group.property.accessAndManageLoggingInput"></a>
+
+```csharp
+public object AccessAndManageLoggingInput { get; }
+```
+
+- *Type:* object
+
+---
+
 ##### `AccessAndManageMonitoringInput`<sup>Optional</sup> <a name="AccessAndManageMonitoringInput" id="@cdktf/provider-ionoscloud.group.Group.property.accessAndManageMonitoringInput"></a>
 
 ```csharp
 public object AccessAndManageMonitoringInput { get; }
+```
+
+- *Type:* object
+
+---
+
+##### `AccessAndManageNetworkFileStorageInput`<sup>Optional</sup> <a name="AccessAndManageNetworkFileStorageInput" id="@cdktf/provider-ionoscloud.group.Group.property.accessAndManageNetworkFileStorageInput"></a>
+
+```csharp
+public object AccessAndManageNetworkFileStorageInput { get; }
+```
+
+- *Type:* object
+
+---
+
+##### `AccessAndManageVpnInput`<sup>Optional</sup> <a name="AccessAndManageVpnInput" id="@cdktf/provider-ionoscloud.group.Group.property.accessAndManageVpnInput"></a>
+
+```csharp
+public object AccessAndManageVpnInput { get; }
 ```
 
 - *Type:* object
@@ -911,6 +1109,16 @@ public object CreateK8SClusterInput { get; }
 
 ---
 
+##### `CreateNetworkSecurityGroupsInput`<sup>Optional</sup> <a name="CreateNetworkSecurityGroupsInput" id="@cdktf/provider-ionoscloud.group.Group.property.createNetworkSecurityGroupsInput"></a>
+
+```csharp
+public object CreateNetworkSecurityGroupsInput { get; }
+```
+
+- *Type:* object
+
+---
+
 ##### `CreatePccInput`<sup>Optional</sup> <a name="CreatePccInput" id="@cdktf/provider-ionoscloud.group.Group.property.createPccInput"></a>
 
 ```csharp
@@ -941,10 +1149,30 @@ public string IdInput { get; }
 
 ---
 
+##### `ManageDataplatformInput`<sup>Optional</sup> <a name="ManageDataplatformInput" id="@cdktf/provider-ionoscloud.group.Group.property.manageDataplatformInput"></a>
+
+```csharp
+public object ManageDataplatformInput { get; }
+```
+
+- *Type:* object
+
+---
+
 ##### `ManageDbaasInput`<sup>Optional</sup> <a name="ManageDbaasInput" id="@cdktf/provider-ionoscloud.group.Group.property.manageDbaasInput"></a>
 
 ```csharp
 public object ManageDbaasInput { get; }
+```
+
+- *Type:* object
+
+---
+
+##### `ManageRegistryInput`<sup>Optional</sup> <a name="ManageRegistryInput" id="@cdktf/provider-ionoscloud.group.Group.property.manageRegistryInput"></a>
+
+```csharp
+public object ManageRegistryInput { get; }
 ```
 
 - *Type:* object
@@ -1021,6 +1249,36 @@ public object AccessActivityLog { get; }
 
 ---
 
+##### `AccessAndManageAiModelHub`<sup>Required</sup> <a name="AccessAndManageAiModelHub" id="@cdktf/provider-ionoscloud.group.Group.property.accessAndManageAiModelHub"></a>
+
+```csharp
+public object AccessAndManageAiModelHub { get; }
+```
+
+- *Type:* object
+
+---
+
+##### `AccessAndManageApiGateway`<sup>Required</sup> <a name="AccessAndManageApiGateway" id="@cdktf/provider-ionoscloud.group.Group.property.accessAndManageApiGateway"></a>
+
+```csharp
+public object AccessAndManageApiGateway { get; }
+```
+
+- *Type:* object
+
+---
+
+##### `AccessAndManageCdn`<sup>Required</sup> <a name="AccessAndManageCdn" id="@cdktf/provider-ionoscloud.group.Group.property.accessAndManageCdn"></a>
+
+```csharp
+public object AccessAndManageCdn { get; }
+```
+
+- *Type:* object
+
+---
+
 ##### `AccessAndManageCertificates`<sup>Required</sup> <a name="AccessAndManageCertificates" id="@cdktf/provider-ionoscloud.group.Group.property.accessAndManageCertificates"></a>
 
 ```csharp
@@ -1031,10 +1289,70 @@ public object AccessAndManageCertificates { get; }
 
 ---
 
+##### `AccessAndManageDns`<sup>Required</sup> <a name="AccessAndManageDns" id="@cdktf/provider-ionoscloud.group.Group.property.accessAndManageDns"></a>
+
+```csharp
+public object AccessAndManageDns { get; }
+```
+
+- *Type:* object
+
+---
+
+##### `AccessAndManageIamResources`<sup>Required</sup> <a name="AccessAndManageIamResources" id="@cdktf/provider-ionoscloud.group.Group.property.accessAndManageIamResources"></a>
+
+```csharp
+public object AccessAndManageIamResources { get; }
+```
+
+- *Type:* object
+
+---
+
+##### `AccessAndManageKaas`<sup>Required</sup> <a name="AccessAndManageKaas" id="@cdktf/provider-ionoscloud.group.Group.property.accessAndManageKaas"></a>
+
+```csharp
+public object AccessAndManageKaas { get; }
+```
+
+- *Type:* object
+
+---
+
+##### `AccessAndManageLogging`<sup>Required</sup> <a name="AccessAndManageLogging" id="@cdktf/provider-ionoscloud.group.Group.property.accessAndManageLogging"></a>
+
+```csharp
+public object AccessAndManageLogging { get; }
+```
+
+- *Type:* object
+
+---
+
 ##### `AccessAndManageMonitoring`<sup>Required</sup> <a name="AccessAndManageMonitoring" id="@cdktf/provider-ionoscloud.group.Group.property.accessAndManageMonitoring"></a>
 
 ```csharp
 public object AccessAndManageMonitoring { get; }
+```
+
+- *Type:* object
+
+---
+
+##### `AccessAndManageNetworkFileStorage`<sup>Required</sup> <a name="AccessAndManageNetworkFileStorage" id="@cdktf/provider-ionoscloud.group.Group.property.accessAndManageNetworkFileStorage"></a>
+
+```csharp
+public object AccessAndManageNetworkFileStorage { get; }
+```
+
+- *Type:* object
+
+---
+
+##### `AccessAndManageVpn`<sup>Required</sup> <a name="AccessAndManageVpn" id="@cdktf/provider-ionoscloud.group.Group.property.accessAndManageVpn"></a>
+
+```csharp
+public object AccessAndManageVpn { get; }
 ```
 
 - *Type:* object
@@ -1091,6 +1409,16 @@ public object CreateK8SCluster { get; }
 
 ---
 
+##### `CreateNetworkSecurityGroups`<sup>Required</sup> <a name="CreateNetworkSecurityGroups" id="@cdktf/provider-ionoscloud.group.Group.property.createNetworkSecurityGroups"></a>
+
+```csharp
+public object CreateNetworkSecurityGroups { get; }
+```
+
+- *Type:* object
+
+---
+
 ##### `CreatePcc`<sup>Required</sup> <a name="CreatePcc" id="@cdktf/provider-ionoscloud.group.Group.property.createPcc"></a>
 
 ```csharp
@@ -1121,10 +1449,30 @@ public string Id { get; }
 
 ---
 
+##### `ManageDataplatform`<sup>Required</sup> <a name="ManageDataplatform" id="@cdktf/provider-ionoscloud.group.Group.property.manageDataplatform"></a>
+
+```csharp
+public object ManageDataplatform { get; }
+```
+
+- *Type:* object
+
+---
+
 ##### `ManageDbaas`<sup>Required</sup> <a name="ManageDbaas" id="@cdktf/provider-ionoscloud.group.Group.property.manageDbaas"></a>
 
 ```csharp
 public object ManageDbaas { get; }
+```
+
+- *Type:* object
+
+---
+
+##### `ManageRegistry`<sup>Required</sup> <a name="ManageRegistry" id="@cdktf/provider-ionoscloud.group.Group.property.manageRegistry"></a>
+
+```csharp
+public object ManageRegistry { get; }
 ```
 
 - *Type:* object
@@ -1218,17 +1566,29 @@ new GroupConfig {
     object[] Provisioners = null,
     string Name,
     object AccessActivityLog = null,
+    object AccessAndManageAiModelHub = null,
+    object AccessAndManageApiGateway = null,
+    object AccessAndManageCdn = null,
     object AccessAndManageCertificates = null,
+    object AccessAndManageDns = null,
+    object AccessAndManageIamResources = null,
+    object AccessAndManageKaas = null,
+    object AccessAndManageLogging = null,
     object AccessAndManageMonitoring = null,
+    object AccessAndManageNetworkFileStorage = null,
+    object AccessAndManageVpn = null,
     object CreateBackupUnit = null,
     object CreateDatacenter = null,
     object CreateFlowLog = null,
     object CreateInternetAccess = null,
     object CreateK8SCluster = null,
+    object CreateNetworkSecurityGroups = null,
     object CreatePcc = null,
     object CreateSnapshot = null,
     string Id = null,
+    object ManageDataplatform = null,
     object ManageDbaas = null,
+    object ManageRegistry = null,
     object ReserveIp = null,
     object S3Privilege = null,
     GroupTimeouts Timeouts = null,
@@ -1248,24 +1608,36 @@ new GroupConfig {
 | <code><a href="#@cdktf/provider-ionoscloud.group.GroupConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.group.GroupConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.group.GroupConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-ionoscloud.group.GroupConfig.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.1/docs/resources/group#name Group#name}. |
-| <code><a href="#@cdktf/provider-ionoscloud.group.GroupConfig.property.accessActivityLog">AccessActivityLog</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.1/docs/resources/group#access_activity_log Group#access_activity_log}. |
+| <code><a href="#@cdktf/provider-ionoscloud.group.GroupConfig.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.2/docs/resources/group#name Group#name}. |
+| <code><a href="#@cdktf/provider-ionoscloud.group.GroupConfig.property.accessActivityLog">AccessActivityLog</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.2/docs/resources/group#access_activity_log Group#access_activity_log}. |
+| <code><a href="#@cdktf/provider-ionoscloud.group.GroupConfig.property.accessAndManageAiModelHub">AccessAndManageAiModelHub</a></code> | <code>object</code> | Privilege for a group to access and manage AiModelHub. |
+| <code><a href="#@cdktf/provider-ionoscloud.group.GroupConfig.property.accessAndManageApiGateway">AccessAndManageApiGateway</a></code> | <code>object</code> | Privilege for a group to access and manage ApiGateway. |
+| <code><a href="#@cdktf/provider-ionoscloud.group.GroupConfig.property.accessAndManageCdn">AccessAndManageCdn</a></code> | <code>object</code> | Privilege for a group to access and manage Cdn. |
 | <code><a href="#@cdktf/provider-ionoscloud.group.GroupConfig.property.accessAndManageCertificates">AccessAndManageCertificates</a></code> | <code>object</code> | Privilege for a group to access and manage certificates. |
+| <code><a href="#@cdktf/provider-ionoscloud.group.GroupConfig.property.accessAndManageDns">AccessAndManageDns</a></code> | <code>object</code> | Privilege for a group to access and manage dns records. |
+| <code><a href="#@cdktf/provider-ionoscloud.group.GroupConfig.property.accessAndManageIamResources">AccessAndManageIamResources</a></code> | <code>object</code> | Privilege for a group to access and manage IamResources. |
+| <code><a href="#@cdktf/provider-ionoscloud.group.GroupConfig.property.accessAndManageKaas">AccessAndManageKaas</a></code> | <code>object</code> | Privilege for a group to access and manage Kaas. |
+| <code><a href="#@cdktf/provider-ionoscloud.group.GroupConfig.property.accessAndManageLogging">AccessAndManageLogging</a></code> | <code>object</code> | Privilege for a group to access and manage logging. |
 | <code><a href="#@cdktf/provider-ionoscloud.group.GroupConfig.property.accessAndManageMonitoring">AccessAndManageMonitoring</a></code> | <code>object</code> | Privilege for a group to access and manage monitoring related functionality (access metrics, CRUD on alarms, alarm-actions etc) using Monotoring-as-a-Service (MaaS). |
+| <code><a href="#@cdktf/provider-ionoscloud.group.GroupConfig.property.accessAndManageNetworkFileStorage">AccessAndManageNetworkFileStorage</a></code> | <code>object</code> | Privilege for a group to access and manage NetworkFileStorage. |
+| <code><a href="#@cdktf/provider-ionoscloud.group.GroupConfig.property.accessAndManageVpn">AccessAndManageVpn</a></code> | <code>object</code> | Privilege for a group to access and manage Vpn. |
 | <code><a href="#@cdktf/provider-ionoscloud.group.GroupConfig.property.createBackupUnit">CreateBackupUnit</a></code> | <code>object</code> | Create backup unit privilege. |
-| <code><a href="#@cdktf/provider-ionoscloud.group.GroupConfig.property.createDatacenter">CreateDatacenter</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.1/docs/resources/group#create_datacenter Group#create_datacenter}. |
+| <code><a href="#@cdktf/provider-ionoscloud.group.GroupConfig.property.createDatacenter">CreateDatacenter</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.2/docs/resources/group#create_datacenter Group#create_datacenter}. |
 | <code><a href="#@cdktf/provider-ionoscloud.group.GroupConfig.property.createFlowLog">CreateFlowLog</a></code> | <code>object</code> | Create Flow Logs privilege. |
 | <code><a href="#@cdktf/provider-ionoscloud.group.GroupConfig.property.createInternetAccess">CreateInternetAccess</a></code> | <code>object</code> | Create internet access privilege. |
 | <code><a href="#@cdktf/provider-ionoscloud.group.GroupConfig.property.createK8SCluster">CreateK8SCluster</a></code> | <code>object</code> | Create Kubernetes cluster privilege. |
-| <code><a href="#@cdktf/provider-ionoscloud.group.GroupConfig.property.createPcc">CreatePcc</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.1/docs/resources/group#create_pcc Group#create_pcc}. |
-| <code><a href="#@cdktf/provider-ionoscloud.group.GroupConfig.property.createSnapshot">CreateSnapshot</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.1/docs/resources/group#create_snapshot Group#create_snapshot}. |
-| <code><a href="#@cdktf/provider-ionoscloud.group.GroupConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.1/docs/resources/group#id Group#id}. |
+| <code><a href="#@cdktf/provider-ionoscloud.group.GroupConfig.property.createNetworkSecurityGroups">CreateNetworkSecurityGroups</a></code> | <code>object</code> | Create Network Security groups. |
+| <code><a href="#@cdktf/provider-ionoscloud.group.GroupConfig.property.createPcc">CreatePcc</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.2/docs/resources/group#create_pcc Group#create_pcc}. |
+| <code><a href="#@cdktf/provider-ionoscloud.group.GroupConfig.property.createSnapshot">CreateSnapshot</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.2/docs/resources/group#create_snapshot Group#create_snapshot}. |
+| <code><a href="#@cdktf/provider-ionoscloud.group.GroupConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.2/docs/resources/group#id Group#id}. |
+| <code><a href="#@cdktf/provider-ionoscloud.group.GroupConfig.property.manageDataplatform">ManageDataplatform</a></code> | <code>object</code> | Privilege for a group to access and manage the Data Platform. |
 | <code><a href="#@cdktf/provider-ionoscloud.group.GroupConfig.property.manageDbaas">ManageDbaas</a></code> | <code>object</code> | Privilege for a group to manage DBaaS related functionality. |
-| <code><a href="#@cdktf/provider-ionoscloud.group.GroupConfig.property.reserveIp">ReserveIp</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.1/docs/resources/group#reserve_ip Group#reserve_ip}. |
-| <code><a href="#@cdktf/provider-ionoscloud.group.GroupConfig.property.s3Privilege">S3Privilege</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.1/docs/resources/group#s3_privilege Group#s3_privilege}. |
+| <code><a href="#@cdktf/provider-ionoscloud.group.GroupConfig.property.manageRegistry">ManageRegistry</a></code> | <code>object</code> | Privilege for group accessing container registry related functionality. |
+| <code><a href="#@cdktf/provider-ionoscloud.group.GroupConfig.property.reserveIp">ReserveIp</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.2/docs/resources/group#reserve_ip Group#reserve_ip}. |
+| <code><a href="#@cdktf/provider-ionoscloud.group.GroupConfig.property.s3Privilege">S3Privilege</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.2/docs/resources/group#s3_privilege Group#s3_privilege}. |
 | <code><a href="#@cdktf/provider-ionoscloud.group.GroupConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-ionoscloud.group.GroupTimeouts">GroupTimeouts</a></code> | timeouts block. |
-| <code><a href="#@cdktf/provider-ionoscloud.group.GroupConfig.property.userId">UserId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.1/docs/resources/group#user_id Group#user_id}. |
-| <code><a href="#@cdktf/provider-ionoscloud.group.GroupConfig.property.userIds">UserIds</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.1/docs/resources/group#user_ids Group#user_ids}. |
+| <code><a href="#@cdktf/provider-ionoscloud.group.GroupConfig.property.userId">UserId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.2/docs/resources/group#user_id Group#user_id}. |
+| <code><a href="#@cdktf/provider-ionoscloud.group.GroupConfig.property.userIds">UserIds</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.2/docs/resources/group#user_ids Group#user_ids}. |
 
 ---
 
@@ -1347,7 +1719,7 @@ public string Name { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.1/docs/resources/group#name Group#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.2/docs/resources/group#name Group#name}.
 
 ---
 
@@ -1359,7 +1731,49 @@ public object AccessActivityLog { get; set; }
 
 - *Type:* object
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.1/docs/resources/group#access_activity_log Group#access_activity_log}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.2/docs/resources/group#access_activity_log Group#access_activity_log}.
+
+---
+
+##### `AccessAndManageAiModelHub`<sup>Optional</sup> <a name="AccessAndManageAiModelHub" id="@cdktf/provider-ionoscloud.group.GroupConfig.property.accessAndManageAiModelHub"></a>
+
+```csharp
+public object AccessAndManageAiModelHub { get; set; }
+```
+
+- *Type:* object
+
+Privilege for a group to access and manage AiModelHub.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.2/docs/resources/group#access_and_manage_ai_model_hub Group#access_and_manage_ai_model_hub}
+
+---
+
+##### `AccessAndManageApiGateway`<sup>Optional</sup> <a name="AccessAndManageApiGateway" id="@cdktf/provider-ionoscloud.group.GroupConfig.property.accessAndManageApiGateway"></a>
+
+```csharp
+public object AccessAndManageApiGateway { get; set; }
+```
+
+- *Type:* object
+
+Privilege for a group to access and manage ApiGateway.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.2/docs/resources/group#access_and_manage_api_gateway Group#access_and_manage_api_gateway}
+
+---
+
+##### `AccessAndManageCdn`<sup>Optional</sup> <a name="AccessAndManageCdn" id="@cdktf/provider-ionoscloud.group.GroupConfig.property.accessAndManageCdn"></a>
+
+```csharp
+public object AccessAndManageCdn { get; set; }
+```
+
+- *Type:* object
+
+Privilege for a group to access and manage Cdn.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.2/docs/resources/group#access_and_manage_cdn Group#access_and_manage_cdn}
 
 ---
 
@@ -1373,7 +1787,63 @@ public object AccessAndManageCertificates { get; set; }
 
 Privilege for a group to access and manage certificates.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.1/docs/resources/group#access_and_manage_certificates Group#access_and_manage_certificates}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.2/docs/resources/group#access_and_manage_certificates Group#access_and_manage_certificates}
+
+---
+
+##### `AccessAndManageDns`<sup>Optional</sup> <a name="AccessAndManageDns" id="@cdktf/provider-ionoscloud.group.GroupConfig.property.accessAndManageDns"></a>
+
+```csharp
+public object AccessAndManageDns { get; set; }
+```
+
+- *Type:* object
+
+Privilege for a group to access and manage dns records.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.2/docs/resources/group#access_and_manage_dns Group#access_and_manage_dns}
+
+---
+
+##### `AccessAndManageIamResources`<sup>Optional</sup> <a name="AccessAndManageIamResources" id="@cdktf/provider-ionoscloud.group.GroupConfig.property.accessAndManageIamResources"></a>
+
+```csharp
+public object AccessAndManageIamResources { get; set; }
+```
+
+- *Type:* object
+
+Privilege for a group to access and manage IamResources.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.2/docs/resources/group#access_and_manage_iam_resources Group#access_and_manage_iam_resources}
+
+---
+
+##### `AccessAndManageKaas`<sup>Optional</sup> <a name="AccessAndManageKaas" id="@cdktf/provider-ionoscloud.group.GroupConfig.property.accessAndManageKaas"></a>
+
+```csharp
+public object AccessAndManageKaas { get; set; }
+```
+
+- *Type:* object
+
+Privilege for a group to access and manage Kaas.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.2/docs/resources/group#access_and_manage_kaas Group#access_and_manage_kaas}
+
+---
+
+##### `AccessAndManageLogging`<sup>Optional</sup> <a name="AccessAndManageLogging" id="@cdktf/provider-ionoscloud.group.GroupConfig.property.accessAndManageLogging"></a>
+
+```csharp
+public object AccessAndManageLogging { get; set; }
+```
+
+- *Type:* object
+
+Privilege for a group to access and manage logging.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.2/docs/resources/group#access_and_manage_logging Group#access_and_manage_logging}
 
 ---
 
@@ -1387,7 +1857,35 @@ public object AccessAndManageMonitoring { get; set; }
 
 Privilege for a group to access and manage monitoring related functionality (access metrics, CRUD on alarms, alarm-actions etc) using Monotoring-as-a-Service (MaaS).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.1/docs/resources/group#access_and_manage_monitoring Group#access_and_manage_monitoring}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.2/docs/resources/group#access_and_manage_monitoring Group#access_and_manage_monitoring}
+
+---
+
+##### `AccessAndManageNetworkFileStorage`<sup>Optional</sup> <a name="AccessAndManageNetworkFileStorage" id="@cdktf/provider-ionoscloud.group.GroupConfig.property.accessAndManageNetworkFileStorage"></a>
+
+```csharp
+public object AccessAndManageNetworkFileStorage { get; set; }
+```
+
+- *Type:* object
+
+Privilege for a group to access and manage NetworkFileStorage.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.2/docs/resources/group#access_and_manage_network_file_storage Group#access_and_manage_network_file_storage}
+
+---
+
+##### `AccessAndManageVpn`<sup>Optional</sup> <a name="AccessAndManageVpn" id="@cdktf/provider-ionoscloud.group.GroupConfig.property.accessAndManageVpn"></a>
+
+```csharp
+public object AccessAndManageVpn { get; set; }
+```
+
+- *Type:* object
+
+Privilege for a group to access and manage Vpn.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.2/docs/resources/group#access_and_manage_vpn Group#access_and_manage_vpn}
 
 ---
 
@@ -1401,7 +1899,7 @@ public object CreateBackupUnit { get; set; }
 
 Create backup unit privilege.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.1/docs/resources/group#create_backup_unit Group#create_backup_unit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.2/docs/resources/group#create_backup_unit Group#create_backup_unit}
 
 ---
 
@@ -1413,7 +1911,7 @@ public object CreateDatacenter { get; set; }
 
 - *Type:* object
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.1/docs/resources/group#create_datacenter Group#create_datacenter}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.2/docs/resources/group#create_datacenter Group#create_datacenter}.
 
 ---
 
@@ -1427,7 +1925,7 @@ public object CreateFlowLog { get; set; }
 
 Create Flow Logs privilege.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.1/docs/resources/group#create_flow_log Group#create_flow_log}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.2/docs/resources/group#create_flow_log Group#create_flow_log}
 
 ---
 
@@ -1441,7 +1939,7 @@ public object CreateInternetAccess { get; set; }
 
 Create internet access privilege.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.1/docs/resources/group#create_internet_access Group#create_internet_access}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.2/docs/resources/group#create_internet_access Group#create_internet_access}
 
 ---
 
@@ -1455,7 +1953,21 @@ public object CreateK8SCluster { get; set; }
 
 Create Kubernetes cluster privilege.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.1/docs/resources/group#create_k8s_cluster Group#create_k8s_cluster}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.2/docs/resources/group#create_k8s_cluster Group#create_k8s_cluster}
+
+---
+
+##### `CreateNetworkSecurityGroups`<sup>Optional</sup> <a name="CreateNetworkSecurityGroups" id="@cdktf/provider-ionoscloud.group.GroupConfig.property.createNetworkSecurityGroups"></a>
+
+```csharp
+public object CreateNetworkSecurityGroups { get; set; }
+```
+
+- *Type:* object
+
+Create Network Security groups.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.2/docs/resources/group#create_network_security_groups Group#create_network_security_groups}
 
 ---
 
@@ -1467,7 +1979,7 @@ public object CreatePcc { get; set; }
 
 - *Type:* object
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.1/docs/resources/group#create_pcc Group#create_pcc}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.2/docs/resources/group#create_pcc Group#create_pcc}.
 
 ---
 
@@ -1479,7 +1991,7 @@ public object CreateSnapshot { get; set; }
 
 - *Type:* object
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.1/docs/resources/group#create_snapshot Group#create_snapshot}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.2/docs/resources/group#create_snapshot Group#create_snapshot}.
 
 ---
 
@@ -1491,10 +2003,24 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.1/docs/resources/group#id Group#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.2/docs/resources/group#id Group#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `ManageDataplatform`<sup>Optional</sup> <a name="ManageDataplatform" id="@cdktf/provider-ionoscloud.group.GroupConfig.property.manageDataplatform"></a>
+
+```csharp
+public object ManageDataplatform { get; set; }
+```
+
+- *Type:* object
+
+Privilege for a group to access and manage the Data Platform.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.2/docs/resources/group#manage_dataplatform Group#manage_dataplatform}
 
 ---
 
@@ -1508,7 +2034,21 @@ public object ManageDbaas { get; set; }
 
 Privilege for a group to manage DBaaS related functionality.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.1/docs/resources/group#manage_dbaas Group#manage_dbaas}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.2/docs/resources/group#manage_dbaas Group#manage_dbaas}
+
+---
+
+##### `ManageRegistry`<sup>Optional</sup> <a name="ManageRegistry" id="@cdktf/provider-ionoscloud.group.GroupConfig.property.manageRegistry"></a>
+
+```csharp
+public object ManageRegistry { get; set; }
+```
+
+- *Type:* object
+
+Privilege for group accessing container registry related functionality.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.2/docs/resources/group#manage_registry Group#manage_registry}
 
 ---
 
@@ -1520,7 +2060,7 @@ public object ReserveIp { get; set; }
 
 - *Type:* object
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.1/docs/resources/group#reserve_ip Group#reserve_ip}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.2/docs/resources/group#reserve_ip Group#reserve_ip}.
 
 ---
 
@@ -1532,7 +2072,7 @@ public object S3Privilege { get; set; }
 
 - *Type:* object
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.1/docs/resources/group#s3_privilege Group#s3_privilege}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.2/docs/resources/group#s3_privilege Group#s3_privilege}.
 
 ---
 
@@ -1546,7 +2086,7 @@ public GroupTimeouts Timeouts { get; set; }
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.1/docs/resources/group#timeouts Group#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.2/docs/resources/group#timeouts Group#timeouts}
 
 ---
 
@@ -1558,7 +2098,7 @@ public string UserId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.1/docs/resources/group#user_id Group#user_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.2/docs/resources/group#user_id Group#user_id}.
 
 ---
 
@@ -1570,7 +2110,7 @@ public string[] UserIds { get; set; }
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.1/docs/resources/group#user_ids Group#user_ids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.2/docs/resources/group#user_ids Group#user_ids}.
 
 ---
 
@@ -1593,10 +2133,10 @@ new GroupTimeouts {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-ionoscloud.group.GroupTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.1/docs/resources/group#create Group#create}. |
-| <code><a href="#@cdktf/provider-ionoscloud.group.GroupTimeouts.property.default">Default</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.1/docs/resources/group#default Group#default}. |
-| <code><a href="#@cdktf/provider-ionoscloud.group.GroupTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.1/docs/resources/group#delete Group#delete}. |
-| <code><a href="#@cdktf/provider-ionoscloud.group.GroupTimeouts.property.update">Update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.1/docs/resources/group#update Group#update}. |
+| <code><a href="#@cdktf/provider-ionoscloud.group.GroupTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.2/docs/resources/group#create Group#create}. |
+| <code><a href="#@cdktf/provider-ionoscloud.group.GroupTimeouts.property.default">Default</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.2/docs/resources/group#default Group#default}. |
+| <code><a href="#@cdktf/provider-ionoscloud.group.GroupTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.2/docs/resources/group#delete Group#delete}. |
+| <code><a href="#@cdktf/provider-ionoscloud.group.GroupTimeouts.property.update">Update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.2/docs/resources/group#update Group#update}. |
 
 ---
 
@@ -1608,7 +2148,7 @@ public string Create { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.1/docs/resources/group#create Group#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.2/docs/resources/group#create Group#create}.
 
 ---
 
@@ -1620,7 +2160,7 @@ public string Default { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.1/docs/resources/group#default Group#default}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.2/docs/resources/group#default Group#default}.
 
 ---
 
@@ -1632,7 +2172,7 @@ public string Delete { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.1/docs/resources/group#delete Group#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.2/docs/resources/group#delete Group#delete}.
 
 ---
 
@@ -1644,7 +2184,7 @@ public string Update { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.1/docs/resources/group#update Group#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.2/docs/resources/group#update Group#update}.
 
 ---
 
