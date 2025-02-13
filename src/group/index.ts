@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.1/docs/resources/group
+// https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.2/docs/resources/group
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,94 +13,166 @@ import * as cdktf from 'cdktf';
 
 export interface GroupConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.1/docs/resources/group#access_activity_log Group#access_activity_log}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.2/docs/resources/group#access_activity_log Group#access_activity_log}
   */
   readonly accessActivityLog?: boolean | cdktf.IResolvable;
   /**
+  * Privilege for a group to access and manage AiModelHub.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.2/docs/resources/group#access_and_manage_ai_model_hub Group#access_and_manage_ai_model_hub}
+  */
+  readonly accessAndManageAiModelHub?: boolean | cdktf.IResolvable;
+  /**
+  * Privilege for a group to access and manage ApiGateway.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.2/docs/resources/group#access_and_manage_api_gateway Group#access_and_manage_api_gateway}
+  */
+  readonly accessAndManageApiGateway?: boolean | cdktf.IResolvable;
+  /**
+  * Privilege for a group to access and manage Cdn.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.2/docs/resources/group#access_and_manage_cdn Group#access_and_manage_cdn}
+  */
+  readonly accessAndManageCdn?: boolean | cdktf.IResolvable;
+  /**
   * Privilege for a group to access and manage certificates.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.1/docs/resources/group#access_and_manage_certificates Group#access_and_manage_certificates}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.2/docs/resources/group#access_and_manage_certificates Group#access_and_manage_certificates}
   */
   readonly accessAndManageCertificates?: boolean | cdktf.IResolvable;
   /**
+  * Privilege for a group to access and manage dns records.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.2/docs/resources/group#access_and_manage_dns Group#access_and_manage_dns}
+  */
+  readonly accessAndManageDns?: boolean | cdktf.IResolvable;
+  /**
+  * Privilege for a group to access and manage IamResources.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.2/docs/resources/group#access_and_manage_iam_resources Group#access_and_manage_iam_resources}
+  */
+  readonly accessAndManageIamResources?: boolean | cdktf.IResolvable;
+  /**
+  * Privilege for a group to access and manage Kaas.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.2/docs/resources/group#access_and_manage_kaas Group#access_and_manage_kaas}
+  */
+  readonly accessAndManageKaas?: boolean | cdktf.IResolvable;
+  /**
+  * Privilege for a group to access and manage logging.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.2/docs/resources/group#access_and_manage_logging Group#access_and_manage_logging}
+  */
+  readonly accessAndManageLogging?: boolean | cdktf.IResolvable;
+  /**
   * Privilege for a group to access and manage monitoring related functionality (access metrics, CRUD on alarms, alarm-actions etc) using Monotoring-as-a-Service (MaaS).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.1/docs/resources/group#access_and_manage_monitoring Group#access_and_manage_monitoring}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.2/docs/resources/group#access_and_manage_monitoring Group#access_and_manage_monitoring}
   */
   readonly accessAndManageMonitoring?: boolean | cdktf.IResolvable;
   /**
+  * Privilege for a group to access and manage NetworkFileStorage.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.2/docs/resources/group#access_and_manage_network_file_storage Group#access_and_manage_network_file_storage}
+  */
+  readonly accessAndManageNetworkFileStorage?: boolean | cdktf.IResolvable;
+  /**
+  * Privilege for a group to access and manage Vpn.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.2/docs/resources/group#access_and_manage_vpn Group#access_and_manage_vpn}
+  */
+  readonly accessAndManageVpn?: boolean | cdktf.IResolvable;
+  /**
   * Create backup unit privilege.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.1/docs/resources/group#create_backup_unit Group#create_backup_unit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.2/docs/resources/group#create_backup_unit Group#create_backup_unit}
   */
   readonly createBackupUnit?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.1/docs/resources/group#create_datacenter Group#create_datacenter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.2/docs/resources/group#create_datacenter Group#create_datacenter}
   */
   readonly createDatacenter?: boolean | cdktf.IResolvable;
   /**
   * Create Flow Logs privilege.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.1/docs/resources/group#create_flow_log Group#create_flow_log}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.2/docs/resources/group#create_flow_log Group#create_flow_log}
   */
   readonly createFlowLog?: boolean | cdktf.IResolvable;
   /**
   * Create internet access privilege.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.1/docs/resources/group#create_internet_access Group#create_internet_access}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.2/docs/resources/group#create_internet_access Group#create_internet_access}
   */
   readonly createInternetAccess?: boolean | cdktf.IResolvable;
   /**
   * Create Kubernetes cluster privilege.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.1/docs/resources/group#create_k8s_cluster Group#create_k8s_cluster}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.2/docs/resources/group#create_k8s_cluster Group#create_k8s_cluster}
   */
   readonly createK8SCluster?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.1/docs/resources/group#create_pcc Group#create_pcc}
+  * Create Network Security groups.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.2/docs/resources/group#create_network_security_groups Group#create_network_security_groups}
+  */
+  readonly createNetworkSecurityGroups?: boolean | cdktf.IResolvable;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.2/docs/resources/group#create_pcc Group#create_pcc}
   */
   readonly createPcc?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.1/docs/resources/group#create_snapshot Group#create_snapshot}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.2/docs/resources/group#create_snapshot Group#create_snapshot}
   */
   readonly createSnapshot?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.1/docs/resources/group#id Group#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.2/docs/resources/group#id Group#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
+  * Privilege for a group to access and manage the Data Platform.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.2/docs/resources/group#manage_dataplatform Group#manage_dataplatform}
+  */
+  readonly manageDataplatform?: boolean | cdktf.IResolvable;
+  /**
   * Privilege for a group to manage DBaaS related functionality
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.1/docs/resources/group#manage_dbaas Group#manage_dbaas}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.2/docs/resources/group#manage_dbaas Group#manage_dbaas}
   */
   readonly manageDbaas?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.1/docs/resources/group#name Group#name}
+  * Privilege for group accessing container registry related functionality.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.2/docs/resources/group#manage_registry Group#manage_registry}
+  */
+  readonly manageRegistry?: boolean | cdktf.IResolvable;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.2/docs/resources/group#name Group#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.1/docs/resources/group#reserve_ip Group#reserve_ip}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.2/docs/resources/group#reserve_ip Group#reserve_ip}
   */
   readonly reserveIp?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.1/docs/resources/group#s3_privilege Group#s3_privilege}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.2/docs/resources/group#s3_privilege Group#s3_privilege}
   */
   readonly s3Privilege?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.1/docs/resources/group#user_id Group#user_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.2/docs/resources/group#user_id Group#user_id}
   */
   readonly userId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.1/docs/resources/group#user_ids Group#user_ids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.2/docs/resources/group#user_ids Group#user_ids}
   */
   readonly userIds?: string[];
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.1/docs/resources/group#timeouts Group#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.2/docs/resources/group#timeouts Group#timeouts}
   */
   readonly timeouts?: GroupTimeouts;
 }
@@ -211,19 +283,19 @@ export class GroupUsersList extends cdktf.ComplexList {
 }
 export interface GroupTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.1/docs/resources/group#create Group#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.2/docs/resources/group#create Group#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.1/docs/resources/group#default Group#default}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.2/docs/resources/group#default Group#default}
   */
   readonly default?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.1/docs/resources/group#delete Group#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.2/docs/resources/group#delete Group#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.1/docs/resources/group#update Group#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.2/docs/resources/group#update Group#update}
   */
   readonly update?: string;
 }
@@ -404,7 +476,7 @@ export class GroupTimeoutsOutputReference extends cdktf.ComplexObject {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.1/docs/resources/group ionoscloud_group}
+* Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.2/docs/resources/group ionoscloud_group}
 */
 export class Group extends cdktf.TerraformResource {
 
@@ -420,7 +492,7 @@ export class Group extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a Group resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the Group to import
-  * @param importFromId The id of the existing Group that should be imported. Refer to the {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.1/docs/resources/group#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing Group that should be imported. Refer to the {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.2/docs/resources/group#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the Group to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -432,7 +504,7 @@ export class Group extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.1/docs/resources/group ionoscloud_group} Resource
+  * Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.2/docs/resources/group ionoscloud_group} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -443,7 +515,7 @@ export class Group extends cdktf.TerraformResource {
       terraformResourceType: 'ionoscloud_group',
       terraformGeneratorMetadata: {
         providerName: 'ionoscloud',
-        providerVersion: '6.7.1',
+        providerVersion: '6.7.2',
         providerVersionConstraint: '~> 6.2'
       },
       provider: config.provider,
@@ -455,17 +527,29 @@ export class Group extends cdktf.TerraformResource {
       forEach: config.forEach
     });
     this._accessActivityLog = config.accessActivityLog;
+    this._accessAndManageAiModelHub = config.accessAndManageAiModelHub;
+    this._accessAndManageApiGateway = config.accessAndManageApiGateway;
+    this._accessAndManageCdn = config.accessAndManageCdn;
     this._accessAndManageCertificates = config.accessAndManageCertificates;
+    this._accessAndManageDns = config.accessAndManageDns;
+    this._accessAndManageIamResources = config.accessAndManageIamResources;
+    this._accessAndManageKaas = config.accessAndManageKaas;
+    this._accessAndManageLogging = config.accessAndManageLogging;
     this._accessAndManageMonitoring = config.accessAndManageMonitoring;
+    this._accessAndManageNetworkFileStorage = config.accessAndManageNetworkFileStorage;
+    this._accessAndManageVpn = config.accessAndManageVpn;
     this._createBackupUnit = config.createBackupUnit;
     this._createDatacenter = config.createDatacenter;
     this._createFlowLog = config.createFlowLog;
     this._createInternetAccess = config.createInternetAccess;
     this._createK8SCluster = config.createK8SCluster;
+    this._createNetworkSecurityGroups = config.createNetworkSecurityGroups;
     this._createPcc = config.createPcc;
     this._createSnapshot = config.createSnapshot;
     this._id = config.id;
+    this._manageDataplatform = config.manageDataplatform;
     this._manageDbaas = config.manageDbaas;
+    this._manageRegistry = config.manageRegistry;
     this._name = config.name;
     this._reserveIp = config.reserveIp;
     this._s3Privilege = config.s3Privilege;
@@ -494,6 +578,54 @@ export class Group extends cdktf.TerraformResource {
     return this._accessActivityLog;
   }
 
+  // access_and_manage_ai_model_hub - computed: false, optional: true, required: false
+  private _accessAndManageAiModelHub?: boolean | cdktf.IResolvable; 
+  public get accessAndManageAiModelHub() {
+    return this.getBooleanAttribute('access_and_manage_ai_model_hub');
+  }
+  public set accessAndManageAiModelHub(value: boolean | cdktf.IResolvable) {
+    this._accessAndManageAiModelHub = value;
+  }
+  public resetAccessAndManageAiModelHub() {
+    this._accessAndManageAiModelHub = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get accessAndManageAiModelHubInput() {
+    return this._accessAndManageAiModelHub;
+  }
+
+  // access_and_manage_api_gateway - computed: false, optional: true, required: false
+  private _accessAndManageApiGateway?: boolean | cdktf.IResolvable; 
+  public get accessAndManageApiGateway() {
+    return this.getBooleanAttribute('access_and_manage_api_gateway');
+  }
+  public set accessAndManageApiGateway(value: boolean | cdktf.IResolvable) {
+    this._accessAndManageApiGateway = value;
+  }
+  public resetAccessAndManageApiGateway() {
+    this._accessAndManageApiGateway = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get accessAndManageApiGatewayInput() {
+    return this._accessAndManageApiGateway;
+  }
+
+  // access_and_manage_cdn - computed: false, optional: true, required: false
+  private _accessAndManageCdn?: boolean | cdktf.IResolvable; 
+  public get accessAndManageCdn() {
+    return this.getBooleanAttribute('access_and_manage_cdn');
+  }
+  public set accessAndManageCdn(value: boolean | cdktf.IResolvable) {
+    this._accessAndManageCdn = value;
+  }
+  public resetAccessAndManageCdn() {
+    this._accessAndManageCdn = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get accessAndManageCdnInput() {
+    return this._accessAndManageCdn;
+  }
+
   // access_and_manage_certificates - computed: false, optional: true, required: false
   private _accessAndManageCertificates?: boolean | cdktf.IResolvable; 
   public get accessAndManageCertificates() {
@@ -510,6 +642,70 @@ export class Group extends cdktf.TerraformResource {
     return this._accessAndManageCertificates;
   }
 
+  // access_and_manage_dns - computed: false, optional: true, required: false
+  private _accessAndManageDns?: boolean | cdktf.IResolvable; 
+  public get accessAndManageDns() {
+    return this.getBooleanAttribute('access_and_manage_dns');
+  }
+  public set accessAndManageDns(value: boolean | cdktf.IResolvable) {
+    this._accessAndManageDns = value;
+  }
+  public resetAccessAndManageDns() {
+    this._accessAndManageDns = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get accessAndManageDnsInput() {
+    return this._accessAndManageDns;
+  }
+
+  // access_and_manage_iam_resources - computed: false, optional: true, required: false
+  private _accessAndManageIamResources?: boolean | cdktf.IResolvable; 
+  public get accessAndManageIamResources() {
+    return this.getBooleanAttribute('access_and_manage_iam_resources');
+  }
+  public set accessAndManageIamResources(value: boolean | cdktf.IResolvable) {
+    this._accessAndManageIamResources = value;
+  }
+  public resetAccessAndManageIamResources() {
+    this._accessAndManageIamResources = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get accessAndManageIamResourcesInput() {
+    return this._accessAndManageIamResources;
+  }
+
+  // access_and_manage_kaas - computed: false, optional: true, required: false
+  private _accessAndManageKaas?: boolean | cdktf.IResolvable; 
+  public get accessAndManageKaas() {
+    return this.getBooleanAttribute('access_and_manage_kaas');
+  }
+  public set accessAndManageKaas(value: boolean | cdktf.IResolvable) {
+    this._accessAndManageKaas = value;
+  }
+  public resetAccessAndManageKaas() {
+    this._accessAndManageKaas = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get accessAndManageKaasInput() {
+    return this._accessAndManageKaas;
+  }
+
+  // access_and_manage_logging - computed: false, optional: true, required: false
+  private _accessAndManageLogging?: boolean | cdktf.IResolvable; 
+  public get accessAndManageLogging() {
+    return this.getBooleanAttribute('access_and_manage_logging');
+  }
+  public set accessAndManageLogging(value: boolean | cdktf.IResolvable) {
+    this._accessAndManageLogging = value;
+  }
+  public resetAccessAndManageLogging() {
+    this._accessAndManageLogging = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get accessAndManageLoggingInput() {
+    return this._accessAndManageLogging;
+  }
+
   // access_and_manage_monitoring - computed: false, optional: true, required: false
   private _accessAndManageMonitoring?: boolean | cdktf.IResolvable; 
   public get accessAndManageMonitoring() {
@@ -524,6 +720,38 @@ export class Group extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get accessAndManageMonitoringInput() {
     return this._accessAndManageMonitoring;
+  }
+
+  // access_and_manage_network_file_storage - computed: false, optional: true, required: false
+  private _accessAndManageNetworkFileStorage?: boolean | cdktf.IResolvable; 
+  public get accessAndManageNetworkFileStorage() {
+    return this.getBooleanAttribute('access_and_manage_network_file_storage');
+  }
+  public set accessAndManageNetworkFileStorage(value: boolean | cdktf.IResolvable) {
+    this._accessAndManageNetworkFileStorage = value;
+  }
+  public resetAccessAndManageNetworkFileStorage() {
+    this._accessAndManageNetworkFileStorage = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get accessAndManageNetworkFileStorageInput() {
+    return this._accessAndManageNetworkFileStorage;
+  }
+
+  // access_and_manage_vpn - computed: false, optional: true, required: false
+  private _accessAndManageVpn?: boolean | cdktf.IResolvable; 
+  public get accessAndManageVpn() {
+    return this.getBooleanAttribute('access_and_manage_vpn');
+  }
+  public set accessAndManageVpn(value: boolean | cdktf.IResolvable) {
+    this._accessAndManageVpn = value;
+  }
+  public resetAccessAndManageVpn() {
+    this._accessAndManageVpn = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get accessAndManageVpnInput() {
+    return this._accessAndManageVpn;
   }
 
   // create_backup_unit - computed: false, optional: true, required: false
@@ -606,6 +834,22 @@ export class Group extends cdktf.TerraformResource {
     return this._createK8SCluster;
   }
 
+  // create_network_security_groups - computed: false, optional: true, required: false
+  private _createNetworkSecurityGroups?: boolean | cdktf.IResolvable; 
+  public get createNetworkSecurityGroups() {
+    return this.getBooleanAttribute('create_network_security_groups');
+  }
+  public set createNetworkSecurityGroups(value: boolean | cdktf.IResolvable) {
+    this._createNetworkSecurityGroups = value;
+  }
+  public resetCreateNetworkSecurityGroups() {
+    this._createNetworkSecurityGroups = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get createNetworkSecurityGroupsInput() {
+    return this._createNetworkSecurityGroups;
+  }
+
   // create_pcc - computed: false, optional: true, required: false
   private _createPcc?: boolean | cdktf.IResolvable; 
   public get createPcc() {
@@ -654,6 +898,22 @@ export class Group extends cdktf.TerraformResource {
     return this._id;
   }
 
+  // manage_dataplatform - computed: false, optional: true, required: false
+  private _manageDataplatform?: boolean | cdktf.IResolvable; 
+  public get manageDataplatform() {
+    return this.getBooleanAttribute('manage_dataplatform');
+  }
+  public set manageDataplatform(value: boolean | cdktf.IResolvable) {
+    this._manageDataplatform = value;
+  }
+  public resetManageDataplatform() {
+    this._manageDataplatform = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get manageDataplatformInput() {
+    return this._manageDataplatform;
+  }
+
   // manage_dbaas - computed: false, optional: true, required: false
   private _manageDbaas?: boolean | cdktf.IResolvable; 
   public get manageDbaas() {
@@ -668,6 +928,22 @@ export class Group extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get manageDbaasInput() {
     return this._manageDbaas;
+  }
+
+  // manage_registry - computed: false, optional: true, required: false
+  private _manageRegistry?: boolean | cdktf.IResolvable; 
+  public get manageRegistry() {
+    return this.getBooleanAttribute('manage_registry');
+  }
+  public set manageRegistry(value: boolean | cdktf.IResolvable) {
+    this._manageRegistry = value;
+  }
+  public resetManageRegistry() {
+    this._manageRegistry = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get manageRegistryInput() {
+    return this._manageRegistry;
   }
 
   // name - computed: false, optional: false, required: true
@@ -776,17 +1052,29 @@ export class Group extends cdktf.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       access_activity_log: cdktf.booleanToTerraform(this._accessActivityLog),
+      access_and_manage_ai_model_hub: cdktf.booleanToTerraform(this._accessAndManageAiModelHub),
+      access_and_manage_api_gateway: cdktf.booleanToTerraform(this._accessAndManageApiGateway),
+      access_and_manage_cdn: cdktf.booleanToTerraform(this._accessAndManageCdn),
       access_and_manage_certificates: cdktf.booleanToTerraform(this._accessAndManageCertificates),
+      access_and_manage_dns: cdktf.booleanToTerraform(this._accessAndManageDns),
+      access_and_manage_iam_resources: cdktf.booleanToTerraform(this._accessAndManageIamResources),
+      access_and_manage_kaas: cdktf.booleanToTerraform(this._accessAndManageKaas),
+      access_and_manage_logging: cdktf.booleanToTerraform(this._accessAndManageLogging),
       access_and_manage_monitoring: cdktf.booleanToTerraform(this._accessAndManageMonitoring),
+      access_and_manage_network_file_storage: cdktf.booleanToTerraform(this._accessAndManageNetworkFileStorage),
+      access_and_manage_vpn: cdktf.booleanToTerraform(this._accessAndManageVpn),
       create_backup_unit: cdktf.booleanToTerraform(this._createBackupUnit),
       create_datacenter: cdktf.booleanToTerraform(this._createDatacenter),
       create_flow_log: cdktf.booleanToTerraform(this._createFlowLog),
       create_internet_access: cdktf.booleanToTerraform(this._createInternetAccess),
       create_k8s_cluster: cdktf.booleanToTerraform(this._createK8SCluster),
+      create_network_security_groups: cdktf.booleanToTerraform(this._createNetworkSecurityGroups),
       create_pcc: cdktf.booleanToTerraform(this._createPcc),
       create_snapshot: cdktf.booleanToTerraform(this._createSnapshot),
       id: cdktf.stringToTerraform(this._id),
+      manage_dataplatform: cdktf.booleanToTerraform(this._manageDataplatform),
       manage_dbaas: cdktf.booleanToTerraform(this._manageDbaas),
+      manage_registry: cdktf.booleanToTerraform(this._manageRegistry),
       name: cdktf.stringToTerraform(this._name),
       reserve_ip: cdktf.booleanToTerraform(this._reserveIp),
       s3_privilege: cdktf.booleanToTerraform(this._s3Privilege),
@@ -804,14 +1092,68 @@ export class Group extends cdktf.TerraformResource {
         type: "simple",
         storageClassType: "boolean",
       },
+      access_and_manage_ai_model_hub: {
+        value: cdktf.booleanToHclTerraform(this._accessAndManageAiModelHub),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      access_and_manage_api_gateway: {
+        value: cdktf.booleanToHclTerraform(this._accessAndManageApiGateway),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      access_and_manage_cdn: {
+        value: cdktf.booleanToHclTerraform(this._accessAndManageCdn),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
       access_and_manage_certificates: {
         value: cdktf.booleanToHclTerraform(this._accessAndManageCertificates),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
+      access_and_manage_dns: {
+        value: cdktf.booleanToHclTerraform(this._accessAndManageDns),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      access_and_manage_iam_resources: {
+        value: cdktf.booleanToHclTerraform(this._accessAndManageIamResources),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      access_and_manage_kaas: {
+        value: cdktf.booleanToHclTerraform(this._accessAndManageKaas),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      access_and_manage_logging: {
+        value: cdktf.booleanToHclTerraform(this._accessAndManageLogging),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
       access_and_manage_monitoring: {
         value: cdktf.booleanToHclTerraform(this._accessAndManageMonitoring),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      access_and_manage_network_file_storage: {
+        value: cdktf.booleanToHclTerraform(this._accessAndManageNetworkFileStorage),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      access_and_manage_vpn: {
+        value: cdktf.booleanToHclTerraform(this._accessAndManageVpn),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
@@ -846,6 +1188,12 @@ export class Group extends cdktf.TerraformResource {
         type: "simple",
         storageClassType: "boolean",
       },
+      create_network_security_groups: {
+        value: cdktf.booleanToHclTerraform(this._createNetworkSecurityGroups),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
       create_pcc: {
         value: cdktf.booleanToHclTerraform(this._createPcc),
         isBlock: false,
@@ -864,8 +1212,20 @@ export class Group extends cdktf.TerraformResource {
         type: "simple",
         storageClassType: "string",
       },
+      manage_dataplatform: {
+        value: cdktf.booleanToHclTerraform(this._manageDataplatform),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
       manage_dbaas: {
         value: cdktf.booleanToHclTerraform(this._manageDbaas),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      manage_registry: {
+        value: cdktf.booleanToHclTerraform(this._manageRegistry),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",

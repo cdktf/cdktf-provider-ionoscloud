@@ -4,7 +4,7 @@
 
 ### Group <a name="Group" id="@cdktf/provider-ionoscloud.group.Group"></a>
 
-Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.1/docs/resources/group ionoscloud_group}.
+Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.2/docs/resources/group ionoscloud_group}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.group.Group.Initializer"></a>
 
@@ -26,10 +26,28 @@ Group.Builder.create(Construct scope, java.lang.String id)
     .name(java.lang.String)
 //  .accessActivityLog(java.lang.Boolean)
 //  .accessActivityLog(IResolvable)
+//  .accessAndManageAiModelHub(java.lang.Boolean)
+//  .accessAndManageAiModelHub(IResolvable)
+//  .accessAndManageApiGateway(java.lang.Boolean)
+//  .accessAndManageApiGateway(IResolvable)
+//  .accessAndManageCdn(java.lang.Boolean)
+//  .accessAndManageCdn(IResolvable)
 //  .accessAndManageCertificates(java.lang.Boolean)
 //  .accessAndManageCertificates(IResolvable)
+//  .accessAndManageDns(java.lang.Boolean)
+//  .accessAndManageDns(IResolvable)
+//  .accessAndManageIamResources(java.lang.Boolean)
+//  .accessAndManageIamResources(IResolvable)
+//  .accessAndManageKaas(java.lang.Boolean)
+//  .accessAndManageKaas(IResolvable)
+//  .accessAndManageLogging(java.lang.Boolean)
+//  .accessAndManageLogging(IResolvable)
 //  .accessAndManageMonitoring(java.lang.Boolean)
 //  .accessAndManageMonitoring(IResolvable)
+//  .accessAndManageNetworkFileStorage(java.lang.Boolean)
+//  .accessAndManageNetworkFileStorage(IResolvable)
+//  .accessAndManageVpn(java.lang.Boolean)
+//  .accessAndManageVpn(IResolvable)
 //  .createBackupUnit(java.lang.Boolean)
 //  .createBackupUnit(IResolvable)
 //  .createDatacenter(java.lang.Boolean)
@@ -40,13 +58,19 @@ Group.Builder.create(Construct scope, java.lang.String id)
 //  .createInternetAccess(IResolvable)
 //  .createK8SCluster(java.lang.Boolean)
 //  .createK8SCluster(IResolvable)
+//  .createNetworkSecurityGroups(java.lang.Boolean)
+//  .createNetworkSecurityGroups(IResolvable)
 //  .createPcc(java.lang.Boolean)
 //  .createPcc(IResolvable)
 //  .createSnapshot(java.lang.Boolean)
 //  .createSnapshot(IResolvable)
 //  .id(java.lang.String)
+//  .manageDataplatform(java.lang.Boolean)
+//  .manageDataplatform(IResolvable)
 //  .manageDbaas(java.lang.Boolean)
 //  .manageDbaas(IResolvable)
+//  .manageRegistry(java.lang.Boolean)
+//  .manageRegistry(IResolvable)
 //  .reserveIp(java.lang.Boolean)
 //  .reserveIp(IResolvable)
 //  .s3Privilege(java.lang.Boolean)
@@ -68,24 +92,36 @@ Group.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-ionoscloud.group.Group.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.group.Group.Initializer.parameter.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.group.Group.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-ionoscloud.group.Group.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.1/docs/resources/group#name Group#name}. |
-| <code><a href="#@cdktf/provider-ionoscloud.group.Group.Initializer.parameter.accessActivityLog">accessActivityLog</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.1/docs/resources/group#access_activity_log Group#access_activity_log}. |
+| <code><a href="#@cdktf/provider-ionoscloud.group.Group.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.2/docs/resources/group#name Group#name}. |
+| <code><a href="#@cdktf/provider-ionoscloud.group.Group.Initializer.parameter.accessActivityLog">accessActivityLog</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.2/docs/resources/group#access_activity_log Group#access_activity_log}. |
+| <code><a href="#@cdktf/provider-ionoscloud.group.Group.Initializer.parameter.accessAndManageAiModelHub">accessAndManageAiModelHub</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Privilege for a group to access and manage AiModelHub. |
+| <code><a href="#@cdktf/provider-ionoscloud.group.Group.Initializer.parameter.accessAndManageApiGateway">accessAndManageApiGateway</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Privilege for a group to access and manage ApiGateway. |
+| <code><a href="#@cdktf/provider-ionoscloud.group.Group.Initializer.parameter.accessAndManageCdn">accessAndManageCdn</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Privilege for a group to access and manage Cdn. |
 | <code><a href="#@cdktf/provider-ionoscloud.group.Group.Initializer.parameter.accessAndManageCertificates">accessAndManageCertificates</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Privilege for a group to access and manage certificates. |
+| <code><a href="#@cdktf/provider-ionoscloud.group.Group.Initializer.parameter.accessAndManageDns">accessAndManageDns</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Privilege for a group to access and manage dns records. |
+| <code><a href="#@cdktf/provider-ionoscloud.group.Group.Initializer.parameter.accessAndManageIamResources">accessAndManageIamResources</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Privilege for a group to access and manage IamResources. |
+| <code><a href="#@cdktf/provider-ionoscloud.group.Group.Initializer.parameter.accessAndManageKaas">accessAndManageKaas</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Privilege for a group to access and manage Kaas. |
+| <code><a href="#@cdktf/provider-ionoscloud.group.Group.Initializer.parameter.accessAndManageLogging">accessAndManageLogging</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Privilege for a group to access and manage logging. |
 | <code><a href="#@cdktf/provider-ionoscloud.group.Group.Initializer.parameter.accessAndManageMonitoring">accessAndManageMonitoring</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Privilege for a group to access and manage monitoring related functionality (access metrics, CRUD on alarms, alarm-actions etc) using Monotoring-as-a-Service (MaaS). |
+| <code><a href="#@cdktf/provider-ionoscloud.group.Group.Initializer.parameter.accessAndManageNetworkFileStorage">accessAndManageNetworkFileStorage</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Privilege for a group to access and manage NetworkFileStorage. |
+| <code><a href="#@cdktf/provider-ionoscloud.group.Group.Initializer.parameter.accessAndManageVpn">accessAndManageVpn</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Privilege for a group to access and manage Vpn. |
 | <code><a href="#@cdktf/provider-ionoscloud.group.Group.Initializer.parameter.createBackupUnit">createBackupUnit</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Create backup unit privilege. |
-| <code><a href="#@cdktf/provider-ionoscloud.group.Group.Initializer.parameter.createDatacenter">createDatacenter</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.1/docs/resources/group#create_datacenter Group#create_datacenter}. |
+| <code><a href="#@cdktf/provider-ionoscloud.group.Group.Initializer.parameter.createDatacenter">createDatacenter</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.2/docs/resources/group#create_datacenter Group#create_datacenter}. |
 | <code><a href="#@cdktf/provider-ionoscloud.group.Group.Initializer.parameter.createFlowLog">createFlowLog</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Create Flow Logs privilege. |
 | <code><a href="#@cdktf/provider-ionoscloud.group.Group.Initializer.parameter.createInternetAccess">createInternetAccess</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Create internet access privilege. |
 | <code><a href="#@cdktf/provider-ionoscloud.group.Group.Initializer.parameter.createK8SCluster">createK8SCluster</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Create Kubernetes cluster privilege. |
-| <code><a href="#@cdktf/provider-ionoscloud.group.Group.Initializer.parameter.createPcc">createPcc</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.1/docs/resources/group#create_pcc Group#create_pcc}. |
-| <code><a href="#@cdktf/provider-ionoscloud.group.Group.Initializer.parameter.createSnapshot">createSnapshot</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.1/docs/resources/group#create_snapshot Group#create_snapshot}. |
-| <code><a href="#@cdktf/provider-ionoscloud.group.Group.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.1/docs/resources/group#id Group#id}. |
+| <code><a href="#@cdktf/provider-ionoscloud.group.Group.Initializer.parameter.createNetworkSecurityGroups">createNetworkSecurityGroups</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Create Network Security groups. |
+| <code><a href="#@cdktf/provider-ionoscloud.group.Group.Initializer.parameter.createPcc">createPcc</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.2/docs/resources/group#create_pcc Group#create_pcc}. |
+| <code><a href="#@cdktf/provider-ionoscloud.group.Group.Initializer.parameter.createSnapshot">createSnapshot</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.2/docs/resources/group#create_snapshot Group#create_snapshot}. |
+| <code><a href="#@cdktf/provider-ionoscloud.group.Group.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.2/docs/resources/group#id Group#id}. |
+| <code><a href="#@cdktf/provider-ionoscloud.group.Group.Initializer.parameter.manageDataplatform">manageDataplatform</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Privilege for a group to access and manage the Data Platform. |
 | <code><a href="#@cdktf/provider-ionoscloud.group.Group.Initializer.parameter.manageDbaas">manageDbaas</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Privilege for a group to manage DBaaS related functionality. |
-| <code><a href="#@cdktf/provider-ionoscloud.group.Group.Initializer.parameter.reserveIp">reserveIp</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.1/docs/resources/group#reserve_ip Group#reserve_ip}. |
-| <code><a href="#@cdktf/provider-ionoscloud.group.Group.Initializer.parameter.s3Privilege">s3Privilege</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.1/docs/resources/group#s3_privilege Group#s3_privilege}. |
+| <code><a href="#@cdktf/provider-ionoscloud.group.Group.Initializer.parameter.manageRegistry">manageRegistry</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Privilege for group accessing container registry related functionality. |
+| <code><a href="#@cdktf/provider-ionoscloud.group.Group.Initializer.parameter.reserveIp">reserveIp</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.2/docs/resources/group#reserve_ip Group#reserve_ip}. |
+| <code><a href="#@cdktf/provider-ionoscloud.group.Group.Initializer.parameter.s3Privilege">s3Privilege</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.2/docs/resources/group#s3_privilege Group#s3_privilege}. |
 | <code><a href="#@cdktf/provider-ionoscloud.group.Group.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-ionoscloud.group.GroupTimeouts">GroupTimeouts</a></code> | timeouts block. |
-| <code><a href="#@cdktf/provider-ionoscloud.group.Group.Initializer.parameter.userId">userId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.1/docs/resources/group#user_id Group#user_id}. |
-| <code><a href="#@cdktf/provider-ionoscloud.group.Group.Initializer.parameter.userIds">userIds</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.1/docs/resources/group#user_ids Group#user_ids}. |
+| <code><a href="#@cdktf/provider-ionoscloud.group.Group.Initializer.parameter.userId">userId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.2/docs/resources/group#user_id Group#user_id}. |
+| <code><a href="#@cdktf/provider-ionoscloud.group.Group.Initializer.parameter.userIds">userIds</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.2/docs/resources/group#user_ids Group#user_ids}. |
 
 ---
 
@@ -153,7 +189,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.1/docs/resources/group#name Group#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.2/docs/resources/group#name Group#name}.
 
 ---
 
@@ -161,7 +197,37 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.1/docs/resources/group#access_activity_log Group#access_activity_log}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.2/docs/resources/group#access_activity_log Group#access_activity_log}.
+
+---
+
+##### `accessAndManageAiModelHub`<sup>Optional</sup> <a name="accessAndManageAiModelHub" id="@cdktf/provider-ionoscloud.group.Group.Initializer.parameter.accessAndManageAiModelHub"></a>
+
+- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+
+Privilege for a group to access and manage AiModelHub.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.2/docs/resources/group#access_and_manage_ai_model_hub Group#access_and_manage_ai_model_hub}
+
+---
+
+##### `accessAndManageApiGateway`<sup>Optional</sup> <a name="accessAndManageApiGateway" id="@cdktf/provider-ionoscloud.group.Group.Initializer.parameter.accessAndManageApiGateway"></a>
+
+- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+
+Privilege for a group to access and manage ApiGateway.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.2/docs/resources/group#access_and_manage_api_gateway Group#access_and_manage_api_gateway}
+
+---
+
+##### `accessAndManageCdn`<sup>Optional</sup> <a name="accessAndManageCdn" id="@cdktf/provider-ionoscloud.group.Group.Initializer.parameter.accessAndManageCdn"></a>
+
+- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+
+Privilege for a group to access and manage Cdn.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.2/docs/resources/group#access_and_manage_cdn Group#access_and_manage_cdn}
 
 ---
 
@@ -171,7 +237,47 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 
 Privilege for a group to access and manage certificates.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.1/docs/resources/group#access_and_manage_certificates Group#access_and_manage_certificates}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.2/docs/resources/group#access_and_manage_certificates Group#access_and_manage_certificates}
+
+---
+
+##### `accessAndManageDns`<sup>Optional</sup> <a name="accessAndManageDns" id="@cdktf/provider-ionoscloud.group.Group.Initializer.parameter.accessAndManageDns"></a>
+
+- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+
+Privilege for a group to access and manage dns records.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.2/docs/resources/group#access_and_manage_dns Group#access_and_manage_dns}
+
+---
+
+##### `accessAndManageIamResources`<sup>Optional</sup> <a name="accessAndManageIamResources" id="@cdktf/provider-ionoscloud.group.Group.Initializer.parameter.accessAndManageIamResources"></a>
+
+- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+
+Privilege for a group to access and manage IamResources.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.2/docs/resources/group#access_and_manage_iam_resources Group#access_and_manage_iam_resources}
+
+---
+
+##### `accessAndManageKaas`<sup>Optional</sup> <a name="accessAndManageKaas" id="@cdktf/provider-ionoscloud.group.Group.Initializer.parameter.accessAndManageKaas"></a>
+
+- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+
+Privilege for a group to access and manage Kaas.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.2/docs/resources/group#access_and_manage_kaas Group#access_and_manage_kaas}
+
+---
+
+##### `accessAndManageLogging`<sup>Optional</sup> <a name="accessAndManageLogging" id="@cdktf/provider-ionoscloud.group.Group.Initializer.parameter.accessAndManageLogging"></a>
+
+- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+
+Privilege for a group to access and manage logging.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.2/docs/resources/group#access_and_manage_logging Group#access_and_manage_logging}
 
 ---
 
@@ -181,7 +287,27 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 
 Privilege for a group to access and manage monitoring related functionality (access metrics, CRUD on alarms, alarm-actions etc) using Monotoring-as-a-Service (MaaS).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.1/docs/resources/group#access_and_manage_monitoring Group#access_and_manage_monitoring}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.2/docs/resources/group#access_and_manage_monitoring Group#access_and_manage_monitoring}
+
+---
+
+##### `accessAndManageNetworkFileStorage`<sup>Optional</sup> <a name="accessAndManageNetworkFileStorage" id="@cdktf/provider-ionoscloud.group.Group.Initializer.parameter.accessAndManageNetworkFileStorage"></a>
+
+- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+
+Privilege for a group to access and manage NetworkFileStorage.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.2/docs/resources/group#access_and_manage_network_file_storage Group#access_and_manage_network_file_storage}
+
+---
+
+##### `accessAndManageVpn`<sup>Optional</sup> <a name="accessAndManageVpn" id="@cdktf/provider-ionoscloud.group.Group.Initializer.parameter.accessAndManageVpn"></a>
+
+- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+
+Privilege for a group to access and manage Vpn.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.2/docs/resources/group#access_and_manage_vpn Group#access_and_manage_vpn}
 
 ---
 
@@ -191,7 +317,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 
 Create backup unit privilege.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.1/docs/resources/group#create_backup_unit Group#create_backup_unit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.2/docs/resources/group#create_backup_unit Group#create_backup_unit}
 
 ---
 
@@ -199,7 +325,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.1/docs/resources/group#create_datacenter Group#create_datacenter}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.2/docs/resources/group#create_datacenter Group#create_datacenter}.
 
 ---
 
@@ -209,7 +335,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 
 Create Flow Logs privilege.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.1/docs/resources/group#create_flow_log Group#create_flow_log}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.2/docs/resources/group#create_flow_log Group#create_flow_log}
 
 ---
 
@@ -219,7 +345,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 
 Create internet access privilege.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.1/docs/resources/group#create_internet_access Group#create_internet_access}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.2/docs/resources/group#create_internet_access Group#create_internet_access}
 
 ---
 
@@ -229,7 +355,17 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 
 Create Kubernetes cluster privilege.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.1/docs/resources/group#create_k8s_cluster Group#create_k8s_cluster}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.2/docs/resources/group#create_k8s_cluster Group#create_k8s_cluster}
+
+---
+
+##### `createNetworkSecurityGroups`<sup>Optional</sup> <a name="createNetworkSecurityGroups" id="@cdktf/provider-ionoscloud.group.Group.Initializer.parameter.createNetworkSecurityGroups"></a>
+
+- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+
+Create Network Security groups.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.2/docs/resources/group#create_network_security_groups Group#create_network_security_groups}
 
 ---
 
@@ -237,7 +373,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.1/docs/resources/group#create_pcc Group#create_pcc}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.2/docs/resources/group#create_pcc Group#create_pcc}.
 
 ---
 
@@ -245,7 +381,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.1/docs/resources/group#create_snapshot Group#create_snapshot}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.2/docs/resources/group#create_snapshot Group#create_snapshot}.
 
 ---
 
@@ -253,10 +389,20 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.1/docs/resources/group#id Group#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.2/docs/resources/group#id Group#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `manageDataplatform`<sup>Optional</sup> <a name="manageDataplatform" id="@cdktf/provider-ionoscloud.group.Group.Initializer.parameter.manageDataplatform"></a>
+
+- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+
+Privilege for a group to access and manage the Data Platform.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.2/docs/resources/group#manage_dataplatform Group#manage_dataplatform}
 
 ---
 
@@ -266,7 +412,17 @@ If you experience problems setting this value it might not be settable. Please t
 
 Privilege for a group to manage DBaaS related functionality.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.1/docs/resources/group#manage_dbaas Group#manage_dbaas}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.2/docs/resources/group#manage_dbaas Group#manage_dbaas}
+
+---
+
+##### `manageRegistry`<sup>Optional</sup> <a name="manageRegistry" id="@cdktf/provider-ionoscloud.group.Group.Initializer.parameter.manageRegistry"></a>
+
+- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+
+Privilege for group accessing container registry related functionality.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.2/docs/resources/group#manage_registry Group#manage_registry}
 
 ---
 
@@ -274,7 +430,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.1/docs/resources/group#reserve_ip Group#reserve_ip}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.2/docs/resources/group#reserve_ip Group#reserve_ip}.
 
 ---
 
@@ -282,7 +438,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.1/docs/resources/group#s3_privilege Group#s3_privilege}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.2/docs/resources/group#s3_privilege Group#s3_privilege}.
 
 ---
 
@@ -292,7 +448,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.1/docs/resources/group#timeouts Group#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.2/docs/resources/group#timeouts Group#timeouts}
 
 ---
 
@@ -300,7 +456,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.1/docs/resources/group#user_id Group#user_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.2/docs/resources/group#user_id Group#user_id}.
 
 ---
 
@@ -308,7 +464,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.1/docs/resources/group#user_ids Group#user_ids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.2/docs/resources/group#user_ids Group#user_ids}.
 
 ---
 
@@ -341,17 +497,29 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 | <code><a href="#@cdktf/provider-ionoscloud.group.Group.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktf/provider-ionoscloud.group.Group.putTimeouts">putTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.group.Group.resetAccessActivityLog">resetAccessActivityLog</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.group.Group.resetAccessAndManageAiModelHub">resetAccessAndManageAiModelHub</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.group.Group.resetAccessAndManageApiGateway">resetAccessAndManageApiGateway</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.group.Group.resetAccessAndManageCdn">resetAccessAndManageCdn</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.group.Group.resetAccessAndManageCertificates">resetAccessAndManageCertificates</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.group.Group.resetAccessAndManageDns">resetAccessAndManageDns</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.group.Group.resetAccessAndManageIamResources">resetAccessAndManageIamResources</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.group.Group.resetAccessAndManageKaas">resetAccessAndManageKaas</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.group.Group.resetAccessAndManageLogging">resetAccessAndManageLogging</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.group.Group.resetAccessAndManageMonitoring">resetAccessAndManageMonitoring</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.group.Group.resetAccessAndManageNetworkFileStorage">resetAccessAndManageNetworkFileStorage</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.group.Group.resetAccessAndManageVpn">resetAccessAndManageVpn</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.group.Group.resetCreateBackupUnit">resetCreateBackupUnit</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.group.Group.resetCreateDatacenter">resetCreateDatacenter</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.group.Group.resetCreateFlowLog">resetCreateFlowLog</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.group.Group.resetCreateInternetAccess">resetCreateInternetAccess</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.group.Group.resetCreateK8SCluster">resetCreateK8SCluster</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.group.Group.resetCreateNetworkSecurityGroups">resetCreateNetworkSecurityGroups</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.group.Group.resetCreatePcc">resetCreatePcc</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.group.Group.resetCreateSnapshot">resetCreateSnapshot</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.group.Group.resetId">resetId</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.group.Group.resetManageDataplatform">resetManageDataplatform</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.group.Group.resetManageDbaas">resetManageDbaas</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.group.Group.resetManageRegistry">resetManageRegistry</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.group.Group.resetReserveIp">resetReserveIp</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.group.Group.resetS3Privilege">resetS3Privilege</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.group.Group.resetTimeouts">resetTimeouts</a></code> | *No description.* |
@@ -668,16 +836,70 @@ public void putTimeouts(GroupTimeouts value)
 public void resetAccessActivityLog()
 ```
 
+##### `resetAccessAndManageAiModelHub` <a name="resetAccessAndManageAiModelHub" id="@cdktf/provider-ionoscloud.group.Group.resetAccessAndManageAiModelHub"></a>
+
+```java
+public void resetAccessAndManageAiModelHub()
+```
+
+##### `resetAccessAndManageApiGateway` <a name="resetAccessAndManageApiGateway" id="@cdktf/provider-ionoscloud.group.Group.resetAccessAndManageApiGateway"></a>
+
+```java
+public void resetAccessAndManageApiGateway()
+```
+
+##### `resetAccessAndManageCdn` <a name="resetAccessAndManageCdn" id="@cdktf/provider-ionoscloud.group.Group.resetAccessAndManageCdn"></a>
+
+```java
+public void resetAccessAndManageCdn()
+```
+
 ##### `resetAccessAndManageCertificates` <a name="resetAccessAndManageCertificates" id="@cdktf/provider-ionoscloud.group.Group.resetAccessAndManageCertificates"></a>
 
 ```java
 public void resetAccessAndManageCertificates()
 ```
 
+##### `resetAccessAndManageDns` <a name="resetAccessAndManageDns" id="@cdktf/provider-ionoscloud.group.Group.resetAccessAndManageDns"></a>
+
+```java
+public void resetAccessAndManageDns()
+```
+
+##### `resetAccessAndManageIamResources` <a name="resetAccessAndManageIamResources" id="@cdktf/provider-ionoscloud.group.Group.resetAccessAndManageIamResources"></a>
+
+```java
+public void resetAccessAndManageIamResources()
+```
+
+##### `resetAccessAndManageKaas` <a name="resetAccessAndManageKaas" id="@cdktf/provider-ionoscloud.group.Group.resetAccessAndManageKaas"></a>
+
+```java
+public void resetAccessAndManageKaas()
+```
+
+##### `resetAccessAndManageLogging` <a name="resetAccessAndManageLogging" id="@cdktf/provider-ionoscloud.group.Group.resetAccessAndManageLogging"></a>
+
+```java
+public void resetAccessAndManageLogging()
+```
+
 ##### `resetAccessAndManageMonitoring` <a name="resetAccessAndManageMonitoring" id="@cdktf/provider-ionoscloud.group.Group.resetAccessAndManageMonitoring"></a>
 
 ```java
 public void resetAccessAndManageMonitoring()
+```
+
+##### `resetAccessAndManageNetworkFileStorage` <a name="resetAccessAndManageNetworkFileStorage" id="@cdktf/provider-ionoscloud.group.Group.resetAccessAndManageNetworkFileStorage"></a>
+
+```java
+public void resetAccessAndManageNetworkFileStorage()
+```
+
+##### `resetAccessAndManageVpn` <a name="resetAccessAndManageVpn" id="@cdktf/provider-ionoscloud.group.Group.resetAccessAndManageVpn"></a>
+
+```java
+public void resetAccessAndManageVpn()
 ```
 
 ##### `resetCreateBackupUnit` <a name="resetCreateBackupUnit" id="@cdktf/provider-ionoscloud.group.Group.resetCreateBackupUnit"></a>
@@ -710,6 +932,12 @@ public void resetCreateInternetAccess()
 public void resetCreateK8SCluster()
 ```
 
+##### `resetCreateNetworkSecurityGroups` <a name="resetCreateNetworkSecurityGroups" id="@cdktf/provider-ionoscloud.group.Group.resetCreateNetworkSecurityGroups"></a>
+
+```java
+public void resetCreateNetworkSecurityGroups()
+```
+
 ##### `resetCreatePcc` <a name="resetCreatePcc" id="@cdktf/provider-ionoscloud.group.Group.resetCreatePcc"></a>
 
 ```java
@@ -728,10 +956,22 @@ public void resetCreateSnapshot()
 public void resetId()
 ```
 
+##### `resetManageDataplatform` <a name="resetManageDataplatform" id="@cdktf/provider-ionoscloud.group.Group.resetManageDataplatform"></a>
+
+```java
+public void resetManageDataplatform()
+```
+
 ##### `resetManageDbaas` <a name="resetManageDbaas" id="@cdktf/provider-ionoscloud.group.Group.resetManageDbaas"></a>
 
 ```java
 public void resetManageDbaas()
+```
+
+##### `resetManageRegistry` <a name="resetManageRegistry" id="@cdktf/provider-ionoscloud.group.Group.resetManageRegistry"></a>
+
+```java
+public void resetManageRegistry()
 ```
 
 ##### `resetReserveIp` <a name="resetReserveIp" id="@cdktf/provider-ionoscloud.group.Group.resetReserveIp"></a>
@@ -867,7 +1107,7 @@ The construct id used in the generated config for the Group to import.
 
 The id of the existing Group that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.1/docs/resources/group#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.2/docs/resources/group#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -900,17 +1140,29 @@ Refer to the {@link https://registry.terraform.io/providers/ionos-cloud/ionosclo
 | <code><a href="#@cdktf/provider-ionoscloud.group.Group.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-ionoscloud.group.GroupTimeoutsOutputReference">GroupTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.group.Group.property.users">users</a></code> | <code><a href="#@cdktf/provider-ionoscloud.group.GroupUsersList">GroupUsersList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.group.Group.property.accessActivityLogInput">accessActivityLogInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.group.Group.property.accessAndManageAiModelHubInput">accessAndManageAiModelHubInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.group.Group.property.accessAndManageApiGatewayInput">accessAndManageApiGatewayInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.group.Group.property.accessAndManageCdnInput">accessAndManageCdnInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.group.Group.property.accessAndManageCertificatesInput">accessAndManageCertificatesInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.group.Group.property.accessAndManageDnsInput">accessAndManageDnsInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.group.Group.property.accessAndManageIamResourcesInput">accessAndManageIamResourcesInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.group.Group.property.accessAndManageKaasInput">accessAndManageKaasInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.group.Group.property.accessAndManageLoggingInput">accessAndManageLoggingInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.group.Group.property.accessAndManageMonitoringInput">accessAndManageMonitoringInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.group.Group.property.accessAndManageNetworkFileStorageInput">accessAndManageNetworkFileStorageInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.group.Group.property.accessAndManageVpnInput">accessAndManageVpnInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.group.Group.property.createBackupUnitInput">createBackupUnitInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.group.Group.property.createDatacenterInput">createDatacenterInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.group.Group.property.createFlowLogInput">createFlowLogInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.group.Group.property.createInternetAccessInput">createInternetAccessInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.group.Group.property.createK8SClusterInput">createK8SClusterInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.group.Group.property.createNetworkSecurityGroupsInput">createNetworkSecurityGroupsInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.group.Group.property.createPccInput">createPccInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.group.Group.property.createSnapshotInput">createSnapshotInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.group.Group.property.idInput">idInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.group.Group.property.manageDataplatformInput">manageDataplatformInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.group.Group.property.manageDbaasInput">manageDbaasInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.group.Group.property.manageRegistryInput">manageRegistryInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.group.Group.property.nameInput">nameInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.group.Group.property.reserveIpInput">reserveIpInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.group.Group.property.s3PrivilegeInput">s3PrivilegeInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
@@ -918,17 +1170,29 @@ Refer to the {@link https://registry.terraform.io/providers/ionos-cloud/ionosclo
 | <code><a href="#@cdktf/provider-ionoscloud.group.Group.property.userIdInput">userIdInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.group.Group.property.userIdsInput">userIdsInput</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.group.Group.property.accessActivityLog">accessActivityLog</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.group.Group.property.accessAndManageAiModelHub">accessAndManageAiModelHub</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.group.Group.property.accessAndManageApiGateway">accessAndManageApiGateway</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.group.Group.property.accessAndManageCdn">accessAndManageCdn</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.group.Group.property.accessAndManageCertificates">accessAndManageCertificates</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.group.Group.property.accessAndManageDns">accessAndManageDns</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.group.Group.property.accessAndManageIamResources">accessAndManageIamResources</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.group.Group.property.accessAndManageKaas">accessAndManageKaas</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.group.Group.property.accessAndManageLogging">accessAndManageLogging</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.group.Group.property.accessAndManageMonitoring">accessAndManageMonitoring</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.group.Group.property.accessAndManageNetworkFileStorage">accessAndManageNetworkFileStorage</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.group.Group.property.accessAndManageVpn">accessAndManageVpn</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.group.Group.property.createBackupUnit">createBackupUnit</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.group.Group.property.createDatacenter">createDatacenter</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.group.Group.property.createFlowLog">createFlowLog</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.group.Group.property.createInternetAccess">createInternetAccess</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.group.Group.property.createK8SCluster">createK8SCluster</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.group.Group.property.createNetworkSecurityGroups">createNetworkSecurityGroups</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.group.Group.property.createPcc">createPcc</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.group.Group.property.createSnapshot">createSnapshot</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.group.Group.property.id">id</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.group.Group.property.manageDataplatform">manageDataplatform</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.group.Group.property.manageDbaas">manageDbaas</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.group.Group.property.manageRegistry">manageRegistry</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.group.Group.property.name">name</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.group.Group.property.reserveIp">reserveIp</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.group.Group.property.s3Privilege">s3Privilege</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
@@ -1109,6 +1373,36 @@ public java.lang.Object getAccessActivityLogInput();
 
 ---
 
+##### `accessAndManageAiModelHubInput`<sup>Optional</sup> <a name="accessAndManageAiModelHubInput" id="@cdktf/provider-ionoscloud.group.Group.property.accessAndManageAiModelHubInput"></a>
+
+```java
+public java.lang.Object getAccessAndManageAiModelHubInput();
+```
+
+- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+
+---
+
+##### `accessAndManageApiGatewayInput`<sup>Optional</sup> <a name="accessAndManageApiGatewayInput" id="@cdktf/provider-ionoscloud.group.Group.property.accessAndManageApiGatewayInput"></a>
+
+```java
+public java.lang.Object getAccessAndManageApiGatewayInput();
+```
+
+- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+
+---
+
+##### `accessAndManageCdnInput`<sup>Optional</sup> <a name="accessAndManageCdnInput" id="@cdktf/provider-ionoscloud.group.Group.property.accessAndManageCdnInput"></a>
+
+```java
+public java.lang.Object getAccessAndManageCdnInput();
+```
+
+- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+
+---
+
 ##### `accessAndManageCertificatesInput`<sup>Optional</sup> <a name="accessAndManageCertificatesInput" id="@cdktf/provider-ionoscloud.group.Group.property.accessAndManageCertificatesInput"></a>
 
 ```java
@@ -1119,10 +1413,70 @@ public java.lang.Object getAccessAndManageCertificatesInput();
 
 ---
 
+##### `accessAndManageDnsInput`<sup>Optional</sup> <a name="accessAndManageDnsInput" id="@cdktf/provider-ionoscloud.group.Group.property.accessAndManageDnsInput"></a>
+
+```java
+public java.lang.Object getAccessAndManageDnsInput();
+```
+
+- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+
+---
+
+##### `accessAndManageIamResourcesInput`<sup>Optional</sup> <a name="accessAndManageIamResourcesInput" id="@cdktf/provider-ionoscloud.group.Group.property.accessAndManageIamResourcesInput"></a>
+
+```java
+public java.lang.Object getAccessAndManageIamResourcesInput();
+```
+
+- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+
+---
+
+##### `accessAndManageKaasInput`<sup>Optional</sup> <a name="accessAndManageKaasInput" id="@cdktf/provider-ionoscloud.group.Group.property.accessAndManageKaasInput"></a>
+
+```java
+public java.lang.Object getAccessAndManageKaasInput();
+```
+
+- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+
+---
+
+##### `accessAndManageLoggingInput`<sup>Optional</sup> <a name="accessAndManageLoggingInput" id="@cdktf/provider-ionoscloud.group.Group.property.accessAndManageLoggingInput"></a>
+
+```java
+public java.lang.Object getAccessAndManageLoggingInput();
+```
+
+- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+
+---
+
 ##### `accessAndManageMonitoringInput`<sup>Optional</sup> <a name="accessAndManageMonitoringInput" id="@cdktf/provider-ionoscloud.group.Group.property.accessAndManageMonitoringInput"></a>
 
 ```java
 public java.lang.Object getAccessAndManageMonitoringInput();
+```
+
+- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+
+---
+
+##### `accessAndManageNetworkFileStorageInput`<sup>Optional</sup> <a name="accessAndManageNetworkFileStorageInput" id="@cdktf/provider-ionoscloud.group.Group.property.accessAndManageNetworkFileStorageInput"></a>
+
+```java
+public java.lang.Object getAccessAndManageNetworkFileStorageInput();
+```
+
+- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+
+---
+
+##### `accessAndManageVpnInput`<sup>Optional</sup> <a name="accessAndManageVpnInput" id="@cdktf/provider-ionoscloud.group.Group.property.accessAndManageVpnInput"></a>
+
+```java
+public java.lang.Object getAccessAndManageVpnInput();
 ```
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
@@ -1179,6 +1533,16 @@ public java.lang.Object getCreateK8SClusterInput();
 
 ---
 
+##### `createNetworkSecurityGroupsInput`<sup>Optional</sup> <a name="createNetworkSecurityGroupsInput" id="@cdktf/provider-ionoscloud.group.Group.property.createNetworkSecurityGroupsInput"></a>
+
+```java
+public java.lang.Object getCreateNetworkSecurityGroupsInput();
+```
+
+- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+
+---
+
 ##### `createPccInput`<sup>Optional</sup> <a name="createPccInput" id="@cdktf/provider-ionoscloud.group.Group.property.createPccInput"></a>
 
 ```java
@@ -1209,10 +1573,30 @@ public java.lang.String getIdInput();
 
 ---
 
+##### `manageDataplatformInput`<sup>Optional</sup> <a name="manageDataplatformInput" id="@cdktf/provider-ionoscloud.group.Group.property.manageDataplatformInput"></a>
+
+```java
+public java.lang.Object getManageDataplatformInput();
+```
+
+- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+
+---
+
 ##### `manageDbaasInput`<sup>Optional</sup> <a name="manageDbaasInput" id="@cdktf/provider-ionoscloud.group.Group.property.manageDbaasInput"></a>
 
 ```java
 public java.lang.Object getManageDbaasInput();
+```
+
+- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+
+---
+
+##### `manageRegistryInput`<sup>Optional</sup> <a name="manageRegistryInput" id="@cdktf/provider-ionoscloud.group.Group.property.manageRegistryInput"></a>
+
+```java
+public java.lang.Object getManageRegistryInput();
 ```
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
@@ -1289,6 +1673,36 @@ public java.lang.Object getAccessActivityLog();
 
 ---
 
+##### `accessAndManageAiModelHub`<sup>Required</sup> <a name="accessAndManageAiModelHub" id="@cdktf/provider-ionoscloud.group.Group.property.accessAndManageAiModelHub"></a>
+
+```java
+public java.lang.Object getAccessAndManageAiModelHub();
+```
+
+- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+
+---
+
+##### `accessAndManageApiGateway`<sup>Required</sup> <a name="accessAndManageApiGateway" id="@cdktf/provider-ionoscloud.group.Group.property.accessAndManageApiGateway"></a>
+
+```java
+public java.lang.Object getAccessAndManageApiGateway();
+```
+
+- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+
+---
+
+##### `accessAndManageCdn`<sup>Required</sup> <a name="accessAndManageCdn" id="@cdktf/provider-ionoscloud.group.Group.property.accessAndManageCdn"></a>
+
+```java
+public java.lang.Object getAccessAndManageCdn();
+```
+
+- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+
+---
+
 ##### `accessAndManageCertificates`<sup>Required</sup> <a name="accessAndManageCertificates" id="@cdktf/provider-ionoscloud.group.Group.property.accessAndManageCertificates"></a>
 
 ```java
@@ -1299,10 +1713,70 @@ public java.lang.Object getAccessAndManageCertificates();
 
 ---
 
+##### `accessAndManageDns`<sup>Required</sup> <a name="accessAndManageDns" id="@cdktf/provider-ionoscloud.group.Group.property.accessAndManageDns"></a>
+
+```java
+public java.lang.Object getAccessAndManageDns();
+```
+
+- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+
+---
+
+##### `accessAndManageIamResources`<sup>Required</sup> <a name="accessAndManageIamResources" id="@cdktf/provider-ionoscloud.group.Group.property.accessAndManageIamResources"></a>
+
+```java
+public java.lang.Object getAccessAndManageIamResources();
+```
+
+- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+
+---
+
+##### `accessAndManageKaas`<sup>Required</sup> <a name="accessAndManageKaas" id="@cdktf/provider-ionoscloud.group.Group.property.accessAndManageKaas"></a>
+
+```java
+public java.lang.Object getAccessAndManageKaas();
+```
+
+- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+
+---
+
+##### `accessAndManageLogging`<sup>Required</sup> <a name="accessAndManageLogging" id="@cdktf/provider-ionoscloud.group.Group.property.accessAndManageLogging"></a>
+
+```java
+public java.lang.Object getAccessAndManageLogging();
+```
+
+- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+
+---
+
 ##### `accessAndManageMonitoring`<sup>Required</sup> <a name="accessAndManageMonitoring" id="@cdktf/provider-ionoscloud.group.Group.property.accessAndManageMonitoring"></a>
 
 ```java
 public java.lang.Object getAccessAndManageMonitoring();
+```
+
+- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+
+---
+
+##### `accessAndManageNetworkFileStorage`<sup>Required</sup> <a name="accessAndManageNetworkFileStorage" id="@cdktf/provider-ionoscloud.group.Group.property.accessAndManageNetworkFileStorage"></a>
+
+```java
+public java.lang.Object getAccessAndManageNetworkFileStorage();
+```
+
+- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+
+---
+
+##### `accessAndManageVpn`<sup>Required</sup> <a name="accessAndManageVpn" id="@cdktf/provider-ionoscloud.group.Group.property.accessAndManageVpn"></a>
+
+```java
+public java.lang.Object getAccessAndManageVpn();
 ```
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
@@ -1359,6 +1833,16 @@ public java.lang.Object getCreateK8SCluster();
 
 ---
 
+##### `createNetworkSecurityGroups`<sup>Required</sup> <a name="createNetworkSecurityGroups" id="@cdktf/provider-ionoscloud.group.Group.property.createNetworkSecurityGroups"></a>
+
+```java
+public java.lang.Object getCreateNetworkSecurityGroups();
+```
+
+- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+
+---
+
 ##### `createPcc`<sup>Required</sup> <a name="createPcc" id="@cdktf/provider-ionoscloud.group.Group.property.createPcc"></a>
 
 ```java
@@ -1389,10 +1873,30 @@ public java.lang.String getId();
 
 ---
 
+##### `manageDataplatform`<sup>Required</sup> <a name="manageDataplatform" id="@cdktf/provider-ionoscloud.group.Group.property.manageDataplatform"></a>
+
+```java
+public java.lang.Object getManageDataplatform();
+```
+
+- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+
+---
+
 ##### `manageDbaas`<sup>Required</sup> <a name="manageDbaas" id="@cdktf/provider-ionoscloud.group.Group.property.manageDbaas"></a>
 
 ```java
 public java.lang.Object getManageDbaas();
+```
+
+- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+
+---
+
+##### `manageRegistry`<sup>Required</sup> <a name="manageRegistry" id="@cdktf/provider-ionoscloud.group.Group.property.manageRegistry"></a>
+
+```java
+public java.lang.Object getManageRegistry();
 ```
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
@@ -1491,10 +1995,28 @@ GroupConfig.builder()
     .name(java.lang.String)
 //  .accessActivityLog(java.lang.Boolean)
 //  .accessActivityLog(IResolvable)
+//  .accessAndManageAiModelHub(java.lang.Boolean)
+//  .accessAndManageAiModelHub(IResolvable)
+//  .accessAndManageApiGateway(java.lang.Boolean)
+//  .accessAndManageApiGateway(IResolvable)
+//  .accessAndManageCdn(java.lang.Boolean)
+//  .accessAndManageCdn(IResolvable)
 //  .accessAndManageCertificates(java.lang.Boolean)
 //  .accessAndManageCertificates(IResolvable)
+//  .accessAndManageDns(java.lang.Boolean)
+//  .accessAndManageDns(IResolvable)
+//  .accessAndManageIamResources(java.lang.Boolean)
+//  .accessAndManageIamResources(IResolvable)
+//  .accessAndManageKaas(java.lang.Boolean)
+//  .accessAndManageKaas(IResolvable)
+//  .accessAndManageLogging(java.lang.Boolean)
+//  .accessAndManageLogging(IResolvable)
 //  .accessAndManageMonitoring(java.lang.Boolean)
 //  .accessAndManageMonitoring(IResolvable)
+//  .accessAndManageNetworkFileStorage(java.lang.Boolean)
+//  .accessAndManageNetworkFileStorage(IResolvable)
+//  .accessAndManageVpn(java.lang.Boolean)
+//  .accessAndManageVpn(IResolvable)
 //  .createBackupUnit(java.lang.Boolean)
 //  .createBackupUnit(IResolvable)
 //  .createDatacenter(java.lang.Boolean)
@@ -1505,13 +2027,19 @@ GroupConfig.builder()
 //  .createInternetAccess(IResolvable)
 //  .createK8SCluster(java.lang.Boolean)
 //  .createK8SCluster(IResolvable)
+//  .createNetworkSecurityGroups(java.lang.Boolean)
+//  .createNetworkSecurityGroups(IResolvable)
 //  .createPcc(java.lang.Boolean)
 //  .createPcc(IResolvable)
 //  .createSnapshot(java.lang.Boolean)
 //  .createSnapshot(IResolvable)
 //  .id(java.lang.String)
+//  .manageDataplatform(java.lang.Boolean)
+//  .manageDataplatform(IResolvable)
 //  .manageDbaas(java.lang.Boolean)
 //  .manageDbaas(IResolvable)
+//  .manageRegistry(java.lang.Boolean)
+//  .manageRegistry(IResolvable)
 //  .reserveIp(java.lang.Boolean)
 //  .reserveIp(IResolvable)
 //  .s3Privilege(java.lang.Boolean)
@@ -1533,24 +2061,36 @@ GroupConfig.builder()
 | <code><a href="#@cdktf/provider-ionoscloud.group.GroupConfig.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.group.GroupConfig.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.group.GroupConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-ionoscloud.group.GroupConfig.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.1/docs/resources/group#name Group#name}. |
-| <code><a href="#@cdktf/provider-ionoscloud.group.GroupConfig.property.accessActivityLog">accessActivityLog</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.1/docs/resources/group#access_activity_log Group#access_activity_log}. |
+| <code><a href="#@cdktf/provider-ionoscloud.group.GroupConfig.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.2/docs/resources/group#name Group#name}. |
+| <code><a href="#@cdktf/provider-ionoscloud.group.GroupConfig.property.accessActivityLog">accessActivityLog</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.2/docs/resources/group#access_activity_log Group#access_activity_log}. |
+| <code><a href="#@cdktf/provider-ionoscloud.group.GroupConfig.property.accessAndManageAiModelHub">accessAndManageAiModelHub</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Privilege for a group to access and manage AiModelHub. |
+| <code><a href="#@cdktf/provider-ionoscloud.group.GroupConfig.property.accessAndManageApiGateway">accessAndManageApiGateway</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Privilege for a group to access and manage ApiGateway. |
+| <code><a href="#@cdktf/provider-ionoscloud.group.GroupConfig.property.accessAndManageCdn">accessAndManageCdn</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Privilege for a group to access and manage Cdn. |
 | <code><a href="#@cdktf/provider-ionoscloud.group.GroupConfig.property.accessAndManageCertificates">accessAndManageCertificates</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Privilege for a group to access and manage certificates. |
+| <code><a href="#@cdktf/provider-ionoscloud.group.GroupConfig.property.accessAndManageDns">accessAndManageDns</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Privilege for a group to access and manage dns records. |
+| <code><a href="#@cdktf/provider-ionoscloud.group.GroupConfig.property.accessAndManageIamResources">accessAndManageIamResources</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Privilege for a group to access and manage IamResources. |
+| <code><a href="#@cdktf/provider-ionoscloud.group.GroupConfig.property.accessAndManageKaas">accessAndManageKaas</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Privilege for a group to access and manage Kaas. |
+| <code><a href="#@cdktf/provider-ionoscloud.group.GroupConfig.property.accessAndManageLogging">accessAndManageLogging</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Privilege for a group to access and manage logging. |
 | <code><a href="#@cdktf/provider-ionoscloud.group.GroupConfig.property.accessAndManageMonitoring">accessAndManageMonitoring</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Privilege for a group to access and manage monitoring related functionality (access metrics, CRUD on alarms, alarm-actions etc) using Monotoring-as-a-Service (MaaS). |
+| <code><a href="#@cdktf/provider-ionoscloud.group.GroupConfig.property.accessAndManageNetworkFileStorage">accessAndManageNetworkFileStorage</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Privilege for a group to access and manage NetworkFileStorage. |
+| <code><a href="#@cdktf/provider-ionoscloud.group.GroupConfig.property.accessAndManageVpn">accessAndManageVpn</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Privilege for a group to access and manage Vpn. |
 | <code><a href="#@cdktf/provider-ionoscloud.group.GroupConfig.property.createBackupUnit">createBackupUnit</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Create backup unit privilege. |
-| <code><a href="#@cdktf/provider-ionoscloud.group.GroupConfig.property.createDatacenter">createDatacenter</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.1/docs/resources/group#create_datacenter Group#create_datacenter}. |
+| <code><a href="#@cdktf/provider-ionoscloud.group.GroupConfig.property.createDatacenter">createDatacenter</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.2/docs/resources/group#create_datacenter Group#create_datacenter}. |
 | <code><a href="#@cdktf/provider-ionoscloud.group.GroupConfig.property.createFlowLog">createFlowLog</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Create Flow Logs privilege. |
 | <code><a href="#@cdktf/provider-ionoscloud.group.GroupConfig.property.createInternetAccess">createInternetAccess</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Create internet access privilege. |
 | <code><a href="#@cdktf/provider-ionoscloud.group.GroupConfig.property.createK8SCluster">createK8SCluster</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Create Kubernetes cluster privilege. |
-| <code><a href="#@cdktf/provider-ionoscloud.group.GroupConfig.property.createPcc">createPcc</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.1/docs/resources/group#create_pcc Group#create_pcc}. |
-| <code><a href="#@cdktf/provider-ionoscloud.group.GroupConfig.property.createSnapshot">createSnapshot</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.1/docs/resources/group#create_snapshot Group#create_snapshot}. |
-| <code><a href="#@cdktf/provider-ionoscloud.group.GroupConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.1/docs/resources/group#id Group#id}. |
+| <code><a href="#@cdktf/provider-ionoscloud.group.GroupConfig.property.createNetworkSecurityGroups">createNetworkSecurityGroups</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Create Network Security groups. |
+| <code><a href="#@cdktf/provider-ionoscloud.group.GroupConfig.property.createPcc">createPcc</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.2/docs/resources/group#create_pcc Group#create_pcc}. |
+| <code><a href="#@cdktf/provider-ionoscloud.group.GroupConfig.property.createSnapshot">createSnapshot</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.2/docs/resources/group#create_snapshot Group#create_snapshot}. |
+| <code><a href="#@cdktf/provider-ionoscloud.group.GroupConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.2/docs/resources/group#id Group#id}. |
+| <code><a href="#@cdktf/provider-ionoscloud.group.GroupConfig.property.manageDataplatform">manageDataplatform</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Privilege for a group to access and manage the Data Platform. |
 | <code><a href="#@cdktf/provider-ionoscloud.group.GroupConfig.property.manageDbaas">manageDbaas</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Privilege for a group to manage DBaaS related functionality. |
-| <code><a href="#@cdktf/provider-ionoscloud.group.GroupConfig.property.reserveIp">reserveIp</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.1/docs/resources/group#reserve_ip Group#reserve_ip}. |
-| <code><a href="#@cdktf/provider-ionoscloud.group.GroupConfig.property.s3Privilege">s3Privilege</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.1/docs/resources/group#s3_privilege Group#s3_privilege}. |
+| <code><a href="#@cdktf/provider-ionoscloud.group.GroupConfig.property.manageRegistry">manageRegistry</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Privilege for group accessing container registry related functionality. |
+| <code><a href="#@cdktf/provider-ionoscloud.group.GroupConfig.property.reserveIp">reserveIp</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.2/docs/resources/group#reserve_ip Group#reserve_ip}. |
+| <code><a href="#@cdktf/provider-ionoscloud.group.GroupConfig.property.s3Privilege">s3Privilege</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.2/docs/resources/group#s3_privilege Group#s3_privilege}. |
 | <code><a href="#@cdktf/provider-ionoscloud.group.GroupConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-ionoscloud.group.GroupTimeouts">GroupTimeouts</a></code> | timeouts block. |
-| <code><a href="#@cdktf/provider-ionoscloud.group.GroupConfig.property.userId">userId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.1/docs/resources/group#user_id Group#user_id}. |
-| <code><a href="#@cdktf/provider-ionoscloud.group.GroupConfig.property.userIds">userIds</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.1/docs/resources/group#user_ids Group#user_ids}. |
+| <code><a href="#@cdktf/provider-ionoscloud.group.GroupConfig.property.userId">userId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.2/docs/resources/group#user_id Group#user_id}. |
+| <code><a href="#@cdktf/provider-ionoscloud.group.GroupConfig.property.userIds">userIds</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.2/docs/resources/group#user_ids Group#user_ids}. |
 
 ---
 
@@ -1632,7 +2172,7 @@ public java.lang.String getName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.1/docs/resources/group#name Group#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.2/docs/resources/group#name Group#name}.
 
 ---
 
@@ -1644,7 +2184,49 @@ public java.lang.Object getAccessActivityLog();
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.1/docs/resources/group#access_activity_log Group#access_activity_log}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.2/docs/resources/group#access_activity_log Group#access_activity_log}.
+
+---
+
+##### `accessAndManageAiModelHub`<sup>Optional</sup> <a name="accessAndManageAiModelHub" id="@cdktf/provider-ionoscloud.group.GroupConfig.property.accessAndManageAiModelHub"></a>
+
+```java
+public java.lang.Object getAccessAndManageAiModelHub();
+```
+
+- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+
+Privilege for a group to access and manage AiModelHub.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.2/docs/resources/group#access_and_manage_ai_model_hub Group#access_and_manage_ai_model_hub}
+
+---
+
+##### `accessAndManageApiGateway`<sup>Optional</sup> <a name="accessAndManageApiGateway" id="@cdktf/provider-ionoscloud.group.GroupConfig.property.accessAndManageApiGateway"></a>
+
+```java
+public java.lang.Object getAccessAndManageApiGateway();
+```
+
+- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+
+Privilege for a group to access and manage ApiGateway.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.2/docs/resources/group#access_and_manage_api_gateway Group#access_and_manage_api_gateway}
+
+---
+
+##### `accessAndManageCdn`<sup>Optional</sup> <a name="accessAndManageCdn" id="@cdktf/provider-ionoscloud.group.GroupConfig.property.accessAndManageCdn"></a>
+
+```java
+public java.lang.Object getAccessAndManageCdn();
+```
+
+- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+
+Privilege for a group to access and manage Cdn.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.2/docs/resources/group#access_and_manage_cdn Group#access_and_manage_cdn}
 
 ---
 
@@ -1658,7 +2240,63 @@ public java.lang.Object getAccessAndManageCertificates();
 
 Privilege for a group to access and manage certificates.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.1/docs/resources/group#access_and_manage_certificates Group#access_and_manage_certificates}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.2/docs/resources/group#access_and_manage_certificates Group#access_and_manage_certificates}
+
+---
+
+##### `accessAndManageDns`<sup>Optional</sup> <a name="accessAndManageDns" id="@cdktf/provider-ionoscloud.group.GroupConfig.property.accessAndManageDns"></a>
+
+```java
+public java.lang.Object getAccessAndManageDns();
+```
+
+- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+
+Privilege for a group to access and manage dns records.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.2/docs/resources/group#access_and_manage_dns Group#access_and_manage_dns}
+
+---
+
+##### `accessAndManageIamResources`<sup>Optional</sup> <a name="accessAndManageIamResources" id="@cdktf/provider-ionoscloud.group.GroupConfig.property.accessAndManageIamResources"></a>
+
+```java
+public java.lang.Object getAccessAndManageIamResources();
+```
+
+- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+
+Privilege for a group to access and manage IamResources.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.2/docs/resources/group#access_and_manage_iam_resources Group#access_and_manage_iam_resources}
+
+---
+
+##### `accessAndManageKaas`<sup>Optional</sup> <a name="accessAndManageKaas" id="@cdktf/provider-ionoscloud.group.GroupConfig.property.accessAndManageKaas"></a>
+
+```java
+public java.lang.Object getAccessAndManageKaas();
+```
+
+- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+
+Privilege for a group to access and manage Kaas.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.2/docs/resources/group#access_and_manage_kaas Group#access_and_manage_kaas}
+
+---
+
+##### `accessAndManageLogging`<sup>Optional</sup> <a name="accessAndManageLogging" id="@cdktf/provider-ionoscloud.group.GroupConfig.property.accessAndManageLogging"></a>
+
+```java
+public java.lang.Object getAccessAndManageLogging();
+```
+
+- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+
+Privilege for a group to access and manage logging.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.2/docs/resources/group#access_and_manage_logging Group#access_and_manage_logging}
 
 ---
 
@@ -1672,7 +2310,35 @@ public java.lang.Object getAccessAndManageMonitoring();
 
 Privilege for a group to access and manage monitoring related functionality (access metrics, CRUD on alarms, alarm-actions etc) using Monotoring-as-a-Service (MaaS).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.1/docs/resources/group#access_and_manage_monitoring Group#access_and_manage_monitoring}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.2/docs/resources/group#access_and_manage_monitoring Group#access_and_manage_monitoring}
+
+---
+
+##### `accessAndManageNetworkFileStorage`<sup>Optional</sup> <a name="accessAndManageNetworkFileStorage" id="@cdktf/provider-ionoscloud.group.GroupConfig.property.accessAndManageNetworkFileStorage"></a>
+
+```java
+public java.lang.Object getAccessAndManageNetworkFileStorage();
+```
+
+- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+
+Privilege for a group to access and manage NetworkFileStorage.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.2/docs/resources/group#access_and_manage_network_file_storage Group#access_and_manage_network_file_storage}
+
+---
+
+##### `accessAndManageVpn`<sup>Optional</sup> <a name="accessAndManageVpn" id="@cdktf/provider-ionoscloud.group.GroupConfig.property.accessAndManageVpn"></a>
+
+```java
+public java.lang.Object getAccessAndManageVpn();
+```
+
+- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+
+Privilege for a group to access and manage Vpn.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.2/docs/resources/group#access_and_manage_vpn Group#access_and_manage_vpn}
 
 ---
 
@@ -1686,7 +2352,7 @@ public java.lang.Object getCreateBackupUnit();
 
 Create backup unit privilege.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.1/docs/resources/group#create_backup_unit Group#create_backup_unit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.2/docs/resources/group#create_backup_unit Group#create_backup_unit}
 
 ---
 
@@ -1698,7 +2364,7 @@ public java.lang.Object getCreateDatacenter();
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.1/docs/resources/group#create_datacenter Group#create_datacenter}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.2/docs/resources/group#create_datacenter Group#create_datacenter}.
 
 ---
 
@@ -1712,7 +2378,7 @@ public java.lang.Object getCreateFlowLog();
 
 Create Flow Logs privilege.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.1/docs/resources/group#create_flow_log Group#create_flow_log}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.2/docs/resources/group#create_flow_log Group#create_flow_log}
 
 ---
 
@@ -1726,7 +2392,7 @@ public java.lang.Object getCreateInternetAccess();
 
 Create internet access privilege.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.1/docs/resources/group#create_internet_access Group#create_internet_access}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.2/docs/resources/group#create_internet_access Group#create_internet_access}
 
 ---
 
@@ -1740,7 +2406,21 @@ public java.lang.Object getCreateK8SCluster();
 
 Create Kubernetes cluster privilege.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.1/docs/resources/group#create_k8s_cluster Group#create_k8s_cluster}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.2/docs/resources/group#create_k8s_cluster Group#create_k8s_cluster}
+
+---
+
+##### `createNetworkSecurityGroups`<sup>Optional</sup> <a name="createNetworkSecurityGroups" id="@cdktf/provider-ionoscloud.group.GroupConfig.property.createNetworkSecurityGroups"></a>
+
+```java
+public java.lang.Object getCreateNetworkSecurityGroups();
+```
+
+- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+
+Create Network Security groups.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.2/docs/resources/group#create_network_security_groups Group#create_network_security_groups}
 
 ---
 
@@ -1752,7 +2432,7 @@ public java.lang.Object getCreatePcc();
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.1/docs/resources/group#create_pcc Group#create_pcc}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.2/docs/resources/group#create_pcc Group#create_pcc}.
 
 ---
 
@@ -1764,7 +2444,7 @@ public java.lang.Object getCreateSnapshot();
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.1/docs/resources/group#create_snapshot Group#create_snapshot}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.2/docs/resources/group#create_snapshot Group#create_snapshot}.
 
 ---
 
@@ -1776,10 +2456,24 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.1/docs/resources/group#id Group#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.2/docs/resources/group#id Group#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `manageDataplatform`<sup>Optional</sup> <a name="manageDataplatform" id="@cdktf/provider-ionoscloud.group.GroupConfig.property.manageDataplatform"></a>
+
+```java
+public java.lang.Object getManageDataplatform();
+```
+
+- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+
+Privilege for a group to access and manage the Data Platform.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.2/docs/resources/group#manage_dataplatform Group#manage_dataplatform}
 
 ---
 
@@ -1793,7 +2487,21 @@ public java.lang.Object getManageDbaas();
 
 Privilege for a group to manage DBaaS related functionality.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.1/docs/resources/group#manage_dbaas Group#manage_dbaas}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.2/docs/resources/group#manage_dbaas Group#manage_dbaas}
+
+---
+
+##### `manageRegistry`<sup>Optional</sup> <a name="manageRegistry" id="@cdktf/provider-ionoscloud.group.GroupConfig.property.manageRegistry"></a>
+
+```java
+public java.lang.Object getManageRegistry();
+```
+
+- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+
+Privilege for group accessing container registry related functionality.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.2/docs/resources/group#manage_registry Group#manage_registry}
 
 ---
 
@@ -1805,7 +2513,7 @@ public java.lang.Object getReserveIp();
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.1/docs/resources/group#reserve_ip Group#reserve_ip}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.2/docs/resources/group#reserve_ip Group#reserve_ip}.
 
 ---
 
@@ -1817,7 +2525,7 @@ public java.lang.Object getS3Privilege();
 
 - *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.1/docs/resources/group#s3_privilege Group#s3_privilege}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.2/docs/resources/group#s3_privilege Group#s3_privilege}.
 
 ---
 
@@ -1831,7 +2539,7 @@ public GroupTimeouts getTimeouts();
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.1/docs/resources/group#timeouts Group#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.2/docs/resources/group#timeouts Group#timeouts}
 
 ---
 
@@ -1843,7 +2551,7 @@ public java.lang.String getUserId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.1/docs/resources/group#user_id Group#user_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.2/docs/resources/group#user_id Group#user_id}.
 
 ---
 
@@ -1855,7 +2563,7 @@ public java.util.List<java.lang.String> getUserIds();
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.1/docs/resources/group#user_ids Group#user_ids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.2/docs/resources/group#user_ids Group#user_ids}.
 
 ---
 
@@ -1878,10 +2586,10 @@ GroupTimeouts.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-ionoscloud.group.GroupTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.1/docs/resources/group#create Group#create}. |
-| <code><a href="#@cdktf/provider-ionoscloud.group.GroupTimeouts.property.default">default</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.1/docs/resources/group#default Group#default}. |
-| <code><a href="#@cdktf/provider-ionoscloud.group.GroupTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.1/docs/resources/group#delete Group#delete}. |
-| <code><a href="#@cdktf/provider-ionoscloud.group.GroupTimeouts.property.update">update</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.1/docs/resources/group#update Group#update}. |
+| <code><a href="#@cdktf/provider-ionoscloud.group.GroupTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.2/docs/resources/group#create Group#create}. |
+| <code><a href="#@cdktf/provider-ionoscloud.group.GroupTimeouts.property.default">default</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.2/docs/resources/group#default Group#default}. |
+| <code><a href="#@cdktf/provider-ionoscloud.group.GroupTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.2/docs/resources/group#delete Group#delete}. |
+| <code><a href="#@cdktf/provider-ionoscloud.group.GroupTimeouts.property.update">update</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.2/docs/resources/group#update Group#update}. |
 
 ---
 
@@ -1893,7 +2601,7 @@ public java.lang.String getCreate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.1/docs/resources/group#create Group#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.2/docs/resources/group#create Group#create}.
 
 ---
 
@@ -1905,7 +2613,7 @@ public java.lang.String getDefault();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.1/docs/resources/group#default Group#default}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.2/docs/resources/group#default Group#default}.
 
 ---
 
@@ -1917,7 +2625,7 @@ public java.lang.String getDelete();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.1/docs/resources/group#delete Group#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.2/docs/resources/group#delete Group#delete}.
 
 ---
 
@@ -1929,7 +2637,7 @@ public java.lang.String getUpdate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.1/docs/resources/group#update Group#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.2/docs/resources/group#update Group#update}.
 
 ---
 

@@ -1,3 +1,3 @@
 # `ionoscloud_monitoring_pipeline`
 
-Refer to the Terraform Registry for docs: [`ionoscloud_monitoring_pipeline`](https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.1/docs/resources/monitoring_pipeline).
+Refer to the Terraform Registry for docs: [`ionoscloud_monitoring_pipeline`](https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.2/docs/resources/monitoring_pipeline).
