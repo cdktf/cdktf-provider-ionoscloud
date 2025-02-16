@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionosclo
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.dataIonoscloudDataplatformNodePool.DataIonoscloudDataplatformNodePool.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/dataionosclouddataplatformnodepool"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/dataionosclouddataplatformnodepool"
 
 dataionosclouddataplatformnodepool.NewDataIonoscloudDataplatformNodePool(scope Construct, id *string, config DataIonoscloudDataplatformNodePoolConfig) DataIonoscloudDataplatformNodePool
 ```
@@ -317,7 +317,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-ionoscloud.dataIonoscloudDataplatformNodePool.DataIonoscloudDataplatformNodePool.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/dataionosclouddataplatformnodepool"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/dataionosclouddataplatformnodepool"
 
 dataionosclouddataplatformnodepool.DataIonoscloudDataplatformNodePool_IsConstruct(x interface{}) *bool
 ```
@@ -349,7 +349,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-ionoscloud.dataIonoscloudDataplatformNodePool.DataIonoscloudDataplatformNodePool.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/dataionosclouddataplatformnodepool"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/dataionosclouddataplatformnodepool"
 
 dataionosclouddataplatformnodepool.DataIonoscloudDataplatformNodePool_IsTerraformElement(x interface{}) *bool
 ```
@@ -363,7 +363,7 @@ dataionosclouddataplatformnodepool.DataIonoscloudDataplatformNodePool_IsTerrafor
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-ionoscloud.dataIonoscloudDataplatformNodePool.DataIonoscloudDataplatformNodePool.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/dataionosclouddataplatformnodepool"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/dataionosclouddataplatformnodepool"
 
 dataionosclouddataplatformnodepool.DataIonoscloudDataplatformNodePool_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -377,7 +377,7 @@ dataionosclouddataplatformnodepool.DataIonoscloudDataplatformNodePool_IsTerrafor
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-ionoscloud.dataIonoscloudDataplatformNodePool.DataIonoscloudDataplatformNodePool.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/dataionosclouddataplatformnodepool"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/dataionosclouddataplatformnodepool"
 
 dataionosclouddataplatformnodepool.DataIonoscloudDataplatformNodePool_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -837,7 +837,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-ionoscloud.dataIonoscloudDataplatformNodePool.DataIonoscloudDataplatformNodePoolAutoScaling.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/dataionosclouddataplatformnodepool"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/dataionosclouddataplatformnodepool"
 
 &dataionosclouddataplatformnodepool.DataIonoscloudDataplatformNodePoolAutoScaling {
 
@@ -850,7 +850,7 @@ import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/dataionoscloudd
 #### Initializer <a name="Initializer" id="@cdktf/provider-ionoscloud.dataIonoscloudDataplatformNodePool.DataIonoscloudDataplatformNodePoolConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/dataionosclouddataplatformnodepool"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/dataionosclouddataplatformnodepool"
 
 &dataionosclouddataplatformnodepool.DataIonoscloudDataplatformNodePoolConfig {
 	Connection: interface{},
@@ -864,7 +864,7 @@ import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/dataionoscloudd
 	Id: *string,
 	Name: *string,
 	PartialMatch: interface{},
-	Timeouts: github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud.dataIonoscloudDataplatformNodePool.DataIonoscloudDataplatformNodePoolTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11.dataIonoscloudDataplatformNodePool.DataIonoscloudDataplatformNodePoolTimeouts,
 }
 ```
 
@@ -1033,7 +1033,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 #### Initializer <a name="Initializer" id="@cdktf/provider-ionoscloud.dataIonoscloudDataplatformNodePool.DataIonoscloudDataplatformNodePoolMaintenanceWindow.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/dataionosclouddataplatformnodepool"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/dataionosclouddataplatformnodepool"
 
 &dataionosclouddataplatformnodepool.DataIonoscloudDataplatformNodePoolMaintenanceWindow {
 
@@ -1046,7 +1046,7 @@ import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/dataionoscloudd
 #### Initializer <a name="Initializer" id="@cdktf/provider-ionoscloud.dataIonoscloudDataplatformNodePool.DataIonoscloudDataplatformNodePoolTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/dataionosclouddataplatformnodepool"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/dataionosclouddataplatformnodepool"
 
 &dataionosclouddataplatformnodepool.DataIonoscloudDataplatformNodePoolTimeouts {
 	Create: *string,
@@ -1122,7 +1122,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.dataIonoscloudDataplatformNodePool.DataIonoscloudDataplatformNodePoolAutoScalingList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/dataionosclouddataplatformnodepool"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/dataionosclouddataplatformnodepool"
 
 dataionosclouddataplatformnodepool.NewDataIonoscloudDataplatformNodePoolAutoScalingList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataIonoscloudDataplatformNodePoolAutoScalingList
 ```
@@ -1271,7 +1271,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.dataIonoscloudDataplatformNodePool.DataIonoscloudDataplatformNodePoolAutoScalingOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/dataionosclouddataplatformnodepool"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/dataionosclouddataplatformnodepool"
 
 dataionosclouddataplatformnodepool.NewDataIonoscloudDataplatformNodePoolAutoScalingOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataIonoscloudDataplatformNodePoolAutoScalingOutputReference
 ```
@@ -1560,7 +1560,7 @@ func InternalValue() DataIonoscloudDataplatformNodePoolAutoScaling
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.dataIonoscloudDataplatformNodePool.DataIonoscloudDataplatformNodePoolMaintenanceWindowList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/dataionosclouddataplatformnodepool"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/dataionosclouddataplatformnodepool"
 
 dataionosclouddataplatformnodepool.NewDataIonoscloudDataplatformNodePoolMaintenanceWindowList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataIonoscloudDataplatformNodePoolMaintenanceWindowList
 ```
@@ -1709,7 +1709,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.dataIonoscloudDataplatformNodePool.DataIonoscloudDataplatformNodePoolMaintenanceWindowOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/dataionosclouddataplatformnodepool"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/dataionosclouddataplatformnodepool"
 
 dataionosclouddataplatformnodepool.NewDataIonoscloudDataplatformNodePoolMaintenanceWindowOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataIonoscloudDataplatformNodePoolMaintenanceWindowOutputReference
 ```
@@ -1998,7 +1998,7 @@ func InternalValue() DataIonoscloudDataplatformNodePoolMaintenanceWindow
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.dataIonoscloudDataplatformNodePool.DataIonoscloudDataplatformNodePoolTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/dataionosclouddataplatformnodepool"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/dataionosclouddataplatformnodepool"
 
 dataionosclouddataplatformnodepool.NewDataIonoscloudDataplatformNodePoolTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataIonoscloudDataplatformNodePoolTimeoutsOutputReference
 ```
