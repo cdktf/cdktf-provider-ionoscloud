@@ -4,12 +4,12 @@
 
 ### MongoUser <a name="MongoUser" id="@cdktf/provider-ionoscloud.mongoUser.MongoUser"></a>
 
-Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.2/docs/resources/mongo_user ionoscloud_mongo_user}.
+Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.3/docs/resources/mongo_user ionoscloud_mongo_user}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.mongoUser.MongoUser.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/mongouser"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/mongouser"
 
 mongouser.NewMongoUser(scope Construct, id *string, config MongoUserConfig) MongoUser
 ```
@@ -425,7 +425,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-ionoscloud.mongoUser.MongoUser.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/mongouser"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/mongouser"
 
 mongouser.MongoUser_IsConstruct(x interface{}) *bool
 ```
@@ -457,7 +457,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-ionoscloud.mongoUser.MongoUser.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/mongouser"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/mongouser"
 
 mongouser.MongoUser_IsTerraformElement(x interface{}) *bool
 ```
@@ -471,7 +471,7 @@ mongouser.MongoUser_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-ionoscloud.mongoUser.MongoUser.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/mongouser"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/mongouser"
 
 mongouser.MongoUser_IsTerraformResource(x interface{}) *bool
 ```
@@ -485,7 +485,7 @@ mongouser.MongoUser_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-ionoscloud.mongoUser.MongoUser.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/mongouser"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/mongouser"
 
 mongouser.MongoUser_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -514,7 +514,7 @@ The construct id used in the generated config for the MongoUser to import.
 
 The id of the existing MongoUser that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.2/docs/resources/mongo_user#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.3/docs/resources/mongo_user#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -846,7 +846,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-ionoscloud.mongoUser.MongoUserConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/mongouser"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/mongouser"
 
 &mongouser.MongoUserConfig {
 	Connection: interface{},
@@ -861,7 +861,7 @@ import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/mongouser"
 	Username: *string,
 	Id: *string,
 	Roles: interface{},
-	Timeouts: github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11.mongoUser.MongoUserTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud.mongoUser.MongoUserTimeouts,
 }
 ```
 
@@ -876,10 +876,10 @@ import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/mongouser"
 | <code><a href="#@cdktf/provider-ionoscloud.mongoUser.MongoUserConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.mongoUser.MongoUserConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.mongoUser.MongoUserConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-ionoscloud.mongoUser.MongoUserConfig.property.clusterId">ClusterId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.2/docs/resources/mongo_user#cluster_id MongoUser#cluster_id}. |
-| <code><a href="#@cdktf/provider-ionoscloud.mongoUser.MongoUserConfig.property.password">Password</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.2/docs/resources/mongo_user#password MongoUser#password}. |
-| <code><a href="#@cdktf/provider-ionoscloud.mongoUser.MongoUserConfig.property.username">Username</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.2/docs/resources/mongo_user#username MongoUser#username}. |
-| <code><a href="#@cdktf/provider-ionoscloud.mongoUser.MongoUserConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.2/docs/resources/mongo_user#id MongoUser#id}. |
+| <code><a href="#@cdktf/provider-ionoscloud.mongoUser.MongoUserConfig.property.clusterId">ClusterId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.3/docs/resources/mongo_user#cluster_id MongoUser#cluster_id}. |
+| <code><a href="#@cdktf/provider-ionoscloud.mongoUser.MongoUserConfig.property.password">Password</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.3/docs/resources/mongo_user#password MongoUser#password}. |
+| <code><a href="#@cdktf/provider-ionoscloud.mongoUser.MongoUserConfig.property.username">Username</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.3/docs/resources/mongo_user#username MongoUser#username}. |
+| <code><a href="#@cdktf/provider-ionoscloud.mongoUser.MongoUserConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.3/docs/resources/mongo_user#id MongoUser#id}. |
 | <code><a href="#@cdktf/provider-ionoscloud.mongoUser.MongoUserConfig.property.roles">Roles</a></code> | <code>interface{}</code> | roles block. |
 | <code><a href="#@cdktf/provider-ionoscloud.mongoUser.MongoUserConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-ionoscloud.mongoUser.MongoUserTimeouts">MongoUserTimeouts</a></code> | timeouts block. |
 
@@ -963,7 +963,7 @@ ClusterId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.2/docs/resources/mongo_user#cluster_id MongoUser#cluster_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.3/docs/resources/mongo_user#cluster_id MongoUser#cluster_id}.
 
 ---
 
@@ -975,7 +975,7 @@ Password *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.2/docs/resources/mongo_user#password MongoUser#password}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.3/docs/resources/mongo_user#password MongoUser#password}.
 
 ---
 
@@ -987,7 +987,7 @@ Username *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.2/docs/resources/mongo_user#username MongoUser#username}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.3/docs/resources/mongo_user#username MongoUser#username}.
 
 ---
 
@@ -999,7 +999,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.2/docs/resources/mongo_user#id MongoUser#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.3/docs/resources/mongo_user#id MongoUser#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1016,7 +1016,7 @@ Roles interface{}
 
 roles block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.2/docs/resources/mongo_user#roles MongoUser#roles}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.3/docs/resources/mongo_user#roles MongoUser#roles}
 
 ---
 
@@ -1030,7 +1030,7 @@ Timeouts MongoUserTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.2/docs/resources/mongo_user#timeouts MongoUser#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.3/docs/resources/mongo_user#timeouts MongoUser#timeouts}
 
 ---
 
@@ -1039,7 +1039,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 #### Initializer <a name="Initializer" id="@cdktf/provider-ionoscloud.mongoUser.MongoUserRoles.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/mongouser"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/mongouser"
 
 &mongouser.MongoUserRoles {
 	Database: *string,
@@ -1051,7 +1051,7 @@ import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/mongouser"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-ionoscloud.mongoUser.MongoUserRoles.property.database">Database</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.2/docs/resources/mongo_user#database MongoUser#database}. |
+| <code><a href="#@cdktf/provider-ionoscloud.mongoUser.MongoUserRoles.property.database">Database</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.3/docs/resources/mongo_user#database MongoUser#database}. |
 | <code><a href="#@cdktf/provider-ionoscloud.mongoUser.MongoUserRoles.property.role">Role</a></code> | <code>*string</code> | A list of mongodb user roles. Examples: read, readWrite, readAnyDatabase. |
 
 ---
@@ -1064,7 +1064,7 @@ Database *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.2/docs/resources/mongo_user#database MongoUser#database}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.3/docs/resources/mongo_user#database MongoUser#database}.
 
 ---
 
@@ -1078,7 +1078,7 @@ Role *string
 
 A list of mongodb user roles. Examples: read, readWrite, readAnyDatabase.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.2/docs/resources/mongo_user#role MongoUser#role}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.3/docs/resources/mongo_user#role MongoUser#role}
 
 ---
 
@@ -1087,7 +1087,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 #### Initializer <a name="Initializer" id="@cdktf/provider-ionoscloud.mongoUser.MongoUserTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/mongouser"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/mongouser"
 
 &mongouser.MongoUserTimeouts {
 	Create: *string,
@@ -1101,10 +1101,10 @@ import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/mongouser"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-ionoscloud.mongoUser.MongoUserTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.2/docs/resources/mongo_user#create MongoUser#create}. |
-| <code><a href="#@cdktf/provider-ionoscloud.mongoUser.MongoUserTimeouts.property.default">Default</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.2/docs/resources/mongo_user#default MongoUser#default}. |
-| <code><a href="#@cdktf/provider-ionoscloud.mongoUser.MongoUserTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.2/docs/resources/mongo_user#delete MongoUser#delete}. |
-| <code><a href="#@cdktf/provider-ionoscloud.mongoUser.MongoUserTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.2/docs/resources/mongo_user#update MongoUser#update}. |
+| <code><a href="#@cdktf/provider-ionoscloud.mongoUser.MongoUserTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.3/docs/resources/mongo_user#create MongoUser#create}. |
+| <code><a href="#@cdktf/provider-ionoscloud.mongoUser.MongoUserTimeouts.property.default">Default</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.3/docs/resources/mongo_user#default MongoUser#default}. |
+| <code><a href="#@cdktf/provider-ionoscloud.mongoUser.MongoUserTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.3/docs/resources/mongo_user#delete MongoUser#delete}. |
+| <code><a href="#@cdktf/provider-ionoscloud.mongoUser.MongoUserTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.3/docs/resources/mongo_user#update MongoUser#update}. |
 
 ---
 
@@ -1116,7 +1116,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.2/docs/resources/mongo_user#create MongoUser#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.3/docs/resources/mongo_user#create MongoUser#create}.
 
 ---
 
@@ -1128,7 +1128,7 @@ Default *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.2/docs/resources/mongo_user#default MongoUser#default}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.3/docs/resources/mongo_user#default MongoUser#default}.
 
 ---
 
@@ -1140,7 +1140,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.2/docs/resources/mongo_user#delete MongoUser#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.3/docs/resources/mongo_user#delete MongoUser#delete}.
 
 ---
 
@@ -1152,7 +1152,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.2/docs/resources/mongo_user#update MongoUser#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.3/docs/resources/mongo_user#update MongoUser#update}.
 
 ---
 
@@ -1163,7 +1163,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.mongoUser.MongoUserRolesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/mongouser"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/mongouser"
 
 mongouser.NewMongoUserRolesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) MongoUserRolesList
 ```
@@ -1323,7 +1323,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.mongoUser.MongoUserRolesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/mongouser"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/mongouser"
 
 mongouser.NewMongoUserRolesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) MongoUserRolesOutputReference
 ```
@@ -1648,7 +1648,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.mongoUser.MongoUserTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/mongouser"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/mongouser"
 
 mongouser.NewMongoUserTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MongoUserTimeoutsOutputReference
 ```
