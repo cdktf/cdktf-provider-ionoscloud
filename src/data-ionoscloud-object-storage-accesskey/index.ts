@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.4/docs/data-sources/object_storage_accesskey
+// https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.5/docs/data-sources/object_storage_accesskey
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,19 +15,19 @@ export interface DataIonoscloudObjectStorageAccesskeyConfig extends cdktf.Terraf
   /**
   * Access key metadata is a string of 92 characters.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.4/docs/data-sources/object_storage_accesskey#accesskey DataIonoscloudObjectStorageAccesskey#accesskey}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.5/docs/data-sources/object_storage_accesskey#accesskey DataIonoscloudObjectStorageAccesskey#accesskey}
   */
   readonly accesskey?: string;
   /**
   * Description of the Access key.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.4/docs/data-sources/object_storage_accesskey#description DataIonoscloudObjectStorageAccesskey#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.5/docs/data-sources/object_storage_accesskey#description DataIonoscloudObjectStorageAccesskey#description}
   */
   readonly description?: string;
   /**
   * The ID (UUID) of the AccessKey.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.4/docs/data-sources/object_storage_accesskey#id DataIonoscloudObjectStorageAccesskey#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.5/docs/data-sources/object_storage_accesskey#id DataIonoscloudObjectStorageAccesskey#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -36,7 +36,7 @@ export interface DataIonoscloudObjectStorageAccesskeyConfig extends cdktf.Terraf
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.4/docs/data-sources/object_storage_accesskey ionoscloud_object_storage_accesskey}
+* Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.5/docs/data-sources/object_storage_accesskey ionoscloud_object_storage_accesskey}
 */
 export class DataIonoscloudObjectStorageAccesskey extends cdktf.TerraformDataSource {
 
@@ -52,7 +52,7 @@ export class DataIonoscloudObjectStorageAccesskey extends cdktf.TerraformDataSou
   * Generates CDKTF code for importing a DataIonoscloudObjectStorageAccesskey resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataIonoscloudObjectStorageAccesskey to import
-  * @param importFromId The id of the existing DataIonoscloudObjectStorageAccesskey that should be imported. Refer to the {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.4/docs/data-sources/object_storage_accesskey#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataIonoscloudObjectStorageAccesskey that should be imported. Refer to the {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.5/docs/data-sources/object_storage_accesskey#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataIonoscloudObjectStorageAccesskey to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -64,7 +64,7 @@ export class DataIonoscloudObjectStorageAccesskey extends cdktf.TerraformDataSou
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.4/docs/data-sources/object_storage_accesskey ionoscloud_object_storage_accesskey} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.5/docs/data-sources/object_storage_accesskey ionoscloud_object_storage_accesskey} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -75,7 +75,7 @@ export class DataIonoscloudObjectStorageAccesskey extends cdktf.TerraformDataSou
       terraformResourceType: 'ionoscloud_object_storage_accesskey',
       terraformGeneratorMetadata: {
         providerName: 'ionoscloud',
-        providerVersion: '6.7.4',
+        providerVersion: '6.7.5',
         providerVersionConstraint: '~> 6.2'
       },
       provider: config.provider,
