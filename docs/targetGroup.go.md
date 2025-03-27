@@ -4,12 +4,12 @@
 
 ### TargetGroup <a name="TargetGroup" id="@cdktf/provider-ionoscloud.targetGroup.TargetGroup"></a>
 
-Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.3/docs/resources/target_group ionoscloud_target_group}.
+Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.4/docs/resources/target_group ionoscloud_target_group}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.targetGroup.TargetGroup.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/targetgroup"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/targetgroup"
 
 targetgroup.NewTargetGroup(scope Construct, id *string, config TargetGroupConfig) TargetGroup
 ```
@@ -465,7 +465,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-ionoscloud.targetGroup.TargetGroup.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/targetgroup"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/targetgroup"
 
 targetgroup.TargetGroup_IsConstruct(x interface{}) *bool
 ```
@@ -497,7 +497,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-ionoscloud.targetGroup.TargetGroup.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/targetgroup"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/targetgroup"
 
 targetgroup.TargetGroup_IsTerraformElement(x interface{}) *bool
 ```
@@ -511,7 +511,7 @@ targetgroup.TargetGroup_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-ionoscloud.targetGroup.TargetGroup.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/targetgroup"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/targetgroup"
 
 targetgroup.TargetGroup_IsTerraformResource(x interface{}) *bool
 ```
@@ -525,7 +525,7 @@ targetgroup.TargetGroup_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-ionoscloud.targetGroup.TargetGroup.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/targetgroup"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/targetgroup"
 
 targetgroup.TargetGroup_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -554,7 +554,7 @@ The construct id used in the generated config for the TargetGroup to import.
 
 The id of the existing TargetGroup that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.3/docs/resources/target_group#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.4/docs/resources/target_group#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -952,7 +952,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-ionoscloud.targetGroup.TargetGroupConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/targetgroup"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/targetgroup"
 
 &targetgroup.TargetGroupConfig {
 	Connection: interface{},
@@ -966,11 +966,11 @@ import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/targetgroup
 	Name: *string,
 	Protocol: *string,
 	ProtocolVersion: *string,
-	HealthCheck: github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11.targetGroup.TargetGroupHealthCheck,
-	HttpHealthCheck: github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11.targetGroup.TargetGroupHttpHealthCheck,
+	HealthCheck: github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud.targetGroup.TargetGroupHealthCheck,
+	HttpHealthCheck: github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud.targetGroup.TargetGroupHttpHealthCheck,
 	Id: *string,
 	Targets: interface{},
-	Timeouts: github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11.targetGroup.TargetGroupTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud.targetGroup.TargetGroupTimeouts,
 }
 ```
 
@@ -991,7 +991,7 @@ import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/targetgroup
 | <code><a href="#@cdktf/provider-ionoscloud.targetGroup.TargetGroupConfig.property.protocolVersion">ProtocolVersion</a></code> | <code>*string</code> | The forwarding protocol version. Value is ignored when protocol is not 'HTTP'. |
 | <code><a href="#@cdktf/provider-ionoscloud.targetGroup.TargetGroupConfig.property.healthCheck">HealthCheck</a></code> | <code><a href="#@cdktf/provider-ionoscloud.targetGroup.TargetGroupHealthCheck">TargetGroupHealthCheck</a></code> | health_check block. |
 | <code><a href="#@cdktf/provider-ionoscloud.targetGroup.TargetGroupConfig.property.httpHealthCheck">HttpHealthCheck</a></code> | <code><a href="#@cdktf/provider-ionoscloud.targetGroup.TargetGroupHttpHealthCheck">TargetGroupHttpHealthCheck</a></code> | http_health_check block. |
-| <code><a href="#@cdktf/provider-ionoscloud.targetGroup.TargetGroupConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.3/docs/resources/target_group#id TargetGroup#id}. |
+| <code><a href="#@cdktf/provider-ionoscloud.targetGroup.TargetGroupConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.4/docs/resources/target_group#id TargetGroup#id}. |
 | <code><a href="#@cdktf/provider-ionoscloud.targetGroup.TargetGroupConfig.property.targets">Targets</a></code> | <code>interface{}</code> | targets block. |
 | <code><a href="#@cdktf/provider-ionoscloud.targetGroup.TargetGroupConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-ionoscloud.targetGroup.TargetGroupTimeouts">TargetGroupTimeouts</a></code> | timeouts block. |
 
@@ -1077,7 +1077,7 @@ Algorithm *string
 
 Balancing algorithm.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.3/docs/resources/target_group#algorithm TargetGroup#algorithm}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.4/docs/resources/target_group#algorithm TargetGroup#algorithm}
 
 ---
 
@@ -1091,7 +1091,7 @@ Name *string
 
 The name of the target group.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.3/docs/resources/target_group#name TargetGroup#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.4/docs/resources/target_group#name TargetGroup#name}
 
 ---
 
@@ -1105,7 +1105,7 @@ Protocol *string
 
 Balancing protocol.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.3/docs/resources/target_group#protocol TargetGroup#protocol}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.4/docs/resources/target_group#protocol TargetGroup#protocol}
 
 ---
 
@@ -1119,7 +1119,7 @@ ProtocolVersion *string
 
 The forwarding protocol version. Value is ignored when protocol is not 'HTTP'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.3/docs/resources/target_group#protocol_version TargetGroup#protocol_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.4/docs/resources/target_group#protocol_version TargetGroup#protocol_version}
 
 ---
 
@@ -1133,7 +1133,7 @@ HealthCheck TargetGroupHealthCheck
 
 health_check block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.3/docs/resources/target_group#health_check TargetGroup#health_check}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.4/docs/resources/target_group#health_check TargetGroup#health_check}
 
 ---
 
@@ -1147,7 +1147,7 @@ HttpHealthCheck TargetGroupHttpHealthCheck
 
 http_health_check block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.3/docs/resources/target_group#http_health_check TargetGroup#http_health_check}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.4/docs/resources/target_group#http_health_check TargetGroup#http_health_check}
 
 ---
 
@@ -1159,7 +1159,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.3/docs/resources/target_group#id TargetGroup#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.4/docs/resources/target_group#id TargetGroup#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1176,7 +1176,7 @@ Targets interface{}
 
 targets block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.3/docs/resources/target_group#targets TargetGroup#targets}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.4/docs/resources/target_group#targets TargetGroup#targets}
 
 ---
 
@@ -1190,7 +1190,7 @@ Timeouts TargetGroupTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.3/docs/resources/target_group#timeouts TargetGroup#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.4/docs/resources/target_group#timeouts TargetGroup#timeouts}
 
 ---
 
@@ -1199,7 +1199,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 #### Initializer <a name="Initializer" id="@cdktf/provider-ionoscloud.targetGroup.TargetGroupHealthCheck.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/targetgroup"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/targetgroup"
 
 &targetgroup.TargetGroupHealthCheck {
 	CheckInterval: *f64,
@@ -1228,7 +1228,7 @@ CheckInterval *f64
 
 The interval in milliseconds between consecutive health checks; default is 2000.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.3/docs/resources/target_group#check_interval TargetGroup#check_interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.4/docs/resources/target_group#check_interval TargetGroup#check_interval}
 
 ---
 
@@ -1244,7 +1244,7 @@ The maximum time in milliseconds to wait for a target to respond to a check.
 
 For target VMs with 'Check Interval' set, the lesser of the two  values is used once the TCP connection is established.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.3/docs/resources/target_group#check_timeout TargetGroup#check_timeout}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.4/docs/resources/target_group#check_timeout TargetGroup#check_timeout}
 
 ---
 
@@ -1260,7 +1260,7 @@ The maximum number of attempts to reconnect to a target after a connection failu
 
 Valid range is 0 to 65535, and default is three reconnection.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.3/docs/resources/target_group#retries TargetGroup#retries}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.4/docs/resources/target_group#retries TargetGroup#retries}
 
 ---
 
@@ -1269,7 +1269,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 #### Initializer <a name="Initializer" id="@cdktf/provider-ionoscloud.targetGroup.TargetGroupHttpHealthCheck.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/targetgroup"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/targetgroup"
 
 &targetgroup.TargetGroupHttpHealthCheck {
 	MatchType: *string,
@@ -1285,12 +1285,12 @@ import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/targetgroup
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-ionoscloud.targetGroup.TargetGroupHttpHealthCheck.property.matchType">MatchType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.3/docs/resources/target_group#match_type TargetGroup#match_type}. |
+| <code><a href="#@cdktf/provider-ionoscloud.targetGroup.TargetGroupHttpHealthCheck.property.matchType">MatchType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.4/docs/resources/target_group#match_type TargetGroup#match_type}. |
 | <code><a href="#@cdktf/provider-ionoscloud.targetGroup.TargetGroupHttpHealthCheck.property.response">Response</a></code> | <code>*string</code> | The response returned by the request, depending on the match type. |
 | <code><a href="#@cdktf/provider-ionoscloud.targetGroup.TargetGroupHttpHealthCheck.property.method">Method</a></code> | <code>*string</code> | The method for the HTTP health check. |
-| <code><a href="#@cdktf/provider-ionoscloud.targetGroup.TargetGroupHttpHealthCheck.property.negate">Negate</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.3/docs/resources/target_group#negate TargetGroup#negate}. |
+| <code><a href="#@cdktf/provider-ionoscloud.targetGroup.TargetGroupHttpHealthCheck.property.negate">Negate</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.4/docs/resources/target_group#negate TargetGroup#negate}. |
 | <code><a href="#@cdktf/provider-ionoscloud.targetGroup.TargetGroupHttpHealthCheck.property.path">Path</a></code> | <code>*string</code> | The path (destination URL) for the HTTP health check request; the default is /. |
-| <code><a href="#@cdktf/provider-ionoscloud.targetGroup.TargetGroupHttpHealthCheck.property.regex">Regex</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.3/docs/resources/target_group#regex TargetGroup#regex}. |
+| <code><a href="#@cdktf/provider-ionoscloud.targetGroup.TargetGroupHttpHealthCheck.property.regex">Regex</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.4/docs/resources/target_group#regex TargetGroup#regex}. |
 
 ---
 
@@ -1302,7 +1302,7 @@ MatchType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.3/docs/resources/target_group#match_type TargetGroup#match_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.4/docs/resources/target_group#match_type TargetGroup#match_type}.
 
 ---
 
@@ -1316,7 +1316,7 @@ Response *string
 
 The response returned by the request, depending on the match type.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.3/docs/resources/target_group#response TargetGroup#response}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.4/docs/resources/target_group#response TargetGroup#response}
 
 ---
 
@@ -1330,7 +1330,7 @@ Method *string
 
 The method for the HTTP health check.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.3/docs/resources/target_group#method TargetGroup#method}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.4/docs/resources/target_group#method TargetGroup#method}
 
 ---
 
@@ -1342,7 +1342,7 @@ Negate interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.3/docs/resources/target_group#negate TargetGroup#negate}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.4/docs/resources/target_group#negate TargetGroup#negate}.
 
 ---
 
@@ -1356,7 +1356,7 @@ Path *string
 
 The path (destination URL) for the HTTP health check request; the default is /.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.3/docs/resources/target_group#path TargetGroup#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.4/docs/resources/target_group#path TargetGroup#path}
 
 ---
 
@@ -1368,7 +1368,7 @@ Regex interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.3/docs/resources/target_group#regex TargetGroup#regex}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.4/docs/resources/target_group#regex TargetGroup#regex}.
 
 ---
 
@@ -1377,7 +1377,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 #### Initializer <a name="Initializer" id="@cdktf/provider-ionoscloud.targetGroup.TargetGroupTargets.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/targetgroup"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/targetgroup"
 
 &targetgroup.TargetGroupTargets {
 	Ip: *string,
@@ -1412,7 +1412,7 @@ Ip *string
 
 The IP of the balanced target VM.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.3/docs/resources/target_group#ip TargetGroup#ip}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.4/docs/resources/target_group#ip TargetGroup#ip}
 
 ---
 
@@ -1426,7 +1426,7 @@ Port *f64
 
 The port of the balanced target service; valid range is 1 to 65535.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.3/docs/resources/target_group#port TargetGroup#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.4/docs/resources/target_group#port TargetGroup#port}
 
 ---
 
@@ -1442,7 +1442,7 @@ Traffic is distributed in proportion to target weight, relative to the combined 
 
 A target with higher weight receives a greater share of traffic. Valid range is 0 to 256 and default is 1; targets with weight of 0 do not participate in load balancing but still accept persistent connections. It is best use values in the middle of the range to leave room for later adjustments.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.3/docs/resources/target_group#weight TargetGroup#weight}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.4/docs/resources/target_group#weight TargetGroup#weight}
 
 ---
 
@@ -1458,7 +1458,7 @@ Makes the target available only if it accepts periodic health check TCP connecti
 
 when turned off, the target is considered always available. The health check only consists of a connection attempt to the address and port of the target. Default is True.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.3/docs/resources/target_group#health_check_enabled TargetGroup#health_check_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.4/docs/resources/target_group#health_check_enabled TargetGroup#health_check_enabled}
 
 ---
 
@@ -1472,7 +1472,7 @@ MaintenanceEnabled interface{}
 
 Maintenance mode prevents the target from receiving balanced traffic.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.3/docs/resources/target_group#maintenance_enabled TargetGroup#maintenance_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.4/docs/resources/target_group#maintenance_enabled TargetGroup#maintenance_enabled}
 
 ---
 
@@ -1486,7 +1486,7 @@ ProxyProtocol *string
 
 Proxy protocol version.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.3/docs/resources/target_group#proxy_protocol TargetGroup#proxy_protocol}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.4/docs/resources/target_group#proxy_protocol TargetGroup#proxy_protocol}
 
 ---
 
@@ -1495,7 +1495,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 #### Initializer <a name="Initializer" id="@cdktf/provider-ionoscloud.targetGroup.TargetGroupTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/targetgroup"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/targetgroup"
 
 &targetgroup.TargetGroupTimeouts {
 	Create: *string,
@@ -1509,10 +1509,10 @@ import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/targetgroup
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-ionoscloud.targetGroup.TargetGroupTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.3/docs/resources/target_group#create TargetGroup#create}. |
-| <code><a href="#@cdktf/provider-ionoscloud.targetGroup.TargetGroupTimeouts.property.default">Default</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.3/docs/resources/target_group#default TargetGroup#default}. |
-| <code><a href="#@cdktf/provider-ionoscloud.targetGroup.TargetGroupTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.3/docs/resources/target_group#delete TargetGroup#delete}. |
-| <code><a href="#@cdktf/provider-ionoscloud.targetGroup.TargetGroupTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.3/docs/resources/target_group#update TargetGroup#update}. |
+| <code><a href="#@cdktf/provider-ionoscloud.targetGroup.TargetGroupTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.4/docs/resources/target_group#create TargetGroup#create}. |
+| <code><a href="#@cdktf/provider-ionoscloud.targetGroup.TargetGroupTimeouts.property.default">Default</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.4/docs/resources/target_group#default TargetGroup#default}. |
+| <code><a href="#@cdktf/provider-ionoscloud.targetGroup.TargetGroupTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.4/docs/resources/target_group#delete TargetGroup#delete}. |
+| <code><a href="#@cdktf/provider-ionoscloud.targetGroup.TargetGroupTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.4/docs/resources/target_group#update TargetGroup#update}. |
 
 ---
 
@@ -1524,7 +1524,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.3/docs/resources/target_group#create TargetGroup#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.4/docs/resources/target_group#create TargetGroup#create}.
 
 ---
 
@@ -1536,7 +1536,7 @@ Default *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.3/docs/resources/target_group#default TargetGroup#default}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.4/docs/resources/target_group#default TargetGroup#default}.
 
 ---
 
@@ -1548,7 +1548,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.3/docs/resources/target_group#delete TargetGroup#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.4/docs/resources/target_group#delete TargetGroup#delete}.
 
 ---
 
@@ -1560,7 +1560,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.3/docs/resources/target_group#update TargetGroup#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.4/docs/resources/target_group#update TargetGroup#update}.
 
 ---
 
@@ -1571,7 +1571,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.targetGroup.TargetGroupHealthCheckOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/targetgroup"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/targetgroup"
 
 targetgroup.NewTargetGroupHealthCheckOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) TargetGroupHealthCheckOutputReference
 ```
@@ -1907,7 +1907,7 @@ func InternalValue() TargetGroupHealthCheck
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.targetGroup.TargetGroupHttpHealthCheckOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/targetgroup"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/targetgroup"
 
 targetgroup.NewTargetGroupHttpHealthCheckOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) TargetGroupHttpHealthCheckOutputReference
 ```
@@ -2316,7 +2316,7 @@ func InternalValue() TargetGroupHttpHealthCheck
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.targetGroup.TargetGroupTargetsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/targetgroup"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/targetgroup"
 
 targetgroup.NewTargetGroupTargetsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) TargetGroupTargetsList
 ```
@@ -2476,7 +2476,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.targetGroup.TargetGroupTargetsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/targetgroup"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/targetgroup"
 
 targetgroup.NewTargetGroupTargetsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) TargetGroupTargetsOutputReference
 ```
@@ -2896,7 +2896,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.targetGroup.TargetGroupTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/targetgroup"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/targetgroup"
 
 targetgroup.NewTargetGroupTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) TargetGroupTimeoutsOutputReference
 ```

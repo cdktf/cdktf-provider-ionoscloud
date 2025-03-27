@@ -4,12 +4,12 @@
 
 ### Networkloadbalancer <a name="Networkloadbalancer" id="@cdktf/provider-ionoscloud.networkloadbalancer.Networkloadbalancer"></a>
 
-Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.3/docs/resources/networkloadbalancer ionoscloud_networkloadbalancer}.
+Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.4/docs/resources/networkloadbalancer ionoscloud_networkloadbalancer}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.networkloadbalancer.Networkloadbalancer.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/networkloadbalancer"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/networkloadbalancer"
 
 networkloadbalancer.NewNetworkloadbalancer(scope Construct, id *string, config NetworkloadbalancerConfig) Networkloadbalancer
 ```
@@ -453,7 +453,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-ionoscloud.networkloadbalancer.Networkloadbalancer.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/networkloadbalancer"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/networkloadbalancer"
 
 networkloadbalancer.Networkloadbalancer_IsConstruct(x interface{}) *bool
 ```
@@ -485,7 +485,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-ionoscloud.networkloadbalancer.Networkloadbalancer.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/networkloadbalancer"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/networkloadbalancer"
 
 networkloadbalancer.Networkloadbalancer_IsTerraformElement(x interface{}) *bool
 ```
@@ -499,7 +499,7 @@ networkloadbalancer.Networkloadbalancer_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-ionoscloud.networkloadbalancer.Networkloadbalancer.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/networkloadbalancer"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/networkloadbalancer"
 
 networkloadbalancer.Networkloadbalancer_IsTerraformResource(x interface{}) *bool
 ```
@@ -513,7 +513,7 @@ networkloadbalancer.Networkloadbalancer_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-ionoscloud.networkloadbalancer.Networkloadbalancer.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/networkloadbalancer"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/networkloadbalancer"
 
 networkloadbalancer.Networkloadbalancer_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -542,7 +542,7 @@ The construct id used in the generated config for the Networkloadbalancer to imp
 
 The id of the existing Networkloadbalancer that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.3/docs/resources/networkloadbalancer#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.4/docs/resources/networkloadbalancer#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -984,7 +984,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-ionoscloud.networkloadbalancer.NetworkloadbalancerConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/networkloadbalancer"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/networkloadbalancer"
 
 &networkloadbalancer.NetworkloadbalancerConfig {
 	Connection: interface{},
@@ -999,12 +999,12 @@ import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/networkload
 	Name: *string,
 	TargetLan: *f64,
 	CentralLogging: interface{},
-	Flowlog: github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11.networkloadbalancer.NetworkloadbalancerFlowlog,
+	Flowlog: github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud.networkloadbalancer.NetworkloadbalancerFlowlog,
 	Id: *string,
 	Ips: *[]*string,
 	LbPrivateIps: *[]*string,
 	LoggingFormat: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11.networkloadbalancer.NetworkloadbalancerTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud.networkloadbalancer.NetworkloadbalancerTimeouts,
 }
 ```
 
@@ -1019,13 +1019,13 @@ import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/networkload
 | <code><a href="#@cdktf/provider-ionoscloud.networkloadbalancer.NetworkloadbalancerConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.networkloadbalancer.NetworkloadbalancerConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.networkloadbalancer.NetworkloadbalancerConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-ionoscloud.networkloadbalancer.NetworkloadbalancerConfig.property.datacenterId">DatacenterId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.3/docs/resources/networkloadbalancer#datacenter_id Networkloadbalancer#datacenter_id}. |
+| <code><a href="#@cdktf/provider-ionoscloud.networkloadbalancer.NetworkloadbalancerConfig.property.datacenterId">DatacenterId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.4/docs/resources/networkloadbalancer#datacenter_id Networkloadbalancer#datacenter_id}. |
 | <code><a href="#@cdktf/provider-ionoscloud.networkloadbalancer.NetworkloadbalancerConfig.property.listenerLan">ListenerLan</a></code> | <code>*f64</code> | Id of the listening LAN. (inbound). |
 | <code><a href="#@cdktf/provider-ionoscloud.networkloadbalancer.NetworkloadbalancerConfig.property.name">Name</a></code> | <code>*string</code> | A name of that Network Load Balancer. |
 | <code><a href="#@cdktf/provider-ionoscloud.networkloadbalancer.NetworkloadbalancerConfig.property.targetLan">TargetLan</a></code> | <code>*f64</code> | Id of the balanced private target LAN. (outbound). |
 | <code><a href="#@cdktf/provider-ionoscloud.networkloadbalancer.NetworkloadbalancerConfig.property.centralLogging">CentralLogging</a></code> | <code>interface{}</code> | Turn logging on and off for this product. Default value is 'false'. |
 | <code><a href="#@cdktf/provider-ionoscloud.networkloadbalancer.NetworkloadbalancerConfig.property.flowlog">Flowlog</a></code> | <code><a href="#@cdktf/provider-ionoscloud.networkloadbalancer.NetworkloadbalancerFlowlog">NetworkloadbalancerFlowlog</a></code> | flowlog block. |
-| <code><a href="#@cdktf/provider-ionoscloud.networkloadbalancer.NetworkloadbalancerConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.3/docs/resources/networkloadbalancer#id Networkloadbalancer#id}. |
+| <code><a href="#@cdktf/provider-ionoscloud.networkloadbalancer.NetworkloadbalancerConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.4/docs/resources/networkloadbalancer#id Networkloadbalancer#id}. |
 | <code><a href="#@cdktf/provider-ionoscloud.networkloadbalancer.NetworkloadbalancerConfig.property.ips">Ips</a></code> | <code>*[]*string</code> | Collection of IP addresses of the Network Load Balancer. |
 | <code><a href="#@cdktf/provider-ionoscloud.networkloadbalancer.NetworkloadbalancerConfig.property.lbPrivateIps">LbPrivateIps</a></code> | <code>*[]*string</code> | Collection of private IP addresses with subnet mask of the Network Load Balancer. |
 | <code><a href="#@cdktf/provider-ionoscloud.networkloadbalancer.NetworkloadbalancerConfig.property.loggingFormat">LoggingFormat</a></code> | <code>*string</code> | Specifies the format of the logs. |
@@ -1111,7 +1111,7 @@ DatacenterId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.3/docs/resources/networkloadbalancer#datacenter_id Networkloadbalancer#datacenter_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.4/docs/resources/networkloadbalancer#datacenter_id Networkloadbalancer#datacenter_id}.
 
 ---
 
@@ -1125,7 +1125,7 @@ ListenerLan *f64
 
 Id of the listening LAN. (inbound).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.3/docs/resources/networkloadbalancer#listener_lan Networkloadbalancer#listener_lan}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.4/docs/resources/networkloadbalancer#listener_lan Networkloadbalancer#listener_lan}
 
 ---
 
@@ -1139,7 +1139,7 @@ Name *string
 
 A name of that Network Load Balancer.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.3/docs/resources/networkloadbalancer#name Networkloadbalancer#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.4/docs/resources/networkloadbalancer#name Networkloadbalancer#name}
 
 ---
 
@@ -1153,7 +1153,7 @@ TargetLan *f64
 
 Id of the balanced private target LAN. (outbound).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.3/docs/resources/networkloadbalancer#target_lan Networkloadbalancer#target_lan}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.4/docs/resources/networkloadbalancer#target_lan Networkloadbalancer#target_lan}
 
 ---
 
@@ -1167,7 +1167,7 @@ CentralLogging interface{}
 
 Turn logging on and off for this product. Default value is 'false'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.3/docs/resources/networkloadbalancer#central_logging Networkloadbalancer#central_logging}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.4/docs/resources/networkloadbalancer#central_logging Networkloadbalancer#central_logging}
 
 ---
 
@@ -1181,7 +1181,7 @@ Flowlog NetworkloadbalancerFlowlog
 
 flowlog block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.3/docs/resources/networkloadbalancer#flowlog Networkloadbalancer#flowlog}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.4/docs/resources/networkloadbalancer#flowlog Networkloadbalancer#flowlog}
 
 ---
 
@@ -1193,7 +1193,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.3/docs/resources/networkloadbalancer#id Networkloadbalancer#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.4/docs/resources/networkloadbalancer#id Networkloadbalancer#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1212,7 +1212,7 @@ Collection of IP addresses of the Network Load Balancer.
 
 (inbound and outbound) IP of the listenerLan must be a customer reserved IP for the public load balancer and private IP for the private load balancer.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.3/docs/resources/networkloadbalancer#ips Networkloadbalancer#ips}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.4/docs/resources/networkloadbalancer#ips Networkloadbalancer#ips}
 
 ---
 
@@ -1228,7 +1228,7 @@ Collection of private IP addresses with subnet mask of the Network Load Balancer
 
 IPs must contain valid subnet mask. If user will not provide any IP then the system will generate one IP with /24 subnet.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.3/docs/resources/networkloadbalancer#lb_private_ips Networkloadbalancer#lb_private_ips}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.4/docs/resources/networkloadbalancer#lb_private_ips Networkloadbalancer#lb_private_ips}
 
 ---
 
@@ -1242,7 +1242,7 @@ LoggingFormat *string
 
 Specifies the format of the logs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.3/docs/resources/networkloadbalancer#logging_format Networkloadbalancer#logging_format}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.4/docs/resources/networkloadbalancer#logging_format Networkloadbalancer#logging_format}
 
 ---
 
@@ -1256,7 +1256,7 @@ Timeouts NetworkloadbalancerTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.3/docs/resources/networkloadbalancer#timeouts Networkloadbalancer#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.4/docs/resources/networkloadbalancer#timeouts Networkloadbalancer#timeouts}
 
 ---
 
@@ -1265,7 +1265,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 #### Initializer <a name="Initializer" id="@cdktf/provider-ionoscloud.networkloadbalancer.NetworkloadbalancerFlowlog.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/networkloadbalancer"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/networkloadbalancer"
 
 &networkloadbalancer.NetworkloadbalancerFlowlog {
 	Action: *string,
@@ -1296,7 +1296,7 @@ Action *string
 
 Specifies the traffic direction pattern. Valid values: ACCEPTED, REJECTED, ALL. Immutable, forces re-recreation of the nic resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.3/docs/resources/networkloadbalancer#action Networkloadbalancer#action}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.4/docs/resources/networkloadbalancer#action Networkloadbalancer#action}
 
 ---
 
@@ -1310,7 +1310,7 @@ Bucket *string
 
 The bucket name of an existing IONOS Object Storage bucket. Immutable, forces re-recreation of the nic resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.3/docs/resources/networkloadbalancer#bucket Networkloadbalancer#bucket}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.4/docs/resources/networkloadbalancer#bucket Networkloadbalancer#bucket}
 
 ---
 
@@ -1324,7 +1324,7 @@ Direction *string
 
 Specifies the traffic direction pattern. Valid values: INGRESS, EGRESS, BIDIRECTIONAL. Immutable, forces re-recreation of the nic resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.3/docs/resources/networkloadbalancer#direction Networkloadbalancer#direction}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.4/docs/resources/networkloadbalancer#direction Networkloadbalancer#direction}
 
 ---
 
@@ -1338,7 +1338,7 @@ Name *string
 
 The resource name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.3/docs/resources/networkloadbalancer#name Networkloadbalancer#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.4/docs/resources/networkloadbalancer#name Networkloadbalancer#name}
 
 ---
 
@@ -1347,7 +1347,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 #### Initializer <a name="Initializer" id="@cdktf/provider-ionoscloud.networkloadbalancer.NetworkloadbalancerTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/networkloadbalancer"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/networkloadbalancer"
 
 &networkloadbalancer.NetworkloadbalancerTimeouts {
 	Create: *string,
@@ -1361,10 +1361,10 @@ import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/networkload
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-ionoscloud.networkloadbalancer.NetworkloadbalancerTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.3/docs/resources/networkloadbalancer#create Networkloadbalancer#create}. |
-| <code><a href="#@cdktf/provider-ionoscloud.networkloadbalancer.NetworkloadbalancerTimeouts.property.default">Default</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.3/docs/resources/networkloadbalancer#default Networkloadbalancer#default}. |
-| <code><a href="#@cdktf/provider-ionoscloud.networkloadbalancer.NetworkloadbalancerTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.3/docs/resources/networkloadbalancer#delete Networkloadbalancer#delete}. |
-| <code><a href="#@cdktf/provider-ionoscloud.networkloadbalancer.NetworkloadbalancerTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.3/docs/resources/networkloadbalancer#update Networkloadbalancer#update}. |
+| <code><a href="#@cdktf/provider-ionoscloud.networkloadbalancer.NetworkloadbalancerTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.4/docs/resources/networkloadbalancer#create Networkloadbalancer#create}. |
+| <code><a href="#@cdktf/provider-ionoscloud.networkloadbalancer.NetworkloadbalancerTimeouts.property.default">Default</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.4/docs/resources/networkloadbalancer#default Networkloadbalancer#default}. |
+| <code><a href="#@cdktf/provider-ionoscloud.networkloadbalancer.NetworkloadbalancerTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.4/docs/resources/networkloadbalancer#delete Networkloadbalancer#delete}. |
+| <code><a href="#@cdktf/provider-ionoscloud.networkloadbalancer.NetworkloadbalancerTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.4/docs/resources/networkloadbalancer#update Networkloadbalancer#update}. |
 
 ---
 
@@ -1376,7 +1376,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.3/docs/resources/networkloadbalancer#create Networkloadbalancer#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.4/docs/resources/networkloadbalancer#create Networkloadbalancer#create}.
 
 ---
 
@@ -1388,7 +1388,7 @@ Default *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.3/docs/resources/networkloadbalancer#default Networkloadbalancer#default}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.4/docs/resources/networkloadbalancer#default Networkloadbalancer#default}.
 
 ---
 
@@ -1400,7 +1400,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.3/docs/resources/networkloadbalancer#delete Networkloadbalancer#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.4/docs/resources/networkloadbalancer#delete Networkloadbalancer#delete}.
 
 ---
 
@@ -1412,7 +1412,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.3/docs/resources/networkloadbalancer#update Networkloadbalancer#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.4/docs/resources/networkloadbalancer#update Networkloadbalancer#update}.
 
 ---
 
@@ -1423,7 +1423,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.networkloadbalancer.NetworkloadbalancerFlowlogOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/networkloadbalancer"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/networkloadbalancer"
 
 networkloadbalancer.NewNetworkloadbalancerFlowlogOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) NetworkloadbalancerFlowlogOutputReference
 ```
@@ -1771,7 +1771,7 @@ func InternalValue() NetworkloadbalancerFlowlog
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.networkloadbalancer.NetworkloadbalancerTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/networkloadbalancer"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/networkloadbalancer"
 
 networkloadbalancer.NewNetworkloadbalancerTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) NetworkloadbalancerTimeoutsOutputReference
 ```

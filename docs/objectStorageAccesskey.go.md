@@ -4,12 +4,12 @@
 
 ### ObjectStorageAccesskey <a name="ObjectStorageAccesskey" id="@cdktf/provider-ionoscloud.objectStorageAccesskey.ObjectStorageAccesskey"></a>
 
-Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.3/docs/resources/object_storage_accesskey ionoscloud_object_storage_accesskey}.
+Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.4/docs/resources/object_storage_accesskey ionoscloud_object_storage_accesskey}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.objectStorageAccesskey.ObjectStorageAccesskey.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/objectstorageaccesskey"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/objectstorageaccesskey"
 
 objectstorageaccesskey.NewObjectStorageAccesskey(scope Construct, id *string, config ObjectStorageAccesskeyConfig) ObjectStorageAccesskey
 ```
@@ -405,7 +405,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-ionoscloud.objectStorageAccesskey.ObjectStorageAccesskey.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/objectstorageaccesskey"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/objectstorageaccesskey"
 
 objectstorageaccesskey.ObjectStorageAccesskey_IsConstruct(x interface{}) *bool
 ```
@@ -437,7 +437,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-ionoscloud.objectStorageAccesskey.ObjectStorageAccesskey.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/objectstorageaccesskey"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/objectstorageaccesskey"
 
 objectstorageaccesskey.ObjectStorageAccesskey_IsTerraformElement(x interface{}) *bool
 ```
@@ -451,7 +451,7 @@ objectstorageaccesskey.ObjectStorageAccesskey_IsTerraformElement(x interface{}) 
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-ionoscloud.objectStorageAccesskey.ObjectStorageAccesskey.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/objectstorageaccesskey"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/objectstorageaccesskey"
 
 objectstorageaccesskey.ObjectStorageAccesskey_IsTerraformResource(x interface{}) *bool
 ```
@@ -465,7 +465,7 @@ objectstorageaccesskey.ObjectStorageAccesskey_IsTerraformResource(x interface{})
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-ionoscloud.objectStorageAccesskey.ObjectStorageAccesskey.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/objectstorageaccesskey"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/objectstorageaccesskey"
 
 objectstorageaccesskey.ObjectStorageAccesskey_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -494,7 +494,7 @@ The construct id used in the generated config for the ObjectStorageAccesskey to 
 
 The id of the existing ObjectStorageAccesskey that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.3/docs/resources/object_storage_accesskey#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.4/docs/resources/object_storage_accesskey#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -793,7 +793,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-ionoscloud.objectStorageAccesskey.ObjectStorageAccesskeyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/objectstorageaccesskey"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/objectstorageaccesskey"
 
 &objectstorageaccesskey.ObjectStorageAccesskeyConfig {
 	Connection: interface{},
@@ -804,7 +804,7 @@ import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/objectstora
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
 	Description: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11.objectStorageAccesskey.ObjectStorageAccesskeyTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud.objectStorageAccesskey.ObjectStorageAccesskeyTimeouts,
 }
 ```
 
@@ -904,7 +904,7 @@ Description *string
 
 Description of the Access key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.3/docs/resources/object_storage_accesskey#description ObjectStorageAccesskey#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.4/docs/resources/object_storage_accesskey#description ObjectStorageAccesskey#description}
 
 ---
 
@@ -918,7 +918,7 @@ Timeouts ObjectStorageAccesskeyTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.3/docs/resources/object_storage_accesskey#timeouts ObjectStorageAccesskey#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.4/docs/resources/object_storage_accesskey#timeouts ObjectStorageAccesskey#timeouts}
 
 ---
 
@@ -927,7 +927,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 #### Initializer <a name="Initializer" id="@cdktf/provider-ionoscloud.objectStorageAccesskey.ObjectStorageAccesskeyTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/objectstorageaccesskey"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/objectstorageaccesskey"
 
 &objectstorageaccesskey.ObjectStorageAccesskeyTimeouts {
 	Create: *string,
@@ -956,7 +956,7 @@ Create *string
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.3/docs/resources/object_storage_accesskey#create ObjectStorageAccesskey#create}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.4/docs/resources/object_storage_accesskey#create ObjectStorageAccesskey#create}
 
 ---
 
@@ -970,7 +970,7 @@ Delete *string
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours). Setting a timeout for a Delete operation is only applicable if changes are saved into state before the destroy operation occurs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.3/docs/resources/object_storage_accesskey#delete ObjectStorageAccesskey#delete}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.4/docs/resources/object_storage_accesskey#delete ObjectStorageAccesskey#delete}
 
 ---
 
@@ -984,7 +984,7 @@ Read *string
 
 A string that can be [parsed as a duration](https://pkg.go.dev/time#ParseDuration) consisting of numbers and unit suffixes, such as "30s" or "2h45m". Valid time units are "s" (seconds), "m" (minutes), "h" (hours). Read operations occur during any refresh or planning operation when refresh is enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.3/docs/resources/object_storage_accesskey#read ObjectStorageAccesskey#read}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.4/docs/resources/object_storage_accesskey#read ObjectStorageAccesskey#read}
 
 ---
 
@@ -995,7 +995,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.objectStorageAccesskey.ObjectStorageAccesskeyTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/objectstorageaccesskey"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/objectstorageaccesskey"
 
 objectstorageaccesskey.NewObjectStorageAccesskeyTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ObjectStorageAccesskeyTimeoutsOutputReference
 ```
