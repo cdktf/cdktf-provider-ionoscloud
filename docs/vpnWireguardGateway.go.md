@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionosclo
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.vpnWireguardGateway.VpnWireguardGateway.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/vpnwireguardgateway"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/vpnwireguardgateway"
 
 vpnwireguardgateway.NewVpnWireguardGateway(scope Construct, id *string, config VpnWireguardGatewayConfig) VpnWireguardGateway
 ```
@@ -480,7 +480,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-ionoscloud.vpnWireguardGateway.VpnWireguardGateway.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/vpnwireguardgateway"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/vpnwireguardgateway"
 
 vpnwireguardgateway.VpnWireguardGateway_IsConstruct(x interface{}) *bool
 ```
@@ -512,7 +512,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-ionoscloud.vpnWireguardGateway.VpnWireguardGateway.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/vpnwireguardgateway"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/vpnwireguardgateway"
 
 vpnwireguardgateway.VpnWireguardGateway_IsTerraformElement(x interface{}) *bool
 ```
@@ -526,7 +526,7 @@ vpnwireguardgateway.VpnWireguardGateway_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-ionoscloud.vpnWireguardGateway.VpnWireguardGateway.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/vpnwireguardgateway"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/vpnwireguardgateway"
 
 vpnwireguardgateway.VpnWireguardGateway_IsTerraformResource(x interface{}) *bool
 ```
@@ -540,7 +540,7 @@ vpnwireguardgateway.VpnWireguardGateway_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-ionoscloud.vpnWireguardGateway.VpnWireguardGateway.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/vpnwireguardgateway"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/vpnwireguardgateway"
 
 vpnwireguardgateway.VpnWireguardGateway_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1077,7 +1077,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-ionoscloud.vpnWireguardGateway.VpnWireguardGatewayConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/vpnwireguardgateway"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/vpnwireguardgateway"
 
 &vpnwireguardgateway.VpnWireguardGatewayConfig {
 	Connection: interface{},
@@ -1097,9 +1097,9 @@ import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/vpnwireguar
 	InterfaceIpv6Cidr: *string,
 	ListenPort: *f64,
 	Location: *string,
-	MaintenanceWindow: github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11.vpnWireguardGateway.VpnWireguardGatewayMaintenanceWindow,
+	MaintenanceWindow: github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud.vpnWireguardGateway.VpnWireguardGatewayMaintenanceWindow,
 	Tier: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11.vpnWireguardGateway.VpnWireguardGatewayTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud.vpnWireguardGateway.VpnWireguardGatewayTimeouts,
 }
 ```
 
@@ -1384,7 +1384,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 #### Initializer <a name="Initializer" id="@cdktf/provider-ionoscloud.vpnWireguardGateway.VpnWireguardGatewayConnections.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/vpnwireguardgateway"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/vpnwireguardgateway"
 
 &vpnwireguardgateway.VpnWireguardGatewayConnections {
 	DatacenterId: *string,
@@ -1458,7 +1458,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 #### Initializer <a name="Initializer" id="@cdktf/provider-ionoscloud.vpnWireguardGateway.VpnWireguardGatewayMaintenanceWindow.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/vpnwireguardgateway"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/vpnwireguardgateway"
 
 &vpnwireguardgateway.VpnWireguardGatewayMaintenanceWindow {
 	DayOfTheWeek: *string,
@@ -1508,7 +1508,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 #### Initializer <a name="Initializer" id="@cdktf/provider-ionoscloud.vpnWireguardGateway.VpnWireguardGatewayTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/vpnwireguardgateway"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/vpnwireguardgateway"
 
 &vpnwireguardgateway.VpnWireguardGatewayTimeouts {
 	Create: *string,
@@ -1584,7 +1584,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.vpnWireguardGateway.VpnWireguardGatewayConnectionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/vpnwireguardgateway"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/vpnwireguardgateway"
 
 vpnwireguardgateway.NewVpnWireguardGatewayConnectionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) VpnWireguardGatewayConnectionsList
 ```
@@ -1744,7 +1744,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.vpnWireguardGateway.VpnWireguardGatewayConnectionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/vpnwireguardgateway"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/vpnwireguardgateway"
 
 vpnwireguardgateway.NewVpnWireguardGatewayConnectionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) VpnWireguardGatewayConnectionsOutputReference
 ```
@@ -2113,7 +2113,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.vpnWireguardGateway.VpnWireguardGatewayMaintenanceWindowOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/vpnwireguardgateway"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/vpnwireguardgateway"
 
 vpnwireguardgateway.NewVpnWireguardGatewayMaintenanceWindowOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VpnWireguardGatewayMaintenanceWindowOutputReference
 ```
@@ -2406,7 +2406,7 @@ func InternalValue() VpnWireguardGatewayMaintenanceWindow
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.vpnWireguardGateway.VpnWireguardGatewayTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/vpnwireguardgateway"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/vpnwireguardgateway"
 
 vpnwireguardgateway.NewVpnWireguardGatewayTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VpnWireguardGatewayTimeoutsOutputReference
 ```
