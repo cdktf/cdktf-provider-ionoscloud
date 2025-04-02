@@ -4,7 +4,7 @@
 
 ### User <a name="User" id="@cdktf/provider-ionoscloud.user.User"></a>
 
-Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.5/docs/resources/user ionoscloud_user}.
+Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.6/docs/resources/user ionoscloud_user}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.user.User.Initializer"></a>
 
@@ -79,6 +79,9 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-ionoscloud.user.User.resetForceSecAuth">ResetForceSecAuth</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.user.User.resetGroupIds">ResetGroupIds</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.user.User.resetId">ResetId</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.user.User.resetPassword">ResetPassword</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.user.User.resetPasswordWo">ResetPasswordWo</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.user.User.resetPasswordWoVersion">ResetPasswordWoVersion</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.user.User.resetTimeouts">ResetTimeouts</a></code> | *No description.* |
 
 ---
@@ -413,6 +416,24 @@ private void ResetGroupIds()
 private void ResetId()
 ```
 
+##### `ResetPassword` <a name="ResetPassword" id="@cdktf/provider-ionoscloud.user.User.resetPassword"></a>
+
+```csharp
+private void ResetPassword()
+```
+
+##### `ResetPasswordWo` <a name="ResetPasswordWo" id="@cdktf/provider-ionoscloud.user.User.resetPasswordWo"></a>
+
+```csharp
+private void ResetPasswordWo()
+```
+
+##### `ResetPasswordWoVersion` <a name="ResetPasswordWoVersion" id="@cdktf/provider-ionoscloud.user.User.resetPasswordWoVersion"></a>
+
+```csharp
+private void ResetPasswordWoVersion()
+```
+
 ##### `ResetTimeouts` <a name="ResetTimeouts" id="@cdktf/provider-ionoscloud.user.User.resetTimeouts"></a>
 
 ```csharp
@@ -522,7 +543,7 @@ The construct id used in the generated config for the User to import.
 
 The id of the existing User that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.5/docs/resources/user#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.6/docs/resources/user#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -564,6 +585,8 @@ Refer to the {@link https://registry.terraform.io/providers/ionos-cloud/ionosclo
 | <code><a href="#@cdktf/provider-ionoscloud.user.User.property.idInput">IdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.user.User.property.lastNameInput">LastNameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.user.User.property.passwordInput">PasswordInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.user.User.property.passwordWoInput">PasswordWoInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.user.User.property.passwordWoVersionInput">PasswordWoVersionInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.user.User.property.timeoutsInput">TimeoutsInput</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.user.User.property.active">Active</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.user.User.property.administrator">Administrator</a></code> | <code>object</code> | *No description.* |
@@ -574,6 +597,8 @@ Refer to the {@link https://registry.terraform.io/providers/ionos-cloud/ionosclo
 | <code><a href="#@cdktf/provider-ionoscloud.user.User.property.id">Id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.user.User.property.lastName">LastName</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.user.User.property.password">Password</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.user.User.property.passwordWo">PasswordWo</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.user.User.property.passwordWoVersion">PasswordWoVersion</a></code> | <code>double</code> | *No description.* |
 
 ---
 
@@ -839,6 +864,26 @@ public string PasswordInput { get; }
 
 ---
 
+##### `PasswordWoInput`<sup>Optional</sup> <a name="PasswordWoInput" id="@cdktf/provider-ionoscloud.user.User.property.passwordWoInput"></a>
+
+```csharp
+public string PasswordWoInput { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `PasswordWoVersionInput`<sup>Optional</sup> <a name="PasswordWoVersionInput" id="@cdktf/provider-ionoscloud.user.User.property.passwordWoVersionInput"></a>
+
+```csharp
+public double PasswordWoVersionInput { get; }
+```
+
+- *Type:* double
+
+---
+
 ##### `TimeoutsInput`<sup>Optional</sup> <a name="TimeoutsInput" id="@cdktf/provider-ionoscloud.user.User.property.timeoutsInput"></a>
 
 ```csharp
@@ -939,6 +984,26 @@ public string Password { get; }
 
 ---
 
+##### `PasswordWo`<sup>Required</sup> <a name="PasswordWo" id="@cdktf/provider-ionoscloud.user.User.property.passwordWo"></a>
+
+```csharp
+public string PasswordWo { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `PasswordWoVersion`<sup>Required</sup> <a name="PasswordWoVersion" id="@cdktf/provider-ionoscloud.user.User.property.passwordWoVersion"></a>
+
+```csharp
+public double PasswordWoVersion { get; }
+```
+
+- *Type:* double
+
+---
+
 #### Constants <a name="Constants" id="Constants"></a>
 
 | **Name** | **Type** | **Description** |
@@ -977,12 +1042,14 @@ new UserConfig {
     string Email,
     string FirstName,
     string LastName,
-    string Password,
     object Active = null,
     object Administrator = null,
     object ForceSecAuth = null,
     string[] GroupIds = null,
     string Id = null,
+    string Password = null,
+    string PasswordWo = null,
+    double PasswordWoVersion = null,
     UserTimeouts Timeouts = null
 };
 ```
@@ -999,14 +1066,16 @@ new UserConfig {
 | <code><a href="#@cdktf/provider-ionoscloud.user.UserConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.user.UserConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.user.UserConfig.property.email">Email</a></code> | <code>string</code> | Email address of the user. |
-| <code><a href="#@cdktf/provider-ionoscloud.user.UserConfig.property.firstName">FirstName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.5/docs/resources/user#first_name User#first_name}. |
-| <code><a href="#@cdktf/provider-ionoscloud.user.UserConfig.property.lastName">LastName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.5/docs/resources/user#last_name User#last_name}. |
-| <code><a href="#@cdktf/provider-ionoscloud.user.UserConfig.property.password">Password</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.5/docs/resources/user#password User#password}. |
+| <code><a href="#@cdktf/provider-ionoscloud.user.UserConfig.property.firstName">FirstName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.6/docs/resources/user#first_name User#first_name}. |
+| <code><a href="#@cdktf/provider-ionoscloud.user.UserConfig.property.lastName">LastName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.6/docs/resources/user#last_name User#last_name}. |
 | <code><a href="#@cdktf/provider-ionoscloud.user.UserConfig.property.active">Active</a></code> | <code>object</code> | Indicates if the user is active. |
 | <code><a href="#@cdktf/provider-ionoscloud.user.UserConfig.property.administrator">Administrator</a></code> | <code>object</code> | Indicates if the user has administrative rights. |
 | <code><a href="#@cdktf/provider-ionoscloud.user.UserConfig.property.forceSecAuth">ForceSecAuth</a></code> | <code>object</code> | Indicates if secure (two-factor) authentication is forced for the user. |
 | <code><a href="#@cdktf/provider-ionoscloud.user.UserConfig.property.groupIds">GroupIds</a></code> | <code>string[]</code> | Ids of the groups that the user is a member of. |
-| <code><a href="#@cdktf/provider-ionoscloud.user.UserConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.5/docs/resources/user#id User#id}. |
+| <code><a href="#@cdktf/provider-ionoscloud.user.UserConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.6/docs/resources/user#id User#id}. |
+| <code><a href="#@cdktf/provider-ionoscloud.user.UserConfig.property.password">Password</a></code> | <code>string</code> | A password for the user. |
+| <code><a href="#@cdktf/provider-ionoscloud.user.UserConfig.property.passwordWo">PasswordWo</a></code> | <code>string</code> | Write-only attribute. Password for the user. To modify, must change the password_wo_version attribute. |
+| <code><a href="#@cdktf/provider-ionoscloud.user.UserConfig.property.passwordWoVersion">PasswordWoVersion</a></code> | <code>double</code> | Version of the password_wo attribute. Must be incremented to apply changes to the password_wo attribute. |
 | <code><a href="#@cdktf/provider-ionoscloud.user.UserConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-ionoscloud.user.UserTimeouts">UserTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1091,7 +1160,7 @@ public string Email { get; set; }
 
 Email address of the user.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.5/docs/resources/user#email User#email}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.6/docs/resources/user#email User#email}
 
 ---
 
@@ -1103,7 +1172,7 @@ public string FirstName { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.5/docs/resources/user#first_name User#first_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.6/docs/resources/user#first_name User#first_name}.
 
 ---
 
@@ -1115,19 +1184,7 @@ public string LastName { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.5/docs/resources/user#last_name User#last_name}.
-
----
-
-##### `Password`<sup>Required</sup> <a name="Password" id="@cdktf/provider-ionoscloud.user.UserConfig.property.password"></a>
-
-```csharp
-public string Password { get; set; }
-```
-
-- *Type:* string
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.5/docs/resources/user#password User#password}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.6/docs/resources/user#last_name User#last_name}.
 
 ---
 
@@ -1141,7 +1198,7 @@ public object Active { get; set; }
 
 Indicates if the user is active.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.5/docs/resources/user#active User#active}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.6/docs/resources/user#active User#active}
 
 ---
 
@@ -1157,7 +1214,7 @@ Indicates if the user has administrative rights.
 
 Administrators do not need to be managed in groups, as they automatically have access to all resources associated with the contract.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.5/docs/resources/user#administrator User#administrator}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.6/docs/resources/user#administrator User#administrator}
 
 ---
 
@@ -1171,7 +1228,7 @@ public object ForceSecAuth { get; set; }
 
 Indicates if secure (two-factor) authentication is forced for the user.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.5/docs/resources/user#force_sec_auth User#force_sec_auth}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.6/docs/resources/user#force_sec_auth User#force_sec_auth}
 
 ---
 
@@ -1185,7 +1242,7 @@ public string[] GroupIds { get; set; }
 
 Ids of the groups that the user is a member of.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.5/docs/resources/user#group_ids User#group_ids}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.6/docs/resources/user#group_ids User#group_ids}
 
 ---
 
@@ -1197,10 +1254,54 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.5/docs/resources/user#id User#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.6/docs/resources/user#id User#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `Password`<sup>Optional</sup> <a name="Password" id="@cdktf/provider-ionoscloud.user.UserConfig.property.password"></a>
+
+```csharp
+public string Password { get; set; }
+```
+
+- *Type:* string
+
+A password for the user.
+
+If you are using terraform 1.11 or higher, you can use `password_wo` instead of `password` to avoid storing the password in the state file.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.6/docs/resources/user#password User#password}
+
+---
+
+##### `PasswordWo`<sup>Optional</sup> <a name="PasswordWo" id="@cdktf/provider-ionoscloud.user.UserConfig.property.passwordWo"></a>
+
+```csharp
+public string PasswordWo { get; set; }
+```
+
+- *Type:* string
+
+Write-only attribute. Password for the user. To modify, must change the password_wo_version attribute.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.6/docs/resources/user#password_wo User#password_wo}
+
+---
+
+##### `PasswordWoVersion`<sup>Optional</sup> <a name="PasswordWoVersion" id="@cdktf/provider-ionoscloud.user.UserConfig.property.passwordWoVersion"></a>
+
+```csharp
+public double PasswordWoVersion { get; set; }
+```
+
+- *Type:* double
+
+Version of the password_wo attribute. Must be incremented to apply changes to the password_wo attribute.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.6/docs/resources/user#password_wo_version User#password_wo_version}
 
 ---
 
@@ -1214,7 +1315,7 @@ public UserTimeouts Timeouts { get; set; }
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.5/docs/resources/user#timeouts User#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.6/docs/resources/user#timeouts User#timeouts}
 
 ---
 
@@ -1237,10 +1338,10 @@ new UserTimeouts {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-ionoscloud.user.UserTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.5/docs/resources/user#create User#create}. |
-| <code><a href="#@cdktf/provider-ionoscloud.user.UserTimeouts.property.default">Default</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.5/docs/resources/user#default User#default}. |
-| <code><a href="#@cdktf/provider-ionoscloud.user.UserTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.5/docs/resources/user#delete User#delete}. |
-| <code><a href="#@cdktf/provider-ionoscloud.user.UserTimeouts.property.update">Update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.5/docs/resources/user#update User#update}. |
+| <code><a href="#@cdktf/provider-ionoscloud.user.UserTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.6/docs/resources/user#create User#create}. |
+| <code><a href="#@cdktf/provider-ionoscloud.user.UserTimeouts.property.default">Default</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.6/docs/resources/user#default User#default}. |
+| <code><a href="#@cdktf/provider-ionoscloud.user.UserTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.6/docs/resources/user#delete User#delete}. |
+| <code><a href="#@cdktf/provider-ionoscloud.user.UserTimeouts.property.update">Update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.6/docs/resources/user#update User#update}. |
 
 ---
 
@@ -1252,7 +1353,7 @@ public string Create { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.5/docs/resources/user#create User#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.6/docs/resources/user#create User#create}.
 
 ---
 
@@ -1264,7 +1365,7 @@ public string Default { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.5/docs/resources/user#default User#default}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.6/docs/resources/user#default User#default}.
 
 ---
 
@@ -1276,7 +1377,7 @@ public string Delete { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.5/docs/resources/user#delete User#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.6/docs/resources/user#delete User#delete}.
 
 ---
 
@@ -1288,7 +1389,7 @@ public string Update { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.5/docs/resources/user#update User#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.6/docs/resources/user#update User#update}.
 
 ---
 
