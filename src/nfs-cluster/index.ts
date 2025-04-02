@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.5/docs/resources/nfs_cluster
+// https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.6/docs/resources/nfs_cluster
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,37 +15,37 @@ export interface NfsClusterConfig extends cdktf.TerraformMetaArguments {
   /**
   * The location of the Network File Storage Cluster. Available locations: 'de/fra, 'de/txl, 'fr-par, 'gb-lhr, 'es/vit, 'us/las, 'us/ewr, 'us/mci'
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.5/docs/resources/nfs_cluster#location NfsCluster#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.6/docs/resources/nfs_cluster#location NfsCluster#location}
   */
   readonly location?: string;
   /**
   * The name of the Network File Storage Cluster.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.5/docs/resources/nfs_cluster#name NfsCluster#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.6/docs/resources/nfs_cluster#name NfsCluster#name}
   */
   readonly name: string;
   /**
   * The size of the Network File Storage Cluster. Minimum size is 2.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.5/docs/resources/nfs_cluster#size NfsCluster#size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.6/docs/resources/nfs_cluster#size NfsCluster#size}
   */
   readonly size: number;
   /**
   * connections block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.5/docs/resources/nfs_cluster#connections NfsCluster#connections}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.6/docs/resources/nfs_cluster#connections NfsCluster#connections}
   */
   readonly connections: NfsClusterConnections;
   /**
   * nfs block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.5/docs/resources/nfs_cluster#nfs NfsCluster#nfs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.6/docs/resources/nfs_cluster#nfs NfsCluster#nfs}
   */
   readonly nfs?: NfsClusterNfs;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.5/docs/resources/nfs_cluster#timeouts NfsCluster#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.6/docs/resources/nfs_cluster#timeouts NfsCluster#timeouts}
   */
   readonly timeouts?: NfsClusterTimeouts;
 }
@@ -53,19 +53,19 @@ export interface NfsClusterConnections {
   /**
   * The datacenter to connect your instance to.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.5/docs/resources/nfs_cluster#datacenter_id NfsCluster#datacenter_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.6/docs/resources/nfs_cluster#datacenter_id NfsCluster#datacenter_id}
   */
   readonly datacenterId: string;
   /**
   * The IP address and subnet for your instance.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.5/docs/resources/nfs_cluster#ip_address NfsCluster#ip_address}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.6/docs/resources/nfs_cluster#ip_address NfsCluster#ip_address}
   */
   readonly ipAddress: string;
   /**
   * The numeric LAN ID to connect your instance to.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.5/docs/resources/nfs_cluster#lan NfsCluster#lan}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.6/docs/resources/nfs_cluster#lan NfsCluster#lan}
   */
   readonly lan: string;
 }
@@ -200,7 +200,7 @@ export interface NfsClusterNfs {
   /**
   * The minimum Network File Storage version
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.5/docs/resources/nfs_cluster#min_version NfsCluster#min_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.6/docs/resources/nfs_cluster#min_version NfsCluster#min_version}
   */
   readonly minVersion?: string;
 }
@@ -284,19 +284,19 @@ export class NfsClusterNfsOutputReference extends cdktf.ComplexObject {
 }
 export interface NfsClusterTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.5/docs/resources/nfs_cluster#create NfsCluster#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.6/docs/resources/nfs_cluster#create NfsCluster#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.5/docs/resources/nfs_cluster#default NfsCluster#default}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.6/docs/resources/nfs_cluster#default NfsCluster#default}
   */
   readonly default?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.5/docs/resources/nfs_cluster#delete NfsCluster#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.6/docs/resources/nfs_cluster#delete NfsCluster#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.5/docs/resources/nfs_cluster#update NfsCluster#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.6/docs/resources/nfs_cluster#update NfsCluster#update}
   */
   readonly update?: string;
 }
@@ -477,7 +477,7 @@ export class NfsClusterTimeoutsOutputReference extends cdktf.ComplexObject {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.5/docs/resources/nfs_cluster ionoscloud_nfs_cluster}
+* Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.6/docs/resources/nfs_cluster ionoscloud_nfs_cluster}
 */
 export class NfsCluster extends cdktf.TerraformResource {
 
@@ -493,7 +493,7 @@ export class NfsCluster extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a NfsCluster resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the NfsCluster to import
-  * @param importFromId The id of the existing NfsCluster that should be imported. Refer to the {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.5/docs/resources/nfs_cluster#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing NfsCluster that should be imported. Refer to the {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.6/docs/resources/nfs_cluster#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the NfsCluster to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -505,7 +505,7 @@ export class NfsCluster extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.5/docs/resources/nfs_cluster ionoscloud_nfs_cluster} Resource
+  * Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.6/docs/resources/nfs_cluster ionoscloud_nfs_cluster} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -516,7 +516,7 @@ export class NfsCluster extends cdktf.TerraformResource {
       terraformResourceType: 'ionoscloud_nfs_cluster',
       terraformGeneratorMetadata: {
         providerName: 'ionoscloud',
-        providerVersion: '6.7.5',
+        providerVersion: '6.7.6',
         providerVersionConstraint: '~> 6.2'
       },
       provider: config.provider,
