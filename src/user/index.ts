@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.5/docs/resources/user
+// https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.6/docs/resources/user
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,74 +10,88 @@ export interface UserConfig extends cdktf.TerraformMetaArguments {
   /**
   * Indicates if the user is active
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.5/docs/resources/user#active User#active}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.6/docs/resources/user#active User#active}
   */
   readonly active?: boolean | cdktf.IResolvable;
   /**
   * Indicates if the user has administrative rights. Administrators do not need to be managed in groups, as they automatically have access to all resources associated with the contract.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.5/docs/resources/user#administrator User#administrator}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.6/docs/resources/user#administrator User#administrator}
   */
   readonly administrator?: boolean | cdktf.IResolvable;
   /**
   * Email address of the user
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.5/docs/resources/user#email User#email}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.6/docs/resources/user#email User#email}
   */
   readonly email: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.5/docs/resources/user#first_name User#first_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.6/docs/resources/user#first_name User#first_name}
   */
   readonly firstName: string;
   /**
   * Indicates if secure (two-factor) authentication is forced for the user
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.5/docs/resources/user#force_sec_auth User#force_sec_auth}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.6/docs/resources/user#force_sec_auth User#force_sec_auth}
   */
   readonly forceSecAuth?: boolean | cdktf.IResolvable;
   /**
   * Ids of the groups that the user is a member of
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.5/docs/resources/user#group_ids User#group_ids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.6/docs/resources/user#group_ids User#group_ids}
   */
   readonly groupIds?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.5/docs/resources/user#id User#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.6/docs/resources/user#id User#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.5/docs/resources/user#last_name User#last_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.6/docs/resources/user#last_name User#last_name}
   */
   readonly lastName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.5/docs/resources/user#password User#password}
+  * A password for the user. If you are using terraform 1.11 or higher, you can use `password_wo` instead of `password` to avoid storing the password in the state file.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.6/docs/resources/user#password User#password}
   */
-  readonly password: string;
+  readonly password?: string;
+  /**
+  * Write-only attribute. Password for the user. To modify, must change the password_wo_version attribute.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.6/docs/resources/user#password_wo User#password_wo}
+  */
+  readonly passwordWo?: string;
+  /**
+  * Version of the password_wo attribute. Must be incremented to apply changes to the password_wo attribute.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.6/docs/resources/user#password_wo_version User#password_wo_version}
+  */
+  readonly passwordWoVersion?: number;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.5/docs/resources/user#timeouts User#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.6/docs/resources/user#timeouts User#timeouts}
   */
   readonly timeouts?: UserTimeouts;
 }
 export interface UserTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.5/docs/resources/user#create User#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.6/docs/resources/user#create User#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.5/docs/resources/user#default User#default}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.6/docs/resources/user#default User#default}
   */
   readonly default?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.5/docs/resources/user#delete User#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.6/docs/resources/user#delete User#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.5/docs/resources/user#update User#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.6/docs/resources/user#update User#update}
   */
   readonly update?: string;
 }
@@ -263,7 +272,7 @@ export class UserTimeoutsOutputReference extends cdktf.ComplexObject {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.5/docs/resources/user ionoscloud_user}
+* Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.6/docs/resources/user ionoscloud_user}
 */
 export class User extends cdktf.TerraformResource {
 
@@ -279,7 +288,7 @@ export class User extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a User resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the User to import
-  * @param importFromId The id of the existing User that should be imported. Refer to the {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.5/docs/resources/user#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing User that should be imported. Refer to the {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.6/docs/resources/user#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the User to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -291,7 +300,7 @@ export class User extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.5/docs/resources/user ionoscloud_user} Resource
+  * Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.6/docs/resources/user ionoscloud_user} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -302,7 +311,7 @@ export class User extends cdktf.TerraformResource {
       terraformResourceType: 'ionoscloud_user',
       terraformGeneratorMetadata: {
         providerName: 'ionoscloud',
-        providerVersion: '6.7.5',
+        providerVersion: '6.7.6',
         providerVersionConstraint: '~> 6.2'
       },
       provider: config.provider,
@@ -322,6 +331,8 @@ export class User extends cdktf.TerraformResource {
     this._id = config.id;
     this._lastName = config.lastName;
     this._password = config.password;
+    this._passwordWo = config.passwordWo;
+    this._passwordWoVersion = config.passwordWoVersion;
     this._timeouts.internalValue = config.timeouts;
   }
 
@@ -448,7 +459,7 @@ export class User extends cdktf.TerraformResource {
     return this._lastName;
   }
 
-  // password - computed: false, optional: false, required: true
+  // password - computed: false, optional: true, required: false
   private _password?: string; 
   public get password() {
     return this.getStringAttribute('password');
@@ -456,9 +467,44 @@ export class User extends cdktf.TerraformResource {
   public set password(value: string) {
     this._password = value;
   }
+  public resetPassword() {
+    this._password = undefined;
+  }
   // Temporarily expose input value. Use with caution.
   public get passwordInput() {
     return this._password;
+  }
+
+  // password_wo - computed: false, optional: true, required: false
+  private _passwordWo?: string; 
+  public get passwordWo() {
+    return this.getStringAttribute('password_wo');
+  }
+  public set passwordWo(value: string) {
+    this._passwordWo = value;
+  }
+  public resetPasswordWo() {
+    this._passwordWo = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get passwordWoInput() {
+    return this._passwordWo;
+  }
+
+  // password_wo_version - computed: false, optional: true, required: false
+  private _passwordWoVersion?: number; 
+  public get passwordWoVersion() {
+    return this.getNumberAttribute('password_wo_version');
+  }
+  public set passwordWoVersion(value: number) {
+    this._passwordWoVersion = value;
+  }
+  public resetPasswordWoVersion() {
+    this._passwordWoVersion = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get passwordWoVersionInput() {
+    return this._passwordWoVersion;
   }
 
   // s3_canonical_user_id - computed: true, optional: false, required: false
@@ -502,6 +548,8 @@ export class User extends cdktf.TerraformResource {
       id: cdktf.stringToTerraform(this._id),
       last_name: cdktf.stringToTerraform(this._lastName),
       password: cdktf.stringToTerraform(this._password),
+      password_wo: cdktf.stringToTerraform(this._passwordWo),
+      password_wo_version: cdktf.numberToTerraform(this._passwordWoVersion),
       timeouts: userTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
@@ -561,6 +609,18 @@ export class User extends cdktf.TerraformResource {
         isBlock: false,
         type: "simple",
         storageClassType: "string",
+      },
+      password_wo: {
+        value: cdktf.stringToHclTerraform(this._passwordWo),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      password_wo_version: {
+        value: cdktf.numberToHclTerraform(this._passwordWoVersion),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
       },
       timeouts: {
         value: userTimeoutsToHclTerraform(this._timeouts.internalValue),
