@@ -31,6 +31,7 @@ The following submodules are available:
 - [dataIonoscloudContainerRegistry](./dataIonoscloudContainerRegistry.python.md)
 - [dataIonoscloudContainerRegistryLocations](./dataIonoscloudContainerRegistryLocations.python.md)
 - [dataIonoscloudContainerRegistryToken](./dataIonoscloudContainerRegistryToken.python.md)
+- [dataIonoscloudContracts](./dataIonoscloudContracts.python.md)
 - [dataIonoscloudCubeServer](./dataIonoscloudCubeServer.python.md)
 - [dataIonoscloudDatacenter](./dataIonoscloudDatacenter.python.md)
 - [dataIonoscloudDataplatformCluster](./dataIonoscloudDataplatformCluster.python.md)

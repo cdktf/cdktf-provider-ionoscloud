@@ -4,7 +4,7 @@
 
 ### MariadbCluster <a name="MariadbCluster" id="@cdktf/provider-ionoscloud.mariadbCluster.MariadbCluster"></a>
 
-Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.6/docs/resources/mariadb_cluster ionoscloud_mariadb_cluster}.
+Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.7/docs/resources/mariadb_cluster ionoscloud_mariadb_cluster}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.mariadbCluster.MariadbCluster.Initializer"></a>
 
@@ -31,6 +31,7 @@ MariadbCluster.Builder.create(Construct scope, java.lang.String id)
     .mariadbVersion(java.lang.String)
     .ram(java.lang.Number)
     .storageSize(java.lang.Number)
+//  .backup(MariadbClusterBackup)
 //  .id(java.lang.String)
 //  .location(java.lang.String)
 //  .maintenanceWindow(MariadbClusterMaintenanceWindow)
@@ -57,7 +58,8 @@ MariadbCluster.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-ionoscloud.mariadbCluster.MariadbCluster.Initializer.parameter.mariadbVersion">mariadbVersion</a></code> | <code>java.lang.String</code> | The MariaDB version of your cluster. Cannot be downgraded. |
 | <code><a href="#@cdktf/provider-ionoscloud.mariadbCluster.MariadbCluster.Initializer.parameter.ram">ram</a></code> | <code>java.lang.Number</code> | The amount of memory per instance in gigabytes (GB). |
 | <code><a href="#@cdktf/provider-ionoscloud.mariadbCluster.MariadbCluster.Initializer.parameter.storageSize">storageSize</a></code> | <code>java.lang.Number</code> | The amount of storage per instance in gigabytes (GB). |
-| <code><a href="#@cdktf/provider-ionoscloud.mariadbCluster.MariadbCluster.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.6/docs/resources/mariadb_cluster#id MariadbCluster#id}. |
+| <code><a href="#@cdktf/provider-ionoscloud.mariadbCluster.MariadbCluster.Initializer.parameter.backup">backup</a></code> | <code><a href="#@cdktf/provider-ionoscloud.mariadbCluster.MariadbClusterBackup">MariadbClusterBackup</a></code> | backup block. |
+| <code><a href="#@cdktf/provider-ionoscloud.mariadbCluster.MariadbCluster.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.7/docs/resources/mariadb_cluster#id MariadbCluster#id}. |
 | <code><a href="#@cdktf/provider-ionoscloud.mariadbCluster.MariadbCluster.Initializer.parameter.location">location</a></code> | <code>java.lang.String</code> | The cluster location. |
 | <code><a href="#@cdktf/provider-ionoscloud.mariadbCluster.MariadbCluster.Initializer.parameter.maintenanceWindow">maintenanceWindow</a></code> | <code><a href="#@cdktf/provider-ionoscloud.mariadbCluster.MariadbClusterMaintenanceWindow">MariadbClusterMaintenanceWindow</a></code> | maintenance_window block. |
 | <code><a href="#@cdktf/provider-ionoscloud.mariadbCluster.MariadbCluster.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-ionoscloud.mariadbCluster.MariadbClusterTimeouts">MariadbClusterTimeouts</a></code> | timeouts block. |
@@ -130,7 +132,7 @@ Must be unique amongst siblings in the same scope
 
 connections block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.6/docs/resources/mariadb_cluster#connections MariadbCluster#connections}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.7/docs/resources/mariadb_cluster#connections MariadbCluster#connections}
 
 ---
 
@@ -140,7 +142,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 
 The number of CPU cores per instance.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.6/docs/resources/mariadb_cluster#cores MariadbCluster#cores}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.7/docs/resources/mariadb_cluster#cores MariadbCluster#cores}
 
 ---
 
@@ -150,7 +152,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 
 credentials block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.6/docs/resources/mariadb_cluster#credentials MariadbCluster#credentials}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.7/docs/resources/mariadb_cluster#credentials MariadbCluster#credentials}
 
 ---
 
@@ -160,7 +162,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 
 The friendly name of your cluster.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.6/docs/resources/mariadb_cluster#display_name MariadbCluster#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.7/docs/resources/mariadb_cluster#display_name MariadbCluster#display_name}
 
 ---
 
@@ -170,7 +172,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 
 The total number of instances in the cluster (one primary and n-1 secondary).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.6/docs/resources/mariadb_cluster#instances MariadbCluster#instances}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.7/docs/resources/mariadb_cluster#instances MariadbCluster#instances}
 
 ---
 
@@ -180,7 +182,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 
 The MariaDB version of your cluster. Cannot be downgraded.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.6/docs/resources/mariadb_cluster#mariadb_version MariadbCluster#mariadb_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.7/docs/resources/mariadb_cluster#mariadb_version MariadbCluster#mariadb_version}
 
 ---
 
@@ -190,7 +192,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 
 The amount of memory per instance in gigabytes (GB).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.6/docs/resources/mariadb_cluster#ram MariadbCluster#ram}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.7/docs/resources/mariadb_cluster#ram MariadbCluster#ram}
 
 ---
 
@@ -200,7 +202,17 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 
 The amount of storage per instance in gigabytes (GB).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.6/docs/resources/mariadb_cluster#storage_size MariadbCluster#storage_size}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.7/docs/resources/mariadb_cluster#storage_size MariadbCluster#storage_size}
+
+---
+
+##### `backup`<sup>Optional</sup> <a name="backup" id="@cdktf/provider-ionoscloud.mariadbCluster.MariadbCluster.Initializer.parameter.backup"></a>
+
+- *Type:* <a href="#@cdktf/provider-ionoscloud.mariadbCluster.MariadbClusterBackup">MariadbClusterBackup</a>
+
+backup block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.7/docs/resources/mariadb_cluster#backup MariadbCluster#backup}
 
 ---
 
@@ -208,7 +220,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.6/docs/resources/mariadb_cluster#id MariadbCluster#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.7/docs/resources/mariadb_cluster#id MariadbCluster#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -221,7 +233,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 The cluster location.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.6/docs/resources/mariadb_cluster#location MariadbCluster#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.7/docs/resources/mariadb_cluster#location MariadbCluster#location}
 
 ---
 
@@ -231,7 +243,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 
 maintenance_window block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.6/docs/resources/mariadb_cluster#maintenance_window MariadbCluster#maintenance_window}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.7/docs/resources/mariadb_cluster#maintenance_window MariadbCluster#maintenance_window}
 
 ---
 
@@ -241,7 +253,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.6/docs/resources/mariadb_cluster#timeouts MariadbCluster#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.7/docs/resources/mariadb_cluster#timeouts MariadbCluster#timeouts}
 
 ---
 
@@ -272,10 +284,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 | <code><a href="#@cdktf/provider-ionoscloud.mariadbCluster.MariadbCluster.moveFromId">moveFromId</a></code> | Move the resource corresponding to "id" to this resource. |
 | <code><a href="#@cdktf/provider-ionoscloud.mariadbCluster.MariadbCluster.moveTo">moveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-ionoscloud.mariadbCluster.MariadbCluster.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
+| <code><a href="#@cdktf/provider-ionoscloud.mariadbCluster.MariadbCluster.putBackup">putBackup</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.mariadbCluster.MariadbCluster.putConnections">putConnections</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.mariadbCluster.MariadbCluster.putCredentials">putCredentials</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.mariadbCluster.MariadbCluster.putMaintenanceWindow">putMaintenanceWindow</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.mariadbCluster.MariadbCluster.putTimeouts">putTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.mariadbCluster.MariadbCluster.resetBackup">resetBackup</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.mariadbCluster.MariadbCluster.resetId">resetId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.mariadbCluster.MariadbCluster.resetLocation">resetLocation</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.mariadbCluster.MariadbCluster.resetMaintenanceWindow">resetMaintenanceWindow</a></code> | *No description.* |
@@ -573,6 +587,18 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
+##### `putBackup` <a name="putBackup" id="@cdktf/provider-ionoscloud.mariadbCluster.MariadbCluster.putBackup"></a>
+
+```java
+public void putBackup(MariadbClusterBackup value)
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-ionoscloud.mariadbCluster.MariadbCluster.putBackup.parameter.value"></a>
+
+- *Type:* <a href="#@cdktf/provider-ionoscloud.mariadbCluster.MariadbClusterBackup">MariadbClusterBackup</a>
+
+---
+
 ##### `putConnections` <a name="putConnections" id="@cdktf/provider-ionoscloud.mariadbCluster.MariadbCluster.putConnections"></a>
 
 ```java
@@ -620,6 +646,12 @@ public void putTimeouts(MariadbClusterTimeouts value)
 - *Type:* <a href="#@cdktf/provider-ionoscloud.mariadbCluster.MariadbClusterTimeouts">MariadbClusterTimeouts</a>
 
 ---
+
+##### `resetBackup` <a name="resetBackup" id="@cdktf/provider-ionoscloud.mariadbCluster.MariadbCluster.resetBackup"></a>
+
+```java
+public void resetBackup()
+```
 
 ##### `resetId` <a name="resetId" id="@cdktf/provider-ionoscloud.mariadbCluster.MariadbCluster.resetId"></a>
 
@@ -748,7 +780,7 @@ The construct id used in the generated config for the MariadbCluster to import.
 
 The id of the existing MariadbCluster that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.6/docs/resources/mariadb_cluster#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.7/docs/resources/mariadb_cluster#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -778,11 +810,13 @@ Refer to the {@link https://registry.terraform.io/providers/ionos-cloud/ionosclo
 | <code><a href="#@cdktf/provider-ionoscloud.mariadbCluster.MariadbCluster.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.mariadbCluster.MariadbCluster.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.mariadbCluster.MariadbCluster.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.mariadbCluster.MariadbCluster.property.backup">backup</a></code> | <code><a href="#@cdktf/provider-ionoscloud.mariadbCluster.MariadbClusterBackupOutputReference">MariadbClusterBackupOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.mariadbCluster.MariadbCluster.property.connections">connections</a></code> | <code><a href="#@cdktf/provider-ionoscloud.mariadbCluster.MariadbClusterConnectionsOutputReference">MariadbClusterConnectionsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.mariadbCluster.MariadbCluster.property.credentials">credentials</a></code> | <code><a href="#@cdktf/provider-ionoscloud.mariadbCluster.MariadbClusterCredentialsOutputReference">MariadbClusterCredentialsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.mariadbCluster.MariadbCluster.property.dnsName">dnsName</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.mariadbCluster.MariadbCluster.property.maintenanceWindow">maintenanceWindow</a></code> | <code><a href="#@cdktf/provider-ionoscloud.mariadbCluster.MariadbClusterMaintenanceWindowOutputReference">MariadbClusterMaintenanceWindowOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.mariadbCluster.MariadbCluster.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-ionoscloud.mariadbCluster.MariadbClusterTimeoutsOutputReference">MariadbClusterTimeoutsOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.mariadbCluster.MariadbCluster.property.backupInput">backupInput</a></code> | <code><a href="#@cdktf/provider-ionoscloud.mariadbCluster.MariadbClusterBackup">MariadbClusterBackup</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.mariadbCluster.MariadbCluster.property.connectionsInput">connectionsInput</a></code> | <code><a href="#@cdktf/provider-ionoscloud.mariadbCluster.MariadbClusterConnections">MariadbClusterConnections</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.mariadbCluster.MariadbCluster.property.coresInput">coresInput</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.mariadbCluster.MariadbCluster.property.credentialsInput">credentialsInput</a></code> | <code><a href="#@cdktf/provider-ionoscloud.mariadbCluster.MariadbClusterCredentials">MariadbClusterCredentials</a></code> | *No description.* |
@@ -948,6 +982,16 @@ public java.lang.Object getProvisioners();
 
 ---
 
+##### `backup`<sup>Required</sup> <a name="backup" id="@cdktf/provider-ionoscloud.mariadbCluster.MariadbCluster.property.backup"></a>
+
+```java
+public MariadbClusterBackupOutputReference getBackup();
+```
+
+- *Type:* <a href="#@cdktf/provider-ionoscloud.mariadbCluster.MariadbClusterBackupOutputReference">MariadbClusterBackupOutputReference</a>
+
+---
+
 ##### `connections`<sup>Required</sup> <a name="connections" id="@cdktf/provider-ionoscloud.mariadbCluster.MariadbCluster.property.connections"></a>
 
 ```java
@@ -995,6 +1039,16 @@ public MariadbClusterTimeoutsOutputReference getTimeouts();
 ```
 
 - *Type:* <a href="#@cdktf/provider-ionoscloud.mariadbCluster.MariadbClusterTimeoutsOutputReference">MariadbClusterTimeoutsOutputReference</a>
+
+---
+
+##### `backupInput`<sup>Optional</sup> <a name="backupInput" id="@cdktf/provider-ionoscloud.mariadbCluster.MariadbCluster.property.backupInput"></a>
+
+```java
+public MariadbClusterBackup getBackupInput();
+```
+
+- *Type:* <a href="#@cdktf/provider-ionoscloud.mariadbCluster.MariadbClusterBackup">MariadbClusterBackup</a>
 
 ---
 
@@ -1218,6 +1272,40 @@ public java.lang.String getTfResourceType();
 
 ## Structs <a name="Structs" id="Structs"></a>
 
+### MariadbClusterBackup <a name="MariadbClusterBackup" id="@cdktf/provider-ionoscloud.mariadbCluster.MariadbClusterBackup"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-ionoscloud.mariadbCluster.MariadbClusterBackup.Initializer"></a>
+
+```java
+import com.hashicorp.cdktf.providers.ionoscloud.mariadb_cluster.MariadbClusterBackup;
+
+MariadbClusterBackup.builder()
+    .location(java.lang.String)
+    .build();
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-ionoscloud.mariadbCluster.MariadbClusterBackup.property.location">location</a></code> | <code>java.lang.String</code> | The IONOS Object Storage location where the backups will be stored. |
+
+---
+
+##### `location`<sup>Required</sup> <a name="location" id="@cdktf/provider-ionoscloud.mariadbCluster.MariadbClusterBackup.property.location"></a>
+
+```java
+public java.lang.String getLocation();
+```
+
+- *Type:* java.lang.String
+
+The IONOS Object Storage location where the backups will be stored.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.7/docs/resources/mariadb_cluster#location MariadbCluster#location}
+
+---
+
 ### MariadbClusterConfig <a name="MariadbClusterConfig" id="@cdktf/provider-ionoscloud.mariadbCluster.MariadbClusterConfig"></a>
 
 #### Initializer <a name="Initializer" id="@cdktf/provider-ionoscloud.mariadbCluster.MariadbClusterConfig.Initializer"></a>
@@ -1245,6 +1333,7 @@ MariadbClusterConfig.builder()
     .mariadbVersion(java.lang.String)
     .ram(java.lang.Number)
     .storageSize(java.lang.Number)
+//  .backup(MariadbClusterBackup)
 //  .id(java.lang.String)
 //  .location(java.lang.String)
 //  .maintenanceWindow(MariadbClusterMaintenanceWindow)
@@ -1271,7 +1360,8 @@ MariadbClusterConfig.builder()
 | <code><a href="#@cdktf/provider-ionoscloud.mariadbCluster.MariadbClusterConfig.property.mariadbVersion">mariadbVersion</a></code> | <code>java.lang.String</code> | The MariaDB version of your cluster. Cannot be downgraded. |
 | <code><a href="#@cdktf/provider-ionoscloud.mariadbCluster.MariadbClusterConfig.property.ram">ram</a></code> | <code>java.lang.Number</code> | The amount of memory per instance in gigabytes (GB). |
 | <code><a href="#@cdktf/provider-ionoscloud.mariadbCluster.MariadbClusterConfig.property.storageSize">storageSize</a></code> | <code>java.lang.Number</code> | The amount of storage per instance in gigabytes (GB). |
-| <code><a href="#@cdktf/provider-ionoscloud.mariadbCluster.MariadbClusterConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.6/docs/resources/mariadb_cluster#id MariadbCluster#id}. |
+| <code><a href="#@cdktf/provider-ionoscloud.mariadbCluster.MariadbClusterConfig.property.backup">backup</a></code> | <code><a href="#@cdktf/provider-ionoscloud.mariadbCluster.MariadbClusterBackup">MariadbClusterBackup</a></code> | backup block. |
+| <code><a href="#@cdktf/provider-ionoscloud.mariadbCluster.MariadbClusterConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.7/docs/resources/mariadb_cluster#id MariadbCluster#id}. |
 | <code><a href="#@cdktf/provider-ionoscloud.mariadbCluster.MariadbClusterConfig.property.location">location</a></code> | <code>java.lang.String</code> | The cluster location. |
 | <code><a href="#@cdktf/provider-ionoscloud.mariadbCluster.MariadbClusterConfig.property.maintenanceWindow">maintenanceWindow</a></code> | <code><a href="#@cdktf/provider-ionoscloud.mariadbCluster.MariadbClusterMaintenanceWindow">MariadbClusterMaintenanceWindow</a></code> | maintenance_window block. |
 | <code><a href="#@cdktf/provider-ionoscloud.mariadbCluster.MariadbClusterConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-ionoscloud.mariadbCluster.MariadbClusterTimeouts">MariadbClusterTimeouts</a></code> | timeouts block. |
@@ -1358,7 +1448,7 @@ public MariadbClusterConnections getConnections();
 
 connections block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.6/docs/resources/mariadb_cluster#connections MariadbCluster#connections}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.7/docs/resources/mariadb_cluster#connections MariadbCluster#connections}
 
 ---
 
@@ -1372,7 +1462,7 @@ public java.lang.Number getCores();
 
 The number of CPU cores per instance.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.6/docs/resources/mariadb_cluster#cores MariadbCluster#cores}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.7/docs/resources/mariadb_cluster#cores MariadbCluster#cores}
 
 ---
 
@@ -1386,7 +1476,7 @@ public MariadbClusterCredentials getCredentials();
 
 credentials block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.6/docs/resources/mariadb_cluster#credentials MariadbCluster#credentials}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.7/docs/resources/mariadb_cluster#credentials MariadbCluster#credentials}
 
 ---
 
@@ -1400,7 +1490,7 @@ public java.lang.String getDisplayName();
 
 The friendly name of your cluster.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.6/docs/resources/mariadb_cluster#display_name MariadbCluster#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.7/docs/resources/mariadb_cluster#display_name MariadbCluster#display_name}
 
 ---
 
@@ -1414,7 +1504,7 @@ public java.lang.Number getInstances();
 
 The total number of instances in the cluster (one primary and n-1 secondary).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.6/docs/resources/mariadb_cluster#instances MariadbCluster#instances}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.7/docs/resources/mariadb_cluster#instances MariadbCluster#instances}
 
 ---
 
@@ -1428,7 +1518,7 @@ public java.lang.String getMariadbVersion();
 
 The MariaDB version of your cluster. Cannot be downgraded.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.6/docs/resources/mariadb_cluster#mariadb_version MariadbCluster#mariadb_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.7/docs/resources/mariadb_cluster#mariadb_version MariadbCluster#mariadb_version}
 
 ---
 
@@ -1442,7 +1532,7 @@ public java.lang.Number getRam();
 
 The amount of memory per instance in gigabytes (GB).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.6/docs/resources/mariadb_cluster#ram MariadbCluster#ram}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.7/docs/resources/mariadb_cluster#ram MariadbCluster#ram}
 
 ---
 
@@ -1456,7 +1546,21 @@ public java.lang.Number getStorageSize();
 
 The amount of storage per instance in gigabytes (GB).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.6/docs/resources/mariadb_cluster#storage_size MariadbCluster#storage_size}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.7/docs/resources/mariadb_cluster#storage_size MariadbCluster#storage_size}
+
+---
+
+##### `backup`<sup>Optional</sup> <a name="backup" id="@cdktf/provider-ionoscloud.mariadbCluster.MariadbClusterConfig.property.backup"></a>
+
+```java
+public MariadbClusterBackup getBackup();
+```
+
+- *Type:* <a href="#@cdktf/provider-ionoscloud.mariadbCluster.MariadbClusterBackup">MariadbClusterBackup</a>
+
+backup block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.7/docs/resources/mariadb_cluster#backup MariadbCluster#backup}
 
 ---
 
@@ -1468,7 +1572,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.6/docs/resources/mariadb_cluster#id MariadbCluster#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.7/docs/resources/mariadb_cluster#id MariadbCluster#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1485,7 +1589,7 @@ public java.lang.String getLocation();
 
 The cluster location.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.6/docs/resources/mariadb_cluster#location MariadbCluster#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.7/docs/resources/mariadb_cluster#location MariadbCluster#location}
 
 ---
 
@@ -1499,7 +1603,7 @@ public MariadbClusterMaintenanceWindow getMaintenanceWindow();
 
 maintenance_window block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.6/docs/resources/mariadb_cluster#maintenance_window MariadbCluster#maintenance_window}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.7/docs/resources/mariadb_cluster#maintenance_window MariadbCluster#maintenance_window}
 
 ---
 
@@ -1513,7 +1617,7 @@ public MariadbClusterTimeouts getTimeouts();
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.6/docs/resources/mariadb_cluster#timeouts MariadbCluster#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.7/docs/resources/mariadb_cluster#timeouts MariadbCluster#timeouts}
 
 ---
 
@@ -1551,7 +1655,7 @@ public java.lang.String getCidr();
 
 The IP and subnet for your cluster.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.6/docs/resources/mariadb_cluster#cidr MariadbCluster#cidr}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.7/docs/resources/mariadb_cluster#cidr MariadbCluster#cidr}
 
 ---
 
@@ -1565,7 +1669,7 @@ public java.lang.String getDatacenterId();
 
 The datacenter to connect your cluster to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.6/docs/resources/mariadb_cluster#datacenter_id MariadbCluster#datacenter_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.7/docs/resources/mariadb_cluster#datacenter_id MariadbCluster#datacenter_id}
 
 ---
 
@@ -1579,7 +1683,7 @@ public java.lang.String getLanId();
 
 The numeric LAN ID to connect your cluster to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.6/docs/resources/mariadb_cluster#lan_id MariadbCluster#lan_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.7/docs/resources/mariadb_cluster#lan_id MariadbCluster#lan_id}
 
 ---
 
@@ -1615,7 +1719,7 @@ public java.lang.String getPassword();
 
 The password for a MariaDB user.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.6/docs/resources/mariadb_cluster#password MariadbCluster#password}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.7/docs/resources/mariadb_cluster#password MariadbCluster#password}
 
 ---
 
@@ -1629,7 +1733,7 @@ public java.lang.String getUsername();
 
 The username for the initial MariaDB user. Some system usernames are restricted (e.g 'mariadb', 'admin', 'standby').
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.6/docs/resources/mariadb_cluster#username MariadbCluster#username}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.7/docs/resources/mariadb_cluster#username MariadbCluster#username}
 
 ---
 
@@ -1665,7 +1769,7 @@ public java.lang.String getDayOfTheWeek();
 
 The name of the week day.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.6/docs/resources/mariadb_cluster#day_of_the_week MariadbCluster#day_of_the_week}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.7/docs/resources/mariadb_cluster#day_of_the_week MariadbCluster#day_of_the_week}
 
 ---
 
@@ -1679,7 +1783,7 @@ public java.lang.String getTime();
 
 Start of the maintenance window in UTC time.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.6/docs/resources/mariadb_cluster#time MariadbCluster#time}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.7/docs/resources/mariadb_cluster#time MariadbCluster#time}
 
 ---
 
@@ -1702,10 +1806,10 @@ MariadbClusterTimeouts.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-ionoscloud.mariadbCluster.MariadbClusterTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.6/docs/resources/mariadb_cluster#create MariadbCluster#create}. |
-| <code><a href="#@cdktf/provider-ionoscloud.mariadbCluster.MariadbClusterTimeouts.property.default">default</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.6/docs/resources/mariadb_cluster#default MariadbCluster#default}. |
-| <code><a href="#@cdktf/provider-ionoscloud.mariadbCluster.MariadbClusterTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.6/docs/resources/mariadb_cluster#delete MariadbCluster#delete}. |
-| <code><a href="#@cdktf/provider-ionoscloud.mariadbCluster.MariadbClusterTimeouts.property.update">update</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.6/docs/resources/mariadb_cluster#update MariadbCluster#update}. |
+| <code><a href="#@cdktf/provider-ionoscloud.mariadbCluster.MariadbClusterTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.7/docs/resources/mariadb_cluster#create MariadbCluster#create}. |
+| <code><a href="#@cdktf/provider-ionoscloud.mariadbCluster.MariadbClusterTimeouts.property.default">default</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.7/docs/resources/mariadb_cluster#default MariadbCluster#default}. |
+| <code><a href="#@cdktf/provider-ionoscloud.mariadbCluster.MariadbClusterTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.7/docs/resources/mariadb_cluster#delete MariadbCluster#delete}. |
+| <code><a href="#@cdktf/provider-ionoscloud.mariadbCluster.MariadbClusterTimeouts.property.update">update</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.7/docs/resources/mariadb_cluster#update MariadbCluster#update}. |
 
 ---
 
@@ -1717,7 +1821,7 @@ public java.lang.String getCreate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.6/docs/resources/mariadb_cluster#create MariadbCluster#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.7/docs/resources/mariadb_cluster#create MariadbCluster#create}.
 
 ---
 
@@ -1729,7 +1833,7 @@ public java.lang.String getDefault();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.6/docs/resources/mariadb_cluster#default MariadbCluster#default}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.7/docs/resources/mariadb_cluster#default MariadbCluster#default}.
 
 ---
 
@@ -1741,7 +1845,7 @@ public java.lang.String getDelete();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.6/docs/resources/mariadb_cluster#delete MariadbCluster#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.7/docs/resources/mariadb_cluster#delete MariadbCluster#delete}.
 
 ---
 
@@ -1753,11 +1857,282 @@ public java.lang.String getUpdate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.6/docs/resources/mariadb_cluster#update MariadbCluster#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.7/docs/resources/mariadb_cluster#update MariadbCluster#update}.
 
 ---
 
 ## Classes <a name="Classes" id="Classes"></a>
+
+### MariadbClusterBackupOutputReference <a name="MariadbClusterBackupOutputReference" id="@cdktf/provider-ionoscloud.mariadbCluster.MariadbClusterBackupOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.mariadbCluster.MariadbClusterBackupOutputReference.Initializer"></a>
+
+```java
+import com.hashicorp.cdktf.providers.ionoscloud.mariadb_cluster.MariadbClusterBackupOutputReference;
+
+new MariadbClusterBackupOutputReference(IInterpolatingParent terraformResource, java.lang.String terraformAttribute);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-ionoscloud.mariadbCluster.MariadbClusterBackupOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>com.hashicorp.cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-ionoscloud.mariadbCluster.MariadbClusterBackupOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-ionoscloud.mariadbCluster.MariadbClusterBackupOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* com.hashicorp.cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-ionoscloud.mariadbCluster.MariadbClusterBackupOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-ionoscloud.mariadbCluster.MariadbClusterBackupOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.mariadbCluster.MariadbClusterBackupOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.mariadbCluster.MariadbClusterBackupOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.mariadbCluster.MariadbClusterBackupOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.mariadbCluster.MariadbClusterBackupOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.mariadbCluster.MariadbClusterBackupOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.mariadbCluster.MariadbClusterBackupOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.mariadbCluster.MariadbClusterBackupOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.mariadbCluster.MariadbClusterBackupOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.mariadbCluster.MariadbClusterBackupOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.mariadbCluster.MariadbClusterBackupOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.mariadbCluster.MariadbClusterBackupOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-ionoscloud.mariadbCluster.MariadbClusterBackupOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktf/provider-ionoscloud.mariadbCluster.MariadbClusterBackupOutputReference.computeFqn"></a>
+
+```java
+public java.lang.String computeFqn()
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-ionoscloud.mariadbCluster.MariadbClusterBackupOutputReference.getAnyMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Object> getAnyMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-ionoscloud.mariadbCluster.MariadbClusterBackupOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-ionoscloud.mariadbCluster.MariadbClusterBackupOutputReference.getBooleanAttribute"></a>
+
+```java
+public IResolvable getBooleanAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-ionoscloud.mariadbCluster.MariadbClusterBackupOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-ionoscloud.mariadbCluster.MariadbClusterBackupOutputReference.getBooleanMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Boolean> getBooleanMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-ionoscloud.mariadbCluster.MariadbClusterBackupOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-ionoscloud.mariadbCluster.MariadbClusterBackupOutputReference.getListAttribute"></a>
+
+```java
+public java.util.List<java.lang.String> getListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-ionoscloud.mariadbCluster.MariadbClusterBackupOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-ionoscloud.mariadbCluster.MariadbClusterBackupOutputReference.getNumberAttribute"></a>
+
+```java
+public java.lang.Number getNumberAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-ionoscloud.mariadbCluster.MariadbClusterBackupOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-ionoscloud.mariadbCluster.MariadbClusterBackupOutputReference.getNumberListAttribute"></a>
+
+```java
+public java.util.List<java.lang.Number> getNumberListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-ionoscloud.mariadbCluster.MariadbClusterBackupOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-ionoscloud.mariadbCluster.MariadbClusterBackupOutputReference.getNumberMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Number> getNumberMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-ionoscloud.mariadbCluster.MariadbClusterBackupOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-ionoscloud.mariadbCluster.MariadbClusterBackupOutputReference.getStringAttribute"></a>
+
+```java
+public java.lang.String getStringAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-ionoscloud.mariadbCluster.MariadbClusterBackupOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-ionoscloud.mariadbCluster.MariadbClusterBackupOutputReference.getStringMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.String> getStringMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-ionoscloud.mariadbCluster.MariadbClusterBackupOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-ionoscloud.mariadbCluster.MariadbClusterBackupOutputReference.interpolationForAttribute"></a>
+
+```java
+public IResolvable interpolationForAttribute(java.lang.String property)
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-ionoscloud.mariadbCluster.MariadbClusterBackupOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktf/provider-ionoscloud.mariadbCluster.MariadbClusterBackupOutputReference.resolve"></a>
+
+```java
+public java.lang.Object resolve(IResolveContext _context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-ionoscloud.mariadbCluster.MariadbClusterBackupOutputReference.resolve.parameter._context"></a>
+
+- *Type:* com.hashicorp.cdktf.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktf/provider-ionoscloud.mariadbCluster.MariadbClusterBackupOutputReference.toString"></a>
+
+```java
+public java.lang.String toString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-ionoscloud.mariadbCluster.MariadbClusterBackupOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-ionoscloud.mariadbCluster.MariadbClusterBackupOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.mariadbCluster.MariadbClusterBackupOutputReference.property.locationInput">locationInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.mariadbCluster.MariadbClusterBackupOutputReference.property.location">location</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.mariadbCluster.MariadbClusterBackupOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-ionoscloud.mariadbCluster.MariadbClusterBackup">MariadbClusterBackup</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktf/provider-ionoscloud.mariadbCluster.MariadbClusterBackupOutputReference.property.creationStack"></a>
+
+```java
+public java.util.List<java.lang.String> getCreationStack();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-ionoscloud.mariadbCluster.MariadbClusterBackupOutputReference.property.fqn"></a>
+
+```java
+public java.lang.String getFqn();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `locationInput`<sup>Optional</sup> <a name="locationInput" id="@cdktf/provider-ionoscloud.mariadbCluster.MariadbClusterBackupOutputReference.property.locationInput"></a>
+
+```java
+public java.lang.String getLocationInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `location`<sup>Required</sup> <a name="location" id="@cdktf/provider-ionoscloud.mariadbCluster.MariadbClusterBackupOutputReference.property.location"></a>
+
+```java
+public java.lang.String getLocation();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-ionoscloud.mariadbCluster.MariadbClusterBackupOutputReference.property.internalValue"></a>
+
+```java
+public MariadbClusterBackup getInternalValue();
+```
+
+- *Type:* <a href="#@cdktf/provider-ionoscloud.mariadbCluster.MariadbClusterBackup">MariadbClusterBackup</a>
+
+---
+
 
 ### MariadbClusterConnectionsOutputReference <a name="MariadbClusterConnectionsOutputReference" id="@cdktf/provider-ionoscloud.mariadbCluster.MariadbClusterConnectionsOutputReference"></a>
 
