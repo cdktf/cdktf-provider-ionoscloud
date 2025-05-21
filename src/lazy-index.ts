@@ -91,6 +91,7 @@ Object.defineProperty(exports, 'dataIonoscloudCertificate', { get: function () {
 Object.defineProperty(exports, 'dataIonoscloudContainerRegistry', { get: function () { return require('./data-ionoscloud-container-registry'); } });
 Object.defineProperty(exports, 'dataIonoscloudContainerRegistryLocations', { get: function () { return require('./data-ionoscloud-container-registry-locations'); } });
 Object.defineProperty(exports, 'dataIonoscloudContainerRegistryToken', { get: function () { return require('./data-ionoscloud-container-registry-token'); } });
+Object.defineProperty(exports, 'dataIonoscloudContracts', { get: function () { return require('./data-ionoscloud-contracts'); } });
 Object.defineProperty(exports, 'dataIonoscloudCubeServer', { get: function () { return require('./data-ionoscloud-cube-server'); } });
 Object.defineProperty(exports, 'dataIonoscloudDatacenter', { get: function () { return require('./data-ionoscloud-datacenter'); } });
 Object.defineProperty(exports, 'dataIonoscloudDataplatformCluster', { get: function () { return require('./data-ionoscloud-dataplatform-cluster'); } });

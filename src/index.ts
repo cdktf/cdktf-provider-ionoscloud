@@ -91,6 +91,7 @@ export * as dataIonoscloudCertificate from './data-ionoscloud-certificate';
 export * as dataIonoscloudContainerRegistry from './data-ionoscloud-container-registry';
 export * as dataIonoscloudContainerRegistryLocations from './data-ionoscloud-container-registry-locations';
 export * as dataIonoscloudContainerRegistryToken from './data-ionoscloud-container-registry-token';
+export * as dataIonoscloudContracts from './data-ionoscloud-contracts';
 export * as dataIonoscloudCubeServer from './data-ionoscloud-cube-server';
 export * as dataIonoscloudDatacenter from './data-ionoscloud-datacenter';
 export * as dataIonoscloudDataplatformCluster from './data-ionoscloud-dataplatform-cluster';

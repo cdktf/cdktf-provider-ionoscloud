@@ -31,6 +31,7 @@ The following submodules are available:
 - [dataIonoscloudContainerRegistry](./dataIonoscloudContainerRegistry.csharp.md)
 - [dataIonoscloudContainerRegistryLocations](./dataIonoscloudContainerRegistryLocations.csharp.md)
 - [dataIonoscloudContainerRegistryToken](./dataIonoscloudContainerRegistryToken.csharp.md)
+- [dataIonoscloudContracts](./dataIonoscloudContracts.csharp.md)
 - [dataIonoscloudCubeServer](./dataIonoscloudCubeServer.csharp.md)
 - [dataIonoscloudDatacenter](./dataIonoscloudDatacenter.csharp.md)
 - [dataIonoscloudDataplatformCluster](./dataIonoscloudDataplatformCluster.csharp.md)

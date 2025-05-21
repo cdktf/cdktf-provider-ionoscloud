@@ -31,6 +31,7 @@ The following submodules are available:
 - [dataIonoscloudContainerRegistry](./dataIonoscloudContainerRegistry.typescript.md)
 - [dataIonoscloudContainerRegistryLocations](./dataIonoscloudContainerRegistryLocations.typescript.md)
 - [dataIonoscloudContainerRegistryToken](./dataIonoscloudContainerRegistryToken.typescript.md)
+- [dataIonoscloudContracts](./dataIonoscloudContracts.typescript.md)
 - [dataIonoscloudCubeServer](./dataIonoscloudCubeServer.typescript.md)
 - [dataIonoscloudDatacenter](./dataIonoscloudDatacenter.typescript.md)
 - [dataIonoscloudDataplatformCluster](./dataIonoscloudDataplatformCluster.typescript.md)

@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.6/docs/data-sources/mariadb_cluster
+// https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.7/docs/data-sources/mariadb_cluster
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,13 +15,13 @@ export interface DataIonoscloudMariadbClusterConfig extends cdktf.TerraformMetaA
   /**
   * The friendly name of your cluster.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.6/docs/data-sources/mariadb_cluster#display_name DataIonoscloudMariadbCluster#display_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.7/docs/data-sources/mariadb_cluster#display_name DataIonoscloudMariadbCluster#display_name}
   */
   readonly displayName?: string;
   /**
   * The id of your cluster.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.6/docs/data-sources/mariadb_cluster#id DataIonoscloudMariadbCluster#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.7/docs/data-sources/mariadb_cluster#id DataIonoscloudMariadbCluster#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -30,9 +30,84 @@ export interface DataIonoscloudMariadbClusterConfig extends cdktf.TerraformMetaA
   /**
   * The cluster location
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.6/docs/data-sources/mariadb_cluster#location DataIonoscloudMariadbCluster#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.7/docs/data-sources/mariadb_cluster#location DataIonoscloudMariadbCluster#location}
   */
   readonly location?: string;
+}
+export interface DataIonoscloudMariadbClusterBackup {
+}
+
+export function dataIonoscloudMariadbClusterBackupToTerraform(struct?: DataIonoscloudMariadbClusterBackup): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+
+export function dataIonoscloudMariadbClusterBackupToHclTerraform(struct?: DataIonoscloudMariadbClusterBackup): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class DataIonoscloudMariadbClusterBackupOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataIonoscloudMariadbClusterBackup | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataIonoscloudMariadbClusterBackup | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // location - computed: true, optional: false, required: false
+  public get location() {
+    return this.getStringAttribute('location');
+  }
+}
+
+export class DataIonoscloudMariadbClusterBackupList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataIonoscloudMariadbClusterBackupOutputReference {
+    return new DataIonoscloudMariadbClusterBackupOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
 }
 export interface DataIonoscloudMariadbClusterConnections {
 }
@@ -201,7 +276,7 @@ export class DataIonoscloudMariadbClusterMaintenanceWindowList extends cdktf.Com
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.6/docs/data-sources/mariadb_cluster ionoscloud_mariadb_cluster}
+* Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.7/docs/data-sources/mariadb_cluster ionoscloud_mariadb_cluster}
 */
 export class DataIonoscloudMariadbCluster extends cdktf.TerraformDataSource {
 
@@ -217,7 +292,7 @@ export class DataIonoscloudMariadbCluster extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataIonoscloudMariadbCluster resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataIonoscloudMariadbCluster to import
-  * @param importFromId The id of the existing DataIonoscloudMariadbCluster that should be imported. Refer to the {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.6/docs/data-sources/mariadb_cluster#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataIonoscloudMariadbCluster that should be imported. Refer to the {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.7/docs/data-sources/mariadb_cluster#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataIonoscloudMariadbCluster to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -229,7 +304,7 @@ export class DataIonoscloudMariadbCluster extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.6/docs/data-sources/mariadb_cluster ionoscloud_mariadb_cluster} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.7/docs/data-sources/mariadb_cluster ionoscloud_mariadb_cluster} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -240,7 +315,7 @@ export class DataIonoscloudMariadbCluster extends cdktf.TerraformDataSource {
       terraformResourceType: 'ionoscloud_mariadb_cluster',
       terraformGeneratorMetadata: {
         providerName: 'ionoscloud',
-        providerVersion: '6.7.6',
+        providerVersion: '6.7.7',
         providerVersionConstraint: '~> 6.2'
       },
       provider: config.provider,
@@ -259,6 +334,12 @@ export class DataIonoscloudMariadbCluster extends cdktf.TerraformDataSource {
   // ==========
   // ATTRIBUTES
   // ==========
+
+  // backup - computed: true, optional: false, required: false
+  private _backup = new DataIonoscloudMariadbClusterBackupList(this, "backup", false);
+  public get backup() {
+    return this._backup;
+  }
 
   // connections - computed: true, optional: false, required: false
   private _connections = new DataIonoscloudMariadbClusterConnectionsList(this, "connections", false);

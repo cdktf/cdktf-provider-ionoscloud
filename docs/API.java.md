@@ -31,6 +31,7 @@ The following submodules are available:
 - [dataIonoscloudContainerRegistry](./dataIonoscloudContainerRegistry.java.md)
 - [dataIonoscloudContainerRegistryLocations](./dataIonoscloudContainerRegistryLocations.java.md)
 - [dataIonoscloudContainerRegistryToken](./dataIonoscloudContainerRegistryToken.java.md)
+- [dataIonoscloudContracts](./dataIonoscloudContracts.java.md)
 - [dataIonoscloudCubeServer](./dataIonoscloudCubeServer.java.md)
 - [dataIonoscloudDatacenter](./dataIonoscloudDatacenter.java.md)
 - [dataIonoscloudDataplatformCluster](./dataIonoscloudDataplatformCluster.java.md)
