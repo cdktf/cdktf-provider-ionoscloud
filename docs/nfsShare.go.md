@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionosclo
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.nfsShare.NfsShare.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/nfsshare"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v12/nfsshare"
 
 nfsshare.NewNfsShare(scope Construct, id *string, config NfsShareConfig) NfsShare
 ```
@@ -439,7 +439,7 @@ func ResetUid()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-ionoscloud.nfsShare.NfsShare.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/nfsshare"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v12/nfsshare"
 
 nfsshare.NfsShare_IsConstruct(x interface{}) *bool
 ```
@@ -471,7 +471,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-ionoscloud.nfsShare.NfsShare.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/nfsshare"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v12/nfsshare"
 
 nfsshare.NfsShare_IsTerraformElement(x interface{}) *bool
 ```
@@ -485,7 +485,7 @@ nfsshare.NfsShare_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-ionoscloud.nfsShare.NfsShare.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/nfsshare"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v12/nfsshare"
 
 nfsshare.NfsShare_IsTerraformResource(x interface{}) *bool
 ```
@@ -499,7 +499,7 @@ nfsshare.NfsShare_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-ionoscloud.nfsShare.NfsShare.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/nfsshare"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v12/nfsshare"
 
 nfsshare.NfsShare_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -926,13 +926,13 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-ionoscloud.nfsShare.NfsShareClientGroups.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/nfsshare"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v12/nfsshare"
 
 &nfsshare.NfsShareClientGroups {
 	Hosts: *[]*string,
 	IpNetworks: *[]*string,
 	Description: *string,
-	Nfs: github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11.nfsShare.NfsShareClientGroupsNfs,
+	Nfs: github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v12.nfsShare.NfsShareClientGroupsNfs,
 }
 ```
 
@@ -1012,7 +1012,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 #### Initializer <a name="Initializer" id="@cdktf/provider-ionoscloud.nfsShare.NfsShareClientGroupsNfs.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/nfsshare"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v12/nfsshare"
 
 &nfsshare.NfsShareClientGroupsNfs {
 	Squash: *string,
@@ -1048,7 +1048,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 #### Initializer <a name="Initializer" id="@cdktf/provider-ionoscloud.nfsShare.NfsShareConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/nfsshare"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v12/nfsshare"
 
 &nfsshare.NfsShareConfig {
 	Connection: interface{},
@@ -1064,7 +1064,7 @@ import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/nfsshare"
 	Gid: *f64,
 	Location: *string,
 	Quota: *f64,
-	Timeouts: github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11.nfsShare.NfsShareTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v12.nfsShare.NfsShareTimeouts,
 	Uid: *f64,
 }
 ```
@@ -1280,7 +1280,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 #### Initializer <a name="Initializer" id="@cdktf/provider-ionoscloud.nfsShare.NfsShareTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/nfsshare"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v12/nfsshare"
 
 &nfsshare.NfsShareTimeouts {
 	Create: *string,
@@ -1356,7 +1356,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.nfsShare.NfsShareClientGroupsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/nfsshare"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v12/nfsshare"
 
 nfsshare.NewNfsShareClientGroupsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) NfsShareClientGroupsList
 ```
@@ -1516,7 +1516,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.nfsShare.NfsShareClientGroupsNfsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/nfsshare"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v12/nfsshare"
 
 nfsshare.NewNfsShareClientGroupsNfsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) NfsShareClientGroupsNfsOutputReference
 ```
@@ -1794,7 +1794,7 @@ func InternalValue() NfsShareClientGroupsNfs
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.nfsShare.NfsShareClientGroupsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/nfsshare"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v12/nfsshare"
 
 nfsshare.NewNfsShareClientGroupsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) NfsShareClientGroupsOutputReference
 ```
@@ -2176,7 +2176,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.nfsShare.NfsShareTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/nfsshare"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v12/nfsshare"
 
 nfsshare.NewNfsShareTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) NfsShareTimeoutsOutputReference
 ```

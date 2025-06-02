@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionosclo
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.datacenterNsgSelection.DatacenterNsgSelection.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/datacenternsgselection"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v12/datacenternsgselection"
 
 datacenternsgselection.NewDatacenterNsgSelection(scope Construct, id *string, config DatacenterNsgSelectionConfig) DatacenterNsgSelection
 ```
@@ -405,7 +405,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-ionoscloud.datacenterNsgSelection.DatacenterNsgSelection.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/datacenternsgselection"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v12/datacenternsgselection"
 
 datacenternsgselection.DatacenterNsgSelection_IsConstruct(x interface{}) *bool
 ```
@@ -437,7 +437,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-ionoscloud.datacenterNsgSelection.DatacenterNsgSelection.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/datacenternsgselection"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v12/datacenternsgselection"
 
 datacenternsgselection.DatacenterNsgSelection_IsTerraformElement(x interface{}) *bool
 ```
@@ -451,7 +451,7 @@ datacenternsgselection.DatacenterNsgSelection_IsTerraformElement(x interface{}) 
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-ionoscloud.datacenterNsgSelection.DatacenterNsgSelection.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/datacenternsgselection"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v12/datacenternsgselection"
 
 datacenternsgselection.DatacenterNsgSelection_IsTerraformResource(x interface{}) *bool
 ```
@@ -465,7 +465,7 @@ datacenternsgselection.DatacenterNsgSelection_IsTerraformResource(x interface{})
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-ionoscloud.datacenterNsgSelection.DatacenterNsgSelection.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/datacenternsgselection"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v12/datacenternsgselection"
 
 datacenternsgselection.DatacenterNsgSelection_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -782,7 +782,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-ionoscloud.datacenterNsgSelection.DatacenterNsgSelectionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/datacenternsgselection"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v12/datacenternsgselection"
 
 &datacenternsgselection.DatacenterNsgSelectionConfig {
 	Connection: interface{},
@@ -795,7 +795,7 @@ import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/datacentern
 	DatacenterId: *string,
 	NsgId: *string,
 	Id: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11.datacenterNsgSelection.DatacenterNsgSelectionTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v12.datacenterNsgSelection.DatacenterNsgSelectionTimeouts,
 }
 ```
 
@@ -951,7 +951,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 #### Initializer <a name="Initializer" id="@cdktf/provider-ionoscloud.datacenterNsgSelection.DatacenterNsgSelectionTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/datacenternsgselection"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v12/datacenternsgselection"
 
 &datacenternsgselection.DatacenterNsgSelectionTimeouts {
 	Create: *string,
@@ -1027,7 +1027,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.datacenterNsgSelection.DatacenterNsgSelectionTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/datacenternsgselection"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v12/datacenternsgselection"
 
 datacenternsgselection.NewDatacenterNsgSelectionTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DatacenterNsgSelectionTimeoutsOutputReference
 ```

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionosclo
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.s3BucketVersioning.S3BucketVersioning.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/s3bucketversioning"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v12/s3bucketversioning"
 
 s3bucketversioning.NewS3BucketVersioning(scope Construct, id *string, config S3BucketVersioningConfig) S3BucketVersioning
 ```
@@ -398,7 +398,7 @@ func ResetVersioningConfiguration()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-ionoscloud.s3BucketVersioning.S3BucketVersioning.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/s3bucketversioning"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v12/s3bucketversioning"
 
 s3bucketversioning.S3BucketVersioning_IsConstruct(x interface{}) *bool
 ```
@@ -430,7 +430,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-ionoscloud.s3BucketVersioning.S3BucketVersioning.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/s3bucketversioning"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v12/s3bucketversioning"
 
 s3bucketversioning.S3BucketVersioning_IsTerraformElement(x interface{}) *bool
 ```
@@ -444,7 +444,7 @@ s3bucketversioning.S3BucketVersioning_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-ionoscloud.s3BucketVersioning.S3BucketVersioning.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/s3bucketversioning"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v12/s3bucketversioning"
 
 s3bucketversioning.S3BucketVersioning_IsTerraformResource(x interface{}) *bool
 ```
@@ -458,7 +458,7 @@ s3bucketversioning.S3BucketVersioning_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-ionoscloud.s3BucketVersioning.S3BucketVersioning.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/s3bucketversioning"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v12/s3bucketversioning"
 
 s3bucketversioning.S3BucketVersioning_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -731,7 +731,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-ionoscloud.s3BucketVersioning.S3BucketVersioningConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/s3bucketversioning"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v12/s3bucketversioning"
 
 &s3bucketversioning.S3BucketVersioningConfig {
 	Connection: interface{},
@@ -742,7 +742,7 @@ import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/s3bucketver
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
 	Bucket: *string,
-	VersioningConfiguration: github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11.s3BucketVersioning.S3BucketVersioningVersioningConfiguration,
+	VersioningConfiguration: github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v12.s3BucketVersioning.S3BucketVersioningVersioningConfiguration,
 }
 ```
 
@@ -865,7 +865,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 #### Initializer <a name="Initializer" id="@cdktf/provider-ionoscloud.s3BucketVersioning.S3BucketVersioningVersioningConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/s3bucketversioning"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v12/s3bucketversioning"
 
 &s3bucketversioning.S3BucketVersioningVersioningConfiguration {
 	Status: *string,
@@ -917,7 +917,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.s3BucketVersioning.S3BucketVersioningVersioningConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/s3bucketversioning"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v12/s3bucketversioning"
 
 s3bucketversioning.NewS3BucketVersioningVersioningConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) S3BucketVersioningVersioningConfigurationOutputReference
 ```

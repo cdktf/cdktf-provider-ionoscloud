@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionosclo
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryToken.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/containerregistrytoken"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v12/containerregistrytoken"
 
 containerregistrytoken.NewContainerRegistryToken(scope Construct, id *string, config ContainerRegistryTokenConfig) ContainerRegistryToken
 ```
@@ -446,7 +446,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryToken.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/containerregistrytoken"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v12/containerregistrytoken"
 
 containerregistrytoken.ContainerRegistryToken_IsConstruct(x interface{}) *bool
 ```
@@ -478,7 +478,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryToken.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/containerregistrytoken"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v12/containerregistrytoken"
 
 containerregistrytoken.ContainerRegistryToken_IsTerraformElement(x interface{}) *bool
 ```
@@ -492,7 +492,7 @@ containerregistrytoken.ContainerRegistryToken_IsTerraformElement(x interface{}) 
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryToken.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/containerregistrytoken"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v12/containerregistrytoken"
 
 containerregistrytoken.ContainerRegistryToken_IsTerraformResource(x interface{}) *bool
 ```
@@ -506,7 +506,7 @@ containerregistrytoken.ContainerRegistryToken_IsTerraformResource(x interface{})
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryToken.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/containerregistrytoken"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v12/containerregistrytoken"
 
 containerregistrytoken.ContainerRegistryToken_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -922,7 +922,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryTokenConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/containerregistrytoken"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v12/containerregistrytoken"
 
 &containerregistrytoken.ContainerRegistryTokenConfig {
 	Connection: interface{},
@@ -939,7 +939,7 @@ import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/containerre
 	SavePasswordToFile: *string,
 	Scopes: interface{},
 	Status: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11.containerRegistryToken.ContainerRegistryTokenTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v12.containerRegistryToken.ContainerRegistryTokenTimeouts,
 }
 ```
 
@@ -1147,7 +1147,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 #### Initializer <a name="Initializer" id="@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryTokenCredentials.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/containerregistrytoken"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v12/containerregistrytoken"
 
 &containerregistrytoken.ContainerRegistryTokenCredentials {
 
@@ -1160,7 +1160,7 @@ import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/containerre
 #### Initializer <a name="Initializer" id="@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryTokenScopes.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/containerregistrytoken"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v12/containerregistrytoken"
 
 &containerregistrytoken.ContainerRegistryTokenScopes {
 	Actions: *[]*string,
@@ -1222,7 +1222,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 #### Initializer <a name="Initializer" id="@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryTokenTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/containerregistrytoken"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v12/containerregistrytoken"
 
 &containerregistrytoken.ContainerRegistryTokenTimeouts {
 	Create: *string,
@@ -1298,7 +1298,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryTokenCredentialsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/containerregistrytoken"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v12/containerregistrytoken"
 
 containerregistrytoken.NewContainerRegistryTokenCredentialsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ContainerRegistryTokenCredentialsList
 ```
@@ -1447,7 +1447,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryTokenCredentialsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/containerregistrytoken"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v12/containerregistrytoken"
 
 containerregistrytoken.NewContainerRegistryTokenCredentialsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ContainerRegistryTokenCredentialsOutputReference
 ```
@@ -1736,7 +1736,7 @@ func InternalValue() ContainerRegistryTokenCredentials
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryTokenScopesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/containerregistrytoken"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v12/containerregistrytoken"
 
 containerregistrytoken.NewContainerRegistryTokenScopesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ContainerRegistryTokenScopesList
 ```
@@ -1896,7 +1896,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryTokenScopesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/containerregistrytoken"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v12/containerregistrytoken"
 
 containerregistrytoken.NewContainerRegistryTokenScopesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ContainerRegistryTokenScopesOutputReference
 ```
@@ -2229,7 +2229,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.containerRegistryToken.ContainerRegistryTokenTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/containerregistrytoken"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v12/containerregistrytoken"
 
 containerregistrytoken.NewContainerRegistryTokenTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ContainerRegistryTokenTimeoutsOutputReference
 ```
