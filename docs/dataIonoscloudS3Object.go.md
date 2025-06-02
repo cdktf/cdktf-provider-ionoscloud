@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionosclo
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.dataIonoscloudS3Object.DataIonoscloudS3Object.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/dataionosclouds3object"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v12/dataionosclouds3object"
 
 dataionosclouds3object.NewDataIonoscloudS3Object(scope Construct, id *string, config DataIonoscloudS3ObjectConfig) DataIonoscloudS3Object
 ```
@@ -290,7 +290,7 @@ func ResetVersionId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-ionoscloud.dataIonoscloudS3Object.DataIonoscloudS3Object.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/dataionosclouds3object"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v12/dataionosclouds3object"
 
 dataionosclouds3object.DataIonoscloudS3Object_IsConstruct(x interface{}) *bool
 ```
@@ -322,7 +322,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-ionoscloud.dataIonoscloudS3Object.DataIonoscloudS3Object.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/dataionosclouds3object"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v12/dataionosclouds3object"
 
 dataionosclouds3object.DataIonoscloudS3Object_IsTerraformElement(x interface{}) *bool
 ```
@@ -336,7 +336,7 @@ dataionosclouds3object.DataIonoscloudS3Object_IsTerraformElement(x interface{}) 
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-ionoscloud.dataIonoscloudS3Object.DataIonoscloudS3Object.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/dataionosclouds3object"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v12/dataionosclouds3object"
 
 dataionosclouds3object.DataIonoscloudS3Object_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -350,7 +350,7 @@ dataionosclouds3object.DataIonoscloudS3Object_IsTerraformDataSource(x interface{
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-ionoscloud.dataIonoscloudS3Object.DataIonoscloudS3Object.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/dataionosclouds3object"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v12/dataionosclouds3object"
 
 dataionosclouds3object.DataIonoscloudS3Object_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -887,7 +887,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-ionoscloud.dataIonoscloudS3Object.DataIonoscloudS3ObjectConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v11/dataionosclouds3object"
+import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v12/dataionosclouds3object"
 
 &dataionosclouds3object.DataIonoscloudS3ObjectConfig {
 	Connection: interface{},
