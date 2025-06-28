@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.7/docs/resources/vcpu_server
+// https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.9/docs/resources/vcpu_server
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,110 +13,110 @@ import * as cdktf from 'cdktf';
 
 export interface VcpuServerConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.7/docs/resources/vcpu_server#availability_zone VcpuServer#availability_zone}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.9/docs/resources/vcpu_server#availability_zone VcpuServer#availability_zone}
   */
   readonly availabilityZone?: string;
   /**
   * The associated boot drive, if any. Must be the UUID of a bootable CDROM image that can be retrieved using the ionoscloud_image data source.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.7/docs/resources/vcpu_server#boot_cdrom VcpuServer#boot_cdrom}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.9/docs/resources/vcpu_server#boot_cdrom VcpuServer#boot_cdrom}
   */
   readonly bootCdrom?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.7/docs/resources/vcpu_server#boot_image VcpuServer#boot_image}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.9/docs/resources/vcpu_server#boot_image VcpuServer#boot_image}
   */
   readonly bootImage?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.7/docs/resources/vcpu_server#cores VcpuServer#cores}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.9/docs/resources/vcpu_server#cores VcpuServer#cores}
   */
   readonly cores: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.7/docs/resources/vcpu_server#datacenter_id VcpuServer#datacenter_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.9/docs/resources/vcpu_server#datacenter_id VcpuServer#datacenter_id}
   */
   readonly datacenterId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.7/docs/resources/vcpu_server#firewallrule_ids VcpuServer#firewallrule_ids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.9/docs/resources/vcpu_server#firewallrule_ids VcpuServer#firewallrule_ids}
   */
   readonly firewallruleIds?: string[];
   /**
   * The hostname of the resource. Allowed characters are a-z, 0-9 and - (minus). Hostname should not start with minus and should not be longer than 63 characters. If no value provided explicitly, it will be populated with the name of the server
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.7/docs/resources/vcpu_server#hostname VcpuServer#hostname}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.9/docs/resources/vcpu_server#hostname VcpuServer#hostname}
   */
   readonly hostname?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.7/docs/resources/vcpu_server#id VcpuServer#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.9/docs/resources/vcpu_server#id VcpuServer#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.7/docs/resources/vcpu_server#image_name VcpuServer#image_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.9/docs/resources/vcpu_server#image_name VcpuServer#image_name}
   */
   readonly imageName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.7/docs/resources/vcpu_server#image_password VcpuServer#image_password}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.9/docs/resources/vcpu_server#image_password VcpuServer#image_password}
   */
   readonly imagePassword?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.7/docs/resources/vcpu_server#name VcpuServer#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.9/docs/resources/vcpu_server#name VcpuServer#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.7/docs/resources/vcpu_server#ram VcpuServer#ram}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.9/docs/resources/vcpu_server#ram VcpuServer#ram}
   */
   readonly ram: number;
   /**
   * The list of Security Group IDs for the server
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.7/docs/resources/vcpu_server#security_groups_ids VcpuServer#security_groups_ids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.9/docs/resources/vcpu_server#security_groups_ids VcpuServer#security_groups_ids}
   */
   readonly securityGroupsIds?: string[];
   /**
   * Public SSH keys are set on the image as authorized keys for appropriate SSH login to the instance using the corresponding private key. This field may only be set in creation requests. When reading, it always returns null. SSH keys are only supported if a public Linux image is used for the volume creation.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.7/docs/resources/vcpu_server#ssh_keys VcpuServer#ssh_keys}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.9/docs/resources/vcpu_server#ssh_keys VcpuServer#ssh_keys}
   */
   readonly sshKeys?: string[];
   /**
   * Sets the power state of the vcpu server. Possible values: `RUNNING` or `SHUTOFF`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.7/docs/resources/vcpu_server#vm_state VcpuServer#vm_state}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.9/docs/resources/vcpu_server#vm_state VcpuServer#vm_state}
   */
   readonly vmState?: string;
   /**
   * label block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.7/docs/resources/vcpu_server#label VcpuServer#label}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.9/docs/resources/vcpu_server#label VcpuServer#label}
   */
   readonly label?: VcpuServerLabel[] | cdktf.IResolvable;
   /**
   * nic block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.7/docs/resources/vcpu_server#nic VcpuServer#nic}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.9/docs/resources/vcpu_server#nic VcpuServer#nic}
   */
   readonly nic?: VcpuServerNic;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.7/docs/resources/vcpu_server#timeouts VcpuServer#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.9/docs/resources/vcpu_server#timeouts VcpuServer#timeouts}
   */
   readonly timeouts?: VcpuServerTimeouts;
   /**
   * volume block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.7/docs/resources/vcpu_server#volume VcpuServer#volume}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.9/docs/resources/vcpu_server#volume VcpuServer#volume}
   */
   readonly volume: VcpuServerVolume;
 }
 export interface VcpuServerLabel {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.7/docs/resources/vcpu_server#key VcpuServer#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.9/docs/resources/vcpu_server#key VcpuServer#key}
   */
   readonly key: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.7/docs/resources/vcpu_server#value VcpuServer#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.9/docs/resources/vcpu_server#value VcpuServer#value}
   */
   readonly value: string;
 }
@@ -255,43 +255,43 @@ export class VcpuServerLabelList extends cdktf.ComplexList {
 }
 export interface VcpuServerNicFirewall {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.7/docs/resources/vcpu_server#icmp_code VcpuServer#icmp_code}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.9/docs/resources/vcpu_server#icmp_code VcpuServer#icmp_code}
   */
   readonly icmpCode?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.7/docs/resources/vcpu_server#icmp_type VcpuServer#icmp_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.9/docs/resources/vcpu_server#icmp_type VcpuServer#icmp_type}
   */
   readonly icmpType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.7/docs/resources/vcpu_server#name VcpuServer#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.9/docs/resources/vcpu_server#name VcpuServer#name}
   */
   readonly name?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.7/docs/resources/vcpu_server#port_range_end VcpuServer#port_range_end}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.9/docs/resources/vcpu_server#port_range_end VcpuServer#port_range_end}
   */
   readonly portRangeEnd?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.7/docs/resources/vcpu_server#port_range_start VcpuServer#port_range_start}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.9/docs/resources/vcpu_server#port_range_start VcpuServer#port_range_start}
   */
   readonly portRangeStart?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.7/docs/resources/vcpu_server#protocol VcpuServer#protocol}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.9/docs/resources/vcpu_server#protocol VcpuServer#protocol}
   */
   readonly protocol: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.7/docs/resources/vcpu_server#source_ip VcpuServer#source_ip}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.9/docs/resources/vcpu_server#source_ip VcpuServer#source_ip}
   */
   readonly sourceIp?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.7/docs/resources/vcpu_server#source_mac VcpuServer#source_mac}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.9/docs/resources/vcpu_server#source_mac VcpuServer#source_mac}
   */
   readonly sourceMac?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.7/docs/resources/vcpu_server#target_ip VcpuServer#target_ip}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.9/docs/resources/vcpu_server#target_ip VcpuServer#target_ip}
   */
   readonly targetIp?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.7/docs/resources/vcpu_server#type VcpuServer#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.9/docs/resources/vcpu_server#type VcpuServer#type}
   */
   readonly type?: string;
 }
@@ -670,57 +670,57 @@ export class VcpuServerNicFirewallList extends cdktf.ComplexList {
 }
 export interface VcpuServerNic {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.7/docs/resources/vcpu_server#dhcp VcpuServer#dhcp}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.9/docs/resources/vcpu_server#dhcp VcpuServer#dhcp}
   */
   readonly dhcp?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.7/docs/resources/vcpu_server#dhcpv6 VcpuServer#dhcpv6}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.9/docs/resources/vcpu_server#dhcpv6 VcpuServer#dhcpv6}
   */
   readonly dhcpv6?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.7/docs/resources/vcpu_server#firewall_active VcpuServer#firewall_active}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.9/docs/resources/vcpu_server#firewall_active VcpuServer#firewall_active}
   */
   readonly firewallActive?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.7/docs/resources/vcpu_server#firewall_type VcpuServer#firewall_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.9/docs/resources/vcpu_server#firewall_type VcpuServer#firewall_type}
   */
   readonly firewallType?: string;
   /**
   * Collection of IP addresses assigned to a nic. Explicitly assigned public IPs need to come from reserved IP blocks, Passing value null or empty array will assign an IP address automatically.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.7/docs/resources/vcpu_server#ips VcpuServer#ips}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.9/docs/resources/vcpu_server#ips VcpuServer#ips}
   */
   readonly ips?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.7/docs/resources/vcpu_server#ipv6_cidr_block VcpuServer#ipv6_cidr_block}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.9/docs/resources/vcpu_server#ipv6_cidr_block VcpuServer#ipv6_cidr_block}
   */
   readonly ipv6CidrBlock?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.7/docs/resources/vcpu_server#ipv6_ips VcpuServer#ipv6_ips}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.9/docs/resources/vcpu_server#ipv6_ips VcpuServer#ipv6_ips}
   */
   readonly ipv6Ips?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.7/docs/resources/vcpu_server#lan VcpuServer#lan}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.9/docs/resources/vcpu_server#lan VcpuServer#lan}
   */
   readonly lan: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.7/docs/resources/vcpu_server#mac VcpuServer#mac}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.9/docs/resources/vcpu_server#mac VcpuServer#mac}
   */
   readonly mac?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.7/docs/resources/vcpu_server#name VcpuServer#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.9/docs/resources/vcpu_server#name VcpuServer#name}
   */
   readonly name?: string;
   /**
   * The list of Security Group IDs for the NIC
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.7/docs/resources/vcpu_server#security_groups_ids VcpuServer#security_groups_ids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.9/docs/resources/vcpu_server#security_groups_ids VcpuServer#security_groups_ids}
   */
   readonly securityGroupsIds?: string[];
   /**
   * firewall block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.7/docs/resources/vcpu_server#firewall VcpuServer#firewall}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.9/docs/resources/vcpu_server#firewall VcpuServer#firewall}
   */
   readonly firewall?: VcpuServerNicFirewall[] | cdktf.IResolvable;
 }
@@ -1135,19 +1135,19 @@ export class VcpuServerNicOutputReference extends cdktf.ComplexObject {
 }
 export interface VcpuServerTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.7/docs/resources/vcpu_server#create VcpuServer#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.9/docs/resources/vcpu_server#create VcpuServer#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.7/docs/resources/vcpu_server#default VcpuServer#default}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.9/docs/resources/vcpu_server#default VcpuServer#default}
   */
   readonly default?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.7/docs/resources/vcpu_server#delete VcpuServer#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.9/docs/resources/vcpu_server#delete VcpuServer#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.7/docs/resources/vcpu_server#update VcpuServer#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.9/docs/resources/vcpu_server#update VcpuServer#update}
   */
   readonly update?: string;
 }
@@ -1328,41 +1328,41 @@ export class VcpuServerTimeoutsOutputReference extends cdktf.ComplexObject {
 }
 export interface VcpuServerVolume {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.7/docs/resources/vcpu_server#availability_zone VcpuServer#availability_zone}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.9/docs/resources/vcpu_server#availability_zone VcpuServer#availability_zone}
   */
   readonly availabilityZone?: string;
   /**
   * The uuid of the Backup Unit that user has access to. The property is immutable and is only allowed to be set on a new volume creation. It is mandatory to provide either 'public image' or 'imageAlias' in conjunction with this property.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.7/docs/resources/vcpu_server#backup_unit_id VcpuServer#backup_unit_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.9/docs/resources/vcpu_server#backup_unit_id VcpuServer#backup_unit_id}
   */
   readonly backupUnitId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.7/docs/resources/vcpu_server#bus VcpuServer#bus}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.9/docs/resources/vcpu_server#bus VcpuServer#bus}
   */
   readonly bus?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.7/docs/resources/vcpu_server#disk_type VcpuServer#disk_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.9/docs/resources/vcpu_server#disk_type VcpuServer#disk_type}
   */
   readonly diskType: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.7/docs/resources/vcpu_server#licence_type VcpuServer#licence_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.9/docs/resources/vcpu_server#licence_type VcpuServer#licence_type}
   */
   readonly licenceType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.7/docs/resources/vcpu_server#name VcpuServer#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.9/docs/resources/vcpu_server#name VcpuServer#name}
   */
   readonly name?: string;
   /**
   * The size of the volume in GB.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.7/docs/resources/vcpu_server#size VcpuServer#size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.9/docs/resources/vcpu_server#size VcpuServer#size}
   */
   readonly size?: number;
   /**
   * The cloud-init configuration for the volume as base64 encoded string. The property is immutable and is only allowed to be set on a new volume creation. It is mandatory to provide either 'public image' or 'imageAlias' that has cloud-init compatibility in conjunction with this property.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.7/docs/resources/vcpu_server#user_data VcpuServer#user_data}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.9/docs/resources/vcpu_server#user_data VcpuServer#user_data}
   */
   readonly userData?: string;
 }
@@ -1691,7 +1691,7 @@ export class VcpuServerVolumeOutputReference extends cdktf.ComplexObject {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.7/docs/resources/vcpu_server ionoscloud_vcpu_server}
+* Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.9/docs/resources/vcpu_server ionoscloud_vcpu_server}
 */
 export class VcpuServer extends cdktf.TerraformResource {
 
@@ -1707,7 +1707,7 @@ export class VcpuServer extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a VcpuServer resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the VcpuServer to import
-  * @param importFromId The id of the existing VcpuServer that should be imported. Refer to the {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.7/docs/resources/vcpu_server#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing VcpuServer that should be imported. Refer to the {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.9/docs/resources/vcpu_server#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the VcpuServer to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -1719,7 +1719,7 @@ export class VcpuServer extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.7/docs/resources/vcpu_server ionoscloud_vcpu_server} Resource
+  * Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.9/docs/resources/vcpu_server ionoscloud_vcpu_server} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1730,7 +1730,7 @@ export class VcpuServer extends cdktf.TerraformResource {
       terraformResourceType: 'ionoscloud_vcpu_server',
       terraformGeneratorMetadata: {
         providerName: 'ionoscloud',
-        providerVersion: '6.7.7',
+        providerVersion: '6.7.9',
         providerVersionConstraint: '~> 6.2'
       },
       provider: config.provider,

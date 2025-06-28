@@ -4,7 +4,7 @@
 
 ### DataIonoscloudS3Bucket <a name="DataIonoscloudS3Bucket" id="@cdktf/provider-ionoscloud.dataIonoscloudS3Bucket.DataIonoscloudS3Bucket"></a>
 
-Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.7/docs/data-sources/s3_bucket ionoscloud_s3_bucket}.
+Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.9/docs/data-sources/s3_bucket ionoscloud_s3_bucket}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.dataIonoscloudS3Bucket.DataIonoscloudS3Bucket.Initializer"></a>
 
@@ -108,7 +108,7 @@ Must be unique amongst siblings in the same scope
 
 The name of the bucket.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.7/docs/data-sources/s3_bucket#name DataIonoscloudS3Bucket#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.9/docs/data-sources/s3_bucket#name DataIonoscloudS3Bucket#name}
 
 ---
 
@@ -431,7 +431,7 @@ The construct id used in the generated config for the DataIonoscloudS3Bucket to 
 
 The id of the existing DataIonoscloudS3Bucket that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.7/docs/data-sources/s3_bucket#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.9/docs/data-sources/s3_bucket#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -755,7 +755,7 @@ public java.lang.String getName();
 
 The name of the bucket.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.7/docs/data-sources/s3_bucket#name DataIonoscloudS3Bucket#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.9/docs/data-sources/s3_bucket#name DataIonoscloudS3Bucket#name}
 
 ---
 
