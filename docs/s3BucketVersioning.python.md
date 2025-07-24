@@ -4,7 +4,7 @@
 
 ### S3BucketVersioning <a name="S3BucketVersioning" id="@cdktf/provider-ionoscloud.s3BucketVersioning.S3BucketVersioning"></a>
 
-Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.11/docs/resources/s3_bucket_versioning ionoscloud_s3_bucket_versioning}.
+Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.12/docs/resources/s3_bucket_versioning ionoscloud_s3_bucket_versioning}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.s3BucketVersioning.S3BucketVersioning.Initializer"></a>
 
@@ -108,7 +108,7 @@ Must be unique amongst siblings in the same scope
 
 The name of the bucket.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.11/docs/resources/s3_bucket_versioning#bucket S3BucketVersioning#bucket}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.12/docs/resources/s3_bucket_versioning#bucket S3BucketVersioning#bucket}
 
 ---
 
@@ -118,7 +118,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 
 versioning_configuration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.11/docs/resources/s3_bucket_versioning#versioning_configuration S3BucketVersioning#versioning_configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.12/docs/resources/s3_bucket_versioning#versioning_configuration S3BucketVersioning#versioning_configuration}
 
 ---
 
@@ -494,7 +494,7 @@ def put_versioning_configuration(
 
 The versioning status of the bucket.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.11/docs/resources/s3_bucket_versioning#status S3BucketVersioning#status}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.12/docs/resources/s3_bucket_versioning#status S3BucketVersioning#status}
 
 ---
 
@@ -504,7 +504,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 
 The MFA delete status of the bucket.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.11/docs/resources/s3_bucket_versioning#mfa_delete S3BucketVersioning#mfa_delete}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.12/docs/resources/s3_bucket_versioning#mfa_delete S3BucketVersioning#mfa_delete}
 
 ---
 
@@ -628,7 +628,7 @@ The construct id used in the generated config for the S3BucketVersioning to impo
 
 The id of the existing S3BucketVersioning that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.11/docs/resources/s3_bucket_versioning#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.12/docs/resources/s3_bucket_versioning#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -983,7 +983,7 @@ bucket: str
 
 The name of the bucket.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.11/docs/resources/s3_bucket_versioning#bucket S3BucketVersioning#bucket}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.12/docs/resources/s3_bucket_versioning#bucket S3BucketVersioning#bucket}
 
 ---
 
@@ -997,7 +997,7 @@ versioning_configuration: S3BucketVersioningVersioningConfiguration
 
 versioning_configuration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.11/docs/resources/s3_bucket_versioning#versioning_configuration S3BucketVersioning#versioning_configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.12/docs/resources/s3_bucket_versioning#versioning_configuration S3BucketVersioning#versioning_configuration}
 
 ---
 
@@ -1033,7 +1033,7 @@ status: str
 
 The versioning status of the bucket.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.11/docs/resources/s3_bucket_versioning#status S3BucketVersioning#status}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.12/docs/resources/s3_bucket_versioning#status S3BucketVersioning#status}
 
 ---
 
@@ -1047,7 +1047,7 @@ mfa_delete: str
 
 The MFA delete status of the bucket.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.11/docs/resources/s3_bucket_versioning#mfa_delete S3BucketVersioning#mfa_delete}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.12/docs/resources/s3_bucket_versioning#mfa_delete S3BucketVersioning#mfa_delete}
 
 ---
 
