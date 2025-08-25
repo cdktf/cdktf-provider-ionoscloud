@@ -19,8 +19,6 @@ Object.defineProperty(exports, 'containerRegistryToken', { get: function () { re
 Object.defineProperty(exports, 'cubeServer', { get: function () { return require('./cube-server'); } });
 Object.defineProperty(exports, 'datacenter', { get: function () { return require('./datacenter'); } });
 Object.defineProperty(exports, 'datacenterNsgSelection', { get: function () { return require('./datacenter-nsg-selection'); } });
-Object.defineProperty(exports, 'dataplatformCluster', { get: function () { return require('./dataplatform-cluster'); } });
-Object.defineProperty(exports, 'dataplatformNodePool', { get: function () { return require('./dataplatform-node-pool'); } });
 Object.defineProperty(exports, 'dnsRecord', { get: function () { return require('./dns-record'); } });
 Object.defineProperty(exports, 'dnsZone', { get: function () { return require('./dns-zone'); } });
 Object.defineProperty(exports, 'firewall', { get: function () { return require('./firewall'); } });
@@ -94,10 +92,6 @@ Object.defineProperty(exports, 'dataIonoscloudContainerRegistryToken', { get: fu
 Object.defineProperty(exports, 'dataIonoscloudContracts', { get: function () { return require('./data-ionoscloud-contracts'); } });
 Object.defineProperty(exports, 'dataIonoscloudCubeServer', { get: function () { return require('./data-ionoscloud-cube-server'); } });
 Object.defineProperty(exports, 'dataIonoscloudDatacenter', { get: function () { return require('./data-ionoscloud-datacenter'); } });
-Object.defineProperty(exports, 'dataIonoscloudDataplatformCluster', { get: function () { return require('./data-ionoscloud-dataplatform-cluster'); } });
-Object.defineProperty(exports, 'dataIonoscloudDataplatformNodePool', { get: function () { return require('./data-ionoscloud-dataplatform-node-pool'); } });
-Object.defineProperty(exports, 'dataIonoscloudDataplatformNodePools', { get: function () { return require('./data-ionoscloud-dataplatform-node-pools'); } });
-Object.defineProperty(exports, 'dataIonoscloudDataplatformVersions', { get: function () { return require('./data-ionoscloud-dataplatform-versions'); } });
 Object.defineProperty(exports, 'dataIonoscloudDnsRecord', { get: function () { return require('./data-ionoscloud-dns-record'); } });
 Object.defineProperty(exports, 'dataIonoscloudDnsZone', { get: function () { return require('./data-ionoscloud-dns-zone'); } });
 Object.defineProperty(exports, 'dataIonoscloudFirewall', { get: function () { return require('./data-ionoscloud-firewall'); } });
