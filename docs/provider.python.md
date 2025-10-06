@@ -17,7 +17,7 @@ provider.IonoscloudProvider(
   alias: str = None,
   contract_number: str = None,
   endpoint: str = None,
-  insecure: typing.Union[bool, IResolvable] = None,
+  insecure: bool | IResolvable = None,
   password: str = None,
   retries: typing.Union[int, float] = None,
   s3_access_key: str = None,
@@ -35,7 +35,7 @@ provider.IonoscloudProvider(
 | <code><a href="#@cdktf/provider-ionoscloud.provider.IonoscloudProvider.Initializer.parameter.alias">alias</a></code> | <code>str</code> | Alias name. |
 | <code><a href="#@cdktf/provider-ionoscloud.provider.IonoscloudProvider.Initializer.parameter.contractNumber">contract_number</a></code> | <code>str</code> | To be set only for reseller accounts. Allows to run terraform on a contract number under a reseller account. |
 | <code><a href="#@cdktf/provider-ionoscloud.provider.IonoscloudProvider.Initializer.parameter.endpoint">endpoint</a></code> | <code>str</code> | IonosCloud REST API URL. |
-| <code><a href="#@cdktf/provider-ionoscloud.provider.IonoscloudProvider.Initializer.parameter.insecure">insecure</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | This field is to be set only for testing purposes. |
+| <code><a href="#@cdktf/provider-ionoscloud.provider.IonoscloudProvider.Initializer.parameter.insecure">insecure</a></code> | <code>bool \| cdktf.IResolvable</code> | This field is to be set only for testing purposes. |
 | <code><a href="#@cdktf/provider-ionoscloud.provider.IonoscloudProvider.Initializer.parameter.password">password</a></code> | <code>str</code> | IonosCloud password for API operations. If token is provided, token is preferred. |
 | <code><a href="#@cdktf/provider-ionoscloud.provider.IonoscloudProvider.Initializer.parameter.retries">retries</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.15/docs#retries IonoscloudProvider#retries}. |
 | <code><a href="#@cdktf/provider-ionoscloud.provider.IonoscloudProvider.Initializer.parameter.s3AccessKey">s3_access_key</a></code> | <code>str</code> | Access key for IONOS Object Storage operations. |
@@ -98,7 +98,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 
 ##### `insecure`<sup>Optional</sup> <a name="insecure" id="@cdktf/provider-ionoscloud.provider.IonoscloudProvider.Initializer.parameter.insecure"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 This field is to be set only for testing purposes.
 
@@ -484,7 +484,7 @@ Refer to the {@link https://registry.terraform.io/providers/ionos-cloud/ionosclo
 | <code><a href="#@cdktf/provider-ionoscloud.provider.IonoscloudProvider.property.aliasInput">alias_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.provider.IonoscloudProvider.property.contractNumberInput">contract_number_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.provider.IonoscloudProvider.property.endpointInput">endpoint_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-ionoscloud.provider.IonoscloudProvider.property.insecureInput">insecure_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.provider.IonoscloudProvider.property.insecureInput">insecure_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.provider.IonoscloudProvider.property.passwordInput">password_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.provider.IonoscloudProvider.property.retriesInput">retries_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.provider.IonoscloudProvider.property.s3AccessKeyInput">s3_access_key_input</a></code> | <code>str</code> | *No description.* |
@@ -494,7 +494,7 @@ Refer to the {@link https://registry.terraform.io/providers/ionos-cloud/ionosclo
 | <code><a href="#@cdktf/provider-ionoscloud.provider.IonoscloudProvider.property.usernameInput">username_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.provider.IonoscloudProvider.property.contractNumber">contract_number</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.provider.IonoscloudProvider.property.endpoint">endpoint</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-ionoscloud.provider.IonoscloudProvider.property.insecure">insecure</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.provider.IonoscloudProvider.property.insecure">insecure</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.provider.IonoscloudProvider.property.password">password</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.provider.IonoscloudProvider.property.retries">retries</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.provider.IonoscloudProvider.property.s3AccessKey">s3_access_key</a></code> | <code>str</code> | *No description.* |
@@ -630,10 +630,10 @@ endpoint_input: str
 ##### `insecure_input`<sup>Optional</sup> <a name="insecure_input" id="@cdktf/provider-ionoscloud.provider.IonoscloudProvider.property.insecureInput"></a>
 
 ```python
-insecure_input: typing.Union[bool, IResolvable]
+insecure_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -730,10 +730,10 @@ endpoint: str
 ##### `insecure`<sup>Optional</sup> <a name="insecure" id="@cdktf/provider-ionoscloud.provider.IonoscloudProvider.property.insecure"></a>
 
 ```python
-insecure: typing.Union[bool, IResolvable]
+insecure: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -838,7 +838,7 @@ provider.IonoscloudProviderConfig(
   alias: str = None,
   contract_number: str = None,
   endpoint: str = None,
-  insecure: typing.Union[bool, IResolvable] = None,
+  insecure: bool | IResolvable = None,
   password: str = None,
   retries: typing.Union[int, float] = None,
   s3_access_key: str = None,
@@ -856,7 +856,7 @@ provider.IonoscloudProviderConfig(
 | <code><a href="#@cdktf/provider-ionoscloud.provider.IonoscloudProviderConfig.property.alias">alias</a></code> | <code>str</code> | Alias name. |
 | <code><a href="#@cdktf/provider-ionoscloud.provider.IonoscloudProviderConfig.property.contractNumber">contract_number</a></code> | <code>str</code> | To be set only for reseller accounts. Allows to run terraform on a contract number under a reseller account. |
 | <code><a href="#@cdktf/provider-ionoscloud.provider.IonoscloudProviderConfig.property.endpoint">endpoint</a></code> | <code>str</code> | IonosCloud REST API URL. |
-| <code><a href="#@cdktf/provider-ionoscloud.provider.IonoscloudProviderConfig.property.insecure">insecure</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | This field is to be set only for testing purposes. |
+| <code><a href="#@cdktf/provider-ionoscloud.provider.IonoscloudProviderConfig.property.insecure">insecure</a></code> | <code>bool \| cdktf.IResolvable</code> | This field is to be set only for testing purposes. |
 | <code><a href="#@cdktf/provider-ionoscloud.provider.IonoscloudProviderConfig.property.password">password</a></code> | <code>str</code> | IonosCloud password for API operations. If token is provided, token is preferred. |
 | <code><a href="#@cdktf/provider-ionoscloud.provider.IonoscloudProviderConfig.property.retries">retries</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.15/docs#retries IonoscloudProvider#retries}. |
 | <code><a href="#@cdktf/provider-ionoscloud.provider.IonoscloudProviderConfig.property.s3AccessKey">s3_access_key</a></code> | <code>str</code> | Access key for IONOS Object Storage operations. |
@@ -914,10 +914,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 ##### `insecure`<sup>Optional</sup> <a name="insecure" id="@cdktf/provider-ionoscloud.provider.IonoscloudProviderConfig.property.insecure"></a>
 
 ```python
-insecure: typing.Union[bool, IResolvable]
+insecure: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 This field is to be set only for testing purposes.
 
