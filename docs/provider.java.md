@@ -15,8 +15,7 @@ IonoscloudProvider.Builder.create(Construct scope, java.lang.String id)
 //  .alias(java.lang.String)
 //  .contractNumber(java.lang.String)
 //  .endpoint(java.lang.String)
-//  .insecure(java.lang.Boolean)
-//  .insecure(IResolvable)
+//  .insecure(java.lang.Boolean|IResolvable)
 //  .password(java.lang.String)
 //  .retries(java.lang.Number)
 //  .s3AccessKey(java.lang.String)
@@ -34,7 +33,7 @@ IonoscloudProvider.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-ionoscloud.provider.IonoscloudProvider.Initializer.parameter.alias">alias</a></code> | <code>java.lang.String</code> | Alias name. |
 | <code><a href="#@cdktf/provider-ionoscloud.provider.IonoscloudProvider.Initializer.parameter.contractNumber">contractNumber</a></code> | <code>java.lang.String</code> | To be set only for reseller accounts. Allows to run terraform on a contract number under a reseller account. |
 | <code><a href="#@cdktf/provider-ionoscloud.provider.IonoscloudProvider.Initializer.parameter.endpoint">endpoint</a></code> | <code>java.lang.String</code> | IonosCloud REST API URL. |
-| <code><a href="#@cdktf/provider-ionoscloud.provider.IonoscloudProvider.Initializer.parameter.insecure">insecure</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | This field is to be set only for testing purposes. |
+| <code><a href="#@cdktf/provider-ionoscloud.provider.IonoscloudProvider.Initializer.parameter.insecure">insecure</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | This field is to be set only for testing purposes. |
 | <code><a href="#@cdktf/provider-ionoscloud.provider.IonoscloudProvider.Initializer.parameter.password">password</a></code> | <code>java.lang.String</code> | IonosCloud password for API operations. If token is provided, token is preferred. |
 | <code><a href="#@cdktf/provider-ionoscloud.provider.IonoscloudProvider.Initializer.parameter.retries">retries</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.15/docs#retries IonoscloudProvider#retries}. |
 | <code><a href="#@cdktf/provider-ionoscloud.provider.IonoscloudProvider.Initializer.parameter.s3AccessKey">s3AccessKey</a></code> | <code>java.lang.String</code> | Access key for IONOS Object Storage operations. |
@@ -97,7 +96,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 
 ##### `insecure`<sup>Optional</sup> <a name="insecure" id="@cdktf/provider-ionoscloud.provider.IonoscloudProvider.Initializer.parameter.insecure"></a>
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 This field is to be set only for testing purposes.
 
@@ -467,7 +466,7 @@ Refer to the {@link https://registry.terraform.io/providers/ionos-cloud/ionosclo
 | <code><a href="#@cdktf/provider-ionoscloud.provider.IonoscloudProvider.property.aliasInput">aliasInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.provider.IonoscloudProvider.property.contractNumberInput">contractNumberInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.provider.IonoscloudProvider.property.endpointInput">endpointInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-ionoscloud.provider.IonoscloudProvider.property.insecureInput">insecureInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.provider.IonoscloudProvider.property.insecureInput">insecureInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.provider.IonoscloudProvider.property.passwordInput">passwordInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.provider.IonoscloudProvider.property.retriesInput">retriesInput</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.provider.IonoscloudProvider.property.s3AccessKeyInput">s3AccessKeyInput</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -477,7 +476,7 @@ Refer to the {@link https://registry.terraform.io/providers/ionos-cloud/ionosclo
 | <code><a href="#@cdktf/provider-ionoscloud.provider.IonoscloudProvider.property.usernameInput">usernameInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.provider.IonoscloudProvider.property.contractNumber">contractNumber</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.provider.IonoscloudProvider.property.endpoint">endpoint</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-ionoscloud.provider.IonoscloudProvider.property.insecure">insecure</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.provider.IonoscloudProvider.property.insecure">insecure</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.provider.IonoscloudProvider.property.password">password</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.provider.IonoscloudProvider.property.retries">retries</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.provider.IonoscloudProvider.property.s3AccessKey">s3AccessKey</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -613,10 +612,10 @@ public java.lang.String getEndpointInput();
 ##### `insecureInput`<sup>Optional</sup> <a name="insecureInput" id="@cdktf/provider-ionoscloud.provider.IonoscloudProvider.property.insecureInput"></a>
 
 ```java
-public java.lang.Object getInsecureInput();
+public java.lang.Boolean|IResolvable getInsecureInput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -713,10 +712,10 @@ public java.lang.String getEndpoint();
 ##### `insecure`<sup>Optional</sup> <a name="insecure" id="@cdktf/provider-ionoscloud.provider.IonoscloudProvider.property.insecure"></a>
 
 ```java
-public java.lang.Object getInsecure();
+public java.lang.Boolean|IResolvable getInsecure();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -821,8 +820,7 @@ IonoscloudProviderConfig.builder()
 //  .alias(java.lang.String)
 //  .contractNumber(java.lang.String)
 //  .endpoint(java.lang.String)
-//  .insecure(java.lang.Boolean)
-//  .insecure(IResolvable)
+//  .insecure(java.lang.Boolean|IResolvable)
 //  .password(java.lang.String)
 //  .retries(java.lang.Number)
 //  .s3AccessKey(java.lang.String)
@@ -840,7 +838,7 @@ IonoscloudProviderConfig.builder()
 | <code><a href="#@cdktf/provider-ionoscloud.provider.IonoscloudProviderConfig.property.alias">alias</a></code> | <code>java.lang.String</code> | Alias name. |
 | <code><a href="#@cdktf/provider-ionoscloud.provider.IonoscloudProviderConfig.property.contractNumber">contractNumber</a></code> | <code>java.lang.String</code> | To be set only for reseller accounts. Allows to run terraform on a contract number under a reseller account. |
 | <code><a href="#@cdktf/provider-ionoscloud.provider.IonoscloudProviderConfig.property.endpoint">endpoint</a></code> | <code>java.lang.String</code> | IonosCloud REST API URL. |
-| <code><a href="#@cdktf/provider-ionoscloud.provider.IonoscloudProviderConfig.property.insecure">insecure</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | This field is to be set only for testing purposes. |
+| <code><a href="#@cdktf/provider-ionoscloud.provider.IonoscloudProviderConfig.property.insecure">insecure</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | This field is to be set only for testing purposes. |
 | <code><a href="#@cdktf/provider-ionoscloud.provider.IonoscloudProviderConfig.property.password">password</a></code> | <code>java.lang.String</code> | IonosCloud password for API operations. If token is provided, token is preferred. |
 | <code><a href="#@cdktf/provider-ionoscloud.provider.IonoscloudProviderConfig.property.retries">retries</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.15/docs#retries IonoscloudProvider#retries}. |
 | <code><a href="#@cdktf/provider-ionoscloud.provider.IonoscloudProviderConfig.property.s3AccessKey">s3AccessKey</a></code> | <code>java.lang.String</code> | Access key for IONOS Object Storage operations. |
@@ -898,10 +896,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 ##### `insecure`<sup>Optional</sup> <a name="insecure" id="@cdktf/provider-ionoscloud.provider.IonoscloudProviderConfig.property.insecure"></a>
 
 ```java
-public java.lang.Object getInsecure();
+public java.lang.Boolean|IResolvable getInsecure();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 This field is to be set only for testing purposes.
 

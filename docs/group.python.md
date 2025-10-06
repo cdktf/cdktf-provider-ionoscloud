@@ -14,40 +14,40 @@ from cdktf_cdktf_provider_ionoscloud import group
 group.Group(
   scope: Construct,
   id: str,
-  connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
+  connection: SSHProvisionerConnection | WinrmProvisionerConnection = None,
+  count: typing.Union[int, float] | TerraformCount = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
-  provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
+  provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
   name: str,
-  access_activity_log: typing.Union[bool, IResolvable] = None,
-  access_and_manage_ai_model_hub: typing.Union[bool, IResolvable] = None,
-  access_and_manage_api_gateway: typing.Union[bool, IResolvable] = None,
-  access_and_manage_cdn: typing.Union[bool, IResolvable] = None,
-  access_and_manage_certificates: typing.Union[bool, IResolvable] = None,
-  access_and_manage_dns: typing.Union[bool, IResolvable] = None,
-  access_and_manage_iam_resources: typing.Union[bool, IResolvable] = None,
-  access_and_manage_kaas: typing.Union[bool, IResolvable] = None,
-  access_and_manage_logging: typing.Union[bool, IResolvable] = None,
-  access_and_manage_monitoring: typing.Union[bool, IResolvable] = None,
-  access_and_manage_network_file_storage: typing.Union[bool, IResolvable] = None,
-  access_and_manage_vpn: typing.Union[bool, IResolvable] = None,
-  create_backup_unit: typing.Union[bool, IResolvable] = None,
-  create_datacenter: typing.Union[bool, IResolvable] = None,
-  create_flow_log: typing.Union[bool, IResolvable] = None,
-  create_internet_access: typing.Union[bool, IResolvable] = None,
-  create_k8_s_cluster: typing.Union[bool, IResolvable] = None,
-  create_network_security_groups: typing.Union[bool, IResolvable] = None,
-  create_pcc: typing.Union[bool, IResolvable] = None,
-  create_snapshot: typing.Union[bool, IResolvable] = None,
+  access_activity_log: bool | IResolvable = None,
+  access_and_manage_ai_model_hub: bool | IResolvable = None,
+  access_and_manage_api_gateway: bool | IResolvable = None,
+  access_and_manage_cdn: bool | IResolvable = None,
+  access_and_manage_certificates: bool | IResolvable = None,
+  access_and_manage_dns: bool | IResolvable = None,
+  access_and_manage_iam_resources: bool | IResolvable = None,
+  access_and_manage_kaas: bool | IResolvable = None,
+  access_and_manage_logging: bool | IResolvable = None,
+  access_and_manage_monitoring: bool | IResolvable = None,
+  access_and_manage_network_file_storage: bool | IResolvable = None,
+  access_and_manage_vpn: bool | IResolvable = None,
+  create_backup_unit: bool | IResolvable = None,
+  create_datacenter: bool | IResolvable = None,
+  create_flow_log: bool | IResolvable = None,
+  create_internet_access: bool | IResolvable = None,
+  create_k8_s_cluster: bool | IResolvable = None,
+  create_network_security_groups: bool | IResolvable = None,
+  create_pcc: bool | IResolvable = None,
+  create_snapshot: bool | IResolvable = None,
   id: str = None,
-  manage_dataplatform: typing.Union[bool, IResolvable] = None,
-  manage_dbaas: typing.Union[bool, IResolvable] = None,
-  manage_registry: typing.Union[bool, IResolvable] = None,
-  reserve_ip: typing.Union[bool, IResolvable] = None,
-  s3_privilege: typing.Union[bool, IResolvable] = None,
+  manage_dataplatform: bool | IResolvable = None,
+  manage_dbaas: bool | IResolvable = None,
+  manage_registry: bool | IResolvable = None,
+  reserve_ip: bool | IResolvable = None,
+  s3_privilege: bool | IResolvable = None,
   timeouts: GroupTimeouts = None,
   user_id: str = None,
   user_ids: typing.List[str] = None
@@ -58,40 +58,40 @@ group.Group(
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-ionoscloud.group.Group.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
 | <code><a href="#@cdktf/provider-ionoscloud.group.Group.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
-| <code><a href="#@cdktf/provider-ionoscloud.group.Group.Initializer.parameter.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-ionoscloud.group.Group.Initializer.parameter.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.group.Group.Initializer.parameter.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.group.Group.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.group.Group.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.group.Group.Initializer.parameter.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.group.Group.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.group.Group.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-ionoscloud.group.Group.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.group.Group.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.group.Group.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.15/docs/resources/group#name Group#name}. |
-| <code><a href="#@cdktf/provider-ionoscloud.group.Group.Initializer.parameter.accessActivityLog">access_activity_log</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.15/docs/resources/group#access_activity_log Group#access_activity_log}. |
-| <code><a href="#@cdktf/provider-ionoscloud.group.Group.Initializer.parameter.accessAndManageAiModelHub">access_and_manage_ai_model_hub</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Privilege for a group to access and manage AiModelHub. |
-| <code><a href="#@cdktf/provider-ionoscloud.group.Group.Initializer.parameter.accessAndManageApiGateway">access_and_manage_api_gateway</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Privilege for a group to access and manage ApiGateway. |
-| <code><a href="#@cdktf/provider-ionoscloud.group.Group.Initializer.parameter.accessAndManageCdn">access_and_manage_cdn</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Privilege for a group to access and manage Cdn. |
-| <code><a href="#@cdktf/provider-ionoscloud.group.Group.Initializer.parameter.accessAndManageCertificates">access_and_manage_certificates</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Privilege for a group to access and manage certificates. |
-| <code><a href="#@cdktf/provider-ionoscloud.group.Group.Initializer.parameter.accessAndManageDns">access_and_manage_dns</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Privilege for a group to access and manage dns records. |
-| <code><a href="#@cdktf/provider-ionoscloud.group.Group.Initializer.parameter.accessAndManageIamResources">access_and_manage_iam_resources</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Privilege for a group to access and manage IamResources. |
-| <code><a href="#@cdktf/provider-ionoscloud.group.Group.Initializer.parameter.accessAndManageKaas">access_and_manage_kaas</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Privilege for a group to access and manage Kaas. |
-| <code><a href="#@cdktf/provider-ionoscloud.group.Group.Initializer.parameter.accessAndManageLogging">access_and_manage_logging</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Privilege for a group to access and manage logging. |
-| <code><a href="#@cdktf/provider-ionoscloud.group.Group.Initializer.parameter.accessAndManageMonitoring">access_and_manage_monitoring</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Privilege for a group to access and manage monitoring related functionality (access metrics, CRUD on alarms, alarm-actions etc) using Monotoring-as-a-Service (MaaS). |
-| <code><a href="#@cdktf/provider-ionoscloud.group.Group.Initializer.parameter.accessAndManageNetworkFileStorage">access_and_manage_network_file_storage</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Privilege for a group to access and manage NetworkFileStorage. |
-| <code><a href="#@cdktf/provider-ionoscloud.group.Group.Initializer.parameter.accessAndManageVpn">access_and_manage_vpn</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Privilege for a group to access and manage Vpn. |
-| <code><a href="#@cdktf/provider-ionoscloud.group.Group.Initializer.parameter.createBackupUnit">create_backup_unit</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Create backup unit privilege. |
-| <code><a href="#@cdktf/provider-ionoscloud.group.Group.Initializer.parameter.createDatacenter">create_datacenter</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.15/docs/resources/group#create_datacenter Group#create_datacenter}. |
-| <code><a href="#@cdktf/provider-ionoscloud.group.Group.Initializer.parameter.createFlowLog">create_flow_log</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Create Flow Logs privilege. |
-| <code><a href="#@cdktf/provider-ionoscloud.group.Group.Initializer.parameter.createInternetAccess">create_internet_access</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Create internet access privilege. |
-| <code><a href="#@cdktf/provider-ionoscloud.group.Group.Initializer.parameter.createK8SCluster">create_k8_s_cluster</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Create Kubernetes cluster privilege. |
-| <code><a href="#@cdktf/provider-ionoscloud.group.Group.Initializer.parameter.createNetworkSecurityGroups">create_network_security_groups</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Create Network Security groups. |
-| <code><a href="#@cdktf/provider-ionoscloud.group.Group.Initializer.parameter.createPcc">create_pcc</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.15/docs/resources/group#create_pcc Group#create_pcc}. |
-| <code><a href="#@cdktf/provider-ionoscloud.group.Group.Initializer.parameter.createSnapshot">create_snapshot</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.15/docs/resources/group#create_snapshot Group#create_snapshot}. |
+| <code><a href="#@cdktf/provider-ionoscloud.group.Group.Initializer.parameter.accessActivityLog">access_activity_log</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.15/docs/resources/group#access_activity_log Group#access_activity_log}. |
+| <code><a href="#@cdktf/provider-ionoscloud.group.Group.Initializer.parameter.accessAndManageAiModelHub">access_and_manage_ai_model_hub</a></code> | <code>bool \| cdktf.IResolvable</code> | Privilege for a group to access and manage AiModelHub. |
+| <code><a href="#@cdktf/provider-ionoscloud.group.Group.Initializer.parameter.accessAndManageApiGateway">access_and_manage_api_gateway</a></code> | <code>bool \| cdktf.IResolvable</code> | Privilege for a group to access and manage ApiGateway. |
+| <code><a href="#@cdktf/provider-ionoscloud.group.Group.Initializer.parameter.accessAndManageCdn">access_and_manage_cdn</a></code> | <code>bool \| cdktf.IResolvable</code> | Privilege for a group to access and manage Cdn. |
+| <code><a href="#@cdktf/provider-ionoscloud.group.Group.Initializer.parameter.accessAndManageCertificates">access_and_manage_certificates</a></code> | <code>bool \| cdktf.IResolvable</code> | Privilege for a group to access and manage certificates. |
+| <code><a href="#@cdktf/provider-ionoscloud.group.Group.Initializer.parameter.accessAndManageDns">access_and_manage_dns</a></code> | <code>bool \| cdktf.IResolvable</code> | Privilege for a group to access and manage dns records. |
+| <code><a href="#@cdktf/provider-ionoscloud.group.Group.Initializer.parameter.accessAndManageIamResources">access_and_manage_iam_resources</a></code> | <code>bool \| cdktf.IResolvable</code> | Privilege for a group to access and manage IamResources. |
+| <code><a href="#@cdktf/provider-ionoscloud.group.Group.Initializer.parameter.accessAndManageKaas">access_and_manage_kaas</a></code> | <code>bool \| cdktf.IResolvable</code> | Privilege for a group to access and manage Kaas. |
+| <code><a href="#@cdktf/provider-ionoscloud.group.Group.Initializer.parameter.accessAndManageLogging">access_and_manage_logging</a></code> | <code>bool \| cdktf.IResolvable</code> | Privilege for a group to access and manage logging. |
+| <code><a href="#@cdktf/provider-ionoscloud.group.Group.Initializer.parameter.accessAndManageMonitoring">access_and_manage_monitoring</a></code> | <code>bool \| cdktf.IResolvable</code> | Privilege for a group to access and manage monitoring related functionality (access metrics, CRUD on alarms, alarm-actions etc) using Monotoring-as-a-Service (MaaS). |
+| <code><a href="#@cdktf/provider-ionoscloud.group.Group.Initializer.parameter.accessAndManageNetworkFileStorage">access_and_manage_network_file_storage</a></code> | <code>bool \| cdktf.IResolvable</code> | Privilege for a group to access and manage NetworkFileStorage. |
+| <code><a href="#@cdktf/provider-ionoscloud.group.Group.Initializer.parameter.accessAndManageVpn">access_and_manage_vpn</a></code> | <code>bool \| cdktf.IResolvable</code> | Privilege for a group to access and manage Vpn. |
+| <code><a href="#@cdktf/provider-ionoscloud.group.Group.Initializer.parameter.createBackupUnit">create_backup_unit</a></code> | <code>bool \| cdktf.IResolvable</code> | Create backup unit privilege. |
+| <code><a href="#@cdktf/provider-ionoscloud.group.Group.Initializer.parameter.createDatacenter">create_datacenter</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.15/docs/resources/group#create_datacenter Group#create_datacenter}. |
+| <code><a href="#@cdktf/provider-ionoscloud.group.Group.Initializer.parameter.createFlowLog">create_flow_log</a></code> | <code>bool \| cdktf.IResolvable</code> | Create Flow Logs privilege. |
+| <code><a href="#@cdktf/provider-ionoscloud.group.Group.Initializer.parameter.createInternetAccess">create_internet_access</a></code> | <code>bool \| cdktf.IResolvable</code> | Create internet access privilege. |
+| <code><a href="#@cdktf/provider-ionoscloud.group.Group.Initializer.parameter.createK8SCluster">create_k8_s_cluster</a></code> | <code>bool \| cdktf.IResolvable</code> | Create Kubernetes cluster privilege. |
+| <code><a href="#@cdktf/provider-ionoscloud.group.Group.Initializer.parameter.createNetworkSecurityGroups">create_network_security_groups</a></code> | <code>bool \| cdktf.IResolvable</code> | Create Network Security groups. |
+| <code><a href="#@cdktf/provider-ionoscloud.group.Group.Initializer.parameter.createPcc">create_pcc</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.15/docs/resources/group#create_pcc Group#create_pcc}. |
+| <code><a href="#@cdktf/provider-ionoscloud.group.Group.Initializer.parameter.createSnapshot">create_snapshot</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.15/docs/resources/group#create_snapshot Group#create_snapshot}. |
 | <code><a href="#@cdktf/provider-ionoscloud.group.Group.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.15/docs/resources/group#id Group#id}. |
-| <code><a href="#@cdktf/provider-ionoscloud.group.Group.Initializer.parameter.manageDataplatform">manage_dataplatform</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Privilege for a group to access and manage the Data Platform. |
-| <code><a href="#@cdktf/provider-ionoscloud.group.Group.Initializer.parameter.manageDbaas">manage_dbaas</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Privilege for a group to manage DBaaS related functionality. |
-| <code><a href="#@cdktf/provider-ionoscloud.group.Group.Initializer.parameter.manageRegistry">manage_registry</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Privilege for group accessing container registry related functionality. |
-| <code><a href="#@cdktf/provider-ionoscloud.group.Group.Initializer.parameter.reserveIp">reserve_ip</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.15/docs/resources/group#reserve_ip Group#reserve_ip}. |
-| <code><a href="#@cdktf/provider-ionoscloud.group.Group.Initializer.parameter.s3Privilege">s3_privilege</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.15/docs/resources/group#s3_privilege Group#s3_privilege}. |
+| <code><a href="#@cdktf/provider-ionoscloud.group.Group.Initializer.parameter.manageDataplatform">manage_dataplatform</a></code> | <code>bool \| cdktf.IResolvable</code> | Privilege for a group to access and manage the Data Platform. |
+| <code><a href="#@cdktf/provider-ionoscloud.group.Group.Initializer.parameter.manageDbaas">manage_dbaas</a></code> | <code>bool \| cdktf.IResolvable</code> | Privilege for a group to manage DBaaS related functionality. |
+| <code><a href="#@cdktf/provider-ionoscloud.group.Group.Initializer.parameter.manageRegistry">manage_registry</a></code> | <code>bool \| cdktf.IResolvable</code> | Privilege for group accessing container registry related functionality. |
+| <code><a href="#@cdktf/provider-ionoscloud.group.Group.Initializer.parameter.reserveIp">reserve_ip</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.15/docs/resources/group#reserve_ip Group#reserve_ip}. |
+| <code><a href="#@cdktf/provider-ionoscloud.group.Group.Initializer.parameter.s3Privilege">s3_privilege</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.15/docs/resources/group#s3_privilege Group#s3_privilege}. |
 | <code><a href="#@cdktf/provider-ionoscloud.group.Group.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-ionoscloud.group.GroupTimeouts">GroupTimeouts</a></code> | timeouts block. |
 | <code><a href="#@cdktf/provider-ionoscloud.group.Group.Initializer.parameter.userId">user_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.15/docs/resources/group#user_id Group#user_id}. |
 | <code><a href="#@cdktf/provider-ionoscloud.group.Group.Initializer.parameter.userIds">user_ids</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.15/docs/resources/group#user_ids Group#user_ids}. |
@@ -118,13 +118,13 @@ Must be unique amongst siblings in the same scope
 
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-ionoscloud.group.Group.Initializer.parameter.connection"></a>
 
-- *Type:* typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-ionoscloud.group.Group.Initializer.parameter.count"></a>
 
-- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
+- *Type:* typing.Union[int, float] | cdktf.TerraformCount
 
 ---
 
@@ -154,7 +154,7 @@ Must be unique amongst siblings in the same scope
 
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-ionoscloud.group.Group.Initializer.parameter.provisioners"></a>
 
-- *Type:* typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]
+- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
 
 ---
 
@@ -168,7 +168,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 
 ##### `access_activity_log`<sup>Optional</sup> <a name="access_activity_log" id="@cdktf/provider-ionoscloud.group.Group.Initializer.parameter.accessActivityLog"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.15/docs/resources/group#access_activity_log Group#access_activity_log}.
 
@@ -176,7 +176,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 
 ##### `access_and_manage_ai_model_hub`<sup>Optional</sup> <a name="access_and_manage_ai_model_hub" id="@cdktf/provider-ionoscloud.group.Group.Initializer.parameter.accessAndManageAiModelHub"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Privilege for a group to access and manage AiModelHub.
 
@@ -186,7 +186,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 
 ##### `access_and_manage_api_gateway`<sup>Optional</sup> <a name="access_and_manage_api_gateway" id="@cdktf/provider-ionoscloud.group.Group.Initializer.parameter.accessAndManageApiGateway"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Privilege for a group to access and manage ApiGateway.
 
@@ -196,7 +196,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 
 ##### `access_and_manage_cdn`<sup>Optional</sup> <a name="access_and_manage_cdn" id="@cdktf/provider-ionoscloud.group.Group.Initializer.parameter.accessAndManageCdn"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Privilege for a group to access and manage Cdn.
 
@@ -206,7 +206,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 
 ##### `access_and_manage_certificates`<sup>Optional</sup> <a name="access_and_manage_certificates" id="@cdktf/provider-ionoscloud.group.Group.Initializer.parameter.accessAndManageCertificates"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Privilege for a group to access and manage certificates.
 
@@ -216,7 +216,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 
 ##### `access_and_manage_dns`<sup>Optional</sup> <a name="access_and_manage_dns" id="@cdktf/provider-ionoscloud.group.Group.Initializer.parameter.accessAndManageDns"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Privilege for a group to access and manage dns records.
 
@@ -226,7 +226,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 
 ##### `access_and_manage_iam_resources`<sup>Optional</sup> <a name="access_and_manage_iam_resources" id="@cdktf/provider-ionoscloud.group.Group.Initializer.parameter.accessAndManageIamResources"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Privilege for a group to access and manage IamResources.
 
@@ -236,7 +236,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 
 ##### `access_and_manage_kaas`<sup>Optional</sup> <a name="access_and_manage_kaas" id="@cdktf/provider-ionoscloud.group.Group.Initializer.parameter.accessAndManageKaas"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Privilege for a group to access and manage Kaas.
 
@@ -246,7 +246,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 
 ##### `access_and_manage_logging`<sup>Optional</sup> <a name="access_and_manage_logging" id="@cdktf/provider-ionoscloud.group.Group.Initializer.parameter.accessAndManageLogging"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Privilege for a group to access and manage logging.
 
@@ -256,7 +256,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 
 ##### `access_and_manage_monitoring`<sup>Optional</sup> <a name="access_and_manage_monitoring" id="@cdktf/provider-ionoscloud.group.Group.Initializer.parameter.accessAndManageMonitoring"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Privilege for a group to access and manage monitoring related functionality (access metrics, CRUD on alarms, alarm-actions etc) using Monotoring-as-a-Service (MaaS).
 
@@ -266,7 +266,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 
 ##### `access_and_manage_network_file_storage`<sup>Optional</sup> <a name="access_and_manage_network_file_storage" id="@cdktf/provider-ionoscloud.group.Group.Initializer.parameter.accessAndManageNetworkFileStorage"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Privilege for a group to access and manage NetworkFileStorage.
 
@@ -276,7 +276,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 
 ##### `access_and_manage_vpn`<sup>Optional</sup> <a name="access_and_manage_vpn" id="@cdktf/provider-ionoscloud.group.Group.Initializer.parameter.accessAndManageVpn"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Privilege for a group to access and manage Vpn.
 
@@ -286,7 +286,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 
 ##### `create_backup_unit`<sup>Optional</sup> <a name="create_backup_unit" id="@cdktf/provider-ionoscloud.group.Group.Initializer.parameter.createBackupUnit"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Create backup unit privilege.
 
@@ -296,7 +296,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 
 ##### `create_datacenter`<sup>Optional</sup> <a name="create_datacenter" id="@cdktf/provider-ionoscloud.group.Group.Initializer.parameter.createDatacenter"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.15/docs/resources/group#create_datacenter Group#create_datacenter}.
 
@@ -304,7 +304,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 
 ##### `create_flow_log`<sup>Optional</sup> <a name="create_flow_log" id="@cdktf/provider-ionoscloud.group.Group.Initializer.parameter.createFlowLog"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Create Flow Logs privilege.
 
@@ -314,7 +314,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 
 ##### `create_internet_access`<sup>Optional</sup> <a name="create_internet_access" id="@cdktf/provider-ionoscloud.group.Group.Initializer.parameter.createInternetAccess"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Create internet access privilege.
 
@@ -324,7 +324,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 
 ##### `create_k8_s_cluster`<sup>Optional</sup> <a name="create_k8_s_cluster" id="@cdktf/provider-ionoscloud.group.Group.Initializer.parameter.createK8SCluster"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Create Kubernetes cluster privilege.
 
@@ -334,7 +334,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 
 ##### `create_network_security_groups`<sup>Optional</sup> <a name="create_network_security_groups" id="@cdktf/provider-ionoscloud.group.Group.Initializer.parameter.createNetworkSecurityGroups"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Create Network Security groups.
 
@@ -344,7 +344,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 
 ##### `create_pcc`<sup>Optional</sup> <a name="create_pcc" id="@cdktf/provider-ionoscloud.group.Group.Initializer.parameter.createPcc"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.15/docs/resources/group#create_pcc Group#create_pcc}.
 
@@ -352,7 +352,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 
 ##### `create_snapshot`<sup>Optional</sup> <a name="create_snapshot" id="@cdktf/provider-ionoscloud.group.Group.Initializer.parameter.createSnapshot"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.15/docs/resources/group#create_snapshot Group#create_snapshot}.
 
@@ -371,7 +371,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 ##### `manage_dataplatform`<sup>Optional</sup> <a name="manage_dataplatform" id="@cdktf/provider-ionoscloud.group.Group.Initializer.parameter.manageDataplatform"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Privilege for a group to access and manage the Data Platform.
 
@@ -381,7 +381,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 
 ##### `manage_dbaas`<sup>Optional</sup> <a name="manage_dbaas" id="@cdktf/provider-ionoscloud.group.Group.Initializer.parameter.manageDbaas"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Privilege for a group to manage DBaaS related functionality.
 
@@ -391,7 +391,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 
 ##### `manage_registry`<sup>Optional</sup> <a name="manage_registry" id="@cdktf/provider-ionoscloud.group.Group.Initializer.parameter.manageRegistry"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Privilege for group accessing container registry related functionality.
 
@@ -401,7 +401,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 
 ##### `reserve_ip`<sup>Optional</sup> <a name="reserve_ip" id="@cdktf/provider-ionoscloud.group.Group.Initializer.parameter.reserveIp"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.15/docs/resources/group#reserve_ip Group#reserve_ip}.
 
@@ -409,7 +409,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 
 ##### `s3_privilege`<sup>Optional</sup> <a name="s3_privilege" id="@cdktf/provider-ionoscloud.group.Group.Initializer.parameter.s3Privilege"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.15/docs/resources/group#s3_privilege Group#s3_privilege}.
 
@@ -723,7 +723,7 @@ def get_string_map_attribute(
 ##### `has_resource_move` <a name="has_resource_move" id="@cdktf/provider-ionoscloud.group.Group.hasResourceMove"></a>
 
 ```python
-def has_resource_move() -> typing.Union[TerraformResourceMoveByTarget, TerraformResourceMoveById]
+def has_resource_move() -> TerraformResourceMoveByTarget | TerraformResourceMoveById
 ```
 
 ##### `import_from` <a name="import_from" id="@cdktf/provider-ionoscloud.group.Group.importFrom"></a>
@@ -786,7 +786,7 @@ Full id of resource being moved from, e.g. "aws_s3_bucket.example".
 ```python
 def move_to(
   move_target: str,
-  index: typing.Union[str, typing.Union[int, float]] = None
+  index: str | typing.Union[int, float] = None
 ) -> None
 ```
 
@@ -802,7 +802,7 @@ The previously set user defined string set by .addMoveTarget() corresponding to 
 
 ###### `index`<sup>Optional</sup> <a name="index" id="@cdktf/provider-ionoscloud.group.Group.moveTo.parameter.index"></a>
 
-- *Type:* typing.Union[str, typing.Union[int, float]]
+- *Type:* str | typing.Union[int, float]
 
 Optional The index corresponding to the key the resource is to appear in the foreach of a resource to move to.
 
@@ -1180,72 +1180,72 @@ Refer to the {@link https://registry.terraform.io/providers/ionos-cloud/ionosclo
 | <code><a href="#@cdktf/provider-ionoscloud.group.Group.property.terraformMetaArguments">terraform_meta_arguments</a></code> | <code>typing.Mapping[typing.Any]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.group.Group.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.group.Group.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-ionoscloud.group.Group.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-ionoscloud.group.Group.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.group.Group.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.group.Group.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.group.Group.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.group.Group.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.group.Group.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.group.Group.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-ionoscloud.group.Group.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.group.Group.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.group.Group.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-ionoscloud.group.GroupTimeoutsOutputReference">GroupTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.group.Group.property.users">users</a></code> | <code><a href="#@cdktf/provider-ionoscloud.group.GroupUsersList">GroupUsersList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-ionoscloud.group.Group.property.accessActivityLogInput">access_activity_log_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-ionoscloud.group.Group.property.accessAndManageAiModelHubInput">access_and_manage_ai_model_hub_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-ionoscloud.group.Group.property.accessAndManageApiGatewayInput">access_and_manage_api_gateway_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-ionoscloud.group.Group.property.accessAndManageCdnInput">access_and_manage_cdn_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-ionoscloud.group.Group.property.accessAndManageCertificatesInput">access_and_manage_certificates_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-ionoscloud.group.Group.property.accessAndManageDnsInput">access_and_manage_dns_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-ionoscloud.group.Group.property.accessAndManageIamResourcesInput">access_and_manage_iam_resources_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-ionoscloud.group.Group.property.accessAndManageKaasInput">access_and_manage_kaas_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-ionoscloud.group.Group.property.accessAndManageLoggingInput">access_and_manage_logging_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-ionoscloud.group.Group.property.accessAndManageMonitoringInput">access_and_manage_monitoring_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-ionoscloud.group.Group.property.accessAndManageNetworkFileStorageInput">access_and_manage_network_file_storage_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-ionoscloud.group.Group.property.accessAndManageVpnInput">access_and_manage_vpn_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-ionoscloud.group.Group.property.createBackupUnitInput">create_backup_unit_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-ionoscloud.group.Group.property.createDatacenterInput">create_datacenter_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-ionoscloud.group.Group.property.createFlowLogInput">create_flow_log_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-ionoscloud.group.Group.property.createInternetAccessInput">create_internet_access_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-ionoscloud.group.Group.property.createK8SClusterInput">create_k8_s_cluster_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-ionoscloud.group.Group.property.createNetworkSecurityGroupsInput">create_network_security_groups_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-ionoscloud.group.Group.property.createPccInput">create_pcc_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-ionoscloud.group.Group.property.createSnapshotInput">create_snapshot_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.group.Group.property.accessActivityLogInput">access_activity_log_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.group.Group.property.accessAndManageAiModelHubInput">access_and_manage_ai_model_hub_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.group.Group.property.accessAndManageApiGatewayInput">access_and_manage_api_gateway_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.group.Group.property.accessAndManageCdnInput">access_and_manage_cdn_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.group.Group.property.accessAndManageCertificatesInput">access_and_manage_certificates_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.group.Group.property.accessAndManageDnsInput">access_and_manage_dns_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.group.Group.property.accessAndManageIamResourcesInput">access_and_manage_iam_resources_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.group.Group.property.accessAndManageKaasInput">access_and_manage_kaas_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.group.Group.property.accessAndManageLoggingInput">access_and_manage_logging_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.group.Group.property.accessAndManageMonitoringInput">access_and_manage_monitoring_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.group.Group.property.accessAndManageNetworkFileStorageInput">access_and_manage_network_file_storage_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.group.Group.property.accessAndManageVpnInput">access_and_manage_vpn_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.group.Group.property.createBackupUnitInput">create_backup_unit_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.group.Group.property.createDatacenterInput">create_datacenter_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.group.Group.property.createFlowLogInput">create_flow_log_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.group.Group.property.createInternetAccessInput">create_internet_access_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.group.Group.property.createK8SClusterInput">create_k8_s_cluster_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.group.Group.property.createNetworkSecurityGroupsInput">create_network_security_groups_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.group.Group.property.createPccInput">create_pcc_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.group.Group.property.createSnapshotInput">create_snapshot_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.group.Group.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-ionoscloud.group.Group.property.manageDataplatformInput">manage_dataplatform_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-ionoscloud.group.Group.property.manageDbaasInput">manage_dbaas_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-ionoscloud.group.Group.property.manageRegistryInput">manage_registry_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.group.Group.property.manageDataplatformInput">manage_dataplatform_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.group.Group.property.manageDbaasInput">manage_dbaas_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.group.Group.property.manageRegistryInput">manage_registry_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.group.Group.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-ionoscloud.group.Group.property.reserveIpInput">reserve_ip_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-ionoscloud.group.Group.property.s3PrivilegeInput">s3_privilege_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-ionoscloud.group.Group.property.timeoutsInput">timeouts_input</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-ionoscloud.group.GroupTimeouts">GroupTimeouts</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.group.Group.property.reserveIpInput">reserve_ip_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.group.Group.property.s3PrivilegeInput">s3_privilege_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.group.Group.property.timeoutsInput">timeouts_input</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-ionoscloud.group.GroupTimeouts">GroupTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.group.Group.property.userIdInput">user_id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.group.Group.property.userIdsInput">user_ids_input</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-ionoscloud.group.Group.property.accessActivityLog">access_activity_log</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-ionoscloud.group.Group.property.accessAndManageAiModelHub">access_and_manage_ai_model_hub</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-ionoscloud.group.Group.property.accessAndManageApiGateway">access_and_manage_api_gateway</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-ionoscloud.group.Group.property.accessAndManageCdn">access_and_manage_cdn</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-ionoscloud.group.Group.property.accessAndManageCertificates">access_and_manage_certificates</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-ionoscloud.group.Group.property.accessAndManageDns">access_and_manage_dns</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-ionoscloud.group.Group.property.accessAndManageIamResources">access_and_manage_iam_resources</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-ionoscloud.group.Group.property.accessAndManageKaas">access_and_manage_kaas</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-ionoscloud.group.Group.property.accessAndManageLogging">access_and_manage_logging</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-ionoscloud.group.Group.property.accessAndManageMonitoring">access_and_manage_monitoring</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-ionoscloud.group.Group.property.accessAndManageNetworkFileStorage">access_and_manage_network_file_storage</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-ionoscloud.group.Group.property.accessAndManageVpn">access_and_manage_vpn</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-ionoscloud.group.Group.property.createBackupUnit">create_backup_unit</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-ionoscloud.group.Group.property.createDatacenter">create_datacenter</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-ionoscloud.group.Group.property.createFlowLog">create_flow_log</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-ionoscloud.group.Group.property.createInternetAccess">create_internet_access</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-ionoscloud.group.Group.property.createK8SCluster">create_k8_s_cluster</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-ionoscloud.group.Group.property.createNetworkSecurityGroups">create_network_security_groups</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-ionoscloud.group.Group.property.createPcc">create_pcc</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-ionoscloud.group.Group.property.createSnapshot">create_snapshot</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.group.Group.property.accessActivityLog">access_activity_log</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.group.Group.property.accessAndManageAiModelHub">access_and_manage_ai_model_hub</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.group.Group.property.accessAndManageApiGateway">access_and_manage_api_gateway</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.group.Group.property.accessAndManageCdn">access_and_manage_cdn</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.group.Group.property.accessAndManageCertificates">access_and_manage_certificates</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.group.Group.property.accessAndManageDns">access_and_manage_dns</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.group.Group.property.accessAndManageIamResources">access_and_manage_iam_resources</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.group.Group.property.accessAndManageKaas">access_and_manage_kaas</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.group.Group.property.accessAndManageLogging">access_and_manage_logging</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.group.Group.property.accessAndManageMonitoring">access_and_manage_monitoring</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.group.Group.property.accessAndManageNetworkFileStorage">access_and_manage_network_file_storage</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.group.Group.property.accessAndManageVpn">access_and_manage_vpn</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.group.Group.property.createBackupUnit">create_backup_unit</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.group.Group.property.createDatacenter">create_datacenter</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.group.Group.property.createFlowLog">create_flow_log</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.group.Group.property.createInternetAccess">create_internet_access</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.group.Group.property.createK8SCluster">create_k8_s_cluster</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.group.Group.property.createNetworkSecurityGroups">create_network_security_groups</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.group.Group.property.createPcc">create_pcc</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.group.Group.property.createSnapshot">create_snapshot</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.group.Group.property.id">id</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-ionoscloud.group.Group.property.manageDataplatform">manage_dataplatform</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-ionoscloud.group.Group.property.manageDbaas">manage_dbaas</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-ionoscloud.group.Group.property.manageRegistry">manage_registry</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.group.Group.property.manageDataplatform">manage_dataplatform</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.group.Group.property.manageDbaas">manage_dbaas</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.group.Group.property.manageRegistry">manage_registry</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.group.Group.property.name">name</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-ionoscloud.group.Group.property.reserveIp">reserve_ip</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-ionoscloud.group.Group.property.s3Privilege">s3_privilege</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.group.Group.property.reserveIp">reserve_ip</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.group.Group.property.s3Privilege">s3_privilege</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.group.Group.property.userId">user_id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.group.Group.property.userIds">user_ids</a></code> | <code>typing.List[str]</code> | *No description.* |
 
@@ -1326,20 +1326,20 @@ terraform_generator_metadata: TerraformProviderGeneratorMetadata
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-ionoscloud.group.Group.property.connection"></a>
 
 ```python
-connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
+connection: SSHProvisionerConnection | WinrmProvisionerConnection
 ```
 
-- *Type:* typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-ionoscloud.group.Group.property.count"></a>
 
 ```python
-count: typing.Union[typing.Union[int, float], TerraformCount]
+count: typing.Union[int, float] | TerraformCount
 ```
 
-- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
+- *Type:* typing.Union[int, float] | cdktf.TerraformCount
 
 ---
 
@@ -1386,10 +1386,10 @@ provider: TerraformProvider
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-ionoscloud.group.Group.property.provisioners"></a>
 
 ```python
-provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]]
+provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
 ```
 
-- *Type:* typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]
+- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
 
 ---
 
@@ -1416,200 +1416,200 @@ users: GroupUsersList
 ##### `access_activity_log_input`<sup>Optional</sup> <a name="access_activity_log_input" id="@cdktf/provider-ionoscloud.group.Group.property.accessActivityLogInput"></a>
 
 ```python
-access_activity_log_input: typing.Union[bool, IResolvable]
+access_activity_log_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `access_and_manage_ai_model_hub_input`<sup>Optional</sup> <a name="access_and_manage_ai_model_hub_input" id="@cdktf/provider-ionoscloud.group.Group.property.accessAndManageAiModelHubInput"></a>
 
 ```python
-access_and_manage_ai_model_hub_input: typing.Union[bool, IResolvable]
+access_and_manage_ai_model_hub_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `access_and_manage_api_gateway_input`<sup>Optional</sup> <a name="access_and_manage_api_gateway_input" id="@cdktf/provider-ionoscloud.group.Group.property.accessAndManageApiGatewayInput"></a>
 
 ```python
-access_and_manage_api_gateway_input: typing.Union[bool, IResolvable]
+access_and_manage_api_gateway_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `access_and_manage_cdn_input`<sup>Optional</sup> <a name="access_and_manage_cdn_input" id="@cdktf/provider-ionoscloud.group.Group.property.accessAndManageCdnInput"></a>
 
 ```python
-access_and_manage_cdn_input: typing.Union[bool, IResolvable]
+access_and_manage_cdn_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `access_and_manage_certificates_input`<sup>Optional</sup> <a name="access_and_manage_certificates_input" id="@cdktf/provider-ionoscloud.group.Group.property.accessAndManageCertificatesInput"></a>
 
 ```python
-access_and_manage_certificates_input: typing.Union[bool, IResolvable]
+access_and_manage_certificates_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `access_and_manage_dns_input`<sup>Optional</sup> <a name="access_and_manage_dns_input" id="@cdktf/provider-ionoscloud.group.Group.property.accessAndManageDnsInput"></a>
 
 ```python
-access_and_manage_dns_input: typing.Union[bool, IResolvable]
+access_and_manage_dns_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `access_and_manage_iam_resources_input`<sup>Optional</sup> <a name="access_and_manage_iam_resources_input" id="@cdktf/provider-ionoscloud.group.Group.property.accessAndManageIamResourcesInput"></a>
 
 ```python
-access_and_manage_iam_resources_input: typing.Union[bool, IResolvable]
+access_and_manage_iam_resources_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `access_and_manage_kaas_input`<sup>Optional</sup> <a name="access_and_manage_kaas_input" id="@cdktf/provider-ionoscloud.group.Group.property.accessAndManageKaasInput"></a>
 
 ```python
-access_and_manage_kaas_input: typing.Union[bool, IResolvable]
+access_and_manage_kaas_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `access_and_manage_logging_input`<sup>Optional</sup> <a name="access_and_manage_logging_input" id="@cdktf/provider-ionoscloud.group.Group.property.accessAndManageLoggingInput"></a>
 
 ```python
-access_and_manage_logging_input: typing.Union[bool, IResolvable]
+access_and_manage_logging_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `access_and_manage_monitoring_input`<sup>Optional</sup> <a name="access_and_manage_monitoring_input" id="@cdktf/provider-ionoscloud.group.Group.property.accessAndManageMonitoringInput"></a>
 
 ```python
-access_and_manage_monitoring_input: typing.Union[bool, IResolvable]
+access_and_manage_monitoring_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `access_and_manage_network_file_storage_input`<sup>Optional</sup> <a name="access_and_manage_network_file_storage_input" id="@cdktf/provider-ionoscloud.group.Group.property.accessAndManageNetworkFileStorageInput"></a>
 
 ```python
-access_and_manage_network_file_storage_input: typing.Union[bool, IResolvable]
+access_and_manage_network_file_storage_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `access_and_manage_vpn_input`<sup>Optional</sup> <a name="access_and_manage_vpn_input" id="@cdktf/provider-ionoscloud.group.Group.property.accessAndManageVpnInput"></a>
 
 ```python
-access_and_manage_vpn_input: typing.Union[bool, IResolvable]
+access_and_manage_vpn_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `create_backup_unit_input`<sup>Optional</sup> <a name="create_backup_unit_input" id="@cdktf/provider-ionoscloud.group.Group.property.createBackupUnitInput"></a>
 
 ```python
-create_backup_unit_input: typing.Union[bool, IResolvable]
+create_backup_unit_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `create_datacenter_input`<sup>Optional</sup> <a name="create_datacenter_input" id="@cdktf/provider-ionoscloud.group.Group.property.createDatacenterInput"></a>
 
 ```python
-create_datacenter_input: typing.Union[bool, IResolvable]
+create_datacenter_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `create_flow_log_input`<sup>Optional</sup> <a name="create_flow_log_input" id="@cdktf/provider-ionoscloud.group.Group.property.createFlowLogInput"></a>
 
 ```python
-create_flow_log_input: typing.Union[bool, IResolvable]
+create_flow_log_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `create_internet_access_input`<sup>Optional</sup> <a name="create_internet_access_input" id="@cdktf/provider-ionoscloud.group.Group.property.createInternetAccessInput"></a>
 
 ```python
-create_internet_access_input: typing.Union[bool, IResolvable]
+create_internet_access_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `create_k8_s_cluster_input`<sup>Optional</sup> <a name="create_k8_s_cluster_input" id="@cdktf/provider-ionoscloud.group.Group.property.createK8SClusterInput"></a>
 
 ```python
-create_k8_s_cluster_input: typing.Union[bool, IResolvable]
+create_k8_s_cluster_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `create_network_security_groups_input`<sup>Optional</sup> <a name="create_network_security_groups_input" id="@cdktf/provider-ionoscloud.group.Group.property.createNetworkSecurityGroupsInput"></a>
 
 ```python
-create_network_security_groups_input: typing.Union[bool, IResolvable]
+create_network_security_groups_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `create_pcc_input`<sup>Optional</sup> <a name="create_pcc_input" id="@cdktf/provider-ionoscloud.group.Group.property.createPccInput"></a>
 
 ```python
-create_pcc_input: typing.Union[bool, IResolvable]
+create_pcc_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `create_snapshot_input`<sup>Optional</sup> <a name="create_snapshot_input" id="@cdktf/provider-ionoscloud.group.Group.property.createSnapshotInput"></a>
 
 ```python
-create_snapshot_input: typing.Union[bool, IResolvable]
+create_snapshot_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -1626,30 +1626,30 @@ id_input: str
 ##### `manage_dataplatform_input`<sup>Optional</sup> <a name="manage_dataplatform_input" id="@cdktf/provider-ionoscloud.group.Group.property.manageDataplatformInput"></a>
 
 ```python
-manage_dataplatform_input: typing.Union[bool, IResolvable]
+manage_dataplatform_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `manage_dbaas_input`<sup>Optional</sup> <a name="manage_dbaas_input" id="@cdktf/provider-ionoscloud.group.Group.property.manageDbaasInput"></a>
 
 ```python
-manage_dbaas_input: typing.Union[bool, IResolvable]
+manage_dbaas_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `manage_registry_input`<sup>Optional</sup> <a name="manage_registry_input" id="@cdktf/provider-ionoscloud.group.Group.property.manageRegistryInput"></a>
 
 ```python
-manage_registry_input: typing.Union[bool, IResolvable]
+manage_registry_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -1666,30 +1666,30 @@ name_input: str
 ##### `reserve_ip_input`<sup>Optional</sup> <a name="reserve_ip_input" id="@cdktf/provider-ionoscloud.group.Group.property.reserveIpInput"></a>
 
 ```python
-reserve_ip_input: typing.Union[bool, IResolvable]
+reserve_ip_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `s3_privilege_input`<sup>Optional</sup> <a name="s3_privilege_input" id="@cdktf/provider-ionoscloud.group.Group.property.s3PrivilegeInput"></a>
 
 ```python
-s3_privilege_input: typing.Union[bool, IResolvable]
+s3_privilege_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `timeouts_input`<sup>Optional</sup> <a name="timeouts_input" id="@cdktf/provider-ionoscloud.group.Group.property.timeoutsInput"></a>
 
 ```python
-timeouts_input: typing.Union[IResolvable, GroupTimeouts]
+timeouts_input: IResolvable | GroupTimeouts
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-ionoscloud.group.GroupTimeouts">GroupTimeouts</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-ionoscloud.group.GroupTimeouts">GroupTimeouts</a>
 
 ---
 
@@ -1716,200 +1716,200 @@ user_ids_input: typing.List[str]
 ##### `access_activity_log`<sup>Required</sup> <a name="access_activity_log" id="@cdktf/provider-ionoscloud.group.Group.property.accessActivityLog"></a>
 
 ```python
-access_activity_log: typing.Union[bool, IResolvable]
+access_activity_log: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `access_and_manage_ai_model_hub`<sup>Required</sup> <a name="access_and_manage_ai_model_hub" id="@cdktf/provider-ionoscloud.group.Group.property.accessAndManageAiModelHub"></a>
 
 ```python
-access_and_manage_ai_model_hub: typing.Union[bool, IResolvable]
+access_and_manage_ai_model_hub: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `access_and_manage_api_gateway`<sup>Required</sup> <a name="access_and_manage_api_gateway" id="@cdktf/provider-ionoscloud.group.Group.property.accessAndManageApiGateway"></a>
 
 ```python
-access_and_manage_api_gateway: typing.Union[bool, IResolvable]
+access_and_manage_api_gateway: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `access_and_manage_cdn`<sup>Required</sup> <a name="access_and_manage_cdn" id="@cdktf/provider-ionoscloud.group.Group.property.accessAndManageCdn"></a>
 
 ```python
-access_and_manage_cdn: typing.Union[bool, IResolvable]
+access_and_manage_cdn: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `access_and_manage_certificates`<sup>Required</sup> <a name="access_and_manage_certificates" id="@cdktf/provider-ionoscloud.group.Group.property.accessAndManageCertificates"></a>
 
 ```python
-access_and_manage_certificates: typing.Union[bool, IResolvable]
+access_and_manage_certificates: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `access_and_manage_dns`<sup>Required</sup> <a name="access_and_manage_dns" id="@cdktf/provider-ionoscloud.group.Group.property.accessAndManageDns"></a>
 
 ```python
-access_and_manage_dns: typing.Union[bool, IResolvable]
+access_and_manage_dns: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `access_and_manage_iam_resources`<sup>Required</sup> <a name="access_and_manage_iam_resources" id="@cdktf/provider-ionoscloud.group.Group.property.accessAndManageIamResources"></a>
 
 ```python
-access_and_manage_iam_resources: typing.Union[bool, IResolvable]
+access_and_manage_iam_resources: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `access_and_manage_kaas`<sup>Required</sup> <a name="access_and_manage_kaas" id="@cdktf/provider-ionoscloud.group.Group.property.accessAndManageKaas"></a>
 
 ```python
-access_and_manage_kaas: typing.Union[bool, IResolvable]
+access_and_manage_kaas: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `access_and_manage_logging`<sup>Required</sup> <a name="access_and_manage_logging" id="@cdktf/provider-ionoscloud.group.Group.property.accessAndManageLogging"></a>
 
 ```python
-access_and_manage_logging: typing.Union[bool, IResolvable]
+access_and_manage_logging: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `access_and_manage_monitoring`<sup>Required</sup> <a name="access_and_manage_monitoring" id="@cdktf/provider-ionoscloud.group.Group.property.accessAndManageMonitoring"></a>
 
 ```python
-access_and_manage_monitoring: typing.Union[bool, IResolvable]
+access_and_manage_monitoring: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `access_and_manage_network_file_storage`<sup>Required</sup> <a name="access_and_manage_network_file_storage" id="@cdktf/provider-ionoscloud.group.Group.property.accessAndManageNetworkFileStorage"></a>
 
 ```python
-access_and_manage_network_file_storage: typing.Union[bool, IResolvable]
+access_and_manage_network_file_storage: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `access_and_manage_vpn`<sup>Required</sup> <a name="access_and_manage_vpn" id="@cdktf/provider-ionoscloud.group.Group.property.accessAndManageVpn"></a>
 
 ```python
-access_and_manage_vpn: typing.Union[bool, IResolvable]
+access_and_manage_vpn: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `create_backup_unit`<sup>Required</sup> <a name="create_backup_unit" id="@cdktf/provider-ionoscloud.group.Group.property.createBackupUnit"></a>
 
 ```python
-create_backup_unit: typing.Union[bool, IResolvable]
+create_backup_unit: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `create_datacenter`<sup>Required</sup> <a name="create_datacenter" id="@cdktf/provider-ionoscloud.group.Group.property.createDatacenter"></a>
 
 ```python
-create_datacenter: typing.Union[bool, IResolvable]
+create_datacenter: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `create_flow_log`<sup>Required</sup> <a name="create_flow_log" id="@cdktf/provider-ionoscloud.group.Group.property.createFlowLog"></a>
 
 ```python
-create_flow_log: typing.Union[bool, IResolvable]
+create_flow_log: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `create_internet_access`<sup>Required</sup> <a name="create_internet_access" id="@cdktf/provider-ionoscloud.group.Group.property.createInternetAccess"></a>
 
 ```python
-create_internet_access: typing.Union[bool, IResolvable]
+create_internet_access: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `create_k8_s_cluster`<sup>Required</sup> <a name="create_k8_s_cluster" id="@cdktf/provider-ionoscloud.group.Group.property.createK8SCluster"></a>
 
 ```python
-create_k8_s_cluster: typing.Union[bool, IResolvable]
+create_k8_s_cluster: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `create_network_security_groups`<sup>Required</sup> <a name="create_network_security_groups" id="@cdktf/provider-ionoscloud.group.Group.property.createNetworkSecurityGroups"></a>
 
 ```python
-create_network_security_groups: typing.Union[bool, IResolvable]
+create_network_security_groups: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `create_pcc`<sup>Required</sup> <a name="create_pcc" id="@cdktf/provider-ionoscloud.group.Group.property.createPcc"></a>
 
 ```python
-create_pcc: typing.Union[bool, IResolvable]
+create_pcc: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `create_snapshot`<sup>Required</sup> <a name="create_snapshot" id="@cdktf/provider-ionoscloud.group.Group.property.createSnapshot"></a>
 
 ```python
-create_snapshot: typing.Union[bool, IResolvable]
+create_snapshot: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -1926,30 +1926,30 @@ id: str
 ##### `manage_dataplatform`<sup>Required</sup> <a name="manage_dataplatform" id="@cdktf/provider-ionoscloud.group.Group.property.manageDataplatform"></a>
 
 ```python
-manage_dataplatform: typing.Union[bool, IResolvable]
+manage_dataplatform: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `manage_dbaas`<sup>Required</sup> <a name="manage_dbaas" id="@cdktf/provider-ionoscloud.group.Group.property.manageDbaas"></a>
 
 ```python
-manage_dbaas: typing.Union[bool, IResolvable]
+manage_dbaas: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `manage_registry`<sup>Required</sup> <a name="manage_registry" id="@cdktf/provider-ionoscloud.group.Group.property.manageRegistry"></a>
 
 ```python
-manage_registry: typing.Union[bool, IResolvable]
+manage_registry: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -1966,20 +1966,20 @@ name: str
 ##### `reserve_ip`<sup>Required</sup> <a name="reserve_ip" id="@cdktf/provider-ionoscloud.group.Group.property.reserveIp"></a>
 
 ```python
-reserve_ip: typing.Union[bool, IResolvable]
+reserve_ip: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `s3_privilege`<sup>Required</sup> <a name="s3_privilege" id="@cdktf/provider-ionoscloud.group.Group.property.s3Privilege"></a>
 
 ```python
-s3_privilege: typing.Union[bool, IResolvable]
+s3_privilege: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -2031,40 +2031,40 @@ tfResourceType: str
 from cdktf_cdktf_provider_ionoscloud import group
 
 group.GroupConfig(
-  connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
+  connection: SSHProvisionerConnection | WinrmProvisionerConnection = None,
+  count: typing.Union[int, float] | TerraformCount = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
-  provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
+  provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
   name: str,
-  access_activity_log: typing.Union[bool, IResolvable] = None,
-  access_and_manage_ai_model_hub: typing.Union[bool, IResolvable] = None,
-  access_and_manage_api_gateway: typing.Union[bool, IResolvable] = None,
-  access_and_manage_cdn: typing.Union[bool, IResolvable] = None,
-  access_and_manage_certificates: typing.Union[bool, IResolvable] = None,
-  access_and_manage_dns: typing.Union[bool, IResolvable] = None,
-  access_and_manage_iam_resources: typing.Union[bool, IResolvable] = None,
-  access_and_manage_kaas: typing.Union[bool, IResolvable] = None,
-  access_and_manage_logging: typing.Union[bool, IResolvable] = None,
-  access_and_manage_monitoring: typing.Union[bool, IResolvable] = None,
-  access_and_manage_network_file_storage: typing.Union[bool, IResolvable] = None,
-  access_and_manage_vpn: typing.Union[bool, IResolvable] = None,
-  create_backup_unit: typing.Union[bool, IResolvable] = None,
-  create_datacenter: typing.Union[bool, IResolvable] = None,
-  create_flow_log: typing.Union[bool, IResolvable] = None,
-  create_internet_access: typing.Union[bool, IResolvable] = None,
-  create_k8_s_cluster: typing.Union[bool, IResolvable] = None,
-  create_network_security_groups: typing.Union[bool, IResolvable] = None,
-  create_pcc: typing.Union[bool, IResolvable] = None,
-  create_snapshot: typing.Union[bool, IResolvable] = None,
+  access_activity_log: bool | IResolvable = None,
+  access_and_manage_ai_model_hub: bool | IResolvable = None,
+  access_and_manage_api_gateway: bool | IResolvable = None,
+  access_and_manage_cdn: bool | IResolvable = None,
+  access_and_manage_certificates: bool | IResolvable = None,
+  access_and_manage_dns: bool | IResolvable = None,
+  access_and_manage_iam_resources: bool | IResolvable = None,
+  access_and_manage_kaas: bool | IResolvable = None,
+  access_and_manage_logging: bool | IResolvable = None,
+  access_and_manage_monitoring: bool | IResolvable = None,
+  access_and_manage_network_file_storage: bool | IResolvable = None,
+  access_and_manage_vpn: bool | IResolvable = None,
+  create_backup_unit: bool | IResolvable = None,
+  create_datacenter: bool | IResolvable = None,
+  create_flow_log: bool | IResolvable = None,
+  create_internet_access: bool | IResolvable = None,
+  create_k8_s_cluster: bool | IResolvable = None,
+  create_network_security_groups: bool | IResolvable = None,
+  create_pcc: bool | IResolvable = None,
+  create_snapshot: bool | IResolvable = None,
   id: str = None,
-  manage_dataplatform: typing.Union[bool, IResolvable] = None,
-  manage_dbaas: typing.Union[bool, IResolvable] = None,
-  manage_registry: typing.Union[bool, IResolvable] = None,
-  reserve_ip: typing.Union[bool, IResolvable] = None,
-  s3_privilege: typing.Union[bool, IResolvable] = None,
+  manage_dataplatform: bool | IResolvable = None,
+  manage_dbaas: bool | IResolvable = None,
+  manage_registry: bool | IResolvable = None,
+  reserve_ip: bool | IResolvable = None,
+  s3_privilege: bool | IResolvable = None,
   timeouts: GroupTimeouts = None,
   user_id: str = None,
   user_ids: typing.List[str] = None
@@ -2075,40 +2075,40 @@ group.GroupConfig(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-ionoscloud.group.GroupConfig.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-ionoscloud.group.GroupConfig.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.group.GroupConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.group.GroupConfig.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.group.GroupConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.group.GroupConfig.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.group.GroupConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.group.GroupConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-ionoscloud.group.GroupConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.group.GroupConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.group.GroupConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.15/docs/resources/group#name Group#name}. |
-| <code><a href="#@cdktf/provider-ionoscloud.group.GroupConfig.property.accessActivityLog">access_activity_log</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.15/docs/resources/group#access_activity_log Group#access_activity_log}. |
-| <code><a href="#@cdktf/provider-ionoscloud.group.GroupConfig.property.accessAndManageAiModelHub">access_and_manage_ai_model_hub</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Privilege for a group to access and manage AiModelHub. |
-| <code><a href="#@cdktf/provider-ionoscloud.group.GroupConfig.property.accessAndManageApiGateway">access_and_manage_api_gateway</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Privilege for a group to access and manage ApiGateway. |
-| <code><a href="#@cdktf/provider-ionoscloud.group.GroupConfig.property.accessAndManageCdn">access_and_manage_cdn</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Privilege for a group to access and manage Cdn. |
-| <code><a href="#@cdktf/provider-ionoscloud.group.GroupConfig.property.accessAndManageCertificates">access_and_manage_certificates</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Privilege for a group to access and manage certificates. |
-| <code><a href="#@cdktf/provider-ionoscloud.group.GroupConfig.property.accessAndManageDns">access_and_manage_dns</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Privilege for a group to access and manage dns records. |
-| <code><a href="#@cdktf/provider-ionoscloud.group.GroupConfig.property.accessAndManageIamResources">access_and_manage_iam_resources</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Privilege for a group to access and manage IamResources. |
-| <code><a href="#@cdktf/provider-ionoscloud.group.GroupConfig.property.accessAndManageKaas">access_and_manage_kaas</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Privilege for a group to access and manage Kaas. |
-| <code><a href="#@cdktf/provider-ionoscloud.group.GroupConfig.property.accessAndManageLogging">access_and_manage_logging</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Privilege for a group to access and manage logging. |
-| <code><a href="#@cdktf/provider-ionoscloud.group.GroupConfig.property.accessAndManageMonitoring">access_and_manage_monitoring</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Privilege for a group to access and manage monitoring related functionality (access metrics, CRUD on alarms, alarm-actions etc) using Monotoring-as-a-Service (MaaS). |
-| <code><a href="#@cdktf/provider-ionoscloud.group.GroupConfig.property.accessAndManageNetworkFileStorage">access_and_manage_network_file_storage</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Privilege for a group to access and manage NetworkFileStorage. |
-| <code><a href="#@cdktf/provider-ionoscloud.group.GroupConfig.property.accessAndManageVpn">access_and_manage_vpn</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Privilege for a group to access and manage Vpn. |
-| <code><a href="#@cdktf/provider-ionoscloud.group.GroupConfig.property.createBackupUnit">create_backup_unit</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Create backup unit privilege. |
-| <code><a href="#@cdktf/provider-ionoscloud.group.GroupConfig.property.createDatacenter">create_datacenter</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.15/docs/resources/group#create_datacenter Group#create_datacenter}. |
-| <code><a href="#@cdktf/provider-ionoscloud.group.GroupConfig.property.createFlowLog">create_flow_log</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Create Flow Logs privilege. |
-| <code><a href="#@cdktf/provider-ionoscloud.group.GroupConfig.property.createInternetAccess">create_internet_access</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Create internet access privilege. |
-| <code><a href="#@cdktf/provider-ionoscloud.group.GroupConfig.property.createK8SCluster">create_k8_s_cluster</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Create Kubernetes cluster privilege. |
-| <code><a href="#@cdktf/provider-ionoscloud.group.GroupConfig.property.createNetworkSecurityGroups">create_network_security_groups</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Create Network Security groups. |
-| <code><a href="#@cdktf/provider-ionoscloud.group.GroupConfig.property.createPcc">create_pcc</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.15/docs/resources/group#create_pcc Group#create_pcc}. |
-| <code><a href="#@cdktf/provider-ionoscloud.group.GroupConfig.property.createSnapshot">create_snapshot</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.15/docs/resources/group#create_snapshot Group#create_snapshot}. |
+| <code><a href="#@cdktf/provider-ionoscloud.group.GroupConfig.property.accessActivityLog">access_activity_log</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.15/docs/resources/group#access_activity_log Group#access_activity_log}. |
+| <code><a href="#@cdktf/provider-ionoscloud.group.GroupConfig.property.accessAndManageAiModelHub">access_and_manage_ai_model_hub</a></code> | <code>bool \| cdktf.IResolvable</code> | Privilege for a group to access and manage AiModelHub. |
+| <code><a href="#@cdktf/provider-ionoscloud.group.GroupConfig.property.accessAndManageApiGateway">access_and_manage_api_gateway</a></code> | <code>bool \| cdktf.IResolvable</code> | Privilege for a group to access and manage ApiGateway. |
+| <code><a href="#@cdktf/provider-ionoscloud.group.GroupConfig.property.accessAndManageCdn">access_and_manage_cdn</a></code> | <code>bool \| cdktf.IResolvable</code> | Privilege for a group to access and manage Cdn. |
+| <code><a href="#@cdktf/provider-ionoscloud.group.GroupConfig.property.accessAndManageCertificates">access_and_manage_certificates</a></code> | <code>bool \| cdktf.IResolvable</code> | Privilege for a group to access and manage certificates. |
+| <code><a href="#@cdktf/provider-ionoscloud.group.GroupConfig.property.accessAndManageDns">access_and_manage_dns</a></code> | <code>bool \| cdktf.IResolvable</code> | Privilege for a group to access and manage dns records. |
+| <code><a href="#@cdktf/provider-ionoscloud.group.GroupConfig.property.accessAndManageIamResources">access_and_manage_iam_resources</a></code> | <code>bool \| cdktf.IResolvable</code> | Privilege for a group to access and manage IamResources. |
+| <code><a href="#@cdktf/provider-ionoscloud.group.GroupConfig.property.accessAndManageKaas">access_and_manage_kaas</a></code> | <code>bool \| cdktf.IResolvable</code> | Privilege for a group to access and manage Kaas. |
+| <code><a href="#@cdktf/provider-ionoscloud.group.GroupConfig.property.accessAndManageLogging">access_and_manage_logging</a></code> | <code>bool \| cdktf.IResolvable</code> | Privilege for a group to access and manage logging. |
+| <code><a href="#@cdktf/provider-ionoscloud.group.GroupConfig.property.accessAndManageMonitoring">access_and_manage_monitoring</a></code> | <code>bool \| cdktf.IResolvable</code> | Privilege for a group to access and manage monitoring related functionality (access metrics, CRUD on alarms, alarm-actions etc) using Monotoring-as-a-Service (MaaS). |
+| <code><a href="#@cdktf/provider-ionoscloud.group.GroupConfig.property.accessAndManageNetworkFileStorage">access_and_manage_network_file_storage</a></code> | <code>bool \| cdktf.IResolvable</code> | Privilege for a group to access and manage NetworkFileStorage. |
+| <code><a href="#@cdktf/provider-ionoscloud.group.GroupConfig.property.accessAndManageVpn">access_and_manage_vpn</a></code> | <code>bool \| cdktf.IResolvable</code> | Privilege for a group to access and manage Vpn. |
+| <code><a href="#@cdktf/provider-ionoscloud.group.GroupConfig.property.createBackupUnit">create_backup_unit</a></code> | <code>bool \| cdktf.IResolvable</code> | Create backup unit privilege. |
+| <code><a href="#@cdktf/provider-ionoscloud.group.GroupConfig.property.createDatacenter">create_datacenter</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.15/docs/resources/group#create_datacenter Group#create_datacenter}. |
+| <code><a href="#@cdktf/provider-ionoscloud.group.GroupConfig.property.createFlowLog">create_flow_log</a></code> | <code>bool \| cdktf.IResolvable</code> | Create Flow Logs privilege. |
+| <code><a href="#@cdktf/provider-ionoscloud.group.GroupConfig.property.createInternetAccess">create_internet_access</a></code> | <code>bool \| cdktf.IResolvable</code> | Create internet access privilege. |
+| <code><a href="#@cdktf/provider-ionoscloud.group.GroupConfig.property.createK8SCluster">create_k8_s_cluster</a></code> | <code>bool \| cdktf.IResolvable</code> | Create Kubernetes cluster privilege. |
+| <code><a href="#@cdktf/provider-ionoscloud.group.GroupConfig.property.createNetworkSecurityGroups">create_network_security_groups</a></code> | <code>bool \| cdktf.IResolvable</code> | Create Network Security groups. |
+| <code><a href="#@cdktf/provider-ionoscloud.group.GroupConfig.property.createPcc">create_pcc</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.15/docs/resources/group#create_pcc Group#create_pcc}. |
+| <code><a href="#@cdktf/provider-ionoscloud.group.GroupConfig.property.createSnapshot">create_snapshot</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.15/docs/resources/group#create_snapshot Group#create_snapshot}. |
 | <code><a href="#@cdktf/provider-ionoscloud.group.GroupConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.15/docs/resources/group#id Group#id}. |
-| <code><a href="#@cdktf/provider-ionoscloud.group.GroupConfig.property.manageDataplatform">manage_dataplatform</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Privilege for a group to access and manage the Data Platform. |
-| <code><a href="#@cdktf/provider-ionoscloud.group.GroupConfig.property.manageDbaas">manage_dbaas</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Privilege for a group to manage DBaaS related functionality. |
-| <code><a href="#@cdktf/provider-ionoscloud.group.GroupConfig.property.manageRegistry">manage_registry</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Privilege for group accessing container registry related functionality. |
-| <code><a href="#@cdktf/provider-ionoscloud.group.GroupConfig.property.reserveIp">reserve_ip</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.15/docs/resources/group#reserve_ip Group#reserve_ip}. |
-| <code><a href="#@cdktf/provider-ionoscloud.group.GroupConfig.property.s3Privilege">s3_privilege</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.15/docs/resources/group#s3_privilege Group#s3_privilege}. |
+| <code><a href="#@cdktf/provider-ionoscloud.group.GroupConfig.property.manageDataplatform">manage_dataplatform</a></code> | <code>bool \| cdktf.IResolvable</code> | Privilege for a group to access and manage the Data Platform. |
+| <code><a href="#@cdktf/provider-ionoscloud.group.GroupConfig.property.manageDbaas">manage_dbaas</a></code> | <code>bool \| cdktf.IResolvable</code> | Privilege for a group to manage DBaaS related functionality. |
+| <code><a href="#@cdktf/provider-ionoscloud.group.GroupConfig.property.manageRegistry">manage_registry</a></code> | <code>bool \| cdktf.IResolvable</code> | Privilege for group accessing container registry related functionality. |
+| <code><a href="#@cdktf/provider-ionoscloud.group.GroupConfig.property.reserveIp">reserve_ip</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.15/docs/resources/group#reserve_ip Group#reserve_ip}. |
+| <code><a href="#@cdktf/provider-ionoscloud.group.GroupConfig.property.s3Privilege">s3_privilege</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.15/docs/resources/group#s3_privilege Group#s3_privilege}. |
 | <code><a href="#@cdktf/provider-ionoscloud.group.GroupConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-ionoscloud.group.GroupTimeouts">GroupTimeouts</a></code> | timeouts block. |
 | <code><a href="#@cdktf/provider-ionoscloud.group.GroupConfig.property.userId">user_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.15/docs/resources/group#user_id Group#user_id}. |
 | <code><a href="#@cdktf/provider-ionoscloud.group.GroupConfig.property.userIds">user_ids</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.15/docs/resources/group#user_ids Group#user_ids}. |
@@ -2118,20 +2118,20 @@ group.GroupConfig(
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-ionoscloud.group.GroupConfig.property.connection"></a>
 
 ```python
-connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
+connection: SSHProvisionerConnection | WinrmProvisionerConnection
 ```
 
-- *Type:* typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-ionoscloud.group.GroupConfig.property.count"></a>
 
 ```python
-count: typing.Union[typing.Union[int, float], TerraformCount]
+count: typing.Union[int, float] | TerraformCount
 ```
 
-- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
+- *Type:* typing.Union[int, float] | cdktf.TerraformCount
 
 ---
 
@@ -2178,10 +2178,10 @@ provider: TerraformProvider
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-ionoscloud.group.GroupConfig.property.provisioners"></a>
 
 ```python
-provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]]
+provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
 ```
 
-- *Type:* typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]
+- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
 
 ---
 
@@ -2200,10 +2200,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 ##### `access_activity_log`<sup>Optional</sup> <a name="access_activity_log" id="@cdktf/provider-ionoscloud.group.GroupConfig.property.accessActivityLog"></a>
 
 ```python
-access_activity_log: typing.Union[bool, IResolvable]
+access_activity_log: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.15/docs/resources/group#access_activity_log Group#access_activity_log}.
 
@@ -2212,10 +2212,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 ##### `access_and_manage_ai_model_hub`<sup>Optional</sup> <a name="access_and_manage_ai_model_hub" id="@cdktf/provider-ionoscloud.group.GroupConfig.property.accessAndManageAiModelHub"></a>
 
 ```python
-access_and_manage_ai_model_hub: typing.Union[bool, IResolvable]
+access_and_manage_ai_model_hub: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Privilege for a group to access and manage AiModelHub.
 
@@ -2226,10 +2226,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 ##### `access_and_manage_api_gateway`<sup>Optional</sup> <a name="access_and_manage_api_gateway" id="@cdktf/provider-ionoscloud.group.GroupConfig.property.accessAndManageApiGateway"></a>
 
 ```python
-access_and_manage_api_gateway: typing.Union[bool, IResolvable]
+access_and_manage_api_gateway: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Privilege for a group to access and manage ApiGateway.
 
@@ -2240,10 +2240,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 ##### `access_and_manage_cdn`<sup>Optional</sup> <a name="access_and_manage_cdn" id="@cdktf/provider-ionoscloud.group.GroupConfig.property.accessAndManageCdn"></a>
 
 ```python
-access_and_manage_cdn: typing.Union[bool, IResolvable]
+access_and_manage_cdn: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Privilege for a group to access and manage Cdn.
 
@@ -2254,10 +2254,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 ##### `access_and_manage_certificates`<sup>Optional</sup> <a name="access_and_manage_certificates" id="@cdktf/provider-ionoscloud.group.GroupConfig.property.accessAndManageCertificates"></a>
 
 ```python
-access_and_manage_certificates: typing.Union[bool, IResolvable]
+access_and_manage_certificates: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Privilege for a group to access and manage certificates.
 
@@ -2268,10 +2268,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 ##### `access_and_manage_dns`<sup>Optional</sup> <a name="access_and_manage_dns" id="@cdktf/provider-ionoscloud.group.GroupConfig.property.accessAndManageDns"></a>
 
 ```python
-access_and_manage_dns: typing.Union[bool, IResolvable]
+access_and_manage_dns: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Privilege for a group to access and manage dns records.
 
@@ -2282,10 +2282,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 ##### `access_and_manage_iam_resources`<sup>Optional</sup> <a name="access_and_manage_iam_resources" id="@cdktf/provider-ionoscloud.group.GroupConfig.property.accessAndManageIamResources"></a>
 
 ```python
-access_and_manage_iam_resources: typing.Union[bool, IResolvable]
+access_and_manage_iam_resources: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Privilege for a group to access and manage IamResources.
 
@@ -2296,10 +2296,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 ##### `access_and_manage_kaas`<sup>Optional</sup> <a name="access_and_manage_kaas" id="@cdktf/provider-ionoscloud.group.GroupConfig.property.accessAndManageKaas"></a>
 
 ```python
-access_and_manage_kaas: typing.Union[bool, IResolvable]
+access_and_manage_kaas: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Privilege for a group to access and manage Kaas.
 
@@ -2310,10 +2310,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 ##### `access_and_manage_logging`<sup>Optional</sup> <a name="access_and_manage_logging" id="@cdktf/provider-ionoscloud.group.GroupConfig.property.accessAndManageLogging"></a>
 
 ```python
-access_and_manage_logging: typing.Union[bool, IResolvable]
+access_and_manage_logging: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Privilege for a group to access and manage logging.
 
@@ -2324,10 +2324,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 ##### `access_and_manage_monitoring`<sup>Optional</sup> <a name="access_and_manage_monitoring" id="@cdktf/provider-ionoscloud.group.GroupConfig.property.accessAndManageMonitoring"></a>
 
 ```python
-access_and_manage_monitoring: typing.Union[bool, IResolvable]
+access_and_manage_monitoring: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Privilege for a group to access and manage monitoring related functionality (access metrics, CRUD on alarms, alarm-actions etc) using Monotoring-as-a-Service (MaaS).
 
@@ -2338,10 +2338,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 ##### `access_and_manage_network_file_storage`<sup>Optional</sup> <a name="access_and_manage_network_file_storage" id="@cdktf/provider-ionoscloud.group.GroupConfig.property.accessAndManageNetworkFileStorage"></a>
 
 ```python
-access_and_manage_network_file_storage: typing.Union[bool, IResolvable]
+access_and_manage_network_file_storage: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Privilege for a group to access and manage NetworkFileStorage.
 
@@ -2352,10 +2352,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 ##### `access_and_manage_vpn`<sup>Optional</sup> <a name="access_and_manage_vpn" id="@cdktf/provider-ionoscloud.group.GroupConfig.property.accessAndManageVpn"></a>
 
 ```python
-access_and_manage_vpn: typing.Union[bool, IResolvable]
+access_and_manage_vpn: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Privilege for a group to access and manage Vpn.
 
@@ -2366,10 +2366,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 ##### `create_backup_unit`<sup>Optional</sup> <a name="create_backup_unit" id="@cdktf/provider-ionoscloud.group.GroupConfig.property.createBackupUnit"></a>
 
 ```python
-create_backup_unit: typing.Union[bool, IResolvable]
+create_backup_unit: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Create backup unit privilege.
 
@@ -2380,10 +2380,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 ##### `create_datacenter`<sup>Optional</sup> <a name="create_datacenter" id="@cdktf/provider-ionoscloud.group.GroupConfig.property.createDatacenter"></a>
 
 ```python
-create_datacenter: typing.Union[bool, IResolvable]
+create_datacenter: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.15/docs/resources/group#create_datacenter Group#create_datacenter}.
 
@@ -2392,10 +2392,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 ##### `create_flow_log`<sup>Optional</sup> <a name="create_flow_log" id="@cdktf/provider-ionoscloud.group.GroupConfig.property.createFlowLog"></a>
 
 ```python
-create_flow_log: typing.Union[bool, IResolvable]
+create_flow_log: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Create Flow Logs privilege.
 
@@ -2406,10 +2406,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 ##### `create_internet_access`<sup>Optional</sup> <a name="create_internet_access" id="@cdktf/provider-ionoscloud.group.GroupConfig.property.createInternetAccess"></a>
 
 ```python
-create_internet_access: typing.Union[bool, IResolvable]
+create_internet_access: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Create internet access privilege.
 
@@ -2420,10 +2420,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 ##### `create_k8_s_cluster`<sup>Optional</sup> <a name="create_k8_s_cluster" id="@cdktf/provider-ionoscloud.group.GroupConfig.property.createK8SCluster"></a>
 
 ```python
-create_k8_s_cluster: typing.Union[bool, IResolvable]
+create_k8_s_cluster: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Create Kubernetes cluster privilege.
 
@@ -2434,10 +2434,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 ##### `create_network_security_groups`<sup>Optional</sup> <a name="create_network_security_groups" id="@cdktf/provider-ionoscloud.group.GroupConfig.property.createNetworkSecurityGroups"></a>
 
 ```python
-create_network_security_groups: typing.Union[bool, IResolvable]
+create_network_security_groups: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Create Network Security groups.
 
@@ -2448,10 +2448,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 ##### `create_pcc`<sup>Optional</sup> <a name="create_pcc" id="@cdktf/provider-ionoscloud.group.GroupConfig.property.createPcc"></a>
 
 ```python
-create_pcc: typing.Union[bool, IResolvable]
+create_pcc: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.15/docs/resources/group#create_pcc Group#create_pcc}.
 
@@ -2460,10 +2460,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 ##### `create_snapshot`<sup>Optional</sup> <a name="create_snapshot" id="@cdktf/provider-ionoscloud.group.GroupConfig.property.createSnapshot"></a>
 
 ```python
-create_snapshot: typing.Union[bool, IResolvable]
+create_snapshot: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.15/docs/resources/group#create_snapshot Group#create_snapshot}.
 
@@ -2487,10 +2487,10 @@ If you experience problems setting this value it might not be settable. Please t
 ##### `manage_dataplatform`<sup>Optional</sup> <a name="manage_dataplatform" id="@cdktf/provider-ionoscloud.group.GroupConfig.property.manageDataplatform"></a>
 
 ```python
-manage_dataplatform: typing.Union[bool, IResolvable]
+manage_dataplatform: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Privilege for a group to access and manage the Data Platform.
 
@@ -2501,10 +2501,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 ##### `manage_dbaas`<sup>Optional</sup> <a name="manage_dbaas" id="@cdktf/provider-ionoscloud.group.GroupConfig.property.manageDbaas"></a>
 
 ```python
-manage_dbaas: typing.Union[bool, IResolvable]
+manage_dbaas: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Privilege for a group to manage DBaaS related functionality.
 
@@ -2515,10 +2515,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 ##### `manage_registry`<sup>Optional</sup> <a name="manage_registry" id="@cdktf/provider-ionoscloud.group.GroupConfig.property.manageRegistry"></a>
 
 ```python
-manage_registry: typing.Union[bool, IResolvable]
+manage_registry: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Privilege for group accessing container registry related functionality.
 
@@ -2529,10 +2529,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 ##### `reserve_ip`<sup>Optional</sup> <a name="reserve_ip" id="@cdktf/provider-ionoscloud.group.GroupConfig.property.reserveIp"></a>
 
 ```python
-reserve_ip: typing.Union[bool, IResolvable]
+reserve_ip: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.15/docs/resources/group#reserve_ip Group#reserve_ip}.
 
@@ -2541,10 +2541,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 ##### `s3_privilege`<sup>Optional</sup> <a name="s3_privilege" id="@cdktf/provider-ionoscloud.group.GroupConfig.property.s3Privilege"></a>
 
 ```python
-s3_privilege: typing.Union[bool, IResolvable]
+s3_privilege: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.15/docs/resources/group#s3_privilege Group#s3_privilege}.
 
@@ -2946,7 +2946,7 @@ def reset_update() -> None
 | <code><a href="#@cdktf/provider-ionoscloud.group.GroupTimeoutsOutputReference.property.default">default</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.group.GroupTimeoutsOutputReference.property.delete">delete</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.group.GroupTimeoutsOutputReference.property.update">update</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-ionoscloud.group.GroupTimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-ionoscloud.group.GroupTimeouts">GroupTimeouts</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.group.GroupTimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-ionoscloud.group.GroupTimeouts">GroupTimeouts</a></code> | *No description.* |
 
 ---
 
@@ -3057,10 +3057,10 @@ update: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-ionoscloud.group.GroupTimeoutsOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, GroupTimeouts]
+internal_value: IResolvable | GroupTimeouts
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-ionoscloud.group.GroupTimeouts">GroupTimeouts</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-ionoscloud.group.GroupTimeouts">GroupTimeouts</a>
 
 ---
 
