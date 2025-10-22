@@ -1,3 +1,3 @@
 # `ionoscloud_ipblock`
 
-Refer to the Terraform Registry for docs: [`ionoscloud_ipblock`](https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.16/docs/resources/ipblock).
+Refer to the Terraform Registry for docs: [`ionoscloud_ipblock`](https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.17/docs/resources/ipblock).

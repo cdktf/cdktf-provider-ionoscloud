@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.16/docs
+// https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.17/docs
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,71 +15,71 @@ export interface IonoscloudProviderConfig {
   /**
   * To be set only for reseller accounts. Allows to run terraform on a contract number under a reseller account.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.16/docs#contract_number IonoscloudProvider#contract_number}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.17/docs#contract_number IonoscloudProvider#contract_number}
   */
   readonly contractNumber?: string;
   /**
   * IonosCloud REST API URL. Usually not necessary to be set, SDKs know internally how to route requests to the API.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.16/docs#endpoint IonoscloudProvider#endpoint}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.17/docs#endpoint IonoscloudProvider#endpoint}
   */
   readonly endpoint?: string;
   /**
   * This field is to be set only for testing purposes. It is not recommended to set this field in production environments.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.16/docs#insecure IonoscloudProvider#insecure}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.17/docs#insecure IonoscloudProvider#insecure}
   */
   readonly insecure?: boolean | cdktf.IResolvable;
   /**
   * IonosCloud password for API operations. If token is provided, token is preferred
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.16/docs#password IonoscloudProvider#password}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.17/docs#password IonoscloudProvider#password}
   */
   readonly password?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.16/docs#retries IonoscloudProvider#retries}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.17/docs#retries IonoscloudProvider#retries}
   */
   readonly retries?: number;
   /**
   * Access key for IONOS Object Storage operations.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.16/docs#s3_access_key IonoscloudProvider#s3_access_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.17/docs#s3_access_key IonoscloudProvider#s3_access_key}
   */
   readonly s3AccessKey?: string;
   /**
   * Region for IONOS Object Storage operations.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.16/docs#s3_region IonoscloudProvider#s3_region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.17/docs#s3_region IonoscloudProvider#s3_region}
   */
   readonly s3Region?: string;
   /**
   * Secret key for IONOS Object Storage operations.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.16/docs#s3_secret_key IonoscloudProvider#s3_secret_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.17/docs#s3_secret_key IonoscloudProvider#s3_secret_key}
   */
   readonly s3SecretKey?: string;
   /**
   * IonosCloud bearer token for API operations.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.16/docs#token IonoscloudProvider#token}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.17/docs#token IonoscloudProvider#token}
   */
   readonly token?: string;
   /**
   * IonosCloud username for API operations. If token is provided, token is preferred
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.16/docs#username IonoscloudProvider#username}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.17/docs#username IonoscloudProvider#username}
   */
   readonly username?: string;
   /**
   * Alias name
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.16/docs#alias IonoscloudProvider#alias}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.17/docs#alias IonoscloudProvider#alias}
   */
   readonly alias?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.16/docs ionoscloud}
+* Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.17/docs ionoscloud}
 */
 export class IonoscloudProvider extends cdktf.TerraformProvider {
 
@@ -95,7 +95,7 @@ export class IonoscloudProvider extends cdktf.TerraformProvider {
   * Generates CDKTF code for importing a IonoscloudProvider resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the IonoscloudProvider to import
-  * @param importFromId The id of the existing IonoscloudProvider that should be imported. Refer to the {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.16/docs#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing IonoscloudProvider that should be imported. Refer to the {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.17/docs#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the IonoscloudProvider to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -107,7 +107,7 @@ export class IonoscloudProvider extends cdktf.TerraformProvider {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.16/docs ionoscloud} Resource
+  * Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.17/docs ionoscloud} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -118,7 +118,7 @@ export class IonoscloudProvider extends cdktf.TerraformProvider {
       terraformResourceType: 'ionoscloud',
       terraformGeneratorMetadata: {
         providerName: 'ionoscloud',
-        providerVersion: '6.7.16',
+        providerVersion: '6.7.17',
         providerVersionConstraint: '~> 6.2'
       },
       terraformProviderSource: 'ionos-cloud/ionoscloud'
