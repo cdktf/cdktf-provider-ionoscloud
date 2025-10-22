@@ -4,7 +4,7 @@
 
 ### VpnIpsecGateway <a name="VpnIpsecGateway" id="@cdktf/provider-ionoscloud.vpnIpsecGateway.VpnIpsecGateway"></a>
 
-Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.16/docs/resources/vpn_ipsec_gateway ionoscloud_vpn_ipsec_gateway}.
+Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.17/docs/resources/vpn_ipsec_gateway ionoscloud_vpn_ipsec_gateway}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.vpnIpsecGateway.VpnIpsecGateway.Initializer"></a>
 
@@ -555,7 +555,7 @@ The construct id used in the generated config for the VpnIpsecGateway to import.
 
 The id of the existing VpnIpsecGateway that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.16/docs/resources/vpn_ipsec_gateway#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.17/docs/resources/vpn_ipsec_gateway#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1013,7 +1013,7 @@ import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v12/vpnipsecgat
 | <code><a href="#@cdktf/provider-ionoscloud.vpnIpsecGateway.VpnIpsecGatewayConfig.property.gatewayIp">GatewayIp</a></code> | <code>*string</code> | Public IP address to be assigned to the gateway. |
 | <code><a href="#@cdktf/provider-ionoscloud.vpnIpsecGateway.VpnIpsecGatewayConfig.property.name">Name</a></code> | <code>*string</code> | The human readable name of your IPSecGateway. |
 | <code><a href="#@cdktf/provider-ionoscloud.vpnIpsecGateway.VpnIpsecGatewayConfig.property.description">Description</a></code> | <code>*string</code> | The human-readable description of your IPSec Gateway. |
-| <code><a href="#@cdktf/provider-ionoscloud.vpnIpsecGateway.VpnIpsecGatewayConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.16/docs/resources/vpn_ipsec_gateway#id VpnIpsecGateway#id}. |
+| <code><a href="#@cdktf/provider-ionoscloud.vpnIpsecGateway.VpnIpsecGatewayConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.17/docs/resources/vpn_ipsec_gateway#id VpnIpsecGateway#id}. |
 | <code><a href="#@cdktf/provider-ionoscloud.vpnIpsecGateway.VpnIpsecGatewayConfig.property.location">Location</a></code> | <code>*string</code> | The location of the IPSec Gateway. Supported locations: de/fra, de/fra/2, de/txl, es/vit, gb/bhx, gb/lhr, us/ewr, us/las, us/mci, fr/par. |
 | <code><a href="#@cdktf/provider-ionoscloud.vpnIpsecGateway.VpnIpsecGatewayConfig.property.maintenanceWindow">MaintenanceWindow</a></code> | <code><a href="#@cdktf/provider-ionoscloud.vpnIpsecGateway.VpnIpsecGatewayMaintenanceWindow">VpnIpsecGatewayMaintenanceWindow</a></code> | maintenance_window block. |
 | <code><a href="#@cdktf/provider-ionoscloud.vpnIpsecGateway.VpnIpsecGatewayConfig.property.tier">Tier</a></code> | <code>*string</code> | Gateway performance options. See the documentation for the available options. |
@@ -1102,7 +1102,7 @@ Connections interface{}
 
 connections block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.16/docs/resources/vpn_ipsec_gateway#connections VpnIpsecGateway#connections}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.17/docs/resources/vpn_ipsec_gateway#connections VpnIpsecGateway#connections}
 
 ---
 
@@ -1118,7 +1118,7 @@ Public IP address to be assigned to the gateway.
 
 Note: This must be an IP address in the same datacenter as the connections.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.16/docs/resources/vpn_ipsec_gateway#gateway_ip VpnIpsecGateway#gateway_ip}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.17/docs/resources/vpn_ipsec_gateway#gateway_ip VpnIpsecGateway#gateway_ip}
 
 ---
 
@@ -1132,7 +1132,7 @@ Name *string
 
 The human readable name of your IPSecGateway.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.16/docs/resources/vpn_ipsec_gateway#name VpnIpsecGateway#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.17/docs/resources/vpn_ipsec_gateway#name VpnIpsecGateway#name}
 
 ---
 
@@ -1146,7 +1146,7 @@ Description *string
 
 The human-readable description of your IPSec Gateway.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.16/docs/resources/vpn_ipsec_gateway#description VpnIpsecGateway#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.17/docs/resources/vpn_ipsec_gateway#description VpnIpsecGateway#description}
 
 ---
 
@@ -1158,7 +1158,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.16/docs/resources/vpn_ipsec_gateway#id VpnIpsecGateway#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.17/docs/resources/vpn_ipsec_gateway#id VpnIpsecGateway#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1175,7 +1175,7 @@ Location *string
 
 The location of the IPSec Gateway. Supported locations: de/fra, de/fra/2, de/txl, es/vit, gb/bhx, gb/lhr, us/ewr, us/las, us/mci, fr/par.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.16/docs/resources/vpn_ipsec_gateway#location VpnIpsecGateway#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.17/docs/resources/vpn_ipsec_gateway#location VpnIpsecGateway#location}
 
 ---
 
@@ -1189,7 +1189,7 @@ MaintenanceWindow VpnIpsecGatewayMaintenanceWindow
 
 maintenance_window block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.16/docs/resources/vpn_ipsec_gateway#maintenance_window VpnIpsecGateway#maintenance_window}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.17/docs/resources/vpn_ipsec_gateway#maintenance_window VpnIpsecGateway#maintenance_window}
 
 ---
 
@@ -1203,7 +1203,7 @@ Tier *string
 
 Gateway performance options. See the documentation for the available options.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.16/docs/resources/vpn_ipsec_gateway#tier VpnIpsecGateway#tier}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.17/docs/resources/vpn_ipsec_gateway#tier VpnIpsecGateway#tier}
 
 ---
 
@@ -1217,7 +1217,7 @@ Timeouts VpnIpsecGatewayTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.16/docs/resources/vpn_ipsec_gateway#timeouts VpnIpsecGateway#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.17/docs/resources/vpn_ipsec_gateway#timeouts VpnIpsecGateway#timeouts}
 
 ---
 
@@ -1231,7 +1231,7 @@ Version *string
 
 The IKE version that is permitted for the VPN tunnels.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.16/docs/resources/vpn_ipsec_gateway#version VpnIpsecGateway#version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.17/docs/resources/vpn_ipsec_gateway#version VpnIpsecGateway#version}
 
 ---
 
@@ -1271,7 +1271,7 @@ DatacenterId *string
 
 The datacenter to connect your VPN Gateway to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.16/docs/resources/vpn_ipsec_gateway#datacenter_id VpnIpsecGateway#datacenter_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.17/docs/resources/vpn_ipsec_gateway#datacenter_id VpnIpsecGateway#datacenter_id}
 
 ---
 
@@ -1287,7 +1287,7 @@ Describes the private ipv4 subnet in your LAN that should be accessible by the V
 
 Note: this should be the subnet already assigned to the LAN
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.16/docs/resources/vpn_ipsec_gateway#ipv4_cidr VpnIpsecGateway#ipv4_cidr}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.17/docs/resources/vpn_ipsec_gateway#ipv4_cidr VpnIpsecGateway#ipv4_cidr}
 
 ---
 
@@ -1301,7 +1301,7 @@ LanId *string
 
 The numeric LAN ID to connect your VPN Gateway to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.16/docs/resources/vpn_ipsec_gateway#lan_id VpnIpsecGateway#lan_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.17/docs/resources/vpn_ipsec_gateway#lan_id VpnIpsecGateway#lan_id}
 
 ---
 
@@ -1317,7 +1317,7 @@ Describes the ipv6 subnet in your LAN that should be accessible by the VPN Gatew
 
 Note: this should be the subnet already assigned to the LAN
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.16/docs/resources/vpn_ipsec_gateway#ipv6_cidr VpnIpsecGateway#ipv6_cidr}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.17/docs/resources/vpn_ipsec_gateway#ipv6_cidr VpnIpsecGateway#ipv6_cidr}
 
 ---
 
@@ -1353,7 +1353,7 @@ DayOfTheWeek *string
 
 The name of the week day.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.16/docs/resources/vpn_ipsec_gateway#day_of_the_week VpnIpsecGateway#day_of_the_week}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.17/docs/resources/vpn_ipsec_gateway#day_of_the_week VpnIpsecGateway#day_of_the_week}
 
 ---
 
@@ -1367,7 +1367,7 @@ Time *string
 
 Start of the maintenance window in UTC time.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.16/docs/resources/vpn_ipsec_gateway#time VpnIpsecGateway#time}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.17/docs/resources/vpn_ipsec_gateway#time VpnIpsecGateway#time}
 
 ---
 
@@ -1390,10 +1390,10 @@ import "github.com/cdktf/cdktf-provider-ionoscloud-go/ionoscloud/v12/vpnipsecgat
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-ionoscloud.vpnIpsecGateway.VpnIpsecGatewayTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.16/docs/resources/vpn_ipsec_gateway#create VpnIpsecGateway#create}. |
-| <code><a href="#@cdktf/provider-ionoscloud.vpnIpsecGateway.VpnIpsecGatewayTimeouts.property.default">Default</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.16/docs/resources/vpn_ipsec_gateway#default VpnIpsecGateway#default}. |
-| <code><a href="#@cdktf/provider-ionoscloud.vpnIpsecGateway.VpnIpsecGatewayTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.16/docs/resources/vpn_ipsec_gateway#delete VpnIpsecGateway#delete}. |
-| <code><a href="#@cdktf/provider-ionoscloud.vpnIpsecGateway.VpnIpsecGatewayTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.16/docs/resources/vpn_ipsec_gateway#update VpnIpsecGateway#update}. |
+| <code><a href="#@cdktf/provider-ionoscloud.vpnIpsecGateway.VpnIpsecGatewayTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.17/docs/resources/vpn_ipsec_gateway#create VpnIpsecGateway#create}. |
+| <code><a href="#@cdktf/provider-ionoscloud.vpnIpsecGateway.VpnIpsecGatewayTimeouts.property.default">Default</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.17/docs/resources/vpn_ipsec_gateway#default VpnIpsecGateway#default}. |
+| <code><a href="#@cdktf/provider-ionoscloud.vpnIpsecGateway.VpnIpsecGatewayTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.17/docs/resources/vpn_ipsec_gateway#delete VpnIpsecGateway#delete}. |
+| <code><a href="#@cdktf/provider-ionoscloud.vpnIpsecGateway.VpnIpsecGatewayTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.17/docs/resources/vpn_ipsec_gateway#update VpnIpsecGateway#update}. |
 
 ---
 
@@ -1405,7 +1405,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.16/docs/resources/vpn_ipsec_gateway#create VpnIpsecGateway#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.17/docs/resources/vpn_ipsec_gateway#create VpnIpsecGateway#create}.
 
 ---
 
@@ -1417,7 +1417,7 @@ Default *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.16/docs/resources/vpn_ipsec_gateway#default VpnIpsecGateway#default}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.17/docs/resources/vpn_ipsec_gateway#default VpnIpsecGateway#default}.
 
 ---
 
@@ -1429,7 +1429,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.16/docs/resources/vpn_ipsec_gateway#delete VpnIpsecGateway#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.17/docs/resources/vpn_ipsec_gateway#delete VpnIpsecGateway#delete}.
 
 ---
 
@@ -1441,7 +1441,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.16/docs/resources/vpn_ipsec_gateway#update VpnIpsecGateway#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.17/docs/resources/vpn_ipsec_gateway#update VpnIpsecGateway#update}.
 
 ---
 

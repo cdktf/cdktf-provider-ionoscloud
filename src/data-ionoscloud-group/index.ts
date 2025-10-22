@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.16/docs/data-sources/group
+// https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.17/docs/data-sources/group
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,20 +13,26 @@ import * as cdktf from 'cdktf';
 
 export interface DataIonoscloudGroupConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.16/docs/data-sources/group#id DataIonoscloudGroup#id}
+  * When set to true, information about users will be stored in state
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.17/docs/data-sources/group#get_users_data DataIonoscloudGroup#get_users_data}
+  */
+  readonly fetchUsersData?: boolean | cdktf.IResolvable;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.17/docs/data-sources/group#id DataIonoscloudGroup#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.16/docs/data-sources/group#name DataIonoscloudGroup#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.17/docs/data-sources/group#name DataIonoscloudGroup#name}
   */
   readonly name?: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.16/docs/data-sources/group#timeouts DataIonoscloudGroup#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.17/docs/data-sources/group#timeouts DataIonoscloudGroup#timeouts}
   */
   readonly timeouts?: DataIonoscloudGroupTimeouts;
 }
@@ -132,19 +138,19 @@ export class DataIonoscloudGroupUsersList extends cdktf.ComplexList {
 }
 export interface DataIonoscloudGroupTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.16/docs/data-sources/group#create DataIonoscloudGroup#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.17/docs/data-sources/group#create DataIonoscloudGroup#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.16/docs/data-sources/group#default DataIonoscloudGroup#default}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.17/docs/data-sources/group#default DataIonoscloudGroup#default}
   */
   readonly default?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.16/docs/data-sources/group#delete DataIonoscloudGroup#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.17/docs/data-sources/group#delete DataIonoscloudGroup#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.16/docs/data-sources/group#update DataIonoscloudGroup#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.17/docs/data-sources/group#update DataIonoscloudGroup#update}
   */
   readonly update?: string;
 }
@@ -325,7 +331,7 @@ export class DataIonoscloudGroupTimeoutsOutputReference extends cdktf.ComplexObj
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.16/docs/data-sources/group ionoscloud_group}
+* Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.17/docs/data-sources/group ionoscloud_group}
 */
 export class DataIonoscloudGroup extends cdktf.TerraformDataSource {
 
@@ -341,7 +347,7 @@ export class DataIonoscloudGroup extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataIonoscloudGroup resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataIonoscloudGroup to import
-  * @param importFromId The id of the existing DataIonoscloudGroup that should be imported. Refer to the {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.16/docs/data-sources/group#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataIonoscloudGroup that should be imported. Refer to the {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.17/docs/data-sources/group#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataIonoscloudGroup to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -353,7 +359,7 @@ export class DataIonoscloudGroup extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.16/docs/data-sources/group ionoscloud_group} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.17/docs/data-sources/group ionoscloud_group} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -364,7 +370,7 @@ export class DataIonoscloudGroup extends cdktf.TerraformDataSource {
       terraformResourceType: 'ionoscloud_group',
       terraformGeneratorMetadata: {
         providerName: 'ionoscloud',
-        providerVersion: '6.7.16',
+        providerVersion: '6.7.17',
         providerVersionConstraint: '~> 6.2'
       },
       provider: config.provider,
@@ -375,6 +381,7 @@ export class DataIonoscloudGroup extends cdktf.TerraformDataSource {
       connection: config.connection,
       forEach: config.forEach
     });
+    this._getUsersData = config.fetchUsersData;
     this._id = config.id;
     this._name = config.name;
     this._timeouts.internalValue = config.timeouts;
@@ -484,6 +491,22 @@ export class DataIonoscloudGroup extends cdktf.TerraformDataSource {
     return this.getBooleanAttribute('create_snapshot');
   }
 
+  // get_users_data - computed: false, optional: true, required: false
+  private _getUsersData?: boolean | cdktf.IResolvable; 
+  public get fetchUsersData() {
+    return this.getBooleanAttribute('get_users_data');
+  }
+  public set fetchUsersData(value: boolean | cdktf.IResolvable) {
+    this._getUsersData = value;
+  }
+  public resetFetchUsersData() {
+    this._getUsersData = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get fetchUsersDataInput() {
+    return this._getUsersData;
+  }
+
   // id - computed: true, optional: true, required: false
   private _id?: string; 
   public get id() {
@@ -569,6 +592,7 @@ export class DataIonoscloudGroup extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
+      get_users_data: cdktf.booleanToTerraform(this._getUsersData),
       id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),
       timeouts: dataIonoscloudGroupTimeoutsToTerraform(this._timeouts.internalValue),
@@ -577,6 +601,12 @@ export class DataIonoscloudGroup extends cdktf.TerraformDataSource {
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
+      get_users_data: {
+        value: cdktf.booleanToHclTerraform(this._getUsersData),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
       id: {
         value: cdktf.stringToHclTerraform(this._id),
         isBlock: false,
