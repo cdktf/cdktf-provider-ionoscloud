@@ -4,7 +4,7 @@
 
 ### DataIonoscloudAutoCertificate <a name="DataIonoscloudAutoCertificate" id="@cdktf/provider-ionoscloud.dataIonoscloudAutoCertificate.DataIonoscloudAutoCertificate"></a>
 
-Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.17/docs/data-sources/auto_certificate ionoscloud_auto_certificate}.
+Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.18/docs/data-sources/auto_certificate ionoscloud_auto_certificate}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.dataIonoscloudAutoCertificate.DataIonoscloudAutoCertificate.Initializer"></a>
 
@@ -399,7 +399,7 @@ The construct id used in the generated config for the DataIonoscloudAutoCertific
 
 The id of the existing DataIonoscloudAutoCertificate that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.17/docs/data-sources/auto_certificate#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.18/docs/data-sources/auto_certificate#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -823,7 +823,7 @@ public readonly location: string;
 
 The location of the auto-certificate.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.17/docs/data-sources/auto_certificate#location DataIonoscloudAutoCertificate#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.18/docs/data-sources/auto_certificate#location DataIonoscloudAutoCertificate#location}
 
 ---
 
@@ -837,7 +837,7 @@ public readonly id: string;
 
 The ID of the auto-certificate.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.17/docs/data-sources/auto_certificate#id DataIonoscloudAutoCertificate#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.18/docs/data-sources/auto_certificate#id DataIonoscloudAutoCertificate#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -854,7 +854,7 @@ public readonly name: string;
 
 The name of the auto-certificate.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.17/docs/data-sources/auto_certificate#name DataIonoscloudAutoCertificate#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.18/docs/data-sources/auto_certificate#name DataIonoscloudAutoCertificate#name}
 
 ---
 
@@ -868,7 +868,7 @@ public readonly timeouts: DataIonoscloudAutoCertificateTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.17/docs/data-sources/auto_certificate#timeouts DataIonoscloudAutoCertificate#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.18/docs/data-sources/auto_certificate#timeouts DataIonoscloudAutoCertificate#timeouts}
 
 ---
 
@@ -886,10 +886,10 @@ const dataIonoscloudAutoCertificateTimeouts: dataIonoscloudAutoCertificate.DataI
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudAutoCertificate.DataIonoscloudAutoCertificateTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.17/docs/data-sources/auto_certificate#create DataIonoscloudAutoCertificate#create}. |
-| <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudAutoCertificate.DataIonoscloudAutoCertificateTimeouts.property.default">default</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.17/docs/data-sources/auto_certificate#default DataIonoscloudAutoCertificate#default}. |
-| <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudAutoCertificate.DataIonoscloudAutoCertificateTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.17/docs/data-sources/auto_certificate#delete DataIonoscloudAutoCertificate#delete}. |
-| <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudAutoCertificate.DataIonoscloudAutoCertificateTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.17/docs/data-sources/auto_certificate#update DataIonoscloudAutoCertificate#update}. |
+| <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudAutoCertificate.DataIonoscloudAutoCertificateTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.18/docs/data-sources/auto_certificate#create DataIonoscloudAutoCertificate#create}. |
+| <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudAutoCertificate.DataIonoscloudAutoCertificateTimeouts.property.default">default</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.18/docs/data-sources/auto_certificate#default DataIonoscloudAutoCertificate#default}. |
+| <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudAutoCertificate.DataIonoscloudAutoCertificateTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.18/docs/data-sources/auto_certificate#delete DataIonoscloudAutoCertificate#delete}. |
+| <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudAutoCertificate.DataIonoscloudAutoCertificateTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.18/docs/data-sources/auto_certificate#update DataIonoscloudAutoCertificate#update}. |
 
 ---
 
@@ -901,7 +901,7 @@ public readonly create: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.17/docs/data-sources/auto_certificate#create DataIonoscloudAutoCertificate#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.18/docs/data-sources/auto_certificate#create DataIonoscloudAutoCertificate#create}.
 
 ---
 
@@ -913,7 +913,7 @@ public readonly default: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.17/docs/data-sources/auto_certificate#default DataIonoscloudAutoCertificate#default}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.18/docs/data-sources/auto_certificate#default DataIonoscloudAutoCertificate#default}.
 
 ---
 
@@ -925,7 +925,7 @@ public readonly delete: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.17/docs/data-sources/auto_certificate#delete DataIonoscloudAutoCertificate#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.18/docs/data-sources/auto_certificate#delete DataIonoscloudAutoCertificate#delete}.
 
 ---
 
@@ -937,7 +937,7 @@ public readonly update: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.17/docs/data-sources/auto_certificate#update DataIonoscloudAutoCertificate#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.18/docs/data-sources/auto_certificate#update DataIonoscloudAutoCertificate#update}.
 
 ---
 

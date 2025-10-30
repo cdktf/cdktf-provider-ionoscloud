@@ -4,7 +4,7 @@
 
 ### DataIonoscloudObjectStorageAccesskey <a name="DataIonoscloudObjectStorageAccesskey" id="@cdktf/provider-ionoscloud.dataIonoscloudObjectStorageAccesskey.DataIonoscloudObjectStorageAccesskey"></a>
 
-Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.17/docs/data-sources/object_storage_accesskey ionoscloud_object_storage_accesskey}.
+Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.18/docs/data-sources/object_storage_accesskey ionoscloud_object_storage_accesskey}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.dataIonoscloudObjectStorageAccesskey.DataIonoscloudObjectStorageAccesskey.Initializer"></a>
 
@@ -386,7 +386,7 @@ The construct id used in the generated config for the DataIonoscloudObjectStorag
 
 The id of the existing DataIonoscloudObjectStorageAccesskey that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.17/docs/data-sources/object_storage_accesskey#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.18/docs/data-sources/object_storage_accesskey#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -754,7 +754,7 @@ public readonly accesskey: string;
 
 Access key metadata is a string of 92 characters.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.17/docs/data-sources/object_storage_accesskey#accesskey DataIonoscloudObjectStorageAccesskey#accesskey}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.18/docs/data-sources/object_storage_accesskey#accesskey DataIonoscloudObjectStorageAccesskey#accesskey}
 
 ---
 
@@ -768,7 +768,7 @@ public readonly description: string;
 
 Description of the Access key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.17/docs/data-sources/object_storage_accesskey#description DataIonoscloudObjectStorageAccesskey#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.18/docs/data-sources/object_storage_accesskey#description DataIonoscloudObjectStorageAccesskey#description}
 
 ---
 
@@ -782,7 +782,7 @@ public readonly id: string;
 
 The ID (UUID) of the AccessKey.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.17/docs/data-sources/object_storage_accesskey#id DataIonoscloudObjectStorageAccesskey#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.18/docs/data-sources/object_storage_accesskey#id DataIonoscloudObjectStorageAccesskey#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

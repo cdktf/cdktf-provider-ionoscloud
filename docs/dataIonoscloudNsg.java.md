@@ -4,7 +4,7 @@
 
 ### DataIonoscloudNsg <a name="DataIonoscloudNsg" id="@cdktf/provider-ionoscloud.dataIonoscloudNsg.DataIonoscloudNsg"></a>
 
-Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.17/docs/data-sources/nsg ionoscloud_nsg}.
+Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.18/docs/data-sources/nsg ionoscloud_nsg}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.dataIonoscloudNsg.DataIonoscloudNsg.Initializer"></a>
 
@@ -37,9 +37,9 @@ DataIonoscloudNsg.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudNsg.DataIonoscloudNsg.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudNsg.DataIonoscloudNsg.Initializer.parameter.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudNsg.DataIonoscloudNsg.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner\|com.hashicorp.cdktf.LocalExecProvisioner\|com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudNsg.DataIonoscloudNsg.Initializer.parameter.datacenterId">datacenterId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.17/docs/data-sources/nsg#datacenter_id DataIonoscloudNsg#datacenter_id}. |
-| <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudNsg.DataIonoscloudNsg.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.17/docs/data-sources/nsg#id DataIonoscloudNsg#id}. |
-| <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudNsg.DataIonoscloudNsg.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.17/docs/data-sources/nsg#name DataIonoscloudNsg#name}. |
+| <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudNsg.DataIonoscloudNsg.Initializer.parameter.datacenterId">datacenterId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.18/docs/data-sources/nsg#datacenter_id DataIonoscloudNsg#datacenter_id}. |
+| <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudNsg.DataIonoscloudNsg.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.18/docs/data-sources/nsg#id DataIonoscloudNsg#id}. |
+| <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudNsg.DataIonoscloudNsg.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.18/docs/data-sources/nsg#name DataIonoscloudNsg#name}. |
 | <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudNsg.DataIonoscloudNsg.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudNsg.DataIonoscloudNsgTimeouts">DataIonoscloudNsgTimeouts</a></code> | timeouts block. |
 
 ---
@@ -108,7 +108,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.17/docs/data-sources/nsg#datacenter_id DataIonoscloudNsg#datacenter_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.18/docs/data-sources/nsg#datacenter_id DataIonoscloudNsg#datacenter_id}.
 
 ---
 
@@ -116,7 +116,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.17/docs/data-sources/nsg#id DataIonoscloudNsg#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.18/docs/data-sources/nsg#id DataIonoscloudNsg#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -127,7 +127,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.17/docs/data-sources/nsg#name DataIonoscloudNsg#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.18/docs/data-sources/nsg#name DataIonoscloudNsg#name}.
 
 ---
 
@@ -137,7 +137,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.17/docs/data-sources/nsg#timeouts DataIonoscloudNsg#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.18/docs/data-sources/nsg#timeouts DataIonoscloudNsg#timeouts}
 
 ---
 
@@ -494,7 +494,7 @@ The construct id used in the generated config for the DataIonoscloudNsg to impor
 
 The id of the existing DataIonoscloudNsg that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.17/docs/data-sources/nsg#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.18/docs/data-sources/nsg#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -821,9 +821,9 @@ DataIonoscloudNsgConfig.builder()
 | <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudNsg.DataIonoscloudNsgConfig.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudNsg.DataIonoscloudNsgConfig.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudNsg.DataIonoscloudNsgConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner\|com.hashicorp.cdktf.LocalExecProvisioner\|com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudNsg.DataIonoscloudNsgConfig.property.datacenterId">datacenterId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.17/docs/data-sources/nsg#datacenter_id DataIonoscloudNsg#datacenter_id}. |
-| <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudNsg.DataIonoscloudNsgConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.17/docs/data-sources/nsg#id DataIonoscloudNsg#id}. |
-| <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudNsg.DataIonoscloudNsgConfig.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.17/docs/data-sources/nsg#name DataIonoscloudNsg#name}. |
+| <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudNsg.DataIonoscloudNsgConfig.property.datacenterId">datacenterId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.18/docs/data-sources/nsg#datacenter_id DataIonoscloudNsg#datacenter_id}. |
+| <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudNsg.DataIonoscloudNsgConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.18/docs/data-sources/nsg#id DataIonoscloudNsg#id}. |
+| <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudNsg.DataIonoscloudNsgConfig.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.18/docs/data-sources/nsg#name DataIonoscloudNsg#name}. |
 | <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudNsg.DataIonoscloudNsgConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudNsg.DataIonoscloudNsgTimeouts">DataIonoscloudNsgTimeouts</a></code> | timeouts block. |
 
 ---
@@ -906,7 +906,7 @@ public java.lang.String getDatacenterId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.17/docs/data-sources/nsg#datacenter_id DataIonoscloudNsg#datacenter_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.18/docs/data-sources/nsg#datacenter_id DataIonoscloudNsg#datacenter_id}.
 
 ---
 
@@ -918,7 +918,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.17/docs/data-sources/nsg#id DataIonoscloudNsg#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.18/docs/data-sources/nsg#id DataIonoscloudNsg#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -933,7 +933,7 @@ public java.lang.String getName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.17/docs/data-sources/nsg#name DataIonoscloudNsg#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.18/docs/data-sources/nsg#name DataIonoscloudNsg#name}.
 
 ---
 
@@ -947,7 +947,7 @@ public DataIonoscloudNsgTimeouts getTimeouts();
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.17/docs/data-sources/nsg#timeouts DataIonoscloudNsg#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.18/docs/data-sources/nsg#timeouts DataIonoscloudNsg#timeouts}
 
 ---
 
@@ -982,10 +982,10 @@ DataIonoscloudNsgTimeouts.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudNsg.DataIonoscloudNsgTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.17/docs/data-sources/nsg#create DataIonoscloudNsg#create}. |
-| <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudNsg.DataIonoscloudNsgTimeouts.property.default">default</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.17/docs/data-sources/nsg#default DataIonoscloudNsg#default}. |
-| <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudNsg.DataIonoscloudNsgTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.17/docs/data-sources/nsg#delete DataIonoscloudNsg#delete}. |
-| <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudNsg.DataIonoscloudNsgTimeouts.property.update">update</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.17/docs/data-sources/nsg#update DataIonoscloudNsg#update}. |
+| <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudNsg.DataIonoscloudNsgTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.18/docs/data-sources/nsg#create DataIonoscloudNsg#create}. |
+| <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudNsg.DataIonoscloudNsgTimeouts.property.default">default</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.18/docs/data-sources/nsg#default DataIonoscloudNsg#default}. |
+| <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudNsg.DataIonoscloudNsgTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.18/docs/data-sources/nsg#delete DataIonoscloudNsg#delete}. |
+| <code><a href="#@cdktf/provider-ionoscloud.dataIonoscloudNsg.DataIonoscloudNsgTimeouts.property.update">update</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.18/docs/data-sources/nsg#update DataIonoscloudNsg#update}. |
 
 ---
 
@@ -997,7 +997,7 @@ public java.lang.String getCreate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.17/docs/data-sources/nsg#create DataIonoscloudNsg#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.18/docs/data-sources/nsg#create DataIonoscloudNsg#create}.
 
 ---
 
@@ -1009,7 +1009,7 @@ public java.lang.String getDefault();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.17/docs/data-sources/nsg#default DataIonoscloudNsg#default}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.18/docs/data-sources/nsg#default DataIonoscloudNsg#default}.
 
 ---
 
@@ -1021,7 +1021,7 @@ public java.lang.String getDelete();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.17/docs/data-sources/nsg#delete DataIonoscloudNsg#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.18/docs/data-sources/nsg#delete DataIonoscloudNsg#delete}.
 
 ---
 
@@ -1033,7 +1033,7 @@ public java.lang.String getUpdate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.17/docs/data-sources/nsg#update DataIonoscloudNsg#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.18/docs/data-sources/nsg#update DataIonoscloudNsg#update}.
 
 ---
 
