@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.18/docs/data-sources/apigateway
+// https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.19/docs/data-sources/apigateway
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,7 +15,7 @@ export interface DataIonoscloudApigatewayConfig extends cdktf.TerraformMetaArgum
   /**
   * The ID (UUID) of the API Gateway.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.18/docs/data-sources/apigateway#id DataIonoscloudApigateway#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.19/docs/data-sources/apigateway#id DataIonoscloudApigateway#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -24,13 +24,13 @@ export interface DataIonoscloudApigatewayConfig extends cdktf.TerraformMetaArgum
   /**
   * The name of the API Gateway.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.18/docs/data-sources/apigateway#name DataIonoscloudApigateway#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.19/docs/data-sources/apigateway#name DataIonoscloudApigateway#name}
   */
   readonly name?: string;
   /**
   * Whether partial matching is allowed or not when using the name filter.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.18/docs/data-sources/apigateway#partial_match DataIonoscloudApigateway#partial_match}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.19/docs/data-sources/apigateway#partial_match DataIonoscloudApigateway#partial_match}
   */
   readonly partialMatch?: boolean | cdktf.IResolvable;
 }
@@ -116,7 +116,7 @@ export class DataIonoscloudApigatewayCustomDomainsList extends cdktf.ComplexList
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.18/docs/data-sources/apigateway ionoscloud_apigateway}
+* Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.19/docs/data-sources/apigateway ionoscloud_apigateway}
 */
 export class DataIonoscloudApigateway extends cdktf.TerraformDataSource {
 
@@ -132,7 +132,7 @@ export class DataIonoscloudApigateway extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataIonoscloudApigateway resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataIonoscloudApigateway to import
-  * @param importFromId The id of the existing DataIonoscloudApigateway that should be imported. Refer to the {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.18/docs/data-sources/apigateway#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataIonoscloudApigateway that should be imported. Refer to the {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.19/docs/data-sources/apigateway#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataIonoscloudApigateway to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -144,7 +144,7 @@ export class DataIonoscloudApigateway extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.18/docs/data-sources/apigateway ionoscloud_apigateway} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.19/docs/data-sources/apigateway ionoscloud_apigateway} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -155,7 +155,7 @@ export class DataIonoscloudApigateway extends cdktf.TerraformDataSource {
       terraformResourceType: 'ionoscloud_apigateway',
       terraformGeneratorMetadata: {
         providerName: 'ionoscloud',
-        providerVersion: '6.7.18',
+        providerVersion: '6.7.19',
         providerVersionConstraint: '~> 6.2'
       },
       provider: config.provider,
