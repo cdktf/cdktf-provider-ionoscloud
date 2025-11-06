@@ -4,7 +4,7 @@
 
 ### K8SCluster <a name="K8SCluster" id="@cdktf/provider-ionoscloud.k8SCluster.K8SCluster"></a>
 
-Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.18/docs/resources/k8s_cluster ionoscloud_k8s_cluster}.
+Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.19/docs/resources/k8s_cluster ionoscloud_k8s_cluster}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.k8SCluster.K8SCluster.Initializer"></a>
 
@@ -48,7 +48,7 @@ K8SCluster.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-ionoscloud.k8SCluster.K8SCluster.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | The desired name for the cluster. |
 | <code><a href="#@cdktf/provider-ionoscloud.k8SCluster.K8SCluster.Initializer.parameter.allowReplace">allowReplace</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | When set to true, allows the update of immutable fields by destroying and re-creating the cluster. |
 | <code><a href="#@cdktf/provider-ionoscloud.k8SCluster.K8SCluster.Initializer.parameter.apiSubnetAllowList">apiSubnetAllowList</a></code> | <code>java.util.List<java.lang.String></code> | Access to the K8s API server is restricted to these CIDRs. |
-| <code><a href="#@cdktf/provider-ionoscloud.k8SCluster.K8SCluster.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.18/docs/resources/k8s_cluster#id K8SCluster#id}. |
+| <code><a href="#@cdktf/provider-ionoscloud.k8SCluster.K8SCluster.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.19/docs/resources/k8s_cluster#id K8SCluster#id}. |
 | <code><a href="#@cdktf/provider-ionoscloud.k8SCluster.K8SCluster.Initializer.parameter.k8SVersion">k8SVersion</a></code> | <code>java.lang.String</code> | The desired Kubernetes Version. |
 | <code><a href="#@cdktf/provider-ionoscloud.k8SCluster.K8SCluster.Initializer.parameter.location">location</a></code> | <code>java.lang.String</code> | This attribute is mandatory if the cluster is private. |
 | <code><a href="#@cdktf/provider-ionoscloud.k8SCluster.K8SCluster.Initializer.parameter.maintenanceWindow">maintenanceWindow</a></code> | <code><a href="#@cdktf/provider-ionoscloud.k8SCluster.K8SClusterMaintenanceWindow">K8SClusterMaintenanceWindow</a></code> | maintenance_window block. |
@@ -126,7 +126,7 @@ Must be unique amongst siblings in the same scope
 
 The desired name for the cluster.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.18/docs/resources/k8s_cluster#name K8SCluster#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.19/docs/resources/k8s_cluster#name K8SCluster#name}
 
 ---
 
@@ -136,7 +136,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 
 When set to true, allows the update of immutable fields by destroying and re-creating the cluster.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.18/docs/resources/k8s_cluster#allow_replace K8SCluster#allow_replace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.19/docs/resources/k8s_cluster#allow_replace K8SCluster#allow_replace}
 
 ---
 
@@ -148,7 +148,7 @@ Access to the K8s API server is restricted to these CIDRs.
 
 Cluster-internal traffic is not affected by this restriction. If no allowlist is specified, access is not restricted. If an IP without subnet mask is provided, the default value will be used: 32 for IPv4 and 128 for IPv6.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.18/docs/resources/k8s_cluster#api_subnet_allow_list K8SCluster#api_subnet_allow_list}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.19/docs/resources/k8s_cluster#api_subnet_allow_list K8SCluster#api_subnet_allow_list}
 
 ---
 
@@ -156,7 +156,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.18/docs/resources/k8s_cluster#id K8SCluster#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.19/docs/resources/k8s_cluster#id K8SCluster#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -171,7 +171,7 @@ The desired Kubernetes Version.
 
 For supported values, please check the API documentation. Downgrades are not supported. The provider will ignore downgrades of patch level.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.18/docs/resources/k8s_cluster#k8s_version K8SCluster#k8s_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.19/docs/resources/k8s_cluster#k8s_version K8SCluster#k8s_version}
 
 ---
 
@@ -183,7 +183,7 @@ This attribute is mandatory if the cluster is private.
 
 The location must be enabled for your contract, or you must have a data center at that location. This attribute is immutable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.18/docs/resources/k8s_cluster#location K8SCluster#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.19/docs/resources/k8s_cluster#location K8SCluster#location}
 
 ---
 
@@ -193,7 +193,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 
 maintenance_window block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.18/docs/resources/k8s_cluster#maintenance_window K8SCluster#maintenance_window}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.19/docs/resources/k8s_cluster#maintenance_window K8SCluster#maintenance_window}
 
 ---
 
@@ -205,7 +205,7 @@ The NAT gateway IP of the cluster if the cluster is private.
 
 This attribute is immutable. Must be a reserved IP in the same location as the cluster's location. This attribute is mandatory if the cluster is private.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.18/docs/resources/k8s_cluster#nat_gateway_ip K8SCluster#nat_gateway_ip}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.19/docs/resources/k8s_cluster#nat_gateway_ip K8SCluster#nat_gateway_ip}
 
 ---
 
@@ -217,7 +217,7 @@ The node subnet of the cluster, if the cluster is private.
 
 This attribute is optional and immutable. Must be a valid CIDR notation for an IPv4 network prefix of 16 bits length.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.18/docs/resources/k8s_cluster#node_subnet K8SCluster#node_subnet}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.19/docs/resources/k8s_cluster#node_subnet K8SCluster#node_subnet}
 
 ---
 
@@ -227,7 +227,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 
 The indicator if the cluster is public or private.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.18/docs/resources/k8s_cluster#public K8SCluster#public}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.19/docs/resources/k8s_cluster#public K8SCluster#public}
 
 ---
 
@@ -237,7 +237,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 
 s3_buckets block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.18/docs/resources/k8s_cluster#s3_buckets K8SCluster#s3_buckets}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.19/docs/resources/k8s_cluster#s3_buckets K8SCluster#s3_buckets}
 
 ---
 
@@ -247,7 +247,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.18/docs/resources/k8s_cluster#timeouts K8SCluster#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.19/docs/resources/k8s_cluster#timeouts K8SCluster#timeouts}
 
 ---
 
@@ -790,7 +790,7 @@ The construct id used in the generated config for the K8SCluster to import.
 
 The id of the existing K8SCluster that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.18/docs/resources/k8s_cluster#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.19/docs/resources/k8s_cluster#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1304,7 +1304,7 @@ K8SClusterConfig.builder()
 | <code><a href="#@cdktf/provider-ionoscloud.k8SCluster.K8SClusterConfig.property.name">name</a></code> | <code>java.lang.String</code> | The desired name for the cluster. |
 | <code><a href="#@cdktf/provider-ionoscloud.k8SCluster.K8SClusterConfig.property.allowReplace">allowReplace</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | When set to true, allows the update of immutable fields by destroying and re-creating the cluster. |
 | <code><a href="#@cdktf/provider-ionoscloud.k8SCluster.K8SClusterConfig.property.apiSubnetAllowList">apiSubnetAllowList</a></code> | <code>java.util.List<java.lang.String></code> | Access to the K8s API server is restricted to these CIDRs. |
-| <code><a href="#@cdktf/provider-ionoscloud.k8SCluster.K8SClusterConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.18/docs/resources/k8s_cluster#id K8SCluster#id}. |
+| <code><a href="#@cdktf/provider-ionoscloud.k8SCluster.K8SClusterConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.19/docs/resources/k8s_cluster#id K8SCluster#id}. |
 | <code><a href="#@cdktf/provider-ionoscloud.k8SCluster.K8SClusterConfig.property.k8SVersion">k8SVersion</a></code> | <code>java.lang.String</code> | The desired Kubernetes Version. |
 | <code><a href="#@cdktf/provider-ionoscloud.k8SCluster.K8SClusterConfig.property.location">location</a></code> | <code>java.lang.String</code> | This attribute is mandatory if the cluster is private. |
 | <code><a href="#@cdktf/provider-ionoscloud.k8SCluster.K8SClusterConfig.property.maintenanceWindow">maintenanceWindow</a></code> | <code><a href="#@cdktf/provider-ionoscloud.k8SCluster.K8SClusterMaintenanceWindow">K8SClusterMaintenanceWindow</a></code> | maintenance_window block. |
@@ -1396,7 +1396,7 @@ public java.lang.String getName();
 
 The desired name for the cluster.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.18/docs/resources/k8s_cluster#name K8SCluster#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.19/docs/resources/k8s_cluster#name K8SCluster#name}
 
 ---
 
@@ -1410,7 +1410,7 @@ public java.lang.Boolean|IResolvable getAllowReplace();
 
 When set to true, allows the update of immutable fields by destroying and re-creating the cluster.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.18/docs/resources/k8s_cluster#allow_replace K8SCluster#allow_replace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.19/docs/resources/k8s_cluster#allow_replace K8SCluster#allow_replace}
 
 ---
 
@@ -1426,7 +1426,7 @@ Access to the K8s API server is restricted to these CIDRs.
 
 Cluster-internal traffic is not affected by this restriction. If no allowlist is specified, access is not restricted. If an IP without subnet mask is provided, the default value will be used: 32 for IPv4 and 128 for IPv6.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.18/docs/resources/k8s_cluster#api_subnet_allow_list K8SCluster#api_subnet_allow_list}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.19/docs/resources/k8s_cluster#api_subnet_allow_list K8SCluster#api_subnet_allow_list}
 
 ---
 
@@ -1438,7 +1438,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.18/docs/resources/k8s_cluster#id K8SCluster#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.19/docs/resources/k8s_cluster#id K8SCluster#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1457,7 +1457,7 @@ The desired Kubernetes Version.
 
 For supported values, please check the API documentation. Downgrades are not supported. The provider will ignore downgrades of patch level.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.18/docs/resources/k8s_cluster#k8s_version K8SCluster#k8s_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.19/docs/resources/k8s_cluster#k8s_version K8SCluster#k8s_version}
 
 ---
 
@@ -1473,7 +1473,7 @@ This attribute is mandatory if the cluster is private.
 
 The location must be enabled for your contract, or you must have a data center at that location. This attribute is immutable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.18/docs/resources/k8s_cluster#location K8SCluster#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.19/docs/resources/k8s_cluster#location K8SCluster#location}
 
 ---
 
@@ -1487,7 +1487,7 @@ public K8SClusterMaintenanceWindow getMaintenanceWindow();
 
 maintenance_window block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.18/docs/resources/k8s_cluster#maintenance_window K8SCluster#maintenance_window}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.19/docs/resources/k8s_cluster#maintenance_window K8SCluster#maintenance_window}
 
 ---
 
@@ -1503,7 +1503,7 @@ The NAT gateway IP of the cluster if the cluster is private.
 
 This attribute is immutable. Must be a reserved IP in the same location as the cluster's location. This attribute is mandatory if the cluster is private.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.18/docs/resources/k8s_cluster#nat_gateway_ip K8SCluster#nat_gateway_ip}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.19/docs/resources/k8s_cluster#nat_gateway_ip K8SCluster#nat_gateway_ip}
 
 ---
 
@@ -1519,7 +1519,7 @@ The node subnet of the cluster, if the cluster is private.
 
 This attribute is optional and immutable. Must be a valid CIDR notation for an IPv4 network prefix of 16 bits length.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.18/docs/resources/k8s_cluster#node_subnet K8SCluster#node_subnet}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.19/docs/resources/k8s_cluster#node_subnet K8SCluster#node_subnet}
 
 ---
 
@@ -1533,7 +1533,7 @@ public java.lang.Boolean|IResolvable getPublic();
 
 The indicator if the cluster is public or private.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.18/docs/resources/k8s_cluster#public K8SCluster#public}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.19/docs/resources/k8s_cluster#public K8SCluster#public}
 
 ---
 
@@ -1547,7 +1547,7 @@ public IResolvable|java.util.List<K8SClusterS3Buckets> getS3Buckets();
 
 s3_buckets block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.18/docs/resources/k8s_cluster#s3_buckets K8SCluster#s3_buckets}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.19/docs/resources/k8s_cluster#s3_buckets K8SCluster#s3_buckets}
 
 ---
 
@@ -1561,7 +1561,7 @@ public K8SClusterTimeouts getTimeouts();
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.18/docs/resources/k8s_cluster#timeouts K8SCluster#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.19/docs/resources/k8s_cluster#timeouts K8SCluster#timeouts}
 
 ---
 
@@ -1597,7 +1597,7 @@ public java.lang.String getDayOfTheWeek();
 
 Day of the week when maintenance is allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.18/docs/resources/k8s_cluster#day_of_the_week K8SCluster#day_of_the_week}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.19/docs/resources/k8s_cluster#day_of_the_week K8SCluster#day_of_the_week}
 
 ---
 
@@ -1611,7 +1611,7 @@ public java.lang.String getTime();
 
 A clock time in the day when maintenance is allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.18/docs/resources/k8s_cluster#time K8SCluster#time}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.19/docs/resources/k8s_cluster#time K8SCluster#time}
 
 ---
 
@@ -1645,7 +1645,7 @@ public java.lang.String getName();
 
 Name of the Object Storage bucket.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.18/docs/resources/k8s_cluster#name K8SCluster#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.19/docs/resources/k8s_cluster#name K8SCluster#name}
 
 ---
 
@@ -1668,10 +1668,10 @@ K8SClusterTimeouts.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-ionoscloud.k8SCluster.K8SClusterTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.18/docs/resources/k8s_cluster#create K8SCluster#create}. |
-| <code><a href="#@cdktf/provider-ionoscloud.k8SCluster.K8SClusterTimeouts.property.default">default</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.18/docs/resources/k8s_cluster#default K8SCluster#default}. |
-| <code><a href="#@cdktf/provider-ionoscloud.k8SCluster.K8SClusterTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.18/docs/resources/k8s_cluster#delete K8SCluster#delete}. |
-| <code><a href="#@cdktf/provider-ionoscloud.k8SCluster.K8SClusterTimeouts.property.update">update</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.18/docs/resources/k8s_cluster#update K8SCluster#update}. |
+| <code><a href="#@cdktf/provider-ionoscloud.k8SCluster.K8SClusterTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.19/docs/resources/k8s_cluster#create K8SCluster#create}. |
+| <code><a href="#@cdktf/provider-ionoscloud.k8SCluster.K8SClusterTimeouts.property.default">default</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.19/docs/resources/k8s_cluster#default K8SCluster#default}. |
+| <code><a href="#@cdktf/provider-ionoscloud.k8SCluster.K8SClusterTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.19/docs/resources/k8s_cluster#delete K8SCluster#delete}. |
+| <code><a href="#@cdktf/provider-ionoscloud.k8SCluster.K8SClusterTimeouts.property.update">update</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.19/docs/resources/k8s_cluster#update K8SCluster#update}. |
 
 ---
 
@@ -1683,7 +1683,7 @@ public java.lang.String getCreate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.18/docs/resources/k8s_cluster#create K8SCluster#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.19/docs/resources/k8s_cluster#create K8SCluster#create}.
 
 ---
 
@@ -1695,7 +1695,7 @@ public java.lang.String getDefault();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.18/docs/resources/k8s_cluster#default K8SCluster#default}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.19/docs/resources/k8s_cluster#default K8SCluster#default}.
 
 ---
 
@@ -1707,7 +1707,7 @@ public java.lang.String getDelete();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.18/docs/resources/k8s_cluster#delete K8SCluster#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.19/docs/resources/k8s_cluster#delete K8SCluster#delete}.
 
 ---
 
@@ -1719,7 +1719,7 @@ public java.lang.String getUpdate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.18/docs/resources/k8s_cluster#update K8SCluster#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.19/docs/resources/k8s_cluster#update K8SCluster#update}.
 
 ---
 

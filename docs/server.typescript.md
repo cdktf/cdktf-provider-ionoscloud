@@ -4,7 +4,7 @@
 
 ### Server <a name="Server" id="@cdktf/provider-ionoscloud.server.Server"></a>
 
-Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.18/docs/resources/server ionoscloud_server}.
+Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.19/docs/resources/server ionoscloud_server}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.server.Server.Initializer"></a>
 
@@ -90,6 +90,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-ionoscloud.server.Server.resetImagePassword">resetImagePassword</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.server.Server.resetLabel">resetLabel</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.server.Server.resetNic">resetNic</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.server.Server.resetNicMultiQueue">resetNicMultiQueue</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.server.Server.resetRam">resetRam</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.server.Server.resetSecurityGroupsIds">resetSecurityGroupsIds</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.server.Server.resetSshKeyPath">resetSshKeyPath</a></code> | *No description.* |
@@ -516,6 +517,12 @@ public resetLabel(): void
 public resetNic(): void
 ```
 
+##### `resetNicMultiQueue` <a name="resetNicMultiQueue" id="@cdktf/provider-ionoscloud.server.Server.resetNicMultiQueue"></a>
+
+```typescript
+public resetNicMultiQueue(): void
+```
+
 ##### `resetRam` <a name="resetRam" id="@cdktf/provider-ionoscloud.server.Server.resetRam"></a>
 
 ```typescript
@@ -673,7 +680,7 @@ The construct id used in the generated config for the Server to import.
 
 The id of the existing Server that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.18/docs/resources/server#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.19/docs/resources/server#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -727,6 +734,7 @@ Refer to the {@link https://registry.terraform.io/providers/ionos-cloud/ionosclo
 | <code><a href="#@cdktf/provider-ionoscloud.server.Server.property.labelInput">labelInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-ionoscloud.server.ServerLabel">ServerLabel</a>[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.server.Server.property.nameInput">nameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.server.Server.property.nicInput">nicInput</a></code> | <code><a href="#@cdktf/provider-ionoscloud.server.ServerNic">ServerNic</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.server.Server.property.nicMultiQueueInput">nicMultiQueueInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.server.Server.property.ramInput">ramInput</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.server.Server.property.securityGroupsIdsInput">securityGroupsIdsInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.server.Server.property.sshKeyPathInput">sshKeyPathInput</a></code> | <code>string[]</code> | *No description.* |
@@ -749,6 +757,7 @@ Refer to the {@link https://registry.terraform.io/providers/ionos-cloud/ionosclo
 | <code><a href="#@cdktf/provider-ionoscloud.server.Server.property.imageName">imageName</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.server.Server.property.imagePassword">imagePassword</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.server.Server.property.name">name</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-ionoscloud.server.Server.property.nicMultiQueue">nicMultiQueue</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.server.Server.property.ram">ram</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.server.Server.property.securityGroupsIds">securityGroupsIds</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.server.Server.property.sshKeyPath">sshKeyPath</a></code> | <code>string[]</code> | *No description.* |
@@ -1141,6 +1150,16 @@ public readonly nicInput: ServerNic;
 
 ---
 
+##### `nicMultiQueueInput`<sup>Optional</sup> <a name="nicMultiQueueInput" id="@cdktf/provider-ionoscloud.server.Server.property.nicMultiQueueInput"></a>
+
+```typescript
+public readonly nicMultiQueueInput: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
+
+---
+
 ##### `ramInput`<sup>Optional</sup> <a name="ramInput" id="@cdktf/provider-ionoscloud.server.Server.property.ramInput"></a>
 
 ```typescript
@@ -1361,6 +1380,16 @@ public readonly name: string;
 
 ---
 
+##### `nicMultiQueue`<sup>Required</sup> <a name="nicMultiQueue" id="@cdktf/provider-ionoscloud.server.Server.property.nicMultiQueue"></a>
+
+```typescript
+public readonly nicMultiQueue: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
+
+---
+
 ##### `ram`<sup>Required</sup> <a name="ram" id="@cdktf/provider-ionoscloud.server.Server.property.ram"></a>
 
 ```typescript
@@ -1472,26 +1501,27 @@ const serverConfig: server.ServerConfig = { ... }
 | <code><a href="#@cdktf/provider-ionoscloud.server.ServerConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.server.ServerConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-ionoscloud.server.ServerConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-ionoscloud.server.ServerConfig.property.datacenterId">datacenterId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.18/docs/resources/server#datacenter_id Server#datacenter_id}. |
-| <code><a href="#@cdktf/provider-ionoscloud.server.ServerConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.18/docs/resources/server#name Server#name}. |
+| <code><a href="#@cdktf/provider-ionoscloud.server.ServerConfig.property.datacenterId">datacenterId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.19/docs/resources/server#datacenter_id Server#datacenter_id}. |
+| <code><a href="#@cdktf/provider-ionoscloud.server.ServerConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.19/docs/resources/server#name Server#name}. |
 | <code><a href="#@cdktf/provider-ionoscloud.server.ServerConfig.property.allowReplace">allowReplace</a></code> | <code>boolean \| cdktf.IResolvable</code> | When set to true, allows the update of immutable fields by destroying and re-creating the resource. |
-| <code><a href="#@cdktf/provider-ionoscloud.server.ServerConfig.property.availabilityZone">availabilityZone</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.18/docs/resources/server#availability_zone Server#availability_zone}. |
+| <code><a href="#@cdktf/provider-ionoscloud.server.ServerConfig.property.availabilityZone">availabilityZone</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.19/docs/resources/server#availability_zone Server#availability_zone}. |
 | <code><a href="#@cdktf/provider-ionoscloud.server.ServerConfig.property.bootCdrom">bootCdrom</a></code> | <code>string</code> | The associated boot drive, if any. |
-| <code><a href="#@cdktf/provider-ionoscloud.server.ServerConfig.property.bootImage">bootImage</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.18/docs/resources/server#boot_image Server#boot_image}. |
-| <code><a href="#@cdktf/provider-ionoscloud.server.ServerConfig.property.cores">cores</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.18/docs/resources/server#cores Server#cores}. |
-| <code><a href="#@cdktf/provider-ionoscloud.server.ServerConfig.property.cpuFamily">cpuFamily</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.18/docs/resources/server#cpu_family Server#cpu_family}. |
-| <code><a href="#@cdktf/provider-ionoscloud.server.ServerConfig.property.firewallruleIds">firewallruleIds</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.18/docs/resources/server#firewallrule_ids Server#firewallrule_ids}. |
+| <code><a href="#@cdktf/provider-ionoscloud.server.ServerConfig.property.bootImage">bootImage</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.19/docs/resources/server#boot_image Server#boot_image}. |
+| <code><a href="#@cdktf/provider-ionoscloud.server.ServerConfig.property.cores">cores</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.19/docs/resources/server#cores Server#cores}. |
+| <code><a href="#@cdktf/provider-ionoscloud.server.ServerConfig.property.cpuFamily">cpuFamily</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.19/docs/resources/server#cpu_family Server#cpu_family}. |
+| <code><a href="#@cdktf/provider-ionoscloud.server.ServerConfig.property.firewallruleIds">firewallruleIds</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.19/docs/resources/server#firewallrule_ids Server#firewallrule_ids}. |
 | <code><a href="#@cdktf/provider-ionoscloud.server.ServerConfig.property.hostname">hostname</a></code> | <code>string</code> | The hostname of the resource. |
-| <code><a href="#@cdktf/provider-ionoscloud.server.ServerConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.18/docs/resources/server#id Server#id}. |
-| <code><a href="#@cdktf/provider-ionoscloud.server.ServerConfig.property.imageName">imageName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.18/docs/resources/server#image_name Server#image_name}. |
-| <code><a href="#@cdktf/provider-ionoscloud.server.ServerConfig.property.imagePassword">imagePassword</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.18/docs/resources/server#image_password Server#image_password}. |
+| <code><a href="#@cdktf/provider-ionoscloud.server.ServerConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.19/docs/resources/server#id Server#id}. |
+| <code><a href="#@cdktf/provider-ionoscloud.server.ServerConfig.property.imageName">imageName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.19/docs/resources/server#image_name Server#image_name}. |
+| <code><a href="#@cdktf/provider-ionoscloud.server.ServerConfig.property.imagePassword">imagePassword</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.19/docs/resources/server#image_password Server#image_password}. |
 | <code><a href="#@cdktf/provider-ionoscloud.server.ServerConfig.property.label">label</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-ionoscloud.server.ServerLabel">ServerLabel</a>[]</code> | label block. |
 | <code><a href="#@cdktf/provider-ionoscloud.server.ServerConfig.property.nic">nic</a></code> | <code><a href="#@cdktf/provider-ionoscloud.server.ServerNic">ServerNic</a></code> | nic block. |
-| <code><a href="#@cdktf/provider-ionoscloud.server.ServerConfig.property.ram">ram</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.18/docs/resources/server#ram Server#ram}. |
+| <code><a href="#@cdktf/provider-ionoscloud.server.ServerConfig.property.nicMultiQueue">nicMultiQueue</a></code> | <code>boolean \| cdktf.IResolvable</code> | Activate or deactivate the Multi Queue feature on all NICs of this server. |
+| <code><a href="#@cdktf/provider-ionoscloud.server.ServerConfig.property.ram">ram</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.19/docs/resources/server#ram Server#ram}. |
 | <code><a href="#@cdktf/provider-ionoscloud.server.ServerConfig.property.securityGroupsIds">securityGroupsIds</a></code> | <code>string[]</code> | The list of Security Group IDs for the server. |
 | <code><a href="#@cdktf/provider-ionoscloud.server.ServerConfig.property.sshKeyPath">sshKeyPath</a></code> | <code>string[]</code> | Immutable List of absolute or relative paths to files containing public SSH key that will be injected into IonosCloud provided Linux images. |
 | <code><a href="#@cdktf/provider-ionoscloud.server.ServerConfig.property.sshKeys">sshKeys</a></code> | <code>string[]</code> | Public SSH keys are set on the image as authorized keys for appropriate SSH login to the instance using the corresponding private key. |
-| <code><a href="#@cdktf/provider-ionoscloud.server.ServerConfig.property.templateUuid">templateUuid</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.18/docs/resources/server#template_uuid Server#template_uuid}. |
+| <code><a href="#@cdktf/provider-ionoscloud.server.ServerConfig.property.templateUuid">templateUuid</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.19/docs/resources/server#template_uuid Server#template_uuid}. |
 | <code><a href="#@cdktf/provider-ionoscloud.server.ServerConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-ionoscloud.server.ServerTimeouts">ServerTimeouts</a></code> | timeouts block. |
 | <code><a href="#@cdktf/provider-ionoscloud.server.ServerConfig.property.type">type</a></code> | <code>string</code> | server usages: ENTERPRISE or CUBE. |
 | <code><a href="#@cdktf/provider-ionoscloud.server.ServerConfig.property.vmState">vmState</a></code> | <code>string</code> | Sets the power state of the server. |
@@ -1577,7 +1607,7 @@ public readonly datacenterId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.18/docs/resources/server#datacenter_id Server#datacenter_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.19/docs/resources/server#datacenter_id Server#datacenter_id}.
 
 ---
 
@@ -1589,7 +1619,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.18/docs/resources/server#name Server#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.19/docs/resources/server#name Server#name}.
 
 ---
 
@@ -1603,7 +1633,7 @@ public readonly allowReplace: boolean | IResolvable;
 
 When set to true, allows the update of immutable fields by destroying and re-creating the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.18/docs/resources/server#allow_replace Server#allow_replace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.19/docs/resources/server#allow_replace Server#allow_replace}
 
 ---
 
@@ -1615,7 +1645,7 @@ public readonly availabilityZone: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.18/docs/resources/server#availability_zone Server#availability_zone}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.19/docs/resources/server#availability_zone Server#availability_zone}.
 
 ---
 
@@ -1631,7 +1661,7 @@ The associated boot drive, if any.
 
 Must be the UUID of a bootable CDROM image that you can retrieve using the image data source
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.18/docs/resources/server#boot_cdrom Server#boot_cdrom}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.19/docs/resources/server#boot_cdrom Server#boot_cdrom}
 
 ---
 
@@ -1643,7 +1673,7 @@ public readonly bootImage: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.18/docs/resources/server#boot_image Server#boot_image}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.19/docs/resources/server#boot_image Server#boot_image}.
 
 ---
 
@@ -1655,7 +1685,7 @@ public readonly cores: number;
 
 - *Type:* number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.18/docs/resources/server#cores Server#cores}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.19/docs/resources/server#cores Server#cores}.
 
 ---
 
@@ -1667,7 +1697,7 @@ public readonly cpuFamily: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.18/docs/resources/server#cpu_family Server#cpu_family}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.19/docs/resources/server#cpu_family Server#cpu_family}.
 
 ---
 
@@ -1679,7 +1709,7 @@ public readonly firewallruleIds: string[];
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.18/docs/resources/server#firewallrule_ids Server#firewallrule_ids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.19/docs/resources/server#firewallrule_ids Server#firewallrule_ids}.
 
 ---
 
@@ -1695,7 +1725,7 @@ The hostname of the resource.
 
 Allowed characters are a-z, 0-9 and - (minus). Hostname should not start with minus and should not be longer than 63 characters. If no value provided explicitly, it will be populated with the name of the server
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.18/docs/resources/server#hostname Server#hostname}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.19/docs/resources/server#hostname Server#hostname}
 
 ---
 
@@ -1707,7 +1737,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.18/docs/resources/server#id Server#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.19/docs/resources/server#id Server#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1722,7 +1752,7 @@ public readonly imageName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.18/docs/resources/server#image_name Server#image_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.19/docs/resources/server#image_name Server#image_name}.
 
 ---
 
@@ -1734,7 +1764,7 @@ public readonly imagePassword: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.18/docs/resources/server#image_password Server#image_password}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.19/docs/resources/server#image_password Server#image_password}.
 
 ---
 
@@ -1748,7 +1778,7 @@ public readonly label: IResolvable | ServerLabel[];
 
 label block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.18/docs/resources/server#label Server#label}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.19/docs/resources/server#label Server#label}
 
 ---
 
@@ -1762,7 +1792,23 @@ public readonly nic: ServerNic;
 
 nic block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.18/docs/resources/server#nic Server#nic}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.19/docs/resources/server#nic Server#nic}
+
+---
+
+##### `nicMultiQueue`<sup>Optional</sup> <a name="nicMultiQueue" id="@cdktf/provider-ionoscloud.server.ServerConfig.property.nicMultiQueue"></a>
+
+```typescript
+public readonly nicMultiQueue: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
+
+Activate or deactivate the Multi Queue feature on all NICs of this server.
+
+This feature is beneficial to enable when the NICs are experiencing performance issues (e.g. low throughput). Toggling this feature will also initiate a restart of the server. If the specified value is `true`, the feature will be activated; if it is not specified or set to `false`, the feature will be deactivated.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.19/docs/resources/server#nic_multi_queue Server#nic_multi_queue}
 
 ---
 
@@ -1774,7 +1820,7 @@ public readonly ram: number;
 
 - *Type:* number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.18/docs/resources/server#ram Server#ram}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.19/docs/resources/server#ram Server#ram}.
 
 ---
 
@@ -1788,7 +1834,7 @@ public readonly securityGroupsIds: string[];
 
 The list of Security Group IDs for the server.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.18/docs/resources/server#security_groups_ids Server#security_groups_ids}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.19/docs/resources/server#security_groups_ids Server#security_groups_ids}
 
 ---
 
@@ -1804,7 +1850,7 @@ Immutable List of absolute or relative paths to files containing public SSH key 
 
 Does not support `~` expansion to homedir in the given path. Public SSH keys are set on the image as authorized keys for appropriate SSH login to the instance using the corresponding private key. This field may only be set in creation requests. When reading, it always returns null. SSH keys are only supported if a public Linux image is used for the volume creation. This property is immutable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.18/docs/resources/server#ssh_key_path Server#ssh_key_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.19/docs/resources/server#ssh_key_path Server#ssh_key_path}
 
 ---
 
@@ -1820,7 +1866,7 @@ Public SSH keys are set on the image as authorized keys for appropriate SSH logi
 
 This field may only be set in creation requests. When reading, it always returns null. SSH keys are only supported if a public Linux image is used for the volume creation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.18/docs/resources/server#ssh_keys Server#ssh_keys}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.19/docs/resources/server#ssh_keys Server#ssh_keys}
 
 ---
 
@@ -1832,7 +1878,7 @@ public readonly templateUuid: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.18/docs/resources/server#template_uuid Server#template_uuid}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.19/docs/resources/server#template_uuid Server#template_uuid}.
 
 ---
 
@@ -1846,7 +1892,7 @@ public readonly timeouts: ServerTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.18/docs/resources/server#timeouts Server#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.19/docs/resources/server#timeouts Server#timeouts}
 
 ---
 
@@ -1860,7 +1906,7 @@ public readonly type: string;
 
 server usages: ENTERPRISE or CUBE.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.18/docs/resources/server#type Server#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.19/docs/resources/server#type Server#type}
 
 ---
 
@@ -1876,7 +1922,7 @@ Sets the power state of the server.
 
 Possible values: `RUNNING`, `SHUTOFF` or `SUSPENDED`. SUSPENDED state is only valid for cube. SHUTOFF state is only valid for enterprise
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.18/docs/resources/server#vm_state Server#vm_state}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.19/docs/resources/server#vm_state Server#vm_state}
 
 ---
 
@@ -1890,7 +1936,7 @@ public readonly volume: ServerVolume;
 
 volume block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.18/docs/resources/server#volume Server#volume}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.19/docs/resources/server#volume Server#volume}
 
 ---
 
@@ -1908,8 +1954,8 @@ const serverLabel: server.ServerLabel = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-ionoscloud.server.ServerLabel.property.key">key</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.18/docs/resources/server#key Server#key}. |
-| <code><a href="#@cdktf/provider-ionoscloud.server.ServerLabel.property.value">value</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.18/docs/resources/server#value Server#value}. |
+| <code><a href="#@cdktf/provider-ionoscloud.server.ServerLabel.property.key">key</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.19/docs/resources/server#key Server#key}. |
+| <code><a href="#@cdktf/provider-ionoscloud.server.ServerLabel.property.value">value</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.19/docs/resources/server#value Server#value}. |
 
 ---
 
@@ -1921,7 +1967,7 @@ public readonly key: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.18/docs/resources/server#key Server#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.19/docs/resources/server#key Server#key}.
 
 ---
 
@@ -1933,7 +1979,7 @@ public readonly value: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.18/docs/resources/server#value Server#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.19/docs/resources/server#value Server#value}.
 
 ---
 
@@ -1951,17 +1997,17 @@ const serverNic: server.ServerNic = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-ionoscloud.server.ServerNic.property.lan">lan</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.18/docs/resources/server#lan Server#lan}. |
-| <code><a href="#@cdktf/provider-ionoscloud.server.ServerNic.property.dhcp">dhcp</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.18/docs/resources/server#dhcp Server#dhcp}. |
+| <code><a href="#@cdktf/provider-ionoscloud.server.ServerNic.property.lan">lan</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.19/docs/resources/server#lan Server#lan}. |
+| <code><a href="#@cdktf/provider-ionoscloud.server.ServerNic.property.dhcp">dhcp</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.19/docs/resources/server#dhcp Server#dhcp}. |
 | <code><a href="#@cdktf/provider-ionoscloud.server.ServerNic.property.dhcpv6">dhcpv6</a></code> | <code>boolean \| cdktf.IResolvable</code> | Indicates whether this NIC receives an IPv6 address through DHCP. |
 | <code><a href="#@cdktf/provider-ionoscloud.server.ServerNic.property.firewall">firewall</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-ionoscloud.server.ServerNicFirewall">ServerNicFirewall</a>[]</code> | firewall block. |
-| <code><a href="#@cdktf/provider-ionoscloud.server.ServerNic.property.firewallActive">firewallActive</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.18/docs/resources/server#firewall_active Server#firewall_active}. |
-| <code><a href="#@cdktf/provider-ionoscloud.server.ServerNic.property.firewallType">firewallType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.18/docs/resources/server#firewall_type Server#firewall_type}. |
+| <code><a href="#@cdktf/provider-ionoscloud.server.ServerNic.property.firewallActive">firewallActive</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.19/docs/resources/server#firewall_active Server#firewall_active}. |
+| <code><a href="#@cdktf/provider-ionoscloud.server.ServerNic.property.firewallType">firewallType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.19/docs/resources/server#firewall_type Server#firewall_type}. |
 | <code><a href="#@cdktf/provider-ionoscloud.server.ServerNic.property.ips">ips</a></code> | <code>string[]</code> | Collection of IP addresses assigned to a nic. |
 | <code><a href="#@cdktf/provider-ionoscloud.server.ServerNic.property.ipv6CidrBlock">ipv6CidrBlock</a></code> | <code>string</code> | IPv6 CIDR block assigned to the NIC. |
 | <code><a href="#@cdktf/provider-ionoscloud.server.ServerNic.property.ipv6Ips">ipv6Ips</a></code> | <code>string[]</code> | Collection for IPv6 addresses assigned to a nic. |
-| <code><a href="#@cdktf/provider-ionoscloud.server.ServerNic.property.mac">mac</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.18/docs/resources/server#mac Server#mac}. |
-| <code><a href="#@cdktf/provider-ionoscloud.server.ServerNic.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.18/docs/resources/server#name Server#name}. |
+| <code><a href="#@cdktf/provider-ionoscloud.server.ServerNic.property.mac">mac</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.19/docs/resources/server#mac Server#mac}. |
+| <code><a href="#@cdktf/provider-ionoscloud.server.ServerNic.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.19/docs/resources/server#name Server#name}. |
 | <code><a href="#@cdktf/provider-ionoscloud.server.ServerNic.property.securityGroupsIds">securityGroupsIds</a></code> | <code>string[]</code> | The list of Security Group IDs for the NIC. |
 
 ---
@@ -1974,7 +2020,7 @@ public readonly lan: number;
 
 - *Type:* number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.18/docs/resources/server#lan Server#lan}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.19/docs/resources/server#lan Server#lan}.
 
 ---
 
@@ -1986,7 +2032,7 @@ public readonly dhcp: boolean | IResolvable;
 
 - *Type:* boolean | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.18/docs/resources/server#dhcp Server#dhcp}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.19/docs/resources/server#dhcp Server#dhcp}.
 
 ---
 
@@ -2000,7 +2046,7 @@ public readonly dhcpv6: boolean | IResolvable;
 
 Indicates whether this NIC receives an IPv6 address through DHCP.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.18/docs/resources/server#dhcpv6 Server#dhcpv6}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.19/docs/resources/server#dhcpv6 Server#dhcpv6}
 
 ---
 
@@ -2014,7 +2060,7 @@ public readonly firewall: IResolvable | ServerNicFirewall[];
 
 firewall block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.18/docs/resources/server#firewall Server#firewall}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.19/docs/resources/server#firewall Server#firewall}
 
 ---
 
@@ -2026,7 +2072,7 @@ public readonly firewallActive: boolean | IResolvable;
 
 - *Type:* boolean | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.18/docs/resources/server#firewall_active Server#firewall_active}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.19/docs/resources/server#firewall_active Server#firewall_active}.
 
 ---
 
@@ -2038,7 +2084,7 @@ public readonly firewallType: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.18/docs/resources/server#firewall_type Server#firewall_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.19/docs/resources/server#firewall_type Server#firewall_type}.
 
 ---
 
@@ -2054,7 +2100,7 @@ Collection of IP addresses assigned to a nic.
 
 Explicitly assigned public IPs need to come from reserved IP blocks, Passing value null or empty array will assign an IP address automatically.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.18/docs/resources/server#ips Server#ips}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.19/docs/resources/server#ips Server#ips}
 
 ---
 
@@ -2068,7 +2114,7 @@ public readonly ipv6CidrBlock: string;
 
 IPv6 CIDR block assigned to the NIC.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.18/docs/resources/server#ipv6_cidr_block Server#ipv6_cidr_block}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.19/docs/resources/server#ipv6_cidr_block Server#ipv6_cidr_block}
 
 ---
 
@@ -2084,7 +2130,7 @@ Collection for IPv6 addresses assigned to a nic.
 
 Explicitly assigned IPv6 addresses need to come from inside the IPv6 CIDR block assigned to the nic.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.18/docs/resources/server#ipv6_ips Server#ipv6_ips}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.19/docs/resources/server#ipv6_ips Server#ipv6_ips}
 
 ---
 
@@ -2096,7 +2142,7 @@ public readonly mac: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.18/docs/resources/server#mac Server#mac}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.19/docs/resources/server#mac Server#mac}.
 
 ---
 
@@ -2108,7 +2154,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.18/docs/resources/server#name Server#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.19/docs/resources/server#name Server#name}.
 
 ---
 
@@ -2122,7 +2168,7 @@ public readonly securityGroupsIds: string[];
 
 The list of Security Group IDs for the NIC.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.18/docs/resources/server#security_groups_ids Server#security_groups_ids}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.19/docs/resources/server#security_groups_ids Server#security_groups_ids}
 
 ---
 
@@ -2140,16 +2186,16 @@ const serverNicFirewall: server.ServerNicFirewall = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-ionoscloud.server.ServerNicFirewall.property.protocol">protocol</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.18/docs/resources/server#protocol Server#protocol}. |
-| <code><a href="#@cdktf/provider-ionoscloud.server.ServerNicFirewall.property.icmpCode">icmpCode</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.18/docs/resources/server#icmp_code Server#icmp_code}. |
-| <code><a href="#@cdktf/provider-ionoscloud.server.ServerNicFirewall.property.icmpType">icmpType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.18/docs/resources/server#icmp_type Server#icmp_type}. |
-| <code><a href="#@cdktf/provider-ionoscloud.server.ServerNicFirewall.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.18/docs/resources/server#name Server#name}. |
-| <code><a href="#@cdktf/provider-ionoscloud.server.ServerNicFirewall.property.portRangeEnd">portRangeEnd</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.18/docs/resources/server#port_range_end Server#port_range_end}. |
-| <code><a href="#@cdktf/provider-ionoscloud.server.ServerNicFirewall.property.portRangeStart">portRangeStart</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.18/docs/resources/server#port_range_start Server#port_range_start}. |
-| <code><a href="#@cdktf/provider-ionoscloud.server.ServerNicFirewall.property.sourceIp">sourceIp</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.18/docs/resources/server#source_ip Server#source_ip}. |
-| <code><a href="#@cdktf/provider-ionoscloud.server.ServerNicFirewall.property.sourceMac">sourceMac</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.18/docs/resources/server#source_mac Server#source_mac}. |
-| <code><a href="#@cdktf/provider-ionoscloud.server.ServerNicFirewall.property.targetIp">targetIp</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.18/docs/resources/server#target_ip Server#target_ip}. |
-| <code><a href="#@cdktf/provider-ionoscloud.server.ServerNicFirewall.property.type">type</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.18/docs/resources/server#type Server#type}. |
+| <code><a href="#@cdktf/provider-ionoscloud.server.ServerNicFirewall.property.protocol">protocol</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.19/docs/resources/server#protocol Server#protocol}. |
+| <code><a href="#@cdktf/provider-ionoscloud.server.ServerNicFirewall.property.icmpCode">icmpCode</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.19/docs/resources/server#icmp_code Server#icmp_code}. |
+| <code><a href="#@cdktf/provider-ionoscloud.server.ServerNicFirewall.property.icmpType">icmpType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.19/docs/resources/server#icmp_type Server#icmp_type}. |
+| <code><a href="#@cdktf/provider-ionoscloud.server.ServerNicFirewall.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.19/docs/resources/server#name Server#name}. |
+| <code><a href="#@cdktf/provider-ionoscloud.server.ServerNicFirewall.property.portRangeEnd">portRangeEnd</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.19/docs/resources/server#port_range_end Server#port_range_end}. |
+| <code><a href="#@cdktf/provider-ionoscloud.server.ServerNicFirewall.property.portRangeStart">portRangeStart</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.19/docs/resources/server#port_range_start Server#port_range_start}. |
+| <code><a href="#@cdktf/provider-ionoscloud.server.ServerNicFirewall.property.sourceIp">sourceIp</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.19/docs/resources/server#source_ip Server#source_ip}. |
+| <code><a href="#@cdktf/provider-ionoscloud.server.ServerNicFirewall.property.sourceMac">sourceMac</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.19/docs/resources/server#source_mac Server#source_mac}. |
+| <code><a href="#@cdktf/provider-ionoscloud.server.ServerNicFirewall.property.targetIp">targetIp</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.19/docs/resources/server#target_ip Server#target_ip}. |
+| <code><a href="#@cdktf/provider-ionoscloud.server.ServerNicFirewall.property.type">type</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.19/docs/resources/server#type Server#type}. |
 
 ---
 
@@ -2161,7 +2207,7 @@ public readonly protocol: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.18/docs/resources/server#protocol Server#protocol}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.19/docs/resources/server#protocol Server#protocol}.
 
 ---
 
@@ -2173,7 +2219,7 @@ public readonly icmpCode: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.18/docs/resources/server#icmp_code Server#icmp_code}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.19/docs/resources/server#icmp_code Server#icmp_code}.
 
 ---
 
@@ -2185,7 +2231,7 @@ public readonly icmpType: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.18/docs/resources/server#icmp_type Server#icmp_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.19/docs/resources/server#icmp_type Server#icmp_type}.
 
 ---
 
@@ -2197,7 +2243,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.18/docs/resources/server#name Server#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.19/docs/resources/server#name Server#name}.
 
 ---
 
@@ -2209,7 +2255,7 @@ public readonly portRangeEnd: number;
 
 - *Type:* number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.18/docs/resources/server#port_range_end Server#port_range_end}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.19/docs/resources/server#port_range_end Server#port_range_end}.
 
 ---
 
@@ -2221,7 +2267,7 @@ public readonly portRangeStart: number;
 
 - *Type:* number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.18/docs/resources/server#port_range_start Server#port_range_start}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.19/docs/resources/server#port_range_start Server#port_range_start}.
 
 ---
 
@@ -2233,7 +2279,7 @@ public readonly sourceIp: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.18/docs/resources/server#source_ip Server#source_ip}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.19/docs/resources/server#source_ip Server#source_ip}.
 
 ---
 
@@ -2245,7 +2291,7 @@ public readonly sourceMac: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.18/docs/resources/server#source_mac Server#source_mac}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.19/docs/resources/server#source_mac Server#source_mac}.
 
 ---
 
@@ -2257,7 +2303,7 @@ public readonly targetIp: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.18/docs/resources/server#target_ip Server#target_ip}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.19/docs/resources/server#target_ip Server#target_ip}.
 
 ---
 
@@ -2269,7 +2315,7 @@ public readonly type: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.18/docs/resources/server#type Server#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.19/docs/resources/server#type Server#type}.
 
 ---
 
@@ -2287,10 +2333,10 @@ const serverTimeouts: server.ServerTimeouts = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-ionoscloud.server.ServerTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.18/docs/resources/server#create Server#create}. |
-| <code><a href="#@cdktf/provider-ionoscloud.server.ServerTimeouts.property.default">default</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.18/docs/resources/server#default Server#default}. |
-| <code><a href="#@cdktf/provider-ionoscloud.server.ServerTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.18/docs/resources/server#delete Server#delete}. |
-| <code><a href="#@cdktf/provider-ionoscloud.server.ServerTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.18/docs/resources/server#update Server#update}. |
+| <code><a href="#@cdktf/provider-ionoscloud.server.ServerTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.19/docs/resources/server#create Server#create}. |
+| <code><a href="#@cdktf/provider-ionoscloud.server.ServerTimeouts.property.default">default</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.19/docs/resources/server#default Server#default}. |
+| <code><a href="#@cdktf/provider-ionoscloud.server.ServerTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.19/docs/resources/server#delete Server#delete}. |
+| <code><a href="#@cdktf/provider-ionoscloud.server.ServerTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.19/docs/resources/server#update Server#update}. |
 
 ---
 
@@ -2302,7 +2348,7 @@ public readonly create: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.18/docs/resources/server#create Server#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.19/docs/resources/server#create Server#create}.
 
 ---
 
@@ -2314,7 +2360,7 @@ public readonly default: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.18/docs/resources/server#default Server#default}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.19/docs/resources/server#default Server#default}.
 
 ---
 
@@ -2326,7 +2372,7 @@ public readonly delete: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.18/docs/resources/server#delete Server#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.19/docs/resources/server#delete Server#delete}.
 
 ---
 
@@ -2338,7 +2384,7 @@ public readonly update: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.18/docs/resources/server#update Server#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.19/docs/resources/server#update Server#update}.
 
 ---
 
@@ -2356,14 +2402,14 @@ const serverVolume: server.ServerVolume = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-ionoscloud.server.ServerVolume.property.diskType">diskType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.18/docs/resources/server#disk_type Server#disk_type}. |
-| <code><a href="#@cdktf/provider-ionoscloud.server.ServerVolume.property.availabilityZone">availabilityZone</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.18/docs/resources/server#availability_zone Server#availability_zone}. |
+| <code><a href="#@cdktf/provider-ionoscloud.server.ServerVolume.property.diskType">diskType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.19/docs/resources/server#disk_type Server#disk_type}. |
+| <code><a href="#@cdktf/provider-ionoscloud.server.ServerVolume.property.availabilityZone">availabilityZone</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.19/docs/resources/server#availability_zone Server#availability_zone}. |
 | <code><a href="#@cdktf/provider-ionoscloud.server.ServerVolume.property.backupUnitId">backupUnitId</a></code> | <code>string</code> | The uuid of the Backup Unit that user has access to. |
-| <code><a href="#@cdktf/provider-ionoscloud.server.ServerVolume.property.bus">bus</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.18/docs/resources/server#bus Server#bus}. |
+| <code><a href="#@cdktf/provider-ionoscloud.server.ServerVolume.property.bus">bus</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.19/docs/resources/server#bus Server#bus}. |
 | <code><a href="#@cdktf/provider-ionoscloud.server.ServerVolume.property.exposeSerial">exposeSerial</a></code> | <code>boolean \| cdktf.IResolvable</code> | If set to `true` will expose the serial id of the disk attached to the server. |
-| <code><a href="#@cdktf/provider-ionoscloud.server.ServerVolume.property.imagePassword">imagePassword</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.18/docs/resources/server#image_password Server#image_password}. |
-| <code><a href="#@cdktf/provider-ionoscloud.server.ServerVolume.property.licenceType">licenceType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.18/docs/resources/server#licence_type Server#licence_type}. |
-| <code><a href="#@cdktf/provider-ionoscloud.server.ServerVolume.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.18/docs/resources/server#name Server#name}. |
+| <code><a href="#@cdktf/provider-ionoscloud.server.ServerVolume.property.imagePassword">imagePassword</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.19/docs/resources/server#image_password Server#image_password}. |
+| <code><a href="#@cdktf/provider-ionoscloud.server.ServerVolume.property.licenceType">licenceType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.19/docs/resources/server#licence_type Server#licence_type}. |
+| <code><a href="#@cdktf/provider-ionoscloud.server.ServerVolume.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.19/docs/resources/server#name Server#name}. |
 | <code><a href="#@cdktf/provider-ionoscloud.server.ServerVolume.property.size">size</a></code> | <code>number</code> | The size of the volume in GB. |
 | <code><a href="#@cdktf/provider-ionoscloud.server.ServerVolume.property.sshKeyPath">sshKeyPath</a></code> | <code>string[]</code> | Public SSH keys are set on the image as authorized keys for appropriate SSH login to the instance using the corresponding private key. |
 | <code><a href="#@cdktf/provider-ionoscloud.server.ServerVolume.property.sshKeys">sshKeys</a></code> | <code>string[]</code> | Public SSH keys are set on the image as authorized keys for appropriate SSH login to the instance using the corresponding private key. |
@@ -2379,7 +2425,7 @@ public readonly diskType: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.18/docs/resources/server#disk_type Server#disk_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.19/docs/resources/server#disk_type Server#disk_type}.
 
 ---
 
@@ -2391,7 +2437,7 @@ public readonly availabilityZone: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.18/docs/resources/server#availability_zone Server#availability_zone}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.19/docs/resources/server#availability_zone Server#availability_zone}.
 
 ---
 
@@ -2407,7 +2453,7 @@ The uuid of the Backup Unit that user has access to.
 
 The property is immutable and is only allowed to be set on a new volume creation. It is mandatory to provide either 'public image' or 'imageAlias' in conjunction with this property.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.18/docs/resources/server#backup_unit_id Server#backup_unit_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.19/docs/resources/server#backup_unit_id Server#backup_unit_id}
 
 ---
 
@@ -2419,7 +2465,7 @@ public readonly bus: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.18/docs/resources/server#bus Server#bus}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.19/docs/resources/server#bus Server#bus}.
 
 ---
 
@@ -2435,7 +2481,7 @@ If set to `true` will expose the serial id of the disk attached to the server.
 
 If set to `false` will not expose the serial id. Some operating systems or software solutions require the serial id to be exposed to work properly. Exposing the serial can influence licensed software (e.g. Windows) behavior
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.18/docs/resources/server#expose_serial Server#expose_serial}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.19/docs/resources/server#expose_serial Server#expose_serial}
 
 ---
 
@@ -2447,7 +2493,7 @@ public readonly imagePassword: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.18/docs/resources/server#image_password Server#image_password}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.19/docs/resources/server#image_password Server#image_password}.
 
 ---
 
@@ -2459,7 +2505,7 @@ public readonly licenceType: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.18/docs/resources/server#licence_type Server#licence_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.19/docs/resources/server#licence_type Server#licence_type}.
 
 ---
 
@@ -2471,7 +2517,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.18/docs/resources/server#name Server#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.19/docs/resources/server#name Server#name}.
 
 ---
 
@@ -2485,7 +2531,7 @@ public readonly size: number;
 
 The size of the volume in GB.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.18/docs/resources/server#size Server#size}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.19/docs/resources/server#size Server#size}
 
 ---
 
@@ -2501,7 +2547,7 @@ Public SSH keys are set on the image as authorized keys for appropriate SSH logi
 
 This field may only be set in creation requests. When reading, it always returns null. SSH keys are only supported if a public Linux image is used for the volume creation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.18/docs/resources/server#ssh_key_path Server#ssh_key_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.19/docs/resources/server#ssh_key_path Server#ssh_key_path}
 
 ---
 
@@ -2517,7 +2563,7 @@ Public SSH keys are set on the image as authorized keys for appropriate SSH logi
 
 This field may only be set in creation requests. When reading, it always returns null. SSH keys are only supported if a public Linux image is used for the volume creation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.18/docs/resources/server#ssh_keys Server#ssh_keys}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.19/docs/resources/server#ssh_keys Server#ssh_keys}
 
 ---
 
@@ -2533,7 +2579,7 @@ The cloud-init configuration for the volume as base64 encoded string.
 
 The property is immutable and is only allowed to be set on a new volume creation. It is mandatory to provide either 'public image' or 'imageAlias' that has cloud-init compatibility in conjunction with this property.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.18/docs/resources/server#user_data Server#user_data}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.19/docs/resources/server#user_data Server#user_data}
 
 ---
 
