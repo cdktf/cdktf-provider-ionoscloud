@@ -4,7 +4,7 @@
 
 ### DataIonoscloudNfsShare <a name="DataIonoscloudNfsShare" id="@cdktf/provider-ionoscloud.dataIonoscloudNfsShare.DataIonoscloudNfsShare"></a>
 
-Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.19/docs/data-sources/nfs_share ionoscloud_nfs_share}.
+Represents a {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.20/docs/data-sources/nfs_share ionoscloud_nfs_share}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-ionoscloud.dataIonoscloudNfsShare.DataIonoscloudNfsShare.Initializer"></a>
 
@@ -434,7 +434,7 @@ The construct id used in the generated config for the DataIonoscloudNfsShare to 
 
 The id of the existing DataIonoscloudNfsShare that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.19/docs/data-sources/nfs_share#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.20/docs/data-sources/nfs_share#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -852,7 +852,7 @@ public string Description { get; set; }
 
 Optional description for the clients groups.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.19/docs/data-sources/nfs_share#description DataIonoscloudNfsShare#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.20/docs/data-sources/nfs_share#description DataIonoscloudNfsShare#description}
 
 ---
 
@@ -868,7 +868,7 @@ A singular host allowed to connect to the share.
 
 The host can be specified as IP address and can be either IPv4 or IPv6.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.19/docs/data-sources/nfs_share#hosts DataIonoscloudNfsShare#hosts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.20/docs/data-sources/nfs_share#hosts DataIonoscloudNfsShare#hosts}
 
 ---
 
@@ -884,7 +884,7 @@ The allowed host or network to which the export is being shared.
 
 The IP address can be either IPv4 or IPv6 and has to be given with CIDR notation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.19/docs/data-sources/nfs_share#ip_networks DataIonoscloudNfsShare#ip_networks}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.20/docs/data-sources/nfs_share#ip_networks DataIonoscloudNfsShare#ip_networks}
 
 ---
 
@@ -898,7 +898,7 @@ public IResolvable|DataIonoscloudNfsShareClientGroupsNfs[] Nfs { get; set; }
 
 nfs block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.19/docs/data-sources/nfs_share#nfs DataIonoscloudNfsShare#nfs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.20/docs/data-sources/nfs_share#nfs DataIonoscloudNfsShare#nfs}
 
 ---
 
@@ -934,7 +934,7 @@ The squash mode for the export.
 
 The squash mode can be: none - No squash mode. no mapping, root-anonymous - Map root user to anonymous uid, all-anonymous - Map all users to anonymous uid.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.19/docs/data-sources/nfs_share#squash DataIonoscloudNfsShare#squash}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.20/docs/data-sources/nfs_share#squash DataIonoscloudNfsShare#squash}
 
 ---
 
@@ -1068,7 +1068,7 @@ public string ClusterId { get; set; }
 
 The ID of the Network File Storage Cluster.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.19/docs/data-sources/nfs_share#cluster_id DataIonoscloudNfsShare#cluster_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.20/docs/data-sources/nfs_share#cluster_id DataIonoscloudNfsShare#cluster_id}
 
 ---
 
@@ -1082,7 +1082,7 @@ public IResolvable|DataIonoscloudNfsShareClientGroups[] ClientGroups { get; set;
 
 client_groups block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.19/docs/data-sources/nfs_share#client_groups DataIonoscloudNfsShare#client_groups}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.20/docs/data-sources/nfs_share#client_groups DataIonoscloudNfsShare#client_groups}
 
 ---
 
@@ -1096,7 +1096,7 @@ public double Gid { get; set; }
 
 The group ID that will own the exported directory. If not set, **anonymous** (`512`) will be used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.19/docs/data-sources/nfs_share#gid DataIonoscloudNfsShare#gid}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.20/docs/data-sources/nfs_share#gid DataIonoscloudNfsShare#gid}
 
 ---
 
@@ -1110,7 +1110,7 @@ public string Id { get; set; }
 
 The ID of the Network File Storage Share.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.19/docs/data-sources/nfs_share#id DataIonoscloudNfsShare#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.20/docs/data-sources/nfs_share#id DataIonoscloudNfsShare#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1127,7 +1127,7 @@ public string Location { get; set; }
 
 The location of the Network File Storage Cluster. Available locations: 'de/fra, 'de/fra/2, 'de/txl, 'fr-par, 'gb-lhr, 'es/vit, 'us/las, 'us/ewr, 'us/mci'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.19/docs/data-sources/nfs_share#location DataIonoscloudNfsShare#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.20/docs/data-sources/nfs_share#location DataIonoscloudNfsShare#location}
 
 ---
 
@@ -1141,7 +1141,7 @@ public string Name { get; set; }
 
 The name of the Network File Storage Share.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.19/docs/data-sources/nfs_share#name DataIonoscloudNfsShare#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.20/docs/data-sources/nfs_share#name DataIonoscloudNfsShare#name}
 
 ---
 
@@ -1155,7 +1155,7 @@ public bool|IResolvable PartialMatch { get; set; }
 
 Whether partial matching is allowed or not when using the name filter.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.19/docs/data-sources/nfs_share#partial_match DataIonoscloudNfsShare#partial_match}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.20/docs/data-sources/nfs_share#partial_match DataIonoscloudNfsShare#partial_match}
 
 ---
 
@@ -1171,7 +1171,7 @@ The quota in MiB for the export.
 
 The quota can restrict the amount of data that can be stored within the export. The quota can be disabled using `0`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.19/docs/data-sources/nfs_share#quota DataIonoscloudNfsShare#quota}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.20/docs/data-sources/nfs_share#quota DataIonoscloudNfsShare#quota}
 
 ---
 
@@ -1185,7 +1185,7 @@ public double Uid { get; set; }
 
 The user ID that will own the exported directory. If not set, **anonymous** (`512`) will be used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.19/docs/data-sources/nfs_share#uid DataIonoscloudNfsShare#uid}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/ionos-cloud/ionoscloud/6.7.20/docs/data-sources/nfs_share#uid DataIonoscloudNfsShare#uid}
 
 ---
 
